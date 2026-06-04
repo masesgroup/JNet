@@ -73,12 +73,26 @@ namespace Javax.Management.Remote
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for SubjectDelegationPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static SubjectDelegationPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<SubjectDelegationPermission>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/SubjectDelegationPermission.html#javax.management.remote.SubjectDelegationPermission(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public SubjectDelegationPermission(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SubjectDelegationPermission(Java.Lang.String arg0)
+        /// </summary>
+        public static SubjectDelegationPermission New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<SubjectDelegationPermission>(arg0);
         }
 
         #endregion

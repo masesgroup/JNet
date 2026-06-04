@@ -75,6 +75,13 @@ namespace Java.Security.Cert
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PKIXBuilderParameters(Java.Security.KeyStore arg0, Java.Security.Cert.CertSelector arg1)
+        /// </summary>
+        public static PKIXBuilderParameters New(Java.Security.KeyStore arg0, Java.Security.Cert.CertSelector arg1)
+        {
+            return JVMBridgeBase.New<PKIXBuilderParameters>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/cert/PKIXBuilderParameters.html#java.security.cert.PKIXBuilderParameters(java.util.Set,java.security.cert.CertSelector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
@@ -83,6 +90,13 @@ namespace Java.Security.Cert
         public PKIXBuilderParameters(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0, Java.Security.Cert.CertSelector arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for PKIXBuilderParameters(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0, Java.Security.Cert.CertSelector arg1)
+        /// </summary>
+        public static PKIXBuilderParameters New(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0, Java.Security.Cert.CertSelector arg1)
+        {
+            return JVMBridgeBase.New<PKIXBuilderParameters>(arg0, arg1);
         }
 
         #endregion

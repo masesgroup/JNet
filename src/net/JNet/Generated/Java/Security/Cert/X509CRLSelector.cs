@@ -70,6 +70,13 @@ namespace Java.Security.Cert
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for X509CRLSelector()
+        /// </summary>
+        public static X509CRLSelector New()
+        {
+            return JVMBridgeBase.New<X509CRLSelector>();
+        }
 
         #endregion
 

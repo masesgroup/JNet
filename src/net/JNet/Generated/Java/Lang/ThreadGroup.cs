@@ -72,6 +72,13 @@ namespace Java.Lang
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ThreadGroup(Java.Lang.String arg0)
+        /// </summary>
+        public static ThreadGroup New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<ThreadGroup>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadGroup.html#java.lang.ThreadGroup(java.lang.ThreadGroup,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
@@ -79,6 +86,13 @@ namespace Java.Lang
         public ThreadGroup(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for ThreadGroup(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static ThreadGroup New(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<ThreadGroup>(arg0, arg1);
         }
 
         #endregion

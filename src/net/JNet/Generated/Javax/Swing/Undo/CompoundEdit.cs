@@ -70,6 +70,13 @@ namespace Javax.Swing.Undo
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for CompoundEdit()
+        /// </summary>
+        public static CompoundEdit New()
+        {
+            return JVMBridgeBase.New<CompoundEdit>();
+        }
 
         #endregion
 

@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthStyle()
+        /// </summary>
+        public static SynthStyle New()
+        {
+            return JVMBridgeBase.New<SynthStyle>();
+        }
 
         #endregion
 

@@ -72,6 +72,13 @@ namespace Java.Awt.EventNs
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for ComponentEvent(Java.Awt.Component arg0, int arg1)
+        /// </summary>
+        public static ComponentEvent New(Java.Awt.Component arg0, int arg1)
+        {
+            return JVMBridgeBase.New<ComponentEvent>(arg0, arg1);
+        }
 
         #endregion
 

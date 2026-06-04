@@ -107,6 +107,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for AtomicMarkableReference(object arg0, bool arg1)
+        /// </summary>
+        public static AtomicMarkableReference New(object arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<AtomicMarkableReference>(arg0, arg1);
+        }
 
         #endregion
 
@@ -213,6 +220,13 @@ namespace Java.Util.Concurrent.Atomic
         public AtomicMarkableReference(V arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for AtomicMarkableReference(V arg0, bool arg1)
+        /// </summary>
+        public static AtomicMarkableReference<V> New(V arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<AtomicMarkableReference<V>>(arg0, arg1);
         }
 
         #endregion

@@ -72,6 +72,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for LongAccumulator(Java.Util.Function.LongBinaryOperator arg0, long arg1)
+        /// </summary>
+        public static LongAccumulator New(Java.Util.Function.LongBinaryOperator arg0, long arg1)
+        {
+            return JVMBridgeBase.New<LongAccumulator>(arg0, arg1);
+        }
 
         #endregion
 

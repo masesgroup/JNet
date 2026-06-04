@@ -70,6 +70,13 @@ namespace Javax.Swing.Colorchooser
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AbstractColorChooserPanel()
+        /// </summary>
+        public static AbstractColorChooserPanel New()
+        {
+            return JVMBridgeBase.New<AbstractColorChooserPanel>();
+        }
 
         #endregion
 

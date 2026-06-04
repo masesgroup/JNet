@@ -72,12 +72,26 @@ namespace Javax.Management
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ImmutableDescriptor(params Java.Lang.String[] arg0)
+        /// </summary>
+        public static ImmutableDescriptor New(params Java.Lang.String[] arg0)
+        {
+            return JVMBridgeBase.New<ImmutableDescriptor>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/ImmutableDescriptor.html#javax.management.ImmutableDescriptor(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public ImmutableDescriptor(Java.Util.Map<Java.Lang.String, object> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ImmutableDescriptor(Java.Util.Map<Java.Lang.String, object> arg0)
+        /// </summary>
+        public static ImmutableDescriptor New(Java.Util.Map<Java.Lang.String, object> arg0)
+        {
+            return JVMBridgeBase.New<ImmutableDescriptor>(arg0);
         }
 
         #endregion

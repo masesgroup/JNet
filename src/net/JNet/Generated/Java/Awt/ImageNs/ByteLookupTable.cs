@@ -73,6 +73,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ByteLookupTable(int arg0, byte[] arg1)
+        /// </summary>
+        public static ByteLookupTable New(int arg0, byte[] arg1)
+        {
+            return JVMBridgeBase.New<ByteLookupTable>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/ByteLookupTable.html#java.awt.image.ByteLookupTable(int,byte[][])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,6 +87,13 @@ namespace Java.Awt.ImageNs
         public ByteLookupTable(int arg0, byte[][] arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for ByteLookupTable(int arg0, byte[][] arg1)
+        /// </summary>
+        public static ByteLookupTable New(int arg0, byte[][] arg1)
+        {
+            return JVMBridgeBase.New<ByteLookupTable>(arg0, arg1);
         }
 
         #endregion

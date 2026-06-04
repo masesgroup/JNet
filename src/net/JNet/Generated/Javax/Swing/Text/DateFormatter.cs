@@ -71,12 +71,26 @@ namespace Javax.Swing.Text
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DateFormatter()
+        /// </summary>
+        public static DateFormatter New()
+        {
+            return JVMBridgeBase.New<DateFormatter>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DateFormatter.html#javax.swing.text.DateFormatter(java.text.DateFormat)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.DateFormat"/></param>
         public DateFormatter(Java.Text.DateFormat arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DateFormatter(Java.Text.DateFormat arg0)
+        /// </summary>
+        public static DateFormatter New(Java.Text.DateFormat arg0)
+        {
+            return JVMBridgeBase.New<DateFormatter>(arg0);
         }
 
         #endregion

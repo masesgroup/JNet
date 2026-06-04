@@ -71,6 +71,13 @@ namespace Javax.Swing
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for SortingFocusTraversalPolicy(Java.Util.Comparator arg0)
+        /// </summary>
+        public static SortingFocusTraversalPolicy New(Java.Util.Comparator arg0)
+        {
+            return JVMBridgeBase.New<SortingFocusTraversalPolicy>(arg0);
+        }
 
         #endregion
 

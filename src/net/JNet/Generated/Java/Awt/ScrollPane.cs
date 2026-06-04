@@ -73,6 +73,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ScrollPane()
+        /// </summary>
+        public static ScrollPane New()
+        {
+            return JVMBridgeBase.New<ScrollPane>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/ScrollPane.html#java.awt.ScrollPane(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,6 +87,13 @@ namespace Java.Awt
         public ScrollPane(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ScrollPane(int arg0)
+        /// </summary>
+        public static ScrollPane New(int arg0)
+        {
+            return JVMBridgeBase.New<ScrollPane>(arg0);
         }
 
         #endregion

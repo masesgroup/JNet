@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for JToolTip()
+        /// </summary>
+        public static JToolTip New()
+        {
+            return JVMBridgeBase.New<JToolTip>();
+        }
 
         #endregion
 

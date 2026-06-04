@@ -106,6 +106,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for LinkedBlockingQueue()
+        /// </summary>
+        public static LinkedBlockingQueue New()
+        {
+            return JVMBridgeBase.New<LinkedBlockingQueue>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingQueue.html#java.util.concurrent.LinkedBlockingQueue(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -114,12 +121,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for LinkedBlockingQueue(int arg0)
+        /// </summary>
+        public static LinkedBlockingQueue New(int arg0)
+        {
+            return JVMBridgeBase.New<LinkedBlockingQueue>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingQueue.html#java.util.concurrent.LinkedBlockingQueue(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public LinkedBlockingQueue(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedBlockingQueue(Java.Util.Collection arg0)
+        /// </summary>
+        public static LinkedBlockingQueue New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<LinkedBlockingQueue>(arg0);
         }
 
         #endregion
@@ -236,6 +257,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for LinkedBlockingQueue()
+        /// </summary>
+        public static LinkedBlockingQueue<E> New()
+        {
+            return JVMBridgeBase.New<LinkedBlockingQueue<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingQueue.html#java.util.concurrent.LinkedBlockingQueue(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -244,12 +272,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for LinkedBlockingQueue(int arg0)
+        /// </summary>
+        public static LinkedBlockingQueue<E> New(int arg0)
+        {
+            return JVMBridgeBase.New<LinkedBlockingQueue<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingQueue.html#java.util.concurrent.LinkedBlockingQueue(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public LinkedBlockingQueue(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedBlockingQueue(Java.Util.Collection<E> arg0)
+        /// </summary>
+        public static LinkedBlockingQueue<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<LinkedBlockingQueue<E>>(arg0);
         }
 
         #endregion

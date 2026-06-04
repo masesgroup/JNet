@@ -77,12 +77,26 @@ namespace Javax.Swing.Text.Html.Parser
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for AttributeList(Java.Lang.String arg0, int arg1, int arg2, Java.Lang.String arg3, Java.Util.Vector<object> arg4, Javax.Swing.Text.Html.Parser.AttributeList arg5)
+        /// </summary>
+        public static AttributeList New(Java.Lang.String arg0, int arg1, int arg2, Java.Lang.String arg3, Java.Util.Vector<object> arg4, Javax.Swing.Text.Html.Parser.AttributeList arg5)
+        {
+            return JVMBridgeBase.New<AttributeList>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/parser/AttributeList.html#javax.swing.text.html.parser.AttributeList(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public AttributeList(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AttributeList(Java.Lang.String arg0)
+        /// </summary>
+        public static AttributeList New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<AttributeList>(arg0);
         }
 
         #endregion

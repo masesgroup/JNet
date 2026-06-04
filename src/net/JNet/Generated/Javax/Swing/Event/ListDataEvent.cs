@@ -74,6 +74,13 @@ namespace Javax.Swing.Event
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// HPA initializer for ListDataEvent(object arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static ListDataEvent New(object arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<ListDataEvent>(arg0, arg1, arg2, arg3);
+        }
 
         #endregion
 

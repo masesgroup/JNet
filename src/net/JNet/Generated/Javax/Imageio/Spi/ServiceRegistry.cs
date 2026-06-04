@@ -105,6 +105,13 @@ namespace Javax.Imageio.Spi
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ServiceRegistry(Java.Util.Iterator<Java.Lang.Class> arg0)
+        /// </summary>
+        public static ServiceRegistry New(Java.Util.Iterator<Java.Lang.Class> arg0)
+        {
+            return JVMBridgeBase.New<ServiceRegistry>(arg0);
+        }
 
         #endregion
 

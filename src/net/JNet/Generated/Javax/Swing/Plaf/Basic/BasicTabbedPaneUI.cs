@@ -172,6 +172,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicTabbedPaneUI()
+        /// </summary>
+        public static BasicTabbedPaneUI New()
+        {
+            return JVMBridgeBase.New<BasicTabbedPaneUI>();
+        }
 
         #endregion
 
@@ -207,6 +214,13 @@ namespace Javax.Swing.Plaf.Basic
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0)
+            /// </summary>
+            public static PropertyChangeHandler New(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0)
+            {
+                return JVMBridgeBase.New<PropertyChangeHandler>(arg0);
             }
 
             #endregion
@@ -258,6 +272,13 @@ namespace Javax.Swing.Plaf.Basic
             public TabbedPaneLayout(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for TabbedPaneLayout(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0)
+            /// </summary>
+            public static TabbedPaneLayout New(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0)
+            {
+                return JVMBridgeBase.New<TabbedPaneLayout>(arg0);
             }
 
             #endregion
@@ -347,6 +368,13 @@ namespace Javax.Swing.Plaf.Basic
             public TabSelectionHandler(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for TabSelectionHandler(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0)
+            /// </summary>
+            public static TabSelectionHandler New(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0)
+            {
+                return JVMBridgeBase.New<TabSelectionHandler>(arg0);
             }
 
             #endregion

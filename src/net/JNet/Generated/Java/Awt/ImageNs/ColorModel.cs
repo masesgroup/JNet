@@ -71,6 +71,13 @@ namespace Java.Awt.ImageNs
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ColorModel(int arg0)
+        /// </summary>
+        public static ColorModel New(int arg0)
+        {
+            return JVMBridgeBase.New<ColorModel>(arg0);
+        }
 
         #endregion
 

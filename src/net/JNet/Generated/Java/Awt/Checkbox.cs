@@ -73,6 +73,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Checkbox()
+        /// </summary>
+        public static Checkbox New()
+        {
+            return JVMBridgeBase.New<Checkbox>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Checkbox.html#java.awt.Checkbox(java.lang.String,boolean,java.awt.CheckboxGroup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -84,6 +91,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Checkbox(Java.Lang.String arg0, bool arg1, Java.Awt.CheckboxGroup arg2)
+        /// </summary>
+        public static Checkbox New(Java.Lang.String arg0, bool arg1, Java.Awt.CheckboxGroup arg2)
+        {
+            return JVMBridgeBase.New<Checkbox>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Checkbox.html#java.awt.Checkbox(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -92,6 +106,13 @@ namespace Java.Awt
         public Checkbox(Java.Lang.String arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for Checkbox(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static Checkbox New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<Checkbox>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Checkbox.html#java.awt.Checkbox(java.lang.String,java.awt.CheckboxGroup,boolean)"/>
@@ -105,6 +126,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Checkbox(Java.Lang.String arg0, Java.Awt.CheckboxGroup arg1, bool arg2)
+        /// </summary>
+        public static Checkbox New(Java.Lang.String arg0, Java.Awt.CheckboxGroup arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<Checkbox>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Checkbox.html#java.awt.Checkbox(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -112,6 +140,13 @@ namespace Java.Awt
         public Checkbox(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Checkbox(Java.Lang.String arg0)
+        /// </summary>
+        public static Checkbox New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Checkbox>(arg0);
         }
 
         #endregion

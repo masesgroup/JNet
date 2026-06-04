@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ProgressBarUI()
+        /// </summary>
+        public static ProgressBarUI New()
+        {
+            return JVMBridgeBase.New<ProgressBarUI>();
+        }
 
         #endregion
 

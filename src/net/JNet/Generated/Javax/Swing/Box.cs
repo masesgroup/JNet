@@ -105,6 +105,13 @@ namespace Javax.Swing
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for Box(int arg0)
+        /// </summary>
+        public static Box New(int arg0)
+        {
+            return JVMBridgeBase.New<Box>(arg0);
+        }
 
         #endregion
 
@@ -209,6 +216,13 @@ namespace Javax.Swing
             public Filler(Java.Awt.Dimension arg0, Java.Awt.Dimension arg1, Java.Awt.Dimension arg2) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// HPA initializer for Filler(Java.Awt.Dimension arg0, Java.Awt.Dimension arg1, Java.Awt.Dimension arg2)
+            /// </summary>
+            public static Filler New(Java.Awt.Dimension arg0, Java.Awt.Dimension arg1, Java.Awt.Dimension arg2)
+            {
+                return JVMBridgeBase.New<Filler>(arg0, arg1, arg2);
             }
 
             #endregion

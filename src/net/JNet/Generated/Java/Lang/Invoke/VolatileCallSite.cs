@@ -72,12 +72,26 @@ namespace Java.Lang.Invoke
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for VolatileCallSite(Java.Lang.Invoke.MethodHandle arg0)
+        /// </summary>
+        public static VolatileCallSite New(Java.Lang.Invoke.MethodHandle arg0)
+        {
+            return JVMBridgeBase.New<VolatileCallSite>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/invoke/VolatileCallSite.html#java.lang.invoke.VolatileCallSite(java.lang.invoke.MethodType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodType"/></param>
         public VolatileCallSite(Java.Lang.Invoke.MethodType arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for VolatileCallSite(Java.Lang.Invoke.MethodType arg0)
+        /// </summary>
+        public static VolatileCallSite New(Java.Lang.Invoke.MethodType arg0)
+        {
+            return JVMBridgeBase.New<VolatileCallSite>(arg0);
         }
 
         #endregion

@@ -75,6 +75,13 @@ namespace Java.Text
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for StringCharacterIterator(Java.Lang.String arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static StringCharacterIterator New(Java.Lang.String arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<StringCharacterIterator>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/StringCharacterIterator.html#java.text.StringCharacterIterator(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -84,12 +91,26 @@ namespace Java.Text
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for StringCharacterIterator(Java.Lang.String arg0, int arg1)
+        /// </summary>
+        public static StringCharacterIterator New(Java.Lang.String arg0, int arg1)
+        {
+            return JVMBridgeBase.New<StringCharacterIterator>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/StringCharacterIterator.html#java.text.StringCharacterIterator(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public StringCharacterIterator(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StringCharacterIterator(Java.Lang.String arg0)
+        /// </summary>
+        public static StringCharacterIterator New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<StringCharacterIterator>(arg0);
         }
 
         #endregion

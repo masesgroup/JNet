@@ -72,6 +72,13 @@ namespace Java.Util.Zip
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for CheckedOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Checksum arg1)
+        /// </summary>
+        public static CheckedOutputStream New(Java.Io.OutputStream arg0, Java.Util.Zip.Checksum arg1)
+        {
+            return JVMBridgeBase.New<CheckedOutputStream>(arg0, arg1);
+        }
 
         #endregion
 

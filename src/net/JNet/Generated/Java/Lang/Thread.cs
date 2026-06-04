@@ -105,6 +105,13 @@ namespace Java.Lang
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Thread()
+        /// </summary>
+        public static Thread New()
+        {
+            return JVMBridgeBase.New<Thread>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#java.lang.Thread(java.lang.Runnable,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
@@ -112,6 +119,13 @@ namespace Java.Lang
         public Thread(Java.Lang.Runnable arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for Thread(Java.Lang.Runnable arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static Thread New(Java.Lang.Runnable arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<Thread>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#java.lang.Thread(java.lang.Runnable)"/>
@@ -122,12 +136,26 @@ namespace Java.Lang
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Thread(Java.Lang.Runnable arg0)
+        /// </summary>
+        public static Thread New(Java.Lang.Runnable arg0)
+        {
+            return JVMBridgeBase.New<Thread>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#java.lang.Thread(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public Thread(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Thread(Java.Lang.String arg0)
+        /// </summary>
+        public static Thread New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Thread>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#java.lang.Thread(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long)"/>
@@ -141,6 +169,13 @@ namespace Java.Lang
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2, long arg3)
+        /// </summary>
+        public static Thread New(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2, long arg3)
+        {
+            return JVMBridgeBase.New<Thread>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#java.lang.Thread(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
@@ -149,6 +184,13 @@ namespace Java.Lang
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static Thread New(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<Thread>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#java.lang.Thread(java.lang.ThreadGroup,java.lang.Runnable)"/>
@@ -160,6 +202,13 @@ namespace Java.Lang
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1)
+        /// </summary>
+        public static Thread New(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1)
+        {
+            return JVMBridgeBase.New<Thread>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#java.lang.Thread(java.lang.ThreadGroup,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
@@ -167,6 +216,13 @@ namespace Java.Lang
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for Thread(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static Thread New(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<Thread>(arg0, arg1);
         }
 
         #endregion

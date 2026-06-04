@@ -73,6 +73,13 @@ namespace Javax.Management
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for MBeanConstructorInfo(Java.Lang.String arg0, Java.Lang.Reflect.Constructor<object> arg1)
+        /// </summary>
+        public static MBeanConstructorInfo New(Java.Lang.String arg0, Java.Lang.Reflect.Constructor<object> arg1)
+        {
+            return JVMBridgeBase.New<MBeanConstructorInfo>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanConstructorInfo.html#javax.management.MBeanConstructorInfo(java.lang.String,java.lang.String,javax.management.MBeanParameterInfo[],javax.management.Descriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -84,6 +91,13 @@ namespace Javax.Management
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for MBeanConstructorInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Javax.Management.Descriptor arg3)
+        /// </summary>
+        public static MBeanConstructorInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Javax.Management.Descriptor arg3)
+        {
+            return JVMBridgeBase.New<MBeanConstructorInfo>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanConstructorInfo.html#javax.management.MBeanConstructorInfo(java.lang.String,java.lang.String,javax.management.MBeanParameterInfo[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -92,6 +106,13 @@ namespace Javax.Management
         public MBeanConstructorInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for MBeanConstructorInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2)
+        /// </summary>
+        public static MBeanConstructorInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2)
+        {
+            return JVMBridgeBase.New<MBeanConstructorInfo>(arg0, arg1, arg2);
         }
 
         #endregion

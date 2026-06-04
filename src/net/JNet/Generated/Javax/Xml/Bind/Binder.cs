@@ -105,6 +105,13 @@ namespace Javax.Xml.Bind
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Binder()
+        /// </summary>
+        public static Binder New()
+        {
+            return JVMBridgeBase.New<Binder>();
+        }
 
         #endregion
 
@@ -256,6 +263,13 @@ namespace Javax.Xml.Bind
         public Binder() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for Binder()
+        /// </summary>
+        public static Binder<XmlNode> New()
+        {
+            return JVMBridgeBase.New<Binder<XmlNode>>();
         }
 
         #endregion

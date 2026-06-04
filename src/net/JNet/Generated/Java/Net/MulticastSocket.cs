@@ -73,6 +73,13 @@ namespace Java.Net
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for MulticastSocket()
+        /// </summary>
+        public static MulticastSocket New()
+        {
+            return JVMBridgeBase.New<MulticastSocket>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/MulticastSocket.html#java.net.MulticastSocket(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -82,6 +89,13 @@ namespace Java.Net
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for MulticastSocket(int arg0)
+        /// </summary>
+        public static MulticastSocket New(int arg0)
+        {
+            return JVMBridgeBase.New<MulticastSocket>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/MulticastSocket.html#java.net.MulticastSocket(java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
@@ -89,6 +103,13 @@ namespace Java.Net
         public MulticastSocket(Java.Net.SocketAddress arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MulticastSocket(Java.Net.SocketAddress arg0)
+        /// </summary>
+        public static MulticastSocket New(Java.Net.SocketAddress arg0)
+        {
+            return JVMBridgeBase.New<MulticastSocket>(arg0);
         }
 
         #endregion

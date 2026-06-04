@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalRadioButtonUI()
+        /// </summary>
+        public static MetalRadioButtonUI New()
+        {
+            return JVMBridgeBase.New<MetalRadioButtonUI>();
+        }
 
         #endregion
 

@@ -71,6 +71,13 @@ namespace Java.Awt
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for Cursor(int arg0)
+        /// </summary>
+        public static Cursor New(int arg0)
+        {
+            return JVMBridgeBase.New<Cursor>(arg0);
+        }
 
         #endregion
 

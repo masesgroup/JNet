@@ -70,6 +70,13 @@ namespace Javax.Net.Ssl
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for KeyManagerFactorySpi()
+        /// </summary>
+        public static KeyManagerFactorySpi New()
+        {
+            return JVMBridgeBase.New<KeyManagerFactorySpi>();
+        }
 
         #endregion
 

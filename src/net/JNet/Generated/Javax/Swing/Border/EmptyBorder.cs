@@ -75,12 +75,26 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for EmptyBorder(int arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static EmptyBorder New(int arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<EmptyBorder>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/EmptyBorder.html#javax.swing.border.EmptyBorder(java.awt.Insets)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Insets"/></param>
         public EmptyBorder(Java.Awt.Insets arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for EmptyBorder(Java.Awt.Insets arg0)
+        /// </summary>
+        public static EmptyBorder New(Java.Awt.Insets arg0)
+        {
+            return JVMBridgeBase.New<EmptyBorder>(arg0);
         }
 
         #endregion

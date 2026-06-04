@@ -70,6 +70,13 @@ namespace Javax.Print
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for StreamPrintServiceFactory()
+        /// </summary>
+        public static StreamPrintServiceFactory New()
+        {
+            return JVMBridgeBase.New<StreamPrintServiceFactory>();
+        }
 
         #endregion
 

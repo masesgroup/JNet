@@ -71,12 +71,26 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Panel()
+        /// </summary>
+        public static Panel New()
+        {
+            return JVMBridgeBase.New<Panel>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Panel.html#java.awt.Panel(java.awt.LayoutManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.LayoutManager"/></param>
         public Panel(Java.Awt.LayoutManager arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Panel(Java.Awt.LayoutManager arg0)
+        /// </summary>
+        public static Panel New(Java.Awt.LayoutManager arg0)
+        {
+            return JVMBridgeBase.New<Panel>(arg0);
         }
 
         #endregion

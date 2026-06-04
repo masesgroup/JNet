@@ -72,6 +72,13 @@ namespace Java.Awt.ImageNs.Renderable
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for RenderableImageOp(Java.Awt.ImageNs.Renderable.ContextualRenderedImageFactory arg0, Java.Awt.ImageNs.Renderable.ParameterBlock arg1)
+        /// </summary>
+        public static RenderableImageOp New(Java.Awt.ImageNs.Renderable.ContextualRenderedImageFactory arg0, Java.Awt.ImageNs.Renderable.ParameterBlock arg1)
+        {
+            return JVMBridgeBase.New<RenderableImageOp>(arg0, arg1);
+        }
 
         #endregion
 

@@ -71,12 +71,26 @@ namespace Java.Security
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SecureRandom()
+        /// </summary>
+        public static SecureRandom New()
+        {
+            return JVMBridgeBase.New<SecureRandom>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html#java.security.SecureRandom(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public SecureRandom(byte[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SecureRandom(byte[] arg0)
+        /// </summary>
+        public static SecureRandom New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<SecureRandom>(arg0);
         }
 
         #endregion

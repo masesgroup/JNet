@@ -142,6 +142,13 @@ namespace Javax.Swing.Tree
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DefaultTreeCellEditor(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1, Javax.Swing.Tree.TreeCellEditor arg2)
+        /// </summary>
+        public static DefaultTreeCellEditor New(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1, Javax.Swing.Tree.TreeCellEditor arg2)
+        {
+            return JVMBridgeBase.New<DefaultTreeCellEditor>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/DefaultTreeCellEditor.html#javax.swing.tree.DefaultTreeCellEditor(javax.swing.JTree,javax.swing.tree.DefaultTreeCellRenderer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
@@ -149,6 +156,13 @@ namespace Javax.Swing.Tree
         public DefaultTreeCellEditor(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultTreeCellEditor(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1)
+        /// </summary>
+        public static DefaultTreeCellEditor New(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1)
+        {
+            return JVMBridgeBase.New<DefaultTreeCellEditor>(arg0, arg1);
         }
 
         #endregion
@@ -302,6 +316,13 @@ namespace Javax.Swing.Tree
             {
                 InvokeInitializer(arg0, arg1);
             }
+            /// <summary>
+            /// HPA initializer for DefaultTextField(Javax.Swing.Tree.DefaultTreeCellEditor arg0, Javax.Swing.Border.Border arg1)
+            /// </summary>
+            public static DefaultTextField New(Javax.Swing.Tree.DefaultTreeCellEditor arg0, Javax.Swing.Border.Border arg1)
+            {
+                return JVMBridgeBase.New<DefaultTextField>(arg0, arg1);
+            }
 
             #endregion
 
@@ -340,6 +361,13 @@ namespace Javax.Swing.Tree
             public EditorContainer(Javax.Swing.Tree.DefaultTreeCellEditor arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for EditorContainer(Javax.Swing.Tree.DefaultTreeCellEditor arg0)
+            /// </summary>
+            public static EditorContainer New(Javax.Swing.Tree.DefaultTreeCellEditor arg0)
+            {
+                return JVMBridgeBase.New<EditorContainer>(arg0);
             }
 
             #endregion

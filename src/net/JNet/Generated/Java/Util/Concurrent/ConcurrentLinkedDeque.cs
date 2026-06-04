@@ -106,12 +106,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ConcurrentLinkedDeque()
+        /// </summary>
+        public static ConcurrentLinkedDeque New()
+        {
+            return JVMBridgeBase.New<ConcurrentLinkedDeque>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedDeque.html#java.util.concurrent.ConcurrentLinkedDeque(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ConcurrentLinkedDeque(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentLinkedDeque(Java.Util.Collection arg0)
+        /// </summary>
+        public static ConcurrentLinkedDeque New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentLinkedDeque>(arg0);
         }
 
         #endregion
@@ -339,12 +353,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ConcurrentLinkedDeque()
+        /// </summary>
+        public static ConcurrentLinkedDeque<E> New()
+        {
+            return JVMBridgeBase.New<ConcurrentLinkedDeque<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedDeque.html#java.util.concurrent.ConcurrentLinkedDeque(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ConcurrentLinkedDeque(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentLinkedDeque(Java.Util.Collection<E> arg0)
+        /// </summary>
+        public static ConcurrentLinkedDeque<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentLinkedDeque<E>>(arg0);
         }
 
         #endregion

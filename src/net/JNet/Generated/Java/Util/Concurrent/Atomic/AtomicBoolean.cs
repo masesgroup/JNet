@@ -71,12 +71,26 @@ namespace Java.Util.Concurrent.Atomic
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AtomicBoolean()
+        /// </summary>
+        public static AtomicBoolean New()
+        {
+            return JVMBridgeBase.New<AtomicBoolean>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicBoolean.html#java.util.concurrent.atomic.AtomicBoolean(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public AtomicBoolean(bool arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AtomicBoolean(bool arg0)
+        /// </summary>
+        public static AtomicBoolean New(bool arg0)
+        {
+            return JVMBridgeBase.New<AtomicBoolean>(arg0);
         }
 
         #endregion

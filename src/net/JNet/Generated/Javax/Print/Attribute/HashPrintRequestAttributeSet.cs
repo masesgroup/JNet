@@ -71,12 +71,26 @@ namespace Javax.Print.Attribute
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for HashPrintRequestAttributeSet()
+        /// </summary>
+        public static HashPrintRequestAttributeSet New()
+        {
+            return JVMBridgeBase.New<HashPrintRequestAttributeSet>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashPrintRequestAttributeSet.html#javax.print.attribute.HashPrintRequestAttributeSet(javax.print.attribute.PrintRequestAttribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttribute"/></param>
         public HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttribute arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttribute arg0)
+        /// </summary>
+        public static HashPrintRequestAttributeSet New(Javax.Print.Attribute.PrintRequestAttribute arg0)
+        {
+            return JVMBridgeBase.New<HashPrintRequestAttributeSet>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashPrintRequestAttributeSet.html#javax.print.attribute.HashPrintRequestAttributeSet(javax.print.attribute.PrintRequestAttribute[])"/>
@@ -87,12 +101,26 @@ namespace Javax.Print.Attribute
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttribute[] arg0)
+        /// </summary>
+        public static HashPrintRequestAttributeSet New(Javax.Print.Attribute.PrintRequestAttribute[] arg0)
+        {
+            return JVMBridgeBase.New<HashPrintRequestAttributeSet>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashPrintRequestAttributeSet.html#javax.print.attribute.HashPrintRequestAttributeSet(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
         public HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttributeSet arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
+        /// </summary>
+        public static HashPrintRequestAttributeSet New(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
+        {
+            return JVMBridgeBase.New<HashPrintRequestAttributeSet>(arg0);
         }
 
         #endregion

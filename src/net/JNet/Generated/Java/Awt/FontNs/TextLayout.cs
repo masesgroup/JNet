@@ -108,6 +108,13 @@ namespace Java.Awt.FontNs
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for TextLayout(Java.Lang.String arg0, Java.Awt.Font arg1, Java.Awt.FontNs.FontRenderContext arg2)
+        /// </summary>
+        public static TextLayout New(Java.Lang.String arg0, Java.Awt.Font arg1, Java.Awt.FontNs.FontRenderContext arg2)
+        {
+            return JVMBridgeBase.New<TextLayout>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/font/TextLayout.html#java.awt.font.TextLayout(java.lang.String,java.util.Map,java.awt.font.FontRenderContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -118,6 +125,13 @@ namespace Java.Awt.FontNs
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for TextLayout(Java.Lang.String arg0, Java.Util.Map arg1, Java.Awt.FontNs.FontRenderContext arg2)
+        /// </summary>
+        public static TextLayout New(Java.Lang.String arg0, Java.Util.Map arg1, Java.Awt.FontNs.FontRenderContext arg2)
+        {
+            return JVMBridgeBase.New<TextLayout>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/font/TextLayout.html#java.awt.font.TextLayout(java.text.AttributedCharacterIterator,java.awt.font.FontRenderContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
@@ -125,6 +139,13 @@ namespace Java.Awt.FontNs
         public TextLayout(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for TextLayout(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
+        /// </summary>
+        public static TextLayout New(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
+        {
+            return JVMBridgeBase.New<TextLayout>(arg0, arg1);
         }
 
         #endregion
@@ -519,6 +540,13 @@ namespace Java.Awt.FontNs
             public CaretPolicy() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for CaretPolicy()
+            /// </summary>
+            public static CaretPolicy New()
+            {
+                return JVMBridgeBase.New<CaretPolicy>();
             }
 
             #endregion

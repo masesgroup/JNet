@@ -73,12 +73,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for LineNumberReader(Java.Io.Reader arg0, int arg1)
+        /// </summary>
+        public static LineNumberReader New(Java.Io.Reader arg0, int arg1)
+        {
+            return JVMBridgeBase.New<LineNumberReader>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/LineNumberReader.html#java.io.LineNumberReader(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public LineNumberReader(Java.Io.Reader arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LineNumberReader(Java.Io.Reader arg0)
+        /// </summary>
+        public static LineNumberReader New(Java.Io.Reader arg0)
+        {
+            return JVMBridgeBase.New<LineNumberReader>(arg0);
         }
 
         #endregion

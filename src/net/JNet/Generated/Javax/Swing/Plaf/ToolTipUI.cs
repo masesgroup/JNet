@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ToolTipUI()
+        /// </summary>
+        public static ToolTipUI New()
+        {
+            return JVMBridgeBase.New<ToolTipUI>();
+        }
 
         #endregion
 

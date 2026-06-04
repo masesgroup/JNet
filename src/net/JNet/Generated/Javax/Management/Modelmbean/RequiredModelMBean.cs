@@ -74,6 +74,13 @@ namespace Javax.Management.Modelmbean
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for RequiredModelMBean()
+        /// </summary>
+        public static RequiredModelMBean New()
+        {
+            return JVMBridgeBase.New<RequiredModelMBean>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/RequiredModelMBean.html#javax.management.modelmbean.RequiredModelMBean(javax.management.modelmbean.ModelMBeanInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Modelmbean.ModelMBeanInfo"/></param>
@@ -82,6 +89,13 @@ namespace Javax.Management.Modelmbean
         public RequiredModelMBean(Javax.Management.Modelmbean.ModelMBeanInfo arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for RequiredModelMBean(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
+        /// </summary>
+        public static RequiredModelMBean New(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
+        {
+            return JVMBridgeBase.New<RequiredModelMBean>(arg0);
         }
 
         #endregion

@@ -71,12 +71,26 @@ namespace Javax.Imageio.Metadata
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for IIOMetadataNode()
+        /// </summary>
+        public static IIOMetadataNode New()
+        {
+            return JVMBridgeBase.New<IIOMetadataNode>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/metadata/IIOMetadataNode.html#javax.imageio.metadata.IIOMetadataNode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public IIOMetadataNode(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for IIOMetadataNode(Java.Lang.String arg0)
+        /// </summary>
+        public static IIOMetadataNode New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<IIOMetadataNode>(arg0);
         }
 
         #endregion

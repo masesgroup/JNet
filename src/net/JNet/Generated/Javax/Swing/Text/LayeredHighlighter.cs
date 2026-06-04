@@ -104,6 +104,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for LayeredHighlighter()
+        /// </summary>
+        public static LayeredHighlighter New()
+        {
+            return JVMBridgeBase.New<LayeredHighlighter>();
+        }
 
         #endregion
 
@@ -147,6 +154,13 @@ namespace Javax.Swing.Text
             public LayerPainter() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for LayerPainter()
+            /// </summary>
+            public static LayerPainter New()
+            {
+                return JVMBridgeBase.New<LayerPainter>();
             }
 
             #endregion

@@ -75,6 +75,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for WindowEvent(Java.Awt.Window arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static WindowEvent New(Java.Awt.Window arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<WindowEvent>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/WindowEvent.html#java.awt.event.WindowEvent(java.awt.Window,int,java.awt.Window,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
@@ -87,6 +94,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for WindowEvent(Java.Awt.Window arg0, int arg1, Java.Awt.Window arg2, int arg3, int arg4)
+        /// </summary>
+        public static WindowEvent New(Java.Awt.Window arg0, int arg1, Java.Awt.Window arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<WindowEvent>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/WindowEvent.html#java.awt.event.WindowEvent(java.awt.Window,int,java.awt.Window)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
@@ -97,6 +111,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for WindowEvent(Java.Awt.Window arg0, int arg1, Java.Awt.Window arg2)
+        /// </summary>
+        public static WindowEvent New(Java.Awt.Window arg0, int arg1, Java.Awt.Window arg2)
+        {
+            return JVMBridgeBase.New<WindowEvent>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/WindowEvent.html#java.awt.event.WindowEvent(java.awt.Window,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
@@ -104,6 +125,13 @@ namespace Java.Awt.EventNs
         public WindowEvent(Java.Awt.Window arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for WindowEvent(Java.Awt.Window arg0, int arg1)
+        /// </summary>
+        public static WindowEvent New(Java.Awt.Window arg0, int arg1)
+        {
+            return JVMBridgeBase.New<WindowEvent>(arg0, arg1);
         }
 
         #endregion

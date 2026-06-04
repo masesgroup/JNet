@@ -71,12 +71,26 @@ namespace Java.Io
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for PipedReader()
+        /// </summary>
+        public static PipedReader New()
+        {
+            return JVMBridgeBase.New<PipedReader>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PipedReader.html#java.io.PipedReader(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public PipedReader(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PipedReader(int arg0)
+        /// </summary>
+        public static PipedReader New(int arg0)
+        {
+            return JVMBridgeBase.New<PipedReader>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PipedReader.html#java.io.PipedReader(java.io.PipedWriter,int)"/>
@@ -89,6 +103,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PipedReader(Java.Io.PipedWriter arg0, int arg1)
+        /// </summary>
+        public static PipedReader New(Java.Io.PipedWriter arg0, int arg1)
+        {
+            return JVMBridgeBase.New<PipedReader>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PipedReader.html#java.io.PipedReader(java.io.PipedWriter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PipedWriter"/></param>
@@ -96,6 +117,13 @@ namespace Java.Io
         public PipedReader(Java.Io.PipedWriter arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PipedReader(Java.Io.PipedWriter arg0)
+        /// </summary>
+        public static PipedReader New(Java.Io.PipedWriter arg0)
+        {
+            return JVMBridgeBase.New<PipedReader>(arg0);
         }
 
         #endregion

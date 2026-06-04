@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiButtonUI()
+        /// </summary>
+        public static MultiButtonUI New()
+        {
+            return JVMBridgeBase.New<MultiButtonUI>();
+        }
 
         #endregion
 

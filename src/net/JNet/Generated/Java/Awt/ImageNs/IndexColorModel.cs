@@ -77,6 +77,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for IndexColorModel(int arg0, int arg1, byte[] arg2, byte[] arg3, byte[] arg4, byte[] arg5)
+        /// </summary>
+        public static IndexColorModel New(int arg0, int arg1, byte[] arg2, byte[] arg3, byte[] arg4, byte[] arg5)
+        {
+            return JVMBridgeBase.New<IndexColorModel>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/IndexColorModel.html#java.awt.image.IndexColorModel(int,int,byte[],byte[],byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -90,6 +97,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for IndexColorModel(int arg0, int arg1, byte[] arg2, byte[] arg3, byte[] arg4, int arg5)
+        /// </summary>
+        public static IndexColorModel New(int arg0, int arg1, byte[] arg2, byte[] arg3, byte[] arg4, int arg5)
+        {
+            return JVMBridgeBase.New<IndexColorModel>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/IndexColorModel.html#java.awt.image.IndexColorModel(int,int,byte[],byte[],byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -100,6 +114,13 @@ namespace Java.Awt.ImageNs
         public IndexColorModel(int arg0, int arg1, byte[] arg2, byte[] arg3, byte[] arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for IndexColorModel(int arg0, int arg1, byte[] arg2, byte[] arg3, byte[] arg4)
+        /// </summary>
+        public static IndexColorModel New(int arg0, int arg1, byte[] arg2, byte[] arg3, byte[] arg4)
+        {
+            return JVMBridgeBase.New<IndexColorModel>(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/IndexColorModel.html#java.awt.image.IndexColorModel(int,int,byte[],int,boolean,int)"/>
@@ -115,6 +136,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for IndexColorModel(int arg0, int arg1, byte[] arg2, int arg3, bool arg4, int arg5)
+        /// </summary>
+        public static IndexColorModel New(int arg0, int arg1, byte[] arg2, int arg3, bool arg4, int arg5)
+        {
+            return JVMBridgeBase.New<IndexColorModel>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/IndexColorModel.html#java.awt.image.IndexColorModel(int,int,byte[],int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -125,6 +153,13 @@ namespace Java.Awt.ImageNs
         public IndexColorModel(int arg0, int arg1, byte[] arg2, int arg3, bool arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for IndexColorModel(int arg0, int arg1, byte[] arg2, int arg3, bool arg4)
+        /// </summary>
+        public static IndexColorModel New(int arg0, int arg1, byte[] arg2, int arg3, bool arg4)
+        {
+            return JVMBridgeBase.New<IndexColorModel>(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/IndexColorModel.html#java.awt.image.IndexColorModel(int,int,int[],int,boolean,int,int)"/>
@@ -141,6 +176,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for IndexColorModel(int arg0, int arg1, int[] arg2, int arg3, bool arg4, int arg5, int arg6)
+        /// </summary>
+        public static IndexColorModel New(int arg0, int arg1, int[] arg2, int arg3, bool arg4, int arg5, int arg6)
+        {
+            return JVMBridgeBase.New<IndexColorModel>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/IndexColorModel.html#java.awt.image.IndexColorModel(int,int,int[],int,int,java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -152,6 +194,13 @@ namespace Java.Awt.ImageNs
         public IndexColorModel(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Math.BigInteger arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for IndexColorModel(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Math.BigInteger arg5)
+        /// </summary>
+        public static IndexColorModel New(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Math.BigInteger arg5)
+        {
+            return JVMBridgeBase.New<IndexColorModel>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

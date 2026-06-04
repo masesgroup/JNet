@@ -307,6 +307,13 @@ namespace Java.Util.Concurrent.Locks
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for ConditionObject(Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer arg0)
+            /// </summary>
+            public static ConditionObject New(Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer arg0)
+            {
+                return JVMBridgeBase.New<ConditionObject>(arg0);
+            }
 
             #endregion
 

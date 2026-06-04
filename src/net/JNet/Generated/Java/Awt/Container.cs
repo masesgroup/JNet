@@ -70,6 +70,13 @@ namespace Java.Awt
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Container()
+        /// </summary>
+        public static Container New()
+        {
+            return JVMBridgeBase.New<Container>();
+        }
 
         #endregion
 

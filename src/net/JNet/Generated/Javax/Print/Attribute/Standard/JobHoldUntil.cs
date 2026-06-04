@@ -71,6 +71,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for JobHoldUntil(Java.Util.Date arg0)
+        /// </summary>
+        public static JobHoldUntil New(Java.Util.Date arg0)
+        {
+            return JVMBridgeBase.New<JobHoldUntil>(arg0);
+        }
 
         #endregion
 

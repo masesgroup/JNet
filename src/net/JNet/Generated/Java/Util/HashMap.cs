@@ -107,6 +107,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for HashMap()
+        /// </summary>
+        public static HashMap New()
+        {
+            return JVMBridgeBase.New<HashMap>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#java.util.HashMap(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -114,6 +121,13 @@ namespace Java.Util
         public HashMap(int arg0, float arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for HashMap(int arg0, float arg1)
+        /// </summary>
+        public static HashMap New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<HashMap>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#java.util.HashMap(int)"/>
@@ -124,12 +138,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for HashMap(int arg0)
+        /// </summary>
+        public static HashMap New(int arg0)
+        {
+            return JVMBridgeBase.New<HashMap>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#java.util.HashMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public HashMap(Java.Util.Map arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for HashMap(Java.Util.Map arg0)
+        /// </summary>
+        public static HashMap New(Java.Util.Map arg0)
+        {
+            return JVMBridgeBase.New<HashMap>(arg0);
         }
 
         #endregion
@@ -178,6 +206,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for HashMap()
+        /// </summary>
+        public static HashMap<K, V> New()
+        {
+            return JVMBridgeBase.New<HashMap<K, V>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#java.util.HashMap(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -185,6 +220,13 @@ namespace Java.Util
         public HashMap(int arg0, float arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for HashMap(int arg0, float arg1)
+        /// </summary>
+        public static HashMap<K, V> New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<HashMap<K, V>>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#java.util.HashMap(int)"/>
@@ -195,12 +237,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for HashMap(int arg0)
+        /// </summary>
+        public static HashMap<K, V> New(int arg0)
+        {
+            return JVMBridgeBase.New<HashMap<K, V>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html#java.util.HashMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public HashMap(Java.Util.Map<K, V> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for HashMap(Java.Util.Map<K, V> arg0)
+        /// </summary>
+        public static HashMap<K, V> New(Java.Util.Map<K, V> arg0)
+        {
+            return JVMBridgeBase.New<HashMap<K, V>>(arg0);
         }
 
         #endregion

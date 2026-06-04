@@ -71,6 +71,13 @@ namespace Java.Awt.Geom
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AffineTransform()
+        /// </summary>
+        public static AffineTransform New()
+        {
+            return JVMBridgeBase.New<AffineTransform>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/AffineTransform.html#java.awt.geom.AffineTransform(double,double,double,double,double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
@@ -84,12 +91,26 @@ namespace Java.Awt.Geom
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for AffineTransform(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
+        /// </summary>
+        public static AffineTransform New(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
+        {
+            return JVMBridgeBase.New<AffineTransform>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/AffineTransform.html#java.awt.geom.AffineTransform(double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         public AffineTransform(double[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AffineTransform(double[] arg0)
+        /// </summary>
+        public static AffineTransform New(double[] arg0)
+        {
+            return JVMBridgeBase.New<AffineTransform>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/AffineTransform.html#java.awt.geom.AffineTransform(float,float,float,float,float,float)"/>
@@ -105,6 +126,13 @@ namespace Java.Awt.Geom
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for AffineTransform(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
+        /// </summary>
+        public static AffineTransform New(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
+        {
+            return JVMBridgeBase.New<AffineTransform>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/AffineTransform.html#java.awt.geom.AffineTransform(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -113,12 +141,26 @@ namespace Java.Awt.Geom
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for AffineTransform(float[] arg0)
+        /// </summary>
+        public static AffineTransform New(float[] arg0)
+        {
+            return JVMBridgeBase.New<AffineTransform>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/AffineTransform.html#java.awt.geom.AffineTransform(java.awt.geom.AffineTransform)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public AffineTransform(Java.Awt.Geom.AffineTransform arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AffineTransform(Java.Awt.Geom.AffineTransform arg0)
+        /// </summary>
+        public static AffineTransform New(Java.Awt.Geom.AffineTransform arg0)
+        {
+            return JVMBridgeBase.New<AffineTransform>(arg0);
         }
 
         #endregion

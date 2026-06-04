@@ -71,6 +71,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for FlowLayout()
+        /// </summary>
+        public static FlowLayout New()
+        {
+            return JVMBridgeBase.New<FlowLayout>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/FlowLayout.html#java.awt.FlowLayout(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -81,12 +88,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for FlowLayout(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static FlowLayout New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<FlowLayout>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/FlowLayout.html#java.awt.FlowLayout(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public FlowLayout(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FlowLayout(int arg0)
+        /// </summary>
+        public static FlowLayout New(int arg0)
+        {
+            return JVMBridgeBase.New<FlowLayout>(arg0);
         }
 
         #endregion

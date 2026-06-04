@@ -71,12 +71,26 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SplittableRandom()
+        /// </summary>
+        public static SplittableRandom New()
+        {
+            return JVMBridgeBase.New<SplittableRandom>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/SplittableRandom.html#java.util.SplittableRandom(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public SplittableRandom(long arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SplittableRandom(long arg0)
+        /// </summary>
+        public static SplittableRandom New(long arg0)
+        {
+            return JVMBridgeBase.New<SplittableRandom>(arg0);
         }
 
         #endregion

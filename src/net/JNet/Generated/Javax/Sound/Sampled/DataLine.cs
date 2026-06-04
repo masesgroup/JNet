@@ -299,6 +299,13 @@ namespace Javax.Sound.Sampled
                 InvokeInitializer(arg0, arg1, arg2);
             }
             /// <summary>
+            /// HPA initializer for Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2)
+            /// </summary>
+            public static Info New(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2)
+            {
+                return JVMBridgeBase.New<Info>(arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/DataLine.Info.html#javax.sound.sampled.DataLine$Info(java.lang.Class,javax.sound.sampled.AudioFormat)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -306,6 +313,13 @@ namespace Javax.Sound.Sampled
             public Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1)
+            /// </summary>
+            public static Info New(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1)
+            {
+                return JVMBridgeBase.New<Info>(arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/DataLine.Info.html#javax.sound.sampled.DataLine$Info(java.lang.Class,javax.sound.sampled.AudioFormat[],int,int)"/>
@@ -317,6 +331,13 @@ namespace Javax.Sound.Sampled
             public Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat[] arg1, int arg2, int arg3) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// HPA initializer for Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat[] arg1, int arg2, int arg3)
+            /// </summary>
+            public static Info New(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat[] arg1, int arg2, int arg3)
+            {
+                return JVMBridgeBase.New<Info>(arg0, arg1, arg2, arg3);
             }
 
             #endregion

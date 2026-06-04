@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalRootPaneUI()
+        /// </summary>
+        public static MetalRootPaneUI New()
+        {
+            return JVMBridgeBase.New<MetalRootPaneUI>();
+        }
 
         #endregion
 

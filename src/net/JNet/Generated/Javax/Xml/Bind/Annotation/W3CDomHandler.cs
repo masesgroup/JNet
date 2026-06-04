@@ -71,12 +71,26 @@ namespace Javax.Xml.Bind.Annotation
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for W3CDomHandler()
+        /// </summary>
+        public static W3CDomHandler New()
+        {
+            return JVMBridgeBase.New<W3CDomHandler>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/W3CDomHandler.html#javax.xml.bind.annotation.W3CDomHandler(javax.xml.parsers.DocumentBuilder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Parsers.DocumentBuilder"/></param>
         public W3CDomHandler(Javax.Xml.Parsers.DocumentBuilder arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for W3CDomHandler(Javax.Xml.Parsers.DocumentBuilder arg0)
+        /// </summary>
+        public static W3CDomHandler New(Javax.Xml.Parsers.DocumentBuilder arg0)
+        {
+            return JVMBridgeBase.New<W3CDomHandler>(arg0);
         }
 
         #endregion

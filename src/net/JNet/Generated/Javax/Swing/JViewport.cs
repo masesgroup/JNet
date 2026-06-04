@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for JViewport()
+        /// </summary>
+        public static JViewport New()
+        {
+            return JVMBridgeBase.New<JViewport>();
+        }
 
         #endregion
 

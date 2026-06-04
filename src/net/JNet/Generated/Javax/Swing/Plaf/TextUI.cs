@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for TextUI()
+        /// </summary>
+        public static TextUI New()
+        {
+            return JVMBridgeBase.New<TextUI>();
+        }
 
         #endregion
 

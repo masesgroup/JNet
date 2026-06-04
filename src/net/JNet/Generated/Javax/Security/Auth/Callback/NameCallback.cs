@@ -73,12 +73,26 @@ namespace Javax.Security.Auth.Callback
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for NameCallback(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static NameCallback New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<NameCallback>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/callback/NameCallback.html#javax.security.auth.callback.NameCallback(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public NameCallback(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for NameCallback(Java.Lang.String arg0)
+        /// </summary>
+        public static NameCallback New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<NameCallback>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for FileChooserUI()
+        /// </summary>
+        public static FileChooserUI New()
+        {
+            return JVMBridgeBase.New<FileChooserUI>();
+        }
 
         #endregion
 

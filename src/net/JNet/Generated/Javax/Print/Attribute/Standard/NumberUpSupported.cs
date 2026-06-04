@@ -73,6 +73,13 @@ namespace Javax.Print.Attribute.Standard
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for NumberUpSupported(int arg0, int arg1)
+        /// </summary>
+        public static NumberUpSupported New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<NumberUpSupported>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/NumberUpSupported.html#javax.print.attribute.standard.NumberUpSupported(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -81,12 +88,26 @@ namespace Javax.Print.Attribute.Standard
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for NumberUpSupported(int arg0)
+        /// </summary>
+        public static NumberUpSupported New(int arg0)
+        {
+            return JVMBridgeBase.New<NumberUpSupported>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/NumberUpSupported.html#javax.print.attribute.standard.NumberUpSupported(int[][])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public NumberUpSupported(int[][] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for NumberUpSupported(int[][] arg0)
+        /// </summary>
+        public static NumberUpSupported New(int[][] arg0)
+        {
+            return JVMBridgeBase.New<NumberUpSupported>(arg0);
         }
 
         #endregion

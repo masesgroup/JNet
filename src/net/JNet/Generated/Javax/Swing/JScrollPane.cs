@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JScrollPane()
+        /// </summary>
+        public static JScrollPane New()
+        {
+            return JVMBridgeBase.New<JScrollPane>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JScrollPane.html#javax.swing.JScrollPane(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Swing
         public JScrollPane(int arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JScrollPane(int arg0, int arg1)
+        /// </summary>
+        public static JScrollPane New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<JScrollPane>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JScrollPane.html#javax.swing.JScrollPane(java.awt.Component,int,int)"/>
@@ -90,12 +104,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for JScrollPane(Java.Awt.Component arg0, int arg1, int arg2)
+        /// </summary>
+        public static JScrollPane New(Java.Awt.Component arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<JScrollPane>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JScrollPane.html#javax.swing.JScrollPane(java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public JScrollPane(Java.Awt.Component arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JScrollPane(Java.Awt.Component arg0)
+        /// </summary>
+        public static JScrollPane New(Java.Awt.Component arg0)
+        {
+            return JVMBridgeBase.New<JScrollPane>(arg0);
         }
 
         #endregion

@@ -74,6 +74,13 @@ namespace Javax.Management
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// HPA initializer for MBeanServerNotification(Java.Lang.String arg0, object arg1, long arg2, Javax.Management.ObjectName arg3)
+        /// </summary>
+        public static MBeanServerNotification New(Java.Lang.String arg0, object arg1, long arg2, Javax.Management.ObjectName arg3)
+        {
+            return JVMBridgeBase.New<MBeanServerNotification>(arg0, arg1, arg2, arg3);
+        }
 
         #endregion
 

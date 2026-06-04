@@ -73,12 +73,26 @@ namespace Java.Security
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for AccessControlContext(Java.Security.AccessControlContext arg0, Java.Security.DomainCombiner arg1)
+        /// </summary>
+        public static AccessControlContext New(Java.Security.AccessControlContext arg0, Java.Security.DomainCombiner arg1)
+        {
+            return JVMBridgeBase.New<AccessControlContext>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/AccessControlContext.html#java.security.AccessControlContext(java.security.ProtectionDomain[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
         public AccessControlContext(Java.Security.ProtectionDomain[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AccessControlContext(Java.Security.ProtectionDomain[] arg0)
+        /// </summary>
+        public static AccessControlContext New(Java.Security.ProtectionDomain[] arg0)
+        {
+            return JVMBridgeBase.New<AccessControlContext>(arg0);
         }
 
         #endregion

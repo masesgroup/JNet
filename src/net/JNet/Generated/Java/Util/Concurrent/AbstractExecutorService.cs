@@ -70,6 +70,13 @@ namespace Java.Util.Concurrent
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AbstractExecutorService()
+        /// </summary>
+        public static AbstractExecutorService New()
+        {
+            return JVMBridgeBase.New<AbstractExecutorService>();
+        }
 
         #endregion
 

@@ -73,12 +73,26 @@ namespace Java.Io
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for FileReader(Java.Io.File arg0)
+        /// </summary>
+        public static FileReader New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<FileReader>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/FileReader.html#java.io.FileReader(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public FileReader(Java.Io.FileDescriptor arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FileReader(Java.Io.FileDescriptor arg0)
+        /// </summary>
+        public static FileReader New(Java.Io.FileDescriptor arg0)
+        {
+            return JVMBridgeBase.New<FileReader>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/FileReader.html#java.io.FileReader(java.lang.String)"/>
@@ -88,6 +102,13 @@ namespace Java.Io
         public FileReader(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FileReader(Java.Lang.String arg0)
+        /// </summary>
+        public static FileReader New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<FileReader>(arg0);
         }
 
         #endregion

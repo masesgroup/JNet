@@ -70,6 +70,13 @@ namespace Java.Net
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ProxySelector()
+        /// </summary>
+        public static ProxySelector New()
+        {
+            return JVMBridgeBase.New<ProxySelector>();
+        }
 
         #endregion
 

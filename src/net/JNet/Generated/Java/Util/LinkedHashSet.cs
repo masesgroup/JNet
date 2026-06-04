@@ -106,6 +106,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for LinkedHashSet()
+        /// </summary>
+        public static LinkedHashSet New()
+        {
+            return JVMBridgeBase.New<LinkedHashSet>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html#java.util.LinkedHashSet(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -113,6 +120,13 @@ namespace Java.Util
         public LinkedHashSet(int arg0, float arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedHashSet(int arg0, float arg1)
+        /// </summary>
+        public static LinkedHashSet New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<LinkedHashSet>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html#java.util.LinkedHashSet(int)"/>
@@ -123,12 +137,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for LinkedHashSet(int arg0)
+        /// </summary>
+        public static LinkedHashSet New(int arg0)
+        {
+            return JVMBridgeBase.New<LinkedHashSet>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html#java.util.LinkedHashSet(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public LinkedHashSet(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedHashSet(Java.Util.Collection arg0)
+        /// </summary>
+        public static LinkedHashSet New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<LinkedHashSet>(arg0);
         }
 
         #endregion
@@ -169,6 +197,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for LinkedHashSet()
+        /// </summary>
+        public static LinkedHashSet<E> New()
+        {
+            return JVMBridgeBase.New<LinkedHashSet<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html#java.util.LinkedHashSet(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -176,6 +211,13 @@ namespace Java.Util
         public LinkedHashSet(int arg0, float arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedHashSet(int arg0, float arg1)
+        /// </summary>
+        public static LinkedHashSet<E> New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<LinkedHashSet<E>>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html#java.util.LinkedHashSet(int)"/>
@@ -186,12 +228,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for LinkedHashSet(int arg0)
+        /// </summary>
+        public static LinkedHashSet<E> New(int arg0)
+        {
+            return JVMBridgeBase.New<LinkedHashSet<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html#java.util.LinkedHashSet(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public LinkedHashSet(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedHashSet(Java.Util.Collection<E> arg0)
+        /// </summary>
+        public static LinkedHashSet<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<LinkedHashSet<E>>(arg0);
         }
 
         #endregion

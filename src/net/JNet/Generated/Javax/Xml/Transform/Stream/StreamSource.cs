@@ -71,12 +71,26 @@ namespace Javax.Xml.Transform.Stream
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for StreamSource()
+        /// </summary>
+        public static StreamSource New()
+        {
+            return JVMBridgeBase.New<StreamSource>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stream/StreamSource.html#javax.xml.transform.stream.StreamSource(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         public StreamSource(Java.Io.File arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StreamSource(Java.Io.File arg0)
+        /// </summary>
+        public static StreamSource New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<StreamSource>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stream/StreamSource.html#javax.xml.transform.stream.StreamSource(java.io.InputStream,java.lang.String)"/>
@@ -88,12 +102,26 @@ namespace Javax.Xml.Transform.Stream
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for StreamSource(Java.Io.InputStream arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static StreamSource New(Java.Io.InputStream arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<StreamSource>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stream/StreamSource.html#javax.xml.transform.stream.StreamSource(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public StreamSource(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StreamSource(Java.Io.InputStream arg0)
+        /// </summary>
+        public static StreamSource New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<StreamSource>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stream/StreamSource.html#javax.xml.transform.stream.StreamSource(java.io.Reader,java.lang.String)"/>
@@ -105,6 +133,13 @@ namespace Javax.Xml.Transform.Stream
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for StreamSource(Java.Io.Reader arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static StreamSource New(Java.Io.Reader arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<StreamSource>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stream/StreamSource.html#javax.xml.transform.stream.StreamSource(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
@@ -113,12 +148,26 @@ namespace Javax.Xml.Transform.Stream
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for StreamSource(Java.Io.Reader arg0)
+        /// </summary>
+        public static StreamSource New(Java.Io.Reader arg0)
+        {
+            return JVMBridgeBase.New<StreamSource>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stream/StreamSource.html#javax.xml.transform.stream.StreamSource(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public StreamSource(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StreamSource(Java.Lang.String arg0)
+        /// </summary>
+        public static StreamSource New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<StreamSource>(arg0);
         }
 
         #endregion

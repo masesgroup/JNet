@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthSpinnerUI()
+        /// </summary>
+        public static SynthSpinnerUI New()
+        {
+            return JVMBridgeBase.New<SynthSpinnerUI>();
+        }
 
         #endregion
 

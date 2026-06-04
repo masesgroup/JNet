@@ -71,12 +71,26 @@ namespace Javax.Imageio.Plugins.Bmp
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for BMPImageWriteParam()
+        /// </summary>
+        public static BMPImageWriteParam New()
+        {
+            return JVMBridgeBase.New<BMPImageWriteParam>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/plugins/bmp/BMPImageWriteParam.html#javax.imageio.plugins.bmp.BMPImageWriteParam(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public BMPImageWriteParam(Java.Util.Locale arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BMPImageWriteParam(Java.Util.Locale arg0)
+        /// </summary>
+        public static BMPImageWriteParam New(Java.Util.Locale arg0)
+        {
+            return JVMBridgeBase.New<BMPImageWriteParam>(arg0);
         }
 
         #endregion

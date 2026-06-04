@@ -72,12 +72,26 @@ namespace Java.Util.Concurrent.Atomic
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for AtomicLongArray(int arg0)
+        /// </summary>
+        public static AtomicLongArray New(int arg0)
+        {
+            return JVMBridgeBase.New<AtomicLongArray>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicLongArray.html#java.util.concurrent.atomic.AtomicLongArray(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public AtomicLongArray(long[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AtomicLongArray(long[] arg0)
+        /// </summary>
+        public static AtomicLongArray New(long[] arg0)
+        {
+            return JVMBridgeBase.New<AtomicLongArray>(arg0);
         }
 
         #endregion

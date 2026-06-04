@@ -73,6 +73,13 @@ namespace Javax.Naming.Directory
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for InitialDirContext()
+        /// </summary>
+        public static InitialDirContext New()
+        {
+            return JVMBridgeBase.New<InitialDirContext>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/directory/InitialDirContext.html#javax.naming.directory.InitialDirContext(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Naming.Directory
         public InitialDirContext(Java.Util.Hashtable<object, object> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for InitialDirContext(Java.Util.Hashtable<object, object> arg0)
+        /// </summary>
+        public static InitialDirContext New(Java.Util.Hashtable<object, object> arg0)
+        {
+            return JVMBridgeBase.New<InitialDirContext>(arg0);
         }
 
         #endregion

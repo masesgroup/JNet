@@ -75,6 +75,13 @@ namespace Java.Beans
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
+        /// <summary>
+        /// HPA initializer for IndexedPropertyChangeEvent(object arg0, Java.Lang.String arg1, object arg2, object arg3, int arg4)
+        /// </summary>
+        public static IndexedPropertyChangeEvent New(object arg0, Java.Lang.String arg1, object arg2, object arg3, int arg4)
+        {
+            return JVMBridgeBase.New<IndexedPropertyChangeEvent>(arg0, arg1, arg2, arg3, arg4);
+        }
 
         #endregion
 

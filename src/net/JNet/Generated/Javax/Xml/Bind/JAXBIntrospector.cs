@@ -70,6 +70,13 @@ namespace Javax.Xml.Bind
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for JAXBIntrospector()
+        /// </summary>
+        public static JAXBIntrospector New()
+        {
+            return JVMBridgeBase.New<JAXBIntrospector>();
+        }
 
         #endregion
 

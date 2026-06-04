@@ -70,6 +70,13 @@ namespace Javax.Net.Ssl
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SSLSocketFactory()
+        /// </summary>
+        public static SSLSocketFactory New()
+        {
+            return JVMBridgeBase.New<SSLSocketFactory>();
+        }
 
         #endregion
 

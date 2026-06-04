@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for PopupMenuUI()
+        /// </summary>
+        public static PopupMenuUI New()
+        {
+            return JVMBridgeBase.New<PopupMenuUI>();
+        }
 
         #endregion
 

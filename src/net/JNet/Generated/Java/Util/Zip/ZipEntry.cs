@@ -72,12 +72,26 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ZipEntry(Java.Lang.String arg0)
+        /// </summary>
+        public static ZipEntry New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<ZipEntry>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipEntry.html#java.util.zip.ZipEntry(java.util.zip.ZipEntry)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Zip.ZipEntry"/></param>
         public ZipEntry(Java.Util.Zip.ZipEntry arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ZipEntry(Java.Util.Zip.ZipEntry arg0)
+        /// </summary>
+        public static ZipEntry New(Java.Util.Zip.ZipEntry arg0)
+        {
+            return JVMBridgeBase.New<ZipEntry>(arg0);
         }
 
         #endregion

@@ -138,6 +138,13 @@ namespace Javax.Swing.Text.Html
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for StyleSheet()
+        /// </summary>
+        public static StyleSheet New()
+        {
+            return JVMBridgeBase.New<StyleSheet>();
+        }
 
         #endregion
 

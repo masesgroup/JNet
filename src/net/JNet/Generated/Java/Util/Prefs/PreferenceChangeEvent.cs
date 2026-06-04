@@ -73,6 +73,13 @@ namespace Java.Util.Prefs
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for PreferenceChangeEvent(Java.Util.Prefs.Preferences arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static PreferenceChangeEvent New(Java.Util.Prefs.Preferences arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<PreferenceChangeEvent>(arg0, arg1, arg2);
+        }
 
         #endregion
 

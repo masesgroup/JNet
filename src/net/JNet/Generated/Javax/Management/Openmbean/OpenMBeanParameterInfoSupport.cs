@@ -78,6 +78,13 @@ namespace Javax.Management.Openmbean
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, Java.Lang.Comparable arg4, Java.Lang.Comparable arg5)
+        /// </summary>
+        public static OpenMBeanParameterInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, Java.Lang.Comparable arg4, Java.Lang.Comparable arg5)
+        {
+            return JVMBridgeBase.New<OpenMBeanParameterInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,java.lang.Object,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -89,6 +96,13 @@ namespace Javax.Management.Openmbean
         public OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, object[] arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, object[] arg4)
+        /// </summary>
+        public static OpenMBeanParameterInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, object[] arg4)
+        {
+            return JVMBridgeBase.New<OpenMBeanParameterInfoSupport>(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,java.lang.Object)"/>
@@ -103,6 +117,13 @@ namespace Javax.Management.Openmbean
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3)
+        /// </summary>
+        public static OpenMBeanParameterInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3)
+        {
+            return JVMBridgeBase.New<OpenMBeanParameterInfoSupport>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,javax.management.Descriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -114,6 +135,13 @@ namespace Javax.Management.Openmbean
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, Javax.Management.Descriptor arg3)
+        /// </summary>
+        public static OpenMBeanParameterInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, Javax.Management.Descriptor arg3)
+        {
+            return JVMBridgeBase.New<OpenMBeanParameterInfoSupport>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -122,6 +150,13 @@ namespace Javax.Management.Openmbean
         public OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2)
+        /// </summary>
+        public static OpenMBeanParameterInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2)
+        {
+            return JVMBridgeBase.New<OpenMBeanParameterInfoSupport>(arg0, arg1, arg2);
         }
 
         #endregion

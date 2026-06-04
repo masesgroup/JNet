@@ -245,6 +245,13 @@ namespace Javax.Print.Attribute.Standard
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for MediaSize(float arg0, float arg1, int arg2, Javax.Print.Attribute.Standard.MediaSizeName arg3)
+        /// </summary>
+        public static MediaSize New(float arg0, float arg1, int arg2, Javax.Print.Attribute.Standard.MediaSizeName arg3)
+        {
+            return JVMBridgeBase.New<MediaSize>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/MediaSize.html#javax.print.attribute.standard.MediaSize(float,float,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -253,6 +260,13 @@ namespace Javax.Print.Attribute.Standard
         public MediaSize(float arg0, float arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for MediaSize(float arg0, float arg1, int arg2)
+        /// </summary>
+        public static MediaSize New(float arg0, float arg1, int arg2)
+        {
+            return JVMBridgeBase.New<MediaSize>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/MediaSize.html#javax.print.attribute.standard.MediaSize(int,int,int,javax.print.attribute.standard.MediaSizeName)"/>
@@ -266,6 +280,13 @@ namespace Javax.Print.Attribute.Standard
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for MediaSize(int arg0, int arg1, int arg2, Javax.Print.Attribute.Standard.MediaSizeName arg3)
+        /// </summary>
+        public static MediaSize New(int arg0, int arg1, int arg2, Javax.Print.Attribute.Standard.MediaSizeName arg3)
+        {
+            return JVMBridgeBase.New<MediaSize>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/MediaSize.html#javax.print.attribute.standard.MediaSize(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -274,6 +295,13 @@ namespace Javax.Print.Attribute.Standard
         public MediaSize(int arg0, int arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for MediaSize(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static MediaSize New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<MediaSize>(arg0, arg1, arg2);
         }
 
         #endregion

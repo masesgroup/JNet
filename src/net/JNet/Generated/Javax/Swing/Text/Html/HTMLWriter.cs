@@ -75,6 +75,13 @@ namespace Javax.Swing.Text.Html
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for HTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.Html.HTMLDocument arg1, int arg2, int arg3)
+        /// </summary>
+        public static HTMLWriter New(Java.Io.Writer arg0, Javax.Swing.Text.Html.HTMLDocument arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<HTMLWriter>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLWriter.html#javax.swing.text.html.HTMLWriter(java.io.Writer,javax.swing.text.html.HTMLDocument)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
@@ -82,6 +89,13 @@ namespace Javax.Swing.Text.Html
         public HTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.Html.HTMLDocument arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for HTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.Html.HTMLDocument arg1)
+        /// </summary>
+        public static HTMLWriter New(Java.Io.Writer arg0, Javax.Swing.Text.Html.HTMLDocument arg1)
+        {
+            return JVMBridgeBase.New<HTMLWriter>(arg0, arg1);
         }
 
         #endregion

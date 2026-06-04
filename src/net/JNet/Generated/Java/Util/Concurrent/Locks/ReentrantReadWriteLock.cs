@@ -139,12 +139,26 @@ namespace Java.Util.Concurrent.Locks
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ReentrantReadWriteLock()
+        /// </summary>
+        public static ReentrantReadWriteLock New()
+        {
+            return JVMBridgeBase.New<ReentrantReadWriteLock>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html#java.util.concurrent.locks.ReentrantReadWriteLock(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public ReentrantReadWriteLock(bool arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ReentrantReadWriteLock(bool arg0)
+        /// </summary>
+        public static ReentrantReadWriteLock New(bool arg0)
+        {
+            return JVMBridgeBase.New<ReentrantReadWriteLock>(arg0);
         }
 
         #endregion

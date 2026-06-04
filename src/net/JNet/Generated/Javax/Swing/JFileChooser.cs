@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JFileChooser()
+        /// </summary>
+        public static JFileChooser New()
+        {
+            return JVMBridgeBase.New<JFileChooser>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFileChooser.html#javax.swing.JFileChooser(java.io.File,javax.swing.filechooser.FileSystemView)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -80,12 +87,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JFileChooser(Java.Io.File arg0, Javax.Swing.Filechooser.FileSystemView arg1)
+        /// </summary>
+        public static JFileChooser New(Java.Io.File arg0, Javax.Swing.Filechooser.FileSystemView arg1)
+        {
+            return JVMBridgeBase.New<JFileChooser>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFileChooser.html#javax.swing.JFileChooser(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         public JFileChooser(Java.Io.File arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JFileChooser(Java.Io.File arg0)
+        /// </summary>
+        public static JFileChooser New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<JFileChooser>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFileChooser.html#javax.swing.JFileChooser(java.lang.String,javax.swing.filechooser.FileSystemView)"/>
@@ -97,6 +118,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JFileChooser(Java.Lang.String arg0, Javax.Swing.Filechooser.FileSystemView arg1)
+        /// </summary>
+        public static JFileChooser New(Java.Lang.String arg0, Javax.Swing.Filechooser.FileSystemView arg1)
+        {
+            return JVMBridgeBase.New<JFileChooser>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFileChooser.html#javax.swing.JFileChooser(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -105,12 +133,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JFileChooser(Java.Lang.String arg0)
+        /// </summary>
+        public static JFileChooser New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JFileChooser>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFileChooser.html#javax.swing.JFileChooser(javax.swing.filechooser.FileSystemView)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Filechooser.FileSystemView"/></param>
         public JFileChooser(Javax.Swing.Filechooser.FileSystemView arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JFileChooser(Javax.Swing.Filechooser.FileSystemView arg0)
+        /// </summary>
+        public static JFileChooser New(Javax.Swing.Filechooser.FileSystemView arg0)
+        {
+            return JVMBridgeBase.New<JFileChooser>(arg0);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Java.Lang
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for String()
+        /// </summary>
+        public static String New()
+        {
+            return JVMBridgeBase.New<String>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(byte[],int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -81,6 +88,13 @@ namespace Java.Lang
         public String(byte[] arg0, int arg1, int arg2, int arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for String(byte[] arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static String New(byte[] arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<String>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(byte[],int,int,java.lang.String)"/>
@@ -95,6 +109,13 @@ namespace Java.Lang
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for String(byte[] arg0, int arg1, int arg2, Java.Lang.String arg3)
+        /// </summary>
+        public static String New(byte[] arg0, int arg1, int arg2, Java.Lang.String arg3)
+        {
+            return JVMBridgeBase.New<String>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(byte[],int,int,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -104,6 +125,13 @@ namespace Java.Lang
         public String(byte[] arg0, int arg1, int arg2, Java.Nio.Charset.Charset arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for String(byte[] arg0, int arg1, int arg2, Java.Nio.Charset.Charset arg3)
+        /// </summary>
+        public static String New(byte[] arg0, int arg1, int arg2, Java.Nio.Charset.Charset arg3)
+        {
+            return JVMBridgeBase.New<String>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(byte[],int,int)"/>
@@ -116,6 +144,13 @@ namespace Java.Lang
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for String(byte[] arg0, int arg1, int arg2)
+        /// </summary>
+        public static String New(byte[] arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<String>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -124,6 +159,13 @@ namespace Java.Lang
         public String(byte[] arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for String(byte[] arg0, int arg1)
+        /// </summary>
+        public static String New(byte[] arg0, int arg1)
+        {
+            return JVMBridgeBase.New<String>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(byte[],java.lang.String)"/>
@@ -136,6 +178,13 @@ namespace Java.Lang
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for String(byte[] arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static String New(byte[] arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<String>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(byte[],java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -145,12 +194,26 @@ namespace Java.Lang
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for String(byte[] arg0, Java.Nio.Charset.Charset arg1)
+        /// </summary>
+        public static String New(byte[] arg0, Java.Nio.Charset.Charset arg1)
+        {
+            return JVMBridgeBase.New<String>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public String(byte[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for String(byte[] arg0)
+        /// </summary>
+        public static String New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<String>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(char[],int,int)"/>
@@ -163,12 +226,26 @@ namespace Java.Lang
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for String(char[] arg0, int arg1, int arg2)
+        /// </summary>
+        public static String New(char[] arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<String>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         public String(char[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for String(char[] arg0)
+        /// </summary>
+        public static String New(char[] arg0)
+        {
+            return JVMBridgeBase.New<String>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(int[],int,int)"/>
@@ -181,12 +258,26 @@ namespace Java.Lang
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for String(int[] arg0, int arg1, int arg2)
+        /// </summary>
+        public static String New(int[] arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<String>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public String(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for String(Java.Lang.String arg0)
+        /// </summary>
+        public static String New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<String>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(java.lang.StringBuffer)"/>
@@ -197,12 +288,26 @@ namespace Java.Lang
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for String(Java.Lang.StringBuffer arg0)
+        /// </summary>
+        public static String New(Java.Lang.StringBuffer arg0)
+        {
+            return JVMBridgeBase.New<String>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(java.lang.StringBuilder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuilder"/></param>
         public String(Java.Lang.StringBuilder arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for String(Java.Lang.StringBuilder arg0)
+        /// </summary>
+        public static String New(Java.Lang.StringBuilder arg0)
+        {
+            return JVMBridgeBase.New<String>(arg0);
         }
 
         #endregion

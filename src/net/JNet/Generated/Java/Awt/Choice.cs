@@ -72,6 +72,13 @@ namespace Java.Awt
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Choice()
+        /// </summary>
+        public static Choice New()
+        {
+            return JVMBridgeBase.New<Choice>();
+        }
 
         #endregion
 

@@ -105,6 +105,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Formatter()
+        /// </summary>
+        public static Formatter New()
+        {
+            return JVMBridgeBase.New<Formatter>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.io.File,java.lang.String,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -115,6 +122,13 @@ namespace Java.Util
         public Formatter(Java.Io.File arg0, Java.Lang.String arg1, Java.Util.Locale arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for Formatter(Java.Io.File arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
+        /// </summary>
+        public static Formatter New(Java.Io.File arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
+        {
+            return JVMBridgeBase.New<Formatter>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.io.File,java.lang.String)"/>
@@ -128,6 +142,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Formatter(Java.Io.File arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static Formatter New(Java.Io.File arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<Formatter>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -135,6 +156,13 @@ namespace Java.Util
         public Formatter(Java.Io.File arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Formatter(Java.Io.File arg0)
+        /// </summary>
+        public static Formatter New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<Formatter>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.io.OutputStream,java.lang.String,java.util.Locale)"/>
@@ -148,6 +176,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Formatter(Java.Io.OutputStream arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
+        /// </summary>
+        public static Formatter New(Java.Io.OutputStream arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
+        {
+            return JVMBridgeBase.New<Formatter>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.io.OutputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
@@ -158,6 +193,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Formatter(Java.Io.OutputStream arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static Formatter New(Java.Io.OutputStream arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<Formatter>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
@@ -166,12 +208,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Formatter(Java.Io.OutputStream arg0)
+        /// </summary>
+        public static Formatter New(Java.Io.OutputStream arg0)
+        {
+            return JVMBridgeBase.New<Formatter>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.io.PrintStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public Formatter(Java.Io.PrintStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Formatter(Java.Io.PrintStream arg0)
+        /// </summary>
+        public static Formatter New(Java.Io.PrintStream arg0)
+        {
+            return JVMBridgeBase.New<Formatter>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.lang.Appendable,java.util.Locale)"/>
@@ -183,12 +239,26 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Formatter(Java.Lang.Appendable arg0, Java.Util.Locale arg1)
+        /// </summary>
+        public static Formatter New(Java.Lang.Appendable arg0, Java.Util.Locale arg1)
+        {
+            return JVMBridgeBase.New<Formatter>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.lang.Appendable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Appendable"/></param>
         public Formatter(Java.Lang.Appendable arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Formatter(Java.Lang.Appendable arg0)
+        /// </summary>
+        public static Formatter New(Java.Lang.Appendable arg0)
+        {
+            return JVMBridgeBase.New<Formatter>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.lang.String,java.lang.String,java.util.Locale)"/>
@@ -203,6 +273,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Formatter(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
+        /// </summary>
+        public static Formatter New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
+        {
+            return JVMBridgeBase.New<Formatter>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -214,6 +291,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Formatter(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static Formatter New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<Formatter>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -223,12 +307,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Formatter(Java.Lang.String arg0)
+        /// </summary>
+        public static Formatter New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Formatter>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#java.util.Formatter(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public Formatter(Java.Util.Locale arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Formatter(Java.Util.Locale arg0)
+        /// </summary>
+        public static Formatter New(Java.Util.Locale arg0)
+        {
+            return JVMBridgeBase.New<Formatter>(arg0);
         }
 
         #endregion

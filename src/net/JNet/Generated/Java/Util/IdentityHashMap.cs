@@ -107,6 +107,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for IdentityHashMap()
+        /// </summary>
+        public static IdentityHashMap New()
+        {
+            return JVMBridgeBase.New<IdentityHashMap>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/IdentityHashMap.html#java.util.IdentityHashMap(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -115,12 +122,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for IdentityHashMap(int arg0)
+        /// </summary>
+        public static IdentityHashMap New(int arg0)
+        {
+            return JVMBridgeBase.New<IdentityHashMap>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/IdentityHashMap.html#java.util.IdentityHashMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public IdentityHashMap(Java.Util.Map arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for IdentityHashMap(Java.Util.Map arg0)
+        /// </summary>
+        public static IdentityHashMap New(Java.Util.Map arg0)
+        {
+            return JVMBridgeBase.New<IdentityHashMap>(arg0);
         }
 
         #endregion
@@ -169,6 +190,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for IdentityHashMap()
+        /// </summary>
+        public static IdentityHashMap<K, V> New()
+        {
+            return JVMBridgeBase.New<IdentityHashMap<K, V>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/IdentityHashMap.html#java.util.IdentityHashMap(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -177,12 +205,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for IdentityHashMap(int arg0)
+        /// </summary>
+        public static IdentityHashMap<K, V> New(int arg0)
+        {
+            return JVMBridgeBase.New<IdentityHashMap<K, V>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/IdentityHashMap.html#java.util.IdentityHashMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public IdentityHashMap(Java.Util.Map<K, V> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for IdentityHashMap(Java.Util.Map<K, V> arg0)
+        /// </summary>
+        public static IdentityHashMap<K, V> New(Java.Util.Map<K, V> arg0)
+        {
+            return JVMBridgeBase.New<IdentityHashMap<K, V>>(arg0);
         }
 
         #endregion

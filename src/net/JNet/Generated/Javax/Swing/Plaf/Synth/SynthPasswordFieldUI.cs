@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthPasswordFieldUI()
+        /// </summary>
+        public static SynthPasswordFieldUI New()
+        {
+            return JVMBridgeBase.New<SynthPasswordFieldUI>();
+        }
 
         #endregion
 

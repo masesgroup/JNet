@@ -108,12 +108,26 @@ namespace Javax.Swing.Event
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for RowSorterEvent(Javax.Swing.RowSorter arg0, Javax.Swing.Event.RowSorterEvent.Type arg1, int[] arg2)
+        /// </summary>
+        public static RowSorterEvent New(Javax.Swing.RowSorter arg0, Javax.Swing.Event.RowSorterEvent.Type arg1, int[] arg2)
+        {
+            return JVMBridgeBase.New<RowSorterEvent>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/RowSorterEvent.html#javax.swing.event.RowSorterEvent(javax.swing.RowSorter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.RowSorter"/></param>
         public RowSorterEvent(Javax.Swing.RowSorter arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for RowSorterEvent(Javax.Swing.RowSorter arg0)
+        /// </summary>
+        public static RowSorterEvent New(Javax.Swing.RowSorter arg0)
+        {
+            return JVMBridgeBase.New<RowSorterEvent>(arg0);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Javax.Management.Modelmbean
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DescriptorSupport()
+        /// </summary>
+        public static DescriptorSupport New()
+        {
+            return JVMBridgeBase.New<DescriptorSupport>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/DescriptorSupport.html#javax.management.modelmbean.DescriptorSupport(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -81,12 +88,26 @@ namespace Javax.Management.Modelmbean
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for DescriptorSupport(int arg0)
+        /// </summary>
+        public static DescriptorSupport New(int arg0)
+        {
+            return JVMBridgeBase.New<DescriptorSupport>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/DescriptorSupport.html#javax.management.modelmbean.DescriptorSupport(java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public DescriptorSupport(params Java.Lang.String[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DescriptorSupport(params Java.Lang.String[] arg0)
+        /// </summary>
+        public static DescriptorSupport New(params Java.Lang.String[] arg0)
+        {
+            return JVMBridgeBase.New<DescriptorSupport>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/DescriptorSupport.html#javax.management.modelmbean.DescriptorSupport(java.lang.String)"/>
@@ -100,12 +121,26 @@ namespace Javax.Management.Modelmbean
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for DescriptorSupport(Java.Lang.String arg0)
+        /// </summary>
+        public static DescriptorSupport New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<DescriptorSupport>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/DescriptorSupport.html#javax.management.modelmbean.DescriptorSupport(javax.management.modelmbean.DescriptorSupport)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Modelmbean.DescriptorSupport"/></param>
         public DescriptorSupport(Javax.Management.Modelmbean.DescriptorSupport arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DescriptorSupport(Javax.Management.Modelmbean.DescriptorSupport arg0)
+        /// </summary>
+        public static DescriptorSupport New(Javax.Management.Modelmbean.DescriptorSupport arg0)
+        {
+            return JVMBridgeBase.New<DescriptorSupport>(arg0);
         }
 
         #endregion

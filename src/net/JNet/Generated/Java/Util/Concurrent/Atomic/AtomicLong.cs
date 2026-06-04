@@ -71,12 +71,26 @@ namespace Java.Util.Concurrent.Atomic
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AtomicLong()
+        /// </summary>
+        public static AtomicLong New()
+        {
+            return JVMBridgeBase.New<AtomicLong>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicLong.html#java.util.concurrent.atomic.AtomicLong(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public AtomicLong(long arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AtomicLong(long arg0)
+        /// </summary>
+        public static AtomicLong New(long arg0)
+        {
+            return JVMBridgeBase.New<AtomicLong>(arg0);
         }
 
         #endregion

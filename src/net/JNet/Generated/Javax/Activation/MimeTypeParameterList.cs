@@ -71,6 +71,13 @@ namespace Javax.Activation
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for MimeTypeParameterList()
+        /// </summary>
+        public static MimeTypeParameterList New()
+        {
+            return JVMBridgeBase.New<MimeTypeParameterList>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MimeTypeParameterList.html#javax.activation.MimeTypeParameterList(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Activation
         public MimeTypeParameterList(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MimeTypeParameterList(Java.Lang.String arg0)
+        /// </summary>
+        public static MimeTypeParameterList New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<MimeTypeParameterList>(arg0);
         }
 
         #endregion

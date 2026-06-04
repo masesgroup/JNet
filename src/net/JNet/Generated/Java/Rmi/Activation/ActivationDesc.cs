@@ -76,6 +76,13 @@ namespace Java.Rmi.Activation
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for ActivationDesc(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject<object> arg2, bool arg3)
+        /// </summary>
+        public static ActivationDesc New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject<object> arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<ActivationDesc>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/activation/ActivationDesc.html#java.rmi.activation.ActivationDesc(java.lang.String,java.lang.String,java.rmi.MarshalledObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -85,6 +92,13 @@ namespace Java.Rmi.Activation
         public ActivationDesc(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject<object> arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for ActivationDesc(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject<object> arg2)
+        /// </summary>
+        public static ActivationDesc New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject<object> arg2)
+        {
+            return JVMBridgeBase.New<ActivationDesc>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/activation/ActivationDesc.html#java.rmi.activation.ActivationDesc(java.rmi.activation.ActivationGroupID,java.lang.String,java.lang.String,java.rmi.MarshalledObject,boolean)"/>
@@ -99,6 +113,13 @@ namespace Java.Rmi.Activation
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for ActivationDesc(Java.Rmi.Activation.ActivationGroupID arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Rmi.MarshalledObject<object> arg3, bool arg4)
+        /// </summary>
+        public static ActivationDesc New(Java.Rmi.Activation.ActivationGroupID arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Rmi.MarshalledObject<object> arg3, bool arg4)
+        {
+            return JVMBridgeBase.New<ActivationDesc>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/activation/ActivationDesc.html#java.rmi.activation.ActivationDesc(java.rmi.activation.ActivationGroupID,java.lang.String,java.lang.String,java.rmi.MarshalledObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
@@ -108,6 +129,13 @@ namespace Java.Rmi.Activation
         public ActivationDesc(Java.Rmi.Activation.ActivationGroupID arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Rmi.MarshalledObject<object> arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for ActivationDesc(Java.Rmi.Activation.ActivationGroupID arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Rmi.MarshalledObject<object> arg3)
+        /// </summary>
+        public static ActivationDesc New(Java.Rmi.Activation.ActivationGroupID arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Rmi.MarshalledObject<object> arg3)
+        {
+            return JVMBridgeBase.New<ActivationDesc>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

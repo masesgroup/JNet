@@ -104,6 +104,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultHighlighter()
+        /// </summary>
+        public static DefaultHighlighter New()
+        {
+            return JVMBridgeBase.New<DefaultHighlighter>();
+        }
 
         #endregion
 
@@ -146,6 +153,13 @@ namespace Javax.Swing.Text
             public DefaultHighlightPainter(Java.Awt.Color arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for DefaultHighlightPainter(Java.Awt.Color arg0)
+            /// </summary>
+            public static DefaultHighlightPainter New(Java.Awt.Color arg0)
+            {
+                return JVMBridgeBase.New<DefaultHighlightPainter>(arg0);
             }
 
             #endregion

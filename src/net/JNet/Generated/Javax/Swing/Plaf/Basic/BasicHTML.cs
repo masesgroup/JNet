@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicHTML()
+        /// </summary>
+        public static BasicHTML New()
+        {
+            return JVMBridgeBase.New<BasicHTML>();
+        }
 
         #endregion
 

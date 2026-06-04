@@ -77,6 +77,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for MultiPixelPackedSampleModel(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+        /// </summary>
+        public static MultiPixelPackedSampleModel New(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+        {
+            return JVMBridgeBase.New<MultiPixelPackedSampleModel>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/MultiPixelPackedSampleModel.html#java.awt.image.MultiPixelPackedSampleModel(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -86,6 +93,13 @@ namespace Java.Awt.ImageNs
         public MultiPixelPackedSampleModel(int arg0, int arg1, int arg2, int arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for MultiPixelPackedSampleModel(int arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static MultiPixelPackedSampleModel New(int arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<MultiPixelPackedSampleModel>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

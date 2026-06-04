@@ -74,6 +74,13 @@ namespace Javax.Naming.Ldap
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PagedResultsControl(int arg0, bool arg1)
+        /// </summary>
+        public static PagedResultsControl New(int arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<PagedResultsControl>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/PagedResultsControl.html#javax.naming.ldap.PagedResultsControl(int,byte[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -83,6 +90,13 @@ namespace Javax.Naming.Ldap
         public PagedResultsControl(int arg0, byte[] arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for PagedResultsControl(int arg0, byte[] arg1, bool arg2)
+        /// </summary>
+        public static PagedResultsControl New(int arg0, byte[] arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<PagedResultsControl>(arg0, arg1, arg2);
         }
 
         #endregion

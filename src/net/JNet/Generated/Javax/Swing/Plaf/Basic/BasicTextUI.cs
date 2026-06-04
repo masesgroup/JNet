@@ -138,6 +138,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicTextUI()
+        /// </summary>
+        public static BasicTextUI New()
+        {
+            return JVMBridgeBase.New<BasicTextUI>();
+        }
 
         #endregion
 
@@ -193,6 +200,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for BasicCaret()
+            /// </summary>
+            public static BasicCaret New()
+            {
+                return JVMBridgeBase.New<BasicCaret>();
+            }
 
             #endregion
 
@@ -234,6 +248,13 @@ namespace Javax.Swing.Plaf.Basic
             public BasicHighlighter() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for BasicHighlighter()
+            /// </summary>
+            public static BasicHighlighter New()
+            {
+                return JVMBridgeBase.New<BasicHighlighter>();
             }
 
             #endregion

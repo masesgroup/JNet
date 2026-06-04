@@ -71,6 +71,13 @@ namespace Javax.Security.Auth
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Subject()
+        /// </summary>
+        public static Subject New()
+        {
+            return JVMBridgeBase.New<Subject>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/Subject.html#javax.security.auth.Subject(boolean,java.util.Set,java.util.Set,java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Security.Auth
         public Subject(bool arg0, Java.Util.Set arg1, Java.Util.Set<object> arg2, Java.Util.Set<object> arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for Subject(bool arg0, Java.Util.Set arg1, Java.Util.Set<object> arg2, Java.Util.Set<object> arg3)
+        /// </summary>
+        public static Subject New(bool arg0, Java.Util.Set arg1, Java.Util.Set<object> arg2, Java.Util.Set<object> arg3)
+        {
+            return JVMBridgeBase.New<Subject>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

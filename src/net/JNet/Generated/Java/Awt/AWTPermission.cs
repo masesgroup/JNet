@@ -73,12 +73,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for AWTPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static AWTPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<AWTPermission>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/AWTPermission.html#java.awt.AWTPermission(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public AWTPermission(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AWTPermission(Java.Lang.String arg0)
+        /// </summary>
+        public static AWTPermission New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<AWTPermission>(arg0);
         }
 
         #endregion

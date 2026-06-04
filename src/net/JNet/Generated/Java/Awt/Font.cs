@@ -74,12 +74,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Font(Java.Lang.String arg0, int arg1, int arg2)
+        /// </summary>
+        public static Font New(Java.Lang.String arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<Font>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Font.html#java.awt.Font(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public Font(Java.Util.Map arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Font(Java.Util.Map arg0)
+        /// </summary>
+        public static Font New(Java.Util.Map arg0)
+        {
+            return JVMBridgeBase.New<Font>(arg0);
         }
 
         #endregion

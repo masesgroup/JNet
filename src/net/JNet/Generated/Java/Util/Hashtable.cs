@@ -107,6 +107,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Hashtable()
+        /// </summary>
+        public static Hashtable New()
+        {
+            return JVMBridgeBase.New<Hashtable>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#java.util.Hashtable(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -114,6 +121,13 @@ namespace Java.Util
         public Hashtable(int arg0, float arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for Hashtable(int arg0, float arg1)
+        /// </summary>
+        public static Hashtable New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<Hashtable>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#java.util.Hashtable(int)"/>
@@ -124,12 +138,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Hashtable(int arg0)
+        /// </summary>
+        public static Hashtable New(int arg0)
+        {
+            return JVMBridgeBase.New<Hashtable>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#java.util.Hashtable(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public Hashtable(Java.Util.Map arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Hashtable(Java.Util.Map arg0)
+        /// </summary>
+        public static Hashtable New(Java.Util.Map arg0)
+        {
+            return JVMBridgeBase.New<Hashtable>(arg0);
         }
 
         #endregion
@@ -356,6 +384,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Hashtable()
+        /// </summary>
+        public static Hashtable<K, V> New()
+        {
+            return JVMBridgeBase.New<Hashtable<K, V>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#java.util.Hashtable(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -363,6 +398,13 @@ namespace Java.Util
         public Hashtable(int arg0, float arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for Hashtable(int arg0, float arg1)
+        /// </summary>
+        public static Hashtable<K, V> New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<Hashtable<K, V>>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#java.util.Hashtable(int)"/>
@@ -373,12 +415,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Hashtable(int arg0)
+        /// </summary>
+        public static Hashtable<K, V> New(int arg0)
+        {
+            return JVMBridgeBase.New<Hashtable<K, V>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html#java.util.Hashtable(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public Hashtable(Java.Util.Map<K, V> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Hashtable(Java.Util.Map<K, V> arg0)
+        /// </summary>
+        public static Hashtable<K, V> New(Java.Util.Map<K, V> arg0)
+        {
+            return JVMBridgeBase.New<Hashtable<K, V>>(arg0);
         }
 
         #endregion

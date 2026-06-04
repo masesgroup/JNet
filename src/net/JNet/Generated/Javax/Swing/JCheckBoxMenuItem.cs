@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JCheckBoxMenuItem()
+        /// </summary>
+        public static JCheckBoxMenuItem New()
+        {
+            return JVMBridgeBase.New<JCheckBoxMenuItem>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JCheckBoxMenuItem.html#javax.swing.JCheckBoxMenuItem(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Swing
         public JCheckBoxMenuItem(Java.Lang.String arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JCheckBoxMenuItem(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static JCheckBoxMenuItem New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<JCheckBoxMenuItem>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JCheckBoxMenuItem.html#javax.swing.JCheckBoxMenuItem(java.lang.String,javax.swing.Icon,boolean)"/>
@@ -90,6 +104,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for JCheckBoxMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
+        /// </summary>
+        public static JCheckBoxMenuItem New(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<JCheckBoxMenuItem>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JCheckBoxMenuItem.html#javax.swing.JCheckBoxMenuItem(java.lang.String,javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -97,6 +118,13 @@ namespace Javax.Swing
         public JCheckBoxMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JCheckBoxMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        /// </summary>
+        public static JCheckBoxMenuItem New(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        {
+            return JVMBridgeBase.New<JCheckBoxMenuItem>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JCheckBoxMenuItem.html#javax.swing.JCheckBoxMenuItem(java.lang.String)"/>
@@ -107,6 +135,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JCheckBoxMenuItem(Java.Lang.String arg0)
+        /// </summary>
+        public static JCheckBoxMenuItem New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JCheckBoxMenuItem>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JCheckBoxMenuItem.html#javax.swing.JCheckBoxMenuItem(javax.swing.Action)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
@@ -115,12 +150,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JCheckBoxMenuItem(Javax.Swing.Action arg0)
+        /// </summary>
+        public static JCheckBoxMenuItem New(Javax.Swing.Action arg0)
+        {
+            return JVMBridgeBase.New<JCheckBoxMenuItem>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JCheckBoxMenuItem.html#javax.swing.JCheckBoxMenuItem(javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
         public JCheckBoxMenuItem(Javax.Swing.Icon arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JCheckBoxMenuItem(Javax.Swing.Icon arg0)
+        /// </summary>
+        public static JCheckBoxMenuItem New(Javax.Swing.Icon arg0)
+        {
+            return JVMBridgeBase.New<JCheckBoxMenuItem>(arg0);
         }
 
         #endregion

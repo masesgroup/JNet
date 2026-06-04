@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SizeSequence()
+        /// </summary>
+        public static SizeSequence New()
+        {
+            return JVMBridgeBase.New<SizeSequence>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SizeSequence.html#javax.swing.SizeSequence(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Swing
         public SizeSequence(int arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for SizeSequence(int arg0, int arg1)
+        /// </summary>
+        public static SizeSequence New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<SizeSequence>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SizeSequence.html#javax.swing.SizeSequence(int)"/>
@@ -88,12 +102,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for SizeSequence(int arg0)
+        /// </summary>
+        public static SizeSequence New(int arg0)
+        {
+            return JVMBridgeBase.New<SizeSequence>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SizeSequence.html#javax.swing.SizeSequence(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public SizeSequence(int[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SizeSequence(int[] arg0)
+        /// </summary>
+        public static SizeSequence New(int[] arg0)
+        {
+            return JVMBridgeBase.New<SizeSequence>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Javax.Xml.Bind.Helpers
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AbstractMarshallerImpl()
+        /// </summary>
+        public static AbstractMarshallerImpl New()
+        {
+            return JVMBridgeBase.New<AbstractMarshallerImpl>();
+        }
 
         #endregion
 

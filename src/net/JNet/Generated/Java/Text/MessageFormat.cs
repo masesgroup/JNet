@@ -107,12 +107,26 @@ namespace Java.Text
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for MessageFormat(Java.Lang.String arg0, Java.Util.Locale arg1)
+        /// </summary>
+        public static MessageFormat New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        {
+            return JVMBridgeBase.New<MessageFormat>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/MessageFormat.html#java.text.MessageFormat(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public MessageFormat(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MessageFormat(Java.Lang.String arg0)
+        /// </summary>
+        public static MessageFormat New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<MessageFormat>(arg0);
         }
 
         #endregion

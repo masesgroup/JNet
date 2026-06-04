@@ -70,6 +70,13 @@ namespace Javax.Management.Relation
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for RoleStatus()
+        /// </summary>
+        public static RoleStatus New()
+        {
+            return JVMBridgeBase.New<RoleStatus>();
+        }
 
         #endregion
 

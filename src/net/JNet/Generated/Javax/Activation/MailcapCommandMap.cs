@@ -71,12 +71,26 @@ namespace Javax.Activation
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for MailcapCommandMap()
+        /// </summary>
+        public static MailcapCommandMap New()
+        {
+            return JVMBridgeBase.New<MailcapCommandMap>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MailcapCommandMap.html#javax.activation.MailcapCommandMap(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public MailcapCommandMap(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MailcapCommandMap(Java.Io.InputStream arg0)
+        /// </summary>
+        public static MailcapCommandMap New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<MailcapCommandMap>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MailcapCommandMap.html#javax.activation.MailcapCommandMap(java.lang.String)"/>
@@ -86,6 +100,13 @@ namespace Javax.Activation
         public MailcapCommandMap(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MailcapCommandMap(Java.Lang.String arg0)
+        /// </summary>
+        public static MailcapCommandMap New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<MailcapCommandMap>(arg0);
         }
 
         #endregion

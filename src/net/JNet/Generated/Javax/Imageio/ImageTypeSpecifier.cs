@@ -73,12 +73,26 @@ namespace Javax.Imageio
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ImageTypeSpecifier(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.SampleModel arg1)
+        /// </summary>
+        public static ImageTypeSpecifier New(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.SampleModel arg1)
+        {
+            return JVMBridgeBase.New<ImageTypeSpecifier>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/ImageTypeSpecifier.html#javax.imageio.ImageTypeSpecifier(java.awt.image.RenderedImage)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
         public ImageTypeSpecifier(Java.Awt.ImageNs.RenderedImage arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ImageTypeSpecifier(Java.Awt.ImageNs.RenderedImage arg0)
+        /// </summary>
+        public static ImageTypeSpecifier New(Java.Awt.ImageNs.RenderedImage arg0)
+        {
+            return JVMBridgeBase.New<ImageTypeSpecifier>(arg0);
         }
 
         #endregion

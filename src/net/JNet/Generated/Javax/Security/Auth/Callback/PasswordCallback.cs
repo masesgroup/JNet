@@ -72,6 +72,13 @@ namespace Javax.Security.Auth.Callback
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for PasswordCallback(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static PasswordCallback New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<PasswordCallback>(arg0, arg1);
+        }
 
         #endregion
 

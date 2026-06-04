@@ -70,6 +70,13 @@ namespace Java.Security
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SignatureSpi()
+        /// </summary>
+        public static SignatureSpi New()
+        {
+            return JVMBridgeBase.New<SignatureSpi>();
+        }
 
         #endregion
 

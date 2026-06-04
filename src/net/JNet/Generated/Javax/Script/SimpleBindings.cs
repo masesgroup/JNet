@@ -71,12 +71,26 @@ namespace Javax.Script
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SimpleBindings()
+        /// </summary>
+        public static SimpleBindings New()
+        {
+            return JVMBridgeBase.New<SimpleBindings>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/script/SimpleBindings.html#javax.script.SimpleBindings(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public SimpleBindings(Java.Util.Map<Java.Lang.String, object> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SimpleBindings(Java.Util.Map<Java.Lang.String, object> arg0)
+        /// </summary>
+        public static SimpleBindings New(Java.Util.Map<Java.Lang.String, object> arg0)
+        {
+            return JVMBridgeBase.New<SimpleBindings>(arg0);
         }
 
         #endregion

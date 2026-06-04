@@ -71,12 +71,26 @@ namespace Javax.Swing.Text
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for PlainDocument()
+        /// </summary>
+        public static PlainDocument New()
+        {
+            return JVMBridgeBase.New<PlainDocument>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/PlainDocument.html#javax.swing.text.PlainDocument(javax.swing.text.AbstractDocument.Content)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument.Content"/></param>
         public PlainDocument(Javax.Swing.Text.AbstractDocument.Content arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PlainDocument(Javax.Swing.Text.AbstractDocument.Content arg0)
+        /// </summary>
+        public static PlainDocument New(Javax.Swing.Text.AbstractDocument.Content arg0)
+        {
+            return JVMBridgeBase.New<PlainDocument>(arg0);
         }
 
         #endregion

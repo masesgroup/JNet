@@ -109,6 +109,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ArrayBlockingQueue(int arg0, bool arg1, Java.Util.Collection arg2)
+        /// </summary>
+        public static ArrayBlockingQueue New(int arg0, bool arg1, Java.Util.Collection arg2)
+        {
+            return JVMBridgeBase.New<ArrayBlockingQueue>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ArrayBlockingQueue.html#java.util.concurrent.ArrayBlockingQueue(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -118,12 +125,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ArrayBlockingQueue(int arg0, bool arg1)
+        /// </summary>
+        public static ArrayBlockingQueue New(int arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<ArrayBlockingQueue>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ArrayBlockingQueue.html#java.util.concurrent.ArrayBlockingQueue(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ArrayBlockingQueue(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ArrayBlockingQueue(int arg0)
+        /// </summary>
+        public static ArrayBlockingQueue New(int arg0)
+        {
+            return JVMBridgeBase.New<ArrayBlockingQueue>(arg0);
         }
 
         #endregion
@@ -243,6 +264,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ArrayBlockingQueue(int arg0, bool arg1, Java.Util.Collection<E> arg2)
+        /// </summary>
+        public static ArrayBlockingQueue<E> New(int arg0, bool arg1, Java.Util.Collection<E> arg2)
+        {
+            return JVMBridgeBase.New<ArrayBlockingQueue<E>>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ArrayBlockingQueue.html#java.util.concurrent.ArrayBlockingQueue(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -252,12 +280,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ArrayBlockingQueue(int arg0, bool arg1)
+        /// </summary>
+        public static ArrayBlockingQueue<E> New(int arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<ArrayBlockingQueue<E>>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ArrayBlockingQueue.html#java.util.concurrent.ArrayBlockingQueue(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ArrayBlockingQueue(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ArrayBlockingQueue(int arg0)
+        /// </summary>
+        public static ArrayBlockingQueue<E> New(int arg0)
+        {
+            return JVMBridgeBase.New<ArrayBlockingQueue<E>>(arg0);
         }
 
         #endregion

@@ -74,6 +74,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for RescaleOp(float arg0, float arg1, Java.Awt.RenderingHints arg2)
+        /// </summary>
+        public static RescaleOp New(float arg0, float arg1, Java.Awt.RenderingHints arg2)
+        {
+            return JVMBridgeBase.New<RescaleOp>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/RescaleOp.html#java.awt.image.RescaleOp(float[],float[],java.awt.RenderingHints)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -82,6 +89,13 @@ namespace Java.Awt.ImageNs
         public RescaleOp(float[] arg0, float[] arg1, Java.Awt.RenderingHints arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for RescaleOp(float[] arg0, float[] arg1, Java.Awt.RenderingHints arg2)
+        /// </summary>
+        public static RescaleOp New(float[] arg0, float[] arg1, Java.Awt.RenderingHints arg2)
+        {
+            return JVMBridgeBase.New<RescaleOp>(arg0, arg1, arg2);
         }
 
         #endregion

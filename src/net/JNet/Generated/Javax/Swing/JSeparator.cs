@@ -71,12 +71,26 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JSeparator()
+        /// </summary>
+        public static JSeparator New()
+        {
+            return JVMBridgeBase.New<JSeparator>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSeparator.html#javax.swing.JSeparator(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public JSeparator(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JSeparator(int arg0)
+        /// </summary>
+        public static JSeparator New(int arg0)
+        {
+            return JVMBridgeBase.New<JSeparator>(arg0);
         }
 
         #endregion

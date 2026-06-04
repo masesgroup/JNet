@@ -75,6 +75,13 @@ namespace Javax.Sql.Rowset.Serial
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for SerialArray(Java.Sql.Array arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
+        /// </summary>
+        public static SerialArray New(Java.Sql.Array arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
+        {
+            return JVMBridgeBase.New<SerialArray>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/serial/SerialArray.html#javax.sql.rowset.serial.SerialArray(java.sql.Array)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Array"/></param>
@@ -83,6 +90,13 @@ namespace Javax.Sql.Rowset.Serial
         public SerialArray(Java.Sql.Array arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SerialArray(Java.Sql.Array arg0)
+        /// </summary>
+        public static SerialArray New(Java.Sql.Array arg0)
+        {
+            return JVMBridgeBase.New<SerialArray>(arg0);
         }
 
         #endregion

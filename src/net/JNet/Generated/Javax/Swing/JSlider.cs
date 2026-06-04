@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JSlider()
+        /// </summary>
+        public static JSlider New()
+        {
+            return JVMBridgeBase.New<JSlider>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSlider.html#javax.swing.JSlider(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Swing
         public JSlider(int arg0, int arg1, int arg2, int arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for JSlider(int arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static JSlider New(int arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<JSlider>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSlider.html#javax.swing.JSlider(int,int,int)"/>
@@ -92,6 +106,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for JSlider(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static JSlider New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<JSlider>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSlider.html#javax.swing.JSlider(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -99,6 +120,13 @@ namespace Javax.Swing
         public JSlider(int arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JSlider(int arg0, int arg1)
+        /// </summary>
+        public static JSlider New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<JSlider>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSlider.html#javax.swing.JSlider(int)"/>
@@ -109,12 +137,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JSlider(int arg0)
+        /// </summary>
+        public static JSlider New(int arg0)
+        {
+            return JVMBridgeBase.New<JSlider>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSlider.html#javax.swing.JSlider(javax.swing.BoundedRangeModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.BoundedRangeModel"/></param>
         public JSlider(Javax.Swing.BoundedRangeModel arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JSlider(Javax.Swing.BoundedRangeModel arg0)
+        /// </summary>
+        public static JSlider New(Javax.Swing.BoundedRangeModel arg0)
+        {
+            return JVMBridgeBase.New<JSlider>(arg0);
         }
 
         #endregion

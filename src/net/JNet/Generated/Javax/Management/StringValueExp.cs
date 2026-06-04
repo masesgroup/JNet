@@ -71,12 +71,26 @@ namespace Javax.Management
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for StringValueExp()
+        /// </summary>
+        public static StringValueExp New()
+        {
+            return JVMBridgeBase.New<StringValueExp>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/StringValueExp.html#javax.management.StringValueExp(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public StringValueExp(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StringValueExp(Java.Lang.String arg0)
+        /// </summary>
+        public static StringValueExp New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<StringValueExp>(arg0);
         }
 
         #endregion

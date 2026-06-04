@@ -71,6 +71,13 @@ namespace Java.Security
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for Permission(Java.Lang.String arg0)
+        /// </summary>
+        public static Permission New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Permission>(arg0);
+        }
 
         #endregion
 

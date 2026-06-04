@@ -71,6 +71,13 @@ namespace Javax.Print.Attribute.Standard
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for PrinterStateReasons()
+        /// </summary>
+        public static PrinterStateReasons New()
+        {
+            return JVMBridgeBase.New<PrinterStateReasons>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/PrinterStateReasons.html#javax.print.attribute.standard.PrinterStateReasons(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Print.Attribute.Standard
         public PrinterStateReasons(int arg0, float arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for PrinterStateReasons(int arg0, float arg1)
+        /// </summary>
+        public static PrinterStateReasons New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<PrinterStateReasons>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/PrinterStateReasons.html#javax.print.attribute.standard.PrinterStateReasons(int)"/>
@@ -88,12 +102,26 @@ namespace Javax.Print.Attribute.Standard
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for PrinterStateReasons(int arg0)
+        /// </summary>
+        public static PrinterStateReasons New(int arg0)
+        {
+            return JVMBridgeBase.New<PrinterStateReasons>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/PrinterStateReasons.html#javax.print.attribute.standard.PrinterStateReasons(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public PrinterStateReasons(Java.Util.Map<Javax.Print.Attribute.Standard.PrinterStateReason, Javax.Print.Attribute.Standard.Severity> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PrinterStateReasons(Java.Util.Map<Javax.Print.Attribute.Standard.PrinterStateReason, Javax.Print.Attribute.Standard.Severity> arg0)
+        /// </summary>
+        public static PrinterStateReasons New(Java.Util.Map<Javax.Print.Attribute.Standard.PrinterStateReason, Javax.Print.Attribute.Standard.Severity> arg0)
+        {
+            return JVMBridgeBase.New<PrinterStateReasons>(arg0);
         }
 
         #endregion

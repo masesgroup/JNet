@@ -70,6 +70,13 @@ namespace Java.Rmi.Server
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for RMISocketFactory()
+        /// </summary>
+        public static RMISocketFactory New()
+        {
+            return JVMBridgeBase.New<RMISocketFactory>();
+        }
 
         #endregion
 

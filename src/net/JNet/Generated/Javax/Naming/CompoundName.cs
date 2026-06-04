@@ -73,6 +73,13 @@ namespace Javax.Naming
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for CompoundName(Java.Lang.String arg0, Java.Util.Properties arg1)
+        /// </summary>
+        public static CompoundName New(Java.Lang.String arg0, Java.Util.Properties arg1)
+        {
+            return JVMBridgeBase.New<CompoundName>(arg0, arg1);
+        }
 
         #endregion
 

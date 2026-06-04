@@ -72,6 +72,13 @@ namespace Java.Io
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for LineNumberInputStream(Java.Io.InputStream arg0)
+        /// </summary>
+        public static LineNumberInputStream New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<LineNumberInputStream>(arg0);
+        }
 
         #endregion
 

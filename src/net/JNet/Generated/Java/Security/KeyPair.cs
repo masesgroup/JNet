@@ -72,6 +72,13 @@ namespace Java.Security
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for KeyPair(Java.Security.PublicKey arg0, Java.Security.PrivateKey arg1)
+        /// </summary>
+        public static KeyPair New(Java.Security.PublicKey arg0, Java.Security.PrivateKey arg1)
+        {
+            return JVMBridgeBase.New<KeyPair>(arg0, arg1);
+        }
 
         #endregion
 

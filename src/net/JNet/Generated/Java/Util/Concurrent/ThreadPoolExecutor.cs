@@ -213,6 +213,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.RejectedExecutionHandler arg5)
+        /// </summary>
+        public static ThreadPoolExecutor New(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.RejectedExecutionHandler arg5)
+        {
+            return JVMBridgeBase.New<ThreadPoolExecutor>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ThreadPoolExecutor.html#java.util.concurrent.ThreadPoolExecutor(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory,java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -225,6 +232,13 @@ namespace Java.Util.Concurrent
         public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.ThreadFactory arg5, Java.Util.Concurrent.RejectedExecutionHandler arg6) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// HPA initializer for ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.ThreadFactory arg5, Java.Util.Concurrent.RejectedExecutionHandler arg6)
+        /// </summary>
+        public static ThreadPoolExecutor New(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.ThreadFactory arg5, Java.Util.Concurrent.RejectedExecutionHandler arg6)
+        {
+            return JVMBridgeBase.New<ThreadPoolExecutor>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ThreadPoolExecutor.html#java.util.concurrent.ThreadPoolExecutor(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory)"/>
@@ -240,6 +254,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.ThreadFactory arg5)
+        /// </summary>
+        public static ThreadPoolExecutor New(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.ThreadFactory arg5)
+        {
+            return JVMBridgeBase.New<ThreadPoolExecutor>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ThreadPoolExecutor.html#java.util.concurrent.ThreadPoolExecutor(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -250,6 +271,13 @@ namespace Java.Util.Concurrent
         public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4)
+        /// </summary>
+        public static ThreadPoolExecutor New(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4)
+        {
+            return JVMBridgeBase.New<ThreadPoolExecutor>(arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion
@@ -426,6 +454,13 @@ namespace Java.Util.Concurrent
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for AbortPolicy()
+            /// </summary>
+            public static AbortPolicy New()
+            {
+                return JVMBridgeBase.New<AbortPolicy>();
+            }
 
             #endregion
 
@@ -472,6 +507,13 @@ namespace Java.Util.Concurrent
             public CallerRunsPolicy() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for CallerRunsPolicy()
+            /// </summary>
+            public static CallerRunsPolicy New()
+            {
+                return JVMBridgeBase.New<CallerRunsPolicy>();
             }
 
             #endregion
@@ -520,6 +562,13 @@ namespace Java.Util.Concurrent
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for DiscardOldestPolicy()
+            /// </summary>
+            public static DiscardOldestPolicy New()
+            {
+                return JVMBridgeBase.New<DiscardOldestPolicy>();
+            }
 
             #endregion
 
@@ -566,6 +615,13 @@ namespace Java.Util.Concurrent
             public DiscardPolicy() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for DiscardPolicy()
+            /// </summary>
+            public static DiscardPolicy New()
+            {
+                return JVMBridgeBase.New<DiscardPolicy>();
             }
 
             #endregion

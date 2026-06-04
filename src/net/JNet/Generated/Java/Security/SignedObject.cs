@@ -76,6 +76,13 @@ namespace Java.Security
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for SignedObject(Java.Io.Serializable arg0, Java.Security.PrivateKey arg1, Java.Security.Signature arg2)
+        /// </summary>
+        public static SignedObject New(Java.Io.Serializable arg0, Java.Security.PrivateKey arg1, Java.Security.Signature arg2)
+        {
+            return JVMBridgeBase.New<SignedObject>(arg0, arg1, arg2);
+        }
 
         #endregion
 

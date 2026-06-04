@@ -139,6 +139,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JTable()
+        /// </summary>
+        public static JTable New()
+        {
+            return JVMBridgeBase.New<JTable>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTable.html#javax.swing.JTable(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -148,6 +155,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JTable(int arg0, int arg1)
+        /// </summary>
+        public static JTable New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<JTable>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTable.html#javax.swing.JTable(java.util.Vector,java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
@@ -155,6 +169,13 @@ namespace Javax.Swing
         public JTable(Java.Util.Vector arg0, Java.Util.Vector arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JTable(Java.Util.Vector arg0, Java.Util.Vector arg1)
+        /// </summary>
+        public static JTable New(Java.Util.Vector arg0, Java.Util.Vector arg1)
+        {
+            return JVMBridgeBase.New<JTable>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTable.html#javax.swing.JTable(javax.swing.table.TableModel,javax.swing.table.TableColumnModel,javax.swing.ListSelectionModel)"/>
@@ -167,6 +188,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for JTable(Javax.Swing.Table.TableModel arg0, Javax.Swing.Table.TableColumnModel arg1, Javax.Swing.ListSelectionModel arg2)
+        /// </summary>
+        public static JTable New(Javax.Swing.Table.TableModel arg0, Javax.Swing.Table.TableColumnModel arg1, Javax.Swing.ListSelectionModel arg2)
+        {
+            return JVMBridgeBase.New<JTable>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTable.html#javax.swing.JTable(javax.swing.table.TableModel,javax.swing.table.TableColumnModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
@@ -176,12 +204,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JTable(Javax.Swing.Table.TableModel arg0, Javax.Swing.Table.TableColumnModel arg1)
+        /// </summary>
+        public static JTable New(Javax.Swing.Table.TableModel arg0, Javax.Swing.Table.TableColumnModel arg1)
+        {
+            return JVMBridgeBase.New<JTable>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTable.html#javax.swing.JTable(javax.swing.table.TableModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
         public JTable(Javax.Swing.Table.TableModel arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JTable(Javax.Swing.Table.TableModel arg0)
+        /// </summary>
+        public static JTable New(Javax.Swing.Table.TableModel arg0)
+        {
+            return JVMBridgeBase.New<JTable>(arg0);
         }
 
         #endregion

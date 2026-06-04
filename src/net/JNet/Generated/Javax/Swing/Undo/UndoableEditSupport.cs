@@ -71,12 +71,26 @@ namespace Javax.Swing.Undo
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for UndoableEditSupport()
+        /// </summary>
+        public static UndoableEditSupport New()
+        {
+            return JVMBridgeBase.New<UndoableEditSupport>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/undo/UndoableEditSupport.html#javax.swing.undo.UndoableEditSupport(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public UndoableEditSupport(object arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for UndoableEditSupport(object arg0)
+        /// </summary>
+        public static UndoableEditSupport New(object arg0)
+        {
+            return JVMBridgeBase.New<UndoableEditSupport>(arg0);
         }
 
         #endregion

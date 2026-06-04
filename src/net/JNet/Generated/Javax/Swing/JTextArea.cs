@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JTextArea()
+        /// </summary>
+        public static JTextArea New()
+        {
+            return JVMBridgeBase.New<JTextArea>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTextArea.html#javax.swing.JTextArea(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Swing
         public JTextArea(int arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JTextArea(int arg0, int arg1)
+        /// </summary>
+        public static JTextArea New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<JTextArea>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTextArea.html#javax.swing.JTextArea(java.lang.String,int,int)"/>
@@ -90,12 +104,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for JTextArea(Java.Lang.String arg0, int arg1, int arg2)
+        /// </summary>
+        public static JTextArea New(Java.Lang.String arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<JTextArea>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTextArea.html#javax.swing.JTextArea(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public JTextArea(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JTextArea(Java.Lang.String arg0)
+        /// </summary>
+        public static JTextArea New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JTextArea>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTextArea.html#javax.swing.JTextArea(javax.swing.text.Document,java.lang.String,int,int)"/>
@@ -109,12 +137,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for JTextArea(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2, int arg3)
+        /// </summary>
+        public static JTextArea New(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<JTextArea>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTextArea.html#javax.swing.JTextArea(javax.swing.text.Document)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Document"/></param>
         public JTextArea(Javax.Swing.Text.Document arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JTextArea(Javax.Swing.Text.Document arg0)
+        /// </summary>
+        public static JTextArea New(Javax.Swing.Text.Document arg0)
+        {
+            return JVMBridgeBase.New<JTextArea>(arg0);
         }
 
         #endregion

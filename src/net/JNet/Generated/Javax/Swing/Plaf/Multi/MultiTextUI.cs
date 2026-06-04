@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiTextUI()
+        /// </summary>
+        public static MultiTextUI New()
+        {
+            return JVMBridgeBase.New<MultiTextUI>();
+        }
 
         #endregion
 

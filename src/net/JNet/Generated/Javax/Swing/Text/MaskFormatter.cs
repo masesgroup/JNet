@@ -71,6 +71,13 @@ namespace Javax.Swing.Text
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for MaskFormatter()
+        /// </summary>
+        public static MaskFormatter New()
+        {
+            return JVMBridgeBase.New<MaskFormatter>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/MaskFormatter.html#javax.swing.text.MaskFormatter(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Swing.Text
         public MaskFormatter(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MaskFormatter(Java.Lang.String arg0)
+        /// </summary>
+        public static MaskFormatter New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<MaskFormatter>(arg0);
         }
 
         #endregion

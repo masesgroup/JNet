@@ -71,6 +71,13 @@ namespace Javax.Naming.Directory
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SearchControls()
+        /// </summary>
+        public static SearchControls New()
+        {
+            return JVMBridgeBase.New<SearchControls>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/directory/SearchControls.html#javax.naming.directory.SearchControls(int,long,int,java.lang.String[],boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -82,6 +89,13 @@ namespace Javax.Naming.Directory
         public SearchControls(int arg0, long arg1, int arg2, Java.Lang.String[] arg3, bool arg4, bool arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for SearchControls(int arg0, long arg1, int arg2, Java.Lang.String[] arg3, bool arg4, bool arg5)
+        /// </summary>
+        public static SearchControls New(int arg0, long arg1, int arg2, Java.Lang.String[] arg3, bool arg4, bool arg5)
+        {
+            return JVMBridgeBase.New<SearchControls>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

@@ -75,12 +75,26 @@ namespace Java.Security
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Signer(Java.Lang.String arg0, Java.Security.IdentityScope arg1)
+        /// </summary>
+        public static Signer New(Java.Lang.String arg0, Java.Security.IdentityScope arg1)
+        {
+            return JVMBridgeBase.New<Signer>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/Signer.html#java.security.Signer(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public Signer(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Signer(Java.Lang.String arg0)
+        /// </summary>
+        public static Signer New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Signer>(arg0);
         }
 
         #endregion

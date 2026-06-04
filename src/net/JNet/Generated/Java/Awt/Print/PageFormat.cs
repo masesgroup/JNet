@@ -70,6 +70,13 @@ namespace Java.Awt.Print
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for PageFormat()
+        /// </summary>
+        public static PageFormat New()
+        {
+            return JVMBridgeBase.New<PageFormat>();
+        }
 
         #endregion
 

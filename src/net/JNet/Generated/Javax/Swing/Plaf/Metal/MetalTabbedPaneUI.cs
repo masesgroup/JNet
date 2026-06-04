@@ -104,6 +104,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalTabbedPaneUI()
+        /// </summary>
+        public static MetalTabbedPaneUI New()
+        {
+            return JVMBridgeBase.New<MetalTabbedPaneUI>();
+        }
 
         #endregion
 
@@ -135,6 +142,13 @@ namespace Javax.Swing.Plaf.Metal
             public TabbedPaneLayout(Javax.Swing.Plaf.Metal.MetalTabbedPaneUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for TabbedPaneLayout(Javax.Swing.Plaf.Metal.MetalTabbedPaneUI arg0)
+            /// </summary>
+            public static TabbedPaneLayout New(Javax.Swing.Plaf.Metal.MetalTabbedPaneUI arg0)
+            {
+                return JVMBridgeBase.New<TabbedPaneLayout>(arg0);
             }
 
             #endregion

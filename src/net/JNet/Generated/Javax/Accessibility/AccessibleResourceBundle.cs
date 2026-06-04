@@ -71,6 +71,13 @@ namespace Javax.Accessibility
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AccessibleResourceBundle()
+        /// </summary>
+        public static AccessibleResourceBundle New()
+        {
+            return JVMBridgeBase.New<AccessibleResourceBundle>();
+        }
 
         #endregion
 

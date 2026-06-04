@@ -70,6 +70,13 @@ namespace Javax.Management.Monitor
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Monitor()
+        /// </summary>
+        public static Monitor New()
+        {
+            return JVMBridgeBase.New<Monitor>();
+        }
 
         #endregion
 

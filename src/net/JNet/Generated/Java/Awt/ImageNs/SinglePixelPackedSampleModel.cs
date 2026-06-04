@@ -76,6 +76,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for SinglePixelPackedSampleModel(int arg0, int arg1, int arg2, int arg3, int[] arg4)
+        /// </summary>
+        public static SinglePixelPackedSampleModel New(int arg0, int arg1, int arg2, int arg3, int[] arg4)
+        {
+            return JVMBridgeBase.New<SinglePixelPackedSampleModel>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/SinglePixelPackedSampleModel.html#java.awt.image.SinglePixelPackedSampleModel(int,int,int,int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -85,6 +92,13 @@ namespace Java.Awt.ImageNs
         public SinglePixelPackedSampleModel(int arg0, int arg1, int arg2, int[] arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for SinglePixelPackedSampleModel(int arg0, int arg1, int arg2, int[] arg3)
+        /// </summary>
+        public static SinglePixelPackedSampleModel New(int arg0, int arg1, int arg2, int[] arg3)
+        {
+            return JVMBridgeBase.New<SinglePixelPackedSampleModel>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

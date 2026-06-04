@@ -71,12 +71,26 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for BitSet()
+        /// </summary>
+        public static BitSet New()
+        {
+            return JVMBridgeBase.New<BitSet>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/BitSet.html#java.util.BitSet(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public BitSet(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BitSet(int arg0)
+        /// </summary>
+        public static BitSet New(int arg0)
+        {
+            return JVMBridgeBase.New<BitSet>(arg0);
         }
 
         #endregion

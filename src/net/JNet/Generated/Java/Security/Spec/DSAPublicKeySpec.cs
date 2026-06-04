@@ -74,6 +74,13 @@ namespace Java.Security.Spec
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// HPA initializer for DSAPublicKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3)
+        /// </summary>
+        public static DSAPublicKeySpec New(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3)
+        {
+            return JVMBridgeBase.New<DSAPublicKeySpec>(arg0, arg1, arg2, arg3);
+        }
 
         #endregion
 

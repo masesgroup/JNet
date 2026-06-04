@@ -72,6 +72,13 @@ namespace Java.Beans
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for PropertyChangeListenerProxy(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
+        /// </summary>
+        public static PropertyChangeListenerProxy New(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
+        {
+            return JVMBridgeBase.New<PropertyChangeListenerProxy>(arg0, arg1);
+        }
 
         #endregion
 

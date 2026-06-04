@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for InternalFrameFocusTraversalPolicy()
+        /// </summary>
+        public static InternalFrameFocusTraversalPolicy New()
+        {
+            return JVMBridgeBase.New<InternalFrameFocusTraversalPolicy>();
+        }
 
         #endregion
 

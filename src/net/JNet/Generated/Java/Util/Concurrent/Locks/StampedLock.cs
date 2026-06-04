@@ -70,6 +70,13 @@ namespace Java.Util.Concurrent.Locks
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for StampedLock()
+        /// </summary>
+        public static StampedLock New()
+        {
+            return JVMBridgeBase.New<StampedLock>();
+        }
 
         #endregion
 

@@ -74,6 +74,13 @@ namespace Javax.Naming
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for NameClassPair(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
+        /// </summary>
+        public static NameClassPair New(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<NameClassPair>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/NameClassPair.html#javax.naming.NameClassPair(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Naming
         public NameClassPair(Java.Lang.String arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for NameClassPair(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static NameClassPair New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<NameClassPair>(arg0, arg1);
         }
 
         #endregion

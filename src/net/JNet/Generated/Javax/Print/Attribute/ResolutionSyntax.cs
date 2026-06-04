@@ -73,6 +73,13 @@ namespace Javax.Print.Attribute
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for ResolutionSyntax(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static ResolutionSyntax New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<ResolutionSyntax>(arg0, arg1, arg2);
+        }
 
         #endregion
 

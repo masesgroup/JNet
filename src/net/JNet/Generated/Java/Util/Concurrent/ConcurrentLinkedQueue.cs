@@ -106,12 +106,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ConcurrentLinkedQueue()
+        /// </summary>
+        public static ConcurrentLinkedQueue New()
+        {
+            return JVMBridgeBase.New<ConcurrentLinkedQueue>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html#java.util.concurrent.ConcurrentLinkedQueue(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ConcurrentLinkedQueue(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentLinkedQueue(Java.Util.Collection arg0)
+        /// </summary>
+        public static ConcurrentLinkedQueue New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentLinkedQueue>(arg0);
         }
 
         #endregion
@@ -156,12 +170,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ConcurrentLinkedQueue()
+        /// </summary>
+        public static ConcurrentLinkedQueue<E> New()
+        {
+            return JVMBridgeBase.New<ConcurrentLinkedQueue<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html#java.util.concurrent.ConcurrentLinkedQueue(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ConcurrentLinkedQueue(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentLinkedQueue(Java.Util.Collection<E> arg0)
+        /// </summary>
+        public static ConcurrentLinkedQueue<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentLinkedQueue<E>>(arg0);
         }
 
         #endregion

@@ -71,12 +71,26 @@ namespace Javax.Management.Relation
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for RoleList()
+        /// </summary>
+        public static RoleList New()
+        {
+            return JVMBridgeBase.New<RoleList>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RoleList.html#javax.management.relation.RoleList(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public RoleList(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for RoleList(int arg0)
+        /// </summary>
+        public static RoleList New(int arg0)
+        {
+            return JVMBridgeBase.New<RoleList>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RoleList.html#javax.management.relation.RoleList(java.util.List)"/>
@@ -86,6 +100,13 @@ namespace Javax.Management.Relation
         public RoleList(Java.Util.List<Javax.Management.Relation.Role> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for RoleList(Java.Util.List<Javax.Management.Relation.Role> arg0)
+        /// </summary>
+        public static RoleList New(Java.Util.List<Javax.Management.Relation.Role> arg0)
+        {
+            return JVMBridgeBase.New<RoleList>(arg0);
         }
 
         #endregion

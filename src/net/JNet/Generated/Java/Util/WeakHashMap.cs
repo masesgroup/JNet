@@ -107,6 +107,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for WeakHashMap()
+        /// </summary>
+        public static WeakHashMap New()
+        {
+            return JVMBridgeBase.New<WeakHashMap>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/WeakHashMap.html#java.util.WeakHashMap(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -114,6 +121,13 @@ namespace Java.Util
         public WeakHashMap(int arg0, float arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for WeakHashMap(int arg0, float arg1)
+        /// </summary>
+        public static WeakHashMap New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<WeakHashMap>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/WeakHashMap.html#java.util.WeakHashMap(int)"/>
@@ -124,12 +138,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for WeakHashMap(int arg0)
+        /// </summary>
+        public static WeakHashMap New(int arg0)
+        {
+            return JVMBridgeBase.New<WeakHashMap>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/WeakHashMap.html#java.util.WeakHashMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public WeakHashMap(Java.Util.Map arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for WeakHashMap(Java.Util.Map arg0)
+        /// </summary>
+        public static WeakHashMap New(Java.Util.Map arg0)
+        {
+            return JVMBridgeBase.New<WeakHashMap>(arg0);
         }
 
         #endregion
@@ -170,6 +198,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for WeakHashMap()
+        /// </summary>
+        public static WeakHashMap<K, V> New()
+        {
+            return JVMBridgeBase.New<WeakHashMap<K, V>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/WeakHashMap.html#java.util.WeakHashMap(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -177,6 +212,13 @@ namespace Java.Util
         public WeakHashMap(int arg0, float arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for WeakHashMap(int arg0, float arg1)
+        /// </summary>
+        public static WeakHashMap<K, V> New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<WeakHashMap<K, V>>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/WeakHashMap.html#java.util.WeakHashMap(int)"/>
@@ -187,12 +229,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for WeakHashMap(int arg0)
+        /// </summary>
+        public static WeakHashMap<K, V> New(int arg0)
+        {
+            return JVMBridgeBase.New<WeakHashMap<K, V>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/WeakHashMap.html#java.util.WeakHashMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public WeakHashMap(Java.Util.Map<K, V> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for WeakHashMap(Java.Util.Map<K, V> arg0)
+        /// </summary>
+        public static WeakHashMap<K, V> New(Java.Util.Map<K, V> arg0)
+        {
+            return JVMBridgeBase.New<WeakHashMap<K, V>>(arg0);
         }
 
         #endregion

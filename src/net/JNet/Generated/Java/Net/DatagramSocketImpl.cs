@@ -70,6 +70,13 @@ namespace Java.Net
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DatagramSocketImpl()
+        /// </summary>
+        public static DatagramSocketImpl New()
+        {
+            return JVMBridgeBase.New<DatagramSocketImpl>();
+        }
 
         #endregion
 

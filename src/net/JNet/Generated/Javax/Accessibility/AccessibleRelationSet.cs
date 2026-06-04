@@ -71,12 +71,26 @@ namespace Javax.Accessibility
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AccessibleRelationSet()
+        /// </summary>
+        public static AccessibleRelationSet New()
+        {
+            return JVMBridgeBase.New<AccessibleRelationSet>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/accessibility/AccessibleRelationSet.html#javax.accessibility.AccessibleRelationSet(javax.accessibility.AccessibleRelation[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleRelation"/></param>
         public AccessibleRelationSet(Javax.Accessibility.AccessibleRelation[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AccessibleRelationSet(Javax.Accessibility.AccessibleRelation[] arg0)
+        /// </summary>
+        public static AccessibleRelationSet New(Javax.Accessibility.AccessibleRelation[] arg0)
+        {
+            return JVMBridgeBase.New<AccessibleRelationSet>(arg0);
         }
 
         #endregion

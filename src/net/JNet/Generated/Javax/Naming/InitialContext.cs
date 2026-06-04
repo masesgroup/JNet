@@ -73,6 +73,13 @@ namespace Javax.Naming
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for InitialContext()
+        /// </summary>
+        public static InitialContext New()
+        {
+            return JVMBridgeBase.New<InitialContext>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/InitialContext.html#javax.naming.InitialContext(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Naming
         public InitialContext(Java.Util.Hashtable<object, object> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for InitialContext(Java.Util.Hashtable<object, object> arg0)
+        /// </summary>
+        public static InitialContext New(Java.Util.Hashtable<object, object> arg0)
+        {
+            return JVMBridgeBase.New<InitialContext>(arg0);
         }
 
         #endregion

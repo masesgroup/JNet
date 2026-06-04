@@ -74,12 +74,26 @@ namespace Javax.Swing.Text
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for TabStop(float arg0, int arg1, int arg2)
+        /// </summary>
+        public static TabStop New(float arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<TabStop>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TabStop.html#javax.swing.text.TabStop(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         public TabStop(float arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TabStop(float arg0)
+        /// </summary>
+        public static TabStop New(float arg0)
+        {
+            return JVMBridgeBase.New<TabStop>(arg0);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for NumberUp(int arg0)
+        /// </summary>
+        public static NumberUp New(int arg0)
+        {
+            return JVMBridgeBase.New<NumberUp>(arg0);
+        }
 
         #endregion
 

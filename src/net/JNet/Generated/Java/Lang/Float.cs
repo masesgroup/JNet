@@ -72,12 +72,26 @@ namespace Java.Lang
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Float(double arg0)
+        /// </summary>
+        public static Float New(double arg0)
+        {
+            return JVMBridgeBase.New<Float>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Float.html#java.lang.Float(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         public Float(float arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Float(float arg0)
+        /// </summary>
+        public static Float New(float arg0)
+        {
+            return JVMBridgeBase.New<Float>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Float.html#java.lang.Float(java.lang.String)"/>
@@ -87,6 +101,13 @@ namespace Java.Lang
         public Float(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Float(Java.Lang.String arg0)
+        /// </summary>
+        public static Float New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Float>(arg0);
         }
 
         #endregion

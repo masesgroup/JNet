@@ -81,6 +81,13 @@ namespace Javax.Management.Openmbean
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
+        /// HPA initializer for OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, Java.Lang.Comparable arg7, Java.Lang.Comparable arg8)
+        /// </summary>
+        public static OpenMBeanAttributeInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, Java.Lang.Comparable arg7, Java.Lang.Comparable arg8)
+        {
+            return JVMBridgeBase.New<OpenMBeanAttributeInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#javax.management.openmbean.OpenMBeanAttributeInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean,java.lang.Object,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -95,6 +102,13 @@ namespace Javax.Management.Openmbean
         public OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, object[] arg7) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+        /// <summary>
+        /// HPA initializer for OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, object[] arg7)
+        /// </summary>
+        public static OpenMBeanAttributeInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, object[] arg7)
+        {
+            return JVMBridgeBase.New<OpenMBeanAttributeInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#javax.management.openmbean.OpenMBeanAttributeInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean,java.lang.Object)"/>
@@ -112,6 +126,13 @@ namespace Javax.Management.Openmbean
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6)
+        /// </summary>
+        public static OpenMBeanAttributeInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6)
+        {
+            return JVMBridgeBase.New<OpenMBeanAttributeInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#javax.management.openmbean.OpenMBeanAttributeInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean,javax.management.Descriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -126,6 +147,13 @@ namespace Javax.Management.Openmbean
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
+        /// </summary>
+        public static OpenMBeanAttributeInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
+        {
+            return JVMBridgeBase.New<OpenMBeanAttributeInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#javax.management.openmbean.OpenMBeanAttributeInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -137,6 +165,13 @@ namespace Javax.Management.Openmbean
         public OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, bool arg3, bool arg4, bool arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, bool arg3, bool arg4, bool arg5)
+        /// </summary>
+        public static OpenMBeanAttributeInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, bool arg3, bool arg4, bool arg5)
+        {
+            return JVMBridgeBase.New<OpenMBeanAttributeInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

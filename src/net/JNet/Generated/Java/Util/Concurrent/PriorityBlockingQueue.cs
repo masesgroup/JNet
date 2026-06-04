@@ -106,6 +106,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for PriorityBlockingQueue()
+        /// </summary>
+        public static PriorityBlockingQueue New()
+        {
+            return JVMBridgeBase.New<PriorityBlockingQueue>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html#java.util.concurrent.PriorityBlockingQueue(int,java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -113,6 +120,13 @@ namespace Java.Util.Concurrent
         public PriorityBlockingQueue(int arg0, Java.Util.Comparator arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for PriorityBlockingQueue(int arg0, Java.Util.Comparator arg1)
+        /// </summary>
+        public static PriorityBlockingQueue New(int arg0, Java.Util.Comparator arg1)
+        {
+            return JVMBridgeBase.New<PriorityBlockingQueue>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html#java.util.concurrent.PriorityBlockingQueue(int)"/>
@@ -123,12 +137,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for PriorityBlockingQueue(int arg0)
+        /// </summary>
+        public static PriorityBlockingQueue New(int arg0)
+        {
+            return JVMBridgeBase.New<PriorityBlockingQueue>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html#java.util.concurrent.PriorityBlockingQueue(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public PriorityBlockingQueue(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PriorityBlockingQueue(Java.Util.Collection arg0)
+        /// </summary>
+        public static PriorityBlockingQueue New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<PriorityBlockingQueue>(arg0);
         }
 
         #endregion
@@ -251,6 +279,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for PriorityBlockingQueue()
+        /// </summary>
+        public static PriorityBlockingQueue<E> New()
+        {
+            return JVMBridgeBase.New<PriorityBlockingQueue<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html#java.util.concurrent.PriorityBlockingQueue(int,java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -258,6 +293,13 @@ namespace Java.Util.Concurrent
         public PriorityBlockingQueue(int arg0, Java.Util.Comparator<E> arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for PriorityBlockingQueue(int arg0, Java.Util.Comparator<E> arg1)
+        /// </summary>
+        public static PriorityBlockingQueue<E> New(int arg0, Java.Util.Comparator<E> arg1)
+        {
+            return JVMBridgeBase.New<PriorityBlockingQueue<E>>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html#java.util.concurrent.PriorityBlockingQueue(int)"/>
@@ -268,12 +310,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for PriorityBlockingQueue(int arg0)
+        /// </summary>
+        public static PriorityBlockingQueue<E> New(int arg0)
+        {
+            return JVMBridgeBase.New<PriorityBlockingQueue<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html#java.util.concurrent.PriorityBlockingQueue(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public PriorityBlockingQueue(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PriorityBlockingQueue(Java.Util.Collection<E> arg0)
+        /// </summary>
+        public static PriorityBlockingQueue<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<PriorityBlockingQueue<E>>(arg0);
         }
 
         #endregion

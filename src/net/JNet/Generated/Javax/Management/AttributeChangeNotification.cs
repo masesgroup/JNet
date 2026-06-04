@@ -78,6 +78,13 @@ namespace Javax.Management
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
+        /// <summary>
+        /// HPA initializer for AttributeChangeNotification(object arg0, long arg1, long arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5, object arg6, object arg7)
+        /// </summary>
+        public static AttributeChangeNotification New(object arg0, long arg1, long arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5, object arg6, object arg7)
+        {
+            return JVMBridgeBase.New<AttributeChangeNotification>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
 
         #endregion
 

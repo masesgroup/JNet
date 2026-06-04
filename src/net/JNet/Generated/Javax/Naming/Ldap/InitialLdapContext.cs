@@ -73,6 +73,13 @@ namespace Javax.Naming.Ldap
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for InitialLdapContext()
+        /// </summary>
+        public static InitialLdapContext New()
+        {
+            return JVMBridgeBase.New<InitialLdapContext>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/InitialLdapContext.html#javax.naming.ldap.InitialLdapContext(java.util.Hashtable,javax.naming.ldap.Control[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Naming.Ldap
         public InitialLdapContext(Java.Util.Hashtable<object, object> arg0, Javax.Naming.Ldap.Control[] arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for InitialLdapContext(Java.Util.Hashtable<object, object> arg0, Javax.Naming.Ldap.Control[] arg1)
+        /// </summary>
+        public static InitialLdapContext New(Java.Util.Hashtable<object, object> arg0, Javax.Naming.Ldap.Control[] arg1)
+        {
+            return JVMBridgeBase.New<InitialLdapContext>(arg0, arg1);
         }
 
         #endregion

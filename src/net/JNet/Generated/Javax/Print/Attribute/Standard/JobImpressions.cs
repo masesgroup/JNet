@@ -71,6 +71,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for JobImpressions(int arg0)
+        /// </summary>
+        public static JobImpressions New(int arg0)
+        {
+            return JVMBridgeBase.New<JobImpressions>(arg0);
+        }
 
         #endregion
 

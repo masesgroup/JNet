@@ -70,6 +70,13 @@ namespace Javax.Swing.Filechooser
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for FileSystemView()
+        /// </summary>
+        public static FileSystemView New()
+        {
+            return JVMBridgeBase.New<FileSystemView>();
+        }
 
         #endregion
 

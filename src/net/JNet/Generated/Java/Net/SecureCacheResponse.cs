@@ -70,6 +70,13 @@ namespace Java.Net
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SecureCacheResponse()
+        /// </summary>
+        public static SecureCacheResponse New()
+        {
+            return JVMBridgeBase.New<SecureCacheResponse>();
+        }
 
         #endregion
 

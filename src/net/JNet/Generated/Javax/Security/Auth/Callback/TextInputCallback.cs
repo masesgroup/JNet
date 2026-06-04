@@ -73,12 +73,26 @@ namespace Javax.Security.Auth.Callback
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for TextInputCallback(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static TextInputCallback New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<TextInputCallback>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/callback/TextInputCallback.html#javax.security.auth.callback.TextInputCallback(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public TextInputCallback(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TextInputCallback(Java.Lang.String arg0)
+        /// </summary>
+        public static TextInputCallback New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<TextInputCallback>(arg0);
         }
 
         #endregion

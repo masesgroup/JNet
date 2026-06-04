@@ -77,6 +77,13 @@ namespace Java.Awt.Dnd
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for DragSourceDragEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+        /// </summary>
+        public static DragSourceDragEvent New(Java.Awt.Dnd.DragSourceContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+        {
+            return JVMBridgeBase.New<DragSourceDragEvent>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceDragEvent.html#java.awt.dnd.DragSourceDragEvent(java.awt.dnd.DragSourceContext,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
@@ -86,6 +93,13 @@ namespace Java.Awt.Dnd
         public DragSourceDragEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, int arg2, int arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for DragSourceDragEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static DragSourceDragEvent New(Java.Awt.Dnd.DragSourceContext arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<DragSourceDragEvent>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Java.Util.Logging
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for StreamHandler()
+        /// </summary>
+        public static StreamHandler New()
+        {
+            return JVMBridgeBase.New<StreamHandler>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/StreamHandler.html#java.util.logging.StreamHandler(java.io.OutputStream,java.util.logging.Formatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
@@ -78,6 +85,13 @@ namespace Java.Util.Logging
         public StreamHandler(Java.Io.OutputStream arg0, Java.Util.Logging.Formatter arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for StreamHandler(Java.Io.OutputStream arg0, Java.Util.Logging.Formatter arg1)
+        /// </summary>
+        public static StreamHandler New(Java.Io.OutputStream arg0, Java.Util.Logging.Formatter arg1)
+        {
+            return JVMBridgeBase.New<StreamHandler>(arg0, arg1);
         }
 
         #endregion

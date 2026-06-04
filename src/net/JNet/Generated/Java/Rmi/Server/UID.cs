@@ -71,12 +71,26 @@ namespace Java.Rmi.Server
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for UID()
+        /// </summary>
+        public static UID New()
+        {
+            return JVMBridgeBase.New<UID>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UID.html#java.rmi.server.UID(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         public UID(short arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for UID(short arg0)
+        /// </summary>
+        public static UID New(short arg0)
+        {
+            return JVMBridgeBase.New<UID>(arg0);
         }
 
         #endregion

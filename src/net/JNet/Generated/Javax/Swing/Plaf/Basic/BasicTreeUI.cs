@@ -580,6 +580,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicTreeUI()
+        /// </summary>
+        public static BasicTreeUI New()
+        {
+            return JVMBridgeBase.New<BasicTreeUI>();
+        }
 
         #endregion
 
@@ -657,6 +664,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for CellEditorHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            /// </summary>
+            public static CellEditorHandler New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            {
+                return JVMBridgeBase.New<CellEditorHandler>(arg0);
+            }
 
             #endregion
 
@@ -715,6 +729,13 @@ namespace Javax.Swing.Plaf.Basic
             public FocusHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for FocusHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            /// </summary>
+            public static FocusHandler New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            {
+                return JVMBridgeBase.New<FocusHandler>(arg0);
             }
 
             #endregion
@@ -777,6 +798,13 @@ namespace Javax.Swing.Plaf.Basic
             public MouseInputHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, Java.Awt.Component arg1, Java.Awt.Component arg2, Java.Awt.EventNs.MouseEvent arg3) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// HPA initializer for MouseInputHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, Java.Awt.Component arg1, Java.Awt.Component arg2, Java.Awt.EventNs.MouseEvent arg3)
+            /// </summary>
+            public static MouseInputHandler New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, Java.Awt.Component arg1, Java.Awt.Component arg2, Java.Awt.EventNs.MouseEvent arg3)
+            {
+                return JVMBridgeBase.New<MouseInputHandler>(arg0, arg1, arg2, arg3);
             }
 
             #endregion
@@ -877,6 +905,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for NodeDimensionsHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            /// </summary>
+            public static NodeDimensionsHandler New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            {
+                return JVMBridgeBase.New<NodeDimensionsHandler>(arg0);
+            }
 
             #endregion
 
@@ -915,6 +950,13 @@ namespace Javax.Swing.Plaf.Basic
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            /// </summary>
+            public static PropertyChangeHandler New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            {
+                return JVMBridgeBase.New<PropertyChangeHandler>(arg0);
             }
 
             #endregion
@@ -966,6 +1008,13 @@ namespace Javax.Swing.Plaf.Basic
             public SelectionModelPropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for SelectionModelPropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            /// </summary>
+            public static SelectionModelPropertyChangeHandler New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            {
+                return JVMBridgeBase.New<SelectionModelPropertyChangeHandler>(arg0);
             }
 
             #endregion
@@ -1019,6 +1068,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0, arg1);
             }
+            /// <summary>
+            /// HPA initializer for TreeCancelEditingAction(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, Java.Lang.String arg1)
+            /// </summary>
+            public static TreeCancelEditingAction New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, Java.Lang.String arg1)
+            {
+                return JVMBridgeBase.New<TreeCancelEditingAction>(arg0, arg1);
+            }
 
             #endregion
 
@@ -1057,6 +1113,13 @@ namespace Javax.Swing.Plaf.Basic
             public TreeExpansionHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for TreeExpansionHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            /// </summary>
+            public static TreeExpansionHandler New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            {
+                return JVMBridgeBase.New<TreeExpansionHandler>(arg0);
             }
 
             #endregion
@@ -1119,6 +1182,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0, arg1, arg2);
             }
+            /// <summary>
+            /// HPA initializer for TreeHomeAction(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, int arg1, Java.Lang.String arg2)
+            /// </summary>
+            public static TreeHomeAction New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, int arg1, Java.Lang.String arg2)
+            {
+                return JVMBridgeBase.New<TreeHomeAction>(arg0, arg1, arg2);
+            }
 
             #endregion
 
@@ -1160,6 +1230,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0, arg1, arg2);
             }
+            /// <summary>
+            /// HPA initializer for TreeIncrementAction(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, int arg1, Java.Lang.String arg2)
+            /// </summary>
+            public static TreeIncrementAction New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, int arg1, Java.Lang.String arg2)
+            {
+                return JVMBridgeBase.New<TreeIncrementAction>(arg0, arg1, arg2);
+            }
 
             #endregion
 
@@ -1198,6 +1275,13 @@ namespace Javax.Swing.Plaf.Basic
             public TreeModelHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for TreeModelHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            /// </summary>
+            public static TreeModelHandler New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            {
+                return JVMBridgeBase.New<TreeModelHandler>(arg0);
             }
 
             #endregion
@@ -1276,6 +1360,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0, arg1, arg2);
             }
+            /// <summary>
+            /// HPA initializer for TreePageAction(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, int arg1, Java.Lang.String arg2)
+            /// </summary>
+            public static TreePageAction New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, int arg1, Java.Lang.String arg2)
+            {
+                return JVMBridgeBase.New<TreePageAction>(arg0, arg1, arg2);
+            }
 
             #endregion
 
@@ -1314,6 +1405,13 @@ namespace Javax.Swing.Plaf.Basic
             public TreeSelectionHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for TreeSelectionHandler(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            /// </summary>
+            public static TreeSelectionHandler New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0)
+            {
+                return JVMBridgeBase.New<TreeSelectionHandler>(arg0);
             }
 
             #endregion
@@ -1367,6 +1465,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0, arg1);
             }
+            /// <summary>
+            /// HPA initializer for TreeToggleAction(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, Java.Lang.String arg1)
+            /// </summary>
+            public static TreeToggleAction New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, Java.Lang.String arg1)
+            {
+                return JVMBridgeBase.New<TreeToggleAction>(arg0, arg1);
+            }
 
             #endregion
 
@@ -1407,6 +1512,13 @@ namespace Javax.Swing.Plaf.Basic
             public TreeTraverseAction(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, int arg1, Java.Lang.String arg2) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// HPA initializer for TreeTraverseAction(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, int arg1, Java.Lang.String arg2)
+            /// </summary>
+            public static TreeTraverseAction New(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, int arg1, Java.Lang.String arg2)
+            {
+                return JVMBridgeBase.New<TreeTraverseAction>(arg0, arg1, arg2);
             }
 
             #endregion

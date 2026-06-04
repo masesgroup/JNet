@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalLookAndFeel()
+        /// </summary>
+        public static MetalLookAndFeel New()
+        {
+            return JVMBridgeBase.New<MetalLookAndFeel>();
+        }
 
         #endregion
 

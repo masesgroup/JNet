@@ -513,6 +513,13 @@ namespace Javax.Swing.Text.Html
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for HTMLDocument()
+        /// </summary>
+        public static HTMLDocument New()
+        {
+            return JVMBridgeBase.New<HTMLDocument>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLDocument.html#javax.swing.text.html.HTMLDocument(javax.swing.text.AbstractDocument.Content,javax.swing.text.html.StyleSheet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument.Content"/></param>
@@ -522,12 +529,26 @@ namespace Javax.Swing.Text.Html
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for HTMLDocument(Javax.Swing.Text.AbstractDocument.Content arg0, Javax.Swing.Text.Html.StyleSheet arg1)
+        /// </summary>
+        public static HTMLDocument New(Javax.Swing.Text.AbstractDocument.Content arg0, Javax.Swing.Text.Html.StyleSheet arg1)
+        {
+            return JVMBridgeBase.New<HTMLDocument>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLDocument.html#javax.swing.text.html.HTMLDocument(javax.swing.text.html.StyleSheet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Html.StyleSheet"/></param>
         public HTMLDocument(Javax.Swing.Text.Html.StyleSheet arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for HTMLDocument(Javax.Swing.Text.Html.StyleSheet arg0)
+        /// </summary>
+        public static HTMLDocument New(Javax.Swing.Text.Html.StyleSheet arg0)
+        {
+            return JVMBridgeBase.New<HTMLDocument>(arg0);
         }
 
         #endregion
@@ -726,6 +747,13 @@ namespace Javax.Swing.Text.Html
             {
                 InvokeInitializer(arg0, arg1, arg2);
             }
+            /// <summary>
+            /// HPA initializer for BlockElement(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
+            /// </summary>
+            public static BlockElement New(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
+            {
+                return JVMBridgeBase.New<BlockElement>(arg0, arg1, arg2);
+            }
 
             #endregion
 
@@ -770,6 +798,13 @@ namespace Javax.Swing.Text.Html
                 InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
+            /// HPA initializer for HTMLReader(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1, int arg2, int arg3, Javax.Swing.Text.Html.HTML.Tag arg4)
+            /// </summary>
+            public static HTMLReader New(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1, int arg2, int arg3, Javax.Swing.Text.Html.HTML.Tag arg4)
+            {
+                return JVMBridgeBase.New<HTMLReader>(arg0, arg1, arg2, arg3, arg4);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLDocument.HTMLReader.html#javax.swing.text.html.HTMLDocument$HTMLReader(javax.swing.text.html.HTMLDocument,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument"/></param>
@@ -777,6 +812,13 @@ namespace Javax.Swing.Text.Html
             public HTMLReader(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for HTMLReader(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1)
+            /// </summary>
+            public static HTMLReader New(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1)
+            {
+                return JVMBridgeBase.New<HTMLReader>(arg0, arg1);
             }
 
             #endregion
@@ -809,6 +851,13 @@ namespace Javax.Swing.Text.Html
                 public FormAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0) : base(JVMBridgeBase.InitializerInstance)
                 {
                     InvokeInitializer(arg0);
+                }
+                /// <summary>
+                /// HPA initializer for FormAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                /// </summary>
+                public static FormAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                {
+                    return JVMBridgeBase.New<FormAction>(arg0);
                 }
 
                 #endregion
@@ -849,6 +898,13 @@ namespace Javax.Swing.Text.Html
                 {
                     InvokeInitializer(arg0);
                 }
+                /// <summary>
+                /// HPA initializer for CharacterAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                /// </summary>
+                public static CharacterAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                {
+                    return JVMBridgeBase.New<CharacterAction>(arg0);
+                }
 
                 #endregion
 
@@ -887,6 +943,13 @@ namespace Javax.Swing.Text.Html
                 public PreAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0) : base(JVMBridgeBase.InitializerInstance)
                 {
                     InvokeInitializer(arg0);
+                }
+                /// <summary>
+                /// HPA initializer for PreAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                /// </summary>
+                public static PreAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                {
+                    return JVMBridgeBase.New<PreAction>(arg0);
                 }
 
                 #endregion
@@ -927,6 +990,13 @@ namespace Javax.Swing.Text.Html
                 {
                     InvokeInitializer(arg0);
                 }
+                /// <summary>
+                /// HPA initializer for HiddenAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                /// </summary>
+                public static HiddenAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                {
+                    return JVMBridgeBase.New<HiddenAction>(arg0);
+                }
 
                 #endregion
 
@@ -965,6 +1035,13 @@ namespace Javax.Swing.Text.Html
                 public IsindexAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0) : base(JVMBridgeBase.InitializerInstance)
                 {
                     InvokeInitializer(arg0);
+                }
+                /// <summary>
+                /// HPA initializer for IsindexAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                /// </summary>
+                public static IsindexAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                {
+                    return JVMBridgeBase.New<IsindexAction>(arg0);
                 }
 
                 #endregion
@@ -1005,6 +1082,13 @@ namespace Javax.Swing.Text.Html
                 {
                     InvokeInitializer(arg0);
                 }
+                /// <summary>
+                /// HPA initializer for SpecialAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                /// </summary>
+                public static SpecialAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                {
+                    return JVMBridgeBase.New<SpecialAction>(arg0);
+                }
 
                 #endregion
 
@@ -1043,6 +1127,13 @@ namespace Javax.Swing.Text.Html
                 public ParagraphAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0) : base(JVMBridgeBase.InitializerInstance)
                 {
                     InvokeInitializer(arg0);
+                }
+                /// <summary>
+                /// HPA initializer for ParagraphAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                /// </summary>
+                public static ParagraphAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                {
+                    return JVMBridgeBase.New<ParagraphAction>(arg0);
                 }
 
                 #endregion
@@ -1083,6 +1174,13 @@ namespace Javax.Swing.Text.Html
                 {
                     InvokeInitializer(arg0);
                 }
+                /// <summary>
+                /// HPA initializer for BlockAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                /// </summary>
+                public static BlockAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                {
+                    return JVMBridgeBase.New<BlockAction>(arg0);
+                }
 
                 #endregion
 
@@ -1121,6 +1219,13 @@ namespace Javax.Swing.Text.Html
                 public TagAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0) : base(JVMBridgeBase.InitializerInstance)
                 {
                     InvokeInitializer(arg0);
+                }
+                /// <summary>
+                /// HPA initializer for TagAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                /// </summary>
+                public static TagAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                {
+                    return JVMBridgeBase.New<TagAction>(arg0);
                 }
 
                 #endregion
@@ -1183,6 +1288,13 @@ namespace Javax.Swing.Text.Html
             public Iterator() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for Iterator()
+            /// </summary>
+            public static Iterator New()
+            {
+                return JVMBridgeBase.New<Iterator>();
             }
 
             #endregion
@@ -1269,6 +1381,13 @@ namespace Javax.Swing.Text.Html
             public RunElement(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2, int arg3, int arg4) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+            }
+            /// <summary>
+            /// HPA initializer for RunElement(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2, int arg3, int arg4)
+            /// </summary>
+            public static RunElement New(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2, int arg3, int arg4)
+            {
+                return JVMBridgeBase.New<RunElement>(arg0, arg1, arg2, arg3, arg4);
             }
 
             #endregion

@@ -70,6 +70,13 @@ namespace Java.Net
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for CookieHandler()
+        /// </summary>
+        public static CookieHandler New()
+        {
+            return JVMBridgeBase.New<CookieHandler>();
+        }
 
         #endregion
 

@@ -207,6 +207,13 @@ namespace Javax.Swing
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for GroupLayout(Java.Awt.Container arg0)
+        /// </summary>
+        public static GroupLayout New(Java.Awt.Container arg0)
+        {
+            return JVMBridgeBase.New<GroupLayout>(arg0);
+        }
 
         #endregion
 

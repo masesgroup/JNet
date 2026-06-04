@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiTreeUI()
+        /// </summary>
+        public static MultiTreeUI New()
+        {
+            return JVMBridgeBase.New<MultiTreeUI>();
+        }
 
         #endregion
 

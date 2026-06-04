@@ -70,6 +70,13 @@ namespace Java.Security
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SecureRandomSpi()
+        /// </summary>
+        public static SecureRandomSpi New()
+        {
+            return JVMBridgeBase.New<SecureRandomSpi>();
+        }
 
         #endregion
 

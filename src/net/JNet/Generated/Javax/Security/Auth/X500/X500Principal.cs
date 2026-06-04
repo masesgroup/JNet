@@ -72,12 +72,26 @@ namespace Javax.Security.Auth.X500
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for X500Principal(byte[] arg0)
+        /// </summary>
+        public static X500Principal New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<X500Principal>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/x500/X500Principal.html#javax.security.auth.x500.X500Principal(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public X500Principal(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for X500Principal(Java.Io.InputStream arg0)
+        /// </summary>
+        public static X500Principal New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<X500Principal>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/x500/X500Principal.html#javax.security.auth.x500.X500Principal(java.lang.String,java.util.Map)"/>
@@ -89,12 +103,26 @@ namespace Javax.Security.Auth.X500
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for X500Principal(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1)
+        /// </summary>
+        public static X500Principal New(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1)
+        {
+            return JVMBridgeBase.New<X500Principal>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/x500/X500Principal.html#javax.security.auth.x500.X500Principal(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public X500Principal(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for X500Principal(Java.Lang.String arg0)
+        /// </summary>
+        public static X500Principal New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<X500Principal>(arg0);
         }
 
         #endregion

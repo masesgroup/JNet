@@ -77,6 +77,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for MemoryImageSource(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Util.Hashtable<object, object> arg5)
+        /// </summary>
+        public static MemoryImageSource New(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Util.Hashtable<object, object> arg5)
+        {
+            return JVMBridgeBase.New<MemoryImageSource>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/MemoryImageSource.html#java.awt.image.MemoryImageSource(int,int,int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -87,6 +94,13 @@ namespace Java.Awt.ImageNs
         public MemoryImageSource(int arg0, int arg1, int[] arg2, int arg3, int arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for MemoryImageSource(int arg0, int arg1, int[] arg2, int arg3, int arg4)
+        /// </summary>
+        public static MemoryImageSource New(int arg0, int arg1, int[] arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<MemoryImageSource>(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/MemoryImageSource.html#java.awt.image.MemoryImageSource(int,int,java.awt.image.ColorModel,byte[],int,int,java.util.Hashtable)"/>
@@ -103,6 +117,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5, Java.Util.Hashtable<object, object> arg6)
+        /// </summary>
+        public static MemoryImageSource New(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5, Java.Util.Hashtable<object, object> arg6)
+        {
+            return JVMBridgeBase.New<MemoryImageSource>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/MemoryImageSource.html#java.awt.image.MemoryImageSource(int,int,java.awt.image.ColorModel,byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -114,6 +135,13 @@ namespace Java.Awt.ImageNs
         public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5)
+        /// </summary>
+        public static MemoryImageSource New(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5)
+        {
+            return JVMBridgeBase.New<MemoryImageSource>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/MemoryImageSource.html#java.awt.image.MemoryImageSource(int,int,java.awt.image.ColorModel,int[],int,int,java.util.Hashtable)"/>
@@ -130,6 +158,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5, Java.Util.Hashtable<object, object> arg6)
+        /// </summary>
+        public static MemoryImageSource New(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5, Java.Util.Hashtable<object, object> arg6)
+        {
+            return JVMBridgeBase.New<MemoryImageSource>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/MemoryImageSource.html#java.awt.image.MemoryImageSource(int,int,java.awt.image.ColorModel,int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -141,6 +176,13 @@ namespace Java.Awt.ImageNs
         public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5)
+        /// </summary>
+        public static MemoryImageSource New(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5)
+        {
+            return JVMBridgeBase.New<MemoryImageSource>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

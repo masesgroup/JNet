@@ -71,6 +71,13 @@ namespace Javax.Swing
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for OverlayLayout(Java.Awt.Container arg0)
+        /// </summary>
+        public static OverlayLayout New(Java.Awt.Container arg0)
+        {
+            return JVMBridgeBase.New<OverlayLayout>(arg0);
+        }
 
         #endregion
 

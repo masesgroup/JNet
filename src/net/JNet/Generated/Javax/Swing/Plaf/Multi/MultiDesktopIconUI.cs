@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiDesktopIconUI()
+        /// </summary>
+        public static MultiDesktopIconUI New()
+        {
+            return JVMBridgeBase.New<MultiDesktopIconUI>();
+        }
 
         #endregion
 

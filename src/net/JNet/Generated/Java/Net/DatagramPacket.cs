@@ -76,6 +76,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for DatagramPacket(byte[] arg0, int arg1, int arg2, Java.Net.InetAddress arg3, int arg4)
+        /// </summary>
+        public static DatagramPacket New(byte[] arg0, int arg1, int arg2, Java.Net.InetAddress arg3, int arg4)
+        {
+            return JVMBridgeBase.New<DatagramPacket>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramPacket.html#java.net.DatagramPacket(byte[],int,int,java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -87,6 +94,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for DatagramPacket(byte[] arg0, int arg1, int arg2, Java.Net.SocketAddress arg3)
+        /// </summary>
+        public static DatagramPacket New(byte[] arg0, int arg1, int arg2, Java.Net.SocketAddress arg3)
+        {
+            return JVMBridgeBase.New<DatagramPacket>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramPacket.html#java.net.DatagramPacket(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -95,6 +109,13 @@ namespace Java.Net
         public DatagramPacket(byte[] arg0, int arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for DatagramPacket(byte[] arg0, int arg1, int arg2)
+        /// </summary>
+        public static DatagramPacket New(byte[] arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<DatagramPacket>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramPacket.html#java.net.DatagramPacket(byte[],int,java.net.InetAddress,int)"/>
@@ -108,6 +129,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for DatagramPacket(byte[] arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
+        /// </summary>
+        public static DatagramPacket New(byte[] arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
+        {
+            return JVMBridgeBase.New<DatagramPacket>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramPacket.html#java.net.DatagramPacket(byte[],int,java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -118,6 +146,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DatagramPacket(byte[] arg0, int arg1, Java.Net.SocketAddress arg2)
+        /// </summary>
+        public static DatagramPacket New(byte[] arg0, int arg1, Java.Net.SocketAddress arg2)
+        {
+            return JVMBridgeBase.New<DatagramPacket>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramPacket.html#java.net.DatagramPacket(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -125,6 +160,13 @@ namespace Java.Net
         public DatagramPacket(byte[] arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DatagramPacket(byte[] arg0, int arg1)
+        /// </summary>
+        public static DatagramPacket New(byte[] arg0, int arg1)
+        {
+            return JVMBridgeBase.New<DatagramPacket>(arg0, arg1);
         }
 
         #endregion

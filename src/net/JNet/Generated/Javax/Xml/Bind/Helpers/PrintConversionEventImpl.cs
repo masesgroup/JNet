@@ -75,6 +75,13 @@ namespace Javax.Xml.Bind.Helpers
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for PrintConversionEventImpl(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2, Java.Lang.Throwable arg3)
+        /// </summary>
+        public static PrintConversionEventImpl New(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2, Java.Lang.Throwable arg3)
+        {
+            return JVMBridgeBase.New<PrintConversionEventImpl>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/PrintConversionEventImpl.html#javax.xml.bind.helpers.PrintConversionEventImpl(int,java.lang.String,javax.xml.bind.ValidationEventLocator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -83,6 +90,13 @@ namespace Javax.Xml.Bind.Helpers
         public PrintConversionEventImpl(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for PrintConversionEventImpl(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2)
+        /// </summary>
+        public static PrintConversionEventImpl New(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2)
+        {
+            return JVMBridgeBase.New<PrintConversionEventImpl>(arg0, arg1, arg2);
         }
 
         #endregion

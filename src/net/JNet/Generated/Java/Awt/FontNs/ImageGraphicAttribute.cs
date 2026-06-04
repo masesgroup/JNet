@@ -75,6 +75,13 @@ namespace Java.Awt.FontNs
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for ImageGraphicAttribute(Java.Awt.Image arg0, int arg1, float arg2, float arg3)
+        /// </summary>
+        public static ImageGraphicAttribute New(Java.Awt.Image arg0, int arg1, float arg2, float arg3)
+        {
+            return JVMBridgeBase.New<ImageGraphicAttribute>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/font/ImageGraphicAttribute.html#java.awt.font.ImageGraphicAttribute(java.awt.Image,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
@@ -82,6 +89,13 @@ namespace Java.Awt.FontNs
         public ImageGraphicAttribute(Java.Awt.Image arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for ImageGraphicAttribute(Java.Awt.Image arg0, int arg1)
+        /// </summary>
+        public static ImageGraphicAttribute New(Java.Awt.Image arg0, int arg1)
+        {
+            return JVMBridgeBase.New<ImageGraphicAttribute>(arg0, arg1);
         }
 
         #endregion

@@ -240,6 +240,13 @@ namespace Javax.Swing.Text.Html
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for HTMLEditorKit()
+        /// </summary>
+        public static HTMLEditorKit New()
+        {
+            return JVMBridgeBase.New<HTMLEditorKit>();
+        }
 
         #endregion
 
@@ -386,6 +393,13 @@ namespace Javax.Swing.Text.Html
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for HTMLFactory()
+            /// </summary>
+            public static HTMLFactory New()
+            {
+                return JVMBridgeBase.New<HTMLFactory>();
+            }
 
             #endregion
 
@@ -434,6 +448,13 @@ namespace Javax.Swing.Text.Html
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for HTMLTextAction(Java.Lang.String arg0)
+            /// </summary>
+            public static HTMLTextAction New(Java.Lang.String arg0)
+            {
+                return JVMBridgeBase.New<HTMLTextAction>(arg0);
+            }
 
             #endregion
 
@@ -479,6 +500,13 @@ namespace Javax.Swing.Text.Html
                 InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
+            /// HPA initializer for InsertHTMLTextAction(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3, Javax.Swing.Text.Html.HTML.Tag arg4, Javax.Swing.Text.Html.HTML.Tag arg5)
+            /// </summary>
+            public static InsertHTMLTextAction New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3, Javax.Swing.Text.Html.HTML.Tag arg4, Javax.Swing.Text.Html.HTML.Tag arg5)
+            {
+                return JVMBridgeBase.New<InsertHTMLTextAction>(arg0, arg1, arg2, arg3, arg4, arg5);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#javax.swing.text.html.HTMLEditorKit$InsertHTMLTextAction(java.lang.String,java.lang.String,javax.swing.text.html.HTML.Tag,javax.swing.text.html.HTML.Tag)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -488,6 +516,13 @@ namespace Javax.Swing.Text.Html
             public InsertHTMLTextAction(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// HPA initializer for InsertHTMLTextAction(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
+            /// </summary>
+            public static InsertHTMLTextAction New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
+            {
+                return JVMBridgeBase.New<InsertHTMLTextAction>(arg0, arg1, arg2, arg3);
             }
 
             #endregion
@@ -526,6 +561,13 @@ namespace Javax.Swing.Text.Html
             public Parser() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for Parser()
+            /// </summary>
+            public static Parser New()
+            {
+                return JVMBridgeBase.New<Parser>();
             }
 
             #endregion
@@ -575,6 +617,13 @@ namespace Javax.Swing.Text.Html
             public ParserCallback() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for ParserCallback()
+            /// </summary>
+            public static ParserCallback New()
+            {
+                return JVMBridgeBase.New<ParserCallback>();
             }
 
             #endregion

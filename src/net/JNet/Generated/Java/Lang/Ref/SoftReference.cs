@@ -108,12 +108,26 @@ namespace Java.Lang.Ref
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for SoftReference(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
+        /// </summary>
+        public static SoftReference New(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
+        {
+            return JVMBridgeBase.New<SoftReference>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/SoftReference.html#java.lang.ref.SoftReference(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public SoftReference(object arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SoftReference(object arg0)
+        /// </summary>
+        public static SoftReference New(object arg0)
+        {
+            return JVMBridgeBase.New<SoftReference>(arg0);
         }
 
         #endregion
@@ -156,12 +170,26 @@ namespace Java.Lang.Ref
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for SoftReference(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
+        /// </summary>
+        public static SoftReference<T> New(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
+        {
+            return JVMBridgeBase.New<SoftReference<T>>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/SoftReference.html#java.lang.ref.SoftReference(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         public SoftReference(T arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SoftReference(T arg0)
+        /// </summary>
+        public static SoftReference<T> New(T arg0)
+        {
+            return JVMBridgeBase.New<SoftReference<T>>(arg0);
         }
 
         #endregion

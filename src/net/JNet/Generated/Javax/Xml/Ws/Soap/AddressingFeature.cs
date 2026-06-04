@@ -105,6 +105,13 @@ namespace Javax.Xml.Ws.Soap
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AddressingFeature()
+        /// </summary>
+        public static AddressingFeature New()
+        {
+            return JVMBridgeBase.New<AddressingFeature>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/soap/AddressingFeature.html#javax.xml.ws.soap.AddressingFeature(boolean,boolean,javax.xml.ws.soap.AddressingFeature.Responses)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -113,6 +120,13 @@ namespace Javax.Xml.Ws.Soap
         public AddressingFeature(bool arg0, bool arg1, Javax.Xml.Ws.Soap.AddressingFeature.Responses arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for AddressingFeature(bool arg0, bool arg1, Javax.Xml.Ws.Soap.AddressingFeature.Responses arg2)
+        /// </summary>
+        public static AddressingFeature New(bool arg0, bool arg1, Javax.Xml.Ws.Soap.AddressingFeature.Responses arg2)
+        {
+            return JVMBridgeBase.New<AddressingFeature>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/soap/AddressingFeature.html#javax.xml.ws.soap.AddressingFeature(boolean,boolean)"/>
@@ -124,12 +138,26 @@ namespace Javax.Xml.Ws.Soap
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for AddressingFeature(bool arg0, bool arg1)
+        /// </summary>
+        public static AddressingFeature New(bool arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<AddressingFeature>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/soap/AddressingFeature.html#javax.xml.ws.soap.AddressingFeature(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public AddressingFeature(bool arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AddressingFeature(bool arg0)
+        /// </summary>
+        public static AddressingFeature New(bool arg0)
+        {
+            return JVMBridgeBase.New<AddressingFeature>(arg0);
         }
 
         #endregion

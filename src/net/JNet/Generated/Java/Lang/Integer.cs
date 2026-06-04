@@ -72,6 +72,13 @@ namespace Java.Lang
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Integer(int arg0)
+        /// </summary>
+        public static Integer New(int arg0)
+        {
+            return JVMBridgeBase.New<Integer>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html#java.lang.Integer(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -79,6 +86,13 @@ namespace Java.Lang
         public Integer(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Integer(Java.Lang.String arg0)
+        /// </summary>
+        public static Integer New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Integer>(arg0);
         }
 
         #endregion

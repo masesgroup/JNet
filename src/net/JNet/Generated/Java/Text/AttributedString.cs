@@ -73,12 +73,26 @@ namespace Java.Text
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for AttributedString(Java.Lang.String arg0, Java.Util.Map arg1)
+        /// </summary>
+        public static AttributedString New(Java.Lang.String arg0, Java.Util.Map arg1)
+        {
+            return JVMBridgeBase.New<AttributedString>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/AttributedString.html#java.text.AttributedString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public AttributedString(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AttributedString(Java.Lang.String arg0)
+        /// </summary>
+        public static AttributedString New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<AttributedString>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/AttributedString.html#java.text.AttributedString(java.text.AttributedCharacterIterator,int,int,java.text.AttributedCharacterIterator.Attribute[])"/>
@@ -92,6 +106,13 @@ namespace Java.Text
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for AttributedString(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2, Java.Text.AttributedCharacterIterator.Attribute[] arg3)
+        /// </summary>
+        public static AttributedString New(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2, Java.Text.AttributedCharacterIterator.Attribute[] arg3)
+        {
+            return JVMBridgeBase.New<AttributedString>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/AttributedString.html#java.text.AttributedString(java.text.AttributedCharacterIterator,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
@@ -102,12 +123,26 @@ namespace Java.Text
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for AttributedString(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2)
+        /// </summary>
+        public static AttributedString New(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<AttributedString>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/AttributedString.html#java.text.AttributedString(java.text.AttributedCharacterIterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
         public AttributedString(Java.Text.AttributedCharacterIterator arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AttributedString(Java.Text.AttributedCharacterIterator arg0)
+        /// </summary>
+        public static AttributedString New(Java.Text.AttributedCharacterIterator arg0)
+        {
+            return JVMBridgeBase.New<AttributedString>(arg0);
         }
 
         #endregion

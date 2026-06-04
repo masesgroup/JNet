@@ -74,6 +74,13 @@ namespace Java.Security
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// HPA initializer for UnresolvedPermission(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Security.Cert.Certificate[] arg3)
+        /// </summary>
+        public static UnresolvedPermission New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Security.Cert.Certificate[] arg3)
+        {
+            return JVMBridgeBase.New<UnresolvedPermission>(arg0, arg1, arg2, arg3);
+        }
 
         #endregion
 

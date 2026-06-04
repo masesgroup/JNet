@@ -106,6 +106,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for HashSet()
+        /// </summary>
+        public static HashSet New()
+        {
+            return JVMBridgeBase.New<HashSet>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html#java.util.HashSet(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -113,6 +120,13 @@ namespace Java.Util
         public HashSet(int arg0, float arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for HashSet(int arg0, float arg1)
+        /// </summary>
+        public static HashSet New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<HashSet>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html#java.util.HashSet(int)"/>
@@ -123,12 +137,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for HashSet(int arg0)
+        /// </summary>
+        public static HashSet New(int arg0)
+        {
+            return JVMBridgeBase.New<HashSet>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html#java.util.HashSet(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public HashSet(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for HashSet(Java.Util.Collection arg0)
+        /// </summary>
+        public static HashSet New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<HashSet>(arg0);
         }
 
         #endregion
@@ -177,6 +205,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for HashSet()
+        /// </summary>
+        public static HashSet<E> New()
+        {
+            return JVMBridgeBase.New<HashSet<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html#java.util.HashSet(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -184,6 +219,13 @@ namespace Java.Util
         public HashSet(int arg0, float arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for HashSet(int arg0, float arg1)
+        /// </summary>
+        public static HashSet<E> New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<HashSet<E>>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html#java.util.HashSet(int)"/>
@@ -194,12 +236,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for HashSet(int arg0)
+        /// </summary>
+        public static HashSet<E> New(int arg0)
+        {
+            return JVMBridgeBase.New<HashSet<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html#java.util.HashSet(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public HashSet(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for HashSet(Java.Util.Collection<E> arg0)
+        /// </summary>
+        public static HashSet<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<HashSet<E>>(arg0);
         }
 
         #endregion

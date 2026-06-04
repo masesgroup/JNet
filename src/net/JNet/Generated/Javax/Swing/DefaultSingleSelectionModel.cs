@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultSingleSelectionModel()
+        /// </summary>
+        public static DefaultSingleSelectionModel New()
+        {
+            return JVMBridgeBase.New<DefaultSingleSelectionModel>();
+        }
 
         #endregion
 

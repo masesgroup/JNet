@@ -75,6 +75,13 @@ namespace Javax.Management.Remote.Rmi
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
+        /// <summary>
+        /// HPA initializer for RMIConnectionImpl(Javax.Management.Remote.Rmi.RMIServerImpl arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2, Javax.Security.Auth.Subject arg3, Java.Util.Map<Java.Lang.String, object> arg4)
+        /// </summary>
+        public static RMIConnectionImpl New(Javax.Management.Remote.Rmi.RMIServerImpl arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2, Javax.Security.Auth.Subject arg3, Java.Util.Map<Java.Lang.String, object> arg4)
+        {
+            return JVMBridgeBase.New<RMIConnectionImpl>(arg0, arg1, arg2, arg3, arg4);
+        }
 
         #endregion
 

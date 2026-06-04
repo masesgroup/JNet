@@ -71,6 +71,13 @@ namespace Java.Awt
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for MediaTracker(Java.Awt.Component arg0)
+        /// </summary>
+        public static MediaTracker New(Java.Awt.Component arg0)
+        {
+            return JVMBridgeBase.New<MediaTracker>(arg0);
+        }
 
         #endregion
 

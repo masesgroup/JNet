@@ -72,6 +72,13 @@ namespace Javax.Smartcardio
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for CardPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static CardPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<CardPermission>(arg0, arg1);
+        }
 
         #endregion
 

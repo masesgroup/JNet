@@ -106,6 +106,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JLayer()
+        /// </summary>
+        public static JLayer New()
+        {
+            return JVMBridgeBase.New<JLayer>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JLayer.html#javax.swing.JLayer(java.awt.Component,javax.swing.plaf.LayerUI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -115,12 +122,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JLayer(Java.Awt.Component arg0, Javax.Swing.Plaf.LayerUI arg1)
+        /// </summary>
+        public static JLayer New(Java.Awt.Component arg0, Javax.Swing.Plaf.LayerUI arg1)
+        {
+            return JVMBridgeBase.New<JLayer>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JLayer.html#javax.swing.JLayer(java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public JLayer(Java.Awt.Component arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JLayer(Java.Awt.Component arg0)
+        /// </summary>
+        public static JLayer New(Java.Awt.Component arg0)
+        {
+            return JVMBridgeBase.New<JLayer>(arg0);
         }
 
         #endregion
@@ -260,6 +281,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JLayer()
+        /// </summary>
+        public static JLayer<V> New()
+        {
+            return JVMBridgeBase.New<JLayer<V>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JLayer.html#javax.swing.JLayer(java.awt.Component,javax.swing.plaf.LayerUI)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
@@ -269,12 +297,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JLayer(V arg0, Javax.Swing.Plaf.LayerUI<V> arg1)
+        /// </summary>
+        public static JLayer<V> New(V arg0, Javax.Swing.Plaf.LayerUI<V> arg1)
+        {
+            return JVMBridgeBase.New<JLayer<V>>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JLayer.html#javax.swing.JLayer(java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         public JLayer(V arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JLayer(V arg0)
+        /// </summary>
+        public static JLayer<V> New(V arg0)
+        {
+            return JVMBridgeBase.New<JLayer<V>>(arg0);
         }
 
         #endregion

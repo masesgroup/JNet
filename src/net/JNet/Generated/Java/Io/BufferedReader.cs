@@ -73,12 +73,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BufferedReader(Java.Io.Reader arg0, int arg1)
+        /// </summary>
+        public static BufferedReader New(Java.Io.Reader arg0, int arg1)
+        {
+            return JVMBridgeBase.New<BufferedReader>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html#java.io.BufferedReader(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public BufferedReader(Java.Io.Reader arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BufferedReader(Java.Io.Reader arg0)
+        /// </summary>
+        public static BufferedReader New(Java.Io.Reader arg0)
+        {
+            return JVMBridgeBase.New<BufferedReader>(arg0);
         }
 
         #endregion

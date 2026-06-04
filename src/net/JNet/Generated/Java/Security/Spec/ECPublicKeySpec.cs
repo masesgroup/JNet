@@ -72,6 +72,13 @@ namespace Java.Security.Spec
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for ECPublicKeySpec(Java.Security.Spec.ECPoint arg0, Java.Security.Spec.ECParameterSpec arg1)
+        /// </summary>
+        public static ECPublicKeySpec New(Java.Security.Spec.ECPoint arg0, Java.Security.Spec.ECParameterSpec arg1)
+        {
+            return JVMBridgeBase.New<ECPublicKeySpec>(arg0, arg1);
+        }
 
         #endregion
 

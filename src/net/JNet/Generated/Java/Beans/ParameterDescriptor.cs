@@ -70,6 +70,13 @@ namespace Java.Beans
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ParameterDescriptor()
+        /// </summary>
+        public static ParameterDescriptor New()
+        {
+            return JVMBridgeBase.New<ParameterDescriptor>();
+        }
 
         #endregion
 

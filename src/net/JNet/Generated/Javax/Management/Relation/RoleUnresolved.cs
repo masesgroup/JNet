@@ -74,6 +74,13 @@ namespace Javax.Management.Relation
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for RoleUnresolved(Java.Lang.String arg0, Java.Util.List<Javax.Management.ObjectName> arg1, int arg2)
+        /// </summary>
+        public static RoleUnresolved New(Java.Lang.String arg0, Java.Util.List<Javax.Management.ObjectName> arg1, int arg2)
+        {
+            return JVMBridgeBase.New<RoleUnresolved>(arg0, arg1, arg2);
+        }
 
         #endregion
 

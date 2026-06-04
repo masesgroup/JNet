@@ -72,6 +72,13 @@ namespace Java.Beans.Beancontext
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for BeanContextMembershipEvent(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Collection arg1)
+        /// </summary>
+        public static BeanContextMembershipEvent New(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Collection arg1)
+        {
+            return JVMBridgeBase.New<BeanContextMembershipEvent>(arg0, arg1);
+        }
 
         #endregion
 

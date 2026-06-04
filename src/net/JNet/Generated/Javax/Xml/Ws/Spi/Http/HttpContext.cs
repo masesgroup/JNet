@@ -70,6 +70,13 @@ namespace Javax.Xml.Ws.Spi.Http
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for HttpContext()
+        /// </summary>
+        public static HttpContext New()
+        {
+            return JVMBridgeBase.New<HttpContext>();
+        }
 
         #endregion
 

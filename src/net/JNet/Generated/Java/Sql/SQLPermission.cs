@@ -73,12 +73,26 @@ namespace Java.Sql
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for SQLPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static SQLPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<SQLPermission>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/SQLPermission.html#java.sql.SQLPermission(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public SQLPermission(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SQLPermission(Java.Lang.String arg0)
+        /// </summary>
+        public static SQLPermission New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<SQLPermission>(arg0);
         }
 
         #endregion

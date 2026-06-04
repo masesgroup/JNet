@@ -70,6 +70,13 @@ namespace Javax.Rmi.CORBA
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ClassDesc()
+        /// </summary>
+        public static ClassDesc New()
+        {
+            return JVMBridgeBase.New<ClassDesc>();
+        }
 
         #endregion
 

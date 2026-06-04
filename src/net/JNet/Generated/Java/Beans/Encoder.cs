@@ -70,6 +70,13 @@ namespace Java.Beans
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Encoder()
+        /// </summary>
+        public static Encoder New()
+        {
+            return JVMBridgeBase.New<Encoder>();
+        }
 
         #endregion
 

@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DebugGraphics()
+        /// </summary>
+        public static DebugGraphics New()
+        {
+            return JVMBridgeBase.New<DebugGraphics>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DebugGraphics.html#javax.swing.DebugGraphics(java.awt.Graphics,javax.swing.JComponent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
@@ -80,12 +87,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for DebugGraphics(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
+        /// </summary>
+        public static DebugGraphics New(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
+        {
+            return JVMBridgeBase.New<DebugGraphics>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DebugGraphics.html#javax.swing.DebugGraphics(java.awt.Graphics)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public DebugGraphics(Java.Awt.Graphics arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DebugGraphics(Java.Awt.Graphics arg0)
+        /// </summary>
+        public static DebugGraphics New(Java.Awt.Graphics arg0)
+        {
+            return JVMBridgeBase.New<DebugGraphics>(arg0);
         }
 
         #endregion

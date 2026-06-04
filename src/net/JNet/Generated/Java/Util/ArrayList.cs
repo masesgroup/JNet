@@ -106,6 +106,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ArrayList()
+        /// </summary>
+        public static ArrayList New()
+        {
+            return JVMBridgeBase.New<ArrayList>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html#java.util.ArrayList(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -114,12 +121,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ArrayList(int arg0)
+        /// </summary>
+        public static ArrayList New(int arg0)
+        {
+            return JVMBridgeBase.New<ArrayList>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html#java.util.ArrayList(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ArrayList(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ArrayList(Java.Util.Collection arg0)
+        /// </summary>
+        public static ArrayList New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<ArrayList>(arg0);
         }
 
         #endregion
@@ -187,6 +208,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ArrayList()
+        /// </summary>
+        public static ArrayList<E> New()
+        {
+            return JVMBridgeBase.New<ArrayList<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html#java.util.ArrayList(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -195,12 +223,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ArrayList(int arg0)
+        /// </summary>
+        public static ArrayList<E> New(int arg0)
+        {
+            return JVMBridgeBase.New<ArrayList<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html#java.util.ArrayList(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ArrayList(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ArrayList(Java.Util.Collection<E> arg0)
+        /// </summary>
+        public static ArrayList<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<ArrayList<E>>(arg0);
         }
 
         #endregion

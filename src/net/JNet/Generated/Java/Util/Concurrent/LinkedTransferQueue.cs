@@ -106,12 +106,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for LinkedTransferQueue()
+        /// </summary>
+        public static LinkedTransferQueue New()
+        {
+            return JVMBridgeBase.New<LinkedTransferQueue>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedTransferQueue.html#java.util.concurrent.LinkedTransferQueue(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public LinkedTransferQueue(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedTransferQueue(Java.Util.Collection arg0)
+        /// </summary>
+        public static LinkedTransferQueue New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<LinkedTransferQueue>(arg0);
         }
 
         #endregion
@@ -271,12 +285,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for LinkedTransferQueue()
+        /// </summary>
+        public static LinkedTransferQueue<E> New()
+        {
+            return JVMBridgeBase.New<LinkedTransferQueue<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedTransferQueue.html#java.util.concurrent.LinkedTransferQueue(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public LinkedTransferQueue(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedTransferQueue(Java.Util.Collection<E> arg0)
+        /// </summary>
+        public static LinkedTransferQueue<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<LinkedTransferQueue<E>>(arg0);
         }
 
         #endregion

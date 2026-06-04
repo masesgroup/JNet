@@ -108,6 +108,13 @@ namespace Javax.Xml.Crypto.Dsig.Spec
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for XPathType(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1, Java.Util.Map arg2)
+        /// </summary>
+        public static XPathType New(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1, Java.Util.Map arg2)
+        {
+            return JVMBridgeBase.New<XPathType>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/crypto/dsig/spec/XPathType.html#javax.xml.crypto.dsig.spec.XPathType(java.lang.String,javax.xml.crypto.dsig.spec.XPathType.Filter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -115,6 +122,13 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         public XPathType(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for XPathType(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1)
+        /// </summary>
+        public static XPathType New(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1)
+        {
+            return JVMBridgeBase.New<XPathType>(arg0, arg1);
         }
 
         #endregion

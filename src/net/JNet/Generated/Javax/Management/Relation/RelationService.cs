@@ -71,6 +71,13 @@ namespace Javax.Management.Relation
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for RelationService(bool arg0)
+        /// </summary>
+        public static RelationService New(bool arg0)
+        {
+            return JVMBridgeBase.New<RelationService>(arg0);
+        }
 
         #endregion
 

@@ -73,6 +73,13 @@ namespace Java.Awt.ImageNs
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for Kernel(int arg0, int arg1, float[] arg2)
+        /// </summary>
+        public static Kernel New(int arg0, int arg1, float[] arg2)
+        {
+            return JVMBridgeBase.New<Kernel>(arg0, arg1, arg2);
+        }
 
         #endregion
 

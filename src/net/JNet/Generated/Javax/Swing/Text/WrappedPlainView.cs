@@ -73,12 +73,26 @@ namespace Javax.Swing.Text
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for WrappedPlainView(Javax.Swing.Text.Element arg0, bool arg1)
+        /// </summary>
+        public static WrappedPlainView New(Javax.Swing.Text.Element arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<WrappedPlainView>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/WrappedPlainView.html#javax.swing.text.WrappedPlainView(javax.swing.text.Element)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
         public WrappedPlainView(Javax.Swing.Text.Element arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for WrappedPlainView(Javax.Swing.Text.Element arg0)
+        /// </summary>
+        public static WrappedPlainView New(Javax.Swing.Text.Element arg0)
+        {
+            return JVMBridgeBase.New<WrappedPlainView>(arg0);
         }
 
         #endregion

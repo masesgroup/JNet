@@ -70,6 +70,13 @@ namespace Javax.Xml.Bind.Annotation.Adapters
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for HexBinaryAdapter()
+        /// </summary>
+        public static HexBinaryAdapter New()
+        {
+            return JVMBridgeBase.New<HexBinaryAdapter>();
+        }
 
         #endregion
 

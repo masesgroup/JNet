@@ -73,6 +73,13 @@ namespace Java.Security.Spec
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ECFieldF2m(int arg0, int[] arg1)
+        /// </summary>
+        public static ECFieldF2m New(int arg0, int[] arg1)
+        {
+            return JVMBridgeBase.New<ECFieldF2m>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/spec/ECFieldF2m.html#java.security.spec.ECFieldF2m(int,java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -82,12 +89,26 @@ namespace Java.Security.Spec
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ECFieldF2m(int arg0, Java.Math.BigInteger arg1)
+        /// </summary>
+        public static ECFieldF2m New(int arg0, Java.Math.BigInteger arg1)
+        {
+            return JVMBridgeBase.New<ECFieldF2m>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/spec/ECFieldF2m.html#java.security.spec.ECFieldF2m(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ECFieldF2m(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ECFieldF2m(int arg0)
+        /// </summary>
+        public static ECFieldF2m New(int arg0)
+        {
+            return JVMBridgeBase.New<ECFieldF2m>(arg0);
         }
 
         #endregion

@@ -74,6 +74,13 @@ namespace Javax.Naming.Ldap
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Rdn(Java.Lang.String arg0, object arg1)
+        /// </summary>
+        public static Rdn New(Java.Lang.String arg0, object arg1)
+        {
+            return JVMBridgeBase.New<Rdn>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/Rdn.html#javax.naming.ldap.Rdn(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Naming.Ldap
         public Rdn(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Rdn(Java.Lang.String arg0)
+        /// </summary>
+        public static Rdn New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Rdn>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/Rdn.html#javax.naming.ldap.Rdn(javax.naming.directory.Attributes)"/>
@@ -92,12 +106,26 @@ namespace Javax.Naming.Ldap
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Rdn(Javax.Naming.Directory.Attributes arg0)
+        /// </summary>
+        public static Rdn New(Javax.Naming.Directory.Attributes arg0)
+        {
+            return JVMBridgeBase.New<Rdn>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/Rdn.html#javax.naming.ldap.Rdn(javax.naming.ldap.Rdn)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Ldap.Rdn"/></param>
         public Rdn(Javax.Naming.Ldap.Rdn arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Rdn(Javax.Naming.Ldap.Rdn arg0)
+        /// </summary>
+        public static Rdn New(Javax.Naming.Ldap.Rdn arg0)
+        {
+            return JVMBridgeBase.New<Rdn>(arg0);
         }
 
         #endregion

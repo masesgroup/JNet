@@ -74,6 +74,13 @@ namespace Java.Security.Cert
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for PKIXParameters(Java.Security.KeyStore arg0)
+        /// </summary>
+        public static PKIXParameters New(Java.Security.KeyStore arg0)
+        {
+            return JVMBridgeBase.New<PKIXParameters>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/cert/PKIXParameters.html#java.security.cert.PKIXParameters(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
@@ -81,6 +88,13 @@ namespace Java.Security.Cert
         public PKIXParameters(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PKIXParameters(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0)
+        /// </summary>
+        public static PKIXParameters New(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0)
+        {
+            return JVMBridgeBase.New<PKIXParameters>(arg0);
         }
 
         #endregion

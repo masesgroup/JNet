@@ -71,6 +71,13 @@ namespace Javax.Net.Ssl
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SSLParameters()
+        /// </summary>
+        public static SSLParameters New()
+        {
+            return JVMBridgeBase.New<SSLParameters>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/SSLParameters.html#javax.net.ssl.SSLParameters(java.lang.String[],java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -80,12 +87,26 @@ namespace Javax.Net.Ssl
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for SSLParameters(Java.Lang.String[] arg0, Java.Lang.String[] arg1)
+        /// </summary>
+        public static SSLParameters New(Java.Lang.String[] arg0, Java.Lang.String[] arg1)
+        {
+            return JVMBridgeBase.New<SSLParameters>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/SSLParameters.html#javax.net.ssl.SSLParameters(java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public SSLParameters(Java.Lang.String[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SSLParameters(Java.Lang.String[] arg0)
+        /// </summary>
+        public static SSLParameters New(Java.Lang.String[] arg0)
+        {
+            return JVMBridgeBase.New<SSLParameters>(arg0);
         }
 
         #endregion

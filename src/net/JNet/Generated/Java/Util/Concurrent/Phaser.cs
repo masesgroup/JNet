@@ -71,12 +71,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Phaser()
+        /// </summary>
+        public static Phaser New()
+        {
+            return JVMBridgeBase.New<Phaser>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Phaser.html#java.util.concurrent.Phaser(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public Phaser(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Phaser(int arg0)
+        /// </summary>
+        public static Phaser New(int arg0)
+        {
+            return JVMBridgeBase.New<Phaser>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Phaser.html#java.util.concurrent.Phaser(java.util.concurrent.Phaser,int)"/>
@@ -88,12 +102,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Phaser(Java.Util.Concurrent.Phaser arg0, int arg1)
+        /// </summary>
+        public static Phaser New(Java.Util.Concurrent.Phaser arg0, int arg1)
+        {
+            return JVMBridgeBase.New<Phaser>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Phaser.html#java.util.concurrent.Phaser(java.util.concurrent.Phaser)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Phaser"/></param>
         public Phaser(Java.Util.Concurrent.Phaser arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Phaser(Java.Util.Concurrent.Phaser arg0)
+        /// </summary>
+        public static Phaser New(Java.Util.Concurrent.Phaser arg0)
+        {
+            return JVMBridgeBase.New<Phaser>(arg0);
         }
 
         #endregion

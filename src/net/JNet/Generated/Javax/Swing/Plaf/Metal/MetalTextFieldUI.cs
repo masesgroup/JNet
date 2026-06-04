@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalTextFieldUI()
+        /// </summary>
+        public static MetalTextFieldUI New()
+        {
+            return JVMBridgeBase.New<MetalTextFieldUI>();
+        }
 
         #endregion
 

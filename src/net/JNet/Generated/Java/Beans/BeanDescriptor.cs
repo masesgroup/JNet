@@ -73,12 +73,26 @@ namespace Java.Beans
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BeanDescriptor(Java.Lang.Class arg0, Java.Lang.Class arg1)
+        /// </summary>
+        public static BeanDescriptor New(Java.Lang.Class arg0, Java.Lang.Class arg1)
+        {
+            return JVMBridgeBase.New<BeanDescriptor>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/BeanDescriptor.html#java.beans.BeanDescriptor(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         public BeanDescriptor(Java.Lang.Class arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BeanDescriptor(Java.Lang.Class arg0)
+        /// </summary>
+        public static BeanDescriptor New(Java.Lang.Class arg0)
+        {
+            return JVMBridgeBase.New<BeanDescriptor>(arg0);
         }
 
         #endregion

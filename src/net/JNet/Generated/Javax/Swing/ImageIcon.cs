@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ImageIcon()
+        /// </summary>
+        public static ImageIcon New()
+        {
+            return JVMBridgeBase.New<ImageIcon>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html#javax.swing.ImageIcon(byte[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -80,12 +87,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ImageIcon(byte[] arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static ImageIcon New(byte[] arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<ImageIcon>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html#javax.swing.ImageIcon(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public ImageIcon(byte[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ImageIcon(byte[] arg0)
+        /// </summary>
+        public static ImageIcon New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<ImageIcon>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html#javax.swing.ImageIcon(java.awt.Image,java.lang.String)"/>
@@ -97,12 +118,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ImageIcon(Java.Awt.Image arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static ImageIcon New(Java.Awt.Image arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<ImageIcon>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html#javax.swing.ImageIcon(java.awt.Image)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
         public ImageIcon(Java.Awt.Image arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ImageIcon(Java.Awt.Image arg0)
+        /// </summary>
+        public static ImageIcon New(Java.Awt.Image arg0)
+        {
+            return JVMBridgeBase.New<ImageIcon>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html#javax.swing.ImageIcon(java.lang.String,java.lang.String)"/>
@@ -114,12 +149,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ImageIcon(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static ImageIcon New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<ImageIcon>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html#javax.swing.ImageIcon(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public ImageIcon(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ImageIcon(Java.Lang.String arg0)
+        /// </summary>
+        public static ImageIcon New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<ImageIcon>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html#javax.swing.ImageIcon(java.net.URL,java.lang.String)"/>
@@ -131,12 +180,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ImageIcon(Java.Net.URL arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static ImageIcon New(Java.Net.URL arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<ImageIcon>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ImageIcon.html#javax.swing.ImageIcon(java.net.URL)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         public ImageIcon(Java.Net.URL arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ImageIcon(Java.Net.URL arg0)
+        /// </summary>
+        public static ImageIcon New(Java.Net.URL arg0)
+        {
+            return JVMBridgeBase.New<ImageIcon>(arg0);
         }
 
         #endregion

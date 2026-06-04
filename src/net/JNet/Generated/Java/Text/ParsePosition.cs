@@ -71,6 +71,13 @@ namespace Java.Text
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ParsePosition(int arg0)
+        /// </summary>
+        public static ParsePosition New(int arg0)
+        {
+            return JVMBridgeBase.New<ParsePosition>(arg0);
+        }
 
         #endregion
 

@@ -110,6 +110,13 @@ namespace Javax.Sound.Sampled
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for AudioFormat(float arg0, int arg1, int arg2, bool arg3, bool arg4)
+        /// </summary>
+        public static AudioFormat New(float arg0, int arg1, int arg2, bool arg3, bool arg4)
+        {
+            return JVMBridgeBase.New<AudioFormat>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/AudioFormat.html#javax.sound.sampled.AudioFormat(javax.sound.sampled.AudioFormat.Encoding,float,int,int,int,float,boolean,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
@@ -125,6 +132,13 @@ namespace Javax.Sound.Sampled
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
+        /// HPA initializer for AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6, Java.Util.Map<Java.Lang.String, object> arg7)
+        /// </summary>
+        public static AudioFormat New(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6, Java.Util.Map<Java.Lang.String, object> arg7)
+        {
+            return JVMBridgeBase.New<AudioFormat>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/AudioFormat.html#javax.sound.sampled.AudioFormat(javax.sound.sampled.AudioFormat.Encoding,float,int,int,int,float,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
@@ -137,6 +151,13 @@ namespace Javax.Sound.Sampled
         public AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// HPA initializer for AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6)
+        /// </summary>
+        public static AudioFormat New(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6)
+        {
+            return JVMBridgeBase.New<AudioFormat>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
 
         #endregion
@@ -245,6 +266,13 @@ namespace Javax.Sound.Sampled
             public Encoding(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for Encoding(Java.Lang.String arg0)
+            /// </summary>
+            public static Encoding New(Java.Lang.String arg0)
+            {
+                return JVMBridgeBase.New<Encoding>(arg0);
             }
 
             #endregion

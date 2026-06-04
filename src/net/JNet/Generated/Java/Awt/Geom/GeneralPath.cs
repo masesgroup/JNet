@@ -71,6 +71,13 @@ namespace Java.Awt.Geom
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for GeneralPath()
+        /// </summary>
+        public static GeneralPath New()
+        {
+            return JVMBridgeBase.New<GeneralPath>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/GeneralPath.html#java.awt.geom.GeneralPath(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -78,6 +85,13 @@ namespace Java.Awt.Geom
         public GeneralPath(int arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for GeneralPath(int arg0, int arg1)
+        /// </summary>
+        public static GeneralPath New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<GeneralPath>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/GeneralPath.html#java.awt.geom.GeneralPath(int)"/>
@@ -88,12 +102,26 @@ namespace Java.Awt.Geom
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for GeneralPath(int arg0)
+        /// </summary>
+        public static GeneralPath New(int arg0)
+        {
+            return JVMBridgeBase.New<GeneralPath>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/GeneralPath.html#java.awt.geom.GeneralPath(java.awt.Shape)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
         public GeneralPath(Java.Awt.Shape arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for GeneralPath(Java.Awt.Shape arg0)
+        /// </summary>
+        public static GeneralPath New(Java.Awt.Shape arg0)
+        {
+            return JVMBridgeBase.New<GeneralPath>(arg0);
         }
 
         #endregion

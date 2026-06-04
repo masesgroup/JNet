@@ -72,6 +72,13 @@ namespace Javax.Swing
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for Timer(int arg0, Java.Awt.EventNs.ActionListener arg1)
+        /// </summary>
+        public static Timer New(int arg0, Java.Awt.EventNs.ActionListener arg1)
+        {
+            return JVMBridgeBase.New<Timer>(arg0, arg1);
+        }
 
         #endregion
 

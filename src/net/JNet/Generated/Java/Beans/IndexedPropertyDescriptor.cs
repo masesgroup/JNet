@@ -78,6 +78,13 @@ namespace Java.Beans
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for IndexedPropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5)
+        /// </summary>
+        public static IndexedPropertyDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5)
+        {
+            return JVMBridgeBase.New<IndexedPropertyDescriptor>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/IndexedPropertyDescriptor.html#java.beans.IndexedPropertyDescriptor(java.lang.String,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -86,6 +93,13 @@ namespace Java.Beans
         public IndexedPropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for IndexedPropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1)
+        /// </summary>
+        public static IndexedPropertyDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1)
+        {
+            return JVMBridgeBase.New<IndexedPropertyDescriptor>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/IndexedPropertyDescriptor.html#java.beans.IndexedPropertyDescriptor(java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method,java.lang.reflect.Method,java.lang.reflect.Method)"/>
@@ -99,6 +113,13 @@ namespace Java.Beans
         public IndexedPropertyDescriptor(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for IndexedPropertyDescriptor(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
+        /// </summary>
+        public static IndexedPropertyDescriptor New(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
+        {
+            return JVMBridgeBase.New<IndexedPropertyDescriptor>(arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

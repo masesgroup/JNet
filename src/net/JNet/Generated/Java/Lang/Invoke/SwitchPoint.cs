@@ -70,6 +70,13 @@ namespace Java.Lang.Invoke
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SwitchPoint()
+        /// </summary>
+        public static SwitchPoint New()
+        {
+            return JVMBridgeBase.New<SwitchPoint>();
+        }
 
         #endregion
 

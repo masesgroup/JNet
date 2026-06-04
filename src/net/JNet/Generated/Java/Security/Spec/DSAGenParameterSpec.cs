@@ -74,6 +74,13 @@ namespace Java.Security.Spec
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DSAGenParameterSpec(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static DSAGenParameterSpec New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<DSAGenParameterSpec>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/spec/DSAGenParameterSpec.html#java.security.spec.DSAGenParameterSpec(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -81,6 +88,13 @@ namespace Java.Security.Spec
         public DSAGenParameterSpec(int arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DSAGenParameterSpec(int arg0, int arg1)
+        /// </summary>
+        public static DSAGenParameterSpec New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<DSAGenParameterSpec>(arg0, arg1);
         }
 
         #endregion

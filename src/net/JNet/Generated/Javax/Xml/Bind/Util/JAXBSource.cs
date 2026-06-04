@@ -74,6 +74,13 @@ namespace Javax.Xml.Bind.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JAXBSource(Javax.Xml.Bind.JAXBContext arg0, object arg1)
+        /// </summary>
+        public static JAXBSource New(Javax.Xml.Bind.JAXBContext arg0, object arg1)
+        {
+            return JVMBridgeBase.New<JAXBSource>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/util/JAXBSource.html#javax.xml.bind.util.JAXBSource(javax.xml.bind.Marshaller,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Bind.Marshaller"/></param>
@@ -82,6 +89,13 @@ namespace Javax.Xml.Bind.Util
         public JAXBSource(Javax.Xml.Bind.Marshaller arg0, object arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JAXBSource(Javax.Xml.Bind.Marshaller arg0, object arg1)
+        /// </summary>
+        public static JAXBSource New(Javax.Xml.Bind.Marshaller arg0, object arg1)
+        {
+            return JVMBridgeBase.New<JAXBSource>(arg0, arg1);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Java.Lang.Invoke
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for LambdaMetafactory()
+        /// </summary>
+        public static LambdaMetafactory New()
+        {
+            return JVMBridgeBase.New<LambdaMetafactory>();
+        }
 
         #endregion
 

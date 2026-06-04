@@ -107,6 +107,13 @@ namespace Java.Lang.Ref
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for PhantomReference(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
+        /// </summary>
+        public static PhantomReference New(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
+        {
+            return JVMBridgeBase.New<PhantomReference>(arg0, arg1);
+        }
 
         #endregion
 
@@ -146,6 +153,13 @@ namespace Java.Lang.Ref
         public PhantomReference(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for PhantomReference(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
+        /// </summary>
+        public static PhantomReference<T> New(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
+        {
+            return JVMBridgeBase.New<PhantomReference<T>>(arg0, arg1);
         }
 
         #endregion

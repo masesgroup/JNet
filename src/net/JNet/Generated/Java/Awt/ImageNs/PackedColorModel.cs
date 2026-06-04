@@ -80,6 +80,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
+        /// HPA initializer for PackedColorModel(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7, int arg8)
+        /// </summary>
+        public static PackedColorModel New(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7, int arg8)
+        {
+            return JVMBridgeBase.New<PackedColorModel>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/PackedColorModel.html#java.awt.image.PackedColorModel(java.awt.color.ColorSpace,int,int[],int,boolean,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ColorNs.ColorSpace"/></param>
@@ -92,6 +99,13 @@ namespace Java.Awt.ImageNs
         public PackedColorModel(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int[] arg2, int arg3, bool arg4, int arg5, int arg6) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// HPA initializer for PackedColorModel(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int[] arg2, int arg3, bool arg4, int arg5, int arg6)
+        /// </summary>
+        public static PackedColorModel New(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int[] arg2, int arg3, bool arg4, int arg5, int arg6)
+        {
+            return JVMBridgeBase.New<PackedColorModel>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Java.Awt.Dnd
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for DropTargetEvent(Java.Awt.Dnd.DropTargetContext arg0)
+        /// </summary>
+        public static DropTargetEvent New(Java.Awt.Dnd.DropTargetContext arg0)
+        {
+            return JVMBridgeBase.New<DropTargetEvent>(arg0);
+        }
 
         #endregion
 

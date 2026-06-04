@@ -107,12 +107,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for RenderingHints(Java.Awt.RenderingHints.Key arg0, object arg1)
+        /// </summary>
+        public static RenderingHints New(Java.Awt.RenderingHints.Key arg0, object arg1)
+        {
+            return JVMBridgeBase.New<RenderingHints>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/RenderingHints.html#java.awt.RenderingHints(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public RenderingHints(Java.Util.Map<Java.Awt.RenderingHints.Key, object> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for RenderingHints(Java.Util.Map<Java.Awt.RenderingHints.Key, object> arg0)
+        /// </summary>
+        public static RenderingHints New(Java.Util.Map<Java.Awt.RenderingHints.Key, object> arg0)
+        {
+            return JVMBridgeBase.New<RenderingHints>(arg0);
         }
 
         #endregion

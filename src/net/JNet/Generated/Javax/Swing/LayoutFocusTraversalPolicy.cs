@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for LayoutFocusTraversalPolicy()
+        /// </summary>
+        public static LayoutFocusTraversalPolicy New()
+        {
+            return JVMBridgeBase.New<LayoutFocusTraversalPolicy>();
+        }
 
         #endregion
 

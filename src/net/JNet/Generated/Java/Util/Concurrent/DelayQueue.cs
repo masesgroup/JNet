@@ -106,12 +106,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DelayQueue()
+        /// </summary>
+        public static DelayQueue New()
+        {
+            return JVMBridgeBase.New<DelayQueue>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/DelayQueue.html#java.util.concurrent.DelayQueue(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public DelayQueue(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DelayQueue(Java.Util.Collection arg0)
+        /// </summary>
+        public static DelayQueue New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<DelayQueue>(arg0);
         }
 
         #endregion
@@ -261,12 +275,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DelayQueue()
+        /// </summary>
+        public static DelayQueue<E> New()
+        {
+            return JVMBridgeBase.New<DelayQueue<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/DelayQueue.html#java.util.concurrent.DelayQueue(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public DelayQueue(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DelayQueue(Java.Util.Collection<E> arg0)
+        /// </summary>
+        public static DelayQueue<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<DelayQueue<E>>(arg0);
         }
 
         #endregion

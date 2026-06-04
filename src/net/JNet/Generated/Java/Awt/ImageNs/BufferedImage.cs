@@ -75,6 +75,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for BufferedImage(int arg0, int arg1, int arg2, Java.Awt.ImageNs.IndexColorModel arg3)
+        /// </summary>
+        public static BufferedImage New(int arg0, int arg1, int arg2, Java.Awt.ImageNs.IndexColorModel arg3)
+        {
+            return JVMBridgeBase.New<BufferedImage>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/BufferedImage.html#java.awt.image.BufferedImage(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -83,6 +90,13 @@ namespace Java.Awt.ImageNs
         public BufferedImage(int arg0, int arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for BufferedImage(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static BufferedImage New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<BufferedImage>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/BufferedImage.html#java.awt.image.BufferedImage(java.awt.image.ColorModel,java.awt.image.WritableRaster,boolean,java.util.Hashtable)"/>
@@ -94,6 +108,13 @@ namespace Java.Awt.ImageNs
         public BufferedImage(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.WritableRaster arg1, bool arg2, Java.Util.Hashtable<object, object> arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for BufferedImage(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.WritableRaster arg1, bool arg2, Java.Util.Hashtable<object, object> arg3)
+        /// </summary>
+        public static BufferedImage New(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.WritableRaster arg1, bool arg2, Java.Util.Hashtable<object, object> arg3)
+        {
+            return JVMBridgeBase.New<BufferedImage>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

@@ -71,12 +71,26 @@ namespace Javax.Accessibility
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AccessibleStateSet()
+        /// </summary>
+        public static AccessibleStateSet New()
+        {
+            return JVMBridgeBase.New<AccessibleStateSet>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/accessibility/AccessibleStateSet.html#javax.accessibility.AccessibleStateSet(javax.accessibility.AccessibleState[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>
         public AccessibleStateSet(Javax.Accessibility.AccessibleState[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AccessibleStateSet(Javax.Accessibility.AccessibleState[] arg0)
+        /// </summary>
+        public static AccessibleStateSet New(Javax.Accessibility.AccessibleState[] arg0)
+        {
+            return JVMBridgeBase.New<AccessibleStateSet>(arg0);
         }
 
         #endregion

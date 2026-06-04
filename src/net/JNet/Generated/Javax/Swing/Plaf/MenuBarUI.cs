@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MenuBarUI()
+        /// </summary>
+        public static MenuBarUI New()
+        {
+            return JVMBridgeBase.New<MenuBarUI>();
+        }
 
         #endregion
 

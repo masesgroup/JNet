@@ -70,6 +70,13 @@ namespace Javax.Swing.Undo
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for UndoManager()
+        /// </summary>
+        public static UndoManager New()
+        {
+            return JVMBridgeBase.New<UndoManager>();
+        }
 
         #endregion
 

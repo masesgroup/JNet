@@ -71,12 +71,26 @@ namespace Java.Beans
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for PropertyEditorSupport()
+        /// </summary>
+        public static PropertyEditorSupport New()
+        {
+            return JVMBridgeBase.New<PropertyEditorSupport>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/PropertyEditorSupport.html#java.beans.PropertyEditorSupport(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public PropertyEditorSupport(object arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PropertyEditorSupport(object arg0)
+        /// </summary>
+        public static PropertyEditorSupport New(object arg0)
+        {
+            return JVMBridgeBase.New<PropertyEditorSupport>(arg0);
         }
 
         #endregion

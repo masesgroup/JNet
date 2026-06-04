@@ -77,6 +77,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for PixelGrabber(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, bool arg5)
+        /// </summary>
+        public static PixelGrabber New(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, bool arg5)
+        {
+            return JVMBridgeBase.New<PixelGrabber>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/PixelGrabber.html#java.awt.image.PixelGrabber(java.awt.Image,int,int,int,int,int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
@@ -92,6 +99,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
+        /// HPA initializer for PixelGrabber(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
+        /// </summary>
+        public static PixelGrabber New(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
+        {
+            return JVMBridgeBase.New<PixelGrabber>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/PixelGrabber.html#java.awt.image.PixelGrabber(java.awt.image.ImageProducer,int,int,int,int,int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageProducer"/></param>
@@ -105,6 +119,13 @@ namespace Java.Awt.ImageNs
         public PixelGrabber(Java.Awt.ImageNs.ImageProducer arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+        /// <summary>
+        /// HPA initializer for PixelGrabber(Java.Awt.ImageNs.ImageProducer arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
+        /// </summary>
+        public static PixelGrabber New(Java.Awt.ImageNs.ImageProducer arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
+        {
+            return JVMBridgeBase.New<PixelGrabber>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
 
         #endregion

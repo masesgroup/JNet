@@ -207,12 +207,26 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JSpinner()
+        /// </summary>
+        public static JSpinner New()
+        {
+            return JVMBridgeBase.New<JSpinner>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSpinner.html#javax.swing.JSpinner(javax.swing.SpinnerModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.SpinnerModel"/></param>
         public JSpinner(Javax.Swing.SpinnerModel arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JSpinner(Javax.Swing.SpinnerModel arg0)
+        /// </summary>
+        public static JSpinner New(Javax.Swing.SpinnerModel arg0)
+        {
+            return JVMBridgeBase.New<JSpinner>(arg0);
         }
 
         #endregion
@@ -325,12 +339,26 @@ namespace Javax.Swing
                 InvokeInitializer(arg0, arg1);
             }
             /// <summary>
+            /// HPA initializer for DateEditor(Javax.Swing.JSpinner arg0, Java.Lang.String arg1)
+            /// </summary>
+            public static DateEditor New(Javax.Swing.JSpinner arg0, Java.Lang.String arg1)
+            {
+                return JVMBridgeBase.New<DateEditor>(arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSpinner.DateEditor.html#javax.swing.JSpinner$DateEditor(javax.swing.JSpinner)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.JSpinner"/></param>
             public DateEditor(Javax.Swing.JSpinner arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for DateEditor(Javax.Swing.JSpinner arg0)
+            /// </summary>
+            public static DateEditor New(Javax.Swing.JSpinner arg0)
+            {
+                return JVMBridgeBase.New<DateEditor>(arg0);
             }
 
             #endregion
@@ -384,6 +412,13 @@ namespace Javax.Swing
             public DefaultEditor(Javax.Swing.JSpinner arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for DefaultEditor(Javax.Swing.JSpinner arg0)
+            /// </summary>
+            public static DefaultEditor New(Javax.Swing.JSpinner arg0)
+            {
+                return JVMBridgeBase.New<DefaultEditor>(arg0);
             }
 
             #endregion
@@ -525,6 +560,13 @@ namespace Javax.Swing
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for ListEditor(Javax.Swing.JSpinner arg0)
+            /// </summary>
+            public static ListEditor New(Javax.Swing.JSpinner arg0)
+            {
+                return JVMBridgeBase.New<ListEditor>(arg0);
+            }
 
             #endregion
 
@@ -573,12 +615,26 @@ namespace Javax.Swing
                 InvokeInitializer(arg0, arg1);
             }
             /// <summary>
+            /// HPA initializer for NumberEditor(Javax.Swing.JSpinner arg0, Java.Lang.String arg1)
+            /// </summary>
+            public static NumberEditor New(Javax.Swing.JSpinner arg0, Java.Lang.String arg1)
+            {
+                return JVMBridgeBase.New<NumberEditor>(arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSpinner.NumberEditor.html#javax.swing.JSpinner$NumberEditor(javax.swing.JSpinner)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.JSpinner"/></param>
             public NumberEditor(Javax.Swing.JSpinner arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for NumberEditor(Javax.Swing.JSpinner arg0)
+            /// </summary>
+            public static NumberEditor New(Javax.Swing.JSpinner arg0)
+            {
+                return JVMBridgeBase.New<NumberEditor>(arg0);
             }
 
             #endregion

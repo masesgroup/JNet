@@ -71,6 +71,13 @@ namespace Javax.Sound.Midi
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ShortMessage()
+        /// </summary>
+        public static ShortMessage New()
+        {
+            return JVMBridgeBase.New<ShortMessage>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/ShortMessage.html#javax.sound.midi.ShortMessage(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Sound.Midi
         public ShortMessage(int arg0, int arg1, int arg2, int arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for ShortMessage(int arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static ShortMessage New(int arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<ShortMessage>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/ShortMessage.html#javax.sound.midi.ShortMessage(int,int,int)"/>
@@ -94,6 +108,13 @@ namespace Javax.Sound.Midi
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ShortMessage(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static ShortMessage New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<ShortMessage>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/ShortMessage.html#javax.sound.midi.ShortMessage(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -101,6 +122,13 @@ namespace Javax.Sound.Midi
         public ShortMessage(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ShortMessage(int arg0)
+        /// </summary>
+        public static ShortMessage New(int arg0)
+        {
+            return JVMBridgeBase.New<ShortMessage>(arg0);
         }
 
         #endregion

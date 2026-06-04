@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiToolTipUI()
+        /// </summary>
+        public static MultiToolTipUI New()
+        {
+            return JVMBridgeBase.New<MultiToolTipUI>();
+        }
 
         #endregion
 

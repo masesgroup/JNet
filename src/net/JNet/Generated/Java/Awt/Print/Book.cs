@@ -70,6 +70,13 @@ namespace Java.Awt.Print
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Book()
+        /// </summary>
+        public static Book New()
+        {
+            return JVMBridgeBase.New<Book>();
+        }
 
         #endregion
 

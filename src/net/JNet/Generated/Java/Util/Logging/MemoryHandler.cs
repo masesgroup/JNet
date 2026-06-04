@@ -71,6 +71,13 @@ namespace Java.Util.Logging
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for MemoryHandler()
+        /// </summary>
+        public static MemoryHandler New()
+        {
+            return JVMBridgeBase.New<MemoryHandler>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/MemoryHandler.html#java.util.logging.MemoryHandler(java.util.logging.Handler,int,java.util.logging.Level)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.Handler"/></param>
@@ -79,6 +86,13 @@ namespace Java.Util.Logging
         public MemoryHandler(Java.Util.Logging.Handler arg0, int arg1, Java.Util.Logging.Level arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for MemoryHandler(Java.Util.Logging.Handler arg0, int arg1, Java.Util.Logging.Level arg2)
+        /// </summary>
+        public static MemoryHandler New(Java.Util.Logging.Handler arg0, int arg1, Java.Util.Logging.Level arg2)
+        {
+            return JVMBridgeBase.New<MemoryHandler>(arg0, arg1, arg2);
         }
 
         #endregion

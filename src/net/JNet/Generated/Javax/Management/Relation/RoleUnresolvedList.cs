@@ -71,12 +71,26 @@ namespace Javax.Management.Relation
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for RoleUnresolvedList()
+        /// </summary>
+        public static RoleUnresolvedList New()
+        {
+            return JVMBridgeBase.New<RoleUnresolvedList>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RoleUnresolvedList.html#javax.management.relation.RoleUnresolvedList(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public RoleUnresolvedList(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for RoleUnresolvedList(int arg0)
+        /// </summary>
+        public static RoleUnresolvedList New(int arg0)
+        {
+            return JVMBridgeBase.New<RoleUnresolvedList>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RoleUnresolvedList.html#javax.management.relation.RoleUnresolvedList(java.util.List)"/>
@@ -86,6 +100,13 @@ namespace Javax.Management.Relation
         public RoleUnresolvedList(Java.Util.List<Javax.Management.Relation.RoleUnresolved> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for RoleUnresolvedList(Java.Util.List<Javax.Management.Relation.RoleUnresolved> arg0)
+        /// </summary>
+        public static RoleUnresolvedList New(Java.Util.List<Javax.Management.Relation.RoleUnresolved> arg0)
+        {
+            return JVMBridgeBase.New<RoleUnresolvedList>(arg0);
         }
 
         #endregion

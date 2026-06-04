@@ -70,6 +70,13 @@ namespace Javax.Swing.Tree
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultTreeCellRenderer()
+        /// </summary>
+        public static DefaultTreeCellRenderer New()
+        {
+            return JVMBridgeBase.New<DefaultTreeCellRenderer>();
+        }
 
         #endregion
 

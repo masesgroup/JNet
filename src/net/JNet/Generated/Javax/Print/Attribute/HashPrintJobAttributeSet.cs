@@ -71,12 +71,26 @@ namespace Javax.Print.Attribute
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for HashPrintJobAttributeSet()
+        /// </summary>
+        public static HashPrintJobAttributeSet New()
+        {
+            return JVMBridgeBase.New<HashPrintJobAttributeSet>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashPrintJobAttributeSet.html#javax.print.attribute.HashPrintJobAttributeSet(javax.print.attribute.PrintJobAttribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintJobAttribute"/></param>
         public HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttribute arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttribute arg0)
+        /// </summary>
+        public static HashPrintJobAttributeSet New(Javax.Print.Attribute.PrintJobAttribute arg0)
+        {
+            return JVMBridgeBase.New<HashPrintJobAttributeSet>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashPrintJobAttributeSet.html#javax.print.attribute.HashPrintJobAttributeSet(javax.print.attribute.PrintJobAttribute[])"/>
@@ -87,12 +101,26 @@ namespace Javax.Print.Attribute
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttribute[] arg0)
+        /// </summary>
+        public static HashPrintJobAttributeSet New(Javax.Print.Attribute.PrintJobAttribute[] arg0)
+        {
+            return JVMBridgeBase.New<HashPrintJobAttributeSet>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashPrintJobAttributeSet.html#javax.print.attribute.HashPrintJobAttributeSet(javax.print.attribute.PrintJobAttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintJobAttributeSet"/></param>
         public HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttributeSet arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttributeSet arg0)
+        /// </summary>
+        public static HashPrintJobAttributeSet New(Javax.Print.Attribute.PrintJobAttributeSet arg0)
+        {
+            return JVMBridgeBase.New<HashPrintJobAttributeSet>(arg0);
         }
 
         #endregion

@@ -72,12 +72,26 @@ namespace Java.Util.Concurrent.Atomic
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for AtomicIntegerArray(int arg0)
+        /// </summary>
+        public static AtomicIntegerArray New(int arg0)
+        {
+            return JVMBridgeBase.New<AtomicIntegerArray>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicIntegerArray.html#java.util.concurrent.atomic.AtomicIntegerArray(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public AtomicIntegerArray(int[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AtomicIntegerArray(int[] arg0)
+        /// </summary>
+        public static AtomicIntegerArray New(int[] arg0)
+        {
+            return JVMBridgeBase.New<AtomicIntegerArray>(arg0);
         }
 
         #endregion

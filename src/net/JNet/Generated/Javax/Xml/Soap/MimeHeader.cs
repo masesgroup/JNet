@@ -72,6 +72,13 @@ namespace Javax.Xml.Soap
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for MimeHeader(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static MimeHeader New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<MimeHeader>(arg0, arg1);
+        }
 
         #endregion
 

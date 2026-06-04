@@ -72,6 +72,13 @@ namespace Java.Awt
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for AWTEvent(Java.Awt.Event arg0)
+        /// </summary>
+        public static AWTEvent New(Java.Awt.Event arg0)
+        {
+            return JVMBridgeBase.New<AWTEvent>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/AWTEvent.html#java.awt.AWTEvent(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -79,6 +86,13 @@ namespace Java.Awt
         public AWTEvent(object arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for AWTEvent(object arg0, int arg1)
+        /// </summary>
+        public static AWTEvent New(object arg0, int arg1)
+        {
+            return JVMBridgeBase.New<AWTEvent>(arg0, arg1);
         }
 
         #endregion

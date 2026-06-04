@@ -342,6 +342,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicBorders()
+        /// </summary>
+        public static BasicBorders New()
+        {
+            return JVMBridgeBase.New<BasicBorders>();
+        }
 
         #endregion
 
@@ -440,6 +447,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3);
             }
+            /// <summary>
+            /// HPA initializer for ButtonBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
+            /// </summary>
+            public static ButtonBorder New(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
+            {
+                return JVMBridgeBase.New<ButtonBorder>(arg0, arg1, arg2, arg3);
+            }
 
             #endregion
 
@@ -486,6 +500,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3);
             }
+            /// <summary>
+            /// HPA initializer for FieldBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
+            /// </summary>
+            public static FieldBorder New(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
+            {
+                return JVMBridgeBase.New<FieldBorder>(arg0, arg1, arg2, arg3);
+            }
 
             #endregion
 
@@ -527,6 +548,13 @@ namespace Javax.Swing.Plaf.Basic
             public MarginBorder() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for MarginBorder()
+            /// </summary>
+            public static MarginBorder New()
+            {
+                return JVMBridgeBase.New<MarginBorder>();
             }
 
             #endregion
@@ -571,6 +599,13 @@ namespace Javax.Swing.Plaf.Basic
             public MenuBarBorder(Java.Awt.Color arg0, Java.Awt.Color arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for MenuBarBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
+            /// </summary>
+            public static MenuBarBorder New(Java.Awt.Color arg0, Java.Awt.Color arg1)
+            {
+                return JVMBridgeBase.New<MenuBarBorder>(arg0, arg1);
             }
 
             #endregion
@@ -618,6 +653,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3);
             }
+            /// <summary>
+            /// HPA initializer for RadioButtonBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
+            /// </summary>
+            public static RadioButtonBorder New(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
+            {
+                return JVMBridgeBase.New<RadioButtonBorder>(arg0, arg1, arg2, arg3);
+            }
 
             #endregion
 
@@ -660,6 +702,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3);
             }
+            /// <summary>
+            /// HPA initializer for RolloverButtonBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
+            /// </summary>
+            public static RolloverButtonBorder New(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
+            {
+                return JVMBridgeBase.New<RolloverButtonBorder>(arg0, arg1, arg2, arg3);
+            }
 
             #endregion
 
@@ -699,6 +748,13 @@ namespace Javax.Swing.Plaf.Basic
             public SplitPaneBorder(Java.Awt.Color arg0, Java.Awt.Color arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for SplitPaneBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
+            /// </summary>
+            public static SplitPaneBorder New(Java.Awt.Color arg0, Java.Awt.Color arg1)
+            {
+                return JVMBridgeBase.New<SplitPaneBorder>(arg0, arg1);
             }
 
             #endregion
@@ -779,6 +835,13 @@ namespace Javax.Swing.Plaf.Basic
             public ToggleButtonBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// HPA initializer for ToggleButtonBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
+            /// </summary>
+            public static ToggleButtonBorder New(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
+            {
+                return JVMBridgeBase.New<ToggleButtonBorder>(arg0, arg1, arg2, arg3);
             }
 
             #endregion

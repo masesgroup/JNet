@@ -71,6 +71,13 @@ namespace Java.Beans.Beancontext
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for BeanContextServicesSupport()
+        /// </summary>
+        public static BeanContextServicesSupport New()
+        {
+            return JVMBridgeBase.New<BeanContextServicesSupport>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextServicesSupport.html#java.beans.beancontext.BeanContextServicesSupport(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
@@ -80,6 +87,13 @@ namespace Java.Beans.Beancontext
         public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1, bool arg2, bool arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
+        /// </summary>
+        public static BeanContextServicesSupport New(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<BeanContextServicesSupport>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextServicesSupport.html#java.beans.beancontext.BeanContextServicesSupport(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean)"/>
@@ -92,6 +106,13 @@ namespace Java.Beans.Beancontext
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1, bool arg2)
+        /// </summary>
+        public static BeanContextServicesSupport New(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<BeanContextServicesSupport>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextServicesSupport.html#java.beans.beancontext.BeanContextServicesSupport(java.beans.beancontext.BeanContextServices,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
@@ -101,12 +122,26 @@ namespace Java.Beans.Beancontext
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1)
+        /// </summary>
+        public static BeanContextServicesSupport New(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1)
+        {
+            return JVMBridgeBase.New<BeanContextServicesSupport>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextServicesSupport.html#java.beans.beancontext.BeanContextServicesSupport(java.beans.beancontext.BeanContextServices)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
         public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0)
+        /// </summary>
+        public static BeanContextServicesSupport New(Java.Beans.Beancontext.BeanContextServices arg0)
+        {
+            return JVMBridgeBase.New<BeanContextServicesSupport>(arg0);
         }
 
         #endregion

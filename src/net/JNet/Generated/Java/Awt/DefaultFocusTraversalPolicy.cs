@@ -70,6 +70,13 @@ namespace Java.Awt
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultFocusTraversalPolicy()
+        /// </summary>
+        public static DefaultFocusTraversalPolicy New()
+        {
+            return JVMBridgeBase.New<DefaultFocusTraversalPolicy>();
+        }
 
         #endregion
 
