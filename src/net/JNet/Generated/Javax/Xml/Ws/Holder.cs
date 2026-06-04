@@ -106,12 +106,26 @@ namespace Javax.Xml.Ws
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Holder()
+        /// </summary>
+        public static Holder New()
+        {
+            return JVMBridgeBase.New<Holder>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/Holder.html#javax.xml.ws.Holder(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public Holder(object arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Holder(object arg0)
+        /// </summary>
+        public static Holder New(object arg0)
+        {
+            return JVMBridgeBase.New<Holder>(arg0);
         }
 
         #endregion
@@ -156,12 +170,26 @@ namespace Javax.Xml.Ws
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Holder()
+        /// </summary>
+        public static Holder<T> New()
+        {
+            return JVMBridgeBase.New<Holder<T>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/Holder.html#javax.xml.ws.Holder(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         public Holder(T arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Holder(T arg0)
+        /// </summary>
+        public static Holder<T> New(T arg0)
+        {
+            return JVMBridgeBase.New<Holder<T>>(arg0);
         }
 
         #endregion

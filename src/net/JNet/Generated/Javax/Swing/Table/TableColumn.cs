@@ -71,6 +71,13 @@ namespace Javax.Swing.Table
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for TableColumn()
+        /// </summary>
+        public static TableColumn New()
+        {
+            return JVMBridgeBase.New<TableColumn>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableColumn.html#javax.swing.table.TableColumn(int,int,javax.swing.table.TableCellRenderer,javax.swing.table.TableCellEditor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -82,6 +89,13 @@ namespace Javax.Swing.Table
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for TableColumn(int arg0, int arg1, Javax.Swing.Table.TableCellRenderer arg2, Javax.Swing.Table.TableCellEditor arg3)
+        /// </summary>
+        public static TableColumn New(int arg0, int arg1, Javax.Swing.Table.TableCellRenderer arg2, Javax.Swing.Table.TableCellEditor arg3)
+        {
+            return JVMBridgeBase.New<TableColumn>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableColumn.html#javax.swing.table.TableColumn(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -91,12 +105,26 @@ namespace Javax.Swing.Table
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for TableColumn(int arg0, int arg1)
+        /// </summary>
+        public static TableColumn New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<TableColumn>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableColumn.html#javax.swing.table.TableColumn(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public TableColumn(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TableColumn(int arg0)
+        /// </summary>
+        public static TableColumn New(int arg0)
+        {
+            return JVMBridgeBase.New<TableColumn>(arg0);
         }
 
         #endregion

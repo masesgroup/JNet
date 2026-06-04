@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for OptionPaneUI()
+        /// </summary>
+        public static OptionPaneUI New()
+        {
+            return JVMBridgeBase.New<OptionPaneUI>();
+        }
 
         #endregion
 

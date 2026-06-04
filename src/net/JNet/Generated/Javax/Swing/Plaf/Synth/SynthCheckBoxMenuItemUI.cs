@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthCheckBoxMenuItemUI()
+        /// </summary>
+        public static SynthCheckBoxMenuItemUI New()
+        {
+            return JVMBridgeBase.New<SynthCheckBoxMenuItemUI>();
+        }
 
         #endregion
 

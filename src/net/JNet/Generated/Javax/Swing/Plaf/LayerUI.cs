@@ -105,6 +105,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for LayerUI()
+        /// </summary>
+        public static LayerUI New()
+        {
+            return JVMBridgeBase.New<LayerUI>();
+        }
 
         #endregion
 
@@ -242,6 +249,13 @@ namespace Javax.Swing.Plaf
         public LayerUI() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for LayerUI()
+        /// </summary>
+        public static LayerUI<V> New()
+        {
+            return JVMBridgeBase.New<LayerUI<V>>();
         }
 
         #endregion

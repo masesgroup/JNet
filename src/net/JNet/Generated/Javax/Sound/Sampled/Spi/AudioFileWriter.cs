@@ -70,6 +70,13 @@ namespace Javax.Sound.Sampled.Spi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AudioFileWriter()
+        /// </summary>
+        public static AudioFileWriter New()
+        {
+            return JVMBridgeBase.New<AudioFileWriter>();
+        }
 
         #endregion
 

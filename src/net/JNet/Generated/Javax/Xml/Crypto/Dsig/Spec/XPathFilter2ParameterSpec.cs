@@ -71,6 +71,13 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for XPathFilter2ParameterSpec(Java.Util.List arg0)
+        /// </summary>
+        public static XPathFilter2ParameterSpec New(Java.Util.List arg0)
+        {
+            return JVMBridgeBase.New<XPathFilter2ParameterSpec>(arg0);
+        }
 
         #endregion
 

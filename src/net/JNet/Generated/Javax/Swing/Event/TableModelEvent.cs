@@ -76,6 +76,13 @@ namespace Javax.Swing.Event
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for TableModelEvent(Javax.Swing.Table.TableModel arg0, int arg1, int arg2, int arg3, int arg4)
+        /// </summary>
+        public static TableModelEvent New(Javax.Swing.Table.TableModel arg0, int arg1, int arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<TableModelEvent>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/TableModelEvent.html#javax.swing.event.TableModelEvent(javax.swing.table.TableModel,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
@@ -85,6 +92,13 @@ namespace Javax.Swing.Event
         public TableModelEvent(Javax.Swing.Table.TableModel arg0, int arg1, int arg2, int arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for TableModelEvent(Javax.Swing.Table.TableModel arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static TableModelEvent New(Javax.Swing.Table.TableModel arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<TableModelEvent>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/TableModelEvent.html#javax.swing.event.TableModelEvent(javax.swing.table.TableModel,int,int)"/>
@@ -97,6 +111,13 @@ namespace Javax.Swing.Event
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for TableModelEvent(Javax.Swing.Table.TableModel arg0, int arg1, int arg2)
+        /// </summary>
+        public static TableModelEvent New(Javax.Swing.Table.TableModel arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<TableModelEvent>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/TableModelEvent.html#javax.swing.event.TableModelEvent(javax.swing.table.TableModel,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
@@ -106,12 +127,26 @@ namespace Javax.Swing.Event
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for TableModelEvent(Javax.Swing.Table.TableModel arg0, int arg1)
+        /// </summary>
+        public static TableModelEvent New(Javax.Swing.Table.TableModel arg0, int arg1)
+        {
+            return JVMBridgeBase.New<TableModelEvent>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/TableModelEvent.html#javax.swing.event.TableModelEvent(javax.swing.table.TableModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
         public TableModelEvent(Javax.Swing.Table.TableModel arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TableModelEvent(Javax.Swing.Table.TableModel arg0)
+        /// </summary>
+        public static TableModelEvent New(Javax.Swing.Table.TableModel arg0)
+        {
+            return JVMBridgeBase.New<TableModelEvent>(arg0);
         }
 
         #endregion

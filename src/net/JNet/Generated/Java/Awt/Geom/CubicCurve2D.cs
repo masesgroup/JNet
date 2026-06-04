@@ -511,6 +511,13 @@ namespace Java.Awt.Geom
                 InvokeInitializer();
             }
             /// <summary>
+            /// HPA initializer for Double()
+            /// </summary>
+            public static Double New()
+            {
+                return JVMBridgeBase.New<Double>();
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/CubicCurve2D.Double.html#java.awt.geom.CubicCurve2D$Double(double,double,double,double,double,double,double,double)"/>
             /// </summary>
             /// <param name="arg0"><see cref="double"/></param>
@@ -524,6 +531,13 @@ namespace Java.Awt.Geom
             public Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            }
+            /// <summary>
+            /// HPA initializer for Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
+            /// </summary>
+            public static Double New(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
+            {
+                return JVMBridgeBase.New<Double>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
             }
 
             #endregion
@@ -600,6 +614,13 @@ namespace Java.Awt.Geom
                 InvokeInitializer();
             }
             /// <summary>
+            /// HPA initializer for Float()
+            /// </summary>
+            public static Float New()
+            {
+                return JVMBridgeBase.New<Float>();
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/CubicCurve2D.Float.html#java.awt.geom.CubicCurve2D$Float(float,float,float,float,float,float,float,float)"/>
             /// </summary>
             /// <param name="arg0"><see cref="float"/></param>
@@ -613,6 +634,13 @@ namespace Java.Awt.Geom
             public Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            }
+            /// <summary>
+            /// HPA initializer for Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7)
+            /// </summary>
+            public static Float New(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7)
+            {
+                return JVMBridgeBase.New<Float>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
             }
 
             #endregion

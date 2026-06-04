@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SizeRequirements()
+        /// </summary>
+        public static SizeRequirements New()
+        {
+            return JVMBridgeBase.New<SizeRequirements>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SizeRequirements.html#javax.swing.SizeRequirements(int,int,int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Swing
         public SizeRequirements(int arg0, int arg1, int arg2, float arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for SizeRequirements(int arg0, int arg1, int arg2, float arg3)
+        /// </summary>
+        public static SizeRequirements New(int arg0, int arg1, int arg2, float arg3)
+        {
+            return JVMBridgeBase.New<SizeRequirements>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

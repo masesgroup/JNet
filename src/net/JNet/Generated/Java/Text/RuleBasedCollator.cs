@@ -72,6 +72,13 @@ namespace Java.Text
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for RuleBasedCollator(Java.Lang.String arg0)
+        /// </summary>
+        public static RuleBasedCollator New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<RuleBasedCollator>(arg0);
+        }
 
         #endregion
 

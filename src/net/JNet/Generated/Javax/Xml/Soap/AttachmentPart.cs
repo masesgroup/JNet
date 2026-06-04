@@ -70,6 +70,13 @@ namespace Javax.Xml.Soap
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AttachmentPart()
+        /// </summary>
+        public static AttachmentPart New()
+        {
+            return JVMBridgeBase.New<AttachmentPart>();
+        }
 
         #endregion
 

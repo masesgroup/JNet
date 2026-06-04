@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalTheme()
+        /// </summary>
+        public static MetalTheme New()
+        {
+            return JVMBridgeBase.New<MetalTheme>();
+        }
 
         #endregion
 

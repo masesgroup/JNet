@@ -72,6 +72,13 @@ namespace Javax.Swing.Event
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for TreeExpansionEvent(object arg0, Javax.Swing.Tree.TreePath arg1)
+        /// </summary>
+        public static TreeExpansionEvent New(object arg0, Javax.Swing.Tree.TreePath arg1)
+        {
+            return JVMBridgeBase.New<TreeExpansionEvent>(arg0, arg1);
+        }
 
         #endregion
 

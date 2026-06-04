@@ -71,6 +71,13 @@ namespace Javax.Swing.Text
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DefaultFormatterFactory()
+        /// </summary>
+        public static DefaultFormatterFactory New()
+        {
+            return JVMBridgeBase.New<DefaultFormatterFactory>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultFormatterFactory.html#javax.swing.text.DefaultFormatterFactory(javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Swing.Text
         public DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1, Javax.Swing.JFormattedTextField.AbstractFormatter arg2, Javax.Swing.JFormattedTextField.AbstractFormatter arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1, Javax.Swing.JFormattedTextField.AbstractFormatter arg2, Javax.Swing.JFormattedTextField.AbstractFormatter arg3)
+        /// </summary>
+        public static DefaultFormatterFactory New(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1, Javax.Swing.JFormattedTextField.AbstractFormatter arg2, Javax.Swing.JFormattedTextField.AbstractFormatter arg3)
+        {
+            return JVMBridgeBase.New<DefaultFormatterFactory>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultFormatterFactory.html#javax.swing.text.DefaultFormatterFactory(javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter)"/>
@@ -92,6 +106,13 @@ namespace Javax.Swing.Text
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1, Javax.Swing.JFormattedTextField.AbstractFormatter arg2)
+        /// </summary>
+        public static DefaultFormatterFactory New(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1, Javax.Swing.JFormattedTextField.AbstractFormatter arg2)
+        {
+            return JVMBridgeBase.New<DefaultFormatterFactory>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultFormatterFactory.html#javax.swing.text.DefaultFormatterFactory(javax.swing.JFormattedTextField.AbstractFormatter,javax.swing.JFormattedTextField.AbstractFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
@@ -101,12 +122,26 @@ namespace Javax.Swing.Text
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1)
+        /// </summary>
+        public static DefaultFormatterFactory New(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1)
+        {
+            return JVMBridgeBase.New<DefaultFormatterFactory>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultFormatterFactory.html#javax.swing.text.DefaultFormatterFactory(javax.swing.JFormattedTextField.AbstractFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
         public DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0)
+        /// </summary>
+        public static DefaultFormatterFactory New(Javax.Swing.JFormattedTextField.AbstractFormatter arg0)
+        {
+            return JVMBridgeBase.New<DefaultFormatterFactory>(arg0);
         }
 
         #endregion

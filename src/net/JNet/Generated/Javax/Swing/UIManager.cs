@@ -104,6 +104,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for UIManager()
+        /// </summary>
+        public static UIManager New()
+        {
+            return JVMBridgeBase.New<UIManager>();
+        }
 
         #endregion
 
@@ -472,6 +479,13 @@ namespace Javax.Swing
             public LookAndFeelInfo(Java.Lang.String arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for LookAndFeelInfo(Java.Lang.String arg0, Java.Lang.String arg1)
+            /// </summary>
+            public static LookAndFeelInfo New(Java.Lang.String arg0, Java.Lang.String arg1)
+            {
+                return JVMBridgeBase.New<LookAndFeelInfo>(arg0, arg1);
             }
 
             #endregion

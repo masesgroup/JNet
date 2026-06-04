@@ -72,6 +72,13 @@ namespace Java.Security
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for PKCS12Attribute(byte[] arg0)
+        /// </summary>
+        public static PKCS12Attribute New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<PKCS12Attribute>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/PKCS12Attribute.html#java.security.PKCS12Attribute(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -79,6 +86,13 @@ namespace Java.Security
         public PKCS12Attribute(Java.Lang.String arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for PKCS12Attribute(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static PKCS12Attribute New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<PKCS12Attribute>(arg0, arg1);
         }
 
         #endregion

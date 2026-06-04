@@ -71,12 +71,26 @@ namespace Javax.Xml.Crypto.Dsig.Spec
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ExcC14NParameterSpec()
+        /// </summary>
+        public static ExcC14NParameterSpec New()
+        {
+            return JVMBridgeBase.New<ExcC14NParameterSpec>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#javax.xml.crypto.dsig.spec.ExcC14NParameterSpec(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         public ExcC14NParameterSpec(Java.Util.List arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ExcC14NParameterSpec(Java.Util.List arg0)
+        /// </summary>
+        public static ExcC14NParameterSpec New(Java.Util.List arg0)
+        {
+            return JVMBridgeBase.New<ExcC14NParameterSpec>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for RepaintManager()
+        /// </summary>
+        public static RepaintManager New()
+        {
+            return JVMBridgeBase.New<RepaintManager>();
+        }
 
         #endregion
 

@@ -70,6 +70,13 @@ namespace Javax.Security.Cert
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for X509Certificate()
+        /// </summary>
+        public static X509Certificate New()
+        {
+            return JVMBridgeBase.New<X509Certificate>();
+        }
 
         #endregion
 

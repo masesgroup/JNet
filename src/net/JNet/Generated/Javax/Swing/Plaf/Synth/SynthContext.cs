@@ -74,6 +74,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// HPA initializer for SynthContext(Javax.Swing.JComponent arg0, Javax.Swing.Plaf.Synth.Region arg1, Javax.Swing.Plaf.Synth.SynthStyle arg2, int arg3)
+        /// </summary>
+        public static SynthContext New(Javax.Swing.JComponent arg0, Javax.Swing.Plaf.Synth.Region arg1, Javax.Swing.Plaf.Synth.SynthStyle arg2, int arg3)
+        {
+            return JVMBridgeBase.New<SynthContext>(arg0, arg1, arg2, arg3);
+        }
 
         #endregion
 

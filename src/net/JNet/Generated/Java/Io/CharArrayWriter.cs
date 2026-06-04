@@ -71,12 +71,26 @@ namespace Java.Io
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for CharArrayWriter()
+        /// </summary>
+        public static CharArrayWriter New()
+        {
+            return JVMBridgeBase.New<CharArrayWriter>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/CharArrayWriter.html#java.io.CharArrayWriter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public CharArrayWriter(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for CharArrayWriter(int arg0)
+        /// </summary>
+        public static CharArrayWriter New(int arg0)
+        {
+            return JVMBridgeBase.New<CharArrayWriter>(arg0);
         }
 
         #endregion

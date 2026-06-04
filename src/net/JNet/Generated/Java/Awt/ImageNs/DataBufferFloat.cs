@@ -74,6 +74,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DataBufferFloat(float[] arg0, int arg1, int arg2)
+        /// </summary>
+        public static DataBufferFloat New(float[] arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<DataBufferFloat>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/DataBufferFloat.html#java.awt.image.DataBufferFloat(float[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -81,6 +88,13 @@ namespace Java.Awt.ImageNs
         public DataBufferFloat(float[] arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DataBufferFloat(float[] arg0, int arg1)
+        /// </summary>
+        public static DataBufferFloat New(float[] arg0, int arg1)
+        {
+            return JVMBridgeBase.New<DataBufferFloat>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/DataBufferFloat.html#java.awt.image.DataBufferFloat(float[][],int,int[])"/>
@@ -93,6 +107,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DataBufferFloat(float[][] arg0, int arg1, int[] arg2)
+        /// </summary>
+        public static DataBufferFloat New(float[][] arg0, int arg1, int[] arg2)
+        {
+            return JVMBridgeBase.New<DataBufferFloat>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/DataBufferFloat.html#java.awt.image.DataBufferFloat(float[][],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -100,6 +121,13 @@ namespace Java.Awt.ImageNs
         public DataBufferFloat(float[][] arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DataBufferFloat(float[][] arg0, int arg1)
+        /// </summary>
+        public static DataBufferFloat New(float[][] arg0, int arg1)
+        {
+            return JVMBridgeBase.New<DataBufferFloat>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/DataBufferFloat.html#java.awt.image.DataBufferFloat(int,int)"/>
@@ -111,12 +139,26 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for DataBufferFloat(int arg0, int arg1)
+        /// </summary>
+        public static DataBufferFloat New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<DataBufferFloat>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/DataBufferFloat.html#java.awt.image.DataBufferFloat(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public DataBufferFloat(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DataBufferFloat(int arg0)
+        /// </summary>
+        public static DataBufferFloat New(int arg0)
+        {
+            return JVMBridgeBase.New<DataBufferFloat>(arg0);
         }
 
         #endregion

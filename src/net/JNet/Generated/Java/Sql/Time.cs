@@ -75,12 +75,26 @@ namespace Java.Sql
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Time(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static Time New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<Time>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/Time.html#java.sql.Time(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public Time(long arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Time(long arg0)
+        /// </summary>
+        public static Time New(long arg0)
+        {
+            return JVMBridgeBase.New<Time>(arg0);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Java.Security.Spec
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ECGenParameterSpec(Java.Lang.String arg0)
+        /// </summary>
+        public static ECGenParameterSpec New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<ECGenParameterSpec>(arg0);
+        }
 
         #endregion
 

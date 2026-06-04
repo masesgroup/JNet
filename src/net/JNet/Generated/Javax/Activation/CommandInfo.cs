@@ -72,6 +72,13 @@ namespace Javax.Activation
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for CommandInfo(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static CommandInfo New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<CommandInfo>(arg0, arg1);
+        }
 
         #endregion
 

@@ -75,6 +75,13 @@ namespace Javax.Naming
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for BinaryRefAddr(Java.Lang.String arg0, byte[] arg1, int arg2, int arg3)
+        /// </summary>
+        public static BinaryRefAddr New(Java.Lang.String arg0, byte[] arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<BinaryRefAddr>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/BinaryRefAddr.html#javax.naming.BinaryRefAddr(java.lang.String,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -82,6 +89,13 @@ namespace Javax.Naming
         public BinaryRefAddr(Java.Lang.String arg0, byte[] arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for BinaryRefAddr(Java.Lang.String arg0, byte[] arg1)
+        /// </summary>
+        public static BinaryRefAddr New(Java.Lang.String arg0, byte[] arg1)
+        {
+            return JVMBridgeBase.New<BinaryRefAddr>(arg0, arg1);
         }
 
         #endregion

@@ -105,6 +105,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultListModel()
+        /// </summary>
+        public static DefaultListModel New()
+        {
+            return JVMBridgeBase.New<DefaultListModel>();
+        }
 
         #endregion
 
@@ -388,6 +395,13 @@ namespace Javax.Swing
         public DefaultListModel() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for DefaultListModel()
+        /// </summary>
+        public static DefaultListModel<E> New()
+        {
+            return JVMBridgeBase.New<DefaultListModel<E>>();
         }
 
         #endregion

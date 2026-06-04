@@ -73,6 +73,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Scrollbar()
+        /// </summary>
+        public static Scrollbar New()
+        {
+            return JVMBridgeBase.New<Scrollbar>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#java.awt.Scrollbar(int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -86,6 +93,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for Scrollbar(int arg0, int arg1, int arg2, int arg3, int arg4)
+        /// </summary>
+        public static Scrollbar New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<Scrollbar>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#java.awt.Scrollbar(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -93,6 +107,13 @@ namespace Java.Awt
         public Scrollbar(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Scrollbar(int arg0)
+        /// </summary>
+        public static Scrollbar New(int arg0)
+        {
+            return JVMBridgeBase.New<Scrollbar>(arg0);
         }
 
         #endregion

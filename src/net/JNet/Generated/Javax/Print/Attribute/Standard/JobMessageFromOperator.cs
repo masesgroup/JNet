@@ -72,6 +72,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for JobMessageFromOperator(Java.Lang.String arg0, Java.Util.Locale arg1)
+        /// </summary>
+        public static JobMessageFromOperator New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        {
+            return JVMBridgeBase.New<JobMessageFromOperator>(arg0, arg1);
+        }
 
         #endregion
 

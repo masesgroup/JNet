@@ -71,6 +71,13 @@ namespace Javax.Management.Loading
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultLoaderRepository()
+        /// </summary>
+        public static DefaultLoaderRepository New()
+        {
+            return JVMBridgeBase.New<DefaultLoaderRepository>();
+        }
 
         #endregion
 

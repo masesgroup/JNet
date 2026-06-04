@@ -71,12 +71,26 @@ namespace Org.Xml.Sax
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for InputSource()
+        /// </summary>
+        public static InputSource New()
+        {
+            return JVMBridgeBase.New<InputSource>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/InputSource.html#org.xml.sax.InputSource(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public InputSource(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for InputSource(Java.Io.InputStream arg0)
+        /// </summary>
+        public static InputSource New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<InputSource>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/InputSource.html#org.xml.sax.InputSource(java.io.Reader)"/>
@@ -87,12 +101,26 @@ namespace Org.Xml.Sax
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for InputSource(Java.Io.Reader arg0)
+        /// </summary>
+        public static InputSource New(Java.Io.Reader arg0)
+        {
+            return JVMBridgeBase.New<InputSource>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/InputSource.html#org.xml.sax.InputSource(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public InputSource(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for InputSource(Java.Lang.String arg0)
+        /// </summary>
+        public static InputSource New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<InputSource>(arg0);
         }
 
         #endregion

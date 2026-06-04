@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JProgressBar()
+        /// </summary>
+        public static JProgressBar New()
+        {
+            return JVMBridgeBase.New<JProgressBar>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JProgressBar.html#javax.swing.JProgressBar(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -79,6 +86,13 @@ namespace Javax.Swing
         public JProgressBar(int arg0, int arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for JProgressBar(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static JProgressBar New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<JProgressBar>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JProgressBar.html#javax.swing.JProgressBar(int,int)"/>
@@ -90,6 +104,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JProgressBar(int arg0, int arg1)
+        /// </summary>
+        public static JProgressBar New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<JProgressBar>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JProgressBar.html#javax.swing.JProgressBar(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -98,12 +119,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JProgressBar(int arg0)
+        /// </summary>
+        public static JProgressBar New(int arg0)
+        {
+            return JVMBridgeBase.New<JProgressBar>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JProgressBar.html#javax.swing.JProgressBar(javax.swing.BoundedRangeModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.BoundedRangeModel"/></param>
         public JProgressBar(Javax.Swing.BoundedRangeModel arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JProgressBar(Javax.Swing.BoundedRangeModel arg0)
+        /// </summary>
+        public static JProgressBar New(Javax.Swing.BoundedRangeModel arg0)
+        {
+            return JVMBridgeBase.New<JProgressBar>(arg0);
         }
 
         #endregion

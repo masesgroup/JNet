@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for InputMap()
+        /// </summary>
+        public static InputMap New()
+        {
+            return JVMBridgeBase.New<InputMap>();
+        }
 
         #endregion
 

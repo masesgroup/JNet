@@ -73,6 +73,13 @@ namespace Java.Awt.ImageNs.Renderable
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
+        /// </summary>
+        public static RenderContext New(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
+        {
+            return JVMBridgeBase.New<RenderContext>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/RenderContext.html#java.awt.image.renderable.RenderContext(java.awt.geom.AffineTransform,java.awt.Shape,java.awt.RenderingHints)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
@@ -81,6 +88,13 @@ namespace Java.Awt.ImageNs.Renderable
         public RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1, Java.Awt.RenderingHints arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1, Java.Awt.RenderingHints arg2)
+        /// </summary>
+        public static RenderContext New(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1, Java.Awt.RenderingHints arg2)
+        {
+            return JVMBridgeBase.New<RenderContext>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/RenderContext.html#java.awt.image.renderable.RenderContext(java.awt.geom.AffineTransform,java.awt.Shape)"/>
@@ -92,12 +106,26 @@ namespace Java.Awt.ImageNs.Renderable
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1)
+        /// </summary>
+        public static RenderContext New(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1)
+        {
+            return JVMBridgeBase.New<RenderContext>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/RenderContext.html#java.awt.image.renderable.RenderContext(java.awt.geom.AffineTransform)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public RenderContext(Java.Awt.Geom.AffineTransform arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for RenderContext(Java.Awt.Geom.AffineTransform arg0)
+        /// </summary>
+        public static RenderContext New(Java.Awt.Geom.AffineTransform arg0)
+        {
+            return JVMBridgeBase.New<RenderContext>(arg0);
         }
 
         #endregion

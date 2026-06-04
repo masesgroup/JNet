@@ -73,12 +73,26 @@ namespace Javax.Sound.Sampled
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for AudioPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static AudioPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<AudioPermission>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/AudioPermission.html#javax.sound.sampled.AudioPermission(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public AudioPermission(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AudioPermission(Java.Lang.String arg0)
+        /// </summary>
+        public static AudioPermission New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<AudioPermission>(arg0);
         }
 
         #endregion

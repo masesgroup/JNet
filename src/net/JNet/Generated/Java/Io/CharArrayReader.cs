@@ -74,12 +74,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for CharArrayReader(char[] arg0, int arg1, int arg2)
+        /// </summary>
+        public static CharArrayReader New(char[] arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<CharArrayReader>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/CharArrayReader.html#java.io.CharArrayReader(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         public CharArrayReader(char[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for CharArrayReader(char[] arg0)
+        /// </summary>
+        public static CharArrayReader New(char[] arg0)
+        {
+            return JVMBridgeBase.New<CharArrayReader>(arg0);
         }
 
         #endregion

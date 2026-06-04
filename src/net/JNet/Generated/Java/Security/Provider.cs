@@ -172,6 +172,13 @@ namespace Java.Security
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
             }
+            /// <summary>
+            /// HPA initializer for Service(Java.Security.Provider arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Util.List%3CJava.Lang.String%3E arg4, Java.Util.Map%3CJava.Lang.String, Java.Lang.String%3E arg5)
+            /// </summary>
+            public static Service New(Java.Security.Provider arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Util.List<Java.Lang.String> arg4, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg5)
+            {
+                return JVMBridgeBase.New<Service>(arg0, arg1, arg2, arg3, arg4, arg5);
+            }
 
             #endregion
 

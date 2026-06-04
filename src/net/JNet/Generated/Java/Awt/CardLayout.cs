@@ -71,6 +71,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for CardLayout()
+        /// </summary>
+        public static CardLayout New()
+        {
+            return JVMBridgeBase.New<CardLayout>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/CardLayout.html#java.awt.CardLayout(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -78,6 +85,13 @@ namespace Java.Awt
         public CardLayout(int arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for CardLayout(int arg0, int arg1)
+        /// </summary>
+        public static CardLayout New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<CardLayout>(arg0, arg1);
         }
 
         #endregion

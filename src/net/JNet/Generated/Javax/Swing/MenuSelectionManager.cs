@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MenuSelectionManager()
+        /// </summary>
+        public static MenuSelectionManager New()
+        {
+            return JVMBridgeBase.New<MenuSelectionManager>();
+        }
 
         #endregion
 

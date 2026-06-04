@@ -70,6 +70,13 @@ namespace Javax.Naming.Ldap
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for StartTlsRequest()
+        /// </summary>
+        public static StartTlsRequest New()
+        {
+            return JVMBridgeBase.New<StartTlsRequest>();
+        }
 
         #endregion
 

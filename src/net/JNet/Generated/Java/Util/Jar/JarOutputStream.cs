@@ -74,6 +74,13 @@ namespace Java.Util.Jar
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JarOutputStream(Java.Io.OutputStream arg0, Java.Util.Jar.Manifest arg1)
+        /// </summary>
+        public static JarOutputStream New(Java.Io.OutputStream arg0, Java.Util.Jar.Manifest arg1)
+        {
+            return JVMBridgeBase.New<JarOutputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/JarOutputStream.html#java.util.jar.JarOutputStream(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
@@ -81,6 +88,13 @@ namespace Java.Util.Jar
         public JarOutputStream(Java.Io.OutputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JarOutputStream(Java.Io.OutputStream arg0)
+        /// </summary>
+        public static JarOutputStream New(Java.Io.OutputStream arg0)
+        {
+            return JVMBridgeBase.New<JarOutputStream>(arg0);
         }
 
         #endregion

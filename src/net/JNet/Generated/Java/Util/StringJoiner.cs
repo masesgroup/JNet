@@ -74,12 +74,26 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for StringJoiner(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
+        /// </summary>
+        public static StringJoiner New(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
+        {
+            return JVMBridgeBase.New<StringJoiner>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/StringJoiner.html#java.util.StringJoiner(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         public StringJoiner(Java.Lang.CharSequence arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StringJoiner(Java.Lang.CharSequence arg0)
+        /// </summary>
+        public static StringJoiner New(Java.Lang.CharSequence arg0)
+        {
+            return JVMBridgeBase.New<StringJoiner>(arg0);
         }
 
         #endregion

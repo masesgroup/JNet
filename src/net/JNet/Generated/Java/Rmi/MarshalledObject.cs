@@ -107,6 +107,13 @@ namespace Java.Rmi
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for MarshalledObject(object arg0)
+        /// </summary>
+        public static MarshalledObject New(object arg0)
+        {
+            return JVMBridgeBase.New<MarshalledObject>(arg0);
+        }
 
         #endregion
 
@@ -156,6 +163,13 @@ namespace Java.Rmi
         public MarshalledObject(T arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MarshalledObject(T arg0)
+        /// </summary>
+        public static MarshalledObject<T> New(T arg0)
+        {
+            return JVMBridgeBase.New<MarshalledObject<T>>(arg0);
         }
 
         #endregion

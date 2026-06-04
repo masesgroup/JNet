@@ -104,6 +104,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicProgressBarUI()
+        /// </summary>
+        public static BasicProgressBarUI New()
+        {
+            return JVMBridgeBase.New<BasicProgressBarUI>();
+        }
 
         #endregion
 
@@ -135,6 +142,13 @@ namespace Javax.Swing.Plaf.Basic
             public ChangeHandler(Javax.Swing.Plaf.Basic.BasicProgressBarUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for ChangeHandler(Javax.Swing.Plaf.Basic.BasicProgressBarUI arg0)
+            /// </summary>
+            public static ChangeHandler New(Javax.Swing.Plaf.Basic.BasicProgressBarUI arg0)
+            {
+                return JVMBridgeBase.New<ChangeHandler>(arg0);
             }
 
             #endregion

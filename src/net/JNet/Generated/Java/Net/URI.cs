@@ -79,6 +79,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for URI(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
+        /// </summary>
+        public static URI New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
+        {
+            return JVMBridgeBase.New<URI>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URI.html#java.net.URI(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -90,6 +97,13 @@ namespace Java.Net
         public URI(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for URI(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
+        /// </summary>
+        public static URI New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
+        {
+            return JVMBridgeBase.New<URI>(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URI.html#java.net.URI(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -104,6 +118,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for URI(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        /// </summary>
+        public static URI New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        {
+            return JVMBridgeBase.New<URI>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URI.html#java.net.URI(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -115,6 +136,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for URI(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static URI New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<URI>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URI.html#java.net.URI(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -122,6 +150,13 @@ namespace Java.Net
         public URI(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for URI(Java.Lang.String arg0)
+        /// </summary>
+        public static URI New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<URI>(arg0);
         }
 
         #endregion

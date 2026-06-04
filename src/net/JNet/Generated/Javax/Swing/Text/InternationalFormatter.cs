@@ -71,12 +71,26 @@ namespace Javax.Swing.Text
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for InternationalFormatter()
+        /// </summary>
+        public static InternationalFormatter New()
+        {
+            return JVMBridgeBase.New<InternationalFormatter>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/InternationalFormatter.html#javax.swing.text.InternationalFormatter(java.text.Format)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.Format"/></param>
         public InternationalFormatter(Java.Text.Format arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for InternationalFormatter(Java.Text.Format arg0)
+        /// </summary>
+        public static InternationalFormatter New(Java.Text.Format arg0)
+        {
+            return JVMBridgeBase.New<InternationalFormatter>(arg0);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Javax.Imageio
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ImageWriteParam(Java.Util.Locale arg0)
+        /// </summary>
+        public static ImageWriteParam New(Java.Util.Locale arg0)
+        {
+            return JVMBridgeBase.New<ImageWriteParam>(arg0);
+        }
 
         #endregion
 

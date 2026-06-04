@@ -106,6 +106,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ArrayDeque()
+        /// </summary>
+        public static ArrayDeque New()
+        {
+            return JVMBridgeBase.New<ArrayDeque>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html#java.util.ArrayDeque(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -114,12 +121,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ArrayDeque(int arg0)
+        /// </summary>
+        public static ArrayDeque New(int arg0)
+        {
+            return JVMBridgeBase.New<ArrayDeque>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html#java.util.ArrayDeque(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ArrayDeque(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ArrayDeque(Java.Util.Collection arg0)
+        /// </summary>
+        public static ArrayDeque New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<ArrayDeque>(arg0);
         }
 
         #endregion
@@ -359,6 +380,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ArrayDeque()
+        /// </summary>
+        public static ArrayDeque<E> New()
+        {
+            return JVMBridgeBase.New<ArrayDeque<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html#java.util.ArrayDeque(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -367,12 +395,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ArrayDeque(int arg0)
+        /// </summary>
+        public static ArrayDeque<E> New(int arg0)
+        {
+            return JVMBridgeBase.New<ArrayDeque<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html#java.util.ArrayDeque(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ArrayDeque(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ArrayDeque(Java.Util.Collection%3CE%3E arg0)
+        /// </summary>
+        public static ArrayDeque<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<ArrayDeque<E>>(arg0);
         }
 
         #endregion

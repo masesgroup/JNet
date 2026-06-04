@@ -71,6 +71,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultTextUI()
+        /// </summary>
+        public static DefaultTextUI New()
+        {
+            return JVMBridgeBase.New<DefaultTextUI>();
+        }
 
         #endregion
 

@@ -72,6 +72,13 @@ namespace Java.Awt.ImageNs
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for FilteredImageSource(Java.Awt.ImageNs.ImageProducer arg0, Java.Awt.ImageNs.ImageFilter arg1)
+        /// </summary>
+        public static FilteredImageSource New(Java.Awt.ImageNs.ImageProducer arg0, Java.Awt.ImageNs.ImageFilter arg1)
+        {
+            return JVMBridgeBase.New<FilteredImageSource>(arg0, arg1);
+        }
 
         #endregion
 

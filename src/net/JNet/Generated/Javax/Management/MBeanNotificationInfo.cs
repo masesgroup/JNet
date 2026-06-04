@@ -75,6 +75,13 @@ namespace Javax.Management
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for MBeanNotificationInfo(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Management.Descriptor arg3)
+        /// </summary>
+        public static MBeanNotificationInfo New(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Management.Descriptor arg3)
+        {
+            return JVMBridgeBase.New<MBeanNotificationInfo>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanNotificationInfo.html#javax.management.MBeanNotificationInfo(java.lang.String[],java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -83,6 +90,13 @@ namespace Javax.Management
         public MBeanNotificationInfo(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for MBeanNotificationInfo(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static MBeanNotificationInfo New(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<MBeanNotificationInfo>(arg0, arg1, arg2);
         }
 
         #endregion

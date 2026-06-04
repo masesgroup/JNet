@@ -71,6 +71,13 @@ namespace Javax.Sound.Midi
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SysexMessage()
+        /// </summary>
+        public static SysexMessage New()
+        {
+            return JVMBridgeBase.New<SysexMessage>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/SysexMessage.html#javax.sound.midi.SysexMessage(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -79,6 +86,13 @@ namespace Javax.Sound.Midi
         public SysexMessage(byte[] arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for SysexMessage(byte[] arg0, int arg1)
+        /// </summary>
+        public static SysexMessage New(byte[] arg0, int arg1)
+        {
+            return JVMBridgeBase.New<SysexMessage>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/SysexMessage.html#javax.sound.midi.SysexMessage(int,byte[],int)"/>
@@ -90,6 +104,13 @@ namespace Javax.Sound.Midi
         public SysexMessage(int arg0, byte[] arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for SysexMessage(int arg0, byte[] arg1, int arg2)
+        /// </summary>
+        public static SysexMessage New(int arg0, byte[] arg1, int arg2)
+        {
+            return JVMBridgeBase.New<SysexMessage>(arg0, arg1, arg2);
         }
 
         #endregion

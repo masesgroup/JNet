@@ -71,6 +71,13 @@ namespace Javax.Swing.Border
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for EtchedBorder()
+        /// </summary>
+        public static EtchedBorder New()
+        {
+            return JVMBridgeBase.New<EtchedBorder>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/EtchedBorder.html#javax.swing.border.EtchedBorder(int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -81,12 +88,26 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for EtchedBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
+        /// </summary>
+        public static EtchedBorder New(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
+        {
+            return JVMBridgeBase.New<EtchedBorder>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/EtchedBorder.html#javax.swing.border.EtchedBorder(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public EtchedBorder(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for EtchedBorder(int arg0)
+        /// </summary>
+        public static EtchedBorder New(int arg0)
+        {
+            return JVMBridgeBase.New<EtchedBorder>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/EtchedBorder.html#javax.swing.border.EtchedBorder(java.awt.Color,java.awt.Color)"/>
@@ -96,6 +117,13 @@ namespace Javax.Swing.Border
         public EtchedBorder(Java.Awt.Color arg0, Java.Awt.Color arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for EtchedBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
+        /// </summary>
+        public static EtchedBorder New(Java.Awt.Color arg0, Java.Awt.Color arg1)
+        {
+            return JVMBridgeBase.New<EtchedBorder>(arg0, arg1);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for OceanTheme()
+        /// </summary>
+        public static OceanTheme New()
+        {
+            return JVMBridgeBase.New<OceanTheme>();
+        }
 
         #endregion
 

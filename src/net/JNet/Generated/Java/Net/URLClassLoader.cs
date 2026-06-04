@@ -74,6 +74,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for URLClassLoader(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
+        /// </summary>
+        public static URLClassLoader New(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
+        {
+            return JVMBridgeBase.New<URLClassLoader>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#java.net.URLClassLoader(java.net.URL[],java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
@@ -83,12 +90,26 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for URLClassLoader(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
+        /// </summary>
+        public static URLClassLoader New(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
+        {
+            return JVMBridgeBase.New<URLClassLoader>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html#java.net.URLClassLoader(java.net.URL[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         public URLClassLoader(Java.Net.URL[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for URLClassLoader(Java.Net.URL[] arg0)
+        /// </summary>
+        public static URLClassLoader New(Java.Net.URL[] arg0)
+        {
+            return JVMBridgeBase.New<URLClassLoader>(arg0);
         }
 
         #endregion

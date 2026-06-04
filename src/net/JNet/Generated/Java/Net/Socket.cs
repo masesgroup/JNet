@@ -71,6 +71,13 @@ namespace Java.Net
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Socket()
+        /// </summary>
+        public static Socket New()
+        {
+            return JVMBridgeBase.New<Socket>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html#java.net.Socket(java.lang.String,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -81,6 +88,13 @@ namespace Java.Net
         public Socket(Java.Lang.String arg0, int arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for Socket(Java.Lang.String arg0, int arg1, bool arg2)
+        /// </summary>
+        public static Socket New(Java.Lang.String arg0, int arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<Socket>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html#java.net.Socket(java.lang.String,int,java.net.InetAddress,int)"/>
@@ -95,6 +109,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for Socket(Java.Lang.String arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
+        /// </summary>
+        public static Socket New(Java.Lang.String arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
+        {
+            return JVMBridgeBase.New<Socket>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html#java.net.Socket(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -104,6 +125,13 @@ namespace Java.Net
         public Socket(Java.Lang.String arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for Socket(Java.Lang.String arg0, int arg1)
+        /// </summary>
+        public static Socket New(Java.Lang.String arg0, int arg1)
+        {
+            return JVMBridgeBase.New<Socket>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html#java.net.Socket(java.net.InetAddress,int,boolean)"/>
@@ -118,6 +146,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Socket(Java.Net.InetAddress arg0, int arg1, bool arg2)
+        /// </summary>
+        public static Socket New(Java.Net.InetAddress arg0, int arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<Socket>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html#java.net.Socket(java.net.InetAddress,int,java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
@@ -130,6 +165,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for Socket(Java.Net.InetAddress arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
+        /// </summary>
+        public static Socket New(Java.Net.InetAddress arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
+        {
+            return JVMBridgeBase.New<Socket>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html#java.net.Socket(java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
@@ -140,12 +182,26 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Socket(Java.Net.InetAddress arg0, int arg1)
+        /// </summary>
+        public static Socket New(Java.Net.InetAddress arg0, int arg1)
+        {
+            return JVMBridgeBase.New<Socket>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html#java.net.Socket(java.net.Proxy)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.Proxy"/></param>
         public Socket(Java.Net.Proxy arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Socket(Java.Net.Proxy arg0)
+        /// </summary>
+        public static Socket New(Java.Net.Proxy arg0)
+        {
+            return JVMBridgeBase.New<Socket>(arg0);
         }
 
         #endregion

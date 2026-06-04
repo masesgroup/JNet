@@ -70,6 +70,13 @@ namespace Org.Ietf.Jgss
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for GSSManager()
+        /// </summary>
+        public static GSSManager New()
+        {
+            return JVMBridgeBase.New<GSSManager>();
+        }
 
         #endregion
 

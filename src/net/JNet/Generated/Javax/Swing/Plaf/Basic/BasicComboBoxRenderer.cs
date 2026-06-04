@@ -104,6 +104,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicComboBoxRenderer()
+        /// </summary>
+        public static BasicComboBoxRenderer New()
+        {
+            return JVMBridgeBase.New<BasicComboBoxRenderer>();
+        }
 
         #endregion
 
@@ -155,6 +162,13 @@ namespace Javax.Swing.Plaf.Basic
             public UIResource() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for UIResource()
+            /// </summary>
+            public static UIResource New()
+            {
+                return JVMBridgeBase.New<UIResource>();
             }
 
             #endregion

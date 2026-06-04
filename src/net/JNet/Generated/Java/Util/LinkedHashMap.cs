@@ -107,6 +107,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for LinkedHashMap()
+        /// </summary>
+        public static LinkedHashMap New()
+        {
+            return JVMBridgeBase.New<LinkedHashMap>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html#java.util.LinkedHashMap(int,float,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -115,6 +122,13 @@ namespace Java.Util
         public LinkedHashMap(int arg0, float arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedHashMap(int arg0, float arg1, bool arg2)
+        /// </summary>
+        public static LinkedHashMap New(int arg0, float arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<LinkedHashMap>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html#java.util.LinkedHashMap(int,float)"/>
@@ -126,6 +140,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for LinkedHashMap(int arg0, float arg1)
+        /// </summary>
+        public static LinkedHashMap New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<LinkedHashMap>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html#java.util.LinkedHashMap(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -134,12 +155,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for LinkedHashMap(int arg0)
+        /// </summary>
+        public static LinkedHashMap New(int arg0)
+        {
+            return JVMBridgeBase.New<LinkedHashMap>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html#java.util.LinkedHashMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public LinkedHashMap(Java.Util.Map arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedHashMap(Java.Util.Map arg0)
+        /// </summary>
+        public static LinkedHashMap New(Java.Util.Map arg0)
+        {
+            return JVMBridgeBase.New<LinkedHashMap>(arg0);
         }
 
         #endregion
@@ -180,6 +215,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for LinkedHashMap()
+        /// </summary>
+        public static LinkedHashMap<K, V> New()
+        {
+            return JVMBridgeBase.New<LinkedHashMap<K, V>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html#java.util.LinkedHashMap(int,float,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -188,6 +230,13 @@ namespace Java.Util
         public LinkedHashMap(int arg0, float arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedHashMap(int arg0, float arg1, bool arg2)
+        /// </summary>
+        public static LinkedHashMap<K, V> New(int arg0, float arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<LinkedHashMap<K, V>>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html#java.util.LinkedHashMap(int,float)"/>
@@ -199,6 +248,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for LinkedHashMap(int arg0, float arg1)
+        /// </summary>
+        public static LinkedHashMap<K, V> New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<LinkedHashMap<K, V>>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html#java.util.LinkedHashMap(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -207,12 +263,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for LinkedHashMap(int arg0)
+        /// </summary>
+        public static LinkedHashMap<K, V> New(int arg0)
+        {
+            return JVMBridgeBase.New<LinkedHashMap<K, V>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html#java.util.LinkedHashMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public LinkedHashMap(Java.Util.Map<K, V> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedHashMap(Java.Util.Map%3CK, V%3E arg0)
+        /// </summary>
+        public static LinkedHashMap<K, V> New(Java.Util.Map<K, V> arg0)
+        {
+            return JVMBridgeBase.New<LinkedHashMap<K, V>>(arg0);
         }
 
         #endregion

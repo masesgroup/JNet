@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicCheckBoxUI()
+        /// </summary>
+        public static BasicCheckBoxUI New()
+        {
+            return JVMBridgeBase.New<BasicCheckBoxUI>();
+        }
 
         #endregion
 

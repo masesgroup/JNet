@@ -72,6 +72,13 @@ namespace Java.Security.Spec
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for PSSParameterSpec(int arg0)
+        /// </summary>
+        public static PSSParameterSpec New(int arg0)
+        {
+            return JVMBridgeBase.New<PSSParameterSpec>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/spec/PSSParameterSpec.html#java.security.spec.PSSParameterSpec(java.lang.String,java.lang.String,java.security.spec.AlgorithmParameterSpec,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -82,6 +89,13 @@ namespace Java.Security.Spec
         public PSSParameterSpec(Java.Lang.String arg0, Java.Lang.String arg1, Java.Security.Spec.AlgorithmParameterSpec arg2, int arg3, int arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for PSSParameterSpec(Java.Lang.String arg0, Java.Lang.String arg1, Java.Security.Spec.AlgorithmParameterSpec arg2, int arg3, int arg4)
+        /// </summary>
+        public static PSSParameterSpec New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Security.Spec.AlgorithmParameterSpec arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<PSSParameterSpec>(arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

@@ -703,6 +703,13 @@ namespace Java.Util
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for Builder()
+            /// </summary>
+            public static Builder New()
+            {
+                return JVMBridgeBase.New<Builder>();
+            }
 
             #endregion
 

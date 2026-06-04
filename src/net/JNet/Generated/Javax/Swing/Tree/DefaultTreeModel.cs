@@ -73,12 +73,26 @@ namespace Javax.Swing.Tree
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for DefaultTreeModel(Javax.Swing.Tree.TreeNode arg0, bool arg1)
+        /// </summary>
+        public static DefaultTreeModel New(Javax.Swing.Tree.TreeNode arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<DefaultTreeModel>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/DefaultTreeModel.html#javax.swing.tree.DefaultTreeModel(javax.swing.tree.TreeNode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
         public DefaultTreeModel(Javax.Swing.Tree.TreeNode arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultTreeModel(Javax.Swing.Tree.TreeNode arg0)
+        /// </summary>
+        public static DefaultTreeModel New(Javax.Swing.Tree.TreeNode arg0)
+        {
+            return JVMBridgeBase.New<DefaultTreeModel>(arg0);
         }
 
         #endregion

@@ -72,6 +72,13 @@ namespace Java.Security
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for GuardedObject(object arg0, Java.Security.Guard arg1)
+        /// </summary>
+        public static GuardedObject New(object arg0, Java.Security.Guard arg1)
+        {
+            return JVMBridgeBase.New<GuardedObject>(arg0, arg1);
+        }
 
         #endregion
 

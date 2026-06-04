@@ -73,6 +73,13 @@ namespace Java.Math
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for MathContext(int arg0, Java.Math.RoundingMode arg1)
+        /// </summary>
+        public static MathContext New(int arg0, Java.Math.RoundingMode arg1)
+        {
+            return JVMBridgeBase.New<MathContext>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/MathContext.html#java.math.MathContext(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -81,12 +88,26 @@ namespace Java.Math
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for MathContext(int arg0)
+        /// </summary>
+        public static MathContext New(int arg0)
+        {
+            return JVMBridgeBase.New<MathContext>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/MathContext.html#java.math.MathContext(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public MathContext(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MathContext(Java.Lang.String arg0)
+        /// </summary>
+        public static MathContext New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<MathContext>(arg0);
         }
 
         #endregion

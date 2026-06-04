@@ -71,12 +71,26 @@ namespace Org.Xml.Sax.Ext
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Attributes2Impl()
+        /// </summary>
+        public static Attributes2Impl New()
+        {
+            return JVMBridgeBase.New<Attributes2Impl>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/ext/Attributes2Impl.html#org.xml.sax.ext.Attributes2Impl(org.xml.sax.Attributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.Attributes"/></param>
         public Attributes2Impl(Org.Xml.Sax.Attributes arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Attributes2Impl(Org.Xml.Sax.Attributes arg0)
+        /// </summary>
+        public static Attributes2Impl New(Org.Xml.Sax.Attributes arg0)
+        {
+            return JVMBridgeBase.New<Attributes2Impl>(arg0);
         }
 
         #endregion

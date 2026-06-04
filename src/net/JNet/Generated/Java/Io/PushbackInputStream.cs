@@ -73,12 +73,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PushbackInputStream(Java.Io.InputStream arg0, int arg1)
+        /// </summary>
+        public static PushbackInputStream New(Java.Io.InputStream arg0, int arg1)
+        {
+            return JVMBridgeBase.New<PushbackInputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PushbackInputStream.html#java.io.PushbackInputStream(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public PushbackInputStream(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PushbackInputStream(Java.Io.InputStream arg0)
+        /// </summary>
+        public static PushbackInputStream New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<PushbackInputStream>(arg0);
         }
 
         #endregion

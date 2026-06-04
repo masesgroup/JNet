@@ -71,6 +71,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for LabelView(Javax.Swing.Text.Element arg0)
+        /// </summary>
+        public static LabelView New(Javax.Swing.Text.Element arg0)
+        {
+            return JVMBridgeBase.New<LabelView>(arg0);
+        }
 
         #endregion
 

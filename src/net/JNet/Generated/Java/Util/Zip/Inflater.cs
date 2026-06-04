@@ -71,12 +71,26 @@ namespace Java.Util.Zip
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Inflater()
+        /// </summary>
+        public static Inflater New()
+        {
+            return JVMBridgeBase.New<Inflater>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Inflater.html#java.util.zip.Inflater(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public Inflater(bool arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Inflater(bool arg0)
+        /// </summary>
+        public static Inflater New(bool arg0)
+        {
+            return JVMBridgeBase.New<Inflater>(arg0);
         }
 
         #endregion

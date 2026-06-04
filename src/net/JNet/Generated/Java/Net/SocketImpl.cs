@@ -70,6 +70,13 @@ namespace Java.Net
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SocketImpl()
+        /// </summary>
+        public static SocketImpl New()
+        {
+            return JVMBridgeBase.New<SocketImpl>();
+        }
 
         #endregion
 

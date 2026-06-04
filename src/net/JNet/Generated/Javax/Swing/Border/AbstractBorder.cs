@@ -70,6 +70,13 @@ namespace Javax.Swing.Border
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AbstractBorder()
+        /// </summary>
+        public static AbstractBorder New()
+        {
+            return JVMBridgeBase.New<AbstractBorder>();
+        }
 
         #endregion
 

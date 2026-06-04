@@ -104,6 +104,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultListCellRenderer()
+        /// </summary>
+        public static DefaultListCellRenderer New()
+        {
+            return JVMBridgeBase.New<DefaultListCellRenderer>();
+        }
 
         #endregion
 
@@ -155,6 +162,13 @@ namespace Javax.Swing
             public UIResource() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for UIResource()
+            /// </summary>
+            public static UIResource New()
+            {
+                return JVMBridgeBase.New<UIResource>();
             }
 
             #endregion

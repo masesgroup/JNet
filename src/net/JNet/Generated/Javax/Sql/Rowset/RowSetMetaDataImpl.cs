@@ -70,6 +70,13 @@ namespace Javax.Sql.Rowset
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for RowSetMetaDataImpl()
+        /// </summary>
+        public static RowSetMetaDataImpl New()
+        {
+            return JVMBridgeBase.New<RowSetMetaDataImpl>();
+        }
 
         #endregion
 

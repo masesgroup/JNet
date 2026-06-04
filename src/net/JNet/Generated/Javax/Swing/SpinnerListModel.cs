@@ -71,12 +71,26 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SpinnerListModel()
+        /// </summary>
+        public static SpinnerListModel New()
+        {
+            return JVMBridgeBase.New<SpinnerListModel>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SpinnerListModel.html#javax.swing.SpinnerListModel(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         public SpinnerListModel(Java.Util.List<object> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SpinnerListModel(Java.Util.List%3Cobject%3E arg0)
+        /// </summary>
+        public static SpinnerListModel New(Java.Util.List<object> arg0)
+        {
+            return JVMBridgeBase.New<SpinnerListModel>(arg0);
         }
 
         #endregion

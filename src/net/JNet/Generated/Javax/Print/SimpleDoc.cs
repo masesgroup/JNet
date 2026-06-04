@@ -73,6 +73,13 @@ namespace Javax.Print
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for SimpleDoc(object arg0, Javax.Print.DocFlavor arg1, Javax.Print.Attribute.DocAttributeSet arg2)
+        /// </summary>
+        public static SimpleDoc New(object arg0, Javax.Print.DocFlavor arg1, Javax.Print.Attribute.DocAttributeSet arg2)
+        {
+            return JVMBridgeBase.New<SimpleDoc>(arg0, arg1, arg2);
+        }
 
         #endregion
 

@@ -108,12 +108,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for FutureTask(Java.Lang.Runnable arg0, object arg1)
+        /// </summary>
+        public static FutureTask New(Java.Lang.Runnable arg0, object arg1)
+        {
+            return JVMBridgeBase.New<FutureTask>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/FutureTask.html#java.util.concurrent.FutureTask(java.util.concurrent.Callable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
         public FutureTask(Java.Util.Concurrent.Callable arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FutureTask(Java.Util.Concurrent.Callable arg0)
+        /// </summary>
+        public static FutureTask New(Java.Util.Concurrent.Callable arg0)
+        {
+            return JVMBridgeBase.New<FutureTask>(arg0);
         }
 
         #endregion
@@ -211,12 +225,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for FutureTask(Java.Lang.Runnable arg0, V arg1)
+        /// </summary>
+        public static FutureTask<V> New(Java.Lang.Runnable arg0, V arg1)
+        {
+            return JVMBridgeBase.New<FutureTask<V>>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/FutureTask.html#java.util.concurrent.FutureTask(java.util.concurrent.Callable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
         public FutureTask(Java.Util.Concurrent.Callable<V> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FutureTask(Java.Util.Concurrent.Callable%3CV%3E arg0)
+        /// </summary>
+        public static FutureTask<V> New(Java.Util.Concurrent.Callable<V> arg0)
+        {
+            return JVMBridgeBase.New<FutureTask<V>>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Javax.Xml.Ws.Wsaddressing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for W3CEndpointReferenceBuilder()
+        /// </summary>
+        public static W3CEndpointReferenceBuilder New()
+        {
+            return JVMBridgeBase.New<W3CEndpointReferenceBuilder>();
+        }
 
         #endregion
 

@@ -73,6 +73,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.RejectedExecutionHandler arg1)
+        /// </summary>
+        public static ScheduledThreadPoolExecutor New(int arg0, Java.Util.Concurrent.RejectedExecutionHandler arg1)
+        {
+            return JVMBridgeBase.New<ScheduledThreadPoolExecutor>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledThreadPoolExecutor.html#java.util.concurrent.ScheduledThreadPoolExecutor(int,java.util.concurrent.ThreadFactory,java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -81,6 +88,13 @@ namespace Java.Util.Concurrent
         public ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.ThreadFactory arg1, Java.Util.Concurrent.RejectedExecutionHandler arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.ThreadFactory arg1, Java.Util.Concurrent.RejectedExecutionHandler arg2)
+        /// </summary>
+        public static ScheduledThreadPoolExecutor New(int arg0, Java.Util.Concurrent.ThreadFactory arg1, Java.Util.Concurrent.RejectedExecutionHandler arg2)
+        {
+            return JVMBridgeBase.New<ScheduledThreadPoolExecutor>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledThreadPoolExecutor.html#java.util.concurrent.ScheduledThreadPoolExecutor(int,java.util.concurrent.ThreadFactory)"/>
@@ -92,12 +106,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
+        /// </summary>
+        public static ScheduledThreadPoolExecutor New(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
+        {
+            return JVMBridgeBase.New<ScheduledThreadPoolExecutor>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledThreadPoolExecutor.html#java.util.concurrent.ScheduledThreadPoolExecutor(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ScheduledThreadPoolExecutor(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ScheduledThreadPoolExecutor(int arg0)
+        /// </summary>
+        public static ScheduledThreadPoolExecutor New(int arg0)
+        {
+            return JVMBridgeBase.New<ScheduledThreadPoolExecutor>(arg0);
         }
 
         #endregion

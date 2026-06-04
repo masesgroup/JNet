@@ -71,12 +71,26 @@ namespace Java.Util.Concurrent.Locks
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ReentrantLock()
+        /// </summary>
+        public static ReentrantLock New()
+        {
+            return JVMBridgeBase.New<ReentrantLock>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantLock.html#java.util.concurrent.locks.ReentrantLock(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public ReentrantLock(bool arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ReentrantLock(bool arg0)
+        /// </summary>
+        public static ReentrantLock New(bool arg0)
+        {
+            return JVMBridgeBase.New<ReentrantLock>(arg0);
         }
 
         #endregion

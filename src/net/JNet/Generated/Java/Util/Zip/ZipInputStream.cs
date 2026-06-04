@@ -73,12 +73,26 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ZipInputStream(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1)
+        /// </summary>
+        public static ZipInputStream New(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1)
+        {
+            return JVMBridgeBase.New<ZipInputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipInputStream.html#java.util.zip.ZipInputStream(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public ZipInputStream(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ZipInputStream(Java.Io.InputStream arg0)
+        /// </summary>
+        public static ZipInputStream New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<ZipInputStream>(arg0);
         }
 
         #endregion

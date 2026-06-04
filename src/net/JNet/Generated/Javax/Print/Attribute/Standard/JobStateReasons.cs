@@ -71,6 +71,13 @@ namespace Javax.Print.Attribute.Standard
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JobStateReasons()
+        /// </summary>
+        public static JobStateReasons New()
+        {
+            return JVMBridgeBase.New<JobStateReasons>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/JobStateReasons.html#javax.print.attribute.standard.JobStateReasons(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Print.Attribute.Standard
         public JobStateReasons(int arg0, float arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JobStateReasons(int arg0, float arg1)
+        /// </summary>
+        public static JobStateReasons New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<JobStateReasons>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/JobStateReasons.html#javax.print.attribute.standard.JobStateReasons(int)"/>
@@ -88,12 +102,26 @@ namespace Javax.Print.Attribute.Standard
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JobStateReasons(int arg0)
+        /// </summary>
+        public static JobStateReasons New(int arg0)
+        {
+            return JVMBridgeBase.New<JobStateReasons>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/JobStateReasons.html#javax.print.attribute.standard.JobStateReasons(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public JobStateReasons(Java.Util.Collection<Javax.Print.Attribute.Standard.JobStateReason> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JobStateReasons(Java.Util.Collection%3CJavax.Print.Attribute.Standard.JobStateReason%3E arg0)
+        /// </summary>
+        public static JobStateReasons New(Java.Util.Collection<Javax.Print.Attribute.Standard.JobStateReason> arg0)
+        {
+            return JVMBridgeBase.New<JobStateReasons>(arg0);
         }
 
         #endregion

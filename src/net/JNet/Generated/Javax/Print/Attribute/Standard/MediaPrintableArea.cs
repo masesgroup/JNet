@@ -76,6 +76,13 @@ namespace Javax.Print.Attribute.Standard
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for MediaPrintableArea(float arg0, float arg1, float arg2, float arg3, int arg4)
+        /// </summary>
+        public static MediaPrintableArea New(float arg0, float arg1, float arg2, float arg3, int arg4)
+        {
+            return JVMBridgeBase.New<MediaPrintableArea>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/MediaPrintableArea.html#javax.print.attribute.standard.MediaPrintableArea(int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -86,6 +93,13 @@ namespace Javax.Print.Attribute.Standard
         public MediaPrintableArea(int arg0, int arg1, int arg2, int arg3, int arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for MediaPrintableArea(int arg0, int arg1, int arg2, int arg3, int arg4)
+        /// </summary>
+        public static MediaPrintableArea New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<MediaPrintableArea>(arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

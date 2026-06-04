@@ -72,12 +72,26 @@ namespace Javax.Activation
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for FileDataSource(Java.Io.File arg0)
+        /// </summary>
+        public static FileDataSource New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<FileDataSource>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/FileDataSource.html#javax.activation.FileDataSource(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public FileDataSource(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FileDataSource(Java.Lang.String arg0)
+        /// </summary>
+        public static FileDataSource New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<FileDataSource>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Java.Awt.Print
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Paper()
+        /// </summary>
+        public static Paper New()
+        {
+            return JVMBridgeBase.New<Paper>();
+        }
 
         #endregion
 

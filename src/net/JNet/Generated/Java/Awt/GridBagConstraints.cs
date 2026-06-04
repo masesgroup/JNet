@@ -71,6 +71,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for GridBagConstraints()
+        /// </summary>
+        public static GridBagConstraints New()
+        {
+            return JVMBridgeBase.New<GridBagConstraints>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/GridBagConstraints.html#java.awt.GridBagConstraints(int,int,int,int,double,double,int,int,java.awt.Insets,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -87,6 +94,13 @@ namespace Java.Awt
         public GridBagConstraints(int arg0, int arg1, int arg2, int arg3, double arg4, double arg5, int arg6, int arg7, Java.Awt.Insets arg8, int arg9, int arg10) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+        }
+        /// <summary>
+        /// HPA initializer for GridBagConstraints(int arg0, int arg1, int arg2, int arg3, double arg4, double arg5, int arg6, int arg7, Java.Awt.Insets arg8, int arg9, int arg10)
+        /// </summary>
+        public static GridBagConstraints New(int arg0, int arg1, int arg2, int arg3, double arg4, double arg5, int arg6, int arg7, Java.Awt.Insets arg8, int arg9, int arg10)
+        {
+            return JVMBridgeBase.New<GridBagConstraints>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
 
         #endregion

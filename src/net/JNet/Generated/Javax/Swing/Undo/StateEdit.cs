@@ -73,12 +73,26 @@ namespace Javax.Swing.Undo
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for StateEdit(Javax.Swing.Undo.StateEditable arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static StateEdit New(Javax.Swing.Undo.StateEditable arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<StateEdit>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/undo/StateEdit.html#javax.swing.undo.StateEdit(javax.swing.undo.StateEditable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Undo.StateEditable"/></param>
         public StateEdit(Javax.Swing.Undo.StateEditable arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StateEdit(Javax.Swing.Undo.StateEditable arg0)
+        /// </summary>
+        public static StateEdit New(Javax.Swing.Undo.StateEditable arg0)
+        {
+            return JVMBridgeBase.New<StateEdit>(arg0);
         }
 
         #endregion

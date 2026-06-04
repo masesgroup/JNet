@@ -74,12 +74,26 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ConvolveOp(Java.Awt.ImageNs.Kernel arg0, int arg1, Java.Awt.RenderingHints arg2)
+        /// </summary>
+        public static ConvolveOp New(Java.Awt.ImageNs.Kernel arg0, int arg1, Java.Awt.RenderingHints arg2)
+        {
+            return JVMBridgeBase.New<ConvolveOp>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/ConvolveOp.html#java.awt.image.ConvolveOp(java.awt.image.Kernel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.Kernel"/></param>
         public ConvolveOp(Java.Awt.ImageNs.Kernel arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConvolveOp(Java.Awt.ImageNs.Kernel arg0)
+        /// </summary>
+        public static ConvolveOp New(Java.Awt.ImageNs.Kernel arg0)
+        {
+            return JVMBridgeBase.New<ConvolveOp>(arg0);
         }
 
         #endregion

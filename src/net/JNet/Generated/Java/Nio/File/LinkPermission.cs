@@ -73,12 +73,26 @@ namespace Java.Nio.File
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for LinkPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static LinkPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<LinkPermission>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/LinkPermission.html#java.nio.file.LinkPermission(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public LinkPermission(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LinkPermission(Java.Lang.String arg0)
+        /// </summary>
+        public static LinkPermission New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<LinkPermission>(arg0);
         }
 
         #endregion

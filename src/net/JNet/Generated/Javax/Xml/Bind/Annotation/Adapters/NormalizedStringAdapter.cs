@@ -70,6 +70,13 @@ namespace Javax.Xml.Bind.Annotation.Adapters
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for NormalizedStringAdapter()
+        /// </summary>
+        public static NormalizedStringAdapter New()
+        {
+            return JVMBridgeBase.New<NormalizedStringAdapter>();
+        }
 
         #endregion
 

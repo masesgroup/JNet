@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiListUI()
+        /// </summary>
+        public static MultiListUI New()
+        {
+            return JVMBridgeBase.New<MultiListUI>();
+        }
 
         #endregion
 

@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JTabbedPane()
+        /// </summary>
+        public static JTabbedPane New()
+        {
+            return JVMBridgeBase.New<JTabbedPane>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTabbedPane.html#javax.swing.JTabbedPane(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,12 +87,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JTabbedPane(int arg0, int arg1)
+        /// </summary>
+        public static JTabbedPane New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<JTabbedPane>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTabbedPane.html#javax.swing.JTabbedPane(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public JTabbedPane(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JTabbedPane(int arg0)
+        /// </summary>
+        public static JTabbedPane New(int arg0)
+        {
+            return JVMBridgeBase.New<JTabbedPane>(arg0);
         }
 
         #endregion

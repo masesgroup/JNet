@@ -70,6 +70,13 @@ namespace Javax.Activation
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for CommandMap()
+        /// </summary>
+        public static CommandMap New()
+        {
+            return JVMBridgeBase.New<CommandMap>();
+        }
 
         #endregion
 

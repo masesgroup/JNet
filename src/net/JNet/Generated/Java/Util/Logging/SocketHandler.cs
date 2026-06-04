@@ -73,6 +73,13 @@ namespace Java.Util.Logging
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SocketHandler()
+        /// </summary>
+        public static SocketHandler New()
+        {
+            return JVMBridgeBase.New<SocketHandler>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/SocketHandler.html#java.util.logging.SocketHandler(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -81,6 +88,13 @@ namespace Java.Util.Logging
         public SocketHandler(Java.Lang.String arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for SocketHandler(Java.Lang.String arg0, int arg1)
+        /// </summary>
+        public static SocketHandler New(Java.Lang.String arg0, int arg1)
+        {
+            return JVMBridgeBase.New<SocketHandler>(arg0, arg1);
         }
 
         #endregion

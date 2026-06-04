@@ -71,6 +71,13 @@ namespace Javax.Swing.Text.Html.Parser
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ContentModel()
+        /// </summary>
+        public static ContentModel New()
+        {
+            return JVMBridgeBase.New<ContentModel>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/parser/ContentModel.html#javax.swing.text.html.parser.ContentModel(int,java.lang.Object,javax.swing.text.html.parser.ContentModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -79,6 +86,13 @@ namespace Javax.Swing.Text.Html.Parser
         public ContentModel(int arg0, object arg1, Javax.Swing.Text.Html.Parser.ContentModel arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for ContentModel(int arg0, object arg1, Javax.Swing.Text.Html.Parser.ContentModel arg2)
+        /// </summary>
+        public static ContentModel New(int arg0, object arg1, Javax.Swing.Text.Html.Parser.ContentModel arg2)
+        {
+            return JVMBridgeBase.New<ContentModel>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/parser/ContentModel.html#javax.swing.text.html.parser.ContentModel(int,javax.swing.text.html.parser.ContentModel)"/>
@@ -90,12 +104,26 @@ namespace Javax.Swing.Text.Html.Parser
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ContentModel(int arg0, Javax.Swing.Text.Html.Parser.ContentModel arg1)
+        /// </summary>
+        public static ContentModel New(int arg0, Javax.Swing.Text.Html.Parser.ContentModel arg1)
+        {
+            return JVMBridgeBase.New<ContentModel>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/parser/ContentModel.html#javax.swing.text.html.parser.ContentModel(javax.swing.text.html.parser.Element)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Html.Parser.Element"/></param>
         public ContentModel(Javax.Swing.Text.Html.Parser.Element arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ContentModel(Javax.Swing.Text.Html.Parser.Element arg0)
+        /// </summary>
+        public static ContentModel New(Javax.Swing.Text.Html.Parser.Element arg0)
+        {
+            return JVMBridgeBase.New<ContentModel>(arg0);
         }
 
         #endregion

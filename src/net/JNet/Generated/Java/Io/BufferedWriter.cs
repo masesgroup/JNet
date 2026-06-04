@@ -73,12 +73,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BufferedWriter(Java.Io.Writer arg0, int arg1)
+        /// </summary>
+        public static BufferedWriter New(Java.Io.Writer arg0, int arg1)
+        {
+            return JVMBridgeBase.New<BufferedWriter>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/BufferedWriter.html#java.io.BufferedWriter(java.io.Writer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         public BufferedWriter(Java.Io.Writer arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BufferedWriter(Java.Io.Writer arg0)
+        /// </summary>
+        public static BufferedWriter New(Java.Io.Writer arg0)
+        {
+            return JVMBridgeBase.New<BufferedWriter>(arg0);
         }
 
         #endregion

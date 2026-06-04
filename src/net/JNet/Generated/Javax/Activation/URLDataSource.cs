@@ -71,6 +71,13 @@ namespace Javax.Activation
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for URLDataSource(Java.Net.URL arg0)
+        /// </summary>
+        public static URLDataSource New(Java.Net.URL arg0)
+        {
+            return JVMBridgeBase.New<URLDataSource>(arg0);
+        }
 
         #endregion
 

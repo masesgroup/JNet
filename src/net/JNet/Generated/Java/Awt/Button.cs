@@ -73,6 +73,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Button()
+        /// </summary>
+        public static Button New()
+        {
+            return JVMBridgeBase.New<Button>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Button.html#java.awt.Button(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -80,6 +87,13 @@ namespace Java.Awt
         public Button(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Button(Java.Lang.String arg0)
+        /// </summary>
+        public static Button New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Button>(arg0);
         }
 
         #endregion

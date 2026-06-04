@@ -70,6 +70,13 @@ namespace Javax.Net.Ssl
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ExtendedSSLSession()
+        /// </summary>
+        public static ExtendedSSLSession New()
+        {
+            return JVMBridgeBase.New<ExtendedSSLSession>();
+        }
 
         #endregion
 

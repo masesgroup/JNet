@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthScrollBarUI()
+        /// </summary>
+        public static SynthScrollBarUI New()
+        {
+            return JVMBridgeBase.New<SynthScrollBarUI>();
+        }
 
         #endregion
 

@@ -71,12 +71,26 @@ namespace Javax.Swing.Colorchooser
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DefaultColorSelectionModel()
+        /// </summary>
+        public static DefaultColorSelectionModel New()
+        {
+            return JVMBridgeBase.New<DefaultColorSelectionModel>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/colorchooser/DefaultColorSelectionModel.html#javax.swing.colorchooser.DefaultColorSelectionModel(java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
         public DefaultColorSelectionModel(Java.Awt.Color arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultColorSelectionModel(Java.Awt.Color arg0)
+        /// </summary>
+        public static DefaultColorSelectionModel New(Java.Awt.Color arg0)
+        {
+            return JVMBridgeBase.New<DefaultColorSelectionModel>(arg0);
         }
 
         #endregion

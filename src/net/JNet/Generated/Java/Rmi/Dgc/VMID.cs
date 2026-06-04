@@ -70,6 +70,13 @@ namespace Java.Rmi.Dgc
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for VMID()
+        /// </summary>
+        public static VMID New()
+        {
+            return JVMBridgeBase.New<VMID>();
+        }
 
         #endregion
 

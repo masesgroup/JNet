@@ -105,6 +105,13 @@ namespace Java.Util.Concurrent
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for RecursiveTask()
+        /// </summary>
+        public static RecursiveTask New()
+        {
+            return JVMBridgeBase.New<RecursiveTask>();
+        }
 
         #endregion
 
@@ -142,6 +149,13 @@ namespace Java.Util.Concurrent
         public RecursiveTask() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for RecursiveTask()
+        /// </summary>
+        public static RecursiveTask<V> New()
+        {
+            return JVMBridgeBase.New<RecursiveTask<V>>();
         }
 
         #endregion

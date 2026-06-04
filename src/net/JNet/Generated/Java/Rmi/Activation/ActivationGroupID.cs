@@ -71,6 +71,13 @@ namespace Java.Rmi.Activation
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ActivationGroupID(Java.Rmi.Activation.ActivationSystem arg0)
+        /// </summary>
+        public static ActivationGroupID New(Java.Rmi.Activation.ActivationSystem arg0)
+        {
+            return JVMBridgeBase.New<ActivationGroupID>(arg0);
+        }
 
         #endregion
 

@@ -70,6 +70,13 @@ namespace Javax.Swing.Text.Rtf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for RTFEditorKit()
+        /// </summary>
+        public static RTFEditorKit New()
+        {
+            return JVMBridgeBase.New<RTFEditorKit>();
+        }
 
         #endregion
 

@@ -73,12 +73,26 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for StrokeBorder(Java.Awt.BasicStroke arg0, Java.Awt.Paint arg1)
+        /// </summary>
+        public static StrokeBorder New(Java.Awt.BasicStroke arg0, Java.Awt.Paint arg1)
+        {
+            return JVMBridgeBase.New<StrokeBorder>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/StrokeBorder.html#javax.swing.border.StrokeBorder(java.awt.BasicStroke)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.BasicStroke"/></param>
         public StrokeBorder(Java.Awt.BasicStroke arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StrokeBorder(Java.Awt.BasicStroke arg0)
+        /// </summary>
+        public static StrokeBorder New(Java.Awt.BasicStroke arg0)
+        {
+            return JVMBridgeBase.New<StrokeBorder>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AbstractSpinnerModel()
+        /// </summary>
+        public static AbstractSpinnerModel New()
+        {
+            return JVMBridgeBase.New<AbstractSpinnerModel>();
+        }
 
         #endregion
 

@@ -75,12 +75,26 @@ namespace Java.Beans
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for XMLEncoder(Java.Io.OutputStream arg0, Java.Lang.String arg1, bool arg2, int arg3)
+        /// </summary>
+        public static XMLEncoder New(Java.Io.OutputStream arg0, Java.Lang.String arg1, bool arg2, int arg3)
+        {
+            return JVMBridgeBase.New<XMLEncoder>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/XMLEncoder.html#java.beans.XMLEncoder(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public XMLEncoder(Java.Io.OutputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for XMLEncoder(Java.Io.OutputStream arg0)
+        /// </summary>
+        public static XMLEncoder New(Java.Io.OutputStream arg0)
+        {
+            return JVMBridgeBase.New<XMLEncoder>(arg0);
         }
 
         #endregion

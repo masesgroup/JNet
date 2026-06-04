@@ -71,6 +71,13 @@ namespace Javax.Activation
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for MimeType()
+        /// </summary>
+        public static MimeType New()
+        {
+            return JVMBridgeBase.New<MimeType>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MimeType.html#javax.activation.MimeType(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Activation
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for MimeType(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static MimeType New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<MimeType>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MimeType.html#javax.activation.MimeType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -88,6 +102,13 @@ namespace Javax.Activation
         public MimeType(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MimeType(Java.Lang.String arg0)
+        /// </summary>
+        public static MimeType New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<MimeType>(arg0);
         }
 
         #endregion

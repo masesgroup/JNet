@@ -72,6 +72,13 @@ namespace Java.Applet
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Applet()
+        /// </summary>
+        public static Applet New()
+        {
+            return JVMBridgeBase.New<Applet>();
+        }
 
         #endregion
 

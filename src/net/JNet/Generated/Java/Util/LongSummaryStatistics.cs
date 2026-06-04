@@ -70,6 +70,13 @@ namespace Java.Util
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for LongSummaryStatistics()
+        /// </summary>
+        public static LongSummaryStatistics New()
+        {
+            return JVMBridgeBase.New<LongSummaryStatistics>();
+        }
 
         #endregion
 

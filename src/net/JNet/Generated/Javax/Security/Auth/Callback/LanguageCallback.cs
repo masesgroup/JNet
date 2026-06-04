@@ -70,6 +70,13 @@ namespace Javax.Security.Auth.Callback
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for LanguageCallback()
+        /// </summary>
+        public static LanguageCallback New()
+        {
+            return JVMBridgeBase.New<LanguageCallback>();
+        }
 
         #endregion
 

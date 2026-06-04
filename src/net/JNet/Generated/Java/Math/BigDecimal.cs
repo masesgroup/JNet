@@ -75,6 +75,13 @@ namespace Java.Math
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for BigDecimal(char[] arg0, int arg1, int arg2, Java.Math.MathContext arg3)
+        /// </summary>
+        public static BigDecimal New(char[] arg0, int arg1, int arg2, Java.Math.MathContext arg3)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
@@ -83,6 +90,13 @@ namespace Java.Math
         public BigDecimal(char[] arg0, int arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for BigDecimal(char[] arg0, int arg1, int arg2)
+        /// </summary>
+        public static BigDecimal New(char[] arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(char[],java.math.MathContext)"/>
@@ -94,12 +108,26 @@ namespace Java.Math
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BigDecimal(char[] arg0, Java.Math.MathContext arg1)
+        /// </summary>
+        public static BigDecimal New(char[] arg0, Java.Math.MathContext arg1)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         public BigDecimal(char[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BigDecimal(char[] arg0)
+        /// </summary>
+        public static BigDecimal New(char[] arg0)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(double,java.math.MathContext)"/>
@@ -111,12 +139,26 @@ namespace Java.Math
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BigDecimal(double arg0, Java.Math.MathContext arg1)
+        /// </summary>
+        public static BigDecimal New(double arg0, Java.Math.MathContext arg1)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         public BigDecimal(double arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BigDecimal(double arg0)
+        /// </summary>
+        public static BigDecimal New(double arg0)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(int,java.math.MathContext)"/>
@@ -128,12 +170,26 @@ namespace Java.Math
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BigDecimal(int arg0, Java.Math.MathContext arg1)
+        /// </summary>
+        public static BigDecimal New(int arg0, Java.Math.MathContext arg1)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public BigDecimal(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BigDecimal(int arg0)
+        /// </summary>
+        public static BigDecimal New(int arg0)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(java.lang.String,java.math.MathContext)"/>
@@ -145,12 +201,26 @@ namespace Java.Math
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BigDecimal(Java.Lang.String arg0, Java.Math.MathContext arg1)
+        /// </summary>
+        public static BigDecimal New(Java.Lang.String arg0, Java.Math.MathContext arg1)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public BigDecimal(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BigDecimal(Java.Lang.String arg0)
+        /// </summary>
+        public static BigDecimal New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(java.math.BigInteger,int,java.math.MathContext)"/>
@@ -163,6 +233,13 @@ namespace Java.Math
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for BigDecimal(Java.Math.BigInteger arg0, int arg1, Java.Math.MathContext arg2)
+        /// </summary>
+        public static BigDecimal New(Java.Math.BigInteger arg0, int arg1, Java.Math.MathContext arg2)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(java.math.BigInteger,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
@@ -170,6 +247,13 @@ namespace Java.Math
         public BigDecimal(Java.Math.BigInteger arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for BigDecimal(Java.Math.BigInteger arg0, int arg1)
+        /// </summary>
+        public static BigDecimal New(Java.Math.BigInteger arg0, int arg1)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(java.math.BigInteger,java.math.MathContext)"/>
@@ -181,12 +265,26 @@ namespace Java.Math
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BigDecimal(Java.Math.BigInteger arg0, Java.Math.MathContext arg1)
+        /// </summary>
+        public static BigDecimal New(Java.Math.BigInteger arg0, Java.Math.MathContext arg1)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         public BigDecimal(Java.Math.BigInteger arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BigDecimal(Java.Math.BigInteger arg0)
+        /// </summary>
+        public static BigDecimal New(Java.Math.BigInteger arg0)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(long,java.math.MathContext)"/>
@@ -198,12 +296,26 @@ namespace Java.Math
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BigDecimal(long arg0, Java.Math.MathContext arg1)
+        /// </summary>
+        public static BigDecimal New(long arg0, Java.Math.MathContext arg1)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#java.math.BigDecimal(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public BigDecimal(long arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BigDecimal(long arg0)
+        /// </summary>
+        public static BigDecimal New(long arg0)
+        {
+            return JVMBridgeBase.New<BigDecimal>(arg0);
         }
 
         #endregion

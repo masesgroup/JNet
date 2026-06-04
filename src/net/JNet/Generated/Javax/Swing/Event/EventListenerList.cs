@@ -70,6 +70,13 @@ namespace Javax.Swing.Event
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for EventListenerList()
+        /// </summary>
+        public static EventListenerList New()
+        {
+            return JVMBridgeBase.New<EventListenerList>();
+        }
 
         #endregion
 

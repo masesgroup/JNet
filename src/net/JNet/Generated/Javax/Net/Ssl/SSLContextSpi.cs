@@ -70,6 +70,13 @@ namespace Javax.Net.Ssl
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SSLContextSpi()
+        /// </summary>
+        public static SSLContextSpi New()
+        {
+            return JVMBridgeBase.New<SSLContextSpi>();
+        }
 
         #endregion
 

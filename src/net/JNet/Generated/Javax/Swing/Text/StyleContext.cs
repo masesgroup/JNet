@@ -138,6 +138,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for StyleContext()
+        /// </summary>
+        public static StyleContext New()
+        {
+            return JVMBridgeBase.New<StyleContext>();
+        }
 
         #endregion
 
@@ -426,6 +433,13 @@ namespace Javax.Swing.Text
                 InvokeInitializer(arg0, arg1, arg2);
             }
             /// <summary>
+            /// HPA initializer for NamedStyle(Javax.Swing.Text.StyleContext arg0, Java.Lang.String arg1, Javax.Swing.Text.Style arg2)
+            /// </summary>
+            public static NamedStyle New(Javax.Swing.Text.StyleContext arg0, Java.Lang.String arg1, Javax.Swing.Text.Style arg2)
+            {
+                return JVMBridgeBase.New<NamedStyle>(arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/StyleContext.NamedStyle.html#javax.swing.text.StyleContext$NamedStyle(javax.swing.text.StyleContext,javax.swing.text.Style)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.StyleContext"/></param>
@@ -435,12 +449,26 @@ namespace Javax.Swing.Text
                 InvokeInitializer(arg0, arg1);
             }
             /// <summary>
+            /// HPA initializer for NamedStyle(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.Style arg1)
+            /// </summary>
+            public static NamedStyle New(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.Style arg1)
+            {
+                return JVMBridgeBase.New<NamedStyle>(arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/StyleContext.NamedStyle.html#javax.swing.text.StyleContext$NamedStyle(javax.swing.text.StyleContext)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.StyleContext"/></param>
             public NamedStyle(Javax.Swing.Text.StyleContext arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for NamedStyle(Javax.Swing.Text.StyleContext arg0)
+            /// </summary>
+            public static NamedStyle New(Javax.Swing.Text.StyleContext arg0)
+            {
+                return JVMBridgeBase.New<NamedStyle>(arg0);
             }
 
             #endregion
@@ -645,6 +673,13 @@ namespace Javax.Swing.Text
             public SmallAttributeSet(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.AttributeSet arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for SmallAttributeSet(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.AttributeSet arg1)
+            /// </summary>
+            public static SmallAttributeSet New(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.AttributeSet arg1)
+            {
+                return JVMBridgeBase.New<SmallAttributeSet>(arg0, arg1);
             }
 
             #endregion

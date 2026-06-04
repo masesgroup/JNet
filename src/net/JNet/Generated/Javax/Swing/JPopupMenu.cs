@@ -105,12 +105,26 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JPopupMenu()
+        /// </summary>
+        public static JPopupMenu New()
+        {
+            return JVMBridgeBase.New<JPopupMenu>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPopupMenu.html#javax.swing.JPopupMenu(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public JPopupMenu(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JPopupMenu(Java.Lang.String arg0)
+        /// </summary>
+        public static JPopupMenu New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JPopupMenu>(arg0);
         }
 
         #endregion
@@ -434,6 +448,13 @@ namespace Javax.Swing
             public Separator() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for Separator()
+            /// </summary>
+            public static Separator New()
+            {
+                return JVMBridgeBase.New<Separator>();
             }
 
             #endregion

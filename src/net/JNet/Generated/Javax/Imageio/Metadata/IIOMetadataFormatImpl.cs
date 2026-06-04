@@ -74,6 +74,13 @@ namespace Javax.Imageio.Metadata
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for IIOMetadataFormatImpl(Java.Lang.String arg0, int arg1, int arg2)
+        /// </summary>
+        public static IIOMetadataFormatImpl New(Java.Lang.String arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<IIOMetadataFormatImpl>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/metadata/IIOMetadataFormatImpl.html#javax.imageio.metadata.IIOMetadataFormatImpl(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Imageio.Metadata
         public IIOMetadataFormatImpl(Java.Lang.String arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for IIOMetadataFormatImpl(Java.Lang.String arg0, int arg1)
+        /// </summary>
+        public static IIOMetadataFormatImpl New(Java.Lang.String arg0, int arg1)
+        {
+            return JVMBridgeBase.New<IIOMetadataFormatImpl>(arg0, arg1);
         }
 
         #endregion

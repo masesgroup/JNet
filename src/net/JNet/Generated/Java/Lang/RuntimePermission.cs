@@ -73,12 +73,26 @@ namespace Java.Lang
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for RuntimePermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static RuntimePermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<RuntimePermission>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimePermission.html#java.lang.RuntimePermission(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public RuntimePermission(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for RuntimePermission(Java.Lang.String arg0)
+        /// </summary>
+        public static RuntimePermission New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<RuntimePermission>(arg0);
         }
 
         #endregion

@@ -172,6 +172,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicTableUI()
+        /// </summary>
+        public static BasicTableUI New()
+        {
+            return JVMBridgeBase.New<BasicTableUI>();
+        }
 
         #endregion
 
@@ -203,6 +210,13 @@ namespace Javax.Swing.Plaf.Basic
             public FocusHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for FocusHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
+            /// </summary>
+            public static FocusHandler New(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
+            {
+                return JVMBridgeBase.New<FocusHandler>(arg0);
             }
 
             #endregion
@@ -262,6 +276,13 @@ namespace Javax.Swing.Plaf.Basic
             public KeyHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for KeyHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
+            /// </summary>
+            public static KeyHandler New(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
+            {
+                return JVMBridgeBase.New<KeyHandler>(arg0);
             }
 
             #endregion
@@ -329,6 +350,13 @@ namespace Javax.Swing.Plaf.Basic
             public MouseInputHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for MouseInputHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
+            /// </summary>
+            public static MouseInputHandler New(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
+            {
+                return JVMBridgeBase.New<MouseInputHandler>(arg0);
             }
 
             #endregion

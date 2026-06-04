@@ -73,12 +73,26 @@ namespace Java.Io
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for FileInputStream(Java.Io.File arg0)
+        /// </summary>
+        public static FileInputStream New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<FileInputStream>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/FileInputStream.html#java.io.FileInputStream(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public FileInputStream(Java.Io.FileDescriptor arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FileInputStream(Java.Io.FileDescriptor arg0)
+        /// </summary>
+        public static FileInputStream New(Java.Io.FileDescriptor arg0)
+        {
+            return JVMBridgeBase.New<FileInputStream>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/FileInputStream.html#java.io.FileInputStream(java.lang.String)"/>
@@ -88,6 +102,13 @@ namespace Java.Io
         public FileInputStream(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FileInputStream(Java.Lang.String arg0)
+        /// </summary>
+        public static FileInputStream New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<FileInputStream>(arg0);
         }
 
         #endregion

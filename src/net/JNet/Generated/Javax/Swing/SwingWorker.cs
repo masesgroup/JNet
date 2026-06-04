@@ -140,6 +140,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SwingWorker()
+        /// </summary>
+        public static SwingWorker New()
+        {
+            return JVMBridgeBase.New<SwingWorker>();
+        }
 
         #endregion
 
@@ -346,6 +353,13 @@ namespace Javax.Swing
         public SwingWorker() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for SwingWorker()
+        /// </summary>
+        public static SwingWorker<T, V> New()
+        {
+            return JVMBridgeBase.New<SwingWorker<T, V>>();
         }
 
         #endregion

@@ -76,6 +76,13 @@ namespace Java.Awt.Dnd
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for DropTargetDropEvent(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3, bool arg4)
+        /// </summary>
+        public static DropTargetDropEvent New(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3, bool arg4)
+        {
+            return JVMBridgeBase.New<DropTargetDropEvent>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DropTargetDropEvent.html#java.awt.dnd.DropTargetDropEvent(java.awt.dnd.DropTargetContext,java.awt.Point,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetContext"/></param>
@@ -85,6 +92,13 @@ namespace Java.Awt.Dnd
         public DropTargetDropEvent(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for DropTargetDropEvent(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3)
+        /// </summary>
+        public static DropTargetDropEvent New(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<DropTargetDropEvent>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

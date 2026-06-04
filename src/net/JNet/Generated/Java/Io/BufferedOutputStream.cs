@@ -73,12 +73,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BufferedOutputStream(Java.Io.OutputStream arg0, int arg1)
+        /// </summary>
+        public static BufferedOutputStream New(Java.Io.OutputStream arg0, int arg1)
+        {
+            return JVMBridgeBase.New<BufferedOutputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/BufferedOutputStream.html#java.io.BufferedOutputStream(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public BufferedOutputStream(Java.Io.OutputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BufferedOutputStream(Java.Io.OutputStream arg0)
+        /// </summary>
+        public static BufferedOutputStream New(Java.Io.OutputStream arg0)
+        {
+            return JVMBridgeBase.New<BufferedOutputStream>(arg0);
         }
 
         #endregion

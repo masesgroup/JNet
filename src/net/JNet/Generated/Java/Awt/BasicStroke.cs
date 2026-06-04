@@ -71,6 +71,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for BasicStroke()
+        /// </summary>
+        public static BasicStroke New()
+        {
+            return JVMBridgeBase.New<BasicStroke>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/BasicStroke.html#java.awt.BasicStroke(float,int,int,float,float[],float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -84,6 +91,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for BasicStroke(float arg0, int arg1, int arg2, float arg3, float[] arg4, float arg5)
+        /// </summary>
+        public static BasicStroke New(float arg0, int arg1, int arg2, float arg3, float[] arg4, float arg5)
+        {
+            return JVMBridgeBase.New<BasicStroke>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/BasicStroke.html#java.awt.BasicStroke(float,int,int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -93,6 +107,13 @@ namespace Java.Awt
         public BasicStroke(float arg0, int arg1, int arg2, float arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for BasicStroke(float arg0, int arg1, int arg2, float arg3)
+        /// </summary>
+        public static BasicStroke New(float arg0, int arg1, int arg2, float arg3)
+        {
+            return JVMBridgeBase.New<BasicStroke>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/BasicStroke.html#java.awt.BasicStroke(float,int,int)"/>
@@ -105,12 +126,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for BasicStroke(float arg0, int arg1, int arg2)
+        /// </summary>
+        public static BasicStroke New(float arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<BasicStroke>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/BasicStroke.html#java.awt.BasicStroke(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         public BasicStroke(float arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BasicStroke(float arg0)
+        /// </summary>
+        public static BasicStroke New(float arg0)
+        {
+            return JVMBridgeBase.New<BasicStroke>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Java.Beans
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for PersistenceDelegate()
+        /// </summary>
+        public static PersistenceDelegate New()
+        {
+            return JVMBridgeBase.New<PersistenceDelegate>();
+        }
 
         #endregion
 

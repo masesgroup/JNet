@@ -73,6 +73,13 @@ namespace Javax.Imageio.Stream
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for IIOByteBuffer(byte[] arg0, int arg1, int arg2)
+        /// </summary>
+        public static IIOByteBuffer New(byte[] arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<IIOByteBuffer>(arg0, arg1, arg2);
+        }
 
         #endregion
 

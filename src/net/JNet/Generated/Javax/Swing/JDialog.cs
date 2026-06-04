@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JDialog()
+        /// </summary>
+        public static JDialog New()
+        {
+            return JVMBridgeBase.New<JDialog>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Dialog,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Swing
         public JDialog(Java.Awt.Dialog arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Dialog arg0, bool arg1)
+        /// </summary>
+        public static JDialog New(Java.Awt.Dialog arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Dialog,java.lang.String,boolean,java.awt.GraphicsConfiguration)"/>
@@ -91,6 +105,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        /// </summary>
+        public static JDialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Dialog,java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
@@ -99,6 +120,13 @@ namespace Javax.Swing
         public JDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2)
+        /// </summary>
+        public static JDialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Dialog,java.lang.String)"/>
@@ -110,12 +138,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static JDialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Dialog)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
         public JDialog(Java.Awt.Dialog arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Dialog arg0)
+        /// </summary>
+        public static JDialog New(Java.Awt.Dialog arg0)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Frame,boolean)"/>
@@ -125,6 +167,13 @@ namespace Javax.Swing
         public JDialog(Java.Awt.Frame arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Frame arg0, bool arg1)
+        /// </summary>
+        public static JDialog New(Java.Awt.Frame arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Frame,java.lang.String,boolean,java.awt.GraphicsConfiguration)"/>
@@ -138,6 +187,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        /// </summary>
+        public static JDialog New(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Frame,java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
@@ -146,6 +202,13 @@ namespace Javax.Swing
         public JDialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2)
+        /// </summary>
+        public static JDialog New(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Frame,java.lang.String)"/>
@@ -157,12 +220,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Frame arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static JDialog New(Java.Awt.Frame arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Frame)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
         public JDialog(Java.Awt.Frame arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Frame arg0)
+        /// </summary>
+        public static JDialog New(Java.Awt.Frame arg0)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Window,java.awt.Dialog.ModalityType)"/>
@@ -172,6 +249,13 @@ namespace Javax.Swing
         public JDialog(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1)
+        /// </summary>
+        public static JDialog New(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Window,java.lang.String,java.awt.Dialog.ModalityType,java.awt.GraphicsConfiguration)"/>
@@ -185,6 +269,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
+        /// </summary>
+        public static JDialog New(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Window,java.lang.String,java.awt.Dialog.ModalityType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
@@ -193,6 +284,13 @@ namespace Javax.Swing
         public JDialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2)
+        /// </summary>
+        public static JDialog New(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Window,java.lang.String)"/>
@@ -204,12 +302,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Window arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static JDialog New(Java.Awt.Window arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JDialog.html#javax.swing.JDialog(java.awt.Window)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
         public JDialog(Java.Awt.Window arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JDialog(Java.Awt.Window arg0)
+        /// </summary>
+        public static JDialog New(Java.Awt.Window arg0)
+        {
+            return JVMBridgeBase.New<JDialog>(arg0);
         }
 
         #endregion

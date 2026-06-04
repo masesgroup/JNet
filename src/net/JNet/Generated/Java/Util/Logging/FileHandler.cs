@@ -74,6 +74,13 @@ namespace Java.Util.Logging
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for FileHandler()
+        /// </summary>
+        public static FileHandler New()
+        {
+            return JVMBridgeBase.New<FileHandler>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/FileHandler.html#java.util.logging.FileHandler(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -83,6 +90,13 @@ namespace Java.Util.Logging
         public FileHandler(Java.Lang.String arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for FileHandler(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static FileHandler New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<FileHandler>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/FileHandler.html#java.util.logging.FileHandler(java.lang.String,int,int,boolean)"/>
@@ -98,6 +112,13 @@ namespace Java.Util.Logging
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for FileHandler(Java.Lang.String arg0, int arg1, int arg2, bool arg3)
+        /// </summary>
+        public static FileHandler New(Java.Lang.String arg0, int arg1, int arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<FileHandler>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/FileHandler.html#java.util.logging.FileHandler(java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -110,6 +131,13 @@ namespace Java.Util.Logging
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for FileHandler(Java.Lang.String arg0, int arg1, int arg2)
+        /// </summary>
+        public static FileHandler New(Java.Lang.String arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<FileHandler>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/FileHandler.html#java.util.logging.FileHandler(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -118,6 +146,13 @@ namespace Java.Util.Logging
         public FileHandler(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FileHandler(Java.Lang.String arg0)
+        /// </summary>
+        public static FileHandler New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<FileHandler>(arg0);
         }
 
         #endregion

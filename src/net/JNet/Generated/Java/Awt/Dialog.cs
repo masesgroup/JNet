@@ -143,6 +143,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        /// </summary>
+        public static Dialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html#java.awt.Dialog(java.awt.Dialog,java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
@@ -151,6 +158,13 @@ namespace Java.Awt
         public Dialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2)
+        /// </summary>
+        public static Dialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html#java.awt.Dialog(java.awt.Dialog,java.lang.String)"/>
@@ -162,12 +176,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Dialog arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static Dialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html#java.awt.Dialog(java.awt.Dialog)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
         public Dialog(Java.Awt.Dialog arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Dialog arg0)
+        /// </summary>
+        public static Dialog New(Java.Awt.Dialog arg0)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html#java.awt.Dialog(java.awt.Frame,boolean)"/>
@@ -177,6 +205,13 @@ namespace Java.Awt
         public Dialog(Java.Awt.Frame arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Frame arg0, bool arg1)
+        /// </summary>
+        public static Dialog New(Java.Awt.Frame arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html#java.awt.Dialog(java.awt.Frame,java.lang.String,boolean,java.awt.GraphicsConfiguration)"/>
@@ -190,6 +225,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        /// </summary>
+        public static Dialog New(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html#java.awt.Dialog(java.awt.Frame,java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
@@ -198,6 +240,13 @@ namespace Java.Awt
         public Dialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2)
+        /// </summary>
+        public static Dialog New(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html#java.awt.Dialog(java.awt.Frame,java.lang.String)"/>
@@ -209,12 +258,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Frame arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static Dialog New(Java.Awt.Frame arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html#java.awt.Dialog(java.awt.Frame)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
         public Dialog(Java.Awt.Frame arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Frame arg0)
+        /// </summary>
+        public static Dialog New(Java.Awt.Frame arg0)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html#java.awt.Dialog(java.awt.Window,java.awt.Dialog.ModalityType)"/>
@@ -224,6 +287,13 @@ namespace Java.Awt
         public Dialog(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1)
+        /// </summary>
+        public static Dialog New(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html#java.awt.Dialog(java.awt.Window,java.lang.String,java.awt.Dialog.ModalityType,java.awt.GraphicsConfiguration)"/>
@@ -237,6 +307,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
+        /// </summary>
+        public static Dialog New(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html#java.awt.Dialog(java.awt.Window,java.lang.String,java.awt.Dialog.ModalityType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
@@ -245,6 +322,13 @@ namespace Java.Awt
         public Dialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2)
+        /// </summary>
+        public static Dialog New(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html#java.awt.Dialog(java.awt.Window,java.lang.String)"/>
@@ -256,12 +340,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Window arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static Dialog New(Java.Awt.Window arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dialog.html#java.awt.Dialog(java.awt.Window)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
         public Dialog(Java.Awt.Window arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Dialog(Java.Awt.Window arg0)
+        /// </summary>
+        public static Dialog New(Java.Awt.Window arg0)
+        {
+            return JVMBridgeBase.New<Dialog>(arg0);
         }
 
         #endregion

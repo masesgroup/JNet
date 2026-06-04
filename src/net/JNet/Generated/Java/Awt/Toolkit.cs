@@ -70,6 +70,13 @@ namespace Java.Awt
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Toolkit()
+        /// </summary>
+        public static Toolkit New()
+        {
+            return JVMBridgeBase.New<Toolkit>();
+        }
 
         #endregion
 

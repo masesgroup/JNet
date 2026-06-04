@@ -77,6 +77,13 @@ namespace Javax.Sound.Midi
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for MidiFileFormat(int arg0, float arg1, int arg2, int arg3, long arg4, Java.Util.Map%3CJava.Lang.String, object%3E arg5)
+        /// </summary>
+        public static MidiFileFormat New(int arg0, float arg1, int arg2, int arg3, long arg4, Java.Util.Map<Java.Lang.String, object> arg5)
+        {
+            return JVMBridgeBase.New<MidiFileFormat>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/MidiFileFormat.html#javax.sound.midi.MidiFileFormat(int,float,int,int,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -87,6 +94,13 @@ namespace Javax.Sound.Midi
         public MidiFileFormat(int arg0, float arg1, int arg2, int arg3, long arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for MidiFileFormat(int arg0, float arg1, int arg2, int arg3, long arg4)
+        /// </summary>
+        public static MidiFileFormat New(int arg0, float arg1, int arg2, int arg3, long arg4)
+        {
+            return JVMBridgeBase.New<MidiFileFormat>(arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

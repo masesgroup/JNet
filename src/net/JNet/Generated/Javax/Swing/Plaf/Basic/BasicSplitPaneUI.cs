@@ -342,6 +342,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicSplitPaneUI()
+        /// </summary>
+        public static BasicSplitPaneUI New()
+        {
+            return JVMBridgeBase.New<BasicSplitPaneUI>();
+        }
 
         #endregion
 
@@ -567,6 +574,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for BasicVerticalLayoutManager(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            /// </summary>
+            public static BasicVerticalLayoutManager New(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            {
+                return JVMBridgeBase.New<BasicVerticalLayoutManager>(arg0);
+            }
 
             #endregion
 
@@ -605,6 +619,13 @@ namespace Javax.Swing.Plaf.Basic
             public KeyboardDownRightHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for KeyboardDownRightHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            /// </summary>
+            public static KeyboardDownRightHandler New(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            {
+                return JVMBridgeBase.New<KeyboardDownRightHandler>(arg0);
             }
 
             #endregion
@@ -657,6 +678,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for KeyboardEndHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            /// </summary>
+            public static KeyboardEndHandler New(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            {
+                return JVMBridgeBase.New<KeyboardEndHandler>(arg0);
+            }
 
             #endregion
 
@@ -707,6 +735,13 @@ namespace Javax.Swing.Plaf.Basic
             public KeyboardHomeHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for KeyboardHomeHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            /// </summary>
+            public static KeyboardHomeHandler New(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            {
+                return JVMBridgeBase.New<KeyboardHomeHandler>(arg0);
             }
 
             #endregion
@@ -759,6 +794,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for KeyboardResizeToggleHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            /// </summary>
+            public static KeyboardResizeToggleHandler New(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            {
+                return JVMBridgeBase.New<KeyboardResizeToggleHandler>(arg0);
+            }
 
             #endregion
 
@@ -810,6 +852,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for KeyboardUpLeftHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            /// </summary>
+            public static KeyboardUpLeftHandler New(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            {
+                return JVMBridgeBase.New<KeyboardUpLeftHandler>(arg0);
+            }
 
             #endregion
 
@@ -860,6 +909,13 @@ namespace Javax.Swing.Plaf.Basic
             public PropertyHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for PropertyHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            /// </summary>
+            public static PropertyHandler New(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+            {
+                return JVMBridgeBase.New<PropertyHandler>(arg0);
             }
 
             #endregion

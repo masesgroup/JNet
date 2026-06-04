@@ -70,6 +70,13 @@ namespace Java.Lang
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Process()
+        /// </summary>
+        public static Process New()
+        {
+            return JVMBridgeBase.New<Process>();
+        }
 
         #endregion
 

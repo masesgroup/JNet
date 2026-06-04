@@ -105,6 +105,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JInternalFrame()
+        /// </summary>
+        public static JInternalFrame New()
+        {
+            return JVMBridgeBase.New<JInternalFrame>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JInternalFrame.html#javax.swing.JInternalFrame(java.lang.String,boolean,boolean,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -115,6 +122,13 @@ namespace Javax.Swing
         public JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3, bool arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3, bool arg4)
+        /// </summary>
+        public static JInternalFrame New(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3, bool arg4)
+        {
+            return JVMBridgeBase.New<JInternalFrame>(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JInternalFrame.html#javax.swing.JInternalFrame(java.lang.String,boolean,boolean,boolean)"/>
@@ -128,6 +142,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3)
+        /// </summary>
+        public static JInternalFrame New(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<JInternalFrame>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JInternalFrame.html#javax.swing.JInternalFrame(java.lang.String,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -136,6 +157,13 @@ namespace Javax.Swing
         public JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2)
+        /// </summary>
+        public static JInternalFrame New(Java.Lang.String arg0, bool arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<JInternalFrame>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JInternalFrame.html#javax.swing.JInternalFrame(java.lang.String,boolean)"/>
@@ -147,12 +175,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JInternalFrame(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static JInternalFrame New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<JInternalFrame>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JInternalFrame.html#javax.swing.JInternalFrame(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public JInternalFrame(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JInternalFrame(Java.Lang.String arg0)
+        /// </summary>
+        public static JInternalFrame New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JInternalFrame>(arg0);
         }
 
         #endregion
@@ -588,6 +630,13 @@ namespace Javax.Swing
             public JDesktopIcon(Javax.Swing.JInternalFrame arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for JDesktopIcon(Javax.Swing.JInternalFrame arg0)
+            /// </summary>
+            public static JDesktopIcon New(Javax.Swing.JInternalFrame arg0)
+            {
+                return JVMBridgeBase.New<JDesktopIcon>(arg0);
             }
 
             #endregion

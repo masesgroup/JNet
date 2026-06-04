@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DesktopIconUI()
+        /// </summary>
+        public static DesktopIconUI New()
+        {
+            return JVMBridgeBase.New<DesktopIconUI>();
+        }
 
         #endregion
 

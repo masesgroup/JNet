@@ -73,6 +73,13 @@ namespace Javax.Accessibility
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for AccessibleTextSequence(int arg0, int arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static AccessibleTextSequence New(int arg0, int arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<AccessibleTextSequence>(arg0, arg1, arg2);
+        }
 
         #endregion
 

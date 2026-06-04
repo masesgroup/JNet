@@ -72,6 +72,13 @@ namespace Javax.Naming.Ldap
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for UnsolicitedNotificationEvent(object arg0, Javax.Naming.Ldap.UnsolicitedNotification arg1)
+        /// </summary>
+        public static UnsolicitedNotificationEvent New(object arg0, Javax.Naming.Ldap.UnsolicitedNotification arg1)
+        {
+            return JVMBridgeBase.New<UnsolicitedNotificationEvent>(arg0, arg1);
+        }
 
         #endregion
 

@@ -72,6 +72,13 @@ namespace Java.Security.Spec
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for ECPoint(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1)
+        /// </summary>
+        public static ECPoint New(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1)
+        {
+            return JVMBridgeBase.New<ECPoint>(arg0, arg1);
+        }
 
         #endregion
 

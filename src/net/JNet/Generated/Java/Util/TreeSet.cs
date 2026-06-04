@@ -106,12 +106,26 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for TreeSet()
+        /// </summary>
+        public static TreeSet New()
+        {
+            return JVMBridgeBase.New<TreeSet>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html#java.util.TreeSet(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public TreeSet(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TreeSet(Java.Util.Collection arg0)
+        /// </summary>
+        public static TreeSet New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<TreeSet>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html#java.util.TreeSet(java.util.Comparator)"/>
@@ -122,12 +136,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for TreeSet(Java.Util.Comparator arg0)
+        /// </summary>
+        public static TreeSet New(Java.Util.Comparator arg0)
+        {
+            return JVMBridgeBase.New<TreeSet>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html#java.util.TreeSet(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
         public TreeSet(Java.Util.SortedSet arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TreeSet(Java.Util.SortedSet arg0)
+        /// </summary>
+        public static TreeSet New(Java.Util.SortedSet arg0)
+        {
+            return JVMBridgeBase.New<TreeSet>(arg0);
         }
 
         #endregion
@@ -332,12 +360,26 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for TreeSet()
+        /// </summary>
+        public static TreeSet<E> New()
+        {
+            return JVMBridgeBase.New<TreeSet<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html#java.util.TreeSet(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public TreeSet(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TreeSet(Java.Util.Collection%3CE%3E arg0)
+        /// </summary>
+        public static TreeSet<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<TreeSet<E>>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html#java.util.TreeSet(java.util.Comparator)"/>
@@ -348,12 +390,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for TreeSet(Java.Util.Comparator%3CE%3E arg0)
+        /// </summary>
+        public static TreeSet<E> New(Java.Util.Comparator<E> arg0)
+        {
+            return JVMBridgeBase.New<TreeSet<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html#java.util.TreeSet(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
         public TreeSet(Java.Util.SortedSet<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TreeSet(Java.Util.SortedSet%3CE%3E arg0)
+        /// </summary>
+        public static TreeSet<E> New(Java.Util.SortedSet<E> arg0)
+        {
+            return JVMBridgeBase.New<TreeSet<E>>(arg0);
         }
 
         #endregion

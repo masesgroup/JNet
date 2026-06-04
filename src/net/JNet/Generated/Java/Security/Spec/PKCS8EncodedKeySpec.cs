@@ -71,6 +71,13 @@ namespace Java.Security.Spec
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for PKCS8EncodedKeySpec(byte[] arg0)
+        /// </summary>
+        public static PKCS8EncodedKeySpec New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<PKCS8EncodedKeySpec>(arg0);
+        }
 
         #endregion
 

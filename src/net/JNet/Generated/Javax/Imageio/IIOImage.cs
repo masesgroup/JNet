@@ -74,6 +74,13 @@ namespace Javax.Imageio
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for IIOImage(Java.Awt.ImageNs.Raster arg0, Java.Util.List arg1, Javax.Imageio.Metadata.IIOMetadata arg2)
+        /// </summary>
+        public static IIOImage New(Java.Awt.ImageNs.Raster arg0, Java.Util.List arg1, Javax.Imageio.Metadata.IIOMetadata arg2)
+        {
+            return JVMBridgeBase.New<IIOImage>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/IIOImage.html#javax.imageio.IIOImage(java.awt.image.RenderedImage,java.util.List,javax.imageio.metadata.IIOMetadata)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
@@ -82,6 +89,13 @@ namespace Javax.Imageio
         public IIOImage(Java.Awt.ImageNs.RenderedImage arg0, Java.Util.List arg1, Javax.Imageio.Metadata.IIOMetadata arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for IIOImage(Java.Awt.ImageNs.RenderedImage arg0, Java.Util.List arg1, Javax.Imageio.Metadata.IIOMetadata arg2)
+        /// </summary>
+        public static IIOImage New(Java.Awt.ImageNs.RenderedImage arg0, Java.Util.List arg1, Javax.Imageio.Metadata.IIOMetadata arg2)
+        {
+            return JVMBridgeBase.New<IIOImage>(arg0, arg1, arg2);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Javax.Management.Openmbean
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for CompositeDataInvocationHandler(Javax.Management.Openmbean.CompositeData arg0)
+        /// </summary>
+        public static CompositeDataInvocationHandler New(Javax.Management.Openmbean.CompositeData arg0)
+        {
+            return JVMBridgeBase.New<CompositeDataInvocationHandler>(arg0);
+        }
 
         #endregion
 

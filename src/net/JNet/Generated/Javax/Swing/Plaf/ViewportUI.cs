@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ViewportUI()
+        /// </summary>
+        public static ViewportUI New()
+        {
+            return JVMBridgeBase.New<ViewportUI>();
+        }
 
         #endregion
 

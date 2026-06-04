@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiLookAndFeel()
+        /// </summary>
+        public static MultiLookAndFeel New()
+        {
+            return JVMBridgeBase.New<MultiLookAndFeel>();
+        }
 
         #endregion
 

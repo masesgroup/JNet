@@ -562,6 +562,13 @@ namespace Javax.Xml.Bind
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for Listener()
+            /// </summary>
+            public static Listener New()
+            {
+                return JVMBridgeBase.New<Listener>();
+            }
 
             #endregion
 

@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JEditorPane()
+        /// </summary>
+        public static JEditorPane New()
+        {
+            return JVMBridgeBase.New<JEditorPane>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JEditorPane.html#javax.swing.JEditorPane(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Swing
         public JEditorPane(Java.Lang.String arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JEditorPane(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static JEditorPane New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<JEditorPane>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JEditorPane.html#javax.swing.JEditorPane(java.lang.String)"/>
@@ -89,6 +103,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JEditorPane(Java.Lang.String arg0)
+        /// </summary>
+        public static JEditorPane New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JEditorPane>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JEditorPane.html#javax.swing.JEditorPane(java.net.URL)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
@@ -96,6 +117,13 @@ namespace Javax.Swing
         public JEditorPane(Java.Net.URL arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JEditorPane(Java.Net.URL arg0)
+        /// </summary>
+        public static JEditorPane New(Java.Net.URL arg0)
+        {
+            return JVMBridgeBase.New<JEditorPane>(arg0);
         }
 
         #endregion

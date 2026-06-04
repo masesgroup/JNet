@@ -107,6 +107,13 @@ namespace Java.Awt
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for BufferCapabilities(Java.Awt.ImageCapabilities arg0, Java.Awt.ImageCapabilities arg1, Java.Awt.BufferCapabilities.FlipContents arg2)
+        /// </summary>
+        public static BufferCapabilities New(Java.Awt.ImageCapabilities arg0, Java.Awt.ImageCapabilities arg1, Java.Awt.BufferCapabilities.FlipContents arg2)
+        {
+            return JVMBridgeBase.New<BufferCapabilities>(arg0, arg1, arg2);
+        }
 
         #endregion
 

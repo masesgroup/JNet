@@ -74,6 +74,13 @@ namespace Java.Security.Spec
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for RSAPrivateKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
+        /// </summary>
+        public static RSAPrivateKeySpec New(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
+        {
+            return JVMBridgeBase.New<RSAPrivateKeySpec>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/spec/RSAPrivateKeySpec.html#java.security.spec.RSAPrivateKeySpec(java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
@@ -81,6 +88,13 @@ namespace Java.Security.Spec
         public RSAPrivateKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for RSAPrivateKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1)
+        /// </summary>
+        public static RSAPrivateKeySpec New(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1)
+        {
+            return JVMBridgeBase.New<RSAPrivateKeySpec>(arg0, arg1);
         }
 
         #endregion

@@ -309,6 +309,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for BorderUIResource(Javax.Swing.Border.Border arg0)
+        /// </summary>
+        public static BorderUIResource New(Javax.Swing.Border.Border arg0)
+        {
+            return JVMBridgeBase.New<BorderUIResource>(arg0);
+        }
 
         #endregion
 
@@ -416,6 +423,13 @@ namespace Javax.Swing.Plaf
                 InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
+            /// HPA initializer for BevelBorderUIResource(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
+            /// </summary>
+            public static BevelBorderUIResource New(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
+            {
+                return JVMBridgeBase.New<BevelBorderUIResource>(arg0, arg1, arg2, arg3, arg4);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.BevelBorderUIResource.html#javax.swing.plaf.BorderUIResource$BevelBorderUIResource(int,java.awt.Color,java.awt.Color)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -426,12 +440,26 @@ namespace Javax.Swing.Plaf
                 InvokeInitializer(arg0, arg1, arg2);
             }
             /// <summary>
+            /// HPA initializer for BevelBorderUIResource(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
+            /// </summary>
+            public static BevelBorderUIResource New(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
+            {
+                return JVMBridgeBase.New<BevelBorderUIResource>(arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.BevelBorderUIResource.html#javax.swing.plaf.BorderUIResource$BevelBorderUIResource(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             public BevelBorderUIResource(int arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for BevelBorderUIResource(int arg0)
+            /// </summary>
+            public static BevelBorderUIResource New(int arg0)
+            {
+                return JVMBridgeBase.New<BevelBorderUIResource>(arg0);
             }
 
             #endregion
@@ -476,6 +504,13 @@ namespace Javax.Swing.Plaf
             public CompoundBorderUIResource(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for CompoundBorderUIResource(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
+            /// </summary>
+            public static CompoundBorderUIResource New(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
+            {
+                return JVMBridgeBase.New<CompoundBorderUIResource>(arg0, arg1);
             }
 
             #endregion
@@ -524,12 +559,26 @@ namespace Javax.Swing.Plaf
                 InvokeInitializer(arg0, arg1, arg2, arg3);
             }
             /// <summary>
+            /// HPA initializer for EmptyBorderUIResource(int arg0, int arg1, int arg2, int arg3)
+            /// </summary>
+            public static EmptyBorderUIResource New(int arg0, int arg1, int arg2, int arg3)
+            {
+                return JVMBridgeBase.New<EmptyBorderUIResource>(arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.EmptyBorderUIResource.html#javax.swing.plaf.BorderUIResource$EmptyBorderUIResource(java.awt.Insets)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Insets"/></param>
             public EmptyBorderUIResource(Java.Awt.Insets arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for EmptyBorderUIResource(Java.Awt.Insets arg0)
+            /// </summary>
+            public static EmptyBorderUIResource New(Java.Awt.Insets arg0)
+            {
+                return JVMBridgeBase.New<EmptyBorderUIResource>(arg0);
             }
 
             #endregion
@@ -574,6 +623,13 @@ namespace Javax.Swing.Plaf
                 InvokeInitializer();
             }
             /// <summary>
+            /// HPA initializer for EtchedBorderUIResource()
+            /// </summary>
+            public static EtchedBorderUIResource New()
+            {
+                return JVMBridgeBase.New<EtchedBorderUIResource>();
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.EtchedBorderUIResource.html#javax.swing.plaf.BorderUIResource$EtchedBorderUIResource(int,java.awt.Color,java.awt.Color)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -584,12 +640,26 @@ namespace Javax.Swing.Plaf
                 InvokeInitializer(arg0, arg1, arg2);
             }
             /// <summary>
+            /// HPA initializer for EtchedBorderUIResource(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
+            /// </summary>
+            public static EtchedBorderUIResource New(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
+            {
+                return JVMBridgeBase.New<EtchedBorderUIResource>(arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.EtchedBorderUIResource.html#javax.swing.plaf.BorderUIResource$EtchedBorderUIResource(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             public EtchedBorderUIResource(int arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for EtchedBorderUIResource(int arg0)
+            /// </summary>
+            public static EtchedBorderUIResource New(int arg0)
+            {
+                return JVMBridgeBase.New<EtchedBorderUIResource>(arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.EtchedBorderUIResource.html#javax.swing.plaf.BorderUIResource$EtchedBorderUIResource(java.awt.Color,java.awt.Color)"/>
@@ -599,6 +669,13 @@ namespace Javax.Swing.Plaf
             public EtchedBorderUIResource(Java.Awt.Color arg0, Java.Awt.Color arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for EtchedBorderUIResource(Java.Awt.Color arg0, Java.Awt.Color arg1)
+            /// </summary>
+            public static EtchedBorderUIResource New(Java.Awt.Color arg0, Java.Awt.Color arg1)
+            {
+                return JVMBridgeBase.New<EtchedBorderUIResource>(arg0, arg1);
             }
 
             #endregion
@@ -645,12 +722,26 @@ namespace Javax.Swing.Plaf
                 InvokeInitializer(arg0, arg1);
             }
             /// <summary>
+            /// HPA initializer for LineBorderUIResource(Java.Awt.Color arg0, int arg1)
+            /// </summary>
+            public static LineBorderUIResource New(Java.Awt.Color arg0, int arg1)
+            {
+                return JVMBridgeBase.New<LineBorderUIResource>(arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html#javax.swing.plaf.BorderUIResource$LineBorderUIResource(java.awt.Color)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
             public LineBorderUIResource(Java.Awt.Color arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for LineBorderUIResource(Java.Awt.Color arg0)
+            /// </summary>
+            public static LineBorderUIResource New(Java.Awt.Color arg0)
+            {
+                return JVMBridgeBase.New<LineBorderUIResource>(arg0);
             }
 
             #endregion
@@ -700,6 +791,13 @@ namespace Javax.Swing.Plaf
                 InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
+            /// HPA initializer for MatteBorderUIResource(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
+            /// </summary>
+            public static MatteBorderUIResource New(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
+            {
+                return JVMBridgeBase.New<MatteBorderUIResource>(arg0, arg1, arg2, arg3, arg4);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.MatteBorderUIResource.html#javax.swing.plaf.BorderUIResource$MatteBorderUIResource(int,int,int,int,javax.swing.Icon)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -712,12 +810,26 @@ namespace Javax.Swing.Plaf
                 InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
+            /// HPA initializer for MatteBorderUIResource(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
+            /// </summary>
+            public static MatteBorderUIResource New(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
+            {
+                return JVMBridgeBase.New<MatteBorderUIResource>(arg0, arg1, arg2, arg3, arg4);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.MatteBorderUIResource.html#javax.swing.plaf.BorderUIResource$MatteBorderUIResource(javax.swing.Icon)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
             public MatteBorderUIResource(Javax.Swing.Icon arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for MatteBorderUIResource(Javax.Swing.Icon arg0)
+            /// </summary>
+            public static MatteBorderUIResource New(Javax.Swing.Icon arg0)
+            {
+                return JVMBridgeBase.New<MatteBorderUIResource>(arg0);
             }
 
             #endregion
@@ -763,6 +875,13 @@ namespace Javax.Swing.Plaf
                 InvokeInitializer(arg0);
             }
             /// <summary>
+            /// HPA initializer for TitledBorderUIResource(Java.Lang.String arg0)
+            /// </summary>
+            public static TitledBorderUIResource New(Java.Lang.String arg0)
+            {
+                return JVMBridgeBase.New<TitledBorderUIResource>(arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#javax.swing.plaf.BorderUIResource$TitledBorderUIResource(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font,java.awt.Color)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
@@ -774,6 +893,13 @@ namespace Javax.Swing.Plaf
             public TitledBorderUIResource(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+            }
+            /// <summary>
+            /// HPA initializer for TitledBorderUIResource(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
+            /// </summary>
+            public static TitledBorderUIResource New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
+            {
+                return JVMBridgeBase.New<TitledBorderUIResource>(arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#javax.swing.plaf.BorderUIResource$TitledBorderUIResource(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font)"/>
@@ -788,6 +914,13 @@ namespace Javax.Swing.Plaf
                 InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
+            /// HPA initializer for TitledBorderUIResource(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4)
+            /// </summary>
+            public static TitledBorderUIResource New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4)
+            {
+                return JVMBridgeBase.New<TitledBorderUIResource>(arg0, arg1, arg2, arg3, arg4);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#javax.swing.plaf.BorderUIResource$TitledBorderUIResource(javax.swing.border.Border,java.lang.String,int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
@@ -799,6 +932,13 @@ namespace Javax.Swing.Plaf
                 InvokeInitializer(arg0, arg1, arg2, arg3);
             }
             /// <summary>
+            /// HPA initializer for TitledBorderUIResource(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3)
+            /// </summary>
+            public static TitledBorderUIResource New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3)
+            {
+                return JVMBridgeBase.New<TitledBorderUIResource>(arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#javax.swing.plaf.BorderUIResource$TitledBorderUIResource(javax.swing.border.Border,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
@@ -808,12 +948,26 @@ namespace Javax.Swing.Plaf
                 InvokeInitializer(arg0, arg1);
             }
             /// <summary>
+            /// HPA initializer for TitledBorderUIResource(Javax.Swing.Border.Border arg0, Java.Lang.String arg1)
+            /// </summary>
+            public static TitledBorderUIResource New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1)
+            {
+                return JVMBridgeBase.New<TitledBorderUIResource>(arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#javax.swing.plaf.BorderUIResource$TitledBorderUIResource(javax.swing.border.Border)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
             public TitledBorderUIResource(Javax.Swing.Border.Border arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for TitledBorderUIResource(Javax.Swing.Border.Border arg0)
+            /// </summary>
+            public static TitledBorderUIResource New(Javax.Swing.Border.Border arg0)
+            {
+                return JVMBridgeBase.New<TitledBorderUIResource>(arg0);
             }
 
             #endregion

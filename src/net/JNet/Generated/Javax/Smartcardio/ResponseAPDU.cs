@@ -71,6 +71,13 @@ namespace Javax.Smartcardio
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ResponseAPDU(byte[] arg0)
+        /// </summary>
+        public static ResponseAPDU New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<ResponseAPDU>(arg0);
+        }
 
         #endregion
 

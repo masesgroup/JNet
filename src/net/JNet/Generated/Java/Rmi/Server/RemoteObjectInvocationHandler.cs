@@ -71,6 +71,13 @@ namespace Java.Rmi.Server
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for RemoteObjectInvocationHandler(Java.Rmi.Server.RemoteRef arg0)
+        /// </summary>
+        public static RemoteObjectInvocationHandler New(Java.Rmi.Server.RemoteRef arg0)
+        {
+            return JVMBridgeBase.New<RemoteObjectInvocationHandler>(arg0);
+        }
 
         #endregion
 

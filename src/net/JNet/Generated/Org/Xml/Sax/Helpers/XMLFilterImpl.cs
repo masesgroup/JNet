@@ -71,12 +71,26 @@ namespace Org.Xml.Sax.Helpers
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for XMLFilterImpl()
+        /// </summary>
+        public static XMLFilterImpl New()
+        {
+            return JVMBridgeBase.New<XMLFilterImpl>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/XMLFilterImpl.html#org.xml.sax.helpers.XMLFilterImpl(org.xml.sax.XMLReader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.XMLReader"/></param>
         public XMLFilterImpl(Org.Xml.Sax.XMLReader arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for XMLFilterImpl(Org.Xml.Sax.XMLReader arg0)
+        /// </summary>
+        public static XMLFilterImpl New(Org.Xml.Sax.XMLReader arg0)
+        {
+            return JVMBridgeBase.New<XMLFilterImpl>(arg0);
         }
 
         #endregion

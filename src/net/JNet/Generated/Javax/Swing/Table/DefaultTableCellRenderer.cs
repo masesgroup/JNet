@@ -104,6 +104,13 @@ namespace Javax.Swing.Table
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultTableCellRenderer()
+        /// </summary>
+        public static DefaultTableCellRenderer New()
+        {
+            return JVMBridgeBase.New<DefaultTableCellRenderer>();
+        }
 
         #endregion
 
@@ -156,6 +163,13 @@ namespace Javax.Swing.Table
             public UIResource() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for UIResource()
+            /// </summary>
+            public static UIResource New()
+            {
+                return JVMBridgeBase.New<UIResource>();
             }
 
             #endregion

@@ -73,6 +73,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for AffineTransformOp(Java.Awt.Geom.AffineTransform arg0, int arg1)
+        /// </summary>
+        public static AffineTransformOp New(Java.Awt.Geom.AffineTransform arg0, int arg1)
+        {
+            return JVMBridgeBase.New<AffineTransformOp>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/AffineTransformOp.html#java.awt.image.AffineTransformOp(java.awt.geom.AffineTransform,java.awt.RenderingHints)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
@@ -80,6 +87,13 @@ namespace Java.Awt.ImageNs
         public AffineTransformOp(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for AffineTransformOp(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
+        /// </summary>
+        public static AffineTransformOp New(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
+        {
+            return JVMBridgeBase.New<AffineTransformOp>(arg0, arg1);
         }
 
         #endregion

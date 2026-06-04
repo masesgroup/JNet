@@ -106,12 +106,26 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DefaultComboBoxModel()
+        /// </summary>
+        public static DefaultComboBoxModel New()
+        {
+            return JVMBridgeBase.New<DefaultComboBoxModel>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultComboBoxModel.html#javax.swing.DefaultComboBoxModel(java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         public DefaultComboBoxModel(Java.Util.Vector arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultComboBoxModel(Java.Util.Vector arg0)
+        /// </summary>
+        public static DefaultComboBoxModel New(Java.Util.Vector arg0)
+        {
+            return JVMBridgeBase.New<DefaultComboBoxModel>(arg0);
         }
 
         #endregion
@@ -212,6 +226,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DefaultComboBoxModel()
+        /// </summary>
+        public static DefaultComboBoxModel<E> New()
+        {
+            return JVMBridgeBase.New<DefaultComboBoxModel<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultComboBoxModel.html#javax.swing.DefaultComboBoxModel(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
@@ -220,12 +241,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for DefaultComboBoxModel(E[] arg0)
+        /// </summary>
+        public static DefaultComboBoxModel<E> New(E[] arg0)
+        {
+            return JVMBridgeBase.New<DefaultComboBoxModel<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultComboBoxModel.html#javax.swing.DefaultComboBoxModel(java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         public DefaultComboBoxModel(Java.Util.Vector<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultComboBoxModel(Java.Util.Vector%3CE%3E arg0)
+        /// </summary>
+        public static DefaultComboBoxModel<E> New(Java.Util.Vector<E> arg0)
+        {
+            return JVMBridgeBase.New<DefaultComboBoxModel<E>>(arg0);
         }
 
         #endregion

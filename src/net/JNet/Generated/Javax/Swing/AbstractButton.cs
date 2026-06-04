@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AbstractButton()
+        /// </summary>
+        public static AbstractButton New()
+        {
+            return JVMBridgeBase.New<AbstractButton>();
+        }
 
         #endregion
 

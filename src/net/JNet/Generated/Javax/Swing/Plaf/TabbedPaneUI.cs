@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for TabbedPaneUI()
+        /// </summary>
+        public static TabbedPaneUI New()
+        {
+            return JVMBridgeBase.New<TabbedPaneUI>();
+        }
 
         #endregion
 

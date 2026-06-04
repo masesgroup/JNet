@@ -108,12 +108,26 @@ namespace Java.Lang.Ref
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for WeakReference(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
+        /// </summary>
+        public static WeakReference New(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
+        {
+            return JVMBridgeBase.New<WeakReference>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/WeakReference.html#java.lang.ref.WeakReference(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public WeakReference(object arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for WeakReference(object arg0)
+        /// </summary>
+        public static WeakReference New(object arg0)
+        {
+            return JVMBridgeBase.New<WeakReference>(arg0);
         }
 
         #endregion
@@ -156,12 +170,26 @@ namespace Java.Lang.Ref
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for WeakReference(T arg0, Java.Lang.Ref.ReferenceQueue%3CT%3E arg1)
+        /// </summary>
+        public static WeakReference<T> New(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
+        {
+            return JVMBridgeBase.New<WeakReference<T>>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/WeakReference.html#java.lang.ref.WeakReference(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         public WeakReference(T arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for WeakReference(T arg0)
+        /// </summary>
+        public static WeakReference<T> New(T arg0)
+        {
+            return JVMBridgeBase.New<WeakReference<T>>(arg0);
         }
 
         #endregion

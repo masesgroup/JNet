@@ -104,6 +104,13 @@ namespace Javax.Swing.Tree
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AbstractLayoutCache()
+        /// </summary>
+        public static AbstractLayoutCache New()
+        {
+            return JVMBridgeBase.New<AbstractLayoutCache>();
+        }
 
         #endregion
 
@@ -348,6 +355,13 @@ namespace Javax.Swing.Tree
             public NodeDimensions() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for NodeDimensions()
+            /// </summary>
+            public static NodeDimensions New()
+            {
+                return JVMBridgeBase.New<NodeDimensions>();
             }
 
             #endregion

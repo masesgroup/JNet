@@ -104,6 +104,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ScrollPaneLayout()
+        /// </summary>
+        public static ScrollPaneLayout New()
+        {
+            return JVMBridgeBase.New<ScrollPaneLayout>();
+        }
 
         #endregion
 
@@ -265,6 +272,13 @@ namespace Javax.Swing
             public UIResource() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for UIResource()
+            /// </summary>
+            public static UIResource New()
+            {
+                return JVMBridgeBase.New<UIResource>();
             }
 
             #endregion

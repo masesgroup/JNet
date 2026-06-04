@@ -71,6 +71,13 @@ namespace Java.Util
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for EventObject(object arg0)
+        /// </summary>
+        public static EventObject New(object arg0)
+        {
+            return JVMBridgeBase.New<EventObject>(arg0);
+        }
 
         #endregion
 

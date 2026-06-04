@@ -105,6 +105,13 @@ namespace Java.Util.Concurrent
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ForkJoinTask()
+        /// </summary>
+        public static ForkJoinTask New()
+        {
+            return JVMBridgeBase.New<ForkJoinTask>();
+        }
 
         #endregion
 
@@ -420,6 +427,13 @@ namespace Java.Util.Concurrent
         public ForkJoinTask() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for ForkJoinTask()
+        /// </summary>
+        public static ForkJoinTask<V> New()
+        {
+            return JVMBridgeBase.New<ForkJoinTask<V>>();
         }
 
         #endregion

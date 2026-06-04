@@ -73,6 +73,13 @@ namespace Javax.Activation
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for DataHandler(object arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static DataHandler New(object arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<DataHandler>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/DataHandler.html#javax.activation.DataHandler(java.net.URL)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
@@ -81,12 +88,26 @@ namespace Javax.Activation
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for DataHandler(Java.Net.URL arg0)
+        /// </summary>
+        public static DataHandler New(Java.Net.URL arg0)
+        {
+            return JVMBridgeBase.New<DataHandler>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/DataHandler.html#javax.activation.DataHandler(javax.activation.DataSource)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Activation.DataSource"/></param>
         public DataHandler(Javax.Activation.DataSource arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DataHandler(Javax.Activation.DataSource arg0)
+        /// </summary>
+        public static DataHandler New(Javax.Activation.DataSource arg0)
+        {
+            return JVMBridgeBase.New<DataHandler>(arg0);
         }
 
         #endregion

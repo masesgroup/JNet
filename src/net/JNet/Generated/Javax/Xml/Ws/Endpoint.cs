@@ -70,6 +70,13 @@ namespace Javax.Xml.Ws
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Endpoint()
+        /// </summary>
+        public static Endpoint New()
+        {
+            return JVMBridgeBase.New<Endpoint>();
+        }
 
         #endregion
 

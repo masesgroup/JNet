@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ButtonUI()
+        /// </summary>
+        public static ButtonUI New()
+        {
+            return JVMBridgeBase.New<ButtonUI>();
+        }
 
         #endregion
 

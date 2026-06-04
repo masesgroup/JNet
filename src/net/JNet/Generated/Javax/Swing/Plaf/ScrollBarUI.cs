@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ScrollBarUI()
+        /// </summary>
+        public static ScrollBarUI New()
+        {
+            return JVMBridgeBase.New<ScrollBarUI>();
+        }
 
         #endregion
 

@@ -74,6 +74,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for OutputStreamWriter(Java.Io.OutputStream arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static OutputStreamWriter New(Java.Io.OutputStream arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<OutputStreamWriter>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStreamWriter.html#java.io.OutputStreamWriter(java.io.OutputStream,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
@@ -81,6 +88,13 @@ namespace Java.Io
         public OutputStreamWriter(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for OutputStreamWriter(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1)
+        /// </summary>
+        public static OutputStreamWriter New(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1)
+        {
+            return JVMBridgeBase.New<OutputStreamWriter>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStreamWriter.html#java.io.OutputStreamWriter(java.io.OutputStream,java.nio.charset.CharsetEncoder)"/>
@@ -92,12 +106,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for OutputStreamWriter(Java.Io.OutputStream arg0, Java.Nio.Charset.CharsetEncoder arg1)
+        /// </summary>
+        public static OutputStreamWriter New(Java.Io.OutputStream arg0, Java.Nio.Charset.CharsetEncoder arg1)
+        {
+            return JVMBridgeBase.New<OutputStreamWriter>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStreamWriter.html#java.io.OutputStreamWriter(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public OutputStreamWriter(Java.Io.OutputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for OutputStreamWriter(Java.Io.OutputStream arg0)
+        /// </summary>
+        public static OutputStreamWriter New(Java.Io.OutputStream arg0)
+        {
+            return JVMBridgeBase.New<OutputStreamWriter>(arg0);
         }
 
         #endregion

@@ -72,6 +72,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for RequestingUserName(Java.Lang.String arg0, Java.Util.Locale arg1)
+        /// </summary>
+        public static RequestingUserName New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        {
+            return JVMBridgeBase.New<RequestingUserName>(arg0, arg1);
+        }
 
         #endregion
 

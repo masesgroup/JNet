@@ -73,6 +73,13 @@ namespace Javax.Management.Openmbean
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for CompositeDataSupport(Javax.Management.Openmbean.CompositeType arg0, Java.Util.Map%3CJava.Lang.String, object%3E arg1)
+        /// </summary>
+        public static CompositeDataSupport New(Javax.Management.Openmbean.CompositeType arg0, Java.Util.Map<Java.Lang.String, object> arg1)
+        {
+            return JVMBridgeBase.New<CompositeDataSupport>(arg0, arg1);
+        }
 
         #endregion
 

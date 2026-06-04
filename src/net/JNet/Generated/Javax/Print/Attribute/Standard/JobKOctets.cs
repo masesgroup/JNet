@@ -71,6 +71,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for JobKOctets(int arg0)
+        /// </summary>
+        public static JobKOctets New(int arg0)
+        {
+            return JVMBridgeBase.New<JobKOctets>(arg0);
+        }
 
         #endregion
 

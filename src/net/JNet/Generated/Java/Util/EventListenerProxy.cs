@@ -106,6 +106,13 @@ namespace Java.Util
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for EventListenerProxy(Java.Util.EventListener arg0)
+        /// </summary>
+        public static EventListenerProxy New(Java.Util.EventListener arg0)
+        {
+            return JVMBridgeBase.New<EventListenerProxy>(arg0);
+        }
 
         #endregion
 
@@ -151,6 +158,13 @@ namespace Java.Util
         public EventListenerProxy(T arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for EventListenerProxy(T arg0)
+        /// </summary>
+        public static EventListenerProxy<T> New(T arg0)
+        {
+            return JVMBridgeBase.New<EventListenerProxy<T>>(arg0);
         }
 
         #endregion

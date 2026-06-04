@@ -74,6 +74,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Scanner(Java.Io.File arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static Scanner New(Java.Io.File arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<Scanner>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html#java.util.Scanner(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -81,6 +88,13 @@ namespace Java.Util
         public Scanner(Java.Io.File arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Scanner(Java.Io.File arg0)
+        /// </summary>
+        public static Scanner New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<Scanner>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html#java.util.Scanner(java.io.InputStream,java.lang.String)"/>
@@ -92,12 +106,26 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Scanner(Java.Io.InputStream arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static Scanner New(Java.Io.InputStream arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<Scanner>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html#java.util.Scanner(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public Scanner(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Scanner(Java.Io.InputStream arg0)
+        /// </summary>
+        public static Scanner New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<Scanner>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html#java.util.Scanner(java.lang.Readable)"/>
@@ -108,12 +136,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Scanner(Java.Lang.Readable arg0)
+        /// </summary>
+        public static Scanner New(Java.Lang.Readable arg0)
+        {
+            return JVMBridgeBase.New<Scanner>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html#java.util.Scanner(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public Scanner(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Scanner(Java.Lang.String arg0)
+        /// </summary>
+        public static Scanner New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Scanner>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html#java.util.Scanner(java.nio.channels.ReadableByteChannel,java.lang.String)"/>
@@ -125,12 +167,26 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Scanner(Java.Nio.Channels.ReadableByteChannel arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static Scanner New(Java.Nio.Channels.ReadableByteChannel arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<Scanner>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html#java.util.Scanner(java.nio.channels.ReadableByteChannel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
         public Scanner(Java.Nio.Channels.ReadableByteChannel arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Scanner(Java.Nio.Channels.ReadableByteChannel arg0)
+        /// </summary>
+        public static Scanner New(Java.Nio.Channels.ReadableByteChannel arg0)
+        {
+            return JVMBridgeBase.New<Scanner>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html#java.util.Scanner(java.nio.file.Path,java.lang.String)"/>
@@ -143,6 +199,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Scanner(Java.Nio.File.Path arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static Scanner New(Java.Nio.File.Path arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<Scanner>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html#java.util.Scanner(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
@@ -150,6 +213,13 @@ namespace Java.Util
         public Scanner(Java.Nio.File.Path arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Scanner(Java.Nio.File.Path arg0)
+        /// </summary>
+        public static Scanner New(Java.Nio.File.Path arg0)
+        {
+            return JVMBridgeBase.New<Scanner>(arg0);
         }
 
         #endregion

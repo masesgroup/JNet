@@ -72,12 +72,26 @@ namespace Javax.Management
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AttributeValueExp()
+        /// </summary>
+        public static AttributeValueExp New()
+        {
+            return JVMBridgeBase.New<AttributeValueExp>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/AttributeValueExp.html#javax.management.AttributeValueExp(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public AttributeValueExp(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AttributeValueExp(Java.Lang.String arg0)
+        /// </summary>
+        public static AttributeValueExp New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<AttributeValueExp>(arg0);
         }
 
         #endregion

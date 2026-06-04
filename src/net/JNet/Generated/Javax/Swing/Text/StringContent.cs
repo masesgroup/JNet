@@ -71,12 +71,26 @@ namespace Javax.Swing.Text
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for StringContent()
+        /// </summary>
+        public static StringContent New()
+        {
+            return JVMBridgeBase.New<StringContent>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/StringContent.html#javax.swing.text.StringContent(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public StringContent(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StringContent(int arg0)
+        /// </summary>
+        public static StringContent New(int arg0)
+        {
+            return JVMBridgeBase.New<StringContent>(arg0);
         }
 
         #endregion

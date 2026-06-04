@@ -76,6 +76,13 @@ namespace Java.Beans
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for EventSetDescriptor(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String arg3)
+        /// </summary>
+        public static EventSetDescriptor New(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String arg3)
+        {
+            return JVMBridgeBase.New<EventSetDescriptor>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/EventSetDescriptor.html#java.beans.EventSetDescriptor(java.lang.Class,java.lang.String,java.lang.Class,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -89,6 +96,13 @@ namespace Java.Beans
         public EventSetDescriptor(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// HPA initializer for EventSetDescriptor(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
+        /// </summary>
+        public static EventSetDescriptor New(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
+        {
+            return JVMBridgeBase.New<EventSetDescriptor>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/EventSetDescriptor.html#java.beans.EventSetDescriptor(java.lang.Class,java.lang.String,java.lang.Class,java.lang.String[],java.lang.String,java.lang.String)"/>
@@ -105,6 +119,13 @@ namespace Java.Beans
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for EventSetDescriptor(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5)
+        /// </summary>
+        public static EventSetDescriptor New(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5)
+        {
+            return JVMBridgeBase.New<EventSetDescriptor>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/EventSetDescriptor.html#java.beans.EventSetDescriptor(java.lang.String,java.lang.Class,java.beans.MethodDescriptor[],java.lang.reflect.Method,java.lang.reflect.Method)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -116,6 +137,13 @@ namespace Java.Beans
         public EventSetDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Beans.MethodDescriptor[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for EventSetDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Beans.MethodDescriptor[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
+        /// </summary>
+        public static EventSetDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Beans.MethodDescriptor[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
+        {
+            return JVMBridgeBase.New<EventSetDescriptor>(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/EventSetDescriptor.html#java.beans.EventSetDescriptor(java.lang.String,java.lang.Class,java.lang.reflect.Method[],java.lang.reflect.Method,java.lang.reflect.Method,java.lang.reflect.Method)"/>
@@ -132,6 +160,13 @@ namespace Java.Beans
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for EventSetDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4, Java.Lang.Reflect.Method arg5)
+        /// </summary>
+        public static EventSetDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4, Java.Lang.Reflect.Method arg5)
+        {
+            return JVMBridgeBase.New<EventSetDescriptor>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/EventSetDescriptor.html#java.beans.EventSetDescriptor(java.lang.String,java.lang.Class,java.lang.reflect.Method[],java.lang.reflect.Method,java.lang.reflect.Method)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -143,6 +178,13 @@ namespace Java.Beans
         public EventSetDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for EventSetDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
+        /// </summary>
+        public static EventSetDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
+        {
+            return JVMBridgeBase.New<EventSetDescriptor>(arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

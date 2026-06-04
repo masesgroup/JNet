@@ -70,6 +70,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultFormatter()
+        /// </summary>
+        public static DefaultFormatter New()
+        {
+            return JVMBridgeBase.New<DefaultFormatter>();
+        }
 
         #endregion
 

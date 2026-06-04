@@ -72,6 +72,13 @@ namespace Java.Util
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for PropertyPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static PropertyPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<PropertyPermission>(arg0, arg1);
+        }
 
         #endregion
 

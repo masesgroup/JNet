@@ -70,6 +70,13 @@ namespace Javax.Swing.Table
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for TableStringConverter()
+        /// </summary>
+        public static TableStringConverter New()
+        {
+            return JVMBridgeBase.New<TableStringConverter>();
+        }
 
         #endregion
 

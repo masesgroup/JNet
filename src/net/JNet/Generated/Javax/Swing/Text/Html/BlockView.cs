@@ -72,6 +72,13 @@ namespace Javax.Swing.Text.Html
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for BlockView(Javax.Swing.Text.Element arg0, int arg1)
+        /// </summary>
+        public static BlockView New(Javax.Swing.Text.Element arg0, int arg1)
+        {
+            return JVMBridgeBase.New<BlockView>(arg0, arg1);
+        }
 
         #endregion
 

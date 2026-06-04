@@ -73,6 +73,13 @@ namespace Javax.Management.Remote
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for NotificationResult(long arg0, long arg1, Javax.Management.Remote.TargetedNotification[] arg2)
+        /// </summary>
+        public static NotificationResult New(long arg0, long arg1, Javax.Management.Remote.TargetedNotification[] arg2)
+        {
+            return JVMBridgeBase.New<NotificationResult>(arg0, arg1, arg2);
+        }
 
         #endregion
 

@@ -74,6 +74,13 @@ namespace Javax.Sql.Rowset.Serial
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for SerialBlob(byte[] arg0)
+        /// </summary>
+        public static SerialBlob New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<SerialBlob>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/serial/SerialBlob.html#javax.sql.rowset.serial.SerialBlob(java.sql.Blob)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Blob"/></param>
@@ -82,6 +89,13 @@ namespace Javax.Sql.Rowset.Serial
         public SerialBlob(Java.Sql.Blob arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SerialBlob(Java.Sql.Blob arg0)
+        /// </summary>
+        public static SerialBlob New(Java.Sql.Blob arg0)
+        {
+            return JVMBridgeBase.New<SerialBlob>(arg0);
         }
 
         #endregion

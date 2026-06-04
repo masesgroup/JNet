@@ -71,6 +71,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for NumberOfDocuments(int arg0)
+        /// </summary>
+        public static NumberOfDocuments New(int arg0)
+        {
+            return JVMBridgeBase.New<NumberOfDocuments>(arg0);
+        }
 
         #endregion
 

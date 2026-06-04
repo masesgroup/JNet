@@ -73,12 +73,26 @@ namespace Javax.Security.Sasl
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for RealmCallback(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static RealmCallback New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<RealmCallback>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/sasl/RealmCallback.html#javax.security.sasl.RealmCallback(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public RealmCallback(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for RealmCallback(Java.Lang.String arg0)
+        /// </summary>
+        public static RealmCallback New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<RealmCallback>(arg0);
         }
 
         #endregion

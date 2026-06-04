@@ -71,12 +71,26 @@ namespace Javax.Print.Attribute
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for HashDocAttributeSet()
+        /// </summary>
+        public static HashDocAttributeSet New()
+        {
+            return JVMBridgeBase.New<HashDocAttributeSet>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashDocAttributeSet.html#javax.print.attribute.HashDocAttributeSet(javax.print.attribute.DocAttribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.DocAttribute"/></param>
         public HashDocAttributeSet(Javax.Print.Attribute.DocAttribute arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for HashDocAttributeSet(Javax.Print.Attribute.DocAttribute arg0)
+        /// </summary>
+        public static HashDocAttributeSet New(Javax.Print.Attribute.DocAttribute arg0)
+        {
+            return JVMBridgeBase.New<HashDocAttributeSet>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashDocAttributeSet.html#javax.print.attribute.HashDocAttributeSet(javax.print.attribute.DocAttribute[])"/>
@@ -87,12 +101,26 @@ namespace Javax.Print.Attribute
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for HashDocAttributeSet(Javax.Print.Attribute.DocAttribute[] arg0)
+        /// </summary>
+        public static HashDocAttributeSet New(Javax.Print.Attribute.DocAttribute[] arg0)
+        {
+            return JVMBridgeBase.New<HashDocAttributeSet>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashDocAttributeSet.html#javax.print.attribute.HashDocAttributeSet(javax.print.attribute.DocAttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.DocAttributeSet"/></param>
         public HashDocAttributeSet(Javax.Print.Attribute.DocAttributeSet arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for HashDocAttributeSet(Javax.Print.Attribute.DocAttributeSet arg0)
+        /// </summary>
+        public static HashDocAttributeSet New(Javax.Print.Attribute.DocAttributeSet arg0)
+        {
+            return JVMBridgeBase.New<HashDocAttributeSet>(arg0);
         }
 
         #endregion

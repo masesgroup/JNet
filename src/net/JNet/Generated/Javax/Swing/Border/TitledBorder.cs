@@ -72,6 +72,13 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for TitledBorder(Java.Lang.String arg0)
+        /// </summary>
+        public static TitledBorder New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<TitledBorder>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/TitledBorder.html#javax.swing.border.TitledBorder(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font,java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
@@ -83,6 +90,13 @@ namespace Javax.Swing.Border
         public TitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for TitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
+        /// </summary>
+        public static TitledBorder New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
+        {
+            return JVMBridgeBase.New<TitledBorder>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/TitledBorder.html#javax.swing.border.TitledBorder(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font)"/>
@@ -97,6 +111,13 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for TitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4)
+        /// </summary>
+        public static TitledBorder New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4)
+        {
+            return JVMBridgeBase.New<TitledBorder>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/TitledBorder.html#javax.swing.border.TitledBorder(javax.swing.border.Border,java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
@@ -108,6 +129,13 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for TitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3)
+        /// </summary>
+        public static TitledBorder New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<TitledBorder>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/TitledBorder.html#javax.swing.border.TitledBorder(javax.swing.border.Border,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
@@ -117,12 +145,26 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for TitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static TitledBorder New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<TitledBorder>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/TitledBorder.html#javax.swing.border.TitledBorder(javax.swing.border.Border)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
         public TitledBorder(Javax.Swing.Border.Border arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TitledBorder(Javax.Swing.Border.Border arg0)
+        /// </summary>
+        public static TitledBorder New(Javax.Swing.Border.Border arg0)
+        {
+            return JVMBridgeBase.New<TitledBorder>(arg0);
         }
 
         #endregion

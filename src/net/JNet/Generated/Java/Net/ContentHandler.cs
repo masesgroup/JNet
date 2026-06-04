@@ -70,6 +70,13 @@ namespace Java.Net
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ContentHandler()
+        /// </summary>
+        public static ContentHandler New()
+        {
+            return JVMBridgeBase.New<ContentHandler>();
+        }
 
         #endregion
 

@@ -73,6 +73,13 @@ namespace Javax.Sql.Rowset.Serial
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for SerialRef(Java.Sql.Ref arg0)
+        /// </summary>
+        public static SerialRef New(Java.Sql.Ref arg0)
+        {
+            return JVMBridgeBase.New<SerialRef>(arg0);
+        }
 
         #endregion
 

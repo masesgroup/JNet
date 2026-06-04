@@ -71,6 +71,13 @@ namespace Java.Text
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for Annotation(object arg0)
+        /// </summary>
+        public static Annotation New(object arg0)
+        {
+            return JVMBridgeBase.New<Annotation>(arg0);
+        }
 
         #endregion
 

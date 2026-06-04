@@ -70,6 +70,13 @@ namespace Javax.Xml.Bind.Util
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ValidationEventCollector()
+        /// </summary>
+        public static ValidationEventCollector New()
+        {
+            return JVMBridgeBase.New<ValidationEventCollector>();
+        }
 
         #endregion
 

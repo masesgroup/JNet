@@ -74,6 +74,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// HPA initializer for InsetsUIResource(int arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static InsetsUIResource New(int arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<InsetsUIResource>(arg0, arg1, arg2, arg3);
+        }
 
         #endregion
 

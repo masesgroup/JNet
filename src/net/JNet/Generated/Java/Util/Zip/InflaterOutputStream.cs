@@ -74,6 +74,13 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for InflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1, int arg2)
+        /// </summary>
+        public static InflaterOutputStream New(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1, int arg2)
+        {
+            return JVMBridgeBase.New<InflaterOutputStream>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/InflaterOutputStream.html#java.util.zip.InflaterOutputStream(java.io.OutputStream,java.util.zip.Inflater)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
@@ -83,12 +90,26 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for InflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1)
+        /// </summary>
+        public static InflaterOutputStream New(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1)
+        {
+            return JVMBridgeBase.New<InflaterOutputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/InflaterOutputStream.html#java.util.zip.InflaterOutputStream(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public InflaterOutputStream(Java.Io.OutputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for InflaterOutputStream(Java.Io.OutputStream arg0)
+        /// </summary>
+        public static InflaterOutputStream New(Java.Io.OutputStream arg0)
+        {
+            return JVMBridgeBase.New<InflaterOutputStream>(arg0);
         }
 
         #endregion

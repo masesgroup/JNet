@@ -70,6 +70,13 @@ namespace Java.Util.Zip
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for CRC32()
+        /// </summary>
+        public static CRC32 New()
+        {
+            return JVMBridgeBase.New<CRC32>();
+        }
 
         #endregion
 

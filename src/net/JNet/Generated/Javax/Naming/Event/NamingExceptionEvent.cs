@@ -72,6 +72,13 @@ namespace Javax.Naming.Event
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for NamingExceptionEvent(Javax.Naming.Event.EventContext arg0, Javax.Naming.NamingException arg1)
+        /// </summary>
+        public static NamingExceptionEvent New(Javax.Naming.Event.EventContext arg0, Javax.Naming.NamingException arg1)
+        {
+            return JVMBridgeBase.New<NamingExceptionEvent>(arg0, arg1);
+        }
 
         #endregion
 

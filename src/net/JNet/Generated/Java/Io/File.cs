@@ -73,6 +73,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for File(Java.Io.File arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static File New(Java.Io.File arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<File>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html#java.io.File(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -80,6 +87,13 @@ namespace Java.Io
         public File(Java.Lang.String arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for File(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static File New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<File>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html#java.io.File(java.lang.String)"/>
@@ -90,12 +104,26 @@ namespace Java.Io
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for File(Java.Lang.String arg0)
+        /// </summary>
+        public static File New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<File>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html#java.io.File(java.net.URI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         public File(Java.Net.URI arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for File(Java.Net.URI arg0)
+        /// </summary>
+        public static File New(Java.Net.URI arg0)
+        {
+            return JVMBridgeBase.New<File>(arg0);
         }
 
         #endregion

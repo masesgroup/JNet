@@ -73,6 +73,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Robot()
+        /// </summary>
+        public static Robot New()
+        {
+            return JVMBridgeBase.New<Robot>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Robot.html#java.awt.Robot(java.awt.GraphicsDevice)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.GraphicsDevice"/></param>
@@ -80,6 +87,13 @@ namespace Java.Awt
         public Robot(Java.Awt.GraphicsDevice arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Robot(Java.Awt.GraphicsDevice arg0)
+        /// </summary>
+        public static Robot New(Java.Awt.GraphicsDevice arg0)
+        {
+            return JVMBridgeBase.New<Robot>(arg0);
         }
 
         #endregion

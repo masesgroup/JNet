@@ -74,6 +74,13 @@ namespace Javax.Swing.Event
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// HPA initializer for ListSelectionEvent(object arg0, int arg1, int arg2, bool arg3)
+        /// </summary>
+        public static ListSelectionEvent New(object arg0, int arg1, int arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<ListSelectionEvent>(arg0, arg1, arg2, arg3);
+        }
 
         #endregion
 

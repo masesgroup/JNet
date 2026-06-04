@@ -72,6 +72,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for BoxView(Javax.Swing.Text.Element arg0, int arg1)
+        /// </summary>
+        public static BoxView New(Javax.Swing.Text.Element arg0, int arg1)
+        {
+            return JVMBridgeBase.New<BoxView>(arg0, arg1);
+        }
 
         #endregion
 

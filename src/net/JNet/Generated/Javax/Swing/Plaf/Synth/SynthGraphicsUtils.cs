@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthGraphicsUtils()
+        /// </summary>
+        public static SynthGraphicsUtils New()
+        {
+            return JVMBridgeBase.New<SynthGraphicsUtils>();
+        }
 
         #endregion
 

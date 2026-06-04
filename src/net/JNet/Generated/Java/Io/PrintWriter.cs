@@ -75,6 +75,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PrintWriter(Java.Io.File arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static PrintWriter New(Java.Io.File arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<PrintWriter>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintWriter.html#java.io.PrintWriter(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -82,6 +89,13 @@ namespace Java.Io
         public PrintWriter(Java.Io.File arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PrintWriter(Java.Io.File arg0)
+        /// </summary>
+        public static PrintWriter New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<PrintWriter>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintWriter.html#java.io.PrintWriter(java.io.OutputStream,boolean)"/>
@@ -93,12 +107,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PrintWriter(Java.Io.OutputStream arg0, bool arg1)
+        /// </summary>
+        public static PrintWriter New(Java.Io.OutputStream arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<PrintWriter>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintWriter.html#java.io.PrintWriter(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public PrintWriter(Java.Io.OutputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PrintWriter(Java.Io.OutputStream arg0)
+        /// </summary>
+        public static PrintWriter New(Java.Io.OutputStream arg0)
+        {
+            return JVMBridgeBase.New<PrintWriter>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintWriter.html#java.io.PrintWriter(java.io.Writer,boolean)"/>
@@ -110,12 +138,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PrintWriter(Java.Io.Writer arg0, bool arg1)
+        /// </summary>
+        public static PrintWriter New(Java.Io.Writer arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<PrintWriter>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintWriter.html#java.io.PrintWriter(java.io.Writer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         public PrintWriter(Java.Io.Writer arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PrintWriter(Java.Io.Writer arg0)
+        /// </summary>
+        public static PrintWriter New(Java.Io.Writer arg0)
+        {
+            return JVMBridgeBase.New<PrintWriter>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintWriter.html#java.io.PrintWriter(java.lang.String,java.lang.String)"/>
@@ -129,6 +171,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PrintWriter(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static PrintWriter New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<PrintWriter>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintWriter.html#java.io.PrintWriter(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -136,6 +185,13 @@ namespace Java.Io
         public PrintWriter(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PrintWriter(Java.Lang.String arg0)
+        /// </summary>
+        public static PrintWriter New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<PrintWriter>(arg0);
         }
 
         #endregion

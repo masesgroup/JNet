@@ -224,6 +224,13 @@ namespace Javax.Xml.Bind.Annotation
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for GLOBAL()
+            /// </summary>
+            public static GLOBAL New()
+            {
+                return JVMBridgeBase.New<GLOBAL>();
+            }
 
             #endregion
 

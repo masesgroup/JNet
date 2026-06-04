@@ -73,6 +73,13 @@ namespace Java.Beans.Beancontext
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for BeanContextServiceRevokedEvent(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1, bool arg2)
+        /// </summary>
+        public static BeanContextServiceRevokedEvent New(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<BeanContextServiceRevokedEvent>(arg0, arg1, arg2);
+        }
 
         #endregion
 

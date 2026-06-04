@@ -70,6 +70,13 @@ namespace Java.Awt.FontNs
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for LineMetrics()
+        /// </summary>
+        public static LineMetrics New()
+        {
+            return JVMBridgeBase.New<LineMetrics>();
+        }
 
         #endregion
 

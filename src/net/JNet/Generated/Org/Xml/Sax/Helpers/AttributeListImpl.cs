@@ -71,12 +71,26 @@ namespace Org.Xml.Sax.Helpers
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AttributeListImpl()
+        /// </summary>
+        public static AttributeListImpl New()
+        {
+            return JVMBridgeBase.New<AttributeListImpl>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/AttributeListImpl.html#org.xml.sax.helpers.AttributeListImpl(org.xml.sax.AttributeList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.AttributeList"/></param>
         public AttributeListImpl(Org.Xml.Sax.AttributeList arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AttributeListImpl(Org.Xml.Sax.AttributeList arg0)
+        /// </summary>
+        public static AttributeListImpl New(Org.Xml.Sax.AttributeList arg0)
+        {
+            return JVMBridgeBase.New<AttributeListImpl>(arg0);
         }
 
         #endregion

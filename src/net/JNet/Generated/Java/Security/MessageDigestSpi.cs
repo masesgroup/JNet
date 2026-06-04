@@ -70,6 +70,13 @@ namespace Java.Security
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MessageDigestSpi()
+        /// </summary>
+        public static MessageDigestSpi New()
+        {
+            return JVMBridgeBase.New<MessageDigestSpi>();
+        }
 
         #endregion
 

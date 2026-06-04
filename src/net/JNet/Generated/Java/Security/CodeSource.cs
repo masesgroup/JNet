@@ -73,6 +73,13 @@ namespace Java.Security
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for CodeSource(Java.Net.URL arg0, Java.Security.Cert.Certificate[] arg1)
+        /// </summary>
+        public static CodeSource New(Java.Net.URL arg0, Java.Security.Cert.Certificate[] arg1)
+        {
+            return JVMBridgeBase.New<CodeSource>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/CodeSource.html#java.security.CodeSource(java.net.URL,java.security.CodeSigner[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
@@ -80,6 +87,13 @@ namespace Java.Security
         public CodeSource(Java.Net.URL arg0, Java.Security.CodeSigner[] arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for CodeSource(Java.Net.URL arg0, Java.Security.CodeSigner[] arg1)
+        /// </summary>
+        public static CodeSource New(Java.Net.URL arg0, Java.Security.CodeSigner[] arg1)
+        {
+            return JVMBridgeBase.New<CodeSource>(arg0, arg1);
         }
 
         #endregion

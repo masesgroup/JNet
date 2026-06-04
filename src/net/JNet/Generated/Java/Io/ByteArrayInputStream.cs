@@ -74,12 +74,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ByteArrayInputStream(byte[] arg0, int arg1, int arg2)
+        /// </summary>
+        public static ByteArrayInputStream New(byte[] arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<ByteArrayInputStream>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/ByteArrayInputStream.html#java.io.ByteArrayInputStream(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public ByteArrayInputStream(byte[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ByteArrayInputStream(byte[] arg0)
+        /// </summary>
+        public static ByteArrayInputStream New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<ByteArrayInputStream>(arg0);
         }
 
         #endregion

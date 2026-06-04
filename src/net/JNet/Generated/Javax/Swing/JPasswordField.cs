@@ -71,12 +71,26 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JPasswordField()
+        /// </summary>
+        public static JPasswordField New()
+        {
+            return JVMBridgeBase.New<JPasswordField>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPasswordField.html#javax.swing.JPasswordField(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public JPasswordField(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JPasswordField(int arg0)
+        /// </summary>
+        public static JPasswordField New(int arg0)
+        {
+            return JVMBridgeBase.New<JPasswordField>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPasswordField.html#javax.swing.JPasswordField(java.lang.String,int)"/>
@@ -88,12 +102,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JPasswordField(Java.Lang.String arg0, int arg1)
+        /// </summary>
+        public static JPasswordField New(Java.Lang.String arg0, int arg1)
+        {
+            return JVMBridgeBase.New<JPasswordField>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPasswordField.html#javax.swing.JPasswordField(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public JPasswordField(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JPasswordField(Java.Lang.String arg0)
+        /// </summary>
+        public static JPasswordField New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JPasswordField>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPasswordField.html#javax.swing.JPasswordField(javax.swing.text.Document,java.lang.String,int)"/>
@@ -104,6 +132,13 @@ namespace Javax.Swing
         public JPasswordField(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for JPasswordField(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2)
+        /// </summary>
+        public static JPasswordField New(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2)
+        {
+            return JVMBridgeBase.New<JPasswordField>(arg0, arg1, arg2);
         }
 
         #endregion

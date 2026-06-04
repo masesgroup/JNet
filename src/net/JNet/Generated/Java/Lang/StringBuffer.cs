@@ -71,12 +71,26 @@ namespace Java.Lang
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for StringBuffer()
+        /// </summary>
+        public static StringBuffer New()
+        {
+            return JVMBridgeBase.New<StringBuffer>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html#java.lang.StringBuffer(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public StringBuffer(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StringBuffer(int arg0)
+        /// </summary>
+        public static StringBuffer New(int arg0)
+        {
+            return JVMBridgeBase.New<StringBuffer>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html#java.lang.StringBuffer(java.lang.CharSequence)"/>
@@ -87,12 +101,26 @@ namespace Java.Lang
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for StringBuffer(Java.Lang.CharSequence arg0)
+        /// </summary>
+        public static StringBuffer New(Java.Lang.CharSequence arg0)
+        {
+            return JVMBridgeBase.New<StringBuffer>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html#java.lang.StringBuffer(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public StringBuffer(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StringBuffer(Java.Lang.String arg0)
+        /// </summary>
+        public static StringBuffer New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<StringBuffer>(arg0);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Rectangle()
+        /// </summary>
+        public static Rectangle New()
+        {
+            return JVMBridgeBase.New<Rectangle>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#java.awt.Rectangle(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -82,6 +89,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for Rectangle(int arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static Rectangle New(int arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<Rectangle>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#java.awt.Rectangle(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -91,12 +105,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Rectangle(int arg0, int arg1)
+        /// </summary>
+        public static Rectangle New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<Rectangle>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#java.awt.Rectangle(java.awt.Dimension)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
         public Rectangle(Java.Awt.Dimension arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Rectangle(Java.Awt.Dimension arg0)
+        /// </summary>
+        public static Rectangle New(Java.Awt.Dimension arg0)
+        {
+            return JVMBridgeBase.New<Rectangle>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#java.awt.Rectangle(java.awt.Point,java.awt.Dimension)"/>
@@ -108,6 +136,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Rectangle(Java.Awt.Point arg0, Java.Awt.Dimension arg1)
+        /// </summary>
+        public static Rectangle New(Java.Awt.Point arg0, Java.Awt.Dimension arg1)
+        {
+            return JVMBridgeBase.New<Rectangle>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#java.awt.Rectangle(java.awt.Point)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
@@ -116,12 +151,26 @@ namespace Java.Awt
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Rectangle(Java.Awt.Point arg0)
+        /// </summary>
+        public static Rectangle New(Java.Awt.Point arg0)
+        {
+            return JVMBridgeBase.New<Rectangle>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#java.awt.Rectangle(java.awt.Rectangle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
         public Rectangle(Java.Awt.Rectangle arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Rectangle(Java.Awt.Rectangle arg0)
+        /// </summary>
+        public static Rectangle New(Java.Awt.Rectangle arg0)
+        {
+            return JVMBridgeBase.New<Rectangle>(arg0);
         }
 
         #endregion

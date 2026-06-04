@@ -173,6 +173,13 @@ namespace Javax.Naming.Spi
             {
                 InvokeInitializer(arg0, arg1);
             }
+            /// <summary>
+            /// HPA initializer for Result(object arg0, Javax.Naming.Directory.Attributes arg1)
+            /// </summary>
+            public static Result New(object arg0, Javax.Naming.Directory.Attributes arg1)
+            {
+                return JVMBridgeBase.New<Result>(arg0, arg1);
+            }
 
             #endregion
 

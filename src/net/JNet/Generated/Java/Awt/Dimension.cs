@@ -71,6 +71,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Dimension()
+        /// </summary>
+        public static Dimension New()
+        {
+            return JVMBridgeBase.New<Dimension>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dimension.html#java.awt.Dimension(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,12 +87,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Dimension(int arg0, int arg1)
+        /// </summary>
+        public static Dimension New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<Dimension>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Dimension.html#java.awt.Dimension(java.awt.Dimension)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
         public Dimension(Java.Awt.Dimension arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Dimension(Java.Awt.Dimension arg0)
+        /// </summary>
+        public static Dimension New(Java.Awt.Dimension arg0)
+        {
+            return JVMBridgeBase.New<Dimension>(arg0);
         }
 
         #endregion

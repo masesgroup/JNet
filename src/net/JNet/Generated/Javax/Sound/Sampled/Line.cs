@@ -262,6 +262,13 @@ namespace Javax.Sound.Sampled
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for Info(Java.Lang.Class arg0)
+            /// </summary>
+            public static Info New(Java.Lang.Class arg0)
+            {
+                return JVMBridgeBase.New<Info>(arg0);
+            }
 
             #endregion
 

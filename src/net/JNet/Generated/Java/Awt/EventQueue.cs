@@ -70,6 +70,13 @@ namespace Java.Awt
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for EventQueue()
+        /// </summary>
+        public static EventQueue New()
+        {
+            return JVMBridgeBase.New<EventQueue>();
+        }
 
         #endregion
 

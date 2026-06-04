@@ -70,6 +70,13 @@ namespace Java.Awt.ImageNs
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BufferStrategy()
+        /// </summary>
+        public static BufferStrategy New()
+        {
+            return JVMBridgeBase.New<BufferStrategy>();
+        }
 
         #endregion
 

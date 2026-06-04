@@ -109,6 +109,13 @@ namespace Javax.Management.Openmbean
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ArrayType(int arg0, Javax.Management.Openmbean.OpenType arg1)
+        /// </summary>
+        public static ArrayType New(int arg0, Javax.Management.Openmbean.OpenType arg1)
+        {
+            return JVMBridgeBase.New<ArrayType>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/ArrayType.html#javax.management.openmbean.ArrayType(javax.management.openmbean.SimpleType,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Openmbean.SimpleType"/></param>
@@ -117,6 +124,13 @@ namespace Javax.Management.Openmbean
         public ArrayType(Javax.Management.Openmbean.SimpleType arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for ArrayType(Javax.Management.Openmbean.SimpleType arg0, bool arg1)
+        /// </summary>
+        public static ArrayType New(Javax.Management.Openmbean.SimpleType arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<ArrayType>(arg0, arg1);
         }
 
         #endregion
@@ -201,6 +215,13 @@ namespace Javax.Management.Openmbean
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ArrayType(int arg0, Javax.Management.Openmbean.OpenType%3Cobject%3E arg1)
+        /// </summary>
+        public static ArrayType<T> New(int arg0, Javax.Management.Openmbean.OpenType<object> arg1)
+        {
+            return JVMBridgeBase.New<ArrayType<T>>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/ArrayType.html#javax.management.openmbean.ArrayType(javax.management.openmbean.SimpleType,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Openmbean.SimpleType"/></param>
@@ -209,6 +230,13 @@ namespace Javax.Management.Openmbean
         public ArrayType(Javax.Management.Openmbean.SimpleType<object> arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for ArrayType(Javax.Management.Openmbean.SimpleType%3Cobject%3E arg0, bool arg1)
+        /// </summary>
+        public static ArrayType<T> New(Javax.Management.Openmbean.SimpleType<object> arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<ArrayType<T>>(arg0, arg1);
         }
 
         #endregion

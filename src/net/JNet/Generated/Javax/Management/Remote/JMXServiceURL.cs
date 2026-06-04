@@ -76,6 +76,13 @@ namespace Javax.Management.Remote
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for JMXServiceURL(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
+        /// </summary>
+        public static JMXServiceURL New(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
+        {
+            return JVMBridgeBase.New<JMXServiceURL>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/JMXServiceURL.html#javax.management.remote.JMXServiceURL(java.lang.String,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -87,6 +94,13 @@ namespace Javax.Management.Remote
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for JMXServiceURL(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
+        /// </summary>
+        public static JMXServiceURL New(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
+        {
+            return JVMBridgeBase.New<JMXServiceURL>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/JMXServiceURL.html#javax.management.remote.JMXServiceURL(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -94,6 +108,13 @@ namespace Javax.Management.Remote
         public JMXServiceURL(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JMXServiceURL(Java.Lang.String arg0)
+        /// </summary>
+        public static JMXServiceURL New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JMXServiceURL>(arg0);
         }
 
         #endregion

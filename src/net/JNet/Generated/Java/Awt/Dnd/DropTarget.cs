@@ -73,6 +73,13 @@ namespace Java.Awt.Dnd
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DropTarget()
+        /// </summary>
+        public static DropTarget New()
+        {
+            return JVMBridgeBase.New<DropTarget>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DropTarget.html#java.awt.dnd.DropTarget(java.awt.Component,int,java.awt.dnd.DropTargetListener,boolean,java.awt.datatransfer.FlavorMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -84,6 +91,13 @@ namespace Java.Awt.Dnd
         public DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3, Java.Awt.Datatransfer.FlavorMap arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3, Java.Awt.Datatransfer.FlavorMap arg4)
+        /// </summary>
+        public static DropTarget New(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3, Java.Awt.Datatransfer.FlavorMap arg4)
+        {
+            return JVMBridgeBase.New<DropTarget>(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DropTarget.html#java.awt.dnd.DropTarget(java.awt.Component,int,java.awt.dnd.DropTargetListener,boolean)"/>
@@ -98,6 +112,13 @@ namespace Java.Awt.Dnd
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3)
+        /// </summary>
+        public static DropTarget New(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<DropTarget>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DropTarget.html#java.awt.dnd.DropTarget(java.awt.Component,int,java.awt.dnd.DropTargetListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -109,6 +130,13 @@ namespace Java.Awt.Dnd
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2)
+        /// </summary>
+        public static DropTarget New(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2)
+        {
+            return JVMBridgeBase.New<DropTarget>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DropTarget.html#java.awt.dnd.DropTarget(java.awt.Component,java.awt.dnd.DropTargetListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -117,6 +145,13 @@ namespace Java.Awt.Dnd
         public DropTarget(Java.Awt.Component arg0, Java.Awt.Dnd.DropTargetListener arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DropTarget(Java.Awt.Component arg0, Java.Awt.Dnd.DropTargetListener arg1)
+        /// </summary>
+        public static DropTarget New(Java.Awt.Component arg0, Java.Awt.Dnd.DropTargetListener arg1)
+        {
+            return JVMBridgeBase.New<DropTarget>(arg0, arg1);
         }
 
         #endregion

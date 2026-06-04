@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiProgressBarUI()
+        /// </summary>
+        public static MultiProgressBarUI New()
+        {
+            return JVMBridgeBase.New<MultiProgressBarUI>();
+        }
 
         #endregion
 

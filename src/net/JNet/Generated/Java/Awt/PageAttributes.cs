@@ -241,12 +241,26 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for PageAttributes()
+        /// </summary>
+        public static PageAttributes New()
+        {
+            return JVMBridgeBase.New<PageAttributes>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/PageAttributes.html#java.awt.PageAttributes(java.awt.PageAttributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.PageAttributes"/></param>
         public PageAttributes(Java.Awt.PageAttributes arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PageAttributes(Java.Awt.PageAttributes arg0)
+        /// </summary>
+        public static PageAttributes New(Java.Awt.PageAttributes arg0)
+        {
+            return JVMBridgeBase.New<PageAttributes>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/PageAttributes.html#java.awt.PageAttributes(java.awt.PageAttributes.ColorType,java.awt.PageAttributes.MediaType,java.awt.PageAttributes.OrientationRequestedType,java.awt.PageAttributes.OriginType,java.awt.PageAttributes.PrintQualityType,int[])"/>
@@ -260,6 +274,13 @@ namespace Java.Awt
         public PageAttributes(Java.Awt.PageAttributes.ColorType arg0, Java.Awt.PageAttributes.MediaType arg1, Java.Awt.PageAttributes.OrientationRequestedType arg2, Java.Awt.PageAttributes.OriginType arg3, Java.Awt.PageAttributes.PrintQualityType arg4, int[] arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for PageAttributes(Java.Awt.PageAttributes.ColorType arg0, Java.Awt.PageAttributes.MediaType arg1, Java.Awt.PageAttributes.OrientationRequestedType arg2, Java.Awt.PageAttributes.OriginType arg3, Java.Awt.PageAttributes.PrintQualityType arg4, int[] arg5)
+        /// </summary>
+        public static PageAttributes New(Java.Awt.PageAttributes.ColorType arg0, Java.Awt.PageAttributes.MediaType arg1, Java.Awt.PageAttributes.OrientationRequestedType arg2, Java.Awt.PageAttributes.OriginType arg3, Java.Awt.PageAttributes.PrintQualityType arg4, int[] arg5)
+        {
+            return JVMBridgeBase.New<PageAttributes>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

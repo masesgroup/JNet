@@ -73,6 +73,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for TextField()
+        /// </summary>
+        public static TextField New()
+        {
+            return JVMBridgeBase.New<TextField>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextField.html#java.awt.TextField(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,6 +87,13 @@ namespace Java.Awt
         public TextField(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TextField(int arg0)
+        /// </summary>
+        public static TextField New(int arg0)
+        {
+            return JVMBridgeBase.New<TextField>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextField.html#java.awt.TextField(java.lang.String,int)"/>
@@ -92,6 +106,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for TextField(Java.Lang.String arg0, int arg1)
+        /// </summary>
+        public static TextField New(Java.Lang.String arg0, int arg1)
+        {
+            return JVMBridgeBase.New<TextField>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextField.html#java.awt.TextField(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -99,6 +120,13 @@ namespace Java.Awt
         public TextField(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TextField(Java.Lang.String arg0)
+        /// </summary>
+        public static TextField New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<TextField>(arg0);
         }
 
         #endregion

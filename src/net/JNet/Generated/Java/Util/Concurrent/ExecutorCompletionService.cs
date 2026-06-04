@@ -108,12 +108,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ExecutorCompletionService(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue arg1)
+        /// </summary>
+        public static ExecutorCompletionService New(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue arg1)
+        {
+            return JVMBridgeBase.New<ExecutorCompletionService>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorCompletionService.html#java.util.concurrent.ExecutorCompletionService(java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         public ExecutorCompletionService(Java.Util.Concurrent.Executor arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ExecutorCompletionService(Java.Util.Concurrent.Executor arg0)
+        /// </summary>
+        public static ExecutorCompletionService New(Java.Util.Concurrent.Executor arg0)
+        {
+            return JVMBridgeBase.New<ExecutorCompletionService>(arg0);
         }
 
         #endregion
@@ -203,12 +217,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ExecutorCompletionService(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue%3CJava.Util.Concurrent.Future%3CV%3E%3E arg1)
+        /// </summary>
+        public static ExecutorCompletionService<V> New(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue<Java.Util.Concurrent.Future<V>> arg1)
+        {
+            return JVMBridgeBase.New<ExecutorCompletionService<V>>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorCompletionService.html#java.util.concurrent.ExecutorCompletionService(java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         public ExecutorCompletionService(Java.Util.Concurrent.Executor arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ExecutorCompletionService(Java.Util.Concurrent.Executor arg0)
+        /// </summary>
+        public static ExecutorCompletionService<V> New(Java.Util.Concurrent.Executor arg0)
+        {
+            return JVMBridgeBase.New<ExecutorCompletionService<V>>(arg0);
         }
 
         #endregion

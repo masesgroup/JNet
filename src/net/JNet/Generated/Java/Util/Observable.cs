@@ -70,6 +70,13 @@ namespace Java.Util
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Observable()
+        /// </summary>
+        public static Observable New()
+        {
+            return JVMBridgeBase.New<Observable>();
+        }
 
         #endregion
 

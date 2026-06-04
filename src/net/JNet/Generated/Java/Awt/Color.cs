@@ -75,6 +75,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for Color(float arg0, float arg1, float arg2, float arg3)
+        /// </summary>
+        public static Color New(float arg0, float arg1, float arg2, float arg3)
+        {
+            return JVMBridgeBase.New<Color>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html#java.awt.Color(float,float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -85,6 +92,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Color(float arg0, float arg1, float arg2)
+        /// </summary>
+        public static Color New(float arg0, float arg1, float arg2)
+        {
+            return JVMBridgeBase.New<Color>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html#java.awt.Color(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -92,6 +106,13 @@ namespace Java.Awt
         public Color(int arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for Color(int arg0, bool arg1)
+        /// </summary>
+        public static Color New(int arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<Color>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html#java.awt.Color(int,int,int,int)"/>
@@ -105,6 +126,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for Color(int arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static Color New(int arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<Color>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html#java.awt.Color(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -115,12 +143,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Color(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static Color New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<Color>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html#java.awt.Color(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public Color(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Color(int arg0)
+        /// </summary>
+        public static Color New(int arg0)
+        {
+            return JVMBridgeBase.New<Color>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html#java.awt.Color(java.awt.color.ColorSpace,float[],float)"/>
@@ -131,6 +173,13 @@ namespace Java.Awt
         public Color(Java.Awt.ColorNs.ColorSpace arg0, float[] arg1, float arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for Color(Java.Awt.ColorNs.ColorSpace arg0, float[] arg1, float arg2)
+        /// </summary>
+        public static Color New(Java.Awt.ColorNs.ColorSpace arg0, float[] arg1, float arg2)
+        {
+            return JVMBridgeBase.New<Color>(arg0, arg1, arg2);
         }
 
         #endregion

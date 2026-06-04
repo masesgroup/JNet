@@ -796,6 +796,13 @@ namespace Java.Security
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for CallbackHandlerProtection(Javax.Security.Auth.Callback.CallbackHandler arg0)
+            /// </summary>
+            public static CallbackHandlerProtection New(Javax.Security.Auth.Callback.CallbackHandler arg0)
+            {
+                return JVMBridgeBase.New<CallbackHandlerProtection>(arg0);
+            }
 
             #endregion
 
@@ -966,12 +973,26 @@ namespace Java.Security
                 InvokeInitializer(arg0, arg1, arg2);
             }
             /// <summary>
+            /// HPA initializer for PasswordProtection(char[] arg0, Java.Lang.String arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
+            /// </summary>
+            public static PasswordProtection New(char[] arg0, Java.Lang.String arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
+            {
+                return JVMBridgeBase.New<PasswordProtection>(arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.PasswordProtection.html#java.security.KeyStore$PasswordProtection(char[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="char"/></param>
             public PasswordProtection(char[] arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for PasswordProtection(char[] arg0)
+            /// </summary>
+            public static PasswordProtection New(char[] arg0)
+            {
+                return JVMBridgeBase.New<PasswordProtection>(arg0);
             }
 
             #endregion
@@ -1056,6 +1077,13 @@ namespace Java.Security
                 InvokeInitializer(arg0, arg1, arg2);
             }
             /// <summary>
+            /// HPA initializer for PrivateKeyEntry(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1, Java.Util.Set%3CJava.Security.KeyStore.Entry.Attribute%3E arg2)
+            /// </summary>
+            public static PrivateKeyEntry New(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1, Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> arg2)
+            {
+                return JVMBridgeBase.New<PrivateKeyEntry>(arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.PrivateKeyEntry.html#java.security.KeyStore$PrivateKeyEntry(java.security.PrivateKey,java.security.cert.Certificate[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Security.PrivateKey"/></param>
@@ -1063,6 +1091,13 @@ namespace Java.Security
             public PrivateKeyEntry(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for PrivateKeyEntry(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1)
+            /// </summary>
+            public static PrivateKeyEntry New(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1)
+            {
+                return JVMBridgeBase.New<PrivateKeyEntry>(arg0, arg1);
             }
 
             #endregion
@@ -1202,12 +1237,26 @@ namespace Java.Security
                 InvokeInitializer(arg0, arg1);
             }
             /// <summary>
+            /// HPA initializer for TrustedCertificateEntry(Java.Security.Cert.Certificate arg0, Java.Util.Set%3CJava.Security.KeyStore.Entry.Attribute%3E arg1)
+            /// </summary>
+            public static TrustedCertificateEntry New(Java.Security.Cert.Certificate arg0, Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> arg1)
+            {
+                return JVMBridgeBase.New<TrustedCertificateEntry>(arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyStore.TrustedCertificateEntry.html#java.security.KeyStore$TrustedCertificateEntry(java.security.cert.Certificate)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
             public TrustedCertificateEntry(Java.Security.Cert.Certificate arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for TrustedCertificateEntry(Java.Security.Cert.Certificate arg0)
+            /// </summary>
+            public static TrustedCertificateEntry New(Java.Security.Cert.Certificate arg0)
+            {
+                return JVMBridgeBase.New<TrustedCertificateEntry>(arg0);
             }
 
             #endregion

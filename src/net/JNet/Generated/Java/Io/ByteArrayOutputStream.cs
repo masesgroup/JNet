@@ -71,12 +71,26 @@ namespace Java.Io
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ByteArrayOutputStream()
+        /// </summary>
+        public static ByteArrayOutputStream New()
+        {
+            return JVMBridgeBase.New<ByteArrayOutputStream>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/ByteArrayOutputStream.html#java.io.ByteArrayOutputStream(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ByteArrayOutputStream(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ByteArrayOutputStream(int arg0)
+        /// </summary>
+        public static ByteArrayOutputStream New(int arg0)
+        {
+            return JVMBridgeBase.New<ByteArrayOutputStream>(arg0);
         }
 
         #endregion

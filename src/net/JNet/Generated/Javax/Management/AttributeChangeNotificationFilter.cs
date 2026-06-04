@@ -70,6 +70,13 @@ namespace Javax.Management
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AttributeChangeNotificationFilter()
+        /// </summary>
+        public static AttributeChangeNotificationFilter New()
+        {
+            return JVMBridgeBase.New<AttributeChangeNotificationFilter>();
+        }
 
         #endregion
 

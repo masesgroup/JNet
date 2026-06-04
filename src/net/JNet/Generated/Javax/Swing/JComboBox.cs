@@ -140,6 +140,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JComboBox()
+        /// </summary>
+        public static JComboBox New()
+        {
+            return JVMBridgeBase.New<JComboBox>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComboBox.html#javax.swing.JComboBox(java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
@@ -148,12 +155,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JComboBox(Java.Util.Vector arg0)
+        /// </summary>
+        public static JComboBox New(Java.Util.Vector arg0)
+        {
+            return JVMBridgeBase.New<JComboBox>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComboBox.html#javax.swing.JComboBox(javax.swing.ComboBoxModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.ComboBoxModel"/></param>
         public JComboBox(Javax.Swing.ComboBoxModel arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JComboBox(Javax.Swing.ComboBoxModel arg0)
+        /// </summary>
+        public static JComboBox New(Javax.Swing.ComboBoxModel arg0)
+        {
+            return JVMBridgeBase.New<JComboBox>(arg0);
         }
 
         #endregion
@@ -609,12 +630,26 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JComboBox()
+        /// </summary>
+        public static JComboBox<E> New()
+        {
+            return JVMBridgeBase.New<JComboBox<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComboBox.html#javax.swing.JComboBox(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public JComboBox(E[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JComboBox(E[] arg0)
+        /// </summary>
+        public static JComboBox<E> New(E[] arg0)
+        {
+            return JVMBridgeBase.New<JComboBox<E>>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComboBox.html#javax.swing.JComboBox(java.util.Vector)"/>
@@ -625,12 +660,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JComboBox(Java.Util.Vector%3CE%3E arg0)
+        /// </summary>
+        public static JComboBox<E> New(Java.Util.Vector<E> arg0)
+        {
+            return JVMBridgeBase.New<JComboBox<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComboBox.html#javax.swing.JComboBox(javax.swing.ComboBoxModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.ComboBoxModel"/></param>
         public JComboBox(Javax.Swing.ComboBoxModel<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JComboBox(Javax.Swing.ComboBoxModel%3CE%3E arg0)
+        /// </summary>
+        public static JComboBox<E> New(Javax.Swing.ComboBoxModel<E> arg0)
+        {
+            return JVMBridgeBase.New<JComboBox<E>>(arg0);
         }
 
         #endregion

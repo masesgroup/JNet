@@ -70,6 +70,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for EditorKit()
+        /// </summary>
+        public static EditorKit New()
+        {
+            return JVMBridgeBase.New<EditorKit>();
+        }
 
         #endregion
 

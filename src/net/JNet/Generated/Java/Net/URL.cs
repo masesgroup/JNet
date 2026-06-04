@@ -77,6 +77,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for URL(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3, Java.Net.URLStreamHandler arg4)
+        /// </summary>
+        public static URL New(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3, Java.Net.URLStreamHandler arg4)
+        {
+            return JVMBridgeBase.New<URL>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URL.html#java.net.URL(java.lang.String,java.lang.String,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -87,6 +94,13 @@ namespace Java.Net
         public URL(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for URL(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
+        /// </summary>
+        public static URL New(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
+        {
+            return JVMBridgeBase.New<URL>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URL.html#java.net.URL(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -100,6 +114,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for URL(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static URL New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<URL>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URL.html#java.net.URL(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -107,6 +128,13 @@ namespace Java.Net
         public URL(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for URL(Java.Lang.String arg0)
+        /// </summary>
+        public static URL New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<URL>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URL.html#java.net.URL(java.net.URL,java.lang.String,java.net.URLStreamHandler)"/>
@@ -120,6 +148,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for URL(Java.Net.URL arg0, Java.Lang.String arg1, Java.Net.URLStreamHandler arg2)
+        /// </summary>
+        public static URL New(Java.Net.URL arg0, Java.Lang.String arg1, Java.Net.URLStreamHandler arg2)
+        {
+            return JVMBridgeBase.New<URL>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URL.html#java.net.URL(java.net.URL,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
@@ -128,6 +163,13 @@ namespace Java.Net
         public URL(Java.Net.URL arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for URL(Java.Net.URL arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static URL New(Java.Net.URL arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<URL>(arg0, arg1);
         }
 
         #endregion

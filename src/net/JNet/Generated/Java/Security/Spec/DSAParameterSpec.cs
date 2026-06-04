@@ -73,6 +73,13 @@ namespace Java.Security.Spec
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for DSAParameterSpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
+        /// </summary>
+        public static DSAParameterSpec New(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
+        {
+            return JVMBridgeBase.New<DSAParameterSpec>(arg0, arg1, arg2);
+        }
 
         #endregion
 

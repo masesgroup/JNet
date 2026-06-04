@@ -71,6 +71,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for TabSet(Javax.Swing.Text.TabStop[] arg0)
+        /// </summary>
+        public static TabSet New(Javax.Swing.Text.TabStop[] arg0)
+        {
+            return JVMBridgeBase.New<TabSet>(arg0);
+        }
 
         #endregion
 

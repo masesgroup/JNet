@@ -72,6 +72,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for JApplet()
+        /// </summary>
+        public static JApplet New()
+        {
+            return JVMBridgeBase.New<JApplet>();
+        }
 
         #endregion
 

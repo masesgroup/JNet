@@ -73,12 +73,26 @@ namespace Javax.Xml.Transform.Stax
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for StAXSource(Javax.Xml.Stream.XMLEventReader arg0)
+        /// </summary>
+        public static StAXSource New(Javax.Xml.Stream.XMLEventReader arg0)
+        {
+            return JVMBridgeBase.New<StAXSource>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stax/StAXSource.html#javax.xml.transform.stax.StAXSource(javax.xml.stream.XMLStreamReader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamReader"/></param>
         public StAXSource(Javax.Xml.Stream.XMLStreamReader arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StAXSource(Javax.Xml.Stream.XMLStreamReader arg0)
+        /// </summary>
+        public static StAXSource New(Javax.Xml.Stream.XMLStreamReader arg0)
+        {
+            return JVMBridgeBase.New<StAXSource>(arg0);
         }
 
         #endregion

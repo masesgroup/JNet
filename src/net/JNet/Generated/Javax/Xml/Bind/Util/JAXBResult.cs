@@ -73,6 +73,13 @@ namespace Javax.Xml.Bind.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JAXBResult(Javax.Xml.Bind.JAXBContext arg0)
+        /// </summary>
+        public static JAXBResult New(Javax.Xml.Bind.JAXBContext arg0)
+        {
+            return JVMBridgeBase.New<JAXBResult>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/util/JAXBResult.html#javax.xml.bind.util.JAXBResult(javax.xml.bind.Unmarshaller)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Bind.Unmarshaller"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Xml.Bind.Util
         public JAXBResult(Javax.Xml.Bind.Unmarshaller arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JAXBResult(Javax.Xml.Bind.Unmarshaller arg0)
+        /// </summary>
+        public static JAXBResult New(Javax.Xml.Bind.Unmarshaller arg0)
+        {
+            return JVMBridgeBase.New<JAXBResult>(arg0);
         }
 
         #endregion

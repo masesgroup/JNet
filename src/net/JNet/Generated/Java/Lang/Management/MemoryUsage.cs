@@ -74,6 +74,13 @@ namespace Java.Lang.Management
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// HPA initializer for MemoryUsage(long arg0, long arg1, long arg2, long arg3)
+        /// </summary>
+        public static MemoryUsage New(long arg0, long arg1, long arg2, long arg3)
+        {
+            return JVMBridgeBase.New<MemoryUsage>(arg0, arg1, arg2, arg3);
+        }
 
         #endregion
 

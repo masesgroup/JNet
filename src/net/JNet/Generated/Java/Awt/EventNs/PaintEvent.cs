@@ -73,6 +73,13 @@ namespace Java.Awt.EventNs
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for PaintEvent(Java.Awt.Component arg0, int arg1, Java.Awt.Rectangle arg2)
+        /// </summary>
+        public static PaintEvent New(Java.Awt.Component arg0, int arg1, Java.Awt.Rectangle arg2)
+        {
+            return JVMBridgeBase.New<PaintEvent>(arg0, arg1, arg2);
+        }
 
         #endregion
 

@@ -104,6 +104,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SpringLayout()
+        /// </summary>
+        public static SpringLayout New()
+        {
+            return JVMBridgeBase.New<SpringLayout>();
+        }
 
         #endregion
 
@@ -302,12 +309,26 @@ namespace Javax.Swing
                 InvokeInitializer();
             }
             /// <summary>
+            /// HPA initializer for Constraints()
+            /// </summary>
+            public static Constraints New()
+            {
+                return JVMBridgeBase.New<Constraints>();
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SpringLayout.Constraints.html#javax.swing.SpringLayout$Constraints(java.awt.Component)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
             public Constraints(Java.Awt.Component arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for Constraints(Java.Awt.Component arg0)
+            /// </summary>
+            public static Constraints New(Java.Awt.Component arg0)
+            {
+                return JVMBridgeBase.New<Constraints>(arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SpringLayout.Constraints.html#javax.swing.SpringLayout$Constraints(javax.swing.Spring,javax.swing.Spring,javax.swing.Spring,javax.swing.Spring)"/>
@@ -321,6 +342,13 @@ namespace Javax.Swing
                 InvokeInitializer(arg0, arg1, arg2, arg3);
             }
             /// <summary>
+            /// HPA initializer for Constraints(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1, Javax.Swing.Spring arg2, Javax.Swing.Spring arg3)
+            /// </summary>
+            public static Constraints New(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1, Javax.Swing.Spring arg2, Javax.Swing.Spring arg3)
+            {
+                return JVMBridgeBase.New<Constraints>(arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SpringLayout.Constraints.html#javax.swing.SpringLayout$Constraints(javax.swing.Spring,javax.swing.Spring)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Spring"/></param>
@@ -328,6 +356,13 @@ namespace Javax.Swing
             public Constraints(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for Constraints(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1)
+            /// </summary>
+            public static Constraints New(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1)
+            {
+                return JVMBridgeBase.New<Constraints>(arg0, arg1);
             }
 
             #endregion

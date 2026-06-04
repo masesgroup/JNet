@@ -75,6 +75,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for FocusEvent(Java.Awt.Component arg0, int arg1, bool arg2, Java.Awt.Component arg3)
+        /// </summary>
+        public static FocusEvent New(Java.Awt.Component arg0, int arg1, bool arg2, Java.Awt.Component arg3)
+        {
+            return JVMBridgeBase.New<FocusEvent>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/FocusEvent.html#java.awt.event.FocusEvent(java.awt.Component,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -85,6 +92,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for FocusEvent(Java.Awt.Component arg0, int arg1, bool arg2)
+        /// </summary>
+        public static FocusEvent New(Java.Awt.Component arg0, int arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<FocusEvent>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/FocusEvent.html#java.awt.event.FocusEvent(java.awt.Component,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -92,6 +106,13 @@ namespace Java.Awt.EventNs
         public FocusEvent(Java.Awt.Component arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for FocusEvent(Java.Awt.Component arg0, int arg1)
+        /// </summary>
+        public static FocusEvent New(Java.Awt.Component arg0, int arg1)
+        {
+            return JVMBridgeBase.New<FocusEvent>(arg0, arg1);
         }
 
         #endregion

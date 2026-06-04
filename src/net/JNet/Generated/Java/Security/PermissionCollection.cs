@@ -70,6 +70,13 @@ namespace Java.Security
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for PermissionCollection()
+        /// </summary>
+        public static PermissionCollection New()
+        {
+            return JVMBridgeBase.New<PermissionCollection>();
+        }
 
         #endregion
 

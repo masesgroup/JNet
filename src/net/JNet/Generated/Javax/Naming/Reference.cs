@@ -74,6 +74,13 @@ namespace Javax.Naming
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Reference(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static Reference New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<Reference>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/Reference.html#javax.naming.Reference(java.lang.String,javax.naming.RefAddr,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -85,6 +92,13 @@ namespace Javax.Naming
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for Reference(Java.Lang.String arg0, Javax.Naming.RefAddr arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        /// </summary>
+        public static Reference New(Java.Lang.String arg0, Javax.Naming.RefAddr arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        {
+            return JVMBridgeBase.New<Reference>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/Reference.html#javax.naming.Reference(java.lang.String,javax.naming.RefAddr)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -94,12 +108,26 @@ namespace Javax.Naming
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Reference(Java.Lang.String arg0, Javax.Naming.RefAddr arg1)
+        /// </summary>
+        public static Reference New(Java.Lang.String arg0, Javax.Naming.RefAddr arg1)
+        {
+            return JVMBridgeBase.New<Reference>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/Reference.html#javax.naming.Reference(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public Reference(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Reference(Java.Lang.String arg0)
+        /// </summary>
+        public static Reference New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Reference>(arg0);
         }
 
         #endregion

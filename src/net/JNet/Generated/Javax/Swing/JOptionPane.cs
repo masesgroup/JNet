@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JOptionPane()
+        /// </summary>
+        public static JOptionPane New()
+        {
+            return JVMBridgeBase.New<JOptionPane>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JOptionPane.html#javax.swing.JOptionPane(java.lang.Object,int,int,javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Swing
         public JOptionPane(object arg0, int arg1, int arg2, Javax.Swing.Icon arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for JOptionPane(object arg0, int arg1, int arg2, Javax.Swing.Icon arg3)
+        /// </summary>
+        public static JOptionPane New(object arg0, int arg1, int arg2, Javax.Swing.Icon arg3)
+        {
+            return JVMBridgeBase.New<JOptionPane>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JOptionPane.html#javax.swing.JOptionPane(java.lang.Object,int,int)"/>
@@ -92,6 +106,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for JOptionPane(object arg0, int arg1, int arg2)
+        /// </summary>
+        public static JOptionPane New(object arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<JOptionPane>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JOptionPane.html#javax.swing.JOptionPane(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -101,12 +122,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JOptionPane(object arg0, int arg1)
+        /// </summary>
+        public static JOptionPane New(object arg0, int arg1)
+        {
+            return JVMBridgeBase.New<JOptionPane>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JOptionPane.html#javax.swing.JOptionPane(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public JOptionPane(object arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JOptionPane(object arg0)
+        /// </summary>
+        public static JOptionPane New(object arg0)
+        {
+            return JVMBridgeBase.New<JOptionPane>(arg0);
         }
 
         #endregion

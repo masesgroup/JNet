@@ -73,6 +73,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ShortLookupTable(int arg0, short[] arg1)
+        /// </summary>
+        public static ShortLookupTable New(int arg0, short[] arg1)
+        {
+            return JVMBridgeBase.New<ShortLookupTable>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/ShortLookupTable.html#java.awt.image.ShortLookupTable(int,short[][])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,6 +87,13 @@ namespace Java.Awt.ImageNs
         public ShortLookupTable(int arg0, short[][] arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for ShortLookupTable(int arg0, short[][] arg1)
+        /// </summary>
+        public static ShortLookupTable New(int arg0, short[][] arg1)
+        {
+            return JVMBridgeBase.New<ShortLookupTable>(arg0, arg1);
         }
 
         #endregion

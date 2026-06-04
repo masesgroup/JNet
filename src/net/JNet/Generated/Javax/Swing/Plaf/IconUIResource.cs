@@ -71,6 +71,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for IconUIResource(Javax.Swing.Icon arg0)
+        /// </summary>
+        public static IconUIResource New(Javax.Swing.Icon arg0)
+        {
+            return JVMBridgeBase.New<IconUIResource>(arg0);
+        }
 
         #endregion
 

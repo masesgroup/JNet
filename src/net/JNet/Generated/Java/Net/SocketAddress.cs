@@ -70,6 +70,13 @@ namespace Java.Net
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SocketAddress()
+        /// </summary>
+        public static SocketAddress New()
+        {
+            return JVMBridgeBase.New<SocketAddress>();
+        }
 
         #endregion
 

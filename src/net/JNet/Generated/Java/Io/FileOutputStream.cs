@@ -74,6 +74,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for FileOutputStream(Java.Io.File arg0, bool arg1)
+        /// </summary>
+        public static FileOutputStream New(Java.Io.File arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<FileOutputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/FileOutputStream.html#java.io.FileOutputStream(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -83,12 +90,26 @@ namespace Java.Io
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for FileOutputStream(Java.Io.File arg0)
+        /// </summary>
+        public static FileOutputStream New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<FileOutputStream>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/FileOutputStream.html#java.io.FileOutputStream(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public FileOutputStream(Java.Io.FileDescriptor arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FileOutputStream(Java.Io.FileDescriptor arg0)
+        /// </summary>
+        public static FileOutputStream New(Java.Io.FileDescriptor arg0)
+        {
+            return JVMBridgeBase.New<FileOutputStream>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/FileOutputStream.html#java.io.FileOutputStream(java.lang.String,boolean)"/>
@@ -101,6 +122,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for FileOutputStream(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static FileOutputStream New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<FileOutputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/FileOutputStream.html#java.io.FileOutputStream(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -108,6 +136,13 @@ namespace Java.Io
         public FileOutputStream(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FileOutputStream(Java.Lang.String arg0)
+        /// </summary>
+        public static FileOutputStream New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<FileOutputStream>(arg0);
         }
 
         #endregion

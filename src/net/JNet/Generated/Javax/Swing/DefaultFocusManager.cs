@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultFocusManager()
+        /// </summary>
+        public static DefaultFocusManager New()
+        {
+            return JVMBridgeBase.New<DefaultFocusManager>();
+        }
 
         #endregion
 

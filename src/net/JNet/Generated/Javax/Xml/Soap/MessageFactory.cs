@@ -70,6 +70,13 @@ namespace Javax.Xml.Soap
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MessageFactory()
+        /// </summary>
+        public static MessageFactory New()
+        {
+            return JVMBridgeBase.New<MessageFactory>();
+        }
 
         #endregion
 

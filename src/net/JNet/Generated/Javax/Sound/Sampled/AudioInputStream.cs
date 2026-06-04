@@ -74,12 +74,26 @@ namespace Javax.Sound.Sampled
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for AudioInputStream(Java.Io.InputStream arg0, Javax.Sound.Sampled.AudioFormat arg1, long arg2)
+        /// </summary>
+        public static AudioInputStream New(Java.Io.InputStream arg0, Javax.Sound.Sampled.AudioFormat arg1, long arg2)
+        {
+            return JVMBridgeBase.New<AudioInputStream>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/AudioInputStream.html#javax.sound.sampled.AudioInputStream(javax.sound.sampled.TargetDataLine)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.TargetDataLine"/></param>
         public AudioInputStream(Javax.Sound.Sampled.TargetDataLine arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AudioInputStream(Javax.Sound.Sampled.TargetDataLine arg0)
+        /// </summary>
+        public static AudioInputStream New(Javax.Sound.Sampled.TargetDataLine arg0)
+        {
+            return JVMBridgeBase.New<AudioInputStream>(arg0);
         }
 
         #endregion
