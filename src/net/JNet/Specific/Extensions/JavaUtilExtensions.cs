@@ -285,7 +285,7 @@ namespace MASES.JNet.Specific.Extensions
 #endif
                 using IDisposable keyDisposable = key as IDisposable;
                 using IDisposable valueDisposable = value as IDisposable;
-                using var _ = tInstance.Put(key, value) as IDisposable;
+                tInstance.Put(key, value).DisposeIfDisposable();
             }
             return tInstance;
         }
@@ -314,7 +314,7 @@ namespace MASES.JNet.Specific.Extensions
                 using (var keyDisposable = key as IDisposable)
                 using (var valueDisposable = value as IDisposable)
                 {
-                    using var _ = tInstance.Put(key, value) as IDisposable;
+                    tInstance.Put(key, value).DisposeIfDisposable();
                 }
             }
             return tInstance;
@@ -360,7 +360,7 @@ namespace MASES.JNet.Specific.Extensions
 #endif
                 using var keyToDispose = key as IDisposable;
                 using var valueToDispose = value as IDisposable;
-                using var _ = tInstance.Put(key, value) as IDisposable;
+                tInstance.Put(key, value).DisposeIfDisposable();
             }
             return tInstance;
         }
@@ -388,7 +388,7 @@ namespace MASES.JNet.Specific.Extensions
                 var value = valueConverter(item.Value);
                 using var keyToDispose = key as IDisposable;
                 using var valueToDispose = value as IDisposable;
-                using var _ = tInstance.Put(key, value) as IDisposable;
+                tInstance.Put(key, value).DisposeIfDisposable();
             }
             return tInstance;
         }

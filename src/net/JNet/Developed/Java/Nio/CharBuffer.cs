@@ -195,7 +195,7 @@ namespace Java.Nio
             {
                 // Rewind(); removed to avoid the build of a new CharBuffer object will be discarded and replace with a more simple invocation
                 // still remains the allocation of a returning object that is the copy of the current managed CharBuffer, the copy will be immediately disposed to avoid GEN1 in GC
-                using var _ = IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;") as IJavaObject;
+                IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;").DisposeIfDisposable();
             }
             return _directBuffer ??= JVM.GetDirectBuffer<char>(BridgeInstance);
         }
