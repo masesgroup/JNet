@@ -39,6 +39,7 @@ namespace MASES.JNet.Reflector.Templates
             SingleClassFileTemplate,
 
             SingleConstructorTemplate,
+            SingleConstructorInitializerTemplate,
             SingleFieldTemplate,
             SingleFieldFinalTemplate,
             SingleMethodTemplate,
@@ -89,6 +90,7 @@ namespace MASES.JNet.Reflector.Templates
         public const string SingleInterfaceTemplate = "SingleInterface.template";
         public const string SingleClassFileTemplate = "SingleClassFile.template";
         public const string SingleConstructorTemplate = "SingleConstructor.template";
+        public const string SingleConstructorInitializerTemplate = "SingleConstructorInitializer.template";
         public const string SingleFieldTemplate = "SingleField.template";
         public const string SingleFieldFinalTemplate = "SingleFieldFinal.template";
         public const string SingleMethodTemplate = "SingleMethod.template";
