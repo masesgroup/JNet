@@ -786,24 +786,20 @@ namespace MASES.JNet.Reflector
                                                 .Replace(AllPackageClasses.ClassStub.ISINTERFACE, isClassInterface ? "true" : "false")
                                                 .Replace(AllPackageClasses.ClassStub.ISSTATIC, isClassStatic ? "true" : "false");
 
+                constructorClassBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true, jClassIsListener, baseClassIsJVMBridgeBase).AddTabLevel(1);
+                fieldClassBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(1);
+                staticMethodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, true).AddTabLevel(1);
+                methodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, false).AddTabLevel(1);
                 if (!jClassIsListener)
-                {
-                    constructorClassBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true, baseClassIsJVMBridgeBase).AddTabLevel(1);
+                {             
                     operatorClassBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(1);
-                    fieldClassBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(1);
-                    staticMethodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, true).AddTabLevel(1);
-                    methodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, false).AddTabLevel(1);
                 }
                 else
                 {
-                    constructorClassBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true, baseClassIsJVMBridgeBase).AddTabLevel(1);
                     if (jClass.IsJVMClassWithCallbacks())
                     {
                         operatorClassBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(1);
                     }
-                    fieldClassBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(1);
-                    staticMethodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, true).AddTabLevel(1);
-                    methodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, false).AddTabLevel(1);
                     if (!jClass.IsJVMClassWithCallbacks())
                     {
                         methodClassBlockDirect = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, false, true, false).AddTabLevel(1);
@@ -932,7 +928,7 @@ namespace MASES.JNet.Reflector
             }
         }
 
-        static string AnalyzeConstructors(this Class classDefinition, IEnumerable<Class> classDefinitions, bool isGeneric, bool isNested, bool baseClassIsJVMBridgeBase)
+        static string AnalyzeConstructors(this Class classDefinition, IEnumerable<Class> classDefinitions, bool isGeneric, bool isNested, bool isListener, bool baseClassIsJVMBridgeBase)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Constructors of {0} *******************", classDefinition.GenericString);
 
@@ -942,6 +938,7 @@ namespace MASES.JNet.Reflector
             }
 
             var singleConstructorTemplate = Template.GetTemplate(Template.SingleConstructorTemplate);
+            var singleConstructorInitializerTemplate = Template.GetTemplate(Template.SingleConstructorInitializerTemplate);
 
             SortedDictionary<string, Constructor> sortedFilteredCtors = new SortedDictionary<string, Constructor>();
 
@@ -1124,6 +1121,18 @@ namespace MASES.JNet.Reflector
                                                                  .Replace(AllPackageClasses.ClassStub.ConstructorStub.HELP, constructor.JavadocHrefUrl(JNetReflectorCore.UseCamel));
 
                 subClassBlock.AppendLine(singleConstructor);
+
+                if (!isListener)
+                {
+                    singleConstructor = singleConstructorInitializerTemplate.Replace(AllPackageClasses.ClassStub.ConstructorStub.DECORATION, jDecoration.ToString())
+                                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.MODIFIER, modifier)
+                                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.NAME, constructorName)
+                                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.PARAMETERS, paramsString)
+                                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.EXECUTION, executionParamsString)
+                                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.HELP, constructor.JavadocHrefUrl(JNetReflectorCore.UseCamel));
+
+                    subClassBlock.AppendLine(singleConstructor);
+                }
             }
 
             return subClassBlock.ToString();

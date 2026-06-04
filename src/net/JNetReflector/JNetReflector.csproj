@@ -98,6 +98,7 @@
 		<EmbeddedResource Include="Templates\AllPackageClassesStubClassMainClass.template" />
 		<EmbeddedResource Include="Templates\AllPackageClassesStubClassListener.template" />
 		<EmbeddedResource Include="Templates\AllPackageClassesStubException.template" />
+		<EmbeddedResource Include="Templates\SingleConstructorInitializer.template" />
 		<EmbeddedResource Include="Templates\SingleFieldFinal.template" />
 		<EmbeddedResource Include="Templates\SingleListenerJavaFile.template" />
 		<EmbeddedResource Include="Templates\SingleInterface.template" />
