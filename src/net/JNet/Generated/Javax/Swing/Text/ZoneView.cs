@@ -72,6 +72,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for ZoneView(Javax.Swing.Text.Element arg0, int arg1)
+        /// </summary>
+        public static ZoneView New(Javax.Swing.Text.Element arg0, int arg1)
+        {
+            return JVMBridgeBase.New<ZoneView>(arg0, arg1);
+        }
 
         #endregion
 

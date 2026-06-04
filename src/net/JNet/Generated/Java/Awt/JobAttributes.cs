@@ -241,6 +241,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JobAttributes()
+        /// </summary>
+        public static JobAttributes New()
+        {
+            return JVMBridgeBase.New<JobAttributes>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/JobAttributes.html#java.awt.JobAttributes(int,java.awt.JobAttributes.DefaultSelectionType,java.awt.JobAttributes.DestinationType,java.awt.JobAttributes.DialogType,java.lang.String,int,int,java.awt.JobAttributes.MultipleDocumentHandlingType,int[][],java.lang.String,java.awt.JobAttributes.SidesType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -259,12 +266,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
+        /// HPA initializer for JobAttributes(int arg0, Java.Awt.JobAttributes.DefaultSelectionType arg1, Java.Awt.JobAttributes.DestinationType arg2, Java.Awt.JobAttributes.DialogType arg3, Java.Lang.String arg4, int arg5, int arg6, Java.Awt.JobAttributes.MultipleDocumentHandlingType arg7, int[][] arg8, Java.Lang.String arg9, Java.Awt.JobAttributes.SidesType arg10)
+        /// </summary>
+        public static JobAttributes New(int arg0, Java.Awt.JobAttributes.DefaultSelectionType arg1, Java.Awt.JobAttributes.DestinationType arg2, Java.Awt.JobAttributes.DialogType arg3, Java.Lang.String arg4, int arg5, int arg6, Java.Awt.JobAttributes.MultipleDocumentHandlingType arg7, int[][] arg8, Java.Lang.String arg9, Java.Awt.JobAttributes.SidesType arg10)
+        {
+            return JVMBridgeBase.New<JobAttributes>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/JobAttributes.html#java.awt.JobAttributes(java.awt.JobAttributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.JobAttributes"/></param>
         public JobAttributes(Java.Awt.JobAttributes arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JobAttributes(Java.Awt.JobAttributes arg0)
+        /// </summary>
+        public static JobAttributes New(Java.Awt.JobAttributes arg0)
+        {
+            return JVMBridgeBase.New<JobAttributes>(arg0);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Java.Io
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for PipedOutputStream()
+        /// </summary>
+        public static PipedOutputStream New()
+        {
+            return JVMBridgeBase.New<PipedOutputStream>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PipedOutputStream.html#java.io.PipedOutputStream(java.io.PipedInputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PipedInputStream"/></param>
@@ -78,6 +85,13 @@ namespace Java.Io
         public PipedOutputStream(Java.Io.PipedInputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PipedOutputStream(Java.Io.PipedInputStream arg0)
+        /// </summary>
+        public static PipedOutputStream New(Java.Io.PipedInputStream arg0)
+        {
+            return JVMBridgeBase.New<PipedOutputStream>(arg0);
         }
 
         #endregion

@@ -110,6 +110,13 @@ namespace Java.Rmi.Activation
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for ActivationGroupDesc(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject%3Cobject%3E arg2, Java.Util.Properties arg3, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg4)
+        /// </summary>
+        public static ActivationGroupDesc New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject<object> arg2, Java.Util.Properties arg3, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg4)
+        {
+            return JVMBridgeBase.New<ActivationGroupDesc>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/activation/ActivationGroupDesc.html#java.rmi.activation.ActivationGroupDesc(java.util.Properties,java.rmi.activation.ActivationGroupDesc.CommandEnvironment)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Properties"/></param>
@@ -117,6 +124,13 @@ namespace Java.Rmi.Activation
         public ActivationGroupDesc(Java.Util.Properties arg0, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for ActivationGroupDesc(Java.Util.Properties arg0, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg1)
+        /// </summary>
+        public static ActivationGroupDesc New(Java.Util.Properties arg0, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg1)
+        {
+            return JVMBridgeBase.New<ActivationGroupDesc>(arg0, arg1);
         }
 
         #endregion
@@ -185,6 +199,13 @@ namespace Java.Rmi.Activation
             public CommandEnvironment(Java.Lang.String arg0, Java.Lang.String[] arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for CommandEnvironment(Java.Lang.String arg0, Java.Lang.String[] arg1)
+            /// </summary>
+            public static CommandEnvironment New(Java.Lang.String arg0, Java.Lang.String[] arg1)
+            {
+                return JVMBridgeBase.New<CommandEnvironment>(arg0, arg1);
             }
 
             #endregion

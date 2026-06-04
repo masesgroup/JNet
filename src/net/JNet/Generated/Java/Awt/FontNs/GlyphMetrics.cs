@@ -76,6 +76,13 @@ namespace Java.Awt.FontNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for GlyphMetrics(bool arg0, float arg1, float arg2, Java.Awt.Geom.Rectangle2D arg3, byte arg4)
+        /// </summary>
+        public static GlyphMetrics New(bool arg0, float arg1, float arg2, Java.Awt.Geom.Rectangle2D arg3, byte arg4)
+        {
+            return JVMBridgeBase.New<GlyphMetrics>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/font/GlyphMetrics.html#java.awt.font.GlyphMetrics(float,java.awt.geom.Rectangle2D,byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -84,6 +91,13 @@ namespace Java.Awt.FontNs
         public GlyphMetrics(float arg0, Java.Awt.Geom.Rectangle2D arg1, byte arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for GlyphMetrics(float arg0, Java.Awt.Geom.Rectangle2D arg1, byte arg2)
+        /// </summary>
+        public static GlyphMetrics New(float arg0, Java.Awt.Geom.Rectangle2D arg1, byte arg2)
+        {
+            return JVMBridgeBase.New<GlyphMetrics>(arg0, arg1, arg2);
         }
 
         #endregion

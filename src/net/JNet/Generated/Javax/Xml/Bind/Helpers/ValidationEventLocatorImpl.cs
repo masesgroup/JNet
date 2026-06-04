@@ -71,12 +71,26 @@ namespace Javax.Xml.Bind.Helpers
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ValidationEventLocatorImpl()
+        /// </summary>
+        public static ValidationEventLocatorImpl New()
+        {
+            return JVMBridgeBase.New<ValidationEventLocatorImpl>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#javax.xml.bind.helpers.ValidationEventLocatorImpl(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public ValidationEventLocatorImpl(object arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ValidationEventLocatorImpl(object arg0)
+        /// </summary>
+        public static ValidationEventLocatorImpl New(object arg0)
+        {
+            return JVMBridgeBase.New<ValidationEventLocatorImpl>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#javax.xml.bind.helpers.ValidationEventLocatorImpl(org.w3c.dom.Node)"/>
@@ -87,6 +101,13 @@ namespace Javax.Xml.Bind.Helpers
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ValidationEventLocatorImpl(Org.W3c.Dom.Node arg0)
+        /// </summary>
+        public static ValidationEventLocatorImpl New(Org.W3c.Dom.Node arg0)
+        {
+            return JVMBridgeBase.New<ValidationEventLocatorImpl>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#javax.xml.bind.helpers.ValidationEventLocatorImpl(org.xml.sax.Locator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
@@ -95,12 +116,26 @@ namespace Javax.Xml.Bind.Helpers
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ValidationEventLocatorImpl(Org.Xml.Sax.Locator arg0)
+        /// </summary>
+        public static ValidationEventLocatorImpl New(Org.Xml.Sax.Locator arg0)
+        {
+            return JVMBridgeBase.New<ValidationEventLocatorImpl>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/ValidationEventLocatorImpl.html#javax.xml.bind.helpers.ValidationEventLocatorImpl(org.xml.sax.SAXParseException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         public ValidationEventLocatorImpl(Org.Xml.Sax.SAXParseException arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ValidationEventLocatorImpl(Org.Xml.Sax.SAXParseException arg0)
+        /// </summary>
+        public static ValidationEventLocatorImpl New(Org.Xml.Sax.SAXParseException arg0)
+        {
+            return JVMBridgeBase.New<ValidationEventLocatorImpl>(arg0);
         }
 
         #endregion

@@ -75,6 +75,13 @@ namespace Java.Awt.Im
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for InputMethodHighlight(bool arg0, int arg1, int arg2, Java.Util.Map%3CJava.Awt.FontNs.TextAttribute, object%3E arg3)
+        /// </summary>
+        public static InputMethodHighlight New(bool arg0, int arg1, int arg2, Java.Util.Map<Java.Awt.FontNs.TextAttribute, object> arg3)
+        {
+            return JVMBridgeBase.New<InputMethodHighlight>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/im/InputMethodHighlight.html#java.awt.im.InputMethodHighlight(boolean,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -85,6 +92,13 @@ namespace Java.Awt.Im
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for InputMethodHighlight(bool arg0, int arg1, int arg2)
+        /// </summary>
+        public static InputMethodHighlight New(bool arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<InputMethodHighlight>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/im/InputMethodHighlight.html#java.awt.im.InputMethodHighlight(boolean,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -92,6 +106,13 @@ namespace Java.Awt.Im
         public InputMethodHighlight(bool arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for InputMethodHighlight(bool arg0, int arg1)
+        /// </summary>
+        public static InputMethodHighlight New(bool arg0, int arg1)
+        {
+            return JVMBridgeBase.New<InputMethodHighlight>(arg0, arg1);
         }
 
         #endregion

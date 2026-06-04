@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthSplitPaneUI()
+        /// </summary>
+        public static SynthSplitPaneUI New()
+        {
+            return JVMBridgeBase.New<SynthSplitPaneUI>();
+        }
 
         #endregion
 

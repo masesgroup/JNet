@@ -74,6 +74,13 @@ namespace Javax.Security.Auth.Login
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for LoginContext(Java.Lang.String arg0, Javax.Security.Auth.Callback.CallbackHandler arg1)
+        /// </summary>
+        public static LoginContext New(Java.Lang.String arg0, Javax.Security.Auth.Callback.CallbackHandler arg1)
+        {
+            return JVMBridgeBase.New<LoginContext>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/login/LoginContext.html#javax.security.auth.login.LoginContext(java.lang.String,javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler,javax.security.auth.login.Configuration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -84,6 +91,13 @@ namespace Javax.Security.Auth.Login
         public LoginContext(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2, Javax.Security.Auth.Login.Configuration arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for LoginContext(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2, Javax.Security.Auth.Login.Configuration arg3)
+        /// </summary>
+        public static LoginContext New(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2, Javax.Security.Auth.Login.Configuration arg3)
+        {
+            return JVMBridgeBase.New<LoginContext>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/login/LoginContext.html#javax.security.auth.login.LoginContext(java.lang.String,javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler)"/>
@@ -97,6 +111,13 @@ namespace Javax.Security.Auth.Login
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for LoginContext(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2)
+        /// </summary>
+        public static LoginContext New(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2)
+        {
+            return JVMBridgeBase.New<LoginContext>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/login/LoginContext.html#javax.security.auth.login.LoginContext(java.lang.String,javax.security.auth.Subject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -107,6 +128,13 @@ namespace Javax.Security.Auth.Login
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for LoginContext(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1)
+        /// </summary>
+        public static LoginContext New(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1)
+        {
+            return JVMBridgeBase.New<LoginContext>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/login/LoginContext.html#javax.security.auth.login.LoginContext(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -114,6 +142,13 @@ namespace Javax.Security.Auth.Login
         public LoginContext(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LoginContext(Java.Lang.String arg0)
+        /// </summary>
+        public static LoginContext New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<LoginContext>(arg0);
         }
 
         #endregion

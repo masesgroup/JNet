@@ -71,6 +71,13 @@ namespace Javax.Xml.Crypto.Dom
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for DOMStructure(Org.W3c.Dom.Node arg0)
+        /// </summary>
+        public static DOMStructure New(Org.W3c.Dom.Node arg0)
+        {
+            return JVMBridgeBase.New<DOMStructure>(arg0);
+        }
 
         #endregion
 

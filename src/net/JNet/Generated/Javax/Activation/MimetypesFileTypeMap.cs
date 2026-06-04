@@ -71,12 +71,26 @@ namespace Javax.Activation
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for MimetypesFileTypeMap()
+        /// </summary>
+        public static MimetypesFileTypeMap New()
+        {
+            return JVMBridgeBase.New<MimetypesFileTypeMap>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MimetypesFileTypeMap.html#javax.activation.MimetypesFileTypeMap(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public MimetypesFileTypeMap(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MimetypesFileTypeMap(Java.Io.InputStream arg0)
+        /// </summary>
+        public static MimetypesFileTypeMap New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<MimetypesFileTypeMap>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/MimetypesFileTypeMap.html#javax.activation.MimetypesFileTypeMap(java.lang.String)"/>
@@ -86,6 +100,13 @@ namespace Javax.Activation
         public MimetypesFileTypeMap(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MimetypesFileTypeMap(Java.Lang.String arg0)
+        /// </summary>
+        public static MimetypesFileTypeMap New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<MimetypesFileTypeMap>(arg0);
         }
 
         #endregion

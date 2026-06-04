@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JButton()
+        /// </summary>
+        public static JButton New()
+        {
+            return JVMBridgeBase.New<JButton>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JButton.html#javax.swing.JButton(java.lang.String,javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Swing
         public JButton(Java.Lang.String arg0, Javax.Swing.Icon arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JButton(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        /// </summary>
+        public static JButton New(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        {
+            return JVMBridgeBase.New<JButton>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JButton.html#javax.swing.JButton(java.lang.String)"/>
@@ -88,6 +102,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JButton(Java.Lang.String arg0)
+        /// </summary>
+        public static JButton New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JButton>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JButton.html#javax.swing.JButton(javax.swing.Action)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
@@ -96,12 +117,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JButton(Javax.Swing.Action arg0)
+        /// </summary>
+        public static JButton New(Javax.Swing.Action arg0)
+        {
+            return JVMBridgeBase.New<JButton>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JButton.html#javax.swing.JButton(javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
         public JButton(Javax.Swing.Icon arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JButton(Javax.Swing.Icon arg0)
+        /// </summary>
+        public static JButton New(Javax.Swing.Icon arg0)
+        {
+            return JVMBridgeBase.New<JButton>(arg0);
         }
 
         #endregion

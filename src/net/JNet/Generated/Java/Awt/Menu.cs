@@ -73,6 +73,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Menu()
+        /// </summary>
+        public static Menu New()
+        {
+            return JVMBridgeBase.New<Menu>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Menu.html#java.awt.Menu(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -83,6 +90,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Menu(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static Menu New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<Menu>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Menu.html#java.awt.Menu(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -90,6 +104,13 @@ namespace Java.Awt
         public Menu(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Menu(Java.Lang.String arg0)
+        /// </summary>
+        public static Menu New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Menu>(arg0);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for BorderLayout()
+        /// </summary>
+        public static BorderLayout New()
+        {
+            return JVMBridgeBase.New<BorderLayout>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/BorderLayout.html#java.awt.BorderLayout(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -78,6 +85,13 @@ namespace Java.Awt
         public BorderLayout(int arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for BorderLayout(int arg0, int arg1)
+        /// </summary>
+        public static BorderLayout New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<BorderLayout>(arg0, arg1);
         }
 
         #endregion

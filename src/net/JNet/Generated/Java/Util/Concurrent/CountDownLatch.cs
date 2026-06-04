@@ -71,6 +71,13 @@ namespace Java.Util.Concurrent
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for CountDownLatch(int arg0)
+        /// </summary>
+        public static CountDownLatch New(int arg0)
+        {
+            return JVMBridgeBase.New<CountDownLatch>(arg0);
+        }
 
         #endregion
 

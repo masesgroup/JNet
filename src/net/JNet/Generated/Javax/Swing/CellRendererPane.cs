@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for CellRendererPane()
+        /// </summary>
+        public static CellRendererPane New()
+        {
+            return JVMBridgeBase.New<CellRendererPane>();
+        }
 
         #endregion
 

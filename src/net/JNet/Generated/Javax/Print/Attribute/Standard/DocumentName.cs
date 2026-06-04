@@ -72,6 +72,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for DocumentName(Java.Lang.String arg0, Java.Util.Locale arg1)
+        /// </summary>
+        public static DocumentName New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        {
+            return JVMBridgeBase.New<DocumentName>(arg0, arg1);
+        }
 
         #endregion
 

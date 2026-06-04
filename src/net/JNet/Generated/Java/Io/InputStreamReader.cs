@@ -74,6 +74,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for InputStreamReader(Java.Io.InputStream arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static InputStreamReader New(Java.Io.InputStream arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<InputStreamReader>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStreamReader.html#java.io.InputStreamReader(java.io.InputStream,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
@@ -81,6 +88,13 @@ namespace Java.Io
         public InputStreamReader(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for InputStreamReader(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1)
+        /// </summary>
+        public static InputStreamReader New(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1)
+        {
+            return JVMBridgeBase.New<InputStreamReader>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStreamReader.html#java.io.InputStreamReader(java.io.InputStream,java.nio.charset.CharsetDecoder)"/>
@@ -92,12 +106,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for InputStreamReader(Java.Io.InputStream arg0, Java.Nio.Charset.CharsetDecoder arg1)
+        /// </summary>
+        public static InputStreamReader New(Java.Io.InputStream arg0, Java.Nio.Charset.CharsetDecoder arg1)
+        {
+            return JVMBridgeBase.New<InputStreamReader>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStreamReader.html#java.io.InputStreamReader(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public InputStreamReader(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for InputStreamReader(Java.Io.InputStream arg0)
+        /// </summary>
+        public static InputStreamReader New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<InputStreamReader>(arg0);
         }
 
         #endregion

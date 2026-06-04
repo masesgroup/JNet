@@ -76,6 +76,13 @@ namespace Java.Beans
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        /// </summary>
+        public static PropertyDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        {
+            return JVMBridgeBase.New<PropertyDescriptor>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/PropertyDescriptor.html#java.beans.PropertyDescriptor(java.lang.String,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -84,6 +91,13 @@ namespace Java.Beans
         public PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1)
+        /// </summary>
+        public static PropertyDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1)
+        {
+            return JVMBridgeBase.New<PropertyDescriptor>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/PropertyDescriptor.html#java.beans.PropertyDescriptor(java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method)"/>
@@ -95,6 +109,13 @@ namespace Java.Beans
         public PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2)
+        /// </summary>
+        public static PropertyDescriptor New(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2)
+        {
+            return JVMBridgeBase.New<PropertyDescriptor>(arg0, arg1, arg2);
         }
 
         #endregion

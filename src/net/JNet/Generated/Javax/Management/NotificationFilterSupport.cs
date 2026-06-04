@@ -70,6 +70,13 @@ namespace Javax.Management
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for NotificationFilterSupport()
+        /// </summary>
+        public static NotificationFilterSupport New()
+        {
+            return JVMBridgeBase.New<NotificationFilterSupport>();
+        }
 
         #endregion
 

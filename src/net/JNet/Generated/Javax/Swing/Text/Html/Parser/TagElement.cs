@@ -73,12 +73,26 @@ namespace Javax.Swing.Text.Html.Parser
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for TagElement(Javax.Swing.Text.Html.Parser.Element arg0, bool arg1)
+        /// </summary>
+        public static TagElement New(Javax.Swing.Text.Html.Parser.Element arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<TagElement>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/parser/TagElement.html#javax.swing.text.html.parser.TagElement(javax.swing.text.html.parser.Element)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Html.Parser.Element"/></param>
         public TagElement(Javax.Swing.Text.Html.Parser.Element arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TagElement(Javax.Swing.Text.Html.Parser.Element arg0)
+        /// </summary>
+        public static TagElement New(Javax.Swing.Text.Html.Parser.Element arg0)
+        {
+            return JVMBridgeBase.New<TagElement>(arg0);
         }
 
         #endregion

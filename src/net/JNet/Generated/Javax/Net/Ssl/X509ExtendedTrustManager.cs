@@ -70,6 +70,13 @@ namespace Javax.Net.Ssl
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for X509ExtendedTrustManager()
+        /// </summary>
+        public static X509ExtendedTrustManager New()
+        {
+            return JVMBridgeBase.New<X509ExtendedTrustManager>();
+        }
 
         #endregion
 

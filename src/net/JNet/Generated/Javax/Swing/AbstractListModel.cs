@@ -105,6 +105,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AbstractListModel()
+        /// </summary>
+        public static AbstractListModel New()
+        {
+            return JVMBridgeBase.New<AbstractListModel>();
+        }
 
         #endregion
 
@@ -182,6 +189,13 @@ namespace Javax.Swing
         public AbstractListModel() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for AbstractListModel()
+        /// </summary>
+        public static AbstractListModel<E> New()
+        {
+            return JVMBridgeBase.New<AbstractListModel<E>>();
         }
 
         #endregion

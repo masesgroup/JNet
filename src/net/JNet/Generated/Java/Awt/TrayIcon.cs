@@ -108,6 +108,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for TrayIcon(Java.Awt.Image arg0, Java.Lang.String arg1, Java.Awt.PopupMenu arg2)
+        /// </summary>
+        public static TrayIcon New(Java.Awt.Image arg0, Java.Lang.String arg1, Java.Awt.PopupMenu arg2)
+        {
+            return JVMBridgeBase.New<TrayIcon>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TrayIcon.html#java.awt.TrayIcon(java.awt.Image,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
@@ -117,12 +124,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for TrayIcon(Java.Awt.Image arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static TrayIcon New(Java.Awt.Image arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<TrayIcon>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TrayIcon.html#java.awt.TrayIcon(java.awt.Image)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
         public TrayIcon(Java.Awt.Image arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TrayIcon(Java.Awt.Image arg0)
+        /// </summary>
+        public static TrayIcon New(Java.Awt.Image arg0)
+        {
+            return JVMBridgeBase.New<TrayIcon>(arg0);
         }
 
         #endregion

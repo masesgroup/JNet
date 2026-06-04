@@ -71,6 +71,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Date()
+        /// </summary>
+        public static Date New()
+        {
+            return JVMBridgeBase.New<Date>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#java.util.Date(int,int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -83,6 +90,13 @@ namespace Java.Util
         public Date(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for Date(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+        /// </summary>
+        public static Date New(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+        {
+            return JVMBridgeBase.New<Date>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#java.util.Date(int,int,int,int,int)"/>
@@ -98,6 +112,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for Date(int arg0, int arg1, int arg2, int arg3, int arg4)
+        /// </summary>
+        public static Date New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<Date>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#java.util.Date(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -109,6 +130,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Date(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static Date New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<Date>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#java.util.Date(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -118,12 +146,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Date(Java.Lang.String arg0)
+        /// </summary>
+        public static Date New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Date>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#java.util.Date(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public Date(long arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Date(long arg0)
+        /// </summary>
+        public static Date New(long arg0)
+        {
+            return JVMBridgeBase.New<Date>(arg0);
         }
 
         #endregion

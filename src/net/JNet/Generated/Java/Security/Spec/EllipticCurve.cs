@@ -75,6 +75,13 @@ namespace Java.Security.Spec
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for EllipticCurve(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, byte[] arg3)
+        /// </summary>
+        public static EllipticCurve New(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, byte[] arg3)
+        {
+            return JVMBridgeBase.New<EllipticCurve>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/spec/EllipticCurve.html#java.security.spec.EllipticCurve(java.security.spec.ECField,java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.ECField"/></param>
@@ -83,6 +90,13 @@ namespace Java.Security.Spec
         public EllipticCurve(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for EllipticCurve(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
+        /// </summary>
+        public static EllipticCurve New(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
+        {
+            return JVMBridgeBase.New<EllipticCurve>(arg0, arg1, arg2);
         }
 
         #endregion

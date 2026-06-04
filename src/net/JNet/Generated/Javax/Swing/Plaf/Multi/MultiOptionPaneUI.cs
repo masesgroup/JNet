@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiOptionPaneUI()
+        /// </summary>
+        public static MultiOptionPaneUI New()
+        {
+            return JVMBridgeBase.New<MultiOptionPaneUI>();
+        }
 
         #endregion
 

@@ -70,6 +70,13 @@ namespace Javax.Print
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ServiceUI()
+        /// </summary>
+        public static ServiceUI New()
+        {
+            return JVMBridgeBase.New<ServiceUI>();
+        }
 
         #endregion
 

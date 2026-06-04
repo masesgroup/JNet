@@ -71,6 +71,13 @@ namespace Java.Net
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for CookieManager()
+        /// </summary>
+        public static CookieManager New()
+        {
+            return JVMBridgeBase.New<CookieManager>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/CookieManager.html#java.net.CookieManager(java.net.CookieStore,java.net.CookiePolicy)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.CookieStore"/></param>
@@ -78,6 +85,13 @@ namespace Java.Net
         public CookieManager(Java.Net.CookieStore arg0, Java.Net.CookiePolicy arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for CookieManager(Java.Net.CookieStore arg0, Java.Net.CookiePolicy arg1)
+        /// </summary>
+        public static CookieManager New(Java.Net.CookieStore arg0, Java.Net.CookiePolicy arg1)
+        {
+            return JVMBridgeBase.New<CookieManager>(arg0, arg1);
         }
 
         #endregion

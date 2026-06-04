@@ -73,6 +73,13 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for PropertyResourceBundle(Java.Io.InputStream arg0)
+        /// </summary>
+        public static PropertyResourceBundle New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<PropertyResourceBundle>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/PropertyResourceBundle.html#java.util.PropertyResourceBundle(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
@@ -80,6 +87,13 @@ namespace Java.Util
         public PropertyResourceBundle(Java.Io.Reader arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PropertyResourceBundle(Java.Io.Reader arg0)
+        /// </summary>
+        public static PropertyResourceBundle New(Java.Io.Reader arg0)
+        {
+            return JVMBridgeBase.New<PropertyResourceBundle>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Javax.Imageio.Stream
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ImageInputStreamImpl()
+        /// </summary>
+        public static ImageInputStreamImpl New()
+        {
+            return JVMBridgeBase.New<ImageInputStreamImpl>();
+        }
 
         #endregion
 

@@ -105,6 +105,13 @@ namespace Javax.Tools
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DiagnosticCollector()
+        /// </summary>
+        public static DiagnosticCollector New()
+        {
+            return JVMBridgeBase.New<DiagnosticCollector>();
+        }
 
         #endregion
 
@@ -157,6 +164,13 @@ namespace Javax.Tools
         public DiagnosticCollector() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for DiagnosticCollector()
+        /// </summary>
+        public static DiagnosticCollector<S> New()
+        {
+            return JVMBridgeBase.New<DiagnosticCollector<S>>();
         }
 
         #endregion

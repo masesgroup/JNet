@@ -73,12 +73,26 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for DataBufferInt(int arg0, int arg1)
+        /// </summary>
+        public static DataBufferInt New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<DataBufferInt>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/DataBufferInt.html#java.awt.image.DataBufferInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public DataBufferInt(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DataBufferInt(int arg0)
+        /// </summary>
+        public static DataBufferInt New(int arg0)
+        {
+            return JVMBridgeBase.New<DataBufferInt>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/DataBufferInt.html#java.awt.image.DataBufferInt(int[],int,int)"/>
@@ -91,6 +105,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DataBufferInt(int[] arg0, int arg1, int arg2)
+        /// </summary>
+        public static DataBufferInt New(int[] arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<DataBufferInt>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/DataBufferInt.html#java.awt.image.DataBufferInt(int[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -98,6 +119,13 @@ namespace Java.Awt.ImageNs
         public DataBufferInt(int[] arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DataBufferInt(int[] arg0, int arg1)
+        /// </summary>
+        public static DataBufferInt New(int[] arg0, int arg1)
+        {
+            return JVMBridgeBase.New<DataBufferInt>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/DataBufferInt.html#java.awt.image.DataBufferInt(int[][],int,int[])"/>
@@ -110,6 +138,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DataBufferInt(int[][] arg0, int arg1, int[] arg2)
+        /// </summary>
+        public static DataBufferInt New(int[][] arg0, int arg1, int[] arg2)
+        {
+            return JVMBridgeBase.New<DataBufferInt>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/DataBufferInt.html#java.awt.image.DataBufferInt(int[][],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -117,6 +152,13 @@ namespace Java.Awt.ImageNs
         public DataBufferInt(int[][] arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DataBufferInt(int[][] arg0, int arg1)
+        /// </summary>
+        public static DataBufferInt New(int[][] arg0, int arg1)
+        {
+            return JVMBridgeBase.New<DataBufferInt>(arg0, arg1);
         }
 
         #endregion

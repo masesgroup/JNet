@@ -72,6 +72,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for DoubleAccumulator(Java.Util.Function.DoubleBinaryOperator arg0, double arg1)
+        /// </summary>
+        public static DoubleAccumulator New(Java.Util.Function.DoubleBinaryOperator arg0, double arg1)
+        {
+            return JVMBridgeBase.New<DoubleAccumulator>(arg0, arg1);
+        }
 
         #endregion
 

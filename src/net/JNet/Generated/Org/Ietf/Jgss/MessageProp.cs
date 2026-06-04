@@ -72,6 +72,13 @@ namespace Org.Ietf.Jgss
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for MessageProp(bool arg0)
+        /// </summary>
+        public static MessageProp New(bool arg0)
+        {
+            return JVMBridgeBase.New<MessageProp>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/ietf/jgss/MessageProp.html#org.ietf.jgss.MessageProp(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -79,6 +86,13 @@ namespace Org.Ietf.Jgss
         public MessageProp(int arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for MessageProp(int arg0, bool arg1)
+        /// </summary>
+        public static MessageProp New(int arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<MessageProp>(arg0, arg1);
         }
 
         #endregion

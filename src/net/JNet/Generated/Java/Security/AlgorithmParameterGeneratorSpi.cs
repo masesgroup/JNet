@@ -70,6 +70,13 @@ namespace Java.Security
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AlgorithmParameterGeneratorSpi()
+        /// </summary>
+        public static AlgorithmParameterGeneratorSpi New()
+        {
+            return JVMBridgeBase.New<AlgorithmParameterGeneratorSpi>();
+        }
 
         #endregion
 

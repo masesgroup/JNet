@@ -73,6 +73,13 @@ namespace Java.Util.Logging
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for LoggingPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static LoggingPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<LoggingPermission>(arg0, arg1);
+        }
 
         #endregion
 

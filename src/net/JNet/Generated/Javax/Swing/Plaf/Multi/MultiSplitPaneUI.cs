@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiSplitPaneUI()
+        /// </summary>
+        public static MultiSplitPaneUI New()
+        {
+            return JVMBridgeBase.New<MultiSplitPaneUI>();
+        }
 
         #endregion
 

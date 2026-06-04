@@ -81,6 +81,13 @@ namespace Javax.Swing.Event
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
+        /// HPA initializer for MenuDragMouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, Javax.Swing.MenuElement[] arg8, Javax.Swing.MenuSelectionManager arg9)
+        /// </summary>
+        public static MenuDragMouseEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, Javax.Swing.MenuElement[] arg8, Javax.Swing.MenuSelectionManager arg9)
+        {
+            return JVMBridgeBase.New<MenuDragMouseEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/MenuDragMouseEvent.html#javax.swing.event.MenuDragMouseEvent(java.awt.Component,int,long,int,int,int,int,int,int,boolean,javax.swing.MenuElement[],javax.swing.MenuSelectionManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -98,6 +105,13 @@ namespace Javax.Swing.Event
         public MenuDragMouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, Javax.Swing.MenuElement[] arg10, Javax.Swing.MenuSelectionManager arg11) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+        }
+        /// <summary>
+        /// HPA initializer for MenuDragMouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, Javax.Swing.MenuElement[] arg10, Javax.Swing.MenuSelectionManager arg11)
+        /// </summary>
+        public static MenuDragMouseEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, Javax.Swing.MenuElement[] arg10, Javax.Swing.MenuSelectionManager arg11)
+        {
+            return JVMBridgeBase.New<MenuDragMouseEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
 
         #endregion

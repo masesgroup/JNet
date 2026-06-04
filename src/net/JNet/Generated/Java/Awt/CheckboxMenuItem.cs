@@ -73,6 +73,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for CheckboxMenuItem()
+        /// </summary>
+        public static CheckboxMenuItem New()
+        {
+            return JVMBridgeBase.New<CheckboxMenuItem>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/CheckboxMenuItem.html#java.awt.CheckboxMenuItem(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -83,6 +90,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for CheckboxMenuItem(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static CheckboxMenuItem New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<CheckboxMenuItem>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/CheckboxMenuItem.html#java.awt.CheckboxMenuItem(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -90,6 +104,13 @@ namespace Java.Awt
         public CheckboxMenuItem(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for CheckboxMenuItem(Java.Lang.String arg0)
+        /// </summary>
+        public static CheckboxMenuItem New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<CheckboxMenuItem>(arg0);
         }
 
         #endregion

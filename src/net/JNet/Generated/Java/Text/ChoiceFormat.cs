@@ -73,12 +73,26 @@ namespace Java.Text
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ChoiceFormat(double[] arg0, Java.Lang.String[] arg1)
+        /// </summary>
+        public static ChoiceFormat New(double[] arg0, Java.Lang.String[] arg1)
+        {
+            return JVMBridgeBase.New<ChoiceFormat>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/ChoiceFormat.html#java.text.ChoiceFormat(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public ChoiceFormat(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ChoiceFormat(Java.Lang.String arg0)
+        /// </summary>
+        public static ChoiceFormat New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<ChoiceFormat>(arg0);
         }
 
         #endregion

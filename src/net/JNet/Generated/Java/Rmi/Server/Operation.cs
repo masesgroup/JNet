@@ -73,6 +73,13 @@ namespace Java.Rmi.Server
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for Operation(Java.Lang.String arg0)
+        /// </summary>
+        public static Operation New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Operation>(arg0);
+        }
 
         #endregion
 

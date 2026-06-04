@@ -104,6 +104,13 @@ namespace Java.Net
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Authenticator()
+        /// </summary>
+        public static Authenticator New()
+        {
+            return JVMBridgeBase.New<Authenticator>();
+        }
 
         #endregion
 

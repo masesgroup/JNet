@@ -78,6 +78,13 @@ namespace Javax.Management.Openmbean
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for OpenMBeanInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
+        /// </summary>
+        public static OpenMBeanInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
+        {
+            return JVMBridgeBase.New<OpenMBeanInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanInfoSupport.html#javax.management.openmbean.OpenMBeanInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanAttributeInfo[],javax.management.openmbean.OpenMBeanConstructorInfo[],javax.management.openmbean.OpenMBeanOperationInfo[],javax.management.MBeanNotificationInfo[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -89,6 +96,13 @@ namespace Javax.Management.Openmbean
         public OpenMBeanInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for OpenMBeanInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
+        /// </summary>
+        public static OpenMBeanInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
+        {
+            return JVMBridgeBase.New<OpenMBeanInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

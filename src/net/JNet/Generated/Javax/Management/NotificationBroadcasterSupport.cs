@@ -71,6 +71,13 @@ namespace Javax.Management
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for NotificationBroadcasterSupport()
+        /// </summary>
+        public static NotificationBroadcasterSupport New()
+        {
+            return JVMBridgeBase.New<NotificationBroadcasterSupport>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/NotificationBroadcasterSupport.html#javax.management.NotificationBroadcasterSupport(java.util.concurrent.Executor,javax.management.MBeanNotificationInfo...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Management
         public NotificationBroadcasterSupport(Java.Util.Concurrent.Executor arg0, params Javax.Management.MBeanNotificationInfo[] arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for NotificationBroadcasterSupport(Java.Util.Concurrent.Executor arg0, params Javax.Management.MBeanNotificationInfo[] arg1)
+        /// </summary>
+        public static NotificationBroadcasterSupport New(Java.Util.Concurrent.Executor arg0, params Javax.Management.MBeanNotificationInfo[] arg1)
+        {
+            return JVMBridgeBase.New<NotificationBroadcasterSupport>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/NotificationBroadcasterSupport.html#javax.management.NotificationBroadcasterSupport(java.util.concurrent.Executor)"/>
@@ -88,12 +102,26 @@ namespace Javax.Management
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for NotificationBroadcasterSupport(Java.Util.Concurrent.Executor arg0)
+        /// </summary>
+        public static NotificationBroadcasterSupport New(Java.Util.Concurrent.Executor arg0)
+        {
+            return JVMBridgeBase.New<NotificationBroadcasterSupport>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/NotificationBroadcasterSupport.html#javax.management.NotificationBroadcasterSupport(javax.management.MBeanNotificationInfo...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanNotificationInfo"/></param>
         public NotificationBroadcasterSupport(params Javax.Management.MBeanNotificationInfo[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for NotificationBroadcasterSupport(params Javax.Management.MBeanNotificationInfo[] arg0)
+        /// </summary>
+        public static NotificationBroadcasterSupport New(params Javax.Management.MBeanNotificationInfo[] arg0)
+        {
+            return JVMBridgeBase.New<NotificationBroadcasterSupport>(arg0);
         }
 
         #endregion

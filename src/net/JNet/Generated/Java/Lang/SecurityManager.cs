@@ -70,6 +70,13 @@ namespace Java.Lang
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SecurityManager()
+        /// </summary>
+        public static SecurityManager New()
+        {
+            return JVMBridgeBase.New<SecurityManager>();
+        }
 
         #endregion
 

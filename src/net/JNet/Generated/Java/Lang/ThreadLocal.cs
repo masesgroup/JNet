@@ -105,6 +105,13 @@ namespace Java.Lang
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ThreadLocal()
+        /// </summary>
+        public static ThreadLocal New()
+        {
+            return JVMBridgeBase.New<ThreadLocal>();
+        }
 
         #endregion
 
@@ -174,6 +181,13 @@ namespace Java.Lang
         public ThreadLocal() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for ThreadLocal()
+        /// </summary>
+        public static ThreadLocal<T> New()
+        {
+            return JVMBridgeBase.New<ThreadLocal<T>>();
         }
 
         #endregion

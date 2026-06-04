@@ -80,6 +80,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
+        /// HPA initializer for MouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, int arg8)
+        /// </summary>
+        public static MouseEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, int arg8)
+        {
+            return JVMBridgeBase.New<MouseEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#java.awt.event.MouseEvent(java.awt.Component,int,long,int,int,int,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -93,6 +100,13 @@ namespace Java.Awt.EventNs
         public MouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+        /// <summary>
+        /// HPA initializer for MouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7)
+        /// </summary>
+        public static MouseEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7)
+        {
+            return JVMBridgeBase.New<MouseEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#java.awt.event.MouseEvent(java.awt.Component,int,long,int,int,int,int,int,int,boolean,int)"/>
@@ -111,6 +125,13 @@ namespace Java.Awt.EventNs
         public MouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+        }
+        /// <summary>
+        /// HPA initializer for MouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10)
+        /// </summary>
+        public static MouseEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10)
+        {
+            return JVMBridgeBase.New<MouseEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
 
         #endregion

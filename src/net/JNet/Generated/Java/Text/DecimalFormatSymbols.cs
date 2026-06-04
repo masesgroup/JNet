@@ -71,12 +71,26 @@ namespace Java.Text
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DecimalFormatSymbols()
+        /// </summary>
+        public static DecimalFormatSymbols New()
+        {
+            return JVMBridgeBase.New<DecimalFormatSymbols>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/DecimalFormatSymbols.html#java.text.DecimalFormatSymbols(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public DecimalFormatSymbols(Java.Util.Locale arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DecimalFormatSymbols(Java.Util.Locale arg0)
+        /// </summary>
+        public static DecimalFormatSymbols New(Java.Util.Locale arg0)
+        {
+            return JVMBridgeBase.New<DecimalFormatSymbols>(arg0);
         }
 
         #endregion

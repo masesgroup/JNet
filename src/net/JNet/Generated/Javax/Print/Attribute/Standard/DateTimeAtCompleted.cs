@@ -71,6 +71,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for DateTimeAtCompleted(Java.Util.Date arg0)
+        /// </summary>
+        public static DateTimeAtCompleted New(Java.Util.Date arg0)
+        {
+            return JVMBridgeBase.New<DateTimeAtCompleted>(arg0);
+        }
 
         #endregion
 

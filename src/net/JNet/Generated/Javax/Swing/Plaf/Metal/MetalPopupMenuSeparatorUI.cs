@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalPopupMenuSeparatorUI()
+        /// </summary>
+        public static MetalPopupMenuSeparatorUI New()
+        {
+            return JVMBridgeBase.New<MetalPopupMenuSeparatorUI>();
+        }
 
         #endregion
 

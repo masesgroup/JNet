@@ -71,6 +71,13 @@ namespace Javax.Sound.Midi
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for MetaMessage()
+        /// </summary>
+        public static MetaMessage New()
+        {
+            return JVMBridgeBase.New<MetaMessage>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/MetaMessage.html#javax.sound.midi.MetaMessage(int,byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Sound.Midi
         public MetaMessage(int arg0, byte[] arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for MetaMessage(int arg0, byte[] arg1, int arg2)
+        /// </summary>
+        public static MetaMessage New(int arg0, byte[] arg1, int arg2)
+        {
+            return JVMBridgeBase.New<MetaMessage>(arg0, arg1, arg2);
         }
 
         #endregion

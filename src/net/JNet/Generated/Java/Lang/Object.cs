@@ -70,6 +70,13 @@ namespace Java.Lang
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Object()
+        /// </summary>
+        public static Object New()
+        {
+            return JVMBridgeBase.New<Object>();
+        }
 
         #endregion
 

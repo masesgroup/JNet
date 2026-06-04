@@ -74,6 +74,13 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for GZIPOutputStream(Java.Io.OutputStream arg0, bool arg1)
+        /// </summary>
+        public static GZIPOutputStream New(Java.Io.OutputStream arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<GZIPOutputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/GZIPOutputStream.html#java.util.zip.GZIPOutputStream(java.io.OutputStream,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
@@ -83,6 +90,13 @@ namespace Java.Util.Zip
         public GZIPOutputStream(Java.Io.OutputStream arg0, int arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for GZIPOutputStream(Java.Io.OutputStream arg0, int arg1, bool arg2)
+        /// </summary>
+        public static GZIPOutputStream New(Java.Io.OutputStream arg0, int arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<GZIPOutputStream>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/GZIPOutputStream.html#java.util.zip.GZIPOutputStream(java.io.OutputStream,int)"/>
@@ -95,6 +109,13 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for GZIPOutputStream(Java.Io.OutputStream arg0, int arg1)
+        /// </summary>
+        public static GZIPOutputStream New(Java.Io.OutputStream arg0, int arg1)
+        {
+            return JVMBridgeBase.New<GZIPOutputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/GZIPOutputStream.html#java.util.zip.GZIPOutputStream(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
@@ -102,6 +123,13 @@ namespace Java.Util.Zip
         public GZIPOutputStream(Java.Io.OutputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for GZIPOutputStream(Java.Io.OutputStream arg0)
+        /// </summary>
+        public static GZIPOutputStream New(Java.Io.OutputStream arg0)
+        {
+            return JVMBridgeBase.New<GZIPOutputStream>(arg0);
         }
 
         #endregion

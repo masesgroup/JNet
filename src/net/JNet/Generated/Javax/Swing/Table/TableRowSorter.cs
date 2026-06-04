@@ -106,12 +106,26 @@ namespace Javax.Swing.Table
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for TableRowSorter()
+        /// </summary>
+        public static TableRowSorter New()
+        {
+            return JVMBridgeBase.New<TableRowSorter>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableRowSorter.html#javax.swing.table.TableRowSorter(javax.swing.table.TableModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
         public TableRowSorter(Javax.Swing.Table.TableModel arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TableRowSorter(Javax.Swing.Table.TableModel arg0)
+        /// </summary>
+        public static TableRowSorter New(Javax.Swing.Table.TableModel arg0)
+        {
+            return JVMBridgeBase.New<TableRowSorter>(arg0);
         }
 
         #endregion
@@ -167,12 +181,26 @@ namespace Javax.Swing.Table
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for TableRowSorter()
+        /// </summary>
+        public static TableRowSorter<M> New()
+        {
+            return JVMBridgeBase.New<TableRowSorter<M>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableRowSorter.html#javax.swing.table.TableRowSorter(javax.swing.table.TableModel)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="M"/></param>
         public TableRowSorter(M arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TableRowSorter(M arg0)
+        /// </summary>
+        public static TableRowSorter<M> New(M arg0)
+        {
+            return JVMBridgeBase.New<TableRowSorter<M>>(arg0);
         }
 
         #endregion

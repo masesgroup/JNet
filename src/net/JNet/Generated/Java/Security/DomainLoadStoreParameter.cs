@@ -72,6 +72,13 @@ namespace Java.Security
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for DomainLoadStoreParameter(Java.Net.URI arg0, Java.Util.Map%3CJava.Lang.String, Java.Security.KeyStore.ProtectionParameter%3E arg1)
+        /// </summary>
+        public static DomainLoadStoreParameter New(Java.Net.URI arg0, Java.Util.Map<Java.Lang.String, Java.Security.KeyStore.ProtectionParameter> arg1)
+        {
+            return JVMBridgeBase.New<DomainLoadStoreParameter>(arg0, arg1);
+        }
 
         #endregion
 

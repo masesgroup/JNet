@@ -71,6 +71,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ParagraphView(Javax.Swing.Text.Element arg0)
+        /// </summary>
+        public static ParagraphView New(Javax.Swing.Text.Element arg0)
+        {
+            return JVMBridgeBase.New<ParagraphView>(arg0);
+        }
 
         #endregion
 

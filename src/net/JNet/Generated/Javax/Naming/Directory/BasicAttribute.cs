@@ -73,6 +73,13 @@ namespace Javax.Naming.Directory
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BasicAttribute(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static BasicAttribute New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<BasicAttribute>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/directory/BasicAttribute.html#javax.naming.directory.BasicAttribute(java.lang.String,java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Naming.Directory
         public BasicAttribute(Java.Lang.String arg0, object arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for BasicAttribute(Java.Lang.String arg0, object arg1, bool arg2)
+        /// </summary>
+        public static BasicAttribute New(Java.Lang.String arg0, object arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<BasicAttribute>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/directory/BasicAttribute.html#javax.naming.directory.BasicAttribute(java.lang.String,java.lang.Object)"/>
@@ -92,12 +106,26 @@ namespace Javax.Naming.Directory
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BasicAttribute(Java.Lang.String arg0, object arg1)
+        /// </summary>
+        public static BasicAttribute New(Java.Lang.String arg0, object arg1)
+        {
+            return JVMBridgeBase.New<BasicAttribute>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/directory/BasicAttribute.html#javax.naming.directory.BasicAttribute(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public BasicAttribute(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BasicAttribute(Java.Lang.String arg0)
+        /// </summary>
+        public static BasicAttribute New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<BasicAttribute>(arg0);
         }
 
         #endregion

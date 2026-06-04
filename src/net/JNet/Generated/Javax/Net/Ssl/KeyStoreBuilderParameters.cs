@@ -72,12 +72,26 @@ namespace Javax.Net.Ssl
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for KeyStoreBuilderParameters(Java.Security.KeyStore.Builder arg0)
+        /// </summary>
+        public static KeyStoreBuilderParameters New(Java.Security.KeyStore.Builder arg0)
+        {
+            return JVMBridgeBase.New<KeyStoreBuilderParameters>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/KeyStoreBuilderParameters.html#javax.net.ssl.KeyStoreBuilderParameters(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         public KeyStoreBuilderParameters(Java.Util.List<Java.Security.KeyStore.Builder> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for KeyStoreBuilderParameters(Java.Util.List%3CJava.Security.KeyStore.Builder%3E arg0)
+        /// </summary>
+        public static KeyStoreBuilderParameters New(Java.Util.List<Java.Security.KeyStore.Builder> arg0)
+        {
+            return JVMBridgeBase.New<KeyStoreBuilderParameters>(arg0);
         }
 
         #endregion

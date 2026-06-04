@@ -78,6 +78,13 @@ namespace Javax.Management.Modelmbean
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for ModelMBeanInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Modelmbean.ModelMBeanAttributeInfo[] arg2, Javax.Management.Modelmbean.ModelMBeanConstructorInfo[] arg3, Javax.Management.Modelmbean.ModelMBeanOperationInfo[] arg4, Javax.Management.Modelmbean.ModelMBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
+        /// </summary>
+        public static ModelMBeanInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Modelmbean.ModelMBeanAttributeInfo[] arg2, Javax.Management.Modelmbean.ModelMBeanConstructorInfo[] arg3, Javax.Management.Modelmbean.ModelMBeanOperationInfo[] arg4, Javax.Management.Modelmbean.ModelMBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
+        {
+            return JVMBridgeBase.New<ModelMBeanInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/ModelMBeanInfoSupport.html#javax.management.modelmbean.ModelMBeanInfoSupport(java.lang.String,java.lang.String,javax.management.modelmbean.ModelMBeanAttributeInfo[],javax.management.modelmbean.ModelMBeanConstructorInfo[],javax.management.modelmbean.ModelMBeanOperationInfo[],javax.management.modelmbean.ModelMBeanNotificationInfo[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -91,12 +98,26 @@ namespace Javax.Management.Modelmbean
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for ModelMBeanInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Modelmbean.ModelMBeanAttributeInfo[] arg2, Javax.Management.Modelmbean.ModelMBeanConstructorInfo[] arg3, Javax.Management.Modelmbean.ModelMBeanOperationInfo[] arg4, Javax.Management.Modelmbean.ModelMBeanNotificationInfo[] arg5)
+        /// </summary>
+        public static ModelMBeanInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Modelmbean.ModelMBeanAttributeInfo[] arg2, Javax.Management.Modelmbean.ModelMBeanConstructorInfo[] arg3, Javax.Management.Modelmbean.ModelMBeanOperationInfo[] arg4, Javax.Management.Modelmbean.ModelMBeanNotificationInfo[] arg5)
+        {
+            return JVMBridgeBase.New<ModelMBeanInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/ModelMBeanInfoSupport.html#javax.management.modelmbean.ModelMBeanInfoSupport(javax.management.modelmbean.ModelMBeanInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Modelmbean.ModelMBeanInfo"/></param>
         public ModelMBeanInfoSupport(Javax.Management.Modelmbean.ModelMBeanInfo arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ModelMBeanInfoSupport(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
+        /// </summary>
+        public static ModelMBeanInfoSupport New(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
+        {
+            return JVMBridgeBase.New<ModelMBeanInfoSupport>(arg0);
         }
 
         #endregion

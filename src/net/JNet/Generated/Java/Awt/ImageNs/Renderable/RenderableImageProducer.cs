@@ -72,6 +72,13 @@ namespace Java.Awt.ImageNs.Renderable
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for RenderableImageProducer(Java.Awt.ImageNs.Renderable.RenderableImage arg0, Java.Awt.ImageNs.Renderable.RenderContext arg1)
+        /// </summary>
+        public static RenderableImageProducer New(Java.Awt.ImageNs.Renderable.RenderableImage arg0, Java.Awt.ImageNs.Renderable.RenderContext arg1)
+        {
+            return JVMBridgeBase.New<RenderableImageProducer>(arg0, arg1);
+        }
 
         #endregion
 

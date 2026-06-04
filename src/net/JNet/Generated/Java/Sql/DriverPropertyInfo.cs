@@ -72,6 +72,13 @@ namespace Java.Sql
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for DriverPropertyInfo(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static DriverPropertyInfo New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<DriverPropertyInfo>(arg0, arg1);
+        }
 
         #endregion
 

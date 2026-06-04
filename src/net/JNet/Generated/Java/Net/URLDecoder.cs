@@ -70,6 +70,13 @@ namespace Java.Net
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for URLDecoder()
+        /// </summary>
+        public static URLDecoder New()
+        {
+            return JVMBridgeBase.New<URLDecoder>();
+        }
 
         #endregion
 

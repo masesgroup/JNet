@@ -72,6 +72,13 @@ namespace Javax.Naming.Directory
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for ModificationItem(int arg0, Javax.Naming.Directory.Attribute arg1)
+        /// </summary>
+        public static ModificationItem New(int arg0, Javax.Naming.Directory.Attribute arg1)
+        {
+            return JVMBridgeBase.New<ModificationItem>(arg0, arg1);
+        }
 
         #endregion
 

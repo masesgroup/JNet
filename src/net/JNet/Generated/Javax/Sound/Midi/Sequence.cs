@@ -75,6 +75,13 @@ namespace Javax.Sound.Midi
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Sequence(float arg0, int arg1, int arg2)
+        /// </summary>
+        public static Sequence New(float arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<Sequence>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/midi/Sequence.html#javax.sound.midi.Sequence(float,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -83,6 +90,13 @@ namespace Javax.Sound.Midi
         public Sequence(float arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for Sequence(float arg0, int arg1)
+        /// </summary>
+        public static Sequence New(float arg0, int arg1)
+        {
+            return JVMBridgeBase.New<Sequence>(arg0, arg1);
         }
 
         #endregion

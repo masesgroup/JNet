@@ -172,6 +172,13 @@ namespace Javax.Swing.Text.Html
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for HTML()
+        /// </summary>
+        public static HTML New()
+        {
+            return JVMBridgeBase.New<HTML>();
+        }
 
         #endregion
 
@@ -601,6 +608,13 @@ namespace Javax.Swing.Text.Html
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for Tag()
+            /// </summary>
+            public static Tag New()
+            {
+                return JVMBridgeBase.New<Tag>();
+            }
 
             #endregion
 
@@ -967,6 +981,13 @@ namespace Javax.Swing.Text.Html
             public UnknownTag(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for UnknownTag(Java.Lang.String arg0)
+            /// </summary>
+            public static UnknownTag New(Java.Lang.String arg0)
+            {
+                return JVMBridgeBase.New<UnknownTag>(arg0);
             }
 
             #endregion

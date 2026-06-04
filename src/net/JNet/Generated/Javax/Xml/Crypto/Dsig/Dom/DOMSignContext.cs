@@ -74,6 +74,13 @@ namespace Javax.Xml.Crypto.Dsig.Dom
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DOMSignContext(Java.Security.Key arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
+        /// </summary>
+        public static DOMSignContext New(Java.Security.Key arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
+        {
+            return JVMBridgeBase.New<DOMSignContext>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/crypto/dsig/dom/DOMSignContext.html#javax.xml.crypto.dsig.dom.DOMSignContext(java.security.Key,org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         public DOMSignContext(Java.Security.Key arg0, Org.W3c.Dom.Node arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DOMSignContext(Java.Security.Key arg0, Org.W3c.Dom.Node arg1)
+        /// </summary>
+        public static DOMSignContext New(Java.Security.Key arg0, Org.W3c.Dom.Node arg1)
+        {
+            return JVMBridgeBase.New<DOMSignContext>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/crypto/dsig/dom/DOMSignContext.html#javax.xml.crypto.dsig.dom.DOMSignContext(javax.xml.crypto.KeySelector,org.w3c.dom.Node,org.w3c.dom.Node)"/>
@@ -93,6 +107,13 @@ namespace Javax.Xml.Crypto.Dsig.Dom
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DOMSignContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
+        /// </summary>
+        public static DOMSignContext New(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
+        {
+            return JVMBridgeBase.New<DOMSignContext>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/crypto/dsig/dom/DOMSignContext.html#javax.xml.crypto.dsig.dom.DOMSignContext(javax.xml.crypto.KeySelector,org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Crypto.KeySelector"/></param>
@@ -100,6 +121,13 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         public DOMSignContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DOMSignContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
+        /// </summary>
+        public static DOMSignContext New(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
+        {
+            return JVMBridgeBase.New<DOMSignContext>(arg0, arg1);
         }
 
         #endregion

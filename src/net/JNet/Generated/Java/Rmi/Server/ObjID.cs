@@ -71,12 +71,26 @@ namespace Java.Rmi.Server
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ObjID()
+        /// </summary>
+        public static ObjID New()
+        {
+            return JVMBridgeBase.New<ObjID>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ObjID.html#java.rmi.server.ObjID(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ObjID(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ObjID(int arg0)
+        /// </summary>
+        public static ObjID New(int arg0)
+        {
+            return JVMBridgeBase.New<ObjID>(arg0);
         }
 
         #endregion

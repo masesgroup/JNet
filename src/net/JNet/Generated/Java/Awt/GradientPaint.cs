@@ -78,6 +78,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for GradientPaint(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5, bool arg6)
+        /// </summary>
+        public static GradientPaint New(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5, bool arg6)
+        {
+            return JVMBridgeBase.New<GradientPaint>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/GradientPaint.html#java.awt.GradientPaint(float,float,java.awt.Color,float,float,java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -89,6 +96,13 @@ namespace Java.Awt
         public GradientPaint(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for GradientPaint(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5)
+        /// </summary>
+        public static GradientPaint New(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5)
+        {
+            return JVMBridgeBase.New<GradientPaint>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/GradientPaint.html#java.awt.GradientPaint(java.awt.geom.Point2D,java.awt.Color,java.awt.geom.Point2D,java.awt.Color,boolean)"/>
@@ -103,6 +117,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for GradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3, bool arg4)
+        /// </summary>
+        public static GradientPaint New(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3, bool arg4)
+        {
+            return JVMBridgeBase.New<GradientPaint>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/GradientPaint.html#java.awt.GradientPaint(java.awt.geom.Point2D,java.awt.Color,java.awt.geom.Point2D,java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
@@ -112,6 +133,13 @@ namespace Java.Awt
         public GradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for GradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3)
+        /// </summary>
+        public static GradientPaint New(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3)
+        {
+            return JVMBridgeBase.New<GradientPaint>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

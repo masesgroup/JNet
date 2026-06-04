@@ -70,6 +70,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for LayoutQueue()
+        /// </summary>
+        public static LayoutQueue New()
+        {
+            return JVMBridgeBase.New<LayoutQueue>();
+        }
 
         #endregion
 

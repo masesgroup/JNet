@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SpinnerDateModel()
+        /// </summary>
+        public static SpinnerDateModel New()
+        {
+            return JVMBridgeBase.New<SpinnerDateModel>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SpinnerDateModel.html#javax.swing.SpinnerDateModel(java.util.Date,java.lang.Comparable,java.lang.Comparable,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Date"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Swing
         public SpinnerDateModel(Java.Util.Date arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, int arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for SpinnerDateModel(Java.Util.Date arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, int arg3)
+        /// </summary>
+        public static SpinnerDateModel New(Java.Util.Date arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, int arg3)
+        {
+            return JVMBridgeBase.New<SpinnerDateModel>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

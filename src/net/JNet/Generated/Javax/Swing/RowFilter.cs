@@ -210,6 +210,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for RowFilter()
+        /// </summary>
+        public static RowFilter New()
+        {
+            return JVMBridgeBase.New<RowFilter>();
+        }
 
         #endregion
 
@@ -373,6 +380,13 @@ namespace Javax.Swing
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for Entry()
+            /// </summary>
+            public static Entry New()
+            {
+                return JVMBridgeBase.New<Entry>();
+            }
 
             #endregion
 
@@ -449,6 +463,13 @@ namespace Javax.Swing
             public Entry() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for Entry()
+            /// </summary>
+            public static Entry<M, I> New()
+            {
+                return JVMBridgeBase.New<Entry<M, I>>();
             }
 
             #endregion
@@ -537,6 +558,13 @@ namespace Javax.Swing
         public RowFilter() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for RowFilter()
+        /// </summary>
+        public static RowFilter<M, I> New()
+        {
+            return JVMBridgeBase.New<RowFilter<M, I>>();
         }
 
         #endregion

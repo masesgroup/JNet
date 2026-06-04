@@ -71,12 +71,26 @@ namespace Java.Io
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for PipedInputStream()
+        /// </summary>
+        public static PipedInputStream New()
+        {
+            return JVMBridgeBase.New<PipedInputStream>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PipedInputStream.html#java.io.PipedInputStream(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public PipedInputStream(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PipedInputStream(int arg0)
+        /// </summary>
+        public static PipedInputStream New(int arg0)
+        {
+            return JVMBridgeBase.New<PipedInputStream>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PipedInputStream.html#java.io.PipedInputStream(java.io.PipedOutputStream,int)"/>
@@ -89,6 +103,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PipedInputStream(Java.Io.PipedOutputStream arg0, int arg1)
+        /// </summary>
+        public static PipedInputStream New(Java.Io.PipedOutputStream arg0, int arg1)
+        {
+            return JVMBridgeBase.New<PipedInputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PipedInputStream.html#java.io.PipedInputStream(java.io.PipedOutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PipedOutputStream"/></param>
@@ -96,6 +117,13 @@ namespace Java.Io
         public PipedInputStream(Java.Io.PipedOutputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PipedInputStream(Java.Io.PipedOutputStream arg0)
+        /// </summary>
+        public static PipedInputStream New(Java.Io.PipedOutputStream arg0)
+        {
+            return JVMBridgeBase.New<PipedInputStream>(arg0);
         }
 
         #endregion

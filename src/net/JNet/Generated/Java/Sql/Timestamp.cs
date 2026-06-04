@@ -79,12 +79,26 @@ namespace Java.Sql
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for Timestamp(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
+        /// </summary>
+        public static Timestamp New(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
+        {
+            return JVMBridgeBase.New<Timestamp>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/Timestamp.html#java.sql.Timestamp(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public Timestamp(long arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Timestamp(long arg0)
+        /// </summary>
+        public static Timestamp New(long arg0)
+        {
+            return JVMBridgeBase.New<Timestamp>(arg0);
         }
 
         #endregion

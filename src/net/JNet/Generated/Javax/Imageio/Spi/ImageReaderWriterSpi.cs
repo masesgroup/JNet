@@ -71,6 +71,13 @@ namespace Javax.Imageio.Spi
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ImageReaderWriterSpi()
+        /// </summary>
+        public static ImageReaderWriterSpi New()
+        {
+            return JVMBridgeBase.New<ImageReaderWriterSpi>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/spi/ImageReaderWriterSpi.html#javax.imageio.spi.ImageReaderWriterSpi(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -92,6 +99,13 @@ namespace Javax.Imageio.Spi
         public ImageReaderWriterSpi(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String[] arg3, Java.Lang.String[] arg4, Java.Lang.String arg5, bool arg6, Java.Lang.String arg7, Java.Lang.String arg8, Java.Lang.String[] arg9, Java.Lang.String[] arg10, bool arg11, Java.Lang.String arg12, Java.Lang.String arg13, Java.Lang.String[] arg14, Java.Lang.String[] arg15) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
+        }
+        /// <summary>
+        /// HPA initializer for ImageReaderWriterSpi(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String[] arg3, Java.Lang.String[] arg4, Java.Lang.String arg5, bool arg6, Java.Lang.String arg7, Java.Lang.String arg8, Java.Lang.String[] arg9, Java.Lang.String[] arg10, bool arg11, Java.Lang.String arg12, Java.Lang.String arg13, Java.Lang.String[] arg14, Java.Lang.String[] arg15)
+        /// </summary>
+        public static ImageReaderWriterSpi New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String[] arg3, Java.Lang.String[] arg4, Java.Lang.String arg5, bool arg6, Java.Lang.String arg7, Java.Lang.String arg8, Java.Lang.String[] arg9, Java.Lang.String[] arg10, bool arg11, Java.Lang.String arg12, Java.Lang.String arg13, Java.Lang.String[] arg14, Java.Lang.String[] arg15)
+        {
+            return JVMBridgeBase.New<ImageReaderWriterSpi>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
         }
 
         #endregion

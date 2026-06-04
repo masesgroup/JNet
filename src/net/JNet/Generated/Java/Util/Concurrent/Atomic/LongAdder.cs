@@ -70,6 +70,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for LongAdder()
+        /// </summary>
+        public static LongAdder New()
+        {
+            return JVMBridgeBase.New<LongAdder>();
+        }
 
         #endregion
 

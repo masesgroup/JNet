@@ -105,6 +105,13 @@ namespace Java.Util.Concurrent
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Exchanger()
+        /// </summary>
+        public static Exchanger New()
+        {
+            return JVMBridgeBase.New<Exchanger>();
+        }
 
         #endregion
 
@@ -165,6 +172,13 @@ namespace Java.Util.Concurrent
         public Exchanger() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for Exchanger()
+        /// </summary>
+        public static Exchanger<V> New()
+        {
+            return JVMBridgeBase.New<Exchanger<V>>();
         }
 
         #endregion

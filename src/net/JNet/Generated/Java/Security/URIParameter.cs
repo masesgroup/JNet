@@ -71,6 +71,13 @@ namespace Java.Security
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for URIParameter(Java.Net.URI arg0)
+        /// </summary>
+        public static URIParameter New(Java.Net.URI arg0)
+        {
+            return JVMBridgeBase.New<URIParameter>(arg0);
+        }
 
         #endregion
 

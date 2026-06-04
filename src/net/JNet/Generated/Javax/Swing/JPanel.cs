@@ -71,12 +71,26 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JPanel()
+        /// </summary>
+        public static JPanel New()
+        {
+            return JVMBridgeBase.New<JPanel>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPanel.html#javax.swing.JPanel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public JPanel(bool arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JPanel(bool arg0)
+        /// </summary>
+        public static JPanel New(bool arg0)
+        {
+            return JVMBridgeBase.New<JPanel>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPanel.html#javax.swing.JPanel(java.awt.LayoutManager,boolean)"/>
@@ -88,12 +102,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JPanel(Java.Awt.LayoutManager arg0, bool arg1)
+        /// </summary>
+        public static JPanel New(Java.Awt.LayoutManager arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<JPanel>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPanel.html#javax.swing.JPanel(java.awt.LayoutManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.LayoutManager"/></param>
         public JPanel(Java.Awt.LayoutManager arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JPanel(Java.Awt.LayoutManager arg0)
+        /// </summary>
+        public static JPanel New(Java.Awt.LayoutManager arg0)
+        {
+            return JVMBridgeBase.New<JPanel>(arg0);
         }
 
         #endregion

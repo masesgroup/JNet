@@ -70,6 +70,13 @@ namespace Javax.Rmi.Ssl
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SslRMIClientSocketFactory()
+        /// </summary>
+        public static SslRMIClientSocketFactory New()
+        {
+            return JVMBridgeBase.New<SslRMIClientSocketFactory>();
+        }
 
         #endregion
 

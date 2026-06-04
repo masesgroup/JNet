@@ -71,6 +71,13 @@ namespace Javax.Swing.Text.Html
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for FormView(Javax.Swing.Text.Element arg0)
+        /// </summary>
+        public static FormView New(Javax.Swing.Text.Element arg0)
+        {
+            return JVMBridgeBase.New<FormView>(arg0);
+        }
 
         #endregion
 

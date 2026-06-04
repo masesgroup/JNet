@@ -73,6 +73,13 @@ namespace Javax.Swing.Event
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for TableColumnModelEvent(Javax.Swing.Table.TableColumnModel arg0, int arg1, int arg2)
+        /// </summary>
+        public static TableColumnModelEvent New(Javax.Swing.Table.TableColumnModel arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<TableColumnModelEvent>(arg0, arg1, arg2);
+        }
 
         #endregion
 

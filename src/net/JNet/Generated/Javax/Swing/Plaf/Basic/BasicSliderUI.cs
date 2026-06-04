@@ -207,6 +207,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for BasicSliderUI(Javax.Swing.JSlider arg0)
+        /// </summary>
+        public static BasicSliderUI New(Javax.Swing.JSlider arg0)
+        {
+            return JVMBridgeBase.New<BasicSliderUI>(arg0);
+        }
 
         #endregion
 
@@ -369,6 +376,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0, arg1, arg2, arg3);
             }
+            /// <summary>
+            /// HPA initializer for ActionScroller(Javax.Swing.Plaf.Basic.BasicSliderUI arg0, Javax.Swing.JSlider arg1, int arg2, bool arg3)
+            /// </summary>
+            public static ActionScroller New(Javax.Swing.Plaf.Basic.BasicSliderUI arg0, Javax.Swing.JSlider arg1, int arg2, bool arg3)
+            {
+                return JVMBridgeBase.New<ActionScroller>(arg0, arg1, arg2, arg3);
+            }
 
             #endregion
 
@@ -407,6 +421,13 @@ namespace Javax.Swing.Plaf.Basic
             public ChangeHandler(Javax.Swing.Plaf.Basic.BasicSliderUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for ChangeHandler(Javax.Swing.Plaf.Basic.BasicSliderUI arg0)
+            /// </summary>
+            public static ChangeHandler New(Javax.Swing.Plaf.Basic.BasicSliderUI arg0)
+            {
+                return JVMBridgeBase.New<ChangeHandler>(arg0);
             }
 
             #endregion
@@ -458,6 +479,13 @@ namespace Javax.Swing.Plaf.Basic
             public FocusHandler(Javax.Swing.Plaf.Basic.BasicSliderUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for FocusHandler(Javax.Swing.Plaf.Basic.BasicSliderUI arg0)
+            /// </summary>
+            public static FocusHandler New(Javax.Swing.Plaf.Basic.BasicSliderUI arg0)
+            {
+                return JVMBridgeBase.New<FocusHandler>(arg0);
             }
 
             #endregion
@@ -517,6 +545,13 @@ namespace Javax.Swing.Plaf.Basic
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicSliderUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicSliderUI arg0)
+            /// </summary>
+            public static PropertyChangeHandler New(Javax.Swing.Plaf.Basic.BasicSliderUI arg0)
+            {
+                return JVMBridgeBase.New<PropertyChangeHandler>(arg0);
             }
 
             #endregion

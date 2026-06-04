@@ -71,6 +71,13 @@ namespace Java.Text
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DecimalFormat()
+        /// </summary>
+        public static DecimalFormat New()
+        {
+            return JVMBridgeBase.New<DecimalFormat>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/DecimalFormat.html#java.text.DecimalFormat(java.lang.String,java.text.DecimalFormatSymbols)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -80,12 +87,26 @@ namespace Java.Text
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for DecimalFormat(Java.Lang.String arg0, Java.Text.DecimalFormatSymbols arg1)
+        /// </summary>
+        public static DecimalFormat New(Java.Lang.String arg0, Java.Text.DecimalFormatSymbols arg1)
+        {
+            return JVMBridgeBase.New<DecimalFormat>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/DecimalFormat.html#java.text.DecimalFormat(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public DecimalFormat(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DecimalFormat(Java.Lang.String arg0)
+        /// </summary>
+        public static DecimalFormat New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<DecimalFormat>(arg0);
         }
 
         #endregion

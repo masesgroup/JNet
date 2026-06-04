@@ -74,6 +74,13 @@ namespace Javax.Activation
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ActivationDataFlavor(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static ActivationDataFlavor New(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<ActivationDataFlavor>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/ActivationDataFlavor.html#javax.activation.ActivationDataFlavor(java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -83,6 +90,13 @@ namespace Javax.Activation
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ActivationDataFlavor(Java.Lang.Class arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static ActivationDataFlavor New(Java.Lang.Class arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<ActivationDataFlavor>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/activation/ActivationDataFlavor.html#javax.activation.ActivationDataFlavor(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -90,6 +104,13 @@ namespace Javax.Activation
         public ActivationDataFlavor(Java.Lang.String arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for ActivationDataFlavor(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static ActivationDataFlavor New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<ActivationDataFlavor>(arg0, arg1);
         }
 
         #endregion

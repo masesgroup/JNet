@@ -104,6 +104,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicMenuUI()
+        /// </summary>
+        public static BasicMenuUI New()
+        {
+            return JVMBridgeBase.New<BasicMenuUI>();
+        }
 
         #endregion
 
@@ -137,6 +144,13 @@ namespace Javax.Swing.Plaf.Basic
             public ChangeHandler(Javax.Swing.Plaf.Basic.BasicMenuUI arg0, Javax.Swing.JMenu arg1, Javax.Swing.Plaf.Basic.BasicMenuUI arg2) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// HPA initializer for ChangeHandler(Javax.Swing.Plaf.Basic.BasicMenuUI arg0, Javax.Swing.JMenu arg1, Javax.Swing.Plaf.Basic.BasicMenuUI arg2)
+            /// </summary>
+            public static ChangeHandler New(Javax.Swing.Plaf.Basic.BasicMenuUI arg0, Javax.Swing.JMenu arg1, Javax.Swing.Plaf.Basic.BasicMenuUI arg2)
+            {
+                return JVMBridgeBase.New<ChangeHandler>(arg0, arg1, arg2);
             }
 
             #endregion

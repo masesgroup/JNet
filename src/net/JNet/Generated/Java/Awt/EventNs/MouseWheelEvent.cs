@@ -82,6 +82,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
+        /// HPA initializer for MouseWheelEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, int arg8, int arg9, int arg10)
+        /// </summary>
+        public static MouseWheelEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, int arg8, int arg9, int arg10)
+        {
+            return JVMBridgeBase.New<MouseWheelEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseWheelEvent.html#java.awt.event.MouseWheelEvent(java.awt.Component,int,long,int,int,int,int,int,int,boolean,int,int,int,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -103,6 +110,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
         }
         /// <summary>
+        /// HPA initializer for MouseWheelEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10, int arg11, int arg12, double arg13)
+        /// </summary>
+        public static MouseWheelEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10, int arg11, int arg12, double arg13)
+        {
+            return JVMBridgeBase.New<MouseWheelEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseWheelEvent.html#java.awt.event.MouseWheelEvent(java.awt.Component,int,long,int,int,int,int,int,int,boolean,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -121,6 +135,13 @@ namespace Java.Awt.EventNs
         public MouseWheelEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10, int arg11, int arg12) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
+        }
+        /// <summary>
+        /// HPA initializer for MouseWheelEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10, int arg11, int arg12)
+        /// </summary>
+        public static MouseWheelEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10, int arg11, int arg12)
+        {
+            return JVMBridgeBase.New<MouseWheelEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
         }
 
         #endregion

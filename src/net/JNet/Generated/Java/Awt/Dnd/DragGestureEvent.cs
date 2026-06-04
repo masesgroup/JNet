@@ -74,6 +74,13 @@ namespace Java.Awt.Dnd
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// HPA initializer for DragGestureEvent(Java.Awt.Dnd.DragGestureRecognizer arg0, int arg1, Java.Awt.Point arg2, Java.Util.List arg3)
+        /// </summary>
+        public static DragGestureEvent New(Java.Awt.Dnd.DragGestureRecognizer arg0, int arg1, Java.Awt.Point arg2, Java.Util.List arg3)
+        {
+            return JVMBridgeBase.New<DragGestureEvent>(arg0, arg1, arg2, arg3);
+        }
 
         #endregion
 

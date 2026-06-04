@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthViewportUI()
+        /// </summary>
+        public static SynthViewportUI New()
+        {
+            return JVMBridgeBase.New<SynthViewportUI>();
+        }
 
         #endregion
 

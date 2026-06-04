@@ -70,6 +70,13 @@ namespace Org.Xml.Sax.Helpers
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultHandler()
+        /// </summary>
+        public static DefaultHandler New()
+        {
+            return JVMBridgeBase.New<DefaultHandler>();
+        }
 
         #endregion
 

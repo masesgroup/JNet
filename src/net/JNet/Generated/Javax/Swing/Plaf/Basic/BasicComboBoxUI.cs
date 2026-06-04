@@ -240,6 +240,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicComboBoxUI()
+        /// </summary>
+        public static BasicComboBoxUI New()
+        {
+            return JVMBridgeBase.New<BasicComboBoxUI>();
+        }
 
         #endregion
 
@@ -319,6 +326,13 @@ namespace Javax.Swing.Plaf.Basic
             public ComboBoxLayoutManager(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for ComboBoxLayoutManager(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
+            /// </summary>
+            public static ComboBoxLayoutManager New(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
+            {
+                return JVMBridgeBase.New<ComboBoxLayoutManager>(arg0);
             }
 
             #endregion
@@ -402,6 +416,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for FocusHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
+            /// </summary>
+            public static FocusHandler New(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
+            {
+                return JVMBridgeBase.New<FocusHandler>(arg0);
+            }
 
             #endregion
 
@@ -461,6 +482,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for ItemHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
+            /// </summary>
+            public static ItemHandler New(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
+            {
+                return JVMBridgeBase.New<ItemHandler>(arg0);
+            }
 
             #endregion
 
@@ -511,6 +539,13 @@ namespace Javax.Swing.Plaf.Basic
             public ListDataHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for ListDataHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
+            /// </summary>
+            public static ListDataHandler New(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
+            {
+                return JVMBridgeBase.New<ListDataHandler>(arg0);
             }
 
             #endregion
@@ -578,6 +613,13 @@ namespace Javax.Swing.Plaf.Basic
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
+            /// </summary>
+            public static PropertyChangeHandler New(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
+            {
+                return JVMBridgeBase.New<PropertyChangeHandler>(arg0);
             }
 
             #endregion

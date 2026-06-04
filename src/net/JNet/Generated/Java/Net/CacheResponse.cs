@@ -70,6 +70,13 @@ namespace Java.Net
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for CacheResponse()
+        /// </summary>
+        public static CacheResponse New()
+        {
+            return JVMBridgeBase.New<CacheResponse>();
+        }
 
         #endregion
 

@@ -73,12 +73,26 @@ namespace Javax.Xml.Crypto.Dsig.Spec
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for XPathFilterParameterSpec(Java.Lang.String arg0, Java.Util.Map arg1)
+        /// </summary>
+        public static XPathFilterParameterSpec New(Java.Lang.String arg0, Java.Util.Map arg1)
+        {
+            return JVMBridgeBase.New<XPathFilterParameterSpec>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/crypto/dsig/spec/XPathFilterParameterSpec.html#javax.xml.crypto.dsig.spec.XPathFilterParameterSpec(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public XPathFilterParameterSpec(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for XPathFilterParameterSpec(Java.Lang.String arg0)
+        /// </summary>
+        public static XPathFilterParameterSpec New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<XPathFilterParameterSpec>(arg0);
         }
 
         #endregion

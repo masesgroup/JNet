@@ -76,6 +76,13 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for MatteBorder(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
+        /// </summary>
+        public static MatteBorder New(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
+        {
+            return JVMBridgeBase.New<MatteBorder>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/MatteBorder.html#javax.swing.border.MatteBorder(int,int,int,int,javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -88,6 +95,13 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for MatteBorder(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
+        /// </summary>
+        public static MatteBorder New(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
+        {
+            return JVMBridgeBase.New<MatteBorder>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/MatteBorder.html#javax.swing.border.MatteBorder(java.awt.Insets,java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Insets"/></param>
@@ -95,6 +109,13 @@ namespace Javax.Swing.Border
         public MatteBorder(Java.Awt.Insets arg0, Java.Awt.Color arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for MatteBorder(Java.Awt.Insets arg0, Java.Awt.Color arg1)
+        /// </summary>
+        public static MatteBorder New(Java.Awt.Insets arg0, Java.Awt.Color arg1)
+        {
+            return JVMBridgeBase.New<MatteBorder>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/MatteBorder.html#javax.swing.border.MatteBorder(java.awt.Insets,javax.swing.Icon)"/>
@@ -106,12 +127,26 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for MatteBorder(Java.Awt.Insets arg0, Javax.Swing.Icon arg1)
+        /// </summary>
+        public static MatteBorder New(Java.Awt.Insets arg0, Javax.Swing.Icon arg1)
+        {
+            return JVMBridgeBase.New<MatteBorder>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/MatteBorder.html#javax.swing.border.MatteBorder(javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
         public MatteBorder(Javax.Swing.Icon arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MatteBorder(Javax.Swing.Icon arg0)
+        /// </summary>
+        public static MatteBorder New(Javax.Swing.Icon arg0)
+        {
+            return JVMBridgeBase.New<MatteBorder>(arg0);
         }
 
         #endregion

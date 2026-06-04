@@ -106,12 +106,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for CopyOnWriteArraySet()
+        /// </summary>
+        public static CopyOnWriteArraySet New()
+        {
+            return JVMBridgeBase.New<CopyOnWriteArraySet>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArraySet.html#java.util.concurrent.CopyOnWriteArraySet(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public CopyOnWriteArraySet(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for CopyOnWriteArraySet(Java.Util.Collection arg0)
+        /// </summary>
+        public static CopyOnWriteArraySet New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<CopyOnWriteArraySet>(arg0);
         }
 
         #endregion
@@ -156,12 +170,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for CopyOnWriteArraySet()
+        /// </summary>
+        public static CopyOnWriteArraySet<E> New()
+        {
+            return JVMBridgeBase.New<CopyOnWriteArraySet<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArraySet.html#java.util.concurrent.CopyOnWriteArraySet(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public CopyOnWriteArraySet(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for CopyOnWriteArraySet(Java.Util.Collection%3CE%3E arg0)
+        /// </summary>
+        public static CopyOnWriteArraySet<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<CopyOnWriteArraySet<E>>(arg0);
         }
 
         #endregion

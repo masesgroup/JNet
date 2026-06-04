@@ -74,6 +74,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Event(object arg0, int arg1, object arg2)
+        /// </summary>
+        public static Event New(object arg0, int arg1, object arg2)
+        {
+            return JVMBridgeBase.New<Event>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#java.awt.Event(java.lang.Object,long,int,int,int,int,int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -89,6 +96,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
+        /// HPA initializer for Event(object arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6, object arg7)
+        /// </summary>
+        public static Event New(object arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6, object arg7)
+        {
+            return JVMBridgeBase.New<Event>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Event.html#java.awt.Event(java.lang.Object,long,int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -101,6 +115,13 @@ namespace Java.Awt
         public Event(object arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// HPA initializer for Event(object arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
+        /// </summary>
+        public static Event New(object arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
+        {
+            return JVMBridgeBase.New<Event>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
 
         #endregion

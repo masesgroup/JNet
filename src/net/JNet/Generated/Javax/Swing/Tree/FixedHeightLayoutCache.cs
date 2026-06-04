@@ -70,6 +70,13 @@ namespace Javax.Swing.Tree
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for FixedHeightLayoutCache()
+        /// </summary>
+        public static FixedHeightLayoutCache New()
+        {
+            return JVMBridgeBase.New<FixedHeightLayoutCache>();
+        }
 
         #endregion
 

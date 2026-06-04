@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultDesktopManager()
+        /// </summary>
+        public static DefaultDesktopManager New()
+        {
+            return JVMBridgeBase.New<DefaultDesktopManager>();
+        }
 
         #endregion
 

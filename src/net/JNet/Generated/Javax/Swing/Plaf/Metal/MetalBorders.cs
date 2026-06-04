@@ -546,6 +546,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalBorders()
+        /// </summary>
+        public static MetalBorders New()
+        {
+            return JVMBridgeBase.New<MetalBorders>();
+        }
 
         #endregion
 
@@ -612,6 +619,13 @@ namespace Javax.Swing.Plaf.Metal
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for ButtonBorder()
+            /// </summary>
+            public static ButtonBorder New()
+            {
+                return JVMBridgeBase.New<ButtonBorder>();
+            }
 
             #endregion
 
@@ -653,6 +667,13 @@ namespace Javax.Swing.Plaf.Metal
             public Flush3DBorder() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for Flush3DBorder()
+            /// </summary>
+            public static Flush3DBorder New()
+            {
+                return JVMBridgeBase.New<Flush3DBorder>();
             }
 
             #endregion
@@ -696,6 +717,13 @@ namespace Javax.Swing.Plaf.Metal
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for InternalFrameBorder()
+            /// </summary>
+            public static InternalFrameBorder New()
+            {
+                return JVMBridgeBase.New<InternalFrameBorder>();
+            }
 
             #endregion
 
@@ -737,6 +765,13 @@ namespace Javax.Swing.Plaf.Metal
             public MenuBarBorder() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for MenuBarBorder()
+            /// </summary>
+            public static MenuBarBorder New()
+            {
+                return JVMBridgeBase.New<MenuBarBorder>();
             }
 
             #endregion
@@ -780,6 +815,13 @@ namespace Javax.Swing.Plaf.Metal
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for MenuItemBorder()
+            /// </summary>
+            public static MenuItemBorder New()
+            {
+                return JVMBridgeBase.New<MenuItemBorder>();
+            }
 
             #endregion
 
@@ -821,6 +863,13 @@ namespace Javax.Swing.Plaf.Metal
             public OptionDialogBorder() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for OptionDialogBorder()
+            /// </summary>
+            public static OptionDialogBorder New()
+            {
+                return JVMBridgeBase.New<OptionDialogBorder>();
             }
 
             #endregion
@@ -864,6 +913,13 @@ namespace Javax.Swing.Plaf.Metal
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for PaletteBorder()
+            /// </summary>
+            public static PaletteBorder New()
+            {
+                return JVMBridgeBase.New<PaletteBorder>();
+            }
 
             #endregion
 
@@ -905,6 +961,13 @@ namespace Javax.Swing.Plaf.Metal
             public PopupMenuBorder() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for PopupMenuBorder()
+            /// </summary>
+            public static PopupMenuBorder New()
+            {
+                return JVMBridgeBase.New<PopupMenuBorder>();
             }
 
             #endregion
@@ -948,6 +1011,13 @@ namespace Javax.Swing.Plaf.Metal
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for RolloverButtonBorder()
+            /// </summary>
+            public static RolloverButtonBorder New()
+            {
+                return JVMBridgeBase.New<RolloverButtonBorder>();
+            }
 
             #endregion
 
@@ -985,6 +1055,13 @@ namespace Javax.Swing.Plaf.Metal
             public ScrollPaneBorder() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for ScrollPaneBorder()
+            /// </summary>
+            public static ScrollPaneBorder New()
+            {
+                return JVMBridgeBase.New<ScrollPaneBorder>();
             }
 
             #endregion
@@ -1028,6 +1105,13 @@ namespace Javax.Swing.Plaf.Metal
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for TableHeaderBorder()
+            /// </summary>
+            public static TableHeaderBorder New()
+            {
+                return JVMBridgeBase.New<TableHeaderBorder>();
+            }
 
             #endregion
 
@@ -1065,6 +1149,13 @@ namespace Javax.Swing.Plaf.Metal
             public TextFieldBorder() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for TextFieldBorder()
+            /// </summary>
+            public static TextFieldBorder New()
+            {
+                return JVMBridgeBase.New<TextFieldBorder>();
             }
 
             #endregion
@@ -1104,6 +1195,13 @@ namespace Javax.Swing.Plaf.Metal
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for ToggleButtonBorder()
+            /// </summary>
+            public static ToggleButtonBorder New()
+            {
+                return JVMBridgeBase.New<ToggleButtonBorder>();
+            }
 
             #endregion
 
@@ -1141,6 +1239,13 @@ namespace Javax.Swing.Plaf.Metal
             public ToolBarBorder() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for ToolBarBorder()
+            /// </summary>
+            public static ToolBarBorder New()
+            {
+                return JVMBridgeBase.New<ToolBarBorder>();
             }
 
             #endregion

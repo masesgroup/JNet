@@ -78,6 +78,13 @@ namespace Javax.Swing.Event
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
+        /// <summary>
+        /// HPA initializer for MenuKeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5, Javax.Swing.MenuElement[] arg6, Javax.Swing.MenuSelectionManager arg7)
+        /// </summary>
+        public static MenuKeyEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5, Javax.Swing.MenuElement[] arg6, Javax.Swing.MenuSelectionManager arg7)
+        {
+            return JVMBridgeBase.New<MenuKeyEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
 
         #endregion
 

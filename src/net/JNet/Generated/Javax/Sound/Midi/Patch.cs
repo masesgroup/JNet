@@ -72,6 +72,13 @@ namespace Javax.Sound.Midi
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for Patch(int arg0, int arg1)
+        /// </summary>
+        public static Patch New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<Patch>(arg0, arg1);
+        }
 
         #endregion
 

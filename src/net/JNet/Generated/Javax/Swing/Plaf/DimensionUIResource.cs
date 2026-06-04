@@ -72,6 +72,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for DimensionUIResource(int arg0, int arg1)
+        /// </summary>
+        public static DimensionUIResource New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<DimensionUIResource>(arg0, arg1);
+        }
 
         #endregion
 

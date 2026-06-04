@@ -73,6 +73,13 @@ namespace Java.Net
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ServerSocket()
+        /// </summary>
+        public static ServerSocket New()
+        {
+            return JVMBridgeBase.New<ServerSocket>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/ServerSocket.html#java.net.ServerSocket(int,int,java.net.InetAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -82,6 +89,13 @@ namespace Java.Net
         public ServerSocket(int arg0, int arg1, Java.Net.InetAddress arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for ServerSocket(int arg0, int arg1, Java.Net.InetAddress arg2)
+        /// </summary>
+        public static ServerSocket New(int arg0, int arg1, Java.Net.InetAddress arg2)
+        {
+            return JVMBridgeBase.New<ServerSocket>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/ServerSocket.html#java.net.ServerSocket(int,int)"/>
@@ -94,6 +108,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ServerSocket(int arg0, int arg1)
+        /// </summary>
+        public static ServerSocket New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<ServerSocket>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/ServerSocket.html#java.net.ServerSocket(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -101,6 +122,13 @@ namespace Java.Net
         public ServerSocket(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ServerSocket(int arg0)
+        /// </summary>
+        public static ServerSocket New(int arg0)
+        {
+            return JVMBridgeBase.New<ServerSocket>(arg0);
         }
 
         #endregion

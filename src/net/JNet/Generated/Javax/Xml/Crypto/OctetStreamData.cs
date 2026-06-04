@@ -74,12 +74,26 @@ namespace Javax.Xml.Crypto
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for OctetStreamData(Java.Io.InputStream arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static OctetStreamData New(Java.Io.InputStream arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<OctetStreamData>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/crypto/OctetStreamData.html#javax.xml.crypto.OctetStreamData(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public OctetStreamData(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for OctetStreamData(Java.Io.InputStream arg0)
+        /// </summary>
+        public static OctetStreamData New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<OctetStreamData>(arg0);
         }
 
         #endregion

@@ -71,12 +71,26 @@ namespace Javax.Swing.Text
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SimpleAttributeSet()
+        /// </summary>
+        public static SimpleAttributeSet New()
+        {
+            return JVMBridgeBase.New<SimpleAttributeSet>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/SimpleAttributeSet.html#javax.swing.text.SimpleAttributeSet(javax.swing.text.AttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         public SimpleAttributeSet(Javax.Swing.Text.AttributeSet arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SimpleAttributeSet(Javax.Swing.Text.AttributeSet arg0)
+        /// </summary>
+        public static SimpleAttributeSet New(Javax.Swing.Text.AttributeSet arg0)
+        {
+            return JVMBridgeBase.New<SimpleAttributeSet>(arg0);
         }
 
         #endregion

@@ -72,6 +72,13 @@ namespace Java.Awt.ImageNs
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for LookupOp(Java.Awt.ImageNs.LookupTable arg0, Java.Awt.RenderingHints arg1)
+        /// </summary>
+        public static LookupOp New(Java.Awt.ImageNs.LookupTable arg0, Java.Awt.RenderingHints arg1)
+        {
+            return JVMBridgeBase.New<LookupOp>(arg0, arg1);
+        }
 
         #endregion
 

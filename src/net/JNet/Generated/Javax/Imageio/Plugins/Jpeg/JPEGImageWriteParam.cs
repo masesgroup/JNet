@@ -71,6 +71,13 @@ namespace Javax.Imageio.Plugins.Jpeg
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for JPEGImageWriteParam(Java.Util.Locale arg0)
+        /// </summary>
+        public static JPEGImageWriteParam New(Java.Util.Locale arg0)
+        {
+            return JVMBridgeBase.New<JPEGImageWriteParam>(arg0);
+        }
 
         #endregion
 

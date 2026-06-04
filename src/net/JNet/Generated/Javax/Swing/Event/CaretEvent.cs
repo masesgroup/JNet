@@ -71,6 +71,13 @@ namespace Javax.Swing.Event
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for CaretEvent(object arg0)
+        /// </summary>
+        public static CaretEvent New(object arg0)
+        {
+            return JVMBridgeBase.New<CaretEvent>(arg0);
+        }
 
         #endregion
 

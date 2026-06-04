@@ -70,6 +70,13 @@ namespace Java.Util
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ListResourceBundle()
+        /// </summary>
+        public static ListResourceBundle New()
+        {
+            return JVMBridgeBase.New<ListResourceBundle>();
+        }
 
         #endregion
 

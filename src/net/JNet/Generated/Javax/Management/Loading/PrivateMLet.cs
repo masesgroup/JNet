@@ -73,6 +73,13 @@ namespace Javax.Management.Loading
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PrivateMLet(Java.Net.URL[] arg0, bool arg1)
+        /// </summary>
+        public static PrivateMLet New(Java.Net.URL[] arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<PrivateMLet>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/loading/PrivateMLet.html#javax.management.loading.PrivateMLet(java.net.URL[],java.lang.ClassLoader,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Management.Loading
         public PrivateMLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for PrivateMLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, bool arg2)
+        /// </summary>
+        public static PrivateMLet New(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<PrivateMLet>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/loading/PrivateMLet.html#javax.management.loading.PrivateMLet(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory,boolean)"/>
@@ -92,6 +106,13 @@ namespace Javax.Management.Loading
         public PrivateMLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2, bool arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for PrivateMLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2, bool arg3)
+        /// </summary>
+        public static PrivateMLet New(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<PrivateMLet>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

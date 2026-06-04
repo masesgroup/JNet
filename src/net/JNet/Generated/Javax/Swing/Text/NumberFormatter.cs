@@ -71,12 +71,26 @@ namespace Javax.Swing.Text
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for NumberFormatter()
+        /// </summary>
+        public static NumberFormatter New()
+        {
+            return JVMBridgeBase.New<NumberFormatter>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/NumberFormatter.html#javax.swing.text.NumberFormatter(java.text.NumberFormat)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.NumberFormat"/></param>
         public NumberFormatter(Java.Text.NumberFormat arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for NumberFormatter(Java.Text.NumberFormat arg0)
+        /// </summary>
+        public static NumberFormatter New(Java.Text.NumberFormat arg0)
+        {
+            return JVMBridgeBase.New<NumberFormatter>(arg0);
         }
 
         #endregion

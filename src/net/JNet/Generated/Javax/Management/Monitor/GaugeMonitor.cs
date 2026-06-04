@@ -70,6 +70,13 @@ namespace Javax.Management.Monitor
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for GaugeMonitor()
+        /// </summary>
+        public static GaugeMonitor New()
+        {
+            return JVMBridgeBase.New<GaugeMonitor>();
+        }
 
         #endregion
 

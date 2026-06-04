@@ -70,6 +70,13 @@ namespace Javax.Management.Remote.Rmi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for _RMIServer_Stub()
+        /// </summary>
+        public static _RMIServer_Stub New()
+        {
+            return JVMBridgeBase.New<_RMIServer_Stub>();
+        }
 
         #endregion
 

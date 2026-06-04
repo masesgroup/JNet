@@ -72,6 +72,13 @@ namespace Java.Math
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for BigInteger(byte[] arg0)
+        /// </summary>
+        public static BigInteger New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<BigInteger>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigInteger.html#java.math.BigInteger(int,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -79,6 +86,13 @@ namespace Java.Math
         public BigInteger(int arg0, byte[] arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for BigInteger(int arg0, byte[] arg1)
+        /// </summary>
+        public static BigInteger New(int arg0, byte[] arg1)
+        {
+            return JVMBridgeBase.New<BigInteger>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigInteger.html#java.math.BigInteger(int,int,java.util.Random)"/>
@@ -91,6 +105,13 @@ namespace Java.Math
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for BigInteger(int arg0, int arg1, Java.Util.Random arg2)
+        /// </summary>
+        public static BigInteger New(int arg0, int arg1, Java.Util.Random arg2)
+        {
+            return JVMBridgeBase.New<BigInteger>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigInteger.html#java.math.BigInteger(int,java.util.Random)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -98,6 +119,13 @@ namespace Java.Math
         public BigInteger(int arg0, Java.Util.Random arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for BigInteger(int arg0, Java.Util.Random arg1)
+        /// </summary>
+        public static BigInteger New(int arg0, Java.Util.Random arg1)
+        {
+            return JVMBridgeBase.New<BigInteger>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigInteger.html#java.math.BigInteger(java.lang.String,int)"/>
@@ -109,12 +137,26 @@ namespace Java.Math
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BigInteger(Java.Lang.String arg0, int arg1)
+        /// </summary>
+        public static BigInteger New(Java.Lang.String arg0, int arg1)
+        {
+            return JVMBridgeBase.New<BigInteger>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/math/BigInteger.html#java.math.BigInteger(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public BigInteger(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BigInteger(Java.Lang.String arg0)
+        /// </summary>
+        public static BigInteger New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<BigInteger>(arg0);
         }
 
         #endregion

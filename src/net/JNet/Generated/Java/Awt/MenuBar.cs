@@ -72,6 +72,13 @@ namespace Java.Awt
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MenuBar()
+        /// </summary>
+        public static MenuBar New()
+        {
+            return JVMBridgeBase.New<MenuBar>();
+        }
 
         #endregion
 

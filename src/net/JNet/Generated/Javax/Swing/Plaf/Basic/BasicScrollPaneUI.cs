@@ -138,6 +138,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicScrollPaneUI()
+        /// </summary>
+        public static BasicScrollPaneUI New()
+        {
+            return JVMBridgeBase.New<BasicScrollPaneUI>();
+        }
 
         #endregion
 
@@ -173,6 +180,13 @@ namespace Javax.Swing.Plaf.Basic
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicScrollPaneUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicScrollPaneUI arg0)
+            /// </summary>
+            public static PropertyChangeHandler New(Javax.Swing.Plaf.Basic.BasicScrollPaneUI arg0)
+            {
+                return JVMBridgeBase.New<PropertyChangeHandler>(arg0);
             }
 
             #endregion
@@ -224,6 +238,13 @@ namespace Javax.Swing.Plaf.Basic
             public ViewportChangeHandler(Javax.Swing.Plaf.Basic.BasicScrollPaneUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for ViewportChangeHandler(Javax.Swing.Plaf.Basic.BasicScrollPaneUI arg0)
+            /// </summary>
+            public static ViewportChangeHandler New(Javax.Swing.Plaf.Basic.BasicScrollPaneUI arg0)
+            {
+                return JVMBridgeBase.New<ViewportChangeHandler>(arg0);
             }
 
             #endregion

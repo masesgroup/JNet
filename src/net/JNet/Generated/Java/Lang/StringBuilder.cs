@@ -71,12 +71,26 @@ namespace Java.Lang
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for StringBuilder()
+        /// </summary>
+        public static StringBuilder New()
+        {
+            return JVMBridgeBase.New<StringBuilder>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html#java.lang.StringBuilder(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public StringBuilder(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StringBuilder(int arg0)
+        /// </summary>
+        public static StringBuilder New(int arg0)
+        {
+            return JVMBridgeBase.New<StringBuilder>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html#java.lang.StringBuilder(java.lang.CharSequence)"/>
@@ -87,12 +101,26 @@ namespace Java.Lang
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for StringBuilder(Java.Lang.CharSequence arg0)
+        /// </summary>
+        public static StringBuilder New(Java.Lang.CharSequence arg0)
+        {
+            return JVMBridgeBase.New<StringBuilder>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html#java.lang.StringBuilder(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public StringBuilder(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StringBuilder(Java.Lang.String arg0)
+        /// </summary>
+        public static StringBuilder New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<StringBuilder>(arg0);
         }
 
         #endregion

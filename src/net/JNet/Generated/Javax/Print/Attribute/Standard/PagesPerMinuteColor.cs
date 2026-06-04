@@ -71,6 +71,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for PagesPerMinuteColor(int arg0)
+        /// </summary>
+        public static PagesPerMinuteColor New(int arg0)
+        {
+            return JVMBridgeBase.New<PagesPerMinuteColor>(arg0);
+        }
 
         #endregion
 

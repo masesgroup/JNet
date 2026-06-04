@@ -76,12 +76,26 @@ namespace Javax.Swing.Plaf.Basic
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for BasicArrowButton(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
+        /// </summary>
+        public static BasicArrowButton New(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
+        {
+            return JVMBridgeBase.New<BasicArrowButton>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/basic/BasicArrowButton.html#javax.swing.plaf.basic.BasicArrowButton(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public BasicArrowButton(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BasicArrowButton(int arg0)
+        /// </summary>
+        public static BasicArrowButton New(int arg0)
+        {
+            return JVMBridgeBase.New<BasicArrowButton>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Java.Security
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for KeyStoreSpi()
+        /// </summary>
+        public static KeyStoreSpi New()
+        {
+            return JVMBridgeBase.New<KeyStoreSpi>();
+        }
 
         #endregion
 

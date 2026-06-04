@@ -106,12 +106,26 @@ namespace Java.Util.Concurrent.Atomic
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AtomicReference()
+        /// </summary>
+        public static AtomicReference New()
+        {
+            return JVMBridgeBase.New<AtomicReference>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicReference.html#java.util.concurrent.atomic.AtomicReference(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public AtomicReference(object arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AtomicReference(object arg0)
+        /// </summary>
+        public static AtomicReference New(object arg0)
+        {
+            return JVMBridgeBase.New<AtomicReference>(arg0);
         }
 
         #endregion
@@ -243,12 +257,26 @@ namespace Java.Util.Concurrent.Atomic
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AtomicReference()
+        /// </summary>
+        public static AtomicReference<V> New()
+        {
+            return JVMBridgeBase.New<AtomicReference<V>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicReference.html#java.util.concurrent.atomic.AtomicReference(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         public AtomicReference(V arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AtomicReference(V arg0)
+        /// </summary>
+        public static AtomicReference<V> New(V arg0)
+        {
+            return JVMBridgeBase.New<AtomicReference<V>>(arg0);
         }
 
         #endregion

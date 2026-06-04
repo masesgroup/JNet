@@ -73,12 +73,26 @@ namespace Javax.Swing.Event
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for SwingPropertyChangeSupport(object arg0, bool arg1)
+        /// </summary>
+        public static SwingPropertyChangeSupport New(object arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<SwingPropertyChangeSupport>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/event/SwingPropertyChangeSupport.html#javax.swing.event.SwingPropertyChangeSupport(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public SwingPropertyChangeSupport(object arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SwingPropertyChangeSupport(object arg0)
+        /// </summary>
+        public static SwingPropertyChangeSupport New(object arg0)
+        {
+            return JVMBridgeBase.New<SwingPropertyChangeSupport>(arg0);
         }
 
         #endregion

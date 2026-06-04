@@ -104,6 +104,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DocumentFilter()
+        /// </summary>
+        public static DocumentFilter New()
+        {
+            return JVMBridgeBase.New<DocumentFilter>();
+        }
 
         #endregion
 
@@ -170,6 +177,13 @@ namespace Javax.Swing.Text
             public FilterBypass() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for FilterBypass()
+            /// </summary>
+            public static FilterBypass New()
+            {
+                return JVMBridgeBase.New<FilterBypass>();
             }
 
             #endregion

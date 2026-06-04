@@ -75,6 +75,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for InvocationEvent(object arg0, Java.Lang.Runnable arg1, object arg2, bool arg3)
+        /// </summary>
+        public static InvocationEvent New(object arg0, Java.Lang.Runnable arg1, object arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<InvocationEvent>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/InvocationEvent.html#java.awt.event.InvocationEvent(java.lang.Object,java.lang.Runnable,java.lang.Runnable,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -86,6 +93,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for InvocationEvent(object arg0, Java.Lang.Runnable arg1, Java.Lang.Runnable arg2, bool arg3)
+        /// </summary>
+        public static InvocationEvent New(object arg0, Java.Lang.Runnable arg1, Java.Lang.Runnable arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<InvocationEvent>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/InvocationEvent.html#java.awt.event.InvocationEvent(java.lang.Object,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -93,6 +107,13 @@ namespace Java.Awt.EventNs
         public InvocationEvent(object arg0, Java.Lang.Runnable arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for InvocationEvent(object arg0, Java.Lang.Runnable arg1)
+        /// </summary>
+        public static InvocationEvent New(object arg0, Java.Lang.Runnable arg1)
+        {
+            return JVMBridgeBase.New<InvocationEvent>(arg0, arg1);
         }
 
         #endregion

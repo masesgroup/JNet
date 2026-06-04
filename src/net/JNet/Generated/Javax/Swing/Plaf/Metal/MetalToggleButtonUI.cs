@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalToggleButtonUI()
+        /// </summary>
+        public static MetalToggleButtonUI New()
+        {
+            return JVMBridgeBase.New<MetalToggleButtonUI>();
+        }
 
         #endregion
 

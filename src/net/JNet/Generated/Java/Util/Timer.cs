@@ -71,12 +71,26 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Timer()
+        /// </summary>
+        public static Timer New()
+        {
+            return JVMBridgeBase.New<Timer>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Timer.html#java.util.Timer(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public Timer(bool arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Timer(bool arg0)
+        /// </summary>
+        public static Timer New(bool arg0)
+        {
+            return JVMBridgeBase.New<Timer>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Timer.html#java.util.Timer(java.lang.String,boolean)"/>
@@ -88,12 +102,26 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Timer(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static Timer New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<Timer>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Timer.html#java.util.Timer(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public Timer(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Timer(Java.Lang.String arg0)
+        /// </summary>
+        public static Timer New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Timer>(arg0);
         }
 
         #endregion

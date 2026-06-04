@@ -72,6 +72,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for JobMediaSheetsSupported(int arg0, int arg1)
+        /// </summary>
+        public static JobMediaSheetsSupported New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<JobMediaSheetsSupported>(arg0, arg1);
+        }
 
         #endregion
 

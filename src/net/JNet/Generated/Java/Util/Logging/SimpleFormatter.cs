@@ -70,6 +70,13 @@ namespace Java.Util.Logging
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SimpleFormatter()
+        /// </summary>
+        public static SimpleFormatter New()
+        {
+            return JVMBridgeBase.New<SimpleFormatter>();
+        }
 
         #endregion
 

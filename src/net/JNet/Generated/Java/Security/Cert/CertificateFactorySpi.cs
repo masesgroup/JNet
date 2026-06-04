@@ -70,6 +70,13 @@ namespace Java.Security.Cert
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for CertificateFactorySpi()
+        /// </summary>
+        public static CertificateFactorySpi New()
+        {
+            return JVMBridgeBase.New<CertificateFactorySpi>();
+        }
 
         #endregion
 

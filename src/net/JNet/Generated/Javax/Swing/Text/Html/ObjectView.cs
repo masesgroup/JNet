@@ -71,6 +71,13 @@ namespace Javax.Swing.Text.Html
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ObjectView(Javax.Swing.Text.Element arg0)
+        /// </summary>
+        public static ObjectView New(Javax.Swing.Text.Element arg0)
+        {
+            return JVMBridgeBase.New<ObjectView>(arg0);
+        }
 
         #endregion
 

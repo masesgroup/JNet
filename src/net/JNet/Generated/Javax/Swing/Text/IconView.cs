@@ -71,6 +71,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for IconView(Javax.Swing.Text.Element arg0)
+        /// </summary>
+        public static IconView New(Javax.Swing.Text.Element arg0)
+        {
+            return JVMBridgeBase.New<IconView>(arg0);
+        }
 
         #endregion
 

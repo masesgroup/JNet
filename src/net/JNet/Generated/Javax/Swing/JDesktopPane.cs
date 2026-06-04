@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for JDesktopPane()
+        /// </summary>
+        public static JDesktopPane New()
+        {
+            return JVMBridgeBase.New<JDesktopPane>();
+        }
 
         #endregion
 

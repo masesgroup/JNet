@@ -73,12 +73,26 @@ namespace Javax.Naming.Ldap
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for LdapName(Java.Lang.String arg0)
+        /// </summary>
+        public static LdapName New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<LdapName>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/LdapName.html#javax.naming.ldap.LdapName(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         public LdapName(Java.Util.List<Javax.Naming.Ldap.Rdn> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LdapName(Java.Util.List%3CJavax.Naming.Ldap.Rdn%3E arg0)
+        /// </summary>
+        public static LdapName New(Java.Util.List<Javax.Naming.Ldap.Rdn> arg0)
+        {
+            return JVMBridgeBase.New<LdapName>(arg0);
         }
 
         #endregion

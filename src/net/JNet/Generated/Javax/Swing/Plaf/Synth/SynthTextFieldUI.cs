@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthTextFieldUI()
+        /// </summary>
+        public static SynthTextFieldUI New()
+        {
+            return JVMBridgeBase.New<SynthTextFieldUI>();
+        }
 
         #endregion
 

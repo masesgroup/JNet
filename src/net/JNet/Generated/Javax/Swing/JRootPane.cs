@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for JRootPane()
+        /// </summary>
+        public static JRootPane New()
+        {
+            return JVMBridgeBase.New<JRootPane>();
+        }
 
         #endregion
 

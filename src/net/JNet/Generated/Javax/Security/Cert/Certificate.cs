@@ -70,6 +70,13 @@ namespace Javax.Security.Cert
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Certificate()
+        /// </summary>
+        public static Certificate New()
+        {
+            return JVMBridgeBase.New<Certificate>();
+        }
 
         #endregion
 

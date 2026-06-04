@@ -72,6 +72,13 @@ namespace Java.Util.Jar
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JarEntry(Java.Lang.String arg0)
+        /// </summary>
+        public static JarEntry New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JarEntry>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/JarEntry.html#java.util.jar.JarEntry(java.util.jar.JarEntry)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Jar.JarEntry"/></param>
@@ -80,12 +87,26 @@ namespace Java.Util.Jar
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JarEntry(Java.Util.Jar.JarEntry arg0)
+        /// </summary>
+        public static JarEntry New(Java.Util.Jar.JarEntry arg0)
+        {
+            return JVMBridgeBase.New<JarEntry>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/JarEntry.html#java.util.jar.JarEntry(java.util.zip.ZipEntry)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Zip.ZipEntry"/></param>
         public JarEntry(Java.Util.Zip.ZipEntry arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JarEntry(Java.Util.Zip.ZipEntry arg0)
+        /// </summary>
+        public static JarEntry New(Java.Util.Zip.ZipEntry arg0)
+        {
+            return JVMBridgeBase.New<JarEntry>(arg0);
         }
 
         #endregion

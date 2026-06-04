@@ -70,6 +70,13 @@ namespace Javax.Sql.Rowset.Spi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SyncProvider()
+        /// </summary>
+        public static SyncProvider New()
+        {
+            return JVMBridgeBase.New<SyncProvider>();
+        }
 
         #endregion
 

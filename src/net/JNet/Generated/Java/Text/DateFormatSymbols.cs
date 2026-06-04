@@ -71,12 +71,26 @@ namespace Java.Text
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DateFormatSymbols()
+        /// </summary>
+        public static DateFormatSymbols New()
+        {
+            return JVMBridgeBase.New<DateFormatSymbols>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/DateFormatSymbols.html#java.text.DateFormatSymbols(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public DateFormatSymbols(Java.Util.Locale arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DateFormatSymbols(Java.Util.Locale arg0)
+        /// </summary>
+        public static DateFormatSymbols New(Java.Util.Locale arg0)
+        {
+            return JVMBridgeBase.New<DateFormatSymbols>(arg0);
         }
 
         #endregion

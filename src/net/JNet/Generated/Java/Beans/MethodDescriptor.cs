@@ -73,12 +73,26 @@ namespace Java.Beans
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for MethodDescriptor(Java.Lang.Reflect.Method arg0, Java.Beans.ParameterDescriptor[] arg1)
+        /// </summary>
+        public static MethodDescriptor New(Java.Lang.Reflect.Method arg0, Java.Beans.ParameterDescriptor[] arg1)
+        {
+            return JVMBridgeBase.New<MethodDescriptor>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/MethodDescriptor.html#java.beans.MethodDescriptor(java.lang.reflect.Method)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Reflect.Method"/></param>
         public MethodDescriptor(Java.Lang.Reflect.Method arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MethodDescriptor(Java.Lang.Reflect.Method arg0)
+        /// </summary>
+        public static MethodDescriptor New(Java.Lang.Reflect.Method arg0)
+        {
+            return JVMBridgeBase.New<MethodDescriptor>(arg0);
         }
 
         #endregion

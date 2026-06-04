@@ -71,6 +71,13 @@ namespace Javax.Security.Auth
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for SubjectDomainCombiner(Javax.Security.Auth.Subject arg0)
+        /// </summary>
+        public static SubjectDomainCombiner New(Javax.Security.Auth.Subject arg0)
+        {
+            return JVMBridgeBase.New<SubjectDomainCombiner>(arg0);
+        }
 
         #endregion
 

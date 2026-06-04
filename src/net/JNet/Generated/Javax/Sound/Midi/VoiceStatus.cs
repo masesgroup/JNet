@@ -70,6 +70,13 @@ namespace Javax.Sound.Midi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for VoiceStatus()
+        /// </summary>
+        public static VoiceStatus New()
+        {
+            return JVMBridgeBase.New<VoiceStatus>();
+        }
 
         #endregion
 

@@ -70,6 +70,13 @@ namespace Javax.Swing.Text.Html.Parser
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ParserDelegator()
+        /// </summary>
+        public static ParserDelegator New()
+        {
+            return JVMBridgeBase.New<ParserDelegator>();
+        }
 
         #endregion
 

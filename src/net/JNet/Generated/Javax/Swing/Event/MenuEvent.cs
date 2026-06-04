@@ -71,6 +71,13 @@ namespace Javax.Swing.Event
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for MenuEvent(object arg0)
+        /// </summary>
+        public static MenuEvent New(object arg0)
+        {
+            return JVMBridgeBase.New<MenuEvent>(arg0);
+        }
 
         #endregion
 

@@ -70,6 +70,13 @@ namespace Javax.Accessibility
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AccessibleHyperlink()
+        /// </summary>
+        public static AccessibleHyperlink New()
+        {
+            return JVMBridgeBase.New<AccessibleHyperlink>();
+        }
 
         #endregion
 

@@ -70,6 +70,13 @@ namespace Javax.Swing.Tree
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultTreeSelectionModel()
+        /// </summary>
+        public static DefaultTreeSelectionModel New()
+        {
+            return JVMBridgeBase.New<DefaultTreeSelectionModel>();
+        }
 
         #endregion
 

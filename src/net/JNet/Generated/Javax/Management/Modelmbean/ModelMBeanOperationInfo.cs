@@ -74,6 +74,13 @@ namespace Javax.Management.Modelmbean
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ModelMBeanOperationInfo(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Javax.Management.Descriptor arg2)
+        /// </summary>
+        public static ModelMBeanOperationInfo New(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Javax.Management.Descriptor arg2)
+        {
+            return JVMBridgeBase.New<ModelMBeanOperationInfo>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/ModelMBeanOperationInfo.html#javax.management.modelmbean.ModelMBeanOperationInfo(java.lang.String,java.lang.reflect.Method)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Management.Modelmbean
         public ModelMBeanOperationInfo(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for ModelMBeanOperationInfo(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1)
+        /// </summary>
+        public static ModelMBeanOperationInfo New(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1)
+        {
+            return JVMBridgeBase.New<ModelMBeanOperationInfo>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/ModelMBeanOperationInfo.html#javax.management.modelmbean.ModelMBeanOperationInfo(java.lang.String,java.lang.String,javax.management.MBeanParameterInfo[],java.lang.String,int,javax.management.Descriptor)"/>
@@ -96,6 +110,13 @@ namespace Javax.Management.Modelmbean
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for ModelMBeanOperationInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Java.Lang.String arg3, int arg4, Javax.Management.Descriptor arg5)
+        /// </summary>
+        public static ModelMBeanOperationInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Java.Lang.String arg3, int arg4, Javax.Management.Descriptor arg5)
+        {
+            return JVMBridgeBase.New<ModelMBeanOperationInfo>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/ModelMBeanOperationInfo.html#javax.management.modelmbean.ModelMBeanOperationInfo(java.lang.String,java.lang.String,javax.management.MBeanParameterInfo[],java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -108,12 +129,26 @@ namespace Javax.Management.Modelmbean
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for ModelMBeanOperationInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Java.Lang.String arg3, int arg4)
+        /// </summary>
+        public static ModelMBeanOperationInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Java.Lang.String arg3, int arg4)
+        {
+            return JVMBridgeBase.New<ModelMBeanOperationInfo>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/modelmbean/ModelMBeanOperationInfo.html#javax.management.modelmbean.ModelMBeanOperationInfo(javax.management.modelmbean.ModelMBeanOperationInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Modelmbean.ModelMBeanOperationInfo"/></param>
         public ModelMBeanOperationInfo(Javax.Management.Modelmbean.ModelMBeanOperationInfo arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ModelMBeanOperationInfo(Javax.Management.Modelmbean.ModelMBeanOperationInfo arg0)
+        /// </summary>
+        public static ModelMBeanOperationInfo New(Javax.Management.Modelmbean.ModelMBeanOperationInfo arg0)
+        {
+            return JVMBridgeBase.New<ModelMBeanOperationInfo>(arg0);
         }
 
         #endregion

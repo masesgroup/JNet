@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AbstractCellEditor()
+        /// </summary>
+        public static AbstractCellEditor New()
+        {
+            return JVMBridgeBase.New<AbstractCellEditor>();
+        }
 
         #endregion
 

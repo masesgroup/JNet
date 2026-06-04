@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JScrollBar()
+        /// </summary>
+        public static JScrollBar New()
+        {
+            return JVMBridgeBase.New<JScrollBar>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JScrollBar.html#javax.swing.JScrollBar(int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -83,12 +90,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for JScrollBar(int arg0, int arg1, int arg2, int arg3, int arg4)
+        /// </summary>
+        public static JScrollBar New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<JScrollBar>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JScrollBar.html#javax.swing.JScrollBar(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public JScrollBar(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JScrollBar(int arg0)
+        /// </summary>
+        public static JScrollBar New(int arg0)
+        {
+            return JVMBridgeBase.New<JScrollBar>(arg0);
         }
 
         #endregion

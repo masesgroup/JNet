@@ -71,6 +71,13 @@ namespace Java.Awt.Datatransfer
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for FlavorEvent(Java.Awt.Datatransfer.Clipboard arg0)
+        /// </summary>
+        public static FlavorEvent New(Java.Awt.Datatransfer.Clipboard arg0)
+        {
+            return JVMBridgeBase.New<FlavorEvent>(arg0);
+        }
 
         #endregion
 

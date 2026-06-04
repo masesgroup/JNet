@@ -140,6 +140,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for AsyncBoxView(Javax.Swing.Text.Element arg0, int arg1)
+        /// </summary>
+        public static AsyncBoxView New(Javax.Swing.Text.Element arg0, int arg1)
+        {
+            return JVMBridgeBase.New<AsyncBoxView>(arg0, arg1);
+        }
 
         #endregion
 
@@ -213,6 +220,13 @@ namespace Javax.Swing.Text
             public ChildLocator(Javax.Swing.Text.AsyncBoxView arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for ChildLocator(Javax.Swing.Text.AsyncBoxView arg0)
+            /// </summary>
+            public static ChildLocator New(Javax.Swing.Text.AsyncBoxView arg0)
+            {
+                return JVMBridgeBase.New<ChildLocator>(arg0);
             }
 
             #endregion
@@ -290,6 +304,13 @@ namespace Javax.Swing.Text
             public ChildState(Javax.Swing.Text.AsyncBoxView arg0, Javax.Swing.Text.View arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for ChildState(Javax.Swing.Text.AsyncBoxView arg0, Javax.Swing.Text.View arg1)
+            /// </summary>
+            public static ChildState New(Javax.Swing.Text.AsyncBoxView arg0, Javax.Swing.Text.View arg1)
+            {
+                return JVMBridgeBase.New<ChildState>(arg0, arg1);
             }
 
             #endregion

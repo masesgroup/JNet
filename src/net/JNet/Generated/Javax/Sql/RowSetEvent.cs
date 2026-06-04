@@ -71,6 +71,13 @@ namespace Javax.Sql
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for RowSetEvent(Javax.Sql.RowSet arg0)
+        /// </summary>
+        public static RowSetEvent New(Javax.Sql.RowSet arg0)
+        {
+            return JVMBridgeBase.New<RowSetEvent>(arg0);
+        }
 
         #endregion
 

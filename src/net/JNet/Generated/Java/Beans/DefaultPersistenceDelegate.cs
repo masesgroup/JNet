@@ -71,12 +71,26 @@ namespace Java.Beans
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DefaultPersistenceDelegate()
+        /// </summary>
+        public static DefaultPersistenceDelegate New()
+        {
+            return JVMBridgeBase.New<DefaultPersistenceDelegate>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/DefaultPersistenceDelegate.html#java.beans.DefaultPersistenceDelegate(java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public DefaultPersistenceDelegate(Java.Lang.String[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultPersistenceDelegate(Java.Lang.String[] arg0)
+        /// </summary>
+        public static DefaultPersistenceDelegate New(Java.Lang.String[] arg0)
+        {
+            return JVMBridgeBase.New<DefaultPersistenceDelegate>(arg0);
         }
 
         #endregion

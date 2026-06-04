@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JWindow()
+        /// </summary>
+        public static JWindow New()
+        {
+            return JVMBridgeBase.New<JWindow>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JWindow.html#javax.swing.JWindow(java.awt.Frame)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
@@ -79,12 +86,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JWindow(Java.Awt.Frame arg0)
+        /// </summary>
+        public static JWindow New(Java.Awt.Frame arg0)
+        {
+            return JVMBridgeBase.New<JWindow>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JWindow.html#javax.swing.JWindow(java.awt.GraphicsConfiguration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
         public JWindow(Java.Awt.GraphicsConfiguration arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JWindow(Java.Awt.GraphicsConfiguration arg0)
+        /// </summary>
+        public static JWindow New(Java.Awt.GraphicsConfiguration arg0)
+        {
+            return JVMBridgeBase.New<JWindow>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JWindow.html#javax.swing.JWindow(java.awt.Window,java.awt.GraphicsConfiguration)"/>
@@ -96,12 +117,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JWindow(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
+        /// </summary>
+        public static JWindow New(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
+        {
+            return JVMBridgeBase.New<JWindow>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JWindow.html#javax.swing.JWindow(java.awt.Window)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
         public JWindow(Java.Awt.Window arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JWindow(Java.Awt.Window arg0)
+        /// </summary>
+        public static JWindow New(Java.Awt.Window arg0)
+        {
+            return JVMBridgeBase.New<JWindow>(arg0);
         }
 
         #endregion

@@ -72,6 +72,13 @@ namespace Java.Net
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for InetSocketAddress(int arg0)
+        /// </summary>
+        public static InetSocketAddress New(int arg0)
+        {
+            return JVMBridgeBase.New<InetSocketAddress>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/InetSocketAddress.html#java.net.InetSocketAddress(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -81,6 +88,13 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for InetSocketAddress(Java.Lang.String arg0, int arg1)
+        /// </summary>
+        public static InetSocketAddress New(Java.Lang.String arg0, int arg1)
+        {
+            return JVMBridgeBase.New<InetSocketAddress>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/InetSocketAddress.html#java.net.InetSocketAddress(java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
@@ -88,6 +102,13 @@ namespace Java.Net
         public InetSocketAddress(Java.Net.InetAddress arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for InetSocketAddress(Java.Net.InetAddress arg0, int arg1)
+        /// </summary>
+        public static InetSocketAddress New(Java.Net.InetAddress arg0, int arg1)
+        {
+            return JVMBridgeBase.New<InetSocketAddress>(arg0, arg1);
         }
 
         #endregion

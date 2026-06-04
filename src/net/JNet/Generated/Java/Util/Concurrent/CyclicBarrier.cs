@@ -73,12 +73,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for CyclicBarrier(int arg0, Java.Lang.Runnable arg1)
+        /// </summary>
+        public static CyclicBarrier New(int arg0, Java.Lang.Runnable arg1)
+        {
+            return JVMBridgeBase.New<CyclicBarrier>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CyclicBarrier.html#java.util.concurrent.CyclicBarrier(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public CyclicBarrier(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for CyclicBarrier(int arg0)
+        /// </summary>
+        public static CyclicBarrier New(int arg0)
+        {
+            return JVMBridgeBase.New<CyclicBarrier>(arg0);
         }
 
         #endregion

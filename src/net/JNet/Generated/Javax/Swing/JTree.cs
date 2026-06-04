@@ -139,12 +139,26 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JTree()
+        /// </summary>
+        public static JTree New()
+        {
+            return JVMBridgeBase.New<JTree>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTree.html#javax.swing.JTree(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
         public JTree(Java.Util.Hashtable<object, object> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JTree(Java.Util.Hashtable%3Cobject, object%3E arg0)
+        /// </summary>
+        public static JTree New(Java.Util.Hashtable<object, object> arg0)
+        {
+            return JVMBridgeBase.New<JTree>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTree.html#javax.swing.JTree(java.util.Vector)"/>
@@ -155,12 +169,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JTree(Java.Util.Vector%3Cobject%3E arg0)
+        /// </summary>
+        public static JTree New(Java.Util.Vector<object> arg0)
+        {
+            return JVMBridgeBase.New<JTree>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTree.html#javax.swing.JTree(javax.swing.tree.TreeModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeModel"/></param>
         public JTree(Javax.Swing.Tree.TreeModel arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JTree(Javax.Swing.Tree.TreeModel arg0)
+        /// </summary>
+        public static JTree New(Javax.Swing.Tree.TreeModel arg0)
+        {
+            return JVMBridgeBase.New<JTree>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTree.html#javax.swing.JTree(javax.swing.tree.TreeNode,boolean)"/>
@@ -172,12 +200,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JTree(Javax.Swing.Tree.TreeNode arg0, bool arg1)
+        /// </summary>
+        public static JTree New(Javax.Swing.Tree.TreeNode arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<JTree>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTree.html#javax.swing.JTree(javax.swing.tree.TreeNode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
         public JTree(Javax.Swing.Tree.TreeNode arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JTree(Javax.Swing.Tree.TreeNode arg0)
+        /// </summary>
+        public static JTree New(Javax.Swing.Tree.TreeNode arg0)
+        {
+            return JVMBridgeBase.New<JTree>(arg0);
         }
 
         #endregion
@@ -1118,6 +1160,13 @@ namespace Javax.Swing
             public DynamicUtilTreeNode(object arg0, object arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for DynamicUtilTreeNode(object arg0, object arg1)
+            /// </summary>
+            public static DynamicUtilTreeNode New(object arg0, object arg1)
+            {
+                return JVMBridgeBase.New<DynamicUtilTreeNode>(arg0, arg1);
             }
 
             #endregion

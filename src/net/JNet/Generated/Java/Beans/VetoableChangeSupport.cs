@@ -71,6 +71,13 @@ namespace Java.Beans
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for VetoableChangeSupport(object arg0)
+        /// </summary>
+        public static VetoableChangeSupport New(object arg0)
+        {
+            return JVMBridgeBase.New<VetoableChangeSupport>(arg0);
+        }
 
         #endregion
 

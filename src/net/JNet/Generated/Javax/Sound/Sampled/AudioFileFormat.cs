@@ -109,6 +109,13 @@ namespace Javax.Sound.Sampled
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for AudioFileFormat(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2, Java.Util.Map%3CJava.Lang.String, object%3E arg3)
+        /// </summary>
+        public static AudioFileFormat New(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2, Java.Util.Map<Java.Lang.String, object> arg3)
+        {
+            return JVMBridgeBase.New<AudioFileFormat>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sound/sampled/AudioFileFormat.html#javax.sound.sampled.AudioFileFormat(javax.sound.sampled.AudioFileFormat.Type,javax.sound.sampled.AudioFormat,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></param>
@@ -117,6 +124,13 @@ namespace Javax.Sound.Sampled
         public AudioFileFormat(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for AudioFileFormat(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2)
+        /// </summary>
+        public static AudioFileFormat New(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2)
+        {
+            return JVMBridgeBase.New<AudioFileFormat>(arg0, arg1, arg2);
         }
 
         #endregion
@@ -195,6 +209,13 @@ namespace Javax.Sound.Sampled
             public Type(Java.Lang.String arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for Type(Java.Lang.String arg0, Java.Lang.String arg1)
+            /// </summary>
+            public static Type New(Java.Lang.String arg0, Java.Lang.String arg1)
+            {
+                return JVMBridgeBase.New<Type>(arg0, arg1);
             }
 
             #endregion

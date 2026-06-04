@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SplitPaneUI()
+        /// </summary>
+        public static SplitPaneUI New()
+        {
+            return JVMBridgeBase.New<SplitPaneUI>();
+        }
 
         #endregion
 

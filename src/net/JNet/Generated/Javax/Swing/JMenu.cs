@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JMenu()
+        /// </summary>
+        public static JMenu New()
+        {
+            return JVMBridgeBase.New<JMenu>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JMenu.html#javax.swing.JMenu(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Swing
         public JMenu(Java.Lang.String arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JMenu(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static JMenu New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<JMenu>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JMenu.html#javax.swing.JMenu(java.lang.String)"/>
@@ -88,12 +102,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JMenu(Java.Lang.String arg0)
+        /// </summary>
+        public static JMenu New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JMenu>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JMenu.html#javax.swing.JMenu(javax.swing.Action)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
         public JMenu(Javax.Swing.Action arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JMenu(Javax.Swing.Action arg0)
+        /// </summary>
+        public static JMenu New(Javax.Swing.Action arg0)
+        {
+            return JVMBridgeBase.New<JMenu>(arg0);
         }
 
         #endregion

@@ -173,6 +173,13 @@ namespace Javax.Swing.Text
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DefaultStyledDocument()
+        /// </summary>
+        public static DefaultStyledDocument New()
+        {
+            return JVMBridgeBase.New<DefaultStyledDocument>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultStyledDocument.html#javax.swing.text.DefaultStyledDocument(javax.swing.text.AbstractDocument.Content,javax.swing.text.StyleContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument.Content"/></param>
@@ -182,12 +189,26 @@ namespace Javax.Swing.Text
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for DefaultStyledDocument(Javax.Swing.Text.AbstractDocument.Content arg0, Javax.Swing.Text.StyleContext arg1)
+        /// </summary>
+        public static DefaultStyledDocument New(Javax.Swing.Text.AbstractDocument.Content arg0, Javax.Swing.Text.StyleContext arg1)
+        {
+            return JVMBridgeBase.New<DefaultStyledDocument>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultStyledDocument.html#javax.swing.text.DefaultStyledDocument(javax.swing.text.StyleContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.StyleContext"/></param>
         public DefaultStyledDocument(Javax.Swing.Text.StyleContext arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultStyledDocument(Javax.Swing.Text.StyleContext arg0)
+        /// </summary>
+        public static DefaultStyledDocument New(Javax.Swing.Text.StyleContext arg0)
+        {
+            return JVMBridgeBase.New<DefaultStyledDocument>(arg0);
         }
 
         #endregion
@@ -349,6 +370,13 @@ namespace Javax.Swing.Text
             {
                 InvokeInitializer(arg0, arg1, arg2);
             }
+            /// <summary>
+            /// HPA initializer for AttributeUndoableEdit(Javax.Swing.Text.Element arg0, Javax.Swing.Text.AttributeSet arg1, bool arg2)
+            /// </summary>
+            public static AttributeUndoableEdit New(Javax.Swing.Text.Element arg0, Javax.Swing.Text.AttributeSet arg1, bool arg2)
+            {
+                return JVMBridgeBase.New<AttributeUndoableEdit>(arg0, arg1, arg2);
+            }
 
             #endregion
 
@@ -388,6 +416,13 @@ namespace Javax.Swing.Text
             public ElementBuffer(Javax.Swing.Text.DefaultStyledDocument arg0, Javax.Swing.Text.Element arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for ElementBuffer(Javax.Swing.Text.DefaultStyledDocument arg0, Javax.Swing.Text.Element arg1)
+            /// </summary>
+            public static ElementBuffer New(Javax.Swing.Text.DefaultStyledDocument arg0, Javax.Swing.Text.Element arg1)
+            {
+                return JVMBridgeBase.New<ElementBuffer>(arg0, arg1);
             }
 
             #endregion
@@ -481,6 +516,13 @@ namespace Javax.Swing.Text
                 InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
+            /// HPA initializer for ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1, char[] arg2, int arg3, int arg4)
+            /// </summary>
+            public static ElementSpec New(Javax.Swing.Text.AttributeSet arg0, short arg1, char[] arg2, int arg3, int arg4)
+            {
+                return JVMBridgeBase.New<ElementSpec>(arg0, arg1, arg2, arg3, arg4);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultStyledDocument.ElementSpec.html#javax.swing.text.DefaultStyledDocument$ElementSpec(javax.swing.text.AttributeSet,short,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
@@ -491,6 +533,13 @@ namespace Javax.Swing.Text
                 InvokeInitializer(arg0, arg1, arg2);
             }
             /// <summary>
+            /// HPA initializer for ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1, int arg2)
+            /// </summary>
+            public static ElementSpec New(Javax.Swing.Text.AttributeSet arg0, short arg1, int arg2)
+            {
+                return JVMBridgeBase.New<ElementSpec>(arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultStyledDocument.ElementSpec.html#javax.swing.text.DefaultStyledDocument$ElementSpec(javax.swing.text.AttributeSet,short)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
@@ -498,6 +547,13 @@ namespace Javax.Swing.Text
             public ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1)
+            /// </summary>
+            public static ElementSpec New(Javax.Swing.Text.AttributeSet arg0, short arg1)
+            {
+                return JVMBridgeBase.New<ElementSpec>(arg0, arg1);
             }
 
             #endregion

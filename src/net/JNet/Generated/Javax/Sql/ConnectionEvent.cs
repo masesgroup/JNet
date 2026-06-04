@@ -73,12 +73,26 @@ namespace Javax.Sql
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ConnectionEvent(Javax.Sql.PooledConnection arg0, Java.Sql.SQLException arg1)
+        /// </summary>
+        public static ConnectionEvent New(Javax.Sql.PooledConnection arg0, Java.Sql.SQLException arg1)
+        {
+            return JVMBridgeBase.New<ConnectionEvent>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sql/ConnectionEvent.html#javax.sql.ConnectionEvent(javax.sql.PooledConnection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.PooledConnection"/></param>
         public ConnectionEvent(Javax.Sql.PooledConnection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConnectionEvent(Javax.Sql.PooledConnection arg0)
+        /// </summary>
+        public static ConnectionEvent New(Javax.Sql.PooledConnection arg0)
+        {
+            return JVMBridgeBase.New<ConnectionEvent>(arg0);
         }
 
         #endregion

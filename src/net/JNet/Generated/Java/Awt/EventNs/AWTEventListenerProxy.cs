@@ -72,6 +72,13 @@ namespace Java.Awt.EventNs
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for AWTEventListenerProxy(long arg0, Java.Awt.EventNs.AWTEventListener arg1)
+        /// </summary>
+        public static AWTEventListenerProxy New(long arg0, Java.Awt.EventNs.AWTEventListener arg1)
+        {
+            return JVMBridgeBase.New<AWTEventListenerProxy>(arg0, arg1);
+        }
 
         #endregion
 

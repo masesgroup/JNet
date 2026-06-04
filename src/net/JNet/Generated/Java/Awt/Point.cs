@@ -71,6 +71,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Point()
+        /// </summary>
+        public static Point New()
+        {
+            return JVMBridgeBase.New<Point>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Point.html#java.awt.Point(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,12 +87,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Point(int arg0, int arg1)
+        /// </summary>
+        public static Point New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<Point>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Point.html#java.awt.Point(java.awt.Point)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
         public Point(Java.Awt.Point arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Point(Java.Awt.Point arg0)
+        /// </summary>
+        public static Point New(Java.Awt.Point arg0)
+        {
+            return JVMBridgeBase.New<Point>(arg0);
         }
 
         #endregion

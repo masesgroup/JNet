@@ -106,12 +106,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for CopyOnWriteArrayList()
+        /// </summary>
+        public static CopyOnWriteArrayList New()
+        {
+            return JVMBridgeBase.New<CopyOnWriteArrayList>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#java.util.concurrent.CopyOnWriteArrayList(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public CopyOnWriteArrayList(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for CopyOnWriteArrayList(Java.Util.Collection arg0)
+        /// </summary>
+        public static CopyOnWriteArrayList New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<CopyOnWriteArrayList>(arg0);
         }
 
         #endregion
@@ -450,6 +464,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for CopyOnWriteArrayList()
+        /// </summary>
+        public static CopyOnWriteArrayList<E> New()
+        {
+            return JVMBridgeBase.New<CopyOnWriteArrayList<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#java.util.concurrent.CopyOnWriteArrayList(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
@@ -458,12 +479,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for CopyOnWriteArrayList(E[] arg0)
+        /// </summary>
+        public static CopyOnWriteArrayList<E> New(E[] arg0)
+        {
+            return JVMBridgeBase.New<CopyOnWriteArrayList<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#java.util.concurrent.CopyOnWriteArrayList(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public CopyOnWriteArrayList(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for CopyOnWriteArrayList(Java.Util.Collection%3CE%3E arg0)
+        /// </summary>
+        public static CopyOnWriteArrayList<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<CopyOnWriteArrayList<E>>(arg0);
         }
 
         #endregion

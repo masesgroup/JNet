@@ -74,6 +74,13 @@ namespace Javax.Management.Relation
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for RelationTypeSupport(Java.Lang.String arg0, Javax.Management.Relation.RoleInfo[] arg1)
+        /// </summary>
+        public static RelationTypeSupport New(Java.Lang.String arg0, Javax.Management.Relation.RoleInfo[] arg1)
+        {
+            return JVMBridgeBase.New<RelationTypeSupport>(arg0, arg1);
+        }
 
         #endregion
 

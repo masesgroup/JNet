@@ -75,6 +75,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for ActionEvent(object arg0, int arg1, Java.Lang.String arg2, int arg3)
+        /// </summary>
+        public static ActionEvent New(object arg0, int arg1, Java.Lang.String arg2, int arg3)
+        {
+            return JVMBridgeBase.New<ActionEvent>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/ActionEvent.html#java.awt.event.ActionEvent(java.lang.Object,int,java.lang.String,long,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -87,6 +94,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for ActionEvent(object arg0, int arg1, Java.Lang.String arg2, long arg3, int arg4)
+        /// </summary>
+        public static ActionEvent New(object arg0, int arg1, Java.Lang.String arg2, long arg3, int arg4)
+        {
+            return JVMBridgeBase.New<ActionEvent>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/ActionEvent.html#java.awt.event.ActionEvent(java.lang.Object,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -95,6 +109,13 @@ namespace Java.Awt.EventNs
         public ActionEvent(object arg0, int arg1, Java.Lang.String arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for ActionEvent(object arg0, int arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static ActionEvent New(object arg0, int arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<ActionEvent>(arg0, arg1, arg2);
         }
 
         #endregion

@@ -74,6 +74,13 @@ namespace Javax.Security.Auth.Callback
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ConfirmationCallback(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static ConfirmationCallback New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<ConfirmationCallback>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/callback/ConfirmationCallback.html#javax.security.auth.callback.ConfirmationCallback(int,java.lang.String[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -82,6 +89,13 @@ namespace Javax.Security.Auth.Callback
         public ConfirmationCallback(int arg0, Java.Lang.String[] arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for ConfirmationCallback(int arg0, Java.Lang.String[] arg1, int arg2)
+        /// </summary>
+        public static ConfirmationCallback New(int arg0, Java.Lang.String[] arg1, int arg2)
+        {
+            return JVMBridgeBase.New<ConfirmationCallback>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/callback/ConfirmationCallback.html#javax.security.auth.callback.ConfirmationCallback(java.lang.String,int,int,int)"/>
@@ -95,6 +109,13 @@ namespace Javax.Security.Auth.Callback
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for ConfirmationCallback(Java.Lang.String arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static ConfirmationCallback New(Java.Lang.String arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<ConfirmationCallback>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/callback/ConfirmationCallback.html#javax.security.auth.callback.ConfirmationCallback(java.lang.String,int,java.lang.String[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -104,6 +125,13 @@ namespace Javax.Security.Auth.Callback
         public ConfirmationCallback(Java.Lang.String arg0, int arg1, Java.Lang.String[] arg2, int arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for ConfirmationCallback(Java.Lang.String arg0, int arg1, Java.Lang.String[] arg2, int arg3)
+        /// </summary>
+        public static ConfirmationCallback New(Java.Lang.String arg0, int arg1, Java.Lang.String[] arg2, int arg3)
+        {
+            return JVMBridgeBase.New<ConfirmationCallback>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

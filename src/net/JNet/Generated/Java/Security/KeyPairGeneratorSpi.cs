@@ -70,6 +70,13 @@ namespace Java.Security
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for KeyPairGeneratorSpi()
+        /// </summary>
+        public static KeyPairGeneratorSpi New()
+        {
+            return JVMBridgeBase.New<KeyPairGeneratorSpi>();
+        }
 
         #endregion
 

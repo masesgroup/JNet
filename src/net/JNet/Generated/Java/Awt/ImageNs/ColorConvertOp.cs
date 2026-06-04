@@ -74,6 +74,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ColorConvertOp(Java.Awt.ColorNs.ColorSpace arg0, Java.Awt.ColorNs.ColorSpace arg1, Java.Awt.RenderingHints arg2)
+        /// </summary>
+        public static ColorConvertOp New(Java.Awt.ColorNs.ColorSpace arg0, Java.Awt.ColorNs.ColorSpace arg1, Java.Awt.RenderingHints arg2)
+        {
+            return JVMBridgeBase.New<ColorConvertOp>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/ColorConvertOp.html#java.awt.image.ColorConvertOp(java.awt.color.ColorSpace,java.awt.RenderingHints)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ColorNs.ColorSpace"/></param>
@@ -81,6 +88,13 @@ namespace Java.Awt.ImageNs
         public ColorConvertOp(Java.Awt.ColorNs.ColorSpace arg0, Java.Awt.RenderingHints arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for ColorConvertOp(Java.Awt.ColorNs.ColorSpace arg0, Java.Awt.RenderingHints arg1)
+        /// </summary>
+        public static ColorConvertOp New(Java.Awt.ColorNs.ColorSpace arg0, Java.Awt.RenderingHints arg1)
+        {
+            return JVMBridgeBase.New<ColorConvertOp>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/ColorConvertOp.html#java.awt.image.ColorConvertOp(java.awt.color.ICC_Profile[],java.awt.RenderingHints)"/>
@@ -92,12 +106,26 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ColorConvertOp(Java.Awt.ColorNs.ICC_Profile[] arg0, Java.Awt.RenderingHints arg1)
+        /// </summary>
+        public static ColorConvertOp New(Java.Awt.ColorNs.ICC_Profile[] arg0, Java.Awt.RenderingHints arg1)
+        {
+            return JVMBridgeBase.New<ColorConvertOp>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/ColorConvertOp.html#java.awt.image.ColorConvertOp(java.awt.RenderingHints)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.RenderingHints"/></param>
         public ColorConvertOp(Java.Awt.RenderingHints arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ColorConvertOp(Java.Awt.RenderingHints arg0)
+        /// </summary>
+        public static ColorConvertOp New(Java.Awt.RenderingHints arg0)
+        {
+            return JVMBridgeBase.New<ColorConvertOp>(arg0);
         }
 
         #endregion

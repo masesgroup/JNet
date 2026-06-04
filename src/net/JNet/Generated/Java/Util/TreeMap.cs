@@ -107,12 +107,26 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for TreeMap()
+        /// </summary>
+        public static TreeMap New()
+        {
+            return JVMBridgeBase.New<TreeMap>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html#java.util.TreeMap(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
         public TreeMap(Java.Util.Comparator arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TreeMap(Java.Util.Comparator arg0)
+        /// </summary>
+        public static TreeMap New(Java.Util.Comparator arg0)
+        {
+            return JVMBridgeBase.New<TreeMap>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html#java.util.TreeMap(java.util.Map)"/>
@@ -123,12 +137,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for TreeMap(Java.Util.Map arg0)
+        /// </summary>
+        public static TreeMap New(Java.Util.Map arg0)
+        {
+            return JVMBridgeBase.New<TreeMap>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html#java.util.TreeMap(java.util.SortedMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
         public TreeMap(Java.Util.SortedMap arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TreeMap(Java.Util.SortedMap arg0)
+        /// </summary>
+        public static TreeMap New(Java.Util.SortedMap arg0)
+        {
+            return JVMBridgeBase.New<TreeMap>(arg0);
         }
 
         #endregion
@@ -393,12 +421,26 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for TreeMap()
+        /// </summary>
+        public static TreeMap<K, V> New()
+        {
+            return JVMBridgeBase.New<TreeMap<K, V>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html#java.util.TreeMap(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
         public TreeMap(Java.Util.Comparator<K> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TreeMap(Java.Util.Comparator%3CK%3E arg0)
+        /// </summary>
+        public static TreeMap<K, V> New(Java.Util.Comparator<K> arg0)
+        {
+            return JVMBridgeBase.New<TreeMap<K, V>>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html#java.util.TreeMap(java.util.Map)"/>
@@ -409,12 +451,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for TreeMap(Java.Util.Map%3CK, V%3E arg0)
+        /// </summary>
+        public static TreeMap<K, V> New(Java.Util.Map<K, V> arg0)
+        {
+            return JVMBridgeBase.New<TreeMap<K, V>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html#java.util.TreeMap(java.util.SortedMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
         public TreeMap(Java.Util.SortedMap<K, V> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TreeMap(Java.Util.SortedMap%3CK, V%3E arg0)
+        /// </summary>
+        public static TreeMap<K, V> New(Java.Util.SortedMap<K, V> arg0)
+        {
+            return JVMBridgeBase.New<TreeMap<K, V>>(arg0);
         }
 
         #endregion

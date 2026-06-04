@@ -70,6 +70,13 @@ namespace Java.Util
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for TimeZone()
+        /// </summary>
+        public static TimeZone New()
+        {
+            return JVMBridgeBase.New<TimeZone>();
+        }
 
         #endregion
 

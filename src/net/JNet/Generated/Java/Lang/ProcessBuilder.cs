@@ -106,12 +106,26 @@ namespace Java.Lang
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ProcessBuilder(params Java.Lang.String[] arg0)
+        /// </summary>
+        public static ProcessBuilder New(params Java.Lang.String[] arg0)
+        {
+            return JVMBridgeBase.New<ProcessBuilder>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ProcessBuilder.html#java.lang.ProcessBuilder(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         public ProcessBuilder(Java.Util.List<Java.Lang.String> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ProcessBuilder(Java.Util.List%3CJava.Lang.String%3E arg0)
+        /// </summary>
+        public static ProcessBuilder New(Java.Util.List<Java.Lang.String> arg0)
+        {
+            return JVMBridgeBase.New<ProcessBuilder>(arg0);
         }
 
         #endregion

@@ -104,6 +104,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for JComponent()
+        /// </summary>
+        public static JComponent New()
+        {
+            return JVMBridgeBase.New<JComponent>();
+        }
 
         #endregion
 

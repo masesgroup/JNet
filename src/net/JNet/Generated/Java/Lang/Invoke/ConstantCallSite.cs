@@ -71,6 +71,13 @@ namespace Java.Lang.Invoke
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ConstantCallSite(Java.Lang.Invoke.MethodHandle arg0)
+        /// </summary>
+        public static ConstantCallSite New(Java.Lang.Invoke.MethodHandle arg0)
+        {
+            return JVMBridgeBase.New<ConstantCallSite>(arg0);
+        }
 
         #endregion
 

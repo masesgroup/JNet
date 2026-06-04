@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JSplitPane()
+        /// </summary>
+        public static JSplitPane New()
+        {
+            return JVMBridgeBase.New<JSplitPane>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSplitPane.html#javax.swing.JSplitPane(int,boolean,java.awt.Component,java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -82,6 +89,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for JSplitPane(int arg0, bool arg1, Java.Awt.Component arg2, Java.Awt.Component arg3)
+        /// </summary>
+        public static JSplitPane New(int arg0, bool arg1, Java.Awt.Component arg2, Java.Awt.Component arg3)
+        {
+            return JVMBridgeBase.New<JSplitPane>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSplitPane.html#javax.swing.JSplitPane(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -89,6 +103,13 @@ namespace Javax.Swing
         public JSplitPane(int arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JSplitPane(int arg0, bool arg1)
+        /// </summary>
+        public static JSplitPane New(int arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<JSplitPane>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSplitPane.html#javax.swing.JSplitPane(int,java.awt.Component,java.awt.Component)"/>
@@ -101,12 +122,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for JSplitPane(int arg0, Java.Awt.Component arg1, Java.Awt.Component arg2)
+        /// </summary>
+        public static JSplitPane New(int arg0, Java.Awt.Component arg1, Java.Awt.Component arg2)
+        {
+            return JVMBridgeBase.New<JSplitPane>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JSplitPane.html#javax.swing.JSplitPane(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public JSplitPane(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JSplitPane(int arg0)
+        /// </summary>
+        public static JSplitPane New(int arg0)
+        {
+            return JVMBridgeBase.New<JSplitPane>(arg0);
         }
 
         #endregion

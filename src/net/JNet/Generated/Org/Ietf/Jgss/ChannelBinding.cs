@@ -72,6 +72,13 @@ namespace Org.Ietf.Jgss
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ChannelBinding(byte[] arg0)
+        /// </summary>
+        public static ChannelBinding New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<ChannelBinding>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/ietf/jgss/ChannelBinding.html#org.ietf.jgss.ChannelBinding(java.net.InetAddress,java.net.InetAddress,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
@@ -80,6 +87,13 @@ namespace Org.Ietf.Jgss
         public ChannelBinding(Java.Net.InetAddress arg0, Java.Net.InetAddress arg1, byte[] arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for ChannelBinding(Java.Net.InetAddress arg0, Java.Net.InetAddress arg1, byte[] arg2)
+        /// </summary>
+        public static ChannelBinding New(Java.Net.InetAddress arg0, Java.Net.InetAddress arg1, byte[] arg2)
+        {
+            return JVMBridgeBase.New<ChannelBinding>(arg0, arg1, arg2);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for RootPaneUI()
+        /// </summary>
+        public static RootPaneUI New()
+        {
+            return JVMBridgeBase.New<RootPaneUI>();
+        }
 
         #endregion
 

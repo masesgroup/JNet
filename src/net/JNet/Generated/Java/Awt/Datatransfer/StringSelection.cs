@@ -71,6 +71,13 @@ namespace Java.Awt.Datatransfer
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for StringSelection(Java.Lang.String arg0)
+        /// </summary>
+        public static StringSelection New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<StringSelection>(arg0);
+        }
 
         #endregion
 

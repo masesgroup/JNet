@@ -72,6 +72,13 @@ namespace Javax.Imageio.Spi
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for ImageTranscoderSpi(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static ImageTranscoderSpi New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<ImageTranscoderSpi>(arg0, arg1);
+        }
 
         #endregion
 

@@ -73,12 +73,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for SequenceInputStream(Java.Io.InputStream arg0, Java.Io.InputStream arg1)
+        /// </summary>
+        public static SequenceInputStream New(Java.Io.InputStream arg0, Java.Io.InputStream arg1)
+        {
+            return JVMBridgeBase.New<SequenceInputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/SequenceInputStream.html#java.io.SequenceInputStream(java.util.Enumeration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
         public SequenceInputStream(Java.Util.Enumeration arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SequenceInputStream(Java.Util.Enumeration arg0)
+        /// </summary>
+        public static SequenceInputStream New(Java.Util.Enumeration arg0)
+        {
+            return JVMBridgeBase.New<SequenceInputStream>(arg0);
         }
 
         #endregion

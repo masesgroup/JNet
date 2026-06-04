@@ -71,12 +71,26 @@ namespace Javax.Management
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AttributeList()
+        /// </summary>
+        public static AttributeList New()
+        {
+            return JVMBridgeBase.New<AttributeList>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/AttributeList.html#javax.management.AttributeList(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public AttributeList(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AttributeList(int arg0)
+        /// </summary>
+        public static AttributeList New(int arg0)
+        {
+            return JVMBridgeBase.New<AttributeList>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/AttributeList.html#javax.management.AttributeList(java.util.List)"/>
@@ -87,12 +101,26 @@ namespace Javax.Management
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for AttributeList(Java.Util.List%3CJavax.Management.Attribute%3E arg0)
+        /// </summary>
+        public static AttributeList New(Java.Util.List<Javax.Management.Attribute> arg0)
+        {
+            return JVMBridgeBase.New<AttributeList>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/AttributeList.html#javax.management.AttributeList(javax.management.AttributeList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.AttributeList"/></param>
         public AttributeList(Javax.Management.AttributeList arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AttributeList(Javax.Management.AttributeList arg0)
+        /// </summary>
+        public static AttributeList New(Javax.Management.AttributeList arg0)
+        {
+            return JVMBridgeBase.New<AttributeList>(arg0);
         }
 
         #endregion

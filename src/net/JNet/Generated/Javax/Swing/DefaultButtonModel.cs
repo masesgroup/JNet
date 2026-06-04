@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultButtonModel()
+        /// </summary>
+        public static DefaultButtonModel New()
+        {
+            return JVMBridgeBase.New<DefaultButtonModel>();
+        }
 
         #endregion
 

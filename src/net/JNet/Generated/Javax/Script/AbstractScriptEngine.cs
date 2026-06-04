@@ -71,12 +71,26 @@ namespace Javax.Script
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AbstractScriptEngine()
+        /// </summary>
+        public static AbstractScriptEngine New()
+        {
+            return JVMBridgeBase.New<AbstractScriptEngine>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/script/AbstractScriptEngine.html#javax.script.AbstractScriptEngine(javax.script.Bindings)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Script.Bindings"/></param>
         public AbstractScriptEngine(Javax.Script.Bindings arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AbstractScriptEngine(Javax.Script.Bindings arg0)
+        /// </summary>
+        public static AbstractScriptEngine New(Javax.Script.Bindings arg0)
+        {
+            return JVMBridgeBase.New<AbstractScriptEngine>(arg0);
         }
 
         #endregion

@@ -144,6 +144,13 @@ namespace Javax.Xml.Bind
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for JAXBElement(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, Java.Lang.Class arg2, object arg3)
+        /// </summary>
+        public static JAXBElement New(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, Java.Lang.Class arg2, object arg3)
+        {
+            return JVMBridgeBase.New<JAXBElement>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/JAXBElement.html#javax.xml.bind.JAXBElement(javax.xml.namespace.QName,java.lang.Class,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
@@ -152,6 +159,13 @@ namespace Javax.Xml.Bind
         public JAXBElement(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, object arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for JAXBElement(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, object arg2)
+        /// </summary>
+        public static JAXBElement New(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, object arg2)
+        {
+            return JVMBridgeBase.New<JAXBElement>(arg0, arg1, arg2);
         }
 
         #endregion
@@ -244,6 +258,13 @@ namespace Javax.Xml.Bind
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for GlobalScope()
+            /// </summary>
+            public static GlobalScope New()
+            {
+                return JVMBridgeBase.New<GlobalScope>();
+            }
 
             #endregion
 
@@ -294,6 +315,13 @@ namespace Javax.Xml.Bind
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for JAXBElement(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, Java.Lang.Class arg2, T arg3)
+        /// </summary>
+        public static JAXBElement<T> New(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, Java.Lang.Class arg2, T arg3)
+        {
+            return JVMBridgeBase.New<JAXBElement<T>>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/JAXBElement.html#javax.xml.bind.JAXBElement(javax.xml.namespace.QName,java.lang.Class,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
@@ -302,6 +330,13 @@ namespace Javax.Xml.Bind
         public JAXBElement(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, T arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for JAXBElement(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, T arg2)
+        /// </summary>
+        public static JAXBElement<T> New(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, T arg2)
+        {
+            return JVMBridgeBase.New<JAXBElement<T>>(arg0, arg1, arg2);
         }
 
         #endregion

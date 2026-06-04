@@ -70,6 +70,13 @@ namespace Javax.Swing.Table
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultTableColumnModel()
+        /// </summary>
+        public static DefaultTableColumnModel New()
+        {
+            return JVMBridgeBase.New<DefaultTableColumnModel>();
+        }
 
         #endregion
 

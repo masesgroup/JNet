@@ -104,6 +104,13 @@ namespace Javax.Swing.Text.Html
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for CSS()
+        /// </summary>
+        public static CSS New()
+        {
+            return JVMBridgeBase.New<CSS>();
+        }
 
         #endregion
 

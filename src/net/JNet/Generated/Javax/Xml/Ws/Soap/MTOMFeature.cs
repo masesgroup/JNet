@@ -71,6 +71,13 @@ namespace Javax.Xml.Ws.Soap
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for MTOMFeature()
+        /// </summary>
+        public static MTOMFeature New()
+        {
+            return JVMBridgeBase.New<MTOMFeature>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/soap/MTOMFeature.html#javax.xml.ws.soap.MTOMFeature(boolean,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Xml.Ws.Soap
         public MTOMFeature(bool arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for MTOMFeature(bool arg0, int arg1)
+        /// </summary>
+        public static MTOMFeature New(bool arg0, int arg1)
+        {
+            return JVMBridgeBase.New<MTOMFeature>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/soap/MTOMFeature.html#javax.xml.ws.soap.MTOMFeature(boolean)"/>
@@ -88,12 +102,26 @@ namespace Javax.Xml.Ws.Soap
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for MTOMFeature(bool arg0)
+        /// </summary>
+        public static MTOMFeature New(bool arg0)
+        {
+            return JVMBridgeBase.New<MTOMFeature>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/soap/MTOMFeature.html#javax.xml.ws.soap.MTOMFeature(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public MTOMFeature(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MTOMFeature(int arg0)
+        /// </summary>
+        public static MTOMFeature New(int arg0)
+        {
+            return JVMBridgeBase.New<MTOMFeature>(arg0);
         }
 
         #endregion

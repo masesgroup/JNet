@@ -75,6 +75,13 @@ namespace Javax.Management.Remote.Rmi
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map%3CJava.Lang.String, object%3E arg1, Javax.Management.MBeanServer arg2)
+        /// </summary>
+        public static RMIConnectorServer New(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1, Javax.Management.MBeanServer arg2)
+        {
+            return JVMBridgeBase.New<RMIConnectorServer>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/rmi/RMIConnectorServer.html#javax.management.remote.rmi.RMIConnectorServer(javax.management.remote.JMXServiceURL,java.util.Map,javax.management.remote.rmi.RMIServerImpl,javax.management.MBeanServer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
@@ -87,6 +94,13 @@ namespace Javax.Management.Remote.Rmi
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map%3CJava.Lang.String, object%3E arg1, Javax.Management.Remote.Rmi.RMIServerImpl arg2, Javax.Management.MBeanServer arg3)
+        /// </summary>
+        public static RMIConnectorServer New(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1, Javax.Management.Remote.Rmi.RMIServerImpl arg2, Javax.Management.MBeanServer arg3)
+        {
+            return JVMBridgeBase.New<RMIConnectorServer>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/rmi/RMIConnectorServer.html#javax.management.remote.rmi.RMIConnectorServer(javax.management.remote.JMXServiceURL,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
@@ -95,6 +109,13 @@ namespace Javax.Management.Remote.Rmi
         public RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map%3CJava.Lang.String, object%3E arg1)
+        /// </summary>
+        public static RMIConnectorServer New(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1)
+        {
+            return JVMBridgeBase.New<RMIConnectorServer>(arg0, arg1);
         }
 
         #endregion

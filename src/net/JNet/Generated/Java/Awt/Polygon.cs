@@ -71,6 +71,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Polygon()
+        /// </summary>
+        public static Polygon New()
+        {
+            return JVMBridgeBase.New<Polygon>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Polygon.html#java.awt.Polygon(int[],int[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -79,6 +86,13 @@ namespace Java.Awt
         public Polygon(int[] arg0, int[] arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for Polygon(int[] arg0, int[] arg1, int arg2)
+        /// </summary>
+        public static Polygon New(int[] arg0, int[] arg1, int arg2)
+        {
+            return JVMBridgeBase.New<Polygon>(arg0, arg1, arg2);
         }
 
         #endregion

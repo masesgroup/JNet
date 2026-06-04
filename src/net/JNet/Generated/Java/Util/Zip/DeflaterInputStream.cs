@@ -74,6 +74,13 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DeflaterInputStream(Java.Io.InputStream arg0, Java.Util.Zip.Deflater arg1, int arg2)
+        /// </summary>
+        public static DeflaterInputStream New(Java.Io.InputStream arg0, Java.Util.Zip.Deflater arg1, int arg2)
+        {
+            return JVMBridgeBase.New<DeflaterInputStream>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/DeflaterInputStream.html#java.util.zip.DeflaterInputStream(java.io.InputStream,java.util.zip.Deflater)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
@@ -83,12 +90,26 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for DeflaterInputStream(Java.Io.InputStream arg0, Java.Util.Zip.Deflater arg1)
+        /// </summary>
+        public static DeflaterInputStream New(Java.Io.InputStream arg0, Java.Util.Zip.Deflater arg1)
+        {
+            return JVMBridgeBase.New<DeflaterInputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/DeflaterInputStream.html#java.util.zip.DeflaterInputStream(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public DeflaterInputStream(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DeflaterInputStream(Java.Io.InputStream arg0)
+        /// </summary>
+        public static DeflaterInputStream New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<DeflaterInputStream>(arg0);
         }
 
         #endregion

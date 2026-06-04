@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiComboBoxUI()
+        /// </summary>
+        public static MultiComboBoxUI New()
+        {
+            return JVMBridgeBase.New<MultiComboBoxUI>();
+        }
 
         #endregion
 

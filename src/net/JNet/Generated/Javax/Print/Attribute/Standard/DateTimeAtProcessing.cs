@@ -71,6 +71,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for DateTimeAtProcessing(Java.Util.Date arg0)
+        /// </summary>
+        public static DateTimeAtProcessing New(Java.Util.Date arg0)
+        {
+            return JVMBridgeBase.New<DateTimeAtProcessing>(arg0);
+        }
 
         #endregion
 

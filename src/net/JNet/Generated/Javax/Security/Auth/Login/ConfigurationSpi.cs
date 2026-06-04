@@ -70,6 +70,13 @@ namespace Javax.Security.Auth.Login
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ConfigurationSpi()
+        /// </summary>
+        public static ConfigurationSpi New()
+        {
+            return JVMBridgeBase.New<ConfigurationSpi>();
+        }
 
         #endregion
 

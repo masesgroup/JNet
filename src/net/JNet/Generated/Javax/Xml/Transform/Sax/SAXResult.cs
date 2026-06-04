@@ -71,12 +71,26 @@ namespace Javax.Xml.Transform.Sax
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SAXResult()
+        /// </summary>
+        public static SAXResult New()
+        {
+            return JVMBridgeBase.New<SAXResult>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/sax/SAXResult.html#javax.xml.transform.sax.SAXResult(org.xml.sax.ContentHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.ContentHandler"/></param>
         public SAXResult(Org.Xml.Sax.ContentHandler arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SAXResult(Org.Xml.Sax.ContentHandler arg0)
+        /// </summary>
+        public static SAXResult New(Org.Xml.Sax.ContentHandler arg0)
+        {
+            return JVMBridgeBase.New<SAXResult>(arg0);
         }
 
         #endregion

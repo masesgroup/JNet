@@ -105,6 +105,13 @@ namespace Java.Lang
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for InheritableThreadLocal()
+        /// </summary>
+        public static InheritableThreadLocal New()
+        {
+            return JVMBridgeBase.New<InheritableThreadLocal>();
+        }
 
         #endregion
 
@@ -142,6 +149,13 @@ namespace Java.Lang
         public InheritableThreadLocal() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for InheritableThreadLocal()
+        /// </summary>
+        public static InheritableThreadLocal<T> New()
+        {
+            return JVMBridgeBase.New<InheritableThreadLocal<T>>();
         }
 
         #endregion

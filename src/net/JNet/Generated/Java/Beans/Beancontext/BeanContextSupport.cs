@@ -71,6 +71,13 @@ namespace Java.Beans.Beancontext
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for BeanContextSupport()
+        /// </summary>
+        public static BeanContextSupport New()
+        {
+            return JVMBridgeBase.New<BeanContextSupport>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport(java.beans.beancontext.BeanContext,java.util.Locale,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
@@ -80,6 +87,13 @@ namespace Java.Beans.Beancontext
         public BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2, bool arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
+        /// </summary>
+        public static BeanContextSupport New(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<BeanContextSupport>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport(java.beans.beancontext.BeanContext,java.util.Locale,boolean)"/>
@@ -92,6 +106,13 @@ namespace Java.Beans.Beancontext
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2)
+        /// </summary>
+        public static BeanContextSupport New(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<BeanContextSupport>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport(java.beans.beancontext.BeanContext,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
@@ -101,12 +122,26 @@ namespace Java.Beans.Beancontext
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1)
+        /// </summary>
+        public static BeanContextSupport New(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1)
+        {
+            return JVMBridgeBase.New<BeanContextSupport>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport(java.beans.beancontext.BeanContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
         public BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0)
+        /// </summary>
+        public static BeanContextSupport New(Java.Beans.Beancontext.BeanContext arg0)
+        {
+            return JVMBridgeBase.New<BeanContextSupport>(arg0);
         }
 
         #endregion

@@ -73,6 +73,13 @@ namespace Org.Ietf.Jgss
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Oid(byte[] arg0)
+        /// </summary>
+        public static Oid New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<Oid>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/ietf/jgss/Oid.html#org.ietf.jgss.Oid(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
@@ -82,6 +89,13 @@ namespace Org.Ietf.Jgss
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Oid(Java.Io.InputStream arg0)
+        /// </summary>
+        public static Oid New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<Oid>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/ietf/jgss/Oid.html#org.ietf.jgss.Oid(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -89,6 +103,13 @@ namespace Org.Ietf.Jgss
         public Oid(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Oid(Java.Lang.String arg0)
+        /// </summary>
+        public static Oid New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Oid>(arg0);
         }
 
         #endregion

@@ -74,6 +74,13 @@ namespace Javax.Swing.Plaf
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ColorUIResource(float arg0, float arg1, float arg2)
+        /// </summary>
+        public static ColorUIResource New(float arg0, float arg1, float arg2)
+        {
+            return JVMBridgeBase.New<ColorUIResource>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/ColorUIResource.html#javax.swing.plaf.ColorUIResource(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -84,6 +91,13 @@ namespace Javax.Swing.Plaf
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ColorUIResource(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static ColorUIResource New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<ColorUIResource>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/ColorUIResource.html#javax.swing.plaf.ColorUIResource(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -92,12 +106,26 @@ namespace Javax.Swing.Plaf
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ColorUIResource(int arg0)
+        /// </summary>
+        public static ColorUIResource New(int arg0)
+        {
+            return JVMBridgeBase.New<ColorUIResource>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/ColorUIResource.html#javax.swing.plaf.ColorUIResource(java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
         public ColorUIResource(Java.Awt.Color arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ColorUIResource(Java.Awt.Color arg0)
+        /// </summary>
+        public static ColorUIResource New(Java.Awt.Color arg0)
+        {
+            return JVMBridgeBase.New<ColorUIResource>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Java.Awt
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for CheckboxGroup()
+        /// </summary>
+        public static CheckboxGroup New()
+        {
+            return JVMBridgeBase.New<CheckboxGroup>();
+        }
 
         #endregion
 

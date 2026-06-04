@@ -73,6 +73,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for PopupMenu()
+        /// </summary>
+        public static PopupMenu New()
+        {
+            return JVMBridgeBase.New<PopupMenu>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/PopupMenu.html#java.awt.PopupMenu(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -80,6 +87,13 @@ namespace Java.Awt
         public PopupMenu(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PopupMenu(Java.Lang.String arg0)
+        /// </summary>
+        public static PopupMenu New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<PopupMenu>(arg0);
         }
 
         #endregion

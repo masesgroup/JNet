@@ -71,6 +71,13 @@ namespace Java.Security
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AllPermission()
+        /// </summary>
+        public static AllPermission New()
+        {
+            return JVMBridgeBase.New<AllPermission>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/AllPermission.html#java.security.AllPermission(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -78,6 +85,13 @@ namespace Java.Security
         public AllPermission(Java.Lang.String arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for AllPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static AllPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<AllPermission>(arg0, arg1);
         }
 
         #endregion

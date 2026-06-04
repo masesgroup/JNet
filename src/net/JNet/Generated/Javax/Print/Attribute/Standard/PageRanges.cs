@@ -73,12 +73,26 @@ namespace Javax.Print.Attribute.Standard
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PageRanges(int arg0, int arg1)
+        /// </summary>
+        public static PageRanges New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<PageRanges>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/PageRanges.html#javax.print.attribute.standard.PageRanges(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public PageRanges(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PageRanges(int arg0)
+        /// </summary>
+        public static PageRanges New(int arg0)
+        {
+            return JVMBridgeBase.New<PageRanges>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/PageRanges.html#javax.print.attribute.standard.PageRanges(int[][])"/>
@@ -89,12 +103,26 @@ namespace Javax.Print.Attribute.Standard
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for PageRanges(int[][] arg0)
+        /// </summary>
+        public static PageRanges New(int[][] arg0)
+        {
+            return JVMBridgeBase.New<PageRanges>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/standard/PageRanges.html#javax.print.attribute.standard.PageRanges(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public PageRanges(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PageRanges(Java.Lang.String arg0)
+        /// </summary>
+        public static PageRanges New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<PageRanges>(arg0);
         }
 
         #endregion

@@ -207,6 +207,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for UIDefaults()
+        /// </summary>
+        public static UIDefaults New()
+        {
+            return JVMBridgeBase.New<UIDefaults>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/UIDefaults.html#javax.swing.UIDefaults(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -214,6 +221,13 @@ namespace Javax.Swing
         public UIDefaults(int arg0, float arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for UIDefaults(int arg0, float arg1)
+        /// </summary>
+        public static UIDefaults New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<UIDefaults>(arg0, arg1);
         }
 
         #endregion
@@ -634,12 +648,26 @@ namespace Javax.Swing
                 InvokeInitializer(arg0, arg1);
             }
             /// <summary>
+            /// HPA initializer for ProxyLazyValue(Java.Lang.String arg0, Java.Lang.String arg1)
+            /// </summary>
+            public static ProxyLazyValue New(Java.Lang.String arg0, Java.Lang.String arg1)
+            {
+                return JVMBridgeBase.New<ProxyLazyValue>(arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/UIDefaults.ProxyLazyValue.html#javax.swing.UIDefaults$ProxyLazyValue(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             public ProxyLazyValue(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for ProxyLazyValue(Java.Lang.String arg0)
+            /// </summary>
+            public static ProxyLazyValue New(Java.Lang.String arg0)
+            {
+                return JVMBridgeBase.New<ProxyLazyValue>(arg0);
             }
 
             #endregion

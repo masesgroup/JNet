@@ -73,12 +73,26 @@ namespace Javax.Management
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for MBeanServerPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static MBeanServerPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<MBeanServerPermission>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServerPermission.html#javax.management.MBeanServerPermission(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public MBeanServerPermission(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for MBeanServerPermission(Java.Lang.String arg0)
+        /// </summary>
+        public static MBeanServerPermission New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<MBeanServerPermission>(arg0);
         }
 
         #endregion

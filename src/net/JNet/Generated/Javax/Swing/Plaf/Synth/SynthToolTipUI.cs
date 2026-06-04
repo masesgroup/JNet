@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthToolTipUI()
+        /// </summary>
+        public static SynthToolTipUI New()
+        {
+            return JVMBridgeBase.New<SynthToolTipUI>();
+        }
 
         #endregion
 

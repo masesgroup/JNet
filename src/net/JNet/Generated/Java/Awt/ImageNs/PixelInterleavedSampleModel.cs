@@ -76,6 +76,13 @@ namespace Java.Awt.ImageNs
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
+        /// <summary>
+        /// HPA initializer for PixelInterleavedSampleModel(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5)
+        /// </summary>
+        public static PixelInterleavedSampleModel New(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5)
+        {
+            return JVMBridgeBase.New<PixelInterleavedSampleModel>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
 
         #endregion
 

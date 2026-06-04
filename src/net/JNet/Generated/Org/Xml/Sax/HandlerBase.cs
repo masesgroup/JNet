@@ -70,6 +70,13 @@ namespace Org.Xml.Sax
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for HandlerBase()
+        /// </summary>
+        public static HandlerBase New()
+        {
+            return JVMBridgeBase.New<HandlerBase>();
+        }
 
         #endregion
 
