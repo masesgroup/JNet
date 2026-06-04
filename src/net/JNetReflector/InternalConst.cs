@@ -80,7 +80,7 @@ namespace MASES.JNet.Reflector
 
         public static string VersionPlaceHolder()
         {
-            return $"{assembly.GetName().Name} (ver. {assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()!.InformationalVersion})";
+            return $"{assembly.GetName().Name} (ver. {assembly.GetName().Version})";
         }
 
         public const string JNetReflectorGeneratedFolder = "JNetReflectorGenerated";
