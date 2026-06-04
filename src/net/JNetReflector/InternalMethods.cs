@@ -1124,12 +1124,12 @@ namespace MASES.JNet.Reflector
 
                 if (!isListener)
                 {
+                    jDecoration = new StringBuilder(AllPackageClasses.ClassStub.ConstructorStub.DEFAULT_DECORATION);
                     singleConstructor = singleConstructorInitializerTemplate.Replace(AllPackageClasses.ClassStub.ConstructorStub.DECORATION, jDecoration.ToString())
-                                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.MODIFIER, modifier)
-                                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.NAME, constructorName)
+                                                                            .Replace(AllPackageClasses.ClassStub.CLASS, classDefinition.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, false))
                                                                             .Replace(AllPackageClasses.ClassStub.ConstructorStub.PARAMETERS, paramsString)
                                                                             .Replace(AllPackageClasses.ClassStub.ConstructorStub.EXECUTION, executionParamsString)
-                                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.HELP, constructor.JavadocHrefUrl(JNetReflectorCore.UseCamel));
+                                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.HELP, $"HPA initializer for {constructorName}({paramsString})");
 
                     subClassBlock.AppendLine(singleConstructor);
                 }
