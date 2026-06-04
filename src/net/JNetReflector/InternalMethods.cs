@@ -1129,7 +1129,7 @@ namespace MASES.JNet.Reflector
                                                                             .Replace(AllPackageClasses.ClassStub.CLASS, classDefinition.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, false))
                                                                             .Replace(AllPackageClasses.ClassStub.ConstructorStub.PARAMETERS, paramsString)
                                                                             .Replace(AllPackageClasses.ClassStub.ConstructorStub.EXECUTION, executionParamsString)
-                                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.HELP, $"HPA initializer for {constructorName}({paramsString})");
+                                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.HELP, $"HPA initializer for {constructorName}({paramsString})".Replace(SpecialNames.BeginGenericDeclaration, "%3C").Replace(SpecialNames.EndGenericDeclaration, "%3E"));
 
                     subClassBlock.AppendLine(singleConstructor);
                 }
