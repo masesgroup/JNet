@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JColorChooser()
+        /// </summary>
+        public static JColorChooser New()
+        {
+            return JVMBridgeBase.New<JColorChooser>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JColorChooser.html#javax.swing.JColorChooser(java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
@@ -79,12 +86,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JColorChooser(Java.Awt.Color arg0)
+        /// </summary>
+        public static JColorChooser New(Java.Awt.Color arg0)
+        {
+            return JVMBridgeBase.New<JColorChooser>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JColorChooser.html#javax.swing.JColorChooser(javax.swing.colorchooser.ColorSelectionModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Colorchooser.ColorSelectionModel"/></param>
         public JColorChooser(Javax.Swing.Colorchooser.ColorSelectionModel arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JColorChooser(Javax.Swing.Colorchooser.ColorSelectionModel arg0)
+        /// </summary>
+        public static JColorChooser New(Javax.Swing.Colorchooser.ColorSelectionModel arg0)
+        {
+            return JVMBridgeBase.New<JColorChooser>(arg0);
         }
 
         #endregion

@@ -72,12 +72,26 @@ namespace Java.Lang
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Boolean(bool arg0)
+        /// </summary>
+        public static Boolean New(bool arg0)
+        {
+            return JVMBridgeBase.New<Boolean>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html#java.lang.Boolean(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public Boolean(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Boolean(Java.Lang.String arg0)
+        /// </summary>
+        public static Boolean New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Boolean>(arg0);
         }
 
         #endregion

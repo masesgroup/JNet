@@ -72,6 +72,13 @@ namespace Java.Io
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for FilePermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static FilePermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<FilePermission>(arg0, arg1);
+        }
 
         #endregion
 

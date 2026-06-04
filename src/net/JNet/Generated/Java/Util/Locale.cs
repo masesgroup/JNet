@@ -210,6 +210,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Locale(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static Locale New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<Locale>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html#java.util.Locale(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -219,12 +226,26 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Locale(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static Locale New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<Locale>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html#java.util.Locale(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public Locale(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Locale(Java.Lang.String arg0)
+        /// </summary>
+        public static Locale New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Locale>(arg0);
         }
 
         #endregion
@@ -663,6 +684,13 @@ namespace Java.Util
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for Builder()
+            /// </summary>
+            public static Builder New()
+            {
+                return JVMBridgeBase.New<Builder>();
+            }
 
             #endregion
 
@@ -944,12 +972,26 @@ namespace Java.Util
                 InvokeInitializer(arg0, arg1);
             }
             /// <summary>
+            /// HPA initializer for LanguageRange(Java.Lang.String arg0, double arg1)
+            /// </summary>
+            public static LanguageRange New(Java.Lang.String arg0, double arg1)
+            {
+                return JVMBridgeBase.New<LanguageRange>(arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Locale.LanguageRange.html#java.util.Locale$LanguageRange(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             public LanguageRange(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for LanguageRange(Java.Lang.String arg0)
+            /// </summary>
+            public static LanguageRange New(Java.Lang.String arg0)
+            {
+                return JVMBridgeBase.New<LanguageRange>(arg0);
             }
 
             #endregion

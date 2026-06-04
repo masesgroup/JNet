@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ComponentUI()
+        /// </summary>
+        public static ComponentUI New()
+        {
+            return JVMBridgeBase.New<ComponentUI>();
+        }
 
         #endregion
 

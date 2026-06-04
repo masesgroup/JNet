@@ -71,12 +71,26 @@ namespace Javax.Naming.Ldap
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ManageReferralControl()
+        /// </summary>
+        public static ManageReferralControl New()
+        {
+            return JVMBridgeBase.New<ManageReferralControl>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/ManageReferralControl.html#javax.naming.ldap.ManageReferralControl(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public ManageReferralControl(bool arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ManageReferralControl(bool arg0)
+        /// </summary>
+        public static ManageReferralControl New(bool arg0)
+        {
+            return JVMBridgeBase.New<ManageReferralControl>(arg0);
         }
 
         #endregion

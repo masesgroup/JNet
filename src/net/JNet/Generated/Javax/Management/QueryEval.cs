@@ -70,6 +70,13 @@ namespace Javax.Management
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for QueryEval()
+        /// </summary>
+        public static QueryEval New()
+        {
+            return JVMBridgeBase.New<QueryEval>();
+        }
 
         #endregion
 

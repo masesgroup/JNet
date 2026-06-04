@@ -74,6 +74,13 @@ namespace Java.Security.Cert
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for TrustAnchor(Java.Lang.String arg0, Java.Security.PublicKey arg1, byte[] arg2)
+        /// </summary>
+        public static TrustAnchor New(Java.Lang.String arg0, Java.Security.PublicKey arg1, byte[] arg2)
+        {
+            return JVMBridgeBase.New<TrustAnchor>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/cert/TrustAnchor.html#java.security.cert.TrustAnchor(java.security.cert.X509Certificate,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
@@ -81,6 +88,13 @@ namespace Java.Security.Cert
         public TrustAnchor(Java.Security.Cert.X509Certificate arg0, byte[] arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for TrustAnchor(Java.Security.Cert.X509Certificate arg0, byte[] arg1)
+        /// </summary>
+        public static TrustAnchor New(Java.Security.Cert.X509Certificate arg0, byte[] arg1)
+        {
+            return JVMBridgeBase.New<TrustAnchor>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/cert/TrustAnchor.html#java.security.cert.TrustAnchor(javax.security.auth.x500.X500Principal,java.security.PublicKey,byte[])"/>
@@ -91,6 +105,13 @@ namespace Java.Security.Cert
         public TrustAnchor(Javax.Security.Auth.X500.X500Principal arg0, Java.Security.PublicKey arg1, byte[] arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for TrustAnchor(Javax.Security.Auth.X500.X500Principal arg0, Java.Security.PublicKey arg1, byte[] arg2)
+        /// </summary>
+        public static TrustAnchor New(Javax.Security.Auth.X500.X500Principal arg0, Java.Security.PublicKey arg1, byte[] arg2)
+        {
+            return JVMBridgeBase.New<TrustAnchor>(arg0, arg1, arg2);
         }
 
         #endregion

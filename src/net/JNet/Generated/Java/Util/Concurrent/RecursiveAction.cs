@@ -70,6 +70,13 @@ namespace Java.Util.Concurrent
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for RecursiveAction()
+        /// </summary>
+        public static RecursiveAction New()
+        {
+            return JVMBridgeBase.New<RecursiveAction>();
+        }
 
         #endregion
 

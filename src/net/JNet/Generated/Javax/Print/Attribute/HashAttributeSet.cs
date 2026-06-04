@@ -71,12 +71,26 @@ namespace Javax.Print.Attribute
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for HashAttributeSet()
+        /// </summary>
+        public static HashAttributeSet New()
+        {
+            return JVMBridgeBase.New<HashAttributeSet>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashAttributeSet.html#javax.print.attribute.HashAttributeSet(javax.print.attribute.Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
         public HashAttributeSet(Javax.Print.Attribute.Attribute arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for HashAttributeSet(Javax.Print.Attribute.Attribute arg0)
+        /// </summary>
+        public static HashAttributeSet New(Javax.Print.Attribute.Attribute arg0)
+        {
+            return JVMBridgeBase.New<HashAttributeSet>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashAttributeSet.html#javax.print.attribute.HashAttributeSet(javax.print.attribute.Attribute[])"/>
@@ -87,12 +101,26 @@ namespace Javax.Print.Attribute
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for HashAttributeSet(Javax.Print.Attribute.Attribute[] arg0)
+        /// </summary>
+        public static HashAttributeSet New(Javax.Print.Attribute.Attribute[] arg0)
+        {
+            return JVMBridgeBase.New<HashAttributeSet>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/print/attribute/HashAttributeSet.html#javax.print.attribute.HashAttributeSet(javax.print.attribute.AttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
         public HashAttributeSet(Javax.Print.Attribute.AttributeSet arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for HashAttributeSet(Javax.Print.Attribute.AttributeSet arg0)
+        /// </summary>
+        public static HashAttributeSet New(Javax.Print.Attribute.AttributeSet arg0)
+        {
+            return JVMBridgeBase.New<HashAttributeSet>(arg0);
         }
 
         #endregion

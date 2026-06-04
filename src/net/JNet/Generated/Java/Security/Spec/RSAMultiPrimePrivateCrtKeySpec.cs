@@ -81,6 +81,13 @@ namespace Java.Security.Spec
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
+        /// HPA initializer for RSAMultiPrimePrivateCrtKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigInteger arg6, Java.Math.BigInteger arg7, Java.Security.Spec.RSAOtherPrimeInfo[] arg8, Java.Security.Spec.AlgorithmParameterSpec arg9)
+        /// </summary>
+        public static RSAMultiPrimePrivateCrtKeySpec New(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigInteger arg6, Java.Math.BigInteger arg7, Java.Security.Spec.RSAOtherPrimeInfo[] arg8, Java.Security.Spec.AlgorithmParameterSpec arg9)
+        {
+            return JVMBridgeBase.New<RSAMultiPrimePrivateCrtKeySpec>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/spec/RSAMultiPrimePrivateCrtKeySpec.html#java.security.spec.RSAMultiPrimePrivateCrtKeySpec(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.security.spec.RSAOtherPrimeInfo[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
@@ -95,6 +102,13 @@ namespace Java.Security.Spec
         public RSAMultiPrimePrivateCrtKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigInteger arg6, Java.Math.BigInteger arg7, Java.Security.Spec.RSAOtherPrimeInfo[] arg8) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+        /// <summary>
+        /// HPA initializer for RSAMultiPrimePrivateCrtKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigInteger arg6, Java.Math.BigInteger arg7, Java.Security.Spec.RSAOtherPrimeInfo[] arg8)
+        /// </summary>
+        public static RSAMultiPrimePrivateCrtKeySpec New(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigInteger arg6, Java.Math.BigInteger arg7, Java.Security.Spec.RSAOtherPrimeInfo[] arg8)
+        {
+            return JVMBridgeBase.New<RSAMultiPrimePrivateCrtKeySpec>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
 
         #endregion

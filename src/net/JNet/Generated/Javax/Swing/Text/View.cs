@@ -71,6 +71,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for View(Javax.Swing.Text.Element arg0)
+        /// </summary>
+        public static View New(Javax.Swing.Text.Element arg0)
+        {
+            return JVMBridgeBase.New<View>(arg0);
+        }
 
         #endregion
 

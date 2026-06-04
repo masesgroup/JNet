@@ -139,6 +139,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for RowSorter()
+        /// </summary>
+        public static RowSorter New()
+        {
+            return JVMBridgeBase.New<RowSorter>();
+        }
 
         #endregion
 
@@ -293,6 +300,13 @@ namespace Javax.Swing
             {
                 InvokeInitializer(arg0, arg1);
             }
+            /// <summary>
+            /// HPA initializer for SortKey(int arg0, Javax.Swing.SortOrder arg1)
+            /// </summary>
+            public static SortKey New(int arg0, Javax.Swing.SortOrder arg1)
+            {
+                return JVMBridgeBase.New<SortKey>(arg0, arg1);
+            }
 
             #endregion
 
@@ -351,6 +365,13 @@ namespace Javax.Swing
         public RowSorter() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for RowSorter()
+        /// </summary>
+        public static RowSorter<M> New()
+        {
+            return JVMBridgeBase.New<RowSorter<M>>();
         }
 
         #endregion

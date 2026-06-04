@@ -71,6 +71,13 @@ namespace Java.Security.Spec
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ECFieldFp(Java.Math.BigInteger arg0)
+        /// </summary>
+        public static ECFieldFp New(Java.Math.BigInteger arg0)
+        {
+            return JVMBridgeBase.New<ECFieldFp>(arg0);
+        }
 
         #endregion
 

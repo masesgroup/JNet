@@ -71,12 +71,26 @@ namespace Javax.Management.Remote
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JMXConnectorServer()
+        /// </summary>
+        public static JMXConnectorServer New()
+        {
+            return JVMBridgeBase.New<JMXConnectorServer>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/JMXConnectorServer.html#javax.management.remote.JMXConnectorServer(javax.management.MBeanServer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
         public JMXConnectorServer(Javax.Management.MBeanServer arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JMXConnectorServer(Javax.Management.MBeanServer arg0)
+        /// </summary>
+        public static JMXConnectorServer New(Javax.Management.MBeanServer arg0)
+        {
+            return JVMBridgeBase.New<JMXConnectorServer>(arg0);
         }
 
         #endregion

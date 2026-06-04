@@ -70,6 +70,13 @@ namespace Javax.Sound.Sampled.Spi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AudioFileReader()
+        /// </summary>
+        public static AudioFileReader New()
+        {
+            return JVMBridgeBase.New<AudioFileReader>();
+        }
 
         #endregion
 

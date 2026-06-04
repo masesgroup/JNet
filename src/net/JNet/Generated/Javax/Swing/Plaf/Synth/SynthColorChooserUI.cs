@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthColorChooserUI()
+        /// </summary>
+        public static SynthColorChooserUI New()
+        {
+            return JVMBridgeBase.New<SynthColorChooserUI>();
+        }
 
         #endregion
 

@@ -70,6 +70,13 @@ namespace Java.Util.Logging
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ErrorManager()
+        /// </summary>
+        public static ErrorManager New()
+        {
+            return JVMBridgeBase.New<ErrorManager>();
+        }
 
         #endregion
 

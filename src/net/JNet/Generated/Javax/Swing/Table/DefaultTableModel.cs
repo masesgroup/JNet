@@ -71,6 +71,13 @@ namespace Javax.Swing.Table
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DefaultTableModel()
+        /// </summary>
+        public static DefaultTableModel New()
+        {
+            return JVMBridgeBase.New<DefaultTableModel>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/DefaultTableModel.html#javax.swing.table.DefaultTableModel(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Swing.Table
         public DefaultTableModel(int arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultTableModel(int arg0, int arg1)
+        /// </summary>
+        public static DefaultTableModel New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<DefaultTableModel>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/DefaultTableModel.html#javax.swing.table.DefaultTableModel(java.util.Vector,int)"/>
@@ -89,6 +103,13 @@ namespace Javax.Swing.Table
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for DefaultTableModel(Java.Util.Vector arg0, int arg1)
+        /// </summary>
+        public static DefaultTableModel New(Java.Util.Vector arg0, int arg1)
+        {
+            return JVMBridgeBase.New<DefaultTableModel>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/DefaultTableModel.html#javax.swing.table.DefaultTableModel(java.util.Vector,java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
@@ -96,6 +117,13 @@ namespace Javax.Swing.Table
         public DefaultTableModel(Java.Util.Vector arg0, Java.Util.Vector arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultTableModel(Java.Util.Vector arg0, Java.Util.Vector arg1)
+        /// </summary>
+        public static DefaultTableModel New(Java.Util.Vector arg0, Java.Util.Vector arg1)
+        {
+            return JVMBridgeBase.New<DefaultTableModel>(arg0, arg1);
         }
 
         #endregion

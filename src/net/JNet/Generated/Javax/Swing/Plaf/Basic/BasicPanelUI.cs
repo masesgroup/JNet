@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicPanelUI()
+        /// </summary>
+        public static BasicPanelUI New()
+        {
+            return JVMBridgeBase.New<BasicPanelUI>();
+        }
 
         #endregion
 

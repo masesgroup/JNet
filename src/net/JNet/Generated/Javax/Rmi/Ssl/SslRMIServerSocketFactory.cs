@@ -71,6 +71,13 @@ namespace Javax.Rmi.Ssl
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SslRMIServerSocketFactory()
+        /// </summary>
+        public static SslRMIServerSocketFactory New()
+        {
+            return JVMBridgeBase.New<SslRMIServerSocketFactory>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/ssl/SslRMIServerSocketFactory.html#javax.rmi.ssl.SslRMIServerSocketFactory(java.lang.String[],java.lang.String[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Rmi.Ssl
         public SslRMIServerSocketFactory(Java.Lang.String[] arg0, Java.Lang.String[] arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for SslRMIServerSocketFactory(Java.Lang.String[] arg0, Java.Lang.String[] arg1, bool arg2)
+        /// </summary>
+        public static SslRMIServerSocketFactory New(Java.Lang.String[] arg0, Java.Lang.String[] arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<SslRMIServerSocketFactory>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/rmi/ssl/SslRMIServerSocketFactory.html#javax.rmi.ssl.SslRMIServerSocketFactory(javax.net.ssl.SSLContext,java.lang.String[],java.lang.String[],boolean)"/>
@@ -92,6 +106,13 @@ namespace Javax.Rmi.Ssl
         public SslRMIServerSocketFactory(Javax.Net.Ssl.SSLContext arg0, Java.Lang.String[] arg1, Java.Lang.String[] arg2, bool arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for SslRMIServerSocketFactory(Javax.Net.Ssl.SSLContext arg0, Java.Lang.String[] arg1, Java.Lang.String[] arg2, bool arg3)
+        /// </summary>
+        public static SslRMIServerSocketFactory New(Javax.Net.Ssl.SSLContext arg0, Java.Lang.String[] arg1, Java.Lang.String[] arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<SslRMIServerSocketFactory>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

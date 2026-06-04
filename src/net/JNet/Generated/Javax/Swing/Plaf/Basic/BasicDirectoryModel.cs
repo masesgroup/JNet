@@ -71,6 +71,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for BasicDirectoryModel(Javax.Swing.JFileChooser arg0)
+        /// </summary>
+        public static BasicDirectoryModel New(Javax.Swing.JFileChooser arg0)
+        {
+            return JVMBridgeBase.New<BasicDirectoryModel>(arg0);
+        }
 
         #endregion
 

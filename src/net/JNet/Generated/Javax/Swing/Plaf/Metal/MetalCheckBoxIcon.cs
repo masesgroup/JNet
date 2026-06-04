@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalCheckBoxIcon()
+        /// </summary>
+        public static MetalCheckBoxIcon New()
+        {
+            return JVMBridgeBase.New<MetalCheckBoxIcon>();
+        }
 
         #endregion
 

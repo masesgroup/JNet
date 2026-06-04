@@ -74,6 +74,13 @@ namespace Javax.Sql
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for StatementEvent(Javax.Sql.PooledConnection arg0, Java.Sql.PreparedStatement arg1, Java.Sql.SQLException arg2)
+        /// </summary>
+        public static StatementEvent New(Javax.Sql.PooledConnection arg0, Java.Sql.PreparedStatement arg1, Java.Sql.SQLException arg2)
+        {
+            return JVMBridgeBase.New<StatementEvent>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sql/StatementEvent.html#javax.sql.StatementEvent(javax.sql.PooledConnection,java.sql.PreparedStatement)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.PooledConnection"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Sql
         public StatementEvent(Javax.Sql.PooledConnection arg0, Java.Sql.PreparedStatement arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for StatementEvent(Javax.Sql.PooledConnection arg0, Java.Sql.PreparedStatement arg1)
+        /// </summary>
+        public static StatementEvent New(Javax.Sql.PooledConnection arg0, Java.Sql.PreparedStatement arg1)
+        {
+            return JVMBridgeBase.New<StatementEvent>(arg0, arg1);
         }
 
         #endregion

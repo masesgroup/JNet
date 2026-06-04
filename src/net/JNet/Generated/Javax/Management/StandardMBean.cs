@@ -74,6 +74,13 @@ namespace Javax.Management
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for StandardMBean(object arg0, Java.Lang.Class arg1, bool arg2)
+        /// </summary>
+        public static StandardMBean New(object arg0, Java.Lang.Class arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<StandardMBean>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/StandardMBean.html#javax.management.StandardMBean(java.lang.Object,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -82,6 +89,13 @@ namespace Javax.Management
         public StandardMBean(object arg0, Java.Lang.Class arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for StandardMBean(object arg0, Java.Lang.Class arg1)
+        /// </summary>
+        public static StandardMBean New(object arg0, Java.Lang.Class arg1)
+        {
+            return JVMBridgeBase.New<StandardMBean>(arg0, arg1);
         }
 
         #endregion

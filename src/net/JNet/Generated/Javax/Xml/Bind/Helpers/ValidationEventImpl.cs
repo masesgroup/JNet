@@ -75,6 +75,13 @@ namespace Javax.Xml.Bind.Helpers
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for ValidationEventImpl(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2, Java.Lang.Throwable arg3)
+        /// </summary>
+        public static ValidationEventImpl New(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2, Java.Lang.Throwable arg3)
+        {
+            return JVMBridgeBase.New<ValidationEventImpl>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/helpers/ValidationEventImpl.html#javax.xml.bind.helpers.ValidationEventImpl(int,java.lang.String,javax.xml.bind.ValidationEventLocator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -83,6 +90,13 @@ namespace Javax.Xml.Bind.Helpers
         public ValidationEventImpl(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for ValidationEventImpl(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2)
+        /// </summary>
+        public static ValidationEventImpl New(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2)
+        {
+            return JVMBridgeBase.New<ValidationEventImpl>(arg0, arg1, arg2);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ColorChooserUI()
+        /// </summary>
+        public static ColorChooserUI New()
+        {
+            return JVMBridgeBase.New<ColorChooserUI>();
+        }
 
         #endregion
 

@@ -76,6 +76,13 @@ namespace Javax.Swing.Text.Html
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Java.Lang.String arg4)
+        /// </summary>
+        public static HTMLFrameHyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Java.Lang.String arg4)
+        {
+            return JVMBridgeBase.New<HTMLFrameHyperlinkEvent>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#javax.swing.text.html.HTMLFrameHyperlinkEvent(java.lang.Object,javax.swing.event.HyperlinkEvent.EventType,java.net.URL,java.lang.String,javax.swing.text.Element,java.awt.event.InputEvent,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -88,6 +95,13 @@ namespace Javax.Swing.Text.Html
         public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5, Java.Lang.String arg6) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// HPA initializer for HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5, Java.Lang.String arg6)
+        /// </summary>
+        public static HTMLFrameHyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5, Java.Lang.String arg6)
+        {
+            return JVMBridgeBase.New<HTMLFrameHyperlinkEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#javax.swing.text.html.HTMLFrameHyperlinkEvent(java.lang.Object,javax.swing.event.HyperlinkEvent.EventType,java.net.URL,java.lang.String,javax.swing.text.Element,java.lang.String)"/>
@@ -103,6 +117,13 @@ namespace Javax.Swing.Text.Html
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Lang.String arg5)
+        /// </summary>
+        public static HTMLFrameHyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Lang.String arg5)
+        {
+            return JVMBridgeBase.New<HTMLFrameHyperlinkEvent>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#javax.swing.text.html.HTMLFrameHyperlinkEvent(java.lang.Object,javax.swing.event.HyperlinkEvent.EventType,java.net.URL,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -112,6 +133,13 @@ namespace Javax.Swing.Text.Html
         public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3)
+        /// </summary>
+        public static HTMLFrameHyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3)
+        {
+            return JVMBridgeBase.New<HTMLFrameHyperlinkEvent>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#javax.swing.text.html.HTMLFrameHyperlinkEvent(java.lang.Object,javax.swing.event.HyperlinkEvent.EventType,java.net.URL,javax.swing.text.Element,java.lang.String)"/>
@@ -124,6 +152,13 @@ namespace Javax.Swing.Text.Html
         public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Javax.Swing.Text.Element arg3, Java.Lang.String arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Javax.Swing.Text.Element arg3, Java.Lang.String arg4)
+        /// </summary>
+        public static HTMLFrameHyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Javax.Swing.Text.Element arg3, Java.Lang.String arg4)
+        {
+            return JVMBridgeBase.New<HTMLFrameHyperlinkEvent>(arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

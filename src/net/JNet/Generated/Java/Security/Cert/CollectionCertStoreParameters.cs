@@ -71,12 +71,26 @@ namespace Java.Security.Cert
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for CollectionCertStoreParameters()
+        /// </summary>
+        public static CollectionCertStoreParameters New()
+        {
+            return JVMBridgeBase.New<CollectionCertStoreParameters>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/cert/CollectionCertStoreParameters.html#java.security.cert.CollectionCertStoreParameters(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public CollectionCertStoreParameters(Java.Util.Collection<object> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for CollectionCertStoreParameters(Java.Util.Collection%3Cobject%3E arg0)
+        /// </summary>
+        public static CollectionCertStoreParameters New(Java.Util.Collection<object> arg0)
+        {
+            return JVMBridgeBase.New<CollectionCertStoreParameters>(arg0);
         }
 
         #endregion

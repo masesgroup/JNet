@@ -72,6 +72,13 @@ namespace Java.Security
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for DigestInputStream(Java.Io.InputStream arg0, Java.Security.MessageDigest arg1)
+        /// </summary>
+        public static DigestInputStream New(Java.Io.InputStream arg0, Java.Security.MessageDigest arg1)
+        {
+            return JVMBridgeBase.New<DigestInputStream>(arg0, arg1);
+        }
 
         #endregion
 

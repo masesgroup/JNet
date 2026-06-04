@@ -71,6 +71,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for BasicFileChooserUI(Javax.Swing.JFileChooser arg0)
+        /// </summary>
+        public static BasicFileChooserUI New(Javax.Swing.JFileChooser arg0)
+        {
+            return JVMBridgeBase.New<BasicFileChooserUI>(arg0);
+        }
 
         #endregion
 

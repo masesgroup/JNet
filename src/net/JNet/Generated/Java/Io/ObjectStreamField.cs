@@ -74,6 +74,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ObjectStreamField(Java.Lang.String arg0, Java.Lang.Class arg1, bool arg2)
+        /// </summary>
+        public static ObjectStreamField New(Java.Lang.String arg0, Java.Lang.Class arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<ObjectStreamField>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/ObjectStreamField.html#java.io.ObjectStreamField(java.lang.String,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -81,6 +88,13 @@ namespace Java.Io
         public ObjectStreamField(Java.Lang.String arg0, Java.Lang.Class arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for ObjectStreamField(Java.Lang.String arg0, Java.Lang.Class arg1)
+        /// </summary>
+        public static ObjectStreamField New(Java.Lang.String arg0, Java.Lang.Class arg1)
+        {
+            return JVMBridgeBase.New<ObjectStreamField>(arg0, arg1);
         }
 
         #endregion

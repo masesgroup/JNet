@@ -70,6 +70,13 @@ namespace Java.Net
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for URLStreamHandler()
+        /// </summary>
+        public static URLStreamHandler New()
+        {
+            return JVMBridgeBase.New<URLStreamHandler>();
+        }
 
         #endregion
 

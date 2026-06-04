@@ -139,12 +139,26 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JFormattedTextField()
+        /// </summary>
+        public static JFormattedTextField New()
+        {
+            return JVMBridgeBase.New<JFormattedTextField>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFormattedTextField.html#javax.swing.JFormattedTextField(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public JFormattedTextField(object arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JFormattedTextField(object arg0)
+        /// </summary>
+        public static JFormattedTextField New(object arg0)
+        {
+            return JVMBridgeBase.New<JFormattedTextField>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFormattedTextField.html#javax.swing.JFormattedTextField(java.text.Format)"/>
@@ -155,12 +169,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JFormattedTextField(Java.Text.Format arg0)
+        /// </summary>
+        public static JFormattedTextField New(Java.Text.Format arg0)
+        {
+            return JVMBridgeBase.New<JFormattedTextField>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFormattedTextField.html#javax.swing.JFormattedTextField(javax.swing.JFormattedTextField.AbstractFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
         public JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatter arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatter arg0)
+        /// </summary>
+        public static JFormattedTextField New(Javax.Swing.JFormattedTextField.AbstractFormatter arg0)
+        {
+            return JVMBridgeBase.New<JFormattedTextField>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFormattedTextField.html#javax.swing.JFormattedTextField(javax.swing.JFormattedTextField.AbstractFormatterFactory,java.lang.Object)"/>
@@ -172,12 +200,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatterFactory arg0, object arg1)
+        /// </summary>
+        public static JFormattedTextField New(Javax.Swing.JFormattedTextField.AbstractFormatterFactory arg0, object arg1)
+        {
+            return JVMBridgeBase.New<JFormattedTextField>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFormattedTextField.html#javax.swing.JFormattedTextField(javax.swing.JFormattedTextField.AbstractFormatterFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatterFactory"/></param>
         public JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatterFactory arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatterFactory arg0)
+        /// </summary>
+        public static JFormattedTextField New(Javax.Swing.JFormattedTextField.AbstractFormatterFactory arg0)
+        {
+            return JVMBridgeBase.New<JFormattedTextField>(arg0);
         }
 
         #endregion
@@ -270,6 +312,13 @@ namespace Javax.Swing
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for AbstractFormatter()
+            /// </summary>
+            public static AbstractFormatter New()
+            {
+                return JVMBridgeBase.New<AbstractFormatter>();
+            }
 
             #endregion
 
@@ -342,6 +391,13 @@ namespace Javax.Swing
             public AbstractFormatterFactory() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for AbstractFormatterFactory()
+            /// </summary>
+            public static AbstractFormatterFactory New()
+            {
+                return JVMBridgeBase.New<AbstractFormatterFactory>();
             }
 
             #endregion

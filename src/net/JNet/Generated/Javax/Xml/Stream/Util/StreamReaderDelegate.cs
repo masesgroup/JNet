@@ -71,12 +71,26 @@ namespace Javax.Xml.Stream.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for StreamReaderDelegate()
+        /// </summary>
+        public static StreamReaderDelegate New()
+        {
+            return JVMBridgeBase.New<StreamReaderDelegate>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/stream/util/StreamReaderDelegate.html#javax.xml.stream.util.StreamReaderDelegate(javax.xml.stream.XMLStreamReader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamReader"/></param>
         public StreamReaderDelegate(Javax.Xml.Stream.XMLStreamReader arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StreamReaderDelegate(Javax.Xml.Stream.XMLStreamReader arg0)
+        /// </summary>
+        public static StreamReaderDelegate New(Javax.Xml.Stream.XMLStreamReader arg0)
+        {
+            return JVMBridgeBase.New<StreamReaderDelegate>(arg0);
         }
 
         #endregion

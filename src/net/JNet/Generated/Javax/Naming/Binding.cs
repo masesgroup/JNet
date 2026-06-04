@@ -74,6 +74,13 @@ namespace Javax.Naming
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for Binding(Java.Lang.String arg0, object arg1, bool arg2)
+        /// </summary>
+        public static Binding New(Java.Lang.String arg0, object arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<Binding>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/Binding.html#javax.naming.Binding(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Naming
         public Binding(Java.Lang.String arg0, object arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for Binding(Java.Lang.String arg0, object arg1)
+        /// </summary>
+        public static Binding New(Java.Lang.String arg0, object arg1)
+        {
+            return JVMBridgeBase.New<Binding>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/Binding.html#javax.naming.Binding(java.lang.String,java.lang.String,java.lang.Object,boolean)"/>
@@ -94,6 +108,13 @@ namespace Javax.Naming
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for Binding(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, bool arg3)
+        /// </summary>
+        public static Binding New(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<Binding>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/Binding.html#javax.naming.Binding(java.lang.String,java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -102,6 +123,13 @@ namespace Javax.Naming
         public Binding(Java.Lang.String arg0, Java.Lang.String arg1, object arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for Binding(Java.Lang.String arg0, Java.Lang.String arg1, object arg2)
+        /// </summary>
+        public static Binding New(Java.Lang.String arg0, Java.Lang.String arg1, object arg2)
+        {
+            return JVMBridgeBase.New<Binding>(arg0, arg1, arg2);
         }
 
         #endregion

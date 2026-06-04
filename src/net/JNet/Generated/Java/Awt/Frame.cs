@@ -73,12 +73,26 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Frame()
+        /// </summary>
+        public static Frame New()
+        {
+            return JVMBridgeBase.New<Frame>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#java.awt.Frame(java.awt.GraphicsConfiguration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
         public Frame(Java.Awt.GraphicsConfiguration arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Frame(Java.Awt.GraphicsConfiguration arg0)
+        /// </summary>
+        public static Frame New(Java.Awt.GraphicsConfiguration arg0)
+        {
+            return JVMBridgeBase.New<Frame>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#java.awt.Frame(java.lang.String,java.awt.GraphicsConfiguration)"/>
@@ -90,6 +104,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Frame(Java.Lang.String arg0, Java.Awt.GraphicsConfiguration arg1)
+        /// </summary>
+        public static Frame New(Java.Lang.String arg0, Java.Awt.GraphicsConfiguration arg1)
+        {
+            return JVMBridgeBase.New<Frame>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#java.awt.Frame(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -97,6 +118,13 @@ namespace Java.Awt
         public Frame(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Frame(Java.Lang.String arg0)
+        /// </summary>
+        public static Frame New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Frame>(arg0);
         }
 
         #endregion

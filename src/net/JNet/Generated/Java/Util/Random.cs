@@ -71,12 +71,26 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Random()
+        /// </summary>
+        public static Random New()
+        {
+            return JVMBridgeBase.New<Random>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html#java.util.Random(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public Random(long arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Random(long arg0)
+        /// </summary>
+        public static Random New(long arg0)
+        {
+            return JVMBridgeBase.New<Random>(arg0);
         }
 
         #endregion

@@ -75,6 +75,13 @@ namespace Javax.Security.Auth.Kerberos
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for KerberosKey(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, byte[] arg1, int arg2, int arg3)
+        /// </summary>
+        public static KerberosKey New(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, byte[] arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<KerberosKey>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/kerberos/KerberosKey.html#javax.security.auth.kerberos.KerberosKey(javax.security.auth.kerberos.KerberosPrincipal,char[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
@@ -83,6 +90,13 @@ namespace Javax.Security.Auth.Kerberos
         public KerberosKey(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, char[] arg1, Java.Lang.String arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for KerberosKey(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, char[] arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static KerberosKey New(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, char[] arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<KerberosKey>(arg0, arg1, arg2);
         }
 
         #endregion

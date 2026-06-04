@@ -140,6 +140,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JList()
+        /// </summary>
+        public static JList New()
+        {
+            return JVMBridgeBase.New<JList>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#javax.swing.JList(java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
@@ -148,12 +155,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JList(Java.Util.Vector arg0)
+        /// </summary>
+        public static JList New(Java.Util.Vector arg0)
+        {
+            return JVMBridgeBase.New<JList>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#javax.swing.JList(javax.swing.ListModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.ListModel"/></param>
         public JList(Javax.Swing.ListModel arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JList(Javax.Swing.ListModel arg0)
+        /// </summary>
+        public static JList New(Javax.Swing.ListModel arg0)
+        {
+            return JVMBridgeBase.New<JList>(arg0);
         }
 
         #endregion
@@ -639,12 +660,26 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JList()
+        /// </summary>
+        public static JList<E> New()
+        {
+            return JVMBridgeBase.New<JList<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#javax.swing.JList(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public JList(E[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JList(E[] arg0)
+        /// </summary>
+        public static JList<E> New(E[] arg0)
+        {
+            return JVMBridgeBase.New<JList<E>>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#javax.swing.JList(java.util.Vector)"/>
@@ -655,12 +690,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JList(Java.Util.Vector%3CE%3E arg0)
+        /// </summary>
+        public static JList<E> New(Java.Util.Vector<E> arg0)
+        {
+            return JVMBridgeBase.New<JList<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#javax.swing.JList(javax.swing.ListModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.ListModel"/></param>
         public JList(Javax.Swing.ListModel<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JList(Javax.Swing.ListModel%3CE%3E arg0)
+        /// </summary>
+        public static JList<E> New(Javax.Swing.ListModel<E> arg0)
+        {
+            return JVMBridgeBase.New<JList<E>>(arg0);
         }
 
         #endregion

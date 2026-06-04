@@ -74,6 +74,13 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for GZIPInputStream(Java.Io.InputStream arg0, int arg1)
+        /// </summary>
+        public static GZIPInputStream New(Java.Io.InputStream arg0, int arg1)
+        {
+            return JVMBridgeBase.New<GZIPInputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/GZIPInputStream.html#java.util.zip.GZIPInputStream(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
@@ -81,6 +88,13 @@ namespace Java.Util.Zip
         public GZIPInputStream(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for GZIPInputStream(Java.Io.InputStream arg0)
+        /// </summary>
+        public static GZIPInputStream New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<GZIPInputStream>(arg0);
         }
 
         #endregion

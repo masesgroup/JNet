@@ -74,12 +74,26 @@ namespace Javax.Smartcardio
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for CommandAPDU(byte[] arg0, int arg1, int arg2)
+        /// </summary>
+        public static CommandAPDU New(byte[] arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/smartcardio/CommandAPDU.html#javax.smartcardio.CommandAPDU(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public CommandAPDU(byte[] arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for CommandAPDU(byte[] arg0)
+        /// </summary>
+        public static CommandAPDU New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<CommandAPDU>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/smartcardio/CommandAPDU.html#javax.smartcardio.CommandAPDU(int,int,int,int,byte[],int,int,int)"/>
@@ -97,6 +111,13 @@ namespace Javax.Smartcardio
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
+        /// HPA initializer for CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6, int arg7)
+        /// </summary>
+        public static CommandAPDU New(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6, int arg7)
+        {
+            return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/smartcardio/CommandAPDU.html#javax.smartcardio.CommandAPDU(int,int,int,int,byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -109,6 +130,13 @@ namespace Javax.Smartcardio
         public CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// HPA initializer for CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6)
+        /// </summary>
+        public static CommandAPDU New(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6)
+        {
+            return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/smartcardio/CommandAPDU.html#javax.smartcardio.CommandAPDU(int,int,int,int,byte[],int)"/>
@@ -124,6 +152,13 @@ namespace Javax.Smartcardio
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5)
+        /// </summary>
+        public static CommandAPDU New(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5)
+        {
+            return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/smartcardio/CommandAPDU.html#javax.smartcardio.CommandAPDU(int,int,int,int,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -134,6 +169,13 @@ namespace Javax.Smartcardio
         public CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4)
+        /// </summary>
+        public static CommandAPDU New(int arg0, int arg1, int arg2, int arg3, byte[] arg4)
+        {
+            return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/smartcardio/CommandAPDU.html#javax.smartcardio.CommandAPDU(int,int,int,int,int)"/>
@@ -148,6 +190,13 @@ namespace Javax.Smartcardio
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for CommandAPDU(int arg0, int arg1, int arg2, int arg3, int arg4)
+        /// </summary>
+        public static CommandAPDU New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/smartcardio/CommandAPDU.html#javax.smartcardio.CommandAPDU(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -159,12 +208,26 @@ namespace Javax.Smartcardio
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for CommandAPDU(int arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static CommandAPDU New(int arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/smartcardio/CommandAPDU.html#javax.smartcardio.CommandAPDU(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public CommandAPDU(Java.Nio.ByteBuffer arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for CommandAPDU(Java.Nio.ByteBuffer arg0)
+        /// </summary>
+        public static CommandAPDU New(Java.Nio.ByteBuffer arg0)
+        {
+            return JVMBridgeBase.New<CommandAPDU>(arg0);
         }
 
         #endregion

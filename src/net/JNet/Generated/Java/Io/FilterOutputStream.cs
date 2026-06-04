@@ -71,6 +71,13 @@ namespace Java.Io
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for FilterOutputStream(Java.Io.OutputStream arg0)
+        /// </summary>
+        public static FilterOutputStream New(Java.Io.OutputStream arg0)
+        {
+            return JVMBridgeBase.New<FilterOutputStream>(arg0);
+        }
 
         #endregion
 

@@ -72,12 +72,26 @@ namespace Javax.Net.Ssl
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for SNIHostName(byte[] arg0)
+        /// </summary>
+        public static SNIHostName New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<SNIHostName>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/SNIHostName.html#javax.net.ssl.SNIHostName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public SNIHostName(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SNIHostName(Java.Lang.String arg0)
+        /// </summary>
+        public static SNIHostName New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<SNIHostName>(arg0);
         }
 
         #endregion

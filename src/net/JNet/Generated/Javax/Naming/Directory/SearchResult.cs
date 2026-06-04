@@ -75,6 +75,13 @@ namespace Javax.Naming.Directory
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for SearchResult(Java.Lang.String arg0, object arg1, Javax.Naming.Directory.Attributes arg2, bool arg3)
+        /// </summary>
+        public static SearchResult New(Java.Lang.String arg0, object arg1, Javax.Naming.Directory.Attributes arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<SearchResult>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/directory/SearchResult.html#javax.naming.directory.SearchResult(java.lang.String,java.lang.Object,javax.naming.directory.Attributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -83,6 +90,13 @@ namespace Javax.Naming.Directory
         public SearchResult(Java.Lang.String arg0, object arg1, Javax.Naming.Directory.Attributes arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for SearchResult(Java.Lang.String arg0, object arg1, Javax.Naming.Directory.Attributes arg2)
+        /// </summary>
+        public static SearchResult New(Java.Lang.String arg0, object arg1, Javax.Naming.Directory.Attributes arg2)
+        {
+            return JVMBridgeBase.New<SearchResult>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/directory/SearchResult.html#javax.naming.directory.SearchResult(java.lang.String,java.lang.String,java.lang.Object,javax.naming.directory.Attributes,boolean)"/>
@@ -97,6 +111,13 @@ namespace Javax.Naming.Directory
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for SearchResult(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Naming.Directory.Attributes arg3, bool arg4)
+        /// </summary>
+        public static SearchResult New(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Naming.Directory.Attributes arg3, bool arg4)
+        {
+            return JVMBridgeBase.New<SearchResult>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/directory/SearchResult.html#javax.naming.directory.SearchResult(java.lang.String,java.lang.String,java.lang.Object,javax.naming.directory.Attributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -106,6 +127,13 @@ namespace Javax.Naming.Directory
         public SearchResult(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Naming.Directory.Attributes arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for SearchResult(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Naming.Directory.Attributes arg3)
+        /// </summary>
+        public static SearchResult New(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Naming.Directory.Attributes arg3)
+        {
+            return JVMBridgeBase.New<SearchResult>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

@@ -73,6 +73,13 @@ namespace Javax.Naming.Spi
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ResolveResult(object arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static ResolveResult New(object arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<ResolveResult>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/spi/ResolveResult.html#javax.naming.spi.ResolveResult(java.lang.Object,javax.naming.Name)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Naming.Spi
         public ResolveResult(object arg0, Javax.Naming.Name arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for ResolveResult(object arg0, Javax.Naming.Name arg1)
+        /// </summary>
+        public static ResolveResult New(object arg0, Javax.Naming.Name arg1)
+        {
+            return JVMBridgeBase.New<ResolveResult>(arg0, arg1);
         }
 
         #endregion

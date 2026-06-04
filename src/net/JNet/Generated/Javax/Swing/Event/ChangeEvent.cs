@@ -71,6 +71,13 @@ namespace Javax.Swing.Event
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ChangeEvent(object arg0)
+        /// </summary>
+        public static ChangeEvent New(object arg0)
+        {
+            return JVMBridgeBase.New<ChangeEvent>(arg0);
+        }
 
         #endregion
 

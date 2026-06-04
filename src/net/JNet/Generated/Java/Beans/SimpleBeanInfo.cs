@@ -70,6 +70,13 @@ namespace Java.Beans
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SimpleBeanInfo()
+        /// </summary>
+        public static SimpleBeanInfo New()
+        {
+            return JVMBridgeBase.New<SimpleBeanInfo>();
+        }
 
         #endregion
 

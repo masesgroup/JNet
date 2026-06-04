@@ -106,6 +106,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for AtomicReferenceArray(int arg0)
+        /// </summary>
+        public static AtomicReferenceArray New(int arg0)
+        {
+            return JVMBridgeBase.New<AtomicReferenceArray>(arg0);
+        }
 
         #endregion
 
@@ -255,12 +262,26 @@ namespace Java.Util.Concurrent.Atomic
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for AtomicReferenceArray(E[] arg0)
+        /// </summary>
+        public static AtomicReferenceArray<E> New(E[] arg0)
+        {
+            return JVMBridgeBase.New<AtomicReferenceArray<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicReferenceArray.html#java.util.concurrent.atomic.AtomicReferenceArray(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public AtomicReferenceArray(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AtomicReferenceArray(int arg0)
+        /// </summary>
+        public static AtomicReferenceArray<E> New(int arg0)
+        {
+            return JVMBridgeBase.New<AtomicReferenceArray<E>>(arg0);
         }
 
         #endregion

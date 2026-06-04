@@ -72,6 +72,13 @@ namespace Javax.Swing.Plaf
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for FontUIResource(Java.Awt.Font arg0)
+        /// </summary>
+        public static FontUIResource New(Java.Awt.Font arg0)
+        {
+            return JVMBridgeBase.New<FontUIResource>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/FontUIResource.html#javax.swing.plaf.FontUIResource(java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Swing.Plaf
         public FontUIResource(Java.Lang.String arg0, int arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for FontUIResource(Java.Lang.String arg0, int arg1, int arg2)
+        /// </summary>
+        public static FontUIResource New(Java.Lang.String arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<FontUIResource>(arg0, arg1, arg2);
         }
 
         #endregion

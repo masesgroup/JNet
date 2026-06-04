@@ -71,12 +71,26 @@ namespace Javax.Script
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ScriptEngineManager()
+        /// </summary>
+        public static ScriptEngineManager New()
+        {
+            return JVMBridgeBase.New<ScriptEngineManager>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/script/ScriptEngineManager.html#javax.script.ScriptEngineManager(java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         public ScriptEngineManager(Java.Lang.ClassLoader arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ScriptEngineManager(Java.Lang.ClassLoader arg0)
+        /// </summary>
+        public static ScriptEngineManager New(Java.Lang.ClassLoader arg0)
+        {
+            return JVMBridgeBase.New<ScriptEngineManager>(arg0);
         }
 
         #endregion

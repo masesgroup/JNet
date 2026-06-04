@@ -73,6 +73,13 @@ namespace Javax.Accessibility
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for AccessibleAttributeSequence(int arg0, int arg1, Javax.Swing.Text.AttributeSet arg2)
+        /// </summary>
+        public static AccessibleAttributeSequence New(int arg0, int arg1, Javax.Swing.Text.AttributeSet arg2)
+        {
+            return JVMBridgeBase.New<AccessibleAttributeSequence>(arg0, arg1, arg2);
+        }
 
         #endregion
 

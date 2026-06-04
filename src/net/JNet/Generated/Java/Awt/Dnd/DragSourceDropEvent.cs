@@ -76,6 +76,13 @@ namespace Java.Awt.Dnd
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2, int arg3, int arg4)
+        /// </summary>
+        public static DragSourceDropEvent New(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<DragSourceDropEvent>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceDropEvent.html#java.awt.dnd.DragSourceDropEvent(java.awt.dnd.DragSourceContext,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
@@ -86,12 +93,26 @@ namespace Java.Awt.Dnd
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2)
+        /// </summary>
+        public static DragSourceDropEvent New(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<DragSourceDropEvent>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceDropEvent.html#java.awt.dnd.DragSourceDropEvent(java.awt.dnd.DragSourceContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
         public DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0)
+        /// </summary>
+        public static DragSourceDropEvent New(Java.Awt.Dnd.DragSourceContext arg0)
+        {
+            return JVMBridgeBase.New<DragSourceDropEvent>(arg0);
         }
 
         #endregion

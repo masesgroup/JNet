@@ -76,6 +76,13 @@ namespace Javax.Swing.Plaf.Metal
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for MetalComboBoxButton(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, bool arg2, Javax.Swing.CellRendererPane arg3, Javax.Swing.JList arg4)
+        /// </summary>
+        public static MetalComboBoxButton New(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, bool arg2, Javax.Swing.CellRendererPane arg3, Javax.Swing.JList arg4)
+        {
+            return JVMBridgeBase.New<MetalComboBoxButton>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalComboBoxButton.html#javax.swing.plaf.metal.MetalComboBoxButton(javax.swing.JComboBox,javax.swing.Icon,javax.swing.CellRendererPane,javax.swing.JList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
@@ -85,6 +92,13 @@ namespace Javax.Swing.Plaf.Metal
         public MetalComboBoxButton(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, Javax.Swing.CellRendererPane arg2, Javax.Swing.JList arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for MetalComboBoxButton(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, Javax.Swing.CellRendererPane arg2, Javax.Swing.JList arg3)
+        /// </summary>
+        public static MetalComboBoxButton New(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, Javax.Swing.CellRendererPane arg2, Javax.Swing.JList arg3)
+        {
+            return JVMBridgeBase.New<MetalComboBoxButton>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

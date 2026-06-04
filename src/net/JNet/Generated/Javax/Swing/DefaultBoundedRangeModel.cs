@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DefaultBoundedRangeModel()
+        /// </summary>
+        public static DefaultBoundedRangeModel New()
+        {
+            return JVMBridgeBase.New<DefaultBoundedRangeModel>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultBoundedRangeModel.html#javax.swing.DefaultBoundedRangeModel(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,6 +87,13 @@ namespace Javax.Swing
         public DefaultBoundedRangeModel(int arg0, int arg1, int arg2, int arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultBoundedRangeModel(int arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static DefaultBoundedRangeModel New(int arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<DefaultBoundedRangeModel>(arg0, arg1, arg2, arg3);
         }
 
         #endregion

@@ -74,12 +74,26 @@ namespace Java.Awt.Dnd
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DragSourceEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, int arg2)
+        /// </summary>
+        public static DragSourceEvent New(Java.Awt.Dnd.DragSourceContext arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<DragSourceEvent>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/dnd/DragSourceEvent.html#java.awt.dnd.DragSourceEvent(java.awt.dnd.DragSourceContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
         public DragSourceEvent(Java.Awt.Dnd.DragSourceContext arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DragSourceEvent(Java.Awt.Dnd.DragSourceContext arg0)
+        /// </summary>
+        public static DragSourceEvent New(Java.Awt.Dnd.DragSourceContext arg0)
+        {
+            return JVMBridgeBase.New<DragSourceEvent>(arg0);
         }
 
         #endregion

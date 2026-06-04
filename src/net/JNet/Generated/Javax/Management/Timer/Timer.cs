@@ -70,6 +70,13 @@ namespace Javax.Management.Timer
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Timer()
+        /// </summary>
+        public static Timer New()
+        {
+            return JVMBridgeBase.New<Timer>();
+        }
 
         #endregion
 

@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthProgressBarUI()
+        /// </summary>
+        public static SynthProgressBarUI New()
+        {
+            return JVMBridgeBase.New<SynthProgressBarUI>();
+        }
 
         #endregion
 

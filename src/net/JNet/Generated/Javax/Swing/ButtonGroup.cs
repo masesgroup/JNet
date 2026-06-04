@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ButtonGroup()
+        /// </summary>
+        public static ButtonGroup New()
+        {
+            return JVMBridgeBase.New<ButtonGroup>();
+        }
 
         #endregion
 

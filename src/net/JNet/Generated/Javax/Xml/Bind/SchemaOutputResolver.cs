@@ -70,6 +70,13 @@ namespace Javax.Xml.Bind
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SchemaOutputResolver()
+        /// </summary>
+        public static SchemaOutputResolver New()
+        {
+            return JVMBridgeBase.New<SchemaOutputResolver>();
+        }
 
         #endregion
 

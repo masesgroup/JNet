@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ActionMap()
+        /// </summary>
+        public static ActionMap New()
+        {
+            return JVMBridgeBase.New<ActionMap>();
+        }
 
         #endregion
 

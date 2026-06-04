@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiScrollBarUI()
+        /// </summary>
+        public static MultiScrollBarUI New()
+        {
+            return JVMBridgeBase.New<MultiScrollBarUI>();
+        }
 
         #endregion
 

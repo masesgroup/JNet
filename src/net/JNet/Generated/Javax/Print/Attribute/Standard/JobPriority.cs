@@ -71,6 +71,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for JobPriority(int arg0)
+        /// </summary>
+        public static JobPriority New(int arg0)
+        {
+            return JVMBridgeBase.New<JobPriority>(arg0);
+        }
 
         #endregion
 

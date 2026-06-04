@@ -74,12 +74,26 @@ namespace Javax.Imageio.Stream
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for FileImageOutputStream(Java.Io.File arg0)
+        /// </summary>
+        public static FileImageOutputStream New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<FileImageOutputStream>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/stream/FileImageOutputStream.html#javax.imageio.stream.FileImageOutputStream(java.io.RandomAccessFile)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.RandomAccessFile"/></param>
         public FileImageOutputStream(Java.Io.RandomAccessFile arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FileImageOutputStream(Java.Io.RandomAccessFile arg0)
+        /// </summary>
+        public static FileImageOutputStream New(Java.Io.RandomAccessFile arg0)
+        {
+            return JVMBridgeBase.New<FileImageOutputStream>(arg0);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Java.Rmi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for RMISecurityManager()
+        /// </summary>
+        public static RMISecurityManager New()
+        {
+            return JVMBridgeBase.New<RMISecurityManager>();
+        }
 
         #endregion
 

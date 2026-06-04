@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for JMenuBar()
+        /// </summary>
+        public static JMenuBar New()
+        {
+            return JVMBridgeBase.New<JMenuBar>();
+        }
 
         #endregion
 

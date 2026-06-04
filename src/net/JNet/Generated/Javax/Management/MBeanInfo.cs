@@ -79,6 +79,13 @@ namespace Javax.Management
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for MBeanInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
+        /// </summary>
+        public static MBeanInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
+        {
+            return JVMBridgeBase.New<MBeanInfo>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanInfo.html#javax.management.MBeanInfo(java.lang.String,java.lang.String,javax.management.MBeanAttributeInfo[],javax.management.MBeanConstructorInfo[],javax.management.MBeanOperationInfo[],javax.management.MBeanNotificationInfo[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -91,6 +98,13 @@ namespace Javax.Management
         public MBeanInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for MBeanInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
+        /// </summary>
+        public static MBeanInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
+        {
+            return JVMBridgeBase.New<MBeanInfo>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

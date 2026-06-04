@@ -71,12 +71,26 @@ namespace Java.Beans.Beancontext
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for BeanContextChildSupport()
+        /// </summary>
+        public static BeanContextChildSupport New()
+        {
+            return JVMBridgeBase.New<BeanContextChildSupport>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextChildSupport.html#java.beans.beancontext.BeanContextChildSupport(java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
         public BeanContextChildSupport(Java.Beans.Beancontext.BeanContextChild arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BeanContextChildSupport(Java.Beans.Beancontext.BeanContextChild arg0)
+        /// </summary>
+        public static BeanContextChildSupport New(Java.Beans.Beancontext.BeanContextChild arg0)
+        {
+            return JVMBridgeBase.New<BeanContextChildSupport>(arg0);
         }
 
         #endregion

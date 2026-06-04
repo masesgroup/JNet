@@ -71,12 +71,26 @@ namespace Org.Xml.Sax.Ext
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Locator2Impl()
+        /// </summary>
+        public static Locator2Impl New()
+        {
+            return JVMBridgeBase.New<Locator2Impl>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/ext/Locator2Impl.html#org.xml.sax.ext.Locator2Impl(org.xml.sax.Locator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
         public Locator2Impl(Org.Xml.Sax.Locator arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Locator2Impl(Org.Xml.Sax.Locator arg0)
+        /// </summary>
+        public static Locator2Impl New(Org.Xml.Sax.Locator arg0)
+        {
+            return JVMBridgeBase.New<Locator2Impl>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Javax.Management.Monitor
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for CounterMonitor()
+        /// </summary>
+        public static CounterMonitor New()
+        {
+            return JVMBridgeBase.New<CounterMonitor>();
+        }
 
         #endregion
 

@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JMenuItem()
+        /// </summary>
+        public static JMenuItem New()
+        {
+            return JVMBridgeBase.New<JMenuItem>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JMenuItem.html#javax.swing.JMenuItem(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Swing
         public JMenuItem(Java.Lang.String arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JMenuItem(Java.Lang.String arg0, int arg1)
+        /// </summary>
+        public static JMenuItem New(Java.Lang.String arg0, int arg1)
+        {
+            return JVMBridgeBase.New<JMenuItem>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JMenuItem.html#javax.swing.JMenuItem(java.lang.String,javax.swing.Icon)"/>
@@ -89,12 +103,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        /// </summary>
+        public static JMenuItem New(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        {
+            return JVMBridgeBase.New<JMenuItem>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JMenuItem.html#javax.swing.JMenuItem(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public JMenuItem(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JMenuItem(Java.Lang.String arg0)
+        /// </summary>
+        public static JMenuItem New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JMenuItem>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JMenuItem.html#javax.swing.JMenuItem(javax.swing.Action)"/>
@@ -105,12 +133,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JMenuItem(Javax.Swing.Action arg0)
+        /// </summary>
+        public static JMenuItem New(Javax.Swing.Action arg0)
+        {
+            return JVMBridgeBase.New<JMenuItem>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JMenuItem.html#javax.swing.JMenuItem(javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
         public JMenuItem(Javax.Swing.Icon arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JMenuItem(Javax.Swing.Icon arg0)
+        /// </summary>
+        public static JMenuItem New(Javax.Swing.Icon arg0)
+        {
+            return JVMBridgeBase.New<JMenuItem>(arg0);
         }
 
         #endregion

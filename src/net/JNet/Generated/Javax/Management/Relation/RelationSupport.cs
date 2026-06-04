@@ -77,6 +77,13 @@ namespace Javax.Management.Relation
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for RelationSupport(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Java.Lang.String arg2, Javax.Management.Relation.RoleList arg3)
+        /// </summary>
+        public static RelationSupport New(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Java.Lang.String arg2, Javax.Management.Relation.RoleList arg3)
+        {
+            return JVMBridgeBase.New<RelationSupport>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RelationSupport.html#javax.management.relation.RelationSupport(java.lang.String,javax.management.ObjectName,javax.management.MBeanServer,java.lang.String,javax.management.relation.RoleList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -89,6 +96,13 @@ namespace Javax.Management.Relation
         public RelationSupport(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.MBeanServer arg2, Java.Lang.String arg3, Javax.Management.Relation.RoleList arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for RelationSupport(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.MBeanServer arg2, Java.Lang.String arg3, Javax.Management.Relation.RoleList arg4)
+        /// </summary>
+        public static RelationSupport New(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.MBeanServer arg2, Java.Lang.String arg3, Javax.Management.Relation.RoleList arg4)
+        {
+            return JVMBridgeBase.New<RelationSupport>(arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

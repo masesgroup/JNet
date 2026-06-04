@@ -75,6 +75,13 @@ namespace Javax.Management
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for StandardEmitterMBean(object arg0, Java.Lang.Class arg1, bool arg2, Javax.Management.NotificationEmitter arg3)
+        /// </summary>
+        public static StandardEmitterMBean New(object arg0, Java.Lang.Class arg1, bool arg2, Javax.Management.NotificationEmitter arg3)
+        {
+            return JVMBridgeBase.New<StandardEmitterMBean>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/StandardEmitterMBean.html#javax.management.StandardEmitterMBean(java.lang.Object,java.lang.Class,javax.management.NotificationEmitter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -83,6 +90,13 @@ namespace Javax.Management
         public StandardEmitterMBean(object arg0, Java.Lang.Class arg1, Javax.Management.NotificationEmitter arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for StandardEmitterMBean(object arg0, Java.Lang.Class arg1, Javax.Management.NotificationEmitter arg2)
+        /// </summary>
+        public static StandardEmitterMBean New(object arg0, Java.Lang.Class arg1, Javax.Management.NotificationEmitter arg2)
+        {
+            return JVMBridgeBase.New<StandardEmitterMBean>(arg0, arg1, arg2);
         }
 
         #endregion

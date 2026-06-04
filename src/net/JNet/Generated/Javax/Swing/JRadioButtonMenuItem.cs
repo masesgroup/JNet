@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JRadioButtonMenuItem()
+        /// </summary>
+        public static JRadioButtonMenuItem New()
+        {
+            return JVMBridgeBase.New<JRadioButtonMenuItem>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JRadioButtonMenuItem.html#javax.swing.JRadioButtonMenuItem(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Swing
         public JRadioButtonMenuItem(Java.Lang.String arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JRadioButtonMenuItem(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static JRadioButtonMenuItem New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JRadioButtonMenuItem.html#javax.swing.JRadioButtonMenuItem(java.lang.String,javax.swing.Icon,boolean)"/>
@@ -90,6 +104,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for JRadioButtonMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
+        /// </summary>
+        public static JRadioButtonMenuItem New(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JRadioButtonMenuItem.html#javax.swing.JRadioButtonMenuItem(java.lang.String,javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -97,6 +118,13 @@ namespace Javax.Swing
         public JRadioButtonMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for JRadioButtonMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        /// </summary>
+        public static JRadioButtonMenuItem New(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        {
+            return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JRadioButtonMenuItem.html#javax.swing.JRadioButtonMenuItem(java.lang.String)"/>
@@ -107,12 +135,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for JRadioButtonMenuItem(Java.Lang.String arg0)
+        /// </summary>
+        public static JRadioButtonMenuItem New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JRadioButtonMenuItem.html#javax.swing.JRadioButtonMenuItem(javax.swing.Action)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
         public JRadioButtonMenuItem(Javax.Swing.Action arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JRadioButtonMenuItem(Javax.Swing.Action arg0)
+        /// </summary>
+        public static JRadioButtonMenuItem New(Javax.Swing.Action arg0)
+        {
+            return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JRadioButtonMenuItem.html#javax.swing.JRadioButtonMenuItem(javax.swing.Icon,boolean)"/>
@@ -124,12 +166,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JRadioButtonMenuItem(Javax.Swing.Icon arg0, bool arg1)
+        /// </summary>
+        public static JRadioButtonMenuItem New(Javax.Swing.Icon arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JRadioButtonMenuItem.html#javax.swing.JRadioButtonMenuItem(javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
         public JRadioButtonMenuItem(Javax.Swing.Icon arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JRadioButtonMenuItem(Javax.Swing.Icon arg0)
+        /// </summary>
+        public static JRadioButtonMenuItem New(Javax.Swing.Icon arg0)
+        {
+            return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0);
         }
 
         #endregion

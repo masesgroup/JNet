@@ -71,6 +71,13 @@ namespace Java.Util.Jar
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Manifest()
+        /// </summary>
+        public static Manifest New()
+        {
+            return JVMBridgeBase.New<Manifest>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Manifest.html#java.util.jar.Manifest(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
@@ -80,12 +87,26 @@ namespace Java.Util.Jar
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Manifest(Java.Io.InputStream arg0)
+        /// </summary>
+        public static Manifest New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<Manifest>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Manifest.html#java.util.jar.Manifest(java.util.jar.Manifest)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Jar.Manifest"/></param>
         public Manifest(Java.Util.Jar.Manifest arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Manifest(Java.Util.Jar.Manifest arg0)
+        /// </summary>
+        public static Manifest New(Java.Util.Jar.Manifest arg0)
+        {
+            return JVMBridgeBase.New<Manifest>(arg0);
         }
 
         #endregion

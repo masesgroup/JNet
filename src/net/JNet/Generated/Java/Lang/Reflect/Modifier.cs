@@ -70,6 +70,13 @@ namespace Java.Lang.Reflect
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Modifier()
+        /// </summary>
+        public static Modifier New()
+        {
+            return JVMBridgeBase.New<Modifier>();
+        }
 
         #endregion
 

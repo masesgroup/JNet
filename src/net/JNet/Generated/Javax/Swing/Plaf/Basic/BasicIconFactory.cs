@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicIconFactory()
+        /// </summary>
+        public static BasicIconFactory New()
+        {
+            return JVMBridgeBase.New<BasicIconFactory>();
+        }
 
         #endregion
 

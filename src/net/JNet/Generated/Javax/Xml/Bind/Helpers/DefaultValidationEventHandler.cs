@@ -70,6 +70,13 @@ namespace Javax.Xml.Bind.Helpers
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultValidationEventHandler()
+        /// </summary>
+        public static DefaultValidationEventHandler New()
+        {
+            return JVMBridgeBase.New<DefaultValidationEventHandler>();
+        }
 
         #endregion
 

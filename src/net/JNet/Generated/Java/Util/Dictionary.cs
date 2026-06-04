@@ -106,6 +106,13 @@ namespace Java.Util
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Dictionary()
+        /// </summary>
+        public static Dictionary New()
+        {
+            return JVMBridgeBase.New<Dictionary>();
+        }
 
         #endregion
 
@@ -203,6 +210,13 @@ namespace Java.Util
         public Dictionary() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for Dictionary()
+        /// </summary>
+        public static Dictionary<K, V> New()
+        {
+            return JVMBridgeBase.New<Dictionary<K, V>>();
         }
 
         #endregion

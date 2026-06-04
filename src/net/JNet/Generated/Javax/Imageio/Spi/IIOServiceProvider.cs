@@ -71,6 +71,13 @@ namespace Javax.Imageio.Spi
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for IIOServiceProvider()
+        /// </summary>
+        public static IIOServiceProvider New()
+        {
+            return JVMBridgeBase.New<IIOServiceProvider>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/spi/IIOServiceProvider.html#javax.imageio.spi.IIOServiceProvider(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Imageio.Spi
         public IIOServiceProvider(Java.Lang.String arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for IIOServiceProvider(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static IIOServiceProvider New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<IIOServiceProvider>(arg0, arg1);
         }
 
         #endregion

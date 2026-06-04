@@ -71,6 +71,13 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AbstractAction()
+        /// </summary>
+        public static AbstractAction New()
+        {
+            return JVMBridgeBase.New<AbstractAction>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractAction.html#javax.swing.AbstractAction(java.lang.String,javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -80,12 +87,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for AbstractAction(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        /// </summary>
+        public static AbstractAction New(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        {
+            return JVMBridgeBase.New<AbstractAction>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractAction.html#javax.swing.AbstractAction(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public AbstractAction(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AbstractAction(Java.Lang.String arg0)
+        /// </summary>
+        public static AbstractAction New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<AbstractAction>(arg0);
         }
 
         #endregion

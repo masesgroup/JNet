@@ -74,6 +74,13 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for LineBorder(Java.Awt.Color arg0, int arg1, bool arg2)
+        /// </summary>
+        public static LineBorder New(Java.Awt.Color arg0, int arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<LineBorder>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/LineBorder.html#javax.swing.border.LineBorder(java.awt.Color,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
@@ -83,12 +90,26 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for LineBorder(Java.Awt.Color arg0, int arg1)
+        /// </summary>
+        public static LineBorder New(Java.Awt.Color arg0, int arg1)
+        {
+            return JVMBridgeBase.New<LineBorder>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/LineBorder.html#javax.swing.border.LineBorder(java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
         public LineBorder(Java.Awt.Color arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LineBorder(Java.Awt.Color arg0)
+        /// </summary>
+        public static LineBorder New(Java.Awt.Color arg0)
+        {
+            return JVMBridgeBase.New<LineBorder>(arg0);
         }
 
         #endregion

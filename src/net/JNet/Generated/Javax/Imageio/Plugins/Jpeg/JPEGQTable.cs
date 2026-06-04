@@ -71,6 +71,13 @@ namespace Javax.Imageio.Plugins.Jpeg
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for JPEGQTable(int[] arg0)
+        /// </summary>
+        public static JPEGQTable New(int[] arg0)
+        {
+            return JVMBridgeBase.New<JPEGQTable>(arg0);
+        }
 
         #endregion
 

@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalScrollBarUI()
+        /// </summary>
+        public static MetalScrollBarUI New()
+        {
+            return JVMBridgeBase.New<MetalScrollBarUI>();
+        }
 
         #endregion
 

@@ -72,6 +72,13 @@ namespace Java.Net
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for PasswordAuthentication(Java.Lang.String arg0, char[] arg1)
+        /// </summary>
+        public static PasswordAuthentication New(Java.Lang.String arg0, char[] arg1)
+        {
+            return JVMBridgeBase.New<PasswordAuthentication>(arg0, arg1);
+        }
 
         #endregion
 

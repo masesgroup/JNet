@@ -104,6 +104,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalComboBoxEditor()
+        /// </summary>
+        public static MetalComboBoxEditor New()
+        {
+            return JVMBridgeBase.New<MetalComboBoxEditor>();
+        }
 
         #endregion
 
@@ -134,6 +141,13 @@ namespace Javax.Swing.Plaf.Metal
             public UIResource() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for UIResource()
+            /// </summary>
+            public static UIResource New()
+            {
+                return JVMBridgeBase.New<UIResource>();
             }
 
             #endregion

@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for InputVerifier()
+        /// </summary>
+        public static InputVerifier New()
+        {
+            return JVMBridgeBase.New<InputVerifier>();
+        }
 
         #endregion
 

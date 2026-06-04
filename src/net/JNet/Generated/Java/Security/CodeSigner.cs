@@ -72,6 +72,13 @@ namespace Java.Security
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for CodeSigner(Java.Security.Cert.CertPath arg0, Java.Security.Timestamp arg1)
+        /// </summary>
+        public static CodeSigner New(Java.Security.Cert.CertPath arg0, Java.Security.Timestamp arg1)
+        {
+            return JVMBridgeBase.New<CodeSigner>(arg0, arg1);
+        }
 
         #endregion
 

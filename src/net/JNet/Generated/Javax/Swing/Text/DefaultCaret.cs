@@ -70,6 +70,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultCaret()
+        /// </summary>
+        public static DefaultCaret New()
+        {
+            return JVMBridgeBase.New<DefaultCaret>();
+        }
 
         #endregion
 

@@ -71,6 +71,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for FieldView(Javax.Swing.Text.Element arg0)
+        /// </summary>
+        public static FieldView New(Javax.Swing.Text.Element arg0)
+        {
+            return JVMBridgeBase.New<FieldView>(arg0);
+        }
 
         #endregion
 

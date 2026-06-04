@@ -73,12 +73,26 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for NetPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static NetPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<NetPermission>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/NetPermission.html#java.net.NetPermission(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public NetPermission(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for NetPermission(Java.Lang.String arg0)
+        /// </summary>
+        public static NetPermission New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<NetPermission>(arg0);
         }
 
         #endregion

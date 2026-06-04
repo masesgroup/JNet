@@ -71,6 +71,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for GregorianCalendar()
+        /// </summary>
+        public static GregorianCalendar New()
+        {
+            return JVMBridgeBase.New<GregorianCalendar>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/GregorianCalendar.html#java.util.GregorianCalendar(int,int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -82,6 +89,13 @@ namespace Java.Util
         public GregorianCalendar(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for GregorianCalendar(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+        /// </summary>
+        public static GregorianCalendar New(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+        {
+            return JVMBridgeBase.New<GregorianCalendar>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/GregorianCalendar.html#java.util.GregorianCalendar(int,int,int,int,int)"/>
@@ -96,6 +110,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for GregorianCalendar(int arg0, int arg1, int arg2, int arg3, int arg4)
+        /// </summary>
+        public static GregorianCalendar New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<GregorianCalendar>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/GregorianCalendar.html#java.util.GregorianCalendar(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -106,12 +127,26 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for GregorianCalendar(int arg0, int arg1, int arg2)
+        /// </summary>
+        public static GregorianCalendar New(int arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<GregorianCalendar>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/GregorianCalendar.html#java.util.GregorianCalendar(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public GregorianCalendar(Java.Util.Locale arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for GregorianCalendar(Java.Util.Locale arg0)
+        /// </summary>
+        public static GregorianCalendar New(Java.Util.Locale arg0)
+        {
+            return JVMBridgeBase.New<GregorianCalendar>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/GregorianCalendar.html#java.util.GregorianCalendar(java.util.TimeZone,java.util.Locale)"/>
@@ -123,12 +158,26 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for GregorianCalendar(Java.Util.TimeZone arg0, Java.Util.Locale arg1)
+        /// </summary>
+        public static GregorianCalendar New(Java.Util.TimeZone arg0, Java.Util.Locale arg1)
+        {
+            return JVMBridgeBase.New<GregorianCalendar>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/GregorianCalendar.html#java.util.GregorianCalendar(java.util.TimeZone)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
         public GregorianCalendar(Java.Util.TimeZone arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for GregorianCalendar(Java.Util.TimeZone arg0)
+        /// </summary>
+        public static GregorianCalendar New(Java.Util.TimeZone arg0)
+        {
+            return JVMBridgeBase.New<GregorianCalendar>(arg0);
         }
 
         #endregion

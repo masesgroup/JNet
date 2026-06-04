@@ -73,6 +73,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for MetalScrollButton(int arg0, int arg1, bool arg2)
+        /// </summary>
+        public static MetalScrollButton New(int arg0, int arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<MetalScrollButton>(arg0, arg1, arg2);
+        }
 
         #endregion
 

@@ -106,6 +106,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Vector()
+        /// </summary>
+        public static Vector New()
+        {
+            return JVMBridgeBase.New<Vector>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html#java.util.Vector(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -113,6 +120,13 @@ namespace Java.Util
         public Vector(int arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for Vector(int arg0, int arg1)
+        /// </summary>
+        public static Vector New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<Vector>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html#java.util.Vector(int)"/>
@@ -123,12 +137,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Vector(int arg0)
+        /// </summary>
+        public static Vector New(int arg0)
+        {
+            return JVMBridgeBase.New<Vector>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html#java.util.Vector(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public Vector(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Vector(Java.Util.Collection arg0)
+        /// </summary>
+        public static Vector New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<Vector>(arg0);
         }
 
         #endregion
@@ -323,6 +351,13 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Vector()
+        /// </summary>
+        public static Vector<E> New()
+        {
+            return JVMBridgeBase.New<Vector<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html#java.util.Vector(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -330,6 +365,13 @@ namespace Java.Util
         public Vector(int arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for Vector(int arg0, int arg1)
+        /// </summary>
+        public static Vector<E> New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<Vector<E>>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html#java.util.Vector(int)"/>
@@ -340,12 +382,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Vector(int arg0)
+        /// </summary>
+        public static Vector<E> New(int arg0)
+        {
+            return JVMBridgeBase.New<Vector<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html#java.util.Vector(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public Vector(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Vector(Java.Util.Collection%3CE%3E arg0)
+        /// </summary>
+        public static Vector<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<Vector<E>>(arg0);
         }
 
         #endregion

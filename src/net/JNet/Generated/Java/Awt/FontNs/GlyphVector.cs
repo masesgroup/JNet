@@ -70,6 +70,13 @@ namespace Java.Awt.FontNs
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for GlyphVector()
+        /// </summary>
+        public static GlyphVector New()
+        {
+            return JVMBridgeBase.New<GlyphVector>();
+        }
 
         #endregion
 

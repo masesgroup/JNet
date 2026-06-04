@@ -73,6 +73,13 @@ namespace Java.Awt.FontNs
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for ShapeGraphicAttribute(Java.Awt.Shape arg0, int arg1, bool arg2)
+        /// </summary>
+        public static ShapeGraphicAttribute New(Java.Awt.Shape arg0, int arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<ShapeGraphicAttribute>(arg0, arg1, arg2);
+        }
 
         #endregion
 

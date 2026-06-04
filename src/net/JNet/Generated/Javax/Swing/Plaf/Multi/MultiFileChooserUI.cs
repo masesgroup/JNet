@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiFileChooserUI()
+        /// </summary>
+        public static MultiFileChooserUI New()
+        {
+            return JVMBridgeBase.New<MultiFileChooserUI>();
+        }
 
         #endregion
 

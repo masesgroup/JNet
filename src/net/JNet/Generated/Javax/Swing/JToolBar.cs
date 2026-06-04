@@ -105,12 +105,26 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JToolBar()
+        /// </summary>
+        public static JToolBar New()
+        {
+            return JVMBridgeBase.New<JToolBar>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JToolBar.html#javax.swing.JToolBar(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public JToolBar(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JToolBar(int arg0)
+        /// </summary>
+        public static JToolBar New(int arg0)
+        {
+            return JVMBridgeBase.New<JToolBar>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JToolBar.html#javax.swing.JToolBar(java.lang.String,int)"/>
@@ -122,12 +136,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JToolBar(Java.Lang.String arg0, int arg1)
+        /// </summary>
+        public static JToolBar New(Java.Lang.String arg0, int arg1)
+        {
+            return JVMBridgeBase.New<JToolBar>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JToolBar.html#javax.swing.JToolBar(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public JToolBar(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JToolBar(Java.Lang.String arg0)
+        /// </summary>
+        public static JToolBar New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JToolBar>(arg0);
         }
 
         #endregion
@@ -280,12 +308,26 @@ namespace Javax.Swing
                 InvokeInitializer();
             }
             /// <summary>
+            /// HPA initializer for Separator()
+            /// </summary>
+            public static Separator New()
+            {
+                return JVMBridgeBase.New<Separator>();
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JToolBar.Separator.html#javax.swing.JToolBar$Separator(java.awt.Dimension)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
             public Separator(Java.Awt.Dimension arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for Separator(Java.Awt.Dimension arg0)
+            /// </summary>
+            public static Separator New(Java.Awt.Dimension arg0)
+            {
+                return JVMBridgeBase.New<Separator>(arg0);
             }
 
             #endregion

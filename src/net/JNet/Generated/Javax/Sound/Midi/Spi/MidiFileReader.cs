@@ -70,6 +70,13 @@ namespace Javax.Sound.Midi.Spi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MidiFileReader()
+        /// </summary>
+        public static MidiFileReader New()
+        {
+            return JVMBridgeBase.New<MidiFileReader>();
+        }
 
         #endregion
 

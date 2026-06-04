@@ -71,6 +71,13 @@ namespace Javax.Swing.Tree
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for TreePath(object arg0)
+        /// </summary>
+        public static TreePath New(object arg0)
+        {
+            return JVMBridgeBase.New<TreePath>(arg0);
+        }
 
         #endregion
 

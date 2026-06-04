@@ -71,6 +71,13 @@ namespace Java.Awt
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ImageCapabilities(bool arg0)
+        /// </summary>
+        public static ImageCapabilities New(bool arg0)
+        {
+            return JVMBridgeBase.New<ImageCapabilities>(arg0);
+        }
 
         #endregion
 

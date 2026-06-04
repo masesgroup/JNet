@@ -71,6 +71,13 @@ namespace Javax.Smartcardio
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ATR(byte[] arg0)
+        /// </summary>
+        public static ATR New(byte[] arg0)
+        {
+            return JVMBridgeBase.New<ATR>(arg0);
+        }
 
         #endregion
 

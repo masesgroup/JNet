@@ -75,6 +75,13 @@ namespace Javax.Management
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ObjectName(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static ObjectName New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<ObjectName>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/ObjectName.html#javax.management.ObjectName(java.lang.String,java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -85,6 +92,13 @@ namespace Javax.Management
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ObjectName(Java.Lang.String arg0, Java.Util.Hashtable%3CJava.Lang.String, Java.Lang.String%3E arg1)
+        /// </summary>
+        public static ObjectName New(Java.Lang.String arg0, Java.Util.Hashtable<Java.Lang.String, Java.Lang.String> arg1)
+        {
+            return JVMBridgeBase.New<ObjectName>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/ObjectName.html#javax.management.ObjectName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -92,6 +106,13 @@ namespace Javax.Management
         public ObjectName(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ObjectName(Java.Lang.String arg0)
+        /// </summary>
+        public static ObjectName New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<ObjectName>(arg0);
         }
 
         #endregion

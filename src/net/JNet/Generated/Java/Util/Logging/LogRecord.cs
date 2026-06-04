@@ -72,6 +72,13 @@ namespace Java.Util.Logging
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for LogRecord(Java.Util.Logging.Level arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static LogRecord New(Java.Util.Logging.Level arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<LogRecord>(arg0, arg1);
+        }
 
         #endregion
 

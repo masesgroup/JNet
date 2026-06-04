@@ -105,6 +105,13 @@ namespace Java.Lang.Ref
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ReferenceQueue()
+        /// </summary>
+        public static ReferenceQueue New()
+        {
+            return JVMBridgeBase.New<ReferenceQueue>();
+        }
 
         #endregion
 
@@ -170,6 +177,13 @@ namespace Java.Lang.Ref
         public ReferenceQueue() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for ReferenceQueue()
+        /// </summary>
+        public static ReferenceQueue<T> New()
+        {
+            return JVMBridgeBase.New<ReferenceQueue<T>>();
         }
 
         #endregion

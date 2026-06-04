@@ -82,6 +82,13 @@ namespace Javax.Management.Relation
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for RoleInfo(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, bool arg3, int arg4, int arg5, Java.Lang.String arg6)
+        /// </summary>
+        public static RoleInfo New(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, bool arg3, int arg4, int arg5, Java.Lang.String arg6)
+        {
+            return JVMBridgeBase.New<RoleInfo>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RoleInfo.html#javax.management.relation.RoleInfo(java.lang.String,java.lang.String,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -96,6 +103,13 @@ namespace Javax.Management.Relation
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for RoleInfo(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, bool arg3)
+        /// </summary>
+        public static RoleInfo New(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, bool arg3)
+        {
+            return JVMBridgeBase.New<RoleInfo>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RoleInfo.html#javax.management.relation.RoleInfo(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -108,6 +122,13 @@ namespace Javax.Management.Relation
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for RoleInfo(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static RoleInfo New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<RoleInfo>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RoleInfo.html#javax.management.relation.RoleInfo(javax.management.relation.RoleInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Relation.RoleInfo"/></param>
@@ -115,6 +136,13 @@ namespace Javax.Management.Relation
         public RoleInfo(Javax.Management.Relation.RoleInfo arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for RoleInfo(Javax.Management.Relation.RoleInfo arg0)
+        /// </summary>
+        public static RoleInfo New(Javax.Management.Relation.RoleInfo arg0)
+        {
+            return JVMBridgeBase.New<RoleInfo>(arg0);
         }
 
         #endregion

@@ -71,12 +71,26 @@ namespace Org.Xml.Sax.Helpers
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for AttributesImpl()
+        /// </summary>
+        public static AttributesImpl New()
+        {
+            return JVMBridgeBase.New<AttributesImpl>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/AttributesImpl.html#org.xml.sax.helpers.AttributesImpl(org.xml.sax.Attributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.Attributes"/></param>
         public AttributesImpl(Org.Xml.Sax.Attributes arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for AttributesImpl(Org.Xml.Sax.Attributes arg0)
+        /// </summary>
+        public static AttributesImpl New(Org.Xml.Sax.Attributes arg0)
+        {
+            return JVMBridgeBase.New<AttributesImpl>(arg0);
         }
 
         #endregion

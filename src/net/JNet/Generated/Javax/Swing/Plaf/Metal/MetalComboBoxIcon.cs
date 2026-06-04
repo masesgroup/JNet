@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalComboBoxIcon()
+        /// </summary>
+        public static MetalComboBoxIcon New()
+        {
+            return JVMBridgeBase.New<MetalComboBoxIcon>();
+        }
 
         #endregion
 

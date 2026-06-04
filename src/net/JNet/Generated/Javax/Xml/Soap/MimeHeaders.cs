@@ -70,6 +70,13 @@ namespace Javax.Xml.Soap
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MimeHeaders()
+        /// </summary>
+        public static MimeHeaders New()
+        {
+            return JVMBridgeBase.New<MimeHeaders>();
+        }
 
         #endregion
 

@@ -71,6 +71,13 @@ namespace Javax.Management.Remote
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for JMXPrincipal(Java.Lang.String arg0)
+        /// </summary>
+        public static JMXPrincipal New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JMXPrincipal>(arg0);
+        }
 
         #endregion
 

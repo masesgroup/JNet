@@ -70,6 +70,13 @@ namespace Javax.Xml.Soap
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SOAPMessage()
+        /// </summary>
+        public static SOAPMessage New()
+        {
+            return JVMBridgeBase.New<SOAPMessage>();
+        }
 
         #endregion
 

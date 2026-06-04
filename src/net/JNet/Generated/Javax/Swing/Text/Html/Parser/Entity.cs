@@ -73,6 +73,13 @@ namespace Javax.Swing.Text.Html.Parser
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for Entity(Java.Lang.String arg0, int arg1, char[] arg2)
+        /// </summary>
+        public static Entity New(Java.Lang.String arg0, int arg1, char[] arg2)
+        {
+            return JVMBridgeBase.New<Entity>(arg0, arg1, arg2);
+        }
 
         #endregion
 

@@ -240,6 +240,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicListUI()
+        /// </summary>
+        public static BasicListUI New()
+        {
+            return JVMBridgeBase.New<BasicListUI>();
+        }
 
         #endregion
 
@@ -271,6 +278,13 @@ namespace Javax.Swing.Plaf.Basic
             public FocusHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for FocusHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            /// </summary>
+            public static FocusHandler New(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            {
+                return JVMBridgeBase.New<FocusHandler>(arg0);
             }
 
             #endregion
@@ -330,6 +344,13 @@ namespace Javax.Swing.Plaf.Basic
             public ListDataHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for ListDataHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            /// </summary>
+            public static ListDataHandler New(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            {
+                return JVMBridgeBase.New<ListDataHandler>(arg0);
             }
 
             #endregion
@@ -398,6 +419,13 @@ namespace Javax.Swing.Plaf.Basic
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for ListSelectionHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            /// </summary>
+            public static ListSelectionHandler New(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            {
+                return JVMBridgeBase.New<ListSelectionHandler>(arg0);
+            }
 
             #endregion
 
@@ -448,6 +476,13 @@ namespace Javax.Swing.Plaf.Basic
             public MouseInputHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for MouseInputHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            /// </summary>
+            public static MouseInputHandler New(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            {
+                return JVMBridgeBase.New<MouseInputHandler>(arg0);
             }
 
             #endregion
@@ -547,6 +582,13 @@ namespace Javax.Swing.Plaf.Basic
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            /// </summary>
+            public static PropertyChangeHandler New(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            {
+                return JVMBridgeBase.New<PropertyChangeHandler>(arg0);
             }
 
             #endregion

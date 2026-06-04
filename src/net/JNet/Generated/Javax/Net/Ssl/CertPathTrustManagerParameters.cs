@@ -71,6 +71,13 @@ namespace Javax.Net.Ssl
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for CertPathTrustManagerParameters(Java.Security.Cert.CertPathParameters arg0)
+        /// </summary>
+        public static CertPathTrustManagerParameters New(Java.Security.Cert.CertPathParameters arg0)
+        {
+            return JVMBridgeBase.New<CertPathTrustManagerParameters>(arg0);
+        }
 
         #endregion
 

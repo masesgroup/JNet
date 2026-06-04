@@ -70,6 +70,13 @@ namespace Javax.Swing.Table
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AbstractTableModel()
+        /// </summary>
+        public static AbstractTableModel New()
+        {
+            return JVMBridgeBase.New<AbstractTableModel>();
+        }
 
         #endregion
 

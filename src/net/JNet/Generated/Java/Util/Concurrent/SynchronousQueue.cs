@@ -106,12 +106,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SynchronousQueue()
+        /// </summary>
+        public static SynchronousQueue New()
+        {
+            return JVMBridgeBase.New<SynchronousQueue>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/SynchronousQueue.html#java.util.concurrent.SynchronousQueue(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public SynchronousQueue(bool arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SynchronousQueue(bool arg0)
+        /// </summary>
+        public static SynchronousQueue New(bool arg0)
+        {
+            return JVMBridgeBase.New<SynchronousQueue>(arg0);
         }
 
         #endregion
@@ -228,12 +242,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SynchronousQueue()
+        /// </summary>
+        public static SynchronousQueue<E> New()
+        {
+            return JVMBridgeBase.New<SynchronousQueue<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/SynchronousQueue.html#java.util.concurrent.SynchronousQueue(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public SynchronousQueue(bool arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SynchronousQueue(bool arg0)
+        /// </summary>
+        public static SynchronousQueue<E> New(bool arg0)
+        {
+            return JVMBridgeBase.New<SynchronousQueue<E>>(arg0);
         }
 
         #endregion

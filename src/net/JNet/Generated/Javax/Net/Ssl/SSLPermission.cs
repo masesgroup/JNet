@@ -73,12 +73,26 @@ namespace Javax.Net.Ssl
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for SSLPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static SSLPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<SSLPermission>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/SSLPermission.html#javax.net.ssl.SSLPermission(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public SSLPermission(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SSLPermission(Java.Lang.String arg0)
+        /// </summary>
+        public static SSLPermission New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<SSLPermission>(arg0);
         }
 
         #endregion

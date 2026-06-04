@@ -342,6 +342,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for StyledEditorKit()
+        /// </summary>
+        public static StyledEditorKit New()
+        {
+            return JVMBridgeBase.New<StyledEditorKit>();
+        }
 
         #endregion
 
@@ -389,6 +396,13 @@ namespace Javax.Swing.Text
             {
                 InvokeInitializer(arg0, arg1);
             }
+            /// <summary>
+            /// HPA initializer for AlignmentAction(Java.Lang.String arg0, int arg1)
+            /// </summary>
+            public static AlignmentAction New(Java.Lang.String arg0, int arg1)
+            {
+                return JVMBridgeBase.New<AlignmentAction>(arg0, arg1);
+            }
 
             #endregion
 
@@ -426,6 +440,13 @@ namespace Javax.Swing.Text
             public BoldAction() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for BoldAction()
+            /// </summary>
+            public static BoldAction New()
+            {
+                return JVMBridgeBase.New<BoldAction>();
             }
 
             #endregion
@@ -467,6 +488,13 @@ namespace Javax.Swing.Text
             {
                 InvokeInitializer(arg0, arg1);
             }
+            /// <summary>
+            /// HPA initializer for FontFamilyAction(Java.Lang.String arg0, Java.Lang.String arg1)
+            /// </summary>
+            public static FontFamilyAction New(Java.Lang.String arg0, Java.Lang.String arg1)
+            {
+                return JVMBridgeBase.New<FontFamilyAction>(arg0, arg1);
+            }
 
             #endregion
 
@@ -506,6 +534,13 @@ namespace Javax.Swing.Text
             public FontSizeAction(Java.Lang.String arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for FontSizeAction(Java.Lang.String arg0, int arg1)
+            /// </summary>
+            public static FontSizeAction New(Java.Lang.String arg0, int arg1)
+            {
+                return JVMBridgeBase.New<FontSizeAction>(arg0, arg1);
             }
 
             #endregion
@@ -547,6 +582,13 @@ namespace Javax.Swing.Text
             {
                 InvokeInitializer(arg0, arg1);
             }
+            /// <summary>
+            /// HPA initializer for ForegroundAction(Java.Lang.String arg0, Java.Awt.Color arg1)
+            /// </summary>
+            public static ForegroundAction New(Java.Lang.String arg0, Java.Awt.Color arg1)
+            {
+                return JVMBridgeBase.New<ForegroundAction>(arg0, arg1);
+            }
 
             #endregion
 
@@ -584,6 +626,13 @@ namespace Javax.Swing.Text
             public ItalicAction() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for ItalicAction()
+            /// </summary>
+            public static ItalicAction New()
+            {
+                return JVMBridgeBase.New<ItalicAction>();
             }
 
             #endregion
@@ -624,6 +673,13 @@ namespace Javax.Swing.Text
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for StyledTextAction(Java.Lang.String arg0)
+            /// </summary>
+            public static StyledTextAction New(Java.Lang.String arg0)
+            {
+                return JVMBridgeBase.New<StyledTextAction>(arg0);
+            }
 
             #endregion
 
@@ -661,6 +717,13 @@ namespace Javax.Swing.Text
             public UnderlineAction() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for UnderlineAction()
+            /// </summary>
+            public static UnderlineAction New()
+            {
+                return JVMBridgeBase.New<UnderlineAction>();
             }
 
             #endregion

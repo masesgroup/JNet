@@ -105,6 +105,13 @@ namespace Java.Util.Jar
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Attributes()
+        /// </summary>
+        public static Attributes New()
+        {
+            return JVMBridgeBase.New<Attributes>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.html#java.util.jar.Attributes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -113,12 +120,26 @@ namespace Java.Util.Jar
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Attributes(int arg0)
+        /// </summary>
+        public static Attributes New(int arg0)
+        {
+            return JVMBridgeBase.New<Attributes>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.html#java.util.jar.Attributes(java.util.jar.Attributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Jar.Attributes"/></param>
         public Attributes(Java.Util.Jar.Attributes arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Attributes(Java.Util.Jar.Attributes arg0)
+        /// </summary>
+        public static Attributes New(Java.Util.Jar.Attributes arg0)
+        {
+            return JVMBridgeBase.New<Attributes>(arg0);
         }
 
         #endregion
@@ -288,6 +309,13 @@ namespace Java.Util.Jar
             public Name(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for Name(Java.Lang.String arg0)
+            /// </summary>
+            public static Name New(Java.Lang.String arg0)
+            {
+                return JVMBridgeBase.New<Name>(arg0);
             }
 
             #endregion

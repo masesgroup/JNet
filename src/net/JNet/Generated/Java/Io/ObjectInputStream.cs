@@ -106,6 +106,13 @@ namespace Java.Io
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ObjectInputStream(Java.Io.InputStream arg0)
+        /// </summary>
+        public static ObjectInputStream New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<ObjectInputStream>(arg0);
+        }
 
         #endregion
 
@@ -333,6 +340,13 @@ namespace Java.Io
             public GetField() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for GetField()
+            /// </summary>
+            public static GetField New()
+            {
+                return JVMBridgeBase.New<GetField>();
             }
 
             #endregion

@@ -71,12 +71,26 @@ namespace Javax.Swing.Table
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JTableHeader()
+        /// </summary>
+        public static JTableHeader New()
+        {
+            return JVMBridgeBase.New<JTableHeader>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/JTableHeader.html#javax.swing.table.JTableHeader(javax.swing.table.TableColumnModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableColumnModel"/></param>
         public JTableHeader(Javax.Swing.Table.TableColumnModel arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JTableHeader(Javax.Swing.Table.TableColumnModel arg0)
+        /// </summary>
+        public static JTableHeader New(Javax.Swing.Table.TableColumnModel arg0)
+        {
+            return JVMBridgeBase.New<JTableHeader>(arg0);
         }
 
         #endregion

@@ -104,6 +104,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicColorChooserUI()
+        /// </summary>
+        public static BasicColorChooserUI New()
+        {
+            return JVMBridgeBase.New<BasicColorChooserUI>();
+        }
 
         #endregion
 
@@ -135,6 +142,13 @@ namespace Javax.Swing.Plaf.Basic
             public PropertyHandler(Javax.Swing.Plaf.Basic.BasicColorChooserUI arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for PropertyHandler(Javax.Swing.Plaf.Basic.BasicColorChooserUI arg0)
+            /// </summary>
+            public static PropertyHandler New(Javax.Swing.Plaf.Basic.BasicColorChooserUI arg0)
+            {
+                return JVMBridgeBase.New<PropertyHandler>(arg0);
             }
 
             #endregion

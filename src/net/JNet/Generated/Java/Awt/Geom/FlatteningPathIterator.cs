@@ -74,6 +74,13 @@ namespace Java.Awt.Geom
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1, int arg2)
+        /// </summary>
+        public static FlatteningPathIterator New(Java.Awt.Geom.PathIterator arg0, double arg1, int arg2)
+        {
+            return JVMBridgeBase.New<FlatteningPathIterator>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/FlatteningPathIterator.html#java.awt.geom.FlatteningPathIterator(java.awt.geom.PathIterator,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
@@ -81,6 +88,13 @@ namespace Java.Awt.Geom
         public FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1)
+        /// </summary>
+        public static FlatteningPathIterator New(Java.Awt.Geom.PathIterator arg0, double arg1)
+        {
+            return JVMBridgeBase.New<FlatteningPathIterator>(arg0, arg1);
         }
 
         #endregion

@@ -373,6 +373,13 @@ namespace Java.Util
                 InvokeInitializer(arg0);
             }
             /// <summary>
+            /// HPA initializer for SimpleEntry(Java.Util.Map.Entry arg0)
+            /// </summary>
+            public static SimpleEntry New(Java.Util.Map.Entry arg0)
+            {
+                return JVMBridgeBase.New<SimpleEntry>(arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.SimpleEntry.html#java.util.AbstractMap$SimpleEntry(java.lang.Object,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
@@ -380,6 +387,13 @@ namespace Java.Util
             public SimpleEntry(object arg0, object arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for SimpleEntry(object arg0, object arg1)
+            /// </summary>
+            public static SimpleEntry New(object arg0, object arg1)
+            {
+                return JVMBridgeBase.New<SimpleEntry>(arg0, arg1);
             }
 
             #endregion
@@ -448,6 +462,13 @@ namespace Java.Util
                 InvokeInitializer(arg0);
             }
             /// <summary>
+            /// HPA initializer for SimpleEntry(Java.Util.Map.Entry%3CK, V%3E arg0)
+            /// </summary>
+            public static SimpleEntry<K, V> New(Java.Util.Map.Entry<K, V> arg0)
+            {
+                return JVMBridgeBase.New<SimpleEntry<K, V>>(arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.SimpleEntry.html#java.util.AbstractMap$SimpleEntry(java.lang.Object,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><typeparamref name="K"/></param>
@@ -455,6 +476,13 @@ namespace Java.Util
             public SimpleEntry(K arg0, V arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for SimpleEntry(K arg0, V arg1)
+            /// </summary>
+            public static SimpleEntry<K, V> New(K arg0, V arg1)
+            {
+                return JVMBridgeBase.New<SimpleEntry<K, V>>(arg0, arg1);
             }
 
             #endregion
@@ -527,6 +555,13 @@ namespace Java.Util
                 InvokeInitializer(arg0);
             }
             /// <summary>
+            /// HPA initializer for SimpleImmutableEntry(Java.Util.Map.Entry arg0)
+            /// </summary>
+            public static SimpleImmutableEntry New(Java.Util.Map.Entry arg0)
+            {
+                return JVMBridgeBase.New<SimpleImmutableEntry>(arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.SimpleImmutableEntry.html#java.util.AbstractMap$SimpleImmutableEntry(java.lang.Object,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
@@ -534,6 +569,13 @@ namespace Java.Util
             public SimpleImmutableEntry(object arg0, object arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for SimpleImmutableEntry(object arg0, object arg1)
+            /// </summary>
+            public static SimpleImmutableEntry New(object arg0, object arg1)
+            {
+                return JVMBridgeBase.New<SimpleImmutableEntry>(arg0, arg1);
             }
 
             #endregion
@@ -602,6 +644,13 @@ namespace Java.Util
                 InvokeInitializer(arg0);
             }
             /// <summary>
+            /// HPA initializer for SimpleImmutableEntry(Java.Util.Map.Entry%3CK, V%3E arg0)
+            /// </summary>
+            public static SimpleImmutableEntry<K, V> New(Java.Util.Map.Entry<K, V> arg0)
+            {
+                return JVMBridgeBase.New<SimpleImmutableEntry<K, V>>(arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.SimpleImmutableEntry.html#java.util.AbstractMap$SimpleImmutableEntry(java.lang.Object,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><typeparamref name="K"/></param>
@@ -609,6 +658,13 @@ namespace Java.Util
             public SimpleImmutableEntry(K arg0, V arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for SimpleImmutableEntry(K arg0, V arg1)
+            /// </summary>
+            public static SimpleImmutableEntry<K, V> New(K arg0, V arg1)
+            {
+                return JVMBridgeBase.New<SimpleImmutableEntry<K, V>>(arg0, arg1);
             }
 
             #endregion

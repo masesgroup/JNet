@@ -106,12 +106,26 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for LinkedList()
+        /// </summary>
+        public static LinkedList New()
+        {
+            return JVMBridgeBase.New<LinkedList>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html#java.util.LinkedList(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public LinkedList(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedList(Java.Util.Collection arg0)
+        /// </summary>
+        public static LinkedList New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<LinkedList>(arg0);
         }
 
         #endregion
@@ -347,12 +361,26 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for LinkedList()
+        /// </summary>
+        public static LinkedList<E> New()
+        {
+            return JVMBridgeBase.New<LinkedList<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html#java.util.LinkedList(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public LinkedList(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LinkedList(Java.Util.Collection%3CE%3E arg0)
+        /// </summary>
+        public static LinkedList<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<LinkedList<E>>(arg0);
         }
 
         #endregion

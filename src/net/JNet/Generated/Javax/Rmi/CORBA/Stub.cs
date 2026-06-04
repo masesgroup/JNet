@@ -70,6 +70,13 @@ namespace Javax.Rmi.CORBA
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Stub()
+        /// </summary>
+        public static Stub New()
+        {
+            return JVMBridgeBase.New<Stub>();
+        }
 
         #endregion
 

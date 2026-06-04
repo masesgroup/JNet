@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthComboBoxUI()
+        /// </summary>
+        public static SynthComboBoxUI New()
+        {
+            return JVMBridgeBase.New<SynthComboBoxUI>();
+        }
 
         #endregion
 

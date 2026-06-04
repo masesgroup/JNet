@@ -172,6 +172,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for JTextComponent()
+        /// </summary>
+        public static JTextComponent New()
+        {
+            return JVMBridgeBase.New<JTextComponent>();
+        }
 
         #endregion
 
@@ -634,6 +641,13 @@ namespace Javax.Swing.Text
             {
                 InvokeInitializer(arg0);
             }
+            /// <summary>
+            /// HPA initializer for AccessibleJTextComponent(Javax.Swing.Text.JTextComponent arg0)
+            /// </summary>
+            public static AccessibleJTextComponent New(Javax.Swing.Text.JTextComponent arg0)
+            {
+                return JVMBridgeBase.New<AccessibleJTextComponent>(arg0);
+            }
 
             #endregion
 
@@ -1013,6 +1027,13 @@ namespace Javax.Swing.Text
             public KeyBinding(Javax.Swing.KeyStroke arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0, arg1);
+            }
+            /// <summary>
+            /// HPA initializer for KeyBinding(Javax.Swing.KeyStroke arg0, Java.Lang.String arg1)
+            /// </summary>
+            public static KeyBinding New(Javax.Swing.KeyStroke arg0, Java.Lang.String arg1)
+            {
+                return JVMBridgeBase.New<KeyBinding>(arg0, arg1);
             }
 
             #endregion

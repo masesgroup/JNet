@@ -71,6 +71,13 @@ namespace Javax.Swing.Text.Html
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for Option(Javax.Swing.Text.AttributeSet arg0)
+        /// </summary>
+        public static Option New(Javax.Swing.Text.AttributeSet arg0)
+        {
+            return JVMBridgeBase.New<Option>(arg0);
+        }
 
         #endregion
 

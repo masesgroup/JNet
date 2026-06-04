@@ -70,6 +70,13 @@ namespace Java.Util.Logging
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for XMLFormatter()
+        /// </summary>
+        public static XMLFormatter New()
+        {
+            return JVMBridgeBase.New<XMLFormatter>();
+        }
 
         #endregion
 

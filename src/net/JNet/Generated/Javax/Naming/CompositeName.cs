@@ -71,6 +71,13 @@ namespace Javax.Naming
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for CompositeName()
+        /// </summary>
+        public static CompositeName New()
+        {
+            return JVMBridgeBase.New<CompositeName>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/CompositeName.html#javax.naming.CompositeName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Naming
         public CompositeName(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for CompositeName(Java.Lang.String arg0)
+        /// </summary>
+        public static CompositeName New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<CompositeName>(arg0);
         }
 
         #endregion

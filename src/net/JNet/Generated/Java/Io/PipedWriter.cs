@@ -71,6 +71,13 @@ namespace Java.Io
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for PipedWriter()
+        /// </summary>
+        public static PipedWriter New()
+        {
+            return JVMBridgeBase.New<PipedWriter>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PipedWriter.html#java.io.PipedWriter(java.io.PipedReader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PipedReader"/></param>
@@ -78,6 +85,13 @@ namespace Java.Io
         public PipedWriter(Java.Io.PipedReader arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PipedWriter(Java.Io.PipedReader arg0)
+        /// </summary>
+        public static PipedWriter New(Java.Io.PipedReader arg0)
+        {
+            return JVMBridgeBase.New<PipedWriter>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Utilities()
+        /// </summary>
+        public static Utilities New()
+        {
+            return JVMBridgeBase.New<Utilities>();
+        }
 
         #endregion
 

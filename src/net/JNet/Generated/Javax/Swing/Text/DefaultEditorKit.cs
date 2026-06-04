@@ -342,6 +342,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultEditorKit()
+        /// </summary>
+        public static DefaultEditorKit New()
+        {
+            return JVMBridgeBase.New<DefaultEditorKit>();
+        }
 
         #endregion
 
@@ -569,6 +576,13 @@ namespace Javax.Swing.Text
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for BeepAction()
+            /// </summary>
+            public static BeepAction New()
+            {
+                return JVMBridgeBase.New<BeepAction>();
+            }
 
             #endregion
 
@@ -606,6 +620,13 @@ namespace Javax.Swing.Text
             public CopyAction() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for CopyAction()
+            /// </summary>
+            public static CopyAction New()
+            {
+                return JVMBridgeBase.New<CopyAction>();
             }
 
             #endregion
@@ -645,6 +666,13 @@ namespace Javax.Swing.Text
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for CutAction()
+            /// </summary>
+            public static CutAction New()
+            {
+                return JVMBridgeBase.New<CutAction>();
+            }
 
             #endregion
 
@@ -682,6 +710,13 @@ namespace Javax.Swing.Text
             public DefaultKeyTypedAction() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for DefaultKeyTypedAction()
+            /// </summary>
+            public static DefaultKeyTypedAction New()
+            {
+                return JVMBridgeBase.New<DefaultKeyTypedAction>();
             }
 
             #endregion
@@ -721,6 +756,13 @@ namespace Javax.Swing.Text
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for InsertBreakAction()
+            /// </summary>
+            public static InsertBreakAction New()
+            {
+                return JVMBridgeBase.New<InsertBreakAction>();
+            }
 
             #endregion
 
@@ -758,6 +800,13 @@ namespace Javax.Swing.Text
             public InsertContentAction() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for InsertContentAction()
+            /// </summary>
+            public static InsertContentAction New()
+            {
+                return JVMBridgeBase.New<InsertContentAction>();
             }
 
             #endregion
@@ -797,6 +846,13 @@ namespace Javax.Swing.Text
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for InsertTabAction()
+            /// </summary>
+            public static InsertTabAction New()
+            {
+                return JVMBridgeBase.New<InsertTabAction>();
+            }
 
             #endregion
 
@@ -834,6 +890,13 @@ namespace Javax.Swing.Text
             public PasteAction() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for PasteAction()
+            /// </summary>
+            public static PasteAction New()
+            {
+                return JVMBridgeBase.New<PasteAction>();
             }
 
             #endregion

@@ -72,6 +72,13 @@ namespace Javax.Security.Auth
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for PrivateCredentialPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static PrivateCredentialPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<PrivateCredentialPermission>(arg0, arg1);
+        }
 
         #endregion
 

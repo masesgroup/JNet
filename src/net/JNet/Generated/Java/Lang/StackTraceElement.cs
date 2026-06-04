@@ -74,6 +74,13 @@ namespace Java.Lang
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// HPA initializer for StackTraceElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3)
+        /// </summary>
+        public static StackTraceElement New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3)
+        {
+            return JVMBridgeBase.New<StackTraceElement>(arg0, arg1, arg2, arg3);
+        }
 
         #endregion
 

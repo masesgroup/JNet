@@ -72,6 +72,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for PrinterName(Java.Lang.String arg0, Java.Util.Locale arg1)
+        /// </summary>
+        public static PrinterName New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        {
+            return JVMBridgeBase.New<PrinterName>(arg0, arg1);
+        }
 
         #endregion
 

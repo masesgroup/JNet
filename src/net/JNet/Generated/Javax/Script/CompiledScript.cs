@@ -70,6 +70,13 @@ namespace Javax.Script
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for CompiledScript()
+        /// </summary>
+        public static CompiledScript New()
+        {
+            return JVMBridgeBase.New<CompiledScript>();
+        }
 
         #endregion
 

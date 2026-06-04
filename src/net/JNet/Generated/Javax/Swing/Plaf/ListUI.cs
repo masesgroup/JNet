@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ListUI()
+        /// </summary>
+        public static ListUI New()
+        {
+            return JVMBridgeBase.New<ListUI>();
+        }
 
         #endregion
 

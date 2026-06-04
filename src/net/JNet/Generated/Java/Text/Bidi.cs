@@ -77,6 +77,13 @@ namespace Java.Text
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for Bidi(char[] arg0, int arg1, byte[] arg2, int arg3, int arg4, int arg5)
+        /// </summary>
+        public static Bidi New(char[] arg0, int arg1, byte[] arg2, int arg3, int arg4, int arg5)
+        {
+            return JVMBridgeBase.New<Bidi>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/Bidi.html#java.text.Bidi(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -86,12 +93,26 @@ namespace Java.Text
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Bidi(Java.Lang.String arg0, int arg1)
+        /// </summary>
+        public static Bidi New(Java.Lang.String arg0, int arg1)
+        {
+            return JVMBridgeBase.New<Bidi>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/Bidi.html#java.text.Bidi(java.text.AttributedCharacterIterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
         public Bidi(Java.Text.AttributedCharacterIterator arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Bidi(Java.Text.AttributedCharacterIterator arg0)
+        /// </summary>
+        public static Bidi New(Java.Text.AttributedCharacterIterator arg0)
+        {
+            return JVMBridgeBase.New<Bidi>(arg0);
         }
 
         #endregion

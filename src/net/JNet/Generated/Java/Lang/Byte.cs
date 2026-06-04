@@ -72,6 +72,13 @@ namespace Java.Lang
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Byte(byte arg0)
+        /// </summary>
+        public static Byte New(byte arg0)
+        {
+            return JVMBridgeBase.New<Byte>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html#java.lang.Byte(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -79,6 +86,13 @@ namespace Java.Lang
         public Byte(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Byte(Java.Lang.String arg0)
+        /// </summary>
+        public static Byte New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Byte>(arg0);
         }
 
         #endregion

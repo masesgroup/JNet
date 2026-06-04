@@ -84,6 +84,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
         }
         /// <summary>
+        /// HPA initializer for SimpleTimeZone(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, int arg12)
+        /// </summary>
+        public static SimpleTimeZone New(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, int arg12)
+        {
+            return JVMBridgeBase.New<SimpleTimeZone>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/SimpleTimeZone.html#java.util.SimpleTimeZone(int,java.lang.String,int,int,int,int,int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -100,6 +107,13 @@ namespace Java.Util
         public SimpleTimeZone(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+        }
+        /// <summary>
+        /// HPA initializer for SimpleTimeZone(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10)
+        /// </summary>
+        public static SimpleTimeZone New(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10)
+        {
+            return JVMBridgeBase.New<SimpleTimeZone>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/SimpleTimeZone.html#java.util.SimpleTimeZone(int,java.lang.String,int,int,int,int,int,int,int,int)"/>
@@ -119,6 +133,13 @@ namespace Java.Util
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
+        /// HPA initializer for SimpleTimeZone(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9)
+        /// </summary>
+        public static SimpleTimeZone New(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9)
+        {
+            return JVMBridgeBase.New<SimpleTimeZone>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/SimpleTimeZone.html#java.util.SimpleTimeZone(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -126,6 +147,13 @@ namespace Java.Util
         public SimpleTimeZone(int arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for SimpleTimeZone(int arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static SimpleTimeZone New(int arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<SimpleTimeZone>(arg0, arg1);
         }
 
         #endregion

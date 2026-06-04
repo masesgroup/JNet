@@ -274,6 +274,13 @@ namespace Javax.Swing.Plaf.Metal
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MetalIconFactory()
+        /// </summary>
+        public static MetalIconFactory New()
+        {
+            return JVMBridgeBase.New<MetalIconFactory>();
+        }
 
         #endregion
 
@@ -498,6 +505,13 @@ namespace Javax.Swing.Plaf.Metal
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for FileIcon16()
+            /// </summary>
+            public static FileIcon16 New()
+            {
+                return JVMBridgeBase.New<FileIcon16>();
+            }
 
             #endregion
 
@@ -582,6 +596,13 @@ namespace Javax.Swing.Plaf.Metal
             public FolderIcon16() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for FolderIcon16()
+            /// </summary>
+            public static FolderIcon16 New()
+            {
+                return JVMBridgeBase.New<FolderIcon16>();
             }
 
             #endregion
@@ -668,6 +689,13 @@ namespace Javax.Swing.Plaf.Metal
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for PaletteCloseIcon()
+            /// </summary>
+            public static PaletteCloseIcon New()
+            {
+                return JVMBridgeBase.New<PaletteCloseIcon>();
+            }
 
             #endregion
 
@@ -743,6 +771,13 @@ namespace Javax.Swing.Plaf.Metal
             public TreeControlIcon(bool arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for TreeControlIcon(bool arg0)
+            /// </summary>
+            public static TreeControlIcon New(bool arg0)
+            {
+                return JVMBridgeBase.New<TreeControlIcon>(arg0);
             }
 
             #endregion
@@ -826,6 +861,13 @@ namespace Javax.Swing.Plaf.Metal
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for TreeFolderIcon()
+            /// </summary>
+            public static TreeFolderIcon New()
+            {
+                return JVMBridgeBase.New<TreeFolderIcon>();
+            }
 
             #endregion
 
@@ -863,6 +905,13 @@ namespace Javax.Swing.Plaf.Metal
             public TreeLeafIcon() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for TreeLeafIcon()
+            /// </summary>
+            public static TreeLeafIcon New()
+            {
+                return JVMBridgeBase.New<TreeLeafIcon>();
             }
 
             #endregion

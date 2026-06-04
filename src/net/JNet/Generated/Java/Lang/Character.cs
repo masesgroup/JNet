@@ -173,6 +173,13 @@ namespace Java.Lang
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for Character(char arg0)
+        /// </summary>
+        public static Character New(char arg0)
+        {
+            return JVMBridgeBase.New<Character>(arg0);
+        }
 
         #endregion
 

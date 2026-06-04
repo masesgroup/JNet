@@ -429,6 +429,13 @@ namespace Java.Awt.Geom
                 InvokeInitializer();
             }
             /// <summary>
+            /// HPA initializer for Double()
+            /// </summary>
+            public static Double New()
+            {
+                return JVMBridgeBase.New<Double>();
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Double.html#java.awt.geom.Path2D$Double(int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -438,12 +445,26 @@ namespace Java.Awt.Geom
                 InvokeInitializer(arg0, arg1);
             }
             /// <summary>
+            /// HPA initializer for Double(int arg0, int arg1)
+            /// </summary>
+            public static Double New(int arg0, int arg1)
+            {
+                return JVMBridgeBase.New<Double>(arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Double.html#java.awt.geom.Path2D$Double(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             public Double(int arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for Double(int arg0)
+            /// </summary>
+            public static Double New(int arg0)
+            {
+                return JVMBridgeBase.New<Double>(arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Double.html#java.awt.geom.Path2D$Double(java.awt.Shape,java.awt.geom.AffineTransform)"/>
@@ -455,12 +476,26 @@ namespace Java.Awt.Geom
                 InvokeInitializer(arg0, arg1);
             }
             /// <summary>
+            /// HPA initializer for Double(Java.Awt.Shape arg0, Java.Awt.Geom.AffineTransform arg1)
+            /// </summary>
+            public static Double New(Java.Awt.Shape arg0, Java.Awt.Geom.AffineTransform arg1)
+            {
+                return JVMBridgeBase.New<Double>(arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Double.html#java.awt.geom.Path2D$Double(java.awt.Shape)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
             public Double(Java.Awt.Shape arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for Double(Java.Awt.Shape arg0)
+            /// </summary>
+            public static Double New(Java.Awt.Shape arg0)
+            {
+                return JVMBridgeBase.New<Double>(arg0);
             }
 
             #endregion
@@ -505,6 +540,13 @@ namespace Java.Awt.Geom
                 InvokeInitializer();
             }
             /// <summary>
+            /// HPA initializer for Float()
+            /// </summary>
+            public static Float New()
+            {
+                return JVMBridgeBase.New<Float>();
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Float.html#java.awt.geom.Path2D$Float(int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -514,12 +556,26 @@ namespace Java.Awt.Geom
                 InvokeInitializer(arg0, arg1);
             }
             /// <summary>
+            /// HPA initializer for Float(int arg0, int arg1)
+            /// </summary>
+            public static Float New(int arg0, int arg1)
+            {
+                return JVMBridgeBase.New<Float>(arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Float.html#java.awt.geom.Path2D$Float(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             public Float(int arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for Float(int arg0)
+            /// </summary>
+            public static Float New(int arg0)
+            {
+                return JVMBridgeBase.New<Float>(arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Float.html#java.awt.geom.Path2D$Float(java.awt.Shape,java.awt.geom.AffineTransform)"/>
@@ -531,12 +587,26 @@ namespace Java.Awt.Geom
                 InvokeInitializer(arg0, arg1);
             }
             /// <summary>
+            /// HPA initializer for Float(Java.Awt.Shape arg0, Java.Awt.Geom.AffineTransform arg1)
+            /// </summary>
+            public static Float New(Java.Awt.Shape arg0, Java.Awt.Geom.AffineTransform arg1)
+            {
+                return JVMBridgeBase.New<Float>(arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.Float.html#java.awt.geom.Path2D$Float(java.awt.Shape)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
             public Float(Java.Awt.Shape arg0) : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer(arg0);
+            }
+            /// <summary>
+            /// HPA initializer for Float(Java.Awt.Shape arg0)
+            /// </summary>
+            public static Float New(Java.Awt.Shape arg0)
+            {
+                return JVMBridgeBase.New<Float>(arg0);
             }
 
             #endregion

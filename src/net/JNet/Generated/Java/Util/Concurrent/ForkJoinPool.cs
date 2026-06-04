@@ -139,12 +139,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ForkJoinPool()
+        /// </summary>
+        public static ForkJoinPool New()
+        {
+            return JVMBridgeBase.New<ForkJoinPool>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinPool.html#java.util.concurrent.ForkJoinPool(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ForkJoinPool(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ForkJoinPool(int arg0)
+        /// </summary>
+        public static ForkJoinPool New(int arg0)
+        {
+            return JVMBridgeBase.New<ForkJoinPool>(arg0);
         }
 
         #endregion

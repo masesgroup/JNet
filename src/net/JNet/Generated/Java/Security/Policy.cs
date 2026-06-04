@@ -104,6 +104,13 @@ namespace Java.Security
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Policy()
+        /// </summary>
+        public static Policy New()
+        {
+            return JVMBridgeBase.New<Policy>();
+        }
 
         #endregion
 

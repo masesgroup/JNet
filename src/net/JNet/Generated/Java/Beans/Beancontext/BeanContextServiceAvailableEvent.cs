@@ -72,6 +72,13 @@ namespace Java.Beans.Beancontext
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for BeanContextServiceAvailableEvent(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1)
+        /// </summary>
+        public static BeanContextServiceAvailableEvent New(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1)
+        {
+            return JVMBridgeBase.New<BeanContextServiceAvailableEvent>(arg0, arg1);
+        }
 
         #endregion
 

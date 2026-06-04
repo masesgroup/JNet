@@ -75,6 +75,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for InputMethodEvent(Java.Awt.Component arg0, int arg1, Java.Awt.FontNs.TextHitInfo arg2, Java.Awt.FontNs.TextHitInfo arg3)
+        /// </summary>
+        public static InputMethodEvent New(Java.Awt.Component arg0, int arg1, Java.Awt.FontNs.TextHitInfo arg2, Java.Awt.FontNs.TextHitInfo arg3)
+        {
+            return JVMBridgeBase.New<InputMethodEvent>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/InputMethodEvent.html#java.awt.event.InputMethodEvent(java.awt.Component,int,java.text.AttributedCharacterIterator,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -86,6 +93,13 @@ namespace Java.Awt.EventNs
         public InputMethodEvent(Java.Awt.Component arg0, int arg1, Java.Text.AttributedCharacterIterator arg2, int arg3, Java.Awt.FontNs.TextHitInfo arg4, Java.Awt.FontNs.TextHitInfo arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for InputMethodEvent(Java.Awt.Component arg0, int arg1, Java.Text.AttributedCharacterIterator arg2, int arg3, Java.Awt.FontNs.TextHitInfo arg4, Java.Awt.FontNs.TextHitInfo arg5)
+        /// </summary>
+        public static InputMethodEvent New(Java.Awt.Component arg0, int arg1, Java.Text.AttributedCharacterIterator arg2, int arg3, Java.Awt.FontNs.TextHitInfo arg4, Java.Awt.FontNs.TextHitInfo arg5)
+        {
+            return JVMBridgeBase.New<InputMethodEvent>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/InputMethodEvent.html#java.awt.event.InputMethodEvent(java.awt.Component,int,long,java.text.AttributedCharacterIterator,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
@@ -100,6 +114,13 @@ namespace Java.Awt.EventNs
         public InputMethodEvent(Java.Awt.Component arg0, int arg1, long arg2, Java.Text.AttributedCharacterIterator arg3, int arg4, Java.Awt.FontNs.TextHitInfo arg5, Java.Awt.FontNs.TextHitInfo arg6) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// HPA initializer for InputMethodEvent(Java.Awt.Component arg0, int arg1, long arg2, Java.Text.AttributedCharacterIterator arg3, int arg4, Java.Awt.FontNs.TextHitInfo arg5, Java.Awt.FontNs.TextHitInfo arg6)
+        /// </summary>
+        public static InputMethodEvent New(Java.Awt.Component arg0, int arg1, long arg2, Java.Text.AttributedCharacterIterator arg3, int arg4, Java.Awt.FontNs.TextHitInfo arg5, Java.Awt.FontNs.TextHitInfo arg6)
+        {
+            return JVMBridgeBase.New<InputMethodEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
 
         #endregion

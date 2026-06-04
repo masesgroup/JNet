@@ -70,6 +70,13 @@ namespace Org.Xml.Sax.Helpers
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for NamespaceSupport()
+        /// </summary>
+        public static NamespaceSupport New()
+        {
+            return JVMBridgeBase.New<NamespaceSupport>();
+        }
 
         #endregion
 

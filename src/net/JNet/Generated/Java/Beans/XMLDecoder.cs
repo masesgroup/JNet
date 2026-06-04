@@ -75,6 +75,13 @@ namespace Java.Beans
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2, Java.Lang.ClassLoader arg3)
+        /// </summary>
+        public static XMLDecoder New(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2, Java.Lang.ClassLoader arg3)
+        {
+            return JVMBridgeBase.New<XMLDecoder>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/XMLDecoder.html#java.beans.XMLDecoder(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
@@ -83,6 +90,13 @@ namespace Java.Beans
         public XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2)
+        /// </summary>
+        public static XMLDecoder New(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2)
+        {
+            return JVMBridgeBase.New<XMLDecoder>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/XMLDecoder.html#java.beans.XMLDecoder(java.io.InputStream,java.lang.Object)"/>
@@ -94,6 +108,13 @@ namespace Java.Beans
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for XMLDecoder(Java.Io.InputStream arg0, object arg1)
+        /// </summary>
+        public static XMLDecoder New(Java.Io.InputStream arg0, object arg1)
+        {
+            return JVMBridgeBase.New<XMLDecoder>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/XMLDecoder.html#java.beans.XMLDecoder(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
@@ -102,12 +123,26 @@ namespace Java.Beans
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for XMLDecoder(Java.Io.InputStream arg0)
+        /// </summary>
+        public static XMLDecoder New(Java.Io.InputStream arg0)
+        {
+            return JVMBridgeBase.New<XMLDecoder>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/beans/XMLDecoder.html#java.beans.XMLDecoder(org.xml.sax.InputSource)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
         public XMLDecoder(Org.Xml.Sax.InputSource arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for XMLDecoder(Org.Xml.Sax.InputSource arg0)
+        /// </summary>
+        public static XMLDecoder New(Org.Xml.Sax.InputSource arg0)
+        {
+            return JVMBridgeBase.New<XMLDecoder>(arg0);
         }
 
         #endregion

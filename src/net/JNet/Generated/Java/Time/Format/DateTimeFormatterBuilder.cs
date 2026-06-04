@@ -70,6 +70,13 @@ namespace Java.Time.Format
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DateTimeFormatterBuilder()
+        /// </summary>
+        public static DateTimeFormatterBuilder New()
+        {
+            return JVMBridgeBase.New<DateTimeFormatterBuilder>();
+        }
 
         #endregion
 

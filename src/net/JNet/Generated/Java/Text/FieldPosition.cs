@@ -72,6 +72,13 @@ namespace Java.Text
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for FieldPosition(int arg0)
+        /// </summary>
+        public static FieldPosition New(int arg0)
+        {
+            return JVMBridgeBase.New<FieldPosition>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/FieldPosition.html#java.text.FieldPosition(java.text.Format.Field,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.Format.Field"/></param>
@@ -81,12 +88,26 @@ namespace Java.Text
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for FieldPosition(Java.Text.Format.Field arg0, int arg1)
+        /// </summary>
+        public static FieldPosition New(Java.Text.Format.Field arg0, int arg1)
+        {
+            return JVMBridgeBase.New<FieldPosition>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/text/FieldPosition.html#java.text.FieldPosition(java.text.Format.Field)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.Format.Field"/></param>
         public FieldPosition(Java.Text.Format.Field arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FieldPosition(Java.Text.Format.Field arg0)
+        /// </summary>
+        public static FieldPosition New(Java.Text.Format.Field arg0)
+        {
+            return JVMBridgeBase.New<FieldPosition>(arg0);
         }
 
         #endregion

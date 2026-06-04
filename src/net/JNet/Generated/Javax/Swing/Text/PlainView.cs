@@ -71,6 +71,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for PlainView(Javax.Swing.Text.Element arg0)
+        /// </summary>
+        public static PlainView New(Javax.Swing.Text.Element arg0)
+        {
+            return JVMBridgeBase.New<PlainView>(arg0);
+        }
 
         #endregion
 

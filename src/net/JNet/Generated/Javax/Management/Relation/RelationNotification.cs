@@ -83,6 +83,13 @@ namespace Javax.Management.Relation
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
+        /// HPA initializer for RelationNotification(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6, Javax.Management.ObjectName arg7, Java.Lang.String arg8, Java.Util.List%3CJavax.Management.ObjectName%3E arg9, Java.Util.List%3CJavax.Management.ObjectName%3E arg10)
+        /// </summary>
+        public static RelationNotification New(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6, Javax.Management.ObjectName arg7, Java.Lang.String arg8, Java.Util.List<Javax.Management.ObjectName> arg9, Java.Util.List<Javax.Management.ObjectName> arg10)
+        {
+            return JVMBridgeBase.New<RelationNotification>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/relation/RelationNotification.html#javax.management.relation.RelationNotification(java.lang.String,java.lang.Object,long,long,java.lang.String,java.lang.String,java.lang.String,javax.management.ObjectName,java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -98,6 +105,13 @@ namespace Javax.Management.Relation
         public RelationNotification(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6, Javax.Management.ObjectName arg7, Java.Util.List<Javax.Management.ObjectName> arg8) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+        /// <summary>
+        /// HPA initializer for RelationNotification(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6, Javax.Management.ObjectName arg7, Java.Util.List%3CJavax.Management.ObjectName%3E arg8)
+        /// </summary>
+        public static RelationNotification New(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6, Javax.Management.ObjectName arg7, Java.Util.List<Javax.Management.ObjectName> arg8)
+        {
+            return JVMBridgeBase.New<RelationNotification>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
 
         #endregion

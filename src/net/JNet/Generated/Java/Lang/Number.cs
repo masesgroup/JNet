@@ -70,6 +70,13 @@ namespace Java.Lang
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Number()
+        /// </summary>
+        public static Number New()
+        {
+            return JVMBridgeBase.New<Number>();
+        }
 
         #endregion
 

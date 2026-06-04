@@ -72,6 +72,13 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for DefaultCellEditor(Javax.Swing.JCheckBox arg0)
+        /// </summary>
+        public static DefaultCellEditor New(Javax.Swing.JCheckBox arg0)
+        {
+            return JVMBridgeBase.New<DefaultCellEditor>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultCellEditor.html#javax.swing.DefaultCellEditor(javax.swing.JComboBox)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
@@ -80,12 +87,26 @@ namespace Javax.Swing
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for DefaultCellEditor(Javax.Swing.JComboBox arg0)
+        /// </summary>
+        public static DefaultCellEditor New(Javax.Swing.JComboBox arg0)
+        {
+            return JVMBridgeBase.New<DefaultCellEditor>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/DefaultCellEditor.html#javax.swing.DefaultCellEditor(javax.swing.JTextField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JTextField"/></param>
         public DefaultCellEditor(Javax.Swing.JTextField arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultCellEditor(Javax.Swing.JTextField arg0)
+        /// </summary>
+        public static DefaultCellEditor New(Javax.Swing.JTextField arg0)
+        {
+            return JVMBridgeBase.New<DefaultCellEditor>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicPopupMenuSeparatorUI()
+        /// </summary>
+        public static BasicPopupMenuSeparatorUI New()
+        {
+            return JVMBridgeBase.New<BasicPopupMenuSeparatorUI>();
+        }
 
         #endregion
 

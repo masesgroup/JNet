@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Basic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for BasicRadioButtonUI()
+        /// </summary>
+        public static BasicRadioButtonUI New()
+        {
+            return JVMBridgeBase.New<BasicRadioButtonUI>();
+        }
 
         #endregion
 

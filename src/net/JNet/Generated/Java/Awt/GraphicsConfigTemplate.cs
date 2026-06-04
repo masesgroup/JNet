@@ -70,6 +70,13 @@ namespace Java.Awt
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for GraphicsConfigTemplate()
+        /// </summary>
+        public static GraphicsConfigTemplate New()
+        {
+            return JVMBridgeBase.New<GraphicsConfigTemplate>();
+        }
 
         #endregion
 

@@ -72,6 +72,13 @@ namespace Java.Security.Spec
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for ECPrivateKeySpec(Java.Math.BigInteger arg0, Java.Security.Spec.ECParameterSpec arg1)
+        /// </summary>
+        public static ECPrivateKeySpec New(Java.Math.BigInteger arg0, Java.Security.Spec.ECParameterSpec arg1)
+        {
+            return JVMBridgeBase.New<ECPrivateKeySpec>(arg0, arg1);
+        }
 
         #endregion
 

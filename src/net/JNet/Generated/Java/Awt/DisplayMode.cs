@@ -74,6 +74,13 @@ namespace Java.Awt
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// HPA initializer for DisplayMode(int arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static DisplayMode New(int arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<DisplayMode>(arg0, arg1, arg2, arg3);
+        }
 
         #endregion
 

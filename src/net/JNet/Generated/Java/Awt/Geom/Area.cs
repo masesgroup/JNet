@@ -71,12 +71,26 @@ namespace Java.Awt.Geom
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Area()
+        /// </summary>
+        public static Area New()
+        {
+            return JVMBridgeBase.New<Area>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Area.html#java.awt.geom.Area(java.awt.Shape)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
         public Area(Java.Awt.Shape arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Area(Java.Awt.Shape arg0)
+        /// </summary>
+        public static Area New(Java.Awt.Shape arg0)
+        {
+            return JVMBridgeBase.New<Area>(arg0);
         }
 
         #endregion

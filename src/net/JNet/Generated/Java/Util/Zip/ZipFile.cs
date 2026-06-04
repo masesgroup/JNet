@@ -75,6 +75,13 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for ZipFile(Java.Io.File arg0, int arg1, Java.Nio.Charset.Charset arg2)
+        /// </summary>
+        public static ZipFile New(Java.Io.File arg0, int arg1, Java.Nio.Charset.Charset arg2)
+        {
+            return JVMBridgeBase.New<ZipFile>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipFile.html#java.util.zip.ZipFile(java.io.File,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -83,6 +90,13 @@ namespace Java.Util.Zip
         public ZipFile(Java.Io.File arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for ZipFile(Java.Io.File arg0, int arg1)
+        /// </summary>
+        public static ZipFile New(Java.Io.File arg0, int arg1)
+        {
+            return JVMBridgeBase.New<ZipFile>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipFile.html#java.util.zip.ZipFile(java.io.File,java.nio.charset.Charset)"/>
@@ -95,6 +109,13 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ZipFile(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
+        /// </summary>
+        public static ZipFile New(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
+        {
+            return JVMBridgeBase.New<ZipFile>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipFile.html#java.util.zip.ZipFile(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -103,6 +124,13 @@ namespace Java.Util.Zip
         public ZipFile(Java.Io.File arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ZipFile(Java.Io.File arg0)
+        /// </summary>
+        public static ZipFile New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<ZipFile>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipFile.html#java.util.zip.ZipFile(java.lang.String,java.nio.charset.Charset)"/>
@@ -115,6 +143,13 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ZipFile(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1)
+        /// </summary>
+        public static ZipFile New(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1)
+        {
+            return JVMBridgeBase.New<ZipFile>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipFile.html#java.util.zip.ZipFile(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -122,6 +157,13 @@ namespace Java.Util.Zip
         public ZipFile(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ZipFile(Java.Lang.String arg0)
+        /// </summary>
+        public static ZipFile New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<ZipFile>(arg0);
         }
 
         #endregion

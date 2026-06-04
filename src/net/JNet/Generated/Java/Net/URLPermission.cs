@@ -73,12 +73,26 @@ namespace Java.Net
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for URLPermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static URLPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<URLPermission>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URLPermission.html#java.net.URLPermission(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public URLPermission(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for URLPermission(Java.Lang.String arg0)
+        /// </summary>
+        public static URLPermission New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<URLPermission>(arg0);
         }
 
         #endregion

@@ -74,6 +74,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for RandomAccessFile(Java.Io.File arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static RandomAccessFile New(Java.Io.File arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<RandomAccessFile>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/RandomAccessFile.html#java.io.RandomAccessFile(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -82,6 +89,13 @@ namespace Java.Io
         public RandomAccessFile(Java.Lang.String arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for RandomAccessFile(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static RandomAccessFile New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<RandomAccessFile>(arg0, arg1);
         }
 
         #endregion

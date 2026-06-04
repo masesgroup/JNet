@@ -70,6 +70,13 @@ namespace Javax.Xml.Datatype
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Duration()
+        /// </summary>
+        public static Duration New()
+        {
+            return JVMBridgeBase.New<Duration>();
+        }
 
         #endregion
 

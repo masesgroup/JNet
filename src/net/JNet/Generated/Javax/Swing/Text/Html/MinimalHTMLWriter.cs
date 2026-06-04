@@ -75,6 +75,13 @@ namespace Javax.Swing.Text.Html
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for MinimalHTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1, int arg2, int arg3)
+        /// </summary>
+        public static MinimalHTMLWriter New(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<MinimalHTMLWriter>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/MinimalHTMLWriter.html#javax.swing.text.html.MinimalHTMLWriter(java.io.Writer,javax.swing.text.StyledDocument)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
@@ -82,6 +89,13 @@ namespace Javax.Swing.Text.Html
         public MinimalHTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for MinimalHTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1)
+        /// </summary>
+        public static MinimalHTMLWriter New(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1)
+        {
+            return JVMBridgeBase.New<MinimalHTMLWriter>(arg0, arg1);
         }
 
         #endregion

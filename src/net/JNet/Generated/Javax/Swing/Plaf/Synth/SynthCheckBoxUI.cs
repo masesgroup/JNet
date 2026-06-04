@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthCheckBoxUI()
+        /// </summary>
+        public static SynthCheckBoxUI New()
+        {
+            return JVMBridgeBase.New<SynthCheckBoxUI>();
+        }
 
         #endregion
 

@@ -78,6 +78,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for KeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5, int arg6)
+        /// </summary>
+        public static KeyEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5, int arg6)
+        {
+            return JVMBridgeBase.New<KeyEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/KeyEvent.html#java.awt.event.KeyEvent(java.awt.Component,int,long,int,int,char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -91,6 +98,13 @@ namespace Java.Awt.EventNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// HPA initializer for KeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5)
+        /// </summary>
+        public static KeyEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5)
+        {
+            return JVMBridgeBase.New<KeyEvent>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/KeyEvent.html#java.awt.event.KeyEvent(java.awt.Component,int,long,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -102,6 +116,13 @@ namespace Java.Awt.EventNs
         public KeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for KeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4)
+        /// </summary>
+        public static KeyEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<KeyEvent>(arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

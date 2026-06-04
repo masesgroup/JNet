@@ -75,6 +75,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PrintStream(Java.Io.File arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static PrintStream New(Java.Io.File arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<PrintStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html#java.io.PrintStream(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -82,6 +89,13 @@ namespace Java.Io
         public PrintStream(Java.Io.File arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PrintStream(Java.Io.File arg0)
+        /// </summary>
+        public static PrintStream New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<PrintStream>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html#java.io.PrintStream(java.io.OutputStream,boolean,java.lang.String)"/>
@@ -95,6 +109,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for PrintStream(Java.Io.OutputStream arg0, bool arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static PrintStream New(Java.Io.OutputStream arg0, bool arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<PrintStream>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html#java.io.PrintStream(java.io.OutputStream,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
@@ -104,12 +125,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PrintStream(Java.Io.OutputStream arg0, bool arg1)
+        /// </summary>
+        public static PrintStream New(Java.Io.OutputStream arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<PrintStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html#java.io.PrintStream(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public PrintStream(Java.Io.OutputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PrintStream(Java.Io.OutputStream arg0)
+        /// </summary>
+        public static PrintStream New(Java.Io.OutputStream arg0)
+        {
+            return JVMBridgeBase.New<PrintStream>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html#java.io.PrintStream(java.lang.String,java.lang.String)"/>
@@ -123,6 +158,13 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PrintStream(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static PrintStream New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<PrintStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html#java.io.PrintStream(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -130,6 +172,13 @@ namespace Java.Io
         public PrintStream(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PrintStream(Java.Lang.String arg0)
+        /// </summary>
+        public static PrintStream New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<PrintStream>(arg0);
         }
 
         #endregion

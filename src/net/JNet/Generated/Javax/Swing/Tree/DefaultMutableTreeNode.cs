@@ -71,6 +71,13 @@ namespace Javax.Swing.Tree
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DefaultMutableTreeNode()
+        /// </summary>
+        public static DefaultMutableTreeNode New()
+        {
+            return JVMBridgeBase.New<DefaultMutableTreeNode>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/DefaultMutableTreeNode.html#javax.swing.tree.DefaultMutableTreeNode(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -80,12 +87,26 @@ namespace Javax.Swing.Tree
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for DefaultMutableTreeNode(object arg0, bool arg1)
+        /// </summary>
+        public static DefaultMutableTreeNode New(object arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<DefaultMutableTreeNode>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/tree/DefaultMutableTreeNode.html#javax.swing.tree.DefaultMutableTreeNode(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public DefaultMutableTreeNode(object arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DefaultMutableTreeNode(object arg0)
+        /// </summary>
+        public static DefaultMutableTreeNode New(object arg0)
+        {
+            return JVMBridgeBase.New<DefaultMutableTreeNode>(arg0);
         }
 
         #endregion

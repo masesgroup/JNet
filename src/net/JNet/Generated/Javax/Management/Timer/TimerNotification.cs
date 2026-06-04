@@ -76,6 +76,13 @@ namespace Javax.Management.Timer
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
         }
+        /// <summary>
+        /// HPA initializer for TimerNotification(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4, Java.Lang.Integer arg5)
+        /// </summary>
+        public static TimerNotification New(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4, Java.Lang.Integer arg5)
+        {
+            return JVMBridgeBase.New<TimerNotification>(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
 
         #endregion
 

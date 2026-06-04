@@ -71,12 +71,26 @@ namespace Java.Util
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Properties()
+        /// </summary>
+        public static Properties New()
+        {
+            return JVMBridgeBase.New<Properties>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#java.util.Properties(java.util.Properties)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Properties"/></param>
         public Properties(Java.Util.Properties arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Properties(Java.Util.Properties arg0)
+        /// </summary>
+        public static Properties New(Java.Util.Properties arg0)
+        {
+            return JVMBridgeBase.New<Properties>(arg0);
         }
 
         #endregion

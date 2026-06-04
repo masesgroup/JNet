@@ -70,6 +70,13 @@ namespace Java.Io
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for FileDescriptor()
+        /// </summary>
+        public static FileDescriptor New()
+        {
+            return JVMBridgeBase.New<FileDescriptor>();
+        }
 
         #endregion
 

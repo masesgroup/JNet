@@ -105,6 +105,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for GlyphView(Javax.Swing.Text.Element arg0)
+        /// </summary>
+        public static GlyphView New(Javax.Swing.Text.Element arg0)
+        {
+            return JVMBridgeBase.New<GlyphView>(arg0);
+        }
 
         #endregion
 
@@ -248,6 +255,13 @@ namespace Javax.Swing.Text
             public GlyphPainter() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for GlyphPainter()
+            /// </summary>
+            public static GlyphPainter New()
+            {
+                return JVMBridgeBase.New<GlyphPainter>();
             }
 
             #endregion

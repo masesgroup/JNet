@@ -73,6 +73,13 @@ namespace Java.Net
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DatagramSocket()
+        /// </summary>
+        public static DatagramSocket New()
+        {
+            return JVMBridgeBase.New<DatagramSocket>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramSocket.html#java.net.DatagramSocket(int,java.net.InetAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -81,6 +88,13 @@ namespace Java.Net
         public DatagramSocket(int arg0, Java.Net.InetAddress arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DatagramSocket(int arg0, Java.Net.InetAddress arg1)
+        /// </summary>
+        public static DatagramSocket New(int arg0, Java.Net.InetAddress arg1)
+        {
+            return JVMBridgeBase.New<DatagramSocket>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramSocket.html#java.net.DatagramSocket(int)"/>
@@ -92,6 +106,13 @@ namespace Java.Net
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for DatagramSocket(int arg0)
+        /// </summary>
+        public static DatagramSocket New(int arg0)
+        {
+            return JVMBridgeBase.New<DatagramSocket>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramSocket.html#java.net.DatagramSocket(java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
@@ -99,6 +120,13 @@ namespace Java.Net
         public DatagramSocket(Java.Net.SocketAddress arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DatagramSocket(Java.Net.SocketAddress arg0)
+        /// </summary>
+        public static DatagramSocket New(Java.Net.SocketAddress arg0)
+        {
+            return JVMBridgeBase.New<DatagramSocket>(arg0);
         }
 
         #endregion

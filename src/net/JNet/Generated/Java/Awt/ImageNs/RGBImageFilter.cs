@@ -70,6 +70,13 @@ namespace Java.Awt.ImageNs
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for RGBImageFilter()
+        /// </summary>
+        public static RGBImageFilter New()
+        {
+            return JVMBridgeBase.New<RGBImageFilter>();
+        }
 
         #endregion
 

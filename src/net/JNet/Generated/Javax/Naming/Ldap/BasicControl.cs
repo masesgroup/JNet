@@ -74,12 +74,26 @@ namespace Javax.Naming.Ldap
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for BasicControl(Java.Lang.String arg0, bool arg1, byte[] arg2)
+        /// </summary>
+        public static BasicControl New(Java.Lang.String arg0, bool arg1, byte[] arg2)
+        {
+            return JVMBridgeBase.New<BasicControl>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/BasicControl.html#javax.naming.ldap.BasicControl(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public BasicControl(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BasicControl(Java.Lang.String arg0)
+        /// </summary>
+        public static BasicControl New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<BasicControl>(arg0);
         }
 
         #endregion

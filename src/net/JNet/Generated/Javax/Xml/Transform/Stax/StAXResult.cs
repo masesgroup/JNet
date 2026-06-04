@@ -72,12 +72,26 @@ namespace Javax.Xml.Transform.Stax
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for StAXResult(Javax.Xml.Stream.XMLEventWriter arg0)
+        /// </summary>
+        public static StAXResult New(Javax.Xml.Stream.XMLEventWriter arg0)
+        {
+            return JVMBridgeBase.New<StAXResult>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stax/StAXResult.html#javax.xml.transform.stax.StAXResult(javax.xml.stream.XMLStreamWriter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamWriter"/></param>
         public StAXResult(Javax.Xml.Stream.XMLStreamWriter arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StAXResult(Javax.Xml.Stream.XMLStreamWriter arg0)
+        /// </summary>
+        public static StAXResult New(Javax.Xml.Stream.XMLStreamWriter arg0)
+        {
+            return JVMBridgeBase.New<StAXResult>(arg0);
         }
 
         #endregion

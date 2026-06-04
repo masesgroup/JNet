@@ -74,6 +74,13 @@ namespace Javax.Management
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for MBeanServerInvocationHandler(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, bool arg2)
+        /// </summary>
+        public static MBeanServerInvocationHandler New(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, bool arg2)
+        {
+            return JVMBridgeBase.New<MBeanServerInvocationHandler>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServerInvocationHandler.html#javax.management.MBeanServerInvocationHandler(javax.management.MBeanServerConnection,javax.management.ObjectName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Management
         public MBeanServerInvocationHandler(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for MBeanServerInvocationHandler(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1)
+        /// </summary>
+        public static MBeanServerInvocationHandler New(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1)
+        {
+            return JVMBridgeBase.New<MBeanServerInvocationHandler>(arg0, arg1);
         }
 
         #endregion

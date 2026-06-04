@@ -70,6 +70,13 @@ namespace Java.Awt
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DefaultKeyboardFocusManager()
+        /// </summary>
+        public static DefaultKeyboardFocusManager New()
+        {
+            return JVMBridgeBase.New<DefaultKeyboardFocusManager>();
+        }
 
         #endregion
 

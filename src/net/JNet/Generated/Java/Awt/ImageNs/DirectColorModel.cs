@@ -76,6 +76,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for DirectColorModel(int arg0, int arg1, int arg2, int arg3, int arg4)
+        /// </summary>
+        public static DirectColorModel New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<DirectColorModel>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/DirectColorModel.html#java.awt.image.DirectColorModel(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -85,6 +92,13 @@ namespace Java.Awt.ImageNs
         public DirectColorModel(int arg0, int arg1, int arg2, int arg3) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// HPA initializer for DirectColorModel(int arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static DirectColorModel New(int arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<DirectColorModel>(arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/DirectColorModel.html#java.awt.image.DirectColorModel(java.awt.color.ColorSpace,int,int,int,int,int,boolean,int)"/>
@@ -100,6 +114,13 @@ namespace Java.Awt.ImageNs
         public DirectColorModel(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+        /// <summary>
+        /// HPA initializer for DirectColorModel(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7)
+        /// </summary>
+        public static DirectColorModel New(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7)
+        {
+            return JVMBridgeBase.New<DirectColorModel>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
 
         #endregion

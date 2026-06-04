@@ -71,12 +71,26 @@ namespace Javax.Xml.Ws
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for RespectBindingFeature()
+        /// </summary>
+        public static RespectBindingFeature New()
+        {
+            return JVMBridgeBase.New<RespectBindingFeature>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/ws/RespectBindingFeature.html#javax.xml.ws.RespectBindingFeature(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public RespectBindingFeature(bool arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for RespectBindingFeature(bool arg0)
+        /// </summary>
+        public static RespectBindingFeature New(bool arg0)
+        {
+            return JVMBridgeBase.New<RespectBindingFeature>(arg0);
         }
 
         #endregion

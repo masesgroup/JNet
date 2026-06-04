@@ -70,6 +70,13 @@ namespace Javax.Swing
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for JLayeredPane()
+        /// </summary>
+        public static JLayeredPane New()
+        {
+            return JVMBridgeBase.New<JLayeredPane>();
+        }
 
         #endregion
 

@@ -105,6 +105,13 @@ namespace Java.Util
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Stack()
+        /// </summary>
+        public static Stack New()
+        {
+            return JVMBridgeBase.New<Stack>();
+        }
 
         #endregion
 
@@ -184,6 +191,13 @@ namespace Java.Util
         public Stack() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
+        }
+        /// <summary>
+        /// HPA initializer for Stack()
+        /// </summary>
+        public static Stack<E> New()
+        {
+            return JVMBridgeBase.New<Stack<E>>();
         }
 
         #endregion

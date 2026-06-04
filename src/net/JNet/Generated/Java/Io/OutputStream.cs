@@ -70,6 +70,13 @@ namespace Java.Io
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for OutputStream()
+        /// </summary>
+        public static OutputStream New()
+        {
+            return JVMBridgeBase.New<OutputStream>();
+        }
 
         #endregion
 

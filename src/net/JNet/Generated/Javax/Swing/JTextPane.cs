@@ -71,12 +71,26 @@ namespace Javax.Swing
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for JTextPane()
+        /// </summary>
+        public static JTextPane New()
+        {
+            return JVMBridgeBase.New<JTextPane>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTextPane.html#javax.swing.JTextPane(javax.swing.text.StyledDocument)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.StyledDocument"/></param>
         public JTextPane(Javax.Swing.Text.StyledDocument arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JTextPane(Javax.Swing.Text.StyledDocument arg0)
+        /// </summary>
+        public static JTextPane New(Javax.Swing.Text.StyledDocument arg0)
+        {
+            return JVMBridgeBase.New<JTextPane>(arg0);
         }
 
         #endregion

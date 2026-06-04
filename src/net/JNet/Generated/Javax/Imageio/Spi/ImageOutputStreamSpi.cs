@@ -73,6 +73,13 @@ namespace Javax.Imageio.Spi
         {
             InvokeInitializer(arg0, arg1, arg2);
         }
+        /// <summary>
+        /// HPA initializer for ImageOutputStreamSpi(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Class arg2)
+        /// </summary>
+        public static ImageOutputStreamSpi New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Class arg2)
+        {
+            return JVMBridgeBase.New<ImageOutputStreamSpi>(arg0, arg1, arg2);
+        }
 
         #endregion
 

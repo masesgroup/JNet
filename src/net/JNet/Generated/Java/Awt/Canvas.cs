@@ -71,12 +71,26 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Canvas()
+        /// </summary>
+        public static Canvas New()
+        {
+            return JVMBridgeBase.New<Canvas>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Canvas.html#java.awt.Canvas(java.awt.GraphicsConfiguration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
         public Canvas(Java.Awt.GraphicsConfiguration arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Canvas(Java.Awt.GraphicsConfiguration arg0)
+        /// </summary>
+        public static Canvas New(Java.Awt.GraphicsConfiguration arg0)
+        {
+            return JVMBridgeBase.New<Canvas>(arg0);
         }
 
         #endregion

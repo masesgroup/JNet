@@ -74,6 +74,13 @@ namespace Java.Security.Spec
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for RSAKeyGenParameterSpec(int arg0, Java.Math.BigInteger arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
+        /// </summary>
+        public static RSAKeyGenParameterSpec New(int arg0, Java.Math.BigInteger arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
+        {
+            return JVMBridgeBase.New<RSAKeyGenParameterSpec>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/spec/RSAKeyGenParameterSpec.html#java.security.spec.RSAKeyGenParameterSpec(int,java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -81,6 +88,13 @@ namespace Java.Security.Spec
         public RSAKeyGenParameterSpec(int arg0, Java.Math.BigInteger arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for RSAKeyGenParameterSpec(int arg0, Java.Math.BigInteger arg1)
+        /// </summary>
+        public static RSAKeyGenParameterSpec New(int arg0, Java.Math.BigInteger arg1)
+        {
+            return JVMBridgeBase.New<RSAKeyGenParameterSpec>(arg0, arg1);
         }
 
         #endregion

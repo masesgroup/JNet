@@ -108,6 +108,13 @@ namespace Java.Security
         {
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// HPA initializer for KeyRep(Java.Security.KeyRep.Type arg0, Java.Lang.String arg1, Java.Lang.String arg2, byte[] arg3)
+        /// </summary>
+        public static KeyRep New(Java.Security.KeyRep.Type arg0, Java.Lang.String arg1, Java.Lang.String arg2, byte[] arg3)
+        {
+            return JVMBridgeBase.New<KeyRep>(arg0, arg1, arg2, arg3);
+        }
 
         #endregion
 

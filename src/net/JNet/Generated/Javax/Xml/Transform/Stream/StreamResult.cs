@@ -71,12 +71,26 @@ namespace Javax.Xml.Transform.Stream
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for StreamResult()
+        /// </summary>
+        public static StreamResult New()
+        {
+            return JVMBridgeBase.New<StreamResult>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stream/StreamResult.html#javax.xml.transform.stream.StreamResult(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         public StreamResult(Java.Io.File arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StreamResult(Java.Io.File arg0)
+        /// </summary>
+        public static StreamResult New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<StreamResult>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stream/StreamResult.html#javax.xml.transform.stream.StreamResult(java.io.OutputStream)"/>
@@ -87,6 +101,13 @@ namespace Javax.Xml.Transform.Stream
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for StreamResult(Java.Io.OutputStream arg0)
+        /// </summary>
+        public static StreamResult New(Java.Io.OutputStream arg0)
+        {
+            return JVMBridgeBase.New<StreamResult>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stream/StreamResult.html#javax.xml.transform.stream.StreamResult(java.io.Writer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
@@ -95,12 +116,26 @@ namespace Javax.Xml.Transform.Stream
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for StreamResult(Java.Io.Writer arg0)
+        /// </summary>
+        public static StreamResult New(Java.Io.Writer arg0)
+        {
+            return JVMBridgeBase.New<StreamResult>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/stream/StreamResult.html#javax.xml.transform.stream.StreamResult(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public StreamResult(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StreamResult(Java.Lang.String arg0)
+        /// </summary>
+        public static StreamResult New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<StreamResult>(arg0);
         }
 
         #endregion

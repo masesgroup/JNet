@@ -107,12 +107,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ConcurrentSkipListMap()
+        /// </summary>
+        public static ConcurrentSkipListMap New()
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListMap>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#java.util.concurrent.ConcurrentSkipListMap(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
         public ConcurrentSkipListMap(Java.Util.Comparator arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentSkipListMap(Java.Util.Comparator arg0)
+        /// </summary>
+        public static ConcurrentSkipListMap New(Java.Util.Comparator arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListMap>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#java.util.concurrent.ConcurrentSkipListMap(java.util.Map)"/>
@@ -123,12 +137,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ConcurrentSkipListMap(Java.Util.Map arg0)
+        /// </summary>
+        public static ConcurrentSkipListMap New(Java.Util.Map arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListMap>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#java.util.concurrent.ConcurrentSkipListMap(java.util.SortedMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
         public ConcurrentSkipListMap(Java.Util.SortedMap arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentSkipListMap(Java.Util.SortedMap arg0)
+        /// </summary>
+        public static ConcurrentSkipListMap New(Java.Util.SortedMap arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListMap>(arg0);
         }
 
         #endregion
@@ -401,12 +429,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ConcurrentSkipListMap()
+        /// </summary>
+        public static ConcurrentSkipListMap<K, V> New()
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListMap<K, V>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#java.util.concurrent.ConcurrentSkipListMap(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
         public ConcurrentSkipListMap(Java.Util.Comparator<K> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentSkipListMap(Java.Util.Comparator%3CK%3E arg0)
+        /// </summary>
+        public static ConcurrentSkipListMap<K, V> New(Java.Util.Comparator<K> arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListMap<K, V>>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#java.util.concurrent.ConcurrentSkipListMap(java.util.Map)"/>
@@ -417,12 +459,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ConcurrentSkipListMap(Java.Util.Map%3CK, V%3E arg0)
+        /// </summary>
+        public static ConcurrentSkipListMap<K, V> New(Java.Util.Map<K, V> arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListMap<K, V>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html#java.util.concurrent.ConcurrentSkipListMap(java.util.SortedMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
         public ConcurrentSkipListMap(Java.Util.SortedMap<K, V> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentSkipListMap(Java.Util.SortedMap%3CK, V%3E arg0)
+        /// </summary>
+        public static ConcurrentSkipListMap<K, V> New(Java.Util.SortedMap<K, V> arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListMap<K, V>>(arg0);
         }
 
         #endregion

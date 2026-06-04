@@ -70,6 +70,13 @@ namespace Java.Beans
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for FeatureDescriptor()
+        /// </summary>
+        public static FeatureDescriptor New()
+        {
+            return JVMBridgeBase.New<FeatureDescriptor>();
+        }
 
         #endregion
 

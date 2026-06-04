@@ -73,12 +73,26 @@ namespace Java.Lang
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Short(Java.Lang.String arg0)
+        /// </summary>
+        public static Short New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Short>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html#java.lang.Short(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         public Short(short arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Short(short arg0)
+        /// </summary>
+        public static Short New(short arg0)
+        {
+            return JVMBridgeBase.New<Short>(arg0);
         }
 
         #endregion

@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiTabbedPaneUI()
+        /// </summary>
+        public static MultiTabbedPaneUI New()
+        {
+            return JVMBridgeBase.New<MultiTabbedPaneUI>();
+        }
 
         #endregion
 

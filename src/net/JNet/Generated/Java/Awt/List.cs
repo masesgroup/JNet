@@ -73,6 +73,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for List()
+        /// </summary>
+        public static List New()
+        {
+            return JVMBridgeBase.New<List>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#java.awt.List(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -83,6 +90,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for List(int arg0, bool arg1)
+        /// </summary>
+        public static List New(int arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<List>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#java.awt.List(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -90,6 +104,13 @@ namespace Java.Awt
         public List(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for List(int arg0)
+        /// </summary>
+        public static List New(int arg0)
+        {
+            return JVMBridgeBase.New<List>(arg0);
         }
 
         #endregion

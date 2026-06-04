@@ -70,6 +70,13 @@ namespace Java.Util.Zip
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for Adler32()
+        /// </summary>
+        public static Adler32 New()
+        {
+            return JVMBridgeBase.New<Adler32>();
+        }
 
         #endregion
 

@@ -71,6 +71,13 @@ namespace Javax.Print.Attribute.Standard
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for PrinterMoreInfo(Java.Net.URI arg0)
+        /// </summary>
+        public static PrinterMoreInfo New(Java.Net.URI arg0)
+        {
+            return JVMBridgeBase.New<PrinterMoreInfo>(arg0);
+        }
 
         #endregion
 

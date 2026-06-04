@@ -104,6 +104,13 @@ namespace Java.Util
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ResourceBundle()
+        /// </summary>
+        public static ResourceBundle New()
+        {
+            return JVMBridgeBase.New<ResourceBundle>();
+        }
 
         #endregion
 

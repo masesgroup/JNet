@@ -72,6 +72,13 @@ namespace Javax.Security.Auth.Kerberos
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for ServicePermission(Java.Lang.String arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static ServicePermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<ServicePermission>(arg0, arg1);
+        }
 
         #endregion
 

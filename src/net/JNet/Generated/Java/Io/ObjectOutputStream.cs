@@ -106,6 +106,13 @@ namespace Java.Io
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for ObjectOutputStream(Java.Io.OutputStream arg0)
+        /// </summary>
+        public static ObjectOutputStream New(Java.Io.OutputStream arg0)
+        {
+            return JVMBridgeBase.New<ObjectOutputStream>(arg0);
+        }
 
         #endregion
 
@@ -303,6 +310,13 @@ namespace Java.Io
             public PutField() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for PutField()
+            /// </summary>
+            public static PutField New()
+            {
+                return JVMBridgeBase.New<PutField>();
             }
 
             #endregion

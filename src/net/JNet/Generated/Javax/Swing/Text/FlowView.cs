@@ -106,6 +106,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for FlowView(Javax.Swing.Text.Element arg0, int arg1)
+        /// </summary>
+        public static FlowView New(Javax.Swing.Text.Element arg0, int arg1)
+        {
+            return JVMBridgeBase.New<FlowView>(arg0, arg1);
+        }
 
         #endregion
 
@@ -161,6 +168,13 @@ namespace Javax.Swing.Text
             public FlowStrategy() : base(JVMBridgeBase.InitializerInstance)
             {
                 InvokeInitializer();
+            }
+            /// <summary>
+            /// HPA initializer for FlowStrategy()
+            /// </summary>
+            public static FlowStrategy New()
+            {
+                return JVMBridgeBase.New<FlowStrategy>();
             }
 
             #endregion

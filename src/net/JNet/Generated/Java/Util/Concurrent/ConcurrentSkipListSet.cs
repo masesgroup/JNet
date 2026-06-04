@@ -106,12 +106,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ConcurrentSkipListSet()
+        /// </summary>
+        public static ConcurrentSkipListSet New()
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListSet>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#java.util.concurrent.ConcurrentSkipListSet(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ConcurrentSkipListSet(Java.Util.Collection arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentSkipListSet(Java.Util.Collection arg0)
+        /// </summary>
+        public static ConcurrentSkipListSet New(Java.Util.Collection arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListSet>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#java.util.concurrent.ConcurrentSkipListSet(java.util.Comparator)"/>
@@ -122,12 +136,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ConcurrentSkipListSet(Java.Util.Comparator arg0)
+        /// </summary>
+        public static ConcurrentSkipListSet New(Java.Util.Comparator arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListSet>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#java.util.concurrent.ConcurrentSkipListSet(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
         public ConcurrentSkipListSet(Java.Util.SortedSet arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentSkipListSet(Java.Util.SortedSet arg0)
+        /// </summary>
+        public static ConcurrentSkipListSet New(Java.Util.SortedSet arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListSet>(arg0);
         }
 
         #endregion
@@ -340,12 +368,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ConcurrentSkipListSet()
+        /// </summary>
+        public static ConcurrentSkipListSet<E> New()
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListSet<E>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#java.util.concurrent.ConcurrentSkipListSet(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ConcurrentSkipListSet(Java.Util.Collection<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentSkipListSet(Java.Util.Collection%3CE%3E arg0)
+        /// </summary>
+        public static ConcurrentSkipListSet<E> New(Java.Util.Collection<E> arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListSet<E>>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#java.util.concurrent.ConcurrentSkipListSet(java.util.Comparator)"/>
@@ -356,12 +398,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ConcurrentSkipListSet(Java.Util.Comparator%3CE%3E arg0)
+        /// </summary>
+        public static ConcurrentSkipListSet<E> New(Java.Util.Comparator<E> arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListSet<E>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListSet.html#java.util.concurrent.ConcurrentSkipListSet(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
         public ConcurrentSkipListSet(Java.Util.SortedSet<E> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentSkipListSet(Java.Util.SortedSet%3CE%3E arg0)
+        /// </summary>
+        public static ConcurrentSkipListSet<E> New(Java.Util.SortedSet<E> arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentSkipListSet<E>>(arg0);
         }
 
         #endregion

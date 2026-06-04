@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Multi
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for MultiSliderUI()
+        /// </summary>
+        public static MultiSliderUI New()
+        {
+            return JVMBridgeBase.New<MultiSliderUI>();
+        }
 
         #endregion
 

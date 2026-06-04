@@ -74,6 +74,13 @@ namespace Javax.Sql.Rowset.Serial
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for SerialStruct(Java.Sql.SQLData arg0, Java.Util.Map%3CJava.Lang.String, Java.Lang.Class%3E arg1)
+        /// </summary>
+        public static SerialStruct New(Java.Sql.SQLData arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
+        {
+            return JVMBridgeBase.New<SerialStruct>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/serial/SerialStruct.html#javax.sql.rowset.serial.SerialStruct(java.sql.Struct,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Struct"/></param>
@@ -82,6 +89,13 @@ namespace Javax.Sql.Rowset.Serial
         public SerialStruct(Java.Sql.Struct arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for SerialStruct(Java.Sql.Struct arg0, Java.Util.Map%3CJava.Lang.String, Java.Lang.Class%3E arg1)
+        /// </summary>
+        public static SerialStruct New(Java.Sql.Struct arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
+        {
+            return JVMBridgeBase.New<SerialStruct>(arg0, arg1);
         }
 
         #endregion

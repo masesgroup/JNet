@@ -71,12 +71,26 @@ namespace Javax.Xml.Transform.Sax
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for SAXSource()
+        /// </summary>
+        public static SAXSource New()
+        {
+            return JVMBridgeBase.New<SAXSource>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/sax/SAXSource.html#javax.xml.transform.sax.SAXSource(org.xml.sax.InputSource)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
         public SAXSource(Org.Xml.Sax.InputSource arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for SAXSource(Org.Xml.Sax.InputSource arg0)
+        /// </summary>
+        public static SAXSource New(Org.Xml.Sax.InputSource arg0)
+        {
+            return JVMBridgeBase.New<SAXSource>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/sax/SAXSource.html#javax.xml.transform.sax.SAXSource(org.xml.sax.XMLReader,org.xml.sax.InputSource)"/>
@@ -86,6 +100,13 @@ namespace Javax.Xml.Transform.Sax
         public SAXSource(Org.Xml.Sax.XMLReader arg0, Org.Xml.Sax.InputSource arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for SAXSource(Org.Xml.Sax.XMLReader arg0, Org.Xml.Sax.InputSource arg1)
+        /// </summary>
+        public static SAXSource New(Org.Xml.Sax.XMLReader arg0, Org.Xml.Sax.InputSource arg1)
+        {
+            return JVMBridgeBase.New<SAXSource>(arg0, arg1);
         }
 
         #endregion

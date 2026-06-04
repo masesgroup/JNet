@@ -74,6 +74,13 @@ namespace Javax.Security.Auth.X500
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for X500PrivateCredential(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static X500PrivateCredential New(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<X500PrivateCredential>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/x500/X500PrivateCredential.html#javax.security.auth.x500.X500PrivateCredential(java.security.cert.X509Certificate,java.security.PrivateKey)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
@@ -81,6 +88,13 @@ namespace Javax.Security.Auth.X500
         public X500PrivateCredential(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for X500PrivateCredential(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1)
+        /// </summary>
+        public static X500PrivateCredential New(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1)
+        {
+            return JVMBridgeBase.New<X500PrivateCredential>(arg0, arg1);
         }
 
         #endregion

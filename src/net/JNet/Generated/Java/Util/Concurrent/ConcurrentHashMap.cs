@@ -177,6 +177,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ConcurrentHashMap()
+        /// </summary>
+        public static ConcurrentHashMap New()
+        {
+            return JVMBridgeBase.New<ConcurrentHashMap>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html#java.util.concurrent.ConcurrentHashMap(int,float,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -185,6 +192,13 @@ namespace Java.Util.Concurrent
         public ConcurrentHashMap(int arg0, float arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentHashMap(int arg0, float arg1, int arg2)
+        /// </summary>
+        public static ConcurrentHashMap New(int arg0, float arg1, int arg2)
+        {
+            return JVMBridgeBase.New<ConcurrentHashMap>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html#java.util.concurrent.ConcurrentHashMap(int,float)"/>
@@ -196,6 +210,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ConcurrentHashMap(int arg0, float arg1)
+        /// </summary>
+        public static ConcurrentHashMap New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<ConcurrentHashMap>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html#java.util.concurrent.ConcurrentHashMap(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -204,12 +225,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ConcurrentHashMap(int arg0)
+        /// </summary>
+        public static ConcurrentHashMap New(int arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentHashMap>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html#java.util.concurrent.ConcurrentHashMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public ConcurrentHashMap(Java.Util.Map arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentHashMap(Java.Util.Map arg0)
+        /// </summary>
+        public static ConcurrentHashMap New(Java.Util.Map arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentHashMap>(arg0);
         }
 
         #endregion
@@ -747,6 +782,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ConcurrentHashMap()
+        /// </summary>
+        public static ConcurrentHashMap<K, V> New()
+        {
+            return JVMBridgeBase.New<ConcurrentHashMap<K, V>>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html#java.util.concurrent.ConcurrentHashMap(int,float,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -755,6 +797,13 @@ namespace Java.Util.Concurrent
         public ConcurrentHashMap(int arg0, float arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentHashMap(int arg0, float arg1, int arg2)
+        /// </summary>
+        public static ConcurrentHashMap<K, V> New(int arg0, float arg1, int arg2)
+        {
+            return JVMBridgeBase.New<ConcurrentHashMap<K, V>>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html#java.util.concurrent.ConcurrentHashMap(int,float)"/>
@@ -766,6 +815,13 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ConcurrentHashMap(int arg0, float arg1)
+        /// </summary>
+        public static ConcurrentHashMap<K, V> New(int arg0, float arg1)
+        {
+            return JVMBridgeBase.New<ConcurrentHashMap<K, V>>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html#java.util.concurrent.ConcurrentHashMap(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -774,12 +830,26 @@ namespace Java.Util.Concurrent
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ConcurrentHashMap(int arg0)
+        /// </summary>
+        public static ConcurrentHashMap<K, V> New(int arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentHashMap<K, V>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html#java.util.concurrent.ConcurrentHashMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public ConcurrentHashMap(Java.Util.Map<K, V> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ConcurrentHashMap(Java.Util.Map%3CK, V%3E arg0)
+        /// </summary>
+        public static ConcurrentHashMap<K, V> New(Java.Util.Map<K, V> arg0)
+        {
+            return JVMBridgeBase.New<ConcurrentHashMap<K, V>>(arg0);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Javax.Swing.Text
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for PasswordView(Javax.Swing.Text.Element arg0)
+        /// </summary>
+        public static PasswordView New(Javax.Swing.Text.Element arg0)
+        {
+            return JVMBridgeBase.New<PasswordView>(arg0);
+        }
 
         #endregion
 

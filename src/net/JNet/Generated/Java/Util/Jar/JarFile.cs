@@ -75,6 +75,13 @@ namespace Java.Util.Jar
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for JarFile(Java.Io.File arg0, bool arg1, int arg2)
+        /// </summary>
+        public static JarFile New(Java.Io.File arg0, bool arg1, int arg2)
+        {
+            return JVMBridgeBase.New<JarFile>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/JarFile.html#java.util.jar.JarFile(java.io.File,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -85,6 +92,13 @@ namespace Java.Util.Jar
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JarFile(Java.Io.File arg0, bool arg1)
+        /// </summary>
+        public static JarFile New(Java.Io.File arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<JarFile>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/JarFile.html#java.util.jar.JarFile(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -92,6 +106,13 @@ namespace Java.Util.Jar
         public JarFile(Java.Io.File arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JarFile(Java.Io.File arg0)
+        /// </summary>
+        public static JarFile New(Java.Io.File arg0)
+        {
+            return JVMBridgeBase.New<JarFile>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/JarFile.html#java.util.jar.JarFile(java.lang.String,boolean)"/>
@@ -104,6 +125,13 @@ namespace Java.Util.Jar
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for JarFile(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static JarFile New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<JarFile>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/JarFile.html#java.util.jar.JarFile(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -111,6 +139,13 @@ namespace Java.Util.Jar
         public JarFile(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for JarFile(Java.Lang.String arg0)
+        /// </summary>
+        public static JarFile New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<JarFile>(arg0);
         }
 
         #endregion

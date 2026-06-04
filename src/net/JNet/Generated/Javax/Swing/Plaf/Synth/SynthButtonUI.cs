@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf.Synth
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SynthButtonUI()
+        /// </summary>
+        public static SynthButtonUI New()
+        {
+            return JVMBridgeBase.New<SynthButtonUI>();
+        }
 
         #endregion
 

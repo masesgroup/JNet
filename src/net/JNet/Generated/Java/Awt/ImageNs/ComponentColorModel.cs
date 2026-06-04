@@ -76,6 +76,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for ComponentColorModel(Java.Awt.ColorNs.ColorSpace arg0, bool arg1, bool arg2, int arg3, int arg4)
+        /// </summary>
+        public static ComponentColorModel New(Java.Awt.ColorNs.ColorSpace arg0, bool arg1, bool arg2, int arg3, int arg4)
+        {
+            return JVMBridgeBase.New<ComponentColorModel>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/ComponentColorModel.html#java.awt.image.ComponentColorModel(java.awt.color.ColorSpace,int[],boolean,boolean,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ColorNs.ColorSpace"/></param>
@@ -87,6 +94,13 @@ namespace Java.Awt.ImageNs
         public ComponentColorModel(Java.Awt.ColorNs.ColorSpace arg0, int[] arg1, bool arg2, bool arg3, int arg4, int arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for ComponentColorModel(Java.Awt.ColorNs.ColorSpace arg0, int[] arg1, bool arg2, bool arg3, int arg4, int arg5)
+        /// </summary>
+        public static ComponentColorModel New(Java.Awt.ColorNs.ColorSpace arg0, int[] arg1, bool arg2, bool arg3, int arg4, int arg5)
+        {
+            return JVMBridgeBase.New<ComponentColorModel>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

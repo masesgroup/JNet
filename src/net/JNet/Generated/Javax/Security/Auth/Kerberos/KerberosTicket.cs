@@ -81,6 +81,13 @@ namespace Javax.Security.Auth.Kerberos
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
+        /// <summary>
+        /// HPA initializer for KerberosTicket(byte[] arg0, Javax.Security.Auth.Kerberos.KerberosPrincipal arg1, Javax.Security.Auth.Kerberos.KerberosPrincipal arg2, byte[] arg3, int arg4, bool[] arg5, Java.Util.Date arg6, Java.Util.Date arg7, Java.Util.Date arg8, Java.Util.Date arg9, Java.Net.InetAddress[] arg10)
+        /// </summary>
+        public static KerberosTicket New(byte[] arg0, Javax.Security.Auth.Kerberos.KerberosPrincipal arg1, Javax.Security.Auth.Kerberos.KerberosPrincipal arg2, byte[] arg3, int arg4, bool[] arg5, Java.Util.Date arg6, Java.Util.Date arg7, Java.Util.Date arg8, Java.Util.Date arg9, Java.Net.InetAddress[] arg10)
+        {
+            return JVMBridgeBase.New<KerberosTicket>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+        }
 
         #endregion
 

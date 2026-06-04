@@ -71,6 +71,13 @@ namespace Java.Util.Zip
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Deflater()
+        /// </summary>
+        public static Deflater New()
+        {
+            return JVMBridgeBase.New<Deflater>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Deflater.html#java.util.zip.Deflater(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,12 +87,26 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for Deflater(int arg0, bool arg1)
+        /// </summary>
+        public static Deflater New(int arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<Deflater>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Deflater.html#java.util.zip.Deflater(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public Deflater(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Deflater(int arg0)
+        /// </summary>
+        public static Deflater New(int arg0)
+        {
+            return JVMBridgeBase.New<Deflater>(arg0);
         }
 
         #endregion

@@ -71,6 +71,13 @@ namespace Java.Beans
         {
             InvokeInitializer(arg0);
         }
+        /// <summary>
+        /// HPA initializer for PropertyChangeSupport(object arg0)
+        /// </summary>
+        public static PropertyChangeSupport New(object arg0)
+        {
+            return JVMBridgeBase.New<PropertyChangeSupport>(arg0);
+        }
 
         #endregion
 

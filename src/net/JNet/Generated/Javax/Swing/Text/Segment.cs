@@ -71,6 +71,13 @@ namespace Javax.Swing.Text
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for Segment()
+        /// </summary>
+        public static Segment New()
+        {
+            return JVMBridgeBase.New<Segment>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/Segment.html#javax.swing.text.Segment(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
@@ -79,6 +86,13 @@ namespace Javax.Swing.Text
         public Segment(char[] arg0, int arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for Segment(char[] arg0, int arg1, int arg2)
+        /// </summary>
+        public static Segment New(char[] arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<Segment>(arg0, arg1, arg2);
         }
 
         #endregion

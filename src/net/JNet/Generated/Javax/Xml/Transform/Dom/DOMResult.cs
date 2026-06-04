@@ -71,6 +71,13 @@ namespace Javax.Xml.Transform.Dom
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for DOMResult()
+        /// </summary>
+        public static DOMResult New()
+        {
+            return JVMBridgeBase.New<DOMResult>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/dom/DOMResult.html#javax.xml.transform.dom.DOMResult(org.w3c.dom.Node,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
@@ -78,6 +85,13 @@ namespace Javax.Xml.Transform.Dom
         public DOMResult(Org.W3c.Dom.Node arg0, Java.Lang.String arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for DOMResult(Org.W3c.Dom.Node arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static DOMResult New(Org.W3c.Dom.Node arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<DOMResult>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/dom/DOMResult.html#javax.xml.transform.dom.DOMResult(org.w3c.dom.Node,org.w3c.dom.Node,java.lang.String)"/>
@@ -90,6 +104,13 @@ namespace Javax.Xml.Transform.Dom
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for DOMResult(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1, Java.Lang.String arg2)
+        /// </summary>
+        public static DOMResult New(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1, Java.Lang.String arg2)
+        {
+            return JVMBridgeBase.New<DOMResult>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/dom/DOMResult.html#javax.xml.transform.dom.DOMResult(org.w3c.dom.Node,org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
@@ -99,12 +120,26 @@ namespace Javax.Xml.Transform.Dom
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for DOMResult(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1)
+        /// </summary>
+        public static DOMResult New(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1)
+        {
+            return JVMBridgeBase.New<DOMResult>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/dom/DOMResult.html#javax.xml.transform.dom.DOMResult(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         public DOMResult(Org.W3c.Dom.Node arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for DOMResult(Org.W3c.Dom.Node arg0)
+        /// </summary>
+        public static DOMResult New(Org.W3c.Dom.Node arg0)
+        {
+            return JVMBridgeBase.New<DOMResult>(arg0);
         }
 
         #endregion

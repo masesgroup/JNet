@@ -73,6 +73,13 @@ namespace Java.Awt
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for TextArea()
+        /// </summary>
+        public static TextArea New()
+        {
+            return JVMBridgeBase.New<TextArea>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextArea.html#java.awt.TextArea(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -81,6 +88,13 @@ namespace Java.Awt
         public TextArea(int arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for TextArea(int arg0, int arg1)
+        /// </summary>
+        public static TextArea New(int arg0, int arg1)
+        {
+            return JVMBridgeBase.New<TextArea>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextArea.html#java.awt.TextArea(java.lang.String,int,int,int)"/>
@@ -95,6 +109,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for TextArea(Java.Lang.String arg0, int arg1, int arg2, int arg3)
+        /// </summary>
+        public static TextArea New(Java.Lang.String arg0, int arg1, int arg2, int arg3)
+        {
+            return JVMBridgeBase.New<TextArea>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextArea.html#java.awt.TextArea(java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -106,6 +127,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for TextArea(Java.Lang.String arg0, int arg1, int arg2)
+        /// </summary>
+        public static TextArea New(Java.Lang.String arg0, int arg1, int arg2)
+        {
+            return JVMBridgeBase.New<TextArea>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextArea.html#java.awt.TextArea(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -113,6 +141,13 @@ namespace Java.Awt
         public TextArea(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for TextArea(Java.Lang.String arg0)
+        /// </summary>
+        public static TextArea New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<TextArea>(arg0);
         }
 
         #endregion

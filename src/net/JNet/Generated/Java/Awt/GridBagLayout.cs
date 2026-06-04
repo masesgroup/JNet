@@ -70,6 +70,13 @@ namespace Java.Awt
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for GridBagLayout()
+        /// </summary>
+        public static GridBagLayout New()
+        {
+            return JVMBridgeBase.New<GridBagLayout>();
+        }
 
         #endregion
 

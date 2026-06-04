@@ -79,6 +79,13 @@ namespace Java.Awt.FontNs
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
+        /// <summary>
+        /// HPA initializer for GlyphJustificationInfo(float arg0, bool arg1, int arg2, float arg3, float arg4, bool arg5, int arg6, float arg7, float arg8)
+        /// </summary>
+        public static GlyphJustificationInfo New(float arg0, bool arg1, int arg2, float arg3, float arg4, bool arg5, int arg6, float arg7, float arg8)
+        {
+            return JVMBridgeBase.New<GlyphJustificationInfo>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
 
         #endregion
 

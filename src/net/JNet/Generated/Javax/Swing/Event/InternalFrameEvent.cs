@@ -72,6 +72,13 @@ namespace Javax.Swing.Event
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for InternalFrameEvent(Javax.Swing.JInternalFrame arg0, int arg1)
+        /// </summary>
+        public static InternalFrameEvent New(Javax.Swing.JInternalFrame arg0, int arg1)
+        {
+            return JVMBridgeBase.New<InternalFrameEvent>(arg0, arg1);
+        }
 
         #endregion
 

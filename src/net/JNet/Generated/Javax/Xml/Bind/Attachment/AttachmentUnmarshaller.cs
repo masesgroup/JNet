@@ -70,6 +70,13 @@ namespace Javax.Xml.Bind.Attachment
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for AttachmentUnmarshaller()
+        /// </summary>
+        public static AttachmentUnmarshaller New()
+        {
+            return JVMBridgeBase.New<AttachmentUnmarshaller>();
+        }
 
         #endregion
 

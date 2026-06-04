@@ -72,6 +72,13 @@ namespace Java.Awt.Dnd
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DragSource()
+        /// </summary>
+        public static DragSource New()
+        {
+            return JVMBridgeBase.New<DragSource>();
+        }
 
         #endregion
 

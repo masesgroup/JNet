@@ -75,6 +75,13 @@ namespace Javax.Management
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for Notification(Java.Lang.String arg0, object arg1, long arg2, Java.Lang.String arg3)
+        /// </summary>
+        public static Notification New(Java.Lang.String arg0, object arg1, long arg2, Java.Lang.String arg3)
+        {
+            return JVMBridgeBase.New<Notification>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/Notification.html#javax.management.Notification(java.lang.String,java.lang.Object,long,long,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -85,6 +92,13 @@ namespace Javax.Management
         public Notification(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// HPA initializer for Notification(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4)
+        /// </summary>
+        public static Notification New(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4)
+        {
+            return JVMBridgeBase.New<Notification>(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/Notification.html#javax.management.Notification(java.lang.String,java.lang.Object,long,long)"/>
@@ -98,6 +112,13 @@ namespace Javax.Management
             InvokeInitializer(arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// HPA initializer for Notification(Java.Lang.String arg0, object arg1, long arg2, long arg3)
+        /// </summary>
+        public static Notification New(Java.Lang.String arg0, object arg1, long arg2, long arg3)
+        {
+            return JVMBridgeBase.New<Notification>(arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/Notification.html#javax.management.Notification(java.lang.String,java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -106,6 +127,13 @@ namespace Javax.Management
         public Notification(Java.Lang.String arg0, object arg1, long arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// HPA initializer for Notification(Java.Lang.String arg0, object arg1, long arg2)
+        /// </summary>
+        public static Notification New(Java.Lang.String arg0, object arg1, long arg2)
+        {
+            return JVMBridgeBase.New<Notification>(arg0, arg1, arg2);
         }
 
         #endregion

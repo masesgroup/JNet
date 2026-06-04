@@ -72,12 +72,26 @@ namespace Javax.Swing.Text
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for ElementIterator(Javax.Swing.Text.Document arg0)
+        /// </summary>
+        public static ElementIterator New(Javax.Swing.Text.Document arg0)
+        {
+            return JVMBridgeBase.New<ElementIterator>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/ElementIterator.html#javax.swing.text.ElementIterator(javax.swing.text.Element)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
         public ElementIterator(Javax.Swing.Text.Element arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ElementIterator(Javax.Swing.Text.Element arg0)
+        /// </summary>
+        public static ElementIterator New(Javax.Swing.Text.Element arg0)
+        {
+            return JVMBridgeBase.New<ElementIterator>(arg0);
         }
 
         #endregion

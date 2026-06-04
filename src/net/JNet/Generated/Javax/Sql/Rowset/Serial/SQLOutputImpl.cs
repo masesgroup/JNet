@@ -73,6 +73,13 @@ namespace Javax.Sql.Rowset.Serial
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for SQLOutputImpl(Java.Util.Vector%3Cobject%3E arg0, Java.Util.Map%3CJava.Lang.String, object%3E arg1)
+        /// </summary>
+        public static SQLOutputImpl New(Java.Util.Vector<object> arg0, Java.Util.Map<Java.Lang.String, object> arg1)
+        {
+            return JVMBridgeBase.New<SQLOutputImpl>(arg0, arg1);
+        }
 
         #endregion
 

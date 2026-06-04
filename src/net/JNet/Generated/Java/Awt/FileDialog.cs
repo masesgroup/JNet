@@ -74,6 +74,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for FileDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, int arg2)
+        /// </summary>
+        public static FileDialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1, int arg2)
+        {
+            return JVMBridgeBase.New<FileDialog>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/FileDialog.html#java.awt.FileDialog(java.awt.Dialog,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
@@ -83,12 +90,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for FileDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static FileDialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<FileDialog>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/FileDialog.html#java.awt.FileDialog(java.awt.Dialog)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
         public FileDialog(Java.Awt.Dialog arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FileDialog(Java.Awt.Dialog arg0)
+        /// </summary>
+        public static FileDialog New(Java.Awt.Dialog arg0)
+        {
+            return JVMBridgeBase.New<FileDialog>(arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/FileDialog.html#java.awt.FileDialog(java.awt.Frame,java.lang.String,int)"/>
@@ -101,6 +122,13 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for FileDialog(Java.Awt.Frame arg0, Java.Lang.String arg1, int arg2)
+        /// </summary>
+        public static FileDialog New(Java.Awt.Frame arg0, Java.Lang.String arg1, int arg2)
+        {
+            return JVMBridgeBase.New<FileDialog>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/FileDialog.html#java.awt.FileDialog(java.awt.Frame,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
@@ -110,12 +138,26 @@ namespace Java.Awt
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for FileDialog(Java.Awt.Frame arg0, Java.Lang.String arg1)
+        /// </summary>
+        public static FileDialog New(Java.Awt.Frame arg0, Java.Lang.String arg1)
+        {
+            return JVMBridgeBase.New<FileDialog>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/FileDialog.html#java.awt.FileDialog(java.awt.Frame)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
         public FileDialog(Java.Awt.Frame arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for FileDialog(Java.Awt.Frame arg0)
+        /// </summary>
+        public static FileDialog New(Java.Awt.Frame arg0)
+        {
+            return JVMBridgeBase.New<FileDialog>(arg0);
         }
 
         #endregion

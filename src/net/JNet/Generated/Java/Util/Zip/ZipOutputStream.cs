@@ -73,12 +73,26 @@ namespace Java.Util.Zip
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ZipOutputStream(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1)
+        /// </summary>
+        public static ZipOutputStream New(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1)
+        {
+            return JVMBridgeBase.New<ZipOutputStream>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipOutputStream.html#java.util.zip.ZipOutputStream(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public ZipOutputStream(Java.Io.OutputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ZipOutputStream(Java.Io.OutputStream arg0)
+        /// </summary>
+        public static ZipOutputStream New(Java.Io.OutputStream arg0)
+        {
+            return JVMBridgeBase.New<ZipOutputStream>(arg0);
         }
 
         #endregion

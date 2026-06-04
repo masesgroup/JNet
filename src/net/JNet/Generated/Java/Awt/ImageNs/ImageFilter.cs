@@ -70,6 +70,13 @@ namespace Java.Awt.ImageNs
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for ImageFilter()
+        /// </summary>
+        public static ImageFilter New()
+        {
+            return JVMBridgeBase.New<ImageFilter>();
+        }
 
         #endregion
 

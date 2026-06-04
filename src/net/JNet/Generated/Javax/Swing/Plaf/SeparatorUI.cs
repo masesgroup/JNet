@@ -70,6 +70,13 @@ namespace Javax.Swing.Plaf
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for SeparatorUI()
+        /// </summary>
+        public static SeparatorUI New()
+        {
+            return JVMBridgeBase.New<SeparatorUI>();
+        }
 
         #endregion
 

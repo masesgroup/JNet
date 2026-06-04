@@ -78,6 +78,13 @@ namespace Java.Awt.ImageNs
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
+        /// HPA initializer for ComponentSampleModel(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int[] arg6)
+        /// </summary>
+        public static ComponentSampleModel New(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int[] arg6)
+        {
+            return JVMBridgeBase.New<ComponentSampleModel>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/ComponentSampleModel.html#java.awt.image.ComponentSampleModel(int,int,int,int,int,int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -89,6 +96,13 @@ namespace Java.Awt.ImageNs
         public ComponentSampleModel(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// HPA initializer for ComponentSampleModel(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5)
+        /// </summary>
+        public static ComponentSampleModel New(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5)
+        {
+            return JVMBridgeBase.New<ComponentSampleModel>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

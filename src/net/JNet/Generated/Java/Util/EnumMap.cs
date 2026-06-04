@@ -108,6 +108,13 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for EnumMap(Java.Lang.Class arg0)
+        /// </summary>
+        public static EnumMap New(Java.Lang.Class arg0)
+        {
+            return JVMBridgeBase.New<EnumMap>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/EnumMap.html#java.util.EnumMap(java.util.EnumMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EnumMap"/></param>
@@ -116,12 +123,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for EnumMap(Java.Util.EnumMap arg0)
+        /// </summary>
+        public static EnumMap New(Java.Util.EnumMap arg0)
+        {
+            return JVMBridgeBase.New<EnumMap>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/EnumMap.html#java.util.EnumMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public EnumMap(Java.Util.Map arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for EnumMap(Java.Util.Map arg0)
+        /// </summary>
+        public static EnumMap New(Java.Util.Map arg0)
+        {
+            return JVMBridgeBase.New<EnumMap>(arg0);
         }
 
         #endregion
@@ -189,6 +210,13 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for EnumMap(Java.Lang.Class arg0)
+        /// </summary>
+        public static EnumMap<K, V> New(Java.Lang.Class arg0)
+        {
+            return JVMBridgeBase.New<EnumMap<K, V>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/EnumMap.html#java.util.EnumMap(java.util.EnumMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EnumMap"/></param>
@@ -197,12 +225,26 @@ namespace Java.Util
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for EnumMap(Java.Util.EnumMap%3CK, V%3E arg0)
+        /// </summary>
+        public static EnumMap<K, V> New(Java.Util.EnumMap<K, V> arg0)
+        {
+            return JVMBridgeBase.New<EnumMap<K, V>>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/EnumMap.html#java.util.EnumMap(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public EnumMap(Java.Util.Map<K, V> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for EnumMap(Java.Util.Map%3CK, V%3E arg0)
+        /// </summary>
+        public static EnumMap<K, V> New(Java.Util.Map<K, V> arg0)
+        {
+            return JVMBridgeBase.New<EnumMap<K, V>>(arg0);
         }
 
         #endregion

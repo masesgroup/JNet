@@ -198,6 +198,13 @@ namespace Javax.Xml.Bind.Annotation
             {
                 InvokeInitializer();
             }
+            /// <summary>
+            /// HPA initializer for DEFAULT()
+            /// </summary>
+            public static DEFAULT New()
+            {
+                return JVMBridgeBase.New<DEFAULT>();
+            }
 
             #endregion
 

@@ -72,6 +72,13 @@ namespace Javax.Print.Event
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for PrintServiceAttributeEvent(Javax.Print.PrintService arg0, Javax.Print.Attribute.PrintServiceAttributeSet arg1)
+        /// </summary>
+        public static PrintServiceAttributeEvent New(Javax.Print.PrintService arg0, Javax.Print.Attribute.PrintServiceAttributeSet arg1)
+        {
+            return JVMBridgeBase.New<PrintServiceAttributeEvent>(arg0, arg1);
+        }
 
         #endregion
 

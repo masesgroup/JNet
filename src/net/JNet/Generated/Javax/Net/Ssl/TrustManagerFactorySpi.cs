@@ -70,6 +70,13 @@ namespace Javax.Net.Ssl
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for TrustManagerFactorySpi()
+        /// </summary>
+        public static TrustManagerFactorySpi New()
+        {
+            return JVMBridgeBase.New<TrustManagerFactorySpi>();
+        }
 
         #endregion
 

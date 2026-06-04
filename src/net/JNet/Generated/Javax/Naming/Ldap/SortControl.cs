@@ -74,6 +74,13 @@ namespace Javax.Naming.Ldap
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for SortControl(Java.Lang.String arg0, bool arg1)
+        /// </summary>
+        public static SortControl New(Java.Lang.String arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<SortControl>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/SortControl.html#javax.naming.ldap.SortControl(java.lang.String[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -84,6 +91,13 @@ namespace Javax.Naming.Ldap
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for SortControl(Java.Lang.String[] arg0, bool arg1)
+        /// </summary>
+        public static SortControl New(Java.Lang.String[] arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<SortControl>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/ldap/SortControl.html#javax.naming.ldap.SortControl(javax.naming.ldap.SortKey[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Ldap.SortKey"/></param>
@@ -92,6 +106,13 @@ namespace Javax.Naming.Ldap
         public SortControl(Javax.Naming.Ldap.SortKey[] arg0, bool arg1) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1);
+        }
+        /// <summary>
+        /// HPA initializer for SortControl(Javax.Naming.Ldap.SortKey[] arg0, bool arg1)
+        /// </summary>
+        public static SortControl New(Javax.Naming.Ldap.SortKey[] arg0, bool arg1)
+        {
+            return JVMBridgeBase.New<SortControl>(arg0, arg1);
         }
 
         #endregion

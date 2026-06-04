@@ -73,12 +73,26 @@ namespace Java.Io
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for PushbackReader(Java.Io.Reader arg0, int arg1)
+        /// </summary>
+        public static PushbackReader New(Java.Io.Reader arg0, int arg1)
+        {
+            return JVMBridgeBase.New<PushbackReader>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/PushbackReader.html#java.io.PushbackReader(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public PushbackReader(Java.Io.Reader arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for PushbackReader(Java.Io.Reader arg0)
+        /// </summary>
+        public static PushbackReader New(Java.Io.Reader arg0)
+        {
+            return JVMBridgeBase.New<PushbackReader>(arg0);
         }
 
         #endregion

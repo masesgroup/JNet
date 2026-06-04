@@ -72,6 +72,13 @@ namespace Javax.Swing
         {
             InvokeInitializer(arg0, arg1);
         }
+        /// <summary>
+        /// HPA initializer for BoxLayout(Java.Awt.Container arg0, int arg1)
+        /// </summary>
+        public static BoxLayout New(Java.Awt.Container arg0, int arg1)
+        {
+            return JVMBridgeBase.New<BoxLayout>(arg0, arg1);
+        }
 
         #endregion
 

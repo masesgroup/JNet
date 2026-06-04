@@ -76,6 +76,13 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// HPA initializer for BevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
+        /// </summary>
+        public static BevelBorder New(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
+        {
+            return JVMBridgeBase.New<BevelBorder>(arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/BevelBorder.html#javax.swing.border.BevelBorder(int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -86,12 +93,26 @@ namespace Javax.Swing.Border
             InvokeInitializer(arg0, arg1, arg2);
         }
         /// <summary>
+        /// HPA initializer for BevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
+        /// </summary>
+        public static BevelBorder New(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
+        {
+            return JVMBridgeBase.New<BevelBorder>(arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/border/BevelBorder.html#javax.swing.border.BevelBorder(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public BevelBorder(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for BevelBorder(int arg0)
+        /// </summary>
+        public static BevelBorder New(int arg0)
+        {
+            return JVMBridgeBase.New<BevelBorder>(arg0);
         }
 
         #endregion

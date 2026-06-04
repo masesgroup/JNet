@@ -71,6 +71,13 @@ namespace Java.Awt.ImageNs.Renderable
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for ParameterBlock()
+        /// </summary>
+        public static ParameterBlock New()
+        {
+            return JVMBridgeBase.New<ParameterBlock>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/ParameterBlock.html#java.awt.image.renderable.ParameterBlock(java.util.Vector,java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
@@ -80,12 +87,26 @@ namespace Java.Awt.ImageNs.Renderable
             InvokeInitializer(arg0, arg1);
         }
         /// <summary>
+        /// HPA initializer for ParameterBlock(Java.Util.Vector%3Cobject%3E arg0, Java.Util.Vector%3Cobject%3E arg1)
+        /// </summary>
+        public static ParameterBlock New(Java.Util.Vector<object> arg0, Java.Util.Vector<object> arg1)
+        {
+            return JVMBridgeBase.New<ParameterBlock>(arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/ParameterBlock.html#java.awt.image.renderable.ParameterBlock(java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         public ParameterBlock(Java.Util.Vector<object> arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for ParameterBlock(Java.Util.Vector%3Cobject%3E arg0)
+        /// </summary>
+        public static ParameterBlock New(Java.Util.Vector<object> arg0)
+        {
+            return JVMBridgeBase.New<ParameterBlock>(arg0);
         }
 
         #endregion

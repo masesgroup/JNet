@@ -71,12 +71,26 @@ namespace Java.Io
             InvokeInitializer();
         }
         /// <summary>
+        /// HPA initializer for StringWriter()
+        /// </summary>
+        public static StringWriter New()
+        {
+            return JVMBridgeBase.New<StringWriter>();
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/StringWriter.html#java.io.StringWriter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public StringWriter(int arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for StringWriter(int arg0)
+        /// </summary>
+        public static StringWriter New(int arg0)
+        {
+            return JVMBridgeBase.New<StringWriter>(arg0);
         }
 
         #endregion

@@ -73,12 +73,26 @@ namespace Java.Lang
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for Long(Java.Lang.String arg0)
+        /// </summary>
+        public static Long New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<Long>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html#java.lang.Long(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public Long(long arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for Long(long arg0)
+        /// </summary>
+        public static Long New(long arg0)
+        {
+            return JVMBridgeBase.New<Long>(arg0);
         }
 
         #endregion

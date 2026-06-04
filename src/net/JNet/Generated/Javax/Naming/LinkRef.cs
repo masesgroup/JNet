@@ -72,12 +72,26 @@ namespace Javax.Naming
             InvokeInitializer(arg0);
         }
         /// <summary>
+        /// HPA initializer for LinkRef(Java.Lang.String arg0)
+        /// </summary>
+        public static LinkRef New(Java.Lang.String arg0)
+        {
+            return JVMBridgeBase.New<LinkRef>(arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/naming/LinkRef.html#javax.naming.LinkRef(javax.naming.Name)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
         public LinkRef(Javax.Naming.Name arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
+        }
+        /// <summary>
+        /// HPA initializer for LinkRef(Javax.Naming.Name arg0)
+        /// </summary>
+        public static LinkRef New(Javax.Naming.Name arg0)
+        {
+            return JVMBridgeBase.New<LinkRef>(arg0);
         }
 
         #endregion

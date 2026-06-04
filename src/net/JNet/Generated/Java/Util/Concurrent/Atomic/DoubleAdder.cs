@@ -70,6 +70,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             InvokeInitializer();
         }
+        /// <summary>
+        /// HPA initializer for DoubleAdder()
+        /// </summary>
+        public static DoubleAdder New()
+        {
+            return JVMBridgeBase.New<DoubleAdder>();
+        }
 
         #endregion
 
