@@ -74,7 +74,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for ComponentView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static ComponentView New(Javax.Swing.Text.Element arg0)
+        public static ComponentView CreatePoolableInstance(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<ComponentView>(arg0);
         }

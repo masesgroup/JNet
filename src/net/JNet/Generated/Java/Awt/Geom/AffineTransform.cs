@@ -73,7 +73,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for AffineTransform()
         /// </summary>
-        public static AffineTransform New()
+        public static AffineTransform CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AffineTransform>();
         }
@@ -93,7 +93,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for AffineTransform(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         /// </summary>
-        public static AffineTransform New(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
+        public static AffineTransform CreatePoolableInstance(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
             return JVMBridgeBase.New<AffineTransform>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -108,7 +108,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for AffineTransform(double[] arg0)
         /// </summary>
-        public static AffineTransform New(double[] arg0)
+        public static AffineTransform CreatePoolableInstance(double[] arg0)
         {
             return JVMBridgeBase.New<AffineTransform>(arg0);
         }
@@ -128,7 +128,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for AffineTransform(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
         /// </summary>
-        public static AffineTransform New(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
+        public static AffineTransform CreatePoolableInstance(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
         {
             return JVMBridgeBase.New<AffineTransform>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -143,7 +143,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for AffineTransform(float[] arg0)
         /// </summary>
-        public static AffineTransform New(float[] arg0)
+        public static AffineTransform CreatePoolableInstance(float[] arg0)
         {
             return JVMBridgeBase.New<AffineTransform>(arg0);
         }
@@ -158,7 +158,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for AffineTransform(Java.Awt.Geom.AffineTransform arg0)
         /// </summary>
-        public static AffineTransform New(Java.Awt.Geom.AffineTransform arg0)
+        public static AffineTransform CreatePoolableInstance(Java.Awt.Geom.AffineTransform arg0)
         {
             return JVMBridgeBase.New<AffineTransform>(arg0);
         }

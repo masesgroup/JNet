@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiSliderUI()
         /// </summary>
-        public static MultiSliderUI New()
+        public static MultiSliderUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MultiSliderUI>();
         }

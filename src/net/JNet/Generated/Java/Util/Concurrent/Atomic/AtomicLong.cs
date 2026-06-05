@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicLong()
         /// </summary>
-        public static AtomicLong New()
+        public static AtomicLong CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AtomicLong>();
         }
@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicLong(long arg0)
         /// </summary>
-        public static AtomicLong New(long arg0)
+        public static AtomicLong CreatePoolableInstance(long arg0)
         {
             return JVMBridgeBase.New<AtomicLong>(arg0);
         }

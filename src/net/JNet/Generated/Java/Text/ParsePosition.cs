@@ -74,7 +74,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for ParsePosition(int arg0)
         /// </summary>
-        public static ParsePosition New(int arg0)
+        public static ParsePosition CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ParsePosition>(arg0);
         }

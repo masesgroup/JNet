@@ -74,7 +74,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for PSSParameterSpec(int arg0)
         /// </summary>
-        public static PSSParameterSpec New(int arg0)
+        public static PSSParameterSpec CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<PSSParameterSpec>(arg0);
         }
@@ -93,7 +93,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for PSSParameterSpec(Java.Lang.String arg0, Java.Lang.String arg1, Java.Security.Spec.AlgorithmParameterSpec arg2, int arg3, int arg4)
         /// </summary>
-        public static PSSParameterSpec New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Security.Spec.AlgorithmParameterSpec arg2, int arg3, int arg4)
+        public static PSSParameterSpec CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Security.Spec.AlgorithmParameterSpec arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<PSSParameterSpec>(arg0, arg1, arg2, arg3, arg4);
         }

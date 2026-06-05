@@ -76,7 +76,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for DeflaterInputStream(Java.Io.InputStream arg0, Java.Util.Zip.Deflater arg1, int arg2)
         /// </summary>
-        public static DeflaterInputStream New(Java.Io.InputStream arg0, Java.Util.Zip.Deflater arg1, int arg2)
+        public static DeflaterInputStream CreatePoolableInstance(Java.Io.InputStream arg0, Java.Util.Zip.Deflater arg1, int arg2)
         {
             return JVMBridgeBase.New<DeflaterInputStream>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for DeflaterInputStream(Java.Io.InputStream arg0, Java.Util.Zip.Deflater arg1)
         /// </summary>
-        public static DeflaterInputStream New(Java.Io.InputStream arg0, Java.Util.Zip.Deflater arg1)
+        public static DeflaterInputStream CreatePoolableInstance(Java.Io.InputStream arg0, Java.Util.Zip.Deflater arg1)
         {
             return JVMBridgeBase.New<DeflaterInputStream>(arg0, arg1);
         }
@@ -107,7 +107,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for DeflaterInputStream(Java.Io.InputStream arg0)
         /// </summary>
-        public static DeflaterInputStream New(Java.Io.InputStream arg0)
+        public static DeflaterInputStream CreatePoolableInstance(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<DeflaterInputStream>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for Utilities()
         /// </summary>
-        public static Utilities New()
+        public static Utilities CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Utilities>();
         }

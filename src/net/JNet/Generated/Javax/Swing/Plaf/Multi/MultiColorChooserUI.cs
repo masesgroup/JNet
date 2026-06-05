@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiColorChooserUI()
         /// </summary>
-        public static MultiColorChooserUI New()
+        public static MultiColorChooserUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MultiColorChooserUI>();
         }

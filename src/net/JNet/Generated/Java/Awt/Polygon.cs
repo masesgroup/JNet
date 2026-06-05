@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Polygon()
         /// </summary>
-        public static Polygon New()
+        public static Polygon CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Polygon>();
         }
@@ -90,7 +90,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Polygon(int[] arg0, int[] arg1, int arg2)
         /// </summary>
-        public static Polygon New(int[] arg0, int[] arg1, int arg2)
+        public static Polygon CreatePoolableInstance(int[] arg0, int[] arg1, int arg2)
         {
             return JVMBridgeBase.New<Polygon>(arg0, arg1, arg2);
         }

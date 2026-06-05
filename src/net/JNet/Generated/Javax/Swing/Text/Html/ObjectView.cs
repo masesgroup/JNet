@@ -74,7 +74,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for ObjectView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static ObjectView New(Javax.Swing.Text.Element arg0)
+        public static ObjectView CreatePoolableInstance(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<ObjectView>(arg0);
         }

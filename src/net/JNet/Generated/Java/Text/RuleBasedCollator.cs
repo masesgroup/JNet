@@ -75,7 +75,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for RuleBasedCollator(Java.Lang.String arg0)
         /// </summary>
-        public static RuleBasedCollator New(Java.Lang.String arg0)
+        public static RuleBasedCollator CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<RuleBasedCollator>(arg0);
         }

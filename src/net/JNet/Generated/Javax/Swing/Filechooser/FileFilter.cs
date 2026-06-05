@@ -73,7 +73,7 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// HPA initializer for FileFilter()
         /// </summary>
-        public static FileFilter New()
+        public static FileFilter CreatePoolableInstance()
         {
             return JVMBridgeBase.New<FileFilter>();
         }

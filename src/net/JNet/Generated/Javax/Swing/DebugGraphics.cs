@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DebugGraphics()
         /// </summary>
-        public static DebugGraphics New()
+        public static DebugGraphics CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DebugGraphics>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DebugGraphics(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
         /// </summary>
-        public static DebugGraphics New(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
+        public static DebugGraphics CreatePoolableInstance(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
         {
             return JVMBridgeBase.New<DebugGraphics>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DebugGraphics(Java.Awt.Graphics arg0)
         /// </summary>
-        public static DebugGraphics New(Java.Awt.Graphics arg0)
+        public static DebugGraphics CreatePoolableInstance(Java.Awt.Graphics arg0)
         {
             return JVMBridgeBase.New<DebugGraphics>(arg0);
         }

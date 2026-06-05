@@ -77,7 +77,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for EmptyBorder(int arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static EmptyBorder New(int arg0, int arg1, int arg2, int arg3)
+        public static EmptyBorder CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<EmptyBorder>(arg0, arg1, arg2, arg3);
         }
@@ -92,7 +92,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for EmptyBorder(Java.Awt.Insets arg0)
         /// </summary>
-        public static EmptyBorder New(Java.Awt.Insets arg0)
+        public static EmptyBorder CreatePoolableInstance(Java.Awt.Insets arg0)
         {
             return JVMBridgeBase.New<EmptyBorder>(arg0);
         }

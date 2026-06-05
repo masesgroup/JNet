@@ -73,7 +73,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// HPA initializer for MLet()
         /// </summary>
-        public static MLet New()
+        public static MLet CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MLet>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// HPA initializer for MLet(Java.Net.URL[] arg0, bool arg1)
         /// </summary>
-        public static MLet New(Java.Net.URL[] arg0, bool arg1)
+        public static MLet CreatePoolableInstance(Java.Net.URL[] arg0, bool arg1)
         {
             return JVMBridgeBase.New<MLet>(arg0, arg1);
         }
@@ -106,7 +106,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// HPA initializer for MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, bool arg2)
         /// </summary>
-        public static MLet New(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, bool arg2)
+        public static MLet CreatePoolableInstance(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, bool arg2)
         {
             return JVMBridgeBase.New<MLet>(arg0, arg1, arg2);
         }
@@ -124,7 +124,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// HPA initializer for MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2, bool arg3)
         /// </summary>
-        public static MLet New(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2, bool arg3)
+        public static MLet CreatePoolableInstance(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2, bool arg3)
         {
             return JVMBridgeBase.New<MLet>(arg0, arg1, arg2, arg3);
         }
@@ -141,7 +141,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// HPA initializer for MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
         /// </summary>
-        public static MLet New(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
+        public static MLet CreatePoolableInstance(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
         {
             return JVMBridgeBase.New<MLet>(arg0, arg1, arg2);
         }
@@ -157,7 +157,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// HPA initializer for MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
         /// </summary>
-        public static MLet New(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
+        public static MLet CreatePoolableInstance(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
         {
             return JVMBridgeBase.New<MLet>(arg0, arg1);
         }
@@ -172,7 +172,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// HPA initializer for MLet(Java.Net.URL[] arg0)
         /// </summary>
-        public static MLet New(Java.Net.URL[] arg0)
+        public static MLet CreatePoolableInstance(Java.Net.URL[] arg0)
         {
             return JVMBridgeBase.New<MLet>(arg0);
         }

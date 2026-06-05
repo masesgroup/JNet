@@ -79,7 +79,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// HPA initializer for AttributeList(Java.Lang.String arg0, int arg1, int arg2, Java.Lang.String arg3, Java.Util.Vector%3Cobject%3E arg4, Javax.Swing.Text.Html.Parser.AttributeList arg5)
         /// </summary>
-        public static AttributeList New(Java.Lang.String arg0, int arg1, int arg2, Java.Lang.String arg3, Java.Util.Vector<object> arg4, Javax.Swing.Text.Html.Parser.AttributeList arg5)
+        public static AttributeList CreatePoolableInstance(Java.Lang.String arg0, int arg1, int arg2, Java.Lang.String arg3, Java.Util.Vector<object> arg4, Javax.Swing.Text.Html.Parser.AttributeList arg5)
         {
             return JVMBridgeBase.New<AttributeList>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -94,7 +94,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// HPA initializer for AttributeList(Java.Lang.String arg0)
         /// </summary>
-        public static AttributeList New(Java.Lang.String arg0)
+        public static AttributeList CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<AttributeList>(arg0);
         }

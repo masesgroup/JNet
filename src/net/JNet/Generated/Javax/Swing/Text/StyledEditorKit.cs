@@ -345,7 +345,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for StyledEditorKit()
         /// </summary>
-        public static StyledEditorKit New()
+        public static StyledEditorKit CreatePoolableInstance()
         {
             return JVMBridgeBase.New<StyledEditorKit>();
         }
@@ -399,7 +399,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for AlignmentAction(Java.Lang.String arg0, int arg1)
             /// </summary>
-            public static AlignmentAction New(Java.Lang.String arg0, int arg1)
+            public static AlignmentAction CreatePoolableInstance(Java.Lang.String arg0, int arg1)
             {
                 return JVMBridgeBase.New<AlignmentAction>(arg0, arg1);
             }
@@ -444,7 +444,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for BoldAction()
             /// </summary>
-            public static BoldAction New()
+            public static BoldAction CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<BoldAction>();
             }
@@ -491,7 +491,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for FontFamilyAction(Java.Lang.String arg0, Java.Lang.String arg1)
             /// </summary>
-            public static FontFamilyAction New(Java.Lang.String arg0, Java.Lang.String arg1)
+            public static FontFamilyAction CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
             {
                 return JVMBridgeBase.New<FontFamilyAction>(arg0, arg1);
             }
@@ -538,7 +538,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for FontSizeAction(Java.Lang.String arg0, int arg1)
             /// </summary>
-            public static FontSizeAction New(Java.Lang.String arg0, int arg1)
+            public static FontSizeAction CreatePoolableInstance(Java.Lang.String arg0, int arg1)
             {
                 return JVMBridgeBase.New<FontSizeAction>(arg0, arg1);
             }
@@ -585,7 +585,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for ForegroundAction(Java.Lang.String arg0, Java.Awt.Color arg1)
             /// </summary>
-            public static ForegroundAction New(Java.Lang.String arg0, Java.Awt.Color arg1)
+            public static ForegroundAction CreatePoolableInstance(Java.Lang.String arg0, Java.Awt.Color arg1)
             {
                 return JVMBridgeBase.New<ForegroundAction>(arg0, arg1);
             }
@@ -630,7 +630,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for ItalicAction()
             /// </summary>
-            public static ItalicAction New()
+            public static ItalicAction CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<ItalicAction>();
             }
@@ -676,7 +676,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for StyledTextAction(Java.Lang.String arg0)
             /// </summary>
-            public static StyledTextAction New(Java.Lang.String arg0)
+            public static StyledTextAction CreatePoolableInstance(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<StyledTextAction>(arg0);
             }
@@ -721,7 +721,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for UnderlineAction()
             /// </summary>
-            public static UnderlineAction New()
+            public static UnderlineAction CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<UnderlineAction>();
             }

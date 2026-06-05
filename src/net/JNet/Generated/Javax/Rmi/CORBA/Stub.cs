@@ -73,7 +73,7 @@ namespace Javax.Rmi.CORBA
         /// <summary>
         /// HPA initializer for Stub()
         /// </summary>
-        public static Stub New()
+        public static Stub CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Stub>();
         }

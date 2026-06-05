@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobName(Java.Lang.String arg0, Java.Util.Locale arg1)
         /// </summary>
-        public static JobName New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        public static JobName CreatePoolableInstance(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
             return JVMBridgeBase.New<JobName>(arg0, arg1);
         }

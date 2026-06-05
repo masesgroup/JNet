@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for FocusManager()
         /// </summary>
-        public static FocusManager New()
+        public static FocusManager CreatePoolableInstance()
         {
             return JVMBridgeBase.New<FocusManager>();
         }

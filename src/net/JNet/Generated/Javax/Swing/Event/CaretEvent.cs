@@ -74,7 +74,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for CaretEvent(object arg0)
         /// </summary>
-        public static CaretEvent New(object arg0)
+        public static CaretEvent CreatePoolableInstance(object arg0)
         {
             return JVMBridgeBase.New<CaretEvent>(arg0);
         }

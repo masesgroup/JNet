@@ -73,7 +73,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for SecureRandom()
         /// </summary>
-        public static SecureRandom New()
+        public static SecureRandom CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SecureRandom>();
         }
@@ -88,7 +88,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for SecureRandom(byte[] arg0)
         /// </summary>
-        public static SecureRandom New(byte[] arg0)
+        public static SecureRandom CreatePoolableInstance(byte[] arg0)
         {
             return JVMBridgeBase.New<SecureRandom>(arg0);
         }

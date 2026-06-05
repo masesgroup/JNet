@@ -75,7 +75,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// HPA initializer for RMIConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map%3CJava.Lang.String, object%3E arg1)
         /// </summary>
-        public static RMIConnector New(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1)
+        public static RMIConnector CreatePoolableInstance(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1)
         {
             return JVMBridgeBase.New<RMIConnector>(arg0, arg1);
         }
@@ -91,7 +91,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// HPA initializer for RMIConnector(Javax.Management.Remote.Rmi.RMIServer arg0, Java.Util.Map%3CJava.Lang.String, object%3E arg1)
         /// </summary>
-        public static RMIConnector New(Javax.Management.Remote.Rmi.RMIServer arg0, Java.Util.Map<Java.Lang.String, object> arg1)
+        public static RMIConnector CreatePoolableInstance(Javax.Management.Remote.Rmi.RMIServer arg0, Java.Util.Map<Java.Lang.String, object> arg1)
         {
             return JVMBridgeBase.New<RMIConnector>(arg0, arg1);
         }

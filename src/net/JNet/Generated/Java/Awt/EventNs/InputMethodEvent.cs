@@ -77,7 +77,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for InputMethodEvent(Java.Awt.Component arg0, int arg1, Java.Awt.FontNs.TextHitInfo arg2, Java.Awt.FontNs.TextHitInfo arg3)
         /// </summary>
-        public static InputMethodEvent New(Java.Awt.Component arg0, int arg1, Java.Awt.FontNs.TextHitInfo arg2, Java.Awt.FontNs.TextHitInfo arg3)
+        public static InputMethodEvent CreatePoolableInstance(Java.Awt.Component arg0, int arg1, Java.Awt.FontNs.TextHitInfo arg2, Java.Awt.FontNs.TextHitInfo arg3)
         {
             return JVMBridgeBase.New<InputMethodEvent>(arg0, arg1, arg2, arg3);
         }
@@ -97,7 +97,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for InputMethodEvent(Java.Awt.Component arg0, int arg1, Java.Text.AttributedCharacterIterator arg2, int arg3, Java.Awt.FontNs.TextHitInfo arg4, Java.Awt.FontNs.TextHitInfo arg5)
         /// </summary>
-        public static InputMethodEvent New(Java.Awt.Component arg0, int arg1, Java.Text.AttributedCharacterIterator arg2, int arg3, Java.Awt.FontNs.TextHitInfo arg4, Java.Awt.FontNs.TextHitInfo arg5)
+        public static InputMethodEvent CreatePoolableInstance(Java.Awt.Component arg0, int arg1, Java.Text.AttributedCharacterIterator arg2, int arg3, Java.Awt.FontNs.TextHitInfo arg4, Java.Awt.FontNs.TextHitInfo arg5)
         {
             return JVMBridgeBase.New<InputMethodEvent>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -118,7 +118,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for InputMethodEvent(Java.Awt.Component arg0, int arg1, long arg2, Java.Text.AttributedCharacterIterator arg3, int arg4, Java.Awt.FontNs.TextHitInfo arg5, Java.Awt.FontNs.TextHitInfo arg6)
         /// </summary>
-        public static InputMethodEvent New(Java.Awt.Component arg0, int arg1, long arg2, Java.Text.AttributedCharacterIterator arg3, int arg4, Java.Awt.FontNs.TextHitInfo arg5, Java.Awt.FontNs.TextHitInfo arg6)
+        public static InputMethodEvent CreatePoolableInstance(Java.Awt.Component arg0, int arg1, long arg2, Java.Text.AttributedCharacterIterator arg3, int arg4, Java.Awt.FontNs.TextHitInfo arg5, Java.Awt.FontNs.TextHitInfo arg6)
         {
             return JVMBridgeBase.New<InputMethodEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }

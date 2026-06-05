@@ -73,7 +73,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for GlyphVector()
         /// </summary>
-        public static GlyphVector New()
+        public static GlyphVector CreatePoolableInstance()
         {
             return JVMBridgeBase.New<GlyphVector>();
         }

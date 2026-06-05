@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SpringLayout()
         /// </summary>
-        public static SpringLayout New()
+        public static SpringLayout CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SpringLayout>();
         }
@@ -311,7 +311,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for Constraints()
             /// </summary>
-            public static Constraints New()
+            public static Constraints CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<Constraints>();
             }
@@ -326,7 +326,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for Constraints(Java.Awt.Component arg0)
             /// </summary>
-            public static Constraints New(Java.Awt.Component arg0)
+            public static Constraints CreatePoolableInstance(Java.Awt.Component arg0)
             {
                 return JVMBridgeBase.New<Constraints>(arg0);
             }
@@ -344,7 +344,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for Constraints(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1, Javax.Swing.Spring arg2, Javax.Swing.Spring arg3)
             /// </summary>
-            public static Constraints New(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1, Javax.Swing.Spring arg2, Javax.Swing.Spring arg3)
+            public static Constraints CreatePoolableInstance(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1, Javax.Swing.Spring arg2, Javax.Swing.Spring arg3)
             {
                 return JVMBridgeBase.New<Constraints>(arg0, arg1, arg2, arg3);
             }
@@ -360,7 +360,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for Constraints(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1)
             /// </summary>
-            public static Constraints New(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1)
+            public static Constraints CreatePoolableInstance(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1)
             {
                 return JVMBridgeBase.New<Constraints>(arg0, arg1);
             }

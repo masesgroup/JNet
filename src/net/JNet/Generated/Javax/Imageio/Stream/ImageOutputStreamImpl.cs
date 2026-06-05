@@ -73,7 +73,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// HPA initializer for ImageOutputStreamImpl()
         /// </summary>
-        public static ImageOutputStreamImpl New()
+        public static ImageOutputStreamImpl CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ImageOutputStreamImpl>();
         }

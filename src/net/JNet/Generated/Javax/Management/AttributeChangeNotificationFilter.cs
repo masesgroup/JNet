@@ -73,7 +73,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for AttributeChangeNotificationFilter()
         /// </summary>
-        public static AttributeChangeNotificationFilter New()
+        public static AttributeChangeNotificationFilter CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AttributeChangeNotificationFilter>();
         }

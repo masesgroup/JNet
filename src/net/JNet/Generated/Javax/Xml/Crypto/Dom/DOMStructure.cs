@@ -74,7 +74,7 @@ namespace Javax.Xml.Crypto.Dom
         /// <summary>
         /// HPA initializer for DOMStructure(Org.W3c.Dom.Node arg0)
         /// </summary>
-        public static DOMStructure New(Org.W3c.Dom.Node arg0)
+        public static DOMStructure CreatePoolableInstance(Org.W3c.Dom.Node arg0)
         {
             return JVMBridgeBase.New<DOMStructure>(arg0);
         }

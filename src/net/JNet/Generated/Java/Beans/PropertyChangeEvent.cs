@@ -77,7 +77,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for PropertyChangeEvent(object arg0, Java.Lang.String arg1, object arg2, object arg3)
         /// </summary>
-        public static PropertyChangeEvent New(object arg0, Java.Lang.String arg1, object arg2, object arg3)
+        public static PropertyChangeEvent CreatePoolableInstance(object arg0, Java.Lang.String arg1, object arg2, object arg3)
         {
             return JVMBridgeBase.New<PropertyChangeEvent>(arg0, arg1, arg2, arg3);
         }

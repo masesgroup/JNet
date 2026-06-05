@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JOptionPane()
         /// </summary>
-        public static JOptionPane New()
+        public static JOptionPane CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JOptionPane>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JOptionPane(object arg0, int arg1, int arg2, Javax.Swing.Icon arg3)
         /// </summary>
-        public static JOptionPane New(object arg0, int arg1, int arg2, Javax.Swing.Icon arg3)
+        public static JOptionPane CreatePoolableInstance(object arg0, int arg1, int arg2, Javax.Swing.Icon arg3)
         {
             return JVMBridgeBase.New<JOptionPane>(arg0, arg1, arg2, arg3);
         }
@@ -108,7 +108,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JOptionPane(object arg0, int arg1, int arg2)
         /// </summary>
-        public static JOptionPane New(object arg0, int arg1, int arg2)
+        public static JOptionPane CreatePoolableInstance(object arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<JOptionPane>(arg0, arg1, arg2);
         }
@@ -124,7 +124,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JOptionPane(object arg0, int arg1)
         /// </summary>
-        public static JOptionPane New(object arg0, int arg1)
+        public static JOptionPane CreatePoolableInstance(object arg0, int arg1)
         {
             return JVMBridgeBase.New<JOptionPane>(arg0, arg1);
         }
@@ -139,7 +139,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JOptionPane(object arg0)
         /// </summary>
-        public static JOptionPane New(object arg0)
+        public static JOptionPane CreatePoolableInstance(object arg0)
         {
             return JVMBridgeBase.New<JOptionPane>(arg0);
         }

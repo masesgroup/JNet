@@ -76,7 +76,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// HPA initializer for SerialClob(char[] arg0)
         /// </summary>
-        public static SerialClob New(char[] arg0)
+        public static SerialClob CreatePoolableInstance(char[] arg0)
         {
             return JVMBridgeBase.New<SerialClob>(arg0);
         }
@@ -93,7 +93,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// HPA initializer for SerialClob(Java.Sql.Clob arg0)
         /// </summary>
-        public static SerialClob New(Java.Sql.Clob arg0)
+        public static SerialClob CreatePoolableInstance(Java.Sql.Clob arg0)
         {
             return JVMBridgeBase.New<SerialClob>(arg0);
         }

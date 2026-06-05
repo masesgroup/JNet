@@ -380,7 +380,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicInternalFrameTitlePane(Javax.Swing.JInternalFrame arg0)
         /// </summary>
-        public static BasicInternalFrameTitlePane New(Javax.Swing.JInternalFrame arg0)
+        public static BasicInternalFrameTitlePane CreatePoolableInstance(Javax.Swing.JInternalFrame arg0)
         {
             return JVMBridgeBase.New<BasicInternalFrameTitlePane>(arg0);
         }
@@ -427,7 +427,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for CloseAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             /// </summary>
-            public static CloseAction New(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+            public static CloseAction CreatePoolableInstance(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             {
                 return JVMBridgeBase.New<CloseAction>(arg0);
             }
@@ -473,7 +473,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for IconifyAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             /// </summary>
-            public static IconifyAction New(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+            public static IconifyAction CreatePoolableInstance(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             {
                 return JVMBridgeBase.New<IconifyAction>(arg0);
             }
@@ -519,7 +519,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for MaximizeAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             /// </summary>
-            public static MaximizeAction New(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+            public static MaximizeAction CreatePoolableInstance(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             {
                 return JVMBridgeBase.New<MaximizeAction>(arg0);
             }
@@ -565,7 +565,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for MoveAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             /// </summary>
-            public static MoveAction New(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+            public static MoveAction CreatePoolableInstance(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             {
                 return JVMBridgeBase.New<MoveAction>(arg0);
             }
@@ -611,7 +611,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             /// </summary>
-            public static PropertyChangeHandler New(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+            public static PropertyChangeHandler CreatePoolableInstance(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             {
                 return JVMBridgeBase.New<PropertyChangeHandler>(arg0);
             }
@@ -669,7 +669,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for RestoreAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             /// </summary>
-            public static RestoreAction New(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+            public static RestoreAction CreatePoolableInstance(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             {
                 return JVMBridgeBase.New<RestoreAction>(arg0);
             }
@@ -715,7 +715,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for SizeAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             /// </summary>
-            public static SizeAction New(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+            public static SizeAction CreatePoolableInstance(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             {
                 return JVMBridgeBase.New<SizeAction>(arg0);
             }
@@ -761,7 +761,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for SystemMenuBar(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             /// </summary>
-            public static SystemMenuBar New(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+            public static SystemMenuBar CreatePoolableInstance(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             {
                 return JVMBridgeBase.New<SystemMenuBar>(arg0);
             }
@@ -807,7 +807,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for TitlePaneLayout(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             /// </summary>
-            public static TitlePaneLayout New(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+            public static TitlePaneLayout CreatePoolableInstance(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
             {
                 return JVMBridgeBase.New<TitlePaneLayout>(arg0);
             }

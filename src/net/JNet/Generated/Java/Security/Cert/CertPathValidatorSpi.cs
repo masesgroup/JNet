@@ -73,7 +73,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for CertPathValidatorSpi()
         /// </summary>
-        public static CertPathValidatorSpi New()
+        public static CertPathValidatorSpi CreatePoolableInstance()
         {
             return JVMBridgeBase.New<CertPathValidatorSpi>();
         }

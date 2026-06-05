@@ -145,7 +145,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
         /// </summary>
-        public static Dialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        public static Dialog CreatePoolableInstance(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
         {
             return JVMBridgeBase.New<Dialog>(arg0, arg1, arg2, arg3);
         }
@@ -162,7 +162,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2)
         /// </summary>
-        public static Dialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2)
+        public static Dialog CreatePoolableInstance(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2)
         {
             return JVMBridgeBase.New<Dialog>(arg0, arg1, arg2);
         }
@@ -178,7 +178,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Dialog arg0, Java.Lang.String arg1)
         /// </summary>
-        public static Dialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1)
+        public static Dialog CreatePoolableInstance(Java.Awt.Dialog arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<Dialog>(arg0, arg1);
         }
@@ -193,7 +193,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Dialog arg0)
         /// </summary>
-        public static Dialog New(Java.Awt.Dialog arg0)
+        public static Dialog CreatePoolableInstance(Java.Awt.Dialog arg0)
         {
             return JVMBridgeBase.New<Dialog>(arg0);
         }
@@ -209,7 +209,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Frame arg0, bool arg1)
         /// </summary>
-        public static Dialog New(Java.Awt.Frame arg0, bool arg1)
+        public static Dialog CreatePoolableInstance(Java.Awt.Frame arg0, bool arg1)
         {
             return JVMBridgeBase.New<Dialog>(arg0, arg1);
         }
@@ -227,7 +227,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
         /// </summary>
-        public static Dialog New(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        public static Dialog CreatePoolableInstance(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
         {
             return JVMBridgeBase.New<Dialog>(arg0, arg1, arg2, arg3);
         }
@@ -244,7 +244,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2)
         /// </summary>
-        public static Dialog New(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2)
+        public static Dialog CreatePoolableInstance(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2)
         {
             return JVMBridgeBase.New<Dialog>(arg0, arg1, arg2);
         }
@@ -260,7 +260,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Frame arg0, Java.Lang.String arg1)
         /// </summary>
-        public static Dialog New(Java.Awt.Frame arg0, Java.Lang.String arg1)
+        public static Dialog CreatePoolableInstance(Java.Awt.Frame arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<Dialog>(arg0, arg1);
         }
@@ -275,7 +275,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Frame arg0)
         /// </summary>
-        public static Dialog New(Java.Awt.Frame arg0)
+        public static Dialog CreatePoolableInstance(Java.Awt.Frame arg0)
         {
             return JVMBridgeBase.New<Dialog>(arg0);
         }
@@ -291,7 +291,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1)
         /// </summary>
-        public static Dialog New(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1)
+        public static Dialog CreatePoolableInstance(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1)
         {
             return JVMBridgeBase.New<Dialog>(arg0, arg1);
         }
@@ -309,7 +309,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
         /// </summary>
-        public static Dialog New(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
+        public static Dialog CreatePoolableInstance(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
         {
             return JVMBridgeBase.New<Dialog>(arg0, arg1, arg2, arg3);
         }
@@ -326,7 +326,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2)
         /// </summary>
-        public static Dialog New(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2)
+        public static Dialog CreatePoolableInstance(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2)
         {
             return JVMBridgeBase.New<Dialog>(arg0, arg1, arg2);
         }
@@ -342,7 +342,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Window arg0, Java.Lang.String arg1)
         /// </summary>
-        public static Dialog New(Java.Awt.Window arg0, Java.Lang.String arg1)
+        public static Dialog CreatePoolableInstance(Java.Awt.Window arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<Dialog>(arg0, arg1);
         }
@@ -357,7 +357,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dialog(Java.Awt.Window arg0)
         /// </summary>
-        public static Dialog New(Java.Awt.Window arg0)
+        public static Dialog CreatePoolableInstance(Java.Awt.Window arg0)
         {
             return JVMBridgeBase.New<Dialog>(arg0);
         }

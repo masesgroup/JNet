@@ -74,7 +74,7 @@ namespace Javax.Xml.Transform.Stax
         /// <summary>
         /// HPA initializer for StAXResult(Javax.Xml.Stream.XMLEventWriter arg0)
         /// </summary>
-        public static StAXResult New(Javax.Xml.Stream.XMLEventWriter arg0)
+        public static StAXResult CreatePoolableInstance(Javax.Xml.Stream.XMLEventWriter arg0)
         {
             return JVMBridgeBase.New<StAXResult>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Javax.Xml.Transform.Stax
         /// <summary>
         /// HPA initializer for StAXResult(Javax.Xml.Stream.XMLStreamWriter arg0)
         /// </summary>
-        public static StAXResult New(Javax.Xml.Stream.XMLStreamWriter arg0)
+        public static StAXResult CreatePoolableInstance(Javax.Xml.Stream.XMLStreamWriter arg0)
         {
             return JVMBridgeBase.New<StAXResult>(arg0);
         }

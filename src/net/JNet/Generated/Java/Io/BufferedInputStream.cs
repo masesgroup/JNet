@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for BufferedInputStream(Java.Io.InputStream arg0, int arg1)
         /// </summary>
-        public static BufferedInputStream New(Java.Io.InputStream arg0, int arg1)
+        public static BufferedInputStream CreatePoolableInstance(Java.Io.InputStream arg0, int arg1)
         {
             return JVMBridgeBase.New<BufferedInputStream>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for BufferedInputStream(Java.Io.InputStream arg0)
         /// </summary>
-        public static BufferedInputStream New(Java.Io.InputStream arg0)
+        public static BufferedInputStream CreatePoolableInstance(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<BufferedInputStream>(arg0);
         }

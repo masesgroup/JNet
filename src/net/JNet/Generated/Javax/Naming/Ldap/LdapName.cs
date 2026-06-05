@@ -75,7 +75,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for LdapName(Java.Lang.String arg0)
         /// </summary>
-        public static LdapName New(Java.Lang.String arg0)
+        public static LdapName CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<LdapName>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for LdapName(Java.Util.List%3CJavax.Naming.Ldap.Rdn%3E arg0)
         /// </summary>
-        public static LdapName New(Java.Util.List<Javax.Naming.Ldap.Rdn> arg0)
+        public static LdapName CreatePoolableInstance(Java.Util.List<Javax.Naming.Ldap.Rdn> arg0)
         {
             return JVMBridgeBase.New<LdapName>(arg0);
         }

@@ -75,7 +75,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for BlockView(Javax.Swing.Text.Element arg0, int arg1)
         /// </summary>
-        public static BlockView New(Javax.Swing.Text.Element arg0, int arg1)
+        public static BlockView CreatePoolableInstance(Javax.Swing.Text.Element arg0, int arg1)
         {
             return JVMBridgeBase.New<BlockView>(arg0, arg1);
         }

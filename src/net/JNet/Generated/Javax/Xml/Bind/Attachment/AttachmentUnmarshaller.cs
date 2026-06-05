@@ -73,7 +73,7 @@ namespace Javax.Xml.Bind.Attachment
         /// <summary>
         /// HPA initializer for AttachmentUnmarshaller()
         /// </summary>
-        public static AttachmentUnmarshaller New()
+        public static AttachmentUnmarshaller CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AttachmentUnmarshaller>();
         }

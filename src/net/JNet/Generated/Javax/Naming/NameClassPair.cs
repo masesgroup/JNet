@@ -76,7 +76,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for NameClassPair(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
         /// </summary>
-        public static NameClassPair New(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
+        public static NameClassPair CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
         {
             return JVMBridgeBase.New<NameClassPair>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for NameClassPair(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static NameClassPair New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static NameClassPair CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<NameClassPair>(arg0, arg1);
         }

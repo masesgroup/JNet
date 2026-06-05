@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DefaultFormatter()
         /// </summary>
-        public static DefaultFormatter New()
+        public static DefaultFormatter CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DefaultFormatter>();
         }

@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Timer()
         /// </summary>
-        public static Timer New()
+        public static Timer CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Timer>();
         }
@@ -88,7 +88,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Timer(bool arg0)
         /// </summary>
-        public static Timer New(bool arg0)
+        public static Timer CreatePoolableInstance(bool arg0)
         {
             return JVMBridgeBase.New<Timer>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Timer(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static Timer New(Java.Lang.String arg0, bool arg1)
+        public static Timer CreatePoolableInstance(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<Timer>(arg0, arg1);
         }
@@ -119,7 +119,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Timer(Java.Lang.String arg0)
         /// </summary>
-        public static Timer New(Java.Lang.String arg0)
+        public static Timer CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Timer>(arg0);
         }

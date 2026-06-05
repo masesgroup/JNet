@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashPrintServiceAttributeSet()
         /// </summary>
-        public static HashPrintServiceAttributeSet New()
+        public static HashPrintServiceAttributeSet CreatePoolableInstance()
         {
             return JVMBridgeBase.New<HashPrintServiceAttributeSet>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashPrintServiceAttributeSet(Javax.Print.Attribute.PrintServiceAttribute arg0)
         /// </summary>
-        public static HashPrintServiceAttributeSet New(Javax.Print.Attribute.PrintServiceAttribute arg0)
+        public static HashPrintServiceAttributeSet CreatePoolableInstance(Javax.Print.Attribute.PrintServiceAttribute arg0)
         {
             return JVMBridgeBase.New<HashPrintServiceAttributeSet>(arg0);
         }
@@ -103,7 +103,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashPrintServiceAttributeSet(Javax.Print.Attribute.PrintServiceAttribute[] arg0)
         /// </summary>
-        public static HashPrintServiceAttributeSet New(Javax.Print.Attribute.PrintServiceAttribute[] arg0)
+        public static HashPrintServiceAttributeSet CreatePoolableInstance(Javax.Print.Attribute.PrintServiceAttribute[] arg0)
         {
             return JVMBridgeBase.New<HashPrintServiceAttributeSet>(arg0);
         }
@@ -118,7 +118,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashPrintServiceAttributeSet(Javax.Print.Attribute.PrintServiceAttributeSet arg0)
         /// </summary>
-        public static HashPrintServiceAttributeSet New(Javax.Print.Attribute.PrintServiceAttributeSet arg0)
+        public static HashPrintServiceAttributeSet CreatePoolableInstance(Javax.Print.Attribute.PrintServiceAttributeSet arg0)
         {
             return JVMBridgeBase.New<HashPrintServiceAttributeSet>(arg0);
         }

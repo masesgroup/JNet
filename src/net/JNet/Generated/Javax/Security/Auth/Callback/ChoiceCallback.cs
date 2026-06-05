@@ -77,7 +77,7 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// HPA initializer for ChoiceCallback(Java.Lang.String arg0, Java.Lang.String[] arg1, int arg2, bool arg3)
         /// </summary>
-        public static ChoiceCallback New(Java.Lang.String arg0, Java.Lang.String[] arg1, int arg2, bool arg3)
+        public static ChoiceCallback CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String[] arg1, int arg2, bool arg3)
         {
             return JVMBridgeBase.New<ChoiceCallback>(arg0, arg1, arg2, arg3);
         }

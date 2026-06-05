@@ -75,7 +75,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JFrame()
         /// </summary>
-        public static JFrame New()
+        public static JFrame CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JFrame>();
         }
@@ -90,7 +90,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JFrame(Java.Awt.GraphicsConfiguration arg0)
         /// </summary>
-        public static JFrame New(Java.Awt.GraphicsConfiguration arg0)
+        public static JFrame CreatePoolableInstance(Java.Awt.GraphicsConfiguration arg0)
         {
             return JVMBridgeBase.New<JFrame>(arg0);
         }
@@ -106,7 +106,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JFrame(Java.Lang.String arg0, Java.Awt.GraphicsConfiguration arg1)
         /// </summary>
-        public static JFrame New(Java.Lang.String arg0, Java.Awt.GraphicsConfiguration arg1)
+        public static JFrame CreatePoolableInstance(Java.Lang.String arg0, Java.Awt.GraphicsConfiguration arg1)
         {
             return JVMBridgeBase.New<JFrame>(arg0, arg1);
         }
@@ -122,7 +122,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JFrame(Java.Lang.String arg0)
         /// </summary>
-        public static JFrame New(Java.Lang.String arg0)
+        public static JFrame CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JFrame>(arg0);
         }

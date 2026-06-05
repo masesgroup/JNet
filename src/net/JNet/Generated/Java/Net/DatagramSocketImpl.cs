@@ -73,7 +73,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for DatagramSocketImpl()
         /// </summary>
-        public static DatagramSocketImpl New()
+        public static DatagramSocketImpl CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DatagramSocketImpl>();
         }

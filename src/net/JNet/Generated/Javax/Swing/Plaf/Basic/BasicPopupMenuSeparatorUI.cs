@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicPopupMenuSeparatorUI()
         /// </summary>
-        public static BasicPopupMenuSeparatorUI New()
+        public static BasicPopupMenuSeparatorUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicPopupMenuSeparatorUI>();
         }

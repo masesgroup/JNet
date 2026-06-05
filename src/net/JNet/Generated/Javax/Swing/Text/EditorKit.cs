@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for EditorKit()
         /// </summary>
-        public static EditorKit New()
+        public static EditorKit CreatePoolableInstance()
         {
             return JVMBridgeBase.New<EditorKit>();
         }

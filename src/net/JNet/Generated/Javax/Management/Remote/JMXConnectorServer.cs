@@ -73,7 +73,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// HPA initializer for JMXConnectorServer()
         /// </summary>
-        public static JMXConnectorServer New()
+        public static JMXConnectorServer CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JMXConnectorServer>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// HPA initializer for JMXConnectorServer(Javax.Management.MBeanServer arg0)
         /// </summary>
-        public static JMXConnectorServer New(Javax.Management.MBeanServer arg0)
+        public static JMXConnectorServer CreatePoolableInstance(Javax.Management.MBeanServer arg0)
         {
             return JVMBridgeBase.New<JMXConnectorServer>(arg0);
         }

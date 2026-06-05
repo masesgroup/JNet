@@ -73,7 +73,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for NotificationBroadcasterSupport()
         /// </summary>
-        public static NotificationBroadcasterSupport New()
+        public static NotificationBroadcasterSupport CreatePoolableInstance()
         {
             return JVMBridgeBase.New<NotificationBroadcasterSupport>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for NotificationBroadcasterSupport(Java.Util.Concurrent.Executor arg0, params Javax.Management.MBeanNotificationInfo[] arg1)
         /// </summary>
-        public static NotificationBroadcasterSupport New(Java.Util.Concurrent.Executor arg0, params Javax.Management.MBeanNotificationInfo[] arg1)
+        public static NotificationBroadcasterSupport CreatePoolableInstance(Java.Util.Concurrent.Executor arg0, params Javax.Management.MBeanNotificationInfo[] arg1)
         {
             return JVMBridgeBase.New<NotificationBroadcasterSupport>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for NotificationBroadcasterSupport(Java.Util.Concurrent.Executor arg0)
         /// </summary>
-        public static NotificationBroadcasterSupport New(Java.Util.Concurrent.Executor arg0)
+        public static NotificationBroadcasterSupport CreatePoolableInstance(Java.Util.Concurrent.Executor arg0)
         {
             return JVMBridgeBase.New<NotificationBroadcasterSupport>(arg0);
         }
@@ -119,7 +119,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for NotificationBroadcasterSupport(params Javax.Management.MBeanNotificationInfo[] arg0)
         /// </summary>
-        public static NotificationBroadcasterSupport New(params Javax.Management.MBeanNotificationInfo[] arg0)
+        public static NotificationBroadcasterSupport CreatePoolableInstance(params Javax.Management.MBeanNotificationInfo[] arg0)
         {
             return JVMBridgeBase.New<NotificationBroadcasterSupport>(arg0);
         }

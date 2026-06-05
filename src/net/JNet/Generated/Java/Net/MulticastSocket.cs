@@ -75,7 +75,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for MulticastSocket()
         /// </summary>
-        public static MulticastSocket New()
+        public static MulticastSocket CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MulticastSocket>();
         }
@@ -91,7 +91,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for MulticastSocket(int arg0)
         /// </summary>
-        public static MulticastSocket New(int arg0)
+        public static MulticastSocket CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<MulticastSocket>(arg0);
         }
@@ -107,7 +107,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for MulticastSocket(Java.Net.SocketAddress arg0)
         /// </summary>
-        public static MulticastSocket New(Java.Net.SocketAddress arg0)
+        public static MulticastSocket CreatePoolableInstance(Java.Net.SocketAddress arg0)
         {
             return JVMBridgeBase.New<MulticastSocket>(arg0);
         }

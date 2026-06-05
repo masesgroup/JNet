@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JButton()
         /// </summary>
-        public static JButton New()
+        public static JButton CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JButton>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JButton(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         /// </summary>
-        public static JButton New(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        public static JButton CreatePoolableInstance(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         {
             return JVMBridgeBase.New<JButton>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JButton(Java.Lang.String arg0)
         /// </summary>
-        public static JButton New(Java.Lang.String arg0)
+        public static JButton CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JButton>(arg0);
         }
@@ -119,7 +119,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JButton(Javax.Swing.Action arg0)
         /// </summary>
-        public static JButton New(Javax.Swing.Action arg0)
+        public static JButton CreatePoolableInstance(Javax.Swing.Action arg0)
         {
             return JVMBridgeBase.New<JButton>(arg0);
         }
@@ -134,7 +134,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JButton(Javax.Swing.Icon arg0)
         /// </summary>
-        public static JButton New(Javax.Swing.Icon arg0)
+        public static JButton CreatePoolableInstance(Javax.Swing.Icon arg0)
         {
             return JVMBridgeBase.New<JButton>(arg0);
         }

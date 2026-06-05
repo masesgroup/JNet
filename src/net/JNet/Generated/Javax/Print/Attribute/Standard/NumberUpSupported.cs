@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for NumberUpSupported(int arg0, int arg1)
         /// </summary>
-        public static NumberUpSupported New(int arg0, int arg1)
+        public static NumberUpSupported CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<NumberUpSupported>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for NumberUpSupported(int arg0)
         /// </summary>
-        public static NumberUpSupported New(int arg0)
+        public static NumberUpSupported CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<NumberUpSupported>(arg0);
         }
@@ -105,7 +105,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for NumberUpSupported(int[][] arg0)
         /// </summary>
-        public static NumberUpSupported New(int[][] arg0)
+        public static NumberUpSupported CreatePoolableInstance(int[][] arg0)
         {
             return JVMBridgeBase.New<NumberUpSupported>(arg0);
         }

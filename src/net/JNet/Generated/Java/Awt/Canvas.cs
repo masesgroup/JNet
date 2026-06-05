@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Canvas()
         /// </summary>
-        public static Canvas New()
+        public static Canvas CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Canvas>();
         }
@@ -88,7 +88,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Canvas(Java.Awt.GraphicsConfiguration arg0)
         /// </summary>
-        public static Canvas New(Java.Awt.GraphicsConfiguration arg0)
+        public static Canvas CreatePoolableInstance(Java.Awt.GraphicsConfiguration arg0)
         {
             return JVMBridgeBase.New<Canvas>(arg0);
         }

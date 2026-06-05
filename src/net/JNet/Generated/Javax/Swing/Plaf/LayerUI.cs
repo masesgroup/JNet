@@ -108,7 +108,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for LayerUI()
         /// </summary>
-        public static LayerUI New()
+        public static LayerUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<LayerUI>();
         }
@@ -253,7 +253,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for LayerUI()
         /// </summary>
-        public static LayerUI<V> New()
+        public static LayerUI<V> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<LayerUI<V>>();
         }

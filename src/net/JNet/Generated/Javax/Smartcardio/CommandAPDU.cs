@@ -76,7 +76,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// HPA initializer for CommandAPDU(byte[] arg0, int arg1, int arg2)
         /// </summary>
-        public static CommandAPDU New(byte[] arg0, int arg1, int arg2)
+        public static CommandAPDU CreatePoolableInstance(byte[] arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2);
         }
@@ -91,7 +91,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// HPA initializer for CommandAPDU(byte[] arg0)
         /// </summary>
-        public static CommandAPDU New(byte[] arg0)
+        public static CommandAPDU CreatePoolableInstance(byte[] arg0)
         {
             return JVMBridgeBase.New<CommandAPDU>(arg0);
         }
@@ -113,7 +113,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// HPA initializer for CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6, int arg7)
         /// </summary>
-        public static CommandAPDU New(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6, int arg7)
+        public static CommandAPDU CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6, int arg7)
         {
             return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
@@ -134,7 +134,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// HPA initializer for CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6)
         /// </summary>
-        public static CommandAPDU New(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6)
+        public static CommandAPDU CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6)
         {
             return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -154,7 +154,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// HPA initializer for CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5)
         /// </summary>
-        public static CommandAPDU New(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5)
+        public static CommandAPDU CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5)
         {
             return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -173,7 +173,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// HPA initializer for CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4)
         /// </summary>
-        public static CommandAPDU New(int arg0, int arg1, int arg2, int arg3, byte[] arg4)
+        public static CommandAPDU CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, byte[] arg4)
         {
             return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -192,7 +192,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// HPA initializer for CommandAPDU(int arg0, int arg1, int arg2, int arg3, int arg4)
         /// </summary>
-        public static CommandAPDU New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        public static CommandAPDU CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -210,7 +210,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// HPA initializer for CommandAPDU(int arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static CommandAPDU New(int arg0, int arg1, int arg2, int arg3)
+        public static CommandAPDU CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<CommandAPDU>(arg0, arg1, arg2, arg3);
         }
@@ -225,7 +225,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// HPA initializer for CommandAPDU(Java.Nio.ByteBuffer arg0)
         /// </summary>
-        public static CommandAPDU New(Java.Nio.ByteBuffer arg0)
+        public static CommandAPDU CreatePoolableInstance(Java.Nio.ByteBuffer arg0)
         {
             return JVMBridgeBase.New<CommandAPDU>(arg0);
         }

@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ScrollPaneLayout()
         /// </summary>
-        public static ScrollPaneLayout New()
+        public static ScrollPaneLayout CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ScrollPaneLayout>();
         }
@@ -276,7 +276,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for UIResource()
             /// </summary>
-            public static UIResource New()
+            public static UIResource CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<UIResource>();
             }

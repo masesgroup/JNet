@@ -73,7 +73,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for SSLSocketFactory()
         /// </summary>
-        public static SSLSocketFactory New()
+        public static SSLSocketFactory CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SSLSocketFactory>();
         }

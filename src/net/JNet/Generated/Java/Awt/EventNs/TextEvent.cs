@@ -75,7 +75,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for TextEvent(object arg0, int arg1)
         /// </summary>
-        public static TextEvent New(object arg0, int arg1)
+        public static TextEvent CreatePoolableInstance(object arg0, int arg1)
         {
             return JVMBridgeBase.New<TextEvent>(arg0, arg1);
         }

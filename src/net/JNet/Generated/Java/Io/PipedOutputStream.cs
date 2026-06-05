@@ -73,7 +73,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PipedOutputStream()
         /// </summary>
-        public static PipedOutputStream New()
+        public static PipedOutputStream CreatePoolableInstance()
         {
             return JVMBridgeBase.New<PipedOutputStream>();
         }
@@ -89,7 +89,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PipedOutputStream(Java.Io.PipedInputStream arg0)
         /// </summary>
-        public static PipedOutputStream New(Java.Io.PipedInputStream arg0)
+        public static PipedOutputStream CreatePoolableInstance(Java.Io.PipedInputStream arg0)
         {
             return JVMBridgeBase.New<PipedOutputStream>(arg0);
         }

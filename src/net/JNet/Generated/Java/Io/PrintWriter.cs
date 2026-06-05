@@ -77,7 +77,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintWriter(Java.Io.File arg0, Java.Lang.String arg1)
         /// </summary>
-        public static PrintWriter New(Java.Io.File arg0, Java.Lang.String arg1)
+        public static PrintWriter CreatePoolableInstance(Java.Io.File arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<PrintWriter>(arg0, arg1);
         }
@@ -93,7 +93,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintWriter(Java.Io.File arg0)
         /// </summary>
-        public static PrintWriter New(Java.Io.File arg0)
+        public static PrintWriter CreatePoolableInstance(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<PrintWriter>(arg0);
         }
@@ -109,7 +109,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintWriter(Java.Io.OutputStream arg0, bool arg1)
         /// </summary>
-        public static PrintWriter New(Java.Io.OutputStream arg0, bool arg1)
+        public static PrintWriter CreatePoolableInstance(Java.Io.OutputStream arg0, bool arg1)
         {
             return JVMBridgeBase.New<PrintWriter>(arg0, arg1);
         }
@@ -124,7 +124,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintWriter(Java.Io.OutputStream arg0)
         /// </summary>
-        public static PrintWriter New(Java.Io.OutputStream arg0)
+        public static PrintWriter CreatePoolableInstance(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<PrintWriter>(arg0);
         }
@@ -140,7 +140,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintWriter(Java.Io.Writer arg0, bool arg1)
         /// </summary>
-        public static PrintWriter New(Java.Io.Writer arg0, bool arg1)
+        public static PrintWriter CreatePoolableInstance(Java.Io.Writer arg0, bool arg1)
         {
             return JVMBridgeBase.New<PrintWriter>(arg0, arg1);
         }
@@ -155,7 +155,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintWriter(Java.Io.Writer arg0)
         /// </summary>
-        public static PrintWriter New(Java.Io.Writer arg0)
+        public static PrintWriter CreatePoolableInstance(Java.Io.Writer arg0)
         {
             return JVMBridgeBase.New<PrintWriter>(arg0);
         }
@@ -173,7 +173,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintWriter(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static PrintWriter New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static PrintWriter CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<PrintWriter>(arg0, arg1);
         }
@@ -189,7 +189,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintWriter(Java.Lang.String arg0)
         /// </summary>
-        public static PrintWriter New(Java.Lang.String arg0)
+        public static PrintWriter CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<PrintWriter>(arg0);
         }

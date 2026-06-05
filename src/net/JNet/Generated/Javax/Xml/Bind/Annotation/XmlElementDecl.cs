@@ -227,7 +227,7 @@ namespace Javax.Xml.Bind.Annotation
             /// <summary>
             /// HPA initializer for GLOBAL()
             /// </summary>
-            public static GLOBAL New()
+            public static GLOBAL CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<GLOBAL>();
             }

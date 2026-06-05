@@ -78,7 +78,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalComboBoxButton(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, bool arg2, Javax.Swing.CellRendererPane arg3, Javax.Swing.JList arg4)
         /// </summary>
-        public static MetalComboBoxButton New(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, bool arg2, Javax.Swing.CellRendererPane arg3, Javax.Swing.JList arg4)
+        public static MetalComboBoxButton CreatePoolableInstance(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, bool arg2, Javax.Swing.CellRendererPane arg3, Javax.Swing.JList arg4)
         {
             return JVMBridgeBase.New<MetalComboBoxButton>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -96,7 +96,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalComboBoxButton(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, Javax.Swing.CellRendererPane arg2, Javax.Swing.JList arg3)
         /// </summary>
-        public static MetalComboBoxButton New(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, Javax.Swing.CellRendererPane arg2, Javax.Swing.JList arg3)
+        public static MetalComboBoxButton CreatePoolableInstance(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, Javax.Swing.CellRendererPane arg2, Javax.Swing.JList arg3)
         {
             return JVMBridgeBase.New<MetalComboBoxButton>(arg0, arg1, arg2, arg3);
         }

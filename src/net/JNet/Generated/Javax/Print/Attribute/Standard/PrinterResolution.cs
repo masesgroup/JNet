@@ -76,7 +76,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PrinterResolution(int arg0, int arg1, int arg2)
         /// </summary>
-        public static PrinterResolution New(int arg0, int arg1, int arg2)
+        public static PrinterResolution CreatePoolableInstance(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<PrinterResolution>(arg0, arg1, arg2);
         }

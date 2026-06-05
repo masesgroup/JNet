@@ -77,7 +77,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanNotificationInfo(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Management.Descriptor arg3)
         /// </summary>
-        public static MBeanNotificationInfo New(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Management.Descriptor arg3)
+        public static MBeanNotificationInfo CreatePoolableInstance(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Management.Descriptor arg3)
         {
             return JVMBridgeBase.New<MBeanNotificationInfo>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanNotificationInfo(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         /// </summary>
-        public static MBeanNotificationInfo New(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        public static MBeanNotificationInfo CreatePoolableInstance(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<MBeanNotificationInfo>(arg0, arg1, arg2);
         }

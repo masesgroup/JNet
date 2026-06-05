@@ -74,7 +74,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for TransformAttribute(Java.Awt.Geom.AffineTransform arg0)
         /// </summary>
-        public static TransformAttribute New(Java.Awt.Geom.AffineTransform arg0)
+        public static TransformAttribute CreatePoolableInstance(Java.Awt.Geom.AffineTransform arg0)
         {
             return JVMBridgeBase.New<TransformAttribute>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for CRC32()
         /// </summary>
-        public static CRC32 New()
+        public static CRC32 CreatePoolableInstance()
         {
             return JVMBridgeBase.New<CRC32>();
         }

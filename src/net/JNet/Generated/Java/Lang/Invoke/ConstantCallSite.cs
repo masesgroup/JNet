@@ -74,7 +74,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// HPA initializer for ConstantCallSite(Java.Lang.Invoke.MethodHandle arg0)
         /// </summary>
-        public static ConstantCallSite New(Java.Lang.Invoke.MethodHandle arg0)
+        public static ConstantCallSite CreatePoolableInstance(Java.Lang.Invoke.MethodHandle arg0)
         {
             return JVMBridgeBase.New<ConstantCallSite>(arg0);
         }

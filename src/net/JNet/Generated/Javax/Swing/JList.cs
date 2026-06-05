@@ -142,7 +142,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JList()
         /// </summary>
-        public static JList New()
+        public static JList CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JList>();
         }
@@ -157,7 +157,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JList(Java.Util.Vector arg0)
         /// </summary>
-        public static JList New(Java.Util.Vector arg0)
+        public static JList CreatePoolableInstance(Java.Util.Vector arg0)
         {
             return JVMBridgeBase.New<JList>(arg0);
         }
@@ -172,7 +172,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JList(Javax.Swing.ListModel arg0)
         /// </summary>
-        public static JList New(Javax.Swing.ListModel arg0)
+        public static JList CreatePoolableInstance(Javax.Swing.ListModel arg0)
         {
             return JVMBridgeBase.New<JList>(arg0);
         }
@@ -662,7 +662,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JList()
         /// </summary>
-        public static JList<E> New()
+        public static JList<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JList<E>>();
         }
@@ -677,7 +677,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JList(E[] arg0)
         /// </summary>
-        public static JList<E> New(E[] arg0)
+        public static JList<E> CreatePoolableInstance(E[] arg0)
         {
             return JVMBridgeBase.New<JList<E>>(arg0);
         }
@@ -692,7 +692,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JList(Java.Util.Vector%3CE%3E arg0)
         /// </summary>
-        public static JList<E> New(Java.Util.Vector<E> arg0)
+        public static JList<E> CreatePoolableInstance(Java.Util.Vector<E> arg0)
         {
             return JVMBridgeBase.New<JList<E>>(arg0);
         }
@@ -707,7 +707,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JList(Javax.Swing.ListModel%3CE%3E arg0)
         /// </summary>
-        public static JList<E> New(Javax.Swing.ListModel<E> arg0)
+        public static JList<E> CreatePoolableInstance(Javax.Swing.ListModel<E> arg0)
         {
             return JVMBridgeBase.New<JList<E>>(arg0);
         }

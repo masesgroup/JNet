@@ -75,7 +75,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for GuardedObject(object arg0, Java.Security.Guard arg1)
         /// </summary>
-        public static GuardedObject New(object arg0, Java.Security.Guard arg1)
+        public static GuardedObject CreatePoolableInstance(object arg0, Java.Security.Guard arg1)
         {
             return JVMBridgeBase.New<GuardedObject>(arg0, arg1);
         }

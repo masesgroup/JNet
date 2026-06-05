@@ -76,7 +76,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for StringJoiner(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
         /// </summary>
-        public static StringJoiner New(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
+        public static StringJoiner CreatePoolableInstance(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
         {
             return JVMBridgeBase.New<StringJoiner>(arg0, arg1, arg2);
         }
@@ -91,7 +91,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for StringJoiner(Java.Lang.CharSequence arg0)
         /// </summary>
-        public static StringJoiner New(Java.Lang.CharSequence arg0)
+        public static StringJoiner CreatePoolableInstance(Java.Lang.CharSequence arg0)
         {
             return JVMBridgeBase.New<StringJoiner>(arg0);
         }

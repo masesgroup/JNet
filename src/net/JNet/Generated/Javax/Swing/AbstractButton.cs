@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for AbstractButton()
         /// </summary>
-        public static AbstractButton New()
+        public static AbstractButton CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AbstractButton>();
         }

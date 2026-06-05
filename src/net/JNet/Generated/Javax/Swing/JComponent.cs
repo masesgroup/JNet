@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JComponent()
         /// </summary>
-        public static JComponent New()
+        public static JComponent CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JComponent>();
         }

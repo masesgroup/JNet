@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTextPane()
         /// </summary>
-        public static JTextPane New()
+        public static JTextPane CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JTextPane>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTextPane(Javax.Swing.Text.StyledDocument arg0)
         /// </summary>
-        public static JTextPane New(Javax.Swing.Text.StyledDocument arg0)
+        public static JTextPane CreatePoolableInstance(Javax.Swing.Text.StyledDocument arg0)
         {
             return JVMBridgeBase.New<JTextPane>(arg0);
         }

@@ -76,7 +76,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// HPA initializer for AudioInputStream(Java.Io.InputStream arg0, Javax.Sound.Sampled.AudioFormat arg1, long arg2)
         /// </summary>
-        public static AudioInputStream New(Java.Io.InputStream arg0, Javax.Sound.Sampled.AudioFormat arg1, long arg2)
+        public static AudioInputStream CreatePoolableInstance(Java.Io.InputStream arg0, Javax.Sound.Sampled.AudioFormat arg1, long arg2)
         {
             return JVMBridgeBase.New<AudioInputStream>(arg0, arg1, arg2);
         }
@@ -91,7 +91,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// HPA initializer for AudioInputStream(Javax.Sound.Sampled.TargetDataLine arg0)
         /// </summary>
-        public static AudioInputStream New(Javax.Sound.Sampled.TargetDataLine arg0)
+        public static AudioInputStream CreatePoolableInstance(Javax.Sound.Sampled.TargetDataLine arg0)
         {
             return JVMBridgeBase.New<AudioInputStream>(arg0);
         }

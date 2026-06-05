@@ -73,7 +73,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for ShortMessage()
         /// </summary>
-        public static ShortMessage New()
+        public static ShortMessage CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ShortMessage>();
         }
@@ -92,7 +92,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for ShortMessage(int arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static ShortMessage New(int arg0, int arg1, int arg2, int arg3)
+        public static ShortMessage CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<ShortMessage>(arg0, arg1, arg2, arg3);
         }
@@ -110,7 +110,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for ShortMessage(int arg0, int arg1, int arg2)
         /// </summary>
-        public static ShortMessage New(int arg0, int arg1, int arg2)
+        public static ShortMessage CreatePoolableInstance(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<ShortMessage>(arg0, arg1, arg2);
         }
@@ -126,7 +126,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for ShortMessage(int arg0)
         /// </summary>
-        public static ShortMessage New(int arg0)
+        public static ShortMessage CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ShortMessage>(arg0);
         }

@@ -76,7 +76,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DragSourceEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, int arg2)
         /// </summary>
-        public static DragSourceEvent New(Java.Awt.Dnd.DragSourceContext arg0, int arg1, int arg2)
+        public static DragSourceEvent CreatePoolableInstance(Java.Awt.Dnd.DragSourceContext arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<DragSourceEvent>(arg0, arg1, arg2);
         }
@@ -91,7 +91,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DragSourceEvent(Java.Awt.Dnd.DragSourceContext arg0)
         /// </summary>
-        public static DragSourceEvent New(Java.Awt.Dnd.DragSourceContext arg0)
+        public static DragSourceEvent CreatePoolableInstance(Java.Awt.Dnd.DragSourceContext arg0)
         {
             return JVMBridgeBase.New<DragSourceEvent>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String()
         /// </summary>
-        public static String New()
+        public static String CreatePoolableInstance()
         {
             return JVMBridgeBase.New<String>();
         }
@@ -92,7 +92,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(byte[] arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static String New(byte[] arg0, int arg1, int arg2, int arg3)
+        public static String CreatePoolableInstance(byte[] arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<String>(arg0, arg1, arg2, arg3);
         }
@@ -111,7 +111,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(byte[] arg0, int arg1, int arg2, Java.Lang.String arg3)
         /// </summary>
-        public static String New(byte[] arg0, int arg1, int arg2, Java.Lang.String arg3)
+        public static String CreatePoolableInstance(byte[] arg0, int arg1, int arg2, Java.Lang.String arg3)
         {
             return JVMBridgeBase.New<String>(arg0, arg1, arg2, arg3);
         }
@@ -129,7 +129,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(byte[] arg0, int arg1, int arg2, Java.Nio.Charset.Charset arg3)
         /// </summary>
-        public static String New(byte[] arg0, int arg1, int arg2, Java.Nio.Charset.Charset arg3)
+        public static String CreatePoolableInstance(byte[] arg0, int arg1, int arg2, Java.Nio.Charset.Charset arg3)
         {
             return JVMBridgeBase.New<String>(arg0, arg1, arg2, arg3);
         }
@@ -146,7 +146,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(byte[] arg0, int arg1, int arg2)
         /// </summary>
-        public static String New(byte[] arg0, int arg1, int arg2)
+        public static String CreatePoolableInstance(byte[] arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<String>(arg0, arg1, arg2);
         }
@@ -163,7 +163,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(byte[] arg0, int arg1)
         /// </summary>
-        public static String New(byte[] arg0, int arg1)
+        public static String CreatePoolableInstance(byte[] arg0, int arg1)
         {
             return JVMBridgeBase.New<String>(arg0, arg1);
         }
@@ -180,7 +180,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(byte[] arg0, Java.Lang.String arg1)
         /// </summary>
-        public static String New(byte[] arg0, Java.Lang.String arg1)
+        public static String CreatePoolableInstance(byte[] arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<String>(arg0, arg1);
         }
@@ -196,7 +196,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(byte[] arg0, Java.Nio.Charset.Charset arg1)
         /// </summary>
-        public static String New(byte[] arg0, Java.Nio.Charset.Charset arg1)
+        public static String CreatePoolableInstance(byte[] arg0, Java.Nio.Charset.Charset arg1)
         {
             return JVMBridgeBase.New<String>(arg0, arg1);
         }
@@ -211,7 +211,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(byte[] arg0)
         /// </summary>
-        public static String New(byte[] arg0)
+        public static String CreatePoolableInstance(byte[] arg0)
         {
             return JVMBridgeBase.New<String>(arg0);
         }
@@ -228,7 +228,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(char[] arg0, int arg1, int arg2)
         /// </summary>
-        public static String New(char[] arg0, int arg1, int arg2)
+        public static String CreatePoolableInstance(char[] arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<String>(arg0, arg1, arg2);
         }
@@ -243,7 +243,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(char[] arg0)
         /// </summary>
-        public static String New(char[] arg0)
+        public static String CreatePoolableInstance(char[] arg0)
         {
             return JVMBridgeBase.New<String>(arg0);
         }
@@ -260,7 +260,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(int[] arg0, int arg1, int arg2)
         /// </summary>
-        public static String New(int[] arg0, int arg1, int arg2)
+        public static String CreatePoolableInstance(int[] arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<String>(arg0, arg1, arg2);
         }
@@ -275,7 +275,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(Java.Lang.String arg0)
         /// </summary>
-        public static String New(Java.Lang.String arg0)
+        public static String CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<String>(arg0);
         }
@@ -290,7 +290,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(Java.Lang.StringBuffer arg0)
         /// </summary>
-        public static String New(Java.Lang.StringBuffer arg0)
+        public static String CreatePoolableInstance(Java.Lang.StringBuffer arg0)
         {
             return JVMBridgeBase.New<String>(arg0);
         }
@@ -305,7 +305,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for String(Java.Lang.StringBuilder arg0)
         /// </summary>
-        public static String New(Java.Lang.StringBuilder arg0)
+        public static String CreatePoolableInstance(Java.Lang.StringBuilder arg0)
         {
             return JVMBridgeBase.New<String>(arg0);
         }

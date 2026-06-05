@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for DoubleAdder()
         /// </summary>
-        public static DoubleAdder New()
+        public static DoubleAdder CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DoubleAdder>();
         }

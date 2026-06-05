@@ -75,7 +75,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DropTarget()
         /// </summary>
-        public static DropTarget New()
+        public static DropTarget CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DropTarget>();
         }
@@ -95,7 +95,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3, Java.Awt.Datatransfer.FlavorMap arg4)
         /// </summary>
-        public static DropTarget New(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3, Java.Awt.Datatransfer.FlavorMap arg4)
+        public static DropTarget CreatePoolableInstance(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3, Java.Awt.Datatransfer.FlavorMap arg4)
         {
             return JVMBridgeBase.New<DropTarget>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -114,7 +114,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3)
         /// </summary>
-        public static DropTarget New(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3)
+        public static DropTarget CreatePoolableInstance(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3)
         {
             return JVMBridgeBase.New<DropTarget>(arg0, arg1, arg2, arg3);
         }
@@ -132,7 +132,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2)
         /// </summary>
-        public static DropTarget New(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2)
+        public static DropTarget CreatePoolableInstance(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2)
         {
             return JVMBridgeBase.New<DropTarget>(arg0, arg1, arg2);
         }
@@ -149,7 +149,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DropTarget(Java.Awt.Component arg0, Java.Awt.Dnd.DropTargetListener arg1)
         /// </summary>
-        public static DropTarget New(Java.Awt.Component arg0, Java.Awt.Dnd.DropTargetListener arg1)
+        public static DropTarget CreatePoolableInstance(Java.Awt.Component arg0, Java.Awt.Dnd.DropTargetListener arg1)
         {
             return JVMBridgeBase.New<DropTarget>(arg0, arg1);
         }

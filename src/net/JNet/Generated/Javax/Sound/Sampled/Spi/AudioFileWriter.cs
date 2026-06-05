@@ -73,7 +73,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// HPA initializer for AudioFileWriter()
         /// </summary>
-        public static AudioFileWriter New()
+        public static AudioFileWriter CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AudioFileWriter>();
         }

@@ -73,7 +73,7 @@ namespace Javax.Xml.Soap
         /// <summary>
         /// HPA initializer for MessageFactory()
         /// </summary>
-        public static MessageFactory New()
+        public static MessageFactory CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MessageFactory>();
         }

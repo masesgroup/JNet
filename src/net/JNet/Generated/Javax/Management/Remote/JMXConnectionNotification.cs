@@ -79,7 +79,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// HPA initializer for JMXConnectionNotification(Java.Lang.String arg0, object arg1, Java.Lang.String arg2, long arg3, Java.Lang.String arg4, object arg5)
         /// </summary>
-        public static JMXConnectionNotification New(Java.Lang.String arg0, object arg1, Java.Lang.String arg2, long arg3, Java.Lang.String arg4, object arg5)
+        public static JMXConnectionNotification CreatePoolableInstance(Java.Lang.String arg0, object arg1, Java.Lang.String arg2, long arg3, Java.Lang.String arg4, object arg5)
         {
             return JVMBridgeBase.New<JMXConnectionNotification>(arg0, arg1, arg2, arg3, arg4, arg5);
         }

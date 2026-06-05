@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for GapContent()
         /// </summary>
-        public static GapContent New()
+        public static GapContent CreatePoolableInstance()
         {
             return JVMBridgeBase.New<GapContent>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for GapContent(int arg0)
         /// </summary>
-        public static GapContent New(int arg0)
+        public static GapContent CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<GapContent>(arg0);
         }

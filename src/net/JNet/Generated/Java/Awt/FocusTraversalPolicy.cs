@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for FocusTraversalPolicy()
         /// </summary>
-        public static FocusTraversalPolicy New()
+        public static FocusTraversalPolicy CreatePoolableInstance()
         {
             return JVMBridgeBase.New<FocusTraversalPolicy>();
         }

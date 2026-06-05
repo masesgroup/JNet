@@ -108,7 +108,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for InheritableThreadLocal()
         /// </summary>
-        public static InheritableThreadLocal New()
+        public static InheritableThreadLocal CreatePoolableInstance()
         {
             return JVMBridgeBase.New<InheritableThreadLocal>();
         }
@@ -153,7 +153,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for InheritableThreadLocal()
         /// </summary>
-        public static InheritableThreadLocal<T> New()
+        public static InheritableThreadLocal<T> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<InheritableThreadLocal<T>>();
         }

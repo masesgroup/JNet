@@ -74,7 +74,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for Annotation(object arg0)
         /// </summary>
-        public static Annotation New(object arg0)
+        public static Annotation CreatePoolableInstance(object arg0)
         {
             return JVMBridgeBase.New<Annotation>(arg0);
         }

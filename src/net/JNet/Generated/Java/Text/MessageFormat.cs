@@ -109,7 +109,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for MessageFormat(Java.Lang.String arg0, Java.Util.Locale arg1)
         /// </summary>
-        public static MessageFormat New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        public static MessageFormat CreatePoolableInstance(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
             return JVMBridgeBase.New<MessageFormat>(arg0, arg1);
         }
@@ -124,7 +124,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for MessageFormat(Java.Lang.String arg0)
         /// </summary>
-        public static MessageFormat New(Java.Lang.String arg0)
+        public static MessageFormat CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<MessageFormat>(arg0);
         }

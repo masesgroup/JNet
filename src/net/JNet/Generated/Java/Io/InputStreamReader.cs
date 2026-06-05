@@ -76,7 +76,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for InputStreamReader(Java.Io.InputStream arg0, Java.Lang.String arg1)
         /// </summary>
-        public static InputStreamReader New(Java.Io.InputStream arg0, Java.Lang.String arg1)
+        public static InputStreamReader CreatePoolableInstance(Java.Io.InputStream arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<InputStreamReader>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for InputStreamReader(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1)
         /// </summary>
-        public static InputStreamReader New(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1)
+        public static InputStreamReader CreatePoolableInstance(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1)
         {
             return JVMBridgeBase.New<InputStreamReader>(arg0, arg1);
         }
@@ -108,7 +108,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for InputStreamReader(Java.Io.InputStream arg0, Java.Nio.Charset.CharsetDecoder arg1)
         /// </summary>
-        public static InputStreamReader New(Java.Io.InputStream arg0, Java.Nio.Charset.CharsetDecoder arg1)
+        public static InputStreamReader CreatePoolableInstance(Java.Io.InputStream arg0, Java.Nio.Charset.CharsetDecoder arg1)
         {
             return JVMBridgeBase.New<InputStreamReader>(arg0, arg1);
         }
@@ -123,7 +123,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for InputStreamReader(Java.Io.InputStream arg0)
         /// </summary>
-        public static InputStreamReader New(Java.Io.InputStream arg0)
+        public static InputStreamReader CreatePoolableInstance(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<InputStreamReader>(arg0);
         }

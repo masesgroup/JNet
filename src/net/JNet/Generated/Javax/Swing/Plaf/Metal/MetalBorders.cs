@@ -549,7 +549,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalBorders()
         /// </summary>
-        public static MetalBorders New()
+        public static MetalBorders CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MetalBorders>();
         }
@@ -622,7 +622,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for ButtonBorder()
             /// </summary>
-            public static ButtonBorder New()
+            public static ButtonBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<ButtonBorder>();
             }
@@ -671,7 +671,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for Flush3DBorder()
             /// </summary>
-            public static Flush3DBorder New()
+            public static Flush3DBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<Flush3DBorder>();
             }
@@ -720,7 +720,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for InternalFrameBorder()
             /// </summary>
-            public static InternalFrameBorder New()
+            public static InternalFrameBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<InternalFrameBorder>();
             }
@@ -769,7 +769,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for MenuBarBorder()
             /// </summary>
-            public static MenuBarBorder New()
+            public static MenuBarBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<MenuBarBorder>();
             }
@@ -818,7 +818,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for MenuItemBorder()
             /// </summary>
-            public static MenuItemBorder New()
+            public static MenuItemBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<MenuItemBorder>();
             }
@@ -867,7 +867,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for OptionDialogBorder()
             /// </summary>
-            public static OptionDialogBorder New()
+            public static OptionDialogBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<OptionDialogBorder>();
             }
@@ -916,7 +916,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for PaletteBorder()
             /// </summary>
-            public static PaletteBorder New()
+            public static PaletteBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<PaletteBorder>();
             }
@@ -965,7 +965,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for PopupMenuBorder()
             /// </summary>
-            public static PopupMenuBorder New()
+            public static PopupMenuBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<PopupMenuBorder>();
             }
@@ -1014,7 +1014,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for RolloverButtonBorder()
             /// </summary>
-            public static RolloverButtonBorder New()
+            public static RolloverButtonBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<RolloverButtonBorder>();
             }
@@ -1059,7 +1059,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for ScrollPaneBorder()
             /// </summary>
-            public static ScrollPaneBorder New()
+            public static ScrollPaneBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<ScrollPaneBorder>();
             }
@@ -1108,7 +1108,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for TableHeaderBorder()
             /// </summary>
-            public static TableHeaderBorder New()
+            public static TableHeaderBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<TableHeaderBorder>();
             }
@@ -1153,7 +1153,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for TextFieldBorder()
             /// </summary>
-            public static TextFieldBorder New()
+            public static TextFieldBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<TextFieldBorder>();
             }
@@ -1198,7 +1198,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for ToggleButtonBorder()
             /// </summary>
-            public static ToggleButtonBorder New()
+            public static ToggleButtonBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<ToggleButtonBorder>();
             }
@@ -1243,7 +1243,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for ToolBarBorder()
             /// </summary>
-            public static ToolBarBorder New()
+            public static ToolBarBorder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<ToolBarBorder>();
             }

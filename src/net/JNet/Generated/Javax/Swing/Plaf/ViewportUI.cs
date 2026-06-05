@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for ViewportUI()
         /// </summary>
-        public static ViewportUI New()
+        public static ViewportUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ViewportUI>();
         }

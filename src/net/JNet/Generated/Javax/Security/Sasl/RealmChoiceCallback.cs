@@ -77,7 +77,7 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// HPA initializer for RealmChoiceCallback(Java.Lang.String arg0, Java.Lang.String[] arg1, int arg2, bool arg3)
         /// </summary>
-        public static RealmChoiceCallback New(Java.Lang.String arg0, Java.Lang.String[] arg1, int arg2, bool arg3)
+        public static RealmChoiceCallback CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String[] arg1, int arg2, bool arg3)
         {
             return JVMBridgeBase.New<RealmChoiceCallback>(arg0, arg1, arg2, arg3);
         }

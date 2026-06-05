@@ -73,7 +73,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for CacheRequest()
         /// </summary>
-        public static CacheRequest New()
+        public static CacheRequest CreatePoolableInstance()
         {
             return JVMBridgeBase.New<CacheRequest>();
         }

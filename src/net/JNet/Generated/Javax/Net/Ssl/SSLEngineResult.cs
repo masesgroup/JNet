@@ -145,7 +145,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for SSLEngineResult(Javax.Net.Ssl.SSLEngineResult.Status arg0, Javax.Net.Ssl.SSLEngineResult.HandshakeStatus arg1, int arg2, int arg3)
         /// </summary>
-        public static SSLEngineResult New(Javax.Net.Ssl.SSLEngineResult.Status arg0, Javax.Net.Ssl.SSLEngineResult.HandshakeStatus arg1, int arg2, int arg3)
+        public static SSLEngineResult CreatePoolableInstance(Javax.Net.Ssl.SSLEngineResult.Status arg0, Javax.Net.Ssl.SSLEngineResult.HandshakeStatus arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<SSLEngineResult>(arg0, arg1, arg2, arg3);
         }

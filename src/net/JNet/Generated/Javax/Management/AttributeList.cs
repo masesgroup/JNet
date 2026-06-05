@@ -73,7 +73,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for AttributeList()
         /// </summary>
-        public static AttributeList New()
+        public static AttributeList CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AttributeList>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for AttributeList(int arg0)
         /// </summary>
-        public static AttributeList New(int arg0)
+        public static AttributeList CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<AttributeList>(arg0);
         }
@@ -103,7 +103,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for AttributeList(Java.Util.List%3CJavax.Management.Attribute%3E arg0)
         /// </summary>
-        public static AttributeList New(Java.Util.List<Javax.Management.Attribute> arg0)
+        public static AttributeList CreatePoolableInstance(Java.Util.List<Javax.Management.Attribute> arg0)
         {
             return JVMBridgeBase.New<AttributeList>(arg0);
         }
@@ -118,7 +118,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for AttributeList(Javax.Management.AttributeList arg0)
         /// </summary>
-        public static AttributeList New(Javax.Management.AttributeList arg0)
+        public static AttributeList CreatePoolableInstance(Javax.Management.AttributeList arg0)
         {
             return JVMBridgeBase.New<AttributeList>(arg0);
         }

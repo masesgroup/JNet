@@ -77,7 +77,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for DSAPublicKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3)
         /// </summary>
-        public static DSAPublicKeySpec New(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3)
+        public static DSAPublicKeySpec CreatePoolableInstance(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3)
         {
             return JVMBridgeBase.New<DSAPublicKeySpec>(arg0, arg1, arg2, arg3);
         }

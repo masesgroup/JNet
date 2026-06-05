@@ -108,7 +108,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashSet()
         /// </summary>
-        public static LinkedHashSet New()
+        public static LinkedHashSet CreatePoolableInstance()
         {
             return JVMBridgeBase.New<LinkedHashSet>();
         }
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashSet(int arg0, float arg1)
         /// </summary>
-        public static LinkedHashSet New(int arg0, float arg1)
+        public static LinkedHashSet CreatePoolableInstance(int arg0, float arg1)
         {
             return JVMBridgeBase.New<LinkedHashSet>(arg0, arg1);
         }
@@ -139,7 +139,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashSet(int arg0)
         /// </summary>
-        public static LinkedHashSet New(int arg0)
+        public static LinkedHashSet CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<LinkedHashSet>(arg0);
         }
@@ -154,7 +154,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashSet(Java.Util.Collection arg0)
         /// </summary>
-        public static LinkedHashSet New(Java.Util.Collection arg0)
+        public static LinkedHashSet CreatePoolableInstance(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<LinkedHashSet>(arg0);
         }
@@ -199,7 +199,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashSet()
         /// </summary>
-        public static LinkedHashSet<E> New()
+        public static LinkedHashSet<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<LinkedHashSet<E>>();
         }
@@ -215,7 +215,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashSet(int arg0, float arg1)
         /// </summary>
-        public static LinkedHashSet<E> New(int arg0, float arg1)
+        public static LinkedHashSet<E> CreatePoolableInstance(int arg0, float arg1)
         {
             return JVMBridgeBase.New<LinkedHashSet<E>>(arg0, arg1);
         }
@@ -230,7 +230,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashSet(int arg0)
         /// </summary>
-        public static LinkedHashSet<E> New(int arg0)
+        public static LinkedHashSet<E> CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<LinkedHashSet<E>>(arg0);
         }
@@ -245,7 +245,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashSet(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static LinkedHashSet<E> New(Java.Util.Collection<E> arg0)
+        public static LinkedHashSet<E> CreatePoolableInstance(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<LinkedHashSet<E>>(arg0);
         }

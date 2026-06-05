@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicIconFactory()
         /// </summary>
-        public static BasicIconFactory New()
+        public static BasicIconFactory CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicIconFactory>();
         }

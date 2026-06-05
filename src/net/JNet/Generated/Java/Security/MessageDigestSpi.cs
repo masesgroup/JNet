@@ -73,7 +73,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for MessageDigestSpi()
         /// </summary>
-        public static MessageDigestSpi New()
+        public static MessageDigestSpi CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MessageDigestSpi>();
         }

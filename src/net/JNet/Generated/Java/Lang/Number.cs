@@ -73,7 +73,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Number()
         /// </summary>
-        public static Number New()
+        public static Number CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Number>();
         }

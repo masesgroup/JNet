@@ -74,7 +74,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// HPA initializer for StringSelection(Java.Lang.String arg0)
         /// </summary>
-        public static StringSelection New(Java.Lang.String arg0)
+        public static StringSelection CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<StringSelection>(arg0);
         }

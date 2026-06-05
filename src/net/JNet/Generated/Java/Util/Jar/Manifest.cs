@@ -73,7 +73,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for Manifest()
         /// </summary>
-        public static Manifest New()
+        public static Manifest CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Manifest>();
         }
@@ -89,7 +89,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for Manifest(Java.Io.InputStream arg0)
         /// </summary>
-        public static Manifest New(Java.Io.InputStream arg0)
+        public static Manifest CreatePoolableInstance(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<Manifest>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for Manifest(Java.Util.Jar.Manifest arg0)
         /// </summary>
-        public static Manifest New(Java.Util.Jar.Manifest arg0)
+        public static Manifest CreatePoolableInstance(Java.Util.Jar.Manifest arg0)
         {
             return JVMBridgeBase.New<Manifest>(arg0);
         }

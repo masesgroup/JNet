@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Rectangle()
         /// </summary>
-        public static Rectangle New()
+        public static Rectangle CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Rectangle>();
         }
@@ -91,7 +91,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Rectangle(int arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static Rectangle New(int arg0, int arg1, int arg2, int arg3)
+        public static Rectangle CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<Rectangle>(arg0, arg1, arg2, arg3);
         }
@@ -107,7 +107,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Rectangle(int arg0, int arg1)
         /// </summary>
-        public static Rectangle New(int arg0, int arg1)
+        public static Rectangle CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<Rectangle>(arg0, arg1);
         }
@@ -122,7 +122,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Rectangle(Java.Awt.Dimension arg0)
         /// </summary>
-        public static Rectangle New(Java.Awt.Dimension arg0)
+        public static Rectangle CreatePoolableInstance(Java.Awt.Dimension arg0)
         {
             return JVMBridgeBase.New<Rectangle>(arg0);
         }
@@ -138,7 +138,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Rectangle(Java.Awt.Point arg0, Java.Awt.Dimension arg1)
         /// </summary>
-        public static Rectangle New(Java.Awt.Point arg0, Java.Awt.Dimension arg1)
+        public static Rectangle CreatePoolableInstance(Java.Awt.Point arg0, Java.Awt.Dimension arg1)
         {
             return JVMBridgeBase.New<Rectangle>(arg0, arg1);
         }
@@ -153,7 +153,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Rectangle(Java.Awt.Point arg0)
         /// </summary>
-        public static Rectangle New(Java.Awt.Point arg0)
+        public static Rectangle CreatePoolableInstance(Java.Awt.Point arg0)
         {
             return JVMBridgeBase.New<Rectangle>(arg0);
         }
@@ -168,7 +168,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Rectangle(Java.Awt.Rectangle arg0)
         /// </summary>
-        public static Rectangle New(Java.Awt.Rectangle arg0)
+        public static Rectangle CreatePoolableInstance(Java.Awt.Rectangle arg0)
         {
             return JVMBridgeBase.New<Rectangle>(arg0);
         }

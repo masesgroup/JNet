@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicSeparatorUI()
         /// </summary>
-        public static BasicSeparatorUI New()
+        public static BasicSeparatorUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicSeparatorUI>();
         }

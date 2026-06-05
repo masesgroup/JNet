@@ -73,7 +73,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for JTableHeader()
         /// </summary>
-        public static JTableHeader New()
+        public static JTableHeader CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JTableHeader>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for JTableHeader(Javax.Swing.Table.TableColumnModel arg0)
         /// </summary>
-        public static JTableHeader New(Javax.Swing.Table.TableColumnModel arg0)
+        public static JTableHeader CreatePoolableInstance(Javax.Swing.Table.TableColumnModel arg0)
         {
             return JVMBridgeBase.New<JTableHeader>(arg0);
         }

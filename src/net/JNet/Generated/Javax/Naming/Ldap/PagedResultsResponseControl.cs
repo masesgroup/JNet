@@ -77,7 +77,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for PagedResultsResponseControl(Java.Lang.String arg0, bool arg1, byte[] arg2)
         /// </summary>
-        public static PagedResultsResponseControl New(Java.Lang.String arg0, bool arg1, byte[] arg2)
+        public static PagedResultsResponseControl CreatePoolableInstance(Java.Lang.String arg0, bool arg1, byte[] arg2)
         {
             return JVMBridgeBase.New<PagedResultsResponseControl>(arg0, arg1, arg2);
         }

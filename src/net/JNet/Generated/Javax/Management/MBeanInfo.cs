@@ -81,7 +81,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
         /// </summary>
-        public static MBeanInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
+        public static MBeanInfo CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
         {
             return JVMBridgeBase.New<MBeanInfo>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -102,7 +102,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
         /// </summary>
-        public static MBeanInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
+        public static MBeanInfo CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
         {
             return JVMBridgeBase.New<MBeanInfo>(arg0, arg1, arg2, arg3, arg4, arg5);
         }

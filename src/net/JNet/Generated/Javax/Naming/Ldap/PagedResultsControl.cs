@@ -76,7 +76,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for PagedResultsControl(int arg0, bool arg1)
         /// </summary>
-        public static PagedResultsControl New(int arg0, bool arg1)
+        public static PagedResultsControl CreatePoolableInstance(int arg0, bool arg1)
         {
             return JVMBridgeBase.New<PagedResultsControl>(arg0, arg1);
         }
@@ -94,7 +94,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for PagedResultsControl(int arg0, byte[] arg1, bool arg2)
         /// </summary>
-        public static PagedResultsControl New(int arg0, byte[] arg1, bool arg2)
+        public static PagedResultsControl CreatePoolableInstance(int arg0, byte[] arg1, bool arg2)
         {
             return JVMBridgeBase.New<PagedResultsControl>(arg0, arg1, arg2);
         }

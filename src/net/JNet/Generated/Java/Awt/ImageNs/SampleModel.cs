@@ -77,7 +77,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for SampleModel(int arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static SampleModel New(int arg0, int arg1, int arg2, int arg3)
+        public static SampleModel CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<SampleModel>(arg0, arg1, arg2, arg3);
         }

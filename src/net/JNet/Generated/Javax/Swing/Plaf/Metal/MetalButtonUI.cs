@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalButtonUI()
         /// </summary>
-        public static MetalButtonUI New()
+        public static MetalButtonUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MetalButtonUI>();
         }

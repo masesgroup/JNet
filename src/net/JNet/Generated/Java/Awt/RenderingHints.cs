@@ -109,7 +109,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for RenderingHints(Java.Awt.RenderingHints.Key arg0, object arg1)
         /// </summary>
-        public static RenderingHints New(Java.Awt.RenderingHints.Key arg0, object arg1)
+        public static RenderingHints CreatePoolableInstance(Java.Awt.RenderingHints.Key arg0, object arg1)
         {
             return JVMBridgeBase.New<RenderingHints>(arg0, arg1);
         }
@@ -124,7 +124,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for RenderingHints(Java.Util.Map%3CJava.Awt.RenderingHints.Key, object%3E arg0)
         /// </summary>
-        public static RenderingHints New(Java.Util.Map<Java.Awt.RenderingHints.Key, object> arg0)
+        public static RenderingHints CreatePoolableInstance(Java.Util.Map<Java.Awt.RenderingHints.Key, object> arg0)
         {
             return JVMBridgeBase.New<RenderingHints>(arg0);
         }

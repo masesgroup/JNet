@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicGraphicsUtils()
         /// </summary>
-        public static BasicGraphicsUtils New()
+        public static BasicGraphicsUtils CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicGraphicsUtils>();
         }

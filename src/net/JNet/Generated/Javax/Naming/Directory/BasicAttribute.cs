@@ -75,7 +75,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// HPA initializer for BasicAttribute(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static BasicAttribute New(Java.Lang.String arg0, bool arg1)
+        public static BasicAttribute CreatePoolableInstance(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<BasicAttribute>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// HPA initializer for BasicAttribute(Java.Lang.String arg0, object arg1, bool arg2)
         /// </summary>
-        public static BasicAttribute New(Java.Lang.String arg0, object arg1, bool arg2)
+        public static BasicAttribute CreatePoolableInstance(Java.Lang.String arg0, object arg1, bool arg2)
         {
             return JVMBridgeBase.New<BasicAttribute>(arg0, arg1, arg2);
         }
@@ -108,7 +108,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// HPA initializer for BasicAttribute(Java.Lang.String arg0, object arg1)
         /// </summary>
-        public static BasicAttribute New(Java.Lang.String arg0, object arg1)
+        public static BasicAttribute CreatePoolableInstance(Java.Lang.String arg0, object arg1)
         {
             return JVMBridgeBase.New<BasicAttribute>(arg0, arg1);
         }
@@ -123,7 +123,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// HPA initializer for BasicAttribute(Java.Lang.String arg0)
         /// </summary>
-        public static BasicAttribute New(Java.Lang.String arg0)
+        public static BasicAttribute CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<BasicAttribute>(arg0);
         }

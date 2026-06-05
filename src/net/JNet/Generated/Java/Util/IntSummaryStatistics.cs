@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for IntSummaryStatistics()
         /// </summary>
-        public static IntSummaryStatistics New()
+        public static IntSummaryStatistics CreatePoolableInstance()
         {
             return JVMBridgeBase.New<IntSummaryStatistics>();
         }

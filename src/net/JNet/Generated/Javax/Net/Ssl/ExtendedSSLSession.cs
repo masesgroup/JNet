@@ -73,7 +73,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for ExtendedSSLSession()
         /// </summary>
-        public static ExtendedSSLSession New()
+        public static ExtendedSSLSession CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ExtendedSSLSession>();
         }

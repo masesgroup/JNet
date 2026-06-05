@@ -73,7 +73,7 @@ namespace Javax.Xml.Soap
         /// <summary>
         /// HPA initializer for MimeHeaders()
         /// </summary>
-        public static MimeHeaders New()
+        public static MimeHeaders CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MimeHeaders>();
         }

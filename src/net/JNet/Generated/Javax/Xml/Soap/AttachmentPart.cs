@@ -73,7 +73,7 @@ namespace Javax.Xml.Soap
         /// <summary>
         /// HPA initializer for AttachmentPart()
         /// </summary>
-        public static AttachmentPart New()
+        public static AttachmentPart CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AttachmentPart>();
         }

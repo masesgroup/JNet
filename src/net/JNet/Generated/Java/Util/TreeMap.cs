@@ -109,7 +109,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeMap()
         /// </summary>
-        public static TreeMap New()
+        public static TreeMap CreatePoolableInstance()
         {
             return JVMBridgeBase.New<TreeMap>();
         }
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeMap(Java.Util.Comparator arg0)
         /// </summary>
-        public static TreeMap New(Java.Util.Comparator arg0)
+        public static TreeMap CreatePoolableInstance(Java.Util.Comparator arg0)
         {
             return JVMBridgeBase.New<TreeMap>(arg0);
         }
@@ -139,7 +139,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeMap(Java.Util.Map arg0)
         /// </summary>
-        public static TreeMap New(Java.Util.Map arg0)
+        public static TreeMap CreatePoolableInstance(Java.Util.Map arg0)
         {
             return JVMBridgeBase.New<TreeMap>(arg0);
         }
@@ -154,7 +154,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeMap(Java.Util.SortedMap arg0)
         /// </summary>
-        public static TreeMap New(Java.Util.SortedMap arg0)
+        public static TreeMap CreatePoolableInstance(Java.Util.SortedMap arg0)
         {
             return JVMBridgeBase.New<TreeMap>(arg0);
         }
@@ -423,7 +423,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeMap()
         /// </summary>
-        public static TreeMap<K, V> New()
+        public static TreeMap<K, V> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<TreeMap<K, V>>();
         }
@@ -438,7 +438,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeMap(Java.Util.Comparator%3CK%3E arg0)
         /// </summary>
-        public static TreeMap<K, V> New(Java.Util.Comparator<K> arg0)
+        public static TreeMap<K, V> CreatePoolableInstance(Java.Util.Comparator<K> arg0)
         {
             return JVMBridgeBase.New<TreeMap<K, V>>(arg0);
         }
@@ -453,7 +453,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeMap(Java.Util.Map%3CK, V%3E arg0)
         /// </summary>
-        public static TreeMap<K, V> New(Java.Util.Map<K, V> arg0)
+        public static TreeMap<K, V> CreatePoolableInstance(Java.Util.Map<K, V> arg0)
         {
             return JVMBridgeBase.New<TreeMap<K, V>>(arg0);
         }
@@ -468,7 +468,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeMap(Java.Util.SortedMap%3CK, V%3E arg0)
         /// </summary>
-        public static TreeMap<K, V> New(Java.Util.SortedMap<K, V> arg0)
+        public static TreeMap<K, V> CreatePoolableInstance(Java.Util.SortedMap<K, V> arg0)
         {
             return JVMBridgeBase.New<TreeMap<K, V>>(arg0);
         }

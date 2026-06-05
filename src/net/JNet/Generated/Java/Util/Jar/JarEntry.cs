@@ -74,7 +74,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for JarEntry(Java.Lang.String arg0)
         /// </summary>
-        public static JarEntry New(Java.Lang.String arg0)
+        public static JarEntry CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JarEntry>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for JarEntry(Java.Util.Jar.JarEntry arg0)
         /// </summary>
-        public static JarEntry New(Java.Util.Jar.JarEntry arg0)
+        public static JarEntry CreatePoolableInstance(Java.Util.Jar.JarEntry arg0)
         {
             return JVMBridgeBase.New<JarEntry>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for JarEntry(Java.Util.Zip.ZipEntry arg0)
         /// </summary>
-        public static JarEntry New(Java.Util.Zip.ZipEntry arg0)
+        public static JarEntry CreatePoolableInstance(Java.Util.Zip.ZipEntry arg0)
         {
             return JVMBridgeBase.New<JarEntry>(arg0);
         }

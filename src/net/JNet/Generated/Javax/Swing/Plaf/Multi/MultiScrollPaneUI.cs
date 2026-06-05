@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiScrollPaneUI()
         /// </summary>
-        public static MultiScrollPaneUI New()
+        public static MultiScrollPaneUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MultiScrollPaneUI>();
         }

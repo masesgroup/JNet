@@ -73,7 +73,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for CookieHandler()
         /// </summary>
-        public static CookieHandler New()
+        public static CookieHandler CreatePoolableInstance()
         {
             return JVMBridgeBase.New<CookieHandler>();
         }

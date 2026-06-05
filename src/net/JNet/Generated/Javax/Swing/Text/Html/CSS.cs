@@ -107,7 +107,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for CSS()
         /// </summary>
-        public static CSS New()
+        public static CSS CreatePoolableInstance()
         {
             return JVMBridgeBase.New<CSS>();
         }

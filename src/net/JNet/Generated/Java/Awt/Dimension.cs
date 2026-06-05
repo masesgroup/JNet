@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dimension()
         /// </summary>
-        public static Dimension New()
+        public static Dimension CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Dimension>();
         }
@@ -89,7 +89,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dimension(int arg0, int arg1)
         /// </summary>
-        public static Dimension New(int arg0, int arg1)
+        public static Dimension CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<Dimension>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Dimension(Java.Awt.Dimension arg0)
         /// </summary>
-        public static Dimension New(Java.Awt.Dimension arg0)
+        public static Dimension CreatePoolableInstance(Java.Awt.Dimension arg0)
         {
             return JVMBridgeBase.New<Dimension>(arg0);
         }

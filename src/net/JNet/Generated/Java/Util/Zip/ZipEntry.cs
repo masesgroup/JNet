@@ -74,7 +74,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for ZipEntry(Java.Lang.String arg0)
         /// </summary>
-        public static ZipEntry New(Java.Lang.String arg0)
+        public static ZipEntry CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<ZipEntry>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for ZipEntry(Java.Util.Zip.ZipEntry arg0)
         /// </summary>
-        public static ZipEntry New(Java.Util.Zip.ZipEntry arg0)
+        public static ZipEntry CreatePoolableInstance(Java.Util.Zip.ZipEntry arg0)
         {
             return JVMBridgeBase.New<ZipEntry>(arg0);
         }

@@ -141,7 +141,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicTextUI()
         /// </summary>
-        public static BasicTextUI New()
+        public static BasicTextUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicTextUI>();
         }
@@ -203,7 +203,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for BasicCaret()
             /// </summary>
-            public static BasicCaret New()
+            public static BasicCaret CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<BasicCaret>();
             }
@@ -252,7 +252,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for BasicHighlighter()
             /// </summary>
-            public static BasicHighlighter New()
+            public static BasicHighlighter CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<BasicHighlighter>();
             }

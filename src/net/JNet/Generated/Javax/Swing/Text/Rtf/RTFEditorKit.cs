@@ -73,7 +73,7 @@ namespace Javax.Swing.Text.Rtf
         /// <summary>
         /// HPA initializer for RTFEditorKit()
         /// </summary>
-        public static RTFEditorKit New()
+        public static RTFEditorKit CreatePoolableInstance()
         {
             return JVMBridgeBase.New<RTFEditorKit>();
         }

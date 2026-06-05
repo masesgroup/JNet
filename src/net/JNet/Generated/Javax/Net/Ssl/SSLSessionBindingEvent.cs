@@ -75,7 +75,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for SSLSessionBindingEvent(Javax.Net.Ssl.SSLSession arg0, Java.Lang.String arg1)
         /// </summary>
-        public static SSLSessionBindingEvent New(Javax.Net.Ssl.SSLSession arg0, Java.Lang.String arg1)
+        public static SSLSessionBindingEvent CreatePoolableInstance(Javax.Net.Ssl.SSLSession arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<SSLSessionBindingEvent>(arg0, arg1);
         }

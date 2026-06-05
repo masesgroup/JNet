@@ -73,7 +73,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// HPA initializer for Modifier()
         /// </summary>
-        public static Modifier New()
+        public static Modifier CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Modifier>();
         }

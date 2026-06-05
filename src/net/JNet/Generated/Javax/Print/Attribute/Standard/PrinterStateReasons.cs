@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PrinterStateReasons()
         /// </summary>
-        public static PrinterStateReasons New()
+        public static PrinterStateReasons CreatePoolableInstance()
         {
             return JVMBridgeBase.New<PrinterStateReasons>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PrinterStateReasons(int arg0, float arg1)
         /// </summary>
-        public static PrinterStateReasons New(int arg0, float arg1)
+        public static PrinterStateReasons CreatePoolableInstance(int arg0, float arg1)
         {
             return JVMBridgeBase.New<PrinterStateReasons>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PrinterStateReasons(int arg0)
         /// </summary>
-        public static PrinterStateReasons New(int arg0)
+        public static PrinterStateReasons CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<PrinterStateReasons>(arg0);
         }
@@ -119,7 +119,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PrinterStateReasons(Java.Util.Map%3CJavax.Print.Attribute.Standard.PrinterStateReason, Javax.Print.Attribute.Standard.Severity%3E arg0)
         /// </summary>
-        public static PrinterStateReasons New(Java.Util.Map<Javax.Print.Attribute.Standard.PrinterStateReason, Javax.Print.Attribute.Standard.Severity> arg0)
+        public static PrinterStateReasons CreatePoolableInstance(Java.Util.Map<Javax.Print.Attribute.Standard.PrinterStateReason, Javax.Print.Attribute.Standard.Severity> arg0)
         {
             return JVMBridgeBase.New<PrinterStateReasons>(arg0);
         }

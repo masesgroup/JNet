@@ -108,7 +108,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for AbstractListModel()
         /// </summary>
-        public static AbstractListModel New()
+        public static AbstractListModel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AbstractListModel>();
         }
@@ -193,7 +193,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for AbstractListModel()
         /// </summary>
-        public static AbstractListModel<E> New()
+        public static AbstractListModel<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AbstractListModel<E>>();
         }

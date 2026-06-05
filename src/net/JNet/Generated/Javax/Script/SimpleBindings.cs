@@ -73,7 +73,7 @@ namespace Javax.Script
         /// <summary>
         /// HPA initializer for SimpleBindings()
         /// </summary>
-        public static SimpleBindings New()
+        public static SimpleBindings CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SimpleBindings>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Script
         /// <summary>
         /// HPA initializer for SimpleBindings(Java.Util.Map%3CJava.Lang.String, object%3E arg0)
         /// </summary>
-        public static SimpleBindings New(Java.Util.Map<Java.Lang.String, object> arg0)
+        public static SimpleBindings CreatePoolableInstance(Java.Util.Map<Java.Lang.String, object> arg0)
         {
             return JVMBridgeBase.New<SimpleBindings>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicPasswordFieldUI()
         /// </summary>
-        public static BasicPasswordFieldUI New()
+        public static BasicPasswordFieldUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicPasswordFieldUI>();
         }

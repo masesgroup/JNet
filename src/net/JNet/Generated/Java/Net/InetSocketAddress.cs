@@ -74,7 +74,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for InetSocketAddress(int arg0)
         /// </summary>
-        public static InetSocketAddress New(int arg0)
+        public static InetSocketAddress CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<InetSocketAddress>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for InetSocketAddress(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static InetSocketAddress New(Java.Lang.String arg0, int arg1)
+        public static InetSocketAddress CreatePoolableInstance(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<InetSocketAddress>(arg0, arg1);
         }
@@ -106,7 +106,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for InetSocketAddress(Java.Net.InetAddress arg0, int arg1)
         /// </summary>
-        public static InetSocketAddress New(Java.Net.InetAddress arg0, int arg1)
+        public static InetSocketAddress CreatePoolableInstance(Java.Net.InetAddress arg0, int arg1)
         {
             return JVMBridgeBase.New<InetSocketAddress>(arg0, arg1);
         }

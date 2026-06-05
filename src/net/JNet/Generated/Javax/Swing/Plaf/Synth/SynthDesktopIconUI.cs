@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthDesktopIconUI()
         /// </summary>
-        public static SynthDesktopIconUI New()
+        public static SynthDesktopIconUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SynthDesktopIconUI>();
         }

@@ -76,7 +76,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanServerInvocationHandler(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, bool arg2)
         /// </summary>
-        public static MBeanServerInvocationHandler New(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, bool arg2)
+        public static MBeanServerInvocationHandler CreatePoolableInstance(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, bool arg2)
         {
             return JVMBridgeBase.New<MBeanServerInvocationHandler>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanServerInvocationHandler(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1)
         /// </summary>
-        public static MBeanServerInvocationHandler New(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1)
+        public static MBeanServerInvocationHandler CreatePoolableInstance(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1)
         {
             return JVMBridgeBase.New<MBeanServerInvocationHandler>(arg0, arg1);
         }

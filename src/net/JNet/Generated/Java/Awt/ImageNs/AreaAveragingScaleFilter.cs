@@ -75,7 +75,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for AreaAveragingScaleFilter(int arg0, int arg1)
         /// </summary>
-        public static AreaAveragingScaleFilter New(int arg0, int arg1)
+        public static AreaAveragingScaleFilter CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<AreaAveragingScaleFilter>(arg0, arg1);
         }

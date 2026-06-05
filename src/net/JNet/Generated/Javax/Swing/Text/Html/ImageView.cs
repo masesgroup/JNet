@@ -74,7 +74,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for ImageView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static ImageView New(Javax.Swing.Text.Element arg0)
+        public static ImageView CreatePoolableInstance(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<ImageView>(arg0);
         }

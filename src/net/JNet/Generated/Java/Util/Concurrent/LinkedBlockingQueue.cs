@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedBlockingQueue()
         /// </summary>
-        public static LinkedBlockingQueue New()
+        public static LinkedBlockingQueue CreatePoolableInstance()
         {
             return JVMBridgeBase.New<LinkedBlockingQueue>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedBlockingQueue(int arg0)
         /// </summary>
-        public static LinkedBlockingQueue New(int arg0)
+        public static LinkedBlockingQueue CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<LinkedBlockingQueue>(arg0);
         }
@@ -138,7 +138,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedBlockingQueue(Java.Util.Collection arg0)
         /// </summary>
-        public static LinkedBlockingQueue New(Java.Util.Collection arg0)
+        public static LinkedBlockingQueue CreatePoolableInstance(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<LinkedBlockingQueue>(arg0);
         }
@@ -259,7 +259,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedBlockingQueue()
         /// </summary>
-        public static LinkedBlockingQueue<E> New()
+        public static LinkedBlockingQueue<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<LinkedBlockingQueue<E>>();
         }
@@ -274,7 +274,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedBlockingQueue(int arg0)
         /// </summary>
-        public static LinkedBlockingQueue<E> New(int arg0)
+        public static LinkedBlockingQueue<E> CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<LinkedBlockingQueue<E>>(arg0);
         }
@@ -289,7 +289,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedBlockingQueue(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static LinkedBlockingQueue<E> New(Java.Util.Collection<E> arg0)
+        public static LinkedBlockingQueue<E> CreatePoolableInstance(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<LinkedBlockingQueue<E>>(arg0);
         }

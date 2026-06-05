@@ -78,7 +78,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for TableModelEvent(Javax.Swing.Table.TableModel arg0, int arg1, int arg2, int arg3, int arg4)
         /// </summary>
-        public static TableModelEvent New(Javax.Swing.Table.TableModel arg0, int arg1, int arg2, int arg3, int arg4)
+        public static TableModelEvent CreatePoolableInstance(Javax.Swing.Table.TableModel arg0, int arg1, int arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<TableModelEvent>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -96,7 +96,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for TableModelEvent(Javax.Swing.Table.TableModel arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static TableModelEvent New(Javax.Swing.Table.TableModel arg0, int arg1, int arg2, int arg3)
+        public static TableModelEvent CreatePoolableInstance(Javax.Swing.Table.TableModel arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<TableModelEvent>(arg0, arg1, arg2, arg3);
         }
@@ -113,7 +113,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for TableModelEvent(Javax.Swing.Table.TableModel arg0, int arg1, int arg2)
         /// </summary>
-        public static TableModelEvent New(Javax.Swing.Table.TableModel arg0, int arg1, int arg2)
+        public static TableModelEvent CreatePoolableInstance(Javax.Swing.Table.TableModel arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<TableModelEvent>(arg0, arg1, arg2);
         }
@@ -129,7 +129,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for TableModelEvent(Javax.Swing.Table.TableModel arg0, int arg1)
         /// </summary>
-        public static TableModelEvent New(Javax.Swing.Table.TableModel arg0, int arg1)
+        public static TableModelEvent CreatePoolableInstance(Javax.Swing.Table.TableModel arg0, int arg1)
         {
             return JVMBridgeBase.New<TableModelEvent>(arg0, arg1);
         }
@@ -144,7 +144,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for TableModelEvent(Javax.Swing.Table.TableModel arg0)
         /// </summary>
-        public static TableModelEvent New(Javax.Swing.Table.TableModel arg0)
+        public static TableModelEvent CreatePoolableInstance(Javax.Swing.Table.TableModel arg0)
         {
             return JVMBridgeBase.New<TableModelEvent>(arg0);
         }

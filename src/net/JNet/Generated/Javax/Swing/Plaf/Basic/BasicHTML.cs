@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicHTML()
         /// </summary>
-        public static BasicHTML New()
+        public static BasicHTML CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicHTML>();
         }

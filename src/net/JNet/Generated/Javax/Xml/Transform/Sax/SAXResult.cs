@@ -73,7 +73,7 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// HPA initializer for SAXResult()
         /// </summary>
-        public static SAXResult New()
+        public static SAXResult CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SAXResult>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// HPA initializer for SAXResult(Org.Xml.Sax.ContentHandler arg0)
         /// </summary>
-        public static SAXResult New(Org.Xml.Sax.ContentHandler arg0)
+        public static SAXResult CreatePoolableInstance(Org.Xml.Sax.ContentHandler arg0)
         {
             return JVMBridgeBase.New<SAXResult>(arg0);
         }

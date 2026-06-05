@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicFormattedTextFieldUI()
         /// </summary>
-        public static BasicFormattedTextFieldUI New()
+        public static BasicFormattedTextFieldUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicFormattedTextFieldUI>();
         }

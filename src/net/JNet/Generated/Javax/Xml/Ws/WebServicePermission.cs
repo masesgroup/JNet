@@ -75,7 +75,7 @@ namespace Javax.Xml.Ws
         /// <summary>
         /// HPA initializer for WebServicePermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static WebServicePermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static WebServicePermission CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<WebServicePermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Xml.Ws
         /// <summary>
         /// HPA initializer for WebServicePermission(Java.Lang.String arg0)
         /// </summary>
-        public static WebServicePermission New(Java.Lang.String arg0)
+        public static WebServicePermission CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<WebServicePermission>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicRadioButtonUI()
         /// </summary>
-        public static BasicRadioButtonUI New()
+        public static BasicRadioButtonUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicRadioButtonUI>();
         }

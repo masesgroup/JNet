@@ -141,7 +141,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for StyleSheet()
         /// </summary>
-        public static StyleSheet New()
+        public static StyleSheet CreatePoolableInstance()
         {
             return JVMBridgeBase.New<StyleSheet>();
         }

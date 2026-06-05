@@ -78,7 +78,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DropTargetDropEvent(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3, bool arg4)
         /// </summary>
-        public static DropTargetDropEvent New(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3, bool arg4)
+        public static DropTargetDropEvent CreatePoolableInstance(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3, bool arg4)
         {
             return JVMBridgeBase.New<DropTargetDropEvent>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -96,7 +96,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DropTargetDropEvent(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3)
         /// </summary>
-        public static DropTargetDropEvent New(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3)
+        public static DropTargetDropEvent CreatePoolableInstance(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<DropTargetDropEvent>(arg0, arg1, arg2, arg3);
         }

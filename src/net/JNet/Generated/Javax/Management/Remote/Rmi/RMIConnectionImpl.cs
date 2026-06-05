@@ -78,7 +78,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// HPA initializer for RMIConnectionImpl(Javax.Management.Remote.Rmi.RMIServerImpl arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2, Javax.Security.Auth.Subject arg3, Java.Util.Map%3CJava.Lang.String, object%3E arg4)
         /// </summary>
-        public static RMIConnectionImpl New(Javax.Management.Remote.Rmi.RMIServerImpl arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2, Javax.Security.Auth.Subject arg3, Java.Util.Map<Java.Lang.String, object> arg4)
+        public static RMIConnectionImpl CreatePoolableInstance(Javax.Management.Remote.Rmi.RMIServerImpl arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2, Javax.Security.Auth.Subject arg3, Java.Util.Map<Java.Lang.String, object> arg4)
         {
             return JVMBridgeBase.New<RMIConnectionImpl>(arg0, arg1, arg2, arg3, arg4);
         }

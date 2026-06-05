@@ -75,7 +75,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for SecurityPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static SecurityPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static SecurityPermission CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<SecurityPermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for SecurityPermission(Java.Lang.String arg0)
         /// </summary>
-        public static SecurityPermission New(Java.Lang.String arg0)
+        public static SecurityPermission CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<SecurityPermission>(arg0);
         }

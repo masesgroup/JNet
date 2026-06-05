@@ -74,7 +74,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for ECGenParameterSpec(Java.Lang.String arg0)
         /// </summary>
-        public static ECGenParameterSpec New(Java.Lang.String arg0)
+        public static ECGenParameterSpec CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<ECGenParameterSpec>(arg0);
         }

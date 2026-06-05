@@ -73,7 +73,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for AllPermission()
         /// </summary>
-        public static AllPermission New()
+        public static AllPermission CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AllPermission>();
         }
@@ -89,7 +89,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for AllPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static AllPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static AllPermission CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<AllPermission>(arg0, arg1);
         }

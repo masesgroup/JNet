@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiListUI()
         /// </summary>
-        public static MultiListUI New()
+        public static MultiListUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MultiListUI>();
         }

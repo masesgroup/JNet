@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Panel()
         /// </summary>
-        public static Panel New()
+        public static Panel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Panel>();
         }
@@ -88,7 +88,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Panel(Java.Awt.LayoutManager arg0)
         /// </summary>
-        public static Panel New(Java.Awt.LayoutManager arg0)
+        public static Panel CreatePoolableInstance(Java.Awt.LayoutManager arg0)
         {
             return JVMBridgeBase.New<Panel>(arg0);
         }

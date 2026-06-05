@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JPanel()
         /// </summary>
-        public static JPanel New()
+        public static JPanel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JPanel>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JPanel(bool arg0)
         /// </summary>
-        public static JPanel New(bool arg0)
+        public static JPanel CreatePoolableInstance(bool arg0)
         {
             return JVMBridgeBase.New<JPanel>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JPanel(Java.Awt.LayoutManager arg0, bool arg1)
         /// </summary>
-        public static JPanel New(Java.Awt.LayoutManager arg0, bool arg1)
+        public static JPanel CreatePoolableInstance(Java.Awt.LayoutManager arg0, bool arg1)
         {
             return JVMBridgeBase.New<JPanel>(arg0, arg1);
         }
@@ -119,7 +119,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JPanel(Java.Awt.LayoutManager arg0)
         /// </summary>
-        public static JPanel New(Java.Awt.LayoutManager arg0)
+        public static JPanel CreatePoolableInstance(Java.Awt.LayoutManager arg0)
         {
             return JVMBridgeBase.New<JPanel>(arg0);
         }

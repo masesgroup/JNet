@@ -78,7 +78,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for MatteBorder(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
         /// </summary>
-        public static MatteBorder New(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
+        public static MatteBorder CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
         {
             return JVMBridgeBase.New<MatteBorder>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -97,7 +97,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for MatteBorder(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
         /// </summary>
-        public static MatteBorder New(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
+        public static MatteBorder CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
         {
             return JVMBridgeBase.New<MatteBorder>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -113,7 +113,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for MatteBorder(Java.Awt.Insets arg0, Java.Awt.Color arg1)
         /// </summary>
-        public static MatteBorder New(Java.Awt.Insets arg0, Java.Awt.Color arg1)
+        public static MatteBorder CreatePoolableInstance(Java.Awt.Insets arg0, Java.Awt.Color arg1)
         {
             return JVMBridgeBase.New<MatteBorder>(arg0, arg1);
         }
@@ -129,7 +129,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for MatteBorder(Java.Awt.Insets arg0, Javax.Swing.Icon arg1)
         /// </summary>
-        public static MatteBorder New(Java.Awt.Insets arg0, Javax.Swing.Icon arg1)
+        public static MatteBorder CreatePoolableInstance(Java.Awt.Insets arg0, Javax.Swing.Icon arg1)
         {
             return JVMBridgeBase.New<MatteBorder>(arg0, arg1);
         }
@@ -144,7 +144,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for MatteBorder(Javax.Swing.Icon arg0)
         /// </summary>
-        public static MatteBorder New(Javax.Swing.Icon arg0)
+        public static MatteBorder CreatePoolableInstance(Javax.Swing.Icon arg0)
         {
             return JVMBridgeBase.New<MatteBorder>(arg0);
         }

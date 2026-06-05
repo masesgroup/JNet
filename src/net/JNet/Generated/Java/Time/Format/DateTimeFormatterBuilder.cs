@@ -73,7 +73,7 @@ namespace Java.Time.Format
         /// <summary>
         /// HPA initializer for DateTimeFormatterBuilder()
         /// </summary>
-        public static DateTimeFormatterBuilder New()
+        public static DateTimeFormatterBuilder CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DateTimeFormatterBuilder>();
         }

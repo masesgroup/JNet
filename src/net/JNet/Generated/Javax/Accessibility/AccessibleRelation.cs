@@ -75,7 +75,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// HPA initializer for AccessibleRelation(Java.Lang.String arg0, object arg1)
         /// </summary>
-        public static AccessibleRelation New(Java.Lang.String arg0, object arg1)
+        public static AccessibleRelation CreatePoolableInstance(Java.Lang.String arg0, object arg1)
         {
             return JVMBridgeBase.New<AccessibleRelation>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// HPA initializer for AccessibleRelation(Java.Lang.String arg0)
         /// </summary>
-        public static AccessibleRelation New(Java.Lang.String arg0)
+        public static AccessibleRelation CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<AccessibleRelation>(arg0);
         }

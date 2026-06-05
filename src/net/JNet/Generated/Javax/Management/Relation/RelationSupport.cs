@@ -79,7 +79,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RelationSupport(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Java.Lang.String arg2, Javax.Management.Relation.RoleList arg3)
         /// </summary>
-        public static RelationSupport New(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Java.Lang.String arg2, Javax.Management.Relation.RoleList arg3)
+        public static RelationSupport CreatePoolableInstance(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Java.Lang.String arg2, Javax.Management.Relation.RoleList arg3)
         {
             return JVMBridgeBase.New<RelationSupport>(arg0, arg1, arg2, arg3);
         }
@@ -100,7 +100,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RelationSupport(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.MBeanServer arg2, Java.Lang.String arg3, Javax.Management.Relation.RoleList arg4)
         /// </summary>
-        public static RelationSupport New(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.MBeanServer arg2, Java.Lang.String arg3, Javax.Management.Relation.RoleList arg4)
+        public static RelationSupport CreatePoolableInstance(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.MBeanServer arg2, Java.Lang.String arg3, Javax.Management.Relation.RoleList arg4)
         {
             return JVMBridgeBase.New<RelationSupport>(arg0, arg1, arg2, arg3, arg4);
         }

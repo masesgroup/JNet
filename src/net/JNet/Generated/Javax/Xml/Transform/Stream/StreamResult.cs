@@ -73,7 +73,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// HPA initializer for StreamResult()
         /// </summary>
-        public static StreamResult New()
+        public static StreamResult CreatePoolableInstance()
         {
             return JVMBridgeBase.New<StreamResult>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// HPA initializer for StreamResult(Java.Io.File arg0)
         /// </summary>
-        public static StreamResult New(Java.Io.File arg0)
+        public static StreamResult CreatePoolableInstance(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<StreamResult>(arg0);
         }
@@ -103,7 +103,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// HPA initializer for StreamResult(Java.Io.OutputStream arg0)
         /// </summary>
-        public static StreamResult New(Java.Io.OutputStream arg0)
+        public static StreamResult CreatePoolableInstance(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<StreamResult>(arg0);
         }
@@ -118,7 +118,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// HPA initializer for StreamResult(Java.Io.Writer arg0)
         /// </summary>
-        public static StreamResult New(Java.Io.Writer arg0)
+        public static StreamResult CreatePoolableInstance(Java.Io.Writer arg0)
         {
             return JVMBridgeBase.New<StreamResult>(arg0);
         }
@@ -133,7 +133,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// HPA initializer for StreamResult(Java.Lang.String arg0)
         /// </summary>
-        public static StreamResult New(Java.Lang.String arg0)
+        public static StreamResult CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<StreamResult>(arg0);
         }

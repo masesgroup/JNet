@@ -73,7 +73,7 @@ namespace Javax.Xml.Ws.Spi.Http
         /// <summary>
         /// HPA initializer for HttpContext()
         /// </summary>
-        public static HttpContext New()
+        public static HttpContext CreatePoolableInstance()
         {
             return JVMBridgeBase.New<HttpContext>();
         }

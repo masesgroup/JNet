@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for InternalFrameFocusTraversalPolicy()
         /// </summary>
-        public static InternalFrameFocusTraversalPolicy New()
+        public static InternalFrameFocusTraversalPolicy CreatePoolableInstance()
         {
             return JVMBridgeBase.New<InternalFrameFocusTraversalPolicy>();
         }

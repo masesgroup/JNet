@@ -75,7 +75,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for Attribute(Java.Lang.String arg0, object arg1)
         /// </summary>
-        public static Attribute New(Java.Lang.String arg0, object arg1)
+        public static Attribute CreatePoolableInstance(Java.Lang.String arg0, object arg1)
         {
             return JVMBridgeBase.New<Attribute>(arg0, arg1);
         }

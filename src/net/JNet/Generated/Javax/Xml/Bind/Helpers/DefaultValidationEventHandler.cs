@@ -73,7 +73,7 @@ namespace Javax.Xml.Bind.Helpers
         /// <summary>
         /// HPA initializer for DefaultValidationEventHandler()
         /// </summary>
-        public static DefaultValidationEventHandler New()
+        public static DefaultValidationEventHandler CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DefaultValidationEventHandler>();
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JMenuBar()
         /// </summary>
-        public static JMenuBar New()
+        public static JMenuBar CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JMenuBar>();
         }

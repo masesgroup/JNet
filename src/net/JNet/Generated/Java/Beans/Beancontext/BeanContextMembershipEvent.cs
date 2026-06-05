@@ -75,7 +75,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// HPA initializer for BeanContextMembershipEvent(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Collection arg1)
         /// </summary>
-        public static BeanContextMembershipEvent New(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Collection arg1)
+        public static BeanContextMembershipEvent CreatePoolableInstance(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Collection arg1)
         {
             return JVMBridgeBase.New<BeanContextMembershipEvent>(arg0, arg1);
         }

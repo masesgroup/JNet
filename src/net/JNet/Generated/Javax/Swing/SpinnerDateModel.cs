@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SpinnerDateModel()
         /// </summary>
-        public static SpinnerDateModel New()
+        public static SpinnerDateModel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SpinnerDateModel>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SpinnerDateModel(Java.Util.Date arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, int arg3)
         /// </summary>
-        public static SpinnerDateModel New(Java.Util.Date arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, int arg3)
+        public static SpinnerDateModel CreatePoolableInstance(Java.Util.Date arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, int arg3)
         {
             return JVMBridgeBase.New<SpinnerDateModel>(arg0, arg1, arg2, arg3);
         }

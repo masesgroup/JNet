@@ -74,7 +74,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for ThreadGroup(Java.Lang.String arg0)
         /// </summary>
-        public static ThreadGroup New(Java.Lang.String arg0)
+        public static ThreadGroup CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<ThreadGroup>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for ThreadGroup(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1)
         /// </summary>
-        public static ThreadGroup New(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1)
+        public static ThreadGroup CreatePoolableInstance(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<ThreadGroup>(arg0, arg1);
         }

@@ -75,7 +75,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// HPA initializer for KerberosPrincipal(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static KerberosPrincipal New(Java.Lang.String arg0, int arg1)
+        public static KerberosPrincipal CreatePoolableInstance(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<KerberosPrincipal>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// HPA initializer for KerberosPrincipal(Java.Lang.String arg0)
         /// </summary>
-        public static KerberosPrincipal New(Java.Lang.String arg0)
+        public static KerberosPrincipal CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<KerberosPrincipal>(arg0);
         }

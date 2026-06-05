@@ -143,7 +143,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SwingWorker()
         /// </summary>
-        public static SwingWorker New()
+        public static SwingWorker CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SwingWorker>();
         }
@@ -357,7 +357,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SwingWorker()
         /// </summary>
-        public static SwingWorker<T, V> New()
+        public static SwingWorker<T, V> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SwingWorker<T, V>>();
         }

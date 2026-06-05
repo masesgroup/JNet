@@ -76,7 +76,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// HPA initializer for FileCacheImageInputStream(Java.Io.InputStream arg0, Java.Io.File arg1)
         /// </summary>
-        public static FileCacheImageInputStream New(Java.Io.InputStream arg0, Java.Io.File arg1)
+        public static FileCacheImageInputStream CreatePoolableInstance(Java.Io.InputStream arg0, Java.Io.File arg1)
         {
             return JVMBridgeBase.New<FileCacheImageInputStream>(arg0, arg1);
         }

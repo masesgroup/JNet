@@ -73,7 +73,7 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// HPA initializer for DOMResult()
         /// </summary>
-        public static DOMResult New()
+        public static DOMResult CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DOMResult>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// HPA initializer for DOMResult(Org.W3c.Dom.Node arg0, Java.Lang.String arg1)
         /// </summary>
-        public static DOMResult New(Org.W3c.Dom.Node arg0, Java.Lang.String arg1)
+        public static DOMResult CreatePoolableInstance(Org.W3c.Dom.Node arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<DOMResult>(arg0, arg1);
         }
@@ -106,7 +106,7 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// HPA initializer for DOMResult(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1, Java.Lang.String arg2)
         /// </summary>
-        public static DOMResult New(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1, Java.Lang.String arg2)
+        public static DOMResult CreatePoolableInstance(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<DOMResult>(arg0, arg1, arg2);
         }
@@ -122,7 +122,7 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// HPA initializer for DOMResult(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1)
         /// </summary>
-        public static DOMResult New(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1)
+        public static DOMResult CreatePoolableInstance(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1)
         {
             return JVMBridgeBase.New<DOMResult>(arg0, arg1);
         }
@@ -137,7 +137,7 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// HPA initializer for DOMResult(Org.W3c.Dom.Node arg0)
         /// </summary>
-        public static DOMResult New(Org.W3c.Dom.Node arg0)
+        public static DOMResult CreatePoolableInstance(Org.W3c.Dom.Node arg0)
         {
             return JVMBridgeBase.New<DOMResult>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// HPA initializer for FileView()
         /// </summary>
-        public static FileView New()
+        public static FileView CreatePoolableInstance()
         {
             return JVMBridgeBase.New<FileView>();
         }

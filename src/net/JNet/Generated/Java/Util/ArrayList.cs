@@ -108,7 +108,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ArrayList()
         /// </summary>
-        public static ArrayList New()
+        public static ArrayList CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ArrayList>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ArrayList(int arg0)
         /// </summary>
-        public static ArrayList New(int arg0)
+        public static ArrayList CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ArrayList>(arg0);
         }
@@ -138,7 +138,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ArrayList(Java.Util.Collection arg0)
         /// </summary>
-        public static ArrayList New(Java.Util.Collection arg0)
+        public static ArrayList CreatePoolableInstance(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<ArrayList>(arg0);
         }
@@ -210,7 +210,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ArrayList()
         /// </summary>
-        public static ArrayList<E> New()
+        public static ArrayList<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ArrayList<E>>();
         }
@@ -225,7 +225,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ArrayList(int arg0)
         /// </summary>
-        public static ArrayList<E> New(int arg0)
+        public static ArrayList<E> CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ArrayList<E>>(arg0);
         }
@@ -240,7 +240,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ArrayList(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static ArrayList<E> New(Java.Util.Collection<E> arg0)
+        public static ArrayList<E> CreatePoolableInstance(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<ArrayList<E>>(arg0);
         }

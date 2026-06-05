@@ -74,7 +74,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for X509EncodedKeySpec(byte[] arg0)
         /// </summary>
-        public static X509EncodedKeySpec New(byte[] arg0)
+        public static X509EncodedKeySpec CreatePoolableInstance(byte[] arg0)
         {
             return JVMBridgeBase.New<X509EncodedKeySpec>(arg0);
         }

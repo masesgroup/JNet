@@ -76,7 +76,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// HPA initializer for ImageInputStreamSpi(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Class arg2)
         /// </summary>
-        public static ImageInputStreamSpi New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Class arg2)
+        public static ImageInputStreamSpi CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Class arg2)
         {
             return JVMBridgeBase.New<ImageInputStreamSpi>(arg0, arg1, arg2);
         }

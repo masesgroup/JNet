@@ -82,7 +82,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for MouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, int arg8)
         /// </summary>
-        public static MouseEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, int arg8)
+        public static MouseEvent CreatePoolableInstance(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, int arg8)
         {
             return JVMBridgeBase.New<MouseEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
@@ -104,7 +104,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for MouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7)
         /// </summary>
-        public static MouseEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7)
+        public static MouseEvent CreatePoolableInstance(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7)
         {
             return JVMBridgeBase.New<MouseEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
@@ -129,7 +129,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for MouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10)
         /// </summary>
-        public static MouseEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10)
+        public static MouseEvent CreatePoolableInstance(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10)
         {
             return JVMBridgeBase.New<MouseEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }

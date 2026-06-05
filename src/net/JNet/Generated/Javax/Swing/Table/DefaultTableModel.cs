@@ -73,7 +73,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for DefaultTableModel()
         /// </summary>
-        public static DefaultTableModel New()
+        public static DefaultTableModel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DefaultTableModel>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for DefaultTableModel(int arg0, int arg1)
         /// </summary>
-        public static DefaultTableModel New(int arg0, int arg1)
+        public static DefaultTableModel CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<DefaultTableModel>(arg0, arg1);
         }
@@ -105,7 +105,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for DefaultTableModel(Java.Util.Vector arg0, int arg1)
         /// </summary>
-        public static DefaultTableModel New(Java.Util.Vector arg0, int arg1)
+        public static DefaultTableModel CreatePoolableInstance(Java.Util.Vector arg0, int arg1)
         {
             return JVMBridgeBase.New<DefaultTableModel>(arg0, arg1);
         }
@@ -121,7 +121,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for DefaultTableModel(Java.Util.Vector arg0, Java.Util.Vector arg1)
         /// </summary>
-        public static DefaultTableModel New(Java.Util.Vector arg0, Java.Util.Vector arg1)
+        public static DefaultTableModel CreatePoolableInstance(Java.Util.Vector arg0, Java.Util.Vector arg1)
         {
             return JVMBridgeBase.New<DefaultTableModel>(arg0, arg1);
         }

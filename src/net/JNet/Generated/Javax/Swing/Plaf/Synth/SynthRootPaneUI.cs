@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthRootPaneUI()
         /// </summary>
-        public static SynthRootPaneUI New()
+        public static SynthRootPaneUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SynthRootPaneUI>();
         }

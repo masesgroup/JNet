@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for SplittableRandom()
         /// </summary>
-        public static SplittableRandom New()
+        public static SplittableRandom CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SplittableRandom>();
         }
@@ -88,7 +88,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for SplittableRandom(long arg0)
         /// </summary>
-        public static SplittableRandom New(long arg0)
+        public static SplittableRandom CreatePoolableInstance(long arg0)
         {
             return JVMBridgeBase.New<SplittableRandom>(arg0);
         }

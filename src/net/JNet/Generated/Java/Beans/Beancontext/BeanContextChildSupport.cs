@@ -73,7 +73,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// HPA initializer for BeanContextChildSupport()
         /// </summary>
-        public static BeanContextChildSupport New()
+        public static BeanContextChildSupport CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BeanContextChildSupport>();
         }
@@ -88,7 +88,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// HPA initializer for BeanContextChildSupport(Java.Beans.Beancontext.BeanContextChild arg0)
         /// </summary>
-        public static BeanContextChildSupport New(Java.Beans.Beancontext.BeanContextChild arg0)
+        public static BeanContextChildSupport CreatePoolableInstance(Java.Beans.Beancontext.BeanContextChild arg0)
         {
             return JVMBridgeBase.New<BeanContextChildSupport>(arg0);
         }

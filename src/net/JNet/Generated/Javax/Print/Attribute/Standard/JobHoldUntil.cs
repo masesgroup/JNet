@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobHoldUntil(Java.Util.Date arg0)
         /// </summary>
-        public static JobHoldUntil New(Java.Util.Date arg0)
+        public static JobHoldUntil CreatePoolableInstance(Java.Util.Date arg0)
         {
             return JVMBridgeBase.New<JobHoldUntil>(arg0);
         }

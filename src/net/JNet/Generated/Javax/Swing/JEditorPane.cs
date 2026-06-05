@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JEditorPane()
         /// </summary>
-        public static JEditorPane New()
+        public static JEditorPane CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JEditorPane>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JEditorPane(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static JEditorPane New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static JEditorPane CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<JEditorPane>(arg0, arg1);
         }
@@ -105,7 +105,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JEditorPane(Java.Lang.String arg0)
         /// </summary>
-        public static JEditorPane New(Java.Lang.String arg0)
+        public static JEditorPane CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JEditorPane>(arg0);
         }
@@ -121,7 +121,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JEditorPane(Java.Net.URL arg0)
         /// </summary>
-        public static JEditorPane New(Java.Net.URL arg0)
+        public static JEditorPane CreatePoolableInstance(Java.Net.URL arg0)
         {
             return JVMBridgeBase.New<JEditorPane>(arg0);
         }

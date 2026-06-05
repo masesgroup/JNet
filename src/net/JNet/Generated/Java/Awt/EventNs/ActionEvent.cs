@@ -77,7 +77,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for ActionEvent(object arg0, int arg1, Java.Lang.String arg2, int arg3)
         /// </summary>
-        public static ActionEvent New(object arg0, int arg1, Java.Lang.String arg2, int arg3)
+        public static ActionEvent CreatePoolableInstance(object arg0, int arg1, Java.Lang.String arg2, int arg3)
         {
             return JVMBridgeBase.New<ActionEvent>(arg0, arg1, arg2, arg3);
         }
@@ -96,7 +96,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for ActionEvent(object arg0, int arg1, Java.Lang.String arg2, long arg3, int arg4)
         /// </summary>
-        public static ActionEvent New(object arg0, int arg1, Java.Lang.String arg2, long arg3, int arg4)
+        public static ActionEvent CreatePoolableInstance(object arg0, int arg1, Java.Lang.String arg2, long arg3, int arg4)
         {
             return JVMBridgeBase.New<ActionEvent>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -113,7 +113,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for ActionEvent(object arg0, int arg1, Java.Lang.String arg2)
         /// </summary>
-        public static ActionEvent New(object arg0, int arg1, Java.Lang.String arg2)
+        public static ActionEvent CreatePoolableInstance(object arg0, int arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<ActionEvent>(arg0, arg1, arg2);
         }

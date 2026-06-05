@@ -76,7 +76,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for ActivationDataFlavor(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         /// </summary>
-        public static ActivationDataFlavor New(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        public static ActivationDataFlavor CreatePoolableInstance(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<ActivationDataFlavor>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for ActivationDataFlavor(Java.Lang.Class arg0, Java.Lang.String arg1)
         /// </summary>
-        public static ActivationDataFlavor New(Java.Lang.Class arg0, Java.Lang.String arg1)
+        public static ActivationDataFlavor CreatePoolableInstance(Java.Lang.Class arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<ActivationDataFlavor>(arg0, arg1);
         }
@@ -108,7 +108,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for ActivationDataFlavor(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static ActivationDataFlavor New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static ActivationDataFlavor CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<ActivationDataFlavor>(arg0, arg1);
         }

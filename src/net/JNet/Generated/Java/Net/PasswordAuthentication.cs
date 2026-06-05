@@ -75,7 +75,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for PasswordAuthentication(Java.Lang.String arg0, char[] arg1)
         /// </summary>
-        public static PasswordAuthentication New(Java.Lang.String arg0, char[] arg1)
+        public static PasswordAuthentication CreatePoolableInstance(Java.Lang.String arg0, char[] arg1)
         {
             return JVMBridgeBase.New<PasswordAuthentication>(arg0, arg1);
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for TableUI()
         /// </summary>
-        public static TableUI New()
+        public static TableUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<TableUI>();
         }

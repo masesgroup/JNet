@@ -76,7 +76,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for Rdn(Java.Lang.String arg0, object arg1)
         /// </summary>
-        public static Rdn New(Java.Lang.String arg0, object arg1)
+        public static Rdn CreatePoolableInstance(Java.Lang.String arg0, object arg1)
         {
             return JVMBridgeBase.New<Rdn>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for Rdn(Java.Lang.String arg0)
         /// </summary>
-        public static Rdn New(Java.Lang.String arg0)
+        public static Rdn CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Rdn>(arg0);
         }
@@ -108,7 +108,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for Rdn(Javax.Naming.Directory.Attributes arg0)
         /// </summary>
-        public static Rdn New(Javax.Naming.Directory.Attributes arg0)
+        public static Rdn CreatePoolableInstance(Javax.Naming.Directory.Attributes arg0)
         {
             return JVMBridgeBase.New<Rdn>(arg0);
         }
@@ -123,7 +123,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for Rdn(Javax.Naming.Ldap.Rdn arg0)
         /// </summary>
-        public static Rdn New(Javax.Naming.Ldap.Rdn arg0)
+        public static Rdn CreatePoolableInstance(Javax.Naming.Ldap.Rdn arg0)
         {
             return JVMBridgeBase.New<Rdn>(arg0);
         }

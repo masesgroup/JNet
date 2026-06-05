@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for GraphicsConfigTemplate()
         /// </summary>
-        public static GraphicsConfigTemplate New()
+        public static GraphicsConfigTemplate CreatePoolableInstance()
         {
             return JVMBridgeBase.New<GraphicsConfigTemplate>();
         }

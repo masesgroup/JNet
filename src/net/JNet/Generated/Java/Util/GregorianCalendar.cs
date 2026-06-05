@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for GregorianCalendar()
         /// </summary>
-        public static GregorianCalendar New()
+        public static GregorianCalendar CreatePoolableInstance()
         {
             return JVMBridgeBase.New<GregorianCalendar>();
         }
@@ -93,7 +93,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for GregorianCalendar(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         /// </summary>
-        public static GregorianCalendar New(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+        public static GregorianCalendar CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
             return JVMBridgeBase.New<GregorianCalendar>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -112,7 +112,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for GregorianCalendar(int arg0, int arg1, int arg2, int arg3, int arg4)
         /// </summary>
-        public static GregorianCalendar New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        public static GregorianCalendar CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<GregorianCalendar>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -129,7 +129,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for GregorianCalendar(int arg0, int arg1, int arg2)
         /// </summary>
-        public static GregorianCalendar New(int arg0, int arg1, int arg2)
+        public static GregorianCalendar CreatePoolableInstance(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<GregorianCalendar>(arg0, arg1, arg2);
         }
@@ -144,7 +144,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for GregorianCalendar(Java.Util.Locale arg0)
         /// </summary>
-        public static GregorianCalendar New(Java.Util.Locale arg0)
+        public static GregorianCalendar CreatePoolableInstance(Java.Util.Locale arg0)
         {
             return JVMBridgeBase.New<GregorianCalendar>(arg0);
         }
@@ -160,7 +160,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for GregorianCalendar(Java.Util.TimeZone arg0, Java.Util.Locale arg1)
         /// </summary>
-        public static GregorianCalendar New(Java.Util.TimeZone arg0, Java.Util.Locale arg1)
+        public static GregorianCalendar CreatePoolableInstance(Java.Util.TimeZone arg0, Java.Util.Locale arg1)
         {
             return JVMBridgeBase.New<GregorianCalendar>(arg0, arg1);
         }
@@ -175,7 +175,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for GregorianCalendar(Java.Util.TimeZone arg0)
         /// </summary>
-        public static GregorianCalendar New(Java.Util.TimeZone arg0)
+        public static GregorianCalendar CreatePoolableInstance(Java.Util.TimeZone arg0)
         {
             return JVMBridgeBase.New<GregorianCalendar>(arg0);
         }

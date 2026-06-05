@@ -175,7 +175,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for HTML()
         /// </summary>
-        public static HTML New()
+        public static HTML CreatePoolableInstance()
         {
             return JVMBridgeBase.New<HTML>();
         }
@@ -611,7 +611,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// HPA initializer for Tag()
             /// </summary>
-            public static Tag New()
+            public static Tag CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<Tag>();
             }
@@ -985,7 +985,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// HPA initializer for UnknownTag(Java.Lang.String arg0)
             /// </summary>
-            public static UnknownTag New(Java.Lang.String arg0)
+            public static UnknownTag CreatePoolableInstance(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<UnknownTag>(arg0);
             }

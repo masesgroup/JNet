@@ -73,7 +73,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for Beans()
         /// </summary>
-        public static Beans New()
+        public static Beans CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Beans>();
         }

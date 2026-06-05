@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for BufferedReader(Java.Io.Reader arg0, int arg1)
         /// </summary>
-        public static BufferedReader New(Java.Io.Reader arg0, int arg1)
+        public static BufferedReader CreatePoolableInstance(Java.Io.Reader arg0, int arg1)
         {
             return JVMBridgeBase.New<BufferedReader>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for BufferedReader(Java.Io.Reader arg0)
         /// </summary>
-        public static BufferedReader New(Java.Io.Reader arg0)
+        public static BufferedReader CreatePoolableInstance(Java.Io.Reader arg0)
         {
             return JVMBridgeBase.New<BufferedReader>(arg0);
         }

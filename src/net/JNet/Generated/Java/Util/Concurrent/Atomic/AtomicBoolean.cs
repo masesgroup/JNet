@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicBoolean()
         /// </summary>
-        public static AtomicBoolean New()
+        public static AtomicBoolean CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AtomicBoolean>();
         }
@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicBoolean(bool arg0)
         /// </summary>
-        public static AtomicBoolean New(bool arg0)
+        public static AtomicBoolean CreatePoolableInstance(bool arg0)
         {
             return JVMBridgeBase.New<AtomicBoolean>(arg0);
         }

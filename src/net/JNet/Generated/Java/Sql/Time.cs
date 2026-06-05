@@ -77,7 +77,7 @@ namespace Java.Sql
         /// <summary>
         /// HPA initializer for Time(int arg0, int arg1, int arg2)
         /// </summary>
-        public static Time New(int arg0, int arg1, int arg2)
+        public static Time CreatePoolableInstance(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<Time>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Sql
         /// <summary>
         /// HPA initializer for Time(long arg0)
         /// </summary>
-        public static Time New(long arg0)
+        public static Time CreatePoolableInstance(long arg0)
         {
             return JVMBridgeBase.New<Time>(arg0);
         }

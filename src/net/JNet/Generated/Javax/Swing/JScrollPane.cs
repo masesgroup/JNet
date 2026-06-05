@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JScrollPane()
         /// </summary>
-        public static JScrollPane New()
+        public static JScrollPane CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JScrollPane>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JScrollPane(int arg0, int arg1)
         /// </summary>
-        public static JScrollPane New(int arg0, int arg1)
+        public static JScrollPane CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<JScrollPane>(arg0, arg1);
         }
@@ -106,7 +106,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JScrollPane(Java.Awt.Component arg0, int arg1, int arg2)
         /// </summary>
-        public static JScrollPane New(Java.Awt.Component arg0, int arg1, int arg2)
+        public static JScrollPane CreatePoolableInstance(Java.Awt.Component arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<JScrollPane>(arg0, arg1, arg2);
         }
@@ -121,7 +121,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JScrollPane(Java.Awt.Component arg0)
         /// </summary>
-        public static JScrollPane New(Java.Awt.Component arg0)
+        public static JScrollPane CreatePoolableInstance(Java.Awt.Component arg0)
         {
             return JVMBridgeBase.New<JScrollPane>(arg0);
         }

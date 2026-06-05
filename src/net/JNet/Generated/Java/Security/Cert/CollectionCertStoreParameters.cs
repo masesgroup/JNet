@@ -73,7 +73,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for CollectionCertStoreParameters()
         /// </summary>
-        public static CollectionCertStoreParameters New()
+        public static CollectionCertStoreParameters CreatePoolableInstance()
         {
             return JVMBridgeBase.New<CollectionCertStoreParameters>();
         }
@@ -88,7 +88,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for CollectionCertStoreParameters(Java.Util.Collection%3Cobject%3E arg0)
         /// </summary>
-        public static CollectionCertStoreParameters New(Java.Util.Collection<object> arg0)
+        public static CollectionCertStoreParameters CreatePoolableInstance(Java.Util.Collection<object> arg0)
         {
             return JVMBridgeBase.New<CollectionCertStoreParameters>(arg0);
         }

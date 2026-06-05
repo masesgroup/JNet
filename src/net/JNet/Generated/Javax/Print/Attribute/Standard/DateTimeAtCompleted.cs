@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for DateTimeAtCompleted(Java.Util.Date arg0)
         /// </summary>
-        public static DateTimeAtCompleted New(Java.Util.Date arg0)
+        public static DateTimeAtCompleted CreatePoolableInstance(Java.Util.Date arg0)
         {
             return JVMBridgeBase.New<DateTimeAtCompleted>(arg0);
         }

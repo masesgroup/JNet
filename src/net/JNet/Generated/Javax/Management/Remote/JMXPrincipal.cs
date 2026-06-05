@@ -74,7 +74,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// HPA initializer for JMXPrincipal(Java.Lang.String arg0)
         /// </summary>
-        public static JMXPrincipal New(Java.Lang.String arg0)
+        public static JMXPrincipal CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JMXPrincipal>(arg0);
         }

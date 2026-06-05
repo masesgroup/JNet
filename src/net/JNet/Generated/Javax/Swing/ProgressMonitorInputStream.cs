@@ -76,7 +76,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ProgressMonitorInputStream(Java.Awt.Component arg0, object arg1, Java.Io.InputStream arg2)
         /// </summary>
-        public static ProgressMonitorInputStream New(Java.Awt.Component arg0, object arg1, Java.Io.InputStream arg2)
+        public static ProgressMonitorInputStream CreatePoolableInstance(Java.Awt.Component arg0, object arg1, Java.Io.InputStream arg2)
         {
             return JVMBridgeBase.New<ProgressMonitorInputStream>(arg0, arg1, arg2);
         }

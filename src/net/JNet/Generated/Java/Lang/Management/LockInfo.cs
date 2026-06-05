@@ -75,7 +75,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// HPA initializer for LockInfo(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static LockInfo New(Java.Lang.String arg0, int arg1)
+        public static LockInfo CreatePoolableInstance(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<LockInfo>(arg0, arg1);
         }

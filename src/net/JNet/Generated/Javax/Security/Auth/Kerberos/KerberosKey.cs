@@ -77,7 +77,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// HPA initializer for KerberosKey(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, byte[] arg1, int arg2, int arg3)
         /// </summary>
-        public static KerberosKey New(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, byte[] arg1, int arg2, int arg3)
+        public static KerberosKey CreatePoolableInstance(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, byte[] arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<KerberosKey>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// HPA initializer for KerberosKey(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, char[] arg1, Java.Lang.String arg2)
         /// </summary>
-        public static KerberosKey New(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, char[] arg1, Java.Lang.String arg2)
+        public static KerberosKey CreatePoolableInstance(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, char[] arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<KerberosKey>(arg0, arg1, arg2);
         }

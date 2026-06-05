@@ -76,7 +76,7 @@ namespace Javax.Imageio
         /// <summary>
         /// HPA initializer for IIOImage(Java.Awt.ImageNs.Raster arg0, Java.Util.List arg1, Javax.Imageio.Metadata.IIOMetadata arg2)
         /// </summary>
-        public static IIOImage New(Java.Awt.ImageNs.Raster arg0, Java.Util.List arg1, Javax.Imageio.Metadata.IIOMetadata arg2)
+        public static IIOImage CreatePoolableInstance(Java.Awt.ImageNs.Raster arg0, Java.Util.List arg1, Javax.Imageio.Metadata.IIOMetadata arg2)
         {
             return JVMBridgeBase.New<IIOImage>(arg0, arg1, arg2);
         }
@@ -93,7 +93,7 @@ namespace Javax.Imageio
         /// <summary>
         /// HPA initializer for IIOImage(Java.Awt.ImageNs.RenderedImage arg0, Java.Util.List arg1, Javax.Imageio.Metadata.IIOMetadata arg2)
         /// </summary>
-        public static IIOImage New(Java.Awt.ImageNs.RenderedImage arg0, Java.Util.List arg1, Javax.Imageio.Metadata.IIOMetadata arg2)
+        public static IIOImage CreatePoolableInstance(Java.Awt.ImageNs.RenderedImage arg0, Java.Util.List arg1, Javax.Imageio.Metadata.IIOMetadata arg2)
         {
             return JVMBridgeBase.New<IIOImage>(arg0, arg1, arg2);
         }

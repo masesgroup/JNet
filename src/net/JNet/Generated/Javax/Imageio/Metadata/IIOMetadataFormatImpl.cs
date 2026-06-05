@@ -76,7 +76,7 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// HPA initializer for IIOMetadataFormatImpl(Java.Lang.String arg0, int arg1, int arg2)
         /// </summary>
-        public static IIOMetadataFormatImpl New(Java.Lang.String arg0, int arg1, int arg2)
+        public static IIOMetadataFormatImpl CreatePoolableInstance(Java.Lang.String arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<IIOMetadataFormatImpl>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// HPA initializer for IIOMetadataFormatImpl(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static IIOMetadataFormatImpl New(Java.Lang.String arg0, int arg1)
+        public static IIOMetadataFormatImpl CreatePoolableInstance(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<IIOMetadataFormatImpl>(arg0, arg1);
         }

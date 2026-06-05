@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for TexturePaint(Java.Awt.ImageNs.BufferedImage arg0, Java.Awt.Geom.Rectangle2D arg1)
         /// </summary>
-        public static TexturePaint New(Java.Awt.ImageNs.BufferedImage arg0, Java.Awt.Geom.Rectangle2D arg1)
+        public static TexturePaint CreatePoolableInstance(Java.Awt.ImageNs.BufferedImage arg0, Java.Awt.Geom.Rectangle2D arg1)
         {
             return JVMBridgeBase.New<TexturePaint>(arg0, arg1);
         }

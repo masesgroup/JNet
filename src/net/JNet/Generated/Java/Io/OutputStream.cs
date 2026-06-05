@@ -73,7 +73,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for OutputStream()
         /// </summary>
-        public static OutputStream New()
+        public static OutputStream CreatePoolableInstance()
         {
             return JVMBridgeBase.New<OutputStream>();
         }

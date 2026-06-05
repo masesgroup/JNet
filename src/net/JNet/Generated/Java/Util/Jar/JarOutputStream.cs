@@ -76,7 +76,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for JarOutputStream(Java.Io.OutputStream arg0, Java.Util.Jar.Manifest arg1)
         /// </summary>
-        public static JarOutputStream New(Java.Io.OutputStream arg0, Java.Util.Jar.Manifest arg1)
+        public static JarOutputStream CreatePoolableInstance(Java.Io.OutputStream arg0, Java.Util.Jar.Manifest arg1)
         {
             return JVMBridgeBase.New<JarOutputStream>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for JarOutputStream(Java.Io.OutputStream arg0)
         /// </summary>
-        public static JarOutputStream New(Java.Io.OutputStream arg0)
+        public static JarOutputStream CreatePoolableInstance(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<JarOutputStream>(arg0);
         }

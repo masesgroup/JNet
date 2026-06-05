@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CopyOnWriteArraySet()
         /// </summary>
-        public static CopyOnWriteArraySet New()
+        public static CopyOnWriteArraySet CreatePoolableInstance()
         {
             return JVMBridgeBase.New<CopyOnWriteArraySet>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CopyOnWriteArraySet(Java.Util.Collection arg0)
         /// </summary>
-        public static CopyOnWriteArraySet New(Java.Util.Collection arg0)
+        public static CopyOnWriteArraySet CreatePoolableInstance(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<CopyOnWriteArraySet>(arg0);
         }
@@ -172,7 +172,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CopyOnWriteArraySet()
         /// </summary>
-        public static CopyOnWriteArraySet<E> New()
+        public static CopyOnWriteArraySet<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<CopyOnWriteArraySet<E>>();
         }
@@ -187,7 +187,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CopyOnWriteArraySet(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static CopyOnWriteArraySet<E> New(Java.Util.Collection<E> arg0)
+        public static CopyOnWriteArraySet<E> CreatePoolableInstance(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<CopyOnWriteArraySet<E>>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for ScrollBarUI()
         /// </summary>
-        public static ScrollBarUI New()
+        public static ScrollBarUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ScrollBarUI>();
         }

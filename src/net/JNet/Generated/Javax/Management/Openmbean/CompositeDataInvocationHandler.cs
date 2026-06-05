@@ -74,7 +74,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for CompositeDataInvocationHandler(Javax.Management.Openmbean.CompositeData arg0)
         /// </summary>
-        public static CompositeDataInvocationHandler New(Javax.Management.Openmbean.CompositeData arg0)
+        public static CompositeDataInvocationHandler CreatePoolableInstance(Javax.Management.Openmbean.CompositeData arg0)
         {
             return JVMBridgeBase.New<CompositeDataInvocationHandler>(arg0);
         }

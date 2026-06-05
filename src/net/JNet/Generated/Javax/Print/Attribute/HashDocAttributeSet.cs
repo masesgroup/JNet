@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashDocAttributeSet()
         /// </summary>
-        public static HashDocAttributeSet New()
+        public static HashDocAttributeSet CreatePoolableInstance()
         {
             return JVMBridgeBase.New<HashDocAttributeSet>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashDocAttributeSet(Javax.Print.Attribute.DocAttribute arg0)
         /// </summary>
-        public static HashDocAttributeSet New(Javax.Print.Attribute.DocAttribute arg0)
+        public static HashDocAttributeSet CreatePoolableInstance(Javax.Print.Attribute.DocAttribute arg0)
         {
             return JVMBridgeBase.New<HashDocAttributeSet>(arg0);
         }
@@ -103,7 +103,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashDocAttributeSet(Javax.Print.Attribute.DocAttribute[] arg0)
         /// </summary>
-        public static HashDocAttributeSet New(Javax.Print.Attribute.DocAttribute[] arg0)
+        public static HashDocAttributeSet CreatePoolableInstance(Javax.Print.Attribute.DocAttribute[] arg0)
         {
             return JVMBridgeBase.New<HashDocAttributeSet>(arg0);
         }
@@ -118,7 +118,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashDocAttributeSet(Javax.Print.Attribute.DocAttributeSet arg0)
         /// </summary>
-        public static HashDocAttributeSet New(Javax.Print.Attribute.DocAttributeSet arg0)
+        public static HashDocAttributeSet CreatePoolableInstance(Javax.Print.Attribute.DocAttributeSet arg0)
         {
             return JVMBridgeBase.New<HashDocAttributeSet>(arg0);
         }

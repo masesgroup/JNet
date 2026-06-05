@@ -74,7 +74,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for ListView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static ListView New(Javax.Swing.Text.Element arg0)
+        public static ListView CreatePoolableInstance(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<ListView>(arg0);
         }

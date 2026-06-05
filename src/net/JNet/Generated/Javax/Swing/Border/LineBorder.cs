@@ -76,7 +76,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for LineBorder(Java.Awt.Color arg0, int arg1, bool arg2)
         /// </summary>
-        public static LineBorder New(Java.Awt.Color arg0, int arg1, bool arg2)
+        public static LineBorder CreatePoolableInstance(Java.Awt.Color arg0, int arg1, bool arg2)
         {
             return JVMBridgeBase.New<LineBorder>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for LineBorder(Java.Awt.Color arg0, int arg1)
         /// </summary>
-        public static LineBorder New(Java.Awt.Color arg0, int arg1)
+        public static LineBorder CreatePoolableInstance(Java.Awt.Color arg0, int arg1)
         {
             return JVMBridgeBase.New<LineBorder>(arg0, arg1);
         }
@@ -107,7 +107,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for LineBorder(Java.Awt.Color arg0)
         /// </summary>
-        public static LineBorder New(Java.Awt.Color arg0)
+        public static LineBorder CreatePoolableInstance(Java.Awt.Color arg0)
         {
             return JVMBridgeBase.New<LineBorder>(arg0);
         }

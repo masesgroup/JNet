@@ -74,7 +74,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigInteger(byte[] arg0)
         /// </summary>
-        public static BigInteger New(byte[] arg0)
+        public static BigInteger CreatePoolableInstance(byte[] arg0)
         {
             return JVMBridgeBase.New<BigInteger>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigInteger(int arg0, byte[] arg1)
         /// </summary>
-        public static BigInteger New(int arg0, byte[] arg1)
+        public static BigInteger CreatePoolableInstance(int arg0, byte[] arg1)
         {
             return JVMBridgeBase.New<BigInteger>(arg0, arg1);
         }
@@ -107,7 +107,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigInteger(int arg0, int arg1, Java.Util.Random arg2)
         /// </summary>
-        public static BigInteger New(int arg0, int arg1, Java.Util.Random arg2)
+        public static BigInteger CreatePoolableInstance(int arg0, int arg1, Java.Util.Random arg2)
         {
             return JVMBridgeBase.New<BigInteger>(arg0, arg1, arg2);
         }
@@ -123,7 +123,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigInteger(int arg0, Java.Util.Random arg1)
         /// </summary>
-        public static BigInteger New(int arg0, Java.Util.Random arg1)
+        public static BigInteger CreatePoolableInstance(int arg0, Java.Util.Random arg1)
         {
             return JVMBridgeBase.New<BigInteger>(arg0, arg1);
         }
@@ -139,7 +139,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigInteger(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static BigInteger New(Java.Lang.String arg0, int arg1)
+        public static BigInteger CreatePoolableInstance(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<BigInteger>(arg0, arg1);
         }
@@ -154,7 +154,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigInteger(Java.Lang.String arg0)
         /// </summary>
-        public static BigInteger New(Java.Lang.String arg0)
+        public static BigInteger CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<BigInteger>(arg0);
         }

@@ -209,7 +209,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSpinner()
         /// </summary>
-        public static JSpinner New()
+        public static JSpinner CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JSpinner>();
         }
@@ -224,7 +224,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSpinner(Javax.Swing.SpinnerModel arg0)
         /// </summary>
-        public static JSpinner New(Javax.Swing.SpinnerModel arg0)
+        public static JSpinner CreatePoolableInstance(Javax.Swing.SpinnerModel arg0)
         {
             return JVMBridgeBase.New<JSpinner>(arg0);
         }
@@ -341,7 +341,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for DateEditor(Javax.Swing.JSpinner arg0, Java.Lang.String arg1)
             /// </summary>
-            public static DateEditor New(Javax.Swing.JSpinner arg0, Java.Lang.String arg1)
+            public static DateEditor CreatePoolableInstance(Javax.Swing.JSpinner arg0, Java.Lang.String arg1)
             {
                 return JVMBridgeBase.New<DateEditor>(arg0, arg1);
             }
@@ -356,7 +356,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for DateEditor(Javax.Swing.JSpinner arg0)
             /// </summary>
-            public static DateEditor New(Javax.Swing.JSpinner arg0)
+            public static DateEditor CreatePoolableInstance(Javax.Swing.JSpinner arg0)
             {
                 return JVMBridgeBase.New<DateEditor>(arg0);
             }
@@ -416,7 +416,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for DefaultEditor(Javax.Swing.JSpinner arg0)
             /// </summary>
-            public static DefaultEditor New(Javax.Swing.JSpinner arg0)
+            public static DefaultEditor CreatePoolableInstance(Javax.Swing.JSpinner arg0)
             {
                 return JVMBridgeBase.New<DefaultEditor>(arg0);
             }
@@ -563,7 +563,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for ListEditor(Javax.Swing.JSpinner arg0)
             /// </summary>
-            public static ListEditor New(Javax.Swing.JSpinner arg0)
+            public static ListEditor CreatePoolableInstance(Javax.Swing.JSpinner arg0)
             {
                 return JVMBridgeBase.New<ListEditor>(arg0);
             }
@@ -617,7 +617,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for NumberEditor(Javax.Swing.JSpinner arg0, Java.Lang.String arg1)
             /// </summary>
-            public static NumberEditor New(Javax.Swing.JSpinner arg0, Java.Lang.String arg1)
+            public static NumberEditor CreatePoolableInstance(Javax.Swing.JSpinner arg0, Java.Lang.String arg1)
             {
                 return JVMBridgeBase.New<NumberEditor>(arg0, arg1);
             }
@@ -632,7 +632,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for NumberEditor(Javax.Swing.JSpinner arg0)
             /// </summary>
-            public static NumberEditor New(Javax.Swing.JSpinner arg0)
+            public static NumberEditor CreatePoolableInstance(Javax.Swing.JSpinner arg0)
             {
                 return JVMBridgeBase.New<NumberEditor>(arg0);
             }

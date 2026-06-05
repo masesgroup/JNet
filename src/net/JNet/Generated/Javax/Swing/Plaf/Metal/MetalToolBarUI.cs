@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalToolBarUI()
         /// </summary>
-        public static MetalToolBarUI New()
+        public static MetalToolBarUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MetalToolBarUI>();
         }

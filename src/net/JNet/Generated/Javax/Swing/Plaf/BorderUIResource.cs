@@ -312,7 +312,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for BorderUIResource(Javax.Swing.Border.Border arg0)
         /// </summary>
-        public static BorderUIResource New(Javax.Swing.Border.Border arg0)
+        public static BorderUIResource CreatePoolableInstance(Javax.Swing.Border.Border arg0)
         {
             return JVMBridgeBase.New<BorderUIResource>(arg0);
         }
@@ -425,7 +425,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for BevelBorderUIResource(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
             /// </summary>
-            public static BevelBorderUIResource New(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
+            public static BevelBorderUIResource CreatePoolableInstance(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
             {
                 return JVMBridgeBase.New<BevelBorderUIResource>(arg0, arg1, arg2, arg3, arg4);
             }
@@ -442,7 +442,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for BevelBorderUIResource(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
             /// </summary>
-            public static BevelBorderUIResource New(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
+            public static BevelBorderUIResource CreatePoolableInstance(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
             {
                 return JVMBridgeBase.New<BevelBorderUIResource>(arg0, arg1, arg2);
             }
@@ -457,7 +457,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for BevelBorderUIResource(int arg0)
             /// </summary>
-            public static BevelBorderUIResource New(int arg0)
+            public static BevelBorderUIResource CreatePoolableInstance(int arg0)
             {
                 return JVMBridgeBase.New<BevelBorderUIResource>(arg0);
             }
@@ -508,7 +508,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for CompoundBorderUIResource(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
             /// </summary>
-            public static CompoundBorderUIResource New(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
+            public static CompoundBorderUIResource CreatePoolableInstance(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
             {
                 return JVMBridgeBase.New<CompoundBorderUIResource>(arg0, arg1);
             }
@@ -561,7 +561,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for EmptyBorderUIResource(int arg0, int arg1, int arg2, int arg3)
             /// </summary>
-            public static EmptyBorderUIResource New(int arg0, int arg1, int arg2, int arg3)
+            public static EmptyBorderUIResource CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3)
             {
                 return JVMBridgeBase.New<EmptyBorderUIResource>(arg0, arg1, arg2, arg3);
             }
@@ -576,7 +576,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for EmptyBorderUIResource(Java.Awt.Insets arg0)
             /// </summary>
-            public static EmptyBorderUIResource New(Java.Awt.Insets arg0)
+            public static EmptyBorderUIResource CreatePoolableInstance(Java.Awt.Insets arg0)
             {
                 return JVMBridgeBase.New<EmptyBorderUIResource>(arg0);
             }
@@ -625,7 +625,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for EtchedBorderUIResource()
             /// </summary>
-            public static EtchedBorderUIResource New()
+            public static EtchedBorderUIResource CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<EtchedBorderUIResource>();
             }
@@ -642,7 +642,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for EtchedBorderUIResource(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
             /// </summary>
-            public static EtchedBorderUIResource New(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
+            public static EtchedBorderUIResource CreatePoolableInstance(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
             {
                 return JVMBridgeBase.New<EtchedBorderUIResource>(arg0, arg1, arg2);
             }
@@ -657,7 +657,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for EtchedBorderUIResource(int arg0)
             /// </summary>
-            public static EtchedBorderUIResource New(int arg0)
+            public static EtchedBorderUIResource CreatePoolableInstance(int arg0)
             {
                 return JVMBridgeBase.New<EtchedBorderUIResource>(arg0);
             }
@@ -673,7 +673,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for EtchedBorderUIResource(Java.Awt.Color arg0, Java.Awt.Color arg1)
             /// </summary>
-            public static EtchedBorderUIResource New(Java.Awt.Color arg0, Java.Awt.Color arg1)
+            public static EtchedBorderUIResource CreatePoolableInstance(Java.Awt.Color arg0, Java.Awt.Color arg1)
             {
                 return JVMBridgeBase.New<EtchedBorderUIResource>(arg0, arg1);
             }
@@ -724,7 +724,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for LineBorderUIResource(Java.Awt.Color arg0, int arg1)
             /// </summary>
-            public static LineBorderUIResource New(Java.Awt.Color arg0, int arg1)
+            public static LineBorderUIResource CreatePoolableInstance(Java.Awt.Color arg0, int arg1)
             {
                 return JVMBridgeBase.New<LineBorderUIResource>(arg0, arg1);
             }
@@ -739,7 +739,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for LineBorderUIResource(Java.Awt.Color arg0)
             /// </summary>
-            public static LineBorderUIResource New(Java.Awt.Color arg0)
+            public static LineBorderUIResource CreatePoolableInstance(Java.Awt.Color arg0)
             {
                 return JVMBridgeBase.New<LineBorderUIResource>(arg0);
             }
@@ -793,7 +793,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for MatteBorderUIResource(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
             /// </summary>
-            public static MatteBorderUIResource New(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
+            public static MatteBorderUIResource CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
             {
                 return JVMBridgeBase.New<MatteBorderUIResource>(arg0, arg1, arg2, arg3, arg4);
             }
@@ -812,7 +812,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for MatteBorderUIResource(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
             /// </summary>
-            public static MatteBorderUIResource New(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
+            public static MatteBorderUIResource CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
             {
                 return JVMBridgeBase.New<MatteBorderUIResource>(arg0, arg1, arg2, arg3, arg4);
             }
@@ -827,7 +827,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for MatteBorderUIResource(Javax.Swing.Icon arg0)
             /// </summary>
-            public static MatteBorderUIResource New(Javax.Swing.Icon arg0)
+            public static MatteBorderUIResource CreatePoolableInstance(Javax.Swing.Icon arg0)
             {
                 return JVMBridgeBase.New<MatteBorderUIResource>(arg0);
             }
@@ -877,7 +877,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for TitledBorderUIResource(Java.Lang.String arg0)
             /// </summary>
-            public static TitledBorderUIResource New(Java.Lang.String arg0)
+            public static TitledBorderUIResource CreatePoolableInstance(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<TitledBorderUIResource>(arg0);
             }
@@ -897,7 +897,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for TitledBorderUIResource(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
             /// </summary>
-            public static TitledBorderUIResource New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
+            public static TitledBorderUIResource CreatePoolableInstance(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
             {
                 return JVMBridgeBase.New<TitledBorderUIResource>(arg0, arg1, arg2, arg3, arg4, arg5);
             }
@@ -916,7 +916,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for TitledBorderUIResource(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4)
             /// </summary>
-            public static TitledBorderUIResource New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4)
+            public static TitledBorderUIResource CreatePoolableInstance(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4)
             {
                 return JVMBridgeBase.New<TitledBorderUIResource>(arg0, arg1, arg2, arg3, arg4);
             }
@@ -934,7 +934,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for TitledBorderUIResource(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3)
             /// </summary>
-            public static TitledBorderUIResource New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3)
+            public static TitledBorderUIResource CreatePoolableInstance(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3)
             {
                 return JVMBridgeBase.New<TitledBorderUIResource>(arg0, arg1, arg2, arg3);
             }
@@ -950,7 +950,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for TitledBorderUIResource(Javax.Swing.Border.Border arg0, Java.Lang.String arg1)
             /// </summary>
-            public static TitledBorderUIResource New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1)
+            public static TitledBorderUIResource CreatePoolableInstance(Javax.Swing.Border.Border arg0, Java.Lang.String arg1)
             {
                 return JVMBridgeBase.New<TitledBorderUIResource>(arg0, arg1);
             }
@@ -965,7 +965,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// HPA initializer for TitledBorderUIResource(Javax.Swing.Border.Border arg0)
             /// </summary>
-            public static TitledBorderUIResource New(Javax.Swing.Border.Border arg0)
+            public static TitledBorderUIResource CreatePoolableInstance(Javax.Swing.Border.Border arg0)
             {
                 return JVMBridgeBase.New<TitledBorderUIResource>(arg0);
             }

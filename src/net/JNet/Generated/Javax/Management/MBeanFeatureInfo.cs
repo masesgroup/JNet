@@ -76,7 +76,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanFeatureInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Descriptor arg2)
         /// </summary>
-        public static MBeanFeatureInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Descriptor arg2)
+        public static MBeanFeatureInfo CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Descriptor arg2)
         {
             return JVMBridgeBase.New<MBeanFeatureInfo>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanFeatureInfo(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static MBeanFeatureInfo New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static MBeanFeatureInfo CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<MBeanFeatureInfo>(arg0, arg1);
         }

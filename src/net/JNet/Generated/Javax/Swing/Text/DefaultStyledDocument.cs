@@ -175,7 +175,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DefaultStyledDocument()
         /// </summary>
-        public static DefaultStyledDocument New()
+        public static DefaultStyledDocument CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DefaultStyledDocument>();
         }
@@ -191,7 +191,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DefaultStyledDocument(Javax.Swing.Text.AbstractDocument.Content arg0, Javax.Swing.Text.StyleContext arg1)
         /// </summary>
-        public static DefaultStyledDocument New(Javax.Swing.Text.AbstractDocument.Content arg0, Javax.Swing.Text.StyleContext arg1)
+        public static DefaultStyledDocument CreatePoolableInstance(Javax.Swing.Text.AbstractDocument.Content arg0, Javax.Swing.Text.StyleContext arg1)
         {
             return JVMBridgeBase.New<DefaultStyledDocument>(arg0, arg1);
         }
@@ -206,7 +206,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DefaultStyledDocument(Javax.Swing.Text.StyleContext arg0)
         /// </summary>
-        public static DefaultStyledDocument New(Javax.Swing.Text.StyleContext arg0)
+        public static DefaultStyledDocument CreatePoolableInstance(Javax.Swing.Text.StyleContext arg0)
         {
             return JVMBridgeBase.New<DefaultStyledDocument>(arg0);
         }
@@ -373,7 +373,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for AttributeUndoableEdit(Javax.Swing.Text.Element arg0, Javax.Swing.Text.AttributeSet arg1, bool arg2)
             /// </summary>
-            public static AttributeUndoableEdit New(Javax.Swing.Text.Element arg0, Javax.Swing.Text.AttributeSet arg1, bool arg2)
+            public static AttributeUndoableEdit CreatePoolableInstance(Javax.Swing.Text.Element arg0, Javax.Swing.Text.AttributeSet arg1, bool arg2)
             {
                 return JVMBridgeBase.New<AttributeUndoableEdit>(arg0, arg1, arg2);
             }
@@ -420,7 +420,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for ElementBuffer(Javax.Swing.Text.DefaultStyledDocument arg0, Javax.Swing.Text.Element arg1)
             /// </summary>
-            public static ElementBuffer New(Javax.Swing.Text.DefaultStyledDocument arg0, Javax.Swing.Text.Element arg1)
+            public static ElementBuffer CreatePoolableInstance(Javax.Swing.Text.DefaultStyledDocument arg0, Javax.Swing.Text.Element arg1)
             {
                 return JVMBridgeBase.New<ElementBuffer>(arg0, arg1);
             }
@@ -518,7 +518,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1, char[] arg2, int arg3, int arg4)
             /// </summary>
-            public static ElementSpec New(Javax.Swing.Text.AttributeSet arg0, short arg1, char[] arg2, int arg3, int arg4)
+            public static ElementSpec CreatePoolableInstance(Javax.Swing.Text.AttributeSet arg0, short arg1, char[] arg2, int arg3, int arg4)
             {
                 return JVMBridgeBase.New<ElementSpec>(arg0, arg1, arg2, arg3, arg4);
             }
@@ -535,7 +535,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1, int arg2)
             /// </summary>
-            public static ElementSpec New(Javax.Swing.Text.AttributeSet arg0, short arg1, int arg2)
+            public static ElementSpec CreatePoolableInstance(Javax.Swing.Text.AttributeSet arg0, short arg1, int arg2)
             {
                 return JVMBridgeBase.New<ElementSpec>(arg0, arg1, arg2);
             }
@@ -551,7 +551,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1)
             /// </summary>
-            public static ElementSpec New(Javax.Swing.Text.AttributeSet arg0, short arg1)
+            public static ElementSpec CreatePoolableInstance(Javax.Swing.Text.AttributeSet arg0, short arg1)
             {
                 return JVMBridgeBase.New<ElementSpec>(arg0, arg1);
             }

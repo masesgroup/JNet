@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalScrollPaneUI()
         /// </summary>
-        public static MetalScrollPaneUI New()
+        public static MetalScrollPaneUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MetalScrollPaneUI>();
         }

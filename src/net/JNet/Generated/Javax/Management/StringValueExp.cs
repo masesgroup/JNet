@@ -73,7 +73,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for StringValueExp()
         /// </summary>
-        public static StringValueExp New()
+        public static StringValueExp CreatePoolableInstance()
         {
             return JVMBridgeBase.New<StringValueExp>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for StringValueExp(Java.Lang.String arg0)
         /// </summary>
-        public static StringValueExp New(Java.Lang.String arg0)
+        public static StringValueExp CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<StringValueExp>(arg0);
         }

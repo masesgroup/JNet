@@ -107,7 +107,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalComboBoxEditor()
         /// </summary>
-        public static MetalComboBoxEditor New()
+        public static MetalComboBoxEditor CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MetalComboBoxEditor>();
         }
@@ -145,7 +145,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for UIResource()
             /// </summary>
-            public static UIResource New()
+            public static UIResource CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<UIResource>();
             }

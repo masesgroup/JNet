@@ -75,7 +75,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for ChoiceFormat(double[] arg0, Java.Lang.String[] arg1)
         /// </summary>
-        public static ChoiceFormat New(double[] arg0, Java.Lang.String[] arg1)
+        public static ChoiceFormat CreatePoolableInstance(double[] arg0, Java.Lang.String[] arg1)
         {
             return JVMBridgeBase.New<ChoiceFormat>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for ChoiceFormat(Java.Lang.String arg0)
         /// </summary>
-        public static ChoiceFormat New(Java.Lang.String arg0)
+        public static ChoiceFormat CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<ChoiceFormat>(arg0);
         }

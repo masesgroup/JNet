@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for InputMap()
         /// </summary>
-        public static InputMap New()
+        public static InputMap CreatePoolableInstance()
         {
             return JVMBridgeBase.New<InputMap>();
         }

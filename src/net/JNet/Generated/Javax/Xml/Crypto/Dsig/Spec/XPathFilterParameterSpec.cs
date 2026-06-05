@@ -75,7 +75,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// HPA initializer for XPathFilterParameterSpec(Java.Lang.String arg0, Java.Util.Map arg1)
         /// </summary>
-        public static XPathFilterParameterSpec New(Java.Lang.String arg0, Java.Util.Map arg1)
+        public static XPathFilterParameterSpec CreatePoolableInstance(Java.Lang.String arg0, Java.Util.Map arg1)
         {
             return JVMBridgeBase.New<XPathFilterParameterSpec>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// HPA initializer for XPathFilterParameterSpec(Java.Lang.String arg0)
         /// </summary>
-        public static XPathFilterParameterSpec New(Java.Lang.String arg0)
+        public static XPathFilterParameterSpec CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<XPathFilterParameterSpec>(arg0);
         }

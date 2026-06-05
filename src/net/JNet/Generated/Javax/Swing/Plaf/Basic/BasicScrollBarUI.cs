@@ -107,7 +107,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicScrollBarUI()
         /// </summary>
-        public static BasicScrollBarUI New()
+        public static BasicScrollBarUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicScrollBarUI>();
         }
@@ -212,7 +212,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicScrollBarUI arg0)
             /// </summary>
-            public static PropertyChangeHandler New(Javax.Swing.Plaf.Basic.BasicScrollBarUI arg0)
+            public static PropertyChangeHandler CreatePoolableInstance(Javax.Swing.Plaf.Basic.BasicScrollBarUI arg0)
             {
                 return JVMBridgeBase.New<PropertyChangeHandler>(arg0);
             }

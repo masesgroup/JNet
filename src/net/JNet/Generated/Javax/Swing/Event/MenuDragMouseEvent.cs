@@ -83,7 +83,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for MenuDragMouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, Javax.Swing.MenuElement[] arg8, Javax.Swing.MenuSelectionManager arg9)
         /// </summary>
-        public static MenuDragMouseEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, Javax.Swing.MenuElement[] arg8, Javax.Swing.MenuSelectionManager arg9)
+        public static MenuDragMouseEvent CreatePoolableInstance(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, Javax.Swing.MenuElement[] arg8, Javax.Swing.MenuSelectionManager arg9)
         {
             return JVMBridgeBase.New<MenuDragMouseEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
@@ -109,7 +109,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for MenuDragMouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, Javax.Swing.MenuElement[] arg10, Javax.Swing.MenuSelectionManager arg11)
         /// </summary>
-        public static MenuDragMouseEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, Javax.Swing.MenuElement[] arg10, Javax.Swing.MenuSelectionManager arg11)
+        public static MenuDragMouseEvent CreatePoolableInstance(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, Javax.Swing.MenuElement[] arg10, Javax.Swing.MenuSelectionManager arg11)
         {
             return JVMBridgeBase.New<MenuDragMouseEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }

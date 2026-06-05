@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DateFormatter()
         /// </summary>
-        public static DateFormatter New()
+        public static DateFormatter CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DateFormatter>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DateFormatter(Java.Text.DateFormat arg0)
         /// </summary>
-        public static DateFormatter New(Java.Text.DateFormat arg0)
+        public static DateFormatter CreatePoolableInstance(Java.Text.DateFormat arg0)
         {
             return JVMBridgeBase.New<DateFormatter>(arg0);
         }

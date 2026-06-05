@@ -75,7 +75,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for DimensionUIResource(int arg0, int arg1)
         /// </summary>
-        public static DimensionUIResource New(int arg0, int arg1)
+        public static DimensionUIResource CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<DimensionUIResource>(arg0, arg1);
         }

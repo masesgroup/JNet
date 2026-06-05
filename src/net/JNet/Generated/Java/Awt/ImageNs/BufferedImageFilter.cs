@@ -74,7 +74,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for BufferedImageFilter(Java.Awt.ImageNs.BufferedImageOp arg0)
         /// </summary>
-        public static BufferedImageFilter New(Java.Awt.ImageNs.BufferedImageOp arg0)
+        public static BufferedImageFilter CreatePoolableInstance(Java.Awt.ImageNs.BufferedImageOp arg0)
         {
             return JVMBridgeBase.New<BufferedImageFilter>(arg0);
         }

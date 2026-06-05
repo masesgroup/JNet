@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for CopiesSupported(int arg0, int arg1)
         /// </summary>
-        public static CopiesSupported New(int arg0, int arg1)
+        public static CopiesSupported CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<CopiesSupported>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for CopiesSupported(int arg0)
         /// </summary>
-        public static CopiesSupported New(int arg0)
+        public static CopiesSupported CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<CopiesSupported>(arg0);
         }

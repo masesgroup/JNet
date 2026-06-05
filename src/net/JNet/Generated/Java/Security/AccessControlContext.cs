@@ -75,7 +75,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for AccessControlContext(Java.Security.AccessControlContext arg0, Java.Security.DomainCombiner arg1)
         /// </summary>
-        public static AccessControlContext New(Java.Security.AccessControlContext arg0, Java.Security.DomainCombiner arg1)
+        public static AccessControlContext CreatePoolableInstance(Java.Security.AccessControlContext arg0, Java.Security.DomainCombiner arg1)
         {
             return JVMBridgeBase.New<AccessControlContext>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for AccessControlContext(Java.Security.ProtectionDomain[] arg0)
         /// </summary>
-        public static AccessControlContext New(Java.Security.ProtectionDomain[] arg0)
+        public static AccessControlContext CreatePoolableInstance(Java.Security.ProtectionDomain[] arg0)
         {
             return JVMBridgeBase.New<AccessControlContext>(arg0);
         }

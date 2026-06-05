@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicStampedReference(object arg0, int arg1)
         /// </summary>
-        public static AtomicStampedReference New(object arg0, int arg1)
+        public static AtomicStampedReference CreatePoolableInstance(object arg0, int arg1)
         {
             return JVMBridgeBase.New<AtomicStampedReference>(arg0, arg1);
         }
@@ -223,7 +223,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicStampedReference(V arg0, int arg1)
         /// </summary>
-        public static AtomicStampedReference<V> New(V arg0, int arg1)
+        public static AtomicStampedReference<V> CreatePoolableInstance(V arg0, int arg1)
         {
             return JVMBridgeBase.New<AtomicStampedReference<V>>(arg0, arg1);
         }

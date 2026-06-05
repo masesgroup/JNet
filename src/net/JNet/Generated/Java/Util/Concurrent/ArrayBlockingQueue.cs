@@ -111,7 +111,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ArrayBlockingQueue(int arg0, bool arg1, Java.Util.Collection arg2)
         /// </summary>
-        public static ArrayBlockingQueue New(int arg0, bool arg1, Java.Util.Collection arg2)
+        public static ArrayBlockingQueue CreatePoolableInstance(int arg0, bool arg1, Java.Util.Collection arg2)
         {
             return JVMBridgeBase.New<ArrayBlockingQueue>(arg0, arg1, arg2);
         }
@@ -127,7 +127,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ArrayBlockingQueue(int arg0, bool arg1)
         /// </summary>
-        public static ArrayBlockingQueue New(int arg0, bool arg1)
+        public static ArrayBlockingQueue CreatePoolableInstance(int arg0, bool arg1)
         {
             return JVMBridgeBase.New<ArrayBlockingQueue>(arg0, arg1);
         }
@@ -142,7 +142,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ArrayBlockingQueue(int arg0)
         /// </summary>
-        public static ArrayBlockingQueue New(int arg0)
+        public static ArrayBlockingQueue CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ArrayBlockingQueue>(arg0);
         }
@@ -266,7 +266,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ArrayBlockingQueue(int arg0, bool arg1, Java.Util.Collection%3CE%3E arg2)
         /// </summary>
-        public static ArrayBlockingQueue<E> New(int arg0, bool arg1, Java.Util.Collection<E> arg2)
+        public static ArrayBlockingQueue<E> CreatePoolableInstance(int arg0, bool arg1, Java.Util.Collection<E> arg2)
         {
             return JVMBridgeBase.New<ArrayBlockingQueue<E>>(arg0, arg1, arg2);
         }
@@ -282,7 +282,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ArrayBlockingQueue(int arg0, bool arg1)
         /// </summary>
-        public static ArrayBlockingQueue<E> New(int arg0, bool arg1)
+        public static ArrayBlockingQueue<E> CreatePoolableInstance(int arg0, bool arg1)
         {
             return JVMBridgeBase.New<ArrayBlockingQueue<E>>(arg0, arg1);
         }
@@ -297,7 +297,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ArrayBlockingQueue(int arg0)
         /// </summary>
-        public static ArrayBlockingQueue<E> New(int arg0)
+        public static ArrayBlockingQueue<E> CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ArrayBlockingQueue<E>>(arg0);
         }

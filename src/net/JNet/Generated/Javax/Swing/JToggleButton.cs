@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JToggleButton()
         /// </summary>
-        public static JToggleButton New()
+        public static JToggleButton CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JToggleButton>();
         }
@@ -123,7 +123,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JToggleButton(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static JToggleButton New(Java.Lang.String arg0, bool arg1)
+        public static JToggleButton CreatePoolableInstance(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<JToggleButton>(arg0, arg1);
         }
@@ -140,7 +140,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JToggleButton(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
         /// </summary>
-        public static JToggleButton New(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
+        public static JToggleButton CreatePoolableInstance(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
         {
             return JVMBridgeBase.New<JToggleButton>(arg0, arg1, arg2);
         }
@@ -156,7 +156,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JToggleButton(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         /// </summary>
-        public static JToggleButton New(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        public static JToggleButton CreatePoolableInstance(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         {
             return JVMBridgeBase.New<JToggleButton>(arg0, arg1);
         }
@@ -171,7 +171,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JToggleButton(Java.Lang.String arg0)
         /// </summary>
-        public static JToggleButton New(Java.Lang.String arg0)
+        public static JToggleButton CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JToggleButton>(arg0);
         }
@@ -186,7 +186,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JToggleButton(Javax.Swing.Action arg0)
         /// </summary>
-        public static JToggleButton New(Javax.Swing.Action arg0)
+        public static JToggleButton CreatePoolableInstance(Javax.Swing.Action arg0)
         {
             return JVMBridgeBase.New<JToggleButton>(arg0);
         }
@@ -202,7 +202,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JToggleButton(Javax.Swing.Icon arg0, bool arg1)
         /// </summary>
-        public static JToggleButton New(Javax.Swing.Icon arg0, bool arg1)
+        public static JToggleButton CreatePoolableInstance(Javax.Swing.Icon arg0, bool arg1)
         {
             return JVMBridgeBase.New<JToggleButton>(arg0, arg1);
         }
@@ -217,7 +217,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JToggleButton(Javax.Swing.Icon arg0)
         /// </summary>
-        public static JToggleButton New(Javax.Swing.Icon arg0)
+        public static JToggleButton CreatePoolableInstance(Javax.Swing.Icon arg0)
         {
             return JVMBridgeBase.New<JToggleButton>(arg0);
         }
@@ -259,7 +259,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for ToggleButtonModel()
             /// </summary>
-            public static ToggleButtonModel New()
+            public static ToggleButtonModel CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<ToggleButtonModel>();
             }

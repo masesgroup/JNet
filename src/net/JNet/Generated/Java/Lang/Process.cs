@@ -73,7 +73,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Process()
         /// </summary>
-        public static Process New()
+        public static Process CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Process>();
         }

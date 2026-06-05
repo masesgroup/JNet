@@ -108,7 +108,7 @@ namespace Javax.Tools
         /// <summary>
         /// HPA initializer for DiagnosticCollector()
         /// </summary>
-        public static DiagnosticCollector New()
+        public static DiagnosticCollector CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DiagnosticCollector>();
         }
@@ -168,7 +168,7 @@ namespace Javax.Tools
         /// <summary>
         /// HPA initializer for DiagnosticCollector()
         /// </summary>
-        public static DiagnosticCollector<S> New()
+        public static DiagnosticCollector<S> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DiagnosticCollector<S>>();
         }

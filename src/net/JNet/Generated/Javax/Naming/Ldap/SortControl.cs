@@ -76,7 +76,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for SortControl(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static SortControl New(Java.Lang.String arg0, bool arg1)
+        public static SortControl CreatePoolableInstance(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<SortControl>(arg0, arg1);
         }
@@ -93,7 +93,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for SortControl(Java.Lang.String[] arg0, bool arg1)
         /// </summary>
-        public static SortControl New(Java.Lang.String[] arg0, bool arg1)
+        public static SortControl CreatePoolableInstance(Java.Lang.String[] arg0, bool arg1)
         {
             return JVMBridgeBase.New<SortControl>(arg0, arg1);
         }
@@ -110,7 +110,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for SortControl(Javax.Naming.Ldap.SortKey[] arg0, bool arg1)
         /// </summary>
-        public static SortControl New(Javax.Naming.Ldap.SortKey[] arg0, bool arg1)
+        public static SortControl CreatePoolableInstance(Javax.Naming.Ldap.SortKey[] arg0, bool arg1)
         {
             return JVMBridgeBase.New<SortControl>(arg0, arg1);
         }

@@ -75,7 +75,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for InitialContext()
         /// </summary>
-        public static InitialContext New()
+        public static InitialContext CreatePoolableInstance()
         {
             return JVMBridgeBase.New<InitialContext>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for InitialContext(Java.Util.Hashtable%3Cobject, object%3E arg0)
         /// </summary>
-        public static InitialContext New(Java.Util.Hashtable<object, object> arg0)
+        public static InitialContext CreatePoolableInstance(Java.Util.Hashtable<object, object> arg0)
         {
             return JVMBridgeBase.New<InitialContext>(arg0);
         }

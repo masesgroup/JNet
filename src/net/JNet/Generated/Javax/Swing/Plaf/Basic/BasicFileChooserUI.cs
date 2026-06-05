@@ -74,7 +74,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicFileChooserUI(Javax.Swing.JFileChooser arg0)
         /// </summary>
-        public static BasicFileChooserUI New(Javax.Swing.JFileChooser arg0)
+        public static BasicFileChooserUI CreatePoolableInstance(Javax.Swing.JFileChooser arg0)
         {
             return JVMBridgeBase.New<BasicFileChooserUI>(arg0);
         }

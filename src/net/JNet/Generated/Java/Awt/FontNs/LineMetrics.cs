@@ -73,7 +73,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for LineMetrics()
         /// </summary>
-        public static LineMetrics New()
+        public static LineMetrics CreatePoolableInstance()
         {
             return JVMBridgeBase.New<LineMetrics>();
         }

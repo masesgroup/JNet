@@ -73,7 +73,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for LDAPCertStoreParameters()
         /// </summary>
-        public static LDAPCertStoreParameters New()
+        public static LDAPCertStoreParameters CreatePoolableInstance()
         {
             return JVMBridgeBase.New<LDAPCertStoreParameters>();
         }
@@ -89,7 +89,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for LDAPCertStoreParameters(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static LDAPCertStoreParameters New(Java.Lang.String arg0, int arg1)
+        public static LDAPCertStoreParameters CreatePoolableInstance(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<LDAPCertStoreParameters>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for LDAPCertStoreParameters(Java.Lang.String arg0)
         /// </summary>
-        public static LDAPCertStoreParameters New(Java.Lang.String arg0)
+        public static LDAPCertStoreParameters CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<LDAPCertStoreParameters>(arg0);
         }

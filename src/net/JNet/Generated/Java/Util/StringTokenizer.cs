@@ -76,7 +76,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for StringTokenizer(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
         /// </summary>
-        public static StringTokenizer New(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
+        public static StringTokenizer CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
         {
             return JVMBridgeBase.New<StringTokenizer>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for StringTokenizer(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static StringTokenizer New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static StringTokenizer CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<StringTokenizer>(arg0, arg1);
         }
@@ -107,7 +107,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for StringTokenizer(Java.Lang.String arg0)
         /// </summary>
-        public static StringTokenizer New(Java.Lang.String arg0)
+        public static StringTokenizer CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<StringTokenizer>(arg0);
         }

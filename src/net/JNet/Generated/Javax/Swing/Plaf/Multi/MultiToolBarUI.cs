@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiToolBarUI()
         /// </summary>
-        public static MultiToolBarUI New()
+        public static MultiToolBarUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MultiToolBarUI>();
         }

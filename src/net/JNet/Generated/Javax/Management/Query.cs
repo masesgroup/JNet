@@ -73,7 +73,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for Query()
         /// </summary>
-        public static Query New()
+        public static Query CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Query>();
         }

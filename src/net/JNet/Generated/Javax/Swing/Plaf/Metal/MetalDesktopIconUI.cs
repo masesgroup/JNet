@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalDesktopIconUI()
         /// </summary>
-        public static MetalDesktopIconUI New()
+        public static MetalDesktopIconUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MetalDesktopIconUI>();
         }

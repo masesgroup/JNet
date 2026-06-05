@@ -73,7 +73,7 @@ namespace Javax.Xml.Bind.Util
         /// <summary>
         /// HPA initializer for ValidationEventCollector()
         /// </summary>
-        public static ValidationEventCollector New()
+        public static ValidationEventCollector CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ValidationEventCollector>();
         }

@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Robot()
         /// </summary>
-        public static Robot New()
+        public static Robot CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Robot>();
         }
@@ -91,7 +91,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Robot(Java.Awt.GraphicsDevice arg0)
         /// </summary>
-        public static Robot New(Java.Awt.GraphicsDevice arg0)
+        public static Robot CreatePoolableInstance(Java.Awt.GraphicsDevice arg0)
         {
             return JVMBridgeBase.New<Robot>(arg0);
         }

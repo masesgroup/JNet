@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiToolTipUI()
         /// </summary>
-        public static MultiToolTipUI New()
+        public static MultiToolTipUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MultiToolTipUI>();
         }

@@ -107,7 +107,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicComboBoxEditor()
         /// </summary>
-        public static BasicComboBoxEditor New()
+        public static BasicComboBoxEditor CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicComboBoxEditor>();
         }
@@ -206,7 +206,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for UIResource()
             /// </summary>
-            public static UIResource New()
+            public static UIResource CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<UIResource>();
             }

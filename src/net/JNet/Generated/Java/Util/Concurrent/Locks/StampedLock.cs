@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// HPA initializer for StampedLock()
         /// </summary>
-        public static StampedLock New()
+        public static StampedLock CreatePoolableInstance()
         {
             return JVMBridgeBase.New<StampedLock>();
         }

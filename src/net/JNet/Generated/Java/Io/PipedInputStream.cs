@@ -73,7 +73,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PipedInputStream()
         /// </summary>
-        public static PipedInputStream New()
+        public static PipedInputStream CreatePoolableInstance()
         {
             return JVMBridgeBase.New<PipedInputStream>();
         }
@@ -88,7 +88,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PipedInputStream(int arg0)
         /// </summary>
-        public static PipedInputStream New(int arg0)
+        public static PipedInputStream CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<PipedInputStream>(arg0);
         }
@@ -105,7 +105,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PipedInputStream(Java.Io.PipedOutputStream arg0, int arg1)
         /// </summary>
-        public static PipedInputStream New(Java.Io.PipedOutputStream arg0, int arg1)
+        public static PipedInputStream CreatePoolableInstance(Java.Io.PipedOutputStream arg0, int arg1)
         {
             return JVMBridgeBase.New<PipedInputStream>(arg0, arg1);
         }
@@ -121,7 +121,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PipedInputStream(Java.Io.PipedOutputStream arg0)
         /// </summary>
-        public static PipedInputStream New(Java.Io.PipedOutputStream arg0)
+        public static PipedInputStream CreatePoolableInstance(Java.Io.PipedOutputStream arg0)
         {
             return JVMBridgeBase.New<PipedInputStream>(arg0);
         }

@@ -77,7 +77,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Insets(int arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static Insets New(int arg0, int arg1, int arg2, int arg3)
+        public static Insets CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<Insets>(arg0, arg1, arg2, arg3);
         }

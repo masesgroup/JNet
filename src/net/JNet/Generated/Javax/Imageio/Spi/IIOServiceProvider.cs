@@ -73,7 +73,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// HPA initializer for IIOServiceProvider()
         /// </summary>
-        public static IIOServiceProvider New()
+        public static IIOServiceProvider CreatePoolableInstance()
         {
             return JVMBridgeBase.New<IIOServiceProvider>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// HPA initializer for IIOServiceProvider(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static IIOServiceProvider New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static IIOServiceProvider CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<IIOServiceProvider>(arg0, arg1);
         }

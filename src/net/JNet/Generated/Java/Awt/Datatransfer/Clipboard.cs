@@ -74,7 +74,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// HPA initializer for Clipboard(Java.Lang.String arg0)
         /// </summary>
-        public static Clipboard New(Java.Lang.String arg0)
+        public static Clipboard CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Clipboard>(arg0);
         }

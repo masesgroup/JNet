@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PageRanges(int arg0, int arg1)
         /// </summary>
-        public static PageRanges New(int arg0, int arg1)
+        public static PageRanges CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<PageRanges>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PageRanges(int arg0)
         /// </summary>
-        public static PageRanges New(int arg0)
+        public static PageRanges CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<PageRanges>(arg0);
         }
@@ -105,7 +105,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PageRanges(int[][] arg0)
         /// </summary>
-        public static PageRanges New(int[][] arg0)
+        public static PageRanges CreatePoolableInstance(int[][] arg0)
         {
             return JVMBridgeBase.New<PageRanges>(arg0);
         }
@@ -120,7 +120,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PageRanges(Java.Lang.String arg0)
         /// </summary>
-        public static PageRanges New(Java.Lang.String arg0)
+        public static PageRanges CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<PageRanges>(arg0);
         }

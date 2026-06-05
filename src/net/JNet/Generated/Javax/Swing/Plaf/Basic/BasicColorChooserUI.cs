@@ -107,7 +107,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicColorChooserUI()
         /// </summary>
-        public static BasicColorChooserUI New()
+        public static BasicColorChooserUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicColorChooserUI>();
         }
@@ -146,7 +146,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for PropertyHandler(Javax.Swing.Plaf.Basic.BasicColorChooserUI arg0)
             /// </summary>
-            public static PropertyHandler New(Javax.Swing.Plaf.Basic.BasicColorChooserUI arg0)
+            public static PropertyHandler CreatePoolableInstance(Javax.Swing.Plaf.Basic.BasicColorChooserUI arg0)
             {
                 return JVMBridgeBase.New<PropertyHandler>(arg0);
             }

@@ -76,7 +76,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for Kernel(int arg0, int arg1, float[] arg2)
         /// </summary>
-        public static Kernel New(int arg0, int arg1, float[] arg2)
+        public static Kernel CreatePoolableInstance(int arg0, int arg1, float[] arg2)
         {
             return JVMBridgeBase.New<Kernel>(arg0, arg1, arg2);
         }

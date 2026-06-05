@@ -107,7 +107,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicMenuUI()
         /// </summary>
-        public static BasicMenuUI New()
+        public static BasicMenuUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicMenuUI>();
         }
@@ -148,7 +148,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for ChangeHandler(Javax.Swing.Plaf.Basic.BasicMenuUI arg0, Javax.Swing.JMenu arg1, Javax.Swing.Plaf.Basic.BasicMenuUI arg2)
             /// </summary>
-            public static ChangeHandler New(Javax.Swing.Plaf.Basic.BasicMenuUI arg0, Javax.Swing.JMenu arg1, Javax.Swing.Plaf.Basic.BasicMenuUI arg2)
+            public static ChangeHandler CreatePoolableInstance(Javax.Swing.Plaf.Basic.BasicMenuUI arg0, Javax.Swing.JMenu arg1, Javax.Swing.Plaf.Basic.BasicMenuUI arg2)
             {
                 return JVMBridgeBase.New<ChangeHandler>(arg0, arg1, arg2);
             }

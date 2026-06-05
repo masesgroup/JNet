@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthSeparatorUI()
         /// </summary>
-        public static SynthSeparatorUI New()
+        public static SynthSeparatorUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SynthSeparatorUI>();
         }

@@ -460,7 +460,7 @@ namespace Javax.Xml.Bind
             /// <summary>
             /// HPA initializer for Listener()
             /// </summary>
-            public static Listener New()
+            public static Listener CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<Listener>();
             }

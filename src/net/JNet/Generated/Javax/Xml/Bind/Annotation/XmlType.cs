@@ -214,7 +214,7 @@ namespace Javax.Xml.Bind.Annotation
             /// <summary>
             /// HPA initializer for DEFAULT()
             /// </summary>
-            public static DEFAULT New()
+            public static DEFAULT CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<DEFAULT>();
             }

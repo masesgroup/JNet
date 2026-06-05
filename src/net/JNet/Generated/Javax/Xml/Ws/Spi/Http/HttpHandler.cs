@@ -73,7 +73,7 @@ namespace Javax.Xml.Ws.Spi.Http
         /// <summary>
         /// HPA initializer for HttpHandler()
         /// </summary>
-        public static HttpHandler New()
+        public static HttpHandler CreatePoolableInstance()
         {
             return JVMBridgeBase.New<HttpHandler>();
         }

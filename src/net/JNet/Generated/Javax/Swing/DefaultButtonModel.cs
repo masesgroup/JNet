@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultButtonModel()
         /// </summary>
-        public static DefaultButtonModel New()
+        public static DefaultButtonModel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DefaultButtonModel>();
         }

@@ -73,7 +73,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for SecureCacheResponse()
         /// </summary>
-        public static SecureCacheResponse New()
+        public static SecureCacheResponse CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SecureCacheResponse>();
         }

@@ -76,7 +76,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// HPA initializer for SerialStruct(Java.Sql.SQLData arg0, Java.Util.Map%3CJava.Lang.String, Java.Lang.Class%3E arg1)
         /// </summary>
-        public static SerialStruct New(Java.Sql.SQLData arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
+        public static SerialStruct CreatePoolableInstance(Java.Sql.SQLData arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
         {
             return JVMBridgeBase.New<SerialStruct>(arg0, arg1);
         }
@@ -93,7 +93,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// HPA initializer for SerialStruct(Java.Sql.Struct arg0, Java.Util.Map%3CJava.Lang.String, Java.Lang.Class%3E arg1)
         /// </summary>
-        public static SerialStruct New(Java.Sql.Struct arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
+        public static SerialStruct CreatePoolableInstance(Java.Sql.Struct arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
         {
             return JVMBridgeBase.New<SerialStruct>(arg0, arg1);
         }

@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PrinterLocation(Java.Lang.String arg0, Java.Util.Locale arg1)
         /// </summary>
-        public static PrinterLocation New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        public static PrinterLocation CreatePoolableInstance(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
             return JVMBridgeBase.New<PrinterLocation>(arg0, arg1);
         }

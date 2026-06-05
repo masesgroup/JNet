@@ -76,7 +76,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for CharArrayReader(char[] arg0, int arg1, int arg2)
         /// </summary>
-        public static CharArrayReader New(char[] arg0, int arg1, int arg2)
+        public static CharArrayReader CreatePoolableInstance(char[] arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<CharArrayReader>(arg0, arg1, arg2);
         }
@@ -91,7 +91,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for CharArrayReader(char[] arg0)
         /// </summary>
-        public static CharArrayReader New(char[] arg0)
+        public static CharArrayReader CreatePoolableInstance(char[] arg0)
         {
             return JVMBridgeBase.New<CharArrayReader>(arg0);
         }

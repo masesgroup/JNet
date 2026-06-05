@@ -75,7 +75,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanOperationInfo(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1)
         /// </summary>
-        public static MBeanOperationInfo New(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1)
+        public static MBeanOperationInfo CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1)
         {
             return JVMBridgeBase.New<MBeanOperationInfo>(arg0, arg1);
         }
@@ -95,7 +95,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanOperationInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Java.Lang.String arg3, int arg4, Javax.Management.Descriptor arg5)
         /// </summary>
-        public static MBeanOperationInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Java.Lang.String arg3, int arg4, Javax.Management.Descriptor arg5)
+        public static MBeanOperationInfo CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Java.Lang.String arg3, int arg4, Javax.Management.Descriptor arg5)
         {
             return JVMBridgeBase.New<MBeanOperationInfo>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -114,7 +114,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanOperationInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Java.Lang.String arg3, int arg4)
         /// </summary>
-        public static MBeanOperationInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Java.Lang.String arg3, int arg4)
+        public static MBeanOperationInfo CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Java.Lang.String arg3, int arg4)
         {
             return JVMBridgeBase.New<MBeanOperationInfo>(arg0, arg1, arg2, arg3, arg4);
         }

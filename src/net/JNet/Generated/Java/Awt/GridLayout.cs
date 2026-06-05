@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for GridLayout()
         /// </summary>
-        public static GridLayout New()
+        public static GridLayout CreatePoolableInstance()
         {
             return JVMBridgeBase.New<GridLayout>();
         }
@@ -91,7 +91,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for GridLayout(int arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static GridLayout New(int arg0, int arg1, int arg2, int arg3)
+        public static GridLayout CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<GridLayout>(arg0, arg1, arg2, arg3);
         }
@@ -107,7 +107,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for GridLayout(int arg0, int arg1)
         /// </summary>
-        public static GridLayout New(int arg0, int arg1)
+        public static GridLayout CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<GridLayout>(arg0, arg1);
         }

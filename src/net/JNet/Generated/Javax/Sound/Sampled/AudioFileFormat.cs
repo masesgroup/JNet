@@ -111,7 +111,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// HPA initializer for AudioFileFormat(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2, Java.Util.Map%3CJava.Lang.String, object%3E arg3)
         /// </summary>
-        public static AudioFileFormat New(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2, Java.Util.Map<Java.Lang.String, object> arg3)
+        public static AudioFileFormat CreatePoolableInstance(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2, Java.Util.Map<Java.Lang.String, object> arg3)
         {
             return JVMBridgeBase.New<AudioFileFormat>(arg0, arg1, arg2, arg3);
         }
@@ -128,7 +128,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// HPA initializer for AudioFileFormat(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2)
         /// </summary>
-        public static AudioFileFormat New(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2)
+        public static AudioFileFormat CreatePoolableInstance(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2)
         {
             return JVMBridgeBase.New<AudioFileFormat>(arg0, arg1, arg2);
         }
@@ -213,7 +213,7 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// HPA initializer for Type(Java.Lang.String arg0, Java.Lang.String arg1)
             /// </summary>
-            public static Type New(Java.Lang.String arg0, Java.Lang.String arg1)
+            public static Type CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
             {
                 return JVMBridgeBase.New<Type>(arg0, arg1);
             }

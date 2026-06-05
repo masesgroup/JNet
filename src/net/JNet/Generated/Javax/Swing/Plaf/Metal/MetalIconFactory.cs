@@ -277,7 +277,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalIconFactory()
         /// </summary>
-        public static MetalIconFactory New()
+        public static MetalIconFactory CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MetalIconFactory>();
         }
@@ -508,7 +508,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for FileIcon16()
             /// </summary>
-            public static FileIcon16 New()
+            public static FileIcon16 CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<FileIcon16>();
             }
@@ -600,7 +600,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for FolderIcon16()
             /// </summary>
-            public static FolderIcon16 New()
+            public static FolderIcon16 CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<FolderIcon16>();
             }
@@ -692,7 +692,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for PaletteCloseIcon()
             /// </summary>
-            public static PaletteCloseIcon New()
+            public static PaletteCloseIcon CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<PaletteCloseIcon>();
             }
@@ -775,7 +775,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for TreeControlIcon(bool arg0)
             /// </summary>
-            public static TreeControlIcon New(bool arg0)
+            public static TreeControlIcon CreatePoolableInstance(bool arg0)
             {
                 return JVMBridgeBase.New<TreeControlIcon>(arg0);
             }
@@ -864,7 +864,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for TreeFolderIcon()
             /// </summary>
-            public static TreeFolderIcon New()
+            public static TreeFolderIcon CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<TreeFolderIcon>();
             }
@@ -909,7 +909,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for TreeLeafIcon()
             /// </summary>
-            public static TreeLeafIcon New()
+            public static TreeLeafIcon CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<TreeLeafIcon>();
             }

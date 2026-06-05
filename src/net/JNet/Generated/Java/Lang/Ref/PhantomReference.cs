@@ -110,7 +110,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// HPA initializer for PhantomReference(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
         /// </summary>
-        public static PhantomReference New(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
+        public static PhantomReference CreatePoolableInstance(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
         {
             return JVMBridgeBase.New<PhantomReference>(arg0, arg1);
         }
@@ -157,7 +157,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// HPA initializer for PhantomReference(T arg0, Java.Lang.Ref.ReferenceQueue%3CT%3E arg1)
         /// </summary>
-        public static PhantomReference<T> New(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
+        public static PhantomReference<T> CreatePoolableInstance(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
         {
             return JVMBridgeBase.New<PhantomReference<T>>(arg0, arg1);
         }

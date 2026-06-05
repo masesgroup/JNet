@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalTextFieldUI()
         /// </summary>
-        public static MetalTextFieldUI New()
+        public static MetalTextFieldUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MetalTextFieldUI>();
         }

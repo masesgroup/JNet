@@ -74,7 +74,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for TextAction(Java.Lang.String arg0)
         /// </summary>
-        public static TextAction New(Java.Lang.String arg0)
+        public static TextAction CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<TextAction>(arg0);
         }

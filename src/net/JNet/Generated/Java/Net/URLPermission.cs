@@ -75,7 +75,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URLPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static URLPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static URLPermission CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<URLPermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URLPermission(Java.Lang.String arg0)
         /// </summary>
-        public static URLPermission New(Java.Lang.String arg0)
+        public static URLPermission CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<URLPermission>(arg0);
         }

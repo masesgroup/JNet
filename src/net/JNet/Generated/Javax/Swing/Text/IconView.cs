@@ -74,7 +74,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for IconView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static IconView New(Javax.Swing.Text.Element arg0)
+        public static IconView CreatePoolableInstance(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<IconView>(arg0);
         }

@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for FileReader(Java.Io.File arg0)
         /// </summary>
-        public static FileReader New(Java.Io.File arg0)
+        public static FileReader CreatePoolableInstance(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<FileReader>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for FileReader(Java.Io.FileDescriptor arg0)
         /// </summary>
-        public static FileReader New(Java.Io.FileDescriptor arg0)
+        public static FileReader CreatePoolableInstance(Java.Io.FileDescriptor arg0)
         {
             return JVMBridgeBase.New<FileReader>(arg0);
         }
@@ -106,7 +106,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for FileReader(Java.Lang.String arg0)
         /// </summary>
-        public static FileReader New(Java.Lang.String arg0)
+        public static FileReader CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<FileReader>(arg0);
         }

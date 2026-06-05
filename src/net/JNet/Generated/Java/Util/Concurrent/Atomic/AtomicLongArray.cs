@@ -74,7 +74,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicLongArray(int arg0)
         /// </summary>
-        public static AtomicLongArray New(int arg0)
+        public static AtomicLongArray CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<AtomicLongArray>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicLongArray(long[] arg0)
         /// </summary>
-        public static AtomicLongArray New(long[] arg0)
+        public static AtomicLongArray CreatePoolableInstance(long[] arg0)
         {
             return JVMBridgeBase.New<AtomicLongArray>(arg0);
         }

@@ -303,7 +303,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// HPA initializer for Double()
             /// </summary>
-            public static Double New()
+            public static Double CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<Double>();
             }
@@ -321,7 +321,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// HPA initializer for Double(double arg0, double arg1, double arg2, double arg3)
             /// </summary>
-            public static Double New(double arg0, double arg1, double arg2, double arg3)
+            public static Double CreatePoolableInstance(double arg0, double arg1, double arg2, double arg3)
             {
                 return JVMBridgeBase.New<Double>(arg0, arg1, arg2, arg3);
             }
@@ -386,7 +386,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// HPA initializer for Float()
             /// </summary>
-            public static Float New()
+            public static Float CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<Float>();
             }
@@ -404,7 +404,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// HPA initializer for Float(float arg0, float arg1, float arg2, float arg3)
             /// </summary>
-            public static Float New(float arg0, float arg1, float arg2, float arg3)
+            public static Float CreatePoolableInstance(float arg0, float arg1, float arg2, float arg3)
             {
                 return JVMBridgeBase.New<Float>(arg0, arg1, arg2, arg3);
             }

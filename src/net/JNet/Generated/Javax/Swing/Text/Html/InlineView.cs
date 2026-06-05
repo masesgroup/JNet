@@ -74,7 +74,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for InlineView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static InlineView New(Javax.Swing.Text.Element arg0)
+        public static InlineView CreatePoolableInstance(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<InlineView>(arg0);
         }

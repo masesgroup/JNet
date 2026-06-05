@@ -82,7 +82,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for PackedColorModel(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7, int arg8)
         /// </summary>
-        public static PackedColorModel New(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7, int arg8)
+        public static PackedColorModel CreatePoolableInstance(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7, int arg8)
         {
             return JVMBridgeBase.New<PackedColorModel>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
@@ -103,7 +103,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for PackedColorModel(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int[] arg2, int arg3, bool arg4, int arg5, int arg6)
         /// </summary>
-        public static PackedColorModel New(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int[] arg2, int arg3, bool arg4, int arg5, int arg6)
+        public static PackedColorModel CreatePoolableInstance(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int[] arg2, int arg3, bool arg4, int arg5, int arg6)
         {
             return JVMBridgeBase.New<PackedColorModel>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }

@@ -81,7 +81,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URI(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
         /// </summary>
-        public static URI New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
+        public static URI CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
         {
             return JVMBridgeBase.New<URI>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -101,7 +101,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URI(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         /// </summary>
-        public static URI New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
+        public static URI CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
             return JVMBridgeBase.New<URI>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -120,7 +120,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URI(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         /// </summary>
-        public static URI New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        public static URI CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
             return JVMBridgeBase.New<URI>(arg0, arg1, arg2, arg3);
         }
@@ -138,7 +138,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URI(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         /// </summary>
-        public static URI New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        public static URI CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<URI>(arg0, arg1, arg2);
         }
@@ -154,7 +154,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URI(Java.Lang.String arg0)
         /// </summary>
-        public static URI New(Java.Lang.String arg0)
+        public static URI CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<URI>(arg0);
         }

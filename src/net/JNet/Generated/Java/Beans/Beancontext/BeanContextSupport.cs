@@ -73,7 +73,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// HPA initializer for BeanContextSupport()
         /// </summary>
-        public static BeanContextSupport New()
+        public static BeanContextSupport CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BeanContextSupport>();
         }
@@ -91,7 +91,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// HPA initializer for BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
         /// </summary>
-        public static BeanContextSupport New(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
+        public static BeanContextSupport CreatePoolableInstance(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
         {
             return JVMBridgeBase.New<BeanContextSupport>(arg0, arg1, arg2, arg3);
         }
@@ -108,7 +108,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// HPA initializer for BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2)
         /// </summary>
-        public static BeanContextSupport New(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2)
+        public static BeanContextSupport CreatePoolableInstance(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2)
         {
             return JVMBridgeBase.New<BeanContextSupport>(arg0, arg1, arg2);
         }
@@ -124,7 +124,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// HPA initializer for BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1)
         /// </summary>
-        public static BeanContextSupport New(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1)
+        public static BeanContextSupport CreatePoolableInstance(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1)
         {
             return JVMBridgeBase.New<BeanContextSupport>(arg0, arg1);
         }
@@ -139,7 +139,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// HPA initializer for BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0)
         /// </summary>
-        public static BeanContextSupport New(Java.Beans.Beancontext.BeanContext arg0)
+        public static BeanContextSupport CreatePoolableInstance(Java.Beans.Beancontext.BeanContext arg0)
         {
             return JVMBridgeBase.New<BeanContextSupport>(arg0);
         }

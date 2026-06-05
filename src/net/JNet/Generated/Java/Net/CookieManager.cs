@@ -73,7 +73,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for CookieManager()
         /// </summary>
-        public static CookieManager New()
+        public static CookieManager CreatePoolableInstance()
         {
             return JVMBridgeBase.New<CookieManager>();
         }
@@ -89,7 +89,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for CookieManager(Java.Net.CookieStore arg0, Java.Net.CookiePolicy arg1)
         /// </summary>
-        public static CookieManager New(Java.Net.CookieStore arg0, Java.Net.CookiePolicy arg1)
+        public static CookieManager CreatePoolableInstance(Java.Net.CookieStore arg0, Java.Net.CookiePolicy arg1)
         {
             return JVMBridgeBase.New<CookieManager>(arg0, arg1);
         }
