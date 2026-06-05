@@ -75,7 +75,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for UUID(long arg0, long arg1)
         /// </summary>
-        public static UUID New(long arg0, long arg1)
+        public static UUID CreatePoolableInstance(long arg0, long arg1)
         {
             return JVMBridgeBase.New<UUID>(arg0, arg1);
         }

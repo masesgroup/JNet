@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Button()
         /// </summary>
-        public static Button New()
+        public static Button CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Button>();
         }
@@ -91,7 +91,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Button(Java.Lang.String arg0)
         /// </summary>
-        public static Button New(Java.Lang.String arg0)
+        public static Button CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Button>(arg0);
         }

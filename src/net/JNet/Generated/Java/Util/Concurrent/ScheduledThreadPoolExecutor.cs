@@ -75,7 +75,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.RejectedExecutionHandler arg1)
         /// </summary>
-        public static ScheduledThreadPoolExecutor New(int arg0, Java.Util.Concurrent.RejectedExecutionHandler arg1)
+        public static ScheduledThreadPoolExecutor CreatePoolableInstance(int arg0, Java.Util.Concurrent.RejectedExecutionHandler arg1)
         {
             return JVMBridgeBase.New<ScheduledThreadPoolExecutor>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.ThreadFactory arg1, Java.Util.Concurrent.RejectedExecutionHandler arg2)
         /// </summary>
-        public static ScheduledThreadPoolExecutor New(int arg0, Java.Util.Concurrent.ThreadFactory arg1, Java.Util.Concurrent.RejectedExecutionHandler arg2)
+        public static ScheduledThreadPoolExecutor CreatePoolableInstance(int arg0, Java.Util.Concurrent.ThreadFactory arg1, Java.Util.Concurrent.RejectedExecutionHandler arg2)
         {
             return JVMBridgeBase.New<ScheduledThreadPoolExecutor>(arg0, arg1, arg2);
         }
@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
         /// </summary>
-        public static ScheduledThreadPoolExecutor New(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
+        public static ScheduledThreadPoolExecutor CreatePoolableInstance(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
         {
             return JVMBridgeBase.New<ScheduledThreadPoolExecutor>(arg0, arg1);
         }
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ScheduledThreadPoolExecutor(int arg0)
         /// </summary>
-        public static ScheduledThreadPoolExecutor New(int arg0)
+        public static ScheduledThreadPoolExecutor CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ScheduledThreadPoolExecutor>(arg0);
         }

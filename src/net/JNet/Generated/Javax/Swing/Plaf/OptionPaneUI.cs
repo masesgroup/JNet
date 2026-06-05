@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for OptionPaneUI()
         /// </summary>
-        public static OptionPaneUI New()
+        public static OptionPaneUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<OptionPaneUI>();
         }

@@ -74,7 +74,7 @@ namespace Java.Rmi
         /// <summary>
         /// HPA initializer for RMISecurityManager()
         /// </summary>
-        public static RMISecurityManager New()
+        public static RMISecurityManager CreatePoolableInstance()
         {
             return JVMBridgeBase.New<RMISecurityManager>();
         }

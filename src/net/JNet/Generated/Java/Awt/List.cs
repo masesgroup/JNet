@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for List()
         /// </summary>
-        public static List New()
+        public static List CreatePoolableInstance()
         {
             return JVMBridgeBase.New<List>();
         }
@@ -92,7 +92,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for List(int arg0, bool arg1)
         /// </summary>
-        public static List New(int arg0, bool arg1)
+        public static List CreatePoolableInstance(int arg0, bool arg1)
         {
             return JVMBridgeBase.New<List>(arg0, arg1);
         }
@@ -108,7 +108,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for List(int arg0)
         /// </summary>
-        public static List New(int arg0)
+        public static List CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<List>(arg0);
         }

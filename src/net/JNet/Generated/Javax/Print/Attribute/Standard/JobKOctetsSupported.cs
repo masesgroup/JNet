@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobKOctetsSupported(int arg0, int arg1)
         /// </summary>
-        public static JobKOctetsSupported New(int arg0, int arg1)
+        public static JobKOctetsSupported CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<JobKOctetsSupported>(arg0, arg1);
         }

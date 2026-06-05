@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Choice()
         /// </summary>
-        public static Choice New()
+        public static Choice CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Choice>();
         }

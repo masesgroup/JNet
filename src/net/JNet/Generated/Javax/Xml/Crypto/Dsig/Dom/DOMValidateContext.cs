@@ -75,7 +75,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         /// <summary>
         /// HPA initializer for DOMValidateContext(Java.Security.Key arg0, Org.W3c.Dom.Node arg1)
         /// </summary>
-        public static DOMValidateContext New(Java.Security.Key arg0, Org.W3c.Dom.Node arg1)
+        public static DOMValidateContext CreatePoolableInstance(Java.Security.Key arg0, Org.W3c.Dom.Node arg1)
         {
             return JVMBridgeBase.New<DOMValidateContext>(arg0, arg1);
         }
@@ -91,7 +91,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         /// <summary>
         /// HPA initializer for DOMValidateContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
         /// </summary>
-        public static DOMValidateContext New(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
+        public static DOMValidateContext CreatePoolableInstance(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
         {
             return JVMBridgeBase.New<DOMValidateContext>(arg0, arg1);
         }

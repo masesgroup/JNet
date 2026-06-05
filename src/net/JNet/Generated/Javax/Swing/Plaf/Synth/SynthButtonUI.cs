@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthButtonUI()
         /// </summary>
-        public static SynthButtonUI New()
+        public static SynthButtonUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SynthButtonUI>();
         }

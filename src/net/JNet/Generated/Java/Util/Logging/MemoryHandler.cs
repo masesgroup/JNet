@@ -73,7 +73,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for MemoryHandler()
         /// </summary>
-        public static MemoryHandler New()
+        public static MemoryHandler CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MemoryHandler>();
         }
@@ -90,7 +90,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for MemoryHandler(Java.Util.Logging.Handler arg0, int arg1, Java.Util.Logging.Level arg2)
         /// </summary>
-        public static MemoryHandler New(Java.Util.Logging.Handler arg0, int arg1, Java.Util.Logging.Level arg2)
+        public static MemoryHandler CreatePoolableInstance(Java.Util.Logging.Handler arg0, int arg1, Java.Util.Logging.Level arg2)
         {
             return JVMBridgeBase.New<MemoryHandler>(arg0, arg1, arg2);
         }

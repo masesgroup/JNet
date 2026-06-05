@@ -73,7 +73,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URLStreamHandler()
         /// </summary>
-        public static URLStreamHandler New()
+        public static URLStreamHandler CreatePoolableInstance()
         {
             return JVMBridgeBase.New<URLStreamHandler>();
         }

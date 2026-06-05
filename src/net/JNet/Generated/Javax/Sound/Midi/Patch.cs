@@ -75,7 +75,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for Patch(int arg0, int arg1)
         /// </summary>
-        public static Patch New(int arg0, int arg1)
+        public static Patch CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<Patch>(arg0, arg1);
         }

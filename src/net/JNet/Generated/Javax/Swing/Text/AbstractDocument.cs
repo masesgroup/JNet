@@ -607,7 +607,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for AbstractElement(Javax.Swing.Text.AbstractDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
             /// </summary>
-            public static AbstractElement New(Javax.Swing.Text.AbstractDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
+            public static AbstractElement CreatePoolableInstance(Javax.Swing.Text.AbstractDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
             {
                 return JVMBridgeBase.New<AbstractElement>(arg0, arg1, arg2);
             }
@@ -1015,7 +1015,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for BranchElement(Javax.Swing.Text.AbstractDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
             /// </summary>
-            public static BranchElement New(Javax.Swing.Text.AbstractDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
+            public static BranchElement CreatePoolableInstance(Javax.Swing.Text.AbstractDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
             {
                 return JVMBridgeBase.New<BranchElement>(arg0, arg1, arg2);
             }
@@ -1176,7 +1176,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for DefaultDocumentEvent(Javax.Swing.Text.AbstractDocument arg0, int arg1, int arg2, Javax.Swing.Event.DocumentEvent.EventType arg3)
             /// </summary>
-            public static DefaultDocumentEvent New(Javax.Swing.Text.AbstractDocument arg0, int arg1, int arg2, Javax.Swing.Event.DocumentEvent.EventType arg3)
+            public static DefaultDocumentEvent CreatePoolableInstance(Javax.Swing.Text.AbstractDocument arg0, int arg1, int arg2, Javax.Swing.Event.DocumentEvent.EventType arg3)
             {
                 return JVMBridgeBase.New<DefaultDocumentEvent>(arg0, arg1, arg2, arg3);
             }
@@ -1266,7 +1266,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for ElementEdit(Javax.Swing.Text.Element arg0, int arg1, Javax.Swing.Text.Element[] arg2, Javax.Swing.Text.Element[] arg3)
             /// </summary>
-            public static ElementEdit New(Javax.Swing.Text.Element arg0, int arg1, Javax.Swing.Text.Element[] arg2, Javax.Swing.Text.Element[] arg3)
+            public static ElementEdit CreatePoolableInstance(Javax.Swing.Text.Element arg0, int arg1, Javax.Swing.Text.Element[] arg2, Javax.Swing.Text.Element[] arg3)
             {
                 return JVMBridgeBase.New<ElementEdit>(arg0, arg1, arg2, arg3);
             }
@@ -1344,7 +1344,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for LeafElement(Javax.Swing.Text.AbstractDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2, int arg3, int arg4)
             /// </summary>
-            public static LeafElement New(Javax.Swing.Text.AbstractDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2, int arg3, int arg4)
+            public static LeafElement CreatePoolableInstance(Javax.Swing.Text.AbstractDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2, int arg3, int arg4)
             {
                 return JVMBridgeBase.New<LeafElement>(arg0, arg1, arg2, arg3, arg4);
             }

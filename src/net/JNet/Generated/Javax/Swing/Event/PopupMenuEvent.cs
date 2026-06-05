@@ -74,7 +74,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for PopupMenuEvent(object arg0)
         /// </summary>
-        public static PopupMenuEvent New(object arg0)
+        public static PopupMenuEvent CreatePoolableInstance(object arg0)
         {
             return JVMBridgeBase.New<PopupMenuEvent>(arg0);
         }

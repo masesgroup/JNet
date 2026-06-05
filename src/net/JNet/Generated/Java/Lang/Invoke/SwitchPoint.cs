@@ -73,7 +73,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// HPA initializer for SwitchPoint()
         /// </summary>
-        public static SwitchPoint New()
+        public static SwitchPoint CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SwitchPoint>();
         }

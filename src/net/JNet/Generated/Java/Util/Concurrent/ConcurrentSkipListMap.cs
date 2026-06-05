@@ -109,7 +109,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListMap()
         /// </summary>
-        public static ConcurrentSkipListMap New()
+        public static ConcurrentSkipListMap CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ConcurrentSkipListMap>();
         }
@@ -124,7 +124,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListMap(Java.Util.Comparator arg0)
         /// </summary>
-        public static ConcurrentSkipListMap New(Java.Util.Comparator arg0)
+        public static ConcurrentSkipListMap CreatePoolableInstance(Java.Util.Comparator arg0)
         {
             return JVMBridgeBase.New<ConcurrentSkipListMap>(arg0);
         }
@@ -139,7 +139,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListMap(Java.Util.Map arg0)
         /// </summary>
-        public static ConcurrentSkipListMap New(Java.Util.Map arg0)
+        public static ConcurrentSkipListMap CreatePoolableInstance(Java.Util.Map arg0)
         {
             return JVMBridgeBase.New<ConcurrentSkipListMap>(arg0);
         }
@@ -154,7 +154,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListMap(Java.Util.SortedMap arg0)
         /// </summary>
-        public static ConcurrentSkipListMap New(Java.Util.SortedMap arg0)
+        public static ConcurrentSkipListMap CreatePoolableInstance(Java.Util.SortedMap arg0)
         {
             return JVMBridgeBase.New<ConcurrentSkipListMap>(arg0);
         }
@@ -431,7 +431,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListMap()
         /// </summary>
-        public static ConcurrentSkipListMap<K, V> New()
+        public static ConcurrentSkipListMap<K, V> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ConcurrentSkipListMap<K, V>>();
         }
@@ -446,7 +446,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListMap(Java.Util.Comparator%3CK%3E arg0)
         /// </summary>
-        public static ConcurrentSkipListMap<K, V> New(Java.Util.Comparator<K> arg0)
+        public static ConcurrentSkipListMap<K, V> CreatePoolableInstance(Java.Util.Comparator<K> arg0)
         {
             return JVMBridgeBase.New<ConcurrentSkipListMap<K, V>>(arg0);
         }
@@ -461,7 +461,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListMap(Java.Util.Map%3CK, V%3E arg0)
         /// </summary>
-        public static ConcurrentSkipListMap<K, V> New(Java.Util.Map<K, V> arg0)
+        public static ConcurrentSkipListMap<K, V> CreatePoolableInstance(Java.Util.Map<K, V> arg0)
         {
             return JVMBridgeBase.New<ConcurrentSkipListMap<K, V>>(arg0);
         }
@@ -476,7 +476,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListMap(Java.Util.SortedMap%3CK, V%3E arg0)
         /// </summary>
-        public static ConcurrentSkipListMap<K, V> New(Java.Util.SortedMap<K, V> arg0)
+        public static ConcurrentSkipListMap<K, V> CreatePoolableInstance(Java.Util.SortedMap<K, V> arg0)
         {
             return JVMBridgeBase.New<ConcurrentSkipListMap<K, V>>(arg0);
         }

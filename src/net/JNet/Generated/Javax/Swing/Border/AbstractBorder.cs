@@ -73,7 +73,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for AbstractBorder()
         /// </summary>
-        public static AbstractBorder New()
+        public static AbstractBorder CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AbstractBorder>();
         }

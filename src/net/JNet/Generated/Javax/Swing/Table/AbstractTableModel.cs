@@ -73,7 +73,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for AbstractTableModel()
         /// </summary>
-        public static AbstractTableModel New()
+        public static AbstractTableModel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AbstractTableModel>();
         }

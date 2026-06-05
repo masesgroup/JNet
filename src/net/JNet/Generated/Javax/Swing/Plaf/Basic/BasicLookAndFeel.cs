@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicLookAndFeel()
         /// </summary>
-        public static BasicLookAndFeel New()
+        public static BasicLookAndFeel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicLookAndFeel>();
         }

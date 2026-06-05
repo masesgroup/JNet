@@ -73,7 +73,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PipedReader()
         /// </summary>
-        public static PipedReader New()
+        public static PipedReader CreatePoolableInstance()
         {
             return JVMBridgeBase.New<PipedReader>();
         }
@@ -88,7 +88,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PipedReader(int arg0)
         /// </summary>
-        public static PipedReader New(int arg0)
+        public static PipedReader CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<PipedReader>(arg0);
         }
@@ -105,7 +105,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PipedReader(Java.Io.PipedWriter arg0, int arg1)
         /// </summary>
-        public static PipedReader New(Java.Io.PipedWriter arg0, int arg1)
+        public static PipedReader CreatePoolableInstance(Java.Io.PipedWriter arg0, int arg1)
         {
             return JVMBridgeBase.New<PipedReader>(arg0, arg1);
         }
@@ -121,7 +121,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PipedReader(Java.Io.PipedWriter arg0)
         /// </summary>
-        public static PipedReader New(Java.Io.PipedWriter arg0)
+        public static PipedReader CreatePoolableInstance(Java.Io.PipedWriter arg0)
         {
             return JVMBridgeBase.New<PipedReader>(arg0);
         }

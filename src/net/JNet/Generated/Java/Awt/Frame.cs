@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Frame()
         /// </summary>
-        public static Frame New()
+        public static Frame CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Frame>();
         }
@@ -90,7 +90,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Frame(Java.Awt.GraphicsConfiguration arg0)
         /// </summary>
-        public static Frame New(Java.Awt.GraphicsConfiguration arg0)
+        public static Frame CreatePoolableInstance(Java.Awt.GraphicsConfiguration arg0)
         {
             return JVMBridgeBase.New<Frame>(arg0);
         }
@@ -106,7 +106,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Frame(Java.Lang.String arg0, Java.Awt.GraphicsConfiguration arg1)
         /// </summary>
-        public static Frame New(Java.Lang.String arg0, Java.Awt.GraphicsConfiguration arg1)
+        public static Frame CreatePoolableInstance(Java.Lang.String arg0, Java.Awt.GraphicsConfiguration arg1)
         {
             return JVMBridgeBase.New<Frame>(arg0, arg1);
         }
@@ -122,7 +122,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Frame(Java.Lang.String arg0)
         /// </summary>
-        public static Frame New(Java.Lang.String arg0)
+        public static Frame CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Frame>(arg0);
         }

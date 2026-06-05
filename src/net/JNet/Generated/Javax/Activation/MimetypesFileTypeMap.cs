@@ -73,7 +73,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for MimetypesFileTypeMap()
         /// </summary>
-        public static MimetypesFileTypeMap New()
+        public static MimetypesFileTypeMap CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MimetypesFileTypeMap>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for MimetypesFileTypeMap(Java.Io.InputStream arg0)
         /// </summary>
-        public static MimetypesFileTypeMap New(Java.Io.InputStream arg0)
+        public static MimetypesFileTypeMap CreatePoolableInstance(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<MimetypesFileTypeMap>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for MimetypesFileTypeMap(Java.Lang.String arg0)
         /// </summary>
-        public static MimetypesFileTypeMap New(Java.Lang.String arg0)
+        public static MimetypesFileTypeMap CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<MimetypesFileTypeMap>(arg0);
         }

@@ -78,7 +78,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for GlyphMetrics(bool arg0, float arg1, float arg2, Java.Awt.Geom.Rectangle2D arg3, byte arg4)
         /// </summary>
-        public static GlyphMetrics New(bool arg0, float arg1, float arg2, Java.Awt.Geom.Rectangle2D arg3, byte arg4)
+        public static GlyphMetrics CreatePoolableInstance(bool arg0, float arg1, float arg2, Java.Awt.Geom.Rectangle2D arg3, byte arg4)
         {
             return JVMBridgeBase.New<GlyphMetrics>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -95,7 +95,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for GlyphMetrics(float arg0, Java.Awt.Geom.Rectangle2D arg1, byte arg2)
         /// </summary>
-        public static GlyphMetrics New(float arg0, Java.Awt.Geom.Rectangle2D arg1, byte arg2)
+        public static GlyphMetrics CreatePoolableInstance(float arg0, Java.Awt.Geom.Rectangle2D arg1, byte arg2)
         {
             return JVMBridgeBase.New<GlyphMetrics>(arg0, arg1, arg2);
         }

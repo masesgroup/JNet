@@ -76,7 +76,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for ColorUIResource(float arg0, float arg1, float arg2)
         /// </summary>
-        public static ColorUIResource New(float arg0, float arg1, float arg2)
+        public static ColorUIResource CreatePoolableInstance(float arg0, float arg1, float arg2)
         {
             return JVMBridgeBase.New<ColorUIResource>(arg0, arg1, arg2);
         }
@@ -93,7 +93,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for ColorUIResource(int arg0, int arg1, int arg2)
         /// </summary>
-        public static ColorUIResource New(int arg0, int arg1, int arg2)
+        public static ColorUIResource CreatePoolableInstance(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<ColorUIResource>(arg0, arg1, arg2);
         }
@@ -108,7 +108,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for ColorUIResource(int arg0)
         /// </summary>
-        public static ColorUIResource New(int arg0)
+        public static ColorUIResource CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ColorUIResource>(arg0);
         }
@@ -123,7 +123,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for ColorUIResource(Java.Awt.Color arg0)
         /// </summary>
-        public static ColorUIResource New(Java.Awt.Color arg0)
+        public static ColorUIResource CreatePoolableInstance(Java.Awt.Color arg0)
         {
             return JVMBridgeBase.New<ColorUIResource>(arg0);
         }

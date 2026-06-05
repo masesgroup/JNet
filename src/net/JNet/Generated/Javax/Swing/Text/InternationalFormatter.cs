@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for InternationalFormatter()
         /// </summary>
-        public static InternationalFormatter New()
+        public static InternationalFormatter CreatePoolableInstance()
         {
             return JVMBridgeBase.New<InternationalFormatter>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for InternationalFormatter(Java.Text.Format arg0)
         /// </summary>
-        public static InternationalFormatter New(Java.Text.Format arg0)
+        public static InternationalFormatter CreatePoolableInstance(Java.Text.Format arg0)
         {
             return JVMBridgeBase.New<InternationalFormatter>(arg0);
         }

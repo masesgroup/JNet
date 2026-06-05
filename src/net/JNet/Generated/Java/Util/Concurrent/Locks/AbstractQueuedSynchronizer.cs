@@ -310,7 +310,7 @@ namespace Java.Util.Concurrent.Locks
             /// <summary>
             /// HPA initializer for ConditionObject(Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer arg0)
             /// </summary>
-            public static ConditionObject New(Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer arg0)
+            public static ConditionObject CreatePoolableInstance(Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer arg0)
             {
                 return JVMBridgeBase.New<ConditionObject>(arg0);
             }

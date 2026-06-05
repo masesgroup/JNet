@@ -77,7 +77,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanConstructorInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Descriptor arg3)
         /// </summary>
-        public static OpenMBeanConstructorInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Descriptor arg3)
+        public static OpenMBeanConstructorInfoSupport CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Descriptor arg3)
         {
             return JVMBridgeBase.New<OpenMBeanConstructorInfoSupport>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanConstructorInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2)
         /// </summary>
-        public static OpenMBeanConstructorInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2)
+        public static OpenMBeanConstructorInfoSupport CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2)
         {
             return JVMBridgeBase.New<OpenMBeanConstructorInfoSupport>(arg0, arg1, arg2);
         }

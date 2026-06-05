@@ -143,7 +143,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for TableView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static TableView New(Javax.Swing.Text.Element arg0)
+        public static TableView CreatePoolableInstance(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<TableView>(arg0);
         }
@@ -183,7 +183,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for TableCell(Javax.Swing.Text.TableView arg0, Javax.Swing.Text.Element arg1)
             /// </summary>
-            public static TableCell New(Javax.Swing.Text.TableView arg0, Javax.Swing.Text.Element arg1)
+            public static TableCell CreatePoolableInstance(Javax.Swing.Text.TableView arg0, Javax.Swing.Text.Element arg1)
             {
                 return JVMBridgeBase.New<TableCell>(arg0, arg1);
             }
@@ -267,7 +267,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for TableRow(Javax.Swing.Text.TableView arg0, Javax.Swing.Text.Element arg1)
             /// </summary>
-            public static TableRow New(Javax.Swing.Text.TableView arg0, Javax.Swing.Text.Element arg1)
+            public static TableRow CreatePoolableInstance(Javax.Swing.Text.TableView arg0, Javax.Swing.Text.Element arg1)
             {
                 return JVMBridgeBase.New<TableRow>(arg0, arg1);
             }

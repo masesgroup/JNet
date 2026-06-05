@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SpinnerListModel()
         /// </summary>
-        public static SpinnerListModel New()
+        public static SpinnerListModel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SpinnerListModel>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SpinnerListModel(Java.Util.List%3Cobject%3E arg0)
         /// </summary>
-        public static SpinnerListModel New(Java.Util.List<object> arg0)
+        public static SpinnerListModel CreatePoolableInstance(Java.Util.List<object> arg0)
         {
             return JVMBridgeBase.New<SpinnerListModel>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for MenuItemUI()
         /// </summary>
-        public static MenuItemUI New()
+        public static MenuItemUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MenuItemUI>();
         }

@@ -243,7 +243,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for JobAttributes()
         /// </summary>
-        public static JobAttributes New()
+        public static JobAttributes CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JobAttributes>();
         }
@@ -268,7 +268,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for JobAttributes(int arg0, Java.Awt.JobAttributes.DefaultSelectionType arg1, Java.Awt.JobAttributes.DestinationType arg2, Java.Awt.JobAttributes.DialogType arg3, Java.Lang.String arg4, int arg5, int arg6, Java.Awt.JobAttributes.MultipleDocumentHandlingType arg7, int[][] arg8, Java.Lang.String arg9, Java.Awt.JobAttributes.SidesType arg10)
         /// </summary>
-        public static JobAttributes New(int arg0, Java.Awt.JobAttributes.DefaultSelectionType arg1, Java.Awt.JobAttributes.DestinationType arg2, Java.Awt.JobAttributes.DialogType arg3, Java.Lang.String arg4, int arg5, int arg6, Java.Awt.JobAttributes.MultipleDocumentHandlingType arg7, int[][] arg8, Java.Lang.String arg9, Java.Awt.JobAttributes.SidesType arg10)
+        public static JobAttributes CreatePoolableInstance(int arg0, Java.Awt.JobAttributes.DefaultSelectionType arg1, Java.Awt.JobAttributes.DestinationType arg2, Java.Awt.JobAttributes.DialogType arg3, Java.Lang.String arg4, int arg5, int arg6, Java.Awt.JobAttributes.MultipleDocumentHandlingType arg7, int[][] arg8, Java.Lang.String arg9, Java.Awt.JobAttributes.SidesType arg10)
         {
             return JVMBridgeBase.New<JobAttributes>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
@@ -283,7 +283,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for JobAttributes(Java.Awt.JobAttributes arg0)
         /// </summary>
-        public static JobAttributes New(Java.Awt.JobAttributes arg0)
+        public static JobAttributes CreatePoolableInstance(Java.Awt.JobAttributes arg0)
         {
             return JVMBridgeBase.New<JobAttributes>(arg0);
         }

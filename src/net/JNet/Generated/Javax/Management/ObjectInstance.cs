@@ -76,7 +76,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for ObjectInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static ObjectInstance New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static ObjectInstance CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<ObjectInstance>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for ObjectInstance(Javax.Management.ObjectName arg0, Java.Lang.String arg1)
         /// </summary>
-        public static ObjectInstance New(Javax.Management.ObjectName arg0, Java.Lang.String arg1)
+        public static ObjectInstance CreatePoolableInstance(Javax.Management.ObjectName arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<ObjectInstance>(arg0, arg1);
         }

@@ -74,7 +74,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for URLDataSource(Java.Net.URL arg0)
         /// </summary>
-        public static URLDataSource New(Java.Net.URL arg0)
+        public static URLDataSource CreatePoolableInstance(Java.Net.URL arg0)
         {
             return JVMBridgeBase.New<URLDataSource>(arg0);
         }

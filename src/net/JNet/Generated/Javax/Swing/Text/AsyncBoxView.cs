@@ -143,7 +143,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for AsyncBoxView(Javax.Swing.Text.Element arg0, int arg1)
         /// </summary>
-        public static AsyncBoxView New(Javax.Swing.Text.Element arg0, int arg1)
+        public static AsyncBoxView CreatePoolableInstance(Javax.Swing.Text.Element arg0, int arg1)
         {
             return JVMBridgeBase.New<AsyncBoxView>(arg0, arg1);
         }
@@ -224,7 +224,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for ChildLocator(Javax.Swing.Text.AsyncBoxView arg0)
             /// </summary>
-            public static ChildLocator New(Javax.Swing.Text.AsyncBoxView arg0)
+            public static ChildLocator CreatePoolableInstance(Javax.Swing.Text.AsyncBoxView arg0)
             {
                 return JVMBridgeBase.New<ChildLocator>(arg0);
             }
@@ -308,7 +308,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for ChildState(Javax.Swing.Text.AsyncBoxView arg0, Javax.Swing.Text.View arg1)
             /// </summary>
-            public static ChildState New(Javax.Swing.Text.AsyncBoxView arg0, Javax.Swing.Text.View arg1)
+            public static ChildState CreatePoolableInstance(Javax.Swing.Text.AsyncBoxView arg0, Javax.Swing.Text.View arg1)
             {
                 return JVMBridgeBase.New<ChildState>(arg0, arg1);
             }

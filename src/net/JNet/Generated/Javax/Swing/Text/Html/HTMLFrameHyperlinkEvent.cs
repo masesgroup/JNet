@@ -78,7 +78,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         /// </summary>
-        public static HTMLFrameHyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Java.Lang.String arg4)
+        public static HTMLFrameHyperlinkEvent CreatePoolableInstance(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
             return JVMBridgeBase.New<HTMLFrameHyperlinkEvent>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -99,7 +99,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5, Java.Lang.String arg6)
         /// </summary>
-        public static HTMLFrameHyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5, Java.Lang.String arg6)
+        public static HTMLFrameHyperlinkEvent CreatePoolableInstance(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5, Java.Lang.String arg6)
         {
             return JVMBridgeBase.New<HTMLFrameHyperlinkEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -119,7 +119,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Lang.String arg5)
         /// </summary>
-        public static HTMLFrameHyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Lang.String arg5)
+        public static HTMLFrameHyperlinkEvent CreatePoolableInstance(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Lang.String arg5)
         {
             return JVMBridgeBase.New<HTMLFrameHyperlinkEvent>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -137,7 +137,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3)
         /// </summary>
-        public static HTMLFrameHyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3)
+        public static HTMLFrameHyperlinkEvent CreatePoolableInstance(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3)
         {
             return JVMBridgeBase.New<HTMLFrameHyperlinkEvent>(arg0, arg1, arg2, arg3);
         }
@@ -156,7 +156,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Javax.Swing.Text.Element arg3, Java.Lang.String arg4)
         /// </summary>
-        public static HTMLFrameHyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Javax.Swing.Text.Element arg3, Java.Lang.String arg4)
+        public static HTMLFrameHyperlinkEvent CreatePoolableInstance(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Javax.Swing.Text.Element arg3, Java.Lang.String arg4)
         {
             return JVMBridgeBase.New<HTMLFrameHyperlinkEvent>(arg0, arg1, arg2, arg3, arg4);
         }

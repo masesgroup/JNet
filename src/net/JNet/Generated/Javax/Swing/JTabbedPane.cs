@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTabbedPane()
         /// </summary>
-        public static JTabbedPane New()
+        public static JTabbedPane CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JTabbedPane>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTabbedPane(int arg0, int arg1)
         /// </summary>
-        public static JTabbedPane New(int arg0, int arg1)
+        public static JTabbedPane CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<JTabbedPane>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTabbedPane(int arg0)
         /// </summary>
-        public static JTabbedPane New(int arg0)
+        public static JTabbedPane CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<JTabbedPane>(arg0);
         }

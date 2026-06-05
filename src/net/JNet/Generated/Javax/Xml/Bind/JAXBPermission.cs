@@ -74,7 +74,7 @@ namespace Javax.Xml.Bind
         /// <summary>
         /// HPA initializer for JAXBPermission(Java.Lang.String arg0)
         /// </summary>
-        public static JAXBPermission New(Java.Lang.String arg0)
+        public static JAXBPermission CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JAXBPermission>(arg0);
         }

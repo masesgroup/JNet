@@ -144,7 +144,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// HPA initializer for DefaultTreeCellEditor(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1, Javax.Swing.Tree.TreeCellEditor arg2)
         /// </summary>
-        public static DefaultTreeCellEditor New(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1, Javax.Swing.Tree.TreeCellEditor arg2)
+        public static DefaultTreeCellEditor CreatePoolableInstance(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1, Javax.Swing.Tree.TreeCellEditor arg2)
         {
             return JVMBridgeBase.New<DefaultTreeCellEditor>(arg0, arg1, arg2);
         }
@@ -160,7 +160,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// HPA initializer for DefaultTreeCellEditor(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1)
         /// </summary>
-        public static DefaultTreeCellEditor New(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1)
+        public static DefaultTreeCellEditor CreatePoolableInstance(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1)
         {
             return JVMBridgeBase.New<DefaultTreeCellEditor>(arg0, arg1);
         }
@@ -319,7 +319,7 @@ namespace Javax.Swing.Tree
             /// <summary>
             /// HPA initializer for DefaultTextField(Javax.Swing.Tree.DefaultTreeCellEditor arg0, Javax.Swing.Border.Border arg1)
             /// </summary>
-            public static DefaultTextField New(Javax.Swing.Tree.DefaultTreeCellEditor arg0, Javax.Swing.Border.Border arg1)
+            public static DefaultTextField CreatePoolableInstance(Javax.Swing.Tree.DefaultTreeCellEditor arg0, Javax.Swing.Border.Border arg1)
             {
                 return JVMBridgeBase.New<DefaultTextField>(arg0, arg1);
             }
@@ -365,7 +365,7 @@ namespace Javax.Swing.Tree
             /// <summary>
             /// HPA initializer for EditorContainer(Javax.Swing.Tree.DefaultTreeCellEditor arg0)
             /// </summary>
-            public static EditorContainer New(Javax.Swing.Tree.DefaultTreeCellEditor arg0)
+            public static EditorContainer CreatePoolableInstance(Javax.Swing.Tree.DefaultTreeCellEditor arg0)
             {
                 return JVMBridgeBase.New<EditorContainer>(arg0);
             }

@@ -78,7 +78,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ComponentColorModel(Java.Awt.ColorNs.ColorSpace arg0, bool arg1, bool arg2, int arg3, int arg4)
         /// </summary>
-        public static ComponentColorModel New(Java.Awt.ColorNs.ColorSpace arg0, bool arg1, bool arg2, int arg3, int arg4)
+        public static ComponentColorModel CreatePoolableInstance(Java.Awt.ColorNs.ColorSpace arg0, bool arg1, bool arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<ComponentColorModel>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -98,7 +98,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ComponentColorModel(Java.Awt.ColorNs.ColorSpace arg0, int[] arg1, bool arg2, bool arg3, int arg4, int arg5)
         /// </summary>
-        public static ComponentColorModel New(Java.Awt.ColorNs.ColorSpace arg0, int[] arg1, bool arg2, bool arg3, int arg4, int arg5)
+        public static ComponentColorModel CreatePoolableInstance(Java.Awt.ColorNs.ColorSpace arg0, int[] arg1, bool arg2, bool arg3, int arg4, int arg5)
         {
             return JVMBridgeBase.New<ComponentColorModel>(arg0, arg1, arg2, arg3, arg4, arg5);
         }

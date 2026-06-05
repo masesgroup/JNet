@@ -76,7 +76,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// HPA initializer for MemoryNotificationInfo(Java.Lang.String arg0, Java.Lang.Management.MemoryUsage arg1, long arg2)
         /// </summary>
-        public static MemoryNotificationInfo New(Java.Lang.String arg0, Java.Lang.Management.MemoryUsage arg1, long arg2)
+        public static MemoryNotificationInfo CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.Management.MemoryUsage arg1, long arg2)
         {
             return JVMBridgeBase.New<MemoryNotificationInfo>(arg0, arg1, arg2);
         }

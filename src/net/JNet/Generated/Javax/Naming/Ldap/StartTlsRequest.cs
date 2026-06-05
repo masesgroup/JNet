@@ -73,7 +73,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for StartTlsRequest()
         /// </summary>
-        public static StartTlsRequest New()
+        public static StartTlsRequest CreatePoolableInstance()
         {
             return JVMBridgeBase.New<StartTlsRequest>();
         }

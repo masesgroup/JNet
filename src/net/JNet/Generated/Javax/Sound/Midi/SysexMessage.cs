@@ -73,7 +73,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for SysexMessage()
         /// </summary>
-        public static SysexMessage New()
+        public static SysexMessage CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SysexMessage>();
         }
@@ -90,7 +90,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for SysexMessage(byte[] arg0, int arg1)
         /// </summary>
-        public static SysexMessage New(byte[] arg0, int arg1)
+        public static SysexMessage CreatePoolableInstance(byte[] arg0, int arg1)
         {
             return JVMBridgeBase.New<SysexMessage>(arg0, arg1);
         }
@@ -108,7 +108,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for SysexMessage(int arg0, byte[] arg1, int arg2)
         /// </summary>
-        public static SysexMessage New(int arg0, byte[] arg1, int arg2)
+        public static SysexMessage CreatePoolableInstance(int arg0, byte[] arg1, int arg2)
         {
             return JVMBridgeBase.New<SysexMessage>(arg0, arg1, arg2);
         }

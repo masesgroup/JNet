@@ -73,7 +73,7 @@ namespace Javax.Xml.Soap
         /// <summary>
         /// HPA initializer for SOAPConnection()
         /// </summary>
-        public static SOAPConnection New()
+        public static SOAPConnection CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SOAPConnection>();
         }

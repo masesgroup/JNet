@@ -73,7 +73,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// HPA initializer for CompoundEdit()
         /// </summary>
-        public static CompoundEdit New()
+        public static CompoundEdit CreatePoolableInstance()
         {
             return JVMBridgeBase.New<CompoundEdit>();
         }

@@ -515,7 +515,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for HTMLDocument()
         /// </summary>
-        public static HTMLDocument New()
+        public static HTMLDocument CreatePoolableInstance()
         {
             return JVMBridgeBase.New<HTMLDocument>();
         }
@@ -531,7 +531,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for HTMLDocument(Javax.Swing.Text.AbstractDocument.Content arg0, Javax.Swing.Text.Html.StyleSheet arg1)
         /// </summary>
-        public static HTMLDocument New(Javax.Swing.Text.AbstractDocument.Content arg0, Javax.Swing.Text.Html.StyleSheet arg1)
+        public static HTMLDocument CreatePoolableInstance(Javax.Swing.Text.AbstractDocument.Content arg0, Javax.Swing.Text.Html.StyleSheet arg1)
         {
             return JVMBridgeBase.New<HTMLDocument>(arg0, arg1);
         }
@@ -546,7 +546,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for HTMLDocument(Javax.Swing.Text.Html.StyleSheet arg0)
         /// </summary>
-        public static HTMLDocument New(Javax.Swing.Text.Html.StyleSheet arg0)
+        public static HTMLDocument CreatePoolableInstance(Javax.Swing.Text.Html.StyleSheet arg0)
         {
             return JVMBridgeBase.New<HTMLDocument>(arg0);
         }
@@ -750,7 +750,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// HPA initializer for BlockElement(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
             /// </summary>
-            public static BlockElement New(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
+            public static BlockElement CreatePoolableInstance(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
             {
                 return JVMBridgeBase.New<BlockElement>(arg0, arg1, arg2);
             }
@@ -800,7 +800,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// HPA initializer for HTMLReader(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1, int arg2, int arg3, Javax.Swing.Text.Html.HTML.Tag arg4)
             /// </summary>
-            public static HTMLReader New(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1, int arg2, int arg3, Javax.Swing.Text.Html.HTML.Tag arg4)
+            public static HTMLReader CreatePoolableInstance(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1, int arg2, int arg3, Javax.Swing.Text.Html.HTML.Tag arg4)
             {
                 return JVMBridgeBase.New<HTMLReader>(arg0, arg1, arg2, arg3, arg4);
             }
@@ -816,7 +816,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// HPA initializer for HTMLReader(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1)
             /// </summary>
-            public static HTMLReader New(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1)
+            public static HTMLReader CreatePoolableInstance(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1)
             {
                 return JVMBridgeBase.New<HTMLReader>(arg0, arg1);
             }
@@ -855,7 +855,7 @@ namespace Javax.Swing.Text.Html
                 /// <summary>
                 /// HPA initializer for FormAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 /// </summary>
-                public static FormAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                public static FormAction CreatePoolableInstance(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 {
                     return JVMBridgeBase.New<FormAction>(arg0);
                 }
@@ -901,7 +901,7 @@ namespace Javax.Swing.Text.Html
                 /// <summary>
                 /// HPA initializer for CharacterAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 /// </summary>
-                public static CharacterAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                public static CharacterAction CreatePoolableInstance(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 {
                     return JVMBridgeBase.New<CharacterAction>(arg0);
                 }
@@ -947,7 +947,7 @@ namespace Javax.Swing.Text.Html
                 /// <summary>
                 /// HPA initializer for PreAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 /// </summary>
-                public static PreAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                public static PreAction CreatePoolableInstance(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 {
                     return JVMBridgeBase.New<PreAction>(arg0);
                 }
@@ -993,7 +993,7 @@ namespace Javax.Swing.Text.Html
                 /// <summary>
                 /// HPA initializer for HiddenAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 /// </summary>
-                public static HiddenAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                public static HiddenAction CreatePoolableInstance(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 {
                     return JVMBridgeBase.New<HiddenAction>(arg0);
                 }
@@ -1039,7 +1039,7 @@ namespace Javax.Swing.Text.Html
                 /// <summary>
                 /// HPA initializer for IsindexAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 /// </summary>
-                public static IsindexAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                public static IsindexAction CreatePoolableInstance(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 {
                     return JVMBridgeBase.New<IsindexAction>(arg0);
                 }
@@ -1085,7 +1085,7 @@ namespace Javax.Swing.Text.Html
                 /// <summary>
                 /// HPA initializer for SpecialAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 /// </summary>
-                public static SpecialAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                public static SpecialAction CreatePoolableInstance(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 {
                     return JVMBridgeBase.New<SpecialAction>(arg0);
                 }
@@ -1131,7 +1131,7 @@ namespace Javax.Swing.Text.Html
                 /// <summary>
                 /// HPA initializer for ParagraphAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 /// </summary>
-                public static ParagraphAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                public static ParagraphAction CreatePoolableInstance(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 {
                     return JVMBridgeBase.New<ParagraphAction>(arg0);
                 }
@@ -1177,7 +1177,7 @@ namespace Javax.Swing.Text.Html
                 /// <summary>
                 /// HPA initializer for BlockAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 /// </summary>
-                public static BlockAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                public static BlockAction CreatePoolableInstance(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 {
                     return JVMBridgeBase.New<BlockAction>(arg0);
                 }
@@ -1223,7 +1223,7 @@ namespace Javax.Swing.Text.Html
                 /// <summary>
                 /// HPA initializer for TagAction(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 /// </summary>
-                public static TagAction New(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
+                public static TagAction CreatePoolableInstance(Javax.Swing.Text.Html.HTMLDocument.HTMLReader arg0)
                 {
                     return JVMBridgeBase.New<TagAction>(arg0);
                 }
@@ -1292,7 +1292,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// HPA initializer for Iterator()
             /// </summary>
-            public static Iterator New()
+            public static Iterator CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<Iterator>();
             }
@@ -1385,7 +1385,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// HPA initializer for RunElement(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2, int arg3, int arg4)
             /// </summary>
-            public static RunElement New(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2, int arg3, int arg4)
+            public static RunElement CreatePoolableInstance(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2, int arg3, int arg4)
             {
                 return JVMBridgeBase.New<RunElement>(arg0, arg1, arg2, arg3, arg4);
             }

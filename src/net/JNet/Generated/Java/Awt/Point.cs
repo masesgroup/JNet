@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Point()
         /// </summary>
-        public static Point New()
+        public static Point CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Point>();
         }
@@ -89,7 +89,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Point(int arg0, int arg1)
         /// </summary>
-        public static Point New(int arg0, int arg1)
+        public static Point CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<Point>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Point(Java.Awt.Point arg0)
         /// </summary>
-        public static Point New(Java.Awt.Point arg0)
+        public static Point CreatePoolableInstance(Java.Awt.Point arg0)
         {
             return JVMBridgeBase.New<Point>(arg0);
         }

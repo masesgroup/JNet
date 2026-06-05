@@ -76,7 +76,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for RandomAccessFile(Java.Io.File arg0, Java.Lang.String arg1)
         /// </summary>
-        public static RandomAccessFile New(Java.Io.File arg0, Java.Lang.String arg1)
+        public static RandomAccessFile CreatePoolableInstance(Java.Io.File arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<RandomAccessFile>(arg0, arg1);
         }
@@ -93,7 +93,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for RandomAccessFile(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static RandomAccessFile New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static RandomAccessFile CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<RandomAccessFile>(arg0, arg1);
         }

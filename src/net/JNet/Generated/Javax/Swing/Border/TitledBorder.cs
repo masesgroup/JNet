@@ -74,7 +74,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for TitledBorder(Java.Lang.String arg0)
         /// </summary>
-        public static TitledBorder New(Java.Lang.String arg0)
+        public static TitledBorder CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<TitledBorder>(arg0);
         }
@@ -94,7 +94,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for TitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
         /// </summary>
-        public static TitledBorder New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
+        public static TitledBorder CreatePoolableInstance(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
         {
             return JVMBridgeBase.New<TitledBorder>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -113,7 +113,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for TitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4)
         /// </summary>
-        public static TitledBorder New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4)
+        public static TitledBorder CreatePoolableInstance(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Awt.Font arg4)
         {
             return JVMBridgeBase.New<TitledBorder>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -131,7 +131,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for TitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3)
         /// </summary>
-        public static TitledBorder New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3)
+        public static TitledBorder CreatePoolableInstance(Javax.Swing.Border.Border arg0, Java.Lang.String arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<TitledBorder>(arg0, arg1, arg2, arg3);
         }
@@ -147,7 +147,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for TitledBorder(Javax.Swing.Border.Border arg0, Java.Lang.String arg1)
         /// </summary>
-        public static TitledBorder New(Javax.Swing.Border.Border arg0, Java.Lang.String arg1)
+        public static TitledBorder CreatePoolableInstance(Javax.Swing.Border.Border arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<TitledBorder>(arg0, arg1);
         }
@@ -162,7 +162,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for TitledBorder(Javax.Swing.Border.Border arg0)
         /// </summary>
-        public static TitledBorder New(Javax.Swing.Border.Border arg0)
+        public static TitledBorder CreatePoolableInstance(Javax.Swing.Border.Border arg0)
         {
             return JVMBridgeBase.New<TitledBorder>(arg0);
         }

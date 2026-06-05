@@ -73,7 +73,7 @@ namespace Javax.Xml.Ws
         /// <summary>
         /// HPA initializer for RespectBindingFeature()
         /// </summary>
-        public static RespectBindingFeature New()
+        public static RespectBindingFeature CreatePoolableInstance()
         {
             return JVMBridgeBase.New<RespectBindingFeature>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Xml.Ws
         /// <summary>
         /// HPA initializer for RespectBindingFeature(bool arg0)
         /// </summary>
-        public static RespectBindingFeature New(bool arg0)
+        public static RespectBindingFeature CreatePoolableInstance(bool arg0)
         {
             return JVMBridgeBase.New<RespectBindingFeature>(arg0);
         }

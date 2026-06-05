@@ -75,7 +75,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for StringRefAddr(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static StringRefAddr New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static StringRefAddr CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<StringRefAddr>(arg0, arg1);
         }

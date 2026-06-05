@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for SimpleAttributeSet()
         /// </summary>
-        public static SimpleAttributeSet New()
+        public static SimpleAttributeSet CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SimpleAttributeSet>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for SimpleAttributeSet(Javax.Swing.Text.AttributeSet arg0)
         /// </summary>
-        public static SimpleAttributeSet New(Javax.Swing.Text.AttributeSet arg0)
+        public static SimpleAttributeSet CreatePoolableInstance(Javax.Swing.Text.AttributeSet arg0)
         {
             return JVMBridgeBase.New<SimpleAttributeSet>(arg0);
         }

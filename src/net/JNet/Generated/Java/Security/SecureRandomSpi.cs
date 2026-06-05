@@ -73,7 +73,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for SecureRandomSpi()
         /// </summary>
-        public static SecureRandomSpi New()
+        public static SecureRandomSpi CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SecureRandomSpi>();
         }

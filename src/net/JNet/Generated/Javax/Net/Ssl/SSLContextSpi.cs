@@ -73,7 +73,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for SSLContextSpi()
         /// </summary>
-        public static SSLContextSpi New()
+        public static SSLContextSpi CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SSLContextSpi>();
         }

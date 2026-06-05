@@ -76,7 +76,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for OutputStreamWriter(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         /// </summary>
-        public static OutputStreamWriter New(Java.Io.OutputStream arg0, Java.Lang.String arg1)
+        public static OutputStreamWriter CreatePoolableInstance(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<OutputStreamWriter>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for OutputStreamWriter(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1)
         /// </summary>
-        public static OutputStreamWriter New(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1)
+        public static OutputStreamWriter CreatePoolableInstance(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1)
         {
             return JVMBridgeBase.New<OutputStreamWriter>(arg0, arg1);
         }
@@ -108,7 +108,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for OutputStreamWriter(Java.Io.OutputStream arg0, Java.Nio.Charset.CharsetEncoder arg1)
         /// </summary>
-        public static OutputStreamWriter New(Java.Io.OutputStream arg0, Java.Nio.Charset.CharsetEncoder arg1)
+        public static OutputStreamWriter CreatePoolableInstance(Java.Io.OutputStream arg0, Java.Nio.Charset.CharsetEncoder arg1)
         {
             return JVMBridgeBase.New<OutputStreamWriter>(arg0, arg1);
         }
@@ -123,7 +123,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for OutputStreamWriter(Java.Io.OutputStream arg0)
         /// </summary>
-        public static OutputStreamWriter New(Java.Io.OutputStream arg0)
+        public static OutputStreamWriter CreatePoolableInstance(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<OutputStreamWriter>(arg0);
         }

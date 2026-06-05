@@ -76,7 +76,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for TrustAnchor(Java.Lang.String arg0, Java.Security.PublicKey arg1, byte[] arg2)
         /// </summary>
-        public static TrustAnchor New(Java.Lang.String arg0, Java.Security.PublicKey arg1, byte[] arg2)
+        public static TrustAnchor CreatePoolableInstance(Java.Lang.String arg0, Java.Security.PublicKey arg1, byte[] arg2)
         {
             return JVMBridgeBase.New<TrustAnchor>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for TrustAnchor(Java.Security.Cert.X509Certificate arg0, byte[] arg1)
         /// </summary>
-        public static TrustAnchor New(Java.Security.Cert.X509Certificate arg0, byte[] arg1)
+        public static TrustAnchor CreatePoolableInstance(Java.Security.Cert.X509Certificate arg0, byte[] arg1)
         {
             return JVMBridgeBase.New<TrustAnchor>(arg0, arg1);
         }
@@ -109,7 +109,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for TrustAnchor(Javax.Security.Auth.X500.X500Principal arg0, Java.Security.PublicKey arg1, byte[] arg2)
         /// </summary>
-        public static TrustAnchor New(Javax.Security.Auth.X500.X500Principal arg0, Java.Security.PublicKey arg1, byte[] arg2)
+        public static TrustAnchor CreatePoolableInstance(Javax.Security.Auth.X500.X500Principal arg0, Java.Security.PublicKey arg1, byte[] arg2)
         {
             return JVMBridgeBase.New<TrustAnchor>(arg0, arg1, arg2);
         }

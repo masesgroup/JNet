@@ -75,7 +75,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// HPA initializer for SerialDatalink(Java.Net.URL arg0)
         /// </summary>
-        public static SerialDatalink New(Java.Net.URL arg0)
+        public static SerialDatalink CreatePoolableInstance(Java.Net.URL arg0)
         {
             return JVMBridgeBase.New<SerialDatalink>(arg0);
         }

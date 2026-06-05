@@ -74,7 +74,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for MediaTracker(Java.Awt.Component arg0)
         /// </summary>
-        public static MediaTracker New(Java.Awt.Component arg0)
+        public static MediaTracker CreatePoolableInstance(Java.Awt.Component arg0)
         {
             return JVMBridgeBase.New<MediaTracker>(arg0);
         }

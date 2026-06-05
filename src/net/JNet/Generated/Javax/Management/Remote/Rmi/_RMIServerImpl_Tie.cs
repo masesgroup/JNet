@@ -73,7 +73,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// HPA initializer for _RMIServerImpl_Tie()
         /// </summary>
-        public static _RMIServerImpl_Tie New()
+        public static _RMIServerImpl_Tie CreatePoolableInstance()
         {
             return JVMBridgeBase.New<_RMIServerImpl_Tie>();
         }

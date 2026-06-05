@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for StringBufferInputStream(Java.Lang.String arg0)
         /// </summary>
-        public static StringBufferInputStream New(Java.Lang.String arg0)
+        public static StringBufferInputStream CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<StringBufferInputStream>(arg0);
         }

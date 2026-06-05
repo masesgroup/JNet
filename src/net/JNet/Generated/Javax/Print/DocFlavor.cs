@@ -313,7 +313,7 @@ namespace Javax.Print
         /// <summary>
         /// HPA initializer for DocFlavor(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static DocFlavor New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static DocFlavor CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<DocFlavor>(arg0, arg1);
         }
@@ -401,7 +401,7 @@ namespace Javax.Print
             /// <summary>
             /// HPA initializer for BYTE_ARRAY(Java.Lang.String arg0)
             /// </summary>
-            public static BYTE_ARRAY New(Java.Lang.String arg0)
+            public static BYTE_ARRAY CreatePoolableInstance(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<BYTE_ARRAY>(arg0);
             }
@@ -523,7 +523,7 @@ namespace Javax.Print
             /// <summary>
             /// HPA initializer for CHAR_ARRAY(Java.Lang.String arg0)
             /// </summary>
-            public static CHAR_ARRAY New(Java.Lang.String arg0)
+            public static CHAR_ARRAY CreatePoolableInstance(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<CHAR_ARRAY>(arg0);
             }
@@ -577,7 +577,7 @@ namespace Javax.Print
             /// <summary>
             /// HPA initializer for INPUT_STREAM(Java.Lang.String arg0)
             /// </summary>
-            public static INPUT_STREAM New(Java.Lang.String arg0)
+            public static INPUT_STREAM CreatePoolableInstance(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<INPUT_STREAM>(arg0);
             }
@@ -699,7 +699,7 @@ namespace Javax.Print
             /// <summary>
             /// HPA initializer for READER(Java.Lang.String arg0)
             /// </summary>
-            public static READER New(Java.Lang.String arg0)
+            public static READER CreatePoolableInstance(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<READER>(arg0);
             }
@@ -753,7 +753,7 @@ namespace Javax.Print
             /// <summary>
             /// HPA initializer for SERVICE_FORMATTED(Java.Lang.String arg0)
             /// </summary>
-            public static SERVICE_FORMATTED New(Java.Lang.String arg0)
+            public static SERVICE_FORMATTED CreatePoolableInstance(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<SERVICE_FORMATTED>(arg0);
             }
@@ -811,7 +811,7 @@ namespace Javax.Print
             /// <summary>
             /// HPA initializer for STRING(Java.Lang.String arg0)
             /// </summary>
-            public static STRING New(Java.Lang.String arg0)
+            public static STRING CreatePoolableInstance(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<STRING>(arg0);
             }
@@ -865,7 +865,7 @@ namespace Javax.Print
             /// <summary>
             /// HPA initializer for URL(Java.Lang.String arg0)
             /// </summary>
-            public static URL New(Java.Lang.String arg0)
+            public static URL CreatePoolableInstance(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<URL>(arg0);
             }

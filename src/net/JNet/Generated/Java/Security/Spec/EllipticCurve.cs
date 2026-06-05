@@ -77,7 +77,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for EllipticCurve(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, byte[] arg3)
         /// </summary>
-        public static EllipticCurve New(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, byte[] arg3)
+        public static EllipticCurve CreatePoolableInstance(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, byte[] arg3)
         {
             return JVMBridgeBase.New<EllipticCurve>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for EllipticCurve(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
         /// </summary>
-        public static EllipticCurve New(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
+        public static EllipticCurve CreatePoolableInstance(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
         {
             return JVMBridgeBase.New<EllipticCurve>(arg0, arg1, arg2);
         }

@@ -76,7 +76,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for BasicControl(Java.Lang.String arg0, bool arg1, byte[] arg2)
         /// </summary>
-        public static BasicControl New(Java.Lang.String arg0, bool arg1, byte[] arg2)
+        public static BasicControl CreatePoolableInstance(Java.Lang.String arg0, bool arg1, byte[] arg2)
         {
             return JVMBridgeBase.New<BasicControl>(arg0, arg1, arg2);
         }
@@ -91,7 +91,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for BasicControl(Java.Lang.String arg0)
         /// </summary>
-        public static BasicControl New(Java.Lang.String arg0)
+        public static BasicControl CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<BasicControl>(arg0);
         }

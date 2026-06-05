@@ -243,7 +243,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for PageAttributes()
         /// </summary>
-        public static PageAttributes New()
+        public static PageAttributes CreatePoolableInstance()
         {
             return JVMBridgeBase.New<PageAttributes>();
         }
@@ -258,7 +258,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for PageAttributes(Java.Awt.PageAttributes arg0)
         /// </summary>
-        public static PageAttributes New(Java.Awt.PageAttributes arg0)
+        public static PageAttributes CreatePoolableInstance(Java.Awt.PageAttributes arg0)
         {
             return JVMBridgeBase.New<PageAttributes>(arg0);
         }
@@ -278,7 +278,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for PageAttributes(Java.Awt.PageAttributes.ColorType arg0, Java.Awt.PageAttributes.MediaType arg1, Java.Awt.PageAttributes.OrientationRequestedType arg2, Java.Awt.PageAttributes.OriginType arg3, Java.Awt.PageAttributes.PrintQualityType arg4, int[] arg5)
         /// </summary>
-        public static PageAttributes New(Java.Awt.PageAttributes.ColorType arg0, Java.Awt.PageAttributes.MediaType arg1, Java.Awt.PageAttributes.OrientationRequestedType arg2, Java.Awt.PageAttributes.OriginType arg3, Java.Awt.PageAttributes.PrintQualityType arg4, int[] arg5)
+        public static PageAttributes CreatePoolableInstance(Java.Awt.PageAttributes.ColorType arg0, Java.Awt.PageAttributes.MediaType arg1, Java.Awt.PageAttributes.OrientationRequestedType arg2, Java.Awt.PageAttributes.OriginType arg3, Java.Awt.PageAttributes.PrintQualityType arg4, int[] arg5)
         {
             return JVMBridgeBase.New<PageAttributes>(arg0, arg1, arg2, arg3, arg4, arg5);
         }

@@ -74,7 +74,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for StringReader(Java.Lang.String arg0)
         /// </summary>
-        public static StringReader New(Java.Lang.String arg0)
+        public static StringReader CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<StringReader>(arg0);
         }

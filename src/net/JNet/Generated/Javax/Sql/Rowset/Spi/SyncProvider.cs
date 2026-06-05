@@ -73,7 +73,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// HPA initializer for SyncProvider()
         /// </summary>
-        public static SyncProvider New()
+        public static SyncProvider CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SyncProvider>();
         }

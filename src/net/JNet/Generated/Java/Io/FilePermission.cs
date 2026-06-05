@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for FilePermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static FilePermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static FilePermission CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<FilePermission>(arg0, arg1);
         }

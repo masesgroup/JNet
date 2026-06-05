@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalProgressBarUI()
         /// </summary>
-        public static MetalProgressBarUI New()
+        public static MetalProgressBarUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MetalProgressBarUI>();
         }

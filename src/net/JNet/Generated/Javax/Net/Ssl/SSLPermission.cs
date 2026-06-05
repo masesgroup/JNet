@@ -75,7 +75,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for SSLPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static SSLPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static SSLPermission CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<SSLPermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for SSLPermission(Java.Lang.String arg0)
         /// </summary>
-        public static SSLPermission New(Java.Lang.String arg0)
+        public static SSLPermission CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<SSLPermission>(arg0);
         }

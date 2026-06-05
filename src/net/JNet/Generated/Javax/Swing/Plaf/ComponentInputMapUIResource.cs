@@ -74,7 +74,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for ComponentInputMapUIResource(Javax.Swing.JComponent arg0)
         /// </summary>
-        public static ComponentInputMapUIResource New(Javax.Swing.JComponent arg0)
+        public static ComponentInputMapUIResource CreatePoolableInstance(Javax.Swing.JComponent arg0)
         {
             return JVMBridgeBase.New<ComponentInputMapUIResource>(arg0);
         }

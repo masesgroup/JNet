@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for ComponentUI()
         /// </summary>
-        public static ComponentUI New()
+        public static ComponentUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ComponentUI>();
         }

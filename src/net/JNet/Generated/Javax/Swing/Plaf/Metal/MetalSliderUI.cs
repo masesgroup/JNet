@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalSliderUI()
         /// </summary>
-        public static MetalSliderUI New()
+        public static MetalSliderUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MetalSliderUI>();
         }

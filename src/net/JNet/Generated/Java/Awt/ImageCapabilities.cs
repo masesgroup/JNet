@@ -74,7 +74,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for ImageCapabilities(bool arg0)
         /// </summary>
-        public static ImageCapabilities New(bool arg0)
+        public static ImageCapabilities CreatePoolableInstance(bool arg0)
         {
             return JVMBridgeBase.New<ImageCapabilities>(arg0);
         }

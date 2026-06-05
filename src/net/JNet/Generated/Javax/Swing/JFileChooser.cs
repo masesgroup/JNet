@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JFileChooser()
         /// </summary>
-        public static JFileChooser New()
+        public static JFileChooser CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JFileChooser>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JFileChooser(Java.Io.File arg0, Javax.Swing.Filechooser.FileSystemView arg1)
         /// </summary>
-        public static JFileChooser New(Java.Io.File arg0, Javax.Swing.Filechooser.FileSystemView arg1)
+        public static JFileChooser CreatePoolableInstance(Java.Io.File arg0, Javax.Swing.Filechooser.FileSystemView arg1)
         {
             return JVMBridgeBase.New<JFileChooser>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JFileChooser(Java.Io.File arg0)
         /// </summary>
-        public static JFileChooser New(Java.Io.File arg0)
+        public static JFileChooser CreatePoolableInstance(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<JFileChooser>(arg0);
         }
@@ -120,7 +120,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JFileChooser(Java.Lang.String arg0, Javax.Swing.Filechooser.FileSystemView arg1)
         /// </summary>
-        public static JFileChooser New(Java.Lang.String arg0, Javax.Swing.Filechooser.FileSystemView arg1)
+        public static JFileChooser CreatePoolableInstance(Java.Lang.String arg0, Javax.Swing.Filechooser.FileSystemView arg1)
         {
             return JVMBridgeBase.New<JFileChooser>(arg0, arg1);
         }
@@ -135,7 +135,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JFileChooser(Java.Lang.String arg0)
         /// </summary>
-        public static JFileChooser New(Java.Lang.String arg0)
+        public static JFileChooser CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JFileChooser>(arg0);
         }
@@ -150,7 +150,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JFileChooser(Javax.Swing.Filechooser.FileSystemView arg0)
         /// </summary>
-        public static JFileChooser New(Javax.Swing.Filechooser.FileSystemView arg0)
+        public static JFileChooser CreatePoolableInstance(Javax.Swing.Filechooser.FileSystemView arg0)
         {
             return JVMBridgeBase.New<JFileChooser>(arg0);
         }

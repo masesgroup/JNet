@@ -110,7 +110,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// HPA initializer for XPathType(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1, Java.Util.Map arg2)
         /// </summary>
-        public static XPathType New(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1, Java.Util.Map arg2)
+        public static XPathType CreatePoolableInstance(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1, Java.Util.Map arg2)
         {
             return JVMBridgeBase.New<XPathType>(arg0, arg1, arg2);
         }
@@ -126,7 +126,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// HPA initializer for XPathType(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1)
         /// </summary>
-        public static XPathType New(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1)
+        public static XPathType CreatePoolableInstance(Java.Lang.String arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1)
         {
             return JVMBridgeBase.New<XPathType>(arg0, arg1);
         }

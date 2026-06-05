@@ -175,7 +175,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for JTextComponent()
         /// </summary>
-        public static JTextComponent New()
+        public static JTextComponent CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JTextComponent>();
         }
@@ -644,7 +644,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for AccessibleJTextComponent(Javax.Swing.Text.JTextComponent arg0)
             /// </summary>
-            public static AccessibleJTextComponent New(Javax.Swing.Text.JTextComponent arg0)
+            public static AccessibleJTextComponent CreatePoolableInstance(Javax.Swing.Text.JTextComponent arg0)
             {
                 return JVMBridgeBase.New<AccessibleJTextComponent>(arg0);
             }
@@ -1031,7 +1031,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for KeyBinding(Javax.Swing.KeyStroke arg0, Java.Lang.String arg1)
             /// </summary>
-            public static KeyBinding New(Javax.Swing.KeyStroke arg0, Java.Lang.String arg1)
+            public static KeyBinding CreatePoolableInstance(Javax.Swing.KeyStroke arg0, Java.Lang.String arg1)
             {
                 return JVMBridgeBase.New<KeyBinding>(arg0, arg1);
             }

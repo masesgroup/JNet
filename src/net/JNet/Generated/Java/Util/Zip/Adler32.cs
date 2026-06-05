@@ -73,7 +73,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for Adler32()
         /// </summary>
-        public static Adler32 New()
+        public static Adler32 CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Adler32>();
         }

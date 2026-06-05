@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiRootPaneUI()
         /// </summary>
-        public static MultiRootPaneUI New()
+        public static MultiRootPaneUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MultiRootPaneUI>();
         }

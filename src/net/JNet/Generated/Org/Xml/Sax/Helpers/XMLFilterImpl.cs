@@ -73,7 +73,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// HPA initializer for XMLFilterImpl()
         /// </summary>
-        public static XMLFilterImpl New()
+        public static XMLFilterImpl CreatePoolableInstance()
         {
             return JVMBridgeBase.New<XMLFilterImpl>();
         }
@@ -88,7 +88,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// HPA initializer for XMLFilterImpl(Org.Xml.Sax.XMLReader arg0)
         /// </summary>
-        public static XMLFilterImpl New(Org.Xml.Sax.XMLReader arg0)
+        public static XMLFilterImpl CreatePoolableInstance(Org.Xml.Sax.XMLReader arg0)
         {
             return JVMBridgeBase.New<XMLFilterImpl>(arg0);
         }

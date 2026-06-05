@@ -74,7 +74,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for DataInputStream(Java.Io.InputStream arg0)
         /// </summary>
-        public static DataInputStream New(Java.Io.InputStream arg0)
+        public static DataInputStream CreatePoolableInstance(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<DataInputStream>(arg0);
         }

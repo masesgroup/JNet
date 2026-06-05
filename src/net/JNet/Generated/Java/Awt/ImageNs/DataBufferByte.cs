@@ -76,7 +76,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DataBufferByte(byte[] arg0, int arg1, int arg2)
         /// </summary>
-        public static DataBufferByte New(byte[] arg0, int arg1, int arg2)
+        public static DataBufferByte CreatePoolableInstance(byte[] arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<DataBufferByte>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DataBufferByte(byte[] arg0, int arg1)
         /// </summary>
-        public static DataBufferByte New(byte[] arg0, int arg1)
+        public static DataBufferByte CreatePoolableInstance(byte[] arg0, int arg1)
         {
             return JVMBridgeBase.New<DataBufferByte>(arg0, arg1);
         }
@@ -109,7 +109,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DataBufferByte(byte[][] arg0, int arg1, int[] arg2)
         /// </summary>
-        public static DataBufferByte New(byte[][] arg0, int arg1, int[] arg2)
+        public static DataBufferByte CreatePoolableInstance(byte[][] arg0, int arg1, int[] arg2)
         {
             return JVMBridgeBase.New<DataBufferByte>(arg0, arg1, arg2);
         }
@@ -125,7 +125,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DataBufferByte(byte[][] arg0, int arg1)
         /// </summary>
-        public static DataBufferByte New(byte[][] arg0, int arg1)
+        public static DataBufferByte CreatePoolableInstance(byte[][] arg0, int arg1)
         {
             return JVMBridgeBase.New<DataBufferByte>(arg0, arg1);
         }
@@ -141,7 +141,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DataBufferByte(int arg0, int arg1)
         /// </summary>
-        public static DataBufferByte New(int arg0, int arg1)
+        public static DataBufferByte CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<DataBufferByte>(arg0, arg1);
         }
@@ -156,7 +156,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DataBufferByte(int arg0)
         /// </summary>
-        public static DataBufferByte New(int arg0)
+        public static DataBufferByte CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<DataBufferByte>(arg0);
         }

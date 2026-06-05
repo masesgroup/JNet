@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ForkJoinTask()
         /// </summary>
-        public static ForkJoinTask New()
+        public static ForkJoinTask CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ForkJoinTask>();
         }
@@ -431,7 +431,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ForkJoinTask()
         /// </summary>
-        public static ForkJoinTask<V> New()
+        public static ForkJoinTask<V> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ForkJoinTask<V>>();
         }

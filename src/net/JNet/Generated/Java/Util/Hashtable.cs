@@ -109,7 +109,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Hashtable()
         /// </summary>
-        public static Hashtable New()
+        public static Hashtable CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Hashtable>();
         }
@@ -125,7 +125,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Hashtable(int arg0, float arg1)
         /// </summary>
-        public static Hashtable New(int arg0, float arg1)
+        public static Hashtable CreatePoolableInstance(int arg0, float arg1)
         {
             return JVMBridgeBase.New<Hashtable>(arg0, arg1);
         }
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Hashtable(int arg0)
         /// </summary>
-        public static Hashtable New(int arg0)
+        public static Hashtable CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<Hashtable>(arg0);
         }
@@ -155,7 +155,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Hashtable(Java.Util.Map arg0)
         /// </summary>
-        public static Hashtable New(Java.Util.Map arg0)
+        public static Hashtable CreatePoolableInstance(Java.Util.Map arg0)
         {
             return JVMBridgeBase.New<Hashtable>(arg0);
         }
@@ -386,7 +386,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Hashtable()
         /// </summary>
-        public static Hashtable<K, V> New()
+        public static Hashtable<K, V> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Hashtable<K, V>>();
         }
@@ -402,7 +402,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Hashtable(int arg0, float arg1)
         /// </summary>
-        public static Hashtable<K, V> New(int arg0, float arg1)
+        public static Hashtable<K, V> CreatePoolableInstance(int arg0, float arg1)
         {
             return JVMBridgeBase.New<Hashtable<K, V>>(arg0, arg1);
         }
@@ -417,7 +417,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Hashtable(int arg0)
         /// </summary>
-        public static Hashtable<K, V> New(int arg0)
+        public static Hashtable<K, V> CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<Hashtable<K, V>>(arg0);
         }
@@ -432,7 +432,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Hashtable(Java.Util.Map%3CK, V%3E arg0)
         /// </summary>
-        public static Hashtable<K, V> New(Java.Util.Map<K, V> arg0)
+        public static Hashtable<K, V> CreatePoolableInstance(Java.Util.Map<K, V> arg0)
         {
             return JVMBridgeBase.New<Hashtable<K, V>>(arg0);
         }

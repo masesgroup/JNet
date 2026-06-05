@@ -73,7 +73,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for DecimalFormatSymbols()
         /// </summary>
-        public static DecimalFormatSymbols New()
+        public static DecimalFormatSymbols CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DecimalFormatSymbols>();
         }
@@ -88,7 +88,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for DecimalFormatSymbols(Java.Util.Locale arg0)
         /// </summary>
-        public static DecimalFormatSymbols New(Java.Util.Locale arg0)
+        public static DecimalFormatSymbols CreatePoolableInstance(Java.Util.Locale arg0)
         {
             return JVMBridgeBase.New<DecimalFormatSymbols>(arg0);
         }

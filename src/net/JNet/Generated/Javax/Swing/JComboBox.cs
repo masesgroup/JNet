@@ -142,7 +142,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JComboBox()
         /// </summary>
-        public static JComboBox New()
+        public static JComboBox CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JComboBox>();
         }
@@ -157,7 +157,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JComboBox(Java.Util.Vector arg0)
         /// </summary>
-        public static JComboBox New(Java.Util.Vector arg0)
+        public static JComboBox CreatePoolableInstance(Java.Util.Vector arg0)
         {
             return JVMBridgeBase.New<JComboBox>(arg0);
         }
@@ -172,7 +172,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JComboBox(Javax.Swing.ComboBoxModel arg0)
         /// </summary>
-        public static JComboBox New(Javax.Swing.ComboBoxModel arg0)
+        public static JComboBox CreatePoolableInstance(Javax.Swing.ComboBoxModel arg0)
         {
             return JVMBridgeBase.New<JComboBox>(arg0);
         }
@@ -632,7 +632,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JComboBox()
         /// </summary>
-        public static JComboBox<E> New()
+        public static JComboBox<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JComboBox<E>>();
         }
@@ -647,7 +647,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JComboBox(E[] arg0)
         /// </summary>
-        public static JComboBox<E> New(E[] arg0)
+        public static JComboBox<E> CreatePoolableInstance(E[] arg0)
         {
             return JVMBridgeBase.New<JComboBox<E>>(arg0);
         }
@@ -662,7 +662,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JComboBox(Java.Util.Vector%3CE%3E arg0)
         /// </summary>
-        public static JComboBox<E> New(Java.Util.Vector<E> arg0)
+        public static JComboBox<E> CreatePoolableInstance(Java.Util.Vector<E> arg0)
         {
             return JVMBridgeBase.New<JComboBox<E>>(arg0);
         }
@@ -677,7 +677,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JComboBox(Javax.Swing.ComboBoxModel%3CE%3E arg0)
         /// </summary>
-        public static JComboBox<E> New(Javax.Swing.ComboBoxModel<E> arg0)
+        public static JComboBox<E> CreatePoolableInstance(Javax.Swing.ComboBoxModel<E> arg0)
         {
             return JVMBridgeBase.New<JComboBox<E>>(arg0);
         }

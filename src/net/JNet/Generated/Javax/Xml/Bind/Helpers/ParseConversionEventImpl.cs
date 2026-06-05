@@ -77,7 +77,7 @@ namespace Javax.Xml.Bind.Helpers
         /// <summary>
         /// HPA initializer for ParseConversionEventImpl(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2, Java.Lang.Throwable arg3)
         /// </summary>
-        public static ParseConversionEventImpl New(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2, Java.Lang.Throwable arg3)
+        public static ParseConversionEventImpl CreatePoolableInstance(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2, Java.Lang.Throwable arg3)
         {
             return JVMBridgeBase.New<ParseConversionEventImpl>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Javax.Xml.Bind.Helpers
         /// <summary>
         /// HPA initializer for ParseConversionEventImpl(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2)
         /// </summary>
-        public static ParseConversionEventImpl New(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2)
+        public static ParseConversionEventImpl CreatePoolableInstance(int arg0, Java.Lang.String arg1, Javax.Xml.Bind.ValidationEventLocator arg2)
         {
             return JVMBridgeBase.New<ParseConversionEventImpl>(arg0, arg1, arg2);
         }

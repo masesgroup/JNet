@@ -73,7 +73,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for CommandMap()
         /// </summary>
-        public static CommandMap New()
+        public static CommandMap CreatePoolableInstance()
         {
             return JVMBridgeBase.New<CommandMap>();
         }

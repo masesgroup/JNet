@@ -108,7 +108,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for Box(int arg0)
         /// </summary>
-        public static Box New(int arg0)
+        public static Box CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<Box>(arg0);
         }
@@ -220,7 +220,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for Filler(Java.Awt.Dimension arg0, Java.Awt.Dimension arg1, Java.Awt.Dimension arg2)
             /// </summary>
-            public static Filler New(Java.Awt.Dimension arg0, Java.Awt.Dimension arg1, Java.Awt.Dimension arg2)
+            public static Filler CreatePoolableInstance(Java.Awt.Dimension arg0, Java.Awt.Dimension arg1, Java.Awt.Dimension arg2)
             {
                 return JVMBridgeBase.New<Filler>(arg0, arg1, arg2);
             }

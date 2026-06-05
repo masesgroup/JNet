@@ -108,7 +108,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashSet()
         /// </summary>
-        public static HashSet New()
+        public static HashSet CreatePoolableInstance()
         {
             return JVMBridgeBase.New<HashSet>();
         }
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashSet(int arg0, float arg1)
         /// </summary>
-        public static HashSet New(int arg0, float arg1)
+        public static HashSet CreatePoolableInstance(int arg0, float arg1)
         {
             return JVMBridgeBase.New<HashSet>(arg0, arg1);
         }
@@ -139,7 +139,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashSet(int arg0)
         /// </summary>
-        public static HashSet New(int arg0)
+        public static HashSet CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<HashSet>(arg0);
         }
@@ -154,7 +154,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashSet(Java.Util.Collection arg0)
         /// </summary>
-        public static HashSet New(Java.Util.Collection arg0)
+        public static HashSet CreatePoolableInstance(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<HashSet>(arg0);
         }
@@ -207,7 +207,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashSet()
         /// </summary>
-        public static HashSet<E> New()
+        public static HashSet<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<HashSet<E>>();
         }
@@ -223,7 +223,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashSet(int arg0, float arg1)
         /// </summary>
-        public static HashSet<E> New(int arg0, float arg1)
+        public static HashSet<E> CreatePoolableInstance(int arg0, float arg1)
         {
             return JVMBridgeBase.New<HashSet<E>>(arg0, arg1);
         }
@@ -238,7 +238,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashSet(int arg0)
         /// </summary>
-        public static HashSet<E> New(int arg0)
+        public static HashSet<E> CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<HashSet<E>>(arg0);
         }
@@ -253,7 +253,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashSet(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static HashSet<E> New(Java.Util.Collection<E> arg0)
+        public static HashSet<E> CreatePoolableInstance(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<HashSet<E>>(arg0);
         }

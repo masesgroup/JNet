@@ -74,7 +74,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for PlainView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static PlainView New(Javax.Swing.Text.Element arg0)
+        public static PlainView CreatePoolableInstance(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<PlainView>(arg0);
         }

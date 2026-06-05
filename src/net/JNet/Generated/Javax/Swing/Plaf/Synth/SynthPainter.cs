@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthPainter()
         /// </summary>
-        public static SynthPainter New()
+        public static SynthPainter CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SynthPainter>();
         }

@@ -75,7 +75,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// HPA initializer for DefaultTreeModel(Javax.Swing.Tree.TreeNode arg0, bool arg1)
         /// </summary>
-        public static DefaultTreeModel New(Javax.Swing.Tree.TreeNode arg0, bool arg1)
+        public static DefaultTreeModel CreatePoolableInstance(Javax.Swing.Tree.TreeNode arg0, bool arg1)
         {
             return JVMBridgeBase.New<DefaultTreeModel>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// HPA initializer for DefaultTreeModel(Javax.Swing.Tree.TreeNode arg0)
         /// </summary>
-        public static DefaultTreeModel New(Javax.Swing.Tree.TreeNode arg0)
+        public static DefaultTreeModel CreatePoolableInstance(Javax.Swing.Tree.TreeNode arg0)
         {
             return JVMBridgeBase.New<DefaultTreeModel>(arg0);
         }

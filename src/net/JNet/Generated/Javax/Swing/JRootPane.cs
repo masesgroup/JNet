@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JRootPane()
         /// </summary>
-        public static JRootPane New()
+        public static JRootPane CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JRootPane>();
         }

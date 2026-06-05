@@ -76,7 +76,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for GZIPOutputStream(Java.Io.OutputStream arg0, bool arg1)
         /// </summary>
-        public static GZIPOutputStream New(Java.Io.OutputStream arg0, bool arg1)
+        public static GZIPOutputStream CreatePoolableInstance(Java.Io.OutputStream arg0, bool arg1)
         {
             return JVMBridgeBase.New<GZIPOutputStream>(arg0, arg1);
         }
@@ -94,7 +94,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for GZIPOutputStream(Java.Io.OutputStream arg0, int arg1, bool arg2)
         /// </summary>
-        public static GZIPOutputStream New(Java.Io.OutputStream arg0, int arg1, bool arg2)
+        public static GZIPOutputStream CreatePoolableInstance(Java.Io.OutputStream arg0, int arg1, bool arg2)
         {
             return JVMBridgeBase.New<GZIPOutputStream>(arg0, arg1, arg2);
         }
@@ -111,7 +111,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for GZIPOutputStream(Java.Io.OutputStream arg0, int arg1)
         /// </summary>
-        public static GZIPOutputStream New(Java.Io.OutputStream arg0, int arg1)
+        public static GZIPOutputStream CreatePoolableInstance(Java.Io.OutputStream arg0, int arg1)
         {
             return JVMBridgeBase.New<GZIPOutputStream>(arg0, arg1);
         }
@@ -127,7 +127,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for GZIPOutputStream(Java.Io.OutputStream arg0)
         /// </summary>
-        public static GZIPOutputStream New(Java.Io.OutputStream arg0)
+        public static GZIPOutputStream CreatePoolableInstance(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<GZIPOutputStream>(arg0);
         }

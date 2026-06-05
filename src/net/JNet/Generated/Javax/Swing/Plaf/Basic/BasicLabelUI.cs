@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicLabelUI()
         /// </summary>
-        public static BasicLabelUI New()
+        public static BasicLabelUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicLabelUI>();
         }

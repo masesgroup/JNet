@@ -73,7 +73,7 @@ namespace Javax.Rmi.CORBA
         /// <summary>
         /// HPA initializer for ClassDesc()
         /// </summary>
-        public static ClassDesc New()
+        public static ClassDesc CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ClassDesc>();
         }

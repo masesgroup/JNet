@@ -706,7 +706,7 @@ namespace Java.Util
             /// <summary>
             /// HPA initializer for Builder()
             /// </summary>
-            public static Builder New()
+            public static Builder CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<Builder>();
             }

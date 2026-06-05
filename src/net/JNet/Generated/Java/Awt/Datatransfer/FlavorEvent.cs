@@ -74,7 +74,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// HPA initializer for FlavorEvent(Java.Awt.Datatransfer.Clipboard arg0)
         /// </summary>
-        public static FlavorEvent New(Java.Awt.Datatransfer.Clipboard arg0)
+        public static FlavorEvent CreatePoolableInstance(Java.Awt.Datatransfer.Clipboard arg0)
         {
             return JVMBridgeBase.New<FlavorEvent>(arg0);
         }

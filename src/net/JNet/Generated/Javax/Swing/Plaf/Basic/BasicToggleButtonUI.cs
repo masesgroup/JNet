@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicToggleButtonUI()
         /// </summary>
-        public static BasicToggleButtonUI New()
+        public static BasicToggleButtonUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicToggleButtonUI>();
         }

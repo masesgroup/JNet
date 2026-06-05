@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for QueuedJobCount(int arg0)
         /// </summary>
-        public static QueuedJobCount New(int arg0)
+        public static QueuedJobCount CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<QueuedJobCount>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// HPA initializer for CounterMonitor()
         /// </summary>
-        public static CounterMonitor New()
+        public static CounterMonitor CreatePoolableInstance()
         {
             return JVMBridgeBase.New<CounterMonitor>();
         }

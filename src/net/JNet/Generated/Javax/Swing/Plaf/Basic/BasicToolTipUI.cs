@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicToolTipUI()
         /// </summary>
-        public static BasicToolTipUI New()
+        public static BasicToolTipUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicToolTipUI>();
         }

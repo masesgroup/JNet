@@ -74,7 +74,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for SNIHostName(byte[] arg0)
         /// </summary>
-        public static SNIHostName New(byte[] arg0)
+        public static SNIHostName CreatePoolableInstance(byte[] arg0)
         {
             return JVMBridgeBase.New<SNIHostName>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for SNIHostName(Java.Lang.String arg0)
         /// </summary>
-        public static SNIHostName New(Java.Lang.String arg0)
+        public static SNIHostName CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<SNIHostName>(arg0);
         }

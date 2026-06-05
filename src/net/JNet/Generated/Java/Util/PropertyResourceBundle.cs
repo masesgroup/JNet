@@ -75,7 +75,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PropertyResourceBundle(Java.Io.InputStream arg0)
         /// </summary>
-        public static PropertyResourceBundle New(Java.Io.InputStream arg0)
+        public static PropertyResourceBundle CreatePoolableInstance(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<PropertyResourceBundle>(arg0);
         }
@@ -91,7 +91,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PropertyResourceBundle(Java.Io.Reader arg0)
         /// </summary>
-        public static PropertyResourceBundle New(Java.Io.Reader arg0)
+        public static PropertyResourceBundle CreatePoolableInstance(Java.Io.Reader arg0)
         {
             return JVMBridgeBase.New<PropertyResourceBundle>(arg0);
         }

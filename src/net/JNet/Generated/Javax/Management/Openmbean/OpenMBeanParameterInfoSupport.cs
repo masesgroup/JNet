@@ -80,7 +80,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, Java.Lang.Comparable arg4, Java.Lang.Comparable arg5)
         /// </summary>
-        public static OpenMBeanParameterInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, Java.Lang.Comparable arg4, Java.Lang.Comparable arg5)
+        public static OpenMBeanParameterInfoSupport CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, Java.Lang.Comparable arg4, Java.Lang.Comparable arg5)
         {
             return JVMBridgeBase.New<OpenMBeanParameterInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -100,7 +100,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, object[] arg4)
         /// </summary>
-        public static OpenMBeanParameterInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, object[] arg4)
+        public static OpenMBeanParameterInfoSupport CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, object[] arg4)
         {
             return JVMBridgeBase.New<OpenMBeanParameterInfoSupport>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -119,7 +119,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3)
         /// </summary>
-        public static OpenMBeanParameterInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3)
+        public static OpenMBeanParameterInfoSupport CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3)
         {
             return JVMBridgeBase.New<OpenMBeanParameterInfoSupport>(arg0, arg1, arg2, arg3);
         }
@@ -137,7 +137,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType%3Cobject%3E arg2, Javax.Management.Descriptor arg3)
         /// </summary>
-        public static OpenMBeanParameterInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, Javax.Management.Descriptor arg3)
+        public static OpenMBeanParameterInfoSupport CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, Javax.Management.Descriptor arg3)
         {
             return JVMBridgeBase.New<OpenMBeanParameterInfoSupport>(arg0, arg1, arg2, arg3);
         }
@@ -154,7 +154,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType%3Cobject%3E arg2)
         /// </summary>
-        public static OpenMBeanParameterInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2)
+        public static OpenMBeanParameterInfoSupport CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2)
         {
             return JVMBridgeBase.New<OpenMBeanParameterInfoSupport>(arg0, arg1, arg2);
         }

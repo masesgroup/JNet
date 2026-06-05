@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiDesktopPaneUI()
         /// </summary>
-        public static MultiDesktopPaneUI New()
+        public static MultiDesktopPaneUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MultiDesktopPaneUI>();
         }

@@ -73,7 +73,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for NotificationFilterSupport()
         /// </summary>
-        public static NotificationFilterSupport New()
+        public static NotificationFilterSupport CreatePoolableInstance()
         {
             return JVMBridgeBase.New<NotificationFilterSupport>();
         }

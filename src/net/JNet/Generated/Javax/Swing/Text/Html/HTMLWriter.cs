@@ -77,7 +77,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for HTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.Html.HTMLDocument arg1, int arg2, int arg3)
         /// </summary>
-        public static HTMLWriter New(Java.Io.Writer arg0, Javax.Swing.Text.Html.HTMLDocument arg1, int arg2, int arg3)
+        public static HTMLWriter CreatePoolableInstance(Java.Io.Writer arg0, Javax.Swing.Text.Html.HTMLDocument arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<HTMLWriter>(arg0, arg1, arg2, arg3);
         }
@@ -93,7 +93,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for HTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.Html.HTMLDocument arg1)
         /// </summary>
-        public static HTMLWriter New(Java.Io.Writer arg0, Javax.Swing.Text.Html.HTMLDocument arg1)
+        public static HTMLWriter CreatePoolableInstance(Java.Io.Writer arg0, Javax.Swing.Text.Html.HTMLDocument arg1)
         {
             return JVMBridgeBase.New<HTMLWriter>(arg0, arg1);
         }

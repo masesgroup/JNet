@@ -76,7 +76,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for FileDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, int arg2)
         /// </summary>
-        public static FileDialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1, int arg2)
+        public static FileDialog CreatePoolableInstance(Java.Awt.Dialog arg0, Java.Lang.String arg1, int arg2)
         {
             return JVMBridgeBase.New<FileDialog>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for FileDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1)
         /// </summary>
-        public static FileDialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1)
+        public static FileDialog CreatePoolableInstance(Java.Awt.Dialog arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<FileDialog>(arg0, arg1);
         }
@@ -107,7 +107,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for FileDialog(Java.Awt.Dialog arg0)
         /// </summary>
-        public static FileDialog New(Java.Awt.Dialog arg0)
+        public static FileDialog CreatePoolableInstance(Java.Awt.Dialog arg0)
         {
             return JVMBridgeBase.New<FileDialog>(arg0);
         }
@@ -124,7 +124,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for FileDialog(Java.Awt.Frame arg0, Java.Lang.String arg1, int arg2)
         /// </summary>
-        public static FileDialog New(Java.Awt.Frame arg0, Java.Lang.String arg1, int arg2)
+        public static FileDialog CreatePoolableInstance(Java.Awt.Frame arg0, Java.Lang.String arg1, int arg2)
         {
             return JVMBridgeBase.New<FileDialog>(arg0, arg1, arg2);
         }
@@ -140,7 +140,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for FileDialog(Java.Awt.Frame arg0, Java.Lang.String arg1)
         /// </summary>
-        public static FileDialog New(Java.Awt.Frame arg0, Java.Lang.String arg1)
+        public static FileDialog CreatePoolableInstance(Java.Awt.Frame arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<FileDialog>(arg0, arg1);
         }
@@ -155,7 +155,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for FileDialog(Java.Awt.Frame arg0)
         /// </summary>
-        public static FileDialog New(Java.Awt.Frame arg0)
+        public static FileDialog CreatePoolableInstance(Java.Awt.Frame arg0)
         {
             return JVMBridgeBase.New<FileDialog>(arg0);
         }

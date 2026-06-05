@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Date()
         /// </summary>
-        public static Date New()
+        public static Date CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Date>();
         }
@@ -94,7 +94,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Date(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         /// </summary>
-        public static Date New(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+        public static Date CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
             return JVMBridgeBase.New<Date>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -114,7 +114,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Date(int arg0, int arg1, int arg2, int arg3, int arg4)
         /// </summary>
-        public static Date New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        public static Date CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<Date>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -132,7 +132,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Date(int arg0, int arg1, int arg2)
         /// </summary>
-        public static Date New(int arg0, int arg1, int arg2)
+        public static Date CreatePoolableInstance(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<Date>(arg0, arg1, arg2);
         }
@@ -148,7 +148,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Date(Java.Lang.String arg0)
         /// </summary>
-        public static Date New(Java.Lang.String arg0)
+        public static Date CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Date>(arg0);
         }
@@ -163,7 +163,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Date(long arg0)
         /// </summary>
-        public static Date New(long arg0)
+        public static Date CreatePoolableInstance(long arg0)
         {
             return JVMBridgeBase.New<Date>(arg0);
         }

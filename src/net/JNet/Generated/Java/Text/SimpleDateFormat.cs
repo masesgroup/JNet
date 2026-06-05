@@ -73,7 +73,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for SimpleDateFormat()
         /// </summary>
-        public static SimpleDateFormat New()
+        public static SimpleDateFormat CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SimpleDateFormat>();
         }
@@ -89,7 +89,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for SimpleDateFormat(Java.Lang.String arg0, Java.Text.DateFormatSymbols arg1)
         /// </summary>
-        public static SimpleDateFormat New(Java.Lang.String arg0, Java.Text.DateFormatSymbols arg1)
+        public static SimpleDateFormat CreatePoolableInstance(Java.Lang.String arg0, Java.Text.DateFormatSymbols arg1)
         {
             return JVMBridgeBase.New<SimpleDateFormat>(arg0, arg1);
         }
@@ -105,7 +105,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for SimpleDateFormat(Java.Lang.String arg0, Java.Util.Locale arg1)
         /// </summary>
-        public static SimpleDateFormat New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        public static SimpleDateFormat CreatePoolableInstance(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
             return JVMBridgeBase.New<SimpleDateFormat>(arg0, arg1);
         }
@@ -120,7 +120,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for SimpleDateFormat(Java.Lang.String arg0)
         /// </summary>
-        public static SimpleDateFormat New(Java.Lang.String arg0)
+        public static SimpleDateFormat CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<SimpleDateFormat>(arg0);
         }

@@ -301,7 +301,7 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// HPA initializer for Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2)
             /// </summary>
-            public static Info New(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2)
+            public static Info CreatePoolableInstance(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2)
             {
                 return JVMBridgeBase.New<Info>(arg0, arg1, arg2);
             }
@@ -317,7 +317,7 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// HPA initializer for Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1)
             /// </summary>
-            public static Info New(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1)
+            public static Info CreatePoolableInstance(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1)
             {
                 return JVMBridgeBase.New<Info>(arg0, arg1);
             }
@@ -335,7 +335,7 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// HPA initializer for Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat[] arg1, int arg2, int arg3)
             /// </summary>
-            public static Info New(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat[] arg1, int arg2, int arg3)
+            public static Info CreatePoolableInstance(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat[] arg1, int arg2, int arg3)
             {
                 return JVMBridgeBase.New<Info>(arg0, arg1, arg2, arg3);
             }

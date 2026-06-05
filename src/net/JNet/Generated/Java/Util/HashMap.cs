@@ -109,7 +109,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashMap()
         /// </summary>
-        public static HashMap New()
+        public static HashMap CreatePoolableInstance()
         {
             return JVMBridgeBase.New<HashMap>();
         }
@@ -125,7 +125,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashMap(int arg0, float arg1)
         /// </summary>
-        public static HashMap New(int arg0, float arg1)
+        public static HashMap CreatePoolableInstance(int arg0, float arg1)
         {
             return JVMBridgeBase.New<HashMap>(arg0, arg1);
         }
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashMap(int arg0)
         /// </summary>
-        public static HashMap New(int arg0)
+        public static HashMap CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<HashMap>(arg0);
         }
@@ -155,7 +155,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashMap(Java.Util.Map arg0)
         /// </summary>
-        public static HashMap New(Java.Util.Map arg0)
+        public static HashMap CreatePoolableInstance(Java.Util.Map arg0)
         {
             return JVMBridgeBase.New<HashMap>(arg0);
         }
@@ -208,7 +208,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashMap()
         /// </summary>
-        public static HashMap<K, V> New()
+        public static HashMap<K, V> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<HashMap<K, V>>();
         }
@@ -224,7 +224,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashMap(int arg0, float arg1)
         /// </summary>
-        public static HashMap<K, V> New(int arg0, float arg1)
+        public static HashMap<K, V> CreatePoolableInstance(int arg0, float arg1)
         {
             return JVMBridgeBase.New<HashMap<K, V>>(arg0, arg1);
         }
@@ -239,7 +239,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashMap(int arg0)
         /// </summary>
-        public static HashMap<K, V> New(int arg0)
+        public static HashMap<K, V> CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<HashMap<K, V>>(arg0);
         }
@@ -254,7 +254,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for HashMap(Java.Util.Map%3CK, V%3E arg0)
         /// </summary>
-        public static HashMap<K, V> New(Java.Util.Map<K, V> arg0)
+        public static HashMap<K, V> CreatePoolableInstance(Java.Util.Map<K, V> arg0)
         {
             return JVMBridgeBase.New<HashMap<K, V>>(arg0);
         }

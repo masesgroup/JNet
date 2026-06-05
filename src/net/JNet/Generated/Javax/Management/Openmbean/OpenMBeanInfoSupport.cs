@@ -80,7 +80,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
         /// </summary>
-        public static OpenMBeanInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
+        public static OpenMBeanInfoSupport CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
         {
             return JVMBridgeBase.New<OpenMBeanInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -100,7 +100,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
         /// </summary>
-        public static OpenMBeanInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
+        public static OpenMBeanInfoSupport CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
         {
             return JVMBridgeBase.New<OpenMBeanInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5);
         }

@@ -73,7 +73,7 @@ namespace Javax.Xml.Bind
         /// <summary>
         /// HPA initializer for SchemaOutputResolver()
         /// </summary>
-        public static SchemaOutputResolver New()
+        public static SchemaOutputResolver CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SchemaOutputResolver>();
         }

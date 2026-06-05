@@ -75,7 +75,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for DataHandler(object arg0, Java.Lang.String arg1)
         /// </summary>
-        public static DataHandler New(object arg0, Java.Lang.String arg1)
+        public static DataHandler CreatePoolableInstance(object arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<DataHandler>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for DataHandler(Java.Net.URL arg0)
         /// </summary>
-        public static DataHandler New(Java.Net.URL arg0)
+        public static DataHandler CreatePoolableInstance(Java.Net.URL arg0)
         {
             return JVMBridgeBase.New<DataHandler>(arg0);
         }
@@ -105,7 +105,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for DataHandler(Javax.Activation.DataSource arg0)
         /// </summary>
-        public static DataHandler New(Javax.Activation.DataSource arg0)
+        public static DataHandler CreatePoolableInstance(Javax.Activation.DataSource arg0)
         {
             return JVMBridgeBase.New<DataHandler>(arg0);
         }

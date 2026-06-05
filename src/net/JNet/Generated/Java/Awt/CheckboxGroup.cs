@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for CheckboxGroup()
         /// </summary>
-        public static CheckboxGroup New()
+        public static CheckboxGroup CreatePoolableInstance()
         {
             return JVMBridgeBase.New<CheckboxGroup>();
         }

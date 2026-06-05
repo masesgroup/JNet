@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Checkbox()
         /// </summary>
-        public static Checkbox New()
+        public static Checkbox CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Checkbox>();
         }
@@ -93,7 +93,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Checkbox(Java.Lang.String arg0, bool arg1, Java.Awt.CheckboxGroup arg2)
         /// </summary>
-        public static Checkbox New(Java.Lang.String arg0, bool arg1, Java.Awt.CheckboxGroup arg2)
+        public static Checkbox CreatePoolableInstance(Java.Lang.String arg0, bool arg1, Java.Awt.CheckboxGroup arg2)
         {
             return JVMBridgeBase.New<Checkbox>(arg0, arg1, arg2);
         }
@@ -110,7 +110,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Checkbox(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static Checkbox New(Java.Lang.String arg0, bool arg1)
+        public static Checkbox CreatePoolableInstance(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<Checkbox>(arg0, arg1);
         }
@@ -128,7 +128,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Checkbox(Java.Lang.String arg0, Java.Awt.CheckboxGroup arg1, bool arg2)
         /// </summary>
-        public static Checkbox New(Java.Lang.String arg0, Java.Awt.CheckboxGroup arg1, bool arg2)
+        public static Checkbox CreatePoolableInstance(Java.Lang.String arg0, Java.Awt.CheckboxGroup arg1, bool arg2)
         {
             return JVMBridgeBase.New<Checkbox>(arg0, arg1, arg2);
         }
@@ -144,7 +144,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Checkbox(Java.Lang.String arg0)
         /// </summary>
-        public static Checkbox New(Java.Lang.String arg0)
+        public static Checkbox CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Checkbox>(arg0);
         }

@@ -75,7 +75,7 @@ namespace Java.Util.Prefs
         /// <summary>
         /// HPA initializer for NodeChangeEvent(Java.Util.Prefs.Preferences arg0, Java.Util.Prefs.Preferences arg1)
         /// </summary>
-        public static NodeChangeEvent New(Java.Util.Prefs.Preferences arg0, Java.Util.Prefs.Preferences arg1)
+        public static NodeChangeEvent CreatePoolableInstance(Java.Util.Prefs.Preferences arg0, Java.Util.Prefs.Preferences arg1)
         {
             return JVMBridgeBase.New<NodeChangeEvent>(arg0, arg1);
         }

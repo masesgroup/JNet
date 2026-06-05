@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTextArea()
         /// </summary>
-        public static JTextArea New()
+        public static JTextArea CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JTextArea>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTextArea(int arg0, int arg1)
         /// </summary>
-        public static JTextArea New(int arg0, int arg1)
+        public static JTextArea CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<JTextArea>(arg0, arg1);
         }
@@ -106,7 +106,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTextArea(Java.Lang.String arg0, int arg1, int arg2)
         /// </summary>
-        public static JTextArea New(Java.Lang.String arg0, int arg1, int arg2)
+        public static JTextArea CreatePoolableInstance(Java.Lang.String arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<JTextArea>(arg0, arg1, arg2);
         }
@@ -121,7 +121,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTextArea(Java.Lang.String arg0)
         /// </summary>
-        public static JTextArea New(Java.Lang.String arg0)
+        public static JTextArea CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JTextArea>(arg0);
         }
@@ -139,7 +139,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTextArea(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2, int arg3)
         /// </summary>
-        public static JTextArea New(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2, int arg3)
+        public static JTextArea CreatePoolableInstance(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<JTextArea>(arg0, arg1, arg2, arg3);
         }
@@ -154,7 +154,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTextArea(Javax.Swing.Text.Document arg0)
         /// </summary>
-        public static JTextArea New(Javax.Swing.Text.Document arg0)
+        public static JTextArea CreatePoolableInstance(Javax.Swing.Text.Document arg0)
         {
             return JVMBridgeBase.New<JTextArea>(arg0);
         }

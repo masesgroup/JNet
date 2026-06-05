@@ -76,7 +76,7 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// HPA initializer for X500PrivateCredential(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1, Java.Lang.String arg2)
         /// </summary>
-        public static X500PrivateCredential New(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1, Java.Lang.String arg2)
+        public static X500PrivateCredential CreatePoolableInstance(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<X500PrivateCredential>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// HPA initializer for X500PrivateCredential(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1)
         /// </summary>
-        public static X500PrivateCredential New(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1)
+        public static X500PrivateCredential CreatePoolableInstance(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1)
         {
             return JVMBridgeBase.New<X500PrivateCredential>(arg0, arg1);
         }

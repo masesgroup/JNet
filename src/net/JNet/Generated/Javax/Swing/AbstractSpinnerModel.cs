@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for AbstractSpinnerModel()
         /// </summary>
-        public static AbstractSpinnerModel New()
+        public static AbstractSpinnerModel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AbstractSpinnerModel>();
         }

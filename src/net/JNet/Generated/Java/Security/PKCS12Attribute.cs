@@ -74,7 +74,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for PKCS12Attribute(byte[] arg0)
         /// </summary>
-        public static PKCS12Attribute New(byte[] arg0)
+        public static PKCS12Attribute CreatePoolableInstance(byte[] arg0)
         {
             return JVMBridgeBase.New<PKCS12Attribute>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for PKCS12Attribute(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static PKCS12Attribute New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static PKCS12Attribute CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<PKCS12Attribute>(arg0, arg1);
         }

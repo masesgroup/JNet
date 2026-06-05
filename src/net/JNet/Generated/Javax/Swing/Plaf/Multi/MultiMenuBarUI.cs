@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiMenuBarUI()
         /// </summary>
-        public static MultiMenuBarUI New()
+        public static MultiMenuBarUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MultiMenuBarUI>();
         }

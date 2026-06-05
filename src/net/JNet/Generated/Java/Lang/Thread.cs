@@ -107,7 +107,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Thread()
         /// </summary>
-        public static Thread New()
+        public static Thread CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Thread>();
         }
@@ -123,7 +123,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Thread(Java.Lang.Runnable arg0, Java.Lang.String arg1)
         /// </summary>
-        public static Thread New(Java.Lang.Runnable arg0, Java.Lang.String arg1)
+        public static Thread CreatePoolableInstance(Java.Lang.Runnable arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<Thread>(arg0, arg1);
         }
@@ -138,7 +138,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Thread(Java.Lang.Runnable arg0)
         /// </summary>
-        public static Thread New(Java.Lang.Runnable arg0)
+        public static Thread CreatePoolableInstance(Java.Lang.Runnable arg0)
         {
             return JVMBridgeBase.New<Thread>(arg0);
         }
@@ -153,7 +153,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Thread(Java.Lang.String arg0)
         /// </summary>
-        public static Thread New(Java.Lang.String arg0)
+        public static Thread CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Thread>(arg0);
         }
@@ -171,7 +171,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2, long arg3)
         /// </summary>
-        public static Thread New(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2, long arg3)
+        public static Thread CreatePoolableInstance(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2, long arg3)
         {
             return JVMBridgeBase.New<Thread>(arg0, arg1, arg2, arg3);
         }
@@ -188,7 +188,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2)
         /// </summary>
-        public static Thread New(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2)
+        public static Thread CreatePoolableInstance(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<Thread>(arg0, arg1, arg2);
         }
@@ -204,7 +204,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1)
         /// </summary>
-        public static Thread New(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1)
+        public static Thread CreatePoolableInstance(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1)
         {
             return JVMBridgeBase.New<Thread>(arg0, arg1);
         }
@@ -220,7 +220,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Thread(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1)
         /// </summary>
-        public static Thread New(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1)
+        public static Thread CreatePoolableInstance(Java.Lang.ThreadGroup arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<Thread>(arg0, arg1);
         }

@@ -73,7 +73,7 @@ namespace Javax.Print
         /// <summary>
         /// HPA initializer for PrintServiceLookup()
         /// </summary>
-        public static PrintServiceLookup New()
+        public static PrintServiceLookup CreatePoolableInstance()
         {
             return JVMBridgeBase.New<PrintServiceLookup>();
         }

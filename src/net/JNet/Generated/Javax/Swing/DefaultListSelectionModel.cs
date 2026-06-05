@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultListSelectionModel()
         /// </summary>
-        public static DefaultListSelectionModel New()
+        public static DefaultListSelectionModel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DefaultListSelectionModel>();
         }

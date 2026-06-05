@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for DelayQueue()
         /// </summary>
-        public static DelayQueue New()
+        public static DelayQueue CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DelayQueue>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for DelayQueue(Java.Util.Collection arg0)
         /// </summary>
-        public static DelayQueue New(Java.Util.Collection arg0)
+        public static DelayQueue CreatePoolableInstance(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<DelayQueue>(arg0);
         }
@@ -277,7 +277,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for DelayQueue()
         /// </summary>
-        public static DelayQueue<E> New()
+        public static DelayQueue<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DelayQueue<E>>();
         }
@@ -292,7 +292,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for DelayQueue(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static DelayQueue<E> New(Java.Util.Collection<E> arg0)
+        public static DelayQueue<E> CreatePoolableInstance(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<DelayQueue<E>>(arg0);
         }

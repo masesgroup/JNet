@@ -108,7 +108,7 @@ namespace Javax.Xml.Bind
         /// <summary>
         /// HPA initializer for Binder()
         /// </summary>
-        public static Binder New()
+        public static Binder CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Binder>();
         }
@@ -267,7 +267,7 @@ namespace Javax.Xml.Bind
         /// <summary>
         /// HPA initializer for Binder()
         /// </summary>
-        public static Binder<XmlNode> New()
+        public static Binder<XmlNode> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Binder<XmlNode>>();
         }

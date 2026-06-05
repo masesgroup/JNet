@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicEditorPaneUI()
         /// </summary>
-        public static BasicEditorPaneUI New()
+        public static BasicEditorPaneUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicEditorPaneUI>();
         }

@@ -73,7 +73,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for Encoder()
         /// </summary>
-        public static Encoder New()
+        public static Encoder CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Encoder>();
         }

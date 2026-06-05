@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalPopupMenuSeparatorUI()
         /// </summary>
-        public static MetalPopupMenuSeparatorUI New()
+        public static MetalPopupMenuSeparatorUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MetalPopupMenuSeparatorUI>();
         }

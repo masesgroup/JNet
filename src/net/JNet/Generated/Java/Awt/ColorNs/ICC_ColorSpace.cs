@@ -74,7 +74,7 @@ namespace Java.Awt.ColorNs
         /// <summary>
         /// HPA initializer for ICC_ColorSpace(Java.Awt.ColorNs.ICC_Profile arg0)
         /// </summary>
-        public static ICC_ColorSpace New(Java.Awt.ColorNs.ICC_Profile arg0)
+        public static ICC_ColorSpace CreatePoolableInstance(Java.Awt.ColorNs.ICC_Profile arg0)
         {
             return JVMBridgeBase.New<ICC_ColorSpace>(arg0);
         }

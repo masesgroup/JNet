@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for LongAdder()
         /// </summary>
-        public static LongAdder New()
+        public static LongAdder CreatePoolableInstance()
         {
             return JVMBridgeBase.New<LongAdder>();
         }

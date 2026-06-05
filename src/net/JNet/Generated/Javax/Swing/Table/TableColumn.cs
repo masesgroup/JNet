@@ -73,7 +73,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for TableColumn()
         /// </summary>
-        public static TableColumn New()
+        public static TableColumn CreatePoolableInstance()
         {
             return JVMBridgeBase.New<TableColumn>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for TableColumn(int arg0, int arg1, Javax.Swing.Table.TableCellRenderer arg2, Javax.Swing.Table.TableCellEditor arg3)
         /// </summary>
-        public static TableColumn New(int arg0, int arg1, Javax.Swing.Table.TableCellRenderer arg2, Javax.Swing.Table.TableCellEditor arg3)
+        public static TableColumn CreatePoolableInstance(int arg0, int arg1, Javax.Swing.Table.TableCellRenderer arg2, Javax.Swing.Table.TableCellEditor arg3)
         {
             return JVMBridgeBase.New<TableColumn>(arg0, arg1, arg2, arg3);
         }
@@ -107,7 +107,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for TableColumn(int arg0, int arg1)
         /// </summary>
-        public static TableColumn New(int arg0, int arg1)
+        public static TableColumn CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<TableColumn>(arg0, arg1);
         }
@@ -122,7 +122,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for TableColumn(int arg0)
         /// </summary>
-        public static TableColumn New(int arg0)
+        public static TableColumn CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<TableColumn>(arg0);
         }

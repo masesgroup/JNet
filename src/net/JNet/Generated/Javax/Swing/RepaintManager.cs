@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for RepaintManager()
         /// </summary>
-        public static RepaintManager New()
+        public static RepaintManager CreatePoolableInstance()
         {
             return JVMBridgeBase.New<RepaintManager>();
         }

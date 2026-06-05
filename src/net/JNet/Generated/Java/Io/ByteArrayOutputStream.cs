@@ -73,7 +73,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for ByteArrayOutputStream()
         /// </summary>
-        public static ByteArrayOutputStream New()
+        public static ByteArrayOutputStream CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ByteArrayOutputStream>();
         }
@@ -88,7 +88,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for ByteArrayOutputStream(int arg0)
         /// </summary>
-        public static ByteArrayOutputStream New(int arg0)
+        public static ByteArrayOutputStream CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ByteArrayOutputStream>(arg0);
         }

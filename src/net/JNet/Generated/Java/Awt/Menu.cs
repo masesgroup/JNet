@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Menu()
         /// </summary>
-        public static Menu New()
+        public static Menu CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Menu>();
         }
@@ -92,7 +92,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Menu(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static Menu New(Java.Lang.String arg0, bool arg1)
+        public static Menu CreatePoolableInstance(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<Menu>(arg0, arg1);
         }
@@ -108,7 +108,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Menu(Java.Lang.String arg0)
         /// </summary>
-        public static Menu New(Java.Lang.String arg0)
+        public static Menu CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Menu>(arg0);
         }

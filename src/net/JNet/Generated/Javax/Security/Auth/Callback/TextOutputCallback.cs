@@ -75,7 +75,7 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// HPA initializer for TextOutputCallback(int arg0, Java.Lang.String arg1)
         /// </summary>
-        public static TextOutputCallback New(int arg0, Java.Lang.String arg1)
+        public static TextOutputCallback CreatePoolableInstance(int arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<TextOutputCallback>(arg0, arg1);
         }

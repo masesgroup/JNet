@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JRadioButtonMenuItem()
         /// </summary>
-        public static JRadioButtonMenuItem New()
+        public static JRadioButtonMenuItem CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JRadioButtonMenuItem>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JRadioButtonMenuItem(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static JRadioButtonMenuItem New(Java.Lang.String arg0, bool arg1)
+        public static JRadioButtonMenuItem CreatePoolableInstance(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0, arg1);
         }
@@ -106,7 +106,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JRadioButtonMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
         /// </summary>
-        public static JRadioButtonMenuItem New(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
+        public static JRadioButtonMenuItem CreatePoolableInstance(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
         {
             return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0, arg1, arg2);
         }
@@ -122,7 +122,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JRadioButtonMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         /// </summary>
-        public static JRadioButtonMenuItem New(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        public static JRadioButtonMenuItem CreatePoolableInstance(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         {
             return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0, arg1);
         }
@@ -137,7 +137,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JRadioButtonMenuItem(Java.Lang.String arg0)
         /// </summary>
-        public static JRadioButtonMenuItem New(Java.Lang.String arg0)
+        public static JRadioButtonMenuItem CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0);
         }
@@ -152,7 +152,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JRadioButtonMenuItem(Javax.Swing.Action arg0)
         /// </summary>
-        public static JRadioButtonMenuItem New(Javax.Swing.Action arg0)
+        public static JRadioButtonMenuItem CreatePoolableInstance(Javax.Swing.Action arg0)
         {
             return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0);
         }
@@ -168,7 +168,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JRadioButtonMenuItem(Javax.Swing.Icon arg0, bool arg1)
         /// </summary>
-        public static JRadioButtonMenuItem New(Javax.Swing.Icon arg0, bool arg1)
+        public static JRadioButtonMenuItem CreatePoolableInstance(Javax.Swing.Icon arg0, bool arg1)
         {
             return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0, arg1);
         }
@@ -183,7 +183,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JRadioButtonMenuItem(Javax.Swing.Icon arg0)
         /// </summary>
-        public static JRadioButtonMenuItem New(Javax.Swing.Icon arg0)
+        public static JRadioButtonMenuItem CreatePoolableInstance(Javax.Swing.Icon arg0)
         {
             return JVMBridgeBase.New<JRadioButtonMenuItem>(arg0);
         }

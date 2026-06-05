@@ -75,7 +75,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for CheckedOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Checksum arg1)
         /// </summary>
-        public static CheckedOutputStream New(Java.Io.OutputStream arg0, Java.Util.Zip.Checksum arg1)
+        public static CheckedOutputStream CreatePoolableInstance(Java.Io.OutputStream arg0, Java.Util.Zip.Checksum arg1)
         {
             return JVMBridgeBase.New<CheckedOutputStream>(arg0, arg1);
         }

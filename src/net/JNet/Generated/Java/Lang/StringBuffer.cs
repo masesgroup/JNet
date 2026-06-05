@@ -73,7 +73,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for StringBuffer()
         /// </summary>
-        public static StringBuffer New()
+        public static StringBuffer CreatePoolableInstance()
         {
             return JVMBridgeBase.New<StringBuffer>();
         }
@@ -88,7 +88,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for StringBuffer(int arg0)
         /// </summary>
-        public static StringBuffer New(int arg0)
+        public static StringBuffer CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<StringBuffer>(arg0);
         }
@@ -103,7 +103,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for StringBuffer(Java.Lang.CharSequence arg0)
         /// </summary>
-        public static StringBuffer New(Java.Lang.CharSequence arg0)
+        public static StringBuffer CreatePoolableInstance(Java.Lang.CharSequence arg0)
         {
             return JVMBridgeBase.New<StringBuffer>(arg0);
         }
@@ -118,7 +118,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for StringBuffer(Java.Lang.String arg0)
         /// </summary>
-        public static StringBuffer New(Java.Lang.String arg0)
+        public static StringBuffer CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<StringBuffer>(arg0);
         }

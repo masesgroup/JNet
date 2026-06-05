@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Scrollbar()
         /// </summary>
-        public static Scrollbar New()
+        public static Scrollbar CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Scrollbar>();
         }
@@ -95,7 +95,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Scrollbar(int arg0, int arg1, int arg2, int arg3, int arg4)
         /// </summary>
-        public static Scrollbar New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        public static Scrollbar CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<Scrollbar>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -111,7 +111,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Scrollbar(int arg0)
         /// </summary>
-        public static Scrollbar New(int arg0)
+        public static Scrollbar CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<Scrollbar>(arg0);
         }

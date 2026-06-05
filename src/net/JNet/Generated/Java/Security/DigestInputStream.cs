@@ -75,7 +75,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for DigestInputStream(Java.Io.InputStream arg0, Java.Security.MessageDigest arg1)
         /// </summary>
-        public static DigestInputStream New(Java.Io.InputStream arg0, Java.Security.MessageDigest arg1)
+        public static DigestInputStream CreatePoolableInstance(Java.Io.InputStream arg0, Java.Security.MessageDigest arg1)
         {
             return JVMBridgeBase.New<DigestInputStream>(arg0, arg1);
         }

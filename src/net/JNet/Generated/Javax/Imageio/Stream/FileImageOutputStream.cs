@@ -76,7 +76,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// HPA initializer for FileImageOutputStream(Java.Io.File arg0)
         /// </summary>
-        public static FileImageOutputStream New(Java.Io.File arg0)
+        public static FileImageOutputStream CreatePoolableInstance(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<FileImageOutputStream>(arg0);
         }
@@ -91,7 +91,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// HPA initializer for FileImageOutputStream(Java.Io.RandomAccessFile arg0)
         /// </summary>
-        public static FileImageOutputStream New(Java.Io.RandomAccessFile arg0)
+        public static FileImageOutputStream CreatePoolableInstance(Java.Io.RandomAccessFile arg0)
         {
             return JVMBridgeBase.New<FileImageOutputStream>(arg0);
         }

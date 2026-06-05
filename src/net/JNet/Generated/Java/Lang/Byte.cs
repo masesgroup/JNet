@@ -74,7 +74,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Byte(byte arg0)
         /// </summary>
-        public static Byte New(byte arg0)
+        public static Byte CreatePoolableInstance(byte arg0)
         {
             return JVMBridgeBase.New<Byte>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Byte(Java.Lang.String arg0)
         /// </summary>
-        public static Byte New(Java.Lang.String arg0)
+        public static Byte CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Byte>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for AbstractAction()
         /// </summary>
-        public static AbstractAction New()
+        public static AbstractAction CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AbstractAction>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for AbstractAction(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         /// </summary>
-        public static AbstractAction New(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        public static AbstractAction CreatePoolableInstance(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         {
             return JVMBridgeBase.New<AbstractAction>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for AbstractAction(Java.Lang.String arg0)
         /// </summary>
-        public static AbstractAction New(Java.Lang.String arg0)
+        public static AbstractAction CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<AbstractAction>(arg0);
         }

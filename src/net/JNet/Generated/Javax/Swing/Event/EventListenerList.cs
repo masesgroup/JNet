@@ -73,7 +73,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for EventListenerList()
         /// </summary>
-        public static EventListenerList New()
+        public static EventListenerList CreatePoolableInstance()
         {
             return JVMBridgeBase.New<EventListenerList>();
         }

@@ -73,7 +73,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for MetaMessage()
         /// </summary>
-        public static MetaMessage New()
+        public static MetaMessage CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MetaMessage>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for MetaMessage(int arg0, byte[] arg1, int arg2)
         /// </summary>
-        public static MetaMessage New(int arg0, byte[] arg1, int arg2)
+        public static MetaMessage CreatePoolableInstance(int arg0, byte[] arg1, int arg2)
         {
             return JVMBridgeBase.New<MetaMessage>(arg0, arg1, arg2);
         }

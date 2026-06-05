@@ -74,7 +74,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ColorModel(int arg0)
         /// </summary>
-        public static ColorModel New(int arg0)
+        public static ColorModel CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ColorModel>(arg0);
         }

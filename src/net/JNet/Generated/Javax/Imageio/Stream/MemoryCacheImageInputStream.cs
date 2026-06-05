@@ -74,7 +74,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// HPA initializer for MemoryCacheImageInputStream(Java.Io.InputStream arg0)
         /// </summary>
-        public static MemoryCacheImageInputStream New(Java.Io.InputStream arg0)
+        public static MemoryCacheImageInputStream CreatePoolableInstance(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<MemoryCacheImageInputStream>(arg0);
         }

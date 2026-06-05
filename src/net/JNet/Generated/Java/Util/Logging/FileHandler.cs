@@ -76,7 +76,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for FileHandler()
         /// </summary>
-        public static FileHandler New()
+        public static FileHandler CreatePoolableInstance()
         {
             return JVMBridgeBase.New<FileHandler>();
         }
@@ -94,7 +94,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for FileHandler(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static FileHandler New(Java.Lang.String arg0, bool arg1)
+        public static FileHandler CreatePoolableInstance(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<FileHandler>(arg0, arg1);
         }
@@ -114,7 +114,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for FileHandler(Java.Lang.String arg0, int arg1, int arg2, bool arg3)
         /// </summary>
-        public static FileHandler New(Java.Lang.String arg0, int arg1, int arg2, bool arg3)
+        public static FileHandler CreatePoolableInstance(Java.Lang.String arg0, int arg1, int arg2, bool arg3)
         {
             return JVMBridgeBase.New<FileHandler>(arg0, arg1, arg2, arg3);
         }
@@ -133,7 +133,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for FileHandler(Java.Lang.String arg0, int arg1, int arg2)
         /// </summary>
-        public static FileHandler New(Java.Lang.String arg0, int arg1, int arg2)
+        public static FileHandler CreatePoolableInstance(Java.Lang.String arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<FileHandler>(arg0, arg1, arg2);
         }
@@ -150,7 +150,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for FileHandler(Java.Lang.String arg0)
         /// </summary>
-        public static FileHandler New(Java.Lang.String arg0)
+        public static FileHandler CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<FileHandler>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// HPA initializer for LocatorImpl()
         /// </summary>
-        public static LocatorImpl New()
+        public static LocatorImpl CreatePoolableInstance()
         {
             return JVMBridgeBase.New<LocatorImpl>();
         }
@@ -88,7 +88,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// HPA initializer for LocatorImpl(Org.Xml.Sax.Locator arg0)
         /// </summary>
-        public static LocatorImpl New(Org.Xml.Sax.Locator arg0)
+        public static LocatorImpl CreatePoolableInstance(Org.Xml.Sax.Locator arg0)
         {
             return JVMBridgeBase.New<LocatorImpl>(arg0);
         }

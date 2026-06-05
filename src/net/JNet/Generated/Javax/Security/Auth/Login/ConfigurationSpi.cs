@@ -73,7 +73,7 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// HPA initializer for ConfigurationSpi()
         /// </summary>
-        public static ConfigurationSpi New()
+        public static ConfigurationSpi CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ConfigurationSpi>();
         }

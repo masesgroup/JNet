@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobStateReasons()
         /// </summary>
-        public static JobStateReasons New()
+        public static JobStateReasons CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JobStateReasons>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobStateReasons(int arg0, float arg1)
         /// </summary>
-        public static JobStateReasons New(int arg0, float arg1)
+        public static JobStateReasons CreatePoolableInstance(int arg0, float arg1)
         {
             return JVMBridgeBase.New<JobStateReasons>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobStateReasons(int arg0)
         /// </summary>
-        public static JobStateReasons New(int arg0)
+        public static JobStateReasons CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<JobStateReasons>(arg0);
         }
@@ -119,7 +119,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobStateReasons(Java.Util.Collection%3CJavax.Print.Attribute.Standard.JobStateReason%3E arg0)
         /// </summary>
-        public static JobStateReasons New(Java.Util.Collection<Javax.Print.Attribute.Standard.JobStateReason> arg0)
+        public static JobStateReasons CreatePoolableInstance(Java.Util.Collection<Javax.Print.Attribute.Standard.JobStateReason> arg0)
         {
             return JVMBridgeBase.New<JobStateReasons>(arg0);
         }

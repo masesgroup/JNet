@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthMenuBarUI()
         /// </summary>
-        public static SynthMenuBarUI New()
+        public static SynthMenuBarUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SynthMenuBarUI>();
         }

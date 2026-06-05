@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiInternalFrameUI()
         /// </summary>
-        public static MultiInternalFrameUI New()
+        public static MultiInternalFrameUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MultiInternalFrameUI>();
         }

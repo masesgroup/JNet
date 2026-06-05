@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for NumberFormatter()
         /// </summary>
-        public static NumberFormatter New()
+        public static NumberFormatter CreatePoolableInstance()
         {
             return JVMBridgeBase.New<NumberFormatter>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for NumberFormatter(Java.Text.NumberFormat arg0)
         /// </summary>
-        public static NumberFormatter New(Java.Text.NumberFormat arg0)
+        public static NumberFormatter CreatePoolableInstance(Java.Text.NumberFormat arg0)
         {
             return JVMBridgeBase.New<NumberFormatter>(arg0);
         }

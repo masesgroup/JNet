@@ -243,7 +243,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for HTMLEditorKit()
         /// </summary>
-        public static HTMLEditorKit New()
+        public static HTMLEditorKit CreatePoolableInstance()
         {
             return JVMBridgeBase.New<HTMLEditorKit>();
         }
@@ -396,7 +396,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// HPA initializer for HTMLFactory()
             /// </summary>
-            public static HTMLFactory New()
+            public static HTMLFactory CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<HTMLFactory>();
             }
@@ -451,7 +451,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// HPA initializer for HTMLTextAction(Java.Lang.String arg0)
             /// </summary>
-            public static HTMLTextAction New(Java.Lang.String arg0)
+            public static HTMLTextAction CreatePoolableInstance(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<HTMLTextAction>(arg0);
             }
@@ -502,7 +502,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// HPA initializer for InsertHTMLTextAction(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3, Javax.Swing.Text.Html.HTML.Tag arg4, Javax.Swing.Text.Html.HTML.Tag arg5)
             /// </summary>
-            public static InsertHTMLTextAction New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3, Javax.Swing.Text.Html.HTML.Tag arg4, Javax.Swing.Text.Html.HTML.Tag arg5)
+            public static InsertHTMLTextAction CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3, Javax.Swing.Text.Html.HTML.Tag arg4, Javax.Swing.Text.Html.HTML.Tag arg5)
             {
                 return JVMBridgeBase.New<InsertHTMLTextAction>(arg0, arg1, arg2, arg3, arg4, arg5);
             }
@@ -520,7 +520,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// HPA initializer for InsertHTMLTextAction(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
             /// </summary>
-            public static InsertHTMLTextAction New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
+            public static InsertHTMLTextAction CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
             {
                 return JVMBridgeBase.New<InsertHTMLTextAction>(arg0, arg1, arg2, arg3);
             }
@@ -565,7 +565,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// HPA initializer for Parser()
             /// </summary>
-            public static Parser New()
+            public static Parser CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<Parser>();
             }
@@ -621,7 +621,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// HPA initializer for ParserCallback()
             /// </summary>
-            public static ParserCallback New()
+            public static ParserCallback CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<ParserCallback>();
             }

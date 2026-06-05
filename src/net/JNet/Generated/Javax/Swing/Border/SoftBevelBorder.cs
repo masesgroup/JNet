@@ -78,7 +78,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for SoftBevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
         /// </summary>
-        public static SoftBevelBorder New(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
+        public static SoftBevelBorder CreatePoolableInstance(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
         {
             return JVMBridgeBase.New<SoftBevelBorder>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -95,7 +95,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for SoftBevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
         /// </summary>
-        public static SoftBevelBorder New(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
+        public static SoftBevelBorder CreatePoolableInstance(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
         {
             return JVMBridgeBase.New<SoftBevelBorder>(arg0, arg1, arg2);
         }
@@ -110,7 +110,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for SoftBevelBorder(int arg0)
         /// </summary>
-        public static SoftBevelBorder New(int arg0)
+        public static SoftBevelBorder CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<SoftBevelBorder>(arg0);
         }

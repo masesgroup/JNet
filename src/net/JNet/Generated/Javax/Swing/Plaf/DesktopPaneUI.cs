@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for DesktopPaneUI()
         /// </summary>
-        public static DesktopPaneUI New()
+        public static DesktopPaneUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DesktopPaneUI>();
         }

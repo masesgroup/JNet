@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JPasswordField()
         /// </summary>
-        public static JPasswordField New()
+        public static JPasswordField CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JPasswordField>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JPasswordField(int arg0)
         /// </summary>
-        public static JPasswordField New(int arg0)
+        public static JPasswordField CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<JPasswordField>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JPasswordField(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static JPasswordField New(Java.Lang.String arg0, int arg1)
+        public static JPasswordField CreatePoolableInstance(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<JPasswordField>(arg0, arg1);
         }
@@ -119,7 +119,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JPasswordField(Java.Lang.String arg0)
         /// </summary>
-        public static JPasswordField New(Java.Lang.String arg0)
+        public static JPasswordField CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JPasswordField>(arg0);
         }
@@ -136,7 +136,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JPasswordField(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2)
         /// </summary>
-        public static JPasswordField New(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2)
+        public static JPasswordField CreatePoolableInstance(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2)
         {
             return JVMBridgeBase.New<JPasswordField>(arg0, arg1, arg2);
         }

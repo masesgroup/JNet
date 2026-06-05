@@ -108,7 +108,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Window(Java.Awt.Frame arg0)
         /// </summary>
-        public static Window New(Java.Awt.Frame arg0)
+        public static Window CreatePoolableInstance(Java.Awt.Frame arg0)
         {
             return JVMBridgeBase.New<Window>(arg0);
         }
@@ -124,7 +124,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Window(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
         /// </summary>
-        public static Window New(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
+        public static Window CreatePoolableInstance(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
         {
             return JVMBridgeBase.New<Window>(arg0, arg1);
         }
@@ -139,7 +139,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Window(Java.Awt.Window arg0)
         /// </summary>
-        public static Window New(Java.Awt.Window arg0)
+        public static Window CreatePoolableInstance(Java.Awt.Window arg0)
         {
             return JVMBridgeBase.New<Window>(arg0);
         }

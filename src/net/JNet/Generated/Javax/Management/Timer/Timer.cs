@@ -73,7 +73,7 @@ namespace Javax.Management.Timer
         /// <summary>
         /// HPA initializer for Timer()
         /// </summary>
-        public static Timer New()
+        public static Timer CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Timer>();
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalLookAndFeel()
         /// </summary>
-        public static MetalLookAndFeel New()
+        public static MetalLookAndFeel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MetalLookAndFeel>();
         }

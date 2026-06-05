@@ -75,7 +75,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for SocketHandler()
         /// </summary>
-        public static SocketHandler New()
+        public static SocketHandler CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SocketHandler>();
         }
@@ -92,7 +92,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for SocketHandler(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static SocketHandler New(Java.Lang.String arg0, int arg1)
+        public static SocketHandler CreatePoolableInstance(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<SocketHandler>(arg0, arg1);
         }

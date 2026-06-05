@@ -73,7 +73,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RoleUnresolvedList()
         /// </summary>
-        public static RoleUnresolvedList New()
+        public static RoleUnresolvedList CreatePoolableInstance()
         {
             return JVMBridgeBase.New<RoleUnresolvedList>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RoleUnresolvedList(int arg0)
         /// </summary>
-        public static RoleUnresolvedList New(int arg0)
+        public static RoleUnresolvedList CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<RoleUnresolvedList>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RoleUnresolvedList(Java.Util.List%3CJavax.Management.Relation.RoleUnresolved%3E arg0)
         /// </summary>
-        public static RoleUnresolvedList New(Java.Util.List<Javax.Management.Relation.RoleUnresolved> arg0)
+        public static RoleUnresolvedList CreatePoolableInstance(Java.Util.List<Javax.Management.Relation.RoleUnresolved> arg0)
         {
             return JVMBridgeBase.New<RoleUnresolvedList>(arg0);
         }

@@ -76,7 +76,7 @@ namespace Javax.Xml.Namespace
         /// <summary>
         /// HPA initializer for QName(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         /// </summary>
-        public static QName New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        public static QName CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<QName>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Javax.Xml.Namespace
         /// <summary>
         /// HPA initializer for QName(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static QName New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static QName CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<QName>(arg0, arg1);
         }
@@ -107,7 +107,7 @@ namespace Javax.Xml.Namespace
         /// <summary>
         /// HPA initializer for QName(Java.Lang.String arg0)
         /// </summary>
-        public static QName New(Java.Lang.String arg0)
+        public static QName CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<QName>(arg0);
         }

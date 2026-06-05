@@ -146,7 +146,7 @@ namespace Javax.Xml.Bind
         /// <summary>
         /// HPA initializer for JAXBElement(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, Java.Lang.Class arg2, object arg3)
         /// </summary>
-        public static JAXBElement New(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, Java.Lang.Class arg2, object arg3)
+        public static JAXBElement CreatePoolableInstance(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, Java.Lang.Class arg2, object arg3)
         {
             return JVMBridgeBase.New<JAXBElement>(arg0, arg1, arg2, arg3);
         }
@@ -163,7 +163,7 @@ namespace Javax.Xml.Bind
         /// <summary>
         /// HPA initializer for JAXBElement(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, object arg2)
         /// </summary>
-        public static JAXBElement New(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, object arg2)
+        public static JAXBElement CreatePoolableInstance(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, object arg2)
         {
             return JVMBridgeBase.New<JAXBElement>(arg0, arg1, arg2);
         }
@@ -261,7 +261,7 @@ namespace Javax.Xml.Bind
             /// <summary>
             /// HPA initializer for GlobalScope()
             /// </summary>
-            public static GlobalScope New()
+            public static GlobalScope CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<GlobalScope>();
             }
@@ -317,7 +317,7 @@ namespace Javax.Xml.Bind
         /// <summary>
         /// HPA initializer for JAXBElement(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, Java.Lang.Class arg2, T arg3)
         /// </summary>
-        public static JAXBElement<T> New(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, Java.Lang.Class arg2, T arg3)
+        public static JAXBElement<T> CreatePoolableInstance(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, Java.Lang.Class arg2, T arg3)
         {
             return JVMBridgeBase.New<JAXBElement<T>>(arg0, arg1, arg2, arg3);
         }
@@ -334,7 +334,7 @@ namespace Javax.Xml.Bind
         /// <summary>
         /// HPA initializer for JAXBElement(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, T arg2)
         /// </summary>
-        public static JAXBElement<T> New(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, T arg2)
+        public static JAXBElement<T> CreatePoolableInstance(Javax.Xml.Namespace.QName arg0, Java.Lang.Class arg1, T arg2)
         {
             return JVMBridgeBase.New<JAXBElement<T>>(arg0, arg1, arg2);
         }

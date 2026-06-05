@@ -77,7 +77,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for ZipFile(Java.Io.File arg0, int arg1, Java.Nio.Charset.Charset arg2)
         /// </summary>
-        public static ZipFile New(Java.Io.File arg0, int arg1, Java.Nio.Charset.Charset arg2)
+        public static ZipFile CreatePoolableInstance(Java.Io.File arg0, int arg1, Java.Nio.Charset.Charset arg2)
         {
             return JVMBridgeBase.New<ZipFile>(arg0, arg1, arg2);
         }
@@ -94,7 +94,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for ZipFile(Java.Io.File arg0, int arg1)
         /// </summary>
-        public static ZipFile New(Java.Io.File arg0, int arg1)
+        public static ZipFile CreatePoolableInstance(Java.Io.File arg0, int arg1)
         {
             return JVMBridgeBase.New<ZipFile>(arg0, arg1);
         }
@@ -111,7 +111,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for ZipFile(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
         /// </summary>
-        public static ZipFile New(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
+        public static ZipFile CreatePoolableInstance(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
         {
             return JVMBridgeBase.New<ZipFile>(arg0, arg1);
         }
@@ -128,7 +128,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for ZipFile(Java.Io.File arg0)
         /// </summary>
-        public static ZipFile New(Java.Io.File arg0)
+        public static ZipFile CreatePoolableInstance(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<ZipFile>(arg0);
         }
@@ -145,7 +145,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for ZipFile(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1)
         /// </summary>
-        public static ZipFile New(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1)
+        public static ZipFile CreatePoolableInstance(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1)
         {
             return JVMBridgeBase.New<ZipFile>(arg0, arg1);
         }
@@ -161,7 +161,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for ZipFile(Java.Lang.String arg0)
         /// </summary>
-        public static ZipFile New(Java.Lang.String arg0)
+        public static ZipFile CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<ZipFile>(arg0);
         }

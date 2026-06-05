@@ -77,7 +77,7 @@ namespace Java.Awt.Im
         /// <summary>
         /// HPA initializer for InputMethodHighlight(bool arg0, int arg1, int arg2, Java.Util.Map%3CJava.Awt.FontNs.TextAttribute, object%3E arg3)
         /// </summary>
-        public static InputMethodHighlight New(bool arg0, int arg1, int arg2, Java.Util.Map<Java.Awt.FontNs.TextAttribute, object> arg3)
+        public static InputMethodHighlight CreatePoolableInstance(bool arg0, int arg1, int arg2, Java.Util.Map<Java.Awt.FontNs.TextAttribute, object> arg3)
         {
             return JVMBridgeBase.New<InputMethodHighlight>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Java.Awt.Im
         /// <summary>
         /// HPA initializer for InputMethodHighlight(bool arg0, int arg1, int arg2)
         /// </summary>
-        public static InputMethodHighlight New(bool arg0, int arg1, int arg2)
+        public static InputMethodHighlight CreatePoolableInstance(bool arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<InputMethodHighlight>(arg0, arg1, arg2);
         }
@@ -110,7 +110,7 @@ namespace Java.Awt.Im
         /// <summary>
         /// HPA initializer for InputMethodHighlight(bool arg0, int arg1)
         /// </summary>
-        public static InputMethodHighlight New(bool arg0, int arg1)
+        public static InputMethodHighlight CreatePoolableInstance(bool arg0, int arg1)
         {
             return JVMBridgeBase.New<InputMethodHighlight>(arg0, arg1);
         }

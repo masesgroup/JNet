@@ -73,7 +73,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for FeatureDescriptor()
         /// </summary>
-        public static FeatureDescriptor New()
+        public static FeatureDescriptor CreatePoolableInstance()
         {
             return JVMBridgeBase.New<FeatureDescriptor>();
         }

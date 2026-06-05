@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DefaultFormatterFactory()
         /// </summary>
-        public static DefaultFormatterFactory New()
+        public static DefaultFormatterFactory CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DefaultFormatterFactory>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1, Javax.Swing.JFormattedTextField.AbstractFormatter arg2, Javax.Swing.JFormattedTextField.AbstractFormatter arg3)
         /// </summary>
-        public static DefaultFormatterFactory New(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1, Javax.Swing.JFormattedTextField.AbstractFormatter arg2, Javax.Swing.JFormattedTextField.AbstractFormatter arg3)
+        public static DefaultFormatterFactory CreatePoolableInstance(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1, Javax.Swing.JFormattedTextField.AbstractFormatter arg2, Javax.Swing.JFormattedTextField.AbstractFormatter arg3)
         {
             return JVMBridgeBase.New<DefaultFormatterFactory>(arg0, arg1, arg2, arg3);
         }
@@ -108,7 +108,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1, Javax.Swing.JFormattedTextField.AbstractFormatter arg2)
         /// </summary>
-        public static DefaultFormatterFactory New(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1, Javax.Swing.JFormattedTextField.AbstractFormatter arg2)
+        public static DefaultFormatterFactory CreatePoolableInstance(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1, Javax.Swing.JFormattedTextField.AbstractFormatter arg2)
         {
             return JVMBridgeBase.New<DefaultFormatterFactory>(arg0, arg1, arg2);
         }
@@ -124,7 +124,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1)
         /// </summary>
-        public static DefaultFormatterFactory New(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1)
+        public static DefaultFormatterFactory CreatePoolableInstance(Javax.Swing.JFormattedTextField.AbstractFormatter arg0, Javax.Swing.JFormattedTextField.AbstractFormatter arg1)
         {
             return JVMBridgeBase.New<DefaultFormatterFactory>(arg0, arg1);
         }
@@ -139,7 +139,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DefaultFormatterFactory(Javax.Swing.JFormattedTextField.AbstractFormatter arg0)
         /// </summary>
-        public static DefaultFormatterFactory New(Javax.Swing.JFormattedTextField.AbstractFormatter arg0)
+        public static DefaultFormatterFactory CreatePoolableInstance(Javax.Swing.JFormattedTextField.AbstractFormatter arg0)
         {
             return JVMBridgeBase.New<DefaultFormatterFactory>(arg0);
         }

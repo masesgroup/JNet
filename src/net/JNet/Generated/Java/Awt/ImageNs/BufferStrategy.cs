@@ -73,7 +73,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for BufferStrategy()
         /// </summary>
-        public static BufferStrategy New()
+        public static BufferStrategy CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BufferStrategy>();
         }

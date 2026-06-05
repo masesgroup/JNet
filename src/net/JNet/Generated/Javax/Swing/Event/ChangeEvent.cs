@@ -74,7 +74,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for ChangeEvent(object arg0)
         /// </summary>
-        public static ChangeEvent New(object arg0)
+        public static ChangeEvent CreatePoolableInstance(object arg0)
         {
             return JVMBridgeBase.New<ChangeEvent>(arg0);
         }

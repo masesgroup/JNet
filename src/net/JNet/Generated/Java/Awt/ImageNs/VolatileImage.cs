@@ -73,7 +73,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for VolatileImage()
         /// </summary>
-        public static VolatileImage New()
+        public static VolatileImage CreatePoolableInstance()
         {
             return JVMBridgeBase.New<VolatileImage>();
         }

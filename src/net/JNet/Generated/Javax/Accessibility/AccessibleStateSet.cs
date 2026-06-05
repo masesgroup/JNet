@@ -73,7 +73,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// HPA initializer for AccessibleStateSet()
         /// </summary>
-        public static AccessibleStateSet New()
+        public static AccessibleStateSet CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AccessibleStateSet>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// HPA initializer for AccessibleStateSet(Javax.Accessibility.AccessibleState[] arg0)
         /// </summary>
-        public static AccessibleStateSet New(Javax.Accessibility.AccessibleState[] arg0)
+        public static AccessibleStateSet CreatePoolableInstance(Javax.Accessibility.AccessibleState[] arg0)
         {
             return JVMBridgeBase.New<AccessibleStateSet>(arg0);
         }

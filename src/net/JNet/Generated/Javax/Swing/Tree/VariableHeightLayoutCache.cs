@@ -73,7 +73,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// HPA initializer for VariableHeightLayoutCache()
         /// </summary>
-        public static VariableHeightLayoutCache New()
+        public static VariableHeightLayoutCache CreatePoolableInstance()
         {
             return JVMBridgeBase.New<VariableHeightLayoutCache>();
         }

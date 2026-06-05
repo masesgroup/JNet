@@ -141,7 +141,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for StyleContext()
         /// </summary>
-        public static StyleContext New()
+        public static StyleContext CreatePoolableInstance()
         {
             return JVMBridgeBase.New<StyleContext>();
         }
@@ -435,7 +435,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for NamedStyle(Javax.Swing.Text.StyleContext arg0, Java.Lang.String arg1, Javax.Swing.Text.Style arg2)
             /// </summary>
-            public static NamedStyle New(Javax.Swing.Text.StyleContext arg0, Java.Lang.String arg1, Javax.Swing.Text.Style arg2)
+            public static NamedStyle CreatePoolableInstance(Javax.Swing.Text.StyleContext arg0, Java.Lang.String arg1, Javax.Swing.Text.Style arg2)
             {
                 return JVMBridgeBase.New<NamedStyle>(arg0, arg1, arg2);
             }
@@ -451,7 +451,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for NamedStyle(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.Style arg1)
             /// </summary>
-            public static NamedStyle New(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.Style arg1)
+            public static NamedStyle CreatePoolableInstance(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.Style arg1)
             {
                 return JVMBridgeBase.New<NamedStyle>(arg0, arg1);
             }
@@ -466,7 +466,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for NamedStyle(Javax.Swing.Text.StyleContext arg0)
             /// </summary>
-            public static NamedStyle New(Javax.Swing.Text.StyleContext arg0)
+            public static NamedStyle CreatePoolableInstance(Javax.Swing.Text.StyleContext arg0)
             {
                 return JVMBridgeBase.New<NamedStyle>(arg0);
             }
@@ -677,7 +677,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for SmallAttributeSet(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.AttributeSet arg1)
             /// </summary>
-            public static SmallAttributeSet New(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.AttributeSet arg1)
+            public static SmallAttributeSet CreatePoolableInstance(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.AttributeSet arg1)
             {
                 return JVMBridgeBase.New<SmallAttributeSet>(arg0, arg1);
             }

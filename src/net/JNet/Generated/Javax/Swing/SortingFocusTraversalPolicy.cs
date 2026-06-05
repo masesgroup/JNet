@@ -74,7 +74,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SortingFocusTraversalPolicy(Java.Util.Comparator arg0)
         /// </summary>
-        public static SortingFocusTraversalPolicy New(Java.Util.Comparator arg0)
+        public static SortingFocusTraversalPolicy CreatePoolableInstance(Java.Util.Comparator arg0)
         {
             return JVMBridgeBase.New<SortingFocusTraversalPolicy>(arg0);
         }

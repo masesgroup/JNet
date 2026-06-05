@@ -75,7 +75,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JApplet()
         /// </summary>
-        public static JApplet New()
+        public static JApplet CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JApplet>();
         }

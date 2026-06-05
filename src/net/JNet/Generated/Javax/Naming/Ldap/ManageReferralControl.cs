@@ -73,7 +73,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for ManageReferralControl()
         /// </summary>
-        public static ManageReferralControl New()
+        public static ManageReferralControl CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ManageReferralControl>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for ManageReferralControl(bool arg0)
         /// </summary>
-        public static ManageReferralControl New(bool arg0)
+        public static ManageReferralControl CreatePoolableInstance(bool arg0)
         {
             return JVMBridgeBase.New<ManageReferralControl>(arg0);
         }

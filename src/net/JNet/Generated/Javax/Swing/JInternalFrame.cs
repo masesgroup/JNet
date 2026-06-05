@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JInternalFrame()
         /// </summary>
-        public static JInternalFrame New()
+        public static JInternalFrame CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JInternalFrame>();
         }
@@ -126,7 +126,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3, bool arg4)
         /// </summary>
-        public static JInternalFrame New(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3, bool arg4)
+        public static JInternalFrame CreatePoolableInstance(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3, bool arg4)
         {
             return JVMBridgeBase.New<JInternalFrame>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -144,7 +144,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3)
         /// </summary>
-        public static JInternalFrame New(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3)
+        public static JInternalFrame CreatePoolableInstance(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3)
         {
             return JVMBridgeBase.New<JInternalFrame>(arg0, arg1, arg2, arg3);
         }
@@ -161,7 +161,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JInternalFrame(Java.Lang.String arg0, bool arg1, bool arg2)
         /// </summary>
-        public static JInternalFrame New(Java.Lang.String arg0, bool arg1, bool arg2)
+        public static JInternalFrame CreatePoolableInstance(Java.Lang.String arg0, bool arg1, bool arg2)
         {
             return JVMBridgeBase.New<JInternalFrame>(arg0, arg1, arg2);
         }
@@ -177,7 +177,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JInternalFrame(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static JInternalFrame New(Java.Lang.String arg0, bool arg1)
+        public static JInternalFrame CreatePoolableInstance(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<JInternalFrame>(arg0, arg1);
         }
@@ -192,7 +192,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JInternalFrame(Java.Lang.String arg0)
         /// </summary>
-        public static JInternalFrame New(Java.Lang.String arg0)
+        public static JInternalFrame CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JInternalFrame>(arg0);
         }
@@ -634,7 +634,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for JDesktopIcon(Javax.Swing.JInternalFrame arg0)
             /// </summary>
-            public static JDesktopIcon New(Javax.Swing.JInternalFrame arg0)
+            public static JDesktopIcon CreatePoolableInstance(Javax.Swing.JInternalFrame arg0)
             {
                 return JVMBridgeBase.New<JDesktopIcon>(arg0);
             }

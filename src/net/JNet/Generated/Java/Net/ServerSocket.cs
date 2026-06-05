@@ -75,7 +75,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for ServerSocket()
         /// </summary>
-        public static ServerSocket New()
+        public static ServerSocket CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ServerSocket>();
         }
@@ -93,7 +93,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for ServerSocket(int arg0, int arg1, Java.Net.InetAddress arg2)
         /// </summary>
-        public static ServerSocket New(int arg0, int arg1, Java.Net.InetAddress arg2)
+        public static ServerSocket CreatePoolableInstance(int arg0, int arg1, Java.Net.InetAddress arg2)
         {
             return JVMBridgeBase.New<ServerSocket>(arg0, arg1, arg2);
         }
@@ -110,7 +110,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for ServerSocket(int arg0, int arg1)
         /// </summary>
-        public static ServerSocket New(int arg0, int arg1)
+        public static ServerSocket CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<ServerSocket>(arg0, arg1);
         }
@@ -126,7 +126,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for ServerSocket(int arg0)
         /// </summary>
-        public static ServerSocket New(int arg0)
+        public static ServerSocket CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ServerSocket>(arg0);
         }

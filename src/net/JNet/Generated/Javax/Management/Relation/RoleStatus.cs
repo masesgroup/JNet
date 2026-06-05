@@ -73,7 +73,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RoleStatus()
         /// </summary>
-        public static RoleStatus New()
+        public static RoleStatus CreatePoolableInstance()
         {
             return JVMBridgeBase.New<RoleStatus>();
         }

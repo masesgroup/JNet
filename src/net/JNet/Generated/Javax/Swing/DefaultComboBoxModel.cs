@@ -108,7 +108,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultComboBoxModel()
         /// </summary>
-        public static DefaultComboBoxModel New()
+        public static DefaultComboBoxModel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DefaultComboBoxModel>();
         }
@@ -123,7 +123,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultComboBoxModel(Java.Util.Vector arg0)
         /// </summary>
-        public static DefaultComboBoxModel New(Java.Util.Vector arg0)
+        public static DefaultComboBoxModel CreatePoolableInstance(Java.Util.Vector arg0)
         {
             return JVMBridgeBase.New<DefaultComboBoxModel>(arg0);
         }
@@ -228,7 +228,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultComboBoxModel()
         /// </summary>
-        public static DefaultComboBoxModel<E> New()
+        public static DefaultComboBoxModel<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DefaultComboBoxModel<E>>();
         }
@@ -243,7 +243,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultComboBoxModel(E[] arg0)
         /// </summary>
-        public static DefaultComboBoxModel<E> New(E[] arg0)
+        public static DefaultComboBoxModel<E> CreatePoolableInstance(E[] arg0)
         {
             return JVMBridgeBase.New<DefaultComboBoxModel<E>>(arg0);
         }
@@ -258,7 +258,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultComboBoxModel(Java.Util.Vector%3CE%3E arg0)
         /// </summary>
-        public static DefaultComboBoxModel<E> New(Java.Util.Vector<E> arg0)
+        public static DefaultComboBoxModel<E> CreatePoolableInstance(Java.Util.Vector<E> arg0)
         {
             return JVMBridgeBase.New<DefaultComboBoxModel<E>>(arg0);
         }

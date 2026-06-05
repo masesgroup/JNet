@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for GridBagLayout()
         /// </summary>
-        public static GridBagLayout New()
+        public static GridBagLayout CreatePoolableInstance()
         {
             return JVMBridgeBase.New<GridBagLayout>();
         }

@@ -109,7 +109,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for Proxy(Java.Net.Proxy.Type arg0, Java.Net.SocketAddress arg1)
         /// </summary>
-        public static Proxy New(Java.Net.Proxy.Type arg0, Java.Net.SocketAddress arg1)
+        public static Proxy CreatePoolableInstance(Java.Net.Proxy.Type arg0, Java.Net.SocketAddress arg1)
         {
             return JVMBridgeBase.New<Proxy>(arg0, arg1);
         }

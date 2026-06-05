@@ -73,7 +73,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// HPA initializer for AccessibleContext()
         /// </summary>
-        public static AccessibleContext New()
+        public static AccessibleContext CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AccessibleContext>();
         }

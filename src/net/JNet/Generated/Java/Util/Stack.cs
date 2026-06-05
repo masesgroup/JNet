@@ -108,7 +108,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Stack()
         /// </summary>
-        public static Stack New()
+        public static Stack CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Stack>();
         }
@@ -195,7 +195,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Stack()
         /// </summary>
-        public static Stack<E> New()
+        public static Stack<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Stack<E>>();
         }

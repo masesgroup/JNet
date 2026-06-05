@@ -74,7 +74,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultCellEditor(Javax.Swing.JCheckBox arg0)
         /// </summary>
-        public static DefaultCellEditor New(Javax.Swing.JCheckBox arg0)
+        public static DefaultCellEditor CreatePoolableInstance(Javax.Swing.JCheckBox arg0)
         {
             return JVMBridgeBase.New<DefaultCellEditor>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultCellEditor(Javax.Swing.JComboBox arg0)
         /// </summary>
-        public static DefaultCellEditor New(Javax.Swing.JComboBox arg0)
+        public static DefaultCellEditor CreatePoolableInstance(Javax.Swing.JComboBox arg0)
         {
             return JVMBridgeBase.New<DefaultCellEditor>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultCellEditor(Javax.Swing.JTextField arg0)
         /// </summary>
-        public static DefaultCellEditor New(Javax.Swing.JTextField arg0)
+        public static DefaultCellEditor CreatePoolableInstance(Javax.Swing.JTextField arg0)
         {
             return JVMBridgeBase.New<DefaultCellEditor>(arg0);
         }

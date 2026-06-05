@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for RequestingUserName(Java.Lang.String arg0, Java.Util.Locale arg1)
         /// </summary>
-        public static RequestingUserName New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        public static RequestingUserName CreatePoolableInstance(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
             return JVMBridgeBase.New<RequestingUserName>(arg0, arg1);
         }

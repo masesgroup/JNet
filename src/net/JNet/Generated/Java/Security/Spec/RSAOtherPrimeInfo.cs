@@ -76,7 +76,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for RSAOtherPrimeInfo(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
         /// </summary>
-        public static RSAOtherPrimeInfo New(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
+        public static RSAOtherPrimeInfo CreatePoolableInstance(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
         {
             return JVMBridgeBase.New<RSAOtherPrimeInfo>(arg0, arg1, arg2);
         }

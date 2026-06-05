@@ -110,7 +110,7 @@ namespace Java.Rmi
         /// <summary>
         /// HPA initializer for MarshalledObject(object arg0)
         /// </summary>
-        public static MarshalledObject New(object arg0)
+        public static MarshalledObject CreatePoolableInstance(object arg0)
         {
             return JVMBridgeBase.New<MarshalledObject>(arg0);
         }
@@ -167,7 +167,7 @@ namespace Java.Rmi
         /// <summary>
         /// HPA initializer for MarshalledObject(T arg0)
         /// </summary>
-        public static MarshalledObject<T> New(T arg0)
+        public static MarshalledObject<T> CreatePoolableInstance(T arg0)
         {
             return JVMBridgeBase.New<MarshalledObject<T>>(arg0);
         }

@@ -215,7 +215,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue%3CJava.Lang.Runnable%3E arg4, Java.Util.Concurrent.RejectedExecutionHandler arg5)
         /// </summary>
-        public static ThreadPoolExecutor New(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.RejectedExecutionHandler arg5)
+        public static ThreadPoolExecutor CreatePoolableInstance(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.RejectedExecutionHandler arg5)
         {
             return JVMBridgeBase.New<ThreadPoolExecutor>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -236,7 +236,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue%3CJava.Lang.Runnable%3E arg4, Java.Util.Concurrent.ThreadFactory arg5, Java.Util.Concurrent.RejectedExecutionHandler arg6)
         /// </summary>
-        public static ThreadPoolExecutor New(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.ThreadFactory arg5, Java.Util.Concurrent.RejectedExecutionHandler arg6)
+        public static ThreadPoolExecutor CreatePoolableInstance(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.ThreadFactory arg5, Java.Util.Concurrent.RejectedExecutionHandler arg6)
         {
             return JVMBridgeBase.New<ThreadPoolExecutor>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -256,7 +256,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue%3CJava.Lang.Runnable%3E arg4, Java.Util.Concurrent.ThreadFactory arg5)
         /// </summary>
-        public static ThreadPoolExecutor New(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.ThreadFactory arg5)
+        public static ThreadPoolExecutor CreatePoolableInstance(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.ThreadFactory arg5)
         {
             return JVMBridgeBase.New<ThreadPoolExecutor>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -275,7 +275,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue%3CJava.Lang.Runnable%3E arg4)
         /// </summary>
-        public static ThreadPoolExecutor New(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4)
+        public static ThreadPoolExecutor CreatePoolableInstance(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4)
         {
             return JVMBridgeBase.New<ThreadPoolExecutor>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -457,7 +457,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// HPA initializer for AbortPolicy()
             /// </summary>
-            public static AbortPolicy New()
+            public static AbortPolicy CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<AbortPolicy>();
             }
@@ -511,7 +511,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// HPA initializer for CallerRunsPolicy()
             /// </summary>
-            public static CallerRunsPolicy New()
+            public static CallerRunsPolicy CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<CallerRunsPolicy>();
             }
@@ -565,7 +565,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// HPA initializer for DiscardOldestPolicy()
             /// </summary>
-            public static DiscardOldestPolicy New()
+            public static DiscardOldestPolicy CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<DiscardOldestPolicy>();
             }
@@ -619,7 +619,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// HPA initializer for DiscardPolicy()
             /// </summary>
-            public static DiscardPolicy New()
+            public static DiscardPolicy CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<DiscardPolicy>();
             }

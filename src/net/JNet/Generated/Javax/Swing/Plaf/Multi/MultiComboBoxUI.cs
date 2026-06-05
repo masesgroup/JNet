@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiComboBoxUI()
         /// </summary>
-        public static MultiComboBoxUI New()
+        public static MultiComboBoxUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MultiComboBoxUI>();
         }

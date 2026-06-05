@@ -73,7 +73,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// HPA initializer for FixedHeightLayoutCache()
         /// </summary>
-        public static FixedHeightLayoutCache New()
+        public static FixedHeightLayoutCache CreatePoolableInstance()
         {
             return JVMBridgeBase.New<FixedHeightLayoutCache>();
         }

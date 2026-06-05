@@ -74,7 +74,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for ImmutableDescriptor(params Java.Lang.String[] arg0)
         /// </summary>
-        public static ImmutableDescriptor New(params Java.Lang.String[] arg0)
+        public static ImmutableDescriptor CreatePoolableInstance(params Java.Lang.String[] arg0)
         {
             return JVMBridgeBase.New<ImmutableDescriptor>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for ImmutableDescriptor(Java.Util.Map%3CJava.Lang.String, object%3E arg0)
         /// </summary>
-        public static ImmutableDescriptor New(Java.Util.Map<Java.Lang.String, object> arg0)
+        public static ImmutableDescriptor CreatePoolableInstance(Java.Util.Map<Java.Lang.String, object> arg0)
         {
             return JVMBridgeBase.New<ImmutableDescriptor>(arg0);
         }

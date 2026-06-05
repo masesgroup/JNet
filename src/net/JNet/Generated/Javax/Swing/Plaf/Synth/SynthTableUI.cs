@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthTableUI()
         /// </summary>
-        public static SynthTableUI New()
+        public static SynthTableUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SynthTableUI>();
         }

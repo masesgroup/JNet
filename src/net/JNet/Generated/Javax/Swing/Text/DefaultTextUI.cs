@@ -74,7 +74,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DefaultTextUI()
         /// </summary>
-        public static DefaultTextUI New()
+        public static DefaultTextUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DefaultTextUI>();
         }

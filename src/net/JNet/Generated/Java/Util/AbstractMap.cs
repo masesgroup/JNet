@@ -375,7 +375,7 @@ namespace Java.Util
             /// <summary>
             /// HPA initializer for SimpleEntry(Java.Util.Map.Entry arg0)
             /// </summary>
-            public static SimpleEntry New(Java.Util.Map.Entry arg0)
+            public static SimpleEntry CreatePoolableInstance(Java.Util.Map.Entry arg0)
             {
                 return JVMBridgeBase.New<SimpleEntry>(arg0);
             }
@@ -391,7 +391,7 @@ namespace Java.Util
             /// <summary>
             /// HPA initializer for SimpleEntry(object arg0, object arg1)
             /// </summary>
-            public static SimpleEntry New(object arg0, object arg1)
+            public static SimpleEntry CreatePoolableInstance(object arg0, object arg1)
             {
                 return JVMBridgeBase.New<SimpleEntry>(arg0, arg1);
             }
@@ -464,7 +464,7 @@ namespace Java.Util
             /// <summary>
             /// HPA initializer for SimpleEntry(Java.Util.Map.Entry%3CK, V%3E arg0)
             /// </summary>
-            public static SimpleEntry<K, V> New(Java.Util.Map.Entry<K, V> arg0)
+            public static SimpleEntry<K, V> CreatePoolableInstance(Java.Util.Map.Entry<K, V> arg0)
             {
                 return JVMBridgeBase.New<SimpleEntry<K, V>>(arg0);
             }
@@ -480,7 +480,7 @@ namespace Java.Util
             /// <summary>
             /// HPA initializer for SimpleEntry(K arg0, V arg1)
             /// </summary>
-            public static SimpleEntry<K, V> New(K arg0, V arg1)
+            public static SimpleEntry<K, V> CreatePoolableInstance(K arg0, V arg1)
             {
                 return JVMBridgeBase.New<SimpleEntry<K, V>>(arg0, arg1);
             }
@@ -557,7 +557,7 @@ namespace Java.Util
             /// <summary>
             /// HPA initializer for SimpleImmutableEntry(Java.Util.Map.Entry arg0)
             /// </summary>
-            public static SimpleImmutableEntry New(Java.Util.Map.Entry arg0)
+            public static SimpleImmutableEntry CreatePoolableInstance(Java.Util.Map.Entry arg0)
             {
                 return JVMBridgeBase.New<SimpleImmutableEntry>(arg0);
             }
@@ -573,7 +573,7 @@ namespace Java.Util
             /// <summary>
             /// HPA initializer for SimpleImmutableEntry(object arg0, object arg1)
             /// </summary>
-            public static SimpleImmutableEntry New(object arg0, object arg1)
+            public static SimpleImmutableEntry CreatePoolableInstance(object arg0, object arg1)
             {
                 return JVMBridgeBase.New<SimpleImmutableEntry>(arg0, arg1);
             }
@@ -646,7 +646,7 @@ namespace Java.Util
             /// <summary>
             /// HPA initializer for SimpleImmutableEntry(Java.Util.Map.Entry%3CK, V%3E arg0)
             /// </summary>
-            public static SimpleImmutableEntry<K, V> New(Java.Util.Map.Entry<K, V> arg0)
+            public static SimpleImmutableEntry<K, V> CreatePoolableInstance(Java.Util.Map.Entry<K, V> arg0)
             {
                 return JVMBridgeBase.New<SimpleImmutableEntry<K, V>>(arg0);
             }
@@ -662,7 +662,7 @@ namespace Java.Util
             /// <summary>
             /// HPA initializer for SimpleImmutableEntry(K arg0, V arg1)
             /// </summary>
-            public static SimpleImmutableEntry<K, V> New(K arg0, V arg1)
+            public static SimpleImmutableEntry<K, V> CreatePoolableInstance(K arg0, V arg1)
             {
                 return JVMBridgeBase.New<SimpleImmutableEntry<K, V>>(arg0, arg1);
             }

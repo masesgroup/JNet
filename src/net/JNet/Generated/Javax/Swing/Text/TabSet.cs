@@ -74,7 +74,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for TabSet(Javax.Swing.Text.TabStop[] arg0)
         /// </summary>
-        public static TabSet New(Javax.Swing.Text.TabStop[] arg0)
+        public static TabSet CreatePoolableInstance(Javax.Swing.Text.TabStop[] arg0)
         {
             return JVMBridgeBase.New<TabSet>(arg0);
         }

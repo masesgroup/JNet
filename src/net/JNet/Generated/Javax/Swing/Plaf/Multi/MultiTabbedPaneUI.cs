@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiTabbedPaneUI()
         /// </summary>
-        public static MultiTabbedPaneUI New()
+        public static MultiTabbedPaneUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MultiTabbedPaneUI>();
         }

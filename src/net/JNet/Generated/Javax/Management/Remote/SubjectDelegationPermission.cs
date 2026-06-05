@@ -75,7 +75,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// HPA initializer for SubjectDelegationPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static SubjectDelegationPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static SubjectDelegationPermission CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<SubjectDelegationPermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// HPA initializer for SubjectDelegationPermission(Java.Lang.String arg0)
         /// </summary>
-        public static SubjectDelegationPermission New(Java.Lang.String arg0)
+        public static SubjectDelegationPermission CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<SubjectDelegationPermission>(arg0);
         }

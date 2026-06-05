@@ -73,7 +73,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for DefaultPersistenceDelegate()
         /// </summary>
-        public static DefaultPersistenceDelegate New()
+        public static DefaultPersistenceDelegate CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DefaultPersistenceDelegate>();
         }
@@ -88,7 +88,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for DefaultPersistenceDelegate(Java.Lang.String[] arg0)
         /// </summary>
-        public static DefaultPersistenceDelegate New(Java.Lang.String[] arg0)
+        public static DefaultPersistenceDelegate CreatePoolableInstance(Java.Lang.String[] arg0)
         {
             return JVMBridgeBase.New<DefaultPersistenceDelegate>(arg0);
         }

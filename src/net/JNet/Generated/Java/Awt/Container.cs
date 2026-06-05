@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Container()
         /// </summary>
-        public static Container New()
+        public static Container CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Container>();
         }

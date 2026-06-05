@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for Exchanger()
         /// </summary>
-        public static Exchanger New()
+        public static Exchanger CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Exchanger>();
         }
@@ -176,7 +176,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for Exchanger()
         /// </summary>
-        public static Exchanger<V> New()
+        public static Exchanger<V> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Exchanger<V>>();
         }

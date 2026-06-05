@@ -73,7 +73,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// HPA initializer for AttributeListImpl()
         /// </summary>
-        public static AttributeListImpl New()
+        public static AttributeListImpl CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AttributeListImpl>();
         }
@@ -88,7 +88,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// HPA initializer for AttributeListImpl(Org.Xml.Sax.AttributeList arg0)
         /// </summary>
-        public static AttributeListImpl New(Org.Xml.Sax.AttributeList arg0)
+        public static AttributeListImpl CreatePoolableInstance(Org.Xml.Sax.AttributeList arg0)
         {
             return JVMBridgeBase.New<AttributeListImpl>(arg0);
         }

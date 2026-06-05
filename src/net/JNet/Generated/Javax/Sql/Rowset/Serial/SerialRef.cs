@@ -76,7 +76,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// HPA initializer for SerialRef(Java.Sql.Ref arg0)
         /// </summary>
-        public static SerialRef New(Java.Sql.Ref arg0)
+        public static SerialRef CreatePoolableInstance(Java.Sql.Ref arg0)
         {
             return JVMBridgeBase.New<SerialRef>(arg0);
         }

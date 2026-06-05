@@ -76,7 +76,7 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// HPA initializer for LoginContext(Java.Lang.String arg0, Javax.Security.Auth.Callback.CallbackHandler arg1)
         /// </summary>
-        public static LoginContext New(Java.Lang.String arg0, Javax.Security.Auth.Callback.CallbackHandler arg1)
+        public static LoginContext CreatePoolableInstance(Java.Lang.String arg0, Javax.Security.Auth.Callback.CallbackHandler arg1)
         {
             return JVMBridgeBase.New<LoginContext>(arg0, arg1);
         }
@@ -95,7 +95,7 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// HPA initializer for LoginContext(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2, Javax.Security.Auth.Login.Configuration arg3)
         /// </summary>
-        public static LoginContext New(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2, Javax.Security.Auth.Login.Configuration arg3)
+        public static LoginContext CreatePoolableInstance(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2, Javax.Security.Auth.Login.Configuration arg3)
         {
             return JVMBridgeBase.New<LoginContext>(arg0, arg1, arg2, arg3);
         }
@@ -113,7 +113,7 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// HPA initializer for LoginContext(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2)
         /// </summary>
-        public static LoginContext New(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2)
+        public static LoginContext CreatePoolableInstance(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2)
         {
             return JVMBridgeBase.New<LoginContext>(arg0, arg1, arg2);
         }
@@ -130,7 +130,7 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// HPA initializer for LoginContext(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1)
         /// </summary>
-        public static LoginContext New(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1)
+        public static LoginContext CreatePoolableInstance(Java.Lang.String arg0, Javax.Security.Auth.Subject arg1)
         {
             return JVMBridgeBase.New<LoginContext>(arg0, arg1);
         }
@@ -146,7 +146,7 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// HPA initializer for LoginContext(Java.Lang.String arg0)
         /// </summary>
-        public static LoginContext New(Java.Lang.String arg0)
+        public static LoginContext CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<LoginContext>(arg0);
         }

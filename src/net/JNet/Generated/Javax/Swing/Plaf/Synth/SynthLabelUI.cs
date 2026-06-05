@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthLabelUI()
         /// </summary>
-        public static SynthLabelUI New()
+        public static SynthLabelUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SynthLabelUI>();
         }

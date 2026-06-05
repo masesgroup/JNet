@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for NumberOfDocuments(int arg0)
         /// </summary>
-        public static NumberOfDocuments New(int arg0)
+        public static NumberOfDocuments CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<NumberOfDocuments>(arg0);
         }

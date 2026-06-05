@@ -77,7 +77,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for JarFile(Java.Io.File arg0, bool arg1, int arg2)
         /// </summary>
-        public static JarFile New(Java.Io.File arg0, bool arg1, int arg2)
+        public static JarFile CreatePoolableInstance(Java.Io.File arg0, bool arg1, int arg2)
         {
             return JVMBridgeBase.New<JarFile>(arg0, arg1, arg2);
         }
@@ -94,7 +94,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for JarFile(Java.Io.File arg0, bool arg1)
         /// </summary>
-        public static JarFile New(Java.Io.File arg0, bool arg1)
+        public static JarFile CreatePoolableInstance(Java.Io.File arg0, bool arg1)
         {
             return JVMBridgeBase.New<JarFile>(arg0, arg1);
         }
@@ -110,7 +110,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for JarFile(Java.Io.File arg0)
         /// </summary>
-        public static JarFile New(Java.Io.File arg0)
+        public static JarFile CreatePoolableInstance(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<JarFile>(arg0);
         }
@@ -127,7 +127,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for JarFile(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static JarFile New(Java.Lang.String arg0, bool arg1)
+        public static JarFile CreatePoolableInstance(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<JarFile>(arg0, arg1);
         }
@@ -143,7 +143,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for JarFile(Java.Lang.String arg0)
         /// </summary>
-        public static JarFile New(Java.Lang.String arg0)
+        public static JarFile CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JarFile>(arg0);
         }

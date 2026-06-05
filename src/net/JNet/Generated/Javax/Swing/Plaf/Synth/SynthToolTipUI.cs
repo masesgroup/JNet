@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthToolTipUI()
         /// </summary>
-        public static SynthToolTipUI New()
+        public static SynthToolTipUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SynthToolTipUI>();
         }

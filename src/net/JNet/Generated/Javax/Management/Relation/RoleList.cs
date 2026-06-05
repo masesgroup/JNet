@@ -73,7 +73,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RoleList()
         /// </summary>
-        public static RoleList New()
+        public static RoleList CreatePoolableInstance()
         {
             return JVMBridgeBase.New<RoleList>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RoleList(int arg0)
         /// </summary>
-        public static RoleList New(int arg0)
+        public static RoleList CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<RoleList>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RoleList(Java.Util.List%3CJavax.Management.Relation.Role%3E arg0)
         /// </summary>
-        public static RoleList New(Java.Util.List<Javax.Management.Relation.Role> arg0)
+        public static RoleList CreatePoolableInstance(Java.Util.List<Javax.Management.Relation.Role> arg0)
         {
             return JVMBridgeBase.New<RoleList>(arg0);
         }

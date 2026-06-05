@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthFormattedTextFieldUI()
         /// </summary>
-        public static SynthFormattedTextFieldUI New()
+        public static SynthFormattedTextFieldUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SynthFormattedTextFieldUI>();
         }

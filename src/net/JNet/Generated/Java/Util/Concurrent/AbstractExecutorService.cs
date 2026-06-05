@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for AbstractExecutorService()
         /// </summary>
-        public static AbstractExecutorService New()
+        public static AbstractExecutorService CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AbstractExecutorService>();
         }

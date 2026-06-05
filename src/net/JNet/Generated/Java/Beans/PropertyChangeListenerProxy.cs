@@ -75,7 +75,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for PropertyChangeListenerProxy(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         /// </summary>
-        public static PropertyChangeListenerProxy New(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
+        public static PropertyChangeListenerProxy CreatePoolableInstance(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
             return JVMBridgeBase.New<PropertyChangeListenerProxy>(arg0, arg1);
         }

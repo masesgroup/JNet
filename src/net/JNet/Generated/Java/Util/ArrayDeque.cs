@@ -108,7 +108,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ArrayDeque()
         /// </summary>
-        public static ArrayDeque New()
+        public static ArrayDeque CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ArrayDeque>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ArrayDeque(int arg0)
         /// </summary>
-        public static ArrayDeque New(int arg0)
+        public static ArrayDeque CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ArrayDeque>(arg0);
         }
@@ -138,7 +138,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ArrayDeque(Java.Util.Collection arg0)
         /// </summary>
-        public static ArrayDeque New(Java.Util.Collection arg0)
+        public static ArrayDeque CreatePoolableInstance(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<ArrayDeque>(arg0);
         }
@@ -382,7 +382,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ArrayDeque()
         /// </summary>
-        public static ArrayDeque<E> New()
+        public static ArrayDeque<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ArrayDeque<E>>();
         }
@@ -397,7 +397,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ArrayDeque(int arg0)
         /// </summary>
-        public static ArrayDeque<E> New(int arg0)
+        public static ArrayDeque<E> CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ArrayDeque<E>>(arg0);
         }
@@ -412,7 +412,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ArrayDeque(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static ArrayDeque<E> New(Java.Util.Collection<E> arg0)
+        public static ArrayDeque<E> CreatePoolableInstance(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<ArrayDeque<E>>(arg0);
         }

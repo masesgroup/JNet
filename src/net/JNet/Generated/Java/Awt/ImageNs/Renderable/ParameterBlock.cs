@@ -73,7 +73,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// HPA initializer for ParameterBlock()
         /// </summary>
-        public static ParameterBlock New()
+        public static ParameterBlock CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ParameterBlock>();
         }
@@ -89,7 +89,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// HPA initializer for ParameterBlock(Java.Util.Vector%3Cobject%3E arg0, Java.Util.Vector%3Cobject%3E arg1)
         /// </summary>
-        public static ParameterBlock New(Java.Util.Vector<object> arg0, Java.Util.Vector<object> arg1)
+        public static ParameterBlock CreatePoolableInstance(Java.Util.Vector<object> arg0, Java.Util.Vector<object> arg1)
         {
             return JVMBridgeBase.New<ParameterBlock>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// HPA initializer for ParameterBlock(Java.Util.Vector%3Cobject%3E arg0)
         /// </summary>
-        public static ParameterBlock New(Java.Util.Vector<object> arg0)
+        public static ParameterBlock CreatePoolableInstance(Java.Util.Vector<object> arg0)
         {
             return JVMBridgeBase.New<ParameterBlock>(arg0);
         }

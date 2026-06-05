@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDesktopPane()
         /// </summary>
-        public static JDesktopPane New()
+        public static JDesktopPane CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JDesktopPane>();
         }

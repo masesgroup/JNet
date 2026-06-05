@@ -73,7 +73,7 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// HPA initializer for EventReaderDelegate()
         /// </summary>
-        public static EventReaderDelegate New()
+        public static EventReaderDelegate CreatePoolableInstance()
         {
             return JVMBridgeBase.New<EventReaderDelegate>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// HPA initializer for EventReaderDelegate(Javax.Xml.Stream.XMLEventReader arg0)
         /// </summary>
-        public static EventReaderDelegate New(Javax.Xml.Stream.XMLEventReader arg0)
+        public static EventReaderDelegate CreatePoolableInstance(Javax.Xml.Stream.XMLEventReader arg0)
         {
             return JVMBridgeBase.New<EventReaderDelegate>(arg0);
         }

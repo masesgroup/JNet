@@ -73,7 +73,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for TrustManagerFactorySpi()
         /// </summary>
-        public static TrustManagerFactorySpi New()
+        public static TrustManagerFactorySpi CreatePoolableInstance()
         {
             return JVMBridgeBase.New<TrustManagerFactorySpi>();
         }

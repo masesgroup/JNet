@@ -74,7 +74,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for ElementIterator(Javax.Swing.Text.Document arg0)
         /// </summary>
-        public static ElementIterator New(Javax.Swing.Text.Document arg0)
+        public static ElementIterator CreatePoolableInstance(Javax.Swing.Text.Document arg0)
         {
             return JVMBridgeBase.New<ElementIterator>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for ElementIterator(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static ElementIterator New(Javax.Swing.Text.Element arg0)
+        public static ElementIterator CreatePoolableInstance(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<ElementIterator>(arg0);
         }

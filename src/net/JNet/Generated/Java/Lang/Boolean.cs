@@ -74,7 +74,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Boolean(bool arg0)
         /// </summary>
-        public static Boolean New(bool arg0)
+        public static Boolean CreatePoolableInstance(bool arg0)
         {
             return JVMBridgeBase.New<Boolean>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Boolean(Java.Lang.String arg0)
         /// </summary>
-        public static Boolean New(Java.Lang.String arg0)
+        public static Boolean CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Boolean>(arg0);
         }

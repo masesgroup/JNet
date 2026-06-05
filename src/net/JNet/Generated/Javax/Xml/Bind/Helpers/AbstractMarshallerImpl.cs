@@ -73,7 +73,7 @@ namespace Javax.Xml.Bind.Helpers
         /// <summary>
         /// HPA initializer for AbstractMarshallerImpl()
         /// </summary>
-        public static AbstractMarshallerImpl New()
+        public static AbstractMarshallerImpl CreatePoolableInstance()
         {
             return JVMBridgeBase.New<AbstractMarshallerImpl>();
         }

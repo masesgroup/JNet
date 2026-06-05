@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SizeSequence()
         /// </summary>
-        public static SizeSequence New()
+        public static SizeSequence CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SizeSequence>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SizeSequence(int arg0, int arg1)
         /// </summary>
-        public static SizeSequence New(int arg0, int arg1)
+        public static SizeSequence CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<SizeSequence>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SizeSequence(int arg0)
         /// </summary>
-        public static SizeSequence New(int arg0)
+        public static SizeSequence CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<SizeSequence>(arg0);
         }
@@ -119,7 +119,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SizeSequence(int[] arg0)
         /// </summary>
-        public static SizeSequence New(int[] arg0)
+        public static SizeSequence CreatePoolableInstance(int[] arg0)
         {
             return JVMBridgeBase.New<SizeSequence>(arg0);
         }

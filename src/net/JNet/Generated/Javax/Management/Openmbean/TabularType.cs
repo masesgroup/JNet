@@ -78,7 +78,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for TabularType(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.CompositeType arg2, Java.Lang.String[] arg3)
         /// </summary>
-        public static TabularType New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.CompositeType arg2, Java.Lang.String[] arg3)
+        public static TabularType CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.CompositeType arg2, Java.Lang.String[] arg3)
         {
             return JVMBridgeBase.New<TabularType>(arg0, arg1, arg2, arg3);
         }

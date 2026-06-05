@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JPopupMenu()
         /// </summary>
-        public static JPopupMenu New()
+        public static JPopupMenu CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JPopupMenu>();
         }
@@ -122,7 +122,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JPopupMenu(Java.Lang.String arg0)
         /// </summary>
-        public static JPopupMenu New(Java.Lang.String arg0)
+        public static JPopupMenu CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JPopupMenu>(arg0);
         }
@@ -452,7 +452,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for Separator()
             /// </summary>
-            public static Separator New()
+            public static Separator CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<Separator>();
             }

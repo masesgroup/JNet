@@ -74,7 +74,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// HPA initializer for Parser(Javax.Swing.Text.Html.Parser.DTD arg0)
         /// </summary>
-        public static Parser New(Javax.Swing.Text.Html.Parser.DTD arg0)
+        public static Parser CreatePoolableInstance(Javax.Swing.Text.Html.Parser.DTD arg0)
         {
             return JVMBridgeBase.New<Parser>(arg0);
         }

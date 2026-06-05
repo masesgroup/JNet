@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiButtonUI()
         /// </summary>
-        public static MultiButtonUI New()
+        public static MultiButtonUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<MultiButtonUI>();
         }

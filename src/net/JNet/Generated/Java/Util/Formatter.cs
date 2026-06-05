@@ -107,7 +107,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter()
         /// </summary>
-        public static Formatter New()
+        public static Formatter CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Formatter>();
         }
@@ -126,7 +126,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter(Java.Io.File arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
         /// </summary>
-        public static Formatter New(Java.Io.File arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
+        public static Formatter CreatePoolableInstance(Java.Io.File arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
         {
             return JVMBridgeBase.New<Formatter>(arg0, arg1, arg2);
         }
@@ -144,7 +144,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter(Java.Io.File arg0, Java.Lang.String arg1)
         /// </summary>
-        public static Formatter New(Java.Io.File arg0, Java.Lang.String arg1)
+        public static Formatter CreatePoolableInstance(Java.Io.File arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<Formatter>(arg0, arg1);
         }
@@ -160,7 +160,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter(Java.Io.File arg0)
         /// </summary>
-        public static Formatter New(Java.Io.File arg0)
+        public static Formatter CreatePoolableInstance(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<Formatter>(arg0);
         }
@@ -178,7 +178,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter(Java.Io.OutputStream arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
         /// </summary>
-        public static Formatter New(Java.Io.OutputStream arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
+        public static Formatter CreatePoolableInstance(Java.Io.OutputStream arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
         {
             return JVMBridgeBase.New<Formatter>(arg0, arg1, arg2);
         }
@@ -195,7 +195,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         /// </summary>
-        public static Formatter New(Java.Io.OutputStream arg0, Java.Lang.String arg1)
+        public static Formatter CreatePoolableInstance(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<Formatter>(arg0, arg1);
         }
@@ -210,7 +210,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter(Java.Io.OutputStream arg0)
         /// </summary>
-        public static Formatter New(Java.Io.OutputStream arg0)
+        public static Formatter CreatePoolableInstance(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<Formatter>(arg0);
         }
@@ -225,7 +225,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter(Java.Io.PrintStream arg0)
         /// </summary>
-        public static Formatter New(Java.Io.PrintStream arg0)
+        public static Formatter CreatePoolableInstance(Java.Io.PrintStream arg0)
         {
             return JVMBridgeBase.New<Formatter>(arg0);
         }
@@ -241,7 +241,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter(Java.Lang.Appendable arg0, Java.Util.Locale arg1)
         /// </summary>
-        public static Formatter New(Java.Lang.Appendable arg0, Java.Util.Locale arg1)
+        public static Formatter CreatePoolableInstance(Java.Lang.Appendable arg0, Java.Util.Locale arg1)
         {
             return JVMBridgeBase.New<Formatter>(arg0, arg1);
         }
@@ -256,7 +256,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter(Java.Lang.Appendable arg0)
         /// </summary>
-        public static Formatter New(Java.Lang.Appendable arg0)
+        public static Formatter CreatePoolableInstance(Java.Lang.Appendable arg0)
         {
             return JVMBridgeBase.New<Formatter>(arg0);
         }
@@ -275,7 +275,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
         /// </summary>
-        public static Formatter New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
+        public static Formatter CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.Locale arg2)
         {
             return JVMBridgeBase.New<Formatter>(arg0, arg1, arg2);
         }
@@ -293,7 +293,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static Formatter New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static Formatter CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<Formatter>(arg0, arg1);
         }
@@ -309,7 +309,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter(Java.Lang.String arg0)
         /// </summary>
-        public static Formatter New(Java.Lang.String arg0)
+        public static Formatter CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Formatter>(arg0);
         }
@@ -324,7 +324,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Formatter(Java.Util.Locale arg0)
         /// </summary>
-        public static Formatter New(Java.Util.Locale arg0)
+        public static Formatter CreatePoolableInstance(Java.Util.Locale arg0)
         {
             return JVMBridgeBase.New<Formatter>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// HPA initializer for Monitor()
         /// </summary>
-        public static Monitor New()
+        public static Monitor CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Monitor>();
         }

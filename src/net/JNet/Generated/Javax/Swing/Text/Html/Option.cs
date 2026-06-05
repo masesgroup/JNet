@@ -74,7 +74,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for Option(Javax.Swing.Text.AttributeSet arg0)
         /// </summary>
-        public static Option New(Javax.Swing.Text.AttributeSet arg0)
+        public static Option CreatePoolableInstance(Javax.Swing.Text.AttributeSet arg0)
         {
             return JVMBridgeBase.New<Option>(arg0);
         }

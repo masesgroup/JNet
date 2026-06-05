@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JMenu()
         /// </summary>
-        public static JMenu New()
+        public static JMenu CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JMenu>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JMenu(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static JMenu New(Java.Lang.String arg0, bool arg1)
+        public static JMenu CreatePoolableInstance(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<JMenu>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JMenu(Java.Lang.String arg0)
         /// </summary>
-        public static JMenu New(Java.Lang.String arg0)
+        public static JMenu CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JMenu>(arg0);
         }
@@ -119,7 +119,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JMenu(Javax.Swing.Action arg0)
         /// </summary>
-        public static JMenu New(Javax.Swing.Action arg0)
+        public static JMenu CreatePoolableInstance(Javax.Swing.Action arg0)
         {
             return JVMBridgeBase.New<JMenu>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for KeyPairGeneratorSpi()
         /// </summary>
-        public static KeyPairGeneratorSpi New()
+        public static KeyPairGeneratorSpi CreatePoolableInstance()
         {
             return JVMBridgeBase.New<KeyPairGeneratorSpi>();
         }

@@ -74,7 +74,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicSplitPaneDivider(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
         /// </summary>
-        public static BasicSplitPaneDivider New(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+        public static BasicSplitPaneDivider CreatePoolableInstance(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
         {
             return JVMBridgeBase.New<BasicSplitPaneDivider>(arg0);
         }

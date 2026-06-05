@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SizeRequirements()
         /// </summary>
-        public static SizeRequirements New()
+        public static SizeRequirements CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SizeRequirements>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SizeRequirements(int arg0, int arg1, int arg2, float arg3)
         /// </summary>
-        public static SizeRequirements New(int arg0, int arg1, int arg2, float arg3)
+        public static SizeRequirements CreatePoolableInstance(int arg0, int arg1, int arg2, float arg3)
         {
             return JVMBridgeBase.New<SizeRequirements>(arg0, arg1, arg2, arg3);
         }

@@ -75,7 +75,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RoleResult(Javax.Management.Relation.RoleList arg0, Javax.Management.Relation.RoleUnresolvedList arg1)
         /// </summary>
-        public static RoleResult New(Javax.Management.Relation.RoleList arg0, Javax.Management.Relation.RoleUnresolvedList arg1)
+        public static RoleResult CreatePoolableInstance(Javax.Management.Relation.RoleList arg0, Javax.Management.Relation.RoleUnresolvedList arg1)
         {
             return JVMBridgeBase.New<RoleResult>(arg0, arg1);
         }

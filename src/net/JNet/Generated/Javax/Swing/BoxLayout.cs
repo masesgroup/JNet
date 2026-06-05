@@ -75,7 +75,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for BoxLayout(Java.Awt.Container arg0, int arg1)
         /// </summary>
-        public static BoxLayout New(Java.Awt.Container arg0, int arg1)
+        public static BoxLayout CreatePoolableInstance(Java.Awt.Container arg0, int arg1)
         {
             return JVMBridgeBase.New<BoxLayout>(arg0, arg1);
         }

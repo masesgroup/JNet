@@ -73,7 +73,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for DescriptorSupport()
         /// </summary>
-        public static DescriptorSupport New()
+        public static DescriptorSupport CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DescriptorSupport>();
         }
@@ -90,7 +90,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for DescriptorSupport(int arg0)
         /// </summary>
-        public static DescriptorSupport New(int arg0)
+        public static DescriptorSupport CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<DescriptorSupport>(arg0);
         }
@@ -105,7 +105,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for DescriptorSupport(params Java.Lang.String[] arg0)
         /// </summary>
-        public static DescriptorSupport New(params Java.Lang.String[] arg0)
+        public static DescriptorSupport CreatePoolableInstance(params Java.Lang.String[] arg0)
         {
             return JVMBridgeBase.New<DescriptorSupport>(arg0);
         }
@@ -123,7 +123,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for DescriptorSupport(Java.Lang.String arg0)
         /// </summary>
-        public static DescriptorSupport New(Java.Lang.String arg0)
+        public static DescriptorSupport CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<DescriptorSupport>(arg0);
         }
@@ -138,7 +138,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for DescriptorSupport(Javax.Management.Modelmbean.DescriptorSupport arg0)
         /// </summary>
-        public static DescriptorSupport New(Javax.Management.Modelmbean.DescriptorSupport arg0)
+        public static DescriptorSupport CreatePoolableInstance(Javax.Management.Modelmbean.DescriptorSupport arg0)
         {
             return JVMBridgeBase.New<DescriptorSupport>(arg0);
         }

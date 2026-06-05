@@ -73,7 +73,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// HPA initializer for GSSManager()
         /// </summary>
-        public static GSSManager New()
+        public static GSSManager CreatePoolableInstance()
         {
             return JVMBridgeBase.New<GSSManager>();
         }

@@ -73,7 +73,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for StringWriter()
         /// </summary>
-        public static StringWriter New()
+        public static StringWriter CreatePoolableInstance()
         {
             return JVMBridgeBase.New<StringWriter>();
         }
@@ -88,7 +88,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for StringWriter(int arg0)
         /// </summary>
-        public static StringWriter New(int arg0)
+        public static StringWriter CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<StringWriter>(arg0);
         }

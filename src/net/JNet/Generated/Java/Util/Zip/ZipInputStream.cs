@@ -75,7 +75,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for ZipInputStream(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1)
         /// </summary>
-        public static ZipInputStream New(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1)
+        public static ZipInputStream CreatePoolableInstance(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1)
         {
             return JVMBridgeBase.New<ZipInputStream>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for ZipInputStream(Java.Io.InputStream arg0)
         /// </summary>
-        public static ZipInputStream New(Java.Io.InputStream arg0)
+        public static ZipInputStream CreatePoolableInstance(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<ZipInputStream>(arg0);
         }

@@ -74,7 +74,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for FileDataSource(Java.Io.File arg0)
         /// </summary>
-        public static FileDataSource New(Java.Io.File arg0)
+        public static FileDataSource CreatePoolableInstance(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<FileDataSource>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for FileDataSource(Java.Lang.String arg0)
         /// </summary>
-        public static FileDataSource New(Java.Lang.String arg0)
+        public static FileDataSource CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<FileDataSource>(arg0);
         }

@@ -108,7 +108,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultListModel()
         /// </summary>
-        public static DefaultListModel New()
+        public static DefaultListModel CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DefaultListModel>();
         }
@@ -399,7 +399,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultListModel()
         /// </summary>
-        public static DefaultListModel<E> New()
+        public static DefaultListModel<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<DefaultListModel<E>>();
         }

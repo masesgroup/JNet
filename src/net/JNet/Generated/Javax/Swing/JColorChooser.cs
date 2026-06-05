@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JColorChooser()
         /// </summary>
-        public static JColorChooser New()
+        public static JColorChooser CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JColorChooser>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JColorChooser(Java.Awt.Color arg0)
         /// </summary>
-        public static JColorChooser New(Java.Awt.Color arg0)
+        public static JColorChooser CreatePoolableInstance(Java.Awt.Color arg0)
         {
             return JVMBridgeBase.New<JColorChooser>(arg0);
         }
@@ -103,7 +103,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JColorChooser(Javax.Swing.Colorchooser.ColorSelectionModel arg0)
         /// </summary>
-        public static JColorChooser New(Javax.Swing.Colorchooser.ColorSelectionModel arg0)
+        public static JColorChooser CreatePoolableInstance(Javax.Swing.Colorchooser.ColorSelectionModel arg0)
         {
             return JVMBridgeBase.New<JColorChooser>(arg0);
         }

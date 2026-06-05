@@ -75,7 +75,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for StrokeBorder(Java.Awt.BasicStroke arg0, Java.Awt.Paint arg1)
         /// </summary>
-        public static StrokeBorder New(Java.Awt.BasicStroke arg0, Java.Awt.Paint arg1)
+        public static StrokeBorder CreatePoolableInstance(Java.Awt.BasicStroke arg0, Java.Awt.Paint arg1)
         {
             return JVMBridgeBase.New<StrokeBorder>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for StrokeBorder(Java.Awt.BasicStroke arg0)
         /// </summary>
-        public static StrokeBorder New(Java.Awt.BasicStroke arg0)
+        public static StrokeBorder CreatePoolableInstance(Java.Awt.BasicStroke arg0)
         {
             return JVMBridgeBase.New<StrokeBorder>(arg0);
         }

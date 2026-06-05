@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedTransferQueue()
         /// </summary>
-        public static LinkedTransferQueue New()
+        public static LinkedTransferQueue CreatePoolableInstance()
         {
             return JVMBridgeBase.New<LinkedTransferQueue>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedTransferQueue(Java.Util.Collection arg0)
         /// </summary>
-        public static LinkedTransferQueue New(Java.Util.Collection arg0)
+        public static LinkedTransferQueue CreatePoolableInstance(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<LinkedTransferQueue>(arg0);
         }
@@ -287,7 +287,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedTransferQueue()
         /// </summary>
-        public static LinkedTransferQueue<E> New()
+        public static LinkedTransferQueue<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<LinkedTransferQueue<E>>();
         }
@@ -302,7 +302,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedTransferQueue(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static LinkedTransferQueue<E> New(Java.Util.Collection<E> arg0)
+        public static LinkedTransferQueue<E> CreatePoolableInstance(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<LinkedTransferQueue<E>>(arg0);
         }

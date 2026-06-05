@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicButtonUI()
         /// </summary>
-        public static BasicButtonUI New()
+        public static BasicButtonUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<BasicButtonUI>();
         }

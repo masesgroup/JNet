@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobMediaSheets(int arg0)
         /// </summary>
-        public static JobMediaSheets New(int arg0)
+        public static JobMediaSheets CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<JobMediaSheets>(arg0);
         }

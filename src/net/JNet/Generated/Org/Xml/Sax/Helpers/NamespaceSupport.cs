@@ -73,7 +73,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// HPA initializer for NamespaceSupport()
         /// </summary>
-        public static NamespaceSupport New()
+        public static NamespaceSupport CreatePoolableInstance()
         {
             return JVMBridgeBase.New<NamespaceSupport>();
         }

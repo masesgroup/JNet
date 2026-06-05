@@ -73,7 +73,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for X509CertSelector()
         /// </summary>
-        public static X509CertSelector New()
+        public static X509CertSelector CreatePoolableInstance()
         {
             return JVMBridgeBase.New<X509CertSelector>();
         }

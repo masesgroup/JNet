@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JScrollBar()
         /// </summary>
-        public static JScrollBar New()
+        public static JScrollBar CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JScrollBar>();
         }
@@ -92,7 +92,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JScrollBar(int arg0, int arg1, int arg2, int arg3, int arg4)
         /// </summary>
-        public static JScrollBar New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        public static JScrollBar CreatePoolableInstance(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<JScrollBar>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JScrollBar(int arg0)
         /// </summary>
-        public static JScrollBar New(int arg0)
+        public static JScrollBar CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<JScrollBar>(arg0);
         }

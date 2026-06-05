@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Label()
         /// </summary>
-        public static Label New()
+        public static Label CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Label>();
         }
@@ -92,7 +92,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Label(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static Label New(Java.Lang.String arg0, int arg1)
+        public static Label CreatePoolableInstance(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<Label>(arg0, arg1);
         }
@@ -108,7 +108,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Label(Java.Lang.String arg0)
         /// </summary>
-        public static Label New(Java.Lang.String arg0)
+        public static Label CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Label>(arg0);
         }

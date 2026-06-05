@@ -77,7 +77,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// HPA initializer for RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map%3CJava.Lang.String, object%3E arg1, Javax.Management.MBeanServer arg2)
         /// </summary>
-        public static RMIConnectorServer New(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1, Javax.Management.MBeanServer arg2)
+        public static RMIConnectorServer CreatePoolableInstance(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1, Javax.Management.MBeanServer arg2)
         {
             return JVMBridgeBase.New<RMIConnectorServer>(arg0, arg1, arg2);
         }
@@ -96,7 +96,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// HPA initializer for RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map%3CJava.Lang.String, object%3E arg1, Javax.Management.Remote.Rmi.RMIServerImpl arg2, Javax.Management.MBeanServer arg3)
         /// </summary>
-        public static RMIConnectorServer New(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1, Javax.Management.Remote.Rmi.RMIServerImpl arg2, Javax.Management.MBeanServer arg3)
+        public static RMIConnectorServer CreatePoolableInstance(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1, Javax.Management.Remote.Rmi.RMIServerImpl arg2, Javax.Management.MBeanServer arg3)
         {
             return JVMBridgeBase.New<RMIConnectorServer>(arg0, arg1, arg2, arg3);
         }
@@ -113,7 +113,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// HPA initializer for RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map%3CJava.Lang.String, object%3E arg1)
         /// </summary>
-        public static RMIConnectorServer New(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1)
+        public static RMIConnectorServer CreatePoolableInstance(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<Java.Lang.String, object> arg1)
         {
             return JVMBridgeBase.New<RMIConnectorServer>(arg0, arg1);
         }

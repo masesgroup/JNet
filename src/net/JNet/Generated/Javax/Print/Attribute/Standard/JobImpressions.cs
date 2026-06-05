@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobImpressions(int arg0)
         /// </summary>
-        public static JobImpressions New(int arg0)
+        public static JobImpressions CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<JobImpressions>(arg0);
         }

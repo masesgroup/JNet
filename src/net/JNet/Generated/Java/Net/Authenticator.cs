@@ -107,7 +107,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for Authenticator()
         /// </summary>
-        public static Authenticator New()
+        public static Authenticator CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Authenticator>();
         }

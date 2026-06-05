@@ -73,7 +73,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// HPA initializer for FormatConversionProvider()
         /// </summary>
-        public static FormatConversionProvider New()
+        public static FormatConversionProvider CreatePoolableInstance()
         {
             return JVMBridgeBase.New<FormatConversionProvider>();
         }

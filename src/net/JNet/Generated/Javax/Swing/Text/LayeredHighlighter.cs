@@ -107,7 +107,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for LayeredHighlighter()
         /// </summary>
-        public static LayeredHighlighter New()
+        public static LayeredHighlighter CreatePoolableInstance()
         {
             return JVMBridgeBase.New<LayeredHighlighter>();
         }
@@ -158,7 +158,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for LayerPainter()
             /// </summary>
-            public static LayerPainter New()
+            public static LayerPainter CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<LayerPainter>();
             }

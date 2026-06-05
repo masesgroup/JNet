@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for ComboBoxUI()
         /// </summary>
-        public static ComboBoxUI New()
+        public static ComboBoxUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ComboBoxUI>();
         }

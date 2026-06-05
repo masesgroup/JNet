@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthTextAreaUI()
         /// </summary>
-        public static SynthTextAreaUI New()
+        public static SynthTextAreaUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SynthTextAreaUI>();
         }

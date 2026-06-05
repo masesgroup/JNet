@@ -75,7 +75,7 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// HPA initializer for NameCallback(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static NameCallback New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static NameCallback CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<NameCallback>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// HPA initializer for NameCallback(Java.Lang.String arg0)
         /// </summary>
-        public static NameCallback New(Java.Lang.String arg0)
+        public static NameCallback CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<NameCallback>(arg0);
         }

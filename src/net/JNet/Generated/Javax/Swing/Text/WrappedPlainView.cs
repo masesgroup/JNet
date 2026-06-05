@@ -75,7 +75,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for WrappedPlainView(Javax.Swing.Text.Element arg0, bool arg1)
         /// </summary>
-        public static WrappedPlainView New(Javax.Swing.Text.Element arg0, bool arg1)
+        public static WrappedPlainView CreatePoolableInstance(Javax.Swing.Text.Element arg0, bool arg1)
         {
             return JVMBridgeBase.New<WrappedPlainView>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for WrappedPlainView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static WrappedPlainView New(Javax.Swing.Text.Element arg0)
+        public static WrappedPlainView CreatePoolableInstance(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<WrappedPlainView>(arg0);
         }

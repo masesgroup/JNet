@@ -75,7 +75,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for ECFieldF2m(int arg0, int[] arg1)
         /// </summary>
-        public static ECFieldF2m New(int arg0, int[] arg1)
+        public static ECFieldF2m CreatePoolableInstance(int arg0, int[] arg1)
         {
             return JVMBridgeBase.New<ECFieldF2m>(arg0, arg1);
         }
@@ -91,7 +91,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for ECFieldF2m(int arg0, Java.Math.BigInteger arg1)
         /// </summary>
-        public static ECFieldF2m New(int arg0, Java.Math.BigInteger arg1)
+        public static ECFieldF2m CreatePoolableInstance(int arg0, Java.Math.BigInteger arg1)
         {
             return JVMBridgeBase.New<ECFieldF2m>(arg0, arg1);
         }
@@ -106,7 +106,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for ECFieldF2m(int arg0)
         /// </summary>
-        public static ECFieldF2m New(int arg0)
+        public static ECFieldF2m CreatePoolableInstance(int arg0)
         {
             return JVMBridgeBase.New<ECFieldF2m>(arg0);
         }

@@ -141,7 +141,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTable()
         /// </summary>
-        public static JTable New()
+        public static JTable CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JTable>();
         }
@@ -157,7 +157,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTable(int arg0, int arg1)
         /// </summary>
-        public static JTable New(int arg0, int arg1)
+        public static JTable CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<JTable>(arg0, arg1);
         }
@@ -173,7 +173,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTable(Java.Util.Vector arg0, Java.Util.Vector arg1)
         /// </summary>
-        public static JTable New(Java.Util.Vector arg0, Java.Util.Vector arg1)
+        public static JTable CreatePoolableInstance(Java.Util.Vector arg0, Java.Util.Vector arg1)
         {
             return JVMBridgeBase.New<JTable>(arg0, arg1);
         }
@@ -190,7 +190,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTable(Javax.Swing.Table.TableModel arg0, Javax.Swing.Table.TableColumnModel arg1, Javax.Swing.ListSelectionModel arg2)
         /// </summary>
-        public static JTable New(Javax.Swing.Table.TableModel arg0, Javax.Swing.Table.TableColumnModel arg1, Javax.Swing.ListSelectionModel arg2)
+        public static JTable CreatePoolableInstance(Javax.Swing.Table.TableModel arg0, Javax.Swing.Table.TableColumnModel arg1, Javax.Swing.ListSelectionModel arg2)
         {
             return JVMBridgeBase.New<JTable>(arg0, arg1, arg2);
         }
@@ -206,7 +206,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTable(Javax.Swing.Table.TableModel arg0, Javax.Swing.Table.TableColumnModel arg1)
         /// </summary>
-        public static JTable New(Javax.Swing.Table.TableModel arg0, Javax.Swing.Table.TableColumnModel arg1)
+        public static JTable CreatePoolableInstance(Javax.Swing.Table.TableModel arg0, Javax.Swing.Table.TableColumnModel arg1)
         {
             return JVMBridgeBase.New<JTable>(arg0, arg1);
         }
@@ -221,7 +221,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTable(Javax.Swing.Table.TableModel arg0)
         /// </summary>
-        public static JTable New(Javax.Swing.Table.TableModel arg0)
+        public static JTable CreatePoolableInstance(Javax.Swing.Table.TableModel arg0)
         {
             return JVMBridgeBase.New<JTable>(arg0);
         }

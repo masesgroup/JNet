@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for FileChooserUI()
         /// </summary>
-        public static FileChooserUI New()
+        public static FileChooserUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<FileChooserUI>();
         }

@@ -73,7 +73,7 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// HPA initializer for Duration()
         /// </summary>
-        public static Duration New()
+        public static Duration CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Duration>();
         }

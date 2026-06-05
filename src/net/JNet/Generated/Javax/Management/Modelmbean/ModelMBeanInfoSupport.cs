@@ -80,7 +80,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Modelmbean.ModelMBeanAttributeInfo[] arg2, Javax.Management.Modelmbean.ModelMBeanConstructorInfo[] arg3, Javax.Management.Modelmbean.ModelMBeanOperationInfo[] arg4, Javax.Management.Modelmbean.ModelMBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
         /// </summary>
-        public static ModelMBeanInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Modelmbean.ModelMBeanAttributeInfo[] arg2, Javax.Management.Modelmbean.ModelMBeanConstructorInfo[] arg3, Javax.Management.Modelmbean.ModelMBeanOperationInfo[] arg4, Javax.Management.Modelmbean.ModelMBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
+        public static ModelMBeanInfoSupport CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Modelmbean.ModelMBeanAttributeInfo[] arg2, Javax.Management.Modelmbean.ModelMBeanConstructorInfo[] arg3, Javax.Management.Modelmbean.ModelMBeanOperationInfo[] arg4, Javax.Management.Modelmbean.ModelMBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
         {
             return JVMBridgeBase.New<ModelMBeanInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -100,7 +100,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Modelmbean.ModelMBeanAttributeInfo[] arg2, Javax.Management.Modelmbean.ModelMBeanConstructorInfo[] arg3, Javax.Management.Modelmbean.ModelMBeanOperationInfo[] arg4, Javax.Management.Modelmbean.ModelMBeanNotificationInfo[] arg5)
         /// </summary>
-        public static ModelMBeanInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Modelmbean.ModelMBeanAttributeInfo[] arg2, Javax.Management.Modelmbean.ModelMBeanConstructorInfo[] arg3, Javax.Management.Modelmbean.ModelMBeanOperationInfo[] arg4, Javax.Management.Modelmbean.ModelMBeanNotificationInfo[] arg5)
+        public static ModelMBeanInfoSupport CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Modelmbean.ModelMBeanAttributeInfo[] arg2, Javax.Management.Modelmbean.ModelMBeanConstructorInfo[] arg3, Javax.Management.Modelmbean.ModelMBeanOperationInfo[] arg4, Javax.Management.Modelmbean.ModelMBeanNotificationInfo[] arg5)
         {
             return JVMBridgeBase.New<ModelMBeanInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -115,7 +115,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanInfoSupport(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
         /// </summary>
-        public static ModelMBeanInfoSupport New(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
+        public static ModelMBeanInfoSupport CreatePoolableInstance(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
         {
             return JVMBridgeBase.New<ModelMBeanInfoSupport>(arg0);
         }

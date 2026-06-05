@@ -73,7 +73,7 @@ namespace Javax.Print
         /// <summary>
         /// HPA initializer for StreamPrintServiceFactory()
         /// </summary>
-        public static StreamPrintServiceFactory New()
+        public static StreamPrintServiceFactory CreatePoolableInstance()
         {
             return JVMBridgeBase.New<StreamPrintServiceFactory>();
         }

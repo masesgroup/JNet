@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListSet()
         /// </summary>
-        public static ConcurrentSkipListSet New()
+        public static ConcurrentSkipListSet CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ConcurrentSkipListSet>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListSet(Java.Util.Collection arg0)
         /// </summary>
-        public static ConcurrentSkipListSet New(Java.Util.Collection arg0)
+        public static ConcurrentSkipListSet CreatePoolableInstance(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<ConcurrentSkipListSet>(arg0);
         }
@@ -138,7 +138,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListSet(Java.Util.Comparator arg0)
         /// </summary>
-        public static ConcurrentSkipListSet New(Java.Util.Comparator arg0)
+        public static ConcurrentSkipListSet CreatePoolableInstance(Java.Util.Comparator arg0)
         {
             return JVMBridgeBase.New<ConcurrentSkipListSet>(arg0);
         }
@@ -153,7 +153,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListSet(Java.Util.SortedSet arg0)
         /// </summary>
-        public static ConcurrentSkipListSet New(Java.Util.SortedSet arg0)
+        public static ConcurrentSkipListSet CreatePoolableInstance(Java.Util.SortedSet arg0)
         {
             return JVMBridgeBase.New<ConcurrentSkipListSet>(arg0);
         }
@@ -370,7 +370,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListSet()
         /// </summary>
-        public static ConcurrentSkipListSet<E> New()
+        public static ConcurrentSkipListSet<E> CreatePoolableInstance()
         {
             return JVMBridgeBase.New<ConcurrentSkipListSet<E>>();
         }
@@ -385,7 +385,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListSet(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static ConcurrentSkipListSet<E> New(Java.Util.Collection<E> arg0)
+        public static ConcurrentSkipListSet<E> CreatePoolableInstance(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<ConcurrentSkipListSet<E>>(arg0);
         }
@@ -400,7 +400,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListSet(Java.Util.Comparator%3CE%3E arg0)
         /// </summary>
-        public static ConcurrentSkipListSet<E> New(Java.Util.Comparator<E> arg0)
+        public static ConcurrentSkipListSet<E> CreatePoolableInstance(Java.Util.Comparator<E> arg0)
         {
             return JVMBridgeBase.New<ConcurrentSkipListSet<E>>(arg0);
         }
@@ -415,7 +415,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentSkipListSet(Java.Util.SortedSet%3CE%3E arg0)
         /// </summary>
-        public static ConcurrentSkipListSet<E> New(Java.Util.SortedSet<E> arg0)
+        public static ConcurrentSkipListSet<E> CreatePoolableInstance(Java.Util.SortedSet<E> arg0)
         {
             return JVMBridgeBase.New<ConcurrentSkipListSet<E>>(arg0);
         }

@@ -75,7 +75,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// HPA initializer for InitialDirContext()
         /// </summary>
-        public static InitialDirContext New()
+        public static InitialDirContext CreatePoolableInstance()
         {
             return JVMBridgeBase.New<InitialDirContext>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// HPA initializer for InitialDirContext(Java.Util.Hashtable%3Cobject, object%3E arg0)
         /// </summary>
-        public static InitialDirContext New(Java.Util.Hashtable<object, object> arg0)
+        public static InitialDirContext CreatePoolableInstance(Java.Util.Hashtable<object, object> arg0)
         {
             return JVMBridgeBase.New<InitialDirContext>(arg0);
         }

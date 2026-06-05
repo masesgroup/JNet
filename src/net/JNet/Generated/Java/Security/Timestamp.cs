@@ -75,7 +75,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for Timestamp(Java.Util.Date arg0, Java.Security.Cert.CertPath arg1)
         /// </summary>
-        public static Timestamp New(Java.Util.Date arg0, Java.Security.Cert.CertPath arg1)
+        public static Timestamp CreatePoolableInstance(Java.Util.Date arg0, Java.Security.Cert.CertPath arg1)
         {
             return JVMBridgeBase.New<Timestamp>(arg0, arg1);
         }

@@ -108,7 +108,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// HPA initializer for ServiceRegistry(Java.Util.Iterator%3CJava.Lang.Class%3E arg0)
         /// </summary>
-        public static ServiceRegistry New(Java.Util.Iterator<Java.Lang.Class> arg0)
+        public static ServiceRegistry CreatePoolableInstance(Java.Util.Iterator<Java.Lang.Class> arg0)
         {
             return JVMBridgeBase.New<ServiceRegistry>(arg0);
         }

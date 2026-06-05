@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthStyle()
         /// </summary>
-        public static SynthStyle New()
+        public static SynthStyle CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SynthStyle>();
         }

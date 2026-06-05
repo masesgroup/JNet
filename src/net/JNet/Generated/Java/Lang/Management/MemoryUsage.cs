@@ -77,7 +77,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// HPA initializer for MemoryUsage(long arg0, long arg1, long arg2, long arg3)
         /// </summary>
-        public static MemoryUsage New(long arg0, long arg1, long arg2, long arg3)
+        public static MemoryUsage CreatePoolableInstance(long arg0, long arg1, long arg2, long arg3)
         {
             return JVMBridgeBase.New<MemoryUsage>(arg0, arg1, arg2, arg3);
         }

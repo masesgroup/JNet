@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for TextArea()
         /// </summary>
-        public static TextArea New()
+        public static TextArea CreatePoolableInstance()
         {
             return JVMBridgeBase.New<TextArea>();
         }
@@ -92,7 +92,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for TextArea(int arg0, int arg1)
         /// </summary>
-        public static TextArea New(int arg0, int arg1)
+        public static TextArea CreatePoolableInstance(int arg0, int arg1)
         {
             return JVMBridgeBase.New<TextArea>(arg0, arg1);
         }
@@ -111,7 +111,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for TextArea(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static TextArea New(Java.Lang.String arg0, int arg1, int arg2, int arg3)
+        public static TextArea CreatePoolableInstance(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<TextArea>(arg0, arg1, arg2, arg3);
         }
@@ -129,7 +129,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for TextArea(Java.Lang.String arg0, int arg1, int arg2)
         /// </summary>
-        public static TextArea New(Java.Lang.String arg0, int arg1, int arg2)
+        public static TextArea CreatePoolableInstance(Java.Lang.String arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<TextArea>(arg0, arg1, arg2);
         }
@@ -145,7 +145,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for TextArea(Java.Lang.String arg0)
         /// </summary>
-        public static TextArea New(Java.Lang.String arg0)
+        public static TextArea CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<TextArea>(arg0);
         }

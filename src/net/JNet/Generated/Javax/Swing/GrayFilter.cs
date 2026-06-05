@@ -75,7 +75,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for GrayFilter(bool arg0, int arg1)
         /// </summary>
-        public static GrayFilter New(bool arg0, int arg1)
+        public static GrayFilter CreatePoolableInstance(bool arg0, int arg1)
         {
             return JVMBridgeBase.New<GrayFilter>(arg0, arg1);
         }

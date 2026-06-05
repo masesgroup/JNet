@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthProgressBarUI()
         /// </summary>
-        public static SynthProgressBarUI New()
+        public static SynthProgressBarUI CreatePoolableInstance()
         {
             return JVMBridgeBase.New<SynthProgressBarUI>();
         }

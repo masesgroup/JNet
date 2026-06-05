@@ -82,7 +82,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for RSAPrivateCrtKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigInteger arg6, Java.Math.BigInteger arg7, Java.Security.Spec.AlgorithmParameterSpec arg8)
         /// </summary>
-        public static RSAPrivateCrtKeySpec New(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigInteger arg6, Java.Math.BigInteger arg7, Java.Security.Spec.AlgorithmParameterSpec arg8)
+        public static RSAPrivateCrtKeySpec CreatePoolableInstance(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigInteger arg6, Java.Math.BigInteger arg7, Java.Security.Spec.AlgorithmParameterSpec arg8)
         {
             return JVMBridgeBase.New<RSAPrivateCrtKeySpec>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
@@ -104,7 +104,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for RSAPrivateCrtKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigInteger arg6, Java.Math.BigInteger arg7)
         /// </summary>
-        public static RSAPrivateCrtKeySpec New(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigInteger arg6, Java.Math.BigInteger arg7)
+        public static RSAPrivateCrtKeySpec CreatePoolableInstance(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigInteger arg6, Java.Math.BigInteger arg7)
         {
             return JVMBridgeBase.New<RSAPrivateCrtKeySpec>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }

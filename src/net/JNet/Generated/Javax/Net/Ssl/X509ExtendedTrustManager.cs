@@ -73,7 +73,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for X509ExtendedTrustManager()
         /// </summary>
-        public static X509ExtendedTrustManager New()
+        public static X509ExtendedTrustManager CreatePoolableInstance()
         {
             return JVMBridgeBase.New<X509ExtendedTrustManager>();
         }

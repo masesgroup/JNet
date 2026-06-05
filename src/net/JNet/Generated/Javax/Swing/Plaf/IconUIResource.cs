@@ -74,7 +74,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for IconUIResource(Javax.Swing.Icon arg0)
         /// </summary>
-        public static IconUIResource New(Javax.Swing.Icon arg0)
+        public static IconUIResource CreatePoolableInstance(Javax.Swing.Icon arg0)
         {
             return JVMBridgeBase.New<IconUIResource>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBox()
         /// </summary>
-        public static JCheckBox New()
+        public static JCheckBox CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JCheckBox>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBox(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static JCheckBox New(Java.Lang.String arg0, bool arg1)
+        public static JCheckBox CreatePoolableInstance(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<JCheckBox>(arg0, arg1);
         }
@@ -106,7 +106,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBox(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
         /// </summary>
-        public static JCheckBox New(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
+        public static JCheckBox CreatePoolableInstance(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
         {
             return JVMBridgeBase.New<JCheckBox>(arg0, arg1, arg2);
         }
@@ -122,7 +122,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBox(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         /// </summary>
-        public static JCheckBox New(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        public static JCheckBox CreatePoolableInstance(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         {
             return JVMBridgeBase.New<JCheckBox>(arg0, arg1);
         }
@@ -137,7 +137,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBox(Java.Lang.String arg0)
         /// </summary>
-        public static JCheckBox New(Java.Lang.String arg0)
+        public static JCheckBox CreatePoolableInstance(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JCheckBox>(arg0);
         }
@@ -152,7 +152,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBox(Javax.Swing.Action arg0)
         /// </summary>
-        public static JCheckBox New(Javax.Swing.Action arg0)
+        public static JCheckBox CreatePoolableInstance(Javax.Swing.Action arg0)
         {
             return JVMBridgeBase.New<JCheckBox>(arg0);
         }
@@ -168,7 +168,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBox(Javax.Swing.Icon arg0, bool arg1)
         /// </summary>
-        public static JCheckBox New(Javax.Swing.Icon arg0, bool arg1)
+        public static JCheckBox CreatePoolableInstance(Javax.Swing.Icon arg0, bool arg1)
         {
             return JVMBridgeBase.New<JCheckBox>(arg0, arg1);
         }
@@ -183,7 +183,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBox(Javax.Swing.Icon arg0)
         /// </summary>
-        public static JCheckBox New(Javax.Swing.Icon arg0)
+        public static JCheckBox CreatePoolableInstance(Javax.Swing.Icon arg0)
         {
             return JVMBridgeBase.New<JCheckBox>(arg0);
         }

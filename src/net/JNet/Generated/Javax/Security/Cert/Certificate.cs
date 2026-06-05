@@ -73,7 +73,7 @@ namespace Javax.Security.Cert
         /// <summary>
         /// HPA initializer for Certificate()
         /// </summary>
-        public static Certificate New()
+        public static Certificate CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Certificate>();
         }

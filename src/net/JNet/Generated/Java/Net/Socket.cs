@@ -73,7 +73,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for Socket()
         /// </summary>
-        public static Socket New()
+        public static Socket CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Socket>();
         }
@@ -92,7 +92,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for Socket(Java.Lang.String arg0, int arg1, bool arg2)
         /// </summary>
-        public static Socket New(Java.Lang.String arg0, int arg1, bool arg2)
+        public static Socket CreatePoolableInstance(Java.Lang.String arg0, int arg1, bool arg2)
         {
             return JVMBridgeBase.New<Socket>(arg0, arg1, arg2);
         }
@@ -111,7 +111,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for Socket(Java.Lang.String arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
         /// </summary>
-        public static Socket New(Java.Lang.String arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
+        public static Socket CreatePoolableInstance(Java.Lang.String arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
         {
             return JVMBridgeBase.New<Socket>(arg0, arg1, arg2, arg3);
         }
@@ -129,7 +129,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for Socket(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static Socket New(Java.Lang.String arg0, int arg1)
+        public static Socket CreatePoolableInstance(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<Socket>(arg0, arg1);
         }
@@ -148,7 +148,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for Socket(Java.Net.InetAddress arg0, int arg1, bool arg2)
         /// </summary>
-        public static Socket New(Java.Net.InetAddress arg0, int arg1, bool arg2)
+        public static Socket CreatePoolableInstance(Java.Net.InetAddress arg0, int arg1, bool arg2)
         {
             return JVMBridgeBase.New<Socket>(arg0, arg1, arg2);
         }
@@ -167,7 +167,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for Socket(Java.Net.InetAddress arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
         /// </summary>
-        public static Socket New(Java.Net.InetAddress arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
+        public static Socket CreatePoolableInstance(Java.Net.InetAddress arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
         {
             return JVMBridgeBase.New<Socket>(arg0, arg1, arg2, arg3);
         }
@@ -184,7 +184,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for Socket(Java.Net.InetAddress arg0, int arg1)
         /// </summary>
-        public static Socket New(Java.Net.InetAddress arg0, int arg1)
+        public static Socket CreatePoolableInstance(Java.Net.InetAddress arg0, int arg1)
         {
             return JVMBridgeBase.New<Socket>(arg0, arg1);
         }
@@ -199,7 +199,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for Socket(Java.Net.Proxy arg0)
         /// </summary>
-        public static Socket New(Java.Net.Proxy arg0)
+        public static Socket CreatePoolableInstance(Java.Net.Proxy arg0)
         {
             return JVMBridgeBase.New<Socket>(arg0);
         }

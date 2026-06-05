@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for InputVerifier()
         /// </summary>
-        public static InputVerifier New()
+        public static InputVerifier CreatePoolableInstance()
         {
             return JVMBridgeBase.New<InputVerifier>();
         }

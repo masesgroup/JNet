@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog()
         /// </summary>
-        public static JDialog New()
+        public static JDialog CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JDialog>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Dialog arg0, bool arg1)
         /// </summary>
-        public static JDialog New(Java.Awt.Dialog arg0, bool arg1)
+        public static JDialog CreatePoolableInstance(Java.Awt.Dialog arg0, bool arg1)
         {
             return JVMBridgeBase.New<JDialog>(arg0, arg1);
         }
@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
         /// </summary>
-        public static JDialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        public static JDialog CreatePoolableInstance(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
         {
             return JVMBridgeBase.New<JDialog>(arg0, arg1, arg2, arg3);
         }
@@ -124,7 +124,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2)
         /// </summary>
-        public static JDialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2)
+        public static JDialog CreatePoolableInstance(Java.Awt.Dialog arg0, Java.Lang.String arg1, bool arg2)
         {
             return JVMBridgeBase.New<JDialog>(arg0, arg1, arg2);
         }
@@ -140,7 +140,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Dialog arg0, Java.Lang.String arg1)
         /// </summary>
-        public static JDialog New(Java.Awt.Dialog arg0, Java.Lang.String arg1)
+        public static JDialog CreatePoolableInstance(Java.Awt.Dialog arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<JDialog>(arg0, arg1);
         }
@@ -155,7 +155,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Dialog arg0)
         /// </summary>
-        public static JDialog New(Java.Awt.Dialog arg0)
+        public static JDialog CreatePoolableInstance(Java.Awt.Dialog arg0)
         {
             return JVMBridgeBase.New<JDialog>(arg0);
         }
@@ -171,7 +171,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Frame arg0, bool arg1)
         /// </summary>
-        public static JDialog New(Java.Awt.Frame arg0, bool arg1)
+        public static JDialog CreatePoolableInstance(Java.Awt.Frame arg0, bool arg1)
         {
             return JVMBridgeBase.New<JDialog>(arg0, arg1);
         }
@@ -189,7 +189,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
         /// </summary>
-        public static JDialog New(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
+        public static JDialog CreatePoolableInstance(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
         {
             return JVMBridgeBase.New<JDialog>(arg0, arg1, arg2, arg3);
         }
@@ -206,7 +206,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2)
         /// </summary>
-        public static JDialog New(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2)
+        public static JDialog CreatePoolableInstance(Java.Awt.Frame arg0, Java.Lang.String arg1, bool arg2)
         {
             return JVMBridgeBase.New<JDialog>(arg0, arg1, arg2);
         }
@@ -222,7 +222,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Frame arg0, Java.Lang.String arg1)
         /// </summary>
-        public static JDialog New(Java.Awt.Frame arg0, Java.Lang.String arg1)
+        public static JDialog CreatePoolableInstance(Java.Awt.Frame arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<JDialog>(arg0, arg1);
         }
@@ -237,7 +237,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Frame arg0)
         /// </summary>
-        public static JDialog New(Java.Awt.Frame arg0)
+        public static JDialog CreatePoolableInstance(Java.Awt.Frame arg0)
         {
             return JVMBridgeBase.New<JDialog>(arg0);
         }
@@ -253,7 +253,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1)
         /// </summary>
-        public static JDialog New(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1)
+        public static JDialog CreatePoolableInstance(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1)
         {
             return JVMBridgeBase.New<JDialog>(arg0, arg1);
         }
@@ -271,7 +271,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
         /// </summary>
-        public static JDialog New(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
+        public static JDialog CreatePoolableInstance(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
         {
             return JVMBridgeBase.New<JDialog>(arg0, arg1, arg2, arg3);
         }
@@ -288,7 +288,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2)
         /// </summary>
-        public static JDialog New(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2)
+        public static JDialog CreatePoolableInstance(Java.Awt.Window arg0, Java.Lang.String arg1, Java.Awt.Dialog.ModalityType arg2)
         {
             return JVMBridgeBase.New<JDialog>(arg0, arg1, arg2);
         }
@@ -304,7 +304,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Window arg0, Java.Lang.String arg1)
         /// </summary>
-        public static JDialog New(Java.Awt.Window arg0, Java.Lang.String arg1)
+        public static JDialog CreatePoolableInstance(Java.Awt.Window arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<JDialog>(arg0, arg1);
         }
@@ -319,7 +319,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JDialog(Java.Awt.Window arg0)
         /// </summary>
-        public static JDialog New(Java.Awt.Window arg0)
+        public static JDialog CreatePoolableInstance(Java.Awt.Window arg0)
         {
             return JVMBridgeBase.New<JDialog>(arg0);
         }

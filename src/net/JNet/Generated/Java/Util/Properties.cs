@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Properties()
         /// </summary>
-        public static Properties New()
+        public static Properties CreatePoolableInstance()
         {
             return JVMBridgeBase.New<Properties>();
         }
@@ -88,7 +88,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Properties(Java.Util.Properties arg0)
         /// </summary>
-        public static Properties New(Java.Util.Properties arg0)
+        public static Properties CreatePoolableInstance(Java.Util.Properties arg0)
         {
             return JVMBridgeBase.New<Properties>(arg0);
         }

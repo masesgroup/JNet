@@ -75,7 +75,7 @@ namespace Javax.Security.Auth
         /// <summary>
         /// HPA initializer for PrivateCredentialPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static PrivateCredentialPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static PrivateCredentialPermission CreatePoolableInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<PrivateCredentialPermission>(arg0, arg1);
         }

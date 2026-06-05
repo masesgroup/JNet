@@ -75,7 +75,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for ECPublicKeySpec(Java.Security.Spec.ECPoint arg0, Java.Security.Spec.ECParameterSpec arg1)
         /// </summary>
-        public static ECPublicKeySpec New(Java.Security.Spec.ECPoint arg0, Java.Security.Spec.ECParameterSpec arg1)
+        public static ECPublicKeySpec CreatePoolableInstance(Java.Security.Spec.ECPoint arg0, Java.Security.Spec.ECParameterSpec arg1)
         {
             return JVMBridgeBase.New<ECPublicKeySpec>(arg0, arg1);
         }

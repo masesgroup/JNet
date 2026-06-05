@@ -77,7 +77,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for Sequence(float arg0, int arg1, int arg2)
         /// </summary>
-        public static Sequence New(float arg0, int arg1, int arg2)
+        public static Sequence CreatePoolableInstance(float arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<Sequence>(arg0, arg1, arg2);
         }
@@ -94,7 +94,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for Sequence(float arg0, int arg1)
         /// </summary>
-        public static Sequence New(float arg0, int arg1)
+        public static Sequence CreatePoolableInstance(float arg0, int arg1)
         {
             return JVMBridgeBase.New<Sequence>(arg0, arg1);
         }

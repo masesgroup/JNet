@@ -110,7 +110,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for TextLayout(Java.Lang.String arg0, Java.Awt.Font arg1, Java.Awt.FontNs.FontRenderContext arg2)
         /// </summary>
-        public static TextLayout New(Java.Lang.String arg0, Java.Awt.Font arg1, Java.Awt.FontNs.FontRenderContext arg2)
+        public static TextLayout CreatePoolableInstance(Java.Lang.String arg0, Java.Awt.Font arg1, Java.Awt.FontNs.FontRenderContext arg2)
         {
             return JVMBridgeBase.New<TextLayout>(arg0, arg1, arg2);
         }
@@ -127,7 +127,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for TextLayout(Java.Lang.String arg0, Java.Util.Map arg1, Java.Awt.FontNs.FontRenderContext arg2)
         /// </summary>
-        public static TextLayout New(Java.Lang.String arg0, Java.Util.Map arg1, Java.Awt.FontNs.FontRenderContext arg2)
+        public static TextLayout CreatePoolableInstance(Java.Lang.String arg0, Java.Util.Map arg1, Java.Awt.FontNs.FontRenderContext arg2)
         {
             return JVMBridgeBase.New<TextLayout>(arg0, arg1, arg2);
         }
@@ -143,7 +143,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for TextLayout(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
         /// </summary>
-        public static TextLayout New(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
+        public static TextLayout CreatePoolableInstance(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
         {
             return JVMBridgeBase.New<TextLayout>(arg0, arg1);
         }
@@ -544,7 +544,7 @@ namespace Java.Awt.FontNs
             /// <summary>
             /// HPA initializer for CaretPolicy()
             /// </summary>
-            public static CaretPolicy New()
+            public static CaretPolicy CreatePoolableInstance()
             {
                 return JVMBridgeBase.New<CaretPolicy>();
             }

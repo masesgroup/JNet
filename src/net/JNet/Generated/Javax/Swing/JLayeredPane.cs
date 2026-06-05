@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JLayeredPane()
         /// </summary>
-        public static JLayeredPane New()
+        public static JLayeredPane CreatePoolableInstance()
         {
             return JVMBridgeBase.New<JLayeredPane>();
         }
