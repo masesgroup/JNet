@@ -73,7 +73,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for PropertyEditorManager()
         /// </summary>
-        public static PropertyEditorManager New()
+        public static PropertyEditorManager Create()
         {
             return JVMBridgeBase.New<PropertyEditorManager>();
         }

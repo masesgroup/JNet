@@ -75,7 +75,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CyclicBarrier(int arg0, Java.Lang.Runnable arg1)
         /// </summary>
-        public static CyclicBarrier New(int arg0, Java.Lang.Runnable arg1)
+        public static CyclicBarrier Create(int arg0, Java.Lang.Runnable arg1)
         {
             return JVMBridgeBase.New<CyclicBarrier>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CyclicBarrier(int arg0)
         /// </summary>
-        public static CyclicBarrier New(int arg0)
+        public static CyclicBarrier Create(int arg0)
         {
             return JVMBridgeBase.New<CyclicBarrier>(arg0);
         }

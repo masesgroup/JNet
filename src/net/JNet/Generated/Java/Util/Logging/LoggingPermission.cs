@@ -76,7 +76,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for LoggingPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static LoggingPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static LoggingPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<LoggingPermission>(arg0, arg1);
         }

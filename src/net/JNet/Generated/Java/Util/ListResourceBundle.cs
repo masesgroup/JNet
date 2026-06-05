@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ListResourceBundle()
         /// </summary>
-        public static ListResourceBundle New()
+        public static ListResourceBundle Create()
         {
             return JVMBridgeBase.New<ListResourceBundle>();
         }

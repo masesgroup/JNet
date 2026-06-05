@@ -73,7 +73,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for ResponseCache()
         /// </summary>
-        public static ResponseCache New()
+        public static ResponseCache Create()
         {
             return JVMBridgeBase.New<ResponseCache>();
         }

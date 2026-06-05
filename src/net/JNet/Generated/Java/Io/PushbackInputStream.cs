@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PushbackInputStream(Java.Io.InputStream arg0, int arg1)
         /// </summary>
-        public static PushbackInputStream New(Java.Io.InputStream arg0, int arg1)
+        public static PushbackInputStream Create(Java.Io.InputStream arg0, int arg1)
         {
             return JVMBridgeBase.New<PushbackInputStream>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PushbackInputStream(Java.Io.InputStream arg0)
         /// </summary>
-        public static PushbackInputStream New(Java.Io.InputStream arg0)
+        public static PushbackInputStream Create(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<PushbackInputStream>(arg0);
         }

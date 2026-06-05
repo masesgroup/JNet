@@ -74,7 +74,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for MGF1ParameterSpec(Java.Lang.String arg0)
         /// </summary>
-        public static MGF1ParameterSpec New(Java.Lang.String arg0)
+        public static MGF1ParameterSpec Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<MGF1ParameterSpec>(arg0);
         }

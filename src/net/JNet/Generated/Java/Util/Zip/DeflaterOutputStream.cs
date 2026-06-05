@@ -75,7 +75,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for DeflaterOutputStream(Java.Io.OutputStream arg0, bool arg1)
         /// </summary>
-        public static DeflaterOutputStream New(Java.Io.OutputStream arg0, bool arg1)
+        public static DeflaterOutputStream Create(Java.Io.OutputStream arg0, bool arg1)
         {
             return JVMBridgeBase.New<DeflaterOutputStream>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for DeflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, bool arg2)
         /// </summary>
-        public static DeflaterOutputStream New(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, bool arg2)
+        public static DeflaterOutputStream Create(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, bool arg2)
         {
             return JVMBridgeBase.New<DeflaterOutputStream>(arg0, arg1, arg2);
         }
@@ -110,7 +110,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for DeflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, int arg2, bool arg3)
         /// </summary>
-        public static DeflaterOutputStream New(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, int arg2, bool arg3)
+        public static DeflaterOutputStream Create(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, int arg2, bool arg3)
         {
             return JVMBridgeBase.New<DeflaterOutputStream>(arg0, arg1, arg2, arg3);
         }
@@ -127,7 +127,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for DeflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, int arg2)
         /// </summary>
-        public static DeflaterOutputStream New(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, int arg2)
+        public static DeflaterOutputStream Create(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, int arg2)
         {
             return JVMBridgeBase.New<DeflaterOutputStream>(arg0, arg1, arg2);
         }
@@ -143,7 +143,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for DeflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1)
         /// </summary>
-        public static DeflaterOutputStream New(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1)
+        public static DeflaterOutputStream Create(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1)
         {
             return JVMBridgeBase.New<DeflaterOutputStream>(arg0, arg1);
         }
@@ -158,7 +158,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for DeflaterOutputStream(Java.Io.OutputStream arg0)
         /// </summary>
-        public static DeflaterOutputStream New(Java.Io.OutputStream arg0)
+        public static DeflaterOutputStream Create(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<DeflaterOutputStream>(arg0);
         }

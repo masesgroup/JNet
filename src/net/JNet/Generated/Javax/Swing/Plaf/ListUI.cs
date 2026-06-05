@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for ListUI()
         /// </summary>
-        public static ListUI New()
+        public static ListUI Create()
         {
             return JVMBridgeBase.New<ListUI>();
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSeparator()
         /// </summary>
-        public static JSeparator New()
+        public static JSeparator Create()
         {
             return JVMBridgeBase.New<JSeparator>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSeparator(int arg0)
         /// </summary>
-        public static JSeparator New(int arg0)
+        public static JSeparator Create(int arg0)
         {
             return JVMBridgeBase.New<JSeparator>(arg0);
         }

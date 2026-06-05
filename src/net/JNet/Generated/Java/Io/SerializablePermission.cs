@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for SerializablePermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static SerializablePermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static SerializablePermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<SerializablePermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for SerializablePermission(Java.Lang.String arg0)
         /// </summary>
-        public static SerializablePermission New(Java.Lang.String arg0)
+        public static SerializablePermission Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<SerializablePermission>(arg0);
         }

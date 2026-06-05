@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for BufferedWriter(Java.Io.Writer arg0, int arg1)
         /// </summary>
-        public static BufferedWriter New(Java.Io.Writer arg0, int arg1)
+        public static BufferedWriter Create(Java.Io.Writer arg0, int arg1)
         {
             return JVMBridgeBase.New<BufferedWriter>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for BufferedWriter(Java.Io.Writer arg0)
         /// </summary>
-        public static BufferedWriter New(Java.Io.Writer arg0)
+        public static BufferedWriter Create(Java.Io.Writer arg0)
         {
             return JVMBridgeBase.New<BufferedWriter>(arg0);
         }

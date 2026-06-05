@@ -73,7 +73,7 @@ namespace Javax.Imageio.Plugins.Bmp
         /// <summary>
         /// HPA initializer for BMPImageWriteParam()
         /// </summary>
-        public static BMPImageWriteParam New()
+        public static BMPImageWriteParam Create()
         {
             return JVMBridgeBase.New<BMPImageWriteParam>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Imageio.Plugins.Bmp
         /// <summary>
         /// HPA initializer for BMPImageWriteParam(Java.Util.Locale arg0)
         /// </summary>
-        public static BMPImageWriteParam New(Java.Util.Locale arg0)
+        public static BMPImageWriteParam Create(Java.Util.Locale arg0)
         {
             return JVMBridgeBase.New<BMPImageWriteParam>(arg0);
         }

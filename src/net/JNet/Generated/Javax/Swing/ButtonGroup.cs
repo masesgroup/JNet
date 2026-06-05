@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ButtonGroup()
         /// </summary>
-        public static ButtonGroup New()
+        public static ButtonGroup Create()
         {
             return JVMBridgeBase.New<ButtonGroup>();
         }

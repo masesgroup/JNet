@@ -76,7 +76,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for GZIPInputStream(Java.Io.InputStream arg0, int arg1)
         /// </summary>
-        public static GZIPInputStream New(Java.Io.InputStream arg0, int arg1)
+        public static GZIPInputStream Create(Java.Io.InputStream arg0, int arg1)
         {
             return JVMBridgeBase.New<GZIPInputStream>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for GZIPInputStream(Java.Io.InputStream arg0)
         /// </summary>
-        public static GZIPInputStream New(Java.Io.InputStream arg0)
+        public static GZIPInputStream Create(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<GZIPInputStream>(arg0);
         }

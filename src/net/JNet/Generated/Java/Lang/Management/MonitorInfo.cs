@@ -77,7 +77,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// HPA initializer for MonitorInfo(Java.Lang.String arg0, int arg1, int arg2, Java.Lang.StackTraceElement arg3)
         /// </summary>
-        public static MonitorInfo New(Java.Lang.String arg0, int arg1, int arg2, Java.Lang.StackTraceElement arg3)
+        public static MonitorInfo Create(Java.Lang.String arg0, int arg1, int arg2, Java.Lang.StackTraceElement arg3)
         {
             return JVMBridgeBase.New<MonitorInfo>(arg0, arg1, arg2, arg3);
         }

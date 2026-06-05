@@ -73,7 +73,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for Deflater()
         /// </summary>
-        public static Deflater New()
+        public static Deflater Create()
         {
             return JVMBridgeBase.New<Deflater>();
         }
@@ -89,7 +89,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for Deflater(int arg0, bool arg1)
         /// </summary>
-        public static Deflater New(int arg0, bool arg1)
+        public static Deflater Create(int arg0, bool arg1)
         {
             return JVMBridgeBase.New<Deflater>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for Deflater(int arg0)
         /// </summary>
-        public static Deflater New(int arg0)
+        public static Deflater Create(int arg0)
         {
             return JVMBridgeBase.New<Deflater>(arg0);
         }

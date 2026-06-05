@@ -77,7 +77,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2, Java.Lang.ClassLoader arg3)
         /// </summary>
-        public static XMLDecoder New(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2, Java.Lang.ClassLoader arg3)
+        public static XMLDecoder Create(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2, Java.Lang.ClassLoader arg3)
         {
             return JVMBridgeBase.New<XMLDecoder>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2)
         /// </summary>
-        public static XMLDecoder New(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2)
+        public static XMLDecoder Create(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2)
         {
             return JVMBridgeBase.New<XMLDecoder>(arg0, arg1, arg2);
         }
@@ -110,7 +110,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for XMLDecoder(Java.Io.InputStream arg0, object arg1)
         /// </summary>
-        public static XMLDecoder New(Java.Io.InputStream arg0, object arg1)
+        public static XMLDecoder Create(Java.Io.InputStream arg0, object arg1)
         {
             return JVMBridgeBase.New<XMLDecoder>(arg0, arg1);
         }
@@ -125,7 +125,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for XMLDecoder(Java.Io.InputStream arg0)
         /// </summary>
-        public static XMLDecoder New(Java.Io.InputStream arg0)
+        public static XMLDecoder Create(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<XMLDecoder>(arg0);
         }
@@ -140,7 +140,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for XMLDecoder(Org.Xml.Sax.InputSource arg0)
         /// </summary>
-        public static XMLDecoder New(Org.Xml.Sax.InputSource arg0)
+        public static XMLDecoder Create(Org.Xml.Sax.InputSource arg0)
         {
             return JVMBridgeBase.New<XMLDecoder>(arg0);
         }

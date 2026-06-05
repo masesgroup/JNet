@@ -75,7 +75,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for ZipOutputStream(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1)
         /// </summary>
-        public static ZipOutputStream New(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1)
+        public static ZipOutputStream Create(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1)
         {
             return JVMBridgeBase.New<ZipOutputStream>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for ZipOutputStream(Java.Io.OutputStream arg0)
         /// </summary>
-        public static ZipOutputStream New(Java.Io.OutputStream arg0)
+        public static ZipOutputStream Create(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<ZipOutputStream>(arg0);
         }

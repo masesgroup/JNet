@@ -73,7 +73,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// HPA initializer for DefaultTreeCellRenderer()
         /// </summary>
-        public static DefaultTreeCellRenderer New()
+        public static DefaultTreeCellRenderer Create()
         {
             return JVMBridgeBase.New<DefaultTreeCellRenderer>();
         }

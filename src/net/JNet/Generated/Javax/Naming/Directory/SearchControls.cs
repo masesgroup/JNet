@@ -73,7 +73,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// HPA initializer for SearchControls()
         /// </summary>
-        public static SearchControls New()
+        public static SearchControls Create()
         {
             return JVMBridgeBase.New<SearchControls>();
         }
@@ -93,7 +93,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// HPA initializer for SearchControls(int arg0, long arg1, int arg2, Java.Lang.String[] arg3, bool arg4, bool arg5)
         /// </summary>
-        public static SearchControls New(int arg0, long arg1, int arg2, Java.Lang.String[] arg3, bool arg4, bool arg5)
+        public static SearchControls Create(int arg0, long arg1, int arg2, Java.Lang.String[] arg3, bool arg4, bool arg5)
         {
             return JVMBridgeBase.New<SearchControls>(arg0, arg1, arg2, arg3, arg4, arg5);
         }

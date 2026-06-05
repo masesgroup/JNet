@@ -74,7 +74,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Cursor(int arg0)
         /// </summary>
-        public static Cursor New(int arg0)
+        public static Cursor Create(int arg0)
         {
             return JVMBridgeBase.New<Cursor>(arg0);
         }

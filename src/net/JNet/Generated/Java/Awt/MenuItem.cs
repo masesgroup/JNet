@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for MenuItem()
         /// </summary>
-        public static MenuItem New()
+        public static MenuItem Create()
         {
             return JVMBridgeBase.New<MenuItem>();
         }
@@ -92,7 +92,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for MenuItem(Java.Lang.String arg0, Java.Awt.MenuShortcut arg1)
         /// </summary>
-        public static MenuItem New(Java.Lang.String arg0, Java.Awt.MenuShortcut arg1)
+        public static MenuItem Create(Java.Lang.String arg0, Java.Awt.MenuShortcut arg1)
         {
             return JVMBridgeBase.New<MenuItem>(arg0, arg1);
         }
@@ -108,7 +108,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for MenuItem(Java.Lang.String arg0)
         /// </summary>
-        public static MenuItem New(Java.Lang.String arg0)
+        public static MenuItem Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<MenuItem>(arg0);
         }

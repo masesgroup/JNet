@@ -76,7 +76,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for TabularDataSupport(Javax.Management.Openmbean.TabularType arg0, int arg1, float arg2)
         /// </summary>
-        public static TabularDataSupport New(Javax.Management.Openmbean.TabularType arg0, int arg1, float arg2)
+        public static TabularDataSupport Create(Javax.Management.Openmbean.TabularType arg0, int arg1, float arg2)
         {
             return JVMBridgeBase.New<TabularDataSupport>(arg0, arg1, arg2);
         }
@@ -91,7 +91,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for TabularDataSupport(Javax.Management.Openmbean.TabularType arg0)
         /// </summary>
-        public static TabularDataSupport New(Javax.Management.Openmbean.TabularType arg0)
+        public static TabularDataSupport Create(Javax.Management.Openmbean.TabularType arg0)
         {
             return JVMBridgeBase.New<TabularDataSupport>(arg0);
         }

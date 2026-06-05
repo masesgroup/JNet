@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiSpinnerUI()
         /// </summary>
-        public static MultiSpinnerUI New()
+        public static MultiSpinnerUI Create()
         {
             return JVMBridgeBase.New<MultiSpinnerUI>();
         }

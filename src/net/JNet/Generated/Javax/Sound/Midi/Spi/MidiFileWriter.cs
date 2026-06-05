@@ -73,7 +73,7 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// HPA initializer for MidiFileWriter()
         /// </summary>
-        public static MidiFileWriter New()
+        public static MidiFileWriter Create()
         {
             return JVMBridgeBase.New<MidiFileWriter>();
         }

@@ -799,7 +799,7 @@ namespace Java.Security
             /// <summary>
             /// HPA initializer for CallbackHandlerProtection(Javax.Security.Auth.Callback.CallbackHandler arg0)
             /// </summary>
-            public static CallbackHandlerProtection New(Javax.Security.Auth.Callback.CallbackHandler arg0)
+            public static CallbackHandlerProtection Create(Javax.Security.Auth.Callback.CallbackHandler arg0)
             {
                 return JVMBridgeBase.New<CallbackHandlerProtection>(arg0);
             }
@@ -975,7 +975,7 @@ namespace Java.Security
             /// <summary>
             /// HPA initializer for PasswordProtection(char[] arg0, Java.Lang.String arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
             /// </summary>
-            public static PasswordProtection New(char[] arg0, Java.Lang.String arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
+            public static PasswordProtection Create(char[] arg0, Java.Lang.String arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
             {
                 return JVMBridgeBase.New<PasswordProtection>(arg0, arg1, arg2);
             }
@@ -990,7 +990,7 @@ namespace Java.Security
             /// <summary>
             /// HPA initializer for PasswordProtection(char[] arg0)
             /// </summary>
-            public static PasswordProtection New(char[] arg0)
+            public static PasswordProtection Create(char[] arg0)
             {
                 return JVMBridgeBase.New<PasswordProtection>(arg0);
             }
@@ -1079,7 +1079,7 @@ namespace Java.Security
             /// <summary>
             /// HPA initializer for PrivateKeyEntry(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1, Java.Util.Set%3CJava.Security.KeyStore.Entry.Attribute%3E arg2)
             /// </summary>
-            public static PrivateKeyEntry New(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1, Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> arg2)
+            public static PrivateKeyEntry Create(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1, Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> arg2)
             {
                 return JVMBridgeBase.New<PrivateKeyEntry>(arg0, arg1, arg2);
             }
@@ -1095,7 +1095,7 @@ namespace Java.Security
             /// <summary>
             /// HPA initializer for PrivateKeyEntry(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1)
             /// </summary>
-            public static PrivateKeyEntry New(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1)
+            public static PrivateKeyEntry Create(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1)
             {
                 return JVMBridgeBase.New<PrivateKeyEntry>(arg0, arg1);
             }
@@ -1239,7 +1239,7 @@ namespace Java.Security
             /// <summary>
             /// HPA initializer for TrustedCertificateEntry(Java.Security.Cert.Certificate arg0, Java.Util.Set%3CJava.Security.KeyStore.Entry.Attribute%3E arg1)
             /// </summary>
-            public static TrustedCertificateEntry New(Java.Security.Cert.Certificate arg0, Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> arg1)
+            public static TrustedCertificateEntry Create(Java.Security.Cert.Certificate arg0, Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> arg1)
             {
                 return JVMBridgeBase.New<TrustedCertificateEntry>(arg0, arg1);
             }
@@ -1254,7 +1254,7 @@ namespace Java.Security
             /// <summary>
             /// HPA initializer for TrustedCertificateEntry(Java.Security.Cert.Certificate arg0)
             /// </summary>
-            public static TrustedCertificateEntry New(Java.Security.Cert.Certificate arg0)
+            public static TrustedCertificateEntry Create(Java.Security.Cert.Certificate arg0)
             {
                 return JVMBridgeBase.New<TrustedCertificateEntry>(arg0);
             }

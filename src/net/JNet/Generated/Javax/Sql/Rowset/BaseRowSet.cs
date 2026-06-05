@@ -73,7 +73,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// HPA initializer for BaseRowSet()
         /// </summary>
-        public static BaseRowSet New()
+        public static BaseRowSet Create()
         {
             return JVMBridgeBase.New<BaseRowSet>();
         }

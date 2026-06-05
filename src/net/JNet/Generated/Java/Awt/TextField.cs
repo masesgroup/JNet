@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for TextField()
         /// </summary>
-        public static TextField New()
+        public static TextField Create()
         {
             return JVMBridgeBase.New<TextField>();
         }
@@ -91,7 +91,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for TextField(int arg0)
         /// </summary>
-        public static TextField New(int arg0)
+        public static TextField Create(int arg0)
         {
             return JVMBridgeBase.New<TextField>(arg0);
         }
@@ -108,7 +108,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for TextField(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static TextField New(Java.Lang.String arg0, int arg1)
+        public static TextField Create(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<TextField>(arg0, arg1);
         }
@@ -124,7 +124,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for TextField(Java.Lang.String arg0)
         /// </summary>
-        public static TextField New(Java.Lang.String arg0)
+        public static TextField Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<TextField>(arg0);
         }

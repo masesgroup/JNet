@@ -73,7 +73,7 @@ namespace Java.Rmi.Dgc
         /// <summary>
         /// HPA initializer for VMID()
         /// </summary>
-        public static VMID New()
+        public static VMID Create()
         {
             return JVMBridgeBase.New<VMID>();
         }

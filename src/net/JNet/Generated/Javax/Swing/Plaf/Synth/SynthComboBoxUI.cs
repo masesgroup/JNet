@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthComboBoxUI()
         /// </summary>
-        public static SynthComboBoxUI New()
+        public static SynthComboBoxUI Create()
         {
             return JVMBridgeBase.New<SynthComboBoxUI>();
         }

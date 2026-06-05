@@ -74,7 +74,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for EventObject(object arg0)
         /// </summary>
-        public static EventObject New(object arg0)
+        public static EventObject Create(object arg0)
         {
             return JVMBridgeBase.New<EventObject>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for TabbedPaneUI()
         /// </summary>
-        public static TabbedPaneUI New()
+        public static TabbedPaneUI Create()
         {
             return JVMBridgeBase.New<TabbedPaneUI>();
         }

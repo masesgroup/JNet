@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for CardLayout()
         /// </summary>
-        public static CardLayout New()
+        public static CardLayout Create()
         {
             return JVMBridgeBase.New<CardLayout>();
         }
@@ -89,7 +89,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for CardLayout(int arg0, int arg1)
         /// </summary>
-        public static CardLayout New(int arg0, int arg1)
+        public static CardLayout Create(int arg0, int arg1)
         {
             return JVMBridgeBase.New<CardLayout>(arg0, arg1);
         }

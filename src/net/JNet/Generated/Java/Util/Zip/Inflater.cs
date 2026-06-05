@@ -73,7 +73,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for Inflater()
         /// </summary>
-        public static Inflater New()
+        public static Inflater Create()
         {
             return JVMBridgeBase.New<Inflater>();
         }
@@ -88,7 +88,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for Inflater(bool arg0)
         /// </summary>
-        public static Inflater New(bool arg0)
+        public static Inflater Create(bool arg0)
         {
             return JVMBridgeBase.New<Inflater>(arg0);
         }

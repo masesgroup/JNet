@@ -75,7 +75,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// HPA initializer for BeanContextServiceAvailableEvent(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1)
         /// </summary>
-        public static BeanContextServiceAvailableEvent New(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1)
+        public static BeanContextServiceAvailableEvent Create(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1)
         {
             return JVMBridgeBase.New<BeanContextServiceAvailableEvent>(arg0, arg1);
         }

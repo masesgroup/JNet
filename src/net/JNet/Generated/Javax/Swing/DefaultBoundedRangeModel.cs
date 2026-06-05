@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultBoundedRangeModel()
         /// </summary>
-        public static DefaultBoundedRangeModel New()
+        public static DefaultBoundedRangeModel Create()
         {
             return JVMBridgeBase.New<DefaultBoundedRangeModel>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultBoundedRangeModel(int arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static DefaultBoundedRangeModel New(int arg0, int arg1, int arg2, int arg3)
+        public static DefaultBoundedRangeModel Create(int arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<DefaultBoundedRangeModel>(arg0, arg1, arg2, arg3);
         }

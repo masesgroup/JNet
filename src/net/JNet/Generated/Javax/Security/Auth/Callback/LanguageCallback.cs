@@ -73,7 +73,7 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// HPA initializer for LanguageCallback()
         /// </summary>
-        public static LanguageCallback New()
+        public static LanguageCallback Create()
         {
             return JVMBridgeBase.New<LanguageCallback>();
         }

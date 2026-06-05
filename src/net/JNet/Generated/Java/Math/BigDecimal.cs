@@ -77,7 +77,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(char[] arg0, int arg1, int arg2, Java.Math.MathContext arg3)
         /// </summary>
-        public static BigDecimal New(char[] arg0, int arg1, int arg2, Java.Math.MathContext arg3)
+        public static BigDecimal Create(char[] arg0, int arg1, int arg2, Java.Math.MathContext arg3)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(char[] arg0, int arg1, int arg2)
         /// </summary>
-        public static BigDecimal New(char[] arg0, int arg1, int arg2)
+        public static BigDecimal Create(char[] arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0, arg1, arg2);
         }
@@ -110,7 +110,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(char[] arg0, Java.Math.MathContext arg1)
         /// </summary>
-        public static BigDecimal New(char[] arg0, Java.Math.MathContext arg1)
+        public static BigDecimal Create(char[] arg0, Java.Math.MathContext arg1)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
         }
@@ -125,7 +125,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(char[] arg0)
         /// </summary>
-        public static BigDecimal New(char[] arg0)
+        public static BigDecimal Create(char[] arg0)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0);
         }
@@ -141,7 +141,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(double arg0, Java.Math.MathContext arg1)
         /// </summary>
-        public static BigDecimal New(double arg0, Java.Math.MathContext arg1)
+        public static BigDecimal Create(double arg0, Java.Math.MathContext arg1)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
         }
@@ -156,7 +156,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(double arg0)
         /// </summary>
-        public static BigDecimal New(double arg0)
+        public static BigDecimal Create(double arg0)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0);
         }
@@ -172,7 +172,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(int arg0, Java.Math.MathContext arg1)
         /// </summary>
-        public static BigDecimal New(int arg0, Java.Math.MathContext arg1)
+        public static BigDecimal Create(int arg0, Java.Math.MathContext arg1)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
         }
@@ -187,7 +187,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(int arg0)
         /// </summary>
-        public static BigDecimal New(int arg0)
+        public static BigDecimal Create(int arg0)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0);
         }
@@ -203,7 +203,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(Java.Lang.String arg0, Java.Math.MathContext arg1)
         /// </summary>
-        public static BigDecimal New(Java.Lang.String arg0, Java.Math.MathContext arg1)
+        public static BigDecimal Create(Java.Lang.String arg0, Java.Math.MathContext arg1)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
         }
@@ -218,7 +218,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(Java.Lang.String arg0)
         /// </summary>
-        public static BigDecimal New(Java.Lang.String arg0)
+        public static BigDecimal Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0);
         }
@@ -235,7 +235,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(Java.Math.BigInteger arg0, int arg1, Java.Math.MathContext arg2)
         /// </summary>
-        public static BigDecimal New(Java.Math.BigInteger arg0, int arg1, Java.Math.MathContext arg2)
+        public static BigDecimal Create(Java.Math.BigInteger arg0, int arg1, Java.Math.MathContext arg2)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0, arg1, arg2);
         }
@@ -251,7 +251,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(Java.Math.BigInteger arg0, int arg1)
         /// </summary>
-        public static BigDecimal New(Java.Math.BigInteger arg0, int arg1)
+        public static BigDecimal Create(Java.Math.BigInteger arg0, int arg1)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
         }
@@ -267,7 +267,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(Java.Math.BigInteger arg0, Java.Math.MathContext arg1)
         /// </summary>
-        public static BigDecimal New(Java.Math.BigInteger arg0, Java.Math.MathContext arg1)
+        public static BigDecimal Create(Java.Math.BigInteger arg0, Java.Math.MathContext arg1)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
         }
@@ -282,7 +282,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(Java.Math.BigInteger arg0)
         /// </summary>
-        public static BigDecimal New(Java.Math.BigInteger arg0)
+        public static BigDecimal Create(Java.Math.BigInteger arg0)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0);
         }
@@ -298,7 +298,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(long arg0, Java.Math.MathContext arg1)
         /// </summary>
-        public static BigDecimal New(long arg0, Java.Math.MathContext arg1)
+        public static BigDecimal Create(long arg0, Java.Math.MathContext arg1)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0, arg1);
         }
@@ -313,7 +313,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for BigDecimal(long arg0)
         /// </summary>
-        public static BigDecimal New(long arg0)
+        public static BigDecimal Create(long arg0)
         {
             return JVMBridgeBase.New<BigDecimal>(arg0);
         }

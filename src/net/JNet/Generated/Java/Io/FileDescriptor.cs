@@ -73,7 +73,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for FileDescriptor()
         /// </summary>
-        public static FileDescriptor New()
+        public static FileDescriptor Create()
         {
             return JVMBridgeBase.New<FileDescriptor>();
         }

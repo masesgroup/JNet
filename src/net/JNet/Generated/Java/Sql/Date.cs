@@ -77,7 +77,7 @@ namespace Java.Sql
         /// <summary>
         /// HPA initializer for Date(int arg0, int arg1, int arg2)
         /// </summary>
-        public static Date New(int arg0, int arg1, int arg2)
+        public static Date Create(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<Date>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Sql
         /// <summary>
         /// HPA initializer for Date(long arg0)
         /// </summary>
-        public static Date New(long arg0)
+        public static Date Create(long arg0)
         {
             return JVMBridgeBase.New<Date>(arg0);
         }

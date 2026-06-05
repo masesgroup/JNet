@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashPrintRequestAttributeSet()
         /// </summary>
-        public static HashPrintRequestAttributeSet New()
+        public static HashPrintRequestAttributeSet Create()
         {
             return JVMBridgeBase.New<HashPrintRequestAttributeSet>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttribute arg0)
         /// </summary>
-        public static HashPrintRequestAttributeSet New(Javax.Print.Attribute.PrintRequestAttribute arg0)
+        public static HashPrintRequestAttributeSet Create(Javax.Print.Attribute.PrintRequestAttribute arg0)
         {
             return JVMBridgeBase.New<HashPrintRequestAttributeSet>(arg0);
         }
@@ -103,7 +103,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttribute[] arg0)
         /// </summary>
-        public static HashPrintRequestAttributeSet New(Javax.Print.Attribute.PrintRequestAttribute[] arg0)
+        public static HashPrintRequestAttributeSet Create(Javax.Print.Attribute.PrintRequestAttribute[] arg0)
         {
             return JVMBridgeBase.New<HashPrintRequestAttributeSet>(arg0);
         }
@@ -118,7 +118,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         /// </summary>
-        public static HashPrintRequestAttributeSet New(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
+        public static HashPrintRequestAttributeSet Create(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {
             return JVMBridgeBase.New<HashPrintRequestAttributeSet>(arg0);
         }

@@ -77,7 +77,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for Notification(Java.Lang.String arg0, object arg1, long arg2, Java.Lang.String arg3)
         /// </summary>
-        public static Notification New(Java.Lang.String arg0, object arg1, long arg2, Java.Lang.String arg3)
+        public static Notification Create(Java.Lang.String arg0, object arg1, long arg2, Java.Lang.String arg3)
         {
             return JVMBridgeBase.New<Notification>(arg0, arg1, arg2, arg3);
         }
@@ -96,7 +96,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for Notification(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4)
         /// </summary>
-        public static Notification New(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4)
+        public static Notification Create(Java.Lang.String arg0, object arg1, long arg2, long arg3, Java.Lang.String arg4)
         {
             return JVMBridgeBase.New<Notification>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -114,7 +114,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for Notification(Java.Lang.String arg0, object arg1, long arg2, long arg3)
         /// </summary>
-        public static Notification New(Java.Lang.String arg0, object arg1, long arg2, long arg3)
+        public static Notification Create(Java.Lang.String arg0, object arg1, long arg2, long arg3)
         {
             return JVMBridgeBase.New<Notification>(arg0, arg1, arg2, arg3);
         }
@@ -131,7 +131,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for Notification(Java.Lang.String arg0, object arg1, long arg2)
         /// </summary>
-        public static Notification New(Java.Lang.String arg0, object arg1, long arg2)
+        public static Notification Create(Java.Lang.String arg0, object arg1, long arg2)
         {
             return JVMBridgeBase.New<Notification>(arg0, arg1, arg2);
         }

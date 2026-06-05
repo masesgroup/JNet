@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for DoubleSummaryStatistics()
         /// </summary>
-        public static DoubleSummaryStatistics New()
+        public static DoubleSummaryStatistics Create()
         {
             return JVMBridgeBase.New<DoubleSummaryStatistics>();
         }

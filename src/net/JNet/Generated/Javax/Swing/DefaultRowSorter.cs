@@ -109,7 +109,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultRowSorter()
         /// </summary>
-        public static DefaultRowSorter New()
+        public static DefaultRowSorter Create()
         {
             return JVMBridgeBase.New<DefaultRowSorter>();
         }
@@ -218,7 +218,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultRowSorter()
         /// </summary>
-        public static DefaultRowSorter<M, I> New()
+        public static DefaultRowSorter<M, I> Create()
         {
             return JVMBridgeBase.New<DefaultRowSorter<M, I>>();
         }

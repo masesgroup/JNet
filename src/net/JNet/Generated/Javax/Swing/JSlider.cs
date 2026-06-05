@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSlider()
         /// </summary>
-        public static JSlider New()
+        public static JSlider Create()
         {
             return JVMBridgeBase.New<JSlider>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSlider(int arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static JSlider New(int arg0, int arg1, int arg2, int arg3)
+        public static JSlider Create(int arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<JSlider>(arg0, arg1, arg2, arg3);
         }
@@ -108,7 +108,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSlider(int arg0, int arg1, int arg2)
         /// </summary>
-        public static JSlider New(int arg0, int arg1, int arg2)
+        public static JSlider Create(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<JSlider>(arg0, arg1, arg2);
         }
@@ -124,7 +124,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSlider(int arg0, int arg1)
         /// </summary>
-        public static JSlider New(int arg0, int arg1)
+        public static JSlider Create(int arg0, int arg1)
         {
             return JVMBridgeBase.New<JSlider>(arg0, arg1);
         }
@@ -139,7 +139,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSlider(int arg0)
         /// </summary>
-        public static JSlider New(int arg0)
+        public static JSlider Create(int arg0)
         {
             return JVMBridgeBase.New<JSlider>(arg0);
         }
@@ -154,7 +154,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSlider(Javax.Swing.BoundedRangeModel arg0)
         /// </summary>
-        public static JSlider New(Javax.Swing.BoundedRangeModel arg0)
+        public static JSlider Create(Javax.Swing.BoundedRangeModel arg0)
         {
             return JVMBridgeBase.New<JSlider>(arg0);
         }

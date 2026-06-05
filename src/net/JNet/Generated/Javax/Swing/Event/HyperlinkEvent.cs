@@ -113,7 +113,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5)
         /// </summary>
-        public static HyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5)
+        public static HyperlinkEvent Create(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5)
         {
             return JVMBridgeBase.New<HyperlinkEvent>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -132,7 +132,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4)
         /// </summary>
-        public static HyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4)
+        public static HyperlinkEvent Create(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3, Javax.Swing.Text.Element arg4)
         {
             return JVMBridgeBase.New<HyperlinkEvent>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -150,7 +150,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3)
         /// </summary>
-        public static HyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3)
+        public static HyperlinkEvent Create(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Java.Lang.String arg3)
         {
             return JVMBridgeBase.New<HyperlinkEvent>(arg0, arg1, arg2, arg3);
         }
@@ -167,7 +167,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2)
         /// </summary>
-        public static HyperlinkEvent New(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2)
+        public static HyperlinkEvent Create(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2)
         {
             return JVMBridgeBase.New<HyperlinkEvent>(arg0, arg1, arg2);
         }

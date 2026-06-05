@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTextField()
         /// </summary>
-        public static JTextField New()
+        public static JTextField Create()
         {
             return JVMBridgeBase.New<JTextField>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTextField(int arg0)
         /// </summary>
-        public static JTextField New(int arg0)
+        public static JTextField Create(int arg0)
         {
             return JVMBridgeBase.New<JTextField>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTextField(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static JTextField New(Java.Lang.String arg0, int arg1)
+        public static JTextField Create(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<JTextField>(arg0, arg1);
         }
@@ -119,7 +119,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTextField(Java.Lang.String arg0)
         /// </summary>
-        public static JTextField New(Java.Lang.String arg0)
+        public static JTextField Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JTextField>(arg0);
         }
@@ -136,7 +136,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTextField(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2)
         /// </summary>
-        public static JTextField New(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2)
+        public static JTextField Create(Javax.Swing.Text.Document arg0, Java.Lang.String arg1, int arg2)
         {
             return JVMBridgeBase.New<JTextField>(arg0, arg1, arg2);
         }

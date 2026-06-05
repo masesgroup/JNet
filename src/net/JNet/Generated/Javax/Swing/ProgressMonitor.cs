@@ -78,7 +78,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ProgressMonitor(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4)
         /// </summary>
-        public static ProgressMonitor New(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4)
+        public static ProgressMonitor Create(Java.Awt.Component arg0, object arg1, Java.Lang.String arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<ProgressMonitor>(arg0, arg1, arg2, arg3, arg4);
         }

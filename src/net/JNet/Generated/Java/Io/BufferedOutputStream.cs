@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for BufferedOutputStream(Java.Io.OutputStream arg0, int arg1)
         /// </summary>
-        public static BufferedOutputStream New(Java.Io.OutputStream arg0, int arg1)
+        public static BufferedOutputStream Create(Java.Io.OutputStream arg0, int arg1)
         {
             return JVMBridgeBase.New<BufferedOutputStream>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for BufferedOutputStream(Java.Io.OutputStream arg0)
         /// </summary>
-        public static BufferedOutputStream New(Java.Io.OutputStream arg0)
+        public static BufferedOutputStream Create(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<BufferedOutputStream>(arg0);
         }

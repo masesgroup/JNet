@@ -73,7 +73,7 @@ namespace Javax.Xml.Ws.Spi.Http
         /// <summary>
         /// HPA initializer for HttpExchange()
         /// </summary>
-        public static HttpExchange New()
+        public static HttpExchange Create()
         {
             return JVMBridgeBase.New<HttpExchange>();
         }

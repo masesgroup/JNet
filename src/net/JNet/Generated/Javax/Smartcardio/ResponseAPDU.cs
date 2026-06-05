@@ -74,7 +74,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// HPA initializer for ResponseAPDU(byte[] arg0)
         /// </summary>
-        public static ResponseAPDU New(byte[] arg0)
+        public static ResponseAPDU Create(byte[] arg0)
         {
             return JVMBridgeBase.New<ResponseAPDU>(arg0);
         }

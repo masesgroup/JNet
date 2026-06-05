@@ -73,7 +73,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for CompoundBorder()
         /// </summary>
-        public static CompoundBorder New()
+        public static CompoundBorder Create()
         {
             return JVMBridgeBase.New<CompoundBorder>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for CompoundBorder(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
         /// </summary>
-        public static CompoundBorder New(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
+        public static CompoundBorder Create(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
         {
             return JVMBridgeBase.New<CompoundBorder>(arg0, arg1);
         }

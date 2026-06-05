@@ -73,7 +73,7 @@ namespace Javax.Xml.Bind
         /// <summary>
         /// HPA initializer for JAXBIntrospector()
         /// </summary>
-        public static JAXBIntrospector New()
+        public static JAXBIntrospector Create()
         {
             return JVMBridgeBase.New<JAXBIntrospector>();
         }

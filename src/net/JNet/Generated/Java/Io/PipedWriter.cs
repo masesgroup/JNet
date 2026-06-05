@@ -73,7 +73,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PipedWriter()
         /// </summary>
-        public static PipedWriter New()
+        public static PipedWriter Create()
         {
             return JVMBridgeBase.New<PipedWriter>();
         }
@@ -89,7 +89,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PipedWriter(Java.Io.PipedReader arg0)
         /// </summary>
-        public static PipedWriter New(Java.Io.PipedReader arg0)
+        public static PipedWriter Create(Java.Io.PipedReader arg0)
         {
             return JVMBridgeBase.New<PipedWriter>(arg0);
         }

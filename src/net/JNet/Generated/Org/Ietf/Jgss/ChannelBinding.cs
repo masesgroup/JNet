@@ -74,7 +74,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// HPA initializer for ChannelBinding(byte[] arg0)
         /// </summary>
-        public static ChannelBinding New(byte[] arg0)
+        public static ChannelBinding Create(byte[] arg0)
         {
             return JVMBridgeBase.New<ChannelBinding>(arg0);
         }
@@ -91,7 +91,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// HPA initializer for ChannelBinding(Java.Net.InetAddress arg0, Java.Net.InetAddress arg1, byte[] arg2)
         /// </summary>
-        public static ChannelBinding New(Java.Net.InetAddress arg0, Java.Net.InetAddress arg1, byte[] arg2)
+        public static ChannelBinding Create(Java.Net.InetAddress arg0, Java.Net.InetAddress arg1, byte[] arg2)
         {
             return JVMBridgeBase.New<ChannelBinding>(arg0, arg1, arg2);
         }

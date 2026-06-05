@@ -73,7 +73,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for TableStringConverter()
         /// </summary>
-        public static TableStringConverter New()
+        public static TableStringConverter Create()
         {
             return JVMBridgeBase.New<TableStringConverter>();
         }

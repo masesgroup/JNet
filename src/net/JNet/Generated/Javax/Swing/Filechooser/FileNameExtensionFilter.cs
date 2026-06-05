@@ -75,7 +75,7 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// HPA initializer for FileNameExtensionFilter(Java.Lang.String arg0, params Java.Lang.String[] arg1)
         /// </summary>
-        public static FileNameExtensionFilter New(Java.Lang.String arg0, params Java.Lang.String[] arg1)
+        public static FileNameExtensionFilter Create(Java.Lang.String arg0, params Java.Lang.String[] arg1)
         {
             return JVMBridgeBase.New<FileNameExtensionFilter>(arg0, arg1);
         }

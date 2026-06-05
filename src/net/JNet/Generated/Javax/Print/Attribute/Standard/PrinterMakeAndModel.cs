@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PrinterMakeAndModel(Java.Lang.String arg0, Java.Util.Locale arg1)
         /// </summary>
-        public static PrinterMakeAndModel New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        public static PrinterMakeAndModel Create(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
             return JVMBridgeBase.New<PrinterMakeAndModel>(arg0, arg1);
         }

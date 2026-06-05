@@ -73,7 +73,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// HPA initializer for DataFlavor()
         /// </summary>
-        public static DataFlavor New()
+        public static DataFlavor Create()
         {
             return JVMBridgeBase.New<DataFlavor>();
         }
@@ -89,7 +89,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// HPA initializer for DataFlavor(Java.Lang.Class arg0, Java.Lang.String arg1)
         /// </summary>
-        public static DataFlavor New(Java.Lang.Class arg0, Java.Lang.String arg1)
+        public static DataFlavor Create(Java.Lang.Class arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<DataFlavor>(arg0, arg1);
         }
@@ -107,7 +107,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// HPA initializer for DataFlavor(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
         /// </summary>
-        public static DataFlavor New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
+        public static DataFlavor Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
         {
             return JVMBridgeBase.New<DataFlavor>(arg0, arg1, arg2);
         }
@@ -123,7 +123,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// HPA initializer for DataFlavor(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static DataFlavor New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static DataFlavor Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<DataFlavor>(arg0, arg1);
         }
@@ -139,7 +139,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// HPA initializer for DataFlavor(Java.Lang.String arg0)
         /// </summary>
-        public static DataFlavor New(Java.Lang.String arg0)
+        public static DataFlavor Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<DataFlavor>(arg0);
         }

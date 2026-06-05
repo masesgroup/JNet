@@ -75,7 +75,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for LineBreakMeasurer(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
         /// </summary>
-        public static LineBreakMeasurer New(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
+        public static LineBreakMeasurer Create(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
         {
             return JVMBridgeBase.New<LineBreakMeasurer>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for LineBreakMeasurer(Java.Text.AttributedCharacterIterator arg0, Java.Text.BreakIterator arg1, Java.Awt.FontNs.FontRenderContext arg2)
         /// </summary>
-        public static LineBreakMeasurer New(Java.Text.AttributedCharacterIterator arg0, Java.Text.BreakIterator arg1, Java.Awt.FontNs.FontRenderContext arg2)
+        public static LineBreakMeasurer Create(Java.Text.AttributedCharacterIterator arg0, Java.Text.BreakIterator arg1, Java.Awt.FontNs.FontRenderContext arg2)
         {
             return JVMBridgeBase.New<LineBreakMeasurer>(arg0, arg1, arg2);
         }

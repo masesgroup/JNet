@@ -73,7 +73,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// HPA initializer for _RMIServer_Stub()
         /// </summary>
-        public static _RMIServer_Stub New()
+        public static _RMIServer_Stub Create()
         {
             return JVMBridgeBase.New<_RMIServer_Stub>();
         }

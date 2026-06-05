@@ -75,7 +75,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// HPA initializer for PrivateMLet(Java.Net.URL[] arg0, bool arg1)
         /// </summary>
-        public static PrivateMLet New(Java.Net.URL[] arg0, bool arg1)
+        public static PrivateMLet Create(Java.Net.URL[] arg0, bool arg1)
         {
             return JVMBridgeBase.New<PrivateMLet>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// HPA initializer for PrivateMLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, bool arg2)
         /// </summary>
-        public static PrivateMLet New(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, bool arg2)
+        public static PrivateMLet Create(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, bool arg2)
         {
             return JVMBridgeBase.New<PrivateMLet>(arg0, arg1, arg2);
         }
@@ -110,7 +110,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// HPA initializer for PrivateMLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2, bool arg3)
         /// </summary>
-        public static PrivateMLet New(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2, bool arg3)
+        public static PrivateMLet Create(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2, bool arg3)
         {
             return JVMBridgeBase.New<PrivateMLet>(arg0, arg1, arg2, arg3);
         }

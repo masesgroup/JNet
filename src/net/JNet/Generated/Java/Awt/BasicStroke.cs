@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for BasicStroke()
         /// </summary>
-        public static BasicStroke New()
+        public static BasicStroke Create()
         {
             return JVMBridgeBase.New<BasicStroke>();
         }
@@ -93,7 +93,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for BasicStroke(float arg0, int arg1, int arg2, float arg3, float[] arg4, float arg5)
         /// </summary>
-        public static BasicStroke New(float arg0, int arg1, int arg2, float arg3, float[] arg4, float arg5)
+        public static BasicStroke Create(float arg0, int arg1, int arg2, float arg3, float[] arg4, float arg5)
         {
             return JVMBridgeBase.New<BasicStroke>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -111,7 +111,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for BasicStroke(float arg0, int arg1, int arg2, float arg3)
         /// </summary>
-        public static BasicStroke New(float arg0, int arg1, int arg2, float arg3)
+        public static BasicStroke Create(float arg0, int arg1, int arg2, float arg3)
         {
             return JVMBridgeBase.New<BasicStroke>(arg0, arg1, arg2, arg3);
         }
@@ -128,7 +128,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for BasicStroke(float arg0, int arg1, int arg2)
         /// </summary>
-        public static BasicStroke New(float arg0, int arg1, int arg2)
+        public static BasicStroke Create(float arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<BasicStroke>(arg0, arg1, arg2);
         }
@@ -143,7 +143,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for BasicStroke(float arg0)
         /// </summary>
-        public static BasicStroke New(float arg0)
+        public static BasicStroke Create(float arg0)
         {
             return JVMBridgeBase.New<BasicStroke>(arg0);
         }

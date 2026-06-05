@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for PriorityBlockingQueue()
         /// </summary>
-        public static PriorityBlockingQueue New()
+        public static PriorityBlockingQueue Create()
         {
             return JVMBridgeBase.New<PriorityBlockingQueue>();
         }
@@ -124,7 +124,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for PriorityBlockingQueue(int arg0, Java.Util.Comparator arg1)
         /// </summary>
-        public static PriorityBlockingQueue New(int arg0, Java.Util.Comparator arg1)
+        public static PriorityBlockingQueue Create(int arg0, Java.Util.Comparator arg1)
         {
             return JVMBridgeBase.New<PriorityBlockingQueue>(arg0, arg1);
         }
@@ -139,7 +139,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for PriorityBlockingQueue(int arg0)
         /// </summary>
-        public static PriorityBlockingQueue New(int arg0)
+        public static PriorityBlockingQueue Create(int arg0)
         {
             return JVMBridgeBase.New<PriorityBlockingQueue>(arg0);
         }
@@ -154,7 +154,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for PriorityBlockingQueue(Java.Util.Collection arg0)
         /// </summary>
-        public static PriorityBlockingQueue New(Java.Util.Collection arg0)
+        public static PriorityBlockingQueue Create(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<PriorityBlockingQueue>(arg0);
         }
@@ -281,7 +281,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for PriorityBlockingQueue()
         /// </summary>
-        public static PriorityBlockingQueue<E> New()
+        public static PriorityBlockingQueue<E> Create()
         {
             return JVMBridgeBase.New<PriorityBlockingQueue<E>>();
         }
@@ -297,7 +297,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for PriorityBlockingQueue(int arg0, Java.Util.Comparator%3CE%3E arg1)
         /// </summary>
-        public static PriorityBlockingQueue<E> New(int arg0, Java.Util.Comparator<E> arg1)
+        public static PriorityBlockingQueue<E> Create(int arg0, Java.Util.Comparator<E> arg1)
         {
             return JVMBridgeBase.New<PriorityBlockingQueue<E>>(arg0, arg1);
         }
@@ -312,7 +312,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for PriorityBlockingQueue(int arg0)
         /// </summary>
-        public static PriorityBlockingQueue<E> New(int arg0)
+        public static PriorityBlockingQueue<E> Create(int arg0)
         {
             return JVMBridgeBase.New<PriorityBlockingQueue<E>>(arg0);
         }
@@ -327,7 +327,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for PriorityBlockingQueue(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static PriorityBlockingQueue<E> New(Java.Util.Collection<E> arg0)
+        public static PriorityBlockingQueue<E> Create(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<PriorityBlockingQueue<E>>(arg0);
         }

@@ -75,7 +75,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// HPA initializer for ModificationItem(int arg0, Javax.Naming.Directory.Attribute arg1)
         /// </summary>
-        public static ModificationItem New(int arg0, Javax.Naming.Directory.Attribute arg1)
+        public static ModificationItem Create(int arg0, Javax.Naming.Directory.Attribute arg1)
         {
             return JVMBridgeBase.New<ModificationItem>(arg0, arg1);
         }

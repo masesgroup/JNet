@@ -109,7 +109,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for ObjectInputStream(Java.Io.InputStream arg0)
         /// </summary>
-        public static ObjectInputStream New(Java.Io.InputStream arg0)
+        public static ObjectInputStream Create(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<ObjectInputStream>(arg0);
         }
@@ -344,7 +344,7 @@ namespace Java.Io
             /// <summary>
             /// HPA initializer for GetField()
             /// </summary>
-            public static GetField New()
+            public static GetField Create()
             {
                 return JVMBridgeBase.New<GetField>();
             }

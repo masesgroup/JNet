@@ -75,7 +75,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for CommandInfo(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static CommandInfo New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static CommandInfo Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<CommandInfo>(arg0, arg1);
         }

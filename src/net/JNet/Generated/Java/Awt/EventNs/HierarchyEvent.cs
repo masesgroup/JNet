@@ -78,7 +78,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for HierarchyEvent(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2, Java.Awt.Container arg3, long arg4)
         /// </summary>
-        public static HierarchyEvent New(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2, Java.Awt.Container arg3, long arg4)
+        public static HierarchyEvent Create(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2, Java.Awt.Container arg3, long arg4)
         {
             return JVMBridgeBase.New<HierarchyEvent>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -96,7 +96,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for HierarchyEvent(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2, Java.Awt.Container arg3)
         /// </summary>
-        public static HierarchyEvent New(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2, Java.Awt.Container arg3)
+        public static HierarchyEvent Create(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2, Java.Awt.Container arg3)
         {
             return JVMBridgeBase.New<HierarchyEvent>(arg0, arg1, arg2, arg3);
         }

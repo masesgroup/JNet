@@ -74,7 +74,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for AttributeValueExp()
         /// </summary>
-        public static AttributeValueExp New()
+        public static AttributeValueExp Create()
         {
             return JVMBridgeBase.New<AttributeValueExp>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for AttributeValueExp(Java.Lang.String arg0)
         /// </summary>
-        public static AttributeValueExp New(Java.Lang.String arg0)
+        public static AttributeValueExp Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<AttributeValueExp>(arg0);
         }

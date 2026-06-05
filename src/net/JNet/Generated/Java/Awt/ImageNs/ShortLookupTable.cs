@@ -75,7 +75,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ShortLookupTable(int arg0, short[] arg1)
         /// </summary>
-        public static ShortLookupTable New(int arg0, short[] arg1)
+        public static ShortLookupTable Create(int arg0, short[] arg1)
         {
             return JVMBridgeBase.New<ShortLookupTable>(arg0, arg1);
         }
@@ -91,7 +91,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ShortLookupTable(int arg0, short[][] arg1)
         /// </summary>
-        public static ShortLookupTable New(int arg0, short[][] arg1)
+        public static ShortLookupTable Create(int arg0, short[][] arg1)
         {
             return JVMBridgeBase.New<ShortLookupTable>(arg0, arg1);
         }

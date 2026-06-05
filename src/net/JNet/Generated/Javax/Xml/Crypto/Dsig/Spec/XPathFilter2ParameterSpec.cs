@@ -74,7 +74,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// HPA initializer for XPathFilter2ParameterSpec(Java.Util.List arg0)
         /// </summary>
-        public static XPathFilter2ParameterSpec New(Java.Util.List arg0)
+        public static XPathFilter2ParameterSpec Create(Java.Util.List arg0)
         {
             return JVMBridgeBase.New<XPathFilter2ParameterSpec>(arg0);
         }

@@ -77,7 +77,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanNotificationInfo(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Management.Descriptor arg3)
         /// </summary>
-        public static ModelMBeanNotificationInfo New(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Management.Descriptor arg3)
+        public static ModelMBeanNotificationInfo Create(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Management.Descriptor arg3)
         {
             return JVMBridgeBase.New<ModelMBeanNotificationInfo>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanNotificationInfo(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         /// </summary>
-        public static ModelMBeanNotificationInfo New(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        public static ModelMBeanNotificationInfo Create(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<ModelMBeanNotificationInfo>(arg0, arg1, arg2);
         }
@@ -109,7 +109,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanNotificationInfo(Javax.Management.Modelmbean.ModelMBeanNotificationInfo arg0)
         /// </summary>
-        public static ModelMBeanNotificationInfo New(Javax.Management.Modelmbean.ModelMBeanNotificationInfo arg0)
+        public static ModelMBeanNotificationInfo Create(Javax.Management.Modelmbean.ModelMBeanNotificationInfo arg0)
         {
             return JVMBridgeBase.New<ModelMBeanNotificationInfo>(arg0);
         }

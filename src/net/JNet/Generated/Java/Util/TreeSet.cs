@@ -108,7 +108,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeSet()
         /// </summary>
-        public static TreeSet New()
+        public static TreeSet Create()
         {
             return JVMBridgeBase.New<TreeSet>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeSet(Java.Util.Collection arg0)
         /// </summary>
-        public static TreeSet New(Java.Util.Collection arg0)
+        public static TreeSet Create(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<TreeSet>(arg0);
         }
@@ -138,7 +138,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeSet(Java.Util.Comparator arg0)
         /// </summary>
-        public static TreeSet New(Java.Util.Comparator arg0)
+        public static TreeSet Create(Java.Util.Comparator arg0)
         {
             return JVMBridgeBase.New<TreeSet>(arg0);
         }
@@ -153,7 +153,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeSet(Java.Util.SortedSet arg0)
         /// </summary>
-        public static TreeSet New(Java.Util.SortedSet arg0)
+        public static TreeSet Create(Java.Util.SortedSet arg0)
         {
             return JVMBridgeBase.New<TreeSet>(arg0);
         }
@@ -362,7 +362,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeSet()
         /// </summary>
-        public static TreeSet<E> New()
+        public static TreeSet<E> Create()
         {
             return JVMBridgeBase.New<TreeSet<E>>();
         }
@@ -377,7 +377,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeSet(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static TreeSet<E> New(Java.Util.Collection<E> arg0)
+        public static TreeSet<E> Create(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<TreeSet<E>>(arg0);
         }
@@ -392,7 +392,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeSet(Java.Util.Comparator%3CE%3E arg0)
         /// </summary>
-        public static TreeSet<E> New(Java.Util.Comparator<E> arg0)
+        public static TreeSet<E> Create(Java.Util.Comparator<E> arg0)
         {
             return JVMBridgeBase.New<TreeSet<E>>(arg0);
         }
@@ -407,7 +407,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TreeSet(Java.Util.SortedSet%3CE%3E arg0)
         /// </summary>
-        public static TreeSet<E> New(Java.Util.SortedSet<E> arg0)
+        public static TreeSet<E> Create(Java.Util.SortedSet<E> arg0)
         {
             return JVMBridgeBase.New<TreeSet<E>>(arg0);
         }

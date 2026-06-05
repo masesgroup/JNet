@@ -73,7 +73,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// HPA initializer for PageFormat()
         /// </summary>
-        public static PageFormat New()
+        public static PageFormat Create()
         {
             return JVMBridgeBase.New<PageFormat>();
         }

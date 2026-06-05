@@ -73,7 +73,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for FileTypeMap()
         /// </summary>
-        public static FileTypeMap New()
+        public static FileTypeMap Create()
         {
             return JVMBridgeBase.New<FileTypeMap>();
         }

@@ -108,7 +108,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for TableRowSorter()
         /// </summary>
-        public static TableRowSorter New()
+        public static TableRowSorter Create()
         {
             return JVMBridgeBase.New<TableRowSorter>();
         }
@@ -123,7 +123,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for TableRowSorter(Javax.Swing.Table.TableModel arg0)
         /// </summary>
-        public static TableRowSorter New(Javax.Swing.Table.TableModel arg0)
+        public static TableRowSorter Create(Javax.Swing.Table.TableModel arg0)
         {
             return JVMBridgeBase.New<TableRowSorter>(arg0);
         }
@@ -183,7 +183,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for TableRowSorter()
         /// </summary>
-        public static TableRowSorter<M> New()
+        public static TableRowSorter<M> Create()
         {
             return JVMBridgeBase.New<TableRowSorter<M>>();
         }
@@ -198,7 +198,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for TableRowSorter(M arg0)
         /// </summary>
-        public static TableRowSorter<M> New(M arg0)
+        public static TableRowSorter<M> Create(M arg0)
         {
             return JVMBridgeBase.New<TableRowSorter<M>>(arg0);
         }

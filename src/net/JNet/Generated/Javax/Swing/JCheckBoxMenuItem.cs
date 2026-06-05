@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBoxMenuItem()
         /// </summary>
-        public static JCheckBoxMenuItem New()
+        public static JCheckBoxMenuItem Create()
         {
             return JVMBridgeBase.New<JCheckBoxMenuItem>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBoxMenuItem(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static JCheckBoxMenuItem New(Java.Lang.String arg0, bool arg1)
+        public static JCheckBoxMenuItem Create(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<JCheckBoxMenuItem>(arg0, arg1);
         }
@@ -106,7 +106,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBoxMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
         /// </summary>
-        public static JCheckBoxMenuItem New(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
+        public static JCheckBoxMenuItem Create(Java.Lang.String arg0, Javax.Swing.Icon arg1, bool arg2)
         {
             return JVMBridgeBase.New<JCheckBoxMenuItem>(arg0, arg1, arg2);
         }
@@ -122,7 +122,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBoxMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         /// </summary>
-        public static JCheckBoxMenuItem New(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        public static JCheckBoxMenuItem Create(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         {
             return JVMBridgeBase.New<JCheckBoxMenuItem>(arg0, arg1);
         }
@@ -137,7 +137,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBoxMenuItem(Java.Lang.String arg0)
         /// </summary>
-        public static JCheckBoxMenuItem New(Java.Lang.String arg0)
+        public static JCheckBoxMenuItem Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JCheckBoxMenuItem>(arg0);
         }
@@ -152,7 +152,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBoxMenuItem(Javax.Swing.Action arg0)
         /// </summary>
-        public static JCheckBoxMenuItem New(Javax.Swing.Action arg0)
+        public static JCheckBoxMenuItem Create(Javax.Swing.Action arg0)
         {
             return JVMBridgeBase.New<JCheckBoxMenuItem>(arg0);
         }
@@ -167,7 +167,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JCheckBoxMenuItem(Javax.Swing.Icon arg0)
         /// </summary>
-        public static JCheckBoxMenuItem New(Javax.Swing.Icon arg0)
+        public static JCheckBoxMenuItem Create(Javax.Swing.Icon arg0)
         {
             return JVMBridgeBase.New<JCheckBoxMenuItem>(arg0);
         }

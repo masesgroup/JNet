@@ -73,7 +73,7 @@ namespace Javax.Xml.Bind.Annotation
         /// <summary>
         /// HPA initializer for W3CDomHandler()
         /// </summary>
-        public static W3CDomHandler New()
+        public static W3CDomHandler Create()
         {
             return JVMBridgeBase.New<W3CDomHandler>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Xml.Bind.Annotation
         /// <summary>
         /// HPA initializer for W3CDomHandler(Javax.Xml.Parsers.DocumentBuilder arg0)
         /// </summary>
-        public static W3CDomHandler New(Javax.Xml.Parsers.DocumentBuilder arg0)
+        public static W3CDomHandler Create(Javax.Xml.Parsers.DocumentBuilder arg0)
         {
             return JVMBridgeBase.New<W3CDomHandler>(arg0);
         }

@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for UIManager()
         /// </summary>
-        public static UIManager New()
+        public static UIManager Create()
         {
             return JVMBridgeBase.New<UIManager>();
         }
@@ -483,7 +483,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for LookAndFeelInfo(Java.Lang.String arg0, Java.Lang.String arg1)
             /// </summary>
-            public static LookAndFeelInfo New(Java.Lang.String arg0, Java.Lang.String arg1)
+            public static LookAndFeelInfo Create(Java.Lang.String arg0, Java.Lang.String arg1)
             {
                 return JVMBridgeBase.New<LookAndFeelInfo>(arg0, arg1);
             }

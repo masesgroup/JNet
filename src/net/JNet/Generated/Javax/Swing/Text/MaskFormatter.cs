@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for MaskFormatter()
         /// </summary>
-        public static MaskFormatter New()
+        public static MaskFormatter Create()
         {
             return JVMBridgeBase.New<MaskFormatter>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for MaskFormatter(Java.Lang.String arg0)
         /// </summary>
-        public static MaskFormatter New(Java.Lang.String arg0)
+        public static MaskFormatter Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<MaskFormatter>(arg0);
         }

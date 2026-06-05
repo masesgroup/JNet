@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for PrintJob()
         /// </summary>
-        public static PrintJob New()
+        public static PrintJob Create()
         {
             return JVMBridgeBase.New<PrintJob>();
         }

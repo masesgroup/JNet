@@ -76,7 +76,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for StandardMBean(object arg0, Java.Lang.Class arg1, bool arg2)
         /// </summary>
-        public static StandardMBean New(object arg0, Java.Lang.Class arg1, bool arg2)
+        public static StandardMBean Create(object arg0, Java.Lang.Class arg1, bool arg2)
         {
             return JVMBridgeBase.New<StandardMBean>(arg0, arg1, arg2);
         }
@@ -93,7 +93,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for StandardMBean(object arg0, Java.Lang.Class arg1)
         /// </summary>
-        public static StandardMBean New(object arg0, Java.Lang.Class arg1)
+        public static StandardMBean Create(object arg0, Java.Lang.Class arg1)
         {
             return JVMBridgeBase.New<StandardMBean>(arg0, arg1);
         }

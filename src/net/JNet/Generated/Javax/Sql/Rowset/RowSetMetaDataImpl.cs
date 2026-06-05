@@ -73,7 +73,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// HPA initializer for RowSetMetaDataImpl()
         /// </summary>
-        public static RowSetMetaDataImpl New()
+        public static RowSetMetaDataImpl Create()
         {
             return JVMBridgeBase.New<RowSetMetaDataImpl>();
         }

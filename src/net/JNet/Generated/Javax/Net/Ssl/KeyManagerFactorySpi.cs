@@ -73,7 +73,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for KeyManagerFactorySpi()
         /// </summary>
-        public static KeyManagerFactorySpi New()
+        public static KeyManagerFactorySpi Create()
         {
             return JVMBridgeBase.New<KeyManagerFactorySpi>();
         }

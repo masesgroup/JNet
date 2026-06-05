@@ -73,7 +73,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for SimpleBeanInfo()
         /// </summary>
-        public static SimpleBeanInfo New()
+        public static SimpleBeanInfo Create()
         {
             return JVMBridgeBase.New<SimpleBeanInfo>();
         }

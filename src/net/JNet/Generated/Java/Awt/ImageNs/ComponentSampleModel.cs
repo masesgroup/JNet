@@ -80,7 +80,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ComponentSampleModel(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int[] arg6)
         /// </summary>
-        public static ComponentSampleModel New(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int[] arg6)
+        public static ComponentSampleModel Create(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int[] arg6)
         {
             return JVMBridgeBase.New<ComponentSampleModel>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -100,7 +100,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ComponentSampleModel(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5)
         /// </summary>
-        public static ComponentSampleModel New(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5)
+        public static ComponentSampleModel Create(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5)
         {
             return JVMBridgeBase.New<ComponentSampleModel>(arg0, arg1, arg2, arg3, arg4, arg5);
         }

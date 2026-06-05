@@ -109,7 +109,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Dictionary()
         /// </summary>
-        public static Dictionary New()
+        public static Dictionary Create()
         {
             return JVMBridgeBase.New<Dictionary>();
         }
@@ -214,7 +214,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Dictionary()
         /// </summary>
-        public static Dictionary<K, V> New()
+        public static Dictionary<K, V> Create()
         {
             return JVMBridgeBase.New<Dictionary<K, V>>();
         }

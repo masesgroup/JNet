@@ -108,7 +108,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicComboPopup(Javax.Swing.JComboBox arg0)
         /// </summary>
-        public static BasicComboPopup New(Javax.Swing.JComboBox arg0)
+        public static BasicComboPopup Create(Javax.Swing.JComboBox arg0)
         {
             return JVMBridgeBase.New<BasicComboPopup>(arg0);
         }
@@ -186,7 +186,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for ListDataHandler(Javax.Swing.Plaf.Basic.BasicComboPopup arg0)
             /// </summary>
-            public static ListDataHandler New(Javax.Swing.Plaf.Basic.BasicComboPopup arg0)
+            public static ListDataHandler Create(Javax.Swing.Plaf.Basic.BasicComboPopup arg0)
             {
                 return JVMBridgeBase.New<ListDataHandler>(arg0);
             }

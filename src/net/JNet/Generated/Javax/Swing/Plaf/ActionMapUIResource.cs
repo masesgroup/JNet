@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for ActionMapUIResource()
         /// </summary>
-        public static ActionMapUIResource New()
+        public static ActionMapUIResource Create()
         {
             return JVMBridgeBase.New<ActionMapUIResource>();
         }

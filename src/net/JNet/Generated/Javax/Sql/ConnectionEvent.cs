@@ -75,7 +75,7 @@ namespace Javax.Sql
         /// <summary>
         /// HPA initializer for ConnectionEvent(Javax.Sql.PooledConnection arg0, Java.Sql.SQLException arg1)
         /// </summary>
-        public static ConnectionEvent New(Javax.Sql.PooledConnection arg0, Java.Sql.SQLException arg1)
+        public static ConnectionEvent Create(Javax.Sql.PooledConnection arg0, Java.Sql.SQLException arg1)
         {
             return JVMBridgeBase.New<ConnectionEvent>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Sql
         /// <summary>
         /// HPA initializer for ConnectionEvent(Javax.Sql.PooledConnection arg0)
         /// </summary>
-        public static ConnectionEvent New(Javax.Sql.PooledConnection arg0)
+        public static ConnectionEvent Create(Javax.Sql.PooledConnection arg0)
         {
             return JVMBridgeBase.New<ConnectionEvent>(arg0);
         }

@@ -77,7 +77,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for AncestorEvent(Javax.Swing.JComponent arg0, int arg1, Java.Awt.Container arg2, Java.Awt.Container arg3)
         /// </summary>
-        public static AncestorEvent New(Javax.Swing.JComponent arg0, int arg1, Java.Awt.Container arg2, Java.Awt.Container arg3)
+        public static AncestorEvent Create(Javax.Swing.JComponent arg0, int arg1, Java.Awt.Container arg2, Java.Awt.Container arg3)
         {
             return JVMBridgeBase.New<AncestorEvent>(arg0, arg1, arg2, arg3);
         }

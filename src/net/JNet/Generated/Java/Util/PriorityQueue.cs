@@ -108,7 +108,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue()
         /// </summary>
-        public static PriorityQueue New()
+        public static PriorityQueue Create()
         {
             return JVMBridgeBase.New<PriorityQueue>();
         }
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue(int arg0, Java.Util.Comparator arg1)
         /// </summary>
-        public static PriorityQueue New(int arg0, Java.Util.Comparator arg1)
+        public static PriorityQueue Create(int arg0, Java.Util.Comparator arg1)
         {
             return JVMBridgeBase.New<PriorityQueue>(arg0, arg1);
         }
@@ -139,7 +139,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue(int arg0)
         /// </summary>
-        public static PriorityQueue New(int arg0)
+        public static PriorityQueue Create(int arg0)
         {
             return JVMBridgeBase.New<PriorityQueue>(arg0);
         }
@@ -154,7 +154,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue(Java.Util.Collection arg0)
         /// </summary>
-        public static PriorityQueue New(Java.Util.Collection arg0)
+        public static PriorityQueue Create(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<PriorityQueue>(arg0);
         }
@@ -169,7 +169,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue(Java.Util.Comparator arg0)
         /// </summary>
-        public static PriorityQueue New(Java.Util.Comparator arg0)
+        public static PriorityQueue Create(Java.Util.Comparator arg0)
         {
             return JVMBridgeBase.New<PriorityQueue>(arg0);
         }
@@ -184,7 +184,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue(Java.Util.PriorityQueue arg0)
         /// </summary>
-        public static PriorityQueue New(Java.Util.PriorityQueue arg0)
+        public static PriorityQueue Create(Java.Util.PriorityQueue arg0)
         {
             return JVMBridgeBase.New<PriorityQueue>(arg0);
         }
@@ -199,7 +199,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue(Java.Util.SortedSet arg0)
         /// </summary>
-        public static PriorityQueue New(Java.Util.SortedSet arg0)
+        public static PriorityQueue Create(Java.Util.SortedSet arg0)
         {
             return JVMBridgeBase.New<PriorityQueue>(arg0);
         }
@@ -256,7 +256,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue()
         /// </summary>
-        public static PriorityQueue<E> New()
+        public static PriorityQueue<E> Create()
         {
             return JVMBridgeBase.New<PriorityQueue<E>>();
         }
@@ -272,7 +272,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue(int arg0, Java.Util.Comparator%3CE%3E arg1)
         /// </summary>
-        public static PriorityQueue<E> New(int arg0, Java.Util.Comparator<E> arg1)
+        public static PriorityQueue<E> Create(int arg0, Java.Util.Comparator<E> arg1)
         {
             return JVMBridgeBase.New<PriorityQueue<E>>(arg0, arg1);
         }
@@ -287,7 +287,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue(int arg0)
         /// </summary>
-        public static PriorityQueue<E> New(int arg0)
+        public static PriorityQueue<E> Create(int arg0)
         {
             return JVMBridgeBase.New<PriorityQueue<E>>(arg0);
         }
@@ -302,7 +302,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static PriorityQueue<E> New(Java.Util.Collection<E> arg0)
+        public static PriorityQueue<E> Create(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<PriorityQueue<E>>(arg0);
         }
@@ -317,7 +317,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue(Java.Util.Comparator%3CE%3E arg0)
         /// </summary>
-        public static PriorityQueue<E> New(Java.Util.Comparator<E> arg0)
+        public static PriorityQueue<E> Create(Java.Util.Comparator<E> arg0)
         {
             return JVMBridgeBase.New<PriorityQueue<E>>(arg0);
         }
@@ -332,7 +332,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue(Java.Util.PriorityQueue%3CE%3E arg0)
         /// </summary>
-        public static PriorityQueue<E> New(Java.Util.PriorityQueue<E> arg0)
+        public static PriorityQueue<E> Create(Java.Util.PriorityQueue<E> arg0)
         {
             return JVMBridgeBase.New<PriorityQueue<E>>(arg0);
         }
@@ -347,7 +347,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PriorityQueue(Java.Util.SortedSet%3CE%3E arg0)
         /// </summary>
-        public static PriorityQueue<E> New(Java.Util.SortedSet<E> arg0)
+        public static PriorityQueue<E> Create(Java.Util.SortedSet<E> arg0)
         {
             return JVMBridgeBase.New<PriorityQueue<E>>(arg0);
         }

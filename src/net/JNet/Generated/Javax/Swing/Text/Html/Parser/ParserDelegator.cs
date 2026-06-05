@@ -73,7 +73,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// HPA initializer for ParserDelegator()
         /// </summary>
-        public static ParserDelegator New()
+        public static ParserDelegator Create()
         {
             return JVMBridgeBase.New<ParserDelegator>();
         }

@@ -76,7 +76,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for TabStop(float arg0, int arg1, int arg2)
         /// </summary>
-        public static TabStop New(float arg0, int arg1, int arg2)
+        public static TabStop Create(float arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<TabStop>(arg0, arg1, arg2);
         }
@@ -91,7 +91,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for TabStop(float arg0)
         /// </summary>
-        public static TabStop New(float arg0)
+        public static TabStop Create(float arg0)
         {
             return JVMBridgeBase.New<TabStop>(arg0);
         }

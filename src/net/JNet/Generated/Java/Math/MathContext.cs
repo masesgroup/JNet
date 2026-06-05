@@ -75,7 +75,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for MathContext(int arg0, Java.Math.RoundingMode arg1)
         /// </summary>
-        public static MathContext New(int arg0, Java.Math.RoundingMode arg1)
+        public static MathContext Create(int arg0, Java.Math.RoundingMode arg1)
         {
             return JVMBridgeBase.New<MathContext>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for MathContext(int arg0)
         /// </summary>
-        public static MathContext New(int arg0)
+        public static MathContext Create(int arg0)
         {
             return JVMBridgeBase.New<MathContext>(arg0);
         }
@@ -105,7 +105,7 @@ namespace Java.Math
         /// <summary>
         /// HPA initializer for MathContext(Java.Lang.String arg0)
         /// </summary>
-        public static MathContext New(Java.Lang.String arg0)
+        public static MathContext Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<MathContext>(arg0);
         }

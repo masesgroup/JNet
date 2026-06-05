@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for Copies(int arg0)
         /// </summary>
-        public static Copies New(int arg0)
+        public static Copies Create(int arg0)
         {
             return JVMBridgeBase.New<Copies>(arg0);
         }

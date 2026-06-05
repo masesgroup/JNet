@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for OutputDeviceAssigned(Java.Lang.String arg0, Java.Util.Locale arg1)
         /// </summary>
-        public static OutputDeviceAssigned New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        public static OutputDeviceAssigned Create(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
             return JVMBridgeBase.New<OutputDeviceAssigned>(arg0, arg1);
         }

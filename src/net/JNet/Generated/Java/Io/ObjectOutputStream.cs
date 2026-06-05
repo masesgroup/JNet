@@ -109,7 +109,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for ObjectOutputStream(Java.Io.OutputStream arg0)
         /// </summary>
-        public static ObjectOutputStream New(Java.Io.OutputStream arg0)
+        public static ObjectOutputStream Create(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<ObjectOutputStream>(arg0);
         }
@@ -314,7 +314,7 @@ namespace Java.Io
             /// <summary>
             /// HPA initializer for PutField()
             /// </summary>
-            public static PutField New()
+            public static PutField Create()
             {
                 return JVMBridgeBase.New<PutField>();
             }

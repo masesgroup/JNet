@@ -73,7 +73,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <summary>
         /// HPA initializer for JPEGImageReadParam()
         /// </summary>
-        public static JPEGImageReadParam New()
+        public static JPEGImageReadParam Create()
         {
             return JVMBridgeBase.New<JPEGImageReadParam>();
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiTextUI()
         /// </summary>
-        public static MultiTextUI New()
+        public static MultiTextUI Create()
         {
             return JVMBridgeBase.New<MultiTextUI>();
         }

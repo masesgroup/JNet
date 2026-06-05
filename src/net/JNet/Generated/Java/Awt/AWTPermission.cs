@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for AWTPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static AWTPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static AWTPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<AWTPermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for AWTPermission(Java.Lang.String arg0)
         /// </summary>
-        public static AWTPermission New(Java.Lang.String arg0)
+        public static AWTPermission Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<AWTPermission>(arg0);
         }

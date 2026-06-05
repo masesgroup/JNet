@@ -73,7 +73,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for SocketImpl()
         /// </summary>
-        public static SocketImpl New()
+        public static SocketImpl Create()
         {
             return JVMBridgeBase.New<SocketImpl>();
         }

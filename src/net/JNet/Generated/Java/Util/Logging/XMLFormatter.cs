@@ -73,7 +73,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for XMLFormatter()
         /// </summary>
-        public static XMLFormatter New()
+        public static XMLFormatter Create()
         {
             return JVMBridgeBase.New<XMLFormatter>();
         }

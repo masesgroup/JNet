@@ -73,7 +73,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for KeyStoreSpi()
         /// </summary>
-        public static KeyStoreSpi New()
+        public static KeyStoreSpi Create()
         {
             return JVMBridgeBase.New<KeyStoreSpi>();
         }

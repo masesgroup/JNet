@@ -75,7 +75,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for InternalFrameEvent(Javax.Swing.JInternalFrame arg0, int arg1)
         /// </summary>
-        public static InternalFrameEvent New(Javax.Swing.JInternalFrame arg0, int arg1)
+        public static InternalFrameEvent Create(Javax.Swing.JInternalFrame arg0, int arg1)
         {
             return JVMBridgeBase.New<InternalFrameEvent>(arg0, arg1);
         }

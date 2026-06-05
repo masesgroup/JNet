@@ -73,7 +73,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for Area()
         /// </summary>
-        public static Area New()
+        public static Area Create()
         {
             return JVMBridgeBase.New<Area>();
         }
@@ -88,7 +88,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for Area(Java.Awt.Shape arg0)
         /// </summary>
-        public static Area New(Java.Awt.Shape arg0)
+        public static Area Create(Java.Awt.Shape arg0)
         {
             return JVMBridgeBase.New<Area>(arg0);
         }

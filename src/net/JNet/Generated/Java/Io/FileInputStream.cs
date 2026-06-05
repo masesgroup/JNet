@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for FileInputStream(Java.Io.File arg0)
         /// </summary>
-        public static FileInputStream New(Java.Io.File arg0)
+        public static FileInputStream Create(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<FileInputStream>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for FileInputStream(Java.Io.FileDescriptor arg0)
         /// </summary>
-        public static FileInputStream New(Java.Io.FileDescriptor arg0)
+        public static FileInputStream Create(Java.Io.FileDescriptor arg0)
         {
             return JVMBridgeBase.New<FileInputStream>(arg0);
         }
@@ -106,7 +106,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for FileInputStream(Java.Lang.String arg0)
         /// </summary>
-        public static FileInputStream New(Java.Lang.String arg0)
+        public static FileInputStream Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<FileInputStream>(arg0);
         }

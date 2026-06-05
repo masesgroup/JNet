@@ -75,7 +75,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// HPA initializer for RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
         /// </summary>
-        public static RenderContext New(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
+        public static RenderContext Create(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
         {
             return JVMBridgeBase.New<RenderContext>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// HPA initializer for RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1, Java.Awt.RenderingHints arg2)
         /// </summary>
-        public static RenderContext New(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1, Java.Awt.RenderingHints arg2)
+        public static RenderContext Create(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1, Java.Awt.RenderingHints arg2)
         {
             return JVMBridgeBase.New<RenderContext>(arg0, arg1, arg2);
         }
@@ -108,7 +108,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// HPA initializer for RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1)
         /// </summary>
-        public static RenderContext New(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1)
+        public static RenderContext Create(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1)
         {
             return JVMBridgeBase.New<RenderContext>(arg0, arg1);
         }
@@ -123,7 +123,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// HPA initializer for RenderContext(Java.Awt.Geom.AffineTransform arg0)
         /// </summary>
-        public static RenderContext New(Java.Awt.Geom.AffineTransform arg0)
+        public static RenderContext Create(Java.Awt.Geom.AffineTransform arg0)
         {
             return JVMBridgeBase.New<RenderContext>(arg0);
         }

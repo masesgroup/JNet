@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JWindow()
         /// </summary>
-        public static JWindow New()
+        public static JWindow Create()
         {
             return JVMBridgeBase.New<JWindow>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JWindow(Java.Awt.Frame arg0)
         /// </summary>
-        public static JWindow New(Java.Awt.Frame arg0)
+        public static JWindow Create(Java.Awt.Frame arg0)
         {
             return JVMBridgeBase.New<JWindow>(arg0);
         }
@@ -103,7 +103,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JWindow(Java.Awt.GraphicsConfiguration arg0)
         /// </summary>
-        public static JWindow New(Java.Awt.GraphicsConfiguration arg0)
+        public static JWindow Create(Java.Awt.GraphicsConfiguration arg0)
         {
             return JVMBridgeBase.New<JWindow>(arg0);
         }
@@ -119,7 +119,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JWindow(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
         /// </summary>
-        public static JWindow New(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
+        public static JWindow Create(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
         {
             return JVMBridgeBase.New<JWindow>(arg0, arg1);
         }
@@ -134,7 +134,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JWindow(Java.Awt.Window arg0)
         /// </summary>
-        public static JWindow New(Java.Awt.Window arg0)
+        public static JWindow Create(Java.Awt.Window arg0)
         {
             return JVMBridgeBase.New<JWindow>(arg0);
         }

@@ -75,7 +75,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// HPA initializer for TargetedNotification(Javax.Management.Notification arg0, Java.Lang.Integer arg1)
         /// </summary>
-        public static TargetedNotification New(Javax.Management.Notification arg0, Java.Lang.Integer arg1)
+        public static TargetedNotification Create(Javax.Management.Notification arg0, Java.Lang.Integer arg1)
         {
             return JVMBridgeBase.New<TargetedNotification>(arg0, arg1);
         }

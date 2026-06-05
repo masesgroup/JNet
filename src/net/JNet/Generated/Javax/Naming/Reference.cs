@@ -76,7 +76,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for Reference(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         /// </summary>
-        public static Reference New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        public static Reference Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<Reference>(arg0, arg1, arg2);
         }
@@ -94,7 +94,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for Reference(Java.Lang.String arg0, Javax.Naming.RefAddr arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         /// </summary>
-        public static Reference New(Java.Lang.String arg0, Javax.Naming.RefAddr arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        public static Reference Create(Java.Lang.String arg0, Javax.Naming.RefAddr arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
             return JVMBridgeBase.New<Reference>(arg0, arg1, arg2, arg3);
         }
@@ -110,7 +110,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for Reference(Java.Lang.String arg0, Javax.Naming.RefAddr arg1)
         /// </summary>
-        public static Reference New(Java.Lang.String arg0, Javax.Naming.RefAddr arg1)
+        public static Reference Create(Java.Lang.String arg0, Javax.Naming.RefAddr arg1)
         {
             return JVMBridgeBase.New<Reference>(arg0, arg1);
         }
@@ -125,7 +125,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for Reference(Java.Lang.String arg0)
         /// </summary>
-        public static Reference New(Java.Lang.String arg0)
+        public static Reference Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Reference>(arg0);
         }

@@ -75,7 +75,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Short(Java.Lang.String arg0)
         /// </summary>
-        public static Short New(Java.Lang.String arg0)
+        public static Short Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Short>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Short(short arg0)
         /// </summary>
-        public static Short New(short arg0)
+        public static Short Create(short arg0)
         {
             return JVMBridgeBase.New<Short>(arg0);
         }

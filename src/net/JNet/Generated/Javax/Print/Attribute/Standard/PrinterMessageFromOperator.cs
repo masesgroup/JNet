@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PrinterMessageFromOperator(Java.Lang.String arg0, Java.Util.Locale arg1)
         /// </summary>
-        public static PrinterMessageFromOperator New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        public static PrinterMessageFromOperator Create(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
             return JVMBridgeBase.New<PrinterMessageFromOperator>(arg0, arg1);
         }

@@ -110,7 +110,7 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// HPA initializer for AppConfigurationEntry(Java.Lang.String arg0, Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag arg1, Java.Util.Map%3CJava.Lang.String, object%3E arg2)
         /// </summary>
-        public static AppConfigurationEntry New(Java.Lang.String arg0, Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag arg1, Java.Util.Map<Java.Lang.String, object> arg2)
+        public static AppConfigurationEntry Create(Java.Lang.String arg0, Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag arg1, Java.Util.Map<Java.Lang.String, object> arg2)
         {
             return JVMBridgeBase.New<AppConfigurationEntry>(arg0, arg1, arg2);
         }

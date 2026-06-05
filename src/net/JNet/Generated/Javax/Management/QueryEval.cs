@@ -73,7 +73,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for QueryEval()
         /// </summary>
-        public static QueryEval New()
+        public static QueryEval Create()
         {
             return JVMBridgeBase.New<QueryEval>();
         }

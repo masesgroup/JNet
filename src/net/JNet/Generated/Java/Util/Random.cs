@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Random()
         /// </summary>
-        public static Random New()
+        public static Random Create()
         {
             return JVMBridgeBase.New<Random>();
         }
@@ -88,7 +88,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Random(long arg0)
         /// </summary>
-        public static Random New(long arg0)
+        public static Random Create(long arg0)
         {
             return JVMBridgeBase.New<Random>(arg0);
         }

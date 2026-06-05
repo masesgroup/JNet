@@ -79,7 +79,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URL(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3, Java.Net.URLStreamHandler arg4)
         /// </summary>
-        public static URL New(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3, Java.Net.URLStreamHandler arg4)
+        public static URL Create(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3, Java.Net.URLStreamHandler arg4)
         {
             return JVMBridgeBase.New<URL>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -98,7 +98,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URL(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
         /// </summary>
-        public static URL New(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
+        public static URL Create(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
         {
             return JVMBridgeBase.New<URL>(arg0, arg1, arg2, arg3);
         }
@@ -116,7 +116,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URL(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         /// </summary>
-        public static URL New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        public static URL Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<URL>(arg0, arg1, arg2);
         }
@@ -132,7 +132,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URL(Java.Lang.String arg0)
         /// </summary>
-        public static URL New(Java.Lang.String arg0)
+        public static URL Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<URL>(arg0);
         }
@@ -150,7 +150,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URL(Java.Net.URL arg0, Java.Lang.String arg1, Java.Net.URLStreamHandler arg2)
         /// </summary>
-        public static URL New(Java.Net.URL arg0, Java.Lang.String arg1, Java.Net.URLStreamHandler arg2)
+        public static URL Create(Java.Net.URL arg0, Java.Lang.String arg1, Java.Net.URLStreamHandler arg2)
         {
             return JVMBridgeBase.New<URL>(arg0, arg1, arg2);
         }
@@ -167,7 +167,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URL(Java.Net.URL arg0, Java.Lang.String arg1)
         /// </summary>
-        public static URL New(Java.Net.URL arg0, Java.Lang.String arg1)
+        public static URL Create(Java.Net.URL arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<URL>(arg0, arg1);
         }

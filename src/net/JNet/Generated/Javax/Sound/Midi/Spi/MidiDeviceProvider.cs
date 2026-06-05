@@ -73,7 +73,7 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// HPA initializer for MidiDeviceProvider()
         /// </summary>
-        public static MidiDeviceProvider New()
+        public static MidiDeviceProvider Create()
         {
             return JVMBridgeBase.New<MidiDeviceProvider>();
         }

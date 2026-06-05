@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthDesktopPaneUI()
         /// </summary>
-        public static SynthDesktopPaneUI New()
+        public static SynthDesktopPaneUI Create()
         {
             return JVMBridgeBase.New<SynthDesktopPaneUI>();
         }

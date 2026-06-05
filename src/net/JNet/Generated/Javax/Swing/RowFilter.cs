@@ -213,7 +213,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for RowFilter()
         /// </summary>
-        public static RowFilter New()
+        public static RowFilter Create()
         {
             return JVMBridgeBase.New<RowFilter>();
         }
@@ -383,7 +383,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for Entry()
             /// </summary>
-            public static Entry New()
+            public static Entry Create()
             {
                 return JVMBridgeBase.New<Entry>();
             }
@@ -467,7 +467,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for Entry()
             /// </summary>
-            public static Entry<M, I> New()
+            public static Entry<M, I> Create()
             {
                 return JVMBridgeBase.New<Entry<M, I>>();
             }
@@ -562,7 +562,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for RowFilter()
         /// </summary>
-        public static RowFilter<M, I> New()
+        public static RowFilter<M, I> Create()
         {
             return JVMBridgeBase.New<RowFilter<M, I>>();
         }

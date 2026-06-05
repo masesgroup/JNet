@@ -79,7 +79,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for CompositeType(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String[] arg3, Javax.Management.Openmbean.OpenType%3Cobject%3E[] arg4)
         /// </summary>
-        public static CompositeType New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String[] arg3, Javax.Management.Openmbean.OpenType<object>[] arg4)
+        public static CompositeType Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String[] arg3, Javax.Management.Openmbean.OpenType<object>[] arg4)
         {
             return JVMBridgeBase.New<CompositeType>(arg0, arg1, arg2, arg3, arg4);
         }

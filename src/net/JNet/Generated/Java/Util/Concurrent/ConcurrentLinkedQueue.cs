@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentLinkedQueue()
         /// </summary>
-        public static ConcurrentLinkedQueue New()
+        public static ConcurrentLinkedQueue Create()
         {
             return JVMBridgeBase.New<ConcurrentLinkedQueue>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentLinkedQueue(Java.Util.Collection arg0)
         /// </summary>
-        public static ConcurrentLinkedQueue New(Java.Util.Collection arg0)
+        public static ConcurrentLinkedQueue Create(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<ConcurrentLinkedQueue>(arg0);
         }
@@ -172,7 +172,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentLinkedQueue()
         /// </summary>
-        public static ConcurrentLinkedQueue<E> New()
+        public static ConcurrentLinkedQueue<E> Create()
         {
             return JVMBridgeBase.New<ConcurrentLinkedQueue<E>>();
         }
@@ -187,7 +187,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentLinkedQueue(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static ConcurrentLinkedQueue<E> New(Java.Util.Collection<E> arg0)
+        public static ConcurrentLinkedQueue<E> Create(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<ConcurrentLinkedQueue<E>>(arg0);
         }

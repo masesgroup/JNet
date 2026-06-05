@@ -78,7 +78,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for AdjustmentEvent(Java.Awt.Adjustable arg0, int arg1, int arg2, int arg3, bool arg4)
         /// </summary>
-        public static AdjustmentEvent New(Java.Awt.Adjustable arg0, int arg1, int arg2, int arg3, bool arg4)
+        public static AdjustmentEvent Create(Java.Awt.Adjustable arg0, int arg1, int arg2, int arg3, bool arg4)
         {
             return JVMBridgeBase.New<AdjustmentEvent>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -96,7 +96,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for AdjustmentEvent(Java.Awt.Adjustable arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static AdjustmentEvent New(Java.Awt.Adjustable arg0, int arg1, int arg2, int arg3)
+        public static AdjustmentEvent Create(Java.Awt.Adjustable arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<AdjustmentEvent>(arg0, arg1, arg2, arg3);
         }

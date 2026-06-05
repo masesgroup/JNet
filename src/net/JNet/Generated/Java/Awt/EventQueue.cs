@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for EventQueue()
         /// </summary>
-        public static EventQueue New()
+        public static EventQueue Create()
         {
             return JVMBridgeBase.New<EventQueue>();
         }

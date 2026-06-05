@@ -74,7 +74,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for AWTEvent(Java.Awt.Event arg0)
         /// </summary>
-        public static AWTEvent New(Java.Awt.Event arg0)
+        public static AWTEvent Create(Java.Awt.Event arg0)
         {
             return JVMBridgeBase.New<AWTEvent>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for AWTEvent(object arg0, int arg1)
         /// </summary>
-        public static AWTEvent New(object arg0, int arg1)
+        public static AWTEvent Create(object arg0, int arg1)
         {
             return JVMBridgeBase.New<AWTEvent>(arg0, arg1);
         }

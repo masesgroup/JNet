@@ -76,7 +76,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// HPA initializer for ManagementPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static ManagementPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static ManagementPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<ManagementPermission>(arg0, arg1);
         }
@@ -91,7 +91,7 @@ namespace Java.Lang.Management
         /// <summary>
         /// HPA initializer for ManagementPermission(Java.Lang.String arg0)
         /// </summary>
-        public static ManagementPermission New(Java.Lang.String arg0)
+        public static ManagementPermission Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<ManagementPermission>(arg0);
         }

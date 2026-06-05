@@ -74,7 +74,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// HPA initializer for RMIServerImpl_Stub(Java.Rmi.Server.RemoteRef arg0)
         /// </summary>
-        public static RMIServerImpl_Stub New(Java.Rmi.Server.RemoteRef arg0)
+        public static RMIServerImpl_Stub Create(Java.Rmi.Server.RemoteRef arg0)
         {
             return JVMBridgeBase.New<RMIServerImpl_Stub>(arg0);
         }

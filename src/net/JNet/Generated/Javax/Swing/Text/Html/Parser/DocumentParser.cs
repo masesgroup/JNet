@@ -74,7 +74,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// HPA initializer for DocumentParser(Javax.Swing.Text.Html.Parser.DTD arg0)
         /// </summary>
-        public static DocumentParser New(Javax.Swing.Text.Html.Parser.DTD arg0)
+        public static DocumentParser Create(Javax.Swing.Text.Html.Parser.DTD arg0)
         {
             return JVMBridgeBase.New<DocumentParser>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for GeneralPath()
         /// </summary>
-        public static GeneralPath New()
+        public static GeneralPath Create()
         {
             return JVMBridgeBase.New<GeneralPath>();
         }
@@ -89,7 +89,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for GeneralPath(int arg0, int arg1)
         /// </summary>
-        public static GeneralPath New(int arg0, int arg1)
+        public static GeneralPath Create(int arg0, int arg1)
         {
             return JVMBridgeBase.New<GeneralPath>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for GeneralPath(int arg0)
         /// </summary>
-        public static GeneralPath New(int arg0)
+        public static GeneralPath Create(int arg0)
         {
             return JVMBridgeBase.New<GeneralPath>(arg0);
         }
@@ -119,7 +119,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for GeneralPath(Java.Awt.Shape arg0)
         /// </summary>
-        public static GeneralPath New(Java.Awt.Shape arg0)
+        public static GeneralPath Create(Java.Awt.Shape arg0)
         {
             return JVMBridgeBase.New<GeneralPath>(arg0);
         }

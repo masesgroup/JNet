@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JToolTip()
         /// </summary>
-        public static JToolTip New()
+        public static JToolTip Create()
         {
             return JVMBridgeBase.New<JToolTip>();
         }

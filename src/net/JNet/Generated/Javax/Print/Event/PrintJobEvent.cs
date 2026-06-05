@@ -75,7 +75,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// HPA initializer for PrintJobEvent(Javax.Print.DocPrintJob arg0, int arg1)
         /// </summary>
-        public static PrintJobEvent New(Javax.Print.DocPrintJob arg0, int arg1)
+        public static PrintJobEvent Create(Javax.Print.DocPrintJob arg0, int arg1)
         {
             return JVMBridgeBase.New<PrintJobEvent>(arg0, arg1);
         }

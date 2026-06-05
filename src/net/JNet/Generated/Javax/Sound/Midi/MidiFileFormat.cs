@@ -79,7 +79,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for MidiFileFormat(int arg0, float arg1, int arg2, int arg3, long arg4, Java.Util.Map%3CJava.Lang.String, object%3E arg5)
         /// </summary>
-        public static MidiFileFormat New(int arg0, float arg1, int arg2, int arg3, long arg4, Java.Util.Map<Java.Lang.String, object> arg5)
+        public static MidiFileFormat Create(int arg0, float arg1, int arg2, int arg3, long arg4, Java.Util.Map<Java.Lang.String, object> arg5)
         {
             return JVMBridgeBase.New<MidiFileFormat>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -98,7 +98,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for MidiFileFormat(int arg0, float arg1, int arg2, int arg3, long arg4)
         /// </summary>
-        public static MidiFileFormat New(int arg0, float arg1, int arg2, int arg3, long arg4)
+        public static MidiFileFormat Create(int arg0, float arg1, int arg2, int arg3, long arg4)
         {
             return JVMBridgeBase.New<MidiFileFormat>(arg0, arg1, arg2, arg3, arg4);
         }

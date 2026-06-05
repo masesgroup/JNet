@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobKOctetsProcessed(int arg0)
         /// </summary>
-        public static JobKOctetsProcessed New(int arg0)
+        public static JobKOctetsProcessed Create(int arg0)
         {
             return JVMBridgeBase.New<JobKOctetsProcessed>(arg0);
         }

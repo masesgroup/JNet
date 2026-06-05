@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// HPA initializer for ReentrantLock()
         /// </summary>
-        public static ReentrantLock New()
+        public static ReentrantLock Create()
         {
             return JVMBridgeBase.New<ReentrantLock>();
         }
@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// HPA initializer for ReentrantLock(bool arg0)
         /// </summary>
-        public static ReentrantLock New(bool arg0)
+        public static ReentrantLock Create(bool arg0)
         {
             return JVMBridgeBase.New<ReentrantLock>(arg0);
         }

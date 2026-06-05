@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for SynchronousQueue()
         /// </summary>
-        public static SynchronousQueue New()
+        public static SynchronousQueue Create()
         {
             return JVMBridgeBase.New<SynchronousQueue>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for SynchronousQueue(bool arg0)
         /// </summary>
-        public static SynchronousQueue New(bool arg0)
+        public static SynchronousQueue Create(bool arg0)
         {
             return JVMBridgeBase.New<SynchronousQueue>(arg0);
         }
@@ -244,7 +244,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for SynchronousQueue()
         /// </summary>
-        public static SynchronousQueue<E> New()
+        public static SynchronousQueue<E> Create()
         {
             return JVMBridgeBase.New<SynchronousQueue<E>>();
         }
@@ -259,7 +259,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for SynchronousQueue(bool arg0)
         /// </summary>
-        public static SynchronousQueue<E> New(bool arg0)
+        public static SynchronousQueue<E> Create(bool arg0)
         {
             return JVMBridgeBase.New<SynchronousQueue<E>>(arg0);
         }

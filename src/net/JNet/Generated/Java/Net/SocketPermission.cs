@@ -75,7 +75,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for SocketPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static SocketPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static SocketPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<SocketPermission>(arg0, arg1);
         }

@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PushbackReader(Java.Io.Reader arg0, int arg1)
         /// </summary>
-        public static PushbackReader New(Java.Io.Reader arg0, int arg1)
+        public static PushbackReader Create(Java.Io.Reader arg0, int arg1)
         {
             return JVMBridgeBase.New<PushbackReader>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PushbackReader(Java.Io.Reader arg0)
         /// </summary>
-        public static PushbackReader New(Java.Io.Reader arg0)
+        public static PushbackReader Create(Java.Io.Reader arg0)
         {
             return JVMBridgeBase.New<PushbackReader>(arg0);
         }

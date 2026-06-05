@@ -109,7 +109,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashMap()
         /// </summary>
-        public static LinkedHashMap New()
+        public static LinkedHashMap Create()
         {
             return JVMBridgeBase.New<LinkedHashMap>();
         }
@@ -126,7 +126,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashMap(int arg0, float arg1, bool arg2)
         /// </summary>
-        public static LinkedHashMap New(int arg0, float arg1, bool arg2)
+        public static LinkedHashMap Create(int arg0, float arg1, bool arg2)
         {
             return JVMBridgeBase.New<LinkedHashMap>(arg0, arg1, arg2);
         }
@@ -142,7 +142,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashMap(int arg0, float arg1)
         /// </summary>
-        public static LinkedHashMap New(int arg0, float arg1)
+        public static LinkedHashMap Create(int arg0, float arg1)
         {
             return JVMBridgeBase.New<LinkedHashMap>(arg0, arg1);
         }
@@ -157,7 +157,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashMap(int arg0)
         /// </summary>
-        public static LinkedHashMap New(int arg0)
+        public static LinkedHashMap Create(int arg0)
         {
             return JVMBridgeBase.New<LinkedHashMap>(arg0);
         }
@@ -172,7 +172,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashMap(Java.Util.Map arg0)
         /// </summary>
-        public static LinkedHashMap New(Java.Util.Map arg0)
+        public static LinkedHashMap Create(Java.Util.Map arg0)
         {
             return JVMBridgeBase.New<LinkedHashMap>(arg0);
         }
@@ -217,7 +217,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashMap()
         /// </summary>
-        public static LinkedHashMap<K, V> New()
+        public static LinkedHashMap<K, V> Create()
         {
             return JVMBridgeBase.New<LinkedHashMap<K, V>>();
         }
@@ -234,7 +234,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashMap(int arg0, float arg1, bool arg2)
         /// </summary>
-        public static LinkedHashMap<K, V> New(int arg0, float arg1, bool arg2)
+        public static LinkedHashMap<K, V> Create(int arg0, float arg1, bool arg2)
         {
             return JVMBridgeBase.New<LinkedHashMap<K, V>>(arg0, arg1, arg2);
         }
@@ -250,7 +250,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashMap(int arg0, float arg1)
         /// </summary>
-        public static LinkedHashMap<K, V> New(int arg0, float arg1)
+        public static LinkedHashMap<K, V> Create(int arg0, float arg1)
         {
             return JVMBridgeBase.New<LinkedHashMap<K, V>>(arg0, arg1);
         }
@@ -265,7 +265,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashMap(int arg0)
         /// </summary>
-        public static LinkedHashMap<K, V> New(int arg0)
+        public static LinkedHashMap<K, V> Create(int arg0)
         {
             return JVMBridgeBase.New<LinkedHashMap<K, V>>(arg0);
         }
@@ -280,7 +280,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedHashMap(Java.Util.Map%3CK, V%3E arg0)
         /// </summary>
-        public static LinkedHashMap<K, V> New(Java.Util.Map<K, V> arg0)
+        public static LinkedHashMap<K, V> Create(Java.Util.Map<K, V> arg0)
         {
             return JVMBridgeBase.New<LinkedHashMap<K, V>>(arg0);
         }

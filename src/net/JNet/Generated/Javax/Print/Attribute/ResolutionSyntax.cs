@@ -76,7 +76,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for ResolutionSyntax(int arg0, int arg1, int arg2)
         /// </summary>
-        public static ResolutionSyntax New(int arg0, int arg1, int arg2)
+        public static ResolutionSyntax Create(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<ResolutionSyntax>(arg0, arg1, arg2);
         }

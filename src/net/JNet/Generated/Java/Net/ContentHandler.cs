@@ -73,7 +73,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for ContentHandler()
         /// </summary>
-        public static ContentHandler New()
+        public static ContentHandler Create()
         {
             return JVMBridgeBase.New<ContentHandler>();
         }

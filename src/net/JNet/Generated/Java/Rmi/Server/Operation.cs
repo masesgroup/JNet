@@ -76,7 +76,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// HPA initializer for Operation(Java.Lang.String arg0)
         /// </summary>
-        public static Operation New(Java.Lang.String arg0)
+        public static Operation Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Operation>(arg0);
         }

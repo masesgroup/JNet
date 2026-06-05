@@ -75,7 +75,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for CodeSource(Java.Net.URL arg0, Java.Security.Cert.Certificate[] arg1)
         /// </summary>
-        public static CodeSource New(Java.Net.URL arg0, Java.Security.Cert.Certificate[] arg1)
+        public static CodeSource Create(Java.Net.URL arg0, Java.Security.Cert.Certificate[] arg1)
         {
             return JVMBridgeBase.New<CodeSource>(arg0, arg1);
         }
@@ -91,7 +91,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for CodeSource(Java.Net.URL arg0, Java.Security.CodeSigner[] arg1)
         /// </summary>
-        public static CodeSource New(Java.Net.URL arg0, Java.Security.CodeSigner[] arg1)
+        public static CodeSource Create(Java.Net.URL arg0, Java.Security.CodeSigner[] arg1)
         {
             return JVMBridgeBase.New<CodeSource>(arg0, arg1);
         }

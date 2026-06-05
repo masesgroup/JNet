@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Toolkit()
         /// </summary>
-        public static Toolkit New()
+        public static Toolkit Create()
         {
             return JVMBridgeBase.New<Toolkit>();
         }

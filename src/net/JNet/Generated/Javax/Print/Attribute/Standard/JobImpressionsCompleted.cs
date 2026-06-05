@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobImpressionsCompleted(int arg0)
         /// </summary>
-        public static JobImpressionsCompleted New(int arg0)
+        public static JobImpressionsCompleted Create(int arg0)
         {
             return JVMBridgeBase.New<JobImpressionsCompleted>(arg0);
         }

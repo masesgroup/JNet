@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultFocusManager()
         /// </summary>
-        public static DefaultFocusManager New()
+        public static DefaultFocusManager Create()
         {
             return JVMBridgeBase.New<DefaultFocusManager>();
         }

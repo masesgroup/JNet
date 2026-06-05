@@ -77,7 +77,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for StringCharacterIterator(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static StringCharacterIterator New(Java.Lang.String arg0, int arg1, int arg2, int arg3)
+        public static StringCharacterIterator Create(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<StringCharacterIterator>(arg0, arg1, arg2, arg3);
         }
@@ -93,7 +93,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for StringCharacterIterator(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static StringCharacterIterator New(Java.Lang.String arg0, int arg1)
+        public static StringCharacterIterator Create(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<StringCharacterIterator>(arg0, arg1);
         }
@@ -108,7 +108,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for StringCharacterIterator(Java.Lang.String arg0)
         /// </summary>
-        public static StringCharacterIterator New(Java.Lang.String arg0)
+        public static StringCharacterIterator Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<StringCharacterIterator>(arg0);
         }

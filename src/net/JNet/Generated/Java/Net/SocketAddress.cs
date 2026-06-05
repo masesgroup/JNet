@@ -73,7 +73,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for SocketAddress()
         /// </summary>
-        public static SocketAddress New()
+        public static SocketAddress Create()
         {
             return JVMBridgeBase.New<SocketAddress>();
         }

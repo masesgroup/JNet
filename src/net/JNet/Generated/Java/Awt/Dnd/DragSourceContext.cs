@@ -80,7 +80,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DragSourceContext(Java.Awt.Dnd.Peer.DragSourceContextPeer arg0, Java.Awt.Dnd.DragGestureEvent arg1, Java.Awt.Cursor arg2, Java.Awt.Image arg3, Java.Awt.Point arg4, Java.Awt.Datatransfer.Transferable arg5, Java.Awt.Dnd.DragSourceListener arg6)
         /// </summary>
-        public static DragSourceContext New(Java.Awt.Dnd.Peer.DragSourceContextPeer arg0, Java.Awt.Dnd.DragGestureEvent arg1, Java.Awt.Cursor arg2, Java.Awt.Image arg3, Java.Awt.Point arg4, Java.Awt.Datatransfer.Transferable arg5, Java.Awt.Dnd.DragSourceListener arg6)
+        public static DragSourceContext Create(Java.Awt.Dnd.Peer.DragSourceContextPeer arg0, Java.Awt.Dnd.DragGestureEvent arg1, Java.Awt.Cursor arg2, Java.Awt.Image arg3, Java.Awt.Point arg4, Java.Awt.Datatransfer.Transferable arg5, Java.Awt.Dnd.DragSourceListener arg6)
         {
             return JVMBridgeBase.New<DragSourceContext>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }

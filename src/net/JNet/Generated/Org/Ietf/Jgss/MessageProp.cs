@@ -74,7 +74,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// HPA initializer for MessageProp(bool arg0)
         /// </summary>
-        public static MessageProp New(bool arg0)
+        public static MessageProp Create(bool arg0)
         {
             return JVMBridgeBase.New<MessageProp>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// HPA initializer for MessageProp(int arg0, bool arg1)
         /// </summary>
-        public static MessageProp New(int arg0, bool arg1)
+        public static MessageProp Create(int arg0, bool arg1)
         {
             return JVMBridgeBase.New<MessageProp>(arg0, arg1);
         }

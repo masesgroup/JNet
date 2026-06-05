@@ -73,7 +73,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for AlgorithmParametersSpi()
         /// </summary>
-        public static AlgorithmParametersSpi New()
+        public static AlgorithmParametersSpi Create()
         {
             return JVMBridgeBase.New<AlgorithmParametersSpi>();
         }

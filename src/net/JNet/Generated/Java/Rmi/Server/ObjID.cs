@@ -73,7 +73,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// HPA initializer for ObjID()
         /// </summary>
-        public static ObjID New()
+        public static ObjID Create()
         {
             return JVMBridgeBase.New<ObjID>();
         }
@@ -88,7 +88,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// HPA initializer for ObjID(int arg0)
         /// </summary>
-        public static ObjID New(int arg0)
+        public static ObjID Create(int arg0)
         {
             return JVMBridgeBase.New<ObjID>(arg0);
         }

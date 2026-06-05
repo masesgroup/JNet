@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// HPA initializer for SynthLookAndFeel()
         /// </summary>
-        public static SynthLookAndFeel New()
+        public static SynthLookAndFeel Create()
         {
             return JVMBridgeBase.New<SynthLookAndFeel>();
         }

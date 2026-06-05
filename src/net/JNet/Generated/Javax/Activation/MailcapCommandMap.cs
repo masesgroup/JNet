@@ -73,7 +73,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for MailcapCommandMap()
         /// </summary>
-        public static MailcapCommandMap New()
+        public static MailcapCommandMap Create()
         {
             return JVMBridgeBase.New<MailcapCommandMap>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for MailcapCommandMap(Java.Io.InputStream arg0)
         /// </summary>
-        public static MailcapCommandMap New(Java.Io.InputStream arg0)
+        public static MailcapCommandMap Create(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<MailcapCommandMap>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for MailcapCommandMap(Java.Lang.String arg0)
         /// </summary>
-        public static MailcapCommandMap New(Java.Lang.String arg0)
+        public static MailcapCommandMap Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<MailcapCommandMap>(arg0);
         }

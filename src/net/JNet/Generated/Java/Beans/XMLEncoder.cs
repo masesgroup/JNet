@@ -77,7 +77,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for XMLEncoder(Java.Io.OutputStream arg0, Java.Lang.String arg1, bool arg2, int arg3)
         /// </summary>
-        public static XMLEncoder New(Java.Io.OutputStream arg0, Java.Lang.String arg1, bool arg2, int arg3)
+        public static XMLEncoder Create(Java.Io.OutputStream arg0, Java.Lang.String arg1, bool arg2, int arg3)
         {
             return JVMBridgeBase.New<XMLEncoder>(arg0, arg1, arg2, arg3);
         }
@@ -92,7 +92,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for XMLEncoder(Java.Io.OutputStream arg0)
         /// </summary>
-        public static XMLEncoder New(Java.Io.OutputStream arg0)
+        public static XMLEncoder Create(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<XMLEncoder>(arg0);
         }

@@ -74,7 +74,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for ECFieldFp(Java.Math.BigInteger arg0)
         /// </summary>
-        public static ECFieldFp New(Java.Math.BigInteger arg0)
+        public static ECFieldFp Create(Java.Math.BigInteger arg0)
         {
             return JVMBridgeBase.New<ECFieldFp>(arg0);
         }

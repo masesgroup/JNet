@@ -73,7 +73,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for EtchedBorder()
         /// </summary>
-        public static EtchedBorder New()
+        public static EtchedBorder Create()
         {
             return JVMBridgeBase.New<EtchedBorder>();
         }
@@ -90,7 +90,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for EtchedBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
         /// </summary>
-        public static EtchedBorder New(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
+        public static EtchedBorder Create(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
         {
             return JVMBridgeBase.New<EtchedBorder>(arg0, arg1, arg2);
         }
@@ -105,7 +105,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for EtchedBorder(int arg0)
         /// </summary>
-        public static EtchedBorder New(int arg0)
+        public static EtchedBorder Create(int arg0)
         {
             return JVMBridgeBase.New<EtchedBorder>(arg0);
         }
@@ -121,7 +121,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// HPA initializer for EtchedBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
         /// </summary>
-        public static EtchedBorder New(Java.Awt.Color arg0, Java.Awt.Color arg1)
+        public static EtchedBorder Create(Java.Awt.Color arg0, Java.Awt.Color arg1)
         {
             return JVMBridgeBase.New<EtchedBorder>(arg0, arg1);
         }

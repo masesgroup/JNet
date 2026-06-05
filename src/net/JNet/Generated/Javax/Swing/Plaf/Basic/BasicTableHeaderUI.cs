@@ -107,7 +107,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicTableHeaderUI()
         /// </summary>
-        public static BasicTableHeaderUI New()
+        public static BasicTableHeaderUI Create()
         {
             return JVMBridgeBase.New<BasicTableHeaderUI>();
         }
@@ -146,7 +146,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for MouseInputHandler(Javax.Swing.Plaf.Basic.BasicTableHeaderUI arg0)
             /// </summary>
-            public static MouseInputHandler New(Javax.Swing.Plaf.Basic.BasicTableHeaderUI arg0)
+            public static MouseInputHandler Create(Javax.Swing.Plaf.Basic.BasicTableHeaderUI arg0)
             {
                 return JVMBridgeBase.New<MouseInputHandler>(arg0);
             }

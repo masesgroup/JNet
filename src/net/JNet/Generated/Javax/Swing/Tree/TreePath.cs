@@ -74,7 +74,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// HPA initializer for TreePath(object arg0)
         /// </summary>
-        public static TreePath New(object arg0)
+        public static TreePath Create(object arg0)
         {
             return JVMBridgeBase.New<TreePath>(arg0);
         }

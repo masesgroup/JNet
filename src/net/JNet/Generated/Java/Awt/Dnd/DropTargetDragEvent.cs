@@ -77,7 +77,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DropTargetDragEvent(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3)
         /// </summary>
-        public static DropTargetDragEvent New(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3)
+        public static DropTargetDragEvent Create(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<DropTargetDragEvent>(arg0, arg1, arg2, arg3);
         }

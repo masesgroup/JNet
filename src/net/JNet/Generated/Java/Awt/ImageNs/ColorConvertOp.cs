@@ -76,7 +76,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ColorConvertOp(Java.Awt.ColorNs.ColorSpace arg0, Java.Awt.ColorNs.ColorSpace arg1, Java.Awt.RenderingHints arg2)
         /// </summary>
-        public static ColorConvertOp New(Java.Awt.ColorNs.ColorSpace arg0, Java.Awt.ColorNs.ColorSpace arg1, Java.Awt.RenderingHints arg2)
+        public static ColorConvertOp Create(Java.Awt.ColorNs.ColorSpace arg0, Java.Awt.ColorNs.ColorSpace arg1, Java.Awt.RenderingHints arg2)
         {
             return JVMBridgeBase.New<ColorConvertOp>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ColorConvertOp(Java.Awt.ColorNs.ColorSpace arg0, Java.Awt.RenderingHints arg1)
         /// </summary>
-        public static ColorConvertOp New(Java.Awt.ColorNs.ColorSpace arg0, Java.Awt.RenderingHints arg1)
+        public static ColorConvertOp Create(Java.Awt.ColorNs.ColorSpace arg0, Java.Awt.RenderingHints arg1)
         {
             return JVMBridgeBase.New<ColorConvertOp>(arg0, arg1);
         }
@@ -108,7 +108,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ColorConvertOp(Java.Awt.ColorNs.ICC_Profile[] arg0, Java.Awt.RenderingHints arg1)
         /// </summary>
-        public static ColorConvertOp New(Java.Awt.ColorNs.ICC_Profile[] arg0, Java.Awt.RenderingHints arg1)
+        public static ColorConvertOp Create(Java.Awt.ColorNs.ICC_Profile[] arg0, Java.Awt.RenderingHints arg1)
         {
             return JVMBridgeBase.New<ColorConvertOp>(arg0, arg1);
         }
@@ -123,7 +123,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ColorConvertOp(Java.Awt.RenderingHints arg0)
         /// </summary>
-        public static ColorConvertOp New(Java.Awt.RenderingHints arg0)
+        public static ColorConvertOp Create(Java.Awt.RenderingHints arg0)
         {
             return JVMBridgeBase.New<ColorConvertOp>(arg0);
         }

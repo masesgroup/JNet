@@ -326,7 +326,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// HPA initializer for Double()
             /// </summary>
-            public static Double New()
+            public static Double Create()
             {
                 return JVMBridgeBase.New<Double>();
             }
@@ -347,7 +347,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// HPA initializer for Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, int arg6)
             /// </summary>
-            public static Double New(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, int arg6)
+            public static Double Create(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, int arg6)
             {
                 return JVMBridgeBase.New<Double>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
             }
@@ -362,7 +362,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// HPA initializer for Double(int arg0)
             /// </summary>
-            public static Double New(int arg0)
+            public static Double Create(int arg0)
             {
                 return JVMBridgeBase.New<Double>(arg0);
             }
@@ -380,7 +380,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// HPA initializer for Double(Java.Awt.Geom.Rectangle2D arg0, double arg1, double arg2, int arg3)
             /// </summary>
-            public static Double New(Java.Awt.Geom.Rectangle2D arg0, double arg1, double arg2, int arg3)
+            public static Double Create(Java.Awt.Geom.Rectangle2D arg0, double arg1, double arg2, int arg3)
             {
                 return JVMBridgeBase.New<Double>(arg0, arg1, arg2, arg3);
             }
@@ -453,7 +453,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// HPA initializer for Float()
             /// </summary>
-            public static Float New()
+            public static Float Create()
             {
                 return JVMBridgeBase.New<Float>();
             }
@@ -474,7 +474,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// HPA initializer for Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, int arg6)
             /// </summary>
-            public static Float New(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, int arg6)
+            public static Float Create(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, int arg6)
             {
                 return JVMBridgeBase.New<Float>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
             }
@@ -489,7 +489,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// HPA initializer for Float(int arg0)
             /// </summary>
-            public static Float New(int arg0)
+            public static Float Create(int arg0)
             {
                 return JVMBridgeBase.New<Float>(arg0);
             }
@@ -507,7 +507,7 @@ namespace Java.Awt.Geom
             /// <summary>
             /// HPA initializer for Float(Java.Awt.Geom.Rectangle2D arg0, float arg1, float arg2, int arg3)
             /// </summary>
-            public static Float New(Java.Awt.Geom.Rectangle2D arg0, float arg1, float arg2, int arg3)
+            public static Float Create(Java.Awt.Geom.Rectangle2D arg0, float arg1, float arg2, int arg3)
             {
                 return JVMBridgeBase.New<Float>(arg0, arg1, arg2, arg3);
             }

@@ -73,7 +73,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for DecimalFormat()
         /// </summary>
-        public static DecimalFormat New()
+        public static DecimalFormat Create()
         {
             return JVMBridgeBase.New<DecimalFormat>();
         }
@@ -89,7 +89,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for DecimalFormat(Java.Lang.String arg0, Java.Text.DecimalFormatSymbols arg1)
         /// </summary>
-        public static DecimalFormat New(Java.Lang.String arg0, Java.Text.DecimalFormatSymbols arg1)
+        public static DecimalFormat Create(Java.Lang.String arg0, Java.Text.DecimalFormatSymbols arg1)
         {
             return JVMBridgeBase.New<DecimalFormat>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for DecimalFormat(Java.Lang.String arg0)
         /// </summary>
-        public static DecimalFormat New(Java.Lang.String arg0)
+        public static DecimalFormat Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<DecimalFormat>(arg0);
         }

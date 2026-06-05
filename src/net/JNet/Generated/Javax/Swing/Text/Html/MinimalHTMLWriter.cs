@@ -77,7 +77,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for MinimalHTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1, int arg2, int arg3)
         /// </summary>
-        public static MinimalHTMLWriter New(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1, int arg2, int arg3)
+        public static MinimalHTMLWriter Create(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<MinimalHTMLWriter>(arg0, arg1, arg2, arg3);
         }
@@ -93,7 +93,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for MinimalHTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1)
         /// </summary>
-        public static MinimalHTMLWriter New(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1)
+        public static MinimalHTMLWriter Create(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1)
         {
             return JVMBridgeBase.New<MinimalHTMLWriter>(arg0, arg1);
         }

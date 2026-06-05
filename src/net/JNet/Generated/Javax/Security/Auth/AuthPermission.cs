@@ -75,7 +75,7 @@ namespace Javax.Security.Auth
         /// <summary>
         /// HPA initializer for AuthPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static AuthPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static AuthPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<AuthPermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Security.Auth
         /// <summary>
         /// HPA initializer for AuthPermission(Java.Lang.String arg0)
         /// </summary>
-        public static AuthPermission New(Java.Lang.String arg0)
+        public static AuthPermission Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<AuthPermission>(arg0);
         }

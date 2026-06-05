@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for TimeZone()
         /// </summary>
-        public static TimeZone New()
+        public static TimeZone Create()
         {
             return JVMBridgeBase.New<TimeZone>();
         }

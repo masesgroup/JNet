@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for StringContent()
         /// </summary>
-        public static StringContent New()
+        public static StringContent Create()
         {
             return JVMBridgeBase.New<StringContent>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for StringContent(int arg0)
         /// </summary>
-        public static StringContent New(int arg0)
+        public static StringContent Create(int arg0)
         {
             return JVMBridgeBase.New<StringContent>(arg0);
         }

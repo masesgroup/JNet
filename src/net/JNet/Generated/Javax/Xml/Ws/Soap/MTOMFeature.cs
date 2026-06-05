@@ -73,7 +73,7 @@ namespace Javax.Xml.Ws.Soap
         /// <summary>
         /// HPA initializer for MTOMFeature()
         /// </summary>
-        public static MTOMFeature New()
+        public static MTOMFeature Create()
         {
             return JVMBridgeBase.New<MTOMFeature>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Xml.Ws.Soap
         /// <summary>
         /// HPA initializer for MTOMFeature(bool arg0, int arg1)
         /// </summary>
-        public static MTOMFeature New(bool arg0, int arg1)
+        public static MTOMFeature Create(bool arg0, int arg1)
         {
             return JVMBridgeBase.New<MTOMFeature>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Xml.Ws.Soap
         /// <summary>
         /// HPA initializer for MTOMFeature(bool arg0)
         /// </summary>
-        public static MTOMFeature New(bool arg0)
+        public static MTOMFeature Create(bool arg0)
         {
             return JVMBridgeBase.New<MTOMFeature>(arg0);
         }
@@ -119,7 +119,7 @@ namespace Javax.Xml.Ws.Soap
         /// <summary>
         /// HPA initializer for MTOMFeature(int arg0)
         /// </summary>
-        public static MTOMFeature New(int arg0)
+        public static MTOMFeature Create(int arg0)
         {
             return JVMBridgeBase.New<MTOMFeature>(arg0);
         }

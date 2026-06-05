@@ -80,7 +80,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for IndexedPropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5)
         /// </summary>
-        public static IndexedPropertyDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5)
+        public static IndexedPropertyDescriptor Create(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5)
         {
             return JVMBridgeBase.New<IndexedPropertyDescriptor>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -97,7 +97,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for IndexedPropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1)
         /// </summary>
-        public static IndexedPropertyDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1)
+        public static IndexedPropertyDescriptor Create(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
             return JVMBridgeBase.New<IndexedPropertyDescriptor>(arg0, arg1);
         }
@@ -117,7 +117,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for IndexedPropertyDescriptor(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
         /// </summary>
-        public static IndexedPropertyDescriptor New(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
+        public static IndexedPropertyDescriptor Create(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
         {
             return JVMBridgeBase.New<IndexedPropertyDescriptor>(arg0, arg1, arg2, arg3, arg4);
         }

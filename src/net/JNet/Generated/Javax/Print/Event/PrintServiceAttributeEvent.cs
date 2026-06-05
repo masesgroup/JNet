@@ -75,7 +75,7 @@ namespace Javax.Print.Event
         /// <summary>
         /// HPA initializer for PrintServiceAttributeEvent(Javax.Print.PrintService arg0, Javax.Print.Attribute.PrintServiceAttributeSet arg1)
         /// </summary>
-        public static PrintServiceAttributeEvent New(Javax.Print.PrintService arg0, Javax.Print.Attribute.PrintServiceAttributeSet arg1)
+        public static PrintServiceAttributeEvent Create(Javax.Print.PrintService arg0, Javax.Print.Attribute.PrintServiceAttributeSet arg1)
         {
             return JVMBridgeBase.New<PrintServiceAttributeEvent>(arg0, arg1);
         }

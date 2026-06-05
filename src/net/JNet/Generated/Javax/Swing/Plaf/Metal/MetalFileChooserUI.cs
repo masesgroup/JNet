@@ -108,7 +108,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalFileChooserUI(Javax.Swing.JFileChooser arg0)
         /// </summary>
-        public static MetalFileChooserUI New(Javax.Swing.JFileChooser arg0)
+        public static MetalFileChooserUI Create(Javax.Swing.JFileChooser arg0)
         {
             return JVMBridgeBase.New<MetalFileChooserUI>(arg0);
         }
@@ -155,7 +155,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for FilterComboBoxRenderer(Javax.Swing.Plaf.Metal.MetalFileChooserUI arg0)
             /// </summary>
-            public static FilterComboBoxRenderer New(Javax.Swing.Plaf.Metal.MetalFileChooserUI arg0)
+            public static FilterComboBoxRenderer Create(Javax.Swing.Plaf.Metal.MetalFileChooserUI arg0)
             {
                 return JVMBridgeBase.New<FilterComboBoxRenderer>(arg0);
             }

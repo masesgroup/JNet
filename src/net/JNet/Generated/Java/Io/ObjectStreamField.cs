@@ -76,7 +76,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for ObjectStreamField(Java.Lang.String arg0, Java.Lang.Class arg1, bool arg2)
         /// </summary>
-        public static ObjectStreamField New(Java.Lang.String arg0, Java.Lang.Class arg1, bool arg2)
+        public static ObjectStreamField Create(Java.Lang.String arg0, Java.Lang.Class arg1, bool arg2)
         {
             return JVMBridgeBase.New<ObjectStreamField>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for ObjectStreamField(Java.Lang.String arg0, Java.Lang.Class arg1)
         /// </summary>
-        public static ObjectStreamField New(Java.Lang.String arg0, Java.Lang.Class arg1)
+        public static ObjectStreamField Create(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
             return JVMBridgeBase.New<ObjectStreamField>(arg0, arg1);
         }

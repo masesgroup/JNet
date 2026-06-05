@@ -107,7 +107,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for ResourceBundle()
         /// </summary>
-        public static ResourceBundle New()
+        public static ResourceBundle Create()
         {
             return JVMBridgeBase.New<ResourceBundle>();
         }

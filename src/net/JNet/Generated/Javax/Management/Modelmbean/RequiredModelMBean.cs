@@ -76,7 +76,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for RequiredModelMBean()
         /// </summary>
-        public static RequiredModelMBean New()
+        public static RequiredModelMBean Create()
         {
             return JVMBridgeBase.New<RequiredModelMBean>();
         }
@@ -93,7 +93,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for RequiredModelMBean(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
         /// </summary>
-        public static RequiredModelMBean New(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
+        public static RequiredModelMBean Create(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
         {
             return JVMBridgeBase.New<RequiredModelMBean>(arg0);
         }

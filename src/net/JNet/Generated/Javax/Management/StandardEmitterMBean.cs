@@ -77,7 +77,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for StandardEmitterMBean(object arg0, Java.Lang.Class arg1, bool arg2, Javax.Management.NotificationEmitter arg3)
         /// </summary>
-        public static StandardEmitterMBean New(object arg0, Java.Lang.Class arg1, bool arg2, Javax.Management.NotificationEmitter arg3)
+        public static StandardEmitterMBean Create(object arg0, Java.Lang.Class arg1, bool arg2, Javax.Management.NotificationEmitter arg3)
         {
             return JVMBridgeBase.New<StandardEmitterMBean>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for StandardEmitterMBean(object arg0, Java.Lang.Class arg1, Javax.Management.NotificationEmitter arg2)
         /// </summary>
-        public static StandardEmitterMBean New(object arg0, Java.Lang.Class arg1, Javax.Management.NotificationEmitter arg2)
+        public static StandardEmitterMBean Create(object arg0, Java.Lang.Class arg1, Javax.Management.NotificationEmitter arg2)
         {
             return JVMBridgeBase.New<StandardEmitterMBean>(arg0, arg1, arg2);
         }

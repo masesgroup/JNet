@@ -73,7 +73,7 @@ namespace Javax.Xml.Soap
         /// <summary>
         /// HPA initializer for SOAPPart()
         /// </summary>
-        public static SOAPPart New()
+        public static SOAPPart Create()
         {
             return JVMBridgeBase.New<SOAPPart>();
         }

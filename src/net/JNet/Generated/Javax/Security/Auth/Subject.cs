@@ -73,7 +73,7 @@ namespace Javax.Security.Auth
         /// <summary>
         /// HPA initializer for Subject()
         /// </summary>
-        public static Subject New()
+        public static Subject Create()
         {
             return JVMBridgeBase.New<Subject>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Security.Auth
         /// <summary>
         /// HPA initializer for Subject(bool arg0, Java.Util.Set arg1, Java.Util.Set%3Cobject%3E arg2, Java.Util.Set%3Cobject%3E arg3)
         /// </summary>
-        public static Subject New(bool arg0, Java.Util.Set arg1, Java.Util.Set<object> arg2, Java.Util.Set<object> arg3)
+        public static Subject Create(bool arg0, Java.Util.Set arg1, Java.Util.Set<object> arg2, Java.Util.Set<object> arg3)
         {
             return JVMBridgeBase.New<Subject>(arg0, arg1, arg2, arg3);
         }

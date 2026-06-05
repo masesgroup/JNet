@@ -76,7 +76,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanConstructorInfo(Java.Lang.String arg0, Java.Lang.Reflect.Constructor%3Cobject%3E arg1, Javax.Management.Descriptor arg2)
         /// </summary>
-        public static ModelMBeanConstructorInfo New(Java.Lang.String arg0, Java.Lang.Reflect.Constructor<object> arg1, Javax.Management.Descriptor arg2)
+        public static ModelMBeanConstructorInfo Create(Java.Lang.String arg0, Java.Lang.Reflect.Constructor<object> arg1, Javax.Management.Descriptor arg2)
         {
             return JVMBridgeBase.New<ModelMBeanConstructorInfo>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanConstructorInfo(Java.Lang.String arg0, Java.Lang.Reflect.Constructor%3Cobject%3E arg1)
         /// </summary>
-        public static ModelMBeanConstructorInfo New(Java.Lang.String arg0, Java.Lang.Reflect.Constructor<object> arg1)
+        public static ModelMBeanConstructorInfo Create(Java.Lang.String arg0, Java.Lang.Reflect.Constructor<object> arg1)
         {
             return JVMBridgeBase.New<ModelMBeanConstructorInfo>(arg0, arg1);
         }
@@ -110,7 +110,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanConstructorInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Javax.Management.Descriptor arg3)
         /// </summary>
-        public static ModelMBeanConstructorInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Javax.Management.Descriptor arg3)
+        public static ModelMBeanConstructorInfo Create(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2, Javax.Management.Descriptor arg3)
         {
             return JVMBridgeBase.New<ModelMBeanConstructorInfo>(arg0, arg1, arg2, arg3);
         }
@@ -127,7 +127,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanConstructorInfo(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2)
         /// </summary>
-        public static ModelMBeanConstructorInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2)
+        public static ModelMBeanConstructorInfo Create(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.MBeanParameterInfo[] arg2)
         {
             return JVMBridgeBase.New<ModelMBeanConstructorInfo>(arg0, arg1, arg2);
         }

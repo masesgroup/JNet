@@ -73,7 +73,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for AlgorithmParameterGeneratorSpi()
         /// </summary>
-        public static AlgorithmParameterGeneratorSpi New()
+        public static AlgorithmParameterGeneratorSpi Create()
         {
             return JVMBridgeBase.New<AlgorithmParameterGeneratorSpi>();
         }

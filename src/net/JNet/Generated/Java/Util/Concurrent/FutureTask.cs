@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for FutureTask(Java.Lang.Runnable arg0, object arg1)
         /// </summary>
-        public static FutureTask New(Java.Lang.Runnable arg0, object arg1)
+        public static FutureTask Create(Java.Lang.Runnable arg0, object arg1)
         {
             return JVMBridgeBase.New<FutureTask>(arg0, arg1);
         }
@@ -125,7 +125,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for FutureTask(Java.Util.Concurrent.Callable arg0)
         /// </summary>
-        public static FutureTask New(Java.Util.Concurrent.Callable arg0)
+        public static FutureTask Create(Java.Util.Concurrent.Callable arg0)
         {
             return JVMBridgeBase.New<FutureTask>(arg0);
         }
@@ -227,7 +227,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for FutureTask(Java.Lang.Runnable arg0, V arg1)
         /// </summary>
-        public static FutureTask<V> New(Java.Lang.Runnable arg0, V arg1)
+        public static FutureTask<V> Create(Java.Lang.Runnable arg0, V arg1)
         {
             return JVMBridgeBase.New<FutureTask<V>>(arg0, arg1);
         }
@@ -242,7 +242,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for FutureTask(Java.Util.Concurrent.Callable%3CV%3E arg0)
         /// </summary>
-        public static FutureTask<V> New(Java.Util.Concurrent.Callable<V> arg0)
+        public static FutureTask<V> Create(Java.Util.Concurrent.Callable<V> arg0)
         {
             return JVMBridgeBase.New<FutureTask<V>>(arg0);
         }

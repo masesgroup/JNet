@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for CheckboxMenuItem()
         /// </summary>
-        public static CheckboxMenuItem New()
+        public static CheckboxMenuItem Create()
         {
             return JVMBridgeBase.New<CheckboxMenuItem>();
         }
@@ -92,7 +92,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for CheckboxMenuItem(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static CheckboxMenuItem New(Java.Lang.String arg0, bool arg1)
+        public static CheckboxMenuItem Create(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<CheckboxMenuItem>(arg0, arg1);
         }
@@ -108,7 +108,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for CheckboxMenuItem(Java.Lang.String arg0)
         /// </summary>
-        public static CheckboxMenuItem New(Java.Lang.String arg0)
+        public static CheckboxMenuItem Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<CheckboxMenuItem>(arg0);
         }

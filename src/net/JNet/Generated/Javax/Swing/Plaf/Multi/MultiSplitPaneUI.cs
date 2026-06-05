@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiSplitPaneUI()
         /// </summary>
-        public static MultiSplitPaneUI New()
+        public static MultiSplitPaneUI Create()
         {
             return JVMBridgeBase.New<MultiSplitPaneUI>();
         }

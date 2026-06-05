@@ -75,7 +75,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for CertStoreSpi(Java.Security.Cert.CertStoreParameters arg0)
         /// </summary>
-        public static CertStoreSpi New(Java.Security.Cert.CertStoreParameters arg0)
+        public static CertStoreSpi Create(Java.Security.Cert.CertStoreParameters arg0)
         {
             return JVMBridgeBase.New<CertStoreSpi>(arg0);
         }

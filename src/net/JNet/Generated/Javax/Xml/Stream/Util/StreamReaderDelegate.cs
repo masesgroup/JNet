@@ -73,7 +73,7 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// HPA initializer for StreamReaderDelegate()
         /// </summary>
-        public static StreamReaderDelegate New()
+        public static StreamReaderDelegate Create()
         {
             return JVMBridgeBase.New<StreamReaderDelegate>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Xml.Stream.Util
         /// <summary>
         /// HPA initializer for StreamReaderDelegate(Javax.Xml.Stream.XMLStreamReader arg0)
         /// </summary>
-        public static StreamReaderDelegate New(Javax.Xml.Stream.XMLStreamReader arg0)
+        public static StreamReaderDelegate Create(Javax.Xml.Stream.XMLStreamReader arg0)
         {
             return JVMBridgeBase.New<StreamReaderDelegate>(arg0);
         }

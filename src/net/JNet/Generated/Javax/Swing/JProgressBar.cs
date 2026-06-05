@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JProgressBar()
         /// </summary>
-        public static JProgressBar New()
+        public static JProgressBar Create()
         {
             return JVMBridgeBase.New<JProgressBar>();
         }
@@ -90,7 +90,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JProgressBar(int arg0, int arg1, int arg2)
         /// </summary>
-        public static JProgressBar New(int arg0, int arg1, int arg2)
+        public static JProgressBar Create(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<JProgressBar>(arg0, arg1, arg2);
         }
@@ -106,7 +106,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JProgressBar(int arg0, int arg1)
         /// </summary>
-        public static JProgressBar New(int arg0, int arg1)
+        public static JProgressBar Create(int arg0, int arg1)
         {
             return JVMBridgeBase.New<JProgressBar>(arg0, arg1);
         }
@@ -121,7 +121,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JProgressBar(int arg0)
         /// </summary>
-        public static JProgressBar New(int arg0)
+        public static JProgressBar Create(int arg0)
         {
             return JVMBridgeBase.New<JProgressBar>(arg0);
         }
@@ -136,7 +136,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JProgressBar(Javax.Swing.BoundedRangeModel arg0)
         /// </summary>
-        public static JProgressBar New(Javax.Swing.BoundedRangeModel arg0)
+        public static JProgressBar Create(Javax.Swing.BoundedRangeModel arg0)
         {
             return JVMBridgeBase.New<JProgressBar>(arg0);
         }

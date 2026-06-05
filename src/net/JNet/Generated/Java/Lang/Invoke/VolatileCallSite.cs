@@ -74,7 +74,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// HPA initializer for VolatileCallSite(Java.Lang.Invoke.MethodHandle arg0)
         /// </summary>
-        public static VolatileCallSite New(Java.Lang.Invoke.MethodHandle arg0)
+        public static VolatileCallSite Create(Java.Lang.Invoke.MethodHandle arg0)
         {
             return JVMBridgeBase.New<VolatileCallSite>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// HPA initializer for VolatileCallSite(Java.Lang.Invoke.MethodType arg0)
         /// </summary>
-        public static VolatileCallSite New(Java.Lang.Invoke.MethodType arg0)
+        public static VolatileCallSite Create(Java.Lang.Invoke.MethodType arg0)
         {
             return JVMBridgeBase.New<VolatileCallSite>(arg0);
         }

@@ -75,7 +75,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for SwingPropertyChangeSupport(object arg0, bool arg1)
         /// </summary>
-        public static SwingPropertyChangeSupport New(object arg0, bool arg1)
+        public static SwingPropertyChangeSupport Create(object arg0, bool arg1)
         {
             return JVMBridgeBase.New<SwingPropertyChangeSupport>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for SwingPropertyChangeSupport(object arg0)
         /// </summary>
-        public static SwingPropertyChangeSupport New(object arg0)
+        public static SwingPropertyChangeSupport Create(object arg0)
         {
             return JVMBridgeBase.New<SwingPropertyChangeSupport>(arg0);
         }

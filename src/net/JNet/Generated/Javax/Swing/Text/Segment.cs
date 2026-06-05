@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for Segment()
         /// </summary>
-        public static Segment New()
+        public static Segment Create()
         {
             return JVMBridgeBase.New<Segment>();
         }
@@ -90,7 +90,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for Segment(char[] arg0, int arg1, int arg2)
         /// </summary>
-        public static Segment New(char[] arg0, int arg1, int arg2)
+        public static Segment Create(char[] arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<Segment>(arg0, arg1, arg2);
         }

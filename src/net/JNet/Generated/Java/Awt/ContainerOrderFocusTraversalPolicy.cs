@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for ContainerOrderFocusTraversalPolicy()
         /// </summary>
-        public static ContainerOrderFocusTraversalPolicy New()
+        public static ContainerOrderFocusTraversalPolicy Create()
         {
             return JVMBridgeBase.New<ContainerOrderFocusTraversalPolicy>();
         }

@@ -108,7 +108,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for ProcessBuilder(params Java.Lang.String[] arg0)
         /// </summary>
-        public static ProcessBuilder New(params Java.Lang.String[] arg0)
+        public static ProcessBuilder Create(params Java.Lang.String[] arg0)
         {
             return JVMBridgeBase.New<ProcessBuilder>(arg0);
         }
@@ -123,7 +123,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for ProcessBuilder(Java.Util.List%3CJava.Lang.String%3E arg0)
         /// </summary>
-        public static ProcessBuilder New(Java.Util.List<Java.Lang.String> arg0)
+        public static ProcessBuilder Create(Java.Util.List<Java.Lang.String> arg0)
         {
             return JVMBridgeBase.New<ProcessBuilder>(arg0);
         }

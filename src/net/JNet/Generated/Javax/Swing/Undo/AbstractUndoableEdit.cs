@@ -73,7 +73,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// HPA initializer for AbstractUndoableEdit()
         /// </summary>
-        public static AbstractUndoableEdit New()
+        public static AbstractUndoableEdit Create()
         {
             return JVMBridgeBase.New<AbstractUndoableEdit>();
         }

@@ -83,7 +83,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, Java.Lang.Comparable arg7, Java.Lang.Comparable arg8)
         /// </summary>
-        public static OpenMBeanAttributeInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, Java.Lang.Comparable arg7, Java.Lang.Comparable arg8)
+        public static OpenMBeanAttributeInfoSupport Create(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, Java.Lang.Comparable arg7, Java.Lang.Comparable arg8)
         {
             return JVMBridgeBase.New<OpenMBeanAttributeInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
@@ -106,7 +106,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, object[] arg7)
         /// </summary>
-        public static OpenMBeanAttributeInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, object[] arg7)
+        public static OpenMBeanAttributeInfoSupport Create(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, object[] arg7)
         {
             return JVMBridgeBase.New<OpenMBeanAttributeInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
@@ -128,7 +128,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6)
         /// </summary>
-        public static OpenMBeanAttributeInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6)
+        public static OpenMBeanAttributeInfoSupport Create(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6)
         {
             return JVMBridgeBase.New<OpenMBeanAttributeInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -149,7 +149,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType%3Cobject%3E arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
         /// </summary>
-        public static OpenMBeanAttributeInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
+        public static OpenMBeanAttributeInfoSupport Create(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
         {
             return JVMBridgeBase.New<OpenMBeanAttributeInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -169,7 +169,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for OpenMBeanAttributeInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType%3Cobject%3E arg2, bool arg3, bool arg4, bool arg5)
         /// </summary>
-        public static OpenMBeanAttributeInfoSupport New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, bool arg3, bool arg4, bool arg5)
+        public static OpenMBeanAttributeInfoSupport Create(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType<object> arg2, bool arg3, bool arg4, bool arg5)
         {
             return JVMBridgeBase.New<OpenMBeanAttributeInfoSupport>(arg0, arg1, arg2, arg3, arg4, arg5);
         }

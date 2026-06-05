@@ -76,7 +76,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for FileWriter(Java.Io.File arg0, bool arg1)
         /// </summary>
-        public static FileWriter New(Java.Io.File arg0, bool arg1)
+        public static FileWriter Create(Java.Io.File arg0, bool arg1)
         {
             return JVMBridgeBase.New<FileWriter>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for FileWriter(Java.Io.File arg0)
         /// </summary>
-        public static FileWriter New(Java.Io.File arg0)
+        public static FileWriter Create(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<FileWriter>(arg0);
         }
@@ -107,7 +107,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for FileWriter(Java.Io.FileDescriptor arg0)
         /// </summary>
-        public static FileWriter New(Java.Io.FileDescriptor arg0)
+        public static FileWriter Create(Java.Io.FileDescriptor arg0)
         {
             return JVMBridgeBase.New<FileWriter>(arg0);
         }
@@ -124,7 +124,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for FileWriter(Java.Lang.String arg0, bool arg1)
         /// </summary>
-        public static FileWriter New(Java.Lang.String arg0, bool arg1)
+        public static FileWriter Create(Java.Lang.String arg0, bool arg1)
         {
             return JVMBridgeBase.New<FileWriter>(arg0, arg1);
         }
@@ -140,7 +140,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for FileWriter(Java.Lang.String arg0)
         /// </summary>
-        public static FileWriter New(Java.Lang.String arg0)
+        public static FileWriter Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<FileWriter>(arg0);
         }

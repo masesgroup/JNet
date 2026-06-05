@@ -75,7 +75,7 @@ namespace Javax.Xml.Transform.Stax
         /// <summary>
         /// HPA initializer for StAXSource(Javax.Xml.Stream.XMLEventReader arg0)
         /// </summary>
-        public static StAXSource New(Javax.Xml.Stream.XMLEventReader arg0)
+        public static StAXSource Create(Javax.Xml.Stream.XMLEventReader arg0)
         {
             return JVMBridgeBase.New<StAXSource>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Javax.Xml.Transform.Stax
         /// <summary>
         /// HPA initializer for StAXSource(Javax.Xml.Stream.XMLStreamReader arg0)
         /// </summary>
-        public static StAXSource New(Javax.Xml.Stream.XMLStreamReader arg0)
+        public static StAXSource Create(Javax.Xml.Stream.XMLStreamReader arg0)
         {
             return JVMBridgeBase.New<StAXSource>(arg0);
         }

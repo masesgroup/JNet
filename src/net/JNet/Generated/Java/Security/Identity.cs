@@ -77,7 +77,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for Identity(Java.Lang.String arg0, Java.Security.IdentityScope arg1)
         /// </summary>
-        public static Identity New(Java.Lang.String arg0, Java.Security.IdentityScope arg1)
+        public static Identity Create(Java.Lang.String arg0, Java.Security.IdentityScope arg1)
         {
             return JVMBridgeBase.New<Identity>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for Identity(Java.Lang.String arg0)
         /// </summary>
-        public static Identity New(Java.Lang.String arg0)
+        public static Identity Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Identity>(arg0);
         }

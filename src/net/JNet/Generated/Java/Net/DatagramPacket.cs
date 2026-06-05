@@ -78,7 +78,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for DatagramPacket(byte[] arg0, int arg1, int arg2, Java.Net.InetAddress arg3, int arg4)
         /// </summary>
-        public static DatagramPacket New(byte[] arg0, int arg1, int arg2, Java.Net.InetAddress arg3, int arg4)
+        public static DatagramPacket Create(byte[] arg0, int arg1, int arg2, Java.Net.InetAddress arg3, int arg4)
         {
             return JVMBridgeBase.New<DatagramPacket>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -96,7 +96,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for DatagramPacket(byte[] arg0, int arg1, int arg2, Java.Net.SocketAddress arg3)
         /// </summary>
-        public static DatagramPacket New(byte[] arg0, int arg1, int arg2, Java.Net.SocketAddress arg3)
+        public static DatagramPacket Create(byte[] arg0, int arg1, int arg2, Java.Net.SocketAddress arg3)
         {
             return JVMBridgeBase.New<DatagramPacket>(arg0, arg1, arg2, arg3);
         }
@@ -113,7 +113,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for DatagramPacket(byte[] arg0, int arg1, int arg2)
         /// </summary>
-        public static DatagramPacket New(byte[] arg0, int arg1, int arg2)
+        public static DatagramPacket Create(byte[] arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<DatagramPacket>(arg0, arg1, arg2);
         }
@@ -131,7 +131,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for DatagramPacket(byte[] arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
         /// </summary>
-        public static DatagramPacket New(byte[] arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
+        public static DatagramPacket Create(byte[] arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
         {
             return JVMBridgeBase.New<DatagramPacket>(arg0, arg1, arg2, arg3);
         }
@@ -148,7 +148,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for DatagramPacket(byte[] arg0, int arg1, Java.Net.SocketAddress arg2)
         /// </summary>
-        public static DatagramPacket New(byte[] arg0, int arg1, Java.Net.SocketAddress arg2)
+        public static DatagramPacket Create(byte[] arg0, int arg1, Java.Net.SocketAddress arg2)
         {
             return JVMBridgeBase.New<DatagramPacket>(arg0, arg1, arg2);
         }
@@ -164,7 +164,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for DatagramPacket(byte[] arg0, int arg1)
         /// </summary>
-        public static DatagramPacket New(byte[] arg0, int arg1)
+        public static DatagramPacket Create(byte[] arg0, int arg1)
         {
             return JVMBridgeBase.New<DatagramPacket>(arg0, arg1);
         }

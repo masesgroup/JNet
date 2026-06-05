@@ -74,7 +74,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Float(double arg0)
         /// </summary>
-        public static Float New(double arg0)
+        public static Float Create(double arg0)
         {
             return JVMBridgeBase.New<Float>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Float(float arg0)
         /// </summary>
-        public static Float New(float arg0)
+        public static Float Create(float arg0)
         {
             return JVMBridgeBase.New<Float>(arg0);
         }
@@ -105,7 +105,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Float(Java.Lang.String arg0)
         /// </summary>
-        public static Float New(Java.Lang.String arg0)
+        public static Float Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Float>(arg0);
         }

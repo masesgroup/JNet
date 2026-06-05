@@ -75,7 +75,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for HandshakeCompletedEvent(Javax.Net.Ssl.SSLSocket arg0, Javax.Net.Ssl.SSLSession arg1)
         /// </summary>
-        public static HandshakeCompletedEvent New(Javax.Net.Ssl.SSLSocket arg0, Javax.Net.Ssl.SSLSession arg1)
+        public static HandshakeCompletedEvent Create(Javax.Net.Ssl.SSLSocket arg0, Javax.Net.Ssl.SSLSession arg1)
         {
             return JVMBridgeBase.New<HandshakeCompletedEvent>(arg0, arg1);
         }

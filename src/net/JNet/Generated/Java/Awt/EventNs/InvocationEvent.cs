@@ -77,7 +77,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for InvocationEvent(object arg0, Java.Lang.Runnable arg1, object arg2, bool arg3)
         /// </summary>
-        public static InvocationEvent New(object arg0, Java.Lang.Runnable arg1, object arg2, bool arg3)
+        public static InvocationEvent Create(object arg0, Java.Lang.Runnable arg1, object arg2, bool arg3)
         {
             return JVMBridgeBase.New<InvocationEvent>(arg0, arg1, arg2, arg3);
         }
@@ -95,7 +95,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for InvocationEvent(object arg0, Java.Lang.Runnable arg1, Java.Lang.Runnable arg2, bool arg3)
         /// </summary>
-        public static InvocationEvent New(object arg0, Java.Lang.Runnable arg1, Java.Lang.Runnable arg2, bool arg3)
+        public static InvocationEvent Create(object arg0, Java.Lang.Runnable arg1, Java.Lang.Runnable arg2, bool arg3)
         {
             return JVMBridgeBase.New<InvocationEvent>(arg0, arg1, arg2, arg3);
         }
@@ -111,7 +111,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for InvocationEvent(object arg0, Java.Lang.Runnable arg1)
         /// </summary>
-        public static InvocationEvent New(object arg0, Java.Lang.Runnable arg1)
+        public static InvocationEvent Create(object arg0, Java.Lang.Runnable arg1)
         {
             return JVMBridgeBase.New<InvocationEvent>(arg0, arg1);
         }

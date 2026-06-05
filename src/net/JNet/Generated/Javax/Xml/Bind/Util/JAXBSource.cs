@@ -76,7 +76,7 @@ namespace Javax.Xml.Bind.Util
         /// <summary>
         /// HPA initializer for JAXBSource(Javax.Xml.Bind.JAXBContext arg0, object arg1)
         /// </summary>
-        public static JAXBSource New(Javax.Xml.Bind.JAXBContext arg0, object arg1)
+        public static JAXBSource Create(Javax.Xml.Bind.JAXBContext arg0, object arg1)
         {
             return JVMBridgeBase.New<JAXBSource>(arg0, arg1);
         }
@@ -93,7 +93,7 @@ namespace Javax.Xml.Bind.Util
         /// <summary>
         /// HPA initializer for JAXBSource(Javax.Xml.Bind.Marshaller arg0, object arg1)
         /// </summary>
-        public static JAXBSource New(Javax.Xml.Bind.Marshaller arg0, object arg1)
+        public static JAXBSource Create(Javax.Xml.Bind.Marshaller arg0, object arg1)
         {
             return JVMBridgeBase.New<JAXBSource>(arg0, arg1);
         }

@@ -247,7 +247,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for MediaSize(float arg0, float arg1, int arg2, Javax.Print.Attribute.Standard.MediaSizeName arg3)
         /// </summary>
-        public static MediaSize New(float arg0, float arg1, int arg2, Javax.Print.Attribute.Standard.MediaSizeName arg3)
+        public static MediaSize Create(float arg0, float arg1, int arg2, Javax.Print.Attribute.Standard.MediaSizeName arg3)
         {
             return JVMBridgeBase.New<MediaSize>(arg0, arg1, arg2, arg3);
         }
@@ -264,7 +264,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for MediaSize(float arg0, float arg1, int arg2)
         /// </summary>
-        public static MediaSize New(float arg0, float arg1, int arg2)
+        public static MediaSize Create(float arg0, float arg1, int arg2)
         {
             return JVMBridgeBase.New<MediaSize>(arg0, arg1, arg2);
         }
@@ -282,7 +282,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for MediaSize(int arg0, int arg1, int arg2, Javax.Print.Attribute.Standard.MediaSizeName arg3)
         /// </summary>
-        public static MediaSize New(int arg0, int arg1, int arg2, Javax.Print.Attribute.Standard.MediaSizeName arg3)
+        public static MediaSize Create(int arg0, int arg1, int arg2, Javax.Print.Attribute.Standard.MediaSizeName arg3)
         {
             return JVMBridgeBase.New<MediaSize>(arg0, arg1, arg2, arg3);
         }
@@ -299,7 +299,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for MediaSize(int arg0, int arg1, int arg2)
         /// </summary>
-        public static MediaSize New(int arg0, int arg1, int arg2)
+        public static MediaSize Create(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<MediaSize>(arg0, arg1, arg2);
         }

@@ -73,7 +73,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanServerBuilder()
         /// </summary>
-        public static MBeanServerBuilder New()
+        public static MBeanServerBuilder Create()
         {
             return JVMBridgeBase.New<MBeanServerBuilder>();
         }

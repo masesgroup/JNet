@@ -74,7 +74,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// HPA initializer for DefaultLoaderRepository()
         /// </summary>
-        public static DefaultLoaderRepository New()
+        public static DefaultLoaderRepository Create()
         {
             return JVMBridgeBase.New<DefaultLoaderRepository>();
         }

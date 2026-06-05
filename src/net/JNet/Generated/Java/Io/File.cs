@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for File(Java.Io.File arg0, Java.Lang.String arg1)
         /// </summary>
-        public static File New(Java.Io.File arg0, Java.Lang.String arg1)
+        public static File Create(Java.Io.File arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<File>(arg0, arg1);
         }
@@ -91,7 +91,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for File(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static File New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static File Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<File>(arg0, arg1);
         }
@@ -106,7 +106,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for File(Java.Lang.String arg0)
         /// </summary>
-        public static File New(Java.Lang.String arg0)
+        public static File Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<File>(arg0);
         }
@@ -121,7 +121,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for File(Java.Net.URI arg0)
         /// </summary>
-        public static File New(Java.Net.URI arg0)
+        public static File Create(Java.Net.URI arg0)
         {
             return JVMBridgeBase.New<File>(arg0);
         }

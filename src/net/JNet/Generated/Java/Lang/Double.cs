@@ -74,7 +74,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Double(double arg0)
         /// </summary>
-        public static Double New(double arg0)
+        public static Double Create(double arg0)
         {
             return JVMBridgeBase.New<Double>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Double(Java.Lang.String arg0)
         /// </summary>
-        public static Double New(Java.Lang.String arg0)
+        public static Double Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Double>(arg0);
         }

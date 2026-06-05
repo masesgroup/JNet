@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalToolTipUI()
         /// </summary>
-        public static MetalToolTipUI New()
+        public static MetalToolTipUI Create()
         {
             return JVMBridgeBase.New<MetalToolTipUI>();
         }

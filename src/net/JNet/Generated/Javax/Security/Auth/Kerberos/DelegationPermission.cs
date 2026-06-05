@@ -75,7 +75,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// HPA initializer for DelegationPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static DelegationPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static DelegationPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<DelegationPermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <summary>
         /// HPA initializer for DelegationPermission(Java.Lang.String arg0)
         /// </summary>
-        public static DelegationPermission New(Java.Lang.String arg0)
+        public static DelegationPermission Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<DelegationPermission>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// HPA initializer for XMLGregorianCalendar()
         /// </summary>
-        public static XMLGregorianCalendar New()
+        public static XMLGregorianCalendar Create()
         {
             return JVMBridgeBase.New<XMLGregorianCalendar>();
         }

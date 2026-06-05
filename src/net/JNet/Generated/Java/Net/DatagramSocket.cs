@@ -75,7 +75,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for DatagramSocket()
         /// </summary>
-        public static DatagramSocket New()
+        public static DatagramSocket Create()
         {
             return JVMBridgeBase.New<DatagramSocket>();
         }
@@ -92,7 +92,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for DatagramSocket(int arg0, Java.Net.InetAddress arg1)
         /// </summary>
-        public static DatagramSocket New(int arg0, Java.Net.InetAddress arg1)
+        public static DatagramSocket Create(int arg0, Java.Net.InetAddress arg1)
         {
             return JVMBridgeBase.New<DatagramSocket>(arg0, arg1);
         }
@@ -108,7 +108,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for DatagramSocket(int arg0)
         /// </summary>
-        public static DatagramSocket New(int arg0)
+        public static DatagramSocket Create(int arg0)
         {
             return JVMBridgeBase.New<DatagramSocket>(arg0);
         }
@@ -124,7 +124,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for DatagramSocket(Java.Net.SocketAddress arg0)
         /// </summary>
-        public static DatagramSocket New(Java.Net.SocketAddress arg0)
+        public static DatagramSocket Create(Java.Net.SocketAddress arg0)
         {
             return JVMBridgeBase.New<DatagramSocket>(arg0);
         }

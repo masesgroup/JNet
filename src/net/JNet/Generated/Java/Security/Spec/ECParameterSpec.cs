@@ -77,7 +77,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for ECParameterSpec(Java.Security.Spec.EllipticCurve arg0, Java.Security.Spec.ECPoint arg1, Java.Math.BigInteger arg2, int arg3)
         /// </summary>
-        public static ECParameterSpec New(Java.Security.Spec.EllipticCurve arg0, Java.Security.Spec.ECPoint arg1, Java.Math.BigInteger arg2, int arg3)
+        public static ECParameterSpec Create(Java.Security.Spec.EllipticCurve arg0, Java.Security.Spec.ECPoint arg1, Java.Math.BigInteger arg2, int arg3)
         {
             return JVMBridgeBase.New<ECParameterSpec>(arg0, arg1, arg2, arg3);
         }

@@ -73,7 +73,7 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// HPA initializer for SoundbankReader()
         /// </summary>
-        public static SoundbankReader New()
+        public static SoundbankReader Create()
         {
             return JVMBridgeBase.New<SoundbankReader>();
         }

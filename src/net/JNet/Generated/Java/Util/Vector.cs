@@ -108,7 +108,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Vector()
         /// </summary>
-        public static Vector New()
+        public static Vector Create()
         {
             return JVMBridgeBase.New<Vector>();
         }
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Vector(int arg0, int arg1)
         /// </summary>
-        public static Vector New(int arg0, int arg1)
+        public static Vector Create(int arg0, int arg1)
         {
             return JVMBridgeBase.New<Vector>(arg0, arg1);
         }
@@ -139,7 +139,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Vector(int arg0)
         /// </summary>
-        public static Vector New(int arg0)
+        public static Vector Create(int arg0)
         {
             return JVMBridgeBase.New<Vector>(arg0);
         }
@@ -154,7 +154,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Vector(Java.Util.Collection arg0)
         /// </summary>
-        public static Vector New(Java.Util.Collection arg0)
+        public static Vector Create(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<Vector>(arg0);
         }
@@ -353,7 +353,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Vector()
         /// </summary>
-        public static Vector<E> New()
+        public static Vector<E> Create()
         {
             return JVMBridgeBase.New<Vector<E>>();
         }
@@ -369,7 +369,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Vector(int arg0, int arg1)
         /// </summary>
-        public static Vector<E> New(int arg0, int arg1)
+        public static Vector<E> Create(int arg0, int arg1)
         {
             return JVMBridgeBase.New<Vector<E>>(arg0, arg1);
         }
@@ -384,7 +384,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Vector(int arg0)
         /// </summary>
-        public static Vector<E> New(int arg0)
+        public static Vector<E> Create(int arg0)
         {
             return JVMBridgeBase.New<Vector<E>>(arg0);
         }
@@ -399,7 +399,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Vector(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static Vector<E> New(Java.Util.Collection<E> arg0)
+        public static Vector<E> Create(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<Vector<E>>(arg0);
         }

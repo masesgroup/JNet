@@ -209,7 +209,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for UIDefaults()
         /// </summary>
-        public static UIDefaults New()
+        public static UIDefaults Create()
         {
             return JVMBridgeBase.New<UIDefaults>();
         }
@@ -225,7 +225,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for UIDefaults(int arg0, float arg1)
         /// </summary>
-        public static UIDefaults New(int arg0, float arg1)
+        public static UIDefaults Create(int arg0, float arg1)
         {
             return JVMBridgeBase.New<UIDefaults>(arg0, arg1);
         }
@@ -650,7 +650,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for ProxyLazyValue(Java.Lang.String arg0, Java.Lang.String arg1)
             /// </summary>
-            public static ProxyLazyValue New(Java.Lang.String arg0, Java.Lang.String arg1)
+            public static ProxyLazyValue Create(Java.Lang.String arg0, Java.Lang.String arg1)
             {
                 return JVMBridgeBase.New<ProxyLazyValue>(arg0, arg1);
             }
@@ -665,7 +665,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for ProxyLazyValue(Java.Lang.String arg0)
             /// </summary>
-            public static ProxyLazyValue New(Java.Lang.String arg0)
+            public static ProxyLazyValue Create(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<ProxyLazyValue>(arg0);
             }

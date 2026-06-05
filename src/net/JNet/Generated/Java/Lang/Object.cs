@@ -73,7 +73,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Object()
         /// </summary>
-        public static Object New()
+        public static Object Create()
         {
             return JVMBridgeBase.New<Object>();
         }

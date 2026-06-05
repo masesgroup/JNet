@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobMediaSheetsCompleted(int arg0)
         /// </summary>
-        public static JobMediaSheetsCompleted New(int arg0)
+        public static JobMediaSheetsCompleted Create(int arg0)
         {
             return JVMBridgeBase.New<JobMediaSheetsCompleted>(arg0);
         }

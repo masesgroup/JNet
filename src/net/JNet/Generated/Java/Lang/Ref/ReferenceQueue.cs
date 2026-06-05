@@ -108,7 +108,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// HPA initializer for ReferenceQueue()
         /// </summary>
-        public static ReferenceQueue New()
+        public static ReferenceQueue Create()
         {
             return JVMBridgeBase.New<ReferenceQueue>();
         }
@@ -181,7 +181,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// HPA initializer for ReferenceQueue()
         /// </summary>
-        public static ReferenceQueue<T> New()
+        public static ReferenceQueue<T> Create()
         {
             return JVMBridgeBase.New<ReferenceQueue<T>>();
         }

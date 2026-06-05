@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for ScrollPaneUI()
         /// </summary>
-        public static ScrollPaneUI New()
+        public static ScrollPaneUI Create()
         {
             return JVMBridgeBase.New<ScrollPaneUI>();
         }

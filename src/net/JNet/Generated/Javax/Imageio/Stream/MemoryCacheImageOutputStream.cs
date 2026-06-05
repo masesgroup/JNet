@@ -74,7 +74,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// HPA initializer for MemoryCacheImageOutputStream(Java.Io.OutputStream arg0)
         /// </summary>
-        public static MemoryCacheImageOutputStream New(Java.Io.OutputStream arg0)
+        public static MemoryCacheImageOutputStream Create(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<MemoryCacheImageOutputStream>(arg0);
         }

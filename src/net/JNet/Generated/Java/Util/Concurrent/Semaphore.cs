@@ -75,7 +75,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for Semaphore(int arg0, bool arg1)
         /// </summary>
-        public static Semaphore New(int arg0, bool arg1)
+        public static Semaphore Create(int arg0, bool arg1)
         {
             return JVMBridgeBase.New<Semaphore>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for Semaphore(int arg0)
         /// </summary>
-        public static Semaphore New(int arg0)
+        public static Semaphore Create(int arg0)
         {
             return JVMBridgeBase.New<Semaphore>(arg0);
         }

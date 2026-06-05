@@ -210,7 +210,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for GroupLayout(Java.Awt.Container arg0)
         /// </summary>
-        public static GroupLayout New(Java.Awt.Container arg0)
+        public static GroupLayout Create(Java.Awt.Container arg0)
         {
             return JVMBridgeBase.New<GroupLayout>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for SecurityManager()
         /// </summary>
-        public static SecurityManager New()
+        public static SecurityManager Create()
         {
             return JVMBridgeBase.New<SecurityManager>();
         }

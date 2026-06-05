@@ -81,7 +81,7 @@ namespace Java.Sql
         /// <summary>
         /// HPA initializer for Timestamp(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         /// </summary>
-        public static Timestamp New(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
+        public static Timestamp Create(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             return JVMBridgeBase.New<Timestamp>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -96,7 +96,7 @@ namespace Java.Sql
         /// <summary>
         /// HPA initializer for Timestamp(long arg0)
         /// </summary>
-        public static Timestamp New(long arg0)
+        public static Timestamp Create(long arg0)
         {
             return JVMBridgeBase.New<Timestamp>(arg0);
         }

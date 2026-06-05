@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for NumberOfInterveningJobs(int arg0)
         /// </summary>
-        public static NumberOfInterveningJobs New(int arg0)
+        public static NumberOfInterveningJobs Create(int arg0)
         {
             return JVMBridgeBase.New<NumberOfInterveningJobs>(arg0);
         }

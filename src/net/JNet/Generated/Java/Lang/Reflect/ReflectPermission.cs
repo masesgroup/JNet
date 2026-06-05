@@ -75,7 +75,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// HPA initializer for ReflectPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static ReflectPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static ReflectPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<ReflectPermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// HPA initializer for ReflectPermission(Java.Lang.String arg0)
         /// </summary>
-        public static ReflectPermission New(Java.Lang.String arg0)
+        public static ReflectPermission Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<ReflectPermission>(arg0);
         }

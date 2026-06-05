@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for RootPaneUI()
         /// </summary>
-        public static RootPaneUI New()
+        public static RootPaneUI Create()
         {
             return JVMBridgeBase.New<RootPaneUI>();
         }

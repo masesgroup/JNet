@@ -109,7 +109,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for WeakHashMap()
         /// </summary>
-        public static WeakHashMap New()
+        public static WeakHashMap Create()
         {
             return JVMBridgeBase.New<WeakHashMap>();
         }
@@ -125,7 +125,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for WeakHashMap(int arg0, float arg1)
         /// </summary>
-        public static WeakHashMap New(int arg0, float arg1)
+        public static WeakHashMap Create(int arg0, float arg1)
         {
             return JVMBridgeBase.New<WeakHashMap>(arg0, arg1);
         }
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for WeakHashMap(int arg0)
         /// </summary>
-        public static WeakHashMap New(int arg0)
+        public static WeakHashMap Create(int arg0)
         {
             return JVMBridgeBase.New<WeakHashMap>(arg0);
         }
@@ -155,7 +155,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for WeakHashMap(Java.Util.Map arg0)
         /// </summary>
-        public static WeakHashMap New(Java.Util.Map arg0)
+        public static WeakHashMap Create(Java.Util.Map arg0)
         {
             return JVMBridgeBase.New<WeakHashMap>(arg0);
         }
@@ -200,7 +200,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for WeakHashMap()
         /// </summary>
-        public static WeakHashMap<K, V> New()
+        public static WeakHashMap<K, V> Create()
         {
             return JVMBridgeBase.New<WeakHashMap<K, V>>();
         }
@@ -216,7 +216,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for WeakHashMap(int arg0, float arg1)
         /// </summary>
-        public static WeakHashMap<K, V> New(int arg0, float arg1)
+        public static WeakHashMap<K, V> Create(int arg0, float arg1)
         {
             return JVMBridgeBase.New<WeakHashMap<K, V>>(arg0, arg1);
         }
@@ -231,7 +231,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for WeakHashMap(int arg0)
         /// </summary>
-        public static WeakHashMap<K, V> New(int arg0)
+        public static WeakHashMap<K, V> Create(int arg0)
         {
             return JVMBridgeBase.New<WeakHashMap<K, V>>(arg0);
         }
@@ -246,7 +246,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for WeakHashMap(Java.Util.Map%3CK, V%3E arg0)
         /// </summary>
-        public static WeakHashMap<K, V> New(Java.Util.Map<K, V> arg0)
+        public static WeakHashMap<K, V> Create(Java.Util.Map<K, V> arg0)
         {
             return JVMBridgeBase.New<WeakHashMap<K, V>>(arg0);
         }

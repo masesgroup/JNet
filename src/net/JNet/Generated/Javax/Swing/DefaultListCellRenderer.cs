@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultListCellRenderer()
         /// </summary>
-        public static DefaultListCellRenderer New()
+        public static DefaultListCellRenderer Create()
         {
             return JVMBridgeBase.New<DefaultListCellRenderer>();
         }
@@ -166,7 +166,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for UIResource()
             /// </summary>
-            public static UIResource New()
+            public static UIResource Create()
             {
                 return JVMBridgeBase.New<UIResource>();
             }

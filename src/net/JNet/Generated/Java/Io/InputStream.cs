@@ -73,7 +73,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for InputStream()
         /// </summary>
-        public static InputStream New()
+        public static InputStream Create()
         {
             return JVMBridgeBase.New<InputStream>();
         }

@@ -75,7 +75,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <summary>
         /// HPA initializer for JPEGHuffmanTable(short[] arg0, short[] arg1)
         /// </summary>
-        public static JPEGHuffmanTable New(short[] arg0, short[] arg1)
+        public static JPEGHuffmanTable Create(short[] arg0, short[] arg1)
         {
             return JVMBridgeBase.New<JPEGHuffmanTable>(arg0, arg1);
         }

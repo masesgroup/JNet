@@ -77,7 +77,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Color(float arg0, float arg1, float arg2, float arg3)
         /// </summary>
-        public static Color New(float arg0, float arg1, float arg2, float arg3)
+        public static Color Create(float arg0, float arg1, float arg2, float arg3)
         {
             return JVMBridgeBase.New<Color>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Color(float arg0, float arg1, float arg2)
         /// </summary>
-        public static Color New(float arg0, float arg1, float arg2)
+        public static Color Create(float arg0, float arg1, float arg2)
         {
             return JVMBridgeBase.New<Color>(arg0, arg1, arg2);
         }
@@ -110,7 +110,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Color(int arg0, bool arg1)
         /// </summary>
-        public static Color New(int arg0, bool arg1)
+        public static Color Create(int arg0, bool arg1)
         {
             return JVMBridgeBase.New<Color>(arg0, arg1);
         }
@@ -128,7 +128,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Color(int arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static Color New(int arg0, int arg1, int arg2, int arg3)
+        public static Color Create(int arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<Color>(arg0, arg1, arg2, arg3);
         }
@@ -145,7 +145,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Color(int arg0, int arg1, int arg2)
         /// </summary>
-        public static Color New(int arg0, int arg1, int arg2)
+        public static Color Create(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<Color>(arg0, arg1, arg2);
         }
@@ -160,7 +160,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Color(int arg0)
         /// </summary>
-        public static Color New(int arg0)
+        public static Color Create(int arg0)
         {
             return JVMBridgeBase.New<Color>(arg0);
         }
@@ -177,7 +177,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Color(Java.Awt.ColorNs.ColorSpace arg0, float[] arg1, float arg2)
         /// </summary>
-        public static Color New(Java.Awt.ColorNs.ColorSpace arg0, float[] arg1, float arg2)
+        public static Color Create(Java.Awt.ColorNs.ColorSpace arg0, float[] arg1, float arg2)
         {
             return JVMBridgeBase.New<Color>(arg0, arg1, arg2);
         }

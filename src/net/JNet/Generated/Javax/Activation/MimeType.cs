@@ -73,7 +73,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for MimeType()
         /// </summary>
-        public static MimeType New()
+        public static MimeType Create()
         {
             return JVMBridgeBase.New<MimeType>();
         }
@@ -90,7 +90,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for MimeType(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static MimeType New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static MimeType Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<MimeType>(arg0, arg1);
         }
@@ -106,7 +106,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for MimeType(Java.Lang.String arg0)
         /// </summary>
-        public static MimeType New(Java.Lang.String arg0)
+        public static MimeType Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<MimeType>(arg0);
         }

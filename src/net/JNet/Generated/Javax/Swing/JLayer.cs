@@ -108,7 +108,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JLayer()
         /// </summary>
-        public static JLayer New()
+        public static JLayer Create()
         {
             return JVMBridgeBase.New<JLayer>();
         }
@@ -124,7 +124,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JLayer(Java.Awt.Component arg0, Javax.Swing.Plaf.LayerUI arg1)
         /// </summary>
-        public static JLayer New(Java.Awt.Component arg0, Javax.Swing.Plaf.LayerUI arg1)
+        public static JLayer Create(Java.Awt.Component arg0, Javax.Swing.Plaf.LayerUI arg1)
         {
             return JVMBridgeBase.New<JLayer>(arg0, arg1);
         }
@@ -139,7 +139,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JLayer(Java.Awt.Component arg0)
         /// </summary>
-        public static JLayer New(Java.Awt.Component arg0)
+        public static JLayer Create(Java.Awt.Component arg0)
         {
             return JVMBridgeBase.New<JLayer>(arg0);
         }
@@ -283,7 +283,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JLayer()
         /// </summary>
-        public static JLayer<V> New()
+        public static JLayer<V> Create()
         {
             return JVMBridgeBase.New<JLayer<V>>();
         }
@@ -299,7 +299,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JLayer(V arg0, Javax.Swing.Plaf.LayerUI%3CV%3E arg1)
         /// </summary>
-        public static JLayer<V> New(V arg0, Javax.Swing.Plaf.LayerUI<V> arg1)
+        public static JLayer<V> Create(V arg0, Javax.Swing.Plaf.LayerUI<V> arg1)
         {
             return JVMBridgeBase.New<JLayer<V>>(arg0, arg1);
         }
@@ -314,7 +314,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JLayer(V arg0)
         /// </summary>
-        public static JLayer<V> New(V arg0)
+        public static JLayer<V> Create(V arg0)
         {
             return JVMBridgeBase.New<JLayer<V>>(arg0);
         }

@@ -74,7 +74,7 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// HPA initializer for ActivationGroupID(Java.Rmi.Activation.ActivationSystem arg0)
         /// </summary>
-        public static ActivationGroupID New(Java.Rmi.Activation.ActivationSystem arg0)
+        public static ActivationGroupID Create(Java.Rmi.Activation.ActivationSystem arg0)
         {
             return JVMBridgeBase.New<ActivationGroupID>(arg0);
         }

@@ -212,7 +212,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Locale(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         /// </summary>
-        public static Locale New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        public static Locale Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<Locale>(arg0, arg1, arg2);
         }
@@ -228,7 +228,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Locale(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static Locale New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static Locale Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<Locale>(arg0, arg1);
         }
@@ -243,7 +243,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Locale(Java.Lang.String arg0)
         /// </summary>
-        public static Locale New(Java.Lang.String arg0)
+        public static Locale Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Locale>(arg0);
         }
@@ -687,7 +687,7 @@ namespace Java.Util
             /// <summary>
             /// HPA initializer for Builder()
             /// </summary>
-            public static Builder New()
+            public static Builder Create()
             {
                 return JVMBridgeBase.New<Builder>();
             }
@@ -974,7 +974,7 @@ namespace Java.Util
             /// <summary>
             /// HPA initializer for LanguageRange(Java.Lang.String arg0, double arg1)
             /// </summary>
-            public static LanguageRange New(Java.Lang.String arg0, double arg1)
+            public static LanguageRange Create(Java.Lang.String arg0, double arg1)
             {
                 return JVMBridgeBase.New<LanguageRange>(arg0, arg1);
             }
@@ -989,7 +989,7 @@ namespace Java.Util
             /// <summary>
             /// HPA initializer for LanguageRange(Java.Lang.String arg0)
             /// </summary>
-            public static LanguageRange New(Java.Lang.String arg0)
+            public static LanguageRange Create(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<LanguageRange>(arg0);
             }

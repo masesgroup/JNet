@@ -141,7 +141,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ForkJoinPool()
         /// </summary>
-        public static ForkJoinPool New()
+        public static ForkJoinPool Create()
         {
             return JVMBridgeBase.New<ForkJoinPool>();
         }
@@ -156,7 +156,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ForkJoinPool(int arg0)
         /// </summary>
-        public static ForkJoinPool New(int arg0)
+        public static ForkJoinPool Create(int arg0)
         {
             return JVMBridgeBase.New<ForkJoinPool>(arg0);
         }

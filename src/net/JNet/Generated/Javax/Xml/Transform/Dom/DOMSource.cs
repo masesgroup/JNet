@@ -73,7 +73,7 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// HPA initializer for DOMSource()
         /// </summary>
-        public static DOMSource New()
+        public static DOMSource Create()
         {
             return JVMBridgeBase.New<DOMSource>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// HPA initializer for DOMSource(Org.W3c.Dom.Node arg0, Java.Lang.String arg1)
         /// </summary>
-        public static DOMSource New(Org.W3c.Dom.Node arg0, Java.Lang.String arg1)
+        public static DOMSource Create(Org.W3c.Dom.Node arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<DOMSource>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// HPA initializer for DOMSource(Org.W3c.Dom.Node arg0)
         /// </summary>
-        public static DOMSource New(Org.W3c.Dom.Node arg0)
+        public static DOMSource Create(Org.W3c.Dom.Node arg0)
         {
             return JVMBridgeBase.New<DOMSource>(arg0);
         }

@@ -142,7 +142,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for TransferHandler(Java.Lang.String arg0)
         /// </summary>
-        public static TransferHandler New(Java.Lang.String arg0)
+        public static TransferHandler Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<TransferHandler>(arg0);
         }
@@ -352,7 +352,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for TransferSupport(Java.Awt.Component arg0, Java.Awt.Datatransfer.Transferable arg1)
             /// </summary>
-            public static TransferSupport New(Java.Awt.Component arg0, Java.Awt.Datatransfer.Transferable arg1)
+            public static TransferSupport Create(Java.Awt.Component arg0, Java.Awt.Datatransfer.Transferable arg1)
             {
                 return JVMBridgeBase.New<TransferSupport>(arg0, arg1);
             }

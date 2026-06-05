@@ -91,7 +91,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// HPA initializer for ImageWriterSpi(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String[] arg3, Java.Lang.String[] arg4, Java.Lang.String arg5, Java.Lang.Class[] arg6, Java.Lang.String[] arg7, bool arg8, Java.Lang.String arg9, Java.Lang.String arg10, Java.Lang.String[] arg11, Java.Lang.String[] arg12, bool arg13, Java.Lang.String arg14, Java.Lang.String arg15, Java.Lang.String[] arg16, Java.Lang.String[] arg17)
         /// </summary>
-        public static ImageWriterSpi New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String[] arg3, Java.Lang.String[] arg4, Java.Lang.String arg5, Java.Lang.Class[] arg6, Java.Lang.String[] arg7, bool arg8, Java.Lang.String arg9, Java.Lang.String arg10, Java.Lang.String[] arg11, Java.Lang.String[] arg12, bool arg13, Java.Lang.String arg14, Java.Lang.String arg15, Java.Lang.String[] arg16, Java.Lang.String[] arg17)
+        public static ImageWriterSpi Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String[] arg3, Java.Lang.String[] arg4, Java.Lang.String arg5, Java.Lang.Class[] arg6, Java.Lang.String[] arg7, bool arg8, Java.Lang.String arg9, Java.Lang.String arg10, Java.Lang.String[] arg11, Java.Lang.String[] arg12, bool arg13, Java.Lang.String arg14, Java.Lang.String arg15, Java.Lang.String[] arg16, Java.Lang.String[] arg17)
         {
             return JVMBridgeBase.New<ImageWriterSpi>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17);
         }

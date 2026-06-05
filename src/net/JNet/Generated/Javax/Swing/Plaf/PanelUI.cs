@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for PanelUI()
         /// </summary>
-        public static PanelUI New()
+        public static PanelUI Create()
         {
             return JVMBridgeBase.New<PanelUI>();
         }

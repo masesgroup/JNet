@@ -74,7 +74,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for CompositeView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static CompositeView New(Javax.Swing.Text.Element arg0)
+        public static CompositeView Create(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<CompositeView>(arg0);
         }

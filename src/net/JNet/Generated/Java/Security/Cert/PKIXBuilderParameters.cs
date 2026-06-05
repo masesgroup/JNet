@@ -77,7 +77,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for PKIXBuilderParameters(Java.Security.KeyStore arg0, Java.Security.Cert.CertSelector arg1)
         /// </summary>
-        public static PKIXBuilderParameters New(Java.Security.KeyStore arg0, Java.Security.Cert.CertSelector arg1)
+        public static PKIXBuilderParameters Create(Java.Security.KeyStore arg0, Java.Security.Cert.CertSelector arg1)
         {
             return JVMBridgeBase.New<PKIXBuilderParameters>(arg0, arg1);
         }
@@ -94,7 +94,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for PKIXBuilderParameters(Java.Util.Set%3CJava.Security.Cert.TrustAnchor%3E arg0, Java.Security.Cert.CertSelector arg1)
         /// </summary>
-        public static PKIXBuilderParameters New(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0, Java.Security.Cert.CertSelector arg1)
+        public static PKIXBuilderParameters Create(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0, Java.Security.Cert.CertSelector arg1)
         {
             return JVMBridgeBase.New<PKIXBuilderParameters>(arg0, arg1);
         }

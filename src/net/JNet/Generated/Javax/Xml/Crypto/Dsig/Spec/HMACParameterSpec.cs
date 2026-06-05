@@ -74,7 +74,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// HPA initializer for HMACParameterSpec(int arg0)
         /// </summary>
-        public static HMACParameterSpec New(int arg0)
+        public static HMACParameterSpec Create(int arg0)
         {
             return JVMBridgeBase.New<HMACParameterSpec>(arg0);
         }

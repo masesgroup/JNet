@@ -77,7 +77,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// HPA initializer for MLetContent(Java.Net.URL arg0, Java.Util.Map%3CJava.Lang.String, Java.Lang.String%3E arg1, Java.Util.List%3CJava.Lang.String%3E arg2, Java.Util.List%3CJava.Lang.String%3E arg3)
         /// </summary>
-        public static MLetContent New(Java.Net.URL arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1, Java.Util.List<Java.Lang.String> arg2, Java.Util.List<Java.Lang.String> arg3)
+        public static MLetContent Create(Java.Net.URL arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1, Java.Util.List<Java.Lang.String> arg2, Java.Util.List<Java.Lang.String> arg3)
         {
             return JVMBridgeBase.New<MLetContent>(arg0, arg1, arg2, arg3);
         }

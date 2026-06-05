@@ -76,7 +76,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URLClassLoader(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
         /// </summary>
-        public static URLClassLoader New(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
+        public static URLClassLoader Create(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
         {
             return JVMBridgeBase.New<URLClassLoader>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URLClassLoader(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
         /// </summary>
-        public static URLClassLoader New(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
+        public static URLClassLoader Create(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
         {
             return JVMBridgeBase.New<URLClassLoader>(arg0, arg1);
         }
@@ -107,7 +107,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URLClassLoader(Java.Net.URL[] arg0)
         /// </summary>
-        public static URLClassLoader New(Java.Net.URL[] arg0)
+        public static URLClassLoader Create(Java.Net.URL[] arg0)
         {
             return JVMBridgeBase.New<URLClassLoader>(arg0);
         }

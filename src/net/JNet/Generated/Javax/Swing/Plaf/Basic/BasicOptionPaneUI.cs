@@ -141,7 +141,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicOptionPaneUI()
         /// </summary>
-        public static BasicOptionPaneUI New()
+        public static BasicOptionPaneUI Create()
         {
             return JVMBridgeBase.New<BasicOptionPaneUI>();
         }
@@ -196,7 +196,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for ButtonAreaLayout(bool arg0, int arg1)
             /// </summary>
-            public static ButtonAreaLayout New(bool arg0, int arg1)
+            public static ButtonAreaLayout Create(bool arg0, int arg1)
             {
                 return JVMBridgeBase.New<ButtonAreaLayout>(arg0, arg1);
             }
@@ -306,7 +306,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicOptionPaneUI arg0)
             /// </summary>
-            public static PropertyChangeHandler New(Javax.Swing.Plaf.Basic.BasicOptionPaneUI arg0)
+            public static PropertyChangeHandler Create(Javax.Swing.Plaf.Basic.BasicOptionPaneUI arg0)
             {
                 return JVMBridgeBase.New<PropertyChangeHandler>(arg0);
             }

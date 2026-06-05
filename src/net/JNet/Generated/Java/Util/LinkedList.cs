@@ -108,7 +108,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedList()
         /// </summary>
-        public static LinkedList New()
+        public static LinkedList Create()
         {
             return JVMBridgeBase.New<LinkedList>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedList(Java.Util.Collection arg0)
         /// </summary>
-        public static LinkedList New(Java.Util.Collection arg0)
+        public static LinkedList Create(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<LinkedList>(arg0);
         }
@@ -363,7 +363,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedList()
         /// </summary>
-        public static LinkedList<E> New()
+        public static LinkedList<E> Create()
         {
             return JVMBridgeBase.New<LinkedList<E>>();
         }
@@ -378,7 +378,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for LinkedList(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static LinkedList<E> New(Java.Util.Collection<E> arg0)
+        public static LinkedList<E> Create(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<LinkedList<E>>(arg0);
         }

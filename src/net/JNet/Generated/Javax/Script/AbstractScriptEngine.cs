@@ -73,7 +73,7 @@ namespace Javax.Script
         /// <summary>
         /// HPA initializer for AbstractScriptEngine()
         /// </summary>
-        public static AbstractScriptEngine New()
+        public static AbstractScriptEngine Create()
         {
             return JVMBridgeBase.New<AbstractScriptEngine>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Script
         /// <summary>
         /// HPA initializer for AbstractScriptEngine(Javax.Script.Bindings arg0)
         /// </summary>
-        public static AbstractScriptEngine New(Javax.Script.Bindings arg0)
+        public static AbstractScriptEngine Create(Javax.Script.Bindings arg0)
         {
             return JVMBridgeBase.New<AbstractScriptEngine>(arg0);
         }

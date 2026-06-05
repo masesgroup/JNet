@@ -78,7 +78,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for TreeSelectionEvent(object arg0, Javax.Swing.Tree.TreePath arg1, bool arg2, Javax.Swing.Tree.TreePath arg3, Javax.Swing.Tree.TreePath arg4)
         /// </summary>
-        public static TreeSelectionEvent New(object arg0, Javax.Swing.Tree.TreePath arg1, bool arg2, Javax.Swing.Tree.TreePath arg3, Javax.Swing.Tree.TreePath arg4)
+        public static TreeSelectionEvent Create(object arg0, Javax.Swing.Tree.TreePath arg1, bool arg2, Javax.Swing.Tree.TreePath arg3, Javax.Swing.Tree.TreePath arg4)
         {
             return JVMBridgeBase.New<TreeSelectionEvent>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -97,7 +97,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for TreeSelectionEvent(object arg0, Javax.Swing.Tree.TreePath[] arg1, bool[] arg2, Javax.Swing.Tree.TreePath arg3, Javax.Swing.Tree.TreePath arg4)
         /// </summary>
-        public static TreeSelectionEvent New(object arg0, Javax.Swing.Tree.TreePath[] arg1, bool[] arg2, Javax.Swing.Tree.TreePath arg3, Javax.Swing.Tree.TreePath arg4)
+        public static TreeSelectionEvent Create(object arg0, Javax.Swing.Tree.TreePath[] arg1, bool[] arg2, Javax.Swing.Tree.TreePath arg3, Javax.Swing.Tree.TreePath arg4)
         {
             return JVMBridgeBase.New<TreeSelectionEvent>(arg0, arg1, arg2, arg3, arg4);
         }

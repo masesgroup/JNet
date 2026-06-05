@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentLinkedDeque()
         /// </summary>
-        public static ConcurrentLinkedDeque New()
+        public static ConcurrentLinkedDeque Create()
         {
             return JVMBridgeBase.New<ConcurrentLinkedDeque>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentLinkedDeque(Java.Util.Collection arg0)
         /// </summary>
-        public static ConcurrentLinkedDeque New(Java.Util.Collection arg0)
+        public static ConcurrentLinkedDeque Create(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<ConcurrentLinkedDeque>(arg0);
         }
@@ -355,7 +355,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentLinkedDeque()
         /// </summary>
-        public static ConcurrentLinkedDeque<E> New()
+        public static ConcurrentLinkedDeque<E> Create()
         {
             return JVMBridgeBase.New<ConcurrentLinkedDeque<E>>();
         }
@@ -370,7 +370,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentLinkedDeque(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static ConcurrentLinkedDeque<E> New(Java.Util.Collection<E> arg0)
+        public static ConcurrentLinkedDeque<E> Create(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<ConcurrentLinkedDeque<E>>(arg0);
         }

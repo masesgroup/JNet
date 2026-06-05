@@ -227,7 +227,7 @@ namespace Javax.Xml.Bind.Annotation
             /// <summary>
             /// HPA initializer for DEFAULT()
             /// </summary>
-            public static DEFAULT New()
+            public static DEFAULT Create()
             {
                 return JVMBridgeBase.New<DEFAULT>();
             }

@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for SliderUI()
         /// </summary>
-        public static SliderUI New()
+        public static SliderUI Create()
         {
             return JVMBridgeBase.New<SliderUI>();
         }

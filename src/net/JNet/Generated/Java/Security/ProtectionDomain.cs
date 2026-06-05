@@ -77,7 +77,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for ProtectionDomain(Java.Security.CodeSource arg0, Java.Security.PermissionCollection arg1, Java.Lang.ClassLoader arg2, Java.Security.Principal[] arg3)
         /// </summary>
-        public static ProtectionDomain New(Java.Security.CodeSource arg0, Java.Security.PermissionCollection arg1, Java.Lang.ClassLoader arg2, Java.Security.Principal[] arg3)
+        public static ProtectionDomain Create(Java.Security.CodeSource arg0, Java.Security.PermissionCollection arg1, Java.Lang.ClassLoader arg2, Java.Security.Principal[] arg3)
         {
             return JVMBridgeBase.New<ProtectionDomain>(arg0, arg1, arg2, arg3);
         }
@@ -93,7 +93,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for ProtectionDomain(Java.Security.CodeSource arg0, Java.Security.PermissionCollection arg1)
         /// </summary>
-        public static ProtectionDomain New(Java.Security.CodeSource arg0, Java.Security.PermissionCollection arg1)
+        public static ProtectionDomain Create(Java.Security.CodeSource arg0, Java.Security.PermissionCollection arg1)
         {
             return JVMBridgeBase.New<ProtectionDomain>(arg0, arg1);
         }

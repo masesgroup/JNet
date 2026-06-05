@@ -345,7 +345,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DefaultEditorKit()
         /// </summary>
-        public static DefaultEditorKit New()
+        public static DefaultEditorKit Create()
         {
             return JVMBridgeBase.New<DefaultEditorKit>();
         }
@@ -579,7 +579,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for BeepAction()
             /// </summary>
-            public static BeepAction New()
+            public static BeepAction Create()
             {
                 return JVMBridgeBase.New<BeepAction>();
             }
@@ -624,7 +624,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for CopyAction()
             /// </summary>
-            public static CopyAction New()
+            public static CopyAction Create()
             {
                 return JVMBridgeBase.New<CopyAction>();
             }
@@ -669,7 +669,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for CutAction()
             /// </summary>
-            public static CutAction New()
+            public static CutAction Create()
             {
                 return JVMBridgeBase.New<CutAction>();
             }
@@ -714,7 +714,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for DefaultKeyTypedAction()
             /// </summary>
-            public static DefaultKeyTypedAction New()
+            public static DefaultKeyTypedAction Create()
             {
                 return JVMBridgeBase.New<DefaultKeyTypedAction>();
             }
@@ -759,7 +759,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for InsertBreakAction()
             /// </summary>
-            public static InsertBreakAction New()
+            public static InsertBreakAction Create()
             {
                 return JVMBridgeBase.New<InsertBreakAction>();
             }
@@ -804,7 +804,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for InsertContentAction()
             /// </summary>
-            public static InsertContentAction New()
+            public static InsertContentAction Create()
             {
                 return JVMBridgeBase.New<InsertContentAction>();
             }
@@ -849,7 +849,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for InsertTabAction()
             /// </summary>
-            public static InsertTabAction New()
+            public static InsertTabAction Create()
             {
                 return JVMBridgeBase.New<InsertTabAction>();
             }
@@ -894,7 +894,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for PasteAction()
             /// </summary>
-            public static PasteAction New()
+            public static PasteAction Create()
             {
                 return JVMBridgeBase.New<PasteAction>();
             }

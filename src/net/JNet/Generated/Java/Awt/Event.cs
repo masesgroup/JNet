@@ -76,7 +76,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Event(object arg0, int arg1, object arg2)
         /// </summary>
-        public static Event New(object arg0, int arg1, object arg2)
+        public static Event Create(object arg0, int arg1, object arg2)
         {
             return JVMBridgeBase.New<Event>(arg0, arg1, arg2);
         }
@@ -98,7 +98,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Event(object arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6, object arg7)
         /// </summary>
-        public static Event New(object arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6, object arg7)
+        public static Event Create(object arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6, object arg7)
         {
             return JVMBridgeBase.New<Event>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
@@ -119,7 +119,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Event(object arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         /// </summary>
-        public static Event New(object arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
+        public static Event Create(object arg0, long arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             return JVMBridgeBase.New<Event>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }

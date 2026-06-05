@@ -73,7 +73,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// HPA initializer for ExcC14NParameterSpec()
         /// </summary>
-        public static ExcC14NParameterSpec New()
+        public static ExcC14NParameterSpec Create()
         {
             return JVMBridgeBase.New<ExcC14NParameterSpec>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// HPA initializer for ExcC14NParameterSpec(Java.Util.List arg0)
         /// </summary>
-        public static ExcC14NParameterSpec New(Java.Util.List arg0)
+        public static ExcC14NParameterSpec Create(Java.Util.List arg0)
         {
             return JVMBridgeBase.New<ExcC14NParameterSpec>(arg0);
         }

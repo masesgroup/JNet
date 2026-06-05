@@ -75,7 +75,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// HPA initializer for CardPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static CardPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static CardPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<CardPermission>(arg0, arg1);
         }

@@ -75,7 +75,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for Timer(int arg0, Java.Awt.EventNs.ActionListener arg1)
         /// </summary>
-        public static Timer New(int arg0, Java.Awt.EventNs.ActionListener arg1)
+        public static Timer Create(int arg0, Java.Awt.EventNs.ActionListener arg1)
         {
             return JVMBridgeBase.New<Timer>(arg0, arg1);
         }

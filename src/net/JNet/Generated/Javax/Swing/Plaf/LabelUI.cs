@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for LabelUI()
         /// </summary>
-        public static LabelUI New()
+        public static LabelUI Create()
         {
             return JVMBridgeBase.New<LabelUI>();
         }

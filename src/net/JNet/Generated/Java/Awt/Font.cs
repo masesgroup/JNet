@@ -76,7 +76,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Font(Java.Lang.String arg0, int arg1, int arg2)
         /// </summary>
-        public static Font New(Java.Lang.String arg0, int arg1, int arg2)
+        public static Font Create(Java.Lang.String arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<Font>(arg0, arg1, arg2);
         }
@@ -91,7 +91,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Font(Java.Util.Map arg0)
         /// </summary>
-        public static Font New(Java.Util.Map arg0)
+        public static Font Create(Java.Util.Map arg0)
         {
             return JVMBridgeBase.New<Font>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for Phaser()
         /// </summary>
-        public static Phaser New()
+        public static Phaser Create()
         {
             return JVMBridgeBase.New<Phaser>();
         }
@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for Phaser(int arg0)
         /// </summary>
-        public static Phaser New(int arg0)
+        public static Phaser Create(int arg0)
         {
             return JVMBridgeBase.New<Phaser>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for Phaser(Java.Util.Concurrent.Phaser arg0, int arg1)
         /// </summary>
-        public static Phaser New(Java.Util.Concurrent.Phaser arg0, int arg1)
+        public static Phaser Create(Java.Util.Concurrent.Phaser arg0, int arg1)
         {
             return JVMBridgeBase.New<Phaser>(arg0, arg1);
         }
@@ -119,7 +119,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for Phaser(Java.Util.Concurrent.Phaser arg0)
         /// </summary>
-        public static Phaser New(Java.Util.Concurrent.Phaser arg0)
+        public static Phaser Create(Java.Util.Concurrent.Phaser arg0)
         {
             return JVMBridgeBase.New<Phaser>(arg0);
         }

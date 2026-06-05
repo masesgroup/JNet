@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for Utilities()
         /// </summary>
-        public static Utilities New()
+        public static Utilities Create()
         {
             return JVMBridgeBase.New<Utilities>();
         }

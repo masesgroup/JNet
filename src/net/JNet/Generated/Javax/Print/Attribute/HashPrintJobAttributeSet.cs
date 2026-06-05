@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashPrintJobAttributeSet()
         /// </summary>
-        public static HashPrintJobAttributeSet New()
+        public static HashPrintJobAttributeSet Create()
         {
             return JVMBridgeBase.New<HashPrintJobAttributeSet>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttribute arg0)
         /// </summary>
-        public static HashPrintJobAttributeSet New(Javax.Print.Attribute.PrintJobAttribute arg0)
+        public static HashPrintJobAttributeSet Create(Javax.Print.Attribute.PrintJobAttribute arg0)
         {
             return JVMBridgeBase.New<HashPrintJobAttributeSet>(arg0);
         }
@@ -103,7 +103,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttribute[] arg0)
         /// </summary>
-        public static HashPrintJobAttributeSet New(Javax.Print.Attribute.PrintJobAttribute[] arg0)
+        public static HashPrintJobAttributeSet Create(Javax.Print.Attribute.PrintJobAttribute[] arg0)
         {
             return JVMBridgeBase.New<HashPrintJobAttributeSet>(arg0);
         }
@@ -118,7 +118,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttributeSet arg0)
         /// </summary>
-        public static HashPrintJobAttributeSet New(Javax.Print.Attribute.PrintJobAttributeSet arg0)
+        public static HashPrintJobAttributeSet Create(Javax.Print.Attribute.PrintJobAttributeSet arg0)
         {
             return JVMBridgeBase.New<HashPrintJobAttributeSet>(arg0);
         }

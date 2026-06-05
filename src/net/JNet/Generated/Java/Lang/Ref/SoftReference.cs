@@ -110,7 +110,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// HPA initializer for SoftReference(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
         /// </summary>
-        public static SoftReference New(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
+        public static SoftReference Create(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
         {
             return JVMBridgeBase.New<SoftReference>(arg0, arg1);
         }
@@ -125,7 +125,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// HPA initializer for SoftReference(object arg0)
         /// </summary>
-        public static SoftReference New(object arg0)
+        public static SoftReference Create(object arg0)
         {
             return JVMBridgeBase.New<SoftReference>(arg0);
         }
@@ -172,7 +172,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// HPA initializer for SoftReference(T arg0, Java.Lang.Ref.ReferenceQueue%3CT%3E arg1)
         /// </summary>
-        public static SoftReference<T> New(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
+        public static SoftReference<T> Create(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
         {
             return JVMBridgeBase.New<SoftReference<T>>(arg0, arg1);
         }
@@ -187,7 +187,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// HPA initializer for SoftReference(T arg0)
         /// </summary>
-        public static SoftReference<T> New(T arg0)
+        public static SoftReference<T> Create(T arg0)
         {
             return JVMBridgeBase.New<SoftReference<T>>(arg0);
         }

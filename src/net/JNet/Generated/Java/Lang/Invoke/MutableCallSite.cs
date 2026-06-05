@@ -74,7 +74,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// HPA initializer for MutableCallSite(Java.Lang.Invoke.MethodHandle arg0)
         /// </summary>
-        public static MutableCallSite New(Java.Lang.Invoke.MethodHandle arg0)
+        public static MutableCallSite Create(Java.Lang.Invoke.MethodHandle arg0)
         {
             return JVMBridgeBase.New<MutableCallSite>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// HPA initializer for MutableCallSite(Java.Lang.Invoke.MethodType arg0)
         /// </summary>
-        public static MutableCallSite New(Java.Lang.Invoke.MethodType arg0)
+        public static MutableCallSite Create(Java.Lang.Invoke.MethodType arg0)
         {
             return JVMBridgeBase.New<MutableCallSite>(arg0);
         }

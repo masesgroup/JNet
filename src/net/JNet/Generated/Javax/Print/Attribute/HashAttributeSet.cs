@@ -73,7 +73,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashAttributeSet()
         /// </summary>
-        public static HashAttributeSet New()
+        public static HashAttributeSet Create()
         {
             return JVMBridgeBase.New<HashAttributeSet>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashAttributeSet(Javax.Print.Attribute.Attribute arg0)
         /// </summary>
-        public static HashAttributeSet New(Javax.Print.Attribute.Attribute arg0)
+        public static HashAttributeSet Create(Javax.Print.Attribute.Attribute arg0)
         {
             return JVMBridgeBase.New<HashAttributeSet>(arg0);
         }
@@ -103,7 +103,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashAttributeSet(Javax.Print.Attribute.Attribute[] arg0)
         /// </summary>
-        public static HashAttributeSet New(Javax.Print.Attribute.Attribute[] arg0)
+        public static HashAttributeSet Create(Javax.Print.Attribute.Attribute[] arg0)
         {
             return JVMBridgeBase.New<HashAttributeSet>(arg0);
         }
@@ -118,7 +118,7 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// HPA initializer for HashAttributeSet(Javax.Print.Attribute.AttributeSet arg0)
         /// </summary>
-        public static HashAttributeSet New(Javax.Print.Attribute.AttributeSet arg0)
+        public static HashAttributeSet Create(Javax.Print.Attribute.AttributeSet arg0)
         {
             return JVMBridgeBase.New<HashAttributeSet>(arg0);
         }

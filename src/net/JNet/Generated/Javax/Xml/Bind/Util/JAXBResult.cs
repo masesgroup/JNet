@@ -75,7 +75,7 @@ namespace Javax.Xml.Bind.Util
         /// <summary>
         /// HPA initializer for JAXBResult(Javax.Xml.Bind.JAXBContext arg0)
         /// </summary>
-        public static JAXBResult New(Javax.Xml.Bind.JAXBContext arg0)
+        public static JAXBResult Create(Javax.Xml.Bind.JAXBContext arg0)
         {
             return JVMBridgeBase.New<JAXBResult>(arg0);
         }
@@ -91,7 +91,7 @@ namespace Javax.Xml.Bind.Util
         /// <summary>
         /// HPA initializer for JAXBResult(Javax.Xml.Bind.Unmarshaller arg0)
         /// </summary>
-        public static JAXBResult New(Javax.Xml.Bind.Unmarshaller arg0)
+        public static JAXBResult Create(Javax.Xml.Bind.Unmarshaller arg0)
         {
             return JVMBridgeBase.New<JAXBResult>(arg0);
         }

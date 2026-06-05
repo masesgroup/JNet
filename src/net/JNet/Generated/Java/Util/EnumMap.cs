@@ -110,7 +110,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for EnumMap(Java.Lang.Class arg0)
         /// </summary>
-        public static EnumMap New(Java.Lang.Class arg0)
+        public static EnumMap Create(Java.Lang.Class arg0)
         {
             return JVMBridgeBase.New<EnumMap>(arg0);
         }
@@ -125,7 +125,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for EnumMap(Java.Util.EnumMap arg0)
         /// </summary>
-        public static EnumMap New(Java.Util.EnumMap arg0)
+        public static EnumMap Create(Java.Util.EnumMap arg0)
         {
             return JVMBridgeBase.New<EnumMap>(arg0);
         }
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for EnumMap(Java.Util.Map arg0)
         /// </summary>
-        public static EnumMap New(Java.Util.Map arg0)
+        public static EnumMap Create(Java.Util.Map arg0)
         {
             return JVMBridgeBase.New<EnumMap>(arg0);
         }
@@ -212,7 +212,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for EnumMap(Java.Lang.Class arg0)
         /// </summary>
-        public static EnumMap<K, V> New(Java.Lang.Class arg0)
+        public static EnumMap<K, V> Create(Java.Lang.Class arg0)
         {
             return JVMBridgeBase.New<EnumMap<K, V>>(arg0);
         }
@@ -227,7 +227,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for EnumMap(Java.Util.EnumMap%3CK, V%3E arg0)
         /// </summary>
-        public static EnumMap<K, V> New(Java.Util.EnumMap<K, V> arg0)
+        public static EnumMap<K, V> Create(Java.Util.EnumMap<K, V> arg0)
         {
             return JVMBridgeBase.New<EnumMap<K, V>>(arg0);
         }
@@ -242,7 +242,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for EnumMap(Java.Util.Map%3CK, V%3E arg0)
         /// </summary>
-        public static EnumMap<K, V> New(Java.Util.Map<K, V> arg0)
+        public static EnumMap<K, V> Create(Java.Util.Map<K, V> arg0)
         {
             return JVMBridgeBase.New<EnumMap<K, V>>(arg0);
         }

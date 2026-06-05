@@ -79,7 +79,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for Bidi(char[] arg0, int arg1, byte[] arg2, int arg3, int arg4, int arg5)
         /// </summary>
-        public static Bidi New(char[] arg0, int arg1, byte[] arg2, int arg3, int arg4, int arg5)
+        public static Bidi Create(char[] arg0, int arg1, byte[] arg2, int arg3, int arg4, int arg5)
         {
             return JVMBridgeBase.New<Bidi>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -95,7 +95,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for Bidi(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static Bidi New(Java.Lang.String arg0, int arg1)
+        public static Bidi Create(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<Bidi>(arg0, arg1);
         }
@@ -110,7 +110,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for Bidi(Java.Text.AttributedCharacterIterator arg0)
         /// </summary>
-        public static Bidi New(Java.Text.AttributedCharacterIterator arg0)
+        public static Bidi Create(Java.Text.AttributedCharacterIterator arg0)
         {
             return JVMBridgeBase.New<Bidi>(arg0);
         }

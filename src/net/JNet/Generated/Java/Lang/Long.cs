@@ -75,7 +75,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Long(Java.Lang.String arg0)
         /// </summary>
-        public static Long New(Java.Lang.String arg0)
+        public static Long Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Long>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Long(long arg0)
         /// </summary>
-        public static Long New(long arg0)
+        public static Long Create(long arg0)
         {
             return JVMBridgeBase.New<Long>(arg0);
         }

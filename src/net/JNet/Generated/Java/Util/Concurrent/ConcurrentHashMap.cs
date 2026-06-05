@@ -179,7 +179,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentHashMap()
         /// </summary>
-        public static ConcurrentHashMap New()
+        public static ConcurrentHashMap Create()
         {
             return JVMBridgeBase.New<ConcurrentHashMap>();
         }
@@ -196,7 +196,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentHashMap(int arg0, float arg1, int arg2)
         /// </summary>
-        public static ConcurrentHashMap New(int arg0, float arg1, int arg2)
+        public static ConcurrentHashMap Create(int arg0, float arg1, int arg2)
         {
             return JVMBridgeBase.New<ConcurrentHashMap>(arg0, arg1, arg2);
         }
@@ -212,7 +212,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentHashMap(int arg0, float arg1)
         /// </summary>
-        public static ConcurrentHashMap New(int arg0, float arg1)
+        public static ConcurrentHashMap Create(int arg0, float arg1)
         {
             return JVMBridgeBase.New<ConcurrentHashMap>(arg0, arg1);
         }
@@ -227,7 +227,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentHashMap(int arg0)
         /// </summary>
-        public static ConcurrentHashMap New(int arg0)
+        public static ConcurrentHashMap Create(int arg0)
         {
             return JVMBridgeBase.New<ConcurrentHashMap>(arg0);
         }
@@ -242,7 +242,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentHashMap(Java.Util.Map arg0)
         /// </summary>
-        public static ConcurrentHashMap New(Java.Util.Map arg0)
+        public static ConcurrentHashMap Create(Java.Util.Map arg0)
         {
             return JVMBridgeBase.New<ConcurrentHashMap>(arg0);
         }
@@ -784,7 +784,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentHashMap()
         /// </summary>
-        public static ConcurrentHashMap<K, V> New()
+        public static ConcurrentHashMap<K, V> Create()
         {
             return JVMBridgeBase.New<ConcurrentHashMap<K, V>>();
         }
@@ -801,7 +801,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentHashMap(int arg0, float arg1, int arg2)
         /// </summary>
-        public static ConcurrentHashMap<K, V> New(int arg0, float arg1, int arg2)
+        public static ConcurrentHashMap<K, V> Create(int arg0, float arg1, int arg2)
         {
             return JVMBridgeBase.New<ConcurrentHashMap<K, V>>(arg0, arg1, arg2);
         }
@@ -817,7 +817,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentHashMap(int arg0, float arg1)
         /// </summary>
-        public static ConcurrentHashMap<K, V> New(int arg0, float arg1)
+        public static ConcurrentHashMap<K, V> Create(int arg0, float arg1)
         {
             return JVMBridgeBase.New<ConcurrentHashMap<K, V>>(arg0, arg1);
         }
@@ -832,7 +832,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentHashMap(int arg0)
         /// </summary>
-        public static ConcurrentHashMap<K, V> New(int arg0)
+        public static ConcurrentHashMap<K, V> Create(int arg0)
         {
             return JVMBridgeBase.New<ConcurrentHashMap<K, V>>(arg0);
         }
@@ -847,7 +847,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ConcurrentHashMap(Java.Util.Map%3CK, V%3E arg0)
         /// </summary>
-        public static ConcurrentHashMap<K, V> New(Java.Util.Map<K, V> arg0)
+        public static ConcurrentHashMap<K, V> Create(Java.Util.Map<K, V> arg0)
         {
             return JVMBridgeBase.New<ConcurrentHashMap<K, V>>(arg0);
         }

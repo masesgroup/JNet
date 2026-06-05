@@ -73,7 +73,7 @@ namespace Org.Xml.Sax
         /// <summary>
         /// HPA initializer for HandlerBase()
         /// </summary>
-        public static HandlerBase New()
+        public static HandlerBase Create()
         {
             return JVMBridgeBase.New<HandlerBase>();
         }

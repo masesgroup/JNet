@@ -175,7 +175,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicTableUI()
         /// </summary>
-        public static BasicTableUI New()
+        public static BasicTableUI Create()
         {
             return JVMBridgeBase.New<BasicTableUI>();
         }
@@ -214,7 +214,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for FocusHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
             /// </summary>
-            public static FocusHandler New(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
+            public static FocusHandler Create(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
             {
                 return JVMBridgeBase.New<FocusHandler>(arg0);
             }
@@ -280,7 +280,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for KeyHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
             /// </summary>
-            public static KeyHandler New(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
+            public static KeyHandler Create(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
             {
                 return JVMBridgeBase.New<KeyHandler>(arg0);
             }
@@ -354,7 +354,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for MouseInputHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
             /// </summary>
-            public static MouseInputHandler New(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
+            public static MouseInputHandler Create(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
             {
                 return JVMBridgeBase.New<MouseInputHandler>(arg0);
             }

@@ -76,7 +76,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for Role(Java.Lang.String arg0, Java.Util.List%3CJavax.Management.ObjectName%3E arg1)
         /// </summary>
-        public static Role New(Java.Lang.String arg0, Java.Util.List<Javax.Management.ObjectName> arg1)
+        public static Role Create(Java.Lang.String arg0, Java.Util.List<Javax.Management.ObjectName> arg1)
         {
             return JVMBridgeBase.New<Role>(arg0, arg1);
         }

@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for MenuShortcut(int arg0, bool arg1)
         /// </summary>
-        public static MenuShortcut New(int arg0, bool arg1)
+        public static MenuShortcut Create(int arg0, bool arg1)
         {
             return JVMBridgeBase.New<MenuShortcut>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for MenuShortcut(int arg0)
         /// </summary>
-        public static MenuShortcut New(int arg0)
+        public static MenuShortcut Create(int arg0)
         {
             return JVMBridgeBase.New<MenuShortcut>(arg0);
         }

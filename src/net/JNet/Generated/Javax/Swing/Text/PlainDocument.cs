@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for PlainDocument()
         /// </summary>
-        public static PlainDocument New()
+        public static PlainDocument Create()
         {
             return JVMBridgeBase.New<PlainDocument>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for PlainDocument(Javax.Swing.Text.AbstractDocument.Content arg0)
         /// </summary>
-        public static PlainDocument New(Javax.Swing.Text.AbstractDocument.Content arg0)
+        public static PlainDocument Create(Javax.Swing.Text.AbstractDocument.Content arg0)
         {
             return JVMBridgeBase.New<PlainDocument>(arg0);
         }

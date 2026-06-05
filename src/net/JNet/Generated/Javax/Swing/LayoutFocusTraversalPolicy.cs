@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for LayoutFocusTraversalPolicy()
         /// </summary>
-        public static LayoutFocusTraversalPolicy New()
+        public static LayoutFocusTraversalPolicy Create()
         {
             return JVMBridgeBase.New<LayoutFocusTraversalPolicy>();
         }

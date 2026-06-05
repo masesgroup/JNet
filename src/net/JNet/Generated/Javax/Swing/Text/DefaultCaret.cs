@@ -73,7 +73,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DefaultCaret()
         /// </summary>
-        public static DefaultCaret New()
+        public static DefaultCaret Create()
         {
             return JVMBridgeBase.New<DefaultCaret>();
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ActionMap()
         /// </summary>
-        public static ActionMap New()
+        public static ActionMap Create()
         {
             return JVMBridgeBase.New<ActionMap>();
         }

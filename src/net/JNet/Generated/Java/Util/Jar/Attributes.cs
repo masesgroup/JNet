@@ -107,7 +107,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for Attributes()
         /// </summary>
-        public static Attributes New()
+        public static Attributes Create()
         {
             return JVMBridgeBase.New<Attributes>();
         }
@@ -122,7 +122,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for Attributes(int arg0)
         /// </summary>
-        public static Attributes New(int arg0)
+        public static Attributes Create(int arg0)
         {
             return JVMBridgeBase.New<Attributes>(arg0);
         }
@@ -137,7 +137,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for Attributes(Java.Util.Jar.Attributes arg0)
         /// </summary>
-        public static Attributes New(Java.Util.Jar.Attributes arg0)
+        public static Attributes Create(Java.Util.Jar.Attributes arg0)
         {
             return JVMBridgeBase.New<Attributes>(arg0);
         }
@@ -313,7 +313,7 @@ namespace Java.Util.Jar
             /// <summary>
             /// HPA initializer for Name(Java.Lang.String arg0)
             /// </summary>
-            public static Name New(Java.Lang.String arg0)
+            public static Name Create(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<Name>(arg0);
             }

@@ -107,7 +107,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for NavigationFilter()
         /// </summary>
-        public static NavigationFilter New()
+        public static NavigationFilter Create()
         {
             return JVMBridgeBase.New<NavigationFilter>();
         }
@@ -179,7 +179,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for FilterBypass()
             /// </summary>
-            public static FilterBypass New()
+            public static FilterBypass Create()
             {
                 return JVMBridgeBase.New<FilterBypass>();
             }

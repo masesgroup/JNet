@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for Image()
         /// </summary>
-        public static Image New()
+        public static Image Create()
         {
             return JVMBridgeBase.New<Image>();
         }

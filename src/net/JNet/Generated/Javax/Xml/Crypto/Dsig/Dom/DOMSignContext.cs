@@ -76,7 +76,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         /// <summary>
         /// HPA initializer for DOMSignContext(Java.Security.Key arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
         /// </summary>
-        public static DOMSignContext New(Java.Security.Key arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
+        public static DOMSignContext Create(Java.Security.Key arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
         {
             return JVMBridgeBase.New<DOMSignContext>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         /// <summary>
         /// HPA initializer for DOMSignContext(Java.Security.Key arg0, Org.W3c.Dom.Node arg1)
         /// </summary>
-        public static DOMSignContext New(Java.Security.Key arg0, Org.W3c.Dom.Node arg1)
+        public static DOMSignContext Create(Java.Security.Key arg0, Org.W3c.Dom.Node arg1)
         {
             return JVMBridgeBase.New<DOMSignContext>(arg0, arg1);
         }
@@ -109,7 +109,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         /// <summary>
         /// HPA initializer for DOMSignContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
         /// </summary>
-        public static DOMSignContext New(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
+        public static DOMSignContext Create(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
         {
             return JVMBridgeBase.New<DOMSignContext>(arg0, arg1, arg2);
         }
@@ -125,7 +125,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         /// <summary>
         /// HPA initializer for DOMSignContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
         /// </summary>
-        public static DOMSignContext New(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
+        public static DOMSignContext Create(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
         {
             return JVMBridgeBase.New<DOMSignContext>(arg0, arg1);
         }

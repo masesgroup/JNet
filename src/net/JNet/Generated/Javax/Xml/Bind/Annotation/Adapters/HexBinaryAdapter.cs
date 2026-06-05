@@ -73,7 +73,7 @@ namespace Javax.Xml.Bind.Annotation.Adapters
         /// <summary>
         /// HPA initializer for HexBinaryAdapter()
         /// </summary>
-        public static HexBinaryAdapter New()
+        public static HexBinaryAdapter Create()
         {
             return JVMBridgeBase.New<HexBinaryAdapter>();
         }

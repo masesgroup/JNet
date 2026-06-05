@@ -109,7 +109,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for EventListenerProxy(Java.Util.EventListener arg0)
         /// </summary>
-        public static EventListenerProxy New(Java.Util.EventListener arg0)
+        public static EventListenerProxy Create(Java.Util.EventListener arg0)
         {
             return JVMBridgeBase.New<EventListenerProxy>(arg0);
         }
@@ -162,7 +162,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for EventListenerProxy(T arg0)
         /// </summary>
-        public static EventListenerProxy<T> New(T arg0)
+        public static EventListenerProxy<T> Create(T arg0)
         {
             return JVMBridgeBase.New<EventListenerProxy<T>>(arg0);
         }

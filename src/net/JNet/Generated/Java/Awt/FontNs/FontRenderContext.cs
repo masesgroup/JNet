@@ -76,7 +76,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for FontRenderContext(Java.Awt.Geom.AffineTransform arg0, bool arg1, bool arg2)
         /// </summary>
-        public static FontRenderContext New(Java.Awt.Geom.AffineTransform arg0, bool arg1, bool arg2)
+        public static FontRenderContext Create(Java.Awt.Geom.AffineTransform arg0, bool arg1, bool arg2)
         {
             return JVMBridgeBase.New<FontRenderContext>(arg0, arg1, arg2);
         }
@@ -93,7 +93,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for FontRenderContext(Java.Awt.Geom.AffineTransform arg0, object arg1, object arg2)
         /// </summary>
-        public static FontRenderContext New(Java.Awt.Geom.AffineTransform arg0, object arg1, object arg2)
+        public static FontRenderContext Create(Java.Awt.Geom.AffineTransform arg0, object arg1, object arg2)
         {
             return JVMBridgeBase.New<FontRenderContext>(arg0, arg1, arg2);
         }

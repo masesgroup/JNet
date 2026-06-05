@@ -141,7 +141,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// HPA initializer for ReentrantReadWriteLock()
         /// </summary>
-        public static ReentrantReadWriteLock New()
+        public static ReentrantReadWriteLock Create()
         {
             return JVMBridgeBase.New<ReentrantReadWriteLock>();
         }
@@ -156,7 +156,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// HPA initializer for ReentrantReadWriteLock(bool arg0)
         /// </summary>
-        public static ReentrantReadWriteLock New(bool arg0)
+        public static ReentrantReadWriteLock Create(bool arg0)
         {
             return JVMBridgeBase.New<ReentrantReadWriteLock>(arg0);
         }

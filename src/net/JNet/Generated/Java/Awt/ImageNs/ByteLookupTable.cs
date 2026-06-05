@@ -75,7 +75,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ByteLookupTable(int arg0, byte[] arg1)
         /// </summary>
-        public static ByteLookupTable New(int arg0, byte[] arg1)
+        public static ByteLookupTable Create(int arg0, byte[] arg1)
         {
             return JVMBridgeBase.New<ByteLookupTable>(arg0, arg1);
         }
@@ -91,7 +91,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ByteLookupTable(int arg0, byte[][] arg1)
         /// </summary>
-        public static ByteLookupTable New(int arg0, byte[][] arg1)
+        public static ByteLookupTable Create(int arg0, byte[][] arg1)
         {
             return JVMBridgeBase.New<ByteLookupTable>(arg0, arg1);
         }

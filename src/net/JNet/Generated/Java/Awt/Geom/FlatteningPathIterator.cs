@@ -76,7 +76,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1, int arg2)
         /// </summary>
-        public static FlatteningPathIterator New(Java.Awt.Geom.PathIterator arg0, double arg1, int arg2)
+        public static FlatteningPathIterator Create(Java.Awt.Geom.PathIterator arg0, double arg1, int arg2)
         {
             return JVMBridgeBase.New<FlatteningPathIterator>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Awt.Geom
         /// <summary>
         /// HPA initializer for FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1)
         /// </summary>
-        public static FlatteningPathIterator New(Java.Awt.Geom.PathIterator arg0, double arg1)
+        public static FlatteningPathIterator Create(Java.Awt.Geom.PathIterator arg0, double arg1)
         {
             return JVMBridgeBase.New<FlatteningPathIterator>(arg0, arg1);
         }

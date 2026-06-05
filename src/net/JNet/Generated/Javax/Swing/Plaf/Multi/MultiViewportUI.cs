@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiViewportUI()
         /// </summary>
-        public static MultiViewportUI New()
+        public static MultiViewportUI Create()
         {
             return JVMBridgeBase.New<MultiViewportUI>();
         }

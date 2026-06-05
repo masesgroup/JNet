@@ -73,7 +73,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// HPA initializer for AccessibleRelationSet()
         /// </summary>
-        public static AccessibleRelationSet New()
+        public static AccessibleRelationSet Create()
         {
             return JVMBridgeBase.New<AccessibleRelationSet>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// HPA initializer for AccessibleRelationSet(Javax.Accessibility.AccessibleRelation[] arg0)
         /// </summary>
-        public static AccessibleRelationSet New(Javax.Accessibility.AccessibleRelation[] arg0)
+        public static AccessibleRelationSet Create(Javax.Accessibility.AccessibleRelation[] arg0)
         {
             return JVMBridgeBase.New<AccessibleRelationSet>(arg0);
         }

@@ -107,7 +107,7 @@ namespace Javax.Xml.Ws.Soap
         /// <summary>
         /// HPA initializer for AddressingFeature()
         /// </summary>
-        public static AddressingFeature New()
+        public static AddressingFeature Create()
         {
             return JVMBridgeBase.New<AddressingFeature>();
         }
@@ -124,7 +124,7 @@ namespace Javax.Xml.Ws.Soap
         /// <summary>
         /// HPA initializer for AddressingFeature(bool arg0, bool arg1, Javax.Xml.Ws.Soap.AddressingFeature.Responses arg2)
         /// </summary>
-        public static AddressingFeature New(bool arg0, bool arg1, Javax.Xml.Ws.Soap.AddressingFeature.Responses arg2)
+        public static AddressingFeature Create(bool arg0, bool arg1, Javax.Xml.Ws.Soap.AddressingFeature.Responses arg2)
         {
             return JVMBridgeBase.New<AddressingFeature>(arg0, arg1, arg2);
         }
@@ -140,7 +140,7 @@ namespace Javax.Xml.Ws.Soap
         /// <summary>
         /// HPA initializer for AddressingFeature(bool arg0, bool arg1)
         /// </summary>
-        public static AddressingFeature New(bool arg0, bool arg1)
+        public static AddressingFeature Create(bool arg0, bool arg1)
         {
             return JVMBridgeBase.New<AddressingFeature>(arg0, arg1);
         }
@@ -155,7 +155,7 @@ namespace Javax.Xml.Ws.Soap
         /// <summary>
         /// HPA initializer for AddressingFeature(bool arg0)
         /// </summary>
-        public static AddressingFeature New(bool arg0)
+        public static AddressingFeature Create(bool arg0)
         {
             return JVMBridgeBase.New<AddressingFeature>(arg0);
         }

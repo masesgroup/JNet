@@ -75,7 +75,7 @@ namespace Java.Applet
         /// <summary>
         /// HPA initializer for Applet()
         /// </summary>
-        public static Applet New()
+        public static Applet Create()
         {
             return JVMBridgeBase.New<Applet>();
         }

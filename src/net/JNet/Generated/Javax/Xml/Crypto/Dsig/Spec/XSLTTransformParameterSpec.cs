@@ -74,7 +74,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <summary>
         /// HPA initializer for XSLTTransformParameterSpec(Javax.Xml.Crypto.XMLStructure arg0)
         /// </summary>
-        public static XSLTTransformParameterSpec New(Javax.Xml.Crypto.XMLStructure arg0)
+        public static XSLTTransformParameterSpec Create(Javax.Xml.Crypto.XMLStructure arg0)
         {
             return JVMBridgeBase.New<XSLTTransformParameterSpec>(arg0);
         }

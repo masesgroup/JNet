@@ -77,7 +77,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for Signer(Java.Lang.String arg0, Java.Security.IdentityScope arg1)
         /// </summary>
-        public static Signer New(Java.Lang.String arg0, Java.Security.IdentityScope arg1)
+        public static Signer Create(Java.Lang.String arg0, Java.Security.IdentityScope arg1)
         {
             return JVMBridgeBase.New<Signer>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for Signer(Java.Lang.String arg0)
         /// </summary>
-        public static Signer New(Java.Lang.String arg0)
+        public static Signer Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Signer>(arg0);
         }

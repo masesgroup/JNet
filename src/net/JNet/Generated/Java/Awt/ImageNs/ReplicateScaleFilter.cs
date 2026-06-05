@@ -75,7 +75,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for ReplicateScaleFilter(int arg0, int arg1)
         /// </summary>
-        public static ReplicateScaleFilter New(int arg0, int arg1)
+        public static ReplicateScaleFilter Create(int arg0, int arg1)
         {
             return JVMBridgeBase.New<ReplicateScaleFilter>(arg0, arg1);
         }

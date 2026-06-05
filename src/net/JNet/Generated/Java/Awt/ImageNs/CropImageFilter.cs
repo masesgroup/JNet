@@ -77,7 +77,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for CropImageFilter(int arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static CropImageFilter New(int arg0, int arg1, int arg2, int arg3)
+        public static CropImageFilter Create(int arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<CropImageFilter>(arg0, arg1, arg2, arg3);
         }

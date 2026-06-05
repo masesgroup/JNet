@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiSeparatorUI()
         /// </summary>
-        public static MultiSeparatorUI New()
+        public static MultiSeparatorUI Create()
         {
             return JVMBridgeBase.New<MultiSeparatorUI>();
         }

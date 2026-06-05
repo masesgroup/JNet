@@ -76,7 +76,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for PKIXParameters(Java.Security.KeyStore arg0)
         /// </summary>
-        public static PKIXParameters New(Java.Security.KeyStore arg0)
+        public static PKIXParameters Create(Java.Security.KeyStore arg0)
         {
             return JVMBridgeBase.New<PKIXParameters>(arg0);
         }
@@ -92,7 +92,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for PKIXParameters(Java.Util.Set%3CJava.Security.Cert.TrustAnchor%3E arg0)
         /// </summary>
-        public static PKIXParameters New(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0)
+        public static PKIXParameters Create(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0)
         {
             return JVMBridgeBase.New<PKIXParameters>(arg0);
         }

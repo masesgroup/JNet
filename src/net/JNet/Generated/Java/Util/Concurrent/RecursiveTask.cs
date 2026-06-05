@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for RecursiveTask()
         /// </summary>
-        public static RecursiveTask New()
+        public static RecursiveTask Create()
         {
             return JVMBridgeBase.New<RecursiveTask>();
         }
@@ -153,7 +153,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for RecursiveTask()
         /// </summary>
-        public static RecursiveTask<V> New()
+        public static RecursiveTask<V> Create()
         {
             return JVMBridgeBase.New<RecursiveTask<V>>();
         }

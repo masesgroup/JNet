@@ -73,7 +73,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for ParameterDescriptor()
         /// </summary>
-        public static ParameterDescriptor New()
+        public static ParameterDescriptor Create()
         {
             return JVMBridgeBase.New<ParameterDescriptor>();
         }

@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for BorderLayout()
         /// </summary>
-        public static BorderLayout New()
+        public static BorderLayout Create()
         {
             return JVMBridgeBase.New<BorderLayout>();
         }
@@ -89,7 +89,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for BorderLayout(int arg0, int arg1)
         /// </summary>
-        public static BorderLayout New(int arg0, int arg1)
+        public static BorderLayout Create(int arg0, int arg1)
         {
             return JVMBridgeBase.New<BorderLayout>(arg0, arg1);
         }

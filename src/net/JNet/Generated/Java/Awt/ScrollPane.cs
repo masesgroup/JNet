@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for ScrollPane()
         /// </summary>
-        public static ScrollPane New()
+        public static ScrollPane Create()
         {
             return JVMBridgeBase.New<ScrollPane>();
         }
@@ -91,7 +91,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for ScrollPane(int arg0)
         /// </summary>
-        public static ScrollPane New(int arg0)
+        public static ScrollPane Create(int arg0)
         {
             return JVMBridgeBase.New<ScrollPane>(arg0);
         }

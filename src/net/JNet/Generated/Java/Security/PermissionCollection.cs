@@ -73,7 +73,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for PermissionCollection()
         /// </summary>
-        public static PermissionCollection New()
+        public static PermissionCollection Create()
         {
             return JVMBridgeBase.New<PermissionCollection>();
         }

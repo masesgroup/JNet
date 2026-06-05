@@ -77,7 +77,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for ImageGraphicAttribute(Java.Awt.Image arg0, int arg1, float arg2, float arg3)
         /// </summary>
-        public static ImageGraphicAttribute New(Java.Awt.Image arg0, int arg1, float arg2, float arg3)
+        public static ImageGraphicAttribute Create(Java.Awt.Image arg0, int arg1, float arg2, float arg3)
         {
             return JVMBridgeBase.New<ImageGraphicAttribute>(arg0, arg1, arg2, arg3);
         }
@@ -93,7 +93,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for ImageGraphicAttribute(Java.Awt.Image arg0, int arg1)
         /// </summary>
-        public static ImageGraphicAttribute New(Java.Awt.Image arg0, int arg1)
+        public static ImageGraphicAttribute Create(Java.Awt.Image arg0, int arg1)
         {
             return JVMBridgeBase.New<ImageGraphicAttribute>(arg0, arg1);
         }

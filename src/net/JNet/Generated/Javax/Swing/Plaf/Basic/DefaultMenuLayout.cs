@@ -75,7 +75,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for DefaultMenuLayout(Java.Awt.Container arg0, int arg1)
         /// </summary>
-        public static DefaultMenuLayout New(Java.Awt.Container arg0, int arg1)
+        public static DefaultMenuLayout Create(Java.Awt.Container arg0, int arg1)
         {
             return JVMBridgeBase.New<DefaultMenuLayout>(arg0, arg1);
         }

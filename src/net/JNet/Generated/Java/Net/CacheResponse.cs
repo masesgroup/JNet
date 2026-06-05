@@ -73,7 +73,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for CacheResponse()
         /// </summary>
-        public static CacheResponse New()
+        public static CacheResponse Create()
         {
             return JVMBridgeBase.New<CacheResponse>();
         }

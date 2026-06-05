@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for NumberUp(int arg0)
         /// </summary>
-        public static NumberUp New(int arg0)
+        public static NumberUp Create(int arg0)
         {
             return JVMBridgeBase.New<NumberUp>(arg0);
         }

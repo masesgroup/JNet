@@ -565,7 +565,7 @@ namespace Javax.Xml.Bind
             /// <summary>
             /// HPA initializer for Listener()
             /// </summary>
-            public static Listener New()
+            public static Listener Create()
             {
                 return JVMBridgeBase.New<Listener>();
             }

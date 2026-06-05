@@ -73,7 +73,7 @@ namespace Javax.Script
         /// <summary>
         /// HPA initializer for ScriptEngineManager()
         /// </summary>
-        public static ScriptEngineManager New()
+        public static ScriptEngineManager Create()
         {
             return JVMBridgeBase.New<ScriptEngineManager>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Script
         /// <summary>
         /// HPA initializer for ScriptEngineManager(Java.Lang.ClassLoader arg0)
         /// </summary>
-        public static ScriptEngineManager New(Java.Lang.ClassLoader arg0)
+        public static ScriptEngineManager Create(Java.Lang.ClassLoader arg0)
         {
             return JVMBridgeBase.New<ScriptEngineManager>(arg0);
         }

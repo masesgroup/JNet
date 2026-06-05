@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobPriority(int arg0)
         /// </summary>
-        public static JobPriority New(int arg0)
+        public static JobPriority Create(int arg0)
         {
             return JVMBridgeBase.New<JobPriority>(arg0);
         }

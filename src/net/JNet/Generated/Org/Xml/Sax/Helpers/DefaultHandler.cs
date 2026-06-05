@@ -73,7 +73,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// HPA initializer for DefaultHandler()
         /// </summary>
-        public static DefaultHandler New()
+        public static DefaultHandler Create()
         {
             return JVMBridgeBase.New<DefaultHandler>();
         }

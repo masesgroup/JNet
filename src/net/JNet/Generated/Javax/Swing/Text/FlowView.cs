@@ -109,7 +109,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for FlowView(Javax.Swing.Text.Element arg0, int arg1)
         /// </summary>
-        public static FlowView New(Javax.Swing.Text.Element arg0, int arg1)
+        public static FlowView Create(Javax.Swing.Text.Element arg0, int arg1)
         {
             return JVMBridgeBase.New<FlowView>(arg0, arg1);
         }
@@ -172,7 +172,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for FlowStrategy()
             /// </summary>
-            public static FlowStrategy New()
+            public static FlowStrategy Create()
             {
                 return JVMBridgeBase.New<FlowStrategy>();
             }

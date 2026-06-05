@@ -75,7 +75,7 @@ namespace Javax.Imageio
         /// <summary>
         /// HPA initializer for ImageTypeSpecifier(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.SampleModel arg1)
         /// </summary>
-        public static ImageTypeSpecifier New(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.SampleModel arg1)
+        public static ImageTypeSpecifier Create(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.SampleModel arg1)
         {
             return JVMBridgeBase.New<ImageTypeSpecifier>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Imageio
         /// <summary>
         /// HPA initializer for ImageTypeSpecifier(Java.Awt.ImageNs.RenderedImage arg0)
         /// </summary>
-        public static ImageTypeSpecifier New(Java.Awt.ImageNs.RenderedImage arg0)
+        public static ImageTypeSpecifier Create(Java.Awt.ImageNs.RenderedImage arg0)
         {
             return JVMBridgeBase.New<ImageTypeSpecifier>(arg0);
         }

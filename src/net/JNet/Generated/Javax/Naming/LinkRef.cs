@@ -74,7 +74,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for LinkRef(Java.Lang.String arg0)
         /// </summary>
-        public static LinkRef New(Java.Lang.String arg0)
+        public static LinkRef Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<LinkRef>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for LinkRef(Javax.Naming.Name arg0)
         /// </summary>
-        public static LinkRef New(Javax.Naming.Name arg0)
+        public static LinkRef Create(Javax.Naming.Name arg0)
         {
             return JVMBridgeBase.New<LinkRef>(arg0);
         }

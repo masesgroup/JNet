@@ -75,7 +75,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for BandCombineOp(float[][] arg0, Java.Awt.RenderingHints arg1)
         /// </summary>
-        public static BandCombineOp New(float[][] arg0, Java.Awt.RenderingHints arg1)
+        public static BandCombineOp Create(float[][] arg0, Java.Awt.RenderingHints arg1)
         {
             return JVMBridgeBase.New<BandCombineOp>(arg0, arg1);
         }

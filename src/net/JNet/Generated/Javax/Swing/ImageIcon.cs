@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ImageIcon()
         /// </summary>
-        public static ImageIcon New()
+        public static ImageIcon Create()
         {
             return JVMBridgeBase.New<ImageIcon>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ImageIcon(byte[] arg0, Java.Lang.String arg1)
         /// </summary>
-        public static ImageIcon New(byte[] arg0, Java.Lang.String arg1)
+        public static ImageIcon Create(byte[] arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<ImageIcon>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ImageIcon(byte[] arg0)
         /// </summary>
-        public static ImageIcon New(byte[] arg0)
+        public static ImageIcon Create(byte[] arg0)
         {
             return JVMBridgeBase.New<ImageIcon>(arg0);
         }
@@ -120,7 +120,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ImageIcon(Java.Awt.Image arg0, Java.Lang.String arg1)
         /// </summary>
-        public static ImageIcon New(Java.Awt.Image arg0, Java.Lang.String arg1)
+        public static ImageIcon Create(Java.Awt.Image arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<ImageIcon>(arg0, arg1);
         }
@@ -135,7 +135,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ImageIcon(Java.Awt.Image arg0)
         /// </summary>
-        public static ImageIcon New(Java.Awt.Image arg0)
+        public static ImageIcon Create(Java.Awt.Image arg0)
         {
             return JVMBridgeBase.New<ImageIcon>(arg0);
         }
@@ -151,7 +151,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ImageIcon(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static ImageIcon New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static ImageIcon Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<ImageIcon>(arg0, arg1);
         }
@@ -166,7 +166,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ImageIcon(Java.Lang.String arg0)
         /// </summary>
-        public static ImageIcon New(Java.Lang.String arg0)
+        public static ImageIcon Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<ImageIcon>(arg0);
         }
@@ -182,7 +182,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ImageIcon(Java.Net.URL arg0, Java.Lang.String arg1)
         /// </summary>
-        public static ImageIcon New(Java.Net.URL arg0, Java.Lang.String arg1)
+        public static ImageIcon Create(Java.Net.URL arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<ImageIcon>(arg0, arg1);
         }
@@ -197,7 +197,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ImageIcon(Java.Net.URL arg0)
         /// </summary>
-        public static ImageIcon New(Java.Net.URL arg0)
+        public static ImageIcon Create(Java.Net.URL arg0)
         {
             return JVMBridgeBase.New<ImageIcon>(arg0);
         }

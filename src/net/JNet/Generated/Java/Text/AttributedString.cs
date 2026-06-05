@@ -75,7 +75,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for AttributedString(Java.Lang.String arg0, Java.Util.Map arg1)
         /// </summary>
-        public static AttributedString New(Java.Lang.String arg0, Java.Util.Map arg1)
+        public static AttributedString Create(Java.Lang.String arg0, Java.Util.Map arg1)
         {
             return JVMBridgeBase.New<AttributedString>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for AttributedString(Java.Lang.String arg0)
         /// </summary>
-        public static AttributedString New(Java.Lang.String arg0)
+        public static AttributedString Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<AttributedString>(arg0);
         }
@@ -108,7 +108,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for AttributedString(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2, Java.Text.AttributedCharacterIterator.Attribute[] arg3)
         /// </summary>
-        public static AttributedString New(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2, Java.Text.AttributedCharacterIterator.Attribute[] arg3)
+        public static AttributedString Create(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2, Java.Text.AttributedCharacterIterator.Attribute[] arg3)
         {
             return JVMBridgeBase.New<AttributedString>(arg0, arg1, arg2, arg3);
         }
@@ -125,7 +125,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for AttributedString(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2)
         /// </summary>
-        public static AttributedString New(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2)
+        public static AttributedString Create(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<AttributedString>(arg0, arg1, arg2);
         }
@@ -140,7 +140,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for AttributedString(Java.Text.AttributedCharacterIterator arg0)
         /// </summary>
-        public static AttributedString New(Java.Text.AttributedCharacterIterator arg0)
+        public static AttributedString Create(Java.Text.AttributedCharacterIterator arg0)
         {
             return JVMBridgeBase.New<AttributedString>(arg0);
         }

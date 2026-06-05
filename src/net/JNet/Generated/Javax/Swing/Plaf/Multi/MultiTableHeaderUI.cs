@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Multi
         /// <summary>
         /// HPA initializer for MultiTableHeaderUI()
         /// </summary>
-        public static MultiTableHeaderUI New()
+        public static MultiTableHeaderUI Create()
         {
             return JVMBridgeBase.New<MultiTableHeaderUI>();
         }

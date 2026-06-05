@@ -74,7 +74,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for FieldPosition(int arg0)
         /// </summary>
-        public static FieldPosition New(int arg0)
+        public static FieldPosition Create(int arg0)
         {
             return JVMBridgeBase.New<FieldPosition>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for FieldPosition(Java.Text.Format.Field arg0, int arg1)
         /// </summary>
-        public static FieldPosition New(Java.Text.Format.Field arg0, int arg1)
+        public static FieldPosition Create(Java.Text.Format.Field arg0, int arg1)
         {
             return JVMBridgeBase.New<FieldPosition>(arg0, arg1);
         }
@@ -105,7 +105,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for FieldPosition(Java.Text.Format.Field arg0)
         /// </summary>
-        public static FieldPosition New(Java.Text.Format.Field arg0)
+        public static FieldPosition Create(Java.Text.Format.Field arg0)
         {
             return JVMBridgeBase.New<FieldPosition>(arg0);
         }

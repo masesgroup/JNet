@@ -76,7 +76,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for InflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1, int arg2)
         /// </summary>
-        public static InflaterOutputStream New(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1, int arg2)
+        public static InflaterOutputStream Create(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1, int arg2)
         {
             return JVMBridgeBase.New<InflaterOutputStream>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for InflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1)
         /// </summary>
-        public static InflaterOutputStream New(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1)
+        public static InflaterOutputStream Create(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1)
         {
             return JVMBridgeBase.New<InflaterOutputStream>(arg0, arg1);
         }
@@ -107,7 +107,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// HPA initializer for InflaterOutputStream(Java.Io.OutputStream arg0)
         /// </summary>
-        public static InflaterOutputStream New(Java.Io.OutputStream arg0)
+        public static InflaterOutputStream Create(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<InflaterOutputStream>(arg0);
         }

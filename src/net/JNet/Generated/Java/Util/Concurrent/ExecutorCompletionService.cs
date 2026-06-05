@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ExecutorCompletionService(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue arg1)
         /// </summary>
-        public static ExecutorCompletionService New(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue arg1)
+        public static ExecutorCompletionService Create(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue arg1)
         {
             return JVMBridgeBase.New<ExecutorCompletionService>(arg0, arg1);
         }
@@ -125,7 +125,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ExecutorCompletionService(Java.Util.Concurrent.Executor arg0)
         /// </summary>
-        public static ExecutorCompletionService New(Java.Util.Concurrent.Executor arg0)
+        public static ExecutorCompletionService Create(Java.Util.Concurrent.Executor arg0)
         {
             return JVMBridgeBase.New<ExecutorCompletionService>(arg0);
         }
@@ -219,7 +219,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ExecutorCompletionService(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue%3CJava.Util.Concurrent.Future%3CV%3E%3E arg1)
         /// </summary>
-        public static ExecutorCompletionService<V> New(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue<Java.Util.Concurrent.Future<V>> arg1)
+        public static ExecutorCompletionService<V> Create(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue<Java.Util.Concurrent.Future<V>> arg1)
         {
             return JVMBridgeBase.New<ExecutorCompletionService<V>>(arg0, arg1);
         }
@@ -234,7 +234,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for ExecutorCompletionService(Java.Util.Concurrent.Executor arg0)
         /// </summary>
-        public static ExecutorCompletionService<V> New(Java.Util.Concurrent.Executor arg0)
+        public static ExecutorCompletionService<V> Create(Java.Util.Concurrent.Executor arg0)
         {
             return JVMBridgeBase.New<ExecutorCompletionService<V>>(arg0);
         }

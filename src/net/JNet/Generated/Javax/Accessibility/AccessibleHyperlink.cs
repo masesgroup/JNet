@@ -73,7 +73,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// HPA initializer for AccessibleHyperlink()
         /// </summary>
-        public static AccessibleHyperlink New()
+        public static AccessibleHyperlink Create()
         {
             return JVMBridgeBase.New<AccessibleHyperlink>();
         }

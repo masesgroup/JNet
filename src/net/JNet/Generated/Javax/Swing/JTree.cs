@@ -141,7 +141,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTree()
         /// </summary>
-        public static JTree New()
+        public static JTree Create()
         {
             return JVMBridgeBase.New<JTree>();
         }
@@ -156,7 +156,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTree(Java.Util.Hashtable%3Cobject, object%3E arg0)
         /// </summary>
-        public static JTree New(Java.Util.Hashtable<object, object> arg0)
+        public static JTree Create(Java.Util.Hashtable<object, object> arg0)
         {
             return JVMBridgeBase.New<JTree>(arg0);
         }
@@ -171,7 +171,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTree(Java.Util.Vector%3Cobject%3E arg0)
         /// </summary>
-        public static JTree New(Java.Util.Vector<object> arg0)
+        public static JTree Create(Java.Util.Vector<object> arg0)
         {
             return JVMBridgeBase.New<JTree>(arg0);
         }
@@ -186,7 +186,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTree(Javax.Swing.Tree.TreeModel arg0)
         /// </summary>
-        public static JTree New(Javax.Swing.Tree.TreeModel arg0)
+        public static JTree Create(Javax.Swing.Tree.TreeModel arg0)
         {
             return JVMBridgeBase.New<JTree>(arg0);
         }
@@ -202,7 +202,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTree(Javax.Swing.Tree.TreeNode arg0, bool arg1)
         /// </summary>
-        public static JTree New(Javax.Swing.Tree.TreeNode arg0, bool arg1)
+        public static JTree Create(Javax.Swing.Tree.TreeNode arg0, bool arg1)
         {
             return JVMBridgeBase.New<JTree>(arg0, arg1);
         }
@@ -217,7 +217,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JTree(Javax.Swing.Tree.TreeNode arg0)
         /// </summary>
-        public static JTree New(Javax.Swing.Tree.TreeNode arg0)
+        public static JTree Create(Javax.Swing.Tree.TreeNode arg0)
         {
             return JVMBridgeBase.New<JTree>(arg0);
         }
@@ -1164,7 +1164,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for DynamicUtilTreeNode(object arg0, object arg1)
             /// </summary>
-            public static DynamicUtilTreeNode New(object arg0, object arg1)
+            public static DynamicUtilTreeNode Create(object arg0, object arg1)
             {
                 return JVMBridgeBase.New<DynamicUtilTreeNode>(arg0, arg1);
             }

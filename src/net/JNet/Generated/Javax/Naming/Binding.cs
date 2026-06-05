@@ -76,7 +76,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for Binding(Java.Lang.String arg0, object arg1, bool arg2)
         /// </summary>
-        public static Binding New(Java.Lang.String arg0, object arg1, bool arg2)
+        public static Binding Create(Java.Lang.String arg0, object arg1, bool arg2)
         {
             return JVMBridgeBase.New<Binding>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for Binding(Java.Lang.String arg0, object arg1)
         /// </summary>
-        public static Binding New(Java.Lang.String arg0, object arg1)
+        public static Binding Create(Java.Lang.String arg0, object arg1)
         {
             return JVMBridgeBase.New<Binding>(arg0, arg1);
         }
@@ -110,7 +110,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for Binding(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, bool arg3)
         /// </summary>
-        public static Binding New(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, bool arg3)
+        public static Binding Create(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, bool arg3)
         {
             return JVMBridgeBase.New<Binding>(arg0, arg1, arg2, arg3);
         }
@@ -127,7 +127,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for Binding(Java.Lang.String arg0, Java.Lang.String arg1, object arg2)
         /// </summary>
-        public static Binding New(Java.Lang.String arg0, Java.Lang.String arg1, object arg2)
+        public static Binding Create(Java.Lang.String arg0, Java.Lang.String arg1, object arg2)
         {
             return JVMBridgeBase.New<Binding>(arg0, arg1, arg2);
         }

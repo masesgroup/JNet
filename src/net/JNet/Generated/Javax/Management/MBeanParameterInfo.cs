@@ -77,7 +77,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanParameterInfo(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Management.Descriptor arg3)
         /// </summary>
-        public static MBeanParameterInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Management.Descriptor arg3)
+        public static MBeanParameterInfo Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Javax.Management.Descriptor arg3)
         {
             return JVMBridgeBase.New<MBeanParameterInfo>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanParameterInfo(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         /// </summary>
-        public static MBeanParameterInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        public static MBeanParameterInfo Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<MBeanParameterInfo>(arg0, arg1, arg2);
         }

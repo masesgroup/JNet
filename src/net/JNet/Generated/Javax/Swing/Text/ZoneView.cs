@@ -75,7 +75,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for ZoneView(Javax.Swing.Text.Element arg0, int arg1)
         /// </summary>
-        public static ZoneView New(Javax.Swing.Text.Element arg0, int arg1)
+        public static ZoneView Create(Javax.Swing.Text.Element arg0, int arg1)
         {
             return JVMBridgeBase.New<ZoneView>(arg0, arg1);
         }

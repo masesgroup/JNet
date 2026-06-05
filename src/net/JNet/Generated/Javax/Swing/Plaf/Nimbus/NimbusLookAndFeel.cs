@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Nimbus
         /// <summary>
         /// HPA initializer for NimbusLookAndFeel()
         /// </summary>
-        public static NimbusLookAndFeel New()
+        public static NimbusLookAndFeel Create()
         {
             return JVMBridgeBase.New<NimbusLookAndFeel>();
         }

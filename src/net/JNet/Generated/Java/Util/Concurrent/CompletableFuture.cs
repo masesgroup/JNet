@@ -142,7 +142,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CompletableFuture()
         /// </summary>
-        public static CompletableFuture New()
+        public static CompletableFuture Create()
         {
             return JVMBridgeBase.New<CompletableFuture>();
         }
@@ -776,7 +776,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CompletableFuture()
         /// </summary>
-        public static CompletableFuture<T> New()
+        public static CompletableFuture<T> Create()
         {
             return JVMBridgeBase.New<CompletableFuture<T>>();
         }

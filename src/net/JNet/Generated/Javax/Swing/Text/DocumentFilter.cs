@@ -107,7 +107,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for DocumentFilter()
         /// </summary>
-        public static DocumentFilter New()
+        public static DocumentFilter Create()
         {
             return JVMBridgeBase.New<DocumentFilter>();
         }
@@ -181,7 +181,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for FilterBypass()
             /// </summary>
-            public static FilterBypass New()
+            public static FilterBypass Create()
             {
                 return JVMBridgeBase.New<FilterBypass>();
             }

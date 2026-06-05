@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for LineNumberReader(Java.Io.Reader arg0, int arg1)
         /// </summary>
-        public static LineNumberReader New(Java.Io.Reader arg0, int arg1)
+        public static LineNumberReader Create(Java.Io.Reader arg0, int arg1)
         {
             return JVMBridgeBase.New<LineNumberReader>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for LineNumberReader(Java.Io.Reader arg0)
         /// </summary>
-        public static LineNumberReader New(Java.Io.Reader arg0)
+        public static LineNumberReader Create(Java.Io.Reader arg0)
         {
             return JVMBridgeBase.New<LineNumberReader>(arg0);
         }

@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PagesPerMinute(int arg0)
         /// </summary>
-        public static PagesPerMinute New(int arg0)
+        public static PagesPerMinute Create(int arg0)
         {
             return JVMBridgeBase.New<PagesPerMinute>(arg0);
         }

@@ -76,7 +76,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for ByteArrayInputStream(byte[] arg0, int arg1, int arg2)
         /// </summary>
-        public static ByteArrayInputStream New(byte[] arg0, int arg1, int arg2)
+        public static ByteArrayInputStream Create(byte[] arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<ByteArrayInputStream>(arg0, arg1, arg2);
         }
@@ -91,7 +91,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for ByteArrayInputStream(byte[] arg0)
         /// </summary>
-        public static ByteArrayInputStream New(byte[] arg0)
+        public static ByteArrayInputStream Create(byte[] arg0)
         {
             return JVMBridgeBase.New<ByteArrayInputStream>(arg0);
         }

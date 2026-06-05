@@ -76,7 +76,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for SortKey(Java.Lang.String arg0, bool arg1, Java.Lang.String arg2)
         /// </summary>
-        public static SortKey New(Java.Lang.String arg0, bool arg1, Java.Lang.String arg2)
+        public static SortKey Create(Java.Lang.String arg0, bool arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<SortKey>(arg0, arg1, arg2);
         }
@@ -91,7 +91,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for SortKey(Java.Lang.String arg0)
         /// </summary>
-        public static SortKey New(Java.Lang.String arg0)
+        public static SortKey Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<SortKey>(arg0);
         }

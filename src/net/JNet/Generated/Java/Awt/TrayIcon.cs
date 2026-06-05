@@ -110,7 +110,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for TrayIcon(Java.Awt.Image arg0, Java.Lang.String arg1, Java.Awt.PopupMenu arg2)
         /// </summary>
-        public static TrayIcon New(Java.Awt.Image arg0, Java.Lang.String arg1, Java.Awt.PopupMenu arg2)
+        public static TrayIcon Create(Java.Awt.Image arg0, Java.Lang.String arg1, Java.Awt.PopupMenu arg2)
         {
             return JVMBridgeBase.New<TrayIcon>(arg0, arg1, arg2);
         }
@@ -126,7 +126,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for TrayIcon(Java.Awt.Image arg0, Java.Lang.String arg1)
         /// </summary>
-        public static TrayIcon New(Java.Awt.Image arg0, Java.Lang.String arg1)
+        public static TrayIcon Create(Java.Awt.Image arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<TrayIcon>(arg0, arg1);
         }
@@ -141,7 +141,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for TrayIcon(Java.Awt.Image arg0)
         /// </summary>
-        public static TrayIcon New(Java.Awt.Image arg0)
+        public static TrayIcon Create(Java.Awt.Image arg0)
         {
             return JVMBridgeBase.New<TrayIcon>(arg0);
         }

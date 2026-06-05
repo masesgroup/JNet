@@ -73,7 +73,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// HPA initializer for ContentModel()
         /// </summary>
-        public static ContentModel New()
+        public static ContentModel Create()
         {
             return JVMBridgeBase.New<ContentModel>();
         }
@@ -90,7 +90,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// HPA initializer for ContentModel(int arg0, object arg1, Javax.Swing.Text.Html.Parser.ContentModel arg2)
         /// </summary>
-        public static ContentModel New(int arg0, object arg1, Javax.Swing.Text.Html.Parser.ContentModel arg2)
+        public static ContentModel Create(int arg0, object arg1, Javax.Swing.Text.Html.Parser.ContentModel arg2)
         {
             return JVMBridgeBase.New<ContentModel>(arg0, arg1, arg2);
         }
@@ -106,7 +106,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// HPA initializer for ContentModel(int arg0, Javax.Swing.Text.Html.Parser.ContentModel arg1)
         /// </summary>
-        public static ContentModel New(int arg0, Javax.Swing.Text.Html.Parser.ContentModel arg1)
+        public static ContentModel Create(int arg0, Javax.Swing.Text.Html.Parser.ContentModel arg1)
         {
             return JVMBridgeBase.New<ContentModel>(arg0, arg1);
         }
@@ -121,7 +121,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// HPA initializer for ContentModel(Javax.Swing.Text.Html.Parser.Element arg0)
         /// </summary>
-        public static ContentModel New(Javax.Swing.Text.Html.Parser.Element arg0)
+        public static ContentModel Create(Javax.Swing.Text.Html.Parser.Element arg0)
         {
             return JVMBridgeBase.New<ContentModel>(arg0);
         }

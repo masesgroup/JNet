@@ -73,7 +73,7 @@ namespace Org.Xml.Sax
         /// <summary>
         /// HPA initializer for InputSource()
         /// </summary>
-        public static InputSource New()
+        public static InputSource Create()
         {
             return JVMBridgeBase.New<InputSource>();
         }
@@ -88,7 +88,7 @@ namespace Org.Xml.Sax
         /// <summary>
         /// HPA initializer for InputSource(Java.Io.InputStream arg0)
         /// </summary>
-        public static InputSource New(Java.Io.InputStream arg0)
+        public static InputSource Create(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<InputSource>(arg0);
         }
@@ -103,7 +103,7 @@ namespace Org.Xml.Sax
         /// <summary>
         /// HPA initializer for InputSource(Java.Io.Reader arg0)
         /// </summary>
-        public static InputSource New(Java.Io.Reader arg0)
+        public static InputSource Create(Java.Io.Reader arg0)
         {
             return JVMBridgeBase.New<InputSource>(arg0);
         }
@@ -118,7 +118,7 @@ namespace Org.Xml.Sax
         /// <summary>
         /// HPA initializer for InputSource(Java.Lang.String arg0)
         /// </summary>
-        public static InputSource New(Java.Lang.String arg0)
+        public static InputSource Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<InputSource>(arg0);
         }

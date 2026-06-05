@@ -77,7 +77,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for SortResponseControl(Java.Lang.String arg0, bool arg1, byte[] arg2)
         /// </summary>
-        public static SortResponseControl New(Java.Lang.String arg0, bool arg1, byte[] arg2)
+        public static SortResponseControl Create(Java.Lang.String arg0, bool arg1, byte[] arg2)
         {
             return JVMBridgeBase.New<SortResponseControl>(arg0, arg1, arg2);
         }

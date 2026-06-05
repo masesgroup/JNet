@@ -73,7 +73,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for SignatureSpi()
         /// </summary>
-        public static SignatureSpi New()
+        public static SignatureSpi Create()
         {
             return JVMBridgeBase.New<SignatureSpi>();
         }

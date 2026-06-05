@@ -73,7 +73,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for Permissions()
         /// </summary>
-        public static Permissions New()
+        public static Permissions Create()
         {
             return JVMBridgeBase.New<Permissions>();
         }

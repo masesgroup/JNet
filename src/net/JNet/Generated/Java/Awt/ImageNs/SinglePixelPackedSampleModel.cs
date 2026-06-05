@@ -78,7 +78,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for SinglePixelPackedSampleModel(int arg0, int arg1, int arg2, int arg3, int[] arg4)
         /// </summary>
-        public static SinglePixelPackedSampleModel New(int arg0, int arg1, int arg2, int arg3, int[] arg4)
+        public static SinglePixelPackedSampleModel Create(int arg0, int arg1, int arg2, int arg3, int[] arg4)
         {
             return JVMBridgeBase.New<SinglePixelPackedSampleModel>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -96,7 +96,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for SinglePixelPackedSampleModel(int arg0, int arg1, int arg2, int[] arg3)
         /// </summary>
-        public static SinglePixelPackedSampleModel New(int arg0, int arg1, int arg2, int[] arg3)
+        public static SinglePixelPackedSampleModel Create(int arg0, int arg1, int arg2, int[] arg3)
         {
             return JVMBridgeBase.New<SinglePixelPackedSampleModel>(arg0, arg1, arg2, arg3);
         }

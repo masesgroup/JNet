@@ -76,7 +76,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for PKIXCertPathValidatorResult(Java.Security.Cert.TrustAnchor arg0, Java.Security.Cert.PolicyNode arg1, Java.Security.PublicKey arg2)
         /// </summary>
-        public static PKIXCertPathValidatorResult New(Java.Security.Cert.TrustAnchor arg0, Java.Security.Cert.PolicyNode arg1, Java.Security.PublicKey arg2)
+        public static PKIXCertPathValidatorResult Create(Java.Security.Cert.TrustAnchor arg0, Java.Security.Cert.PolicyNode arg1, Java.Security.PublicKey arg2)
         {
             return JVMBridgeBase.New<PKIXCertPathValidatorResult>(arg0, arg1, arg2);
         }

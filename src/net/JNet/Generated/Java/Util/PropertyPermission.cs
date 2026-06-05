@@ -75,7 +75,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for PropertyPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static PropertyPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static PropertyPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<PropertyPermission>(arg0, arg1);
         }

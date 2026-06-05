@@ -142,7 +142,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for RowSorter()
         /// </summary>
-        public static RowSorter New()
+        public static RowSorter Create()
         {
             return JVMBridgeBase.New<RowSorter>();
         }
@@ -303,7 +303,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for SortKey(int arg0, Javax.Swing.SortOrder arg1)
             /// </summary>
-            public static SortKey New(int arg0, Javax.Swing.SortOrder arg1)
+            public static SortKey Create(int arg0, Javax.Swing.SortOrder arg1)
             {
                 return JVMBridgeBase.New<SortKey>(arg0, arg1);
             }
@@ -369,7 +369,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for RowSorter()
         /// </summary>
-        public static RowSorter<M> New()
+        public static RowSorter<M> Create()
         {
             return JVMBridgeBase.New<RowSorter<M>>();
         }

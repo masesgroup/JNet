@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for Destination(Java.Net.URI arg0)
         /// </summary>
-        public static Destination New(Java.Net.URI arg0)
+        public static Destination Create(Java.Net.URI arg0)
         {
             return JVMBridgeBase.New<Destination>(arg0);
         }

@@ -75,7 +75,7 @@ namespace Java.Lang.Instrument
         /// <summary>
         /// HPA initializer for ClassDefinition(Java.Lang.Class arg0, byte[] arg1)
         /// </summary>
-        public static ClassDefinition New(Java.Lang.Class arg0, byte[] arg1)
+        public static ClassDefinition Create(Java.Lang.Class arg0, byte[] arg1)
         {
             return JVMBridgeBase.New<ClassDefinition>(arg0, arg1);
         }

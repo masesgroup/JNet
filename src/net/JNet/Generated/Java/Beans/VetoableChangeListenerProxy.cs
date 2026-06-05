@@ -75,7 +75,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for VetoableChangeListenerProxy(Java.Lang.String arg0, Java.Beans.VetoableChangeListener arg1)
         /// </summary>
-        public static VetoableChangeListenerProxy New(Java.Lang.String arg0, Java.Beans.VetoableChangeListener arg1)
+        public static VetoableChangeListenerProxy Create(Java.Lang.String arg0, Java.Beans.VetoableChangeListener arg1)
         {
             return JVMBridgeBase.New<VetoableChangeListenerProxy>(arg0, arg1);
         }

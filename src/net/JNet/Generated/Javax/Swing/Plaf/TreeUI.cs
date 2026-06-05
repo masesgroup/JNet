@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for TreeUI()
         /// </summary>
-        public static TreeUI New()
+        public static TreeUI Create()
         {
             return JVMBridgeBase.New<TreeUI>();
         }

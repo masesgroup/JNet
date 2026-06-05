@@ -73,7 +73,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// HPA initializer for RMIClassLoaderSpi()
         /// </summary>
-        public static RMIClassLoaderSpi New()
+        public static RMIClassLoaderSpi Create()
         {
             return JVMBridgeBase.New<RMIClassLoaderSpi>();
         }

@@ -75,7 +75,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for InitialLdapContext()
         /// </summary>
-        public static InitialLdapContext New()
+        public static InitialLdapContext Create()
         {
             return JVMBridgeBase.New<InitialLdapContext>();
         }
@@ -92,7 +92,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// HPA initializer for InitialLdapContext(Java.Util.Hashtable%3Cobject, object%3E arg0, Javax.Naming.Ldap.Control[] arg1)
         /// </summary>
-        public static InitialLdapContext New(Java.Util.Hashtable<object, object> arg0, Javax.Naming.Ldap.Control[] arg1)
+        public static InitialLdapContext Create(Java.Util.Hashtable<object, object> arg0, Javax.Naming.Ldap.Control[] arg1)
         {
             return JVMBridgeBase.New<InitialLdapContext>(arg0, arg1);
         }

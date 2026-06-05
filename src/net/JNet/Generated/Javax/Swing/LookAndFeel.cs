@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for LookAndFeel()
         /// </summary>
-        public static LookAndFeel New()
+        public static LookAndFeel Create()
         {
             return JVMBridgeBase.New<LookAndFeel>();
         }

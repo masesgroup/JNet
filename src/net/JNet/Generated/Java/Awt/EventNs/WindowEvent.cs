@@ -77,7 +77,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for WindowEvent(Java.Awt.Window arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static WindowEvent New(Java.Awt.Window arg0, int arg1, int arg2, int arg3)
+        public static WindowEvent Create(Java.Awt.Window arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<WindowEvent>(arg0, arg1, arg2, arg3);
         }
@@ -96,7 +96,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for WindowEvent(Java.Awt.Window arg0, int arg1, Java.Awt.Window arg2, int arg3, int arg4)
         /// </summary>
-        public static WindowEvent New(Java.Awt.Window arg0, int arg1, Java.Awt.Window arg2, int arg3, int arg4)
+        public static WindowEvent Create(Java.Awt.Window arg0, int arg1, Java.Awt.Window arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<WindowEvent>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -113,7 +113,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for WindowEvent(Java.Awt.Window arg0, int arg1, Java.Awt.Window arg2)
         /// </summary>
-        public static WindowEvent New(Java.Awt.Window arg0, int arg1, Java.Awt.Window arg2)
+        public static WindowEvent Create(Java.Awt.Window arg0, int arg1, Java.Awt.Window arg2)
         {
             return JVMBridgeBase.New<WindowEvent>(arg0, arg1, arg2);
         }
@@ -129,7 +129,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for WindowEvent(Java.Awt.Window arg0, int arg1)
         /// </summary>
-        public static WindowEvent New(Java.Awt.Window arg0, int arg1)
+        public static WindowEvent Create(Java.Awt.Window arg0, int arg1)
         {
             return JVMBridgeBase.New<WindowEvent>(arg0, arg1);
         }

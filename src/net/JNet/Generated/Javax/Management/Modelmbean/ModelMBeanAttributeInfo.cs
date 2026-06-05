@@ -79,7 +79,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanAttributeInfo(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3, Javax.Management.Descriptor arg4)
         /// </summary>
-        public static ModelMBeanAttributeInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3, Javax.Management.Descriptor arg4)
+        public static ModelMBeanAttributeInfo Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3, Javax.Management.Descriptor arg4)
         {
             return JVMBridgeBase.New<ModelMBeanAttributeInfo>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -98,7 +98,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanAttributeInfo(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3)
         /// </summary>
-        public static ModelMBeanAttributeInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3)
+        public static ModelMBeanAttributeInfo Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3)
         {
             return JVMBridgeBase.New<ModelMBeanAttributeInfo>(arg0, arg1, arg2, arg3);
         }
@@ -119,7 +119,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanAttributeInfo(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
         /// </summary>
-        public static ModelMBeanAttributeInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
+        public static ModelMBeanAttributeInfo Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
         {
             return JVMBridgeBase.New<ModelMBeanAttributeInfo>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -139,7 +139,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanAttributeInfo(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3, bool arg4, bool arg5)
         /// </summary>
-        public static ModelMBeanAttributeInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3, bool arg4, bool arg5)
+        public static ModelMBeanAttributeInfo Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3, bool arg4, bool arg5)
         {
             return JVMBridgeBase.New<ModelMBeanAttributeInfo>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -154,7 +154,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// HPA initializer for ModelMBeanAttributeInfo(Javax.Management.Modelmbean.ModelMBeanAttributeInfo arg0)
         /// </summary>
-        public static ModelMBeanAttributeInfo New(Javax.Management.Modelmbean.ModelMBeanAttributeInfo arg0)
+        public static ModelMBeanAttributeInfo Create(Javax.Management.Modelmbean.ModelMBeanAttributeInfo arg0)
         {
             return JVMBridgeBase.New<ModelMBeanAttributeInfo>(arg0);
         }

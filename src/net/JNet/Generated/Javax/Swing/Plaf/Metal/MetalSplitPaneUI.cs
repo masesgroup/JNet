@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalSplitPaneUI()
         /// </summary>
-        public static MetalSplitPaneUI New()
+        public static MetalSplitPaneUI Create()
         {
             return JVMBridgeBase.New<MetalSplitPaneUI>();
         }

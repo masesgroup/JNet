@@ -78,7 +78,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DirectColorModel(int arg0, int arg1, int arg2, int arg3, int arg4)
         /// </summary>
-        public static DirectColorModel New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        public static DirectColorModel Create(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<DirectColorModel>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -96,7 +96,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DirectColorModel(int arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static DirectColorModel New(int arg0, int arg1, int arg2, int arg3)
+        public static DirectColorModel Create(int arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<DirectColorModel>(arg0, arg1, arg2, arg3);
         }
@@ -118,7 +118,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DirectColorModel(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7)
         /// </summary>
-        public static DirectColorModel New(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7)
+        public static DirectColorModel Create(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7)
         {
             return JVMBridgeBase.New<DirectColorModel>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }

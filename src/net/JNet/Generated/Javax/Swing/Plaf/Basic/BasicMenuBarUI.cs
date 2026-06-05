@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicMenuBarUI()
         /// </summary>
-        public static BasicMenuBarUI New()
+        public static BasicMenuBarUI Create()
         {
             return JVMBridgeBase.New<BasicMenuBarUI>();
         }

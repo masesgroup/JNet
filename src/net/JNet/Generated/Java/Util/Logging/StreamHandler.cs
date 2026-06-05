@@ -73,7 +73,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for StreamHandler()
         /// </summary>
-        public static StreamHandler New()
+        public static StreamHandler Create()
         {
             return JVMBridgeBase.New<StreamHandler>();
         }
@@ -89,7 +89,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for StreamHandler(Java.Io.OutputStream arg0, Java.Util.Logging.Formatter arg1)
         /// </summary>
-        public static StreamHandler New(Java.Io.OutputStream arg0, Java.Util.Logging.Formatter arg1)
+        public static StreamHandler Create(Java.Io.OutputStream arg0, Java.Util.Logging.Formatter arg1)
         {
             return JVMBridgeBase.New<StreamHandler>(arg0, arg1);
         }

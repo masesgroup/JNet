@@ -109,7 +109,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for IdentityHashMap()
         /// </summary>
-        public static IdentityHashMap New()
+        public static IdentityHashMap Create()
         {
             return JVMBridgeBase.New<IdentityHashMap>();
         }
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for IdentityHashMap(int arg0)
         /// </summary>
-        public static IdentityHashMap New(int arg0)
+        public static IdentityHashMap Create(int arg0)
         {
             return JVMBridgeBase.New<IdentityHashMap>(arg0);
         }
@@ -139,7 +139,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for IdentityHashMap(Java.Util.Map arg0)
         /// </summary>
-        public static IdentityHashMap New(Java.Util.Map arg0)
+        public static IdentityHashMap Create(Java.Util.Map arg0)
         {
             return JVMBridgeBase.New<IdentityHashMap>(arg0);
         }
@@ -192,7 +192,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for IdentityHashMap()
         /// </summary>
-        public static IdentityHashMap<K, V> New()
+        public static IdentityHashMap<K, V> Create()
         {
             return JVMBridgeBase.New<IdentityHashMap<K, V>>();
         }
@@ -207,7 +207,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for IdentityHashMap(int arg0)
         /// </summary>
-        public static IdentityHashMap<K, V> New(int arg0)
+        public static IdentityHashMap<K, V> Create(int arg0)
         {
             return JVMBridgeBase.New<IdentityHashMap<K, V>>(arg0);
         }
@@ -222,7 +222,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for IdentityHashMap(Java.Util.Map%3CK, V%3E arg0)
         /// </summary>
-        public static IdentityHashMap<K, V> New(Java.Util.Map<K, V> arg0)
+        public static IdentityHashMap<K, V> Create(Java.Util.Map<K, V> arg0)
         {
             return JVMBridgeBase.New<IdentityHashMap<K, V>>(arg0);
         }

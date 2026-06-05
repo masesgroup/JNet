@@ -73,7 +73,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// HPA initializer for UndoableEditSupport()
         /// </summary>
-        public static UndoableEditSupport New()
+        public static UndoableEditSupport Create()
         {
             return JVMBridgeBase.New<UndoableEditSupport>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// HPA initializer for UndoableEditSupport(object arg0)
         /// </summary>
-        public static UndoableEditSupport New(object arg0)
+        public static UndoableEditSupport Create(object arg0)
         {
             return JVMBridgeBase.New<UndoableEditSupport>(arg0);
         }

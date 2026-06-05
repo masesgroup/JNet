@@ -73,7 +73,7 @@ namespace Javax.Xml.Soap
         /// <summary>
         /// HPA initializer for SOAPFactory()
         /// </summary>
-        public static SOAPFactory New()
+        public static SOAPFactory Create()
         {
             return JVMBridgeBase.New<SOAPFactory>();
         }

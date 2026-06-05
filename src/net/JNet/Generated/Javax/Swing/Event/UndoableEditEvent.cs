@@ -75,7 +75,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// HPA initializer for UndoableEditEvent(object arg0, Javax.Swing.Undo.UndoableEdit arg1)
         /// </summary>
-        public static UndoableEditEvent New(object arg0, Javax.Swing.Undo.UndoableEdit arg1)
+        public static UndoableEditEvent Create(object arg0, Javax.Swing.Undo.UndoableEdit arg1)
         {
             return JVMBridgeBase.New<UndoableEditEvent>(arg0, arg1);
         }

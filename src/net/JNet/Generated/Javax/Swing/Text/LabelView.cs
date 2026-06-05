@@ -74,7 +74,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for LabelView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static LabelView New(Javax.Swing.Text.Element arg0)
+        public static LabelView Create(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<LabelView>(arg0);
         }

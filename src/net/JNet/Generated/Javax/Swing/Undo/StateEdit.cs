@@ -75,7 +75,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// HPA initializer for StateEdit(Javax.Swing.Undo.StateEditable arg0, Java.Lang.String arg1)
         /// </summary>
-        public static StateEdit New(Javax.Swing.Undo.StateEditable arg0, Java.Lang.String arg1)
+        public static StateEdit Create(Javax.Swing.Undo.StateEditable arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<StateEdit>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Swing.Undo
         /// <summary>
         /// HPA initializer for StateEdit(Javax.Swing.Undo.StateEditable arg0)
         /// </summary>
-        public static StateEdit New(Javax.Swing.Undo.StateEditable arg0)
+        public static StateEdit Create(Javax.Swing.Undo.StateEditable arg0)
         {
             return JVMBridgeBase.New<StateEdit>(arg0);
         }

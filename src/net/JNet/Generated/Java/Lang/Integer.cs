@@ -74,7 +74,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Integer(int arg0)
         /// </summary>
-        public static Integer New(int arg0)
+        public static Integer Create(int arg0)
         {
             return JVMBridgeBase.New<Integer>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Integer(Java.Lang.String arg0)
         /// </summary>
-        public static Integer New(Java.Lang.String arg0)
+        public static Integer Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Integer>(arg0);
         }

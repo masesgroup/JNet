@@ -80,7 +80,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for KeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5, int arg6)
         /// </summary>
-        public static KeyEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5, int arg6)
+        public static KeyEvent Create(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5, int arg6)
         {
             return JVMBridgeBase.New<KeyEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -100,7 +100,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for KeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5)
         /// </summary>
-        public static KeyEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5)
+        public static KeyEvent Create(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5)
         {
             return JVMBridgeBase.New<KeyEvent>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -120,7 +120,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for KeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4)
         /// </summary>
-        public static KeyEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4)
+        public static KeyEvent Create(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<KeyEvent>(arg0, arg1, arg2, arg3, arg4);
         }

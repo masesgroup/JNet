@@ -80,7 +80,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for GradientPaint(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5, bool arg6)
         /// </summary>
-        public static GradientPaint New(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5, bool arg6)
+        public static GradientPaint Create(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5, bool arg6)
         {
             return JVMBridgeBase.New<GradientPaint>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -100,7 +100,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for GradientPaint(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5)
         /// </summary>
-        public static GradientPaint New(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5)
+        public static GradientPaint Create(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5)
         {
             return JVMBridgeBase.New<GradientPaint>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -119,7 +119,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for GradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3, bool arg4)
         /// </summary>
-        public static GradientPaint New(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3, bool arg4)
+        public static GradientPaint Create(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3, bool arg4)
         {
             return JVMBridgeBase.New<GradientPaint>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -137,7 +137,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for GradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3)
         /// </summary>
-        public static GradientPaint New(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3)
+        public static GradientPaint Create(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3)
         {
             return JVMBridgeBase.New<GradientPaint>(arg0, arg1, arg2, arg3);
         }

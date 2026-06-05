@@ -73,7 +73,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for CompositeName()
         /// </summary>
-        public static CompositeName New()
+        public static CompositeName Create()
         {
             return JVMBridgeBase.New<CompositeName>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Naming
         /// <summary>
         /// HPA initializer for CompositeName(Java.Lang.String arg0)
         /// </summary>
-        public static CompositeName New(Java.Lang.String arg0)
+        public static CompositeName Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<CompositeName>(arg0);
         }

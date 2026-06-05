@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for PopupFactory()
         /// </summary>
-        public static PopupFactory New()
+        public static PopupFactory Create()
         {
             return JVMBridgeBase.New<PopupFactory>();
         }

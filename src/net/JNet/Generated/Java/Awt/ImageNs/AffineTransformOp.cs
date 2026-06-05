@@ -75,7 +75,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for AffineTransformOp(Java.Awt.Geom.AffineTransform arg0, int arg1)
         /// </summary>
-        public static AffineTransformOp New(Java.Awt.Geom.AffineTransform arg0, int arg1)
+        public static AffineTransformOp Create(Java.Awt.Geom.AffineTransform arg0, int arg1)
         {
             return JVMBridgeBase.New<AffineTransformOp>(arg0, arg1);
         }
@@ -91,7 +91,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for AffineTransformOp(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
         /// </summary>
-        public static AffineTransformOp New(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
+        public static AffineTransformOp Create(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
         {
             return JVMBridgeBase.New<AffineTransformOp>(arg0, arg1);
         }

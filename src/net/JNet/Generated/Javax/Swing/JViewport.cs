@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JViewport()
         /// </summary>
-        public static JViewport New()
+        public static JViewport Create()
         {
             return JVMBridgeBase.New<JViewport>();
         }

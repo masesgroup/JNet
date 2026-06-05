@@ -77,7 +77,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for BufferedImage(int arg0, int arg1, int arg2, Java.Awt.ImageNs.IndexColorModel arg3)
         /// </summary>
-        public static BufferedImage New(int arg0, int arg1, int arg2, Java.Awt.ImageNs.IndexColorModel arg3)
+        public static BufferedImage Create(int arg0, int arg1, int arg2, Java.Awt.ImageNs.IndexColorModel arg3)
         {
             return JVMBridgeBase.New<BufferedImage>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for BufferedImage(int arg0, int arg1, int arg2)
         /// </summary>
-        public static BufferedImage New(int arg0, int arg1, int arg2)
+        public static BufferedImage Create(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<BufferedImage>(arg0, arg1, arg2);
         }
@@ -112,7 +112,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for BufferedImage(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.WritableRaster arg1, bool arg2, Java.Util.Hashtable%3Cobject, object%3E arg3)
         /// </summary>
-        public static BufferedImage New(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.WritableRaster arg1, bool arg2, Java.Util.Hashtable<object, object> arg3)
+        public static BufferedImage Create(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.WritableRaster arg1, bool arg2, Java.Util.Hashtable<object, object> arg3)
         {
             return JVMBridgeBase.New<BufferedImage>(arg0, arg1, arg2, arg3);
         }

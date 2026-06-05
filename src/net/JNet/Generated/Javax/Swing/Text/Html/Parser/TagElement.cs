@@ -75,7 +75,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// HPA initializer for TagElement(Javax.Swing.Text.Html.Parser.Element arg0, bool arg1)
         /// </summary>
-        public static TagElement New(Javax.Swing.Text.Html.Parser.Element arg0, bool arg1)
+        public static TagElement Create(Javax.Swing.Text.Html.Parser.Element arg0, bool arg1)
         {
             return JVMBridgeBase.New<TagElement>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// HPA initializer for TagElement(Javax.Swing.Text.Html.Parser.Element arg0)
         /// </summary>
-        public static TagElement New(Javax.Swing.Text.Html.Parser.Element arg0)
+        public static TagElement Create(Javax.Swing.Text.Html.Parser.Element arg0)
         {
             return JVMBridgeBase.New<TagElement>(arg0);
         }

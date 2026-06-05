@@ -112,7 +112,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// HPA initializer for AudioFormat(float arg0, int arg1, int arg2, bool arg3, bool arg4)
         /// </summary>
-        public static AudioFormat New(float arg0, int arg1, int arg2, bool arg3, bool arg4)
+        public static AudioFormat Create(float arg0, int arg1, int arg2, bool arg3, bool arg4)
         {
             return JVMBridgeBase.New<AudioFormat>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -134,7 +134,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// HPA initializer for AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6, Java.Util.Map%3CJava.Lang.String, object%3E arg7)
         /// </summary>
-        public static AudioFormat New(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6, Java.Util.Map<Java.Lang.String, object> arg7)
+        public static AudioFormat Create(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6, Java.Util.Map<Java.Lang.String, object> arg7)
         {
             return JVMBridgeBase.New<AudioFormat>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
@@ -155,7 +155,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// HPA initializer for AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6)
         /// </summary>
-        public static AudioFormat New(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6)
+        public static AudioFormat Create(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6)
         {
             return JVMBridgeBase.New<AudioFormat>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -270,7 +270,7 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// HPA initializer for Encoding(Java.Lang.String arg0)
             /// </summary>
-            public static Encoding New(Java.Lang.String arg0)
+            public static Encoding Create(Java.Lang.String arg0)
             {
                 return JVMBridgeBase.New<Encoding>(arg0);
             }

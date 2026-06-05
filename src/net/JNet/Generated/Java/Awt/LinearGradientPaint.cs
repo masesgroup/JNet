@@ -80,7 +80,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for LinearGradientPaint(float arg0, float arg1, float arg2, float arg3, float[] arg4, Java.Awt.Color[] arg5, Java.Awt.MultipleGradientPaint.CycleMethod arg6)
         /// </summary>
-        public static LinearGradientPaint New(float arg0, float arg1, float arg2, float arg3, float[] arg4, Java.Awt.Color[] arg5, Java.Awt.MultipleGradientPaint.CycleMethod arg6)
+        public static LinearGradientPaint Create(float arg0, float arg1, float arg2, float arg3, float[] arg4, Java.Awt.Color[] arg5, Java.Awt.MultipleGradientPaint.CycleMethod arg6)
         {
             return JVMBridgeBase.New<LinearGradientPaint>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -100,7 +100,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for LinearGradientPaint(float arg0, float arg1, float arg2, float arg3, float[] arg4, Java.Awt.Color[] arg5)
         /// </summary>
-        public static LinearGradientPaint New(float arg0, float arg1, float arg2, float arg3, float[] arg4, Java.Awt.Color[] arg5)
+        public static LinearGradientPaint Create(float arg0, float arg1, float arg2, float arg3, float[] arg4, Java.Awt.Color[] arg5)
         {
             return JVMBridgeBase.New<LinearGradientPaint>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -121,7 +121,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for LinearGradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, float[] arg2, Java.Awt.Color[] arg3, Java.Awt.MultipleGradientPaint.CycleMethod arg4, Java.Awt.MultipleGradientPaint.ColorSpaceType arg5, Java.Awt.Geom.AffineTransform arg6)
         /// </summary>
-        public static LinearGradientPaint New(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, float[] arg2, Java.Awt.Color[] arg3, Java.Awt.MultipleGradientPaint.CycleMethod arg4, Java.Awt.MultipleGradientPaint.ColorSpaceType arg5, Java.Awt.Geom.AffineTransform arg6)
+        public static LinearGradientPaint Create(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, float[] arg2, Java.Awt.Color[] arg3, Java.Awt.MultipleGradientPaint.CycleMethod arg4, Java.Awt.MultipleGradientPaint.ColorSpaceType arg5, Java.Awt.Geom.AffineTransform arg6)
         {
             return JVMBridgeBase.New<LinearGradientPaint>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -140,7 +140,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for LinearGradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, float[] arg2, Java.Awt.Color[] arg3, Java.Awt.MultipleGradientPaint.CycleMethod arg4)
         /// </summary>
-        public static LinearGradientPaint New(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, float[] arg2, Java.Awt.Color[] arg3, Java.Awt.MultipleGradientPaint.CycleMethod arg4)
+        public static LinearGradientPaint Create(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, float[] arg2, Java.Awt.Color[] arg3, Java.Awt.MultipleGradientPaint.CycleMethod arg4)
         {
             return JVMBridgeBase.New<LinearGradientPaint>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -158,7 +158,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for LinearGradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, float[] arg2, Java.Awt.Color[] arg3)
         /// </summary>
-        public static LinearGradientPaint New(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, float[] arg2, Java.Awt.Color[] arg3)
+        public static LinearGradientPaint Create(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, float[] arg2, Java.Awt.Color[] arg3)
         {
             return JVMBridgeBase.New<LinearGradientPaint>(arg0, arg1, arg2, arg3);
         }

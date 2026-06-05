@@ -75,7 +75,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for PopupMenu()
         /// </summary>
-        public static PopupMenu New()
+        public static PopupMenu Create()
         {
             return JVMBridgeBase.New<PopupMenu>();
         }
@@ -91,7 +91,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for PopupMenu(Java.Lang.String arg0)
         /// </summary>
-        public static PopupMenu New(Java.Lang.String arg0)
+        public static PopupMenu Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<PopupMenu>(arg0);
         }

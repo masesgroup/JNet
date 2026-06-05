@@ -76,7 +76,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for JarInputStream(Java.Io.InputStream arg0, bool arg1)
         /// </summary>
-        public static JarInputStream New(Java.Io.InputStream arg0, bool arg1)
+        public static JarInputStream Create(Java.Io.InputStream arg0, bool arg1)
         {
             return JVMBridgeBase.New<JarInputStream>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// HPA initializer for JarInputStream(Java.Io.InputStream arg0)
         /// </summary>
-        public static JarInputStream New(Java.Io.InputStream arg0)
+        public static JarInputStream Create(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<JarInputStream>(arg0);
         }

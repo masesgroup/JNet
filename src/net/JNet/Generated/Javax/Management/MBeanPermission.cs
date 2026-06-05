@@ -77,7 +77,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanPermission(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.ObjectName arg2, Java.Lang.String arg3)
         /// </summary>
-        public static MBeanPermission New(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.ObjectName arg2, Java.Lang.String arg3)
+        public static MBeanPermission Create(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.ObjectName arg2, Java.Lang.String arg3)
         {
             return JVMBridgeBase.New<MBeanPermission>(arg0, arg1, arg2, arg3);
         }
@@ -93,7 +93,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static MBeanPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static MBeanPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<MBeanPermission>(arg0, arg1);
         }

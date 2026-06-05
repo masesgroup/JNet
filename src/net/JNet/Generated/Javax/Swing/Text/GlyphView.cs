@@ -108,7 +108,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for GlyphView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static GlyphView New(Javax.Swing.Text.Element arg0)
+        public static GlyphView Create(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<GlyphView>(arg0);
         }
@@ -259,7 +259,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// HPA initializer for GlyphPainter()
             /// </summary>
-            public static GlyphPainter New()
+            public static GlyphPainter Create()
             {
                 return JVMBridgeBase.New<GlyphPainter>();
             }

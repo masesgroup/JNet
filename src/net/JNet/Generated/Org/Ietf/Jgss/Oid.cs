@@ -75,7 +75,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// HPA initializer for Oid(byte[] arg0)
         /// </summary>
-        public static Oid New(byte[] arg0)
+        public static Oid Create(byte[] arg0)
         {
             return JVMBridgeBase.New<Oid>(arg0);
         }
@@ -91,7 +91,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// HPA initializer for Oid(Java.Io.InputStream arg0)
         /// </summary>
-        public static Oid New(Java.Io.InputStream arg0)
+        public static Oid Create(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<Oid>(arg0);
         }
@@ -107,7 +107,7 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// HPA initializer for Oid(Java.Lang.String arg0)
         /// </summary>
-        public static Oid New(Java.Lang.String arg0)
+        public static Oid Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Oid>(arg0);
         }

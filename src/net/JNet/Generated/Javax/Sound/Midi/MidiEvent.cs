@@ -75,7 +75,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// HPA initializer for MidiEvent(Javax.Sound.Midi.MidiMessage arg0, long arg1)
         /// </summary>
-        public static MidiEvent New(Javax.Sound.Midi.MidiMessage arg0, long arg1)
+        public static MidiEvent Create(Javax.Sound.Midi.MidiMessage arg0, long arg1)
         {
             return JVMBridgeBase.New<MidiEvent>(arg0, arg1);
         }

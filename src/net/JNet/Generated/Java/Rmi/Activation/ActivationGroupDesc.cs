@@ -112,7 +112,7 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// HPA initializer for ActivationGroupDesc(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject%3Cobject%3E arg2, Java.Util.Properties arg3, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg4)
         /// </summary>
-        public static ActivationGroupDesc New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject<object> arg2, Java.Util.Properties arg3, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg4)
+        public static ActivationGroupDesc Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject<object> arg2, Java.Util.Properties arg3, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg4)
         {
             return JVMBridgeBase.New<ActivationGroupDesc>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -128,7 +128,7 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// HPA initializer for ActivationGroupDesc(Java.Util.Properties arg0, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg1)
         /// </summary>
-        public static ActivationGroupDesc New(Java.Util.Properties arg0, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg1)
+        public static ActivationGroupDesc Create(Java.Util.Properties arg0, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg1)
         {
             return JVMBridgeBase.New<ActivationGroupDesc>(arg0, arg1);
         }
@@ -203,7 +203,7 @@ namespace Java.Rmi.Activation
             /// <summary>
             /// HPA initializer for CommandEnvironment(Java.Lang.String arg0, Java.Lang.String[] arg1)
             /// </summary>
-            public static CommandEnvironment New(Java.Lang.String arg0, Java.Lang.String[] arg1)
+            public static CommandEnvironment Create(Java.Lang.String arg0, Java.Lang.String[] arg1)
             {
                 return JVMBridgeBase.New<CommandEnvironment>(arg0, arg1);
             }

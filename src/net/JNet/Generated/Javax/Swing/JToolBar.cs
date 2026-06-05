@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JToolBar()
         /// </summary>
-        public static JToolBar New()
+        public static JToolBar Create()
         {
             return JVMBridgeBase.New<JToolBar>();
         }
@@ -122,7 +122,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JToolBar(int arg0)
         /// </summary>
-        public static JToolBar New(int arg0)
+        public static JToolBar Create(int arg0)
         {
             return JVMBridgeBase.New<JToolBar>(arg0);
         }
@@ -138,7 +138,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JToolBar(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static JToolBar New(Java.Lang.String arg0, int arg1)
+        public static JToolBar Create(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<JToolBar>(arg0, arg1);
         }
@@ -153,7 +153,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JToolBar(Java.Lang.String arg0)
         /// </summary>
-        public static JToolBar New(Java.Lang.String arg0)
+        public static JToolBar Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JToolBar>(arg0);
         }
@@ -310,7 +310,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for Separator()
             /// </summary>
-            public static Separator New()
+            public static Separator Create()
             {
                 return JVMBridgeBase.New<Separator>();
             }
@@ -325,7 +325,7 @@ namespace Javax.Swing
             /// <summary>
             /// HPA initializer for Separator(Java.Awt.Dimension arg0)
             /// </summary>
-            public static Separator New(Java.Awt.Dimension arg0)
+            public static Separator Create(Java.Awt.Dimension arg0)
             {
                 return JVMBridgeBase.New<Separator>(arg0);
             }

@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for CellRendererPane()
         /// </summary>
-        public static CellRendererPane New()
+        public static CellRendererPane Create()
         {
             return JVMBridgeBase.New<CellRendererPane>();
         }

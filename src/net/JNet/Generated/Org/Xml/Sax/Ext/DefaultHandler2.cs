@@ -73,7 +73,7 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// HPA initializer for DefaultHandler2()
         /// </summary>
-        public static DefaultHandler2 New()
+        public static DefaultHandler2 Create()
         {
             return JVMBridgeBase.New<DefaultHandler2>();
         }

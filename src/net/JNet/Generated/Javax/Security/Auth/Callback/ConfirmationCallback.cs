@@ -76,7 +76,7 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// HPA initializer for ConfirmationCallback(int arg0, int arg1, int arg2)
         /// </summary>
-        public static ConfirmationCallback New(int arg0, int arg1, int arg2)
+        public static ConfirmationCallback Create(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<ConfirmationCallback>(arg0, arg1, arg2);
         }
@@ -93,7 +93,7 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// HPA initializer for ConfirmationCallback(int arg0, Java.Lang.String[] arg1, int arg2)
         /// </summary>
-        public static ConfirmationCallback New(int arg0, Java.Lang.String[] arg1, int arg2)
+        public static ConfirmationCallback Create(int arg0, Java.Lang.String[] arg1, int arg2)
         {
             return JVMBridgeBase.New<ConfirmationCallback>(arg0, arg1, arg2);
         }
@@ -111,7 +111,7 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// HPA initializer for ConfirmationCallback(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static ConfirmationCallback New(Java.Lang.String arg0, int arg1, int arg2, int arg3)
+        public static ConfirmationCallback Create(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<ConfirmationCallback>(arg0, arg1, arg2, arg3);
         }
@@ -129,7 +129,7 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// HPA initializer for ConfirmationCallback(Java.Lang.String arg0, int arg1, Java.Lang.String[] arg2, int arg3)
         /// </summary>
-        public static ConfirmationCallback New(Java.Lang.String arg0, int arg1, Java.Lang.String[] arg2, int arg3)
+        public static ConfirmationCallback Create(Java.Lang.String arg0, int arg1, Java.Lang.String[] arg2, int arg3)
         {
             return JVMBridgeBase.New<ConfirmationCallback>(arg0, arg1, arg2, arg3);
         }

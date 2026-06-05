@@ -81,7 +81,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for RadialGradientPaint(float arg0, float arg1, float arg2, float arg3, float arg4, float[] arg5, Java.Awt.Color[] arg6, Java.Awt.MultipleGradientPaint.CycleMethod arg7)
         /// </summary>
-        public static RadialGradientPaint New(float arg0, float arg1, float arg2, float arg3, float arg4, float[] arg5, Java.Awt.Color[] arg6, Java.Awt.MultipleGradientPaint.CycleMethod arg7)
+        public static RadialGradientPaint Create(float arg0, float arg1, float arg2, float arg3, float arg4, float[] arg5, Java.Awt.Color[] arg6, Java.Awt.MultipleGradientPaint.CycleMethod arg7)
         {
             return JVMBridgeBase.New<RadialGradientPaint>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
@@ -101,7 +101,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for RadialGradientPaint(float arg0, float arg1, float arg2, float[] arg3, Java.Awt.Color[] arg4, Java.Awt.MultipleGradientPaint.CycleMethod arg5)
         /// </summary>
-        public static RadialGradientPaint New(float arg0, float arg1, float arg2, float[] arg3, Java.Awt.Color[] arg4, Java.Awt.MultipleGradientPaint.CycleMethod arg5)
+        public static RadialGradientPaint Create(float arg0, float arg1, float arg2, float[] arg3, Java.Awt.Color[] arg4, Java.Awt.MultipleGradientPaint.CycleMethod arg5)
         {
             return JVMBridgeBase.New<RadialGradientPaint>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -120,7 +120,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for RadialGradientPaint(float arg0, float arg1, float arg2, float[] arg3, Java.Awt.Color[] arg4)
         /// </summary>
-        public static RadialGradientPaint New(float arg0, float arg1, float arg2, float[] arg3, Java.Awt.Color[] arg4)
+        public static RadialGradientPaint Create(float arg0, float arg1, float arg2, float[] arg3, Java.Awt.Color[] arg4)
         {
             return JVMBridgeBase.New<RadialGradientPaint>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -139,7 +139,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for RadialGradientPaint(Java.Awt.Geom.Point2D arg0, float arg1, float[] arg2, Java.Awt.Color[] arg3, Java.Awt.MultipleGradientPaint.CycleMethod arg4)
         /// </summary>
-        public static RadialGradientPaint New(Java.Awt.Geom.Point2D arg0, float arg1, float[] arg2, Java.Awt.Color[] arg3, Java.Awt.MultipleGradientPaint.CycleMethod arg4)
+        public static RadialGradientPaint Create(Java.Awt.Geom.Point2D arg0, float arg1, float[] arg2, Java.Awt.Color[] arg3, Java.Awt.MultipleGradientPaint.CycleMethod arg4)
         {
             return JVMBridgeBase.New<RadialGradientPaint>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -157,7 +157,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for RadialGradientPaint(Java.Awt.Geom.Point2D arg0, float arg1, float[] arg2, Java.Awt.Color[] arg3)
         /// </summary>
-        public static RadialGradientPaint New(Java.Awt.Geom.Point2D arg0, float arg1, float[] arg2, Java.Awt.Color[] arg3)
+        public static RadialGradientPaint Create(Java.Awt.Geom.Point2D arg0, float arg1, float[] arg2, Java.Awt.Color[] arg3)
         {
             return JVMBridgeBase.New<RadialGradientPaint>(arg0, arg1, arg2, arg3);
         }
@@ -179,7 +179,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for RadialGradientPaint(Java.Awt.Geom.Point2D arg0, float arg1, Java.Awt.Geom.Point2D arg2, float[] arg3, Java.Awt.Color[] arg4, Java.Awt.MultipleGradientPaint.CycleMethod arg5, Java.Awt.MultipleGradientPaint.ColorSpaceType arg6, Java.Awt.Geom.AffineTransform arg7)
         /// </summary>
-        public static RadialGradientPaint New(Java.Awt.Geom.Point2D arg0, float arg1, Java.Awt.Geom.Point2D arg2, float[] arg3, Java.Awt.Color[] arg4, Java.Awt.MultipleGradientPaint.CycleMethod arg5, Java.Awt.MultipleGradientPaint.ColorSpaceType arg6, Java.Awt.Geom.AffineTransform arg7)
+        public static RadialGradientPaint Create(Java.Awt.Geom.Point2D arg0, float arg1, Java.Awt.Geom.Point2D arg2, float[] arg3, Java.Awt.Color[] arg4, Java.Awt.MultipleGradientPaint.CycleMethod arg5, Java.Awt.MultipleGradientPaint.ColorSpaceType arg6, Java.Awt.Geom.AffineTransform arg7)
         {
             return JVMBridgeBase.New<RadialGradientPaint>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
@@ -199,7 +199,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for RadialGradientPaint(Java.Awt.Geom.Point2D arg0, float arg1, Java.Awt.Geom.Point2D arg2, float[] arg3, Java.Awt.Color[] arg4, Java.Awt.MultipleGradientPaint.CycleMethod arg5)
         /// </summary>
-        public static RadialGradientPaint New(Java.Awt.Geom.Point2D arg0, float arg1, Java.Awt.Geom.Point2D arg2, float[] arg3, Java.Awt.Color[] arg4, Java.Awt.MultipleGradientPaint.CycleMethod arg5)
+        public static RadialGradientPaint Create(Java.Awt.Geom.Point2D arg0, float arg1, Java.Awt.Geom.Point2D arg2, float[] arg3, Java.Awt.Color[] arg4, Java.Awt.MultipleGradientPaint.CycleMethod arg5)
         {
             return JVMBridgeBase.New<RadialGradientPaint>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -217,7 +217,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for RadialGradientPaint(Java.Awt.Geom.Rectangle2D arg0, float[] arg1, Java.Awt.Color[] arg2, Java.Awt.MultipleGradientPaint.CycleMethod arg3)
         /// </summary>
-        public static RadialGradientPaint New(Java.Awt.Geom.Rectangle2D arg0, float[] arg1, Java.Awt.Color[] arg2, Java.Awt.MultipleGradientPaint.CycleMethod arg3)
+        public static RadialGradientPaint Create(Java.Awt.Geom.Rectangle2D arg0, float[] arg1, Java.Awt.Color[] arg2, Java.Awt.MultipleGradientPaint.CycleMethod arg3)
         {
             return JVMBridgeBase.New<RadialGradientPaint>(arg0, arg1, arg2, arg3);
         }

@@ -74,7 +74,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ComponentInputMap(Javax.Swing.JComponent arg0)
         /// </summary>
-        public static ComponentInputMap New(Javax.Swing.JComponent arg0)
+        public static ComponentInputMap Create(Javax.Swing.JComponent arg0)
         {
             return JVMBridgeBase.New<ComponentInputMap>(arg0);
         }

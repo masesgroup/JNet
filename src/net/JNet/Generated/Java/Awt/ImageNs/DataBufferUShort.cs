@@ -75,7 +75,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DataBufferUShort(int arg0, int arg1)
         /// </summary>
-        public static DataBufferUShort New(int arg0, int arg1)
+        public static DataBufferUShort Create(int arg0, int arg1)
         {
             return JVMBridgeBase.New<DataBufferUShort>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DataBufferUShort(int arg0)
         /// </summary>
-        public static DataBufferUShort New(int arg0)
+        public static DataBufferUShort Create(int arg0)
         {
             return JVMBridgeBase.New<DataBufferUShort>(arg0);
         }
@@ -107,7 +107,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DataBufferUShort(short[] arg0, int arg1, int arg2)
         /// </summary>
-        public static DataBufferUShort New(short[] arg0, int arg1, int arg2)
+        public static DataBufferUShort Create(short[] arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<DataBufferUShort>(arg0, arg1, arg2);
         }
@@ -123,7 +123,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DataBufferUShort(short[] arg0, int arg1)
         /// </summary>
-        public static DataBufferUShort New(short[] arg0, int arg1)
+        public static DataBufferUShort Create(short[] arg0, int arg1)
         {
             return JVMBridgeBase.New<DataBufferUShort>(arg0, arg1);
         }
@@ -140,7 +140,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DataBufferUShort(short[][] arg0, int arg1, int[] arg2)
         /// </summary>
-        public static DataBufferUShort New(short[][] arg0, int arg1, int[] arg2)
+        public static DataBufferUShort Create(short[][] arg0, int arg1, int[] arg2)
         {
             return JVMBridgeBase.New<DataBufferUShort>(arg0, arg1, arg2);
         }
@@ -156,7 +156,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for DataBufferUShort(short[][] arg0, int arg1)
         /// </summary>
-        public static DataBufferUShort New(short[][] arg0, int arg1)
+        public static DataBufferUShort Create(short[][] arg0, int arg1)
         {
             return JVMBridgeBase.New<DataBufferUShort>(arg0, arg1);
         }

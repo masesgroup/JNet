@@ -78,7 +78,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// HPA initializer for JMXServiceURL(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
         /// </summary>
-        public static JMXServiceURL New(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
+        public static JMXServiceURL Create(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
         {
             return JVMBridgeBase.New<JMXServiceURL>(arg0, arg1, arg2, arg3);
         }
@@ -96,7 +96,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// HPA initializer for JMXServiceURL(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         /// </summary>
-        public static JMXServiceURL New(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
+        public static JMXServiceURL Create(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
             return JVMBridgeBase.New<JMXServiceURL>(arg0, arg1, arg2);
         }
@@ -112,7 +112,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// HPA initializer for JMXServiceURL(Java.Lang.String arg0)
         /// </summary>
-        public static JMXServiceURL New(Java.Lang.String arg0)
+        public static JMXServiceURL Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JMXServiceURL>(arg0);
         }

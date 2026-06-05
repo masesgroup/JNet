@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicReference()
         /// </summary>
-        public static AtomicReference New()
+        public static AtomicReference Create()
         {
             return JVMBridgeBase.New<AtomicReference>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicReference(object arg0)
         /// </summary>
-        public static AtomicReference New(object arg0)
+        public static AtomicReference Create(object arg0)
         {
             return JVMBridgeBase.New<AtomicReference>(arg0);
         }
@@ -259,7 +259,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicReference()
         /// </summary>
-        public static AtomicReference<V> New()
+        public static AtomicReference<V> Create()
         {
             return JVMBridgeBase.New<AtomicReference<V>>();
         }
@@ -274,7 +274,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicReference(V arg0)
         /// </summary>
-        public static AtomicReference<V> New(V arg0)
+        public static AtomicReference<V> Create(V arg0)
         {
             return JVMBridgeBase.New<AtomicReference<V>>(arg0);
         }

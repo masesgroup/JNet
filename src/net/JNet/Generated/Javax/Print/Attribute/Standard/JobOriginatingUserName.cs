@@ -75,7 +75,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for JobOriginatingUserName(Java.Lang.String arg0, Java.Util.Locale arg1)
         /// </summary>
-        public static JobOriginatingUserName New(Java.Lang.String arg0, Java.Util.Locale arg1)
+        public static JobOriginatingUserName Create(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
             return JVMBridgeBase.New<JobOriginatingUserName>(arg0, arg1);
         }

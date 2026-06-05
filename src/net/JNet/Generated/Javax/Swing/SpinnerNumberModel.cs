@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SpinnerNumberModel()
         /// </summary>
-        public static SpinnerNumberModel New()
+        public static SpinnerNumberModel Create()
         {
             return JVMBridgeBase.New<SpinnerNumberModel>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SpinnerNumberModel(double arg0, double arg1, double arg2, double arg3)
         /// </summary>
-        public static SpinnerNumberModel New(double arg0, double arg1, double arg2, double arg3)
+        public static SpinnerNumberModel Create(double arg0, double arg1, double arg2, double arg3)
         {
             return JVMBridgeBase.New<SpinnerNumberModel>(arg0, arg1, arg2, arg3);
         }
@@ -109,7 +109,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SpinnerNumberModel(int arg0, int arg1, int arg2, int arg3)
         /// </summary>
-        public static SpinnerNumberModel New(int arg0, int arg1, int arg2, int arg3)
+        public static SpinnerNumberModel Create(int arg0, int arg1, int arg2, int arg3)
         {
             return JVMBridgeBase.New<SpinnerNumberModel>(arg0, arg1, arg2, arg3);
         }
@@ -127,7 +127,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for SpinnerNumberModel(Java.Lang.Number arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, Java.Lang.Number arg3)
         /// </summary>
-        public static SpinnerNumberModel New(Java.Lang.Number arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, Java.Lang.Number arg3)
+        public static SpinnerNumberModel Create(Java.Lang.Number arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, Java.Lang.Number arg3)
         {
             return JVMBridgeBase.New<SpinnerNumberModel>(arg0, arg1, arg2, arg3);
         }

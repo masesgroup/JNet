@@ -75,7 +75,7 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// HPA initializer for ResolveResult(object arg0, Java.Lang.String arg1)
         /// </summary>
-        public static ResolveResult New(object arg0, Java.Lang.String arg1)
+        public static ResolveResult Create(object arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<ResolveResult>(arg0, arg1);
         }
@@ -91,7 +91,7 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// HPA initializer for ResolveResult(object arg0, Javax.Naming.Name arg1)
         /// </summary>
-        public static ResolveResult New(object arg0, Javax.Naming.Name arg1)
+        public static ResolveResult Create(object arg0, Javax.Naming.Name arg1)
         {
             return JVMBridgeBase.New<ResolveResult>(arg0, arg1);
         }

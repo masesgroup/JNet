@@ -73,7 +73,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// HPA initializer for AttributesImpl()
         /// </summary>
-        public static AttributesImpl New()
+        public static AttributesImpl Create()
         {
             return JVMBridgeBase.New<AttributesImpl>();
         }
@@ -88,7 +88,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// HPA initializer for AttributesImpl(Org.Xml.Sax.Attributes arg0)
         /// </summary>
-        public static AttributesImpl New(Org.Xml.Sax.Attributes arg0)
+        public static AttributesImpl Create(Org.Xml.Sax.Attributes arg0)
         {
             return JVMBridgeBase.New<AttributesImpl>(arg0);
         }

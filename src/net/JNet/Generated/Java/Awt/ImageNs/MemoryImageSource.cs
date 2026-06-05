@@ -79,7 +79,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for MemoryImageSource(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Util.Hashtable%3Cobject, object%3E arg5)
         /// </summary>
-        public static MemoryImageSource New(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Util.Hashtable<object, object> arg5)
+        public static MemoryImageSource Create(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Util.Hashtable<object, object> arg5)
         {
             return JVMBridgeBase.New<MemoryImageSource>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -98,7 +98,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for MemoryImageSource(int arg0, int arg1, int[] arg2, int arg3, int arg4)
         /// </summary>
-        public static MemoryImageSource New(int arg0, int arg1, int[] arg2, int arg3, int arg4)
+        public static MemoryImageSource Create(int arg0, int arg1, int[] arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<MemoryImageSource>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -119,7 +119,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5, Java.Util.Hashtable%3Cobject, object%3E arg6)
         /// </summary>
-        public static MemoryImageSource New(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5, Java.Util.Hashtable<object, object> arg6)
+        public static MemoryImageSource Create(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5, Java.Util.Hashtable<object, object> arg6)
         {
             return JVMBridgeBase.New<MemoryImageSource>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -139,7 +139,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5)
         /// </summary>
-        public static MemoryImageSource New(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5)
+        public static MemoryImageSource Create(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5)
         {
             return JVMBridgeBase.New<MemoryImageSource>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -160,7 +160,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5, Java.Util.Hashtable%3Cobject, object%3E arg6)
         /// </summary>
-        public static MemoryImageSource New(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5, Java.Util.Hashtable<object, object> arg6)
+        public static MemoryImageSource Create(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5, Java.Util.Hashtable<object, object> arg6)
         {
             return JVMBridgeBase.New<MemoryImageSource>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -180,7 +180,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// HPA initializer for MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5)
         /// </summary>
-        public static MemoryImageSource New(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5)
+        public static MemoryImageSource Create(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5)
         {
             return JVMBridgeBase.New<MemoryImageSource>(arg0, arg1, arg2, arg3, arg4, arg5);
         }

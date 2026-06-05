@@ -73,7 +73,7 @@ namespace Javax.Xml.Bind.Annotation.Adapters
         /// <summary>
         /// HPA initializer for CollapsedStringAdapter()
         /// </summary>
-        public static CollapsedStringAdapter New()
+        public static CollapsedStringAdapter Create()
         {
             return JVMBridgeBase.New<CollapsedStringAdapter>();
         }

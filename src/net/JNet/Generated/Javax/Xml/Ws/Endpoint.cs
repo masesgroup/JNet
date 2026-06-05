@@ -73,7 +73,7 @@ namespace Javax.Xml.Ws
         /// <summary>
         /// HPA initializer for Endpoint()
         /// </summary>
-        public static Endpoint New()
+        public static Endpoint Create()
         {
             return JVMBridgeBase.New<Endpoint>();
         }

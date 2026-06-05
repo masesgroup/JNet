@@ -73,7 +73,7 @@ namespace Javax.Imageio
         /// <summary>
         /// HPA initializer for ImageReadParam()
         /// </summary>
-        public static ImageReadParam New()
+        public static ImageReadParam Create()
         {
             return JVMBridgeBase.New<ImageReadParam>();
         }

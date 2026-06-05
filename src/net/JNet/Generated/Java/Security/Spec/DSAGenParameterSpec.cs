@@ -76,7 +76,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for DSAGenParameterSpec(int arg0, int arg1, int arg2)
         /// </summary>
-        public static DSAGenParameterSpec New(int arg0, int arg1, int arg2)
+        public static DSAGenParameterSpec Create(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<DSAGenParameterSpec>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for DSAGenParameterSpec(int arg0, int arg1)
         /// </summary>
-        public static DSAGenParameterSpec New(int arg0, int arg1)
+        public static DSAGenParameterSpec Create(int arg0, int arg1)
         {
             return JVMBridgeBase.New<DSAGenParameterSpec>(arg0, arg1);
         }

@@ -73,7 +73,7 @@ namespace Javax.Script
         /// <summary>
         /// HPA initializer for SimpleScriptContext()
         /// </summary>
-        public static SimpleScriptContext New()
+        public static SimpleScriptContext Create()
         {
             return JVMBridgeBase.New<SimpleScriptContext>();
         }

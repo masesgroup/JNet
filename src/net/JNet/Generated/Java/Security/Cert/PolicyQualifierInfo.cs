@@ -75,7 +75,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for PolicyQualifierInfo(byte[] arg0)
         /// </summary>
-        public static PolicyQualifierInfo New(byte[] arg0)
+        public static PolicyQualifierInfo Create(byte[] arg0)
         {
             return JVMBridgeBase.New<PolicyQualifierInfo>(arg0);
         }

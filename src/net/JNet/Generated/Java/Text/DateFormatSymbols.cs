@@ -73,7 +73,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for DateFormatSymbols()
         /// </summary>
-        public static DateFormatSymbols New()
+        public static DateFormatSymbols Create()
         {
             return JVMBridgeBase.New<DateFormatSymbols>();
         }
@@ -88,7 +88,7 @@ namespace Java.Text
         /// <summary>
         /// HPA initializer for DateFormatSymbols(Java.Util.Locale arg0)
         /// </summary>
-        public static DateFormatSymbols New(Java.Util.Locale arg0)
+        public static DateFormatSymbols Create(Java.Util.Locale arg0)
         {
             return JVMBridgeBase.New<DateFormatSymbols>(arg0);
         }

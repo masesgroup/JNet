@@ -77,7 +77,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// HPA initializer for SearchResult(Java.Lang.String arg0, object arg1, Javax.Naming.Directory.Attributes arg2, bool arg3)
         /// </summary>
-        public static SearchResult New(Java.Lang.String arg0, object arg1, Javax.Naming.Directory.Attributes arg2, bool arg3)
+        public static SearchResult Create(Java.Lang.String arg0, object arg1, Javax.Naming.Directory.Attributes arg2, bool arg3)
         {
             return JVMBridgeBase.New<SearchResult>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// HPA initializer for SearchResult(Java.Lang.String arg0, object arg1, Javax.Naming.Directory.Attributes arg2)
         /// </summary>
-        public static SearchResult New(Java.Lang.String arg0, object arg1, Javax.Naming.Directory.Attributes arg2)
+        public static SearchResult Create(Java.Lang.String arg0, object arg1, Javax.Naming.Directory.Attributes arg2)
         {
             return JVMBridgeBase.New<SearchResult>(arg0, arg1, arg2);
         }
@@ -113,7 +113,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// HPA initializer for SearchResult(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Naming.Directory.Attributes arg3, bool arg4)
         /// </summary>
-        public static SearchResult New(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Naming.Directory.Attributes arg3, bool arg4)
+        public static SearchResult Create(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Naming.Directory.Attributes arg3, bool arg4)
         {
             return JVMBridgeBase.New<SearchResult>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -131,7 +131,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// HPA initializer for SearchResult(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Naming.Directory.Attributes arg3)
         /// </summary>
-        public static SearchResult New(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Naming.Directory.Attributes arg3)
+        public static SearchResult Create(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Javax.Naming.Directory.Attributes arg3)
         {
             return JVMBridgeBase.New<SearchResult>(arg0, arg1, arg2, arg3);
         }

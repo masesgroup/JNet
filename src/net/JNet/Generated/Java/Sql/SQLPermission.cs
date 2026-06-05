@@ -75,7 +75,7 @@ namespace Java.Sql
         /// <summary>
         /// HPA initializer for SQLPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static SQLPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static SQLPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<SQLPermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Sql
         /// <summary>
         /// HPA initializer for SQLPermission(Java.Lang.String arg0)
         /// </summary>
-        public static SQLPermission New(Java.Lang.String arg0)
+        public static SQLPermission Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<SQLPermission>(arg0);
         }

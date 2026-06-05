@@ -76,7 +76,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for PaintEvent(Java.Awt.Component arg0, int arg1, Java.Awt.Rectangle arg2)
         /// </summary>
-        public static PaintEvent New(Java.Awt.Component arg0, int arg1, Java.Awt.Rectangle arg2)
+        public static PaintEvent Create(Java.Awt.Component arg0, int arg1, Java.Awt.Rectangle arg2)
         {
             return JVMBridgeBase.New<PaintEvent>(arg0, arg1, arg2);
         }

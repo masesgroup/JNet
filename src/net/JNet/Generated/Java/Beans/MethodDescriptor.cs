@@ -75,7 +75,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for MethodDescriptor(Java.Lang.Reflect.Method arg0, Java.Beans.ParameterDescriptor[] arg1)
         /// </summary>
-        public static MethodDescriptor New(Java.Lang.Reflect.Method arg0, Java.Beans.ParameterDescriptor[] arg1)
+        public static MethodDescriptor Create(Java.Lang.Reflect.Method arg0, Java.Beans.ParameterDescriptor[] arg1)
         {
             return JVMBridgeBase.New<MethodDescriptor>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for MethodDescriptor(Java.Lang.Reflect.Method arg0)
         /// </summary>
-        public static MethodDescriptor New(Java.Lang.Reflect.Method arg0)
+        public static MethodDescriptor Create(Java.Lang.Reflect.Method arg0)
         {
             return JVMBridgeBase.New<MethodDescriptor>(arg0);
         }

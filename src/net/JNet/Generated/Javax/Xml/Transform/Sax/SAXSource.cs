@@ -73,7 +73,7 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// HPA initializer for SAXSource()
         /// </summary>
-        public static SAXSource New()
+        public static SAXSource Create()
         {
             return JVMBridgeBase.New<SAXSource>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// HPA initializer for SAXSource(Org.Xml.Sax.InputSource arg0)
         /// </summary>
-        public static SAXSource New(Org.Xml.Sax.InputSource arg0)
+        public static SAXSource Create(Org.Xml.Sax.InputSource arg0)
         {
             return JVMBridgeBase.New<SAXSource>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// HPA initializer for SAXSource(Org.Xml.Sax.XMLReader arg0, Org.Xml.Sax.InputSource arg1)
         /// </summary>
-        public static SAXSource New(Org.Xml.Sax.XMLReader arg0, Org.Xml.Sax.InputSource arg1)
+        public static SAXSource Create(Org.Xml.Sax.XMLReader arg0, Org.Xml.Sax.InputSource arg1)
         {
             return JVMBridgeBase.New<SAXSource>(arg0, arg1);
         }

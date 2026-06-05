@@ -74,7 +74,7 @@ namespace Javax.Sql
         /// <summary>
         /// HPA initializer for RowSetEvent(Javax.Sql.RowSet arg0)
         /// </summary>
-        public static RowSetEvent New(Javax.Sql.RowSet arg0)
+        public static RowSetEvent Create(Javax.Sql.RowSet arg0)
         {
             return JVMBridgeBase.New<RowSetEvent>(arg0);
         }

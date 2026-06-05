@@ -73,7 +73,7 @@ namespace Javax.Rmi.Ssl
         /// <summary>
         /// HPA initializer for SslRMIClientSocketFactory()
         /// </summary>
-        public static SslRMIClientSocketFactory New()
+        public static SslRMIClientSocketFactory Create()
         {
             return JVMBridgeBase.New<SslRMIClientSocketFactory>();
         }

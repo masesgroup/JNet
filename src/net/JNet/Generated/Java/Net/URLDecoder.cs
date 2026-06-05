@@ -73,7 +73,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for URLDecoder()
         /// </summary>
-        public static URLDecoder New()
+        public static URLDecoder Create()
         {
             return JVMBridgeBase.New<URLDecoder>();
         }

@@ -74,7 +74,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for PropertyChangeSupport(object arg0)
         /// </summary>
-        public static PropertyChangeSupport New(object arg0)
+        public static PropertyChangeSupport Create(object arg0)
         {
             return JVMBridgeBase.New<PropertyChangeSupport>(arg0);
         }

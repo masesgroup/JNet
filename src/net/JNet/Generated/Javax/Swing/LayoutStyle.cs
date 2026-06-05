@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for LayoutStyle()
         /// </summary>
-        public static LayoutStyle New()
+        public static LayoutStyle Create()
         {
             return JVMBridgeBase.New<LayoutStyle>();
         }

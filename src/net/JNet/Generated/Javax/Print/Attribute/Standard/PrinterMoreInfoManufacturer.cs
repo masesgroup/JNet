@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for PrinterMoreInfoManufacturer(Java.Net.URI arg0)
         /// </summary>
-        public static PrinterMoreInfoManufacturer New(Java.Net.URI arg0)
+        public static PrinterMoreInfoManufacturer Create(Java.Net.URI arg0)
         {
             return JVMBridgeBase.New<PrinterMoreInfoManufacturer>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for RecursiveAction()
         /// </summary>
-        public static RecursiveAction New()
+        public static RecursiveAction Create()
         {
             return JVMBridgeBase.New<RecursiveAction>();
         }

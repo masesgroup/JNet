@@ -73,7 +73,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for MimeTypeParameterList()
         /// </summary>
-        public static MimeTypeParameterList New()
+        public static MimeTypeParameterList Create()
         {
             return JVMBridgeBase.New<MimeTypeParameterList>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Activation
         /// <summary>
         /// HPA initializer for MimeTypeParameterList(Java.Lang.String arg0)
         /// </summary>
-        public static MimeTypeParameterList New(Java.Lang.String arg0)
+        public static MimeTypeParameterList Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<MimeTypeParameterList>(arg0);
         }

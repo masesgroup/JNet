@@ -76,7 +76,7 @@ namespace Javax.Xml.Crypto
         /// <summary>
         /// HPA initializer for OctetStreamData(Java.Io.InputStream arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         /// </summary>
-        public static OctetStreamData New(Java.Io.InputStream arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        public static OctetStreamData Create(Java.Io.InputStream arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<OctetStreamData>(arg0, arg1, arg2);
         }
@@ -91,7 +91,7 @@ namespace Javax.Xml.Crypto
         /// <summary>
         /// HPA initializer for OctetStreamData(Java.Io.InputStream arg0)
         /// </summary>
-        public static OctetStreamData New(Java.Io.InputStream arg0)
+        public static OctetStreamData Create(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<OctetStreamData>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for PolicySpi()
         /// </summary>
-        public static PolicySpi New()
+        public static PolicySpi Create()
         {
             return JVMBridgeBase.New<PolicySpi>();
         }

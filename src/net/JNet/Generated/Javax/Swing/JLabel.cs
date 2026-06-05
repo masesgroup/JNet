@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JLabel()
         /// </summary>
-        public static JLabel New()
+        public static JLabel Create()
         {
             return JVMBridgeBase.New<JLabel>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JLabel(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static JLabel New(Java.Lang.String arg0, int arg1)
+        public static JLabel Create(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<JLabel>(arg0, arg1);
         }
@@ -106,7 +106,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JLabel(Java.Lang.String arg0, Javax.Swing.Icon arg1, int arg2)
         /// </summary>
-        public static JLabel New(Java.Lang.String arg0, Javax.Swing.Icon arg1, int arg2)
+        public static JLabel Create(Java.Lang.String arg0, Javax.Swing.Icon arg1, int arg2)
         {
             return JVMBridgeBase.New<JLabel>(arg0, arg1, arg2);
         }
@@ -121,7 +121,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JLabel(Java.Lang.String arg0)
         /// </summary>
-        public static JLabel New(Java.Lang.String arg0)
+        public static JLabel Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JLabel>(arg0);
         }
@@ -137,7 +137,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JLabel(Javax.Swing.Icon arg0, int arg1)
         /// </summary>
-        public static JLabel New(Javax.Swing.Icon arg0, int arg1)
+        public static JLabel Create(Javax.Swing.Icon arg0, int arg1)
         {
             return JVMBridgeBase.New<JLabel>(arg0, arg1);
         }
@@ -152,7 +152,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JLabel(Javax.Swing.Icon arg0)
         /// </summary>
-        public static JLabel New(Javax.Swing.Icon arg0)
+        public static JLabel Create(Javax.Swing.Icon arg0)
         {
             return JVMBridgeBase.New<JLabel>(arg0);
         }

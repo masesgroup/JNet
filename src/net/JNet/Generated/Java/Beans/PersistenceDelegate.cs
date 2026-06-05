@@ -73,7 +73,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for PersistenceDelegate()
         /// </summary>
-        public static PersistenceDelegate New()
+        public static PersistenceDelegate Create()
         {
             return JVMBridgeBase.New<PersistenceDelegate>();
         }

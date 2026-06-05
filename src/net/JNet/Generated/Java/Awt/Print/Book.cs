@@ -73,7 +73,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// HPA initializer for Book()
         /// </summary>
-        public static Book New()
+        public static Book Create()
         {
             return JVMBridgeBase.New<Book>();
         }

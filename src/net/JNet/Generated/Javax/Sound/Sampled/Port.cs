@@ -152,7 +152,7 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// HPA initializer for Info(Java.Lang.Class arg0, Java.Lang.String arg1, bool arg2)
             /// </summary>
-            public static Info New(Java.Lang.Class arg0, Java.Lang.String arg1, bool arg2)
+            public static Info Create(Java.Lang.Class arg0, Java.Lang.String arg1, bool arg2)
             {
                 return JVMBridgeBase.New<Info>(arg0, arg1, arg2);
             }

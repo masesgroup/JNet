@@ -73,7 +73,7 @@ namespace Javax.Xml.Bind.Helpers
         /// <summary>
         /// HPA initializer for AbstractUnmarshallerImpl()
         /// </summary>
-        public static AbstractUnmarshallerImpl New()
+        public static AbstractUnmarshallerImpl Create()
         {
             return JVMBridgeBase.New<AbstractUnmarshallerImpl>();
         }

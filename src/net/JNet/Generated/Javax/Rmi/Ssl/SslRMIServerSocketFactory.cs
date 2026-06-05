@@ -73,7 +73,7 @@ namespace Javax.Rmi.Ssl
         /// <summary>
         /// HPA initializer for SslRMIServerSocketFactory()
         /// </summary>
-        public static SslRMIServerSocketFactory New()
+        public static SslRMIServerSocketFactory Create()
         {
             return JVMBridgeBase.New<SslRMIServerSocketFactory>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Rmi.Ssl
         /// <summary>
         /// HPA initializer for SslRMIServerSocketFactory(Java.Lang.String[] arg0, Java.Lang.String[] arg1, bool arg2)
         /// </summary>
-        public static SslRMIServerSocketFactory New(Java.Lang.String[] arg0, Java.Lang.String[] arg1, bool arg2)
+        public static SslRMIServerSocketFactory Create(Java.Lang.String[] arg0, Java.Lang.String[] arg1, bool arg2)
         {
             return JVMBridgeBase.New<SslRMIServerSocketFactory>(arg0, arg1, arg2);
         }
@@ -110,7 +110,7 @@ namespace Javax.Rmi.Ssl
         /// <summary>
         /// HPA initializer for SslRMIServerSocketFactory(Javax.Net.Ssl.SSLContext arg0, Java.Lang.String[] arg1, Java.Lang.String[] arg2, bool arg3)
         /// </summary>
-        public static SslRMIServerSocketFactory New(Javax.Net.Ssl.SSLContext arg0, Java.Lang.String[] arg1, Java.Lang.String[] arg2, bool arg3)
+        public static SslRMIServerSocketFactory Create(Javax.Net.Ssl.SSLContext arg0, Java.Lang.String[] arg1, Java.Lang.String[] arg2, bool arg3)
         {
             return JVMBridgeBase.New<SslRMIServerSocketFactory>(arg0, arg1, arg2, arg3);
         }

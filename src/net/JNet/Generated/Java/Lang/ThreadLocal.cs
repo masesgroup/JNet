@@ -108,7 +108,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for ThreadLocal()
         /// </summary>
-        public static ThreadLocal New()
+        public static ThreadLocal Create()
         {
             return JVMBridgeBase.New<ThreadLocal>();
         }
@@ -185,7 +185,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for ThreadLocal()
         /// </summary>
-        public static ThreadLocal<T> New()
+        public static ThreadLocal<T> Create()
         {
             return JVMBridgeBase.New<ThreadLocal<T>>();
         }

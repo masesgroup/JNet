@@ -73,7 +73,7 @@ namespace Javax.Xml.Bind.Helpers
         /// <summary>
         /// HPA initializer for ValidationEventLocatorImpl()
         /// </summary>
-        public static ValidationEventLocatorImpl New()
+        public static ValidationEventLocatorImpl Create()
         {
             return JVMBridgeBase.New<ValidationEventLocatorImpl>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Xml.Bind.Helpers
         /// <summary>
         /// HPA initializer for ValidationEventLocatorImpl(object arg0)
         /// </summary>
-        public static ValidationEventLocatorImpl New(object arg0)
+        public static ValidationEventLocatorImpl Create(object arg0)
         {
             return JVMBridgeBase.New<ValidationEventLocatorImpl>(arg0);
         }
@@ -103,7 +103,7 @@ namespace Javax.Xml.Bind.Helpers
         /// <summary>
         /// HPA initializer for ValidationEventLocatorImpl(Org.W3c.Dom.Node arg0)
         /// </summary>
-        public static ValidationEventLocatorImpl New(Org.W3c.Dom.Node arg0)
+        public static ValidationEventLocatorImpl Create(Org.W3c.Dom.Node arg0)
         {
             return JVMBridgeBase.New<ValidationEventLocatorImpl>(arg0);
         }
@@ -118,7 +118,7 @@ namespace Javax.Xml.Bind.Helpers
         /// <summary>
         /// HPA initializer for ValidationEventLocatorImpl(Org.Xml.Sax.Locator arg0)
         /// </summary>
-        public static ValidationEventLocatorImpl New(Org.Xml.Sax.Locator arg0)
+        public static ValidationEventLocatorImpl Create(Org.Xml.Sax.Locator arg0)
         {
             return JVMBridgeBase.New<ValidationEventLocatorImpl>(arg0);
         }
@@ -133,7 +133,7 @@ namespace Javax.Xml.Bind.Helpers
         /// <summary>
         /// HPA initializer for ValidationEventLocatorImpl(Org.Xml.Sax.SAXParseException arg0)
         /// </summary>
-        public static ValidationEventLocatorImpl New(Org.Xml.Sax.SAXParseException arg0)
+        public static ValidationEventLocatorImpl Create(Org.Xml.Sax.SAXParseException arg0)
         {
             return JVMBridgeBase.New<ValidationEventLocatorImpl>(arg0);
         }

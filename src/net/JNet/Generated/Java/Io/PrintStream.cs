@@ -77,7 +77,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintStream(Java.Io.File arg0, Java.Lang.String arg1)
         /// </summary>
-        public static PrintStream New(Java.Io.File arg0, Java.Lang.String arg1)
+        public static PrintStream Create(Java.Io.File arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<PrintStream>(arg0, arg1);
         }
@@ -93,7 +93,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintStream(Java.Io.File arg0)
         /// </summary>
-        public static PrintStream New(Java.Io.File arg0)
+        public static PrintStream Create(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<PrintStream>(arg0);
         }
@@ -111,7 +111,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintStream(Java.Io.OutputStream arg0, bool arg1, Java.Lang.String arg2)
         /// </summary>
-        public static PrintStream New(Java.Io.OutputStream arg0, bool arg1, Java.Lang.String arg2)
+        public static PrintStream Create(Java.Io.OutputStream arg0, bool arg1, Java.Lang.String arg2)
         {
             return JVMBridgeBase.New<PrintStream>(arg0, arg1, arg2);
         }
@@ -127,7 +127,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintStream(Java.Io.OutputStream arg0, bool arg1)
         /// </summary>
-        public static PrintStream New(Java.Io.OutputStream arg0, bool arg1)
+        public static PrintStream Create(Java.Io.OutputStream arg0, bool arg1)
         {
             return JVMBridgeBase.New<PrintStream>(arg0, arg1);
         }
@@ -142,7 +142,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintStream(Java.Io.OutputStream arg0)
         /// </summary>
-        public static PrintStream New(Java.Io.OutputStream arg0)
+        public static PrintStream Create(Java.Io.OutputStream arg0)
         {
             return JVMBridgeBase.New<PrintStream>(arg0);
         }
@@ -160,7 +160,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintStream(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static PrintStream New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static PrintStream Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<PrintStream>(arg0, arg1);
         }
@@ -176,7 +176,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for PrintStream(Java.Lang.String arg0)
         /// </summary>
-        public static PrintStream New(Java.Lang.String arg0)
+        public static PrintStream Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<PrintStream>(arg0);
         }

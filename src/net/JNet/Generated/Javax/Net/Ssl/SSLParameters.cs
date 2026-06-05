@@ -73,7 +73,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for SSLParameters()
         /// </summary>
-        public static SSLParameters New()
+        public static SSLParameters Create()
         {
             return JVMBridgeBase.New<SSLParameters>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for SSLParameters(Java.Lang.String[] arg0, Java.Lang.String[] arg1)
         /// </summary>
-        public static SSLParameters New(Java.Lang.String[] arg0, Java.Lang.String[] arg1)
+        public static SSLParameters Create(Java.Lang.String[] arg0, Java.Lang.String[] arg1)
         {
             return JVMBridgeBase.New<SSLParameters>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// HPA initializer for SSLParameters(Java.Lang.String[] arg0)
         /// </summary>
-        public static SSLParameters New(Java.Lang.String[] arg0)
+        public static SSLParameters Create(Java.Lang.String[] arg0)
         {
             return JVMBridgeBase.New<SSLParameters>(arg0);
         }

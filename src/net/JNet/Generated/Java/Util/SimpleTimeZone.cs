@@ -86,7 +86,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for SimpleTimeZone(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, int arg12)
         /// </summary>
-        public static SimpleTimeZone New(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, int arg12)
+        public static SimpleTimeZone Create(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, int arg12)
         {
             return JVMBridgeBase.New<SimpleTimeZone>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
         }
@@ -111,7 +111,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for SimpleTimeZone(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10)
         /// </summary>
-        public static SimpleTimeZone New(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10)
+        public static SimpleTimeZone Create(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10)
         {
             return JVMBridgeBase.New<SimpleTimeZone>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
@@ -135,7 +135,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for SimpleTimeZone(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9)
         /// </summary>
-        public static SimpleTimeZone New(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9)
+        public static SimpleTimeZone Create(int arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9)
         {
             return JVMBridgeBase.New<SimpleTimeZone>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
@@ -151,7 +151,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for SimpleTimeZone(int arg0, Java.Lang.String arg1)
         /// </summary>
-        public static SimpleTimeZone New(int arg0, Java.Lang.String arg1)
+        public static SimpleTimeZone Create(int arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<SimpleTimeZone>(arg0, arg1);
         }

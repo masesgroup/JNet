@@ -76,7 +76,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for ContainerEvent(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2)
         /// </summary>
-        public static ContainerEvent New(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2)
+        public static ContainerEvent Create(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2)
         {
             return JVMBridgeBase.New<ContainerEvent>(arg0, arg1, arg2);
         }

@@ -73,7 +73,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicInteger()
         /// </summary>
-        public static AtomicInteger New()
+        public static AtomicInteger Create()
         {
             return JVMBridgeBase.New<AtomicInteger>();
         }
@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicInteger(int arg0)
         /// </summary>
-        public static AtomicInteger New(int arg0)
+        public static AtomicInteger Create(int arg0)
         {
             return JVMBridgeBase.New<AtomicInteger>(arg0);
         }

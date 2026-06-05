@@ -73,7 +73,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// HPA initializer for Paper()
         /// </summary>
-        public static Paper New()
+        public static Paper Create()
         {
             return JVMBridgeBase.New<Paper>();
         }

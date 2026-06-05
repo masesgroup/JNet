@@ -84,7 +84,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for MouseWheelEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, int arg8, int arg9, int arg10)
         /// </summary>
-        public static MouseWheelEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, int arg8, int arg9, int arg10)
+        public static MouseWheelEvent Create(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, int arg8, int arg9, int arg10)
         {
             return JVMBridgeBase.New<MouseWheelEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
@@ -112,7 +112,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for MouseWheelEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10, int arg11, int arg12, double arg13)
         /// </summary>
-        public static MouseWheelEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10, int arg11, int arg12, double arg13)
+        public static MouseWheelEvent Create(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10, int arg11, int arg12, double arg13)
         {
             return JVMBridgeBase.New<MouseWheelEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
         }
@@ -139,7 +139,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for MouseWheelEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10, int arg11, int arg12)
         /// </summary>
-        public static MouseWheelEvent New(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10, int arg11, int arg12)
+        public static MouseWheelEvent Create(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10, int arg11, int arg12)
         {
             return JVMBridgeBase.New<MouseWheelEvent>(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
         }

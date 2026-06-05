@@ -75,7 +75,7 @@ namespace Java.Rmi.Dgc
         /// <summary>
         /// HPA initializer for Lease(Java.Rmi.Dgc.VMID arg0, long arg1)
         /// </summary>
-        public static Lease New(Java.Rmi.Dgc.VMID arg0, long arg1)
+        public static Lease Create(Java.Rmi.Dgc.VMID arg0, long arg1)
         {
             return JVMBridgeBase.New<Lease>(arg0, arg1);
         }

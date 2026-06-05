@@ -78,7 +78,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         /// </summary>
-        public static PropertyDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        public static PropertyDescriptor Create(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
             return JVMBridgeBase.New<PropertyDescriptor>(arg0, arg1, arg2, arg3);
         }
@@ -95,7 +95,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1)
         /// </summary>
-        public static PropertyDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1)
+        public static PropertyDescriptor Create(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
             return JVMBridgeBase.New<PropertyDescriptor>(arg0, arg1);
         }
@@ -113,7 +113,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for PropertyDescriptor(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2)
         /// </summary>
-        public static PropertyDescriptor New(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2)
+        public static PropertyDescriptor Create(Java.Lang.String arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2)
         {
             return JVMBridgeBase.New<PropertyDescriptor>(arg0, arg1, arg2);
         }

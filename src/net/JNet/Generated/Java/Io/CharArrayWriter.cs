@@ -73,7 +73,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for CharArrayWriter()
         /// </summary>
-        public static CharArrayWriter New()
+        public static CharArrayWriter Create()
         {
             return JVMBridgeBase.New<CharArrayWriter>();
         }
@@ -88,7 +88,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for CharArrayWriter(int arg0)
         /// </summary>
-        public static CharArrayWriter New(int arg0)
+        public static CharArrayWriter Create(int arg0)
         {
             return JVMBridgeBase.New<CharArrayWriter>(arg0);
         }

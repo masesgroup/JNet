@@ -142,7 +142,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalComboBoxUI()
         /// </summary>
-        public static MetalComboBoxUI New()
+        public static MetalComboBoxUI Create()
         {
             return JVMBridgeBase.New<MetalComboBoxUI>();
         }
@@ -220,7 +220,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for MetalComboBoxLayoutManager(Javax.Swing.Plaf.Metal.MetalComboBoxUI arg0)
             /// </summary>
-            public static MetalComboBoxLayoutManager New(Javax.Swing.Plaf.Metal.MetalComboBoxUI arg0)
+            public static MetalComboBoxLayoutManager Create(Javax.Swing.Plaf.Metal.MetalComboBoxUI arg0)
             {
                 return JVMBridgeBase.New<MetalComboBoxLayoutManager>(arg0);
             }
@@ -275,7 +275,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// HPA initializer for MetalComboPopup(Javax.Swing.Plaf.Metal.MetalComboBoxUI arg0, Javax.Swing.JComboBox arg1)
             /// </summary>
-            public static MetalComboPopup New(Javax.Swing.Plaf.Metal.MetalComboBoxUI arg0, Javax.Swing.JComboBox arg1)
+            public static MetalComboPopup Create(Javax.Swing.Plaf.Metal.MetalComboBoxUI arg0, Javax.Swing.JComboBox arg1)
             {
                 return JVMBridgeBase.New<MetalComboPopup>(arg0, arg1);
             }

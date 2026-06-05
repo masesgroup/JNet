@@ -78,7 +78,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2, int arg3, int arg4)
         /// </summary>
-        public static DragSourceDropEvent New(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2, int arg3, int arg4)
+        public static DragSourceDropEvent Create(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<DragSourceDropEvent>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -95,7 +95,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2)
         /// </summary>
-        public static DragSourceDropEvent New(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2)
+        public static DragSourceDropEvent Create(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2)
         {
             return JVMBridgeBase.New<DragSourceDropEvent>(arg0, arg1, arg2);
         }
@@ -110,7 +110,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// HPA initializer for DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0)
         /// </summary>
-        public static DragSourceDropEvent New(Java.Awt.Dnd.DragSourceContext arg0)
+        public static DragSourceDropEvent Create(Java.Awt.Dnd.DragSourceContext arg0)
         {
             return JVMBridgeBase.New<DragSourceDropEvent>(arg0);
         }

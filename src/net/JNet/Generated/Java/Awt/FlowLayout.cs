@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for FlowLayout()
         /// </summary>
-        public static FlowLayout New()
+        public static FlowLayout Create()
         {
             return JVMBridgeBase.New<FlowLayout>();
         }
@@ -90,7 +90,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for FlowLayout(int arg0, int arg1, int arg2)
         /// </summary>
-        public static FlowLayout New(int arg0, int arg1, int arg2)
+        public static FlowLayout Create(int arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<FlowLayout>(arg0, arg1, arg2);
         }
@@ -105,7 +105,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for FlowLayout(int arg0)
         /// </summary>
-        public static FlowLayout New(int arg0)
+        public static FlowLayout Create(int arg0)
         {
             return JVMBridgeBase.New<FlowLayout>(arg0);
         }

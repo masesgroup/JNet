@@ -76,7 +76,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Scanner(Java.Io.File arg0, Java.Lang.String arg1)
         /// </summary>
-        public static Scanner New(Java.Io.File arg0, Java.Lang.String arg1)
+        public static Scanner Create(Java.Io.File arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<Scanner>(arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Scanner(Java.Io.File arg0)
         /// </summary>
-        public static Scanner New(Java.Io.File arg0)
+        public static Scanner Create(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<Scanner>(arg0);
         }
@@ -108,7 +108,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Scanner(Java.Io.InputStream arg0, Java.Lang.String arg1)
         /// </summary>
-        public static Scanner New(Java.Io.InputStream arg0, Java.Lang.String arg1)
+        public static Scanner Create(Java.Io.InputStream arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<Scanner>(arg0, arg1);
         }
@@ -123,7 +123,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Scanner(Java.Io.InputStream arg0)
         /// </summary>
-        public static Scanner New(Java.Io.InputStream arg0)
+        public static Scanner Create(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<Scanner>(arg0);
         }
@@ -138,7 +138,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Scanner(Java.Lang.Readable arg0)
         /// </summary>
-        public static Scanner New(Java.Lang.Readable arg0)
+        public static Scanner Create(Java.Lang.Readable arg0)
         {
             return JVMBridgeBase.New<Scanner>(arg0);
         }
@@ -153,7 +153,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Scanner(Java.Lang.String arg0)
         /// </summary>
-        public static Scanner New(Java.Lang.String arg0)
+        public static Scanner Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<Scanner>(arg0);
         }
@@ -169,7 +169,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Scanner(Java.Nio.Channels.ReadableByteChannel arg0, Java.Lang.String arg1)
         /// </summary>
-        public static Scanner New(Java.Nio.Channels.ReadableByteChannel arg0, Java.Lang.String arg1)
+        public static Scanner Create(Java.Nio.Channels.ReadableByteChannel arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<Scanner>(arg0, arg1);
         }
@@ -184,7 +184,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Scanner(Java.Nio.Channels.ReadableByteChannel arg0)
         /// </summary>
-        public static Scanner New(Java.Nio.Channels.ReadableByteChannel arg0)
+        public static Scanner Create(Java.Nio.Channels.ReadableByteChannel arg0)
         {
             return JVMBridgeBase.New<Scanner>(arg0);
         }
@@ -201,7 +201,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Scanner(Java.Nio.File.Path arg0, Java.Lang.String arg1)
         /// </summary>
-        public static Scanner New(Java.Nio.File.Path arg0, Java.Lang.String arg1)
+        public static Scanner Create(Java.Nio.File.Path arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<Scanner>(arg0, arg1);
         }
@@ -217,7 +217,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Scanner(Java.Nio.File.Path arg0)
         /// </summary>
-        public static Scanner New(Java.Nio.File.Path arg0)
+        public static Scanner Create(Java.Nio.File.Path arg0)
         {
             return JVMBridgeBase.New<Scanner>(arg0);
         }

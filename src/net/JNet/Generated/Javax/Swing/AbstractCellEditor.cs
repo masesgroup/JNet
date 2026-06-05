@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for AbstractCellEditor()
         /// </summary>
-        public static AbstractCellEditor New()
+        public static AbstractCellEditor Create()
         {
             return JVMBridgeBase.New<AbstractCellEditor>();
         }

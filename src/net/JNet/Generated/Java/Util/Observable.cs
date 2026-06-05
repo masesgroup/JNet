@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for Observable()
         /// </summary>
-        public static Observable New()
+        public static Observable Create()
         {
             return JVMBridgeBase.New<Observable>();
         }

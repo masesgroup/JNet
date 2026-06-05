@@ -78,7 +78,7 @@ namespace Javax.Naming.Event
         /// <summary>
         /// HPA initializer for NamingEvent(Javax.Naming.Event.EventContext arg0, int arg1, Javax.Naming.Binding arg2, Javax.Naming.Binding arg3, object arg4)
         /// </summary>
-        public static NamingEvent New(Javax.Naming.Event.EventContext arg0, int arg1, Javax.Naming.Binding arg2, Javax.Naming.Binding arg3, object arg4)
+        public static NamingEvent Create(Javax.Naming.Event.EventContext arg0, int arg1, Javax.Naming.Binding arg2, Javax.Naming.Binding arg3, object arg4)
         {
             return JVMBridgeBase.New<NamingEvent>(arg0, arg1, arg2, arg3, arg4);
         }

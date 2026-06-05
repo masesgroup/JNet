@@ -109,7 +109,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicReferenceArray(int arg0)
         /// </summary>
-        public static AtomicReferenceArray New(int arg0)
+        public static AtomicReferenceArray Create(int arg0)
         {
             return JVMBridgeBase.New<AtomicReferenceArray>(arg0);
         }
@@ -264,7 +264,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicReferenceArray(E[] arg0)
         /// </summary>
-        public static AtomicReferenceArray<E> New(E[] arg0)
+        public static AtomicReferenceArray<E> Create(E[] arg0)
         {
             return JVMBridgeBase.New<AtomicReferenceArray<E>>(arg0);
         }
@@ -279,7 +279,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// HPA initializer for AtomicReferenceArray(int arg0)
         /// </summary>
-        public static AtomicReferenceArray<E> New(int arg0)
+        public static AtomicReferenceArray<E> Create(int arg0)
         {
             return JVMBridgeBase.New<AtomicReferenceArray<E>>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Script
         /// <summary>
         /// HPA initializer for CompiledScript()
         /// </summary>
-        public static CompiledScript New()
+        public static CompiledScript Create()
         {
             return JVMBridgeBase.New<CompiledScript>();
         }

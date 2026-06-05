@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for InternalFrameUI()
         /// </summary>
-        public static InternalFrameUI New()
+        public static InternalFrameUI Create()
         {
             return JVMBridgeBase.New<InternalFrameUI>();
         }

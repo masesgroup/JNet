@@ -73,7 +73,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for LayoutPath()
         /// </summary>
-        public static LayoutPath New()
+        public static LayoutPath Create()
         {
             return JVMBridgeBase.New<LayoutPath>();
         }

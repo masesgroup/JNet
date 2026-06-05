@@ -73,7 +73,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// HPA initializer for DefaultMutableTreeNode()
         /// </summary>
-        public static DefaultMutableTreeNode New()
+        public static DefaultMutableTreeNode Create()
         {
             return JVMBridgeBase.New<DefaultMutableTreeNode>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// HPA initializer for DefaultMutableTreeNode(object arg0, bool arg1)
         /// </summary>
-        public static DefaultMutableTreeNode New(object arg0, bool arg1)
+        public static DefaultMutableTreeNode Create(object arg0, bool arg1)
         {
             return JVMBridgeBase.New<DefaultMutableTreeNode>(arg0, arg1);
         }
@@ -104,7 +104,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// HPA initializer for DefaultMutableTreeNode(object arg0)
         /// </summary>
-        public static DefaultMutableTreeNode New(object arg0)
+        public static DefaultMutableTreeNode Create(object arg0)
         {
             return JVMBridgeBase.New<DefaultMutableTreeNode>(arg0);
         }

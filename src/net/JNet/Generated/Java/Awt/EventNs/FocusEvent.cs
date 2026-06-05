@@ -77,7 +77,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for FocusEvent(Java.Awt.Component arg0, int arg1, bool arg2, Java.Awt.Component arg3)
         /// </summary>
-        public static FocusEvent New(Java.Awt.Component arg0, int arg1, bool arg2, Java.Awt.Component arg3)
+        public static FocusEvent Create(Java.Awt.Component arg0, int arg1, bool arg2, Java.Awt.Component arg3)
         {
             return JVMBridgeBase.New<FocusEvent>(arg0, arg1, arg2, arg3);
         }
@@ -94,7 +94,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for FocusEvent(Java.Awt.Component arg0, int arg1, bool arg2)
         /// </summary>
-        public static FocusEvent New(Java.Awt.Component arg0, int arg1, bool arg2)
+        public static FocusEvent Create(Java.Awt.Component arg0, int arg1, bool arg2)
         {
             return JVMBridgeBase.New<FocusEvent>(arg0, arg1, arg2);
         }
@@ -110,7 +110,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for FocusEvent(Java.Awt.Component arg0, int arg1)
         /// </summary>
-        public static FocusEvent New(Java.Awt.Component arg0, int arg1)
+        public static FocusEvent Create(Java.Awt.Component arg0, int arg1)
         {
             return JVMBridgeBase.New<FocusEvent>(arg0, arg1);
         }

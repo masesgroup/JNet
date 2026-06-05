@@ -74,7 +74,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalInternalFrameUI(Javax.Swing.JInternalFrame arg0)
         /// </summary>
-        public static MetalInternalFrameUI New(Javax.Swing.JInternalFrame arg0)
+        public static MetalInternalFrameUI Create(Javax.Swing.JInternalFrame arg0)
         {
             return JVMBridgeBase.New<MetalInternalFrameUI>(arg0);
         }

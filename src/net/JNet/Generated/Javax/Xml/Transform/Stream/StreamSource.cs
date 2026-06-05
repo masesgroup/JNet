@@ -73,7 +73,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// HPA initializer for StreamSource()
         /// </summary>
-        public static StreamSource New()
+        public static StreamSource Create()
         {
             return JVMBridgeBase.New<StreamSource>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// HPA initializer for StreamSource(Java.Io.File arg0)
         /// </summary>
-        public static StreamSource New(Java.Io.File arg0)
+        public static StreamSource Create(Java.Io.File arg0)
         {
             return JVMBridgeBase.New<StreamSource>(arg0);
         }
@@ -104,7 +104,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// HPA initializer for StreamSource(Java.Io.InputStream arg0, Java.Lang.String arg1)
         /// </summary>
-        public static StreamSource New(Java.Io.InputStream arg0, Java.Lang.String arg1)
+        public static StreamSource Create(Java.Io.InputStream arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<StreamSource>(arg0, arg1);
         }
@@ -119,7 +119,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// HPA initializer for StreamSource(Java.Io.InputStream arg0)
         /// </summary>
-        public static StreamSource New(Java.Io.InputStream arg0)
+        public static StreamSource Create(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<StreamSource>(arg0);
         }
@@ -135,7 +135,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// HPA initializer for StreamSource(Java.Io.Reader arg0, Java.Lang.String arg1)
         /// </summary>
-        public static StreamSource New(Java.Io.Reader arg0, Java.Lang.String arg1)
+        public static StreamSource Create(Java.Io.Reader arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<StreamSource>(arg0, arg1);
         }
@@ -150,7 +150,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// HPA initializer for StreamSource(Java.Io.Reader arg0)
         /// </summary>
-        public static StreamSource New(Java.Io.Reader arg0)
+        public static StreamSource Create(Java.Io.Reader arg0)
         {
             return JVMBridgeBase.New<StreamSource>(arg0);
         }
@@ -165,7 +165,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// HPA initializer for StreamSource(Java.Lang.String arg0)
         /// </summary>
-        public static StreamSource New(Java.Lang.String arg0)
+        public static StreamSource Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<StreamSource>(arg0);
         }

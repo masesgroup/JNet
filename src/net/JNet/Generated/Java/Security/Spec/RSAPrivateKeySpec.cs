@@ -76,7 +76,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for RSAPrivateKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
         /// </summary>
-        public static RSAPrivateKeySpec New(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
+        public static RSAPrivateKeySpec Create(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
         {
             return JVMBridgeBase.New<RSAPrivateKeySpec>(arg0, arg1, arg2);
         }
@@ -92,7 +92,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// HPA initializer for RSAPrivateKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1)
         /// </summary>
-        public static RSAPrivateKeySpec New(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1)
+        public static RSAPrivateKeySpec Create(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1)
         {
             return JVMBridgeBase.New<RSAPrivateKeySpec>(arg0, arg1);
         }

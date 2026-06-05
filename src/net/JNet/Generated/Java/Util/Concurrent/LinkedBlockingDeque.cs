@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedBlockingDeque()
         /// </summary>
-        public static LinkedBlockingDeque New()
+        public static LinkedBlockingDeque Create()
         {
             return JVMBridgeBase.New<LinkedBlockingDeque>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedBlockingDeque(int arg0)
         /// </summary>
-        public static LinkedBlockingDeque New(int arg0)
+        public static LinkedBlockingDeque Create(int arg0)
         {
             return JVMBridgeBase.New<LinkedBlockingDeque>(arg0);
         }
@@ -138,7 +138,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedBlockingDeque(Java.Util.Collection arg0)
         /// </summary>
-        public static LinkedBlockingDeque New(Java.Util.Collection arg0)
+        public static LinkedBlockingDeque Create(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<LinkedBlockingDeque>(arg0);
         }
@@ -479,7 +479,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedBlockingDeque()
         /// </summary>
-        public static LinkedBlockingDeque<E> New()
+        public static LinkedBlockingDeque<E> Create()
         {
             return JVMBridgeBase.New<LinkedBlockingDeque<E>>();
         }
@@ -494,7 +494,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedBlockingDeque(int arg0)
         /// </summary>
-        public static LinkedBlockingDeque<E> New(int arg0)
+        public static LinkedBlockingDeque<E> Create(int arg0)
         {
             return JVMBridgeBase.New<LinkedBlockingDeque<E>>(arg0);
         }
@@ -509,7 +509,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for LinkedBlockingDeque(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static LinkedBlockingDeque<E> New(Java.Util.Collection<E> arg0)
+        public static LinkedBlockingDeque<E> Create(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<LinkedBlockingDeque<E>>(arg0);
         }

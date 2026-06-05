@@ -73,7 +73,7 @@ namespace Java.Awt
         /// <summary>
         /// HPA initializer for KeyboardFocusManager()
         /// </summary>
-        public static KeyboardFocusManager New()
+        public static KeyboardFocusManager Create()
         {
             return JVMBridgeBase.New<KeyboardFocusManager>();
         }

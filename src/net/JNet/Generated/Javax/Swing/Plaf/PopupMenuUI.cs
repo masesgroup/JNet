@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for PopupMenuUI()
         /// </summary>
-        public static PopupMenuUI New()
+        public static PopupMenuUI Create()
         {
             return JVMBridgeBase.New<PopupMenuUI>();
         }

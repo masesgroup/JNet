@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for InputMapUIResource()
         /// </summary>
-        public static InputMapUIResource New()
+        public static InputMapUIResource Create()
         {
             return JVMBridgeBase.New<InputMapUIResource>();
         }

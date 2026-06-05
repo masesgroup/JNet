@@ -74,7 +74,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for View(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static View New(Javax.Swing.Text.Element arg0)
+        public static View Create(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<View>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for BitSet()
         /// </summary>
-        public static BitSet New()
+        public static BitSet Create()
         {
             return JVMBridgeBase.New<BitSet>();
         }
@@ -88,7 +88,7 @@ namespace Java.Util
         /// <summary>
         /// HPA initializer for BitSet(int arg0)
         /// </summary>
-        public static BitSet New(int arg0)
+        public static BitSet Create(int arg0)
         {
             return JVMBridgeBase.New<BitSet>(arg0);
         }

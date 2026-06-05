@@ -75,7 +75,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// HPA initializer for TextMeasurer(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
         /// </summary>
-        public static TextMeasurer New(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
+        public static TextMeasurer Create(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
         {
             return JVMBridgeBase.New<TextMeasurer>(arg0, arg1);
         }

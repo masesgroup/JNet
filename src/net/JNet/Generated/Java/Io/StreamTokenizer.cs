@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for StreamTokenizer(Java.Io.InputStream arg0)
         /// </summary>
-        public static StreamTokenizer New(Java.Io.InputStream arg0)
+        public static StreamTokenizer Create(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<StreamTokenizer>(arg0);
         }
@@ -90,7 +90,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for StreamTokenizer(Java.Io.Reader arg0)
         /// </summary>
-        public static StreamTokenizer New(Java.Io.Reader arg0)
+        public static StreamTokenizer Create(Java.Io.Reader arg0)
         {
             return JVMBridgeBase.New<StreamTokenizer>(arg0);
         }

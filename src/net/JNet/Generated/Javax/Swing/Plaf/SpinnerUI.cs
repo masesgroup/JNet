@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf
         /// <summary>
         /// HPA initializer for SpinnerUI()
         /// </summary>
-        public static SpinnerUI New()
+        public static SpinnerUI Create()
         {
             return JVMBridgeBase.New<SpinnerUI>();
         }

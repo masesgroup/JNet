@@ -78,7 +78,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanAttributeInfo(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3)
         /// </summary>
-        public static MBeanAttributeInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3)
+        public static MBeanAttributeInfo Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3)
         {
             return JVMBridgeBase.New<MBeanAttributeInfo>(arg0, arg1, arg2, arg3);
         }
@@ -99,7 +99,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanAttributeInfo(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
         /// </summary>
-        public static MBeanAttributeInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
+        public static MBeanAttributeInfo Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
         {
             return JVMBridgeBase.New<MBeanAttributeInfo>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -119,7 +119,7 @@ namespace Javax.Management
         /// <summary>
         /// HPA initializer for MBeanAttributeInfo(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3, bool arg4, bool arg5)
         /// </summary>
-        public static MBeanAttributeInfo New(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3, bool arg4, bool arg5)
+        public static MBeanAttributeInfo Create(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3, bool arg4, bool arg5)
         {
             return JVMBridgeBase.New<MBeanAttributeInfo>(arg0, arg1, arg2, arg3, arg4, arg5);
         }

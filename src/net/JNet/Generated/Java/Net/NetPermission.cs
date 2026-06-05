@@ -75,7 +75,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for NetPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static NetPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static NetPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<NetPermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Net
         /// <summary>
         /// HPA initializer for NetPermission(Java.Lang.String arg0)
         /// </summary>
-        public static NetPermission New(Java.Lang.String arg0)
+        public static NetPermission Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<NetPermission>(arg0);
         }

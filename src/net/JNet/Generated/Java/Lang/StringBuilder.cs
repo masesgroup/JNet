@@ -73,7 +73,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for StringBuilder()
         /// </summary>
-        public static StringBuilder New()
+        public static StringBuilder Create()
         {
             return JVMBridgeBase.New<StringBuilder>();
         }
@@ -88,7 +88,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for StringBuilder(int arg0)
         /// </summary>
-        public static StringBuilder New(int arg0)
+        public static StringBuilder Create(int arg0)
         {
             return JVMBridgeBase.New<StringBuilder>(arg0);
         }
@@ -103,7 +103,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for StringBuilder(Java.Lang.CharSequence arg0)
         /// </summary>
-        public static StringBuilder New(Java.Lang.CharSequence arg0)
+        public static StringBuilder Create(Java.Lang.CharSequence arg0)
         {
             return JVMBridgeBase.New<StringBuilder>(arg0);
         }
@@ -118,7 +118,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for StringBuilder(Java.Lang.String arg0)
         /// </summary>
-        public static StringBuilder New(Java.Lang.String arg0)
+        public static StringBuilder Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<StringBuilder>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// HPA initializer for IIOMetadataNode()
         /// </summary>
-        public static IIOMetadataNode New()
+        public static IIOMetadataNode Create()
         {
             return JVMBridgeBase.New<IIOMetadataNode>();
         }
@@ -88,7 +88,7 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// HPA initializer for IIOMetadataNode(Java.Lang.String arg0)
         /// </summary>
-        public static IIOMetadataNode New(Java.Lang.String arg0)
+        public static IIOMetadataNode Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<IIOMetadataNode>(arg0);
         }

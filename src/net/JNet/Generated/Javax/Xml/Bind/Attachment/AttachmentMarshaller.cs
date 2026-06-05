@@ -73,7 +73,7 @@ namespace Javax.Xml.Bind.Attachment
         /// <summary>
         /// HPA initializer for AttachmentMarshaller()
         /// </summary>
-        public static AttachmentMarshaller New()
+        public static AttachmentMarshaller Create()
         {
             return JVMBridgeBase.New<AttachmentMarshaller>();
         }

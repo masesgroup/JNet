@@ -74,7 +74,7 @@ namespace Javax.Security.Auth
         /// <summary>
         /// HPA initializer for SubjectDomainCombiner(Javax.Security.Auth.Subject arg0)
         /// </summary>
-        public static SubjectDomainCombiner New(Javax.Security.Auth.Subject arg0)
+        public static SubjectDomainCombiner Create(Javax.Security.Auth.Subject arg0)
         {
             return JVMBridgeBase.New<SubjectDomainCombiner>(arg0);
         }

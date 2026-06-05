@@ -107,7 +107,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for Policy()
         /// </summary>
-        public static Policy New()
+        public static Policy Create()
         {
             return JVMBridgeBase.New<Policy>();
         }

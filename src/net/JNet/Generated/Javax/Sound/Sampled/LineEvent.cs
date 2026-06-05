@@ -110,7 +110,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// HPA initializer for LineEvent(Javax.Sound.Sampled.Line arg0, Javax.Sound.Sampled.LineEvent.Type arg1, long arg2)
         /// </summary>
-        public static LineEvent New(Javax.Sound.Sampled.Line arg0, Javax.Sound.Sampled.LineEvent.Type arg1, long arg2)
+        public static LineEvent Create(Javax.Sound.Sampled.Line arg0, Javax.Sound.Sampled.LineEvent.Type arg1, long arg2)
         {
             return JVMBridgeBase.New<LineEvent>(arg0, arg1, arg2);
         }

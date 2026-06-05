@@ -108,7 +108,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// HPA initializer for BasicInternalFrameUI(Javax.Swing.JInternalFrame arg0)
         /// </summary>
-        public static BasicInternalFrameUI New(Javax.Swing.JInternalFrame arg0)
+        public static BasicInternalFrameUI Create(Javax.Swing.JInternalFrame arg0)
         {
             return JVMBridgeBase.New<BasicInternalFrameUI>(arg0);
         }
@@ -183,7 +183,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// HPA initializer for InternalFrameLayout(Javax.Swing.Plaf.Basic.BasicInternalFrameUI arg0)
             /// </summary>
-            public static InternalFrameLayout New(Javax.Swing.Plaf.Basic.BasicInternalFrameUI arg0)
+            public static InternalFrameLayout Create(Javax.Swing.Plaf.Basic.BasicInternalFrameUI arg0)
             {
                 return JVMBridgeBase.New<InternalFrameLayout>(arg0);
             }

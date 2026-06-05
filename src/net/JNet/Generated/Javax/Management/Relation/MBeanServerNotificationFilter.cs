@@ -73,7 +73,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for MBeanServerNotificationFilter()
         /// </summary>
-        public static MBeanServerNotificationFilter New()
+        public static MBeanServerNotificationFilter Create()
         {
             return JVMBridgeBase.New<MBeanServerNotificationFilter>();
         }

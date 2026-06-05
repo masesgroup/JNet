@@ -73,7 +73,7 @@ namespace Javax.Xml.Ws.Wsaddressing
         /// <summary>
         /// HPA initializer for W3CEndpointReferenceBuilder()
         /// </summary>
-        public static W3CEndpointReferenceBuilder New()
+        public static W3CEndpointReferenceBuilder Create()
         {
             return JVMBridgeBase.New<W3CEndpointReferenceBuilder>();
         }

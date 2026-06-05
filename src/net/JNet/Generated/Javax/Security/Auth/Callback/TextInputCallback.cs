@@ -75,7 +75,7 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// HPA initializer for TextInputCallback(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static TextInputCallback New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static TextInputCallback Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<TextInputCallback>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// HPA initializer for TextInputCallback(Java.Lang.String arg0)
         /// </summary>
-        public static TextInputCallback New(Java.Lang.String arg0)
+        public static TextInputCallback Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<TextInputCallback>(arg0);
         }

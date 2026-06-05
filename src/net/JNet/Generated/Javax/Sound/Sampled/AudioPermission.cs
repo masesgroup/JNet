@@ -75,7 +75,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// HPA initializer for AudioPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static AudioPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static AudioPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<AudioPermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// HPA initializer for AudioPermission(Java.Lang.String arg0)
         /// </summary>
-        public static AudioPermission New(Java.Lang.String arg0)
+        public static AudioPermission Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<AudioPermission>(arg0);
         }

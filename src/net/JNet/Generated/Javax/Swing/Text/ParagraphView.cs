@@ -74,7 +74,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// HPA initializer for ParagraphView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static ParagraphView New(Javax.Swing.Text.Element arg0)
+        public static ParagraphView Create(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<ParagraphView>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <summary>
         /// HPA initializer for MixerProvider()
         /// </summary>
-        public static MixerProvider New()
+        public static MixerProvider Create()
         {
             return JVMBridgeBase.New<MixerProvider>();
         }

@@ -73,7 +73,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// HPA initializer for RMISocketFactory()
         /// </summary>
-        public static RMISocketFactory New()
+        public static RMISocketFactory Create()
         {
             return JVMBridgeBase.New<RMISocketFactory>();
         }

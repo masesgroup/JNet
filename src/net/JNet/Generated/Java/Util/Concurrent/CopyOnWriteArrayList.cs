@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CopyOnWriteArrayList()
         /// </summary>
-        public static CopyOnWriteArrayList New()
+        public static CopyOnWriteArrayList Create()
         {
             return JVMBridgeBase.New<CopyOnWriteArrayList>();
         }
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CopyOnWriteArrayList(Java.Util.Collection arg0)
         /// </summary>
-        public static CopyOnWriteArrayList New(Java.Util.Collection arg0)
+        public static CopyOnWriteArrayList Create(Java.Util.Collection arg0)
         {
             return JVMBridgeBase.New<CopyOnWriteArrayList>(arg0);
         }
@@ -466,7 +466,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CopyOnWriteArrayList()
         /// </summary>
-        public static CopyOnWriteArrayList<E> New()
+        public static CopyOnWriteArrayList<E> Create()
         {
             return JVMBridgeBase.New<CopyOnWriteArrayList<E>>();
         }
@@ -481,7 +481,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CopyOnWriteArrayList(E[] arg0)
         /// </summary>
-        public static CopyOnWriteArrayList<E> New(E[] arg0)
+        public static CopyOnWriteArrayList<E> Create(E[] arg0)
         {
             return JVMBridgeBase.New<CopyOnWriteArrayList<E>>(arg0);
         }
@@ -496,7 +496,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CopyOnWriteArrayList(Java.Util.Collection%3CE%3E arg0)
         /// </summary>
-        public static CopyOnWriteArrayList<E> New(Java.Util.Collection<E> arg0)
+        public static CopyOnWriteArrayList<E> Create(Java.Util.Collection<E> arg0)
         {
             return JVMBridgeBase.New<CopyOnWriteArrayList<E>>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// HPA initializer for DefaultTableColumnModel()
         /// </summary>
-        public static DefaultTableColumnModel New()
+        public static DefaultTableColumnModel Create()
         {
             return JVMBridgeBase.New<DefaultTableColumnModel>();
         }

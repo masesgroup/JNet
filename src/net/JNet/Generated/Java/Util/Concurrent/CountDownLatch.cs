@@ -74,7 +74,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// HPA initializer for CountDownLatch(int arg0)
         /// </summary>
-        public static CountDownLatch New(int arg0)
+        public static CountDownLatch Create(int arg0)
         {
             return JVMBridgeBase.New<CountDownLatch>(arg0);
         }

@@ -84,7 +84,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RoleInfo(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, bool arg3, int arg4, int arg5, Java.Lang.String arg6)
         /// </summary>
-        public static RoleInfo New(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, bool arg3, int arg4, int arg5, Java.Lang.String arg6)
+        public static RoleInfo Create(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, bool arg3, int arg4, int arg5, Java.Lang.String arg6)
         {
             return JVMBridgeBase.New<RoleInfo>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -105,7 +105,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RoleInfo(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, bool arg3)
         /// </summary>
-        public static RoleInfo New(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, bool arg3)
+        public static RoleInfo Create(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, bool arg3)
         {
             return JVMBridgeBase.New<RoleInfo>(arg0, arg1, arg2, arg3);
         }
@@ -124,7 +124,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RoleInfo(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static RoleInfo New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static RoleInfo Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<RoleInfo>(arg0, arg1);
         }
@@ -140,7 +140,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// HPA initializer for RoleInfo(Javax.Management.Relation.RoleInfo arg0)
         /// </summary>
-        public static RoleInfo New(Javax.Management.Relation.RoleInfo arg0)
+        public static RoleInfo Create(Javax.Management.Relation.RoleInfo arg0)
         {
             return JVMBridgeBase.New<RoleInfo>(arg0);
         }

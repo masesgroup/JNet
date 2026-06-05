@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// HPA initializer for MetalCheckBoxUI()
         /// </summary>
-        public static MetalCheckBoxUI New()
+        public static MetalCheckBoxUI Create()
         {
             return JVMBridgeBase.New<MetalCheckBoxUI>();
         }

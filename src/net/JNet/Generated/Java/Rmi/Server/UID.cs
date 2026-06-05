@@ -73,7 +73,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// HPA initializer for UID()
         /// </summary>
-        public static UID New()
+        public static UID Create()
         {
             return JVMBridgeBase.New<UID>();
         }
@@ -88,7 +88,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// HPA initializer for UID(short arg0)
         /// </summary>
-        public static UID New(short arg0)
+        public static UID Create(short arg0)
         {
             return JVMBridgeBase.New<UID>(arg0);
         }

@@ -75,7 +75,7 @@ namespace Java.Nio.File
         /// <summary>
         /// HPA initializer for LinkPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static LinkPermission New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static LinkPermission Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<LinkPermission>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Nio.File
         /// <summary>
         /// HPA initializer for LinkPermission(Java.Lang.String arg0)
         /// </summary>
-        public static LinkPermission New(Java.Lang.String arg0)
+        public static LinkPermission Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<LinkPermission>(arg0);
         }

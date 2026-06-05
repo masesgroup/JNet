@@ -74,7 +74,7 @@ namespace Javax.Accessibility
         /// <summary>
         /// HPA initializer for AccessibleResourceBundle()
         /// </summary>
-        public static AccessibleResourceBundle New()
+        public static AccessibleResourceBundle Create()
         {
             return JVMBridgeBase.New<AccessibleResourceBundle>();
         }

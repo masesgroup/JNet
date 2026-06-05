@@ -76,7 +76,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// HPA initializer for SerialBlob(byte[] arg0)
         /// </summary>
-        public static SerialBlob New(byte[] arg0)
+        public static SerialBlob Create(byte[] arg0)
         {
             return JVMBridgeBase.New<SerialBlob>(arg0);
         }
@@ -93,7 +93,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// HPA initializer for SerialBlob(Java.Sql.Blob arg0)
         /// </summary>
-        public static SerialBlob New(Java.Sql.Blob arg0)
+        public static SerialBlob Create(Java.Sql.Blob arg0)
         {
             return JVMBridgeBase.New<SerialBlob>(arg0);
         }

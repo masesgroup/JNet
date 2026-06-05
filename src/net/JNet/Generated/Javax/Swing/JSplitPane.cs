@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSplitPane()
         /// </summary>
-        public static JSplitPane New()
+        public static JSplitPane Create()
         {
             return JVMBridgeBase.New<JSplitPane>();
         }
@@ -91,7 +91,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSplitPane(int arg0, bool arg1, Java.Awt.Component arg2, Java.Awt.Component arg3)
         /// </summary>
-        public static JSplitPane New(int arg0, bool arg1, Java.Awt.Component arg2, Java.Awt.Component arg3)
+        public static JSplitPane Create(int arg0, bool arg1, Java.Awt.Component arg2, Java.Awt.Component arg3)
         {
             return JVMBridgeBase.New<JSplitPane>(arg0, arg1, arg2, arg3);
         }
@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSplitPane(int arg0, bool arg1)
         /// </summary>
-        public static JSplitPane New(int arg0, bool arg1)
+        public static JSplitPane Create(int arg0, bool arg1)
         {
             return JVMBridgeBase.New<JSplitPane>(arg0, arg1);
         }
@@ -124,7 +124,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSplitPane(int arg0, Java.Awt.Component arg1, Java.Awt.Component arg2)
         /// </summary>
-        public static JSplitPane New(int arg0, Java.Awt.Component arg1, Java.Awt.Component arg2)
+        public static JSplitPane Create(int arg0, Java.Awt.Component arg1, Java.Awt.Component arg2)
         {
             return JVMBridgeBase.New<JSplitPane>(arg0, arg1, arg2);
         }
@@ -139,7 +139,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JSplitPane(int arg0)
         /// </summary>
-        public static JSplitPane New(int arg0)
+        public static JSplitPane Create(int arg0)
         {
             return JVMBridgeBase.New<JSplitPane>(arg0);
         }

@@ -73,7 +73,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for SimpleFormatter()
         /// </summary>
-        public static SimpleFormatter New()
+        public static SimpleFormatter Create()
         {
             return JVMBridgeBase.New<SimpleFormatter>();
         }

@@ -111,7 +111,7 @@ namespace Java.Security
         /// <summary>
         /// HPA initializer for KeyRep(Java.Security.KeyRep.Type arg0, Java.Lang.String arg1, Java.Lang.String arg2, byte[] arg3)
         /// </summary>
-        public static KeyRep New(Java.Security.KeyRep.Type arg0, Java.Lang.String arg1, Java.Lang.String arg2, byte[] arg3)
+        public static KeyRep Create(Java.Security.KeyRep.Type arg0, Java.Lang.String arg1, Java.Lang.String arg2, byte[] arg3)
         {
             return JVMBridgeBase.New<KeyRep>(arg0, arg1, arg2, arg3);
         }

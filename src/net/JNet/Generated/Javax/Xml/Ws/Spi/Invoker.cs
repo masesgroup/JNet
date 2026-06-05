@@ -73,7 +73,7 @@ namespace Javax.Xml.Ws.Spi
         /// <summary>
         /// HPA initializer for Invoker()
         /// </summary>
-        public static Invoker New()
+        public static Invoker Create()
         {
             return JVMBridgeBase.New<Invoker>();
         }

@@ -111,7 +111,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for ArrayType(int arg0, Javax.Management.Openmbean.OpenType arg1)
         /// </summary>
-        public static ArrayType New(int arg0, Javax.Management.Openmbean.OpenType arg1)
+        public static ArrayType Create(int arg0, Javax.Management.Openmbean.OpenType arg1)
         {
             return JVMBridgeBase.New<ArrayType>(arg0, arg1);
         }
@@ -128,7 +128,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for ArrayType(Javax.Management.Openmbean.SimpleType arg0, bool arg1)
         /// </summary>
-        public static ArrayType New(Javax.Management.Openmbean.SimpleType arg0, bool arg1)
+        public static ArrayType Create(Javax.Management.Openmbean.SimpleType arg0, bool arg1)
         {
             return JVMBridgeBase.New<ArrayType>(arg0, arg1);
         }
@@ -217,7 +217,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for ArrayType(int arg0, Javax.Management.Openmbean.OpenType%3Cobject%3E arg1)
         /// </summary>
-        public static ArrayType<T> New(int arg0, Javax.Management.Openmbean.OpenType<object> arg1)
+        public static ArrayType<T> Create(int arg0, Javax.Management.Openmbean.OpenType<object> arg1)
         {
             return JVMBridgeBase.New<ArrayType<T>>(arg0, arg1);
         }
@@ -234,7 +234,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// HPA initializer for ArrayType(Javax.Management.Openmbean.SimpleType%3Cobject%3E arg0, bool arg1)
         /// </summary>
-        public static ArrayType<T> New(Javax.Management.Openmbean.SimpleType<object> arg0, bool arg1)
+        public static ArrayType<T> Create(Javax.Management.Openmbean.SimpleType<object> arg0, bool arg1)
         {
             return JVMBridgeBase.New<ArrayType<T>>(arg0, arg1);
         }

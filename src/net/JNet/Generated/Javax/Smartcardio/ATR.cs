@@ -74,7 +74,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// HPA initializer for ATR(byte[] arg0)
         /// </summary>
-        public static ATR New(byte[] arg0)
+        public static ATR Create(byte[] arg0)
         {
             return JVMBridgeBase.New<ATR>(arg0);
         }

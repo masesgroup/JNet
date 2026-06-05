@@ -110,7 +110,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// HPA initializer for WeakReference(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
         /// </summary>
-        public static WeakReference New(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
+        public static WeakReference Create(object arg0, Java.Lang.Ref.ReferenceQueue arg1)
         {
             return JVMBridgeBase.New<WeakReference>(arg0, arg1);
         }
@@ -125,7 +125,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// HPA initializer for WeakReference(object arg0)
         /// </summary>
-        public static WeakReference New(object arg0)
+        public static WeakReference Create(object arg0)
         {
             return JVMBridgeBase.New<WeakReference>(arg0);
         }
@@ -172,7 +172,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// HPA initializer for WeakReference(T arg0, Java.Lang.Ref.ReferenceQueue%3CT%3E arg1)
         /// </summary>
-        public static WeakReference<T> New(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
+        public static WeakReference<T> Create(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
         {
             return JVMBridgeBase.New<WeakReference<T>>(arg0, arg1);
         }
@@ -187,7 +187,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// HPA initializer for WeakReference(T arg0)
         /// </summary>
-        public static WeakReference<T> New(T arg0)
+        public static WeakReference<T> Create(T arg0)
         {
             return JVMBridgeBase.New<WeakReference<T>>(arg0);
         }

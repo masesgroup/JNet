@@ -75,7 +75,7 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// HPA initializer for RealmCallback(Java.Lang.String arg0, Java.Lang.String arg1)
         /// </summary>
-        public static RealmCallback New(Java.Lang.String arg0, Java.Lang.String arg1)
+        public static RealmCallback Create(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return JVMBridgeBase.New<RealmCallback>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// HPA initializer for RealmCallback(Java.Lang.String arg0)
         /// </summary>
-        public static RealmCallback New(Java.Lang.String arg0)
+        public static RealmCallback Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<RealmCallback>(arg0);
         }

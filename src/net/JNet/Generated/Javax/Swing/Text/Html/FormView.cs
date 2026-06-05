@@ -74,7 +74,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// HPA initializer for FormView(Javax.Swing.Text.Element arg0)
         /// </summary>
-        public static FormView New(Javax.Swing.Text.Element arg0)
+        public static FormView Create(Javax.Swing.Text.Element arg0)
         {
             return JVMBridgeBase.New<FormView>(arg0);
         }

@@ -74,7 +74,7 @@ namespace Java.Rmi
         /// <summary>
         /// HPA initializer for RMISecurityManager()
         /// </summary>
-        public static RMISecurityManager New()
+        public static RMISecurityManager Create()
         {
             return JVMBridgeBase.New<RMISecurityManager>();
         }

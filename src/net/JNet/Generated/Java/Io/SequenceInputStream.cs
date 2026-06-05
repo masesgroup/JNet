@@ -75,7 +75,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for SequenceInputStream(Java.Io.InputStream arg0, Java.Io.InputStream arg1)
         /// </summary>
-        public static SequenceInputStream New(Java.Io.InputStream arg0, Java.Io.InputStream arg1)
+        public static SequenceInputStream Create(Java.Io.InputStream arg0, Java.Io.InputStream arg1)
         {
             return JVMBridgeBase.New<SequenceInputStream>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Io
         /// <summary>
         /// HPA initializer for SequenceInputStream(Java.Util.Enumeration arg0)
         /// </summary>
-        public static SequenceInputStream New(Java.Util.Enumeration arg0)
+        public static SequenceInputStream Create(Java.Util.Enumeration arg0)
         {
             return JVMBridgeBase.New<SequenceInputStream>(arg0);
         }

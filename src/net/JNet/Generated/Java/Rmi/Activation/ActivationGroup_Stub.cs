@@ -74,7 +74,7 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// HPA initializer for ActivationGroup_Stub(Java.Rmi.Server.RemoteRef arg0)
         /// </summary>
-        public static ActivationGroup_Stub New(Java.Rmi.Server.RemoteRef arg0)
+        public static ActivationGroup_Stub Create(Java.Rmi.Server.RemoteRef arg0)
         {
             return JVMBridgeBase.New<ActivationGroup_Stub>(arg0);
         }

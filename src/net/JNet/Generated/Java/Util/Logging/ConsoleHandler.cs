@@ -73,7 +73,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for ConsoleHandler()
         /// </summary>
-        public static ConsoleHandler New()
+        public static ConsoleHandler Create()
         {
             return JVMBridgeBase.New<ConsoleHandler>();
         }

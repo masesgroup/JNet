@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for DefaultSingleSelectionModel()
         /// </summary>
-        public static DefaultSingleSelectionModel New()
+        public static DefaultSingleSelectionModel Create()
         {
             return JVMBridgeBase.New<DefaultSingleSelectionModel>();
         }

@@ -73,7 +73,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// HPA initializer for CertificateFactorySpi()
         /// </summary>
-        public static CertificateFactorySpi New()
+        public static CertificateFactorySpi Create()
         {
             return JVMBridgeBase.New<CertificateFactorySpi>();
         }

@@ -73,7 +73,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// HPA initializer for ErrorManager()
         /// </summary>
-        public static ErrorManager New()
+        public static ErrorManager Create()
         {
             return JVMBridgeBase.New<ErrorManager>();
         }

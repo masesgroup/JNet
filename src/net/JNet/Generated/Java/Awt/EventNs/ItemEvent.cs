@@ -77,7 +77,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// HPA initializer for ItemEvent(Java.Awt.ItemSelectable arg0, int arg1, object arg2, int arg3)
         /// </summary>
-        public static ItemEvent New(Java.Awt.ItemSelectable arg0, int arg1, object arg2, int arg3)
+        public static ItemEvent Create(Java.Awt.ItemSelectable arg0, int arg1, object arg2, int arg3)
         {
             return JVMBridgeBase.New<ItemEvent>(arg0, arg1, arg2, arg3);
         }

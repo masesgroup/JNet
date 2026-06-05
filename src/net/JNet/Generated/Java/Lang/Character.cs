@@ -176,7 +176,7 @@ namespace Java.Lang
         /// <summary>
         /// HPA initializer for Character(char arg0)
         /// </summary>
-        public static Character New(char arg0)
+        public static Character Create(char arg0)
         {
             return JVMBridgeBase.New<Character>(arg0);
         }

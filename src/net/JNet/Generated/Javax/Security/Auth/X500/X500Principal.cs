@@ -74,7 +74,7 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// HPA initializer for X500Principal(byte[] arg0)
         /// </summary>
-        public static X500Principal New(byte[] arg0)
+        public static X500Principal Create(byte[] arg0)
         {
             return JVMBridgeBase.New<X500Principal>(arg0);
         }
@@ -89,7 +89,7 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// HPA initializer for X500Principal(Java.Io.InputStream arg0)
         /// </summary>
-        public static X500Principal New(Java.Io.InputStream arg0)
+        public static X500Principal Create(Java.Io.InputStream arg0)
         {
             return JVMBridgeBase.New<X500Principal>(arg0);
         }
@@ -105,7 +105,7 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// HPA initializer for X500Principal(Java.Lang.String arg0, Java.Util.Map%3CJava.Lang.String, Java.Lang.String%3E arg1)
         /// </summary>
-        public static X500Principal New(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1)
+        public static X500Principal Create(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1)
         {
             return JVMBridgeBase.New<X500Principal>(arg0, arg1);
         }
@@ -120,7 +120,7 @@ namespace Javax.Security.Auth.X500
         /// <summary>
         /// HPA initializer for X500Principal(Java.Lang.String arg0)
         /// </summary>
-        public static X500Principal New(Java.Lang.String arg0)
+        public static X500Principal Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<X500Principal>(arg0);
         }

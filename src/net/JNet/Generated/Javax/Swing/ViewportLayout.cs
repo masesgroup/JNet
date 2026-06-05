@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for ViewportLayout()
         /// </summary>
-        public static ViewportLayout New()
+        public static ViewportLayout Create()
         {
             return JVMBridgeBase.New<ViewportLayout>();
         }

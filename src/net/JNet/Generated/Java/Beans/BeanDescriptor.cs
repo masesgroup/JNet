@@ -75,7 +75,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for BeanDescriptor(Java.Lang.Class arg0, Java.Lang.Class arg1)
         /// </summary>
-        public static BeanDescriptor New(Java.Lang.Class arg0, Java.Lang.Class arg1)
+        public static BeanDescriptor Create(Java.Lang.Class arg0, Java.Lang.Class arg1)
         {
             return JVMBridgeBase.New<BeanDescriptor>(arg0, arg1);
         }
@@ -90,7 +90,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for BeanDescriptor(Java.Lang.Class arg0)
         /// </summary>
-        public static BeanDescriptor New(Java.Lang.Class arg0)
+        public static BeanDescriptor Create(Java.Lang.Class arg0)
         {
             return JVMBridgeBase.New<BeanDescriptor>(arg0);
         }

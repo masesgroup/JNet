@@ -78,7 +78,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for EventSetDescriptor(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String arg3)
         /// </summary>
-        public static EventSetDescriptor New(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String arg3)
+        public static EventSetDescriptor Create(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String arg3)
         {
             return JVMBridgeBase.New<EventSetDescriptor>(arg0, arg1, arg2, arg3);
         }
@@ -100,7 +100,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for EventSetDescriptor(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
         /// </summary>
-        public static EventSetDescriptor New(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
+        public static EventSetDescriptor Create(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
         {
             return JVMBridgeBase.New<EventSetDescriptor>(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -121,7 +121,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for EventSetDescriptor(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5)
         /// </summary>
-        public static EventSetDescriptor New(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5)
+        public static EventSetDescriptor Create(Java.Lang.Class arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5)
         {
             return JVMBridgeBase.New<EventSetDescriptor>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -141,7 +141,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for EventSetDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Beans.MethodDescriptor[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
         /// </summary>
-        public static EventSetDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Beans.MethodDescriptor[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
+        public static EventSetDescriptor Create(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Beans.MethodDescriptor[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
         {
             return JVMBridgeBase.New<EventSetDescriptor>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -162,7 +162,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for EventSetDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4, Java.Lang.Reflect.Method arg5)
         /// </summary>
-        public static EventSetDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4, Java.Lang.Reflect.Method arg5)
+        public static EventSetDescriptor Create(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4, Java.Lang.Reflect.Method arg5)
         {
             return JVMBridgeBase.New<EventSetDescriptor>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -182,7 +182,7 @@ namespace Java.Beans
         /// <summary>
         /// HPA initializer for EventSetDescriptor(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
         /// </summary>
-        public static EventSetDescriptor New(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
+        public static EventSetDescriptor Create(Java.Lang.String arg0, Java.Lang.Class arg1, Java.Lang.Reflect.Method[] arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
         {
             return JVMBridgeBase.New<EventSetDescriptor>(arg0, arg1, arg2, arg3, arg4);
         }

@@ -78,7 +78,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for MediaPrintableArea(float arg0, float arg1, float arg2, float arg3, int arg4)
         /// </summary>
-        public static MediaPrintableArea New(float arg0, float arg1, float arg2, float arg3, int arg4)
+        public static MediaPrintableArea Create(float arg0, float arg1, float arg2, float arg3, int arg4)
         {
             return JVMBridgeBase.New<MediaPrintableArea>(arg0, arg1, arg2, arg3, arg4);
         }
@@ -97,7 +97,7 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// HPA initializer for MediaPrintableArea(int arg0, int arg1, int arg2, int arg3, int arg4)
         /// </summary>
-        public static MediaPrintableArea New(int arg0, int arg1, int arg2, int arg3, int arg4)
+        public static MediaPrintableArea Create(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
             return JVMBridgeBase.New<MediaPrintableArea>(arg0, arg1, arg2, arg3, arg4);
         }

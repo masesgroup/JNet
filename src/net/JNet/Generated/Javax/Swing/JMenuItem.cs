@@ -73,7 +73,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JMenuItem()
         /// </summary>
-        public static JMenuItem New()
+        public static JMenuItem Create()
         {
             return JVMBridgeBase.New<JMenuItem>();
         }
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JMenuItem(Java.Lang.String arg0, int arg1)
         /// </summary>
-        public static JMenuItem New(Java.Lang.String arg0, int arg1)
+        public static JMenuItem Create(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<JMenuItem>(arg0, arg1);
         }
@@ -105,7 +105,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JMenuItem(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         /// </summary>
-        public static JMenuItem New(Java.Lang.String arg0, Javax.Swing.Icon arg1)
+        public static JMenuItem Create(Java.Lang.String arg0, Javax.Swing.Icon arg1)
         {
             return JVMBridgeBase.New<JMenuItem>(arg0, arg1);
         }
@@ -120,7 +120,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JMenuItem(Java.Lang.String arg0)
         /// </summary>
-        public static JMenuItem New(Java.Lang.String arg0)
+        public static JMenuItem Create(Java.Lang.String arg0)
         {
             return JVMBridgeBase.New<JMenuItem>(arg0);
         }
@@ -135,7 +135,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JMenuItem(Javax.Swing.Action arg0)
         /// </summary>
-        public static JMenuItem New(Javax.Swing.Action arg0)
+        public static JMenuItem Create(Javax.Swing.Action arg0)
         {
             return JVMBridgeBase.New<JMenuItem>(arg0);
         }
@@ -150,7 +150,7 @@ namespace Javax.Swing
         /// <summary>
         /// HPA initializer for JMenuItem(Javax.Swing.Icon arg0)
         /// </summary>
-        public static JMenuItem New(Javax.Swing.Icon arg0)
+        public static JMenuItem Create(Javax.Swing.Icon arg0)
         {
             return JVMBridgeBase.New<JMenuItem>(arg0);
         }
