@@ -18,13 +18,13 @@ bool _hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER;
 [global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
 bool METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden() => _hasOverrideMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER || OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null;
 
-void METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+void METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler(object sender, CLRListenerEventArgs<MASES.JNet.Specific.JNetEventData> data)
 {
     if (!METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventOverridden()) // guard: no handler registered — return without reading data.
                                                                           // Normally unreachable if ListenerShallManageEvent filtered correctly,
                                                                           // but protects against user overrides of ListenerShallManageEvent that bypass the check.
     {
-        // data.EventData.TypedEventData.HasOverride is false by default — JVM receives no return value.
+        // data.EventData.HasOverride is false by default — JVM receives no return value.
         return;
     }
 METHOD_STUB_LISTENER_HANDLER_EXECUTION_PLACEHOLDER

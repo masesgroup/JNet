@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Nio_File_Path" data-uid="Java.Nio.File.Path" class="text-break">
-Class Path  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L238"><i class="bi bi-code-slash"></i></a>
+Class Path  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L244"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class Path  <a class="header-action link-secondary" title="View source" href="ht
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Path : Iterable&lt;Path&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;Path&gt;, IEnumerable, IAsyncEnumerable&lt;Path&gt;, IIterable&lt;Path&gt;, IPath</code></pre>
+    <pre><code class="lang-csharp hljs">public class Path : Iterable&lt;Path&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;Path&gt;, IEnumerable, IAsyncEnumerable&lt;Path&gt;, IIterable&lt;Path&gt;, IPath</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class Path  <a class="header-action link-secondary" title="View source" href="ht
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeCore</span></div>
-      <div><span class="xref">JVMBridgeCore</span>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;<a class="xref" href="Java.Nio.File.Path.html">Path</a>&gt;&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;<a class="xref" href="Java.Nio.File.Path.html">Path</a>&gt;&gt;</div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable-1.html">JVMBridgeBaseEnumerable</a>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;<a class="xref" href="Java.Nio.File.Path.html">Path</a>&gt;&gt;</div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable-2.html">JVMBridgeBaseEnumerable</a>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;<a class="xref" href="Java.Nio.File.Path.html">Path</a>&gt;, <a class="xref" href="Java.Nio.File.Path.html">Path</a>&gt;</div>
       <div><a class="xref" href="MASES.JNet.Specific.JNetAsyncEnumerable-2.html">JNetAsyncEnumerable</a>&lt;<a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;<a class="xref" href="Java.Nio.File.Path.html">Path</a>&gt;, <a class="xref" href="Java.Nio.File.Path.html">Path</a>&gt;</div>
@@ -129,6 +129,7 @@ Class Path  <a class="header-action link-secondary" title="View source" href="ht
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
@@ -155,319 +156,361 @@ Class Path  <a class="header-action link-secondary" title="View source" href="ht
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBaseEnumerable_1_GetEnumerator">JVMBridgeBaseEnumerable&lt;Iterable&lt;Path&gt;&gt;.GetEnumerator()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteStream&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SGetField(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SGetField(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SGetField&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SGetField(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SGetField(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SSetField(IJavaType, string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SSetField(string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SGetField&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SGetFieldStream&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.IsAssignableFrom(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.IsAssignableFrom(IJavaType)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SGetFieldStream&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.IsAssignableFrom&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SSetField(IJavaType, string, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.New(params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SSetField(string, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.NewWithSignature(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.IsAssignableFrom(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.Execute&lt;T&gt;(params T[])</span>
+      <span class="xref">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.IsAssignableFrom(IJavaType)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.DynBridgeClazz</span>
+      <span class="xref">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.IsAssignableFrom&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;Iterable&lt;Path&gt;&gt;.BridgeClazz</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.New(params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ReferenceEqualsJVM(IJVMBridgeBase, IJVMBridgeBase)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.NewWithSignature(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeCore.ClazzOf&lt;TClass&gt;(bool)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeCore.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ClazzOf(string, bool)</a>
+      <span class="xref">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.Execute&lt;T&gt;(params T[])</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ClazzOf(string, out Exception, bool)</a>
+      <span class="xref">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.DynBridgeClazz</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.RuntimeClassNameOf&lt;T&gt;()</span>
+      <span class="xref">JVMBridgeBase&lt;Iterable&lt;Path&gt;&gt;.BridgeClazz</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.RuntimeClassNameOf(Type)</a>
+      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(IJVMBridgeBase, IJVMBridgeBase)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ClassNameOf&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ClassOf&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.Wraps(Type, IJavaObject, string)</a>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.MonitorEnter()</span>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.MonitorExit()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IsInstanceOf(string)</a>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.IsInstanceOf(IJavaType)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.IsInstanceOf&lt;T&gt;()</span>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.RuntimeIsInstanceOf&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.CastTo&lt;TNewClass&gt;()</span>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.CastDirect&lt;TNewClass&gt;()</span>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Equals(IJVMBridgeBase)</span>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore.Equals(object)</a>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.GetHashCode()</span>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Notify()</span>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.NotifyAll()</span>
+      <span class="xref">JVMBridgeBase.CastToAndDetach&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wait()</span>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeCore.Wait(long)</a>
+      <span class="xref">JVMBridgeBase.CastDirectAndDetach&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeCore.Wait(long, int)</a>
+      <span class="xref">JVMBridgeBase.CheckDisposed()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute(string, params object[])</a>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute&lt;TReturn&gt;(string, params object[])</a>
+      <span class="xref">JVMBridgeBase.ToString()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+      <span class="xref">JVMBridgeBase.Notify()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+      <span class="xref">JVMBridgeBase.Wait()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IGetField(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IGetField&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IGetFieldArray&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ISetField(string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ISetField&lt;TValue&gt;(string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore.Throw&lt;TException&gt;(params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore.BiThrow&lt;TException&gt;(params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.DynBridgeInstance</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.BridgeInstance</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.IsBridgeListener</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldStream&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
@@ -532,9 +575,6 @@ Class Path  <a class="header-action link-secondary" title="View source" href="ht
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   <div>
-      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_ToDisposable_MASES_JCOBridge_C2JBridge_JVMBridgeCore_">JNetCoreExtensions.ToDisposable(JVMBridgeCore)</a>
-  </div>
-  <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMCollectionType__3_System_Collections_Generic_IEnumerable___2__System_Func___2___1__">JavaUtilExtensions.ToJVMCollectionType&lt;TIterableType, TJVMTypeInner, TNetType&gt;(IEnumerable&lt;TNetType&gt;, Func&lt;TNetType, TJVMTypeInner&gt;)</a>
   </div>
   <div>
@@ -560,10 +600,10 @@ Class Path  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Java_Nio_File_Path__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Nio.File.Path.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
   Path(IJVMBridgeBaseInitializer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -593,10 +633,10 @@ public Path(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Nio_File_Path__ctor_System_Object___" data-uid="Java.Nio.File.Path.#ctor(System.Object[])">
   Path(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+  <div class="markdown level1 summary"><p>Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -618,6 +658,10 @@ public Path(params object[] args)</code></pre>
 
 
 
+  <h4 class="section" id="Java_Nio_File_Path__ctor_System_Object____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="Java.Nio.File.Path.html">Path</a> represents a JVM interface or abstract class in .NET.
+Instantiating it directly outside of JCOBridge infrastructure is not supported and may produce undefined behavior.</p>
+</div>
 
 
 
@@ -630,7 +674,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_BridgeClassName" data-uid="Java.Nio.File.Path.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -662,7 +706,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_FileName" data-uid="Java.Nio.File.Path.FileName">
   FileName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L274"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#getFileName--">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#getFileName--</a></p>
@@ -694,7 +738,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_FileSystem" data-uid="Java.Nio.File.Path.FileSystem">
   FileSystem
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L281"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#getFileSystem--">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#getFileSystem--</a></p>
@@ -726,7 +770,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_IsBridgeAbstract" data-uid="Java.Nio.File.Path.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -758,10 +802,10 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_IsBridgeCloseable" data-uid="Java.Nio.File.Path.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -790,7 +834,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_IsBridgeInterface" data-uid="Java.Nio.File.Path.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -822,7 +866,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_IsBridgeStatic" data-uid="Java.Nio.File.Path.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -854,7 +898,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_NameCount" data-uid="Java.Nio.File.Path.NameCount">
   NameCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L288"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#getNameCount--">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#getNameCount--</a></p>
@@ -886,7 +930,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_Parent" data-uid="Java.Nio.File.Path.Parent">
   Parent
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#getParent--">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#getParent--</a></p>
@@ -918,7 +962,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_Root" data-uid="Java.Nio.File.Path.Root">
   Root
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L302"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#getRoot--">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#getRoot--</a></p>
@@ -954,7 +998,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_CompareTo_Java_Nio_File_Path_" data-uid="Java.Nio.File.Path.CompareTo(Java.Nio.File.Path)">
   CompareTo(Path)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L355"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#compareTo-java.nio.file.Path-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#compareTo-java.nio.file.Path-</a></p>
@@ -993,7 +1037,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_CompareTo_System_Object_" data-uid="Java.Nio.File.Path.CompareTo(System.Object)">
   CompareTo(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L495"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L501"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#compareTo-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#compareTo-java.lang.Object-</a></p>
@@ -1032,7 +1076,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_EndsWith_Java_Lang_String_" data-uid="Java.Nio.File.Path.EndsWith(Java.Lang.String)">
   EndsWith(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L311"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#endsWith-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#endsWith-java.lang.String-</a></p>
@@ -1071,7 +1115,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_EndsWith_Java_Nio_File_Path_" data-uid="Java.Nio.File.Path.EndsWith(Java.Nio.File.Path)">
   EndsWith(Path)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L320"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#endsWith-java.nio.file.Path-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#endsWith-java.nio.file.Path-</a></p>
@@ -1110,7 +1154,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_GetName_System_Int32_" data-uid="Java.Nio.File.Path.GetName(System.Int32)">
   GetName(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L380"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#getName-int-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#getName-int-</a></p>
@@ -1149,7 +1193,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_IsAbsolute" data-uid="Java.Nio.File.Path.IsAbsolute">
   IsAbsolute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L328"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#isAbsolute--">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#isAbsolute--</a></p>
@@ -1182,7 +1226,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_Iterator" data-uid="Java.Nio.File.Path.Iterator">
   Iterator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L492"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#iterator--">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#iterator--</a></p>
@@ -1215,7 +1259,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_Normalize" data-uid="Java.Nio.File.Path.Normalize">
   Normalize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L388"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#normalize--">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#normalize--</a></p>
@@ -1248,7 +1292,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_Register_Java_Nio_File_WatchService_Java_Nio_File_WatchEvent_Kind_System_Object____" data-uid="Java.Nio.File.Path.Register(Java.Nio.File.WatchService,Java.Nio.File.WatchEvent.Kind{System.Object}[])">
   Register(WatchService, params Kind&lt;object&gt;[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L472"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#register-java.nio.file.WatchService-java.nio.file.WatchEvent.Kind...-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#register-java.nio.file.WatchService-java.nio.file.WatchEvent.Kind...-</a></p>
@@ -1295,7 +1339,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_Register_Java_Nio_File_WatchService_Java_Nio_File_WatchEvent_Kind_System_Object____Java_Nio_File_WatchEvent_Modifier___" data-uid="Java.Nio.File.Path.Register(Java.Nio.File.WatchService,Java.Nio.File.WatchEvent.Kind{System.Object}[],Java.Nio.File.WatchEvent.Modifier[])">
   Register(WatchService, Kind&lt;object&gt;[], params Modifier[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L484"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#register-java.nio.file.WatchService-java.nio.file.WatchEvent.Kind[]-java.nio.file.WatchEvent.Modifier...-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#register-java.nio.file.WatchService-java.nio.file.WatchEvent.Kind[]-java.nio.file.WatchEvent.Modifier...-</a></p>
@@ -1345,7 +1389,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_Relativize_Java_Nio_File_Path_" data-uid="Java.Nio.File.Path.Relativize(Java.Nio.File.Path)">
   Relativize(Path)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L397"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#relativize-java.nio.file.Path-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#relativize-java.nio.file.Path-</a></p>
@@ -1384,7 +1428,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_Resolve_Java_Lang_String_" data-uid="Java.Nio.File.Path.Resolve(Java.Lang.String)">
   Resolve(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L406"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#resolve-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#resolve-java.lang.String-</a></p>
@@ -1423,7 +1467,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_Resolve_Java_Nio_File_Path_" data-uid="Java.Nio.File.Path.Resolve(Java.Nio.File.Path)">
   Resolve(Path)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L415"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#resolve-java.nio.file.Path-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#resolve-java.nio.file.Path-</a></p>
@@ -1462,7 +1506,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_ResolveSibling_Java_Lang_String_" data-uid="Java.Nio.File.Path.ResolveSibling(Java.Lang.String)">
   ResolveSibling(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L424"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#resolveSibling-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#resolveSibling-java.lang.String-</a></p>
@@ -1501,7 +1545,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_ResolveSibling_Java_Nio_File_Path_" data-uid="Java.Nio.File.Path.ResolveSibling(Java.Nio.File.Path)">
   ResolveSibling(Path)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L433"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#resolveSibling-java.nio.file.Path-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#resolveSibling-java.nio.file.Path-</a></p>
@@ -1540,7 +1584,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_StartsWith_Java_Lang_String_" data-uid="Java.Nio.File.Path.StartsWith(Java.Lang.String)">
   StartsWith(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L337"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#startsWith-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#startsWith-java.lang.String-</a></p>
@@ -1579,7 +1623,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_StartsWith_Java_Nio_File_Path_" data-uid="Java.Nio.File.Path.StartsWith(Java.Nio.File.Path)">
   StartsWith(Path)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L346"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#startsWith-java.nio.file.Path-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#startsWith-java.nio.file.Path-</a></p>
@@ -1618,7 +1662,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_Subpath_System_Int32_System_Int32_" data-uid="Java.Nio.File.Path.Subpath(System.Int32,System.Int32)">
   Subpath(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L443"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#subpath-int-int-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#subpath-int-int-</a></p>
@@ -1660,7 +1704,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_ToAbsolutePath" data-uid="Java.Nio.File.Path.ToAbsolutePath">
   ToAbsolutePath()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L451"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#toAbsolutePath--">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#toAbsolutePath--</a></p>
@@ -1693,7 +1737,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_ToFile" data-uid="Java.Nio.File.Path.ToFile">
   ToFile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L363"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#toFile--">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#toFile--</a></p>
@@ -1726,7 +1770,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_ToRealPath_Java_Nio_File_LinkOption___" data-uid="Java.Nio.File.Path.ToRealPath(Java.Nio.File.LinkOption[])">
   ToRealPath(params LinkOption[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L461"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#toRealPath-java.nio.file.LinkOption...-">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#toRealPath-java.nio.file.LinkOption...-</a></p>
@@ -1770,7 +1814,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_ToUri" data-uid="Java.Nio.File.Path.ToUri">
   ToUri()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L371"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#toUri--">https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#toUri--</a></p>
@@ -1807,7 +1851,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_op_Implicit_Java_Nio_File_Path__Java_Lang_Comparable" data-uid="Java.Nio.File.Path.op_Implicit(Java.Nio.File.Path)~Java.Lang.Comparable">
   implicit operator Comparable(Path)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L254"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Nio.File.Path.html">Path</a> to <a class="xref" href="Java.Lang.Comparable.html">Comparable</a></p>
@@ -1844,7 +1888,7 @@ public Path(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_File_Path_op_Implicit_Java_Nio_File_Path__Java_Nio_File_Watchable" data-uid="Java.Nio.File.Path.op_Implicit(Java.Nio.File.Path)~Java.Nio.File.Watchable">
   implicit operator Watchable(Path)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Nio.File.Path.html">Path</a> to <a class="xref" href="Java.Nio.File.Watchable.html">Watchable</a></p>
@@ -1881,7 +1925,7 @@ public Path(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L238" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Path.cs/#L244" class="edit-link">Edit this page</a>
         </div>
 
 

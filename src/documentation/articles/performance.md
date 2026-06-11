@@ -294,6 +294,95 @@ The three distinct operating points on .NET 8:
 
 ---
 
+## Bulk data transfer at the JVM↔CLR boundary
+
+JCOBridge 2.6.9 introduces `JCOBridgeDirectBuffer<T>` (wrapping a JVM `DirectByteBuffer`) and `JCOBridgeStream<T>` (wrapping a JVM native array), both with `T : unmanaged`. Both types expose `ToStream()` (backed by `UnmanagedMemoryStream`), `ReadOnlySpan<T>`, and .NET Framework-compatible shims.
+
+> [!NOTE]
+> `ReadOnlySpan` and `JCOBridgeStream` zero-copy access requires the **JCOBridge HPA edition**. Without HPA, these paths perform an internal local copy — faster than the full JVM→CLR array transfer for most sizes, but not truly zero-copy. The benchmarks below use the **standard edition**; HPA results will be added when available.
+
+> [!NOTE]
+> Tests run in a single process without isolation. Memory is pre-allocated once per size step; 100 iterations measure only access/transfer cost. GC pressure from copy-based APIs is part of the measured cost. Future benchmarks will use DotNetBenchmark with process isolation for statistically rigorous results.
+
+### Array transfer — `JCOBridgeStream<T>`
+
+A JVM `byte[]` of the given size is pre-allocated once per size step. Each iteration retrieves the data via three APIs:
+
+- **`Invoke<byte[]>`** — standard JVM array transfer: allocates a .NET `byte[]` and copies JVM heap memory into it on every call.
+- **`AreEqualChunked`** — reads via `JCOBridgeStream<byte>` in 4096-byte chunks, comparing directly against the reference array without allocating a full copy.
+- **`AsSpan`** — obtains a `ReadOnlySpan<byte>` from `JCOBridgeStream<byte>` and compares via `SequenceEqual`. In the standard edition an internal local copy is made; with HPA, the array is accessed directly in JVM memory without any copy, with the GC pinned for the duration of the access.
+
+Mean latency per iteration (µs), 100 iterations per size:
+
+| Size | `Invoke<byte[]>` .NET 8 | `AreEqualChunked` .NET 8 | `AsSpan` .NET 8 | `Invoke<byte[]>` .NET 10 | `AreEqualChunked` .NET 10 | `AsSpan` .NET 10 |
+|---|---|---|---|---|---|---|
+| 10 B | 30.5 | 26.0 | **4.0** | 24.9 | 20.6 | **3.5** |
+| 100 B | 3.7 | 6.0 | **2.5** | 1.6 | 4.2 | **1.8** |
+| 1 KB | 2.7 | 6.9 | **2.6** | 2.4 | 4.8 | **1.8** |
+| 10 KB | 7.5 | 7.3 | **3.7** | 5.5 | 10.1 | **3.0** |
+| 100 KB | 84.4 | 87.7 | **81.0** | 67.5 | 66.7 | **61.6** |
+| 1 MB | 205.9 | 242.8 | 214.9 | 180.9 | 192.7 | **179.3** |
+| 10 MB | 1,843.6 | **1,801.3** | 1,823.1 | 1,540.2 | 1,552.5 | **1,388.3** |
+| 100 MB | 14,635.8 | 16,015.4 | **14,384.0** | 13,280.5 | 13,422.4 | **12,624.6** |
+
+Key observations:
+
+- For **small payloads** (≤10 KB), `AsSpan` is **4–8× faster** than `Invoke<byte[]>` — the fixed overhead of the JVM array transfer dominates, and `AsSpan` avoids it even in the standard (non-HPA) edition.
+- For **large payloads** (≥1 MB), all three methods converge toward memory bandwidth (~6.8–7.9 GB/s on .NET 10 / T25) — the bottleneck shifts from API overhead to raw data movement.
+- `AreEqualChunked` has higher overhead at small sizes due to the chunked read loop but is competitive at large sizes while avoiding a full allocation.
+- With **HPA**, `AsSpan` will expose direct access into JVM memory — the small-payload advantage will extend across all sizes.
+
+### ByteBuffer transfer — `JCOBridgeDirectBuffer<T>`
+
+A JVM `DirectByteBuffer` of the given size is pre-allocated once per size step and never recreated during the test. Because a `DirectByteBuffer` lives in native (off-heap) memory from the moment of allocation, reading it from .NET is always a read from a native memory pointer — there is no JVM heap→native copy at any point.
+
+> [!NOTE]
+> A real-world `DirectByteBuffer` usage would include JVM-side time to populate the buffer. That cost is not part of this benchmark, which focuses exclusively on the .NET read side.
+
+> [!NOTE]
+> `AsSpan` on `JCOBridgeDirectBuffer<T>` accesses the native memory pointer directly and is **independent of the HPA edition** — the buffer already lives outside the JVM heap.
+
+Each iteration accesses the pre-allocated buffer via four APIs:
+
+- **`ToArray`** — allocates a .NET `byte[]` and copies buffer contents into it.
+- **`ToStream → AreEqualNaive`** — calls `ToStream()`, wraps it in a `MemoryStream` via `CopyTo`, then `ToArray()` and compares. Allocates a full intermediate copy.
+- **`ToStream → AreEqualChunked`** — calls `ToStream()` and reads in 4096-byte chunks. No full intermediate allocation.
+- **`AsSpan`** — obtains a `ReadOnlySpan<byte>` directly from the native memory pointer. Zero-copy in all editions.
+
+Mean latency per iteration (µs), 100 iterations per size:
+
+| Size | `ToArray` .NET 8 | `Naive` .NET 8 | `Chunked` .NET 8 | `AsSpan` .NET 8 | `ToArray` .NET 10 | `Naive` .NET 10 | `Chunked` .NET 10 | `AsSpan` .NET 10 |
+|---|---|---|---|---|---|---|---|---|
+| 10 B | 27.4 | 14.6 | 8.7 | **4.4** | 31.2 | 12.2 | 7.2 | **3.7** |
+| 100 B | **2.7** | 5.3 | 6.7 | 2.8 | **2.1** | 4.3 | 6.8 | 2.0 |
+| 1 KB | **2.9** | 6.5 | 6.8 | 2.7 | **2.2** | 5.4 | 5.3 | 2.1 |
+| 10 KB | 9.7 | 14.5 | 5.5 | **2.7** | 7.7 | 12.0 | 4.6 | **2.3** |
+| 100 KB | 82.9 | 61.2 | 11.9 | **5.3** | 64.5 | 44.6 | 9.7 | **4.1** |
+| 1 MB | 232.2 | 608.1 | 55.7 | **31.1** | 153.3 | 437.9 | 49.1 | **25.8** |
+| 10 MB | 1,792.8 | 6,425.9 | 503.3 | **288.8** | 1,613.6 | 6,254.2 | 433.5 | **251.9** |
+| 100 MB | 13,796.8 | 38,873.0 | 7,011.3 | **5,590.3** | 12,608.2 | 35,603.6 | 6,204.5 | **5,407.7** |
+
+Key observations:
+
+- **`ToStream → Naive`** degrades severely at large sizes — full intermediate `MemoryStream` copy. At 100 MB it is **7× slower** than `ToArray`. Avoid for payloads above a few KB.
+- **`AsSpan`** is the fastest API for all sizes above 10 KB and is **zero-copy in all editions**. At 100 MB it is **2.5× faster** than `ToArray` on .NET 8 and **2.3× faster** on .NET 10.
+- **`ToStream → Chunked`** is a good middle ground: no full intermediate allocation, significantly faster than `Naive` at large sizes.
+- At **very small sizes** (100 B – 1 KB), `ToArray` and `AsSpan` are comparable (~2–3 µs) — per-call overhead dominates.
+
+> [!NOTE]
+> The ByteBuffer test can be taken as a performance reference for **HPA with native arrays**: because the `DirectByteBuffer` is pre-allocated in native (off-heap) memory and never copied from JVM heap, it represents a scenario where the heap→native copy is absent — exactly what HPA achieves for JVM arrays with its strongest options. Users who currently copy JVM arrays into a `DirectByteBuffer` to avoid heap-to-native overhead can use `JCOBridgeStream<T>` with HPA instead, entering JVM array memory directly without the intermediate buffer.
+
+Effective throughput at 100 MB (standard edition):
+
+| API | .NET 8 / T17 | .NET 10 / T25 |
+|---|---|---|
+| `ToArray` | 7.2 GB/s | 7.9 GB/s |
+| `ToStream → Naive` | 2.6 GB/s | 2.8 GB/s |
+| `ToStream → Chunked` | 14.3 GB/s | 16.1 GB/s |
+| `AsSpan` | **17.9 GB/s** | **18.5 GB/s** |
+
+---
+
 ## Summary
 
 | Test | .NET 8 / T17 | | | | .NET 10 / T25 | | | |

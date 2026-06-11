@@ -48,6 +48,14 @@ namespace MASES.JNet.Specific.Extensions
             }
             return varArgs.ToArray();
         }
+        /// <summary>
+        /// Disposes the result of an operation if it is not needed for other purposes
+        /// </summary>
+        /// <param name="obj">The <see cref="object"/> to use for <see cref="IDisposable"/> interface identification</param>
+        public static void DisposeIfDisposable(this object obj)
+        {
+            if (obj is IDisposable disposable) disposable.Dispose();
+        }
 
         /// <summary>
         /// Retrieve the <see cref="Java.Lang.Class{TClass}"/> from the <typeparamref name="TClass"/>
@@ -62,19 +70,40 @@ namespace MASES.JNet.Specific.Extensions
         /// <summary>
         /// The method creates a <see cref="ByteBuffer"/> and wrap it into <typeparamref name="TWrap"/>
         /// </summary>
-        /// <typeparam name="TData">The data to be wrapped</typeparam>
+        /// <typeparam name="TData">
+        /// The .NET primitive type corresponding to the element type. Supported types reflect the JVM primitive
+        /// type system:
+        /// <list type="table">
+        ///   <listheader><term>JVM type</term><description>.NET type</description></listheader>
+        ///   <item><term><c>boolean</c></term><description><see langword="bool"/></description></item>
+        ///   <item><term><c>byte</c></term><description><see langword="byte"/></description></item>
+        ///   <item><term><c>short</c></term><description><see langword="short"/></description></item>
+        ///   <item><term><c>int</c></term><description><see langword="int"/></description></item>
+        ///   <item><term><c>long</c></term><description><see langword="long"/></description></item>
+        ///   <item><term><c>float</c></term><description><see langword="float"/></description></item>
+        ///   <item><term><c>double</c></term><description><see langword="double"/></description></item>
+        ///   <item><term><c>char</c></term><description><see langword="char"/></description></item>
+        /// </list>
+        /// Unsigned types (<see langword="sbyte"/>, <see langword="ushort"/>,
+        /// <see langword="uint"/>, <see langword="ulong"/>) are not supported as
+        /// they have no equivalent in the JVM type system.
+        /// Passing an unsupported type throws <see cref="NotSupportedException"/> at
+        /// runtime; passing a type inconsistent with the actual JVM array element type
+        /// throws <see cref="InvalidOperationException"/> or <see cref="InvalidCastException"/>.
+        /// </typeparam>
         /// <typeparam name="TWrap">The wrapping class</typeparam>
         /// <param name="data">The array of <typeparamref name="TData"/> to be wrapped</param>
-        /// <param name="useMemoryControlBlock">Appends to the end of the <paramref name="data"/> a memory block will be used to controls and arbitrates memory between CLR and JVM</param>
         /// <param name="arrangeCapacity">If <see langword="true"/> the <typeparamref name="TData"/> array in <paramref name="data"/> will be resized to the next power of 2, 
         /// so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be current size of <paramref name="data"/>
         /// </param>
         /// <param name="timeToLive">The time to live, expressed in milliseconds, the underlying memory shall remain available; if the time to live expires the pinned memory is retired leaving potentially the JVM under the possibility of an access violation.</param>
         /// <param name="converter">A <see cref="Func{T, TResult}"/> that receives the prepared <see cref="ByteBuffer"/> and shall return <typeparamref name="TWrap"/></param>
         /// <returns>The <typeparamref name="TWrap"/> instance</returns>
-        public static TWrap DirectBufferWithWrap<TData, TWrap>(this TData[] data, bool useMemoryControlBlock = true, bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite, Func<ByteBuffer, TWrap> converter = null) where TWrap : IJVMBridgeBase
+        public static TWrap DirectBufferWithWrap<TData, TWrap>(this TData[] data, bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite, Func<ByteBuffer, TWrap> converter = null)
+            where TData : unmanaged
+            where TWrap : IJVMBridgeBase
         {
-            var buf = JCOBridge.C2JBridge.JCOBridge.Global.JVM.NewDirectBuffer(data, useMemoryControlBlock, arrangeCapacity, timeToLive);
+            var buf = JCOBridge.C2JBridge.JCOBridge.Global.JVM.NewDirectBuffer(data, false, arrangeCapacity, timeToLive);
             if (data is byte[]) return JVMBridgeBase.WrapsDirect<TWrap>(buf.DisableCleanupAndReturn());
             else
             {

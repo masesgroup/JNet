@@ -262,7 +262,7 @@ namespace MASES.JNet
         /// Replace environment variable in <paramref name="item"/>
         /// </summary>
         /// <param name="item">The string where the environemnt variables shall be replaced</param>
-        /// <returns>The string with replaced environment varibales</returns>
+        /// <returns>The string with replaced environment variables</returns>
         /// <remarks>Each environment variable is expected in the form $(ENV_VAR)</remarks>
         public static string ReplaceEnvironmentVariable(string item)
         {
@@ -275,16 +275,19 @@ namespace MASES.JNet
                 while ((firstIndex = item.IndexOf(startTemplate, firstIndex)) != -1)
                 {
                     var secondIndex = item.IndexOf(endTemplate, firstIndex);
-                    if (secondIndex != -1)
+                    if (secondIndex == -1)
                     {
-                        var envVar = item.Substring(firstIndex + startTemplate.Length, secondIndex - (firstIndex + startTemplate.Length));
-                        var envVal = Environment.GetEnvironmentVariable(envVar);
-                        if (envVal != null)
-                        {
-                            item = item.Replace($"{startTemplate}{envVar}{endTemplate}", envVal);
-                        }
+                        break;
                     }
-                    firstIndex = secondIndex;
+
+                    var envVar = item.Substring(firstIndex + startTemplate.Length, secondIndex - (firstIndex + startTemplate.Length));
+                    var envVal = Environment.GetEnvironmentVariable(envVar);
+                    if (envVal != null)
+                    {
+                        item = item.Replace($"{startTemplate}{envVar}{endTemplate}", envVal);
+                    }
+
+                    firstIndex = secondIndex + endTemplate.Length;
                 }
             }
             return item;
@@ -392,7 +395,7 @@ namespace MASES.JNet
         /// Retrieve the object associated to <paramref name="className"/>
         /// </summary>
         /// <param name="className">The java class to be instantiated</param>
-        /// <param name="args">The argument of the costructor</param>
+        /// <param name="args">The argument of the constructor</param>
         /// <returns>The instance associated to the requested <paramref name="className"/></returns>
         public static dynamic New(string className, params object[] args)
         {
@@ -475,9 +478,11 @@ namespace MASES.JNet
                     execType = execType.BaseType;
                 }
                 while (execType != null && execType != typeof(object));
+                throw new ArgumentException($"{type} does not define any IJVMBridgeMain type or interface", "type");
+#else
+                throw;
 #endif
             }
-            throw new ArgumentException($"{type} does not define any IJVMBridgeMain type or interface", "type");
         }
 
         #endregion

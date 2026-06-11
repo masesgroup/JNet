@@ -4,7 +4,7 @@
 		<Owners>MASES s.r.l.</Owners>
 		<Authors>MASES s.r.l.</Authors>
 		<Company>MASES s.r.l.</Company>
-		<Version>2.6.9.0-rc4</Version>
+		<Version>2.6.9.0-rc996</Version>
 		<LangVersion>latest</LangVersion>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -42,17 +42,9 @@
 		<None Include="..\Common\JNet.snk" Link="JNet.snk" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
-		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="10.0.7"/>
+		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="10.0.8"/>
 		<Reference Include="Microsoft.CSharp" />
 	</ItemGroup>
-	<!-- Fix start https://github.com/dotnet/sourcelink/issues/572 -->
-	<PropertyGroup>
-		<TargetFrameworkMonikerAssemblyAttributesPath>$([System.IO.Path]::Combine('$(IntermediateOutputPath)','$(TargetFrameworkMoniker).AssemblyAttributes$(DefaultLanguageSourceExtension)'))</TargetFrameworkMonikerAssemblyAttributesPath>
-	</PropertyGroup>
-	<ItemGroup>
-		<EmbeddedFiles Include="$(GeneratedAssemblyInfoFile)" />
-	</ItemGroup>
-	<!-- Fix end -->
 	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
 		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
 	</PropertyGroup>

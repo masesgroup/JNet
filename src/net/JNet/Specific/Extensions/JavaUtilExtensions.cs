@@ -17,6 +17,7 @@
 */
 
 using Java.Util;
+using MASES.JCOBridge.C2JBridge;
 using System;
 using System.Collections.Generic;
 
@@ -110,14 +111,18 @@ namespace MASES.JNet.Specific.Extensions
                 func = GetToJVMMethod<TNetType, TJVMTypeInner>();
             }
 #endif
-            var tInstance = new TIterableType();
+            var tInstance = JVMBridgeBase.New<TIterableType>();
             foreach (var item in set)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
-                tInstance.Add(func(item));
+                var jvmData = func(item);
 #else
-                tInstance.Add(func != null ? func(item) : TJVMTypeInner.ToJVM(item));
+                var jvmData = func != null ? func(item) : TJVMTypeInner.ToJVM(item);
 #endif
+                using (var disposable = jvmData as IDisposable)
+                {
+                    tInstance.Add(jvmData);
+                }
             }
             return tInstance;
         }
@@ -176,19 +181,50 @@ namespace MASES.JNet.Specific.Extensions
         /// <typeparam name="TJVMV">JVM value type</typeparam>
         /// <param name="map">The <see cref="Map{TJVMK, TJVMV}"/></param>
         /// <returns>The <see cref="IDictionary{K, V}"/></returns>
-        public static TDictionaryType ToNetDictiony<TDictionaryType, K, V, TJVMK, TJVMV>(this Map<TJVMK, TJVMV> map, Func<TJVMK, K> keyConverter = null, Func<TJVMV, V> valueConverter = null)
+        public static TDictionaryType ToNetDictionary<TDictionaryType, K, V, TJVMK, TJVMV>(this Map<TJVMK, TJVMV> map, Func<TJVMK, K> keyConverter = null, Func<TJVMV, V> valueConverter = null)
             where TDictionaryType : IDictionary<K, V>, new()
             where TJVMK : INativeConvertible<TJVMK, K>
             where TJVMV : INativeConvertible<TJVMV, V>
         {
             if (map == null) throw new ArgumentNullException(nameof(map));
             var tInstance = new TDictionaryType();
-            foreach (var key in map.KeySet())
+            using var keySet = map.KeySet();
+            foreach (var key in keySet)
             {
+                using var keyDisposable = key as IDisposable;
                 var value = map.Get(key);
+                using var valueDisposable = value as IDisposable;
                 tInstance.Add(keyConverter != null ? keyConverter(key) : key.ToCLR(), valueConverter != null ? valueConverter(value) : value.ToCLR());
             }
             return tInstance;
+        }
+
+        /// <inheritdoc cref="ToNetDictionary{TDictionaryType, K, V, TJVMK, TJVMV}(Map{TJVMK, TJVMV}, Func{TJVMK, K}, Func{TJVMV, V})"/>
+        [Obsolete("Use ToNetDictionary instead.")]
+        public static TDictionaryType ToNetDictiony<TDictionaryType, K, V, TJVMK, TJVMV>(this Map<TJVMK, TJVMV> map, Func<TJVMK, K> keyConverter = null, Func<TJVMV, V> valueConverter = null)
+            where TDictionaryType : IDictionary<K, V>, new()
+            where TJVMK : INativeConvertible<TJVMK, K>
+            where TJVMV : INativeConvertible<TJVMV, V>
+        {
+            return ToNetDictionary<TDictionaryType, K, V, TJVMK, TJVMV>(map, keyConverter, valueConverter);
+        }
+
+        /// <summary>
+        /// Converts a <see cref="IDictionary{K, V}"/> to <see cref="Map{TJVMK, TJVMV}"/>
+        /// </summary>
+        /// <param name="keyConverter">Optional converter from <typeparamref name="TJVMK"/> to <typeparamref name="K"/></param>
+        /// <param name="valueConverter">Optional converter from <typeparamref name="TJVMV"/> to <typeparamref name="V"/></param>
+        /// <typeparam name="K">.NET Key type</typeparam>
+        /// <typeparam name="V">.NET Value</typeparam>
+        /// <typeparam name="TJVMK">JVM key type</typeparam>
+        /// <typeparam name="TJVMV">JVM value type</typeparam>
+        /// <param name="map">The <see cref="Map{TJVMK, TJVMV}"/></param>
+        /// <returns>The <see cref="IDictionary{K, V}"/></returns>
+        public static IDictionary<K, V> ToNetDictionary<K, V, TJVMK, TJVMV>(this Map<TJVMK, TJVMV> map, Func<TJVMK, K> keyConverter = null, Func<TJVMV, V> valueConverter = null)
+            where TJVMK : INativeConvertible<TJVMK, K>
+            where TJVMV : INativeConvertible<TJVMV, V>
+        {
+            return ToNetDictiony<System.Collections.Generic.Dictionary<K, V>, K, V, TJVMK, TJVMV>(map, keyConverter, valueConverter);
         }
 
         /// <summary>
@@ -206,7 +242,7 @@ namespace MASES.JNet.Specific.Extensions
             where TJVMK : INativeConvertible<TJVMK, K>
             where TJVMV : INativeConvertible<TJVMV, V>
         {
-            return ToNetDictiony<System.Collections.Generic.Dictionary<K, V>, K, V, TJVMK, TJVMV>(map, keyConverter, valueConverter);
+            return ToNetDictionary<K, V, TJVMK, TJVMV>(map, keyConverter, valueConverter);
         }
 
         /// <summary>
@@ -237,14 +273,19 @@ namespace MASES.JNet.Specific.Extensions
             }
 #endif
             if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
-            var tInstance = new TMapType();
+            var tInstance = JVMBridgeBase.New<TMapType>();
             foreach (var item in dictionary)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
-                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+                var key = keyConverter(item.Key);
+                var value = valueConverter(item.Value);
 #else
-                tInstance.Put(keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key), valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value));
+                var key = keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key);
+                var value = valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value);
 #endif
+                using IDisposable keyDisposable = key as IDisposable;
+                using IDisposable valueDisposable = value as IDisposable;
+                tInstance.Put(key, value).DisposeIfDisposable();
             }
             return tInstance;
         }
@@ -265,10 +306,16 @@ namespace MASES.JNet.Specific.Extensions
             if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
             if (keyConverter == null) throw new ArgumentNullException(nameof(keyConverter));
             if (valueConverter == null) throw new ArgumentNullException(nameof(valueConverter));
-            var tInstance = new HashMap<TJVMK, TJVMV>();
+            var tInstance = JVMBridgeBase.New<HashMap<TJVMK, TJVMV>>();
             foreach (var item in dictionary)
             {
-                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+                var key = keyConverter(item.Key);
+                var value = valueConverter(item.Value);
+                using (var keyDisposable = key as IDisposable)
+                using (var valueDisposable = value as IDisposable)
+                {
+                    tInstance.Put(key, value).DisposeIfDisposable();
+                }
             }
             return tInstance;
         }
@@ -301,14 +348,19 @@ namespace MASES.JNet.Specific.Extensions
             }
 #endif
             if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
-            var tInstance = new TDictionaryType();
+            var tInstance = JVMBridgeBase.New<TDictionaryType>();
             foreach (var item in dictionary)
             {
 #if NET462_OR_GREATER || JNET_DOCKER_BUILD_ACTIONS
-                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+                var key = keyConverter(item.Key);
+                var value = valueConverter(item.Value);
 #else
-                tInstance.Put(keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key), valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value));
+                var key = keyConverter != null ? keyConverter(item.Key) : TJVMK.ToJVM(item.Key);
+                var value = valueConverter != null ? valueConverter(item.Value) : TJVMV.ToJVM(item.Value);
 #endif
+                using var keyToDispose = key as IDisposable;
+                using var valueToDispose = value as IDisposable;
+                tInstance.Put(key, value).DisposeIfDisposable();
             }
             return tInstance;
         }
@@ -329,10 +381,14 @@ namespace MASES.JNet.Specific.Extensions
             if (dictionary == null) throw new ArgumentNullException(nameof(dictionary));
             if (keyConverter == null) throw new ArgumentNullException(nameof(keyConverter));
             if (valueConverter == null) throw new ArgumentNullException(nameof(valueConverter));
-            var tInstance = new Hashtable<TJVMK, TJVMV>();
+            var tInstance = JVMBridgeBase.New<Hashtable<TJVMK, TJVMV>>();
             foreach (var item in dictionary)
             {
-                tInstance.Put(keyConverter(item.Key), valueConverter(item.Value));
+                var key = keyConverter(item.Key);
+                var value = valueConverter(item.Value);
+                using var keyToDispose = key as IDisposable;
+                using var valueToDispose = value as IDisposable;
+                tInstance.Put(key, value).DisposeIfDisposable();
             }
             return tInstance;
         }

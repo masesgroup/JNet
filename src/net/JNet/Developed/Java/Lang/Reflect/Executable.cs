@@ -106,12 +106,12 @@ namespace Java.Lang.Reflect
     {
         //abstract Annotation[][] getParameterAnnotations()
         //Returns an array of arrays of Annotations that represent the annotations on the formal parameters, in declaration order, of the Executable represented by this object.
-        
+
         /// <summary>
-        /// Returns a <see langword="string"/> describing this <see cref="Executable"/>, including any type parameters.
+        /// Returns a <see langword="Java.Lang.String"/> describing this <see cref="Executable"/>, including any type parameters.
         /// </summary>
         /// <returns></returns>
-        public string GenericString => IExecute<string>("toGenericString");
+        public Java.Lang.String GenericString => IExecute<Java.Lang.String>("toGenericString");
 #endif
     }
 }

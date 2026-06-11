@@ -40,10 +40,10 @@ PowerShellHostName = ''
 PowerShellHostVersion = ''
 
 # Minimum version of the .NET Framework required by this module
-DotNetFrameworkVersion = '4.6.2'
+# DotNetFrameworkVersion = '4.6.2'
 
 # Minimum version of the common language runtime (CLR) required by this module
-CLRVersion = '4.0'
+# CLRVersion = '4.0'
 
 # Processor architecture (None, X86, Amd64, IA64) required by this module
 ProcessorArchitecture = ''
@@ -132,9 +132,9 @@ PrivateData = @{
 
     PSData = @{
 
-        Prerelease = 'rc4'
+        Prerelease = 'rc996'
 
-        Tags = @('JNetPS', 'JNet', 'PSEdition_Core', 'PSEdition_Desktop', 'Windows', 'Linux', 'JVM', 'Java', 'Scala', 'Kotlin', 'bridge', 'gateway')
+        Tags = @('JNetPS', 'JNet', 'PSEdition_Core', 'Windows', 'Linux', 'JVM', 'Java', 'Scala', 'Kotlin', 'bridge', 'gateway')
 
         LicenseUri = 'https://github.com/masesgroup/JNet/blob/master/LICENSE'
 

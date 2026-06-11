@@ -8,7 +8,7 @@ ENV JNET_DOCKER_BUILD_ACTIONS=true
 # Restore as distinct layers
 RUN dotnet restore JNetDocker.sln -a $TARGETARCH
 # Build and publish a release
-RUN dotnet publish ./JNetCLI/JNetCLI.csproj /p:NoWarn="0108%3B1030%3B0618" --framework net8.0 -c Release -o out -a $TARGETARCH
+RUN dotnet publish ./JNetCLI/JNetCLI.csproj /p:NoWarn="0108%3B1030%3B0618%3B0612" --framework net8.0 -c Release -o out -a $TARGETARCH
 
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/runtime:8.0-noble

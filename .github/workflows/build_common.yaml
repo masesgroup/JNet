@@ -123,7 +123,7 @@ jobs:
             10.x
 
       - name: Pre compile
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src/net/JNet/JNet.csproj
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src/net/JNet/JNet.csproj
         env:
           GITHUB_SIMPLIFIED_GENERATION: true
           
@@ -203,7 +203,7 @@ jobs:
             10.x
 
       - name: Pre compile
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNet\JNet.csproj
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNet\JNet.csproj
         env:
           GITHUB_SIMPLIFIED_GENERATION: true
           
@@ -221,18 +221,18 @@ jobs:
         run: mvn --file ./src/jvm/jnetreflector/pom.xml --no-transfer-progress package
 
       - name: Compile JNetCLI
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNetCLI\JNetCLI.csproj
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNetCLI\JNetCLI.csproj
  
       - name: Compile JNetReflector
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNetReflector\JNetReflector.csproj
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNetReflector\JNetReflector.csproj
  
       - name: Compile JNetPSCore
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNetPSCore\JNetPSCore.csproj
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNetPSCore\JNetPSCore.csproj
         
       - name: Compile JNetPS
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNetPS\JNetPS.csproj
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNetPS\JNetPS.csproj
  
-      - uses: nuget/setup-nuget@v3.1.0
+      - uses: nuget/setup-nuget@v4
         with:
           nuget-version: '5.x'
           
@@ -253,7 +253,7 @@ jobs:
         shell: pwsh
 
       - name: Recompile to create nuget packages
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNet.sln
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNet.sln
 
       - uses: actions/upload-artifact@v7
         with:
@@ -265,7 +265,7 @@ jobs:
         run: mvn --file ./tests/jvm/jnettest/pom.xml --no-transfer-progress package
 
       - name: Compile tests and templates
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" tests\net\JNetTest.sln
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" tests\net\JNetTest.sln
         env:
           GITHUB_TEST_PREPARATION: true
 
@@ -454,8 +454,12 @@ jobs:
 
       - if: ${{ matrix.framework != 'net462' }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll ${{ env.EXTRA_ARGUMENT }}
-        
+        shell: bash
+        run: |
+          for TEST in TestGetByteArrayDataUsage TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
+            dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
+          done
+
       - if: ${{ matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: .\bin\${{ matrix.framework }}\JNetPerformanceTest.exe ${{ env.EXTRA_ARGUMENT }}
@@ -466,7 +470,18 @@ jobs:
 
       - if: ${{ matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe ${{ env.EXTRA_ARGUMENT }}
+        shell: pwsh
+        run: |
+          foreach ($TEST in @(
+              'TestGetByteArrayDataUsage',
+              'TestGetByteBuffersDataUsage',
+              'TestGetByteBuffers',
+              'TestInsertByteBuffers',
+              'TestInsertByteBuffersNativeStream',
+              'TestInsertByteBuffersRecyclableMemoryStream'
+          )) {
+            .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe $TEST ${{ env.EXTRA_ARGUMENT }}
+          }
 
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
@@ -601,7 +616,10 @@ jobs:
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll ${{ env.EXTRA_ARGUMENT }}
+        run: |
+          for TEST in TestGetByteArrayDataUsage TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
+            dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
+          done
 
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
@@ -731,7 +749,10 @@ jobs:
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll ${{ env.EXTRA_ARGUMENT }}
+        run: |
+          for TEST in TestGetByteArrayDataUsage TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
+            dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
+          done
 
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted

@@ -74,7 +74,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Returns a string describing this Field, including its generic type.
         /// </summary>
-        public string GenericString => IExecute<string>("toGenericString");
+        public Java.Lang.String GenericString => IExecute<Java.Lang.String>("toGenericString");
 #endif
     }
 }

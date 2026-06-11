@@ -98,6 +98,7 @@
 		<EmbeddedResource Include="Templates\AllPackageClassesStubClassMainClass.template" />
 		<EmbeddedResource Include="Templates\AllPackageClassesStubClassListener.template" />
 		<EmbeddedResource Include="Templates\AllPackageClassesStubException.template" />
+		<EmbeddedResource Include="Templates\SingleConstructorInitializer.template" />
 		<EmbeddedResource Include="Templates\SingleFieldFinal.template" />
 		<EmbeddedResource Include="Templates\SingleListenerJavaFile.template" />
 		<EmbeddedResource Include="Templates\SingleInterface.template" />
@@ -116,11 +117,11 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="MASES.CLIParser" Version="3.2.1" />
-		<PackageReference Include="MASES.JCOBridge" Version="2.6.9-rc7">
+		<PackageReference Include="MASES.JCOBridge" Version="2.6.9-rc.37">
 			<IncludeAssets>All</IncludeAssets>
 			<PrivateAssets>None</PrivateAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.203" PrivateAssets="All" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.300" PrivateAssets="All" />
 	</ItemGroup>
 	<ItemGroup>
 		<Folder Include="Java\Lang\Annotation\" />

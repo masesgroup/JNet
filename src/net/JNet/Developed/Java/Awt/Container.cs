@@ -25,7 +25,6 @@ namespace Java.Awt
         // can be extended with methods not reflected or not available in Java;
 
         readonly object _lock = new object();
-        bool _disposed = false;
         IJCGraphicContainer _container = null;
         /// <summary>
         /// Creates the <see cref="HostedContainer"/> and returns <see cref="IJCGraphicContainer.GraphicObject"/>

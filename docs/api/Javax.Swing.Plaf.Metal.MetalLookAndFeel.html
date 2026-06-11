@@ -89,7 +89,7 @@
 
 
   <h1 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel" class="text-break">
-Class MetalLookAndFeel  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L66"><i class="bi bi-code-slash"></i></a>
+Class MetalLookAndFeel  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class MetalLookAndFeel  <a class="header-action link-secondary" title="View sour
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MetalLookAndFeel : BasicLookAndFeel, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class MetalLookAndFeel : BasicLookAndFeel, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class MetalLookAndFeel  <a class="header-action link-secondary" title="View sour
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeCore</span></div>
-      <div><span class="xref">JVMBridgeCore</span>&lt;<a class="xref" href="Javax.Swing.LookAndFeel.html">LookAndFeel</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Javax.Swing.LookAndFeel.html">LookAndFeel</a>&gt;</div>
       <div><a class="xref" href="Javax.Swing.LookAndFeel.html">LookAndFeel</a></div>
       <div><a class="xref" href="Javax.Swing.Plaf.Basic.BasicLookAndFeel.html">BasicLookAndFeel</a></div>
       <div><span class="xref">MetalLookAndFeel</span></div>
@@ -127,6 +127,7 @@ Class MetalLookAndFeel  <a class="header-action link-secondary" title="View sour
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
@@ -210,319 +211,361 @@ Class MetalLookAndFeel  <a class="header-action link-secondary" title="View sour
       <a class="xref" href="Javax.Swing.LookAndFeel.html#Javax_Swing_LookAndFeel_Uninitialize">LookAndFeel.Uninitialize()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;LookAndFeel&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LookAndFeel&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteStream&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SGetField(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SGetField(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SGetField&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SGetField(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SGetField(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SSetField(IJavaType, string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SSetField(string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SGetField&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SGetFieldStream&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.IsAssignableFrom(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;LookAndFeel&gt;.IsAssignableFrom(IJavaType)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SGetFieldStream&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;LookAndFeel&gt;.IsAssignableFrom&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SSetField(IJavaType, string, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore&lt;LookAndFeel&gt;.New(params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SSetField(string, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.NewWithSignature(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;LookAndFeel&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.IsAssignableFrom(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;LookAndFeel&gt;.Execute&lt;T&gt;(params T[])</span>
+      <span class="xref">JVMBridgeBase&lt;LookAndFeel&gt;.IsAssignableFrom(IJavaType)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;LookAndFeel&gt;.DynBridgeClazz</span>
+      <span class="xref">JVMBridgeBase&lt;LookAndFeel&gt;.IsAssignableFrom&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;LookAndFeel&gt;.BridgeClazz</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;LookAndFeel&gt;.New(params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ReferenceEqualsJVM(IJVMBridgeBase, IJVMBridgeBase)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.NewWithSignature(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeCore.ClazzOf&lt;TClass&gt;(bool)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeCore.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LookAndFeel&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ClazzOf(string, bool)</a>
+      <span class="xref">JVMBridgeBase&lt;LookAndFeel&gt;.Execute&lt;T&gt;(params T[])</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ClazzOf(string, out Exception, bool)</a>
+      <span class="xref">JVMBridgeBase&lt;LookAndFeel&gt;.DynBridgeClazz</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.RuntimeClassNameOf&lt;T&gt;()</span>
+      <span class="xref">JVMBridgeBase&lt;LookAndFeel&gt;.BridgeClazz</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.RuntimeClassNameOf(Type)</a>
+      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(IJVMBridgeBase, IJVMBridgeBase)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ClassNameOf&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ClassOf&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.Wraps(Type, IJavaObject, string)</a>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.MonitorEnter()</span>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.MonitorExit()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IsInstanceOf(string)</a>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.IsInstanceOf(IJavaType)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.IsInstanceOf&lt;T&gt;()</span>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.RuntimeIsInstanceOf&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.CastTo&lt;TNewClass&gt;()</span>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.CastDirect&lt;TNewClass&gt;()</span>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Equals(IJVMBridgeBase)</span>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore.Equals(object)</a>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.GetHashCode()</span>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Notify()</span>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.NotifyAll()</span>
+      <span class="xref">JVMBridgeBase.CastToAndDetach&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wait()</span>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeCore.Wait(long)</a>
+      <span class="xref">JVMBridgeBase.CastDirectAndDetach&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeCore.Wait(long, int)</a>
+      <span class="xref">JVMBridgeBase.CheckDisposed()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute(string, params object[])</a>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute&lt;TReturn&gt;(string, params object[])</a>
+      <span class="xref">JVMBridgeBase.ToString()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+      <span class="xref">JVMBridgeBase.Notify()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+      <span class="xref">JVMBridgeBase.Wait()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IGetField(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IGetField&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IGetFieldArray&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ISetField(string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ISetField&lt;TValue&gt;(string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore.Throw&lt;TException&gt;(params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore.BiThrow&lt;TException&gt;(params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.DynBridgeInstance</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.BridgeInstance</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.IsBridgeListener</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldStream&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
@@ -586,9 +629,6 @@ Class MetalLookAndFeel  <a class="header-action link-secondary" title="View sour
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
-  <div>
-      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_ToDisposable_MASES_JCOBridge_C2JBridge_JVMBridgeCore_">JNetCoreExtensions.ToDisposable(JVMBridgeCore)</a>
-  </div>
   </dd></dl>
 
 
@@ -603,7 +643,7 @@ Class MetalLookAndFeel  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel__ctor" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.#ctor">
   MetalLookAndFeel()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#javax.swing.plaf.metal.MetalLookAndFeel()">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#javax.swing.plaf.metal.MetalLookAndFeel()</a></p>
@@ -630,10 +670,10 @@ Class MetalLookAndFeel  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
   MetalLookAndFeel(IJVMBridgeBaseInitializer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -663,10 +703,10 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel__ctor_System_Object___" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.#ctor(System.Object[])">
   MetalLookAndFeel(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+  <div class="markdown level1 summary"><p>Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -699,7 +739,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_AcceleratorForeground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.AcceleratorForeground">
   AcceleratorForeground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getAcceleratorForeground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getAcceleratorForeground--</a></p>
@@ -731,7 +771,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_AcceleratorSelectedForeground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.AcceleratorSelectedForeground">
   AcceleratorSelectedForeground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getAcceleratorSelectedForeground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getAcceleratorSelectedForeground--</a></p>
@@ -763,7 +803,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_Black" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.Black">
   Black
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getBlack--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getBlack--</a></p>
@@ -795,7 +835,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_BridgeClassName" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -827,7 +867,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_Control" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.Control">
   Control
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControl--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControl--</a></p>
@@ -859,7 +899,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_ControlDarkShadow" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.ControlDarkShadow">
   ControlDarkShadow
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlDarkShadow--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlDarkShadow--</a></p>
@@ -891,7 +931,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_ControlDisabled" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.ControlDisabled">
   ControlDisabled
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlDisabled--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlDisabled--</a></p>
@@ -923,7 +963,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_ControlHighlight" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.ControlHighlight">
   ControlHighlight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlHighlight--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlHighlight--</a></p>
@@ -955,7 +995,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_ControlInfo" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.ControlInfo">
   ControlInfo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlInfo--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlInfo--</a></p>
@@ -987,7 +1027,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_ControlShadow" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.ControlShadow">
   ControlShadow
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlShadow--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlShadow--</a></p>
@@ -1019,7 +1059,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_ControlTextColor" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.ControlTextColor">
   ControlTextColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlTextColor--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlTextColor--</a></p>
@@ -1051,7 +1091,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_ControlTextFont" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.ControlTextFont">
   ControlTextFont
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlTextFont--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlTextFont--</a></p>
@@ -1083,7 +1123,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_CurrentTheme" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.CurrentTheme">
   CurrentTheme
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getCurrentTheme--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getCurrentTheme--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#setCurrentTheme-javax.swing.plaf.metal.MetalTheme-">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#setCurrentTheme-javax.swing.plaf.metal.MetalTheme-</a></p>
@@ -1115,7 +1155,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_DesktopColor" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.DesktopColor">
   DesktopColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getDesktopColor--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getDesktopColor--</a></p>
@@ -1147,7 +1187,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_FocusColor" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.FocusColor">
   FocusColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getFocusColor--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getFocusColor--</a></p>
@@ -1179,7 +1219,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_HighlightedTextColor" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.HighlightedTextColor">
   HighlightedTextColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getHighlightedTextColor--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getHighlightedTextColor--</a></p>
@@ -1211,7 +1251,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_InactiveControlTextColor" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.InactiveControlTextColor">
   InactiveControlTextColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getInactiveControlTextColor--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getInactiveControlTextColor--</a></p>
@@ -1243,7 +1283,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_InactiveSystemTextColor" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.InactiveSystemTextColor">
   InactiveSystemTextColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getInactiveSystemTextColor--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getInactiveSystemTextColor--</a></p>
@@ -1275,7 +1315,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_IsBridgeAbstract" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -1307,10 +1347,10 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_IsBridgeCloseable" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1339,7 +1379,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_IsBridgeInterface" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -1371,7 +1411,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_IsBridgeStatic" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -1403,7 +1443,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_MenuBackground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.MenuBackground">
   MenuBackground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L212"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuBackground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuBackground--</a></p>
@@ -1435,7 +1475,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_MenuDisabledForeground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.MenuDisabledForeground">
   MenuDisabledForeground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuDisabledForeground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuDisabledForeground--</a></p>
@@ -1467,7 +1507,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_MenuForeground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.MenuForeground">
   MenuForeground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L226"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuForeground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuForeground--</a></p>
@@ -1499,7 +1539,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_MenuSelectedBackground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.MenuSelectedBackground">
   MenuSelectedBackground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuSelectedBackground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuSelectedBackground--</a></p>
@@ -1531,7 +1571,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_MenuSelectedForeground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.MenuSelectedForeground">
   MenuSelectedForeground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L240"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuSelectedForeground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuSelectedForeground--</a></p>
@@ -1563,7 +1603,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_MenuTextFont" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.MenuTextFont">
   MenuTextFont
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuTextFont--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuTextFont--</a></p>
@@ -1595,7 +1635,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_PrimaryControl" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.PrimaryControl">
   PrimaryControl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L254"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControl--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControl--</a></p>
@@ -1627,7 +1667,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_PrimaryControlDarkShadow" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.PrimaryControlDarkShadow">
   PrimaryControlDarkShadow
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L261"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControlDarkShadow--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControlDarkShadow--</a></p>
@@ -1659,7 +1699,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_PrimaryControlHighlight" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.PrimaryControlHighlight">
   PrimaryControlHighlight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L268"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControlHighlight--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControlHighlight--</a></p>
@@ -1691,7 +1731,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_PrimaryControlInfo" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.PrimaryControlInfo">
   PrimaryControlInfo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControlInfo--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControlInfo--</a></p>
@@ -1723,7 +1763,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_PrimaryControlShadow" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.PrimaryControlShadow">
   PrimaryControlShadow
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L282"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControlShadow--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControlShadow--</a></p>
@@ -1755,7 +1795,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_SeparatorBackground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.SeparatorBackground">
   SeparatorBackground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getSeparatorBackground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getSeparatorBackground--</a></p>
@@ -1787,7 +1827,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_SeparatorForeground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.SeparatorForeground">
   SeparatorForeground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L296"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getSeparatorForeground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getSeparatorForeground--</a></p>
@@ -1819,7 +1859,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_SubTextFont" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.SubTextFont">
   SubTextFont
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L303"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getSubTextFont--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getSubTextFont--</a></p>
@@ -1851,7 +1891,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_SystemTextColor" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.SystemTextColor">
   SystemTextColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L310"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getSystemTextColor--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getSystemTextColor--</a></p>
@@ -1883,7 +1923,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_SystemTextFont" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.SystemTextFont">
   SystemTextFont
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L317"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getSystemTextFont--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getSystemTextFont--</a></p>
@@ -1915,7 +1955,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_TextHighlightColor" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.TextHighlightColor">
   TextHighlightColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L324"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getTextHighlightColor--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getTextHighlightColor--</a></p>
@@ -1947,7 +1987,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_UserTextColor" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.UserTextColor">
   UserTextColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L331"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getUserTextColor--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getUserTextColor--</a></p>
@@ -1979,7 +2019,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_UserTextFont" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.UserTextFont">
   UserTextFont
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L338"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getUserTextFont--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getUserTextFont--</a></p>
@@ -2011,7 +2051,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_White" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.White">
   White
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L345"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWhite--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWhite--</a></p>
@@ -2043,7 +2083,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_WindowBackground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.WindowBackground">
   WindowBackground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L352"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowBackground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowBackground--</a></p>
@@ -2075,7 +2115,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_WindowTitleBackground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.WindowTitleBackground">
   WindowTitleBackground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L359"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleBackground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleBackground--</a></p>
@@ -2107,7 +2147,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_WindowTitleFont" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.WindowTitleFont">
   WindowTitleFont
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L366"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleFont--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleFont--</a></p>
@@ -2139,7 +2179,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_WindowTitleForeground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.WindowTitleForeground">
   WindowTitleForeground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L373"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleForeground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleForeground--</a></p>
@@ -2171,7 +2211,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_WindowTitleInactiveBackground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.WindowTitleInactiveBackground">
   WindowTitleInactiveBackground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L380"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleInactiveBackground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleInactiveBackground--</a></p>
@@ -2203,7 +2243,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Swing_Plaf_Metal_MetalLookAndFeel_WindowTitleInactiveForeground" data-uid="Javax.Swing.Plaf.Metal.MetalLookAndFeel.WindowTitleInactiveForeground">
   WindowTitleInactiveForeground
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L387"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleInactiveForeground--">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleInactiveForeground--</a></p>
@@ -2235,7 +2275,7 @@ public MetalLookAndFeel(IJVMBridgeBaseInitializer initializer)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L66" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Plaf/Metal/MetalLookAndFeel.cs/#L68" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -37,8 +37,6 @@ namespace Java.Util
     public class Collection<E> : Java.Lang.Iterable<E>
     {
         /// <inheritdoc/>
-        public Collection() { }
-        /// <inheritdoc/>
         public Collection(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override bool IsBridgeInterface => true;

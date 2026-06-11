@@ -257,20 +257,11 @@ namespace MASES.JNetExample
 <li>The call passes the JVM™ reference across the boundary, but from .NET's perspective the wrapper <code>set</code> has no further uses and is eligible for collection.</li>
 <li>If the .NET GC runs at this moment — which it may do arbitrarily based on <a href="https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/">memory pressure</a> — the wrapper is collected and the JVM™ receives a null reference.</li>
 </ul>
-<p>Most of the time the code works fine, but the failure is non-deterministic and hard to reproduce. The solutions below prevent it.</p>
-<div class="TIP">
-<h5>Tip</h5>
-<p>The <code>using</code> pattern is the most idiomatic approach in modern C# and should be preferred in new code.
-The <code>SuppressFinalize</code>/<code>ReRegisterForFinalize</code> pattern is useful when refactoring to <code>using</code> blocks is not practical.</p>
-</div>
+<p>Most of the time the code works fine, but the failure is non-deterministic and hard to reproduce.</p>
 <h3 id="using-or-try-finally-with-dispose"><code>using</code> or <code>try-finally</code> with <code>Dispose</code></h3>
-<p>From 2.6.7+ version only JNet classes extending <code>AutoCloseable</code> implement <code>IDisposable</code>.
-Naturally the <code>using</code> block replaces the equivalent <code>try-with-resources</code> of Java and reference is not collected till the end of the object usage.
-For all other classes without <code>IDisposable</code> (i.e. does not represent an <code>AutoCloseable</code> class), JCOBridge 2.6.8 introduces the <code>JVMBridgeCoreDisposable</code> which wraps the input object, make the reference alive and exposes an <code>IDisposable</code> interface.
-Wrapping the object in a <code>using</code> block keeps it alive and releases the JVM reference deterministically:</p>
+<p>All JNet classes implement <code>IDisposable</code>. Wrapping an object in a <code>using</code> block keeps it alive for the entire scope and releases the JVM™ global reference deterministically when the block exits:</p>
 <pre><code class="lang-csharp">using Java.Util;
 using MASES.JNet.Extensions;
-using System.Diagnostics;
 using Java.Lang;
 
 namespace MASES.JNetExample
@@ -284,8 +275,7 @@ namespace MASES.JNetExample
             MyJNetCore.CreateGlobalInstance();
             try
             {
-                Java.Util.Set&lt;string&gt; set = Collections.Singleton(&quot;test&quot;);
-                using (var disposeable = JVMBridgeCoreDisposable.Create(set)) // or using (var disposeable = set.ToDisposeable())
+                using (var set = Collections.Singleton(&quot;test&quot;))
                 {
                     ArrayList&lt;string&gt; arrayList = new();
                     arrayList.AddAll(0, set);
@@ -297,68 +287,79 @@ namespace MASES.JNetExample
 }
 </code></pre>
 <p>Or equivalently with <code>try-finally</code>:</p>
-<pre><code class="lang-csharp">using Java.Util;
-using MASES.JNet.Extensions;
-using System.Diagnostics;
-using Java.Lang;
-
-namespace MASES.JNetExample
+<pre><code class="lang-csharp">Java.Util.Set&lt;string&gt; set = Collections.Singleton(&quot;test&quot;);
+try
 {
-    class MyJNetCore : JNetCore&lt;MyJNetCore&gt; { }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            MyJNetCore.CreateGlobalInstance();
-            try
-            {
-                Java.Util.Set&lt;string&gt; set = Collections.Singleton(&quot;test&quot;);
-                var disposeable = JVMBridgeCoreDisposable.Create(set); // or var disposeable = set.ToDisposeable();
-                try
-                {
-                    ArrayList&lt;string&gt; arrayList = new();
-                    arrayList.AddAll(0, set);
-                }
-                finally { disposeable?.Dispose(); }
-            }
-            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
-        }
-    }
+    ArrayList&lt;string&gt; arrayList = new();
+    arrayList.AddAll(0, set);
 }
+finally { set?.Dispose(); }
 </code></pre>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The <code>using</code> pattern is the most idiomatic approach in modern C# and should be preferred in new code.</p>
+</div>
 <h3 id="suppressfinalizereregisterforfinalize-pattern"><code>SuppressFinalize</code>/<code>ReRegisterForFinalize</code> pattern</h3>
 <p>When restructuring to <code>using</code> is not practical, you can suppress finalization for the duration of the cross-boundary call:</p>
-<pre><code class="lang-csharp">using Java.Util;
-using MASES.JNet.Extensions;
-using System.Diagnostics;
-using Java.Lang;
-
-namespace MASES.JNetExample
+<pre><code class="lang-csharp">Java.Util.Set&lt;string&gt; set = Collections.Singleton(&quot;test&quot;);
+try
 {
-    class MyJNetCore : JNetCore&lt;MyJNetCore&gt; { }
-
-    class Program
+    System.GC.SuppressFinalize(set);
+    ArrayList&lt;string&gt; arrayList = new();
+    arrayList.AddAll(0, set);
+}
+finally { System.GC.ReRegisterForFinalize(set); }
+</code></pre>
+<h2 id="reducing-dispose-overhead-in-high-volume-loops">Reducing Dispose overhead in high-volume loops</h2>
+<p>Each <code>Dispose</code> on a JNet object releases the underlying JVM™ global reference with a direct native call. In tight loops that create and dispose many JNet objects — such as a Kafka consumer poll loop or a storage enumeration — this per-object native call cost accumulates.</p>
+<p><code>JCOBridgeDisposeFastScope</code> and <code>JCOBridgeDisposeAsyncScope</code> address this by batching the releases and flushing them in a single native call, keeping the loop body unchanged.</p>
+<h3 id="jcobridgedisposefastscope--synchronous-hot-paths"><code>JCOBridgeDisposeFastScope</code> — synchronous hot paths</h3>
+<p>Use this scope in synchronous code on a controlled thread. It uses thread-local storage with minimal access cost.</p>
+<pre><code class="lang-csharp">using var batch = new JCOBridgeDisposeFastScope();
+while (!resetEvent.WaitOne(0))
+{
+    using var records = consumer.Poll(200);
+    foreach (var record in records)
     {
-        static void Main(string[] args)
+        using (record)
         {
-            MyJNetCore.CreateGlobalInstance();
-            try
-            {
-                Java.Util.Set&lt;string&gt; set = Collections.Singleton(&quot;test&quot;);
-                try
-                {
-                    System.GC.SuppressFinalize(set);
-                    ArrayList&lt;string&gt; arrayList = new();
-                    arrayList.AddAll(0, set);
-                }
-                finally { System.GC.ReRegisterForFinalize(set); }
-            }
-            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
+            Console.WriteLine($&quot;Offset={record.Offset()}, Key={record.Key()}&quot;);
         }
     }
-}
+} // all queued releases flushed here in a single native call
 </code></pre>
+<div class="WARNING">
+<h5>Warning</h5>
+<p><code>JCOBridgeDisposeFastScope</code> is not safe across <code>await</code> — if a continuation resumes on a different thread the scope state will not be visible. Use <code>JCOBridgeDisposeAsyncScope</code> for async code.</p>
+</div>
+<h3 id="jcobridgedisposeasyncscope--asyncawait-contexts"><code>JCOBridgeDisposeAsyncScope</code> — async/await contexts</h3>
+<p>Use this scope when continuations may resume on a different thread. The scope state flows automatically across <code>await</code> points.</p>
+<p>On .NET 8 and later <code>JCOBridgeDisposeAsyncScope</code> implements <code>IAsyncDisposable</code>, enabling <code>await using</code> and an asynchronous flush on scope exit:</p>
+<pre><code class="lang-csharp">// .NET 8 / 9 / 10 — IAsyncDisposable available
+await using var batch = new JCOBridgeDisposeAsyncScope();
+await foreach (var item in asyncCollection)
+{
+    using (item)
+    {
+        await ProcessAsync(item);
+    }
+} // queued releases flushed asynchronously when the scope exits
+</code></pre>
+<p>On .NET Framework <code>IAsyncDisposable</code> is not available. Use a standard <code>using</code> block — the flush on scope exit is synchronous:</p>
+<pre><code class="lang-csharp">// .NET Framework — IDisposable only
+using (var batch = new JCOBridgeDisposeAsyncScope())
+{
+    foreach (var item in collection)
+    {
+        using (item) { /* item disposal is batched */ }
+    }
+} // queued releases flushed synchronously when the scope exits
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Both scopes are opt-in and additive — code that does not open a scope continues to release references immediately on <code>Dispose</code>, with no behavioral change. Scopes are designed to be opened by library code (e.g. storage enumerators, consumer loops) rather than exposed to end users.</p>
+</div>
+<p>See <a href="performancetips.html">performance tips</a> for guidance on when batch scopes provide meaningful gains.</p>
 
 </article>
 

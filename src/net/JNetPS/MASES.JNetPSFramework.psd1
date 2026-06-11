@@ -132,9 +132,9 @@ PrivateData = @{
 
     PSData = @{
 
-        Prerelease = 'rc4'
+        Prerelease = 'rc996'
 
-        Tags = @('JNetPS', 'JNet', 'PSEdition_Core', 'PSEdition_Desktop', 'Windows', 'Linux', 'JVM', 'Java', 'Scala', 'Kotlin', 'bridge', 'gateway')
+        Tags = @('JNetPS', 'JNet', 'PSEdition_Desktop', 'Windows', 'Linux', 'JVM', 'Java', 'Scala', 'Kotlin', 'bridge', 'gateway')
 
         LicenseUri = 'https://github.com/masesgroup/JNet/blob/master/LICENSE'
 

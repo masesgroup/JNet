@@ -17,10 +17,13 @@
 */
 
 using Java.Nio;
+using Javax.Xml.Crypto;
+using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNetTest.Common;
 using System;
 using System.Diagnostics;
+using System.Linq;
 
 namespace MASES.JNetByteBufferTest
 {
@@ -42,11 +45,11 @@ namespace MASES.JNetByteBufferTest
             }
 #endif
 
-            Initialize();
+            var filteredArgs = Initialize();
 
             Stopwatch stopwatch = Stopwatch.StartNew();
 
-            ExecuteTests();
+            ExecuteTests(filteredArgs);
 
             Console.WriteLine("Enabling Critical methods");
 
@@ -55,13 +58,13 @@ namespace MASES.JNetByteBufferTest
             management.EnableCriticalMethods = true;
             management.EnableCriticalMethodsOnGetThreshold = management.EnableCriticalMethodsOnSetThreshold = 0;
 
-            ExecuteTests();
+            ExecuteTests(filteredArgs);
 
             stopwatch.Stop();
             System.Console.WriteLine($"All tests completed in {stopwatch.Elapsed}");
         }
 
-        static void Initialize()
+        static string[] Initialize()
         {
             try
             {
@@ -72,6 +75,8 @@ namespace MASES.JNetByteBufferTest
                 var appArgs = JNetTestCore.FilteredArgs;
 
                 System.Console.WriteLine("Initialized JNetTestCore" + (appArgs.Length != 0 ? $", remaining arguments are {string.Join(" ", appArgs)}" : string.Empty));
+
+                return appArgs;
             }
             catch (Exception ex)
             {
@@ -80,29 +85,39 @@ namespace MASES.JNetByteBufferTest
             }
         }
 
-        static void ExecuteTests()
+        static void ExecuteTests(string[] args)
         {
             Console.WriteLine("Start get from JVM to CLR");
+            string[] tests = new string[] { "TestGetByteArrayDataUsage", "TestGetByteBuffersDataUsage", "TestGetByteBuffers", "TestInsertByteBuffers", "TestInsertByteBuffersNativeStream", "TestInsertByteBuffersRecyclableMemoryStream" };
+            if (args.Length == 1) tests = new string[] { args[0] };
 
-            for (int i = MinValue; i < MaxValue; i *= 10)
+            foreach (var item in tests)
             {
-                TestGetByteBuffers(iterations, i);
-            }
-
-            Console.WriteLine("Start insert from CLR to JVM");
-
-            for (int i = MinValue; i < MaxValue; i *= 10)
-            {
-                TestInsertByteBuffers(iterations, i);
-            }
-
-            ByteBuffer.EnableRecyclableMemoryStream(true);
-
-            Console.WriteLine("Start insert from CLR to JVM with RecyclableMemoryStream");
-
-            for (int i = MinValue; i < MaxValue; i *= 10)
-            {
-                TestInsertByteBuffersRecyclableMemoryStream(iterations, i);
+                for (int i = MinValue; i < MaxValue; i *= 10)
+                {
+                    switch (item)
+                    {
+                        case "TestGetByteArrayDataUsage":
+                            TestGetByteArrayDataUsage(iterations, i);
+                            break;
+                        case "TestGetByteBuffersDataUsage":
+                            TestGetByteBuffersDataUsage(iterations, i);
+                            break;
+                        case "TestGetByteBuffers":
+                            TestGetByteBuffers(iterations, i);
+                            break;
+                        case "TestInsertByteBuffers":
+                            TestInsertByteBuffers(iterations, i);
+                            break;
+                        case "TestInsertByteBuffersNativeStream":
+                            TestInsertByteBuffersNativeStream(iterations, i);
+                            break;
+                        case "TestInsertByteBuffersRecyclableMemoryStream":
+                            ByteBuffer.EnableRecyclableMemoryStream(true);
+                            TestInsertByteBuffersRecyclableMemoryStream(iterations, i);
+                            break;
+                    }
+                }
             }
         }
 
@@ -118,8 +133,117 @@ namespace MASES.JNetByteBufferTest
                     bytes[i] = (byte)(i % byte.MaxValue);
                 }
 
-                var bbCast = Java.Nio.ByteBuffer.From(bytes, false, false);
-                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
+                using var bbCast = Java.Nio.ByteBuffer.From(bytes, false);
+                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Console.WriteLine($"Created TestArrayAndByteBuffer");
+
+                Stopwatch watcher1 = Stopwatch.StartNew();
+                for (i = 0; i < requestedIterations; i++)
+                {
+                    try
+                    {
+                        jClass.Invoke("insertArray", bytes);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertArray at iteration {i} due to {ex}");
+                        break;
+                    }
+                }
+                watcher1.Stop();
+
+                Console.WriteLine($"End insertArray Elapsed {watcher1.Elapsed}");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher2 = Stopwatch.StartNew();
+                for (i = 0; i < requestedIterations; i++)
+                {
+                    try
+                    {
+                        jClass.Invoke("insertByteBuffer", bbCast.BridgeInstance);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertByteBuffer at iteration {i} due to {ex}");
+                        break;
+                    }
+                }
+                watcher2.Stop();
+
+                Console.WriteLine($"End insertByteBuffer Elapsed {watcher2.Elapsed}");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher3 = Stopwatch.StartNew();
+                for (i = 0; i < requestedIterations; i++)
+                {
+                    try
+                    {
+                        jClass.Invoke("insertByteBufferNoNew", bbCast.BridgeInstance);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertByteBufferNoNew at iteration {i} due to {ex}");
+                        break;
+                    }
+                }
+                watcher3.Stop();
+
+                Console.WriteLine($"End insertByteBufferNoNew Elapsed {watcher3.Elapsed}");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher4 = Stopwatch.StartNew();
+                for (i = 0; i < requestedIterations; i++)
+                {
+                    try
+                    {
+                        jClass.Invoke("insertByteBufferNoGet", bbCast.BridgeInstance);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertByteBufferNoGet at iteration {i} due to {ex}");
+                        break;
+                    }
+                }
+                watcher4.Stop();
+
+                Console.WriteLine($"End insertByteBufferNoGet Elapsed {watcher4.Elapsed}");
+
+                Console.WriteLine($"{length,Padding} Mean Time over {requestedIterations} iterations - Array {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ByteBuffer {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher4.Elapsed.Ticks) * 100:0.##}%)");
+            }
+            catch
+            {
+                Console.WriteLine($"Failed at iteration: {i}");
+                throw;
+            }
+        }
+
+        static void TestInsertByteBuffersNativeStream(int requestedIterations, int length)
+        {
+            Console.WriteLine($"TestInsertByteBuffersNativeStream with {requestedIterations} iterations and {length} length");
+            int i = 0;
+            try
+            {
+                byte[] bytes = new byte[length];
+                for (i = 0; i < bytes.Length; i++)
+                {
+                    bytes[i] = (byte)(i % byte.MaxValue);
+                }
+
+                var stream = Java.Nio.ByteBuffer.Rent(bytes.LongLength / 2); // build with less memory
+                stream.Write(bytes, 0, bytes.Length); // to test auto-grow
+                using var bbCast = Java.Nio.ByteBuffer.From(stream);
+
+                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -226,8 +350,8 @@ namespace MASES.JNetByteBufferTest
 
                 var bytes = ms.ToArray();
 
-                var bbCast = Java.Nio.ByteBuffer.From(ms);
-                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
+                using var bbCast = Java.Nio.ByteBuffer.From(ms);
+                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
                 if (jClass == null)
                 {
                     throw new InvalidOperationException("Failed to create IJavaObject for org.mases.jnet.TestArrayAndByteBuffer.");
@@ -331,7 +455,7 @@ namespace MASES.JNetByteBufferTest
             try
             {
                 byte[] bytes = new byte[length];
-                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
+                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -354,7 +478,7 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher2 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
                 {
-                    var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                    using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     var array = res.ToArray();
                     if (array.Length != length) { throw new System.Exception(); }
                 }
@@ -368,7 +492,7 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher3 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
                 {
-                    var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                    using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     res.ToArray(ref bytes, false);
                     if (bytes.Length != length) { throw new System.Exception(); }
                 }
@@ -380,15 +504,18 @@ namespace MASES.JNetByteBufferTest
                 Java.Lang.System.Gc();
 
                 System.Runtime.InteropServices.GCHandle handle = System.Runtime.InteropServices.GCHandle.Alloc(bytes, System.Runtime.InteropServices.GCHandleType.Pinned);
-
                 Stopwatch watcher4 = Stopwatch.StartNew();
-                for (i = 0; i < requestedIterations; i++)
+                try
                 {
-                    var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
-                    res.ToDirectBuffer().CopyTo(handle.AddrOfPinnedObject(), bytes.Length, 0, bytes.Length);
-                    if (bytes.Length != length) { throw new System.Exception(); }
+                    for (i = 0; i < requestedIterations; i++)
+                    {
+                        using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                        res.ToDirectBuffer(true).CopyTo(handle.AddrOfPinnedObject(), bytes.Length, 0, bytes.Length);
+                        if (bytes.Length != length) { throw new System.Exception(); }
+                    }
+                    watcher4.Stop();
                 }
-                watcher4.Stop();
+                finally { handle.Free(); }
 
                 Console.WriteLine($"End getByteBuffer -> ByteBuffer -> ToDirectBuffer -> CopyTo Elapsed {watcher4.Elapsed}");
 
@@ -398,7 +525,7 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher5 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
                 {
-                    var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                    using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     if (res.Remaining() != length) { throw new System.Exception(); }
                 }
                 watcher5.Stop();
@@ -410,6 +537,197 @@ namespace MASES.JNetByteBufferTest
             catch
             {
                 Console.WriteLine($"Failed at iteration: {i}");
+                throw;
+            }
+        }
+
+        static bool AreEqualChunked(System.IO.Stream stream, byte[] array, int bufferSize = 4096)
+        {
+            if (stream.CanSeek && stream.Length != array.Length)
+                return false;
+
+            stream.Position = 0;
+
+            var buffer = new byte[bufferSize];
+            int offset = 0;
+
+            while (true)
+            {
+                int read = stream.Read(buffer, 0, bufferSize);
+
+                if (read == 0)
+                    return offset == array.Length; // entrambi esauriti?
+
+                if (offset + read > array.Length)
+                    return false;
+
+                if (!buffer.AsSpan(0, read).SequenceEqual(array.AsSpan(offset, read)))
+                    return false;
+
+                offset += read;
+            }
+        }
+
+        static bool AreEqualNaive(System.IO.Stream stream, byte[] array)
+        {
+            stream.Position = 0;
+            using var ms = new System.IO.MemoryStream();
+            stream.CopyTo(ms);
+            return ms.ToArray().SequenceEqual(array);
+        }
+
+        static void TestGetByteArrayDataUsage(int requestedIterations, int length)
+        {
+            Console.WriteLine($"TestGetByteArrayDataUsage with {requestedIterations} iterations and {length} length");
+            int iteration = 0;
+            try
+            {
+                byte[] bytes = new byte[length];
+                for (int i = 0; i < length; i++)
+                {
+                    bytes[i] = (byte)(i % sbyte.MaxValue); // use sbyte because in JVM Byte is signed type
+                }
+                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Console.WriteLine($"Created TestArrayAndByteBuffer");
+
+                Stopwatch watcher1 = Stopwatch.StartNew();
+                for (iteration = 0; iteration < requestedIterations; iteration++)
+                {
+                    var res = jClass.Invoke<byte[]>("getArray");
+                    if (!res.SequenceEqual(bytes)) { throw new System.Exception(); }
+                }
+                watcher1.Stop();
+
+                Console.WriteLine($"End getArray -> Invoke<byte[]> -> SequenceEqual Elapsed {watcher1.Elapsed} - Mean {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / iteration)}");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher2 = Stopwatch.StartNew();
+                for (iteration = 0; iteration < requestedIterations; iteration++)
+                {
+                    using var res = jClass.Invoke("getArray") as IJavaArray;
+                    using JCOBridgeStream<byte> stream = res.ToStream<byte>();
+                    if (!AreEqualChunked(stream, bytes)) { throw new System.Exception(); }
+                }
+                watcher2.Stop();
+
+                Console.WriteLine($"End getArray -> AreEqualChunked Elapsed {watcher2.Elapsed} - Mean {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / iteration)}");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher3 = Stopwatch.StartNew();
+                for (iteration = 0; iteration < requestedIterations; iteration++)
+                {
+                    using var res = jClass.Invoke("getArray") as IJavaArray;
+                    using JCOBridgeStream<byte> stream = res.ToStream<byte>();
+                    if (!stream.AsSpan().SequenceEqual(bytes)) { throw new System.Exception(); }
+                }
+                watcher3.Stop();
+
+                Console.WriteLine($"End getArray -> AsSpan -> SequenceEqual Elapsed {watcher3.Elapsed} - Mean {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / iteration)}");
+
+                Console.WriteLine($"{length,Padding} Mean Time over {requestedIterations} iterations - Invoke<byte[]> {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - AreEqualChunked {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - AsSpan {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%)");
+            }
+            catch
+            {
+                Console.WriteLine($"Failed at iteration: {iteration}");
+                throw;
+            }
+        }
+
+        static void TestGetByteBuffersDataUsage(int requestedIterations, int length)
+        {
+            Console.WriteLine($"TestGetByteBuffersDataUsage with {requestedIterations} iterations and {length} length");
+            int iteration = 0;
+            try
+            {
+                byte[] bytes = new byte[length];
+                for (int i = 0; i < length; i++)
+                {
+                    bytes[i] = (byte)(i % sbyte.MaxValue); // use sbyte because in JVM Byte is signed type
+                }
+                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Console.WriteLine($"Created TestArrayAndByteBuffer");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+
+                Stopwatch watcher1 = Stopwatch.StartNew();
+                for (iteration = 0; iteration < requestedIterations; iteration++)
+                {
+                    var array = res.ToArray();
+                    if (array.Length != length) { throw new System.Exception(); }
+                    if (!array.SequenceEqual(bytes))
+                    {
+                        throw new System.Exception();
+                    }
+                }
+                watcher1.Stop();
+
+                Console.WriteLine($"End getByteBuffer -> ToArray -> SequenceEqual Elapsed {watcher1.Elapsed} - Mean {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / iteration)}");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher2 = Stopwatch.StartNew();
+                for (iteration = 0; iteration < requestedIterations; iteration++)
+                {
+                    using var stream = res.ToStream();
+                    if (!AreEqualNaive(stream, bytes))
+                    { throw new System.Exception(); }
+                }
+                watcher2.Stop();
+
+                Console.WriteLine($"End getByteBuffer -> ToStream -> AreEqualNaive Elapsed {watcher2.Elapsed} - Mean {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / iteration)}");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher3 = Stopwatch.StartNew();
+                for (iteration = 0; iteration < requestedIterations; iteration++)
+                {
+                    using var stream = res.ToStream();
+                    if (!AreEqualChunked(stream, bytes))
+                    { throw new System.Exception(); }
+                }
+                watcher3.Stop();
+
+                Console.WriteLine($"End getByteBuffer -> ToStream -> AreEqualChunked Elapsed {watcher3.Elapsed} - Mean {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / iteration)}");
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher4 = Stopwatch.StartNew();
+                for (iteration = 0; iteration < requestedIterations; iteration++)
+                {
+                    JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer(false);
+                    var span = db.AsSpan();
+                    if (span.Length != length) { throw new System.Exception(); }
+
+                    if (!span.SequenceEqual(bytes))
+                    { throw new System.Exception(); }
+                }
+                watcher4.Stop();
+
+                Console.WriteLine($"End getByteBuffer -> AsSpan -> SequenceEqual Elapsed {watcher4.Elapsed} - Mean {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / iteration)}");
+
+                Console.WriteLine($"{length,Padding} Mean Time over {requestedIterations} iterations - ToArray {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ToStream AreEqualNaive {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - ToStream AreEqualChunked {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%) - AsSpan {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher4.Elapsed.Ticks) * 100:0.##}%)");
+            }
+            catch
+            {
+                Console.WriteLine($"Failed at iteration: {iteration}");
                 throw;
             }
         }

@@ -722,7 +722,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.Datatransfer.FlavorListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.Datatransfer.FlavorListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.Datatransfer.FlavorListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.Datatransfer.FlavorListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.Datatransfer.FlavorListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1100,7 +1100,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.Dnd.DragGestureListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragGestureListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.Dnd.DragGestureListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragGestureListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.Dnd.DragGestureListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1156,7 +1156,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.Dnd.DragSourceAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragSourceAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.Dnd.DragSourceAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragSourceAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.Dnd.DragSourceAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1240,7 +1240,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.Dnd.DragSourceListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragSourceListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.Dnd.DragSourceListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragSourceListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.Dnd.DragSourceListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1268,7 +1268,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.Dnd.DragSourceMotionListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragSourceMotionListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.Dnd.DragSourceMotionListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragSourceMotionListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.Dnd.DragSourceMotionListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1310,7 +1310,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.Dnd.DropTargetAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DropTargetAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.Dnd.DropTargetAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DropTargetAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.Dnd.DropTargetAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1394,7 +1394,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.Dnd.DropTargetListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DropTargetListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.Dnd.DropTargetListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DropTargetListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.Dnd.DropTargetListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1660,7 +1660,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.AWTEventListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.AWTEventListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.AWTEventListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.AWTEventListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.AWTEventListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1716,7 +1716,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.ActionListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ActionListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.ActionListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ActionListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.ActionListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1758,7 +1758,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.AdjustmentListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.AdjustmentListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.AdjustmentListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.AdjustmentListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.AdjustmentListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1786,7 +1786,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.ComponentAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ComponentAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.ComponentAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ComponentAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.ComponentAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1828,7 +1828,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.ComponentListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ComponentListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.ComponentListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ComponentListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.ComponentListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1856,7 +1856,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.ContainerAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ContainerAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.ContainerAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ContainerAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.ContainerAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1898,7 +1898,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.ContainerListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ContainerListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.ContainerListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ContainerListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.ContainerListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1926,7 +1926,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.FocusAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.FocusAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.FocusAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.FocusAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.FocusAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1968,7 +1968,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.FocusListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.FocusListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.FocusListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.FocusListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.FocusListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1996,7 +1996,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.HierarchyBoundsAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.HierarchyBoundsAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.HierarchyBoundsAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.HierarchyBoundsAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.HierarchyBoundsAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2024,7 +2024,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.HierarchyBoundsListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.HierarchyBoundsListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.HierarchyBoundsListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.HierarchyBoundsListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.HierarchyBoundsListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2066,7 +2066,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.HierarchyListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.HierarchyListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.HierarchyListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.HierarchyListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.HierarchyListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2402,7 +2402,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.InputMethodListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.InputMethodListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.InputMethodListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.InputMethodListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.InputMethodListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2458,7 +2458,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.ItemListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ItemListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.ItemListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ItemListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.ItemListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2486,7 +2486,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.KeyAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.KeyAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.KeyAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.KeyAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.KeyAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2528,7 +2528,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.KeyListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.KeyListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.KeyListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.KeyListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.KeyListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2556,7 +2556,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.MouseAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.MouseAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.MouseAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.MouseAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.MouseAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2598,7 +2598,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.MouseListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.MouseListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.MouseListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.MouseListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.MouseListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2626,7 +2626,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.MouseMotionAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.MouseMotionAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.MouseMotionAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.MouseMotionAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.MouseMotionAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2654,7 +2654,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.MouseMotionListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.MouseMotionListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.MouseMotionListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.MouseMotionListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.MouseMotionListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2696,7 +2696,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.MouseWheelListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.MouseWheelListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.MouseWheelListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.MouseWheelListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.MouseWheelListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2752,7 +2752,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.TextListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.TextListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.TextListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.TextListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.TextListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2780,7 +2780,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.WindowAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.WindowAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.WindowAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.WindowAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.WindowAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2822,7 +2822,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.WindowFocusListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.WindowFocusListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.WindowFocusListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.WindowFocusListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.WindowFocusListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2850,7 +2850,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.WindowListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.WindowListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.WindowListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.WindowListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.WindowListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2878,7 +2878,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.WindowStateListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.WindowStateListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Awt.EventNs.WindowStateListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.WindowStateListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Awt.EventNs.WindowStateListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -6812,7 +6812,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Beans.Beancontext.BeanContextMembershipListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Beans.Beancontext.BeanContextMembershipListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Beans.Beancontext.BeanContextMembershipListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Beans.Beancontext.BeanContextMembershipListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Beans.Beancontext.BeanContextMembershipListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -6910,7 +6910,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Beans.Beancontext.BeanContextServiceRevokedListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Beans.Beancontext.BeanContextServiceRevokedListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Beans.Beancontext.BeanContextServiceRevokedListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Beans.Beancontext.BeanContextServiceRevokedListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Beans.Beancontext.BeanContextServiceRevokedListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -6952,7 +6952,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Beans.Beancontext.BeanContextServicesListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Beans.Beancontext.BeanContextServicesListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Beans.Beancontext.BeanContextServicesListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Beans.Beancontext.BeanContextServicesListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Beans.Beancontext.BeanContextServicesListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -7288,7 +7288,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Beans.ExceptionListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Beans.ExceptionListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Beans.ExceptionListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Beans.ExceptionListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Beans.ExceptionListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -7610,7 +7610,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Beans.PropertyChangeListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Beans.PropertyChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Beans.PropertyChangeListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Beans.PropertyChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Beans.PropertyChangeListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -7778,7 +7778,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Beans.VetoableChangeListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Beans.VetoableChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Beans.VetoableChangeListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Beans.VetoableChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Beans.VetoableChangeListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -12398,7 +12398,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Lang.RunnableDirect",
-      "Summary": "<p sourcefile=\"api/Java.Lang.RunnableDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Lang.Runnable\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Lang.RunnableDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Lang.Runnable\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -25096,7 +25096,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Concurrent.CallableDirect<V>",
-      "Summary": "<p sourcefile=\"api/Java.Util.Concurrent.CallableDirect-1.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Util.Concurrent.Callable\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Concurrent.CallableDirect-1.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Util.Concurrent.Callable\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -25110,7 +25110,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Concurrent.CallableDirect",
-      "Summary": "<p sourcefile=\"api/Java.Util.Concurrent.CallableDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Util.Concurrent.Callable\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Concurrent.CallableDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Util.Concurrent.Callable\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31340,7 +31340,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Prefs.NodeChangeListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Util.Prefs.NodeChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Util.Prefs.NodeChangeListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Prefs.NodeChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Util.Prefs.NodeChangeListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31382,7 +31382,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Prefs.PreferenceChangeListenerDirect",
-      "Summary": "<p sourcefile=\"api/Java.Util.Prefs.PreferenceChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Util.Prefs.PreferenceChangeListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Prefs.PreferenceChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Java.Util.Prefs.PreferenceChangeListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -34602,7 +34602,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Imageio.Event.IIOReadProgressListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Imageio.Event.IIOReadProgressListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Imageio.Event.IIOReadProgressListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Imageio.Event.IIOReadProgressListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Imageio.Event.IIOReadProgressListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -34630,7 +34630,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Imageio.Event.IIOReadUpdateListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Imageio.Event.IIOReadUpdateListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Imageio.Event.IIOReadUpdateListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Imageio.Event.IIOReadUpdateListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Imageio.Event.IIOReadUpdateListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -34658,7 +34658,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Imageio.Event.IIOReadWarningListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Imageio.Event.IIOReadWarningListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Imageio.Event.IIOReadWarningListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Imageio.Event.IIOReadWarningListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Imageio.Event.IIOReadWarningListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -34686,7 +34686,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Imageio.Event.IIOWriteProgressListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Imageio.Event.IIOWriteProgressListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Imageio.Event.IIOWriteProgressListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Imageio.Event.IIOWriteProgressListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Imageio.Event.IIOWriteProgressListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -34714,7 +34714,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Imageio.Event.IIOWriteWarningListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Imageio.Event.IIOWriteWarningListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Imageio.Event.IIOWriteWarningListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Imageio.Event.IIOWriteWarningListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Imageio.Event.IIOWriteWarningListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -39236,7 +39236,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Management.NotificationFilterDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Management.NotificationFilterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Management.NotificationFilter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Management.NotificationFilterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Management.NotificationFilter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -39278,7 +39278,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Management.NotificationListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Management.NotificationListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Management.NotificationListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Management.NotificationListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Management.NotificationListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -41742,7 +41742,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Naming.Event.NamespaceChangeListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Naming.Event.NamespaceChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Naming.Event.NamespaceChangeListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Naming.Event.NamespaceChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Naming.Event.NamespaceChangeListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -41798,7 +41798,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Naming.Event.NamingListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Naming.Event.NamingListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Naming.Event.NamingListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Naming.Event.NamingListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Naming.Event.NamingListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -41826,7 +41826,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Naming.Event.ObjectChangeListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Naming.Event.ObjectChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Naming.Event.ObjectChangeListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Naming.Event.ObjectChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Naming.Event.ObjectChangeListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -42386,7 +42386,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Naming.Ldap.UnsolicitedNotificationListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Naming.Ldap.UnsolicitedNotificationListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Naming.Ldap.UnsolicitedNotificationListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Naming.Ldap.UnsolicitedNotificationListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Naming.Ldap.UnsolicitedNotificationListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -43184,7 +43184,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Net.Ssl.HandshakeCompletedListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Net.Ssl.HandshakeCompletedListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Net.Ssl.HandshakeCompletedListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Net.Ssl.HandshakeCompletedListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Net.Ssl.HandshakeCompletedListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -43730,7 +43730,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Net.Ssl.SSLSessionBindingListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Net.Ssl.SSLSessionBindingListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Net.Ssl.SSLSessionBindingListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Net.Ssl.SSLSessionBindingListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Net.Ssl.SSLSessionBindingListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -45760,7 +45760,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Print.Event.PrintJobAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Print.Event.PrintJobAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Print.Event.PrintJobAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Print.Event.PrintJobAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Print.Event.PrintJobAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -45802,7 +45802,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Print.Event.PrintJobAttributeListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Print.Event.PrintJobAttributeListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Print.Event.PrintJobAttributeListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Print.Event.PrintJobAttributeListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Print.Event.PrintJobAttributeListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -45844,7 +45844,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Print.Event.PrintJobListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Print.Event.PrintJobListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Print.Event.PrintJobListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Print.Event.PrintJobListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Print.Event.PrintJobListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -45886,7 +45886,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Print.Event.PrintServiceAttributeListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Print.Event.PrintServiceAttributeListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Print.Event.PrintServiceAttributeListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Print.Event.PrintServiceAttributeListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Print.Event.PrintServiceAttributeListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -48084,7 +48084,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Sound.Midi.ControllerEventListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Sound.Midi.ControllerEventListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Sound.Midi.ControllerEventListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Sound.Midi.ControllerEventListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Sound.Midi.ControllerEventListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -48294,7 +48294,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Sound.Midi.MetaEventListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Sound.Midi.MetaEventListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Sound.Midi.MetaEventListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Sound.Midi.MetaEventListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Sound.Midi.MetaEventListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -49190,7 +49190,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Sound.Sampled.LineListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Sound.Sampled.LineListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Sound.Sampled.LineListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Sound.Sampled.LineListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Sound.Sampled.LineListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -49456,7 +49456,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Sql.ConnectionEventListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Sql.ConnectionEventListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Sql.ConnectionEventListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Sql.ConnectionEventListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Sql.ConnectionEventListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -49764,7 +49764,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Sql.RowSetListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Sql.RowSetListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Sql.RowSetListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Sql.RowSetListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Sql.RowSetListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -50478,7 +50478,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Sql.StatementEventListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Sql.StatementEventListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Sql.StatementEventListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Sql.StatementEventListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Sql.StatementEventListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -50632,7 +50632,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.ActionDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.ActionDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Action\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.ActionDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Action\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -51388,7 +51388,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.AncestorListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.AncestorListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.AncestorListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.AncestorListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.AncestorListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -51430,7 +51430,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.CaretListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.CaretListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.CaretListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.CaretListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.CaretListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -51458,7 +51458,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.CellEditorListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.CellEditorListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.CellEditorListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.CellEditorListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.CellEditorListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -51500,7 +51500,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.ChangeListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.ChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.ChangeListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.ChangeListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.ChangeListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -51570,7 +51570,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.DocumentListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.DocumentListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.DocumentListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.DocumentListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.DocumentListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -51640,7 +51640,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.HyperlinkListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.HyperlinkListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.HyperlinkListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.HyperlinkListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.HyperlinkListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52004,7 +52004,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.InternalFrameAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.InternalFrameAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.InternalFrameAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.InternalFrameAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.InternalFrameAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52046,7 +52046,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.InternalFrameListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.InternalFrameListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.InternalFrameListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.InternalFrameListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.InternalFrameListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52088,7 +52088,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.ListDataListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.ListDataListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.ListDataListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.ListDataListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.ListDataListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52130,7 +52130,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.ListSelectionListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.ListSelectionListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.ListSelectionListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.ListSelectionListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.ListSelectionListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52172,7 +52172,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.MenuDragMouseListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.MenuDragMouseListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.MenuDragMouseListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.MenuDragMouseListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.MenuDragMouseListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52228,7 +52228,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.MenuKeyListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.MenuKeyListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.MenuKeyListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.MenuKeyListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.MenuKeyListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52256,7 +52256,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.MenuListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.MenuListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.MenuListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.MenuListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.MenuListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52284,7 +52284,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.MouseInputAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.MouseInputAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.MouseInputAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.MouseInputAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.MouseInputAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52312,7 +52312,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.MouseInputListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.MouseInputListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.MouseInputListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.MouseInputListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.MouseInputListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52354,7 +52354,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.PopupMenuListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.PopupMenuListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.PopupMenuListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.PopupMenuListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.PopupMenuListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52410,7 +52410,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.RowSorterListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.RowSorterListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.RowSorterListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.RowSorterListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.RowSorterListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52466,7 +52466,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.TableColumnModelListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.TableColumnModelListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.TableColumnModelListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.TableColumnModelListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.TableColumnModelListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52508,7 +52508,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.TableModelListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.TableModelListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.TableModelListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.TableModelListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.TableModelListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52550,7 +52550,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.TreeExpansionListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.TreeExpansionListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.TreeExpansionListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.TreeExpansionListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.TreeExpansionListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52592,7 +52592,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.TreeModelListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.TreeModelListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.TreeModelListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.TreeModelListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.TreeModelListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52634,7 +52634,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.TreeSelectionListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.TreeSelectionListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.TreeSelectionListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.TreeSelectionListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.TreeSelectionListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52662,7 +52662,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.TreeWillExpandListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.TreeWillExpandListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.TreeWillExpandListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.TreeWillExpandListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.TreeWillExpandListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -52704,7 +52704,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.UndoableEditListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.UndoableEditListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Swing.Event.UndoableEditListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.UndoableEditListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Swing.Event.UndoableEditListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -69056,7 +69056,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Xml.Transform.ErrorListenerDirect",
-      "Summary": "<p sourcefile=\"api/Javax.Xml.Transform.ErrorListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Javax.Xml.Transform.ErrorListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Xml.Transform.ErrorListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Javax.Xml.Transform.ErrorListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -73886,7 +73886,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Org.W3c.Dom.Events.EventListenerDirect",
-      "Summary": "<p sourcefile=\"api/Org.W3c.Dom.Events.EventListenerDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Org.W3c.Dom.Events.EventListener\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Org.W3c.Dom.Events.EventListenerDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Org.W3c.Dom.Events.EventListener\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -77470,7 +77470,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Org.Xml.Sax.Helpers.ParserAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Org.Xml.Sax.Helpers.ParserAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Org.Xml.Sax.Helpers.ParserAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Org.Xml.Sax.Helpers.ParserAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Org.Xml.Sax.Helpers.ParserAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -77526,7 +77526,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Org.Xml.Sax.Helpers.XMLReaderAdapterDirect",
-      "Summary": "<p sourcefile=\"api/Org.Xml.Sax.Helpers.XMLReaderAdapterDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Org.Xml.Sax.Helpers.XMLReaderAdapter\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+      "Summary": "<p sourcefile=\"api/Org.Xml.Sax.Helpers.XMLReaderAdapterDirect.yml\" sourcestartlinenumber=\"1\">Concrete CLR representation of <xref href=\"Org.Xml.Sax.Helpers.XMLReaderAdapter\" data-throw-if-not-resolved=\"false\"></xref> returned by the JVM.</p>\n"
     },
     {
       "type": "ManagedReference",

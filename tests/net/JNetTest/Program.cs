@@ -339,7 +339,7 @@ namespace MASES.JNetTest
             }
 
             ByteBuffer bb = (ByteBuffer)ms;
-            bb.IsDirect();
+            System.Console.WriteLine($"ByteBuffer IsDirect={bb.IsDirect()}");
         }
 
         static void TestByteBuffers()
@@ -362,10 +362,10 @@ namespace MASES.JNetTest
             byte[] newArray;
             //JVMBridgeSharedBuffer.TryGetValue(backObj, out newArray);
 
-            var direct = JNetTestCore.GlobalInstance.JVM.NewDirectBuffer(bytes);
+            var direct = JNetTestCore.GlobalInstance.JVM.NewDirectBuffer(bytes, arrangeCapacity: true, timeToLive: -1);
 
-            var getSharedBuffer = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<byte>(direct.JavaObject);
-            var getSharedBufferInt = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<int>(direct.JavaObject);
+            var getSharedBuffer = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<byte>(direct.BridgeInstance);
+            var getSharedBufferInt = JNetTestCore.GlobalInstance.JVM.GetDirectBuffer<int>(direct.BridgeInstance);
 
             direct[10] = 4;
 
@@ -402,7 +402,7 @@ namespace MASES.JNetTest
         {
             System.Console.WriteLine("TestArrays");
 
-            ArrayList<int[]> arr = new();
+            ArrayList<int[]> arr = JVMBridgeBase.New<ArrayList<int[]>>();
             arr.Add(new int[] { 0, 1 });
 
             ArrayList<int> arr1 = new();
@@ -411,7 +411,7 @@ namespace MASES.JNetTest
             ArrayList<string> arr2 = new();
             arr2.Add("a");
 
-            ArrayList<Java.Lang.String> arr3 = new();
+            ArrayList<Java.Lang.String> arr3 = JVMBridgeBase.New<ArrayList<Java.Lang.String>>();
             arr3.Add("a");
             arr3.Add("b");
 
@@ -425,6 +425,9 @@ namespace MASES.JNetTest
         {
             System.Console.WriteLine("TestOperators");
 
+            const string StringA = "StringA";
+            const string StringB = "StringB";
+
             Java.Lang.Short a = 10;
             Java.Lang.Short b = 100;
 
@@ -433,8 +436,17 @@ namespace MASES.JNetTest
 
             if (a < d) { a++; d = (short)(c / a); }
 
-            Java.Lang.String strA = new String("StringA");
-            Java.Lang.String strB = new String("StringB");
+            Java.Lang.String strA = new String(StringA);
+            if (strA != StringA)
+            {
+                throw new System.Exception($"Compare of \"{StringA}\" failed");
+            }
+
+            Java.Lang.String strB = JVMBridgeBase.New<String>(StringB);
+            if (strB != StringB)
+            {
+                throw new System.Exception($"Compare of \"{StringB}\" failed");
+            }
 
             if (strA != strB)
             {
@@ -484,7 +496,7 @@ namespace MASES.JNetTest
                 alist.Add(i.ToString());
             }
             w.Stop();
-
+            using var scope = new JCOBridgeDisposeAsyncScope();
             await foreach (var item in ((List<string>)alist).WithPrefetch())
             {
                 if (!int.TryParse(item, out int i))
@@ -545,20 +557,24 @@ namespace MASES.JNetTest
 
             const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
-            ArrayList<Java.Lang.String> alist = new();
+            using ArrayList<Java.Lang.String> alist = new();
             for (int i = 0; i < execution; i++)
             {
-                alist.Add(i.ToString());
+                using Java.Lang.String str = i.ToString();
+                alist.Add(str);
             }
             w.Stop();
-
             for (int iteration = 0; iteration < 10; iteration++)
             {
+                using var scope = new JCOBridgeDisposeFastScope();
                 foreach (var item in (alist).WithPrefetch(usePrefetch).WithThread(useThread))
                 {
-                    if (!int.TryParse(item, out int i))
+                    using (item)
                     {
-                        throw new System.InvalidOperationException($"Failed to parse: {item}");
+                        if (!int.TryParse(item, out int i))
+                        {
+                            throw new System.InvalidOperationException($"Failed to parse: {item}");
+                        }
                     }
                 }
             }
@@ -598,7 +614,7 @@ namespace MASES.JNetTest
                 if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed ticks: {w.Elapsed.Ticks}");
 
                 w.Restart();
-                Java.Util.ArrayList<Integer> alist = new Java.Util.ArrayList<Integer>();
+                Java.Util.ArrayList<Integer> alist = new();
                 for (int i = 0; i < elementsInexecution; i++)
                 {
                     alist.Add(i);
@@ -624,14 +640,14 @@ namespace MASES.JNetTest
 
                 w.Restart();
                 var tmpJList = JNetHelper.ListFrom(tmpArray);
-                alist = new Java.Util.ArrayList<Integer>(tmpJList);
+                Java.Util.ArrayList rawArraylist = new(tmpJList);
                 w.Stop();
                 tuple = new System.Tuple<string, long>("Java.Util.ArrayList from array", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
                 if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
-                var intBuffer = IntBuffer.From(tmpArray, false, false);
+                var intBuffer = IntBuffer.From(tmpArray, false);
                 w.Stop();
                 tuple = new System.Tuple<string, long>("IntBuffer.From from raw array", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
@@ -647,7 +663,7 @@ namespace MASES.JNetTest
 
                 w.Restart();
                 var tmpJList3 = JNetHelper.ListFrom(tmpArray, true);
-                alist = new Java.Util.ArrayList<Integer>(tmpJList3);
+                rawArraylist = new Java.Util.ArrayList(tmpJList3);
                 w.Stop();
                 tuple = new System.Tuple<string, long>("Java.Util.ArrayList from raw array buffered", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);

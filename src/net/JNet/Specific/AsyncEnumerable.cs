@@ -31,9 +31,9 @@ namespace MASES.JNet.Specific
     /// <typeparam name="TObject">The returning type of the iterator</typeparam>
     public class JNetAsyncEnumerator<TObject> : JVMBridgeBasePrefetchableEnumerator<TObject>, IAsyncEnumerator<TObject>
     {
-        readonly ManualResetEvent _sync = new ManualResetEvent(false);
-        readonly IEnumerator<TObject> enumeratorBase = default;
-        readonly CancellationToken _cancellationToken = default;
+        ManualResetEvent _sync = null;
+        IEnumerator<TObject> _enumeratorBase = default;
+        CancellationToken _cancellationToken = default;
         /// <summary>
         /// Initialize a new <see cref="JNetAsyncEnumerator{TObject}"/>
         /// </summary>
@@ -43,9 +43,19 @@ namespace MASES.JNet.Specific
         public JNetAsyncEnumerator(IJavaObject refObj, IEnumerableExtension extension, CancellationToken cancellationToken)
             : base(refObj, extension)
         {
+            _sync = new ManualResetEvent(false);
             _cancellationToken = cancellationToken;
-            enumeratorBase = this;
+            _enumeratorBase = this;
         }
+        /// <inheritdoc/>
+        protected override void Dispose(bool disposing)
+        {
+            _sync?.Dispose();
+            _sync = null;
+            _cancellationToken = default;
+            base.Dispose(disposing);
+        }
+
         /// <inheritdoc/>
         protected override bool DoWorkCycle()
         {
@@ -55,14 +65,15 @@ namespace MASES.JNet.Specific
         }
 
         /// <inheritdoc cref="IAsyncEnumerator{T}.Current"/>
-        TObject IAsyncEnumerator<TObject>.Current => enumeratorBase.Current;
+        TObject IAsyncEnumerator<TObject>.Current => _enumeratorBase.Current;
 
         /// <inheritdoc cref="IAsyncDisposable.DisposeAsync"/>
         ValueTask IAsyncDisposable.DisposeAsync()
         {
-            _sync.Set();
-            enumeratorBase.Dispose();
-            _sync.Dispose();
+            _sync?.Set();
+            _enumeratorBase?.Dispose();
+            _sync?.Dispose();
+            _sync = null;
             GC.SuppressFinalize(this);
             return new ValueTask();
         }
@@ -71,7 +82,7 @@ namespace MASES.JNet.Specific
         {
             _sync.Set();
             if (_cancellationToken.IsCancellationRequested) return new ValueTask<bool>(false);
-            var retVal = enumeratorBase.MoveNext();
+            var retVal = _enumeratorBase.MoveNext();
             return new ValueTask<bool>(retVal);
         }
     }
@@ -84,20 +95,9 @@ namespace MASES.JNet.Specific
     public abstract class JNetAsyncEnumerable<TClass, TObject> : JVMBridgeBaseEnumerable<TClass, TObject>, IAsyncEnumerable<TObject>
         where TClass : class, IJVMBridgeBase
     {
-        /// <summary>
-        /// Create an instance of <see cref="JNetAsyncEnumerable{TClass, TObject}"/>
-        /// </summary>
-        public JNetAsyncEnumerable() { }
         /// <inheritdoc/>
         public JNetAsyncEnumerable(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
-        /// <summary>
-        /// Create an instance of <see cref="JNetAsyncEnumerable{TClass, TObject}"/>
-        /// </summary>
-        /// <param name="args">The arguments to send to base class <see cref="JVMBridgeBaseEnumerable{TClass,TObject}"/></param>
-        public JNetAsyncEnumerable(params object[] args)
-            : base(args)
-        {
-        }
+
         /// <inheritdoc cref="IAsyncEnumerable{TObject}.GetAsyncEnumerator(CancellationToken)"/>
         public IAsyncEnumerator<TObject> GetAsyncEnumerator(CancellationToken cancellationToken = default)
         {

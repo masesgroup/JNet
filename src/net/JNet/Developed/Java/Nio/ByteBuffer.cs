@@ -18,6 +18,7 @@
 
 using Java.Lang;
 using MASES.JCOBridge.C2JBridge;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNet;
 using MASES.JNet.Specific.Extensions;
 using Microsoft.IO;
@@ -30,6 +31,8 @@ namespace Java.Nio
 {
     public partial class ByteBuffer
     {
+        #region RecyclableMemoryStream
+
         static readonly ConcurrentDictionary<string, RecyclableMemoryStream> _storer = new();
 
         static readonly object _configurationLock = new object();
@@ -151,12 +154,12 @@ namespace Java.Nio
 
         /// <summary>
         /// Returns a new <see cref="MemoryStream"/> or a preallocated <see cref="MemoryStream"/> which is an implementation  of <see cref="RecyclableMemoryStream"/>
-        /// can be used from <see cref="ByteBuffer.From(MemoryStream, bool, EventHandler{MemoryStream}, int)"/>. When underlying sub-system ends the usage of <see cref="MemoryStream"/>
+        /// can be used from <see cref="ByteBuffer.From(MemoryStream, EventHandler{MemoryStream}, int)"/>. When underlying sub-system ends the usage of <see cref="MemoryStream"/>
         /// the <see cref="IDisposable.Dispose"/> method is automatically invoked and <see cref="MemoryStream"/> id disposed or <see cref="RecyclableMemoryStream"/> is returned back
         /// to the pool.
         /// </summary>
         /// <returns>The requested <see cref="MemoryStream"/></returns>
-        /// <remarks>The same remarks of <see cref="ByteBuffer.From(MemoryStream, bool, EventHandler{MemoryStream}, int)"/> applies: the returned <see cref="MemoryStream"/> shall not be disposed.</remarks>
+        /// <remarks>The same remarks of <see cref="ByteBuffer.From(MemoryStream, EventHandler{MemoryStream}, int)"/> applies: the returned <see cref="MemoryStream"/> shall not be disposed.</remarks>
         /// <example>
         /// <code>
         /// var ms = ByteBuffer.GetMemoryStream(); // never use an using statement
@@ -174,7 +177,11 @@ namespace Java.Nio
             return stream;
         }
 
+        #endregion
+
         // can be extended with methods not reflected or not available in Java;
+
+        JCOBridgeDirectBuffer<byte> _directBuffer = null;
 
         #region Operators
 
@@ -185,9 +192,9 @@ namespace Java.Nio
         /// <summary>
         /// Converts an instance of <see cref="ByteBuffer"/> into <see cref="JCOBridgeDirectBuffer{T}"/>
         /// </summary>
-        public static implicit operator JCOBridgeDirectBuffer<byte>(ByteBuffer t) => t.ToDirectBuffer();
+        public static implicit operator JCOBridgeDirectBuffer<byte>(ByteBuffer t) => t.ToDirectBuffer(true);
         /// <summary>
-        /// Converts an instance of <see cref="byte"/> array into <see cref="ByteBuffer"/> using the default parameters of <see cref="From(byte[], bool, bool, int)"/>
+        /// Converts an instance of <see cref="byte"/> array into <see cref="ByteBuffer"/> using the default parameters of <see cref="From(byte[], bool, int)"/>
         /// </summary>
         /// <remarks>If the JVM supports direct access the function will share with the JVM the memory without JNI, otherwise fallback to the standard memory copy.</remarks>
         public static implicit operator ByteBuffer(byte[] t) => From(t);
@@ -197,9 +204,9 @@ namespace Java.Nio
         /// <remarks>If the <see cref="ByteBuffer"/> supports direct access the function tries to move data from JVM memory without JNI, otherwise fallback to the standard memory copy.</remarks>
         public static implicit operator byte[](ByteBuffer t) => t.ToArray();
         /// <summary>
-        /// Converts an instance of <see cref="System.IO.MemoryStream"/> into a <see cref="ByteBuffer"/> using the default parameters of <see cref="From(MemoryStream, bool, EventHandler{MemoryStream}, int)"/>
+        /// Converts an instance of <see cref="System.IO.MemoryStream"/> into a <see cref="ByteBuffer"/> using the default parameters of <see cref="From(MemoryStream, EventHandler{MemoryStream}, int)"/>
         /// </summary>
-        /// <remarks>See remarks of <see cref="From(MemoryStream, bool, EventHandler{MemoryStream}, int)"/></remarks>
+        /// <remarks>See remarks of <see cref="From(MemoryStream, EventHandler{MemoryStream}, int)"/></remarks>
         public static implicit operator ByteBuffer(System.IO.MemoryStream stream) => From(stream);
         /// <summary>
         /// Converts an instance of <see cref="ByteBuffer"/> into <see cref="System.IO.Stream"/>
@@ -222,7 +229,7 @@ namespace Java.Nio
             {
                 try
                 {
-                    return ToDirectBuffer().ToArray<byte>();
+                    return ToDirectBuffer(true).ToArray<byte>();
                 }
                 catch (UnsupportedOperationException) { }
                 catch (System.NotSupportedException) { }
@@ -238,7 +245,7 @@ namespace Java.Nio
         {
             try
             {
-                ToDirectBuffer().ToArray<byte>(ref array, resizeToFill);
+                ToDirectBuffer(true).ToArray<byte>(ref array, resizeToFill);
             }
             catch (UnsupportedOperationException) { }
             catch (System.NotSupportedException) { }
@@ -266,7 +273,6 @@ namespace Java.Nio
         /// Creates a new <see cref="ByteBuffer"/> in the JVM which belongs to <paramref name="data"/>
         /// </summary>
         /// <param name="data">The data to be shared</param>
-        /// <param name="useMemoryControlBlock">Appends to the end of the <paramref name="data"/> a memory block will be used to controls and arbitrates memory between CLR and JVM</param>
         /// <param name="arrangeCapacity">If <see langword="true"/> the <see cref="byte"/> array in <paramref name="data"/> will be resized to the next power of 2, 
         /// so capacity will be memory aligned and the limit of <see cref="ByteBuffer"/> will be current size of <paramref name="data"/>
         /// </param>
@@ -277,22 +283,76 @@ namespace Java.Nio
         /// Under heavy pressure the memory footprint can raise up and generate an <see cref="OutOfMemoryException"/>, use the functionality with caution or take into account the <paramref name="timeToLive"/> option which can help to recover the memory in advance before the Garbage Collector of the JVM retires the <see cref="ByteBuffer"/>
         /// If the user of <see cref="ByteBuffer"/> is pretty sure that the pinned memory is no more needed from the JVM, e.g. the invoked method does not queue the <see cref="ByteBuffer"/> and its lifetime ends when the method returns; to immediately release unmanaged resources, and free the memory, invokes <see cref="ToDirectBuffer"/> and invoke <see cref="JCOBridgeDirectBuffer{T}.Dispose"/>
         /// </remarks>
-        public static ByteBuffer From(byte[] data, bool useMemoryControlBlock = true, bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite)
+        public static ByteBuffer From(byte[] data, bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite)
         {
             try
             {
-                return data.DirectBufferWithWrap<byte, ByteBuffer>(useMemoryControlBlock, arrangeCapacity, timeToLive);
+                return data.DirectBufferWithWrap<byte, ByteBuffer>(arrangeCapacity, timeToLive);
             }
             catch (UnsupportedOperationException) { }
             catch (System.NotSupportedException) { }
 
             return ByteBuffer.Wrap(data);
         }
+
+        /// <summary>
+        /// Returns a <see cref="JCOBridgeSharedBufferStream{T}"/> with an initial capacity derived from <paramref name="capacity"/>,
+        /// to be populated via Stream-based APIs and then passed to <see cref="From(JCOBridgeSharedBufferStream{byte})"/>.
+        /// </summary>
+        /// <param name="capacity">The plausible number of elements of <see langword="byte"/> type to be written into the stream; the byte size is computed as <c>capacity * sizeof(<see langword="byte"/>)</c>.
+        /// The default value of <c>-1</c> instructs the subsystem to allocate the minimum meaningful unit, which corresponds to one system memory page (see <see cref="Environment.SystemPageSize"/>).
+        /// Regardless of the value provided, the effective allocation is always rounded up to the nearest multiple of the system page size, since the underlying native allocator operates at page granularity.
+        /// Passing a value smaller than one page therefore has no practical advantage over using the default.
+        /// This value is a hint, not a hard limit: if the actual data written exceeds the initial allocation, the underlying buffer will grow automatically via reallocation.
+        /// However, providing a value greater than or equal to the actual data size is strongly recommended to avoid reallocation overhead, especially in high-rate scenarios.
+        /// Callers that process data of a known or predictable size are encouraged to implement their own estimation strategy — for example, tracking the stable size observed in previous invocations —
+        /// so that the initial capacity converges toward the real value over time and reallocations become increasingly rare or disappear entirely.
+        /// </param>
+        /// <returns>A pooled instance of <see cref="JCOBridgeSharedBufferStream{T}"/> ready to be written via Stream-based APIs and then passed to <see cref="From(JCOBridgeSharedBufferStream{byte})"/>.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="capacity"/> is zero or any positive value that, once multiplied by <c>sizeof(<see langword="byte"/>)</c>, overflows a <see cref="long"/>.</exception>
+        /// <remarks>
+        /// The returned <see cref="JCOBridgeSharedBufferStream{T}"/> is drawn from an internal pool. The HPA (High Performance Application) runtime variant uses a highly optimized pool tuned for high-throughput scenarios,
+        /// while the standard runtime variant uses a lighter pool suitable for moderate workloads.
+        /// The instance must not be manually disposed; its lifecycle is fully managed by the subsystem and it is automatically returned to the pool once the JVM Garbage Collector retires the associated
+        /// <see cref="ByteBuffer"/> created by <see cref="From(JCOBridgeSharedBufferStream{byte})"/>.
+        /// </remarks>
+        public static JCOBridgeSharedBufferStream<byte> Rent(long capacity = -1)
+        {
+            return JCOBridge.Global.JVM.Rent<byte>(capacity);
+        }
+
+        /// <summary>
+        /// Creates a new <see cref="ByteBuffer"/> in the JVM which shares the memory of <paramref name="stream"/>.
+        /// This is the preferred overload for high-rate scenarios as it avoids repeated array copies from CLR to JVM and benefits from pooled buffer management.
+        /// </summary>
+        /// <param name="stream">A <see cref="JCOBridgeSharedBufferStream{T}"/> obtained from <see cref="Rent"/> and populated via Stream-based APIs,
+        /// to be used directly within the JVM from a <see cref="ByteBuffer"/>.</param>
+        /// <returns>A new instance of <see cref="ByteBuffer"/> holding the memory of <paramref name="stream"/> shared with the <see cref="ByteBuffer"/>.</returns>
+        /// <remarks>
+        /// The memory associated to <paramref name="stream"/> will be retained until the JVM reference of the newly created <see cref="ByteBuffer"/> is garbage collected.
+        /// Under heavy pressure the memory footprint can raise up and generate an <see cref="OutOfMemoryException"/>; use the functionality with caution.
+        /// <para>
+        /// <b>Lifecycle management:</b> the subsystem automatically returns <paramref name="stream"/> to the internal pool once the JVM Garbage Collector retires the associated
+        /// <see cref="ByteBuffer"/>, i.e. when the <see cref="ByteBuffer"/> has been fully consumed by the JVM.
+        /// A direct call to <see cref="IDisposable.Dispose"/> on the returned <see cref="ByteBuffer"/> is therefore a no-op; do not attempt to manually dispose <paramref name="stream"/> after passing it to this method.
+        /// </para>
+        /// <para>
+        /// <b>Pool strategy:</b> the HPA (High Performance Application) runtime variant draws <paramref name="stream"/> instances from a highly optimized pool tuned for high-throughput workloads,
+        /// while the standard runtime variant uses a lighter pool. In both cases the pooling is fully transparent to the caller.
+        /// </para>
+        /// </remarks>
+        /// <exception cref="ArgumentException">Thrown when <paramref name="stream"/> was not obtained through <see cref="Rent"/>.</exception>
+        /// <exception cref="NotSupportedException">Thrown when the JVM is unable to generate a <see cref="ByteBuffer"/> instance.</exception>
+        public static ByteBuffer From(JCOBridgeSharedBufferStream<byte> stream)
+        {
+            var buf = JCOBridge.Global.JVM.NewDirectBuffer(stream);
+            return JVMBridgeBase.WrapsDirect<ByteBuffer>(buf.DisableCleanupAndReturn());
+        }
+
         /// <summary>
         /// Creates a new <see cref="ByteBuffer"/> in the JVM which shares the <paramref name="stream"/>. The method helps to avoid too many array copies from CLR to JVM
         /// </summary>
         /// <param name="stream">The non disposed <see cref="System.IO.MemoryStream"/> to be used directly within the JVM from a <see cref="ByteBuffer"/>, see remarks</param>
-        /// <param name="useMemoryControlBlock">Appends to the end of the <paramref name="stream"/> a memory block will be used to controls and arbitrates memory between CLR and JVM</param>
         /// <param name="timeToLive">The time to live, expressed in milliseconds, the underlying memory shall remain available; if the time to live expires the pinned memory is retired leaving potentially the JVM under the possibility of an access violation.</param>
         /// <param name="disposeEvent">An optional <see cref="EventHandler{TEventArgs}"/> can be used to be informed when the <paramref name="stream"/> can be safely disposed (the dispose action shall be in the user code), if <see langword="null"/> the underlying system will automatically dispose the <see cref="System.IO.MemoryStream"/>.</param>
         /// <returns>A new instance of <see cref="ByteBuffer"/> holding the memory of <paramref name="stream"/> shared with the <see cref="ByteBuffer"/></returns>
@@ -301,11 +361,11 @@ namespace Java.Nio
         /// Under heavy pressure the memory footprint can raise up and generate an <see cref="OutOfMemoryException"/>, use the functionality with caution or take into account the <paramref name="timeToLive"/> option which can help to recover the memory in advance before the Garbage Collector of the JVM retires the <see cref="ByteBuffer"/>
         /// 
         /// <b>The <see cref="System.IO.MemoryStream"/> cannot be disposed otherwise the underlying system is not able to access the memory. The <see cref="System.IO.MemoryStream"/> can be written, or read, and changes are visible to both CLR and JVM,
-        /// however, if the <see cref="System.IO.MemoryStream"/> grows, the underlying system cannot resize too and capacity still remains the one when <see cref="From(MemoryStream, bool, EventHandler{MemoryStream}, int)"/> was invoked the first time.</b>
+        /// however, if the <see cref="System.IO.MemoryStream"/> grows, the underlying system cannot resize too and capacity still remains the one when <see cref="From(MemoryStream, EventHandler{MemoryStream}, int)"/> was invoked the first time.</b>
         /// </remarks>
-        public static ByteBuffer From(System.IO.MemoryStream stream, bool useMemoryControlBlock = true, EventHandler<MemoryStream> disposeEvent = null, int timeToLive = System.Threading.Timeout.Infinite)
+        public static ByteBuffer From(System.IO.MemoryStream stream, EventHandler<MemoryStream> disposeEvent = null, int timeToLive = System.Threading.Timeout.Infinite)
         {
-            var buf = JCOBridge.Global.JVM.NewDirectBuffer(stream, useMemoryControlBlock, disposeEvent, timeToLive);
+            var buf = JCOBridge.Global.JVM.NewDirectBuffer(stream, false, disposeEvent, timeToLive);
             return JVMBridgeBase.WrapsDirect<ByteBuffer>(buf.DisableCleanupAndReturn());
         }
         /// <summary>
@@ -315,19 +375,67 @@ namespace Java.Nio
         /// <remarks>The returned <see cref="System.IO.Stream"/> can be used to directly access and manages JVM memory without any memory move</remarks>
         public System.IO.Stream ToStream()
         {
-            return ToDirectBuffer().ToStream();
+            return ToDirectBuffer(true).ToStream();
         }
-        /// <summary>
-        /// Returns an instance of <see cref="JCOBridgeDirectBuffer{T}"/>
-        /// </summary>
-        /// <returns>The <see cref="JCOBridgeDirectBuffer{T}"/> associated to this <see cref="ByteBuffer"/> instance</returns>
-        /// <remarks>The returned <see cref="JCOBridgeDirectBuffer{T}"/> can be used to directly access and manages JVM memory without any memory move</remarks>
-        public JCOBridgeDirectBuffer<byte> ToDirectBuffer()
+#if NET5_0_OR_GREATER
+        /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.AsSpan"/>
+        public ReadOnlySpan<byte> AsSpan()
         {
-            Rewind();
-            return JVM.GetDirectBuffer<byte>(BridgeInstance);
+            return ToDirectBuffer(false).AsSpan();
         }
 
-        #endregion
+        /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.AsSpanFromIndex"/>
+        public ReadOnlySpan<byte> AsSpanFromIndex(int fromIndex)
+        {
+            return ToDirectBuffer(false).AsSpanFromIndex(fromIndex);
+        }
+
+        /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.AsWritableSpan"/>
+        public Span<byte> AsWritableSpan()
+        {
+            return ToDirectBuffer(false).AsWritableSpan();
+        }
+
+        /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.AsWritableSpanFromIndex(int)"/>
+        public Span<byte> AsWritableSpanFromIndex(int fromIndex)
+        {
+            return ToDirectBuffer(false).AsWritableSpanFromIndex(fromIndex);
+        }
+
+        /// <inheritdoc cref="JCOBridgeDirectBuffer{T}.FlushOnDispose"/>
+        public void FlushOnDispose()
+        {
+            ToDirectBuffer(false).FlushOnDispose();
+        }
+#endif
+        /// <summary>
+        /// Returns an instance of <see cref="JCOBridgeDirectBuffer{T}"/> can be used to directly access and manages JVM memory without any memory move
+        /// </summary>
+        /// <param name="rewind"><see cref="Buffer.Rewind()"/> the instance before return <see cref="JCOBridgeDirectBuffer{T}"/></param>
+        /// <returns>The <see cref="JCOBridgeDirectBuffer{T}"/> associated to this <see cref="ByteBuffer"/> instance</returns>
+        /// <remarks>
+        /// <b>Do not call Dispose()</b> on the returned instance.
+        /// Its lifetime is managed by the owning object.
+        /// </remarks>
+        [Obsolete("DO NOT CALL Dispose() on the returned JCOBridgeDirectBuffer: it is an internal instance whose lifetime is managed by the owning object.", error: false)]
+        public JCOBridgeDirectBuffer<byte> ToDirectBuffer(bool rewind)
+        {
+            if (rewind)
+            {
+                // Rewind(); removed to avoid the build of a new ByteBuffer object will be discarded and replace with a more simple invocation
+                // still remains the allocation of a returning object that is the copy of the current managed ByteBuffer, the copy will be immediately disposed to avoid GEN1 in GC
+                IExecuteWithSignature("rewind", "()Ljava/nio/Buffer;").DisposeIfDisposable();
+            }
+            return _directBuffer ??= JVM.GetDirectBuffer<byte>(BridgeInstance);
+        }
+        /// <inheritdoc/>
+        protected override void Dispose(bool disposing)
+        {
+            _directBuffer?.Dispose();
+            _directBuffer = null;
+            base.Dispose(disposing);
+        }
+
+#endregion
     }
 }

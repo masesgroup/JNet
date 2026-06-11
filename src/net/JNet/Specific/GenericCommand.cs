@@ -52,7 +52,7 @@ namespace MASES.JNet.Specific
         /// <summary>
         /// Initialize a new <see cref="GenericCommand"/>
         /// </summary>
-        public GenericCommand() { }
+        public GenericCommand() : base(JVMBridgeBase.InitializerInstance) { InvokeInitializer(); }
         /// <summary>
         /// Internal constructor: used internally from JCOBridge
         /// </summary>

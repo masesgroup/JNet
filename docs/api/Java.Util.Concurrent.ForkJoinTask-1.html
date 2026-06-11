@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Util_Concurrent_ForkJoinTask_1" data-uid="Java.Util.Concurrent.ForkJoinTask`1" class="text-break">
-Class ForkJoinTask&lt;V&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L422"><i class="bi bi-code-slash"></i></a>
+Class ForkJoinTask&lt;V&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L434"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class ForkJoinTask&lt;V&gt;  <a class="header-action link-secondary" title="View
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ForkJoinTask&lt;V&gt; : JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class ForkJoinTask&lt;V&gt; : JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -118,8 +118,8 @@ Class ForkJoinTask&lt;V&gt;  <a class="header-action link-secondary" title="View
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeCore</span></div>
-      <div><span class="xref">JVMBridgeCore</span>&lt;<a class="xref" href="Java.Util.Concurrent.ForkJoinTask-1.html">ForkJoinTask</a>&lt;V&gt;&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Util.Concurrent.ForkJoinTask-1.html">ForkJoinTask</a>&lt;V&gt;&gt;</div>
       <div><span class="xref">ForkJoinTask&lt;V&gt;</span></div>
     </dd>
   </dl>
@@ -130,6 +130,7 @@ Class ForkJoinTask&lt;V&gt;  <a class="header-action link-secondary" title="View
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
@@ -149,319 +150,361 @@ Class ForkJoinTask&lt;V&gt;  <a class="header-action link-secondary" title="View
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteStream&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SGetField(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SGetField(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SGetField&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SGetField(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SGetField(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SSetField(IJavaType, string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SSetField(string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SGetField&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SGetFieldStream&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.IsAssignableFrom(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.IsAssignableFrom(IJavaType)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SGetFieldStream&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.IsAssignableFrom&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SSetField(IJavaType, string, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.New(params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SSetField(string, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.NewWithSignature(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.IsAssignableFrom(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.Execute&lt;T&gt;(params T[])</span>
+      <span class="xref">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.IsAssignableFrom(IJavaType)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.DynBridgeClazz</span>
+      <span class="xref">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.IsAssignableFrom&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;ForkJoinTask&lt;V&gt;&gt;.BridgeClazz</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.New(params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ReferenceEqualsJVM(IJVMBridgeBase, IJVMBridgeBase)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.NewWithSignature(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeCore.ClazzOf&lt;TClass&gt;(bool)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeCore.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ClazzOf(string, bool)</a>
+      <span class="xref">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.Execute&lt;T&gt;(params T[])</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ClazzOf(string, out Exception, bool)</a>
+      <span class="xref">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.DynBridgeClazz</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.RuntimeClassNameOf&lt;T&gt;()</span>
+      <span class="xref">JVMBridgeBase&lt;ForkJoinTask&lt;V&gt;&gt;.BridgeClazz</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.RuntimeClassNameOf(Type)</a>
+      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(IJVMBridgeBase, IJVMBridgeBase)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ClassNameOf&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ClassOf&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.Wraps(Type, IJavaObject, string)</a>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.MonitorEnter()</span>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.MonitorExit()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IsInstanceOf(string)</a>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.IsInstanceOf(IJavaType)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.IsInstanceOf&lt;T&gt;()</span>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.RuntimeIsInstanceOf&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.CastTo&lt;TNewClass&gt;()</span>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.CastDirect&lt;TNewClass&gt;()</span>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Equals(IJVMBridgeBase)</span>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore.Equals(object)</a>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.GetHashCode()</span>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Notify()</span>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.NotifyAll()</span>
+      <span class="xref">JVMBridgeBase.CastToAndDetach&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wait()</span>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeCore.Wait(long)</a>
+      <span class="xref">JVMBridgeBase.CastDirectAndDetach&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeCore.Wait(long, int)</a>
+      <span class="xref">JVMBridgeBase.CheckDisposed()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute(string, params object[])</a>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute&lt;TReturn&gt;(string, params object[])</a>
+      <span class="xref">JVMBridgeBase.ToString()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+      <span class="xref">JVMBridgeBase.Notify()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+      <span class="xref">JVMBridgeBase.Wait()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IGetField(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IGetField&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IGetFieldArray&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ISetField(string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ISetField&lt;TValue&gt;(string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore.Throw&lt;TException&gt;(params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore.BiThrow&lt;TException&gt;(params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.DynBridgeInstance</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.BridgeInstance</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.IsBridgeListener</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldStream&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
@@ -525,9 +568,6 @@ Class ForkJoinTask&lt;V&gt;  <a class="header-action link-secondary" title="View
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
-  <div>
-      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_ToDisposable_MASES_JCOBridge_C2JBridge_JVMBridgeCore_">JNetCoreExtensions.ToDisposable(JVMBridgeCore)</a>
-  </div>
   </dd></dl>
 
 
@@ -542,7 +582,7 @@ Class ForkJoinTask&lt;V&gt;  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1__ctor" data-uid="Java.Util.Concurrent.ForkJoinTask`1.#ctor">
   ForkJoinTask()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L440"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#java.util.concurrent.ForkJoinTask()">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#java.util.concurrent.ForkJoinTask()</a></p>
@@ -569,10 +609,10 @@ Class ForkJoinTask&lt;V&gt;  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Util.Concurrent.ForkJoinTask`1.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
   ForkJoinTask(IJVMBridgeBaseInitializer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -602,10 +642,10 @@ public ForkJoinTask(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1__ctor_System_Object___" data-uid="Java.Util.Concurrent.ForkJoinTask`1.#ctor(System.Object[])">
   ForkJoinTask(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+  <div class="markdown level1 summary"><p>Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -627,6 +667,10 @@ public ForkJoinTask(params object[] args)</code></pre>
 
 
 
+  <h4 class="section" id="Java_Util_Concurrent_ForkJoinTask_1__ctor_System_Object____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="Java.Util.Concurrent.ForkJoinTask.html">ForkJoinTask</a> represents a JVM interface or abstract class in .NET.
+Instantiating it directly outside of JCOBridge infrastructure is not supported and may produce undefined behavior.</p>
+</div>
 
 
 
@@ -639,7 +683,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_BridgeClassName" data-uid="Java.Util.Concurrent.ForkJoinTask`1.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L102"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -671,7 +715,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_Exception" data-uid="Java.Util.Concurrent.ForkJoinTask`1.Exception">
   Exception
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L557"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L569"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#getException--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#getException--</a></p>
@@ -703,7 +747,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_ForkJoinTaskTag" data-uid="Java.Util.Concurrent.ForkJoinTask`1.ForkJoinTaskTag">
   ForkJoinTaskTag
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L576"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#getForkJoinTaskTag--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#getForkJoinTaskTag--</a></p>
@@ -735,7 +779,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_IsBridgeAbstract" data-uid="Java.Util.Concurrent.ForkJoinTask`1.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -767,10 +811,10 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_IsBridgeCloseable" data-uid="Java.Util.Concurrent.ForkJoinTask`1.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -799,7 +843,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_IsBridgeInterface" data-uid="Java.Util.Concurrent.ForkJoinTask`1.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -831,7 +875,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_IsBridgeStatic" data-uid="Java.Util.Concurrent.ForkJoinTask`1.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -863,7 +907,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_Pool" data-uid="Java.Util.Concurrent.ForkJoinTask`1.Pool">
   Pool
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L471"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#getPool--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#getPool--</a></p>
@@ -895,7 +939,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_QueuedTaskCount" data-uid="Java.Util.Concurrent.ForkJoinTask`1.QueuedTaskCount">
   QueuedTaskCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L478"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#getQueuedTaskCount--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#getQueuedTaskCount--</a></p>
@@ -927,7 +971,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_RawResult" data-uid="Java.Util.Concurrent.ForkJoinTask`1.RawResult">
   RawResult
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L583"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#getRawResult--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#getRawResult--</a></p>
@@ -959,7 +1003,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_SurplusQueuedTaskCount" data-uid="Java.Util.Concurrent.ForkJoinTask`1.SurplusQueuedTaskCount">
   SurplusQueuedTaskCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L485"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#getSurplusQueuedTaskCount--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#getSurplusQueuedTaskCount--</a></p>
@@ -995,7 +1039,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_Adapt_Java_Lang_Runnable_" data-uid="Java.Util.Concurrent.ForkJoinTask`1.Adapt(Java.Lang.Runnable)">
   Adapt(Runnable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L522"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L534"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#adapt-java.lang.Runnable-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#adapt-java.lang.Runnable-</a></p>
@@ -1034,7 +1078,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_Adapt__1_Java_Lang_Runnable___0_" data-uid="Java.Util.Concurrent.ForkJoinTask`1.Adapt``1(Java.Lang.Runnable,``0)">
   Adapt&lt;T&gt;(Runnable, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L506"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#adapt-java.lang.Runnable-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#adapt-java.lang.Runnable-java.lang.Object-</a></p>
@@ -1081,7 +1125,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_Adapt__2_Java_Util_Concurrent_Callable___1__" data-uid="Java.Util.Concurrent.ForkJoinTask`1.Adapt``2(Java.Util.Concurrent.Callable{``1})">
   Adapt&lt;T, Arg0ExtendsT&gt;(Callable&lt;Arg0ExtendsT&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L517"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#adapt-java.util.concurrent.Callable-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#adapt-java.util.concurrent.Callable-</a></p>
@@ -1128,7 +1172,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_Cancel_System_Boolean_" data-uid="Java.Util.Concurrent.ForkJoinTask`1.Cancel(System.Boolean)">
   Cancel(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L592"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#cancel-boolean-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#cancel-boolean-</a></p>
@@ -1167,7 +1211,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_CompareAndSetForkJoinTaskTag_System_Int16_System_Int16_" data-uid="Java.Util.Concurrent.ForkJoinTask`1.CompareAndSetForkJoinTaskTag(System.Int16,System.Int16)">
   CompareAndSetForkJoinTaskTag(short, short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L598"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L610"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#compareAndSetForkJoinTaskTag-short-short-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#compareAndSetForkJoinTaskTag-short-short-</a></p>
@@ -1209,7 +1253,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_Complete__0_" data-uid="Java.Util.Concurrent.ForkJoinTask`1.Complete(`0)">
   Complete(V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L715"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L727"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#complete-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#complete-java.lang.Object-</a></p>
@@ -1242,7 +1286,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_CompleteExceptionally_MASES_JCOBridge_C2JBridge_JVMBridgeException_" data-uid="Java.Util.Concurrent.ForkJoinTask`1.CompleteExceptionally(MASES.JCOBridge.C2JBridge.JVMBridgeException)">
   CompleteExceptionally(JVMBridgeException)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L723"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L735"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#completeExceptionally-java.lang.Throwable-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#completeExceptionally-java.lang.Throwable-</a></p>
@@ -1275,7 +1319,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_Fork" data-uid="Java.Util.Concurrent.ForkJoinTask`1.Fork">
   Fork()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L638"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L650"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#fork--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#fork--</a></p>
@@ -1308,7 +1352,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_Get" data-uid="Java.Util.Concurrent.ForkJoinTask`1.Get">
   Get()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L657"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L669"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#get--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#get--</a></p>
@@ -1348,7 +1392,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_Get_System_Int64_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.ForkJoinTask`1.Get(System.Int64,Java.Util.Concurrent.TimeUnit)">
   Get(long, TimeUnit)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L670"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L682"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#get-long-java.util.concurrent.TimeUnit-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#get-long-java.util.concurrent.TimeUnit-</a></p>
@@ -1399,7 +1443,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_HelpQuiesce" data-uid="Java.Util.Concurrent.ForkJoinTask`1.HelpQuiesce">
   HelpQuiesce()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L541"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#helpQuiesce--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#helpQuiesce--</a></p>
@@ -1426,7 +1470,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_InForkJoinPool" data-uid="Java.Util.Concurrent.ForkJoinTask`1.InForkJoinPool">
   InForkJoinPool()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L513"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L525"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#inForkJoinPool--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#inForkJoinPool--</a></p>
@@ -1459,7 +1503,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_Invoke" data-uid="Java.Util.Concurrent.ForkJoinTask`1.Invoke">
   Invoke()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L678"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L690"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#invoke--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#invoke--</a></p>
@@ -1492,7 +1536,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_InvokeAll_Java_Util_Concurrent_ForkJoinTask_System_Object__Java_Util_Concurrent_ForkJoinTask_System_Object__" data-uid="Java.Util.Concurrent.ForkJoinTask`1.InvokeAll(Java.Util.Concurrent.ForkJoinTask{System.Object},Java.Util.Concurrent.ForkJoinTask{System.Object})">
   InvokeAll(ForkJoinTask&lt;object&gt;, ForkJoinTask&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L550"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#invokeAll-java.util.concurrent.ForkJoinTask-java.util.concurrent.ForkJoinTask-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#invokeAll-java.util.concurrent.ForkJoinTask-java.util.concurrent.ForkJoinTask-</a></p>
@@ -1528,7 +1572,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_InvokeAll_Java_Util_Concurrent_ForkJoinTask_System_Object____" data-uid="Java.Util.Concurrent.ForkJoinTask`1.InvokeAll(Java.Util.Concurrent.ForkJoinTask{System.Object}[])">
   InvokeAll(params ForkJoinTask&lt;object&gt;[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L558"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#invokeAll-java.util.concurrent.ForkJoinTask...-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#invokeAll-java.util.concurrent.ForkJoinTask...-</a></p>
@@ -1561,7 +1605,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_InvokeAll__1_Java_Util_Collection___0__" data-uid="Java.Util.Concurrent.ForkJoinTask`1.InvokeAll``1(Java.Util.Collection{``0})">
   InvokeAll&lt;T&gt;(Collection&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L483"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L495"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#invokeAll-java.util.Collection-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#invokeAll-java.util.Collection-</a></p>
@@ -1605,7 +1649,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_IsCancelled" data-uid="Java.Util.Concurrent.ForkJoinTask`1.IsCancelled">
   IsCancelled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L606"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L618"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#isCancelled--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#isCancelled--</a></p>
@@ -1638,7 +1682,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_IsCompletedAbnormally" data-uid="Java.Util.Concurrent.ForkJoinTask`1.IsCompletedAbnormally">
   IsCompletedAbnormally()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L614"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L626"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#isCompletedAbnormally--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#isCompletedAbnormally--</a></p>
@@ -1671,7 +1715,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_IsCompletedNormally" data-uid="Java.Util.Concurrent.ForkJoinTask`1.IsCompletedNormally">
   IsCompletedNormally()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L634"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#isCompletedNormally--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#isCompletedNormally--</a></p>
@@ -1704,7 +1748,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_IsDone" data-uid="Java.Util.Concurrent.ForkJoinTask`1.IsDone">
   IsDone()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L630"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L642"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#isDone--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#isDone--</a></p>
@@ -1737,7 +1781,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_Join" data-uid="Java.Util.Concurrent.ForkJoinTask`1.Join">
   Join()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L698"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#join--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#join--</a></p>
@@ -1770,7 +1814,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_QuietlyComplete" data-uid="Java.Util.Concurrent.ForkJoinTask`1.QuietlyComplete">
   QuietlyComplete()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L693"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L705"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#quietlyComplete--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#quietlyComplete--</a></p>
@@ -1797,7 +1841,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_QuietlyInvoke" data-uid="Java.Util.Concurrent.ForkJoinTask`1.QuietlyInvoke">
   QuietlyInvoke()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L700"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L712"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#quietlyInvoke--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#quietlyInvoke--</a></p>
@@ -1824,7 +1868,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_QuietlyJoin" data-uid="Java.Util.Concurrent.ForkJoinTask`1.QuietlyJoin">
   QuietlyJoin()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L707"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L719"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#quietlyJoin--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#quietlyJoin--</a></p>
@@ -1851,7 +1895,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_Reinitialize" data-uid="Java.Util.Concurrent.ForkJoinTask`1.Reinitialize">
   Reinitialize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L730"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L742"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#reinitialize--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#reinitialize--</a></p>
@@ -1878,7 +1922,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_SetForkJoinTaskTag_System_Int16_" data-uid="Java.Util.Concurrent.ForkJoinTask`1.SetForkJoinTaskTag(System.Int16)">
   SetForkJoinTaskTag(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L647"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L659"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#setForkJoinTaskTag-short-">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#setForkJoinTaskTag-short-</a></p>
@@ -1917,7 +1961,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_TryUnfork" data-uid="Java.Util.Concurrent.ForkJoinTask`1.TryUnfork">
   TryUnfork()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L600"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#tryUnfork--">https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html#tryUnfork--</a></p>
@@ -1954,7 +1998,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_op_Implicit_Java_Util_Concurrent_ForkJoinTask__0___Java_Io_Serializable" data-uid="Java.Util.Concurrent.ForkJoinTask`1.op_Implicit(Java.Util.Concurrent.ForkJoinTask{`0})~Java.Io.Serializable">
   implicit operator Serializable(ForkJoinTask&lt;V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L455"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.ForkJoinTask-1.html">ForkJoinTask&lt;V&gt;</a> to <a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
@@ -1991,7 +2035,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_op_Implicit_Java_Util_Concurrent_ForkJoinTask__0___Java_Util_Concurrent_ForkJoinTask" data-uid="Java.Util.Concurrent.ForkJoinTask`1.op_Implicit(Java.Util.Concurrent.ForkJoinTask{`0})~Java.Util.Concurrent.ForkJoinTask">
   implicit operator ForkJoinTask(ForkJoinTask&lt;V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L459"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.ForkJoinTask-1.html">ForkJoinTask&lt;V&gt;</a> to <a class="xref" href="Java.Util.Concurrent.ForkJoinTask.html">ForkJoinTask</a></p>
@@ -2028,7 +2072,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Concurrent_ForkJoinTask_1_op_Implicit_Java_Util_Concurrent_ForkJoinTask__0___Java_Util_Concurrent_Future__0_" data-uid="Java.Util.Concurrent.ForkJoinTask`1.op_Implicit(Java.Util.Concurrent.ForkJoinTask{`0})~Java.Util.Concurrent.Future{`0}">
   implicit operator Future&lt;V&gt;(ForkJoinTask&lt;V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L451"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.ForkJoinTask-1.html">ForkJoinTask&lt;V&gt;</a> to <a class="xref" href="Java.Util.Concurrent.Future-1.html">Future&lt;V&gt;</a></p>
@@ -2065,7 +2109,7 @@ public ForkJoinTask(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L422" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinTask.cs/#L434" class="edit-link">Edit this page</a>
         </div>
 
 

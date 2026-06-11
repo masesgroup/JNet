@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Util_Calendar" data-uid="Java.Util.Calendar" class="text-break">
-Class Calendar  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L104"><i class="bi bi-code-slash"></i></a>
+Class Calendar  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class Calendar  <a class="header-action link-secondary" title="View source" href
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Calendar : JVMBridgeCore&lt;Calendar&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class Calendar : JVMBridgeBase&lt;Calendar&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -113,8 +113,8 @@ Class Calendar  <a class="header-action link-secondary" title="View source" href
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
-      <div><span class="xref">JVMBridgeCore</span></div>
-      <div><span class="xref">JVMBridgeCore</span>&lt;<a class="xref" href="Java.Util.Calendar.html">Calendar</a>&gt;</div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Java.Util.Calendar.html">Calendar</a>&gt;</div>
       <div><span class="xref">Calendar</span></div>
     </dd>
   </dl>
@@ -125,6 +125,7 @@ Class Calendar  <a class="header-action link-secondary" title="View source" href
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
@@ -142,319 +143,361 @@ Class Calendar  <a class="header-action link-secondary" title="View source" href
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecute(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecute(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecute(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecute(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Calendar&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Calendar&gt;.SExecute(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Calendar&gt;.SExecute(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Calendar&gt;.SExecute(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Calendar&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Calendar&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Calendar&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Calendar&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Calendar&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Calendar&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Calendar&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Calendar&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteStream&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SGetField(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SGetField(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SGetField&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SGetField(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SGetField(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SSetField(IJavaType, string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SSetField(string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SGetField&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SGetFieldStream&lt;TReturn&gt;(IJavaType, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.IsAssignableFrom(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;Calendar&gt;.IsAssignableFrom(IJavaType)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SGetFieldStream&lt;TReturn&gt;(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;Calendar&gt;.IsAssignableFrom&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SSetField(IJavaType, string, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore&lt;Calendar&gt;.New(params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SSetField(string, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.NewWithSignature(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore&lt;Calendar&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.IsAssignableFrom(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;Calendar&gt;.Execute&lt;T&gt;(params T[])</span>
+      <span class="xref">JVMBridgeBase&lt;Calendar&gt;.IsAssignableFrom(IJavaType)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;Calendar&gt;.DynBridgeClazz</span>
+      <span class="xref">JVMBridgeBase&lt;Calendar&gt;.IsAssignableFrom&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore&lt;Calendar&gt;.BridgeClazz</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Calendar&gt;.New(params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ReferenceEqualsJVM(IJVMBridgeBase, IJVMBridgeBase)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.NewWithSignature(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeCore.ClazzOf&lt;TClass&gt;(bool)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeCore.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Calendar&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ClazzOf(string, bool)</a>
+      <span class="xref">JVMBridgeBase&lt;Calendar&gt;.Execute&lt;T&gt;(params T[])</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ClazzOf(string, out Exception, bool)</a>
+      <span class="xref">JVMBridgeBase&lt;Calendar&gt;.DynBridgeClazz</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.RuntimeClassNameOf&lt;T&gt;()</span>
+      <span class="xref">JVMBridgeBase&lt;Calendar&gt;.BridgeClazz</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.RuntimeClassNameOf(Type)</a>
+      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(IJVMBridgeBase, IJVMBridgeBase)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ClassNameOf&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ClassOf&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.Wraps(Type, IJavaObject, string)</a>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeCore.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.MonitorEnter()</span>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.MonitorExit()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IsInstanceOf(string)</a>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.IsInstanceOf(IJavaType)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.IsInstanceOf&lt;T&gt;()</span>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.RuntimeIsInstanceOf&lt;T&gt;()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.CastTo&lt;TNewClass&gt;()</span>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.CastDirect&lt;TNewClass&gt;()</span>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Equals(IJVMBridgeBase)</span>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore.Equals(object)</a>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.GetHashCode()</span>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Notify()</span>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.NotifyAll()</span>
+      <span class="xref">JVMBridgeBase.CastToAndDetach&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.Wait()</span>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeCore.Wait(long)</a>
+      <span class="xref">JVMBridgeBase.CastDirectAndDetach&lt;TNewClass&gt;()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeCore.Wait(long, int)</a>
+      <span class="xref">JVMBridgeBase.CheckDisposed()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute(string, params object[])</a>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute&lt;TReturn&gt;(string, params object[])</a>
+      <span class="xref">JVMBridgeBase.ToString()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+      <span class="xref">JVMBridgeBase.Notify()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+      <span class="xref">JVMBridgeBase.Wait()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IGetField(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IGetField&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.IGetFieldArray&lt;TReturn&gt;(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ISetField(string, object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeCore.ISetField&lt;TValue&gt;(string, TValue)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore.Throw&lt;TException&gt;(params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeCore.BiThrow&lt;TException&gt;(params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.DynBridgeInstance</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.BridgeInstance</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeCore.IsBridgeListener</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldStream&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
@@ -518,9 +561,6 @@ Class Calendar  <a class="header-action link-secondary" title="View source" href
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
-  <div>
-      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_ToDisposable_MASES_JCOBridge_C2JBridge_JVMBridgeCore_">JNetCoreExtensions.ToDisposable(JVMBridgeCore)</a>
-  </div>
   </dd></dl>
 
 
@@ -535,10 +575,10 @@ Class Calendar  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Java_Util_Calendar__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Util.Calendar.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
   Calendar(IJVMBridgeBaseInitializer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -568,10 +608,10 @@ public Calendar(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Util_Calendar__ctor_System_Object___" data-uid="Java.Util.Calendar.#ctor(System.Object[])">
   Calendar(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+  <div class="markdown level1 summary"><p>Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -593,6 +633,10 @@ public Calendar(params object[] args)</code></pre>
 
 
 
+  <h4 class="section" id="Java_Util_Calendar__ctor_System_Object____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="Java.Util.Calendar.html">Calendar</a> represents a JVM interface or abstract class in .NET.
+Instantiating it directly outside of JCOBridge infrastructure is not supported and may produce undefined behavior.</p>
+</div>
 
 
 
@@ -605,7 +649,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_ALL_STYLES" data-uid="Java.Util.Calendar.ALL_STYLES">
   ALL_STYLES
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#ALL_STYLES">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#ALL_STYLES</a></p>
@@ -637,7 +681,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_AM" data-uid="Java.Util.Calendar.AM">
   AM
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#AM">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#AM</a></p>
@@ -669,7 +713,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_AM_PM" data-uid="Java.Util.Calendar.AM_PM">
   AM_PM
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L150"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#AM_PM">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#AM_PM</a></p>
@@ -701,7 +745,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_APRIL" data-uid="Java.Util.Calendar.APRIL">
   APRIL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#APRIL">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#APRIL</a></p>
@@ -733,7 +777,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_AUGUST" data-uid="Java.Util.Calendar.AUGUST">
   AUGUST
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#AUGUST">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#AUGUST</a></p>
@@ -765,7 +809,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_AvailableLocales" data-uid="Java.Util.Calendar.AvailableLocales">
   AvailableLocales
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L442"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getAvailableLocales--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getAvailableLocales--</a></p>
@@ -797,7 +841,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_BridgeClassName" data-uid="Java.Util.Calendar.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -829,7 +873,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_CalendarType" data-uid="Java.Util.Calendar.CalendarType">
   CalendarType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L495"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getCalendarType--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getCalendarType--</a></p>
@@ -861,7 +905,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_DATE" data-uid="Java.Util.Calendar.DATE">
   DATE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DATE">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DATE</a></p>
@@ -893,7 +937,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_DAY_OF_MONTH" data-uid="Java.Util.Calendar.DAY_OF_MONTH">
   DAY_OF_MONTH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DAY_OF_MONTH">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DAY_OF_MONTH</a></p>
@@ -925,7 +969,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_DAY_OF_WEEK" data-uid="Java.Util.Calendar.DAY_OF_WEEK">
   DAY_OF_WEEK
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L180"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DAY_OF_WEEK">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DAY_OF_WEEK</a></p>
@@ -957,7 +1001,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_DAY_OF_WEEK_IN_MONTH" data-uid="Java.Util.Calendar.DAY_OF_WEEK_IN_MONTH">
   DAY_OF_WEEK_IN_MONTH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DAY_OF_WEEK_IN_MONTH">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DAY_OF_WEEK_IN_MONTH</a></p>
@@ -989,7 +1033,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_DAY_OF_YEAR" data-uid="Java.Util.Calendar.DAY_OF_YEAR">
   DAY_OF_YEAR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L192"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DAY_OF_YEAR">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DAY_OF_YEAR</a></p>
@@ -1021,7 +1065,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_DECEMBER" data-uid="Java.Util.Calendar.DECEMBER">
   DECEMBER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DECEMBER">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DECEMBER</a></p>
@@ -1053,7 +1097,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_DST_OFFSET" data-uid="Java.Util.Calendar.DST_OFFSET">
   DST_OFFSET
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DST_OFFSET">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#DST_OFFSET</a></p>
@@ -1085,7 +1129,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_ERA" data-uid="Java.Util.Calendar.ERA">
   ERA
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#ERA">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#ERA</a></p>
@@ -1117,7 +1161,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_FEBRUARY" data-uid="Java.Util.Calendar.FEBRUARY">
   FEBRUARY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L216"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#FEBRUARY">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#FEBRUARY</a></p>
@@ -1149,7 +1193,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_FIELD_COUNT" data-uid="Java.Util.Calendar.FIELD_COUNT">
   FIELD_COUNT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#FIELD_COUNT">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#FIELD_COUNT</a></p>
@@ -1181,7 +1225,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_FRIDAY" data-uid="Java.Util.Calendar.FRIDAY">
   FRIDAY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L228"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#FRIDAY">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#FRIDAY</a></p>
@@ -1213,7 +1257,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_FirstDayOfWeek" data-uid="Java.Util.Calendar.FirstDayOfWeek">
   FirstDayOfWeek
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L502"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getFirstDayOfWeek--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getFirstDayOfWeek--</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setFirstDayOfWeek-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setFirstDayOfWeek-int-</a></p>
@@ -1245,7 +1289,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_GetAvailableCalendarTypes" data-uid="Java.Util.Calendar.GetAvailableCalendarTypes">
   GetAvailableCalendarTypes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L449"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getAvailableCalendarTypes--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getAvailableCalendarTypes--</a></p>
@@ -1277,7 +1321,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_HOUR" data-uid="Java.Util.Calendar.HOUR">
   HOUR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L234"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#HOUR">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#HOUR</a></p>
@@ -1309,7 +1353,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_HOUR_OF_DAY" data-uid="Java.Util.Calendar.HOUR_OF_DAY">
   HOUR_OF_DAY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L240"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#HOUR_OF_DAY">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#HOUR_OF_DAY</a></p>
@@ -1341,7 +1385,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_Instance" data-uid="Java.Util.Calendar.Instance">
   Instance
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L456"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getInstance--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getInstance--</a></p>
@@ -1373,7 +1417,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_IsBridgeAbstract" data-uid="Java.Util.Calendar.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -1405,10 +1449,10 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_IsBridgeCloseable" data-uid="Java.Util.Calendar.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -1437,7 +1481,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_IsBridgeInterface" data-uid="Java.Util.Calendar.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -1469,7 +1513,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_IsBridgeStatic" data-uid="Java.Util.Calendar.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -1501,7 +1545,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_JANUARY" data-uid="Java.Util.Calendar.JANUARY">
   JANUARY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L246"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#JANUARY">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#JANUARY</a></p>
@@ -1533,7 +1577,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_JULY" data-uid="Java.Util.Calendar.JULY">
   JULY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L252"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#JULY">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#JULY</a></p>
@@ -1565,7 +1609,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_JUNE" data-uid="Java.Util.Calendar.JUNE">
   JUNE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#JUNE">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#JUNE</a></p>
@@ -1597,7 +1641,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_LONG" data-uid="Java.Util.Calendar.LONG">
   LONG
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L264"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#LONG">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#LONG</a></p>
@@ -1629,7 +1673,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_LONG_FORMAT" data-uid="Java.Util.Calendar.LONG_FORMAT">
   LONG_FORMAT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L270"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#LONG_FORMAT">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#LONG_FORMAT</a></p>
@@ -1661,7 +1705,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_LONG_STANDALONE" data-uid="Java.Util.Calendar.LONG_STANDALONE">
   LONG_STANDALONE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L276"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#LONG_STANDALONE">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#LONG_STANDALONE</a></p>
@@ -1693,7 +1737,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_MARCH" data-uid="Java.Util.Calendar.MARCH">
   MARCH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L282"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#MARCH">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#MARCH</a></p>
@@ -1725,7 +1769,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_MAY" data-uid="Java.Util.Calendar.MAY">
   MAY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L288"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#MAY">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#MAY</a></p>
@@ -1757,7 +1801,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_MILLISECOND" data-uid="Java.Util.Calendar.MILLISECOND">
   MILLISECOND
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L294"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#MILLISECOND">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#MILLISECOND</a></p>
@@ -1789,7 +1833,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_MINUTE" data-uid="Java.Util.Calendar.MINUTE">
   MINUTE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L300"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#MINUTE">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#MINUTE</a></p>
@@ -1821,7 +1865,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_MONDAY" data-uid="Java.Util.Calendar.MONDAY">
   MONDAY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L306"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#MONDAY">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#MONDAY</a></p>
@@ -1853,7 +1897,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_MONTH" data-uid="Java.Util.Calendar.MONTH">
   MONTH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L312"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#MONTH">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#MONTH</a></p>
@@ -1885,7 +1929,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_MinimalDaysInFirstWeek" data-uid="Java.Util.Calendar.MinimalDaysInFirstWeek">
   MinimalDaysInFirstWeek
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L509"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getMinimalDaysInFirstWeek--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getMinimalDaysInFirstWeek--</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setMinimalDaysInFirstWeek-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setMinimalDaysInFirstWeek-int-</a></p>
@@ -1917,7 +1961,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_NARROW_FORMAT" data-uid="Java.Util.Calendar.NARROW_FORMAT">
   NARROW_FORMAT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L318"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#NARROW_FORMAT">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#NARROW_FORMAT</a></p>
@@ -1949,7 +1993,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_NARROW_STANDALONE" data-uid="Java.Util.Calendar.NARROW_STANDALONE">
   NARROW_STANDALONE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L324"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#NARROW_STANDALONE">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#NARROW_STANDALONE</a></p>
@@ -1981,7 +2025,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_NOVEMBER" data-uid="Java.Util.Calendar.NOVEMBER">
   NOVEMBER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L330"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#NOVEMBER">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#NOVEMBER</a></p>
@@ -2013,7 +2057,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_OCTOBER" data-uid="Java.Util.Calendar.OCTOBER">
   OCTOBER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L336"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#OCTOBER">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#OCTOBER</a></p>
@@ -2045,7 +2089,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_PM" data-uid="Java.Util.Calendar.PM">
   PM
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L342"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#PM">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#PM</a></p>
@@ -2077,7 +2121,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_SATURDAY" data-uid="Java.Util.Calendar.SATURDAY">
   SATURDAY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L348"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SATURDAY">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SATURDAY</a></p>
@@ -2109,7 +2153,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_SECOND" data-uid="Java.Util.Calendar.SECOND">
   SECOND
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L354"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SECOND">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SECOND</a></p>
@@ -2141,7 +2185,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_SEPTEMBER" data-uid="Java.Util.Calendar.SEPTEMBER">
   SEPTEMBER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L360"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SEPTEMBER">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SEPTEMBER</a></p>
@@ -2173,7 +2217,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_SHORT" data-uid="Java.Util.Calendar.SHORT">
   SHORT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L366"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SHORT">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SHORT</a></p>
@@ -2205,7 +2249,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_SHORT_FORMAT" data-uid="Java.Util.Calendar.SHORT_FORMAT">
   SHORT_FORMAT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L372"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SHORT_FORMAT">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SHORT_FORMAT</a></p>
@@ -2237,7 +2281,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_SHORT_STANDALONE" data-uid="Java.Util.Calendar.SHORT_STANDALONE">
   SHORT_STANDALONE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L378"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SHORT_STANDALONE">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SHORT_STANDALONE</a></p>
@@ -2269,7 +2313,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_SUNDAY" data-uid="Java.Util.Calendar.SUNDAY">
   SUNDAY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L384"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SUNDAY">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#SUNDAY</a></p>
@@ -2301,7 +2345,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_THURSDAY" data-uid="Java.Util.Calendar.THURSDAY">
   THURSDAY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L390"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#THURSDAY">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#THURSDAY</a></p>
@@ -2333,7 +2377,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_TUESDAY" data-uid="Java.Util.Calendar.TUESDAY">
   TUESDAY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L396"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#TUESDAY">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#TUESDAY</a></p>
@@ -2365,7 +2409,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_Time" data-uid="Java.Util.Calendar.Time">
   Time
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L516"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getTime--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getTime--</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setTime-java.util.Date-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setTime-java.util.Date-</a></p>
@@ -2397,7 +2441,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_TimeInMillis" data-uid="Java.Util.Calendar.TimeInMillis">
   TimeInMillis
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L515"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L523"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getTimeInMillis--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getTimeInMillis--</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setTimeInMillis-long-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setTimeInMillis-long-</a></p>
@@ -2429,7 +2473,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_TimeZone" data-uid="Java.Util.Calendar.TimeZone">
   TimeZone
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L522"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L530"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getTimeZone--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getTimeZone--</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setTimeZone-java.util.TimeZone-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setTimeZone-java.util.TimeZone-</a></p>
@@ -2461,7 +2505,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_UNDECIMBER" data-uid="Java.Util.Calendar.UNDECIMBER">
   UNDECIMBER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L402"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#UNDECIMBER">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#UNDECIMBER</a></p>
@@ -2493,7 +2537,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_WEDNESDAY" data-uid="Java.Util.Calendar.WEDNESDAY">
   WEDNESDAY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L408"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#WEDNESDAY">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#WEDNESDAY</a></p>
@@ -2525,7 +2569,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_WEEK_OF_MONTH" data-uid="Java.Util.Calendar.WEEK_OF_MONTH">
   WEEK_OF_MONTH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L414"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#WEEK_OF_MONTH">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#WEEK_OF_MONTH</a></p>
@@ -2557,7 +2601,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_WEEK_OF_YEAR" data-uid="Java.Util.Calendar.WEEK_OF_YEAR">
   WEEK_OF_YEAR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L412"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L420"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#WEEK_OF_YEAR">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#WEEK_OF_YEAR</a></p>
@@ -2589,7 +2633,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_WeekYear" data-uid="Java.Util.Calendar.WeekYear">
   WeekYear
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L536"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L544"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getWeekYear--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getWeekYear--</a></p>
@@ -2621,7 +2665,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_WeeksInWeekYear" data-uid="Java.Util.Calendar.WeeksInWeekYear">
   WeeksInWeekYear
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L537"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getWeeksInWeekYear--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getWeeksInWeekYear--</a></p>
@@ -2653,7 +2697,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_YEAR" data-uid="Java.Util.Calendar.YEAR">
   YEAR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L426"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#YEAR">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#YEAR</a></p>
@@ -2685,7 +2729,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_ZONE_OFFSET" data-uid="Java.Util.Calendar.ZONE_OFFSET">
   ZONE_OFFSET
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L432"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#ZONE_OFFSET">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#ZONE_OFFSET</a></p>
@@ -2721,7 +2765,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_Add_System_Int32_System_Int32_" data-uid="Java.Util.Calendar.Add(System.Int32,System.Int32)">
   Add(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L581"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L589"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#add-int-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#add-int-int-</a></p>
@@ -2757,7 +2801,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_After_System_Object_" data-uid="Java.Util.Calendar.After(System.Object)">
   After(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L599"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L607"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#after-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#after-java.lang.Object-</a></p>
@@ -2796,7 +2840,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_Before_System_Object_" data-uid="Java.Util.Calendar.Before(System.Object)">
   Before(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L608"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L616"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#before-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#before-java.lang.Object-</a></p>
@@ -2835,7 +2879,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_Clear" data-uid="Java.Util.Calendar.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L648"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L656"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#clear--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#clear--</a></p>
@@ -2862,7 +2906,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_Clear_System_Int32_" data-uid="Java.Util.Calendar.Clear(System.Int32)">
   Clear(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L656"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L664"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#clear-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#clear-int-</a></p>
@@ -2895,7 +2939,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_CompareTo_Java_Util_Calendar_" data-uid="Java.Util.Calendar.CompareTo(Java.Util.Calendar)">
   CompareTo(Calendar)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L709"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L717"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#compareTo-java.util.Calendar-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#compareTo-java.util.Calendar-</a></p>
@@ -2934,7 +2978,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_CompareTo_System_Object_" data-uid="Java.Util.Calendar.CompareTo(System.Object)">
   CompareTo(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L700"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L708"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#compareTo-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#compareTo-java.lang.Object-</a></p>
@@ -2973,7 +3017,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_Get_System_Int32_" data-uid="Java.Util.Calendar.Get(System.Int32)">
   Get(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L718"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L726"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#get-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#get-int-</a></p>
@@ -3012,7 +3056,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_GetActualMaximum_System_Int32_" data-uid="Java.Util.Calendar.GetActualMaximum(System.Int32)">
   GetActualMaximum(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L727"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L735"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getActualMaximum-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getActualMaximum-int-</a></p>
@@ -3051,7 +3095,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_GetActualMinimum_System_Int32_" data-uid="Java.Util.Calendar.GetActualMinimum(System.Int32)">
   GetActualMinimum(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L736"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L744"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getActualMinimum-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getActualMinimum-int-</a></p>
@@ -3090,7 +3134,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_GetDisplayName_System_Int32_System_Int32_Java_Util_Locale_" data-uid="Java.Util.Calendar.GetDisplayName(System.Int32,System.Int32,Java.Util.Locale)">
   GetDisplayName(int, int, Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L747"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L755"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getDisplayName-int-int-java.util.Locale-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getDisplayName-int-int-java.util.Locale-</a></p>
@@ -3135,7 +3179,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_GetDisplayNames_System_Int32_System_Int32_Java_Util_Locale_" data-uid="Java.Util.Calendar.GetDisplayNames(System.Int32,System.Int32,Java.Util.Locale)">
   GetDisplayNames(int, int, Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L758"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L766"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getDisplayNames-int-int-java.util.Locale-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getDisplayNames-int-int-java.util.Locale-</a></p>
@@ -3180,7 +3224,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_GetGreatestMinimum_System_Int32_" data-uid="Java.Util.Calendar.GetGreatestMinimum(System.Int32)">
   GetGreatestMinimum(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L545"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L553"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getGreatestMinimum-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getGreatestMinimum-int-</a></p>
@@ -3219,7 +3263,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_GetInstance_Java_Util_Locale_" data-uid="Java.Util.Calendar.GetInstance(Java.Util.Locale)">
   GetInstance(Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L465"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getInstance-java.util.Locale-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getInstance-java.util.Locale-</a></p>
@@ -3258,7 +3302,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_GetInstance_Java_Util_TimeZone_" data-uid="Java.Util.Calendar.GetInstance(Java.Util.TimeZone)">
   GetInstance(TimeZone)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L484"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getInstance-java.util.TimeZone-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getInstance-java.util.TimeZone-</a></p>
@@ -3297,7 +3341,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_GetInstance_Java_Util_TimeZone_Java_Util_Locale_" data-uid="Java.Util.Calendar.GetInstance(Java.Util.TimeZone,Java.Util.Locale)">
   GetInstance(TimeZone, Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L475"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getInstance-java.util.TimeZone-java.util.Locale-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getInstance-java.util.TimeZone-java.util.Locale-</a></p>
@@ -3339,7 +3383,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_GetLeastMaximum_System_Int32_" data-uid="Java.Util.Calendar.GetLeastMaximum(System.Int32)">
   GetLeastMaximum(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L554"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L562"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getLeastMaximum-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getLeastMaximum-int-</a></p>
@@ -3378,7 +3422,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_GetMaximum_System_Int32_" data-uid="Java.Util.Calendar.GetMaximum(System.Int32)">
   GetMaximum(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L563"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L571"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getMaximum-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getMaximum-int-</a></p>
@@ -3417,7 +3461,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_GetMinimum_System_Int32_" data-uid="Java.Util.Calendar.GetMinimum(System.Int32)">
   GetMinimum(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L572"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L580"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getMinimum-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getMinimum-int-</a></p>
@@ -3456,7 +3500,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_IsLenient" data-uid="Java.Util.Calendar.IsLenient">
   IsLenient()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L616"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L624"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#isLenient--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#isLenient--</a></p>
@@ -3489,7 +3533,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_IsSet_System_Int32_" data-uid="Java.Util.Calendar.IsSet(System.Int32)">
   IsSet(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L633"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L641"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#isSet-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#isSet-int-</a></p>
@@ -3528,7 +3572,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_IsWeekDateSupported" data-uid="Java.Util.Calendar.IsWeekDateSupported">
   IsWeekDateSupported()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L624"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L632"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#isWeekDateSupported--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#isWeekDateSupported--</a></p>
@@ -3561,7 +3605,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_Roll_System_Int32_System_Boolean_" data-uid="Java.Util.Calendar.Roll(System.Int32,System.Boolean)">
   Roll(int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L590"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L598"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#roll-int-boolean-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#roll-int-boolean-</a></p>
@@ -3597,7 +3641,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_Roll_System_Int32_System_Int32_" data-uid="Java.Util.Calendar.Roll(System.Int32,System.Int32)">
   Roll(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L767"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L775"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#roll-int-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#roll-int-int-</a></p>
@@ -3633,7 +3677,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_Set_System_Int32_System_Int32_" data-uid="Java.Util.Calendar.Set(System.Int32,System.Int32)">
   Set(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L776"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L784"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#set-int-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#set-int-int-</a></p>
@@ -3669,7 +3713,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_Set_System_Int32_System_Int32_System_Int32_" data-uid="Java.Util.Calendar.Set(System.Int32,System.Int32,System.Int32)">
   Set(int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L691"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L699"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#set-int-int-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#set-int-int-int-</a></p>
@@ -3708,7 +3752,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_Set_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Java.Util.Calendar.Set(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
   Set(int, int, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L681"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L689"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#set-int-int-int-int-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#set-int-int-int-int-int-</a></p>
@@ -3753,7 +3797,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_Set_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Java.Util.Calendar.Set(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
   Set(int, int, int, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L669"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L677"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#set-int-int-int-int-int-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#set-int-int-int-int-int-int-</a></p>
@@ -3801,7 +3845,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_SetLenient_System_Boolean_" data-uid="Java.Util.Calendar.SetLenient(System.Boolean)">
   SetLenient(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L784"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L792"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setLenient-boolean-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setLenient-boolean-</a></p>
@@ -3834,7 +3878,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_SetWeekDate_System_Int32_System_Int32_System_Int32_" data-uid="Java.Util.Calendar.SetWeekDate(System.Int32,System.Int32,System.Int32)">
   SetWeekDate(int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L794"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L802"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setWeekDate-int-int-int-">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#setWeekDate-int-int-int-</a></p>
@@ -3873,7 +3917,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_ToInstant" data-uid="Java.Util.Calendar.ToInstant">
   ToInstant()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L641"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L649"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#toInstant--">https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#toInstant--</a></p>
@@ -3910,7 +3954,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_op_Implicit_Java_Util_Calendar__Java_Io_Serializable" data-uid="Java.Util.Calendar.op_Implicit(Java.Util.Calendar)~Java.Io.Serializable">
   implicit operator Serializable(Calendar)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Calendar.html">Calendar</a> to <a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
@@ -3947,7 +3991,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_op_Implicit_Java_Util_Calendar__Java_Lang_Cloneable" data-uid="Java.Util.Calendar.op_Implicit(Java.Util.Calendar)~Java.Lang.Cloneable">
   implicit operator Cloneable(Calendar)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Calendar.html">Calendar</a> to <a class="xref" href="Java.Lang.Cloneable.html">Cloneable</a></p>
@@ -3984,7 +4028,7 @@ public Calendar(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Calendar_op_Implicit_Java_Util_Calendar__Java_Lang_Comparable" data-uid="Java.Util.Calendar.op_Implicit(Java.Util.Calendar)~Java.Lang.Comparable">
   implicit operator Comparable(Calendar)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L130"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Calendar.html">Calendar</a> to <a class="xref" href="Java.Lang.Comparable.html">Comparable</a></p>
@@ -4021,7 +4065,7 @@ public Calendar(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L104" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Calendar.cs/#L112" class="edit-link">Edit this page</a>
         </div>
 
 
