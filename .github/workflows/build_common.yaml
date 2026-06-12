@@ -621,22 +621,22 @@ jobs:
         run: dotnet ./bin/${{ matrix.framework }}/JNetPerformanceTest.dll ${{ env.EXTRA_ARGUMENT }}
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        if: ${{ && inputs.ExecuteOnlyPerformance == false }}
+        if: ${{ inputs.ExecuteOnlyPerformance == false }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        if: ${{ && inputs.ExecuteOnlyPerformance == false }}
+        if: ${{ inputs.ExecuteOnlyPerformance == false }}
         run: |
           for TEST in TestGetByteArrayDataUsage TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
           done
 
       - shell: pwsh
-        if: ${{ && inputs.ExecuteOnlyPerformance == false }}
+        if: ${{ inputs.ExecuteOnlyPerformance == false }}
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
         
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        if: ${{ && inputs.ExecuteOnlyPerformance == false }}
+        if: ${{ inputs.ExecuteOnlyPerformance == false }}
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
