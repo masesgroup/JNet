@@ -7,6 +7,11 @@ name: Common build workflow
 on:
   workflow_call:
     inputs:
+      ExecuteOnlyPerformance:
+        description: 'Execute performance tests'
+        required: false
+        default: false
+        type: boolean
       ExecuteOnMoreOSes:
         description: 'Test on more OSes'
         required: false
@@ -292,22 +297,25 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       matrix_jdk_vendor: ${{ steps.set-jdk-vendor.outputs.matrix_jdk_vendor || steps.set-jdk-vendor-ext.outputs.matrix_jdk_vendor }}
-      matrix_jdk_version: ${{ steps.set-jdk-version.outputs.matrix_jdk_version || steps.set-jdk-version-ext.outputs.matrix_jdk_version }}
+      matrix_jdk_version: ${{ steps.set-jdk-version.outputs.matrix_jdk_version || steps.set-jdk-version-ext.outputs.matrix_jdk_version || steps.set-jdk-version-performance.outputs.matrix_jdk_version }}
       matrix_win_os: ${{ steps.set-matrix-win-os.outputs.matrix_win || steps.set-matrix-win-os-ext.outputs.matrix_win }}
       matrix_linux_os: ${{ steps.set-matrix-linux-os.outputs.matrix_linux || steps.set-matrix-linux-os-ext.outputs.matrix_linux }}
       matrix_mac_os: ${{ steps.set-matrix-mac-os.outputs.matrix_mac || steps.set-matrix-mac-os-ext.outputs.matrix_mac }}
     steps:
       - id: set-jdk-vendor
-        if: ${{ inputs.ExecuteOnLargerJDKVendorSet == false }}
+        if: ${{ inputs.ExecuteOnLargerJDKVendorSet == false || inputs.ExecuteOnlyPerformance == false }}
         run: echo "matrix_jdk_vendor=[ 'temurin' ]" >> $GITHUB_OUTPUT
       - id: set-jdk-vendor-ext
-        if: ${{ inputs.ExecuteOnLargerJDKVendorSet == true }}
+        if: ${{ inputs.ExecuteOnLargerJDKVendorSet == true && inputs.ExecuteOnlyPerformance == false }}
         run: echo "matrix_jdk_vendor=[ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle' ]" >> $GITHUB_OUTPUT
-      - id: set-jdk-version-ext
-        if: ${{ inputs.ExecuteOnLargerJDKVersionSet == false }}
-        run: echo "matrix_jdk_version=[ '17', '21', '25' ]" >> $GITHUB_OUTPUT
+      - id: set-jdk-version-performance
+        if: ${{ inputs.ExecuteOnlyPerformance == true }}
+        run: echo "matrix_jdk_version=[ '17', '25' ]" >> $GITHUB_OUTPUT
       - id: set-jdk-version
-        if: ${{ inputs.ExecuteOnLargerJDKVersionSet == true }}
+        if: ${{ inputs.ExecuteOnLargerJDKVersionSet == false && inputs.ExecuteOnlyPerformance == false }}
+        run: echo "matrix_jdk_version=[ '17', '21', '25' ]" >> $GITHUB_OUTPUT
+      - id: set-jdk-version-ext
+        if: ${{ inputs.ExecuteOnLargerJDKVersionSet == true && inputs.ExecuteOnlyPerformance == false }}
         run: echo "matrix_jdk_version=[ '8', '11', '17', '21', '25' ]" >> $GITHUB_OUTPUT
       - id: set-matrix-win-os
         if: ${{ inputs.ExecuteOnMoreOSes == false }}
