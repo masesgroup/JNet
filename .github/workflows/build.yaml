@@ -153,7 +153,7 @@ jobs:
       artifact-metadata: write
     uses: ./.github/workflows/build_common.yaml
     with:
-      ExecuteOnlyPerformance: ${{ (inputs.ExecuteOnlyPerformance || false }}
+      ExecuteOnlyPerformance: ${{ inputs.ExecuteOnlyPerformance || false }}
       ExecuteOnMoreOSes: ${{ (inputs.ExecuteOnMoreOSes || github.event_name == 'schedule') && inputs.ExecuteOnlyPerformance == false }}
       ExecuteOnLargerJDKVendorSet: ${{ (inputs.ExecuteOnLargerJDKVendorSet || github.ref_name == 'master' || github.event_name == 'schedule') && inputs.ExecuteOnlyPerformance == false }}
       ExecuteOnLargerJDKVersionSet: ${{ (inputs.ExecuteOnLargerJDKVersionSet || github.ref_name == 'master' || github.event_name == 'schedule') && inputs.ExecuteOnlyPerformance == false }}
