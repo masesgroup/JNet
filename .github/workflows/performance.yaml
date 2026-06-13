@@ -91,7 +91,7 @@ jobs:
         framework: [ 'net8.0', 'net10.0' ]
         jdk_vendor: [ 'temurin' ]
         jdk_version: [ '17', '25' ]
-        run: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]   # aumenta qui
+        run: [ 1, 2, 3, 4, 5 ]
               
     runs-on: ${{ matrix.os }}
     env:
@@ -177,23 +177,38 @@ jobs:
         shell: bash
         run: |
           OUTPUT=$(dotnet ./bin/${{ matrix.framework }}/JNetPerformanceTest.dll)
-
           echo "$OUTPUT"
-
           TOTAL=$(echo "$OUTPUT" | grep "All tests completed in" | awk '{print $5}')
-
           SECONDS_TOTAL=$(echo "$TOTAL" | awk -F: '{ 
             split($3, s, "."); 
             print ($1 * 3600) + ($2 * 60) + s[1] + ("0." s[2]); 
           }')
+          echo "$SECONDS_TOTAL|OS=${{ matrix.os }}|FW=${{ matrix.framework }}|JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }}|RUN=${{ matrix.run }}" > result.txt
 
-          THRESHOLD=20
-          if (( $(echo "$SECONDS_TOTAL < $THRESHOLD" | bc -l) )); then
-            echo "🚀 FAST ($SECONDS_TOTAL s) | OS=${{ matrix.os }} | FW=${{ matrix.framework }} | JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }} | RUN=${{ matrix.run }}" | tee -a "$GITHUB_STEP_SUMMARY"
-          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: result-${{ matrix.os }}-${{ matrix.framework }}-${{ matrix.jdk_version }}-${{ matrix.run }}
+          path: result.txt
+
+  collect_results:
+    needs: tests_performance
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/download-artifact@v4
+
+      - name: Sort results
+        run: |
+          echo "=== ALL RESULTS ==="
+          cat */result.txt > all.txt
+          echo "=== SORTED (FASTEST FIRST) ==="
+          sort -n all.txt | while IFS="|" read time rest; do
+            echo "🚀 $time s | $rest"
+            echo "🚀 $time s | $rest" >> $GITHUB_STEP_SUMMARY
+          done
 
   final_cleanup:
-    needs: [ tests_performance ]
+    needs: [ collect_results ]
     if: "always()"
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
