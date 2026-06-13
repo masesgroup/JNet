@@ -106,6 +106,7 @@ jobs:
   #        ${{ github.workspace }}/tests/native/CreateVM.out
 
   build_container:
+    if: ${{ inputs.ExecuteOnlyPerformance == false }}
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -448,29 +449,8 @@ jobs:
           echo "Total time: $SECONDS_TOTAL s"
 
           THRESHOLD=20
-
-          awk "BEGIN { exit !($SECONDS_TOTAL > $THRESHOLD) }"
-
-          MATRIX_INFO="OS=${{ matrix.os }} | FRAMEWORK=${{ matrix.framework }} | JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }} | RUN=${{ matrix.run }}"
-
-          echo "===== MATRIX INFO ====="
-          echo "$MATRIX_INFO"
-          echo "Total time: $SECONDS_TOTAL s"
-
-          if (( $(echo "$SECONDS_TOTAL > $THRESHOLD" | bc -l) )); then
-            MSG="🐢 Slow machine ($SECONDS_TOTAL s) | $MATRIX_INFO"
-
-            echo "$MSG"
-            echo "::warning::$MSG"
-            echo "$MSG" >> $GITHUB_STEP_SUMMARY
-
-            exit 1
-          else
-            MSG="🚀 Machine OK ($SECONDS_TOTAL s) | $MATRIX_INFO"
-
-            echo "$MSG"
-            echo "::notice::$MSG"
-            echo "$MSG" >> $GITHUB_STEP_SUMMARY
+          if (( $(echo "$SECONDS_TOTAL < $THRESHOLD" | bc -l) )); then
+            echo "🚀 FAST ($SECONDS_TOTAL s) | OS=${{ matrix.os }} | FW=${{ matrix.framework }} | JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }} | RUN=${{ matrix.run }}" | tee -a "$GITHUB_STEP_SUMMARY"
           fi
 
   tests_win:

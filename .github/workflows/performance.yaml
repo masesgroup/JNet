@@ -1,0 +1,371 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Performance workflow
+
+# Controls when the action will run. Triggers the workflow on push
+# events but only for the master branch
+on:
+  workflow_dispatch:
+    inputs:
+      ExecuteOnlyPerformance:
+        description: 'Execute performance tests'
+        required: false
+        default: false
+        type: boolean
+      ExecuteOnMoreOSes:
+        description: 'Test on more OSes'
+        required: false
+        default: false
+        type: boolean
+      ExecuteOnLargerJDKVendorSet:
+        description: 'Executes tests on more JDK vendor'
+        required: false
+        default: false
+        type: boolean
+      ExecuteOnLargerJDKVersionSet:
+        description: 'Executes tests on more JDK version'
+        required: false
+        default: false
+        type: boolean
+      EnableLinuxTests:
+        description: 'Enable tests in Linux'
+        required: false
+        default: false
+        type: boolean
+      EnableWindowsTests:
+        description: 'Enable tests in Windows'
+        required: false
+        default: false
+        type: boolean
+      EnableMacOSTests:
+        description: 'Enable tests in MacOS'
+        required: false
+        default: false
+        type: boolean
+      ForceContinueOnError:
+        description: 'Force continue-on-error'
+        required: false
+        default: false
+        type: boolean
+      EnableProcessDump:
+        description: 'Enable .NET process dump'
+        required: false
+        default: '0'
+        type: string
+      ProcessDumpType:
+        description: '.NET process dump type'
+        required: false
+        default: '3'
+        type: string
+      EnableVerboseDiagnosticProcessDump:
+        description: 'Enables verbose diagnostic logging of the dump process'
+        required: false
+        default: '0'
+        type: string
+    secrets:
+      actor:
+        required: true
+      GITHUB_TOKEN_INHERITED:
+        required: true
+      JCOBRIDGE_ENCODED:
+        required: true
+        
+concurrency:
+  group: '${{ github.workflow }}-child-${{ github.event.pull_request.number || github.ref }}'
+  cancel-in-progress: true
+
+# This workflow contains multiple jobs
+jobs: 
+  # Now run "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: windows-2022
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:   
+      # Runs a set of commands using the runners shell
+      # Support longpaths
+      - name: Support long paths
+        run: git config --system core.longpaths true
+      
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: '1'
+          submodules: 'true'
+
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: |
+            9.x
+            10.x
+
+      - name: Pre compile
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNet\JNet.csproj
+        env:
+          GITHUB_SIMPLIFIED_GENERATION: true
+          
+      - name: Set up Apache Maven Central
+        uses: actions/setup-java@v5
+        with: # running setup-java again overwrites the settings.xml
+          distribution: temurin
+          java-version: 8
+          cache: 'maven'
+
+      - name: Create Jars for JNet
+        run: mvn --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
+        
+      - name: Create Jars for JNetReflector
+        run: mvn --file ./src/jvm/jnetreflector/pom.xml --no-transfer-progress package
+
+      - name: Compile JNetCLI
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNetCLI\JNetCLI.csproj
+ 
+      - name: Compile JNetReflector
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNetReflector\JNetReflector.csproj
+ 
+      - name: Compile JNetPSCore
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNetPSCore\JNetPSCore.csproj
+        
+      - name: Compile JNetPS
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNetPS\JNetPS.csproj
+ 
+      - uses: nuget/setup-nuget@v4
+        with:
+          nuget-version: '5.x'
+          
+      - run: nuget pack src\net\JNetCLI\JNetCLI.nuspec -OutputDirectory .\bin
+      - run: nuget pack src\net\JNetReflector\JNetReflector.nuspec -OutputDirectory .\bin
+
+      - name: Prepare PowerShell package
+        run: |
+          Copy-Item .\src\net\JNetPS\MASES.JNetPS.psd1 -Destination .\MASES.JNetPS\MASES.JNetPS.psd1 -Force
+          Copy-Item .\src\net\JNetPS\MASES.JNetPS.psm1 -Destination .\MASES.JNetPS\MASES.JNetPS.psm1 -Force
+        shell: pwsh
+     
+      - name: Create PowerShell package
+        run: |
+          $env:DOTNET_CLI_UI_LANGUAGE="en_US"
+          Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
+          Publish-Module -Path .\MASES.JNetPS -Repository Local_Nuget_Feed -NuGetApiKey 'ABC123'
+        shell: pwsh
+
+      - name: Recompile to create nuget packages
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNet.sln
+
+      - uses: actions/upload-artifact@v7
+        with:
+          if-no-files-found: ignore
+          name: JNetNuGet
+          path: .\bin\*nupkg
+
+      - name: Create Jars for tests
+        run: mvn --file ./tests/jvm/jnettest/pom.xml --no-transfer-progress package
+
+      - name: Compile tests and templates
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" tests\net\JNetTest.sln
+        env:
+          GITHUB_TEST_PREPARATION: true
+
+      - name: Prepare execution files
+        run: |
+          Copy-Item ${{ github.workspace }}\tests\scripts\JNetPSTest.ps1 -Destination bin\JNetPSTest.ps1 -Force
+
+      - name: Save JNet bin in cache
+        uses: actions/cache/save@v5
+        with:
+          enableCrossOsArchive: true
+          path: ./bin/
+          key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
+          
+      - uses: actions/upload-artifact@v7
+        with:
+          if-no-files-found: ignore
+          name: JNetBin
+          path: .\bin\
+
+  # prepare matrix info
+  prepare_matrix_data:
+    needs: build
+    runs-on: ubuntu-latest
+    outputs:
+      matrix_jdk_vendor: ${{ steps.set-jdk-vendor.outputs.matrix_jdk_vendor || steps.set-jdk-vendor-ext.outputs.matrix_jdk_vendor }}
+      matrix_jdk_version: ${{ steps.set-jdk-version.outputs.matrix_jdk_version || steps.set-jdk-version-ext.outputs.matrix_jdk_version || steps.set-jdk-version-performance.outputs.matrix_jdk_version }}
+      matrix_win_os: ${{ steps.set-matrix-win-os.outputs.matrix_win || steps.set-matrix-win-os-ext.outputs.matrix_win }}
+      matrix_linux_os: ${{ steps.set-matrix-linux-os.outputs.matrix_linux || steps.set-matrix-linux-os-ext.outputs.matrix_linux || steps.set-matrix-linux-os-performance.outputs.matrix_linux }}
+      matrix_mac_os: ${{ steps.set-matrix-mac-os.outputs.matrix_mac || steps.set-matrix-mac-os-ext.outputs.matrix_mac }}
+    steps:
+      - id: set-jdk-vendor
+        if: ${{ inputs.ExecuteOnLargerJDKVendorSet == false || inputs.ExecuteOnlyPerformance == false }}
+        run: echo "matrix_jdk_vendor=[ 'temurin' ]" >> $GITHUB_OUTPUT
+      - id: set-jdk-vendor-ext
+        if: ${{ inputs.ExecuteOnLargerJDKVendorSet == true && inputs.ExecuteOnlyPerformance == false }}
+        run: echo "matrix_jdk_vendor=[ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle' ]" >> $GITHUB_OUTPUT
+      - id: set-jdk-version-performance
+        if: ${{ inputs.ExecuteOnlyPerformance == true }}
+        run: echo "matrix_jdk_version=[ '17', '25' ]" >> $GITHUB_OUTPUT
+      - id: set-jdk-version
+        if: ${{ inputs.ExecuteOnLargerJDKVersionSet == false && inputs.ExecuteOnlyPerformance == false }}
+        run: echo "matrix_jdk_version=[ '17', '21', '25' ]" >> $GITHUB_OUTPUT
+      - id: set-jdk-version-ext
+        if: ${{ inputs.ExecuteOnLargerJDKVersionSet == true && inputs.ExecuteOnlyPerformance == false }}
+        run: echo "matrix_jdk_version=[ '8', '11', '17', '21', '25' ]" >> $GITHUB_OUTPUT
+      - id: set-matrix-win-os
+        if: ${{ inputs.ExecuteOnMoreOSes == false }}
+        run: echo "matrix_win=[ 'windows-2025' ]" >> $GITHUB_OUTPUT
+      - id: set-matrix-win-os-ext
+        if: ${{ inputs.ExecuteOnMoreOSes == true }}
+        run: echo "matrix_win=[ 'windows-2022', 'windows-2025', 'windows-11-arm' ]" >> $GITHUB_OUTPUT
+      - id: set-matrix-linux-os-performance
+        if: ${{ inputs.ExecuteOnlyPerformance == true }}
+        run: echo "matrix_linux=['ubuntu-22.04', 'ubuntu-22.04-arm' ]" >> $GITHUB_OUTPUT
+      - id: set-matrix-linux-os
+        if: ${{ inputs.ExecuteOnMoreOSes == false && inputs.ExecuteOnlyPerformance == false }}
+        run: echo "matrix_linux=['ubuntu-24.04']" >> $GITHUB_OUTPUT
+      - id: set-matrix-linux-os-ext
+        if: ${{ inputs.ExecuteOnMoreOSes == true }}
+        run: echo "matrix_linux=[ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm' ]" >> $GITHUB_OUTPUT
+      - id: set-matrix-mac-os
+        if: ${{ inputs.ExecuteOnMoreOSes == false }}
+        run: echo "matrix_mac=[ 'macos-15' ]" >> $GITHUB_OUTPUT
+      - id: set-matrix-mac-os-ext
+        if: ${{ inputs.ExecuteOnMoreOSes == true }}
+        run: echo "matrix_mac=[ 'macos-14', 'macos-15', 'macos-26' ]" >> $GITHUB_OUTPUT
+
+  tests_performance:
+    if: ${{ inputs.ExecuteOnlyPerformance == true }}
+    needs: prepare_matrix_data
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ['ubuntu-22.04', 'ubuntu-22.04-arm' ]
+        framework: [ 'net8.0', 'net10.0' ]
+        jdk_vendor: [ 'temurin' ]
+        jdk_version: [ '17', '25' ]
+        run: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]   # aumenta qui
+              
+    runs-on: ${{ matrix.os }}
+    env:
+      DOTNET_DbgEnableMiniDump: ${{ inputs.EnableProcessDump }}
+      DOTNET_DbgMiniDumpType: ${{ inputs.ProcessDumpType }}
+      DOTNET_DbgMiniDumpName: ${{ github.workspace }}/coredump.%p
+      DOTNET_CreateDumpDiagnostics: ${{ inputs.EnableProcessDump }}
+      DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableVerboseDiagnosticProcessDump }}
+      DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
+      DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
+    
+    steps:     
+      - name: Restore JNet bin from cache
+        uses: actions/cache/restore@v5
+        with:
+          fail-on-cache-miss: true
+          enableCrossOsArchive: true
+          path: ./bin/
+          key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
+
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: |
+            9.x
+            10.x
+
+      - name: Set up JDK distribution
+        if: ${{ matrix.jdk_vendor != 'graalvm' && matrix.jdk_version != '8' }}
+        uses: actions/setup-java@v5
+        with: # running setup-java again overwrites the settings.xml
+          distribution: ${{ matrix.jdk_vendor }}
+          java-version: ${{ matrix.jdk_version }}
+
+      - name: Set up JDK distribution
+        if: ${{ matrix.jdk_vendor != 'graalvm' && matrix.jdk_version == '8' }}
+        uses: actions/setup-java@v5
+        with: # running setup-java again overwrites the settings.xml
+          distribution: ${{ matrix.jdk_vendor }}
+          java-version: ${{ matrix.jdk_version }}
+          java-package: jre
+
+      - name: Set up GraalVM distribution
+        if: ${{ matrix.jdk_vendor == 'graalvm' }}
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
+          distribution: 'graalvm' # See 'Supported distributions' for available options
+          github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
+
+      - name: Full system info (CPU + load)
+        shell: bash
+        run: |
+          echo "===== CPU INFO ====="
+          echo "Model:"
+          lscpu | grep "Model name" || true
+          echo "Architecture:"
+          lscpu | grep "Architecture" || true
+          echo "Cores:"
+          lscpu | grep "^CPU(s):" || true
+          echo "Frequency:"
+          lscpu | grep -E "MHz|GHz" || echo "Not available"
+          echo ""
+          echo "===== PERFORMANCE DEBUG ====="
+          echo "Load average:"
+          cat /proc/loadavg
+          echo ""
+          echo "CPU governor:"
+          cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor 2>/dev/null || echo "Not available"
+          echo ""
+          echo "CPU scaling current freq:"
+          cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq 2>/dev/null || echo "Not available"
+          echo ""
+          echo "Steal time (virtualization hint):"
+          top -bn1 | grep "%Cpu" || true
+          echo ""
+          echo "============================="
+
+      - name: Install bc
+        run: sudo apt-get update && sudo apt-get install -y bc
+
+      - name: Run benchmark and machine filter
+        shell: bash
+        run: |
+          OUTPUT=$(dotnet ./bin/${{ matrix.framework }}/JNetPerformanceTest.dll)
+
+          echo "$OUTPUT"
+
+          TOTAL=$(echo "$OUTPUT" | grep "All tests completed in" | awk '{print $5}')
+
+          SECONDS_TOTAL=$(echo "$TOTAL" | awk -F: '{ 
+            split($3, s, "."); 
+            print ($1 * 3600) + ($2 * 60) + s[1] + ("0." s[2]); 
+          }')
+
+          THRESHOLD=20
+          if (( $(echo "$SECONDS_TOTAL < $THRESHOLD" | bc -l) )); then
+            echo "🚀 FAST ($SECONDS_TOTAL s) | OS=${{ matrix.os }} | FW=${{ matrix.framework }} | JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }} | RUN=${{ matrix.run }}" | tee -a "$GITHUB_STEP_SUMMARY"
+          fi
+
+  final_cleanup:
+    needs: [ tests_performance ]
+    if: "always()"
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: '1'
+
+      - name: Clear caches
+        run: |
+          gh extension install actions/gh-actions-cache
+          echo "Fetching list of cache key"
+          cacheKeysForPR=$(gh actions-cache list --key JNet_${{ github.run_number }}_${{ github.run_attempt }} | cut -f 1 )
+          ## Setting this to not fail the workflow while deleting cache keys.
+          set +e
+          echo "Deleting caches..."
+          for cacheKey in $cacheKeysForPR
+          do
+              gh actions-cache delete $cacheKey --confirm
+          done
+          echo "Done"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN_INHERITED }}
