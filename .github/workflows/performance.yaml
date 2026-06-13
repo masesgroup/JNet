@@ -187,9 +187,9 @@ jobs:
           if (( $(echo "$SECONDS_TOTAL < $THRESHOLD" | bc -l) )); then
             echo "🚀 FAST ($SECONDS_TOTAL s) | OS=${{ matrix.os }} | FW=${{ matrix.framework }} | JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }} | RUN=${{ matrix.run }}" | tee -a "$GITHUB_STEP_SUMMARY"
           fi
-          CPU_MODEL=$(lscpu | grep "Model name" | sed 's/Model name:[ ]*//')
-          CPU_CORES=$(lscpu | grep "^CPU(s):" | awk '{print $2}')
-          LOAD=$(cat /proc/loadavg | awk '{print $1}')
+          CPU_MODEL=$(lscpu | awk -F: '/Model name|Model:/ {print $2}' | sed 's/^ *//' | head -1)
+          CPU_CORES=$(nproc)
+          LOAD=$(cut -d ' ' -f1 /proc/loadavg)
 
           echo "$SECONDS_TOTAL|OS=${{ matrix.os }}|FW=${{ matrix.framework }}|JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }}|RUN=${{ matrix.run }}|CPU=$CPU_MODEL|CORES=$CPU_CORES|LOAD=$LOAD" > result.txt
 
