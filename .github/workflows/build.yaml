@@ -12,11 +12,6 @@ on:
       - 'docs/**'
   workflow_dispatch:
     inputs:
-      ExecuteOnlyPerformance:
-        description: 'Execute performance tests'
-        required: false
-        default: false
-        type: boolean
       ExecuteOnMoreOSes:
         description: 'Test on more OSes'
         required: false
@@ -105,7 +100,6 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         id: check_files
         run: |
-          sleep 10
           mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.get_changed_files.outputs.added_modified }}')
           for added_modified_file in "${added_modified_files[@]}"; do
               if [[ $added_modified_file == ".github/workflows/build.yaml"* ]]; then
@@ -154,7 +148,6 @@ jobs:
       artifact-metadata: write
     uses: ./.github/workflows/build_common.yaml
     with:
-      ExecuteOnlyPerformance: ${{ inputs.ExecuteOnlyPerformance || false }}
       ExecuteOnMoreOSes: ${{ (inputs.ExecuteOnMoreOSes || github.event_name == 'schedule') && inputs.ExecuteOnlyPerformance == false }}
       ExecuteOnLargerJDKVendorSet: ${{ (inputs.ExecuteOnLargerJDKVendorSet || github.ref_name == 'master' || github.event_name == 'schedule') && inputs.ExecuteOnlyPerformance == false }}
       ExecuteOnLargerJDKVersionSet: ${{ (inputs.ExecuteOnLargerJDKVersionSet || github.ref_name == 'master' || github.event_name == 'schedule') && inputs.ExecuteOnlyPerformance == false }}
