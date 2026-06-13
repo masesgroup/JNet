@@ -46,10 +46,6 @@ jobs:
 
       - name: Create Jars for JNet
         run: mvn --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
-        
-      - uses: nuget/setup-nuget@v4
-        with:
-          nuget-version: '5.x'
 
       - name: Create Jars for tests
         run: mvn --file ./tests/jvm/jnettest/pom.xml --no-transfer-progress package
@@ -69,12 +65,6 @@ jobs:
           enableCrossOsArchive: true
           path: ./bin/
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
-          
-      - uses: actions/upload-artifact@v7
-        with:
-          if-no-files-found: ignore
-          name: JNetBin
-          path: .\bin\
 
   tests_performance:
     needs: build
@@ -172,13 +162,12 @@ jobs:
             print ($1 * 3600) + ($2 * 60) + s[1] + ("0." s[2]); 
           }')
           THRESHOLD=20
-          if (( $(echo "$SECONDS_TOTAL < $THRESHOLD" | bc -l) )); then
-            echo "🚀 FAST ($SECONDS_TOTAL s) | OS=${{ matrix.os }} | FW=${{ matrix.framework }} | JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }} | RUN=${{ matrix.run }} | CPU=$CPU_MODEL | CORES=$CPU_CORES | LOAD=$LOAD" | tee -a "$GITHUB_STEP_SUMMARY"
-          fi
           CPU_MODEL=$(lscpu | awk -F: '/Model name|Model:/ {print $2}' | sed 's/^ *//' | head -1)
           CPU_CORES=$(nproc)
           LOAD=$(cut -d ' ' -f1 /proc/loadavg)
-
+          if (( $(echo "$SECONDS_TOTAL < $THRESHOLD" | bc -l) )); then
+            echo "🚀 FAST ($SECONDS_TOTAL s) | OS=${{ matrix.os }} | FW=${{ matrix.framework }} | JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }} | RUN=${{ matrix.run }} | CPU=$CPU_MODEL | CORES=$CPU_CORES | LOAD=$LOAD" | tee -a "$GITHUB_STEP_SUMMARY"
+          fi
           echo "$SECONDS_TOTAL|OS=${{ matrix.os }}|FW=${{ matrix.framework }}|JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }}|RUN=${{ matrix.run }}|CPU=$CPU_MODEL|CORES=$CPU_CORES|LOAD=$LOAD" > result.txt
 
       - uses: actions/upload-artifact@v4
