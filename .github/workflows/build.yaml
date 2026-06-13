@@ -105,6 +105,7 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         id: check_files
         run: |
+          sleep 10
           mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.get_changed_files.outputs.added_modified }}')
           for added_modified_file in "${added_modified_files[@]}"; do
               if [[ $added_modified_file == ".github/workflows/build.yaml"* ]]; then
