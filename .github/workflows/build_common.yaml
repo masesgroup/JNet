@@ -345,10 +345,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_linux_os) }} # [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm' ]
+        os: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_linux_os) }}
         framework: [ 'net8.0', 'net10.0' ]
         jdk_vendor: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_vendor) }}
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
+        run: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]   # aumenta qui
               
     runs-on: ${{ matrix.os }}
     env:
@@ -403,39 +404,32 @@ jobs:
         shell: bash
         run: |
           echo "===== CPU INFO ====="
-
           echo "Model:"
-          lscpu | grep "Model name"
-
+          lscpu | grep "Model name" || true
           echo "Architecture:"
-          lscpu | grep "Architecture"
-
+          lscpu | grep "Architecture" || true
           echo "Cores:"
-          lscpu | grep "^CPU(s):"
-
+          lscpu | grep "^CPU(s):" || true
           echo "Frequency:"
-          lscpu | grep -E "MHz|GHz"
-
+          lscpu | grep -E "MHz|GHz" || echo "Not available"
           echo ""
           echo "===== PERFORMANCE DEBUG ====="
-
           echo "Load average:"
           cat /proc/loadavg
-
           echo ""
           echo "CPU governor:"
           cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor 2>/dev/null || echo "Not available"
-
           echo ""
           echo "CPU scaling current freq:"
           cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq 2>/dev/null || echo "Not available"
-
           echo ""
           echo "Steal time (virtualization hint):"
-          top -bn1 | grep "%Cpu"
-
+          top -bn1 | grep "%Cpu" || true
           echo ""
           echo "============================="
+
+      - name: Install bc
+        run: sudo apt-get update && sudo apt-get install -y bc
 
       - name: Run benchmark and machine filter
         shell: bash
@@ -457,11 +451,26 @@ jobs:
 
           awk "BEGIN { exit !($SECONDS_TOTAL > $THRESHOLD) }"
 
-          if [ $? -eq 0 ]; then
-            echo "Slow machine"
+          MATRIX_INFO="OS=${{ matrix.os }} | FRAMEWORK=${{ matrix.framework }} | JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }} | RUN=${{ matrix.run }}"
+
+          echo "===== MATRIX INFO ====="
+          echo "$MATRIX_INFO"
+          echo "Total time: $SECONDS_TOTAL s"
+
+          if (( $(echo "$SECONDS_TOTAL > $THRESHOLD" | bc -l) )); then
+            MSG="🐢 Slow machine ($SECONDS_TOTAL s) | $MATRIX_INFO"
+
+            echo "$MSG"
+            echo "::warning::$MSG"
+            echo "$MSG" >> $GITHUB_STEP_SUMMARY
+
             exit 1
           else
-            echo "Machine is OK"
+            MSG="🚀 Machine OK ($SECONDS_TOTAL s) | $MATRIX_INFO"
+
+            echo "$MSG"
+            echo "::notice::$MSG"
+            echo "$MSG" >> $GITHUB_STEP_SUMMARY
           fi
 
   tests_win:
