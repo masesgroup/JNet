@@ -303,10 +303,10 @@ jobs:
       - id: set-jdk-vendor-ext
         if: ${{ inputs.ExecuteOnLargerJDKVendorSet == true }}
         run: echo "matrix_jdk_vendor=[ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle' ]" >> $GITHUB_OUTPUT
-      - id: set-jdk-version-ext
+      - id: set-jdk-version
         if: ${{ inputs.ExecuteOnLargerJDKVersionSet == false }}
         run: echo "matrix_jdk_version=[ '17', '21', '25' ]" >> $GITHUB_OUTPUT
-      - id: set-jdk-version
+      - id: set-jdk-version-ext
         if: ${{ inputs.ExecuteOnLargerJDKVersionSet == true }}
         run: echo "matrix_jdk_version=[ '8', '11', '17', '21', '25' ]" >> $GITHUB_OUTPUT
       - id: set-matrix-win-os

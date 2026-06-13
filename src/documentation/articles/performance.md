@@ -296,7 +296,7 @@ The three distinct operating points on .NET 8:
 
 ## Bulk data transfer at the JVM↔CLR boundary
 
-JCOBridge 2.6.9 introduces `JCOBridgeDirectBuffer<T>` (wrapping a JVM `DirectByteBuffer`) and `JCOBridgeStream<T>` (wrapping a JVM native array), both with `T : unmanaged`. Both types expose `ToStream()` (backed by `UnmanagedMemoryStream`), `ReadOnlySpan<T>`, and .NET Framework-compatible shims.
+JCOBridge 2.6.9 enhances `JCOBridgeDirectBuffer<T>` (wrapping a JVM `DirectByteBuffer`) and introduces `JCOBridgeStream<T>` (wrapping a JVM native array), both with `T : unmanaged`. Both types expose `ToStream()` (backed by `UnmanagedMemoryStream`), `ReadOnlySpan<T>`, and .NET Framework-compatible shims.
 
 > [!NOTE]
 > `ReadOnlySpan` and `JCOBridgeStream` zero-copy access requires the **JCOBridge HPA edition**. Without HPA, these paths perform an internal local copy — faster than the full JVM→CLR array transfer for most sizes, but not truly zero-copy. The benchmarks below use the **standard edition**; HPA results will be added when available.
