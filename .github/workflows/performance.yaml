@@ -183,7 +183,15 @@ jobs:
             split($3, s, "."); 
             print ($1 * 3600) + ($2 * 60) + s[1] + ("0." s[2]); 
           }')
-          echo "$SECONDS_TOTAL|OS=${{ matrix.os }}|FW=${{ matrix.framework }}|JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }}|RUN=${{ matrix.run }}" > result.txt
+          THRESHOLD=20
+          if (( $(echo "$SECONDS_TOTAL < $THRESHOLD" | bc -l) )); then
+            echo "🚀 FAST ($SECONDS_TOTAL s) | OS=${{ matrix.os }} | FW=${{ matrix.framework }} | JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }} | RUN=${{ matrix.run }}" | tee -a "$GITHUB_STEP_SUMMARY"
+          fi
+          CPU_MODEL=$(lscpu | grep "Model name" | sed 's/Model name:[ ]*//')
+          CPU_CORES=$(lscpu | grep "^CPU(s):" | awk '{print $2}')
+          LOAD=$(cat /proc/loadavg | awk '{print $1}')
+
+          echo "$SECONDS_TOTAL|OS=${{ matrix.os }}|FW=${{ matrix.framework }}|JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }}|RUN=${{ matrix.run }}|CPU=$CPU_MODEL|CORES=$CPU_CORES|LOAD=$LOAD" > result.txt
 
       - uses: actions/upload-artifact@v4
         with:
@@ -197,15 +205,19 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
 
-      - name: Sort results
+      - name: Sort results with hardware info
         run: |
-          echo "=== ALL RESULTS ==="
+          echo "=== SORTED RESULTS ==="
+
           cat */result.txt > all.txt
-          echo "=== SORTED (FASTEST FIRST) ==="
-          sort -n all.txt | while IFS="|" read time rest; do
-            echo "🚀 $time s | $rest"
-            echo "🚀 $time s | $rest" >> $GITHUB_STEP_SUMMARY
+
+          sort -n all.txt | while IFS="|" read time os fw jdk run cpu cores load; do
+            MSG="🚀 $time s | $os | $fw | $jdk | $run | $cpu | cores=$cores | load=$load"
+
+            echo "$MSG"
+            echo "$MSG" >> $GITHUB_STEP_SUMMARY
           done
+
 
   final_cleanup:
     needs: [ collect_results ]
