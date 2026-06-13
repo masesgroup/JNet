@@ -148,11 +148,11 @@ jobs:
       artifact-metadata: write
     uses: ./.github/workflows/build_common.yaml
     with:
-      ExecuteOnMoreOSes: ${{ (inputs.ExecuteOnMoreOSes || github.event_name == 'schedule') && inputs.ExecuteOnlyPerformance == false }}
-      ExecuteOnLargerJDKVendorSet: ${{ (inputs.ExecuteOnLargerJDKVendorSet || github.ref_name == 'master' || github.event_name == 'schedule') && inputs.ExecuteOnlyPerformance == false }}
-      ExecuteOnLargerJDKVersionSet: ${{ (inputs.ExecuteOnLargerJDKVersionSet || github.ref_name == 'master' || github.event_name == 'schedule') && inputs.ExecuteOnlyPerformance == false }}
+      ExecuteOnMoreOSes: ${{ inputs.ExecuteOnMoreOSes || github.event_name == 'schedule' }}
+      ExecuteOnLargerJDKVendorSet: ${{ inputs.ExecuteOnLargerJDKVendorSet || github.ref_name == 'master' || github.event_name == 'schedule' }}
+      ExecuteOnLargerJDKVersionSet: ${{ inputs.ExecuteOnLargerJDKVersionSet || github.ref_name == 'master' || github.event_name == 'schedule' }}
       EnableLinuxTests: true
-      EnableWindowsTests: ${{ (inputs.EnableWindowsTests || github.ref_name == 'master' || github.event_name == 'schedule') && inputs.ExecuteOnlyPerformance == false }}
+      EnableWindowsTests: ${{ inputs.EnableWindowsTests || github.ref_name == 'master' || github.event_name == 'schedule' }}
       EnableMacOSTests: ${{ inputs.EnableMacOSTests || github.event_name == 'schedule' }}
       ForceContinueOnError: ${{ inputs.ForceContinueOnError || false }}
       EnableProcessDump: ${{ inputs.EnableProcessDump || '0' }}

@@ -778,7 +778,7 @@ jobs:
           retention-days: 7
 
   final_cleanup:
-    needs: [ tests_win, tests_linux, tests_mac, tests_performance ]
+    needs: [ tests_win, tests_linux, tests_mac ]
     if: "always()"
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
