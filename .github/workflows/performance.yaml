@@ -173,7 +173,7 @@ jobs:
           }')
           THRESHOLD=20
           if (( $(echo "$SECONDS_TOTAL < $THRESHOLD" | bc -l) )); then
-            echo "🚀 FAST ($SECONDS_TOTAL s) | OS=${{ matrix.os }} | FW=${{ matrix.framework }} | JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }} | RUN=${{ matrix.run }}" | tee -a "$GITHUB_STEP_SUMMARY"
+            echo "🚀 FAST ($SECONDS_TOTAL s) | OS=${{ matrix.os }} | FW=${{ matrix.framework }} | JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }} | RUN=${{ matrix.run }} | CPU=$CPU_MODEL | CORES=$CPU_CORES | LOAD=$LOAD" | tee -a "$GITHUB_STEP_SUMMARY"
           fi
           CPU_MODEL=$(lscpu | awk -F: '/Model name|Model:/ {print $2}' | sed 's/^ *//' | head -1)
           CPU_CORES=$(nproc)
