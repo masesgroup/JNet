@@ -10,8 +10,18 @@ on:
       GeneratePR:
         description: 'Generate the PR at the end'
         required: true
-        default: false
+        default: true
         type: boolean
+      docfx_log_level:
+        description: 'DocFX log level'
+        required: false
+        default: 'warning'
+        type: choice
+        options:
+          - warning
+          - info
+          - verbose
+          - diagnostic
         
 # This workflow contains one job called "build_documentation"
 jobs:
@@ -53,7 +63,7 @@ jobs:
         run: |
           Copy-Item ${{ github.workspace }}\CommonTools\website\en\* -Destination ${{ github.workspace }}\src\documentation\ -Force -Recurse -Verbose
           cd src\documentation
-          docfx
+          docfx build docfx.json --log-level ${{ inputs.docfx_log_level }}
 
       - name: Extract commit SHA
         run: |
