@@ -58,12 +58,11 @@ namespace Java.Util.Function
         /// <remarks>
         /// Evaluated in order:
         /// <list type="number">
-        /// <item><see cref="ListenerShallManageEventIndex"/> delegate — index-based, no string conversion, lowest overhead.</item>
-        /// <item><see cref="ListenerShallManageEventName"/> delegate — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
-        /// <item><see cref="ListenerShallManageEventHandlers"/> — returns <see langword="true"/> if the specific event has a registered delegate or a virtual method override.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventIndex"/> delegate — index-based, no string conversion, lowest overhead.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventName"/> delegate — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
         /// <item><see cref="_hasBiPredicateSecondGate"/> — returns <see langword="true"/> if the second gate is overridden, ensuring all events reach it.</item>
-        /// <item><see cref="ListenerShallManageEventIndexWithData"/> delegate with data — index-based, no string conversion, lowest overhead.</item>
-        /// <item><see cref="ListenerShallManageEventNameWithData"/> delegate with data — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventIndexWithData"/> delegate with data — index-based, no string conversion, lowest overhead.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventNameWithData"/> delegate with data — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
         /// </list>
         /// </remarks>
         protected override bool ListenerShallManageEvent(int eventIndex)
@@ -143,6 +142,7 @@ namespace Java.Util.Function
     }
     #endregion
 
+
     #region BiPredicate<T, U> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html"/>
@@ -178,12 +178,11 @@ namespace Java.Util.Function
         /// <remarks>
         /// Evaluated in order:
         /// <list type="number">
-        /// <item><see cref="ListenerShallManageEventIndex"/> delegate — index-based, no string conversion, lowest overhead.</item>
-        /// <item><see cref="ListenerShallManageEventName"/> delegate — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
-        /// <item><see cref="ListenerShallManageEventHandlers"/> — returns <see langword="true"/> if the specific event has a registered delegate or a virtual method override.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventIndex"/> delegate — index-based, no string conversion, lowest overhead.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventName"/> delegate — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
         /// <item><see cref="_hasBiPredicateSecondGate"/> — returns <see langword="true"/> if the second gate is overridden, ensuring all events reach it.</item>
-        /// <item><see cref="ListenerShallManageEventIndexWithData"/> delegate with data — index-based, no string conversion, lowest overhead.</item>
-        /// <item><see cref="ListenerShallManageEventNameWithData"/> delegate with data — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventIndexWithData"/> delegate with data — index-based, no string conversion, lowest overhead.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventNameWithData"/> delegate with data — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
         /// </list>
         /// </remarks>
         protected override bool ListenerShallManageEvent(int eventIndex)
@@ -262,6 +261,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
     }
     #endregion
+
 
     #region BiPredicate implementation
     public partial class BiPredicate
