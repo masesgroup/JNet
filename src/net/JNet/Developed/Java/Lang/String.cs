@@ -51,7 +51,7 @@ namespace Java.Lang
         /// </summary>
         public static bool operator ==(Java.Lang.String left, Java.Lang.String right)
         {
-            return left.Equals(right);
+            return left.BridgeInstance.Equals(right.BridgeInstance);
         }
         /// <summary>
         /// Checks equality between a <see cref="Java.Lang.String"/> and a <see cref="string"/>.
@@ -72,7 +72,7 @@ namespace Java.Lang
         /// </summary>
         public static bool operator !=(Java.Lang.String left, Java.Lang.String right)
         {
-            return !left.Equals(right);
+            return !left.BridgeInstance.Equals(right.BridgeInstance);
         }
         /// <summary>
         /// Checks inequality between a <see cref="Java.Lang.String"/> and a <see cref="string"/>.
