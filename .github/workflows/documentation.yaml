@@ -22,7 +22,12 @@ on:
           - info
           - verbose
           - diagnostic
-        
+      docfx_max_parallelism:
+        description: 'DocFX max parallelism (0 = default)'
+        required: false
+        default: '0'
+        type: string
+    
 # This workflow contains one job called "build_documentation"
 jobs:
   build_documentation:
@@ -63,7 +68,7 @@ jobs:
         run: |
           Copy-Item ${{ github.workspace }}\CommonTools\website\en\* -Destination ${{ github.workspace }}\src\documentation\ -Force -Recurse -Verbose
           cd src\documentation
-          docfx build docfx.json --log-level ${{ inputs.docfx_log_level }}
+          docfx build docfx.json --log-level ${{ inputs.docfx_log_level }} --maxParallelism ${{ inputs.docfx_max_parallelism }}
 
       - name: Extract commit SHA
         run: |
