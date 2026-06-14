@@ -99,7 +99,7 @@ namespace MASES.JNetPerformanceTest
         const int iterations = 1_000_000;
         static void Main(string[] args)
         {
-            Console.WriteLine("Starting JNetByteBufferTest");
+            Console.WriteLine("Starting JNetPerformanceTest");
 
 #if DEBUG
             if (!System.Diagnostics.Debugger.IsAttached)
