@@ -46,32 +46,44 @@ namespace Java.Lang
         /// Converter from <see cref="string"/> to <see cref="String"/>
         /// </summary>
         public static implicit operator String(string b) => b is null ? null : JVMBridgeBase.New<Java.Lang.String>(b);
-        /// <inheritdoc/>
+        /// <summary>
+        /// Checks equality between two <see cref="Java.Lang.String"/> instances.
+        /// </summary>
         public static bool operator ==(Java.Lang.String left, Java.Lang.String right)
         {
             return left.Equals(right);
         }
-        /// <inheritdoc/>
+        /// <summary>
+        /// Checks equality between a <see cref="Java.Lang.String"/> and a <see cref="string"/>.
+        /// </summary>
         public static bool operator ==(Java.Lang.String left, string right)
         {
             return left.StringBridgeInstance.Equals(right);
         }
-        /// <inheritdoc/>
+        /// <summary>
+        /// Checks equality between a <see cref="string"/> and a <see cref="Java.Lang.String"/>.
+        /// </summary>
         public static bool operator ==(string left, Java.Lang.String right)
         {
             return right.StringBridgeInstance.Equals(left);
         }
-        /// <inheritdoc/>
+        /// <summary>
+        /// Checks inequality between two <see cref="Java.Lang.String"/> instances.
+        /// </summary>
         public static bool operator !=(Java.Lang.String left, Java.Lang.String right)
         {
             return !left.Equals(right);
         }
-        /// <inheritdoc/>
+        /// <summary>
+        /// Checks inequality between a <see cref="Java.Lang.String"/> and a <see cref="string"/>.
+        /// </summary>
         public static bool operator !=(Java.Lang.String left, string right)
         {
             return !left.StringBridgeInstance.Equals(right);
         }
-        /// <inheritdoc/>
+        /// <summary>
+        /// Checks inequality between a <see cref="string"/> and a <see cref="Java.Lang.String"/>.
+        /// </summary>
         public static bool operator !=(string left, Java.Lang.String right)
         {
             return !right.StringBridgeInstance.Equals(left);
@@ -86,7 +98,6 @@ namespace Java.Lang
         {
             return base.GetHashCode();
         }
-
         /// <summary>
         /// Binary operator managing concatanation within JVM
         /// </summary>
