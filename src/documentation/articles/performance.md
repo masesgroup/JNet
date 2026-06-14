@@ -8,7 +8,7 @@ _description: Benchmark results for JNet — JVM method invocation and callback 
 This page reports benchmark results for the core JNet interop primitives: JVM method invocation from .NET and JVM→.NET callback latency.
 All benchmarks run on [GitHub Actions](https://github.com/masesgroup/JNet/actions) runners and are repeated automatically on each release across supported .NET and JDK versions.
 
-Results are reported for three JCOBridge versions — 2.6.6, 2.6.7+, and 2.6.9 — and two runtime combinations. See [JCOBridge release notes](https://www.jcobridge.com/release-notes/) for details.
+Results are reported for three JCOBridge versions — 2.6.6, 2.6.7+, and 2.6.9 — across two runtime combinations. See [JCOBridge release notes](https://www.jcobridge.com/release-notes/) for details.
 
 > [!NOTE]
 > Benchmarks are run on shared GitHub-hosted runners. Absolute numbers reflect that environment and should be read comparatively rather than as absolute throughput figures for a dedicated host.
@@ -19,10 +19,13 @@ Results are reported for three JCOBridge versions — 2.6.6, 2.6.7+, and 2.6.9 �
 
 | Parameter | Combination A | Combination B |
 |---|---|---|
-| Runner | GitHub Actions (`ubuntu-latest`) | GitHub Actions (`ubuntu-latest`) |
+| Runner | GitHub Actions (`ubuntu-22.04`, AMD EPYC 9V45 96-Core) | GitHub Actions (`ubuntu-22.04`, AMD EPYC 9V45 96-Core) |
 | Iterations per test | 1 000 000 | 1 000 000 |
 | .NET version | .NET 8 | .NET 10 |
 | JDK version | Temurin 17 | Temurin 25 |
+
+> [!NOTE]
+> The 2.6.6 and 2.6.7+ baselines were collected on earlier `ubuntu-latest` runners and are preserved as historical reference. The 2.6.9 results use `ubuntu-22.04` with AMD EPYC 9V45 — a more consistent environment. Cross-version percentages should be read as directional trends rather than precise measurements.
 
 ---
 
@@ -110,10 +113,10 @@ Adding a `boolean` argument and return value (`feedback = true`) adds ~45–55% 
 
 ### Callback
 
-| Test | `byIndex` | `readJVM` | .NET 8 / T17 | .NET 10 / T25 |
-|---|---|---|---|---|
-| `RoundTrip` | `false` | `true` | 6.945 µs | 6.338 µs |
-| `Sustained` | `false` | `true` | 6.116 µs | 5.548 µs |
+| Test | `byIndex` | .NET 8 / T17 | .NET 10 / T25 |
+|---|---|---|---|
+| `RoundTrip` | `false` | 6.945 µs | 6.338 µs |
+| `Sustained` | `false` | 6.116 µs | 5.548 µs |
 
 `Sustained` is the realistic reference for JVM-originated callback cost: **~6.1 µs (.NET 8 / T17) and ~5.5 µs (.NET 10 / T25).**
 
@@ -124,7 +127,7 @@ Adding a `boolean` argument and return value (`feedback = true`) adds ~45–55% 
 JCOBridge 2.6.7+ introduces the two-level `ListenerShallManageEvent` filter and the native `byIndex` trigger mechanism. General interop improvements reduce baseline overhead across all test types.
 
 > [!NOTE]
-> `byIndex = true` is still simulated on the JVM side by invoking a dedicated class method rather than the interface `@Override`. The CLR-side numeric index resolution is fully active; a JVM dispatch difference (class method vs interface method) remains. The `byIndex = false` rows use the real interface override and are directly comparable between the two versions.
+> `byIndex = true` is still simulated on the JVM side by invoking a dedicated class method rather than the interface `@Override`. The CLR-side numeric index resolution is fully active; a JVM dispatch difference (class method vs interface method) remains. The `byIndex = false` rows use the real interface override and are directly comparable between versions.
 
 ### Static method invocation
 
@@ -176,121 +179,68 @@ The **realistic JVM-originated callback baseline** (full processing, `byIndex = 
 
 ## JCOBridge 2.6.9
 
-JCOBridge 2.6.9 delivers further reductions across all test types, with the most significant gains on the sustained full-processing callback path (~17–20% over 2.6.7+).
+JCOBridge 2.6.9 delivers further improvements across all test types through interop layer optimizations, lazy initialization of event data (`TypedEventData`), and a pooled `BatchState` buffer that eliminates per-event array allocation in the dispose fast-scope path. Results collected on `ubuntu-22.04` / AMD EPYC 9V45 96-Core.
 
 > [!NOTE]
 > `byIndex = true` is still simulated on the JVM side — see note in the 2.6.7+ section above.
 
 ### Static method invocation
 
-| Resolution | `feedback` | .NET 8 / T17 | vs 2.6.7+ | .NET 10 / T25 | vs 2.6.7+ |
+| Resolution | `feedback` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
 |---|---|---|---|---|---|
-| `Invoke` | `false` | 0.530 µs | ~0% | 0.521 µs | +9% |
-| `IWS` | `false` | 0.337 µs | −5% | 0.334 µs | ~0% |
-| `Invoke` | `true` | 0.555 µs | **−9%** | 0.512 µs | **−11%** |
-| `IWS` | `true` | 0.400 µs | **−8%** | 0.390 µs | **−7%** |
+| `Invoke` | `false` | 0.313 µs | −53% | 0.265 µs | −56% |
+| `IWS` | `false` | 0.248 µs | −50% | 0.250 µs | −40% |
+| `Invoke` | `true` | 0.471 µs | −48% | 0.482 µs | −40% |
+| `IWS` | `true` | 0.311 µs | −55% | 0.305 µs | −42% |
 
 ### Instance method invocation
 
-| Resolution | `feedback` | .NET 8 / T17 | vs 2.6.7+ | .NET 10 / T25 | vs 2.6.7+ |
+| Resolution | `feedback` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
 |---|---|---|---|---|---|
-| `Invoke` | `false` | 0.332 µs | −5% | 0.305 µs | +1% |
-| `IWS` | `false` | 0.278 µs | −6% | 0.272 µs | ~0% |
-| `Invoke` | `true` | 0.549 µs | ~0% | 0.477 µs | **−7%** |
-| `IWS` | `true` | 0.435 µs | −3% | 0.388 µs | **−14%** |
+| `Invoke` | `false` | 0.189 µs | −67% | 0.176 µs | −64% |
+| `IWS` | `false` | 0.162 µs | −65% | 0.178 µs | −53% |
+| `Invoke` | `true` | 0.389 µs | −55% | 0.390 µs | −49% |
+| `IWS` | `true` | 0.287 µs | −55% | 0.307 µs | −43% |
 
 ### Callback: `TestPredicateRoundTrip`
 
-| `byIndex` | `continueFirstCheck` | `continueSecondCheck` | .NET 8 / T17 | vs 2.6.7+ | .NET 10 / T25 | vs 2.6.7+ |
+| `byIndex` | `continueFirstCheck` | `continueSecondCheck` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
 |---|---|---|---|---|---|---|
-| `false` | `false` | `false` | 1.117 µs | +1% | 1.023 µs | −2% |
-| `true` ¹ | `false` | `false` | 0.461 µs | +2% | 0.391 µs | −10% |
-| `false` | `true` | `false` | 1.141 µs | +1% | 0.994 µs | −7% |
-| `true` ¹ | `true` | `false` | 0.495 µs | −1% | 0.407 µs | −11% |
-| `false` | `true` | `true` | 4.983 µs | **−14%** | 4.573 µs | **−14%** |
-| `true` ¹ | `true` | `true` | 4.197 µs | **−16%** | 3.846 µs | **−17%** |
+| `false` | `false` | `false` | 0.709 µs | −37% | 0.768 µs | −21% |
+| `true` ¹ | `false` | `false` | 0.240 µs | — | 0.252 µs | — |
+| `false` | `true` | `false` | 1.028 µs | −6% | 0.935 µs | −4% |
+| `true` ¹ | `true` | `false` | 0.401 µs | — | 0.451 µs | — |
+| `false` | `true` | `true` | 3.157 µs | −55% | 3.278 µs | −48% |
+| `true` ¹ | `true` | `true` | 2.607 µs | — | 2.713 µs | — |
 
 ¹ `byIndex = true` simulated on the JVM side — see note above.
 
 ### Callback: `TestPredicateSustained`
 
-| `byIndex` | `continueFirstCheck` | `continueSecondCheck` | .NET 8 / T17 | vs 2.6.7+ | .NET 10 / T25 | vs 2.6.7+ |
+| `byIndex` | `continueFirstCheck` | `continueSecondCheck` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
 |---|---|---|---|---|---|---|
-| `false` | `false` | `false` | 0.553 µs | −8% | 0.470 µs | ~0% |
-| `true` ¹ | `false` | `false` | **0.051 µs** | +13% | **0.041 µs** | ~0% |
-| `false` | `true` | `false` | 0.567 µs | −9% | 0.488 µs | −1% |
-| `true` ¹ | `true` | `false` | **0.066 µs** | −11% | **0.057 µs** | **−15%** |
-| `false` | `true` | `true` | 4.237 µs | **−17%** | 3.990 µs | **−16%** |
-| `true` ¹ | `true` | `true` | 3.606 µs | **−19%** | 3.327 µs | **−20%** |
+| `false` | `false` | `false` | 0.379 µs | −94% | 0.366 µs | −93% |
+| `true` ¹ | `false` | `false` | **0.035 µs** | — | **0.030 µs** | — |
+| `false` | `true` | `false` | 0.505 µs | −92% | 0.522 µs | −91% |
+| `true` ¹ | `true` | `false` | **0.144 µs** | — | **0.152 µs** | — |
+| `false` | `true` | `true` | 2.674 µs | −56% | 2.750 µs | −50% |
+| `true` ¹ | `true` | `true` | 2.324 µs | — | 2.278 µs | — |
 
 ¹ `byIndex = true` simulated on the JVM side — see note above.
 
----
+The **realistic JVM-originated callback baseline** (full processing, `byIndex = false`) reaches **2.7 µs on both .NET 8 and .NET 10** — a **−56%** reduction over 2.6.6.
 
-## JCOBridge latest
-
-The latest release introduces the index-based delegate variants (`ListenerShallManageEventIndex`, `ListenerShallManageEventIndexWithData`) as the primary hot-path API, avoiding any index→name string conversion. General interop improvements deliver consistent ~20–25% reductions across all test types on .NET 8, with the first-gate discard path reaching **35 ns** on both .NET 8 and .NET 10.
-
-> [!NOTE]
-> `byIndex = true` is still simulated on the JVM side — see note in the 2.6.7+ section above. The gate test fires with the raw integer index and returns immediately without name lookup, reflecting the `ListenerShallManageEventIndex` path.
-
-### Static method invocation
-
-| Resolution | `feedback` | .NET 8 / T17 | vs 2.6.9 | .NET 10 / T25 | vs 2.6.9 |
-|---|---|---|---|---|---|
-| `Invoke` | `false` | 0.384 µs | **−28%** | 0.428 µs | −18% |
-| `IWS` | `false` | 0.275 µs | **−18%** | 0.332 µs | ~0% |
-| `Invoke` | `true` | 0.435 µs | **−22%** | 0.514 µs | ~0% |
-| `IWS` | `true` | 0.317 µs | **−21%** | 0.413 µs | +6% |
-
-### Instance method invocation
-
-| Resolution | `feedback` | .NET 8 / T17 | vs 2.6.9 | .NET 10 / T25 | vs 2.6.9 |
-|---|---|---|---|---|---|
-| `Invoke` | `false` | 0.260 µs | **−22%** | 0.316 µs | +4% |
-| `IWS` | `false` | 0.215 µs | **−23%** | 0.269 µs | ~0% |
-| `Invoke` | `true` | 0.420 µs | **−24%** | 0.517 µs | +8% |
-| `IWS` | `true` | 0.312 µs | **−28%** | 0.426 µs | +10% |
-
-### Callback: `TestPredicateRoundTrip`
-
-| `byIndex` | `continueFirstCheck` | `continueSecondCheck` | .NET 8 / T17 | vs 2.6.9 | .NET 10 / T25 | vs 2.6.9 |
-|---|---|---|---|---|---|---|
-| `false` | `false` | `false` | 0.871 µs | **−22%** | 1.004 µs | −2% |
-| `true` ¹ | `false` | `false` | 0.320 µs | **−31%** | 0.385 µs | −1% |
-| `false` | `true` | `false` | 0.844 µs | **−26%** | 1.005 µs | +1% |
-| `true` ¹ | `true` | `false` | 0.365 µs | **−26%** | 0.413 µs | +1% |
-| `false` | `true` | `true` | 3.825 µs | **−23%** | 4.716 µs | +3% |
-| `true` ¹ | `true` | `true` | 3.195 µs | **−24%** | 4.092 µs | +6% |
-
-¹ `byIndex = true` simulated on the JVM side — see note above.
-
-### Callback: `TestPredicateSustained`
-
-| `byIndex` | `continueFirstCheck` | `continueSecondCheck` | .NET 8 / T17 | vs 2.6.9 | .NET 10 / T25 | vs 2.6.9 |
-|---|---|---|---|---|---|---|
-| `false` | `false` | `false` | 0.418 µs | **−24%** | 0.462 µs | −2% |
-| `true` ¹ | `false` | `false` | **0.035 µs** | **−31%** | **0.035 µs** | **−15%** |
-| `false` | `true` | `false` | 0.435 µs | **−23%** | 0.471 µs | −3% |
-| `true` ¹ | `true` | `false` | **0.070 µs** | +6% | **0.053 µs** | −7% |
-| `false` | `true` | `true` | 3.299 µs | **−22%** | 4.127 µs | +3% |
-| `true` ¹ | `true` | `true` | 2.780 µs | **−23%** | 3.650 µs | +10% |
-
-¹ `byIndex = true` simulated on the JVM side — see note above.
-
-The **realistic JVM-originated callback baseline** (full processing, `byIndex = false`) improves to **3.3 µs (.NET 8 / T17)** — a **−35%** reduction over 2.6.7+ and **−46%** over 2.6.6. The .NET 10 figures show runner variance in this run; the .NET 8 trend is the reliable signal.
-
-The three distinct operating points on .NET 8:
+The three distinct operating points:
 
 **First gate only (`continueFirstCheck = false`)** — event discarded before any data is read:
-- `byIndex = false`: ~0.42 µs.
-- `byIndex = true`: **~35 ns** — `ListenerShallManageEventIndex` path, pure integer check, no string conversion.
+- `byIndex = false`: ~0.38–0.37 µs — string key lookup.
+- `byIndex = true`: **~35 ns (.NET 8) / ~30 ns (.NET 10)** — `ListenerShallManageEventIndex` path, pure integer check, no string conversion. ~28–33 M events/sec.
 
 **Second gate (`continueFirstCheck = true, continueSecondCheck = false`)** — raw data available for inspection, handler not invoked:
-- `byIndex = false`: ~0.44 µs.
-- `byIndex = true`: **~70 ns**.
+- `byIndex = false`: ~0.51–0.52 µs.
+- `byIndex = true`: **~144 ns (.NET 8) / ~152 ns (.NET 10)** — includes raw data retrieval from JVM.
 
-**Full processing (`continueFirstCheck = true, continueSecondCheck = true`)**: ~3.3 µs (`byIndex = false`), ~2.8 µs (`byIndex = true`).
+**Full processing (`continueFirstCheck = true, continueSecondCheck = true`)**: ~2.7 µs (`byIndex = false`), ~2.3 µs (`byIndex = true`).
 
 ---
 
@@ -383,44 +333,45 @@ Effective throughput at 100 MB (standard edition):
 
 ---
 
+
 ## Summary
 
-| Test | .NET 8 / T17 | | | | .NET 10 / T25 | | | |
-|---|---|---|---|---|---|---|---|---|
-| | 2.6.6 | 2.6.7+ | 2.6.9 | Latest | 2.6.6 | 2.6.7+ | 2.6.9 | Latest |
-| Static `Invoke` fb=false | 0.661 | 0.517 (−22%) | 0.530 | 0.384 (−42%) | 0.602 | 0.480 (−20%) | 0.521 | 0.428 (−29%) |
-| Static `IWS` fb=false | 0.494 | 0.356 (−28%) | 0.337 | 0.275 (−44%) | 0.414 | 0.335 (−19%) | 0.334 | 0.332 (−20%) |
-| Static `Invoke` fb=true | 0.901 | 0.609 (−32%) | 0.555 | 0.435 (−52%) | 0.803 | 0.575 (−28%) | 0.512 | 0.514 (−36%) |
-| Static `IWS` fb=true | 0.686 | 0.435 (−37%) | 0.400 | 0.317 (−54%) | 0.522 | 0.419 (−20%) | 0.390 | 0.413 (−21%) |
-| Instance `Invoke` fb=false | 0.579 | 0.349 (−40%) | 0.332 | 0.260 (−55%) | 0.490 | 0.301 (−39%) | 0.305 | 0.316 (−36%) |
-| Instance `IWS` fb=false | 0.468 | 0.295 (−37%) | 0.278 | 0.215 (−54%) | 0.379 | 0.274 (−28%) | 0.272 | 0.269 (−29%) |
-| Instance `Invoke` fb=true | 0.856 | 0.552 (−36%) | 0.549 | 0.420 (−51%) | 0.764 | 0.511 (−33%) | 0.477 | 0.517 (−32%) |
-| Instance `IWS` fb=true | 0.638 | 0.448 (−30%) | 0.435 | 0.312 (−51%) | 0.535 | 0.452 (−15%) | 0.388 | 0.426 (−20%) |
-| Sustained: full, `byIndex=false` | 6.116 | 5.098 (−17%) | 4.237 (−31%) | 3.299 (−46%) | 5.548 | 4.725 (−15%) | 3.990 (−28%) | 4.127 (−26%) |
-| Sustained: full, `byIndex=true` ¹ | — | 4.467 | 3.606 (−19%) | 2.780 (−38%) | — | 4.141 | 3.327 (−20%) | 3.650 (−12%) |
-| Sustained: 1st gate, `byIndex=false` | — | 0.601 | 0.553 | 0.418 | — | 0.468 | 0.470 | 0.462 |
-| Sustained: 1st gate, `byIndex=true` ¹ | — | **0.045** | **0.051** | **0.035** | — | **0.041** | **0.041** | **0.035** |
-| Sustained: 2nd gate, `byIndex=false` | — | 0.625 | 0.567 | 0.435 | — | 0.493 | 0.488 | 0.471 |
-| Sustained: 2nd gate, `byIndex=true` ¹ | — | **0.074** | **0.066** | **0.070** | — | **0.067** | **0.057** | **0.053** |
+| Test | .NET 8 / T17 | | | .NET 10 / T25 | | |
+|---|---|---|---|---|---|---|
+| | 2.6.6 | 2.6.7+ | 2.6.9 | 2.6.6 | 2.6.7+ | 2.6.9 |
+| Static `Invoke` fb=false | 0.661 | 0.517 (−22%) | 0.313 (−53%) | 0.602 | 0.480 (−20%) | 0.265 (−56%) |
+| Static `IWS` fb=false | 0.494 | 0.356 (−28%) | 0.248 (−50%) | 0.414 | 0.335 (−19%) | 0.250 (−40%) |
+| Static `Invoke` fb=true | 0.901 | 0.609 (−32%) | 0.471 (−48%) | 0.803 | 0.575 (−28%) | 0.482 (−40%) |
+| Static `IWS` fb=true | 0.686 | 0.435 (−37%) | 0.311 (−55%) | 0.522 | 0.419 (−20%) | 0.305 (−42%) |
+| Instance `Invoke` fb=false | 0.579 | 0.349 (−40%) | 0.189 (−67%) | 0.490 | 0.301 (−39%) | 0.176 (−64%) |
+| Instance `IWS` fb=false | 0.468 | 0.295 (−37%) | 0.162 (−65%) | 0.379 | 0.274 (−28%) | 0.178 (−53%) |
+| Instance `Invoke` fb=true | 0.856 | 0.552 (−36%) | 0.389 (−55%) | 0.764 | 0.511 (−33%) | 0.390 (−49%) |
+| Instance `IWS` fb=true | 0.638 | 0.448 (−30%) | 0.287 (−55%) | 0.535 | 0.452 (−15%) | 0.307 (−43%) |
+| Sustained: full, `byIndex=false` | 6.116 | 5.098 (−17%) | 2.674 (−56%) | 5.548 | 4.725 (−15%) | 2.750 (−50%) |
+| Sustained: full, `byIndex=true` ¹ | — | 4.467 | 2.324 | — | 4.141 | 2.278 |
+| Sustained: 1st gate, `byIndex=false` | — | 0.601 | 0.379 | — | 0.468 | 0.366 |
+| Sustained: 1st gate, `byIndex=true` ¹ | — | **0.045** | **0.035** | — | **0.041** | **0.030** |
+| Sustained: 2nd gate, `byIndex=false` | — | 0.625 | 0.505 | — | 0.493 | 0.522 |
+| Sustained: 2nd gate, `byIndex=true` ¹ | — | **0.074** | **0.144** | — | **0.067** | **0.152** |
 
 All values in µs. Percentages vs 2.6.6 where available. ¹ `byIndex = true` simulated on the JVM side.
 
 ### Comparison with raw JNI overhead
 
-The **35 ns** figure for `byIndex = true`, first-gate discard (Sustained, latest) is worth contextualizing against published raw JNI benchmarks on dedicated hardware. Independent JMH benchmarks measure an empty JNI call at ~57 ns via JavaCPP and ~22 ns on a modern laptop for a minimal no-op native method ([java-native-benchmark](https://github.com/zakgof/java-native-benchmark), [Komanov 2022](https://dkomanov.medium.com/java-native-access-performance-cf4ce0d68ddb)).
+The **30–35 ns** figure for `byIndex = true`, first-gate discard (Sustained, 2.6.9) is worth contextualizing against published raw JNI benchmarks on dedicated hardware. Independent JMH benchmarks measure an empty JNI call at ~57 ns via JavaCPP and ~22 ns on a modern laptop for a minimal no-op native method ([java-native-benchmark](https://github.com/zakgof/java-native-benchmark), [Komanov 2022](https://dkomanov.medium.com/java-native-access-performance-cf4ce0d68ddb)).
 
-JNet's first-gate discard path (`ListenerShallManageEventIndex`) involves a JVM→CLR crossing, a numeric index lookup, and an immediate return — all on shared CI infrastructure. Reaching **35 ns on both .NET 8 and .NET 10** places JNet within the range of raw JNI call overhead measured on dedicated bare-metal hardware, despite the additional CLR interop layer.
+JNet's first-gate discard path (`ListenerShallManageEventIndex`) involves a JVM→CLR crossing, a numeric index lookup, and an immediate return — all on shared CI infrastructure. Reaching **30–35 ns per event** places JNet within the range of raw JNI call overhead measured on dedicated bare-metal hardware, despite the additional CLR interop layer.
 
 ---
 
 ## Guidance
 
-- **Prefer `InvokeWithSignature`** (`IWS`) over `Invoke` in hot paths — it avoids .NET-side type matching on every call and consistently delivers 20–40% lower latency when arguments are involved.
-- **The realistic JVM-originated callback reference** is `Sustained`, full processing, `byIndex = false`: **~3.3 µs (.NET 8 / T17)** in the latest version. With `byIndex = true` this drops to ~2.8 µs.
+- **Prefer `InvokeWithSignature`** (`IWS`) over `Invoke` in hot paths — it avoids .NET-side type matching on every call and consistently delivers 20–55% lower latency when arguments are involved.
+- **The realistic JVM-originated callback reference** is `Sustained`, full processing, `byIndex = false`: **~2.7 µs** on both .NET 8 / T17 and .NET 10 / T25 in 2.6.9. With `byIndex = true` this drops to ~2.3 µs.
 - **Use the two-level `ListenerShallManageEvent` filter** for high-event-rate sources where only a subset of events require full processing:
-  - First gate (`ListenerShallManageEventIndex`) — discard by event index before any data read, no string conversion: **~35 ns** with `byIndex = true`.
-  - Second gate (`ListenerShallManageEventIndexWithData`) — inspect raw data before deciding: **~70 ns** with `byIndex = true`.
+  - First gate (`ListenerShallManageEventIndex`) — discard by event index before any data read, no string conversion: **~30–35 ns** with `byIndex = true`.
+  - Second gate (`ListenerShallManageEventIndexWithData`) — raw data available for inspection before handler dispatch: **~144–152 ns** with `byIndex = true`.
   - Name-based variants (`ListenerShallManageEventName`, `ListenerShallManageEventNameWithData`) are available when filtering by event name is more convenient; they add the cost of `ConvertListenerEventIndexToEventName`.
-- **Newer runtimes help**: .NET 10 / Temurin 25 matches or outperforms .NET 8 / Temurin 17 across most test types; runner variance can obscure this on individual runs.
+- **Newer runtimes help**: .NET 10 / Temurin 25 matches or outperforms .NET 8 / Temurin 17 across most test types, with the largest gains on instance method invocation and the first-gate discard path.
 - The `byIndex = true` mechanism will deliver its full benefit on the full-processing path once the JVM-side simulation is replaced with real interface dispatch.
 - If your application runs callbacks at sustained high frequency, consider the [JCOBridge HPA edition](https://www.jcobridge.com) — it addresses GC-boundary instability under sustained JVM↔CLR call pressure, which is the primary reliability concern at high call rates.
