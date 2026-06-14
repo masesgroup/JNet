@@ -48,7 +48,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see langword="true"/> if the user has overridden <see cref="ListenerShallManageEvent(int, object)"/> in a subclass.
+        /// <see langword="true"/> if the user has overridden <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEvent(int, object)"/> in a subclass.
         /// Cached at construction to avoid per-event reflection cost. When <see langword="true"/>, the first gate always
         /// returns <see langword="true"/> so that the second gate is reached regardless of whether individual event handlers are registered.
         /// </summary>
@@ -58,12 +58,11 @@ namespace Java.Util.Function
         /// <remarks>
         /// Evaluated in order:
         /// <list type="number">
-        /// <item><see cref="ListenerShallManageEventIndex"/> delegate — index-based, no string conversion, lowest overhead.</item>
-        /// <item><see cref="ListenerShallManageEventName"/> delegate — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
-        /// <item><see cref="ListenerShallManageEventHandlers"/> — returns <see langword="true"/> if the specific event has a registered delegate or a virtual method override.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventIndex"/> delegate — index-based, no string conversion, lowest overhead.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventName"/> delegate — name-based, resolves via <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ConvertListenerEventIndexToEventName"/>.</item>
         /// <item><see cref="_hasLongFunctionSecondGate"/> — returns <see langword="true"/> if the second gate is overridden, ensuring all events reach it.</item>
-        /// <item><see cref="ListenerShallManageEventIndexWithData"/> delegate with data — index-based, no string conversion, lowest overhead.</item>
-        /// <item><see cref="ListenerShallManageEventNameWithData"/> delegate with data — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventIndexWithData"/> delegate with data — index-based, no string conversion, lowest overhead.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventNameWithData"/> delegate with data — name-based, resolves via <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ConvertListenerEventIndexToEventName"/>.</item>
         /// </list>
         /// </remarks>
         protected override bool ListenerShallManageEvent(int eventIndex)
@@ -143,6 +142,7 @@ namespace Java.Util.Function
     }
     #endregion
 
+
     #region LongFunction<R> declaration
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongFunction.html"/>
@@ -167,7 +167,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see langword="true"/> if the user has overridden <see cref="ListenerShallManageEvent(int, object)"/> in a subclass.
+        /// <see langword="true"/> if the user has overridden <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEvent(int, object)"/> in a subclass.
         /// Cached at construction to avoid per-event reflection cost. When <see langword="true"/>, the first gate always
         /// returns <see langword="true"/> so that the second gate is reached regardless of whether individual event handlers are registered.
         /// </summary>
@@ -177,12 +177,11 @@ namespace Java.Util.Function
         /// <remarks>
         /// Evaluated in order:
         /// <list type="number">
-        /// <item><see cref="ListenerShallManageEventIndex"/> delegate — index-based, no string conversion, lowest overhead.</item>
-        /// <item><see cref="ListenerShallManageEventName"/> delegate — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
-        /// <item><see cref="ListenerShallManageEventHandlers"/> — returns <see langword="true"/> if the specific event has a registered delegate or a virtual method override.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventIndex"/> delegate — index-based, no string conversion, lowest overhead.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventName"/> delegate — name-based, resolves via <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ConvertListenerEventIndexToEventName"/>.</item>
         /// <item><see cref="_hasLongFunctionSecondGate"/> — returns <see langword="true"/> if the second gate is overridden, ensuring all events reach it.</item>
-        /// <item><see cref="ListenerShallManageEventIndexWithData"/> delegate with data — index-based, no string conversion, lowest overhead.</item>
-        /// <item><see cref="ListenerShallManageEventNameWithData"/> delegate with data — name-based, resolves via <see cref="ConvertListenerEventIndexToEventName"/>.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventIndexWithData"/> delegate with data — index-based, no string conversion, lowest overhead.</item>
+        /// <item><see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ListenerShallManageEventNameWithData"/> delegate with data — name-based, resolves via <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener.ConvertListenerEventIndexToEventName"/>.</item>
         /// </list>
         /// </remarks>
         protected override bool ListenerShallManageEvent(int eventIndex)
@@ -261,6 +260,7 @@ namespace Java.Util.Function
         public override bool IsBridgeStatic => false;
     }
     #endregion
+
 
     #region LongFunction implementation
     public partial class LongFunction
