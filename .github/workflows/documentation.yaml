@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI_DOCUMENTATION
+name: "Generate documentation"
 
 # Controls when the action will run. Triggers the workflow on push
 # events but only for the master branch
@@ -64,11 +64,15 @@ jobs:
 
       - run: dotnet tool update -g docfx
 
+      - name: Copy documentation files
+        run: Copy-Item ${{ github.workspace }}\CommonTools\website\en\* -Destination ${{ github.workspace }}\src\documentation\ -Force -Recurse -Verbose
+        shell: pwsh
+        
       - name: Build documentation
         run: |
-          Copy-Item ${{ github.workspace }}\CommonTools\website\en\* -Destination ${{ github.workspace }}\src\documentation\ -Force -Recurse -Verbose
           cd src\documentation
-          docfx build docfx.json --log-level ${{ inputs.docfx_log_level }} --maxParallelism ${{ inputs.docfx_max_parallelism }}
+          docfx docfx.json --logLevel ${{ inputs.docfx_log_level }} --maxParallelism ${{ inputs.docfx_max_parallelism }}
+        shell: pwsh
 
       - name: Extract commit SHA
         run: |
