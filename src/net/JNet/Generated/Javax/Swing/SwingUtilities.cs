@@ -185,7 +185,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <returns><see cref="Java.Awt.Component"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Awt.Component FindFocusOwner(Java.Awt.Component arg0)
         {
             return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "findFocusOwner", "(Ljava/awt/Component;)Ljava/awt/Component;", arg0);

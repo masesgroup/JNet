@@ -482,7 +482,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics.html#getClipRect--"/>
         /// </summary>
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Rectangle GetClipRect()
         {
             return IExecuteWithSignature<Java.Awt.Rectangle>("getClipRect", "()Ljava/awt/Rectangle;");

@@ -69,12 +69,12 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitorMBean.html#getDerivedGauge--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Lang.Number DerivedGauge { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitorMBean.html#getDerivedGaugeTimeStamp--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         long DerivedGaugeTimeStamp { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitorMBean.html#getDifferenceMode--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitorMBean.html#setDifferenceMode-boolean-"/>
@@ -99,7 +99,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitorMBean.html#getThreshold--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitorMBean.html#setThreshold-java.lang.Number-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Lang.Number Threshold { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitorMBean.html#getDerivedGauge-javax.management.ObjectName-"/>
@@ -153,7 +153,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitorMBean.html#getDerivedGauge--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Lang.Number DerivedGauge
         {
             get { return IExecuteWithSignature<Java.Lang.Number>("getDerivedGauge", "()Ljava/lang/Number;"); }
@@ -161,7 +161,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitorMBean.html#getDerivedGaugeTimeStamp--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public long DerivedGaugeTimeStamp
         {
             get { return IExecuteWithSignature<long>("getDerivedGaugeTimeStamp", "()J"); }
@@ -204,7 +204,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitorMBean.html#getThreshold--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitorMBean.html#setThreshold-java.lang.Number-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Lang.Number Threshold
         {
             get { return IExecuteWithSignature<Java.Lang.Number>("getThreshold", "()Ljava/lang/Number;"); } set { IExecuteWithSignature("setThreshold", "(Ljava/lang/Number;)V", value); }

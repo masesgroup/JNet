@@ -29,7 +29,7 @@ namespace Javax.Accessibility
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/accessibility/AccessibleResourceBundle.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class AccessibleResourceBundle : Java.Util.ListResourceBundle
     {
         const string _bridgeClassName = "javax.accessibility.AccessibleResourceBundle";

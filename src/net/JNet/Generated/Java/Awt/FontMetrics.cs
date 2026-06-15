@@ -138,7 +138,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/FontMetrics.html#getMaxDecent--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int MaxDecent
         {
             get { return IExecuteWithSignature<int>("getMaxDecent", "()I"); }

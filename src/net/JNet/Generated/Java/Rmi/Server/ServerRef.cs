@@ -29,7 +29,7 @@ namespace Java.Rmi.Server
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ServerRef.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class ServerRef : Java.Rmi.Server.RemoteRef
     {
         const string _bridgeClassName = "java.rmi.server.ServerRef";

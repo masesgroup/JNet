@@ -114,7 +114,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Lang.Class LoadClass(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", arg0);
@@ -160,7 +160,7 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="object"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static object GetSecurityContext(Java.Lang.ClassLoader arg0)
         {
             return SExecuteWithSignature(LocalBridgeClazz, "getSecurityContext", "(Ljava/lang/ClassLoader;)Ljava/lang/Object;", arg0);

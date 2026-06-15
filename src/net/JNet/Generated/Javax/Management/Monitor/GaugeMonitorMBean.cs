@@ -69,12 +69,12 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGauge--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Lang.Number DerivedGauge { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGaugeTimeStamp--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         long DerivedGaugeTimeStamp { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#getDifferenceMode--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#setDifferenceMode-boolean-"/>
@@ -149,7 +149,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGauge--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Lang.Number DerivedGauge
         {
             get { return IExecuteWithSignature<Java.Lang.Number>("getDerivedGauge", "()Ljava/lang/Number;"); }
@@ -157,7 +157,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGaugeTimeStamp--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public long DerivedGaugeTimeStamp
         {
             get { return IExecuteWithSignature<long>("getDerivedGaugeTimeStamp", "()J"); }

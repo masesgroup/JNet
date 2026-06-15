@@ -86,7 +86,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#runFinalizersOnExit-boolean-"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static void RunFinalizersOnExit(bool arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "runFinalizersOnExit", "(Z)V", arg0);
@@ -109,7 +109,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Io.InputStream GetLocalizedInputStream(Java.Io.InputStream arg0)
         {
             return IExecuteWithSignature<Java.Io.InputStream>("getLocalizedInputStream", "(Ljava/io/InputStream;)Ljava/io/InputStream;", arg0);
@@ -119,7 +119,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Io.OutputStream GetLocalizedOutputStream(Java.Io.OutputStream arg0)
         {
             return IExecuteWithSignature<Java.Io.OutputStream>("getLocalizedOutputStream", "(Ljava/io/OutputStream;)Ljava/io/OutputStream;", arg0);

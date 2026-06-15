@@ -109,7 +109,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenType.html#ALLOWED_CLASSNAMES"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Lang.String[] ALLOWED_CLASSNAMES { get { return SGetFieldArray<Java.Lang.String>(LocalBridgeClazz, "ALLOWED_CLASSNAMES"); } set { SSetField(LocalBridgeClazz, "ALLOWED_CLASSNAMES", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenType.html#ALLOWED_CLASSNAMES_LIST"/>
@@ -191,7 +191,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenType.html#ALLOWED_CLASSNAMES"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Lang.String[] ALLOWED_CLASSNAMES { get { return SGetFieldArray<Java.Lang.String>(LocalBridgeClazz, "ALLOWED_CLASSNAMES"); } set { SSetField(LocalBridgeClazz, "ALLOWED_CLASSNAMES", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenType.html#ALLOWED_CLASSNAMES_LIST"/>

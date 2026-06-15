@@ -217,7 +217,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#allowsMultipleSelections--"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool AllowsMultipleSelections()
         {
             return IExecuteWithSignature<bool>("allowsMultipleSelections", "()Z");
@@ -244,7 +244,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool IsSelected(int arg0)
         {
             return IExecuteWithSignature<bool>("isSelected", "(I)Z", arg0);
@@ -253,7 +253,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#countItems--"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int CountItems()
         {
             return IExecuteWithSignature<int>("countItems", "()I");
@@ -281,7 +281,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Dimension MinimumSize(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("minimumSize", "(I)Ljava/awt/Dimension;", arg0);
@@ -291,7 +291,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Dimension PreferredSize(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("preferredSize", "(I)Ljava/awt/Dimension;", arg0);
@@ -318,7 +318,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void AddItem(Java.Lang.String arg0, int arg1)
         {
             IExecuteWithSignature("addItem", "(Ljava/lang/String;I)V", arg0, arg1);
@@ -334,7 +334,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#clear--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
@@ -344,7 +344,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void DelItems(int arg0, int arg1)
         {
             IExecuteWithSignature("delItems", "(II)V", arg0, arg1);
@@ -402,7 +402,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#setMultipleSelections-boolean-"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void SetMultipleSelections(bool arg0)
         {
             IExecuteWithSignature("setMultipleSelections", "(Z)V", arg0);
@@ -428,7 +428,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#addItem-java.lang.String-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void AddItem(Java.Lang.String arg0)
         {
             IExecuteWithSignature("addItem", "(Ljava/lang/String;)V", arg0);
@@ -437,7 +437,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#delItem-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void DelItem(int arg0)
         {
             IExecuteWithSignature("delItem", "(I)V", arg0);

@@ -106,7 +106,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/spi/ImageReaderSpi.html#STANDARD_INPUT_TYPE"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Lang.Class[] STANDARD_INPUT_TYPE { get { return SGetFieldArray<Java.Lang.Class>(LocalBridgeClazz, "STANDARD_INPUT_TYPE"); } set { SSetField(LocalBridgeClazz, "STANDARD_INPUT_TYPE", value); } }
 
         #endregion

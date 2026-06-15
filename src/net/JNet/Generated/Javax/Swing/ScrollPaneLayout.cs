@@ -220,7 +220,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JScrollPane"/></param>
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Rectangle GetViewportBorderBounds(Javax.Swing.JScrollPane arg0)
         {
             return IExecuteWithSignature<Java.Awt.Rectangle>("getViewportBorderBounds", "(Ljavax/swing/JScrollPane;)Ljava/awt/Rectangle;", arg0);

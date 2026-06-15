@@ -112,7 +112,7 @@ namespace Java.Awt.EventNs
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public KeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
@@ -1007,7 +1007,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/KeyEvent.html#setModifiers-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void SetModifiers(int arg0)
         {
             IExecuteWithSignature("setModifiers", "(I)V", arg0);

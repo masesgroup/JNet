@@ -29,7 +29,7 @@ namespace Javax.Jws.Soap
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/SOAPMessageHandlers.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class SOAPMessageHandlers : Java.Lang.Annotation.Annotation
     {
         const string _bridgeClassName = "javax.jws.soap.SOAPMessageHandlers";

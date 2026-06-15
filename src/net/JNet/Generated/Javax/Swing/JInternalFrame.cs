@@ -355,7 +355,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JInternalFrame.html#getMenuBar--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JInternalFrame.html#setMenuBar-javax.swing.JMenuBar-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Javax.Swing.JMenuBar MenuBar
         {
             get { return IExecuteWithSignature<Javax.Swing.JMenuBar>("getMenuBar", "()Ljavax/swing/JMenuBar;"); } set { IExecuteWithSignature("setMenuBar", "(Ljavax/swing/JMenuBar;)V", value); }

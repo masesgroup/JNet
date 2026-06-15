@@ -29,7 +29,7 @@ namespace Java.Rmi.Server
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LogStream.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class LogStream : Java.Io.PrintStream
     {
         const string _bridgeClassName = "java.rmi.server.LogStream";
@@ -91,7 +91,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LogStream.html#getDefaultStream--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LogStream.html#setDefaultStream-java.io.PrintStream-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Io.PrintStream DefaultStream
         {
             get { return SExecuteWithSignature<Java.Io.PrintStream>(LocalBridgeClazz, "getDefaultStream", "()Ljava/io/PrintStream;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefaultStream", "(Ljava/io/PrintStream;)V", value); }
@@ -101,7 +101,7 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static int ParseLevel(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "parseLevel", "(Ljava/lang/String;)I", arg0);
@@ -111,7 +111,7 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Rmi.Server.LogStream"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Rmi.Server.LogStream Log(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Rmi.Server.LogStream>(LocalBridgeClazz, "log", "(Ljava/lang/String;)Ljava/rmi/server/LogStream;", arg0);
@@ -123,7 +123,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LogStream.html#getOutputStream--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LogStream.html#setOutputStream-java.io.OutputStream-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Io.OutputStream OutputStream
         {
             get { return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;"); } set { IExecuteWithSignature("setOutputStream", "(Ljava/io/OutputStream;)V", value); }

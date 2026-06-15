@@ -100,7 +100,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitor.html#getDerivedGauge--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Lang.Number DerivedGauge
         {
             get { return IExecuteWithSignature<Java.Lang.Number>("getDerivedGauge", "()Ljava/lang/Number;"); }
@@ -108,7 +108,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitor.html#getDerivedGaugeTimeStamp--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public long DerivedGaugeTimeStamp
         {
             get { return IExecuteWithSignature<long>("getDerivedGaugeTimeStamp", "()J"); }

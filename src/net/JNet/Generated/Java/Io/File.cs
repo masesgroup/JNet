@@ -527,7 +527,7 @@ namespace Java.Io
         /// </summary>
         /// <returns><see cref="Java.Net.URL"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Net.URL ToURL()
         {
             return IExecuteWithSignature<Java.Net.URL>("toURL", "()Ljava/net/URL;");

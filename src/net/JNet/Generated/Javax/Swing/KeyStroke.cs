@@ -81,7 +81,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Javax.Swing.KeyStroke GetKeyStroke(char arg0, bool arg1)
         {
             return SExecuteWithSignature<Javax.Swing.KeyStroke>(LocalBridgeClazz, "getKeyStroke", "(CZ)Ljavax/swing/KeyStroke;", arg0, arg1);

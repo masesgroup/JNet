@@ -176,7 +176,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/RenderContext.html#concetenateTransform-java.awt.geom.AffineTransform-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void ConcetenateTransform(Java.Awt.Geom.AffineTransform arg0)
         {
             IExecuteWithSignature("concetenateTransform", "(Ljava/awt/geom/AffineTransform;)V", arg0);
@@ -193,7 +193,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/RenderContext.html#preConcetenateTransform-java.awt.geom.AffineTransform-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void PreConcetenateTransform(Java.Awt.Geom.AffineTransform arg0)
         {
             IExecuteWithSignature("preConcetenateTransform", "(Ljava/awt/geom/AffineTransform;)V", arg0);

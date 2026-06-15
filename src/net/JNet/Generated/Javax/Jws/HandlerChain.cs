@@ -75,7 +75,7 @@ namespace Javax.Jws
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/jws/HandlerChain.html#name--"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Lang.String Name();
 
         #endregion
@@ -120,7 +120,7 @@ namespace Javax.Jws
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/jws/HandlerChain.html#name--"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");

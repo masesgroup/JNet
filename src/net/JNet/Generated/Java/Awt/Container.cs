@@ -181,7 +181,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#countComponents--"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int CountComponents()
         {
             return IExecuteWithSignature<int>("countComponents", "()I");
@@ -264,7 +264,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#insets--"/>
         /// </summary>
         /// <returns><see cref="Java.Awt.Insets"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Insets Insets()
         {
             return IExecuteWithSignature<Java.Awt.Insets>("insets", "()Ljava/awt/Insets;");

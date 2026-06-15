@@ -127,7 +127,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Toolkit.html#getFontList--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Lang.String[] FontList
         {
             get { return IExecuteWithSignatureArray<Java.Lang.String>("getFontList", "()[Ljava/lang/String;"); }
@@ -259,7 +259,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Font"/></param>
         /// <returns><see cref="Java.Awt.FontMetrics"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.FontMetrics GetFontMetrics(Java.Awt.Font arg0)
         {
             return IExecuteWithSignature<Java.Awt.FontMetrics>("getFontMetrics", "(Ljava/awt/Font;)Ljava/awt/FontMetrics;", arg0);

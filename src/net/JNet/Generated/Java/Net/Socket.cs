@@ -84,7 +84,7 @@ namespace Java.Net
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Socket(Java.Lang.String arg0, int arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
@@ -140,7 +140,7 @@ namespace Java.Net
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Socket(Java.Net.InetAddress arg0, int arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);

@@ -66,7 +66,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/AttributeValueExp.html#javax.management.AttributeValueExp()"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public AttributeValueExp() : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer();
@@ -133,7 +133,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/AttributeValueExp.html#setMBeanServer-javax.management.MBeanServer-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void SetMBeanServer(Javax.Management.MBeanServer arg0)
         {
             IExecuteWithSignature("setMBeanServer", "(Ljavax/management/MBeanServer;)V", arg0);

@@ -271,7 +271,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractButton.html#getLabel--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractButton.html#setLabel-java.lang.String-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Lang.String Label
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLabel", "(Ljava/lang/String;)V", value); }

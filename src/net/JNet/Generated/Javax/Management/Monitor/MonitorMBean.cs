@@ -77,7 +77,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getObservedObject--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#setObservedObject-javax.management.ObjectName-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Javax.Management.ObjectName ObservedObject { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getObservedObjects--"/> 
@@ -161,7 +161,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getObservedObject--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#setObservedObject-javax.management.ObjectName-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Javax.Management.ObjectName ObservedObject
         {
             get { return IExecuteWithSignature<Javax.Management.ObjectName>("getObservedObject", "()Ljavax/management/ObjectName;"); } set { IExecuteWithSignature("setObservedObject", "(Ljavax/management/ObjectName;)V", value); }

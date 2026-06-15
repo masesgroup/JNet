@@ -101,7 +101,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.ResourceBundle"/></param>
         /// <returns><see cref="Java.Awt.ComponentOrientation"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Awt.ComponentOrientation GetOrientation(Java.Util.ResourceBundle arg0)
         {
             return SExecuteWithSignature<Java.Awt.ComponentOrientation>(LocalBridgeClazz, "getOrientation", "(Ljava/util/ResourceBundle;)Ljava/awt/ComponentOrientation;", arg0);

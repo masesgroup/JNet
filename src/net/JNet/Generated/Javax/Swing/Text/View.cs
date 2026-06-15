@@ -327,7 +327,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
         /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int ViewToModel(float arg0, float arg1, Java.Awt.Shape arg2)
         {
             return IExecuteWithSignature<int>("viewToModel", "(FFLjava/awt/Shape;)I", arg0, arg1, arg2);
@@ -349,7 +349,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Shape ModelToView(int arg0, Java.Awt.Shape arg1)
         {
             return IExecuteWithSignature<Java.Awt.Shape>("modelToView", "(ILjava/awt/Shape;)Ljava/awt/Shape;", arg0, arg1);

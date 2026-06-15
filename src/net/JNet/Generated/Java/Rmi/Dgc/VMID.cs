@@ -93,7 +93,7 @@ namespace Java.Rmi.Dgc
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/dgc/VMID.html#isUnique--"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static bool IsUnique()
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isUnique", "()Z");

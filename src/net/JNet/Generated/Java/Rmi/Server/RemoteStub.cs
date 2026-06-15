@@ -29,7 +29,7 @@ namespace Java.Rmi.Server
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteStub.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class RemoteStub : Java.Rmi.Server.RemoteObject
     {
         const string _bridgeClassName = "java.rmi.server.RemoteStub";

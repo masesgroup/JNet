@@ -29,7 +29,7 @@ namespace Java.Rmi.Server
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LoaderHandler.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class LoaderHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LoaderHandler>
     {
         const string _bridgeClassName = "java.rmi.server.LoaderHandler";
@@ -74,7 +74,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Lang.Class LoadClass(Java.Lang.String arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LoaderHandler.html#loadClass-java.net.URL-java.lang.String-"/>
@@ -84,14 +84,14 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Lang.Class LoadClass(Java.Net.URL arg0, Java.Lang.String arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LoaderHandler.html#getSecurityContext-java.lang.ClassLoader-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="object"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         object GetSecurityContext(Java.Lang.ClassLoader arg0);
 
         #endregion
@@ -135,7 +135,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Lang.Class LoadClass(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.Class>("loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", arg0);
@@ -148,7 +148,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Lang.Class LoadClass(Java.Net.URL arg0, Java.Lang.String arg1)
         {
             return IExecuteWithSignature<Java.Lang.Class>("loadClass", "(Ljava/net/URL;Ljava/lang/String;)Ljava/lang/Class;", arg0, arg1);
@@ -158,7 +158,7 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="object"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public object GetSecurityContext(Java.Lang.ClassLoader arg0)
         {
             return IExecuteWithSignature("getSecurityContext", "(Ljava/lang/ClassLoader;)Ljava/lang/Object;", arg0);

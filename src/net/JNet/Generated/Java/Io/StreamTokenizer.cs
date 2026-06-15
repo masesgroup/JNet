@@ -67,7 +67,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/StreamTokenizer.html#java.io.StreamTokenizer(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public StreamTokenizer(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);

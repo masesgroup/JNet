@@ -369,7 +369,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#getSelectedValues--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public object[] SelectedValues
         {
             get { return IExecuteWithSignatureArray<object>("getSelectedValues", "()[Ljava/lang/Object;"); }
@@ -908,7 +908,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#getSelectedValues--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public object[] SelectedValues
         {
             get { return IExecuteWithSignatureArray<object>("getSelectedValues", "()[Ljava/lang/Object;"); }
