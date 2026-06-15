@@ -1,5 +1,11 @@
 apiRules:
 - exclude:
+    uidRegex: ^System\.Exception
+    type: Member
+- exclude:
+    uidRegex: ^System\.Object
+    type: Member
+- exclude:
     uidRegex: ^MASES\.JCOBridge\.
     type: Member
 - exclude:
