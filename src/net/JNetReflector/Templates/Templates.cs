@@ -157,7 +157,7 @@ namespace MASES.JNet.Reflector.Templates
             public static string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                     + "/// ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER" + Environment.NewLine
                                                     + "/// </summary>";
-            public const string OBSOLETE_DECORATION = "[global::System.Obsolete()]";
+            public const string OBSOLETE_DECORATION = "[global::System.Obsolete(\"Deprecated in JVM\")]";
 
             public const string LISTENER_CLASS_WARNING = "#warning Remember to build the Java class for event listener";
 
@@ -186,7 +186,7 @@ namespace MASES.JNet.Reflector.Templates
                 public static readonly string HELP_PARAM_SEE_DECORATION = "<see cref=\"{0}\"/>";
                 public static readonly string HELP_PARAM_TYPEPARAMREF_DECORATION = "<typeparamref name=\"{0}\"/>";
                 public static readonly string HELP_EXCEPTION_DECORATION = "/// <exception cref=\"{0}\"/>";
-                public const string OBSOLETE_DECORATION = "[global::System.Obsolete()]";
+                public const string OBSOLETE_DECORATION = "[global::System.Obsolete(\"Deprecated in JVM\")]";
             }
 
             public class OperatorStub
@@ -235,7 +235,7 @@ namespace MASES.JNet.Reflector.Templates
                 public const string HELP_REMARK_DEFAULT_METHOD = "/// <remarks>The method invokes the default implementation in the JVM interface</remarks>";
                 public const string HELP_REMARK_STATIC_METHOD = "/// <remarks>The method invokes the static implementation in the JVM interface</remarks>";
                 public const string HELP_REMARK_HANDLER_WITH_DEFAULT = "/// <remarks>The method invokes the default implementation in the JVM interface using <see cref=\"{0}\"/>; override the method to implement a different behavior</remarks>";
-                public const string OBSOLETE_DECORATION = "[global::System.Obsolete()]";
+                public const string OBSOLETE_DECORATION = "[global::System.Obsolete(\"Deprecated in JVM\")]";
 
                 public const string STATIC_EXECUTE = "SExecute";
                 public const string INSTANCE_EXECUTE = "IExecute";
@@ -324,7 +324,7 @@ namespace MASES.JNet.Reflector.Templates
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                                  + "/// PROPERTY_STUB_GET_PROPERTY_HELP_PLACEHOLDER PROPERTY_STUB_SET_PROPERTY_HELP_PLACEHOLDER" + Environment.NewLine
                                                                  + "/// </summary>";
-                public const string OBSOLETE_DECORATION = "[global::System.Obsolete()]";
+                public const string OBSOLETE_DECORATION = "[global::System.Obsolete(\"Deprecated in JVM\")]";
             }
 
             public class FieldStub
@@ -345,7 +345,7 @@ namespace MASES.JNet.Reflector.Templates
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                                  + "/// FIELD_STUB_FIELD_HELP_PLACEHOLDER" + Environment.NewLine
                                                                  + "/// </summary>";
-                public const string OBSOLETE_DECORATION = "[global::System.Obsolete()]";
+                public const string OBSOLETE_DECORATION = "[global::System.Obsolete(\"Deprecated in JVM\")]";
             }
         }
     }
