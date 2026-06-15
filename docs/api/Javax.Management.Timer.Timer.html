@@ -89,7 +89,7 @@
 
 
   <h1 id="Javax_Management_Timer_Timer" data-uid="Javax.Management.Timer.Timer" class="text-break">
-Class Timer  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L68"><i class="bi bi-code-slash"></i></a>
+Class Timer  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Timer : NotificationBroadcasterSupport, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, INotificationEmitter, INotificationBroadcaster</code></pre>
+    <pre><code class="lang-csharp hljs">public class Timer : NotificationBroadcasterSupport, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, INotificationEmitter, INotificationBroadcaster</code></pre>
   </div>
 
 
@@ -127,10 +127,11 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Javax.Management.INotificationEmitter.html">INotificationEmitter</a></div>
       <div><a class="xref" href="Javax.Management.INotificationBroadcaster.html">INotificationBroadcaster</a></div>
@@ -141,6 +142,15 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Javax.Management.NotificationBroadcasterSupport.html#Javax_Management_NotificationBroadcasterSupport_CreatePoolableInstance_Java_Util_Concurrent_Executor_Javax_Management_MBeanNotificationInfo___">NotificationBroadcasterSupport.CreatePoolableInstance(Executor, params MBeanNotificationInfo[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Management.NotificationBroadcasterSupport.html#Javax_Management_NotificationBroadcasterSupport_CreatePoolableInstance_Java_Util_Concurrent_Executor_">NotificationBroadcasterSupport.CreatePoolableInstance(Executor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Management.NotificationBroadcasterSupport.html#Javax_Management_NotificationBroadcasterSupport_CreatePoolableInstance_Javax_Management_MBeanNotificationInfo___">NotificationBroadcasterSupport.CreatePoolableInstance(params MBeanNotificationInfo[])</a>
+    </div>
     <div>
       <a class="xref" href="Javax.Management.NotificationBroadcasterSupport.html#Javax_Management_NotificationBroadcasterSupport_NotificationInfo">NotificationBroadcasterSupport.NotificationInfo</a>
     </div>
@@ -155,363 +165,6 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
     </div>
     <div>
       <a class="xref" href="Javax.Management.NotificationBroadcasterSupport.html#Javax_Management_NotificationBroadcasterSupport_SendNotification_Javax_Management_Notification_">NotificationBroadcasterSupport.SendNotification(Notification)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteStream&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SGetFieldStream&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SGetFieldStream&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;NotificationBroadcaster&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;NotificationBroadcaster&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;NotificationBroadcaster&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationBroadcaster&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;NotificationBroadcaster&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;NotificationBroadcaster&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;NotificationBroadcaster&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(IJVMBridgeBase, IJVMBridgeBase)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastToAndDetach&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirectAndDetach&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CheckDisposed()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldStream&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
@@ -556,10 +209,19 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
@@ -575,6 +237,9 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
   </dd></dl>
 
 
@@ -589,7 +254,7 @@ Class Timer  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Javax_Management_Timer_Timer__ctor" data-uid="Javax.Management.Timer.Timer.#ctor">
   Timer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#javax.management.timer.Timer()">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#javax.management.timer.Timer()</a></p>
@@ -645,38 +310,6 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
 
 
-  <a id="Javax_Management_Timer_Timer__ctor_" data-uid="Javax.Management.Timer.Timer.#ctor*"></a>
-
-  <h3 id="Javax_Management_Timer_Timer__ctor_System_Object___" data-uid="Javax.Management.Timer.Timer.#ctor(System.Object[])">
-  Timer(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L45"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Timer(params object[] args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -685,7 +318,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_AllNotificationIDs" data-uid="Javax.Management.Timer.Timer.AllNotificationIDs">
   AllNotificationIDs
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getAllNotificationIDs--">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getAllNotificationIDs--</a></p>
@@ -717,7 +350,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_BridgeClassName" data-uid="Javax.Management.Timer.Timer.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -749,7 +382,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_IsBridgeAbstract" data-uid="Javax.Management.Timer.Timer.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -781,7 +414,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_IsBridgeCloseable" data-uid="Javax.Management.Timer.Timer.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
@@ -813,7 +446,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_IsBridgeInterface" data-uid="Javax.Management.Timer.Timer.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -845,7 +478,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_IsBridgeStatic" data-uid="Javax.Management.Timer.Timer.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -877,7 +510,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_NbNotifications" data-uid="Javax.Management.Timer.Timer.NbNotifications">
   NbNotifications
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getNbNotifications--">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getNbNotifications--</a></p>
@@ -909,7 +542,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_ONE_DAY" data-uid="Javax.Management.Timer.Timer.ONE_DAY">
   ONE_DAY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#ONE_DAY">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#ONE_DAY</a></p>
@@ -917,7 +550,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long ONE_DAY { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static long ONE_DAY { get; set; }</code></pre>
   </div>
 
 
@@ -949,7 +582,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long ONE_HOUR { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static long ONE_HOUR { get; set; }</code></pre>
   </div>
 
 
@@ -973,7 +606,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_ONE_MINUTE" data-uid="Javax.Management.Timer.Timer.ONE_MINUTE">
   ONE_MINUTE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#ONE_MINUTE">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#ONE_MINUTE</a></p>
@@ -981,7 +614,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long ONE_MINUTE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static long ONE_MINUTE { get; set; }</code></pre>
   </div>
 
 
@@ -1005,7 +638,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_ONE_SECOND" data-uid="Javax.Management.Timer.Timer.ONE_SECOND">
   ONE_SECOND
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#ONE_SECOND">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#ONE_SECOND</a></p>
@@ -1013,7 +646,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long ONE_SECOND { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static long ONE_SECOND { get; set; }</code></pre>
   </div>
 
 
@@ -1037,7 +670,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_ONE_WEEK" data-uid="Javax.Management.Timer.Timer.ONE_WEEK">
   ONE_WEEK
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#ONE_WEEK">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#ONE_WEEK</a></p>
@@ -1045,7 +678,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long ONE_WEEK { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static long ONE_WEEK { get; set; }</code></pre>
   </div>
 
 
@@ -1069,7 +702,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_SendPastNotifications" data-uid="Javax.Management.Timer.Timer.SendPastNotifications">
   SendPastNotifications
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getSendPastNotifications--">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getSendPastNotifications--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#setSendPastNotifications-boolean-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#setSendPastNotifications-boolean-</a></p>
@@ -1105,7 +738,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_AddNotification_Java_Lang_String_Java_Lang_String_System_Object_Java_Util_Date_" data-uid="Javax.Management.Timer.Timer.AddNotification(Java.Lang.String,Java.Lang.String,System.Object,Java.Util.Date)">
   AddNotification(String, String, object, Date)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#addNotification-java.lang.String-java.lang.String-java.lang.Object-java.util.Date-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#addNotification-java.lang.String-java.lang.String-java.lang.Object-java.util.Date-</a></p>
@@ -1158,7 +791,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_AddNotification_Java_Lang_String_Java_Lang_String_System_Object_Java_Util_Date_System_Int64_" data-uid="Javax.Management.Timer.Timer.AddNotification(Java.Lang.String,Java.Lang.String,System.Object,Java.Util.Date,System.Int64)">
   AddNotification(String, String, object, Date, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#addNotification-java.lang.String-java.lang.String-java.lang.Object-java.util.Date-long-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#addNotification-java.lang.String-java.lang.String-java.lang.Object-java.util.Date-long-</a></p>
@@ -1214,7 +847,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_AddNotification_Java_Lang_String_Java_Lang_String_System_Object_Java_Util_Date_System_Int64_System_Int64_" data-uid="Javax.Management.Timer.Timer.AddNotification(Java.Lang.String,Java.Lang.String,System.Object,Java.Util.Date,System.Int64,System.Int64)">
   AddNotification(String, String, object, Date, long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L208"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#addNotification-java.lang.String-java.lang.String-java.lang.Object-java.util.Date-long-long-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#addNotification-java.lang.String-java.lang.String-java.lang.Object-java.util.Date-long-long-</a></p>
@@ -1273,7 +906,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_AddNotification_Java_Lang_String_Java_Lang_String_System_Object_Java_Util_Date_System_Int64_System_Int64_System_Boolean_" data-uid="Javax.Management.Timer.Timer.AddNotification(Java.Lang.String,Java.Lang.String,System.Object,Java.Util.Date,System.Int64,System.Int64,System.Boolean)">
   AddNotification(String, String, object, Date, long, long, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#addNotification-java.lang.String-java.lang.String-java.lang.Object-java.util.Date-long-long-boolean-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#addNotification-java.lang.String-java.lang.String-java.lang.Object-java.util.Date-long-long-boolean-</a></p>
@@ -1331,11 +964,43 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
 
 
+  <a id="Javax_Management_Timer_Timer_CreatePoolableInstance_" data-uid="Javax.Management.Timer.Timer.CreatePoolableInstance*"></a>
+
+  <h3 id="Javax_Management_Timer_Timer_CreatePoolableInstance" data-uid="Javax.Management.Timer.Timer.CreatePoolableInstance">
+  CreatePoolableInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for Timer()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Timer CreatePoolableInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.Timer.Timer.html">Timer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Javax_Management_Timer_Timer_GetDate_" data-uid="Javax.Management.Timer.Timer.GetDate*"></a>
 
   <h3 id="Javax_Management_Timer_Timer_GetDate_Java_Lang_Integer_" data-uid="Javax.Management.Timer.Timer.GetDate(Java.Lang.Integer)">
   GetDate(Integer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getDate-java.lang.Integer-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getDate-java.lang.Integer-</a></p>
@@ -1374,7 +1039,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_GetFixedRate_Java_Lang_Integer_" data-uid="Javax.Management.Timer.Timer.GetFixedRate(Java.Lang.Integer)">
   GetFixedRate(Integer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getFixedRate-java.lang.Integer-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getFixedRate-java.lang.Integer-</a></p>
@@ -1413,7 +1078,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_GetNbOccurences_Java_Lang_Integer_" data-uid="Javax.Management.Timer.Timer.GetNbOccurences(Java.Lang.Integer)">
   GetNbOccurences(Integer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L244"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getNbOccurences-java.lang.Integer-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getNbOccurences-java.lang.Integer-</a></p>
@@ -1452,7 +1117,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_GetNotificationIDs_Java_Lang_String_" data-uid="Javax.Management.Timer.Timer.GetNotificationIDs(Java.Lang.String)">
   GetNotificationIDs(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L298"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getNotificationIDs-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getNotificationIDs-java.lang.String-</a></p>
@@ -1491,7 +1156,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_GetNotificationMessage_Java_Lang_Integer_" data-uid="Javax.Management.Timer.Timer.GetNotificationMessage(Java.Lang.Integer)">
   GetNotificationMessage(Integer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L271"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getNotificationMessage-java.lang.Integer-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getNotificationMessage-java.lang.Integer-</a></p>
@@ -1530,7 +1195,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_GetNotificationType_Java_Lang_Integer_" data-uid="Javax.Management.Timer.Timer.GetNotificationType(Java.Lang.Integer)">
   GetNotificationType(Integer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L280"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getNotificationType-java.lang.Integer-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getNotificationType-java.lang.Integer-</a></p>
@@ -1569,7 +1234,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_GetNotificationUserData_Java_Lang_Integer_" data-uid="Javax.Management.Timer.Timer.GetNotificationUserData(Java.Lang.Integer)">
   GetNotificationUserData(Integer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L262"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getNotificationUserData-java.lang.Integer-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getNotificationUserData-java.lang.Integer-</a></p>
@@ -1608,7 +1273,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_GetPeriod_Java_Lang_Integer_" data-uid="Javax.Management.Timer.Timer.GetPeriod(Java.Lang.Integer)">
   GetPeriod(Integer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getPeriod-java.lang.Integer-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#getPeriod-java.lang.Integer-</a></p>
@@ -1647,7 +1312,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_IsActive" data-uid="Javax.Management.Timer.Timer.IsActive">
   IsActive()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#isActive--">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#isActive--</a></p>
@@ -1680,7 +1345,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_IsEmpty" data-uid="Javax.Management.Timer.Timer.IsEmpty">
   IsEmpty()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#isEmpty--">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#isEmpty--</a></p>
@@ -1713,7 +1378,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_PostDeregister" data-uid="Javax.Management.Timer.Timer.PostDeregister">
   PostDeregister()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L344"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#postDeregister--">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#postDeregister--</a></p>
@@ -1740,7 +1405,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_PostRegister_Java_Lang_Boolean_" data-uid="Javax.Management.Timer.Timer.PostRegister(Java.Lang.Boolean)">
   PostRegister(Boolean)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L352"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#postRegister-java.lang.Boolean-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#postRegister-java.lang.Boolean-</a></p>
@@ -1773,7 +1438,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_PreDeregister" data-uid="Javax.Management.Timer.Timer.PreDeregister">
   PreDeregister()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L360"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#preDeregister--">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#preDeregister--</a></p>
@@ -1805,7 +1470,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_PreRegister_Javax_Management_MBeanServer_Javax_Management_ObjectName_" data-uid="Javax.Management.Timer.Timer.PreRegister(Javax.Management.MBeanServer,Javax.Management.ObjectName)">
   PreRegister(MBeanServer, ObjectName)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#preRegister-javax.management.MBeanServer-javax.management.ObjectName-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#preRegister-javax.management.MBeanServer-javax.management.ObjectName-</a></p>
@@ -1852,7 +1517,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_RemoveAllNotifications" data-uid="Javax.Management.Timer.Timer.RemoveAllNotifications">
   RemoveAllNotifications()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L305"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#removeAllNotifications--">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#removeAllNotifications--</a></p>
@@ -1879,7 +1544,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_RemoveNotification_Java_Lang_Integer_" data-uid="Javax.Management.Timer.Timer.RemoveNotification(Java.Lang.Integer)">
   RemoveNotification(Integer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L314"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#removeNotification-java.lang.Integer-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#removeNotification-java.lang.Integer-</a></p>
@@ -1917,7 +1582,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_RemoveNotifications_Java_Lang_String_" data-uid="Javax.Management.Timer.Timer.RemoveNotifications(Java.Lang.String)">
   RemoveNotifications(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L323"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#removeNotifications-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#removeNotifications-java.lang.String-</a></p>
@@ -1955,7 +1620,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_Start" data-uid="Javax.Management.Timer.Timer.Start">
   Start()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L330"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#start--">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#start--</a></p>
@@ -1982,7 +1647,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_Stop" data-uid="Javax.Management.Timer.Timer.Stop">
   Stop()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L337"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#stop--">https://docs.oracle.com/javase/8/docs/api/javax/management/timer/Timer.html#stop--</a></p>
@@ -2013,7 +1678,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_op_Implicit_Javax_Management_Timer_Timer__Javax_Management_MBeanRegistration" data-uid="Javax.Management.Timer.Timer.op_Implicit(Javax.Management.Timer.Timer)~Javax.Management.MBeanRegistration">
   implicit operator MBeanRegistration(Timer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Javax.Management.Timer.Timer.html">Timer</a> to <a class="xref" href="Javax.Management.MBeanRegistration.html">MBeanRegistration</a></p>
@@ -2050,7 +1715,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Javax_Management_Timer_Timer_op_Implicit_Javax_Management_Timer_Timer__Javax_Management_Timer_TimerMBean" data-uid="Javax.Management.Timer.Timer.op_Implicit(Javax.Management.Timer.Timer)~Javax.Management.Timer.TimerMBean">
   implicit operator TimerMBean(Timer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Javax.Management.Timer.Timer.html">Timer</a> to <a class="xref" href="Javax.Management.Timer.TimerMBean.html">TimerMBean</a></p>
@@ -2087,7 +1752,7 @@ public Timer(IJVMBridgeBaseInitializer initializer)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L68" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Timer/Timer.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 
