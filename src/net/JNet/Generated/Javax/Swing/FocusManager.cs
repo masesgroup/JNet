@@ -104,7 +104,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/FocusManager.html#isFocusManagerEnabled--"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static bool IsFocusManagerEnabled()
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isFocusManagerEnabled", "()Z");
@@ -112,7 +112,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/FocusManager.html#disableSwingFocusManager--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static void DisableSwingFocusManager()
         {
             SExecuteWithSignature(LocalBridgeClazz, "disableSwingFocusManager", "()V");

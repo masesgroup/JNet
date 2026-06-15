@@ -136,7 +136,7 @@ namespace Java.Util.Logging
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         /// <exception cref="Java.Lang.SecurityException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
@@ -173,7 +173,7 @@ namespace Java.Util.Logging
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         /// <exception cref="Java.Lang.SecurityException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);

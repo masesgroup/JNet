@@ -202,7 +202,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Save(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         {
             IExecuteWithSignature("save", "(Ljava/io/OutputStream;Ljava/lang/String;)V", arg0, arg1);

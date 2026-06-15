@@ -233,7 +233,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html#getNextFocusableComponent--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html#setNextFocusableComponent-java.awt.Component-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Component NextFocusableComponent
         {
             get { return IExecuteWithSignature<Java.Awt.Component>("getNextFocusableComponent", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setNextFocusableComponent", "(Ljava/awt/Component;)V", value); }
@@ -305,7 +305,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html#isManagingFocus--"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool IsManagingFocus()
         {
             return IExecuteWithSignature<bool>("isManagingFocus", "()Z");
@@ -338,7 +338,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html#requestDefaultFocus--"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool RequestDefaultFocus()
         {
             return IExecuteWithSignature<bool>("requestDefaultFocus", "()Z");

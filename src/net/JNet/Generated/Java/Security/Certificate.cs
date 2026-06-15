@@ -29,7 +29,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/Certificate.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class Certificate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Certificate>
     {
         const string _bridgeClassName = "java.security.Certificate";

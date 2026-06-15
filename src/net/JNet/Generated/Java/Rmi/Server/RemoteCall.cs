@@ -29,7 +29,7 @@ namespace Java.Rmi.Server
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class RemoteCall : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RemoteCall>
     {
         const string _bridgeClassName = "java.rmi.server.RemoteCall";
@@ -70,12 +70,12 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html#getInputStream--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Io.ObjectInput InputStream { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html#getOutputStream--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Io.ObjectOutput OutputStream { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html#getResultStream-boolean-"/>
@@ -84,31 +84,31 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Io.ObjectOutput"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Io.StreamCorruptedException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Io.ObjectOutput GetResultStream(bool arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html#done--"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         void Done();
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html#executeCall--"/>
         /// </summary>
         /// <exception cref="Java.Lang.Exception"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         void ExecuteCall();
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html#releaseInputStream--"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         void ReleaseInputStream();
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html#releaseOutputStream--"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         void ReleaseOutputStream();
 
         #endregion
@@ -144,7 +144,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html#getInputStream--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Io.ObjectInput InputStream
         {
             get { return IExecuteWithSignature<Java.Io.ObjectInput>("getInputStream", "()Ljava/io/ObjectInput;"); }
@@ -152,7 +152,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html#getOutputStream--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Io.ObjectOutput OutputStream
         {
             get { return IExecuteWithSignature<Java.Io.ObjectOutput>("getOutputStream", "()Ljava/io/ObjectOutput;"); }
@@ -164,7 +164,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="Java.Io.ObjectOutput"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Io.StreamCorruptedException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Io.ObjectOutput GetResultStream(bool arg0)
         {
             return IExecuteWithSignature<Java.Io.ObjectOutput>("getResultStream", "(Z)Ljava/io/ObjectOutput;", arg0);
@@ -173,7 +173,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html#done--"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Done()
         {
             IExecuteWithSignature("done", "()V");
@@ -182,7 +182,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html#executeCall--"/>
         /// </summary>
         /// <exception cref="Java.Lang.Exception"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void ExecuteCall()
         {
             IExecuteWithSignature("executeCall", "()V");
@@ -191,7 +191,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html#releaseInputStream--"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void ReleaseInputStream()
         {
             IExecuteWithSignature("releaseInputStream", "()V");
@@ -200,7 +200,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html#releaseOutputStream--"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void ReleaseOutputStream()
         {
             IExecuteWithSignature("releaseOutputStream", "()V");

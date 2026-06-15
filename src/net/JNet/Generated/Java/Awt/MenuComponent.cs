@@ -128,7 +128,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool PostEvent(Java.Awt.Event arg0)
         {
             return IExecuteWithSignature<bool>("postEvent", "(Ljava/awt/Event;)Z", arg0);

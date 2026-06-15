@@ -29,7 +29,7 @@ namespace Java.Rmi
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/ServerRuntimeException.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class ServerRuntimeException : Java.Rmi.RemoteException
     {
         /// <inheritdoc cref="global::System.Exception()"/>

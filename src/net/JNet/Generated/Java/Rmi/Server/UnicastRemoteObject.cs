@@ -116,7 +116,7 @@ namespace Java.Rmi.Server
         /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
         /// <returns><see cref="Java.Rmi.Server.RemoteStub"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Rmi.Server.RemoteStub ExportObject(Java.Rmi.Remote arg0)
         {
             return SExecuteWithSignature<Java.Rmi.Server.RemoteStub>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;)Ljava/rmi/server/RemoteStub;", arg0);

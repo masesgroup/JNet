@@ -29,7 +29,7 @@ namespace Java.Rmi.Server
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/Skeleton.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class Skeleton : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Skeleton>
     {
         const string _bridgeClassName = "java.rmi.server.Skeleton";
@@ -70,7 +70,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/Skeleton.html#getOperations--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Rmi.Server.Operation[] Operations { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/Skeleton.html#dispatch-java.rmi.Remote-java.rmi.server.RemoteCall-int-long-"/>
@@ -80,7 +80,7 @@ namespace Java.Rmi.Server
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="long"/></param>
         /// <exception cref="Java.Lang.Exception"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         void Dispatch(Java.Rmi.Remote arg0, Java.Rmi.Server.RemoteCall arg1, int arg2, long arg3);
 
         #endregion
@@ -116,7 +116,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/Skeleton.html#getOperations--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Rmi.Server.Operation[] Operations
         {
             get { return IExecuteWithSignatureArray<Java.Rmi.Server.Operation>("getOperations", "()[Ljava/rmi/server/Operation;"); }
@@ -129,7 +129,7 @@ namespace Java.Rmi.Server
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="long"/></param>
         /// <exception cref="Java.Lang.Exception"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Dispatch(Java.Rmi.Remote arg0, Java.Rmi.Server.RemoteCall arg1, int arg2, long arg3)
         {
             IExecuteWithSignature("dispatch", "(Ljava/rmi/Remote;Ljava/rmi/server/RemoteCall;IJ)V", arg0, arg1, arg2, arg3);

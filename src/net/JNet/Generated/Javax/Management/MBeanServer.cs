@@ -104,7 +104,7 @@ namespace Javax.Management
         /// <returns><see cref="Java.Io.ObjectInputStream"/></returns>
         /// <exception cref="Javax.Management.OperationsException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Io.ObjectInputStream Deserialize(Java.Lang.String arg0, byte[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServer.html#deserialize-java.lang.String-javax.management.ObjectName-byte[]-"/>
@@ -116,7 +116,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.OperationsException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Io.ObjectInputStream Deserialize(Java.Lang.String arg0, Javax.Management.ObjectName arg1, byte[] arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServer.html#deserialize-javax.management.ObjectName-byte[]-"/>
@@ -126,7 +126,7 @@ namespace Javax.Management
         /// <returns><see cref="Java.Io.ObjectInputStream"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.OperationsException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Io.ObjectInputStream Deserialize(Javax.Management.ObjectName arg0, byte[] arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServer.html#getClassLoader-javax.management.ObjectName-"/>
@@ -478,7 +478,7 @@ namespace Javax.Management
         /// <returns><see cref="Java.Io.ObjectInputStream"/></returns>
         /// <exception cref="Javax.Management.OperationsException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Io.ObjectInputStream Deserialize(Java.Lang.String arg0, byte[] arg1)
         {
             return IExecuteWithSignature<Java.Io.ObjectInputStream>("deserialize", "(Ljava/lang/String;[B)Ljava/io/ObjectInputStream;", arg0, arg1);
@@ -493,7 +493,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.OperationsException"/>
         /// <exception cref="Javax.Management.ReflectionException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Io.ObjectInputStream Deserialize(Java.Lang.String arg0, Javax.Management.ObjectName arg1, byte[] arg2)
         {
             return IExecuteWithSignature<Java.Io.ObjectInputStream>("deserialize", "(Ljava/lang/String;Ljavax/management/ObjectName;[B)Ljava/io/ObjectInputStream;", arg0, arg1, arg2);
@@ -506,7 +506,7 @@ namespace Javax.Management
         /// <returns><see cref="Java.Io.ObjectInputStream"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.OperationsException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Io.ObjectInputStream Deserialize(Javax.Management.ObjectName arg0, byte[] arg1)
         {
             return IExecuteWithSignature<Java.Io.ObjectInputStream>("deserialize", "(Ljavax/management/ObjectName;[B)Ljava/io/ObjectInputStream;", arg0, arg1);

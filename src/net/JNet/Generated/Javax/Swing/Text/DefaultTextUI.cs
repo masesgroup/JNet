@@ -29,7 +29,7 @@ namespace Javax.Swing.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultTextUI.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class DefaultTextUI : Javax.Swing.Plaf.Basic.BasicTextUI
     {
         const string _bridgeClassName = "javax.swing.text.DefaultTextUI";

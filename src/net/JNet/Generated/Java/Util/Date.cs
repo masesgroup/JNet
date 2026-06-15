@@ -86,7 +86,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Date(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4, arg5);
@@ -106,7 +106,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Date(int arg0, int arg1, int arg2, int arg3, int arg4) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Date(int arg0, int arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0, arg1, arg2);
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#java.util.Date(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Date(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
@@ -205,7 +205,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="long"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static long Parse(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "parse", "(Ljava/lang/String;)J", arg0);
@@ -220,7 +220,7 @@ namespace Java.Util
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static long UTC(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "UTC", "(IIIIII)J", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -232,7 +232,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#getDay--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int Day
         {
             get { return IExecuteWithSignature<int>("getDay", "()I"); }
@@ -240,7 +240,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#getDate--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int GetDate
         {
             get { return IExecuteWithSignature<int>("getDate", "()I"); }
@@ -248,7 +248,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#getHours--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#setHours-int-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int Hours
         {
             get { return IExecuteWithSignature<int>("getHours", "()I"); } set { IExecuteWithSignature("setHours", "(I)V", value); }
@@ -256,7 +256,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#getMinutes--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#setMinutes-int-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int Minutes
         {
             get { return IExecuteWithSignature<int>("getMinutes", "()I"); } set { IExecuteWithSignature("setMinutes", "(I)V", value); }
@@ -264,7 +264,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#getMonth--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#setMonth-int-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int Month
         {
             get { return IExecuteWithSignature<int>("getMonth", "()I"); } set { IExecuteWithSignature("setMonth", "(I)V", value); }
@@ -272,7 +272,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#getSeconds--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#setSeconds-int-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int Seconds
         {
             get { return IExecuteWithSignature<int>("getSeconds", "()I"); } set { IExecuteWithSignature("setSeconds", "(I)V", value); }
@@ -287,7 +287,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#getTimezoneOffset--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int TimezoneOffset
         {
             get { return IExecuteWithSignature<int>("getTimezoneOffset", "()I"); }
@@ -295,7 +295,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#getYear--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#setYear-int-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int Year
         {
             get { return IExecuteWithSignature<int>("getYear", "()I"); } set { IExecuteWithSignature("setYear", "(I)V", value); }
@@ -340,7 +340,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#toGMTString--"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Lang.String ToGMTString()
         {
             return IExecuteWithSignature<Java.Lang.String>("toGMTString", "()Ljava/lang/String;");
@@ -349,7 +349,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#toLocaleString--"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Lang.String ToLocaleString()
         {
             return IExecuteWithSignature<Java.Lang.String>("toLocaleString", "()Ljava/lang/String;");
@@ -366,7 +366,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Date.html#setDate-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void SetDate(int arg0)
         {
             IExecuteWithSignature("setDate", "(I)V", arg0);

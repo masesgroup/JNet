@@ -29,7 +29,7 @@ namespace Java.Io
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/StringBufferInputStream.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class StringBufferInputStream : Java.Io.InputStream
     {
         const string _bridgeClassName = "java.io.StringBufferInputStream";

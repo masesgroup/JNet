@@ -121,7 +121,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuBar.html#countMenus--"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int CountMenus()
         {
             return IExecuteWithSignature<int>("countMenus", "()I");

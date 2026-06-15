@@ -107,21 +107,21 @@ namespace Java.Rmi.Server
         /// <param name="arg3"><see cref="long"/></param>
         /// <returns><see cref="Java.Rmi.Server.RemoteCall"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Rmi.Server.RemoteCall NewCall(Java.Rmi.Server.RemoteObject arg0, Java.Rmi.Server.Operation[] arg1, int arg2, long arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteRef.html#done-java.rmi.server.RemoteCall-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteCall"/></param>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         void Done(Java.Rmi.Server.RemoteCall arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteRef.html#invoke-java.rmi.server.RemoteCall-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteCall"/></param>
         /// <exception cref="Java.Lang.Exception"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         void Invoke(Java.Rmi.Server.RemoteCall arg0);
 
         #endregion
@@ -218,7 +218,7 @@ namespace Java.Rmi.Server
         /// <param name="arg3"><see cref="long"/></param>
         /// <returns><see cref="Java.Rmi.Server.RemoteCall"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Rmi.Server.RemoteCall NewCall(Java.Rmi.Server.RemoteObject arg0, Java.Rmi.Server.Operation[] arg1, int arg2, long arg3)
         {
             return IExecuteWithSignature<Java.Rmi.Server.RemoteCall>("newCall", "(Ljava/rmi/server/RemoteObject;[Ljava/rmi/server/Operation;IJ)Ljava/rmi/server/RemoteCall;", arg0, arg1, arg2, arg3);
@@ -228,7 +228,7 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteCall"/></param>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Done(Java.Rmi.Server.RemoteCall arg0)
         {
             IExecuteWithSignature("done", "(Ljava/rmi/server/RemoteCall;)V", arg0);
@@ -238,7 +238,7 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteCall"/></param>
         /// <exception cref="Java.Lang.Exception"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Invoke(Java.Rmi.Server.RemoteCall arg0)
         {
             IExecuteWithSignature("invoke", "(Ljava/rmi/server/RemoteCall;)V", arg0);

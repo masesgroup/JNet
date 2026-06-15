@@ -93,12 +93,12 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/FormView.html#RESET"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Lang.String RESET { get { return SGetField<Java.Lang.String>(LocalBridgeClazz, "RESET"); } set { SSetField(LocalBridgeClazz, "RESET", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/html/FormView.html#SUBMIT"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Lang.String SUBMIT { get { return SGetField<Java.Lang.String>(LocalBridgeClazz, "SUBMIT"); } set { SSetField(LocalBridgeClazz, "SUBMIT", value); } }
 
         #endregion

@@ -261,7 +261,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableColumn.html#disableResizedPosting--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void DisableResizedPosting()
         {
             IExecuteWithSignature("disableResizedPosting", "()V");
@@ -269,7 +269,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableColumn.html#enableResizedPosting--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void EnableResizedPosting()
         {
             IExecuteWithSignature("enableResizedPosting", "()V");

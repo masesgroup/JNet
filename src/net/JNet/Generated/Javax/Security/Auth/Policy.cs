@@ -29,7 +29,7 @@ namespace Javax.Security.Auth
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/security/auth/Policy.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class Policy : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Policy>
     {
         const string _bridgeClassName = "javax.security.auth.Policy";

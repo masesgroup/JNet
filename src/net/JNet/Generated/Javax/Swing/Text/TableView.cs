@@ -59,7 +59,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public partial class TableCell : Javax.Swing.Text.BoxView
         {
             const string _bridgeClassName = "javax.swing.text.TableView$TableCell";

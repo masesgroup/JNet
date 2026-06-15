@@ -29,7 +29,7 @@ namespace Java.Rmi.Server
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/SkeletonNotFoundException.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class SkeletonNotFoundException : Java.Rmi.RemoteException
     {
         /// <inheritdoc cref="global::System.Exception()"/>

@@ -290,7 +290,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JTable"/></param>
         /// <returns><see cref="Javax.Swing.JScrollPane"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Javax.Swing.JScrollPane CreateScrollPaneForTable(Javax.Swing.JTable arg0)
         {
             return SExecuteWithSignature<Javax.Swing.JScrollPane>(LocalBridgeClazz, "createScrollPaneForTable", "(Ljavax/swing/JTable;)Ljavax/swing/JScrollPane;", arg0);
@@ -1152,7 +1152,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTable.html#sizeColumnsToFit-boolean-"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void SizeColumnsToFit(bool arg0)
         {
             IExecuteWithSignature("sizeColumnsToFit", "(Z)V", arg0);

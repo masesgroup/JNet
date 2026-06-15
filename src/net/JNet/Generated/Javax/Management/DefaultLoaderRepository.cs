@@ -29,7 +29,7 @@ namespace Javax.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/DefaultLoaderRepository.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class DefaultLoaderRepository : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultLoaderRepository>
     {
         const string _bridgeClassName = "javax.management.DefaultLoaderRepository";

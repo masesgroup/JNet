@@ -164,7 +164,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#getLineIncrement--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#setLineIncrement-int-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int LineIncrement
         {
             get { return IExecuteWithSignature<int>("getLineIncrement", "()I"); } set { IExecuteWithSignature("setLineIncrement", "(I)V", value); }
@@ -193,7 +193,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#getPageIncrement--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#setPageIncrement-int-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int PageIncrement
         {
             get { return IExecuteWithSignature<int>("getPageIncrement", "()I"); } set { IExecuteWithSignature("setPageIncrement", "(I)V", value); }
@@ -222,7 +222,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#getVisible--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int Visible
         {
             get { return IExecuteWithSignature<int>("getVisible", "()I"); }

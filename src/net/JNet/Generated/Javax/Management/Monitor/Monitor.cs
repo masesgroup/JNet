@@ -104,7 +104,7 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/Monitor.html#getObservedObject--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Javax.Management.ObjectName GetObservedObject
         {
             get { return IExecuteWithSignature<Javax.Management.ObjectName>("getObservedObject", "()Ljavax/management/ObjectName;"); }
@@ -194,7 +194,7 @@ namespace Javax.Management.Monitor
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void SetObservedObject(Javax.Management.ObjectName arg0)
         {
             IExecuteWithSignature("setObservedObject", "(Ljavax/management/ObjectName;)V", arg0);

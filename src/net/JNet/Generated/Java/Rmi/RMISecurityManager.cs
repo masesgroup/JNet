@@ -29,7 +29,7 @@ namespace Java.Rmi
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/RMISecurityManager.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class RMISecurityManager : Java.Lang.SecurityManager
     {
         const string _bridgeClassName = "java.rmi.RMISecurityManager";

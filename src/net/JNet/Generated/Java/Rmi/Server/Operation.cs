@@ -29,7 +29,7 @@ namespace Java.Rmi.Server
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/Operation.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class Operation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Operation>
     {
         const string _bridgeClassName = "java.rmi.server.Operation";
@@ -68,7 +68,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/Operation.html#java.rmi.server.Operation(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Operation(Java.Lang.String arg0) : base(JVMBridgeBase.InitializerInstance)
         {
             InvokeInitializer(arg0);
@@ -99,7 +99,7 @@ namespace Java.Rmi.Server
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/Operation.html#getOperation--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Lang.String GetOperation
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getOperation", "()Ljava/lang/String;"); }

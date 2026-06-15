@@ -228,7 +228,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Dimension MinimumSize(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("minimumSize", "(II)Ljava/awt/Dimension;", arg0, arg1);
@@ -239,7 +239,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Dimension PreferredSize(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("preferredSize", "(II)Ljava/awt/Dimension;", arg0, arg1);
@@ -248,7 +248,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextArea.html#appendText-java.lang.String-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void AppendText(Java.Lang.String arg0)
         {
             IExecuteWithSignature("appendText", "(Ljava/lang/String;)V", arg0);
@@ -258,7 +258,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void InsertText(Java.Lang.String arg0, int arg1)
         {
             IExecuteWithSignature("insertText", "(Ljava/lang/String;I)V", arg0, arg1);
@@ -269,7 +269,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void ReplaceText(Java.Lang.String arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("replaceText", "(Ljava/lang/String;II)V", arg0, arg1, arg2);

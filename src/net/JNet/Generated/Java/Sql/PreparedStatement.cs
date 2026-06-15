@@ -448,7 +448,7 @@ namespace Java.Sql
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         void SetUnicodeStream(int arg0, Java.Io.InputStream arg1, int arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html#setURL-int-java.net.URL-"/>
@@ -1052,7 +1052,7 @@ namespace Java.Sql
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void SetUnicodeStream(int arg0, Java.Io.InputStream arg1, int arg2)
         {
             IExecuteWithSignature("setUnicodeStream", "(ILjava/io/InputStream;I)V", arg0, arg1, arg2);

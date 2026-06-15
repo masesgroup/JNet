@@ -194,7 +194,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/HttpURLConnection.html#HTTP_SERVER_ERROR"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static int HTTP_SERVER_ERROR { get { return SGetField<int>(LocalBridgeClazz, "HTTP_SERVER_ERROR"); } set { SSetField(LocalBridgeClazz, "HTTP_SERVER_ERROR", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/HttpURLConnection.html#HTTP_UNAUTHORIZED"/>

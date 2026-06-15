@@ -336,7 +336,7 @@ namespace Java.Util.Jar
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#EXTENSION_INSTALLATION"/>
             /// </summary>
-            [global::System.Obsolete()]
+            [global::System.Obsolete("Deprecated in JVM")]
             public static Java.Util.Jar.Attributes.Name EXTENSION_INSTALLATION { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "EXTENSION_INSTALLATION"); } set { SSetField(LocalBridgeClazz, "EXTENSION_INSTALLATION", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#EXTENSION_LIST"/>
@@ -353,7 +353,7 @@ namespace Java.Util.Jar
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#IMPLEMENTATION_URL"/>
             /// </summary>
-            [global::System.Obsolete()]
+            [global::System.Obsolete("Deprecated in JVM")]
             public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_URL { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "IMPLEMENTATION_URL"); } set { SSetField(LocalBridgeClazz, "IMPLEMENTATION_URL", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR"/>
@@ -362,7 +362,7 @@ namespace Java.Util.Jar
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR_ID"/>
             /// </summary>
-            [global::System.Obsolete()]
+            [global::System.Obsolete("Deprecated in JVM")]
             public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VENDOR_ID { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "IMPLEMENTATION_VENDOR_ID"); } set { SSetField(LocalBridgeClazz, "IMPLEMENTATION_VENDOR_ID", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VERSION"/>

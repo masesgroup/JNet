@@ -196,7 +196,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Dimension MinimumSize(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("minimumSize", "(I)Ljava/awt/Dimension;", arg0);
@@ -206,7 +206,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Dimension PreferredSize(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("preferredSize", "(I)Ljava/awt/Dimension;", arg0);
@@ -231,7 +231,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextField.html#setEchoCharacter-char-"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void SetEchoCharacter(char arg0)
         {
             IExecuteWithSignature("setEchoCharacter", "(C)V", arg0);

@@ -133,7 +133,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Polygon.html#getBoundingBox--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Rectangle BoundingBox
         {
             get { return IExecuteWithSignature<Java.Awt.Rectangle>("getBoundingBox", "()Ljava/awt/Rectangle;"); }
@@ -217,7 +217,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool Inside(int arg0, int arg1)
         {
             return IExecuteWithSignature<bool>("inside", "(II)Z", arg0, arg1);

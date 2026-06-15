@@ -1147,7 +1147,7 @@ namespace Javax.Sql.Rowset
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void SetUnicodeStream(int arg0, Java.Io.InputStream arg1, int arg2)
         {
             IExecuteWithSignature("setUnicodeStream", "(ILjava/io/InputStream;I)V", arg0, arg1, arg2);

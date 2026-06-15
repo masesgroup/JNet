@@ -267,7 +267,7 @@ namespace Java.Sql
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Math.BigDecimal GetBigDecimal(int arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/CallableStatement.html#getBigDecimal-int-"/>
@@ -1267,7 +1267,7 @@ namespace Java.Sql
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Math.BigDecimal GetBigDecimal(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Math.BigDecimal>("getBigDecimal", "(II)Ljava/math/BigDecimal;", arg0, arg1);

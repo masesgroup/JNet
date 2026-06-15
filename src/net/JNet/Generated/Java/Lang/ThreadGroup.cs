@@ -136,7 +136,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool AllowThreadSuspension(bool arg0)
         {
             return IExecuteWithSignature<bool>("allowThreadSuspension", "(Z)Z", arg0);
@@ -182,7 +182,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadGroup.html#resume--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Resume()
         {
             IExecuteWithSignature("resume", "()V");
@@ -198,7 +198,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadGroup.html#stop--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Stop()
         {
             IExecuteWithSignature("stop", "()V");
@@ -206,7 +206,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadGroup.html#suspend--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Suspend()
         {
             IExecuteWithSignature("suspend", "()V");

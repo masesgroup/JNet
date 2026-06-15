@@ -96,7 +96,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#getInCheck--"/> 
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool InCheck
         {
             get { return IExecuteWithSignature<bool>("getInCheck", "()Z"); }
@@ -120,7 +120,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool CheckTopLevelWindow(object arg0)
         {
             return IExecuteWithSignature<bool>("checkTopLevelWindow", "(Ljava/lang/Object;)Z", arg0);
@@ -153,7 +153,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkAwtEventQueueAccess--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void CheckAwtEventQueueAccess()
         {
             IExecuteWithSignature("checkAwtEventQueueAccess", "()V");
@@ -229,7 +229,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void CheckMemberAccess(Java.Lang.Class arg0, int arg1)
         {
             IExecuteWithSignature("checkMemberAccess", "(Ljava/lang/Class;I)V", arg0, arg1);
@@ -239,7 +239,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void CheckMulticast(Java.Net.InetAddress arg0, byte arg1)
         {
             IExecuteWithSignature("checkMulticast", "(Ljava/net/InetAddress;B)V", arg0, arg1);
@@ -350,7 +350,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkSystemClipboardAccess--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void CheckSystemClipboardAccess()
         {
             IExecuteWithSignature("checkSystemClipboardAccess", "()V");

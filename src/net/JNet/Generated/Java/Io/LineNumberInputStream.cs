@@ -29,7 +29,7 @@ namespace Java.Io
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/LineNumberInputStream.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class LineNumberInputStream : Java.Io.FilterInputStream
     {
         const string _bridgeClassName = "java.io.LineNumberInputStream";

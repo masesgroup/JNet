@@ -272,7 +272,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool Inside(int arg0, int arg1)
         {
             return IExecuteWithSignature<bool>("inside", "(II)Z", arg0, arg1);
@@ -343,7 +343,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Move(int arg0, int arg1)
         {
             IExecuteWithSignature("move", "(II)V", arg0, arg1);
@@ -355,7 +355,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Reshape(int arg0, int arg1, int arg2, int arg3)
         {
             IExecuteWithSignature("reshape", "(IIII)V", arg0, arg1, arg2, arg3);
@@ -365,7 +365,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Resize(int arg0, int arg1)
         {
             IExecuteWithSignature("resize", "(II)V", arg0, arg1);

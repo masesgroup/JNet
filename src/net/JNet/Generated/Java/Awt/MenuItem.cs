@@ -197,7 +197,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuItem.html#disable--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Disable()
         {
             IExecuteWithSignature("disable", "()V");
@@ -205,7 +205,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuItem.html#enable--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Enable()
         {
             IExecuteWithSignature("enable", "()V");
@@ -244,7 +244,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuItem.html#enable-boolean-"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Enable(bool arg0)
         {
             IExecuteWithSignature("enable", "(Z)V", arg0);

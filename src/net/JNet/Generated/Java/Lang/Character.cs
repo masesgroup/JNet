@@ -613,7 +613,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static bool IsJavaLetter(char arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isJavaLetter", "(C)Z", arg0);
@@ -623,7 +623,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static bool IsJavaLetterOrDigit(char arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isJavaLetterOrDigit", "(C)Z", arg0);
@@ -714,7 +714,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static bool IsSpace(char arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSpace", "(C)Z", arg0);
@@ -2074,7 +2074,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.UnicodeBlock.html#SURROGATES_AREA"/>
             /// </summary>
-            [global::System.Obsolete()]
+            [global::System.Obsolete("Deprecated in JVM")]
             public static Java.Lang.Character.UnicodeBlock SURROGATES_AREA { get { return SGetField<Java.Lang.Character.UnicodeBlock>(LocalBridgeClazz, "SURROGATES_AREA"); } set { SSetField(LocalBridgeClazz, "SURROGATES_AREA", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.UnicodeBlock.html#SYLOTI_NAGRI"/>

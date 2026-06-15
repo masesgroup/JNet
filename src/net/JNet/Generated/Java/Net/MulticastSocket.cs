@@ -158,7 +158,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/MulticastSocket.html#getTTL--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/net/MulticastSocket.html#setTTL-byte-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public byte TTL
         {
             get { return IExecuteWithSignature<byte>("getTTL", "()B"); } set { IExecuteWithSignature("setTTL", "(B)V", value); }
@@ -207,7 +207,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="Java.Net.DatagramPacket"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Send(Java.Net.DatagramPacket arg0, byte arg1)
         {
             IExecuteWithSignature("send", "(Ljava/net/DatagramPacket;B)V", arg0, arg1);

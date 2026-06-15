@@ -92,7 +92,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/DriverManager.html#getLogStream--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/DriverManager.html#setLogStream-java.io.PrintStream-"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Io.PrintStream LogStream
         {
             get { return SExecuteWithSignature<Java.Io.PrintStream>(LocalBridgeClazz, "getLogStream", "()Ljava/io/PrintStream;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setLogStream", "(Ljava/io/PrintStream;)V", value); }

@@ -105,7 +105,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalScrollPaneUI.html#uninstallListeners-javax.swing.JScrollPane-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JScrollPane"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void UninstallListeners(Javax.Swing.JScrollPane arg0)
         {
             IExecuteWithSignature("uninstallListeners", "(Ljavax/swing/JScrollPane;)V", arg0);

@@ -169,7 +169,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JViewport.html#isBackingStoreEnabled--"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool IsBackingStoreEnabled()
         {
             return IExecuteWithSignature<bool>("isBackingStoreEnabled", "()Z");
@@ -212,7 +212,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JViewport.html#setBackingStoreEnabled-boolean-"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void SetBackingStoreEnabled(bool arg0)
         {
             IExecuteWithSignature("setBackingStoreEnabled", "(Z)V", arg0);

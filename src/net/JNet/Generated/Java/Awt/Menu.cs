@@ -151,7 +151,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Menu.html#countItems--"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int CountItems()
         {
             return IExecuteWithSignature<int>("countItems", "()I");

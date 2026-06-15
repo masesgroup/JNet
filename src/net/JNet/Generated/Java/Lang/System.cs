@@ -268,7 +268,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#runFinalizersOnExit-boolean-"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static void RunFinalizersOnExit(bool arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "runFinalizersOnExit", "(Z)V", arg0);

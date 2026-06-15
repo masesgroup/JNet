@@ -441,7 +441,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool Action(Java.Awt.Event arg0, object arg1)
         {
             return IExecuteWithSignature<bool>("action", "(Ljava/awt/Event;Ljava/lang/Object;)Z", arg0, arg1);
@@ -480,7 +480,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool GotFocus(Java.Awt.Event arg0, object arg1)
         {
             return IExecuteWithSignature<bool>("gotFocus", "(Ljava/awt/Event;Ljava/lang/Object;)Z", arg0, arg1);
@@ -490,7 +490,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool HandleEvent(Java.Awt.Event arg0)
         {
             return IExecuteWithSignature<bool>("handleEvent", "(Ljava/awt/Event;)Z", arg0);
@@ -523,7 +523,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool Inside(int arg0, int arg1)
         {
             return IExecuteWithSignature<bool>("inside", "(II)Z", arg0, arg1);
@@ -597,7 +597,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#isFocusTraversable--"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool IsFocusTraversable()
         {
             return IExecuteWithSignature<bool>("isFocusTraversable", "()Z");
@@ -688,7 +688,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool KeyDown(Java.Awt.Event arg0, int arg1)
         {
             return IExecuteWithSignature<bool>("keyDown", "(Ljava/awt/Event;I)Z", arg0, arg1);
@@ -699,7 +699,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool KeyUp(Java.Awt.Event arg0, int arg1)
         {
             return IExecuteWithSignature<bool>("keyUp", "(Ljava/awt/Event;I)Z", arg0, arg1);
@@ -710,7 +710,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool LostFocus(Java.Awt.Event arg0, object arg1)
         {
             return IExecuteWithSignature<bool>("lostFocus", "(Ljava/awt/Event;Ljava/lang/Object;)Z", arg0, arg1);
@@ -722,7 +722,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool MouseDown(Java.Awt.Event arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<bool>("mouseDown", "(Ljava/awt/Event;II)Z", arg0, arg1, arg2);
@@ -734,7 +734,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool MouseDrag(Java.Awt.Event arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<bool>("mouseDrag", "(Ljava/awt/Event;II)Z", arg0, arg1, arg2);
@@ -746,7 +746,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool MouseEnter(Java.Awt.Event arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<bool>("mouseEnter", "(Ljava/awt/Event;II)Z", arg0, arg1, arg2);
@@ -758,7 +758,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool MouseExit(Java.Awt.Event arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<bool>("mouseExit", "(Ljava/awt/Event;II)Z", arg0, arg1, arg2);
@@ -770,7 +770,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool MouseMove(Java.Awt.Event arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<bool>("mouseMove", "(Ljava/awt/Event;II)Z", arg0, arg1, arg2);
@@ -782,7 +782,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool MouseUp(Java.Awt.Event arg0, int arg1, int arg2)
         {
             return IExecuteWithSignature<bool>("mouseUp", "(Ljava/awt/Event;II)Z", arg0, arg1, arg2);
@@ -792,7 +792,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
         /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public bool PostEvent(Java.Awt.Event arg0)
         {
             return IExecuteWithSignature<bool>("postEvent", "(Ljava/awt/Event;)Z", arg0);
@@ -892,7 +892,7 @@ namespace Java.Awt
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Component"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Component Locate(int arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Awt.Component>("locate", "(II)Ljava/awt/Component;", arg0, arg1);
@@ -934,7 +934,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#minimumSize--"/>
         /// </summary>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Dimension MinimumSize()
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("minimumSize", "()Ljava/awt/Dimension;");
@@ -943,7 +943,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#preferredSize--"/>
         /// </summary>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Dimension PreferredSize()
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("preferredSize", "()Ljava/awt/Dimension;");
@@ -952,7 +952,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#size--"/>
         /// </summary>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Dimension Size()
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("size", "()Ljava/awt/Dimension;");
@@ -1028,7 +1028,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#location--"/>
         /// </summary>
         /// <returns><see cref="Java.Awt.Point"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Point Location()
         {
             return IExecuteWithSignature<Java.Awt.Point>("location", "()Ljava/awt/Point;");
@@ -1037,7 +1037,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#bounds--"/>
         /// </summary>
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Rectangle Bounds()
         {
             return IExecuteWithSignature<Java.Awt.Rectangle>("bounds", "()Ljava/awt/Rectangle;");
@@ -1249,7 +1249,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#deliverEvent-java.awt.Event-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void DeliverEvent(Java.Awt.Event arg0)
         {
             IExecuteWithSignature("deliverEvent", "(Ljava/awt/Event;)V", arg0);
@@ -1257,7 +1257,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#disable--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Disable()
         {
             IExecuteWithSignature("disable", "()V");
@@ -1272,7 +1272,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#enable--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Enable()
         {
             IExecuteWithSignature("enable", "()V");
@@ -1281,7 +1281,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#enable-boolean-"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Enable(bool arg0)
         {
             IExecuteWithSignature("enable", "(Z)V", arg0);
@@ -1357,7 +1357,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#hide--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Hide()
         {
             IExecuteWithSignature("hide", "()V");
@@ -1372,7 +1372,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#layout--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Layout()
         {
             IExecuteWithSignature("layout", "()V");
@@ -1423,7 +1423,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Move(int arg0, int arg1)
         {
             IExecuteWithSignature("move", "(II)V", arg0, arg1);
@@ -1431,7 +1431,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#nextFocus--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void NextFocus()
         {
             IExecuteWithSignature("nextFocus", "()V");
@@ -1568,7 +1568,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Reshape(int arg0, int arg1, int arg2, int arg3)
         {
             IExecuteWithSignature("reshape", "(IIII)V", arg0, arg1, arg2, arg3);
@@ -1578,7 +1578,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Resize(int arg0, int arg1)
         {
             IExecuteWithSignature("resize", "(II)V", arg0, arg1);
@@ -1587,7 +1587,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#resize-java.awt.Dimension-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Resize(Java.Awt.Dimension arg0)
         {
             IExecuteWithSignature("resize", "(Ljava/awt/Dimension;)V", arg0);
@@ -1705,7 +1705,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#show--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Show()
         {
             IExecuteWithSignature("show", "()V");
@@ -1714,7 +1714,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#show-boolean-"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Show(bool arg0)
         {
             IExecuteWithSignature("show", "(Z)V", arg0);

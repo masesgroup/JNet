@@ -94,7 +94,7 @@ namespace Java.Net
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Lang.String GetDefaultRequestProperty(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultRequestProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -131,7 +131,7 @@ namespace Java.Net
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static void SetDefaultRequestProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setDefaultRequestProperty", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);

@@ -180,7 +180,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Component"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Awt.Component GetComponentAtIndex(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getComponentAtIndex", "(I)Ljava/awt/Component;", arg0);

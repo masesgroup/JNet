@@ -434,7 +434,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#stop-java.lang.Throwable-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Stop(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             IExecuteWithSignature("stop", "(Ljava/lang/Throwable;)V", arg0);
@@ -457,7 +457,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#resume--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Resume()
         {
             IExecuteWithSignature("resume", "()V");
@@ -473,7 +473,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#stop--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Stop()
         {
             IExecuteWithSignature("stop", "()V");
@@ -481,7 +481,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#suspend--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Suspend()
         {
             IExecuteWithSignature("suspend", "()V");
@@ -490,7 +490,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#countStackFrames--"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public int CountStackFrames()
         {
             return IExecuteWithSignature<int>("countStackFrames", "()I");
@@ -505,7 +505,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#destroy--"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public void Destroy()
         {
             IExecuteWithSignature("destroy", "()V");

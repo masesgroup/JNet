@@ -170,7 +170,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/datatransfer/DataFlavor.html#plainTextFlavor"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static Java.Awt.Datatransfer.DataFlavor plainTextFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "plainTextFlavor"); } set { SSetField(LocalBridgeClazz, "plainTextFlavor", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/datatransfer/DataFlavor.html#stringFlavor"/>

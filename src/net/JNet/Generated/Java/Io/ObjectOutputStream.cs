@@ -420,7 +420,7 @@ namespace Java.Io
             /// </summary>
             /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
             /// <exception cref="Java.Io.IOException"/>
-            [global::System.Obsolete()]
+            [global::System.Obsolete("Deprecated in JVM")]
             public void Write(Java.Io.ObjectOutput arg0)
             {
                 IExecuteWithSignature("write", "(Ljava/io/ObjectOutput;)V", arg0);

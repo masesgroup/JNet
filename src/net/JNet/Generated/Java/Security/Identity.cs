@@ -29,7 +29,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/Identity.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class Identity : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Identity>
     {
         const string _bridgeClassName = "java.security.Identity";

@@ -29,7 +29,7 @@ namespace Java.Rmi.Registry
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/registry/RegistryHandler.html"/>
     /// </summary>
-    [global::System.Obsolete()]
+    [global::System.Obsolete("Deprecated in JVM")]
     public partial class RegistryHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RegistryHandler>
     {
         const string _bridgeClassName = "java.rmi.registry.RegistryHandler";
@@ -73,7 +73,7 @@ namespace Java.Rmi.Registry
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Rmi.Registry.Registry RegistryImpl(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/registry/RegistryHandler.html#registryStub-java.lang.String-int-"/>
@@ -83,7 +83,7 @@ namespace Java.Rmi.Registry
         /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
         /// <exception cref="Java.Rmi.UnknownHostException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         Java.Rmi.Registry.Registry RegistryStub(Java.Lang.String arg0, int arg1);
 
         #endregion
@@ -122,7 +122,7 @@ namespace Java.Rmi.Registry
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Rmi.Registry.Registry RegistryImpl(int arg0)
         {
             return IExecuteWithSignature<Java.Rmi.Registry.Registry>("registryImpl", "(I)Ljava/rmi/registry/Registry;", arg0);
@@ -135,7 +135,7 @@ namespace Java.Rmi.Registry
         /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
         /// <exception cref="Java.Rmi.UnknownHostException"/>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public Java.Rmi.Registry.Registry RegistryStub(Java.Lang.String arg0, int arg1)
         {
             return IExecuteWithSignature<Java.Rmi.Registry.Registry>("registryStub", "(Ljava/lang/String;I)Ljava/rmi/registry/Registry;", arg0, arg1);

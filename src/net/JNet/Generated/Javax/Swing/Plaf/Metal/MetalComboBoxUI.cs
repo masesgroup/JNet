@@ -93,7 +93,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboPopup.html"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public partial class MetalComboPopup : Javax.Swing.Plaf.Basic.BasicComboPopup
         {
             const string _bridgeClassName = "javax.swing.plaf.metal.MetalComboBoxUI$MetalComboPopup";

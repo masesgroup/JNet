@@ -296,7 +296,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/CachedRowSet.html#COMMIT_ON_ACCEPT_CHANGES"/>
         /// </summary>
-        [global::System.Obsolete()]
+        [global::System.Obsolete("Deprecated in JVM")]
         public static bool COMMIT_ON_ACCEPT_CHANGES { get { return SGetField<bool>(LocalBridgeClazz, "COMMIT_ON_ACCEPT_CHANGES"); } set { SSetField(LocalBridgeClazz, "COMMIT_ON_ACCEPT_CHANGES", value); } }
 
         #endregion
