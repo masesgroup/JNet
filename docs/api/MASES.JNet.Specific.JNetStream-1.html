@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class JNetStream&lt;T&gt; | MASES Group - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class JNetStream&lt;T&gt; | MASES Group - JNet ">
+      <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
+      <meta name="description" content="Helper class of JNet to use">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNet_Specific_JNetStream_1.md&amp;value=---%0Auid%3A%20MASES.JNet.Specific.JNetStream%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MASES.JNet.Specific.JNetStream`1">
+
+
+
+  <h1 id="MASES_JNet_Specific_JNetStream_1" data-uid="MASES.JNet.Specific.JNetStream`1" class="text-break">
+Class JNetStream&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/JNetStream.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MASES.html">MASES</a>.<a class="xref" href="MASES.JNet.html">JNet</a>.<a class="xref" href="MASES.JNet.Specific.html">Specific</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Helper class of JNet to use <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JCOBridgeStream-1.html">JCOBridgeStream&lt;T&gt;</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class JNetStream&lt;T&gt; : IDisposable, IEnumerable&lt;T&gt;, IEnumerable where T : unmanaged</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">JNetStream&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMCollectionType__3_System_Collections_Generic_IEnumerable___2__System_Func___2___1__">JavaUtilExtensions.ToJVMCollectionType&lt;TIterableType, TJVMTypeInner, TNetType&gt;(IEnumerable&lt;TNetType&gt;, Func&lt;TNetType, TJVMTypeInner&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToJVMCollection__2_System_Collections_Generic_IEnumerable___1__System_Func___1___0__">JavaUtilExtensions.ToJVMCollection&lt;TJVMType, TNetType&gt;(IEnumerable&lt;TNetType&gt;, Func&lt;TNetType, TJVMType&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToNetArray__2_System_Collections_Generic_IEnumerable___1__">JavaUtilExtensions.ToNetArray&lt;TNetType, TJVMType&gt;(IEnumerable&lt;TJVMType&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToNetCollectionType__3_System_Collections_Generic_IEnumerable___2__System_Func___2___1__">JavaUtilExtensions.ToNetCollectionType&lt;TEnumerableType, TNetTypeInner, TJVMType&gt;(IEnumerable&lt;TJVMType&gt;, Func&lt;TJVMType, TNetTypeInner&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="MASES_JNet_Specific_JNetStream_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+Wraps a <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JCOBridgeStream-1.html">JCOBridgeStream&lt;T&gt;</a> instance obtained via <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileaccess">ToStream&lt;T&gt;(FileAccess, bool)</a>.
+Dispose behavior, license modes, and performance characteristics are inherited from the underlying stream — see <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JCOBridgeStream-1.html">JCOBridgeStream&lt;T&gt;</a> remarks for full details.
+</p>
+<p>
+When the underlying stream is opened with write access, modifications are written back to the JVM array automatically on <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a>.
+Explicit disposal is always preferred over relying on the finalizer.
+</p>
+<p>
+Under HPA license with <code>forceRawMemory = true</code>, the JVM garbage collector is suspended for the entire lifetime of this instance.
+No JVM interaction of any kind is permitted while this object is alive. Always use a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/using">using</a> block — leaving disposal to the finalizer may result in a deadlock or JVM crash.
+</p>
+<p>
+Methods relying on <a class="xref" href="https://jcobridge-api.masesgroup.com/api/System.ReadOnlySpan-1.html">ReadOnlySpan&lt;T&gt;</a> (such as <code>AsSpan</code>) are only available on .NET 5 and later,
+due to a conflict between the <code>System.Memory</code> dependency introduced transitively by <span class="xref">Microsoft.IO.RecyclableMemoryStream</span> and the JCOBridge shim on .NET Framework.
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MASES_JNet_Specific_JNetStream_1__ctor_" data-uid="MASES.JNet.Specific.JNetStream`1.#ctor*"></a>
+
+  <h3 id="MASES_JNet_Specific_JNetStream_1__ctor_System_Object_System_IO_FileAccess_System_Boolean_System_Boolean_" data-uid="MASES.JNet.Specific.JNetStream`1.#ctor(System.Object,System.IO.FileAccess,System.Boolean,System.Boolean)">
+  JNetStream(object, FileAccess, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/JNetStream.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initialize an instance of <a class="xref" href="MASES.JNet.Specific.JNetStream-1.html">JNetStream&lt;T&gt;</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JNetStream(object source, FileAccess mode = FileAccess.Read, bool forceRawMemory = false, bool disposeSource = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> to be converted</p>
+</dd>
+    <dt><code>mode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileaccess">FileAccess</a></dt>
+    <dd><param name="mode">
+             Specifies the intended access pattern for the returned stream. Use
+             <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileaccess#system-io-fileaccess-read">Read</a> (default) for read-only access,
+             <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileaccess#system-io-fileaccess-write">Write</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.fileaccess#system-io-fileaccess-readwrite">ReadWrite</a> when
+             modifications must be written back to the JVM array on <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a>.
+             
+</dd>
+    <dt><code>forceRawMemory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><param name="forceRawMemory">
+             When <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, requests direct access to the JVM array memory
+             without any intermediate copy. This option is only effective under a
+             <strong>JCOBridge High Performance (HPA)</strong> license; with a standard
+             license it is silently ignored.
+             See the remarks section for the behaviour and constraints of each combination.
+             
+</dd>
+    <dt><code>disposeSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Automatically invoke <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">Dispose()</a> on <code class="paramref">source</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MASES_JNet_Specific_JNetStream_1_Count_" data-uid="MASES.JNet.Specific.JNetStream`1.Count*"></a>
+
+  <h3 id="MASES_JNet_Specific_JNetStream_1_Count" data-uid="MASES.JNet.Specific.JNetStream`1.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/JNetStream.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of elements of type <code class="typeparamref">T</code> in the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_JNetStream_1_Item_" data-uid="MASES.JNet.Specific.JNetStream`1.Item*"></a>
+
+  <h3 id="MASES_JNet_Specific_JNetStream_1_Item_System_Int32_" data-uid="MASES.JNet.Specific.JNetStream`1.Item(System.Int32)">
+  this[int]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/JNetStream.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the element at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Zero-based index of the element to access.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The element of type <code class="typeparamref">T</code> at <code class="paramref">index</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">index</code> is negative or greater than or equal to <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JCOBridgeStream-1.html#MASES_JCOBridge_C2JBridge_JCOBridgeStream_1_Count">Count</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>The stream is read-only and a set operation was attempted.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MASES_JNet_Specific_JNetStream_1_CopyTo_" data-uid="MASES.JNet.Specific.JNetStream`1.CopyTo*"></a>
+
+  <h3 id="MASES_JNet_Specific_JNetStream_1_CopyTo__0___System_Int32_" data-uid="MASES.JNet.Specific.JNetStream`1.CopyTo(`0[],System.Int32)">
+  CopyTo(T[], int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/JNetStream.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies all elements into <code class="paramref">destination</code> starting at
+<code class="paramref">destinationIndex</code>.</p>
+<p>
+On .NET 5+ and .NET Standard 2.1 this operation is backed by
+<a class="xref" href="https://jcobridge-api.masesgroup.com/api/System.ReadOnlySpan-1.html">ReadOnlySpan&lt;T&gt;</a> and dispatches to SIMD hardware intrinsics
+with no intermediate allocation.
+On .NET Framework the copy is performed via <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffer.memorycopy#system-buffer-memorycopy(system-void*-system-void*-system-int64-system-int64)">MemoryCopy(void*, void*, long, long)</a>,
+which uses the OS-level <code>memcpy</code> implementation and is SIMD-accelerated
+on all supported platforms without requiring any additional dependency.
+In both cases no intermediate managed allocation occurs.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] destination, int destinationIndex = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>destination</code> T[]</dt>
+    <dd><p>The target array to copy elements into.</p>
+</dd>
+    <dt><code>destinationIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Zero-based index in <code class="paramref">destination</code> at which copying begins.
+Defaults to <code>0</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">destination</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">destinationIndex</code> is negative or greater than or equal
+to the length of <code class="paramref">destination</code>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">destination</code> does not have enough capacity from
+<code class="paramref">destinationIndex</code> to hold <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JCOBridgeStream-1.html#MASES_JCOBridge_C2JBridge_JCOBridgeStream_1_Count">Count</a> elements.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MASES_JNet_Specific_JNetStream_1_Dispose_" data-uid="MASES.JNet.Specific.JNetStream`1.Dispose*"></a>
+
+  <h3 id="MASES_JNet_Specific_JNetStream_1_Dispose" data-uid="MASES.JNet.Specific.JNetStream`1.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/JNetStream.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_JNetStream_1_FlushOnDispose_" data-uid="MASES.JNet.Specific.JNetStream`1.FlushOnDispose*"></a>
+
+  <h3 id="MASES_JNet_Specific_JNetStream_1_FlushOnDispose" data-uid="MASES.JNet.Specific.JNetStream`1.FlushOnDispose">
+  FlushOnDispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/JNetStream.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marks this stream to flush all native memory changes back to the underlying resource on
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Dispose(bool)</a>.</p>
+<p>
+Must be called after any direct write performed through <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JCOBridgeStream-1.html#MASES_JCOBridge_C2JBridge_JCOBridgeStream_1_AsWritableSpan">AsWritableSpan()</a> or
+<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JCOBridgeStream-1.html#MASES_JCOBridge_C2JBridge_JCOBridgeStream_1_AsWritableSpanFromPosition">AsWritableSpanFromPosition()</a> before the stream is closed.
+</p>
+<p>
+This method is idempotent — calling it multiple times has no additional effect.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FlushOnDispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_JNetStream_1_GetEnumerator_" data-uid="MASES.JNet.Specific.JNetStream`1.GetEnumerator*"></a>
+
+  <h3 id="MASES_JNet_Specific_JNetStream_1_GetEnumerator" data-uid="MASES.JNet.Specific.JNetStream`1.GetEnumerator">
+  GetEnumerator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/JNetStream.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;T&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;T&gt;</dt>
+    <dd><p>An enumerator that can be used to iterate through the collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_JNetStream_1_Write_" data-uid="MASES.JNet.Specific.JNetStream`1.Write*"></a>
+
+  <h3 id="MASES_JNet_Specific_JNetStream_1_Write_System_Byte___System_Int32_System_Int32_" data-uid="MASES.JNet.Specific.JNetStream`1.Write(System.Byte[],System.Int32,System.Int32)">
+  Write(byte[], int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/JNetStream.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a block of bytes to the current stream using data from a buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(byte[] buffer, int offset, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>The byte array from which to copy bytes to the current stream.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The offset in the buffer at which to begin copying bytes to the current stream.</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of bytes to write to the current stream.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>The underlying memory does not support writing. - or -An attempt is made to write to the stream and the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.unmanagedmemorystream.canwrite">CanWrite</a> property is false.- or -The <code class="paramref">count</code> value is greater than the capacity of the stream.- or -The position is at the end of the stream capacity.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>An I/O error occurs.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>One of the specified parameters is less than zero.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>The <code class="paramref">offset</code> parameter minus the length of the <code class="paramref">buffer</code> parameter is less than the <code class="paramref">count</code> parameter.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The <code class="paramref">buffer</code> parameter is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MASES_JNet_Specific_JNetStream_1_WriteAsync_" data-uid="MASES.JNet.Specific.JNetStream`1.WriteAsync*"></a>
+
+  <h3 id="MASES_JNet_Specific_JNetStream_1_WriteAsync_System_Byte___System_Int32_System_Int32_System_Threading_CancellationToken_" data-uid="MASES.JNet.Specific.JNetStream`1.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)">
+  WriteAsync(byte[], int, int, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/JNetStream.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously writes a sequence of bytes to the current stream, advances the current position within this stream by the number of bytes written, and monitors cancellation requests.Available starting in .NET Framework 4.6</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>The buffer to write data from.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based byte offset in <code class="paramref">buffer</code> from which to begin copying bytes to the stream.</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The maximum number of bytes to write.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The token to monitor for cancellation requests. The default value is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken.none">None</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous write operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_JNetStream_1_WriteByte_" data-uid="MASES.JNet.Specific.JNetStream`1.WriteByte*"></a>
+
+  <h3 id="MASES_JNet_Specific_JNetStream_1_WriteByte_System_Byte_" data-uid="MASES.JNet.Specific.JNetStream`1.WriteByte(System.Byte)">
+  WriteByte(byte)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/JNetStream.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a byte to the current position in the file stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteByte(byte value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>A byte value written to the stream.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>The stream is closed.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>The underlying memory does not support writing.- or -An attempt is made to write to the stream and the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.unmanagedmemorystream.canwrite">CanWrite</a> property is false.- or - The current position is at the end of the capacity of the stream.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></dt>
+    <dd><p>The supplied <code class="paramref">value</code> causes the stream exceed its maximum capacity.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/JNetStream.cs/#L51" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2022 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

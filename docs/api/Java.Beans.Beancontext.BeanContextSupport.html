@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Beans_Beancontext_BeanContextSupport" data-uid="Java.Beans.Beancontext.BeanContextSupport" class="text-break">
-Class BeanContextSupport  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L68"><i class="bi bi-code-slash"></i></a>
+Class BeanContextSupport  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class BeanContextSupport  <a class="header-action link-secondary" title="View so
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BeanContextSupport : BeanContextChildSupport, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class BeanContextSupport : BeanContextChildSupport, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -125,10 +125,11 @@ Class BeanContextSupport  <a class="header-action link-secondary" title="View so
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
     </dd>
   </dl>
@@ -143,6 +144,9 @@ Class BeanContextSupport  <a class="header-action link-secondary" title="View so
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_CreatePoolableInstance_Java_Beans_Beancontext_BeanContextChild_">BeanContextChildSupport.CreatePoolableInstance(BeanContextChild)</a>
+    </div>
     <div>
       <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_beanContextChildPeer">BeanContextChildSupport.beanContextChildPeer</a>
     </div>
@@ -181,363 +185,6 @@ Class BeanContextSupport  <a class="header-action link-secondary" title="View so
     </div>
     <div>
       <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_ServiceRevoked_Java_Beans_Beancontext_BeanContextServiceRevokedEvent_">BeanContextChildSupport.ServiceRevoked(BeanContextServiceRevokedEvent)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteStream&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SGetFieldStream&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SGetFieldStream&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;BeanContextChildSupport&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;BeanContextChildSupport&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;BeanContextChildSupport&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;BeanContextChildSupport&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;BeanContextChildSupport&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;BeanContextChildSupport&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(IJVMBridgeBase, IJVMBridgeBase)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastToAndDetach&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirectAndDetach&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CheckDisposed()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldStream&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
@@ -582,10 +229,19 @@ Class BeanContextSupport  <a class="header-action link-secondary" title="View so
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
@@ -601,6 +257,9 @@ Class BeanContextSupport  <a class="header-action link-secondary" title="View so
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
   </dd></dl>
 
 
@@ -615,7 +274,7 @@ Class BeanContextSupport  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport__ctor" data-uid="Java.Beans.Beancontext.BeanContextSupport.#ctor">
   BeanContextSupport()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport()">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport()</a></p>
@@ -642,7 +301,7 @@ Class BeanContextSupport  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport__ctor_Java_Beans_Beancontext_BeanContext_" data-uid="Java.Beans.Beancontext.BeanContextSupport.#ctor(Java.Beans.Beancontext.BeanContext)">
   BeanContextSupport(BeanContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport(java.beans.beancontext.BeanContext)">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport(java.beans.beancontext.BeanContext)</a></p>
@@ -675,7 +334,7 @@ Class BeanContextSupport  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport__ctor_Java_Beans_Beancontext_BeanContext_Java_Util_Locale_" data-uid="Java.Beans.Beancontext.BeanContextSupport.#ctor(Java.Beans.Beancontext.BeanContext,Java.Util.Locale)">
   BeanContextSupport(BeanContext, Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport(java.beans.beancontext.BeanContext,java.util.Locale)">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport(java.beans.beancontext.BeanContext,java.util.Locale)</a></p>
@@ -711,7 +370,7 @@ Class BeanContextSupport  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport__ctor_Java_Beans_Beancontext_BeanContext_Java_Util_Locale_System_Boolean_" data-uid="Java.Beans.Beancontext.BeanContextSupport.#ctor(Java.Beans.Beancontext.BeanContext,Java.Util.Locale,System.Boolean)">
   BeanContextSupport(BeanContext, Locale, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport(java.beans.beancontext.BeanContext,java.util.Locale,boolean)">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport(java.beans.beancontext.BeanContext,java.util.Locale,boolean)</a></p>
@@ -750,7 +409,7 @@ Class BeanContextSupport  <a class="header-action link-secondary" title="View so
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport__ctor_Java_Beans_Beancontext_BeanContext_Java_Util_Locale_System_Boolean_System_Boolean_" data-uid="Java.Beans.Beancontext.BeanContextSupport.#ctor(Java.Beans.Beancontext.BeanContext,Java.Util.Locale,System.Boolean,System.Boolean)">
   BeanContextSupport(BeanContext, Locale, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport(java.beans.beancontext.BeanContext,java.util.Locale,boolean,boolean)">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#java.beans.beancontext.BeanContextSupport(java.beans.beancontext.BeanContext,java.util.Locale,boolean,boolean)</a></p>
@@ -821,38 +480,6 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
 
 
-  <a id="Java_Beans_Beancontext_BeanContextSupport__ctor_" data-uid="Java.Beans.Beancontext.BeanContextSupport.#ctor*"></a>
-
-  <h3 id="Java_Beans_Beancontext_BeanContextSupport__ctor_System_Object___" data-uid="Java.Beans.Beancontext.BeanContextSupport.#ctor(System.Object[])">
-  BeanContextSupport(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L45"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BeanContextSupport(params object[] args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -861,7 +488,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_BeanContextPeer" data-uid="Java.Beans.Beancontext.BeanContextSupport.BeanContextPeer">
   BeanContextPeer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#getBeanContextPeer--">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#getBeanContextPeer--</a></p>
@@ -893,7 +520,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_BridgeClassName" data-uid="Java.Beans.Beancontext.BeanContextSupport.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -925,7 +552,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_IsBridgeAbstract" data-uid="Java.Beans.Beancontext.BeanContextSupport.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -957,7 +584,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_IsBridgeCloseable" data-uid="Java.Beans.Beancontext.BeanContextSupport.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
@@ -989,7 +616,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_IsBridgeInterface" data-uid="Java.Beans.Beancontext.BeanContextSupport.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -1021,7 +648,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_IsBridgeStatic" data-uid="Java.Beans.Beancontext.BeanContextSupport.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -1053,7 +680,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_Locale" data-uid="Java.Beans.Beancontext.BeanContextSupport.Locale">
   Locale
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#getLocale--">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#getLocale--</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#setLocale-java.util.Locale-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#setLocale-java.util.Locale-</a></p>
@@ -1089,7 +716,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_Add_System_Object_" data-uid="Java.Beans.Beancontext.BeanContextSupport.Add(System.Object)">
   Add(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#add-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#add-java.lang.Object-</a></p>
@@ -1128,7 +755,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_AddAll_Java_Util_Collection_" data-uid="Java.Beans.Beancontext.BeanContextSupport.AddAll(Java.Util.Collection)">
   AddAll(Collection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L202"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#addAll-java.util.Collection-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#addAll-java.util.Collection-</a></p>
@@ -1167,7 +794,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_AddBeanContextMembershipListener_Java_Beans_Beancontext_BeanContextMembershipListener_" data-uid="Java.Beans.Beancontext.BeanContextSupport.AddBeanContextMembershipListener(Java.Beans.Beancontext.BeanContextMembershipListener)">
   AddBeanContextMembershipListener(BeanContextMembershipListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L409"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#addBeanContextMembershipListener-java.beans.beancontext.BeanContextMembershipListener-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#addBeanContextMembershipListener-java.beans.beancontext.BeanContextMembershipListener-</a></p>
@@ -1200,7 +827,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_AvoidingGui" data-uid="Java.Beans.Beancontext.BeanContextSupport.AvoidingGui">
   AvoidingGui()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#avoidingGui--">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#avoidingGui--</a></p>
@@ -1233,7 +860,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_Clear" data-uid="Java.Beans.Beancontext.BeanContextSupport.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L416"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#clear--">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#clear--</a></p>
@@ -1260,7 +887,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_Contains_System_Object_" data-uid="Java.Beans.Beancontext.BeanContextSupport.Contains(System.Object)">
   Contains(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#contains-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#contains-java.lang.Object-</a></p>
@@ -1299,7 +926,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_ContainsAll_Java_Util_Collection_" data-uid="Java.Beans.Beancontext.BeanContextSupport.ContainsAll(Java.Util.Collection)">
   ContainsAll(Collection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L228"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#containsAll-java.util.Collection-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#containsAll-java.util.Collection-</a></p>
@@ -1338,7 +965,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_ContainsKey_System_Object_" data-uid="Java.Beans.Beancontext.BeanContextSupport.ContainsKey(System.Object)">
   ContainsKey(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#containsKey-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#containsKey-java.lang.Object-</a></p>
@@ -1373,11 +1000,203 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
 
 
+  <a id="Java_Beans_Beancontext_BeanContextSupport_CreatePoolableInstance_" data-uid="Java.Beans.Beancontext.BeanContextSupport.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Beans_Beancontext_BeanContextSupport_CreatePoolableInstance" data-uid="Java.Beans.Beancontext.BeanContextSupport.CreatePoolableInstance">
+  CreatePoolableInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BeanContextSupport()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BeanContextSupport CreatePoolableInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html">BeanContextSupport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Beans_Beancontext_BeanContextSupport_CreatePoolableInstance_" data-uid="Java.Beans.Beancontext.BeanContextSupport.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Beans_Beancontext_BeanContextSupport_CreatePoolableInstance_Java_Beans_Beancontext_BeanContext_" data-uid="Java.Beans.Beancontext.BeanContextSupport.CreatePoolableInstance(Java.Beans.Beancontext.BeanContext)">
+  CreatePoolableInstance(BeanContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BeanContextSupport CreatePoolableInstance(BeanContext arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Beans.Beancontext.BeanContext.html">BeanContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html">BeanContextSupport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Beans_Beancontext_BeanContextSupport_CreatePoolableInstance_" data-uid="Java.Beans.Beancontext.BeanContextSupport.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Beans_Beancontext_BeanContextSupport_CreatePoolableInstance_Java_Beans_Beancontext_BeanContext_Java_Util_Locale_" data-uid="Java.Beans.Beancontext.BeanContextSupport.CreatePoolableInstance(Java.Beans.Beancontext.BeanContext,Java.Util.Locale)">
+  CreatePoolableInstance(BeanContext, Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BeanContextSupport CreatePoolableInstance(BeanContext arg0, Locale arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Beans.Beancontext.BeanContext.html">BeanContext</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html">BeanContextSupport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Beans_Beancontext_BeanContextSupport_CreatePoolableInstance_" data-uid="Java.Beans.Beancontext.BeanContextSupport.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Beans_Beancontext_BeanContextSupport_CreatePoolableInstance_Java_Beans_Beancontext_BeanContext_Java_Util_Locale_System_Boolean_" data-uid="Java.Beans.Beancontext.BeanContextSupport.CreatePoolableInstance(Java.Beans.Beancontext.BeanContext,Java.Util.Locale,System.Boolean)">
+  CreatePoolableInstance(BeanContext, Locale, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BeanContextSupport CreatePoolableInstance(BeanContext arg0, Locale arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Beans.Beancontext.BeanContext.html">BeanContext</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html">BeanContextSupport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Beans_Beancontext_BeanContextSupport_CreatePoolableInstance_" data-uid="Java.Beans.Beancontext.BeanContextSupport.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Beans_Beancontext_BeanContextSupport_CreatePoolableInstance_Java_Beans_Beancontext_BeanContext_Java_Util_Locale_System_Boolean_System_Boolean_" data-uid="Java.Beans.Beancontext.BeanContextSupport.CreatePoolableInstance(Java.Beans.Beancontext.BeanContext,Java.Util.Locale,System.Boolean,System.Boolean)">
+  CreatePoolableInstance(BeanContext, Locale, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2, bool arg3)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BeanContextSupport CreatePoolableInstance(BeanContext arg0, Locale arg1, bool arg2, bool arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Beans.Beancontext.BeanContext.html">BeanContext</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html">BeanContextSupport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Beans_Beancontext_BeanContextSupport_DontUseGui_" data-uid="Java.Beans.Beancontext.BeanContextSupport.DontUseGui*"></a>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_DontUseGui" data-uid="Java.Beans.Beancontext.BeanContextSupport.DontUseGui">
   DontUseGui()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L386"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#dontUseGui--">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#dontUseGui--</a></p>
@@ -1404,7 +1223,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_GetResource_Java_Lang_String_Java_Beans_Beancontext_BeanContextChild_" data-uid="Java.Beans.Beancontext.BeanContextSupport.GetResource(Java.Lang.String,Java.Beans.Beancontext.BeanContextChild)">
   GetResource(String, BeanContextChild)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L355"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#getResource-java.lang.String-java.beans.beancontext.BeanContextChild-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#getResource-java.lang.String-java.beans.beancontext.BeanContextChild-</a></p>
@@ -1446,7 +1265,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_GetResourceAsStream_Java_Lang_String_Java_Beans_Beancontext_BeanContextChild_" data-uid="Java.Beans.Beancontext.BeanContextSupport.GetResourceAsStream(Java.Lang.String,Java.Beans.Beancontext.BeanContextChild)">
   GetResourceAsStream(String, BeanContextChild)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L317"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#getResourceAsStream-java.lang.String-java.beans.beancontext.BeanContextChild-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#getResourceAsStream-java.lang.String-java.beans.beancontext.BeanContextChild-</a></p>
@@ -1488,7 +1307,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_InstantiateChild_Java_Lang_String_" data-uid="Java.Beans.Beancontext.BeanContextSupport.InstantiateChild(Java.Lang.String)">
   InstantiateChild(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L328"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#instantiateChild-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#instantiateChild-java.lang.String-</a></p>
@@ -1534,7 +1353,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_IsDesignTime" data-uid="Java.Beans.Beancontext.BeanContextSupport.IsDesignTime">
   IsDesignTime()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L371"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#isDesignTime--">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#isDesignTime--</a></p>
@@ -1567,7 +1386,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_IsEmpty" data-uid="Java.Beans.Beancontext.BeanContextSupport.IsEmpty">
   IsEmpty()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L245"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#isEmpty--">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#isEmpty--</a></p>
@@ -1600,7 +1419,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_IsSerializing" data-uid="Java.Beans.Beancontext.BeanContextSupport.IsSerializing">
   IsSerializing()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#isSerializing--">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#isSerializing--</a></p>
@@ -1633,7 +1452,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_Iterator" data-uid="Java.Beans.Beancontext.BeanContextSupport.Iterator">
   Iterator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L363"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#iterator--">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#iterator--</a></p>
@@ -1666,7 +1485,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_NeedsGui" data-uid="Java.Beans.Beancontext.BeanContextSupport.NeedsGui">
   NeedsGui()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L379"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#needsGui--">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#needsGui--</a></p>
@@ -1699,7 +1518,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_OkToUseGui" data-uid="Java.Beans.Beancontext.BeanContextSupport.OkToUseGui">
   OkToUseGui()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L393"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#okToUseGui--">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#okToUseGui--</a></p>
@@ -1726,7 +1545,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_PropertyChange_Java_Beans_PropertyChangeEvent_" data-uid="Java.Beans.Beancontext.BeanContextSupport.PropertyChange(Java.Beans.PropertyChangeEvent)">
   PropertyChange(PropertyChangeEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L424"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#propertyChange-java.beans.PropertyChangeEvent-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#propertyChange-java.beans.PropertyChangeEvent-</a></p>
@@ -1759,7 +1578,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_ReadChildren_Java_Io_ObjectInputStream_" data-uid="Java.Beans.Beancontext.BeanContextSupport.ReadChildren(Java.Io.ObjectInputStream)">
   ReadChildren(ObjectInputStream)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L290"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#readChildren-java.io.ObjectInputStream-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#readChildren-java.io.ObjectInputStream-</a></p>
@@ -1799,7 +1618,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_Remove_System_Object_" data-uid="Java.Beans.Beancontext.BeanContextSupport.Remove(System.Object)">
   Remove(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L262"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#remove-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#remove-java.lang.Object-</a></p>
@@ -1838,7 +1657,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_RemoveAll_Java_Util_Collection_" data-uid="Java.Beans.Beancontext.BeanContextSupport.RemoveAll(Java.Util.Collection)">
   RemoveAll(Collection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L271"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#removeAll-java.util.Collection-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#removeAll-java.util.Collection-</a></p>
@@ -1877,7 +1696,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_RemoveBeanContextMembershipListener_Java_Beans_Beancontext_BeanContextMembershipListener_" data-uid="Java.Beans.Beancontext.BeanContextSupport.RemoveBeanContextMembershipListener(Java.Beans.Beancontext.BeanContextMembershipListener)">
   RemoveBeanContextMembershipListener(BeanContextMembershipListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L432"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#removeBeanContextMembershipListener-java.beans.beancontext.BeanContextMembershipListener-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#removeBeanContextMembershipListener-java.beans.beancontext.BeanContextMembershipListener-</a></p>
@@ -1910,7 +1729,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_RetainAll_Java_Util_Collection_" data-uid="Java.Beans.Beancontext.BeanContextSupport.RetainAll(Java.Util.Collection)">
   RetainAll(Collection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L280"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#retainAll-java.util.Collection-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#retainAll-java.util.Collection-</a></p>
@@ -1949,7 +1768,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_SetDesignTime_System_Boolean_" data-uid="Java.Beans.Beancontext.BeanContextSupport.SetDesignTime(System.Boolean)">
   SetDesignTime(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L401"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#setDesignTime-boolean-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#setDesignTime-boolean-</a></p>
@@ -1982,7 +1801,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_Size" data-uid="Java.Beans.Beancontext.BeanContextSupport.Size">
   Size()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L307"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#size--">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#size--</a></p>
@@ -2015,7 +1834,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_ToArray" data-uid="Java.Beans.Beancontext.BeanContextSupport.ToArray">
   ToArray()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L336"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#toArray--">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#toArray--</a></p>
@@ -2048,7 +1867,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_ToArray_System_Object___" data-uid="Java.Beans.Beancontext.BeanContextSupport.ToArray(System.Object[])">
   ToArray(object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L345"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#toArray-java.lang.Object[]-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#toArray-java.lang.Object[]-</a></p>
@@ -2087,7 +1906,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_VetoableChange_Java_Beans_PropertyChangeEvent_" data-uid="Java.Beans.Beancontext.BeanContextSupport.VetoableChange(Java.Beans.PropertyChangeEvent)">
   VetoableChange(PropertyChangeEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L441"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#vetoableChange-java.beans.PropertyChangeEvent-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#vetoableChange-java.beans.PropertyChangeEvent-</a></p>
@@ -2125,7 +1944,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_WriteChildren_Java_Io_ObjectOutputStream_" data-uid="Java.Beans.Beancontext.BeanContextSupport.WriteChildren(Java.Io.ObjectOutputStream)">
   WriteChildren(ObjectOutputStream)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L299"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#writeChildren-java.io.ObjectOutputStream-">https://docs.oracle.com/javase/8/docs/api/java/beans/beancontext/BeanContextSupport.html#writeChildren-java.io.ObjectOutputStream-</a></p>
@@ -2167,7 +1986,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_op_Implicit_Java_Beans_Beancontext_BeanContextSupport__Java_Beans_Beancontext_BeanContext" data-uid="Java.Beans.Beancontext.BeanContextSupport.op_Implicit(Java.Beans.Beancontext.BeanContextSupport)~Java.Beans.Beancontext.BeanContext">
   implicit operator BeanContext(BeanContextSupport)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html">BeanContextSupport</a> to <a class="xref" href="Java.Beans.Beancontext.BeanContext.html">BeanContext</a></p>
@@ -2204,7 +2023,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_op_Implicit_Java_Beans_Beancontext_BeanContextSupport__Java_Beans_PropertyChangeListener" data-uid="Java.Beans.Beancontext.BeanContextSupport.op_Implicit(Java.Beans.Beancontext.BeanContextSupport)~Java.Beans.PropertyChangeListener">
   implicit operator PropertyChangeListener(BeanContextSupport)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html">BeanContextSupport</a> to <a class="xref" href="Java.Beans.PropertyChangeListener.html">PropertyChangeListener</a></p>
@@ -2241,7 +2060,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Beans_Beancontext_BeanContextSupport_op_Implicit_Java_Beans_Beancontext_BeanContextSupport__Java_Beans_VetoableChangeListener" data-uid="Java.Beans.Beancontext.BeanContextSupport.op_Implicit(Java.Beans.Beancontext.BeanContextSupport)~Java.Beans.VetoableChangeListener">
   implicit operator VetoableChangeListener(BeanContextSupport)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html">BeanContextSupport</a> to <a class="xref" href="Java.Beans.VetoableChangeListener.html">VetoableChangeListener</a></p>
@@ -2278,7 +2097,7 @@ public BeanContextSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L68" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextSupport.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class TableView.TableCell | MASES Group - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TableView.TableCell | MASES Group - JNet ">
+      <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
+      <meta name="description" content="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_TableView_TableCell.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.TableView.TableCell%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Javax.Swing.Text.TableView.TableCell">
+
+
+
+  <h1 id="Javax_Swing_Text_TableView_TableCell" data-uid="Javax.Swing.Text.TableView.TableCell" class="text-break">
+Class TableView.TableCell  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Javax.html">Javax</a>.<a class="xref" href="Javax.Swing.html">Swing</a>.<a class="xref" href="Javax.Swing.Text.html">Text</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+public class TableView.TableCell : BoxView, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, ISwingConstants</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html">JVMBridgeBase</a>&lt;<a class="xref" href="Javax.Swing.SwingConstants.html">SwingConstants</a>&gt;</div>
+      <div><a class="xref" href="Javax.Swing.SwingConstants.html">SwingConstants</a></div>
+      <div><a class="xref" href="Javax.Swing.Text.View.html">View</a></div>
+      <div><a class="xref" href="Javax.Swing.Text.CompositeView.html">CompositeView</a></div>
+      <div><a class="xref" href="Javax.Swing.Text.BoxView.html">BoxView</a></div>
+      <div><span class="xref">TableView.TableCell</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
+      <div><a class="xref" href="Javax.Swing.ISwingConstants.html">ISwingConstants</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.BoxView.html#Javax_Swing_Text_BoxView_CreatePoolableInstance_Javax_Swing_Text_Element_System_Int32_">BoxView.CreatePoolableInstance(Element, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.BoxView.html#Javax_Swing_Text_BoxView_Axis">BoxView.Axis</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.BoxView.html#Javax_Swing_Text_BoxView_Height">BoxView.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.BoxView.html#Javax_Swing_Text_BoxView_Width">BoxView.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.BoxView.html#Javax_Swing_Text_BoxView_LayoutChanged_System_Int32_">BoxView.LayoutChanged(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.CompositeView.html#Javax_Swing_Text_CompositeView_CreatePoolableInstance_Javax_Swing_Text_Element_">CompositeView.CreatePoolableInstance(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_BadBreakWeight">View.BadBreakWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_ExcellentBreakWeight">View.ExcellentBreakWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_ForcedBreakWeight">View.ForcedBreakWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_GoodBreakWeight">View.GoodBreakWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_X_AXIS">View.X_AXIS</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_Y_AXIS">View.Y_AXIS</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_Attributes">View.Attributes</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_Container">View.Container</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_Document">View.Document</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_Element">View.Element</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_EndOffset">View.EndOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_Graphics">View.Graphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_Parent">View.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_StartOffset">View.StartOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_ViewCount">View.ViewCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_ViewFactory">View.ViewFactory</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_GetPreferredSpan_System_Int32_">View.GetPreferredSpan(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_ViewToModel_System_Single_System_Single_Java_Awt_Shape_Javax_Swing_Text_Position_Bias___">View.ViewToModel(float, float, Shape, Position.Bias[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_ModelToView_System_Int32_Java_Awt_Shape_Javax_Swing_Text_Position_Bias_">View.ModelToView(int, Shape, Position.Bias)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_Paint_Java_Awt_Graphics_Java_Awt_Shape_">View.Paint(Graphics, Shape)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_IsVisible">View.IsVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_GetAlignment_System_Int32_">View.GetAlignment(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_GetMaximumSpan_System_Int32_">View.GetMaximumSpan(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_GetMinimumSpan_System_Int32_">View.GetMinimumSpan(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_GetBreakWeight_System_Int32_System_Single_System_Single_">View.GetBreakWeight(int, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_GetNextVisualPositionFrom_System_Int32_Javax_Swing_Text_Position_Bias_Java_Awt_Shape_System_Int32_Javax_Swing_Text_Position_Bias___">View.GetNextVisualPositionFrom(int, Position.Bias, Shape, int, Position.Bias[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_GetResizeWeight_System_Int32_">View.GetResizeWeight(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_GetViewIndex_System_Single_System_Single_Java_Awt_Shape_">View.GetViewIndex(float, float, Shape)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_GetViewIndex_System_Int32_Javax_Swing_Text_Position_Bias_">View.GetViewIndex(int, Position.Bias)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_ViewToModel_System_Single_System_Single_Java_Awt_Shape_">View.ViewToModel(float, float, Shape)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_GetChildAllocation_System_Int32_Java_Awt_Shape_">View.GetChildAllocation(int, Shape)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_ModelToView_System_Int32_Java_Awt_Shape_">View.ModelToView(int, Shape)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_ModelToView_System_Int32_Javax_Swing_Text_Position_Bias_System_Int32_Javax_Swing_Text_Position_Bias_Java_Awt_Shape_">View.ModelToView(int, Position.Bias, int, Position.Bias, Shape)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_GetToolTipText_System_Single_System_Single_Java_Awt_Shape_">View.GetToolTipText(float, float, Shape)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_BreakView_System_Int32_System_Int32_System_Single_System_Single_">View.BreakView(int, int, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_CreateFragment_System_Int32_System_Int32_">View.CreateFragment(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_GetView_System_Int32_">View.GetView(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_Append_Javax_Swing_Text_View_">View.Append(View)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_ChangedUpdate_Javax_Swing_Event_DocumentEvent_Java_Awt_Shape_Javax_Swing_Text_ViewFactory_">View.ChangedUpdate(DocumentEvent, Shape, ViewFactory)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_Insert_System_Int32_Javax_Swing_Text_View_">View.Insert(int, View)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_InsertUpdate_Javax_Swing_Event_DocumentEvent_Java_Awt_Shape_Javax_Swing_Text_ViewFactory_">View.InsertUpdate(DocumentEvent, Shape, ViewFactory)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_PreferenceChanged_Javax_Swing_Text_View_System_Boolean_System_Boolean_">View.PreferenceChanged(View, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_Remove_System_Int32_">View.Remove(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_RemoveAll">View.RemoveAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_RemoveUpdate_Javax_Swing_Event_DocumentEvent_Java_Awt_Shape_Javax_Swing_Text_ViewFactory_">View.RemoveUpdate(DocumentEvent, Shape, ViewFactory)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_Replace_System_Int32_System_Int32_Javax_Swing_Text_View___">View.Replace(int, int, View[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.View.html#Javax_Swing_Text_View_SetSize_System_Single_System_Single_">View.SetSize(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_BOTTOM">SwingConstants.BOTTOM</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_CENTER">SwingConstants.CENTER</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_EAST">SwingConstants.EAST</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_HORIZONTAL">SwingConstants.HORIZONTAL</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_LEADING">SwingConstants.LEADING</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_LEFT">SwingConstants.LEFT</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_NEXT">SwingConstants.NEXT</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_NORTH">SwingConstants.NORTH</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_NORTH_EAST">SwingConstants.NORTH_EAST</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_NORTH_WEST">SwingConstants.NORTH_WEST</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_PREVIOUS">SwingConstants.PREVIOUS</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_RIGHT">SwingConstants.RIGHT</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_SOUTH">SwingConstants.SOUTH</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_SOUTH_EAST">SwingConstants.SOUTH_EAST</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_SOUTH_WEST">SwingConstants.SOUTH_WEST</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_TOP">SwingConstants.TOP</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_TRAILING">SwingConstants.TRAILING</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_VERTICAL">SwingConstants.VERTICAL</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.SwingConstants.html#Javax_Swing_SwingConstants_WEST">SwingConstants.WEST</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Javax_Swing_Text_TableView_TableCell__ctor_" data-uid="Javax.Swing.Text.TableView.TableCell.#ctor*"></a>
+
+  <h3 id="Javax_Swing_Text_TableView_TableCell__ctor_Javax_Swing_Text_TableView_Javax_Swing_Text_Element_" data-uid="Javax.Swing.Text.TableView.TableCell.#ctor(Javax.Swing.Text.TableView,Javax.Swing.Text.Element)">
+  TableCell(TableView, Element)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#javax.swing.text.TableView$TableCell(javax.swing.text.TableView,javax.swing.text.Element)">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#javax.swing.text.TableView$TableCell(javax.swing.text.TableView,javax.swing.text.Element)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableCell(TableView arg0, Element arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Swing.Text.TableView.html">TableView</a></dt>
+    <dd><p><a class="xref" href="Javax.Swing.Text.TableView.html">TableView</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Swing.Text.Element.html">Element</a></dt>
+    <dd><p><a class="xref" href="Javax.Swing.Text.Element.html">Element</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Text_TableView_TableCell__ctor_" data-uid="Javax.Swing.Text.TableView.TableCell.#ctor*"></a>
+
+  <h3 id="Javax_Swing_Text_TableView_TableCell__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Javax.Swing.Text.TableView.TableCell.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  TableCell(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally by JCOBridge. Do not use directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public TableCell(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Javax_Swing_Text_TableView_TableCell_BridgeClassName_" data-uid="Javax.Swing.Text.TableView.TableCell.BridgeClassName*"></a>
+
+  <h3 id="Javax_Swing_Text_TableView_TableCell_BridgeClassName" data-uid="Javax.Swing.Text.TableView.TableCell.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Text_TableView_TableCell_ColumnCount_" data-uid="Javax.Swing.Text.TableView.TableCell.ColumnCount*"></a>
+
+  <h3 id="Javax_Swing_Text_TableView_TableCell_ColumnCount" data-uid="Javax.Swing.Text.TableView.TableCell.ColumnCount">
+  ColumnCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#getColumnCount--">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#getColumnCount--</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ColumnCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Text_TableView_TableCell_GridColumn_" data-uid="Javax.Swing.Text.TableView.TableCell.GridColumn*"></a>
+
+  <h3 id="Javax_Swing_Text_TableView_TableCell_GridColumn" data-uid="Javax.Swing.Text.TableView.TableCell.GridColumn">
+  GridColumn
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#getGridColumn--">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#getGridColumn--</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GridColumn { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Text_TableView_TableCell_GridRow_" data-uid="Javax.Swing.Text.TableView.TableCell.GridRow*"></a>
+
+  <h3 id="Javax_Swing_Text_TableView_TableCell_GridRow" data-uid="Javax.Swing.Text.TableView.TableCell.GridRow">
+  GridRow
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#getGridRow--">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#getGridRow--</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GridRow { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Text_TableView_TableCell_IsBridgeAbstract_" data-uid="Javax.Swing.Text.TableView.TableCell.IsBridgeAbstract*"></a>
+
+  <h3 id="Javax_Swing_Text_TableView_TableCell_IsBridgeAbstract" data-uid="Javax.Swing.Text.TableView.TableCell.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Text_TableView_TableCell_IsBridgeCloseable_" data-uid="Javax.Swing.Text.TableView.TableCell.IsBridgeCloseable*"></a>
+
+  <h3 id="Javax_Swing_Text_TableView_TableCell_IsBridgeCloseable" data-uid="Javax.Swing.Text.TableView.TableCell.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Text_TableView_TableCell_IsBridgeInterface_" data-uid="Javax.Swing.Text.TableView.TableCell.IsBridgeInterface*"></a>
+
+  <h3 id="Javax_Swing_Text_TableView_TableCell_IsBridgeInterface" data-uid="Javax.Swing.Text.TableView.TableCell.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Text_TableView_TableCell_IsBridgeStatic_" data-uid="Javax.Swing.Text.TableView.TableCell.IsBridgeStatic*"></a>
+
+  <h3 id="Javax_Swing_Text_TableView_TableCell_IsBridgeStatic" data-uid="Javax.Swing.Text.TableView.TableCell.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Text_TableView_TableCell_RowCount_" data-uid="Javax.Swing.Text.TableView.TableCell.RowCount*"></a>
+
+  <h3 id="Javax_Swing_Text_TableView_TableCell_RowCount" data-uid="Javax.Swing.Text.TableView.TableCell.RowCount">
+  RowCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#getRowCount--">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#getRowCount--</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RowCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Javax_Swing_Text_TableView_TableCell_CreatePoolableInstance_" data-uid="Javax.Swing.Text.TableView.TableCell.CreatePoolableInstance*"></a>
+
+  <h3 id="Javax_Swing_Text_TableView_TableCell_CreatePoolableInstance_Javax_Swing_Text_TableView_Javax_Swing_Text_Element_" data-uid="Javax.Swing.Text.TableView.TableCell.CreatePoolableInstance(Javax.Swing.Text.TableView,Javax.Swing.Text.Element)">
+  CreatePoolableInstance(TableView, Element)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for TableCell(Javax.Swing.Text.TableView arg0, Javax.Swing.Text.Element arg1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TableView.TableCell CreatePoolableInstance(TableView arg0, Element arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Swing.Text.TableView.html">TableView</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Swing.Text.Element.html">Element</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Swing.Text.TableView.html">TableView</a>.<a class="xref" href="Javax.Swing.Text.TableView.TableCell.html">TableCell</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_Text_TableView_TableCell_SetGridLocation_" data-uid="Javax.Swing.Text.TableView.TableCell.SetGridLocation*"></a>
+
+  <h3 id="Javax_Swing_Text_TableView_TableCell_SetGridLocation_System_Int32_System_Int32_" data-uid="Javax.Swing.Text.TableView.TableCell.SetGridLocation(System.Int32,System.Int32)">
+  SetGridLocation(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#setGridLocation-int-int-">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#setGridLocation-int-int-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGridLocation(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/TableView.cs/#L171" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2022 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

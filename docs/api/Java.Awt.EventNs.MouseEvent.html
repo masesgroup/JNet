@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Awt_EventNs_MouseEvent" data-uid="Java.Awt.EventNs.MouseEvent" class="text-break">
-Class MouseEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L68"><i class="bi bi-code-slash"></i></a>
+Class MouseEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class MouseEvent  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MouseEvent : InputEvent, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ISerializable</code></pre>
+    <pre><code class="lang-csharp hljs">public class MouseEvent : InputEvent, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition, ISerializable</code></pre>
   </div>
 
 
@@ -129,10 +129,11 @@ Class MouseEvent  <a class="header-action link-secondary" title="View source" hr
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
       <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
     </dd>
@@ -234,6 +235,9 @@ Class MouseEvent  <a class="header-action link-secondary" title="View source" hr
       <a class="xref" href="Java.Awt.EventNs.InputEvent.html#Java_Awt_EventNs_InputEvent_Consume">InputEvent.Consume()</a>
     </div>
     <div>
+      <a class="xref" href="Java.Awt.EventNs.ComponentEvent.html#Java_Awt_EventNs_ComponentEvent_CreatePoolableInstance_Java_Awt_Component_System_Int32_">ComponentEvent.CreatePoolableInstance(Component, int)</a>
+    </div>
+    <div>
       <a class="xref" href="Java.Awt.EventNs.ComponentEvent.html#Java_Awt_EventNs_ComponentEvent_COMPONENT_FIRST">ComponentEvent.COMPONENT_FIRST</a>
     </div>
     <div>
@@ -253,6 +257,12 @@ Class MouseEvent  <a class="header-action link-secondary" title="View source" hr
     </div>
     <div>
       <a class="xref" href="Java.Awt.EventNs.ComponentEvent.html#Java_Awt_EventNs_ComponentEvent_Component">ComponentEvent.Component</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.AWTEvent.html#Java_Awt_AWTEvent_CreatePoolableInstance_Java_Awt_Event_">AWTEvent.CreatePoolableInstance(Event)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.AWTEvent.html#Java_Awt_AWTEvent_CreatePoolableInstance_System_Object_System_Int32_">AWTEvent.CreatePoolableInstance(object, int)</a>
     </div>
     <div>
       <a class="xref" href="Java.Awt.AWTEvent.html#Java_Awt_AWTEvent_RESERVED_ID_MAX">AWTEvent.RESERVED_ID_MAX</a>
@@ -324,364 +334,10 @@ Class MouseEvent  <a class="header-action link-secondary" title="View source" hr
       <a class="xref" href="Java.Awt.AWTEvent.html#Java_Awt_AWTEvent_SetSource_System_Object_">AWTEvent.SetSource(object)</a>
     </div>
     <div>
+      <a class="xref" href="Java.Util.EventObject.html#Java_Util_EventObject_CreatePoolableInstance_System_Object_">EventObject.CreatePoolableInstance(object)</a>
+    </div>
+    <div>
       <a class="xref" href="Java.Util.EventObject.html#Java_Util_EventObject_Source">EventObject.Source</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteStream&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldStream&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldStream&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Serializable&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(IJVMBridgeBase, IJVMBridgeBase)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastToAndDetach&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirectAndDetach&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CheckDisposed()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldStream&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
@@ -726,10 +382,19 @@ Class MouseEvent  <a class="header-action link-secondary" title="View source" hr
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
@@ -745,6 +410,9 @@ Class MouseEvent  <a class="header-action link-secondary" title="View source" hr
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
   </dd></dl>
 
 
@@ -759,7 +427,7 @@ Class MouseEvent  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Awt_EventNs_MouseEvent__ctor_Java_Awt_Component_System_Int32_System_Int64_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="Java.Awt.EventNs.MouseEvent.#ctor(Java.Awt.Component,System.Int32,System.Int64,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
   MouseEvent(Component, int, long, int, int, int, int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#java.awt.event.MouseEvent(java.awt.Component,int,long,int,int,int,int,boolean)">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#java.awt.event.MouseEvent(java.awt.Component,int,long,int,int,int,int,boolean)</a></p>
@@ -813,7 +481,7 @@ Class MouseEvent  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Awt_EventNs_MouseEvent__ctor_Java_Awt_Component_System_Int32_System_Int64_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_" data-uid="Java.Awt.EventNs.MouseEvent.#ctor(Java.Awt.Component,System.Int32,System.Int64,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Int32)">
   MouseEvent(Component, int, long, int, int, int, int, bool, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#java.awt.event.MouseEvent(java.awt.Component,int,long,int,int,int,int,boolean,int)">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#java.awt.event.MouseEvent(java.awt.Component,int,long,int,int,int,int,boolean,int)</a></p>
@@ -870,7 +538,7 @@ Class MouseEvent  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Java_Awt_EventNs_MouseEvent__ctor_Java_Awt_Component_System_Int32_System_Int64_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_" data-uid="Java.Awt.EventNs.MouseEvent.#ctor(Java.Awt.Component,System.Int32,System.Int64,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Int32)">
   MouseEvent(Component, int, long, int, int, int, int, int, int, bool, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#java.awt.event.MouseEvent(java.awt.Component,int,long,int,int,int,int,int,int,boolean,int)">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#java.awt.event.MouseEvent(java.awt.Component,int,long,int,int,int,int,int,int,boolean,int)</a></p>
@@ -962,38 +630,6 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
 
 
-  <a id="Java_Awt_EventNs_MouseEvent__ctor_" data-uid="Java.Awt.EventNs.MouseEvent.#ctor*"></a>
-
-  <h3 id="Java_Awt_EventNs_MouseEvent__ctor_System_Object___" data-uid="Java.Awt.EventNs.MouseEvent.#ctor(System.Object[])">
-  MouseEvent(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L45"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MouseEvent(params object[] args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -1002,7 +638,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_BUTTON1" data-uid="Java.Awt.EventNs.MouseEvent.BUTTON1">
   BUTTON1
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#BUTTON1">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#BUTTON1</a></p>
@@ -1010,7 +646,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BUTTON1 { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int BUTTON1 { get; set; }</code></pre>
   </div>
 
 
@@ -1034,7 +670,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_BUTTON2" data-uid="Java.Awt.EventNs.MouseEvent.BUTTON2">
   BUTTON2
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#BUTTON2">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#BUTTON2</a></p>
@@ -1042,7 +678,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BUTTON2 { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int BUTTON2 { get; set; }</code></pre>
   </div>
 
 
@@ -1066,7 +702,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_BUTTON3" data-uid="Java.Awt.EventNs.MouseEvent.BUTTON3">
   BUTTON3
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#BUTTON3">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#BUTTON3</a></p>
@@ -1074,7 +710,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BUTTON3 { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int BUTTON3 { get; set; }</code></pre>
   </div>
 
 
@@ -1098,7 +734,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_BridgeClassName" data-uid="Java.Awt.EventNs.MouseEvent.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -1130,7 +766,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_Button" data-uid="Java.Awt.EventNs.MouseEvent.Button">
   Button
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L220"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getButton--">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getButton--</a></p>
@@ -1162,7 +798,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_ClickCount" data-uid="Java.Awt.EventNs.MouseEvent.ClickCount">
   ClickCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getClickCount--">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getClickCount--</a></p>
@@ -1194,7 +830,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_IsBridgeAbstract" data-uid="Java.Awt.EventNs.MouseEvent.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -1226,7 +862,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_IsBridgeCloseable" data-uid="Java.Awt.EventNs.MouseEvent.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
@@ -1258,7 +894,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_IsBridgeInterface" data-uid="Java.Awt.EventNs.MouseEvent.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -1290,7 +926,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_IsBridgeStatic" data-uid="Java.Awt.EventNs.MouseEvent.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -1322,7 +958,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_LocationOnScreen" data-uid="Java.Awt.EventNs.MouseEvent.LocationOnScreen">
   LocationOnScreen
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L234"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getLocationOnScreen--">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getLocationOnScreen--</a></p>
@@ -1354,7 +990,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_MOUSE_CLICKED" data-uid="Java.Awt.EventNs.MouseEvent.MOUSE_CLICKED">
   MOUSE_CLICKED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L159"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_CLICKED">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_CLICKED</a></p>
@@ -1362,7 +998,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MOUSE_CLICKED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int MOUSE_CLICKED { get; set; }</code></pre>
   </div>
 
 
@@ -1386,7 +1022,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_MOUSE_DRAGGED" data-uid="Java.Awt.EventNs.MouseEvent.MOUSE_DRAGGED">
   MOUSE_DRAGGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_DRAGGED">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_DRAGGED</a></p>
@@ -1394,7 +1030,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MOUSE_DRAGGED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int MOUSE_DRAGGED { get; set; }</code></pre>
   </div>
 
 
@@ -1418,7 +1054,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_MOUSE_ENTERED" data-uid="Java.Awt.EventNs.MouseEvent.MOUSE_ENTERED">
   MOUSE_ENTERED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_ENTERED">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_ENTERED</a></p>
@@ -1426,7 +1062,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MOUSE_ENTERED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int MOUSE_ENTERED { get; set; }</code></pre>
   </div>
 
 
@@ -1450,7 +1086,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_MOUSE_EXITED" data-uid="Java.Awt.EventNs.MouseEvent.MOUSE_EXITED">
   MOUSE_EXITED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L171"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_EXITED">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_EXITED</a></p>
@@ -1458,7 +1094,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MOUSE_EXITED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int MOUSE_EXITED { get; set; }</code></pre>
   </div>
 
 
@@ -1482,7 +1118,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_MOUSE_FIRST" data-uid="Java.Awt.EventNs.MouseEvent.MOUSE_FIRST">
   MOUSE_FIRST
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_FIRST">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_FIRST</a></p>
@@ -1490,7 +1126,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MOUSE_FIRST { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int MOUSE_FIRST { get; set; }</code></pre>
   </div>
 
 
@@ -1522,7 +1158,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MOUSE_LAST { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int MOUSE_LAST { get; set; }</code></pre>
   </div>
 
 
@@ -1546,7 +1182,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_MOUSE_MOVED" data-uid="Java.Awt.EventNs.MouseEvent.MOUSE_MOVED">
   MOUSE_MOVED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L183"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_MOVED">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_MOVED</a></p>
@@ -1554,7 +1190,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MOUSE_MOVED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int MOUSE_MOVED { get; set; }</code></pre>
   </div>
 
 
@@ -1578,7 +1214,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_MOUSE_PRESSED" data-uid="Java.Awt.EventNs.MouseEvent.MOUSE_PRESSED">
   MOUSE_PRESSED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_PRESSED">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_PRESSED</a></p>
@@ -1586,7 +1222,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MOUSE_PRESSED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int MOUSE_PRESSED { get; set; }</code></pre>
   </div>
 
 
@@ -1610,7 +1246,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_MOUSE_RELEASED" data-uid="Java.Awt.EventNs.MouseEvent.MOUSE_RELEASED">
   MOUSE_RELEASED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_RELEASED">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_RELEASED</a></p>
@@ -1618,7 +1254,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MOUSE_RELEASED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int MOUSE_RELEASED { get; set; }</code></pre>
   </div>
 
 
@@ -1642,7 +1278,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_MOUSE_WHEEL" data-uid="Java.Awt.EventNs.MouseEvent.MOUSE_WHEEL">
   MOUSE_WHEEL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_WHEEL">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#MOUSE_WHEEL</a></p>
@@ -1650,7 +1286,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int MOUSE_WHEEL { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int MOUSE_WHEEL { get; set; }</code></pre>
   </div>
 
 
@@ -1674,7 +1310,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_NOBUTTON" data-uid="Java.Awt.EventNs.MouseEvent.NOBUTTON">
   NOBUTTON
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L199"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#NOBUTTON">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#NOBUTTON</a></p>
@@ -1682,7 +1318,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int NOBUTTON { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static int NOBUTTON { get; set; }</code></pre>
   </div>
 
 
@@ -1706,7 +1342,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_Point" data-uid="Java.Awt.EventNs.MouseEvent.Point">
   Point
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getPoint--">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getPoint--</a></p>
@@ -1738,7 +1374,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_X" data-uid="Java.Awt.EventNs.MouseEvent.X">
   X
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getX--">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getX--</a></p>
@@ -1770,7 +1406,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_XOnScreen" data-uid="Java.Awt.EventNs.MouseEvent.XOnScreen">
   XOnScreen
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L255"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getXOnScreen--">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getXOnScreen--</a></p>
@@ -1802,7 +1438,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_Y" data-uid="Java.Awt.EventNs.MouseEvent.Y">
   Y
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L262"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getY--">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getY--</a></p>
@@ -1834,7 +1470,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_YOnScreen" data-uid="Java.Awt.EventNs.MouseEvent.YOnScreen">
   YOnScreen
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L269"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getYOnScreen--">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getYOnScreen--</a></p>
@@ -1866,11 +1502,172 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 </h2>
 
 
+  <a id="Java_Awt_EventNs_MouseEvent_CreatePoolableInstance_" data-uid="Java.Awt.EventNs.MouseEvent.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Awt_EventNs_MouseEvent_CreatePoolableInstance_Java_Awt_Component_System_Int32_System_Int64_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="Java.Awt.EventNs.MouseEvent.CreatePoolableInstance(Java.Awt.Component,System.Int32,System.Int64,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+  CreatePoolableInstance(Component, int, long, int, int, int, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for MouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MouseEvent CreatePoolableInstance(Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Awt.Component.html">Component</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg7</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Awt.EventNs.MouseEvent.html">MouseEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_EventNs_MouseEvent_CreatePoolableInstance_" data-uid="Java.Awt.EventNs.MouseEvent.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Awt_EventNs_MouseEvent_CreatePoolableInstance_Java_Awt_Component_System_Int32_System_Int64_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_" data-uid="Java.Awt.EventNs.MouseEvent.CreatePoolableInstance(Java.Awt.Component,System.Int32,System.Int64,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Int32)">
+  CreatePoolableInstance(Component, int, long, int, int, int, int, bool, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for MouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, int arg8)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MouseEvent CreatePoolableInstance(Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, int arg8)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Awt.Component.html">Component</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg7</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>arg8</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Awt.EventNs.MouseEvent.html">MouseEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Awt_EventNs_MouseEvent_CreatePoolableInstance_" data-uid="Java.Awt.EventNs.MouseEvent.CreatePoolableInstance*"></a>
+
+  <h3 id="Java_Awt_EventNs_MouseEvent_CreatePoolableInstance_Java_Awt_Component_System_Int32_System_Int64_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_" data-uid="Java.Awt.EventNs.MouseEvent.CreatePoolableInstance(Java.Awt.Component,System.Int32,System.Int64,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Int32)">
+  CreatePoolableInstance(Component, int, long, int, int, int, int, int, int, bool, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for MouseEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MouseEvent CreatePoolableInstance(Component arg0, int arg1, long arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, int arg10)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Awt.Component.html">Component</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg7</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg8</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>arg9</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>arg10</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Awt.EventNs.MouseEvent.html">MouseEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Awt_EventNs_MouseEvent_GetMouseModifiersText_" data-uid="Java.Awt.EventNs.MouseEvent.GetMouseModifiersText*"></a>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_GetMouseModifiersText_System_Int32_" data-uid="Java.Awt.EventNs.MouseEvent.GetMouseModifiersText(System.Int32)">
   GetMouseModifiersText(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getMouseModifiersText-int-">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#getMouseModifiersText-int-</a></p>
@@ -1909,7 +1706,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_IsPopupTrigger" data-uid="Java.Awt.EventNs.MouseEvent.IsPopupTrigger">
   IsPopupTrigger()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L277"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#isPopupTrigger--">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#isPopupTrigger--</a></p>
@@ -1942,7 +1739,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 
   <h3 id="Java_Awt_EventNs_MouseEvent_TranslatePoint_System_Int32_System_Int32_" data-uid="Java.Awt.EventNs.MouseEvent.TranslatePoint(System.Int32,System.Int32)">
   TranslatePoint(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L286"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#translatePoint-int-int-">https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html#translatePoint-int-int-</a></p>
@@ -1978,7 +1775,7 @@ public MouseEvent(IJVMBridgeBaseInitializer initializer)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L68" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/MouseEvent.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 

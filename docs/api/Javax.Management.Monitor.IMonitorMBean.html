@@ -89,7 +89,7 @@
 
 
   <h1 id="Javax_Management_Monitor_IMonitorMBean" data-uid="Javax.Management.Monitor.IMonitorMBean" class="text-break">
-Interface IMonitorMBean  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L76"><i class="bi bi-code-slash"></i></a>
+Interface IMonitorMBean  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -112,6 +112,13 @@ Interface IMonitorMBean  <a class="header-action link-secondary" title="View sou
 
 
 
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
+  </dd></dl>
 
 
 
@@ -125,7 +132,7 @@ Interface IMonitorMBean  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Javax_Management_Monitor_IMonitorMBean_GranularityPeriod" data-uid="Javax.Management.Monitor.IMonitorMBean.GranularityPeriod">
   GranularityPeriod
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getGranularityPeriod--">https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getGranularityPeriod--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#setGranularityPeriod-long-">https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#setGranularityPeriod-long-</a></p>
@@ -157,7 +164,7 @@ Interface IMonitorMBean  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Javax_Management_Monitor_IMonitorMBean_ObservedAttribute" data-uid="Javax.Management.Monitor.IMonitorMBean.ObservedAttribute">
   ObservedAttribute
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getObservedAttribute--">https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getObservedAttribute--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#setObservedAttribute-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#setObservedAttribute-java.lang.String-</a></p>
@@ -185,11 +192,44 @@ Interface IMonitorMBean  <a class="header-action link-secondary" title="View sou
 
 
 
+  <a id="Javax_Management_Monitor_IMonitorMBean_ObservedObject_" data-uid="Javax.Management.Monitor.IMonitorMBean.ObservedObject*"></a>
+
+  <h3 id="Javax_Management_Monitor_IMonitorMBean_ObservedObject" data-uid="Javax.Management.Monitor.IMonitorMBean.ObservedObject">
+  ObservedObject
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getObservedObject--">https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getObservedObject--</a> <a href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#setObservedObject-javax.management.ObjectName-">https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#setObservedObject-javax.management.ObjectName-</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated in JVM&quot;)]
+ObjectName ObservedObject { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Javax_Management_Monitor_IMonitorMBean_ObservedObjects_" data-uid="Javax.Management.Monitor.IMonitorMBean.ObservedObjects*"></a>
 
   <h3 id="Javax_Management_Monitor_IMonitorMBean_ObservedObjects" data-uid="Javax.Management.Monitor.IMonitorMBean.ObservedObjects">
   ObservedObjects
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getObservedObjects--">https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getObservedObjects--</a></p>
@@ -225,7 +265,7 @@ Interface IMonitorMBean  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Javax_Management_Monitor_IMonitorMBean_AddObservedObject_Javax_Management_ObjectName_" data-uid="Javax.Management.Monitor.IMonitorMBean.AddObservedObject(Javax.Management.ObjectName)">
   AddObservedObject(ObjectName)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L102"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#addObservedObject-javax.management.ObjectName-">https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#addObservedObject-javax.management.ObjectName-</a></p>
@@ -263,7 +303,7 @@ Interface IMonitorMBean  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Javax_Management_Monitor_IMonitorMBean_ContainsObservedObject_Javax_Management_ObjectName_" data-uid="Javax.Management.Monitor.IMonitorMBean.ContainsObservedObject(Javax.Management.ObjectName)">
   ContainsObservedObject(ObjectName)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#containsObservedObject-javax.management.ObjectName-">https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#containsObservedObject-javax.management.ObjectName-</a></p>
@@ -302,7 +342,7 @@ Interface IMonitorMBean  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Javax_Management_Monitor_IMonitorMBean_IsActive" data-uid="Javax.Management.Monitor.IMonitorMBean.IsActive">
   IsActive()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#isActive--">https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#isActive--</a></p>
@@ -335,7 +375,7 @@ Interface IMonitorMBean  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Javax_Management_Monitor_IMonitorMBean_RemoveObservedObject_Javax_Management_ObjectName_" data-uid="Javax.Management.Monitor.IMonitorMBean.RemoveObservedObject(Javax.Management.ObjectName)">
   RemoveObservedObject(ObjectName)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#removeObservedObject-javax.management.ObjectName-">https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#removeObservedObject-javax.management.ObjectName-</a></p>
@@ -368,7 +408,7 @@ Interface IMonitorMBean  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Javax_Management_Monitor_IMonitorMBean_Start" data-uid="Javax.Management.Monitor.IMonitorMBean.Start">
   Start()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#start--">https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#start--</a></p>
@@ -395,7 +435,7 @@ Interface IMonitorMBean  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Javax_Management_Monitor_IMonitorMBean_Stop" data-uid="Javax.Management.Monitor.IMonitorMBean.Stop">
   Stop()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#stop--">https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#stop--</a></p>
@@ -422,7 +462,7 @@ Interface IMonitorMBean  <a class="header-action link-secondary" title="View sou
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L76" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/MonitorMBean.cs/#L66" class="edit-link">Edit this page</a>
         </div>
 
 

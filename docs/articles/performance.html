@@ -89,7 +89,7 @@
 
 <p>This page reports benchmark results for the core JNet interop primitives: JVM method invocation from .NET and JVM→.NET callback latency.
 All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHub Actions</a> runners and are repeated automatically on each release across supported .NET and JDK versions.</p>
-<p>Results are reported for three JCOBridge versions — 2.6.6, 2.6.7+, and 2.6.9 — and two runtime combinations. See <a href="https://www.jcobridge.com/release-notes/">JCOBridge release notes</a> for details.</p>
+<p>Results are reported for three JCOBridge versions — 2.6.6, 2.6.7+, and 2.6.9 — across two runtime combinations. See <a href="https://www.jcobridge.com/release-notes/">JCOBridge release notes</a> for details.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Benchmarks are run on shared GitHub-hosted runners. Absolute numbers reflect that environment and should be read comparatively rather than as absolute throughput figures for a dedicated host.</p>
@@ -107,8 +107,8 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <tbody>
 <tr>
 <td>Runner</td>
-<td>GitHub Actions (<code>ubuntu-latest</code>)</td>
-<td>GitHub Actions (<code>ubuntu-latest</code>)</td>
+<td>GitHub Actions (<code>ubuntu-22.04</code>, AMD EPYC 9V45 96-Core)</td>
+<td>GitHub Actions (<code>ubuntu-22.04</code>, AMD EPYC 9V45 96-Core)</td>
 </tr>
 <tr>
 <td>Iterations per test</td>
@@ -127,6 +127,10 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 </tr>
 </tbody>
 </table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The 2.6.6 and 2.6.7+ baselines were collected on earlier <code>ubuntu-latest</code> runners and are preserved as historical reference. The 2.6.9 results use <code>ubuntu-22.04</code> with AMD EPYC 9V45 — a more consistent environment. Cross-version percentages should be read as directional trends rather than precise measurements.</p>
+</div>
 <hr>
 <h2 id="what-is-measured">What is measured</h2>
 <h3 id="jvm-method-invocation-from-net">JVM method invocation from .NET</h3>
@@ -263,7 +267,6 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <tr>
 <th>Test</th>
 <th><code>byIndex</code></th>
-<th><code>readJVM</code></th>
 <th>.NET 8 / T17</th>
 <th>.NET 10 / T25</th>
 </tr>
@@ -272,14 +275,12 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <tr>
 <td><code>RoundTrip</code></td>
 <td><code>false</code></td>
-<td><code>true</code></td>
 <td>6.945 µs</td>
 <td>6.338 µs</td>
 </tr>
 <tr>
 <td><code>Sustained</code></td>
 <td><code>false</code></td>
-<td><code>true</code></td>
 <td>6.116 µs</td>
 <td>5.548 µs</td>
 </tr>
@@ -291,7 +292,7 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <p>JCOBridge 2.6.7+ introduces the two-level <code>ListenerShallManageEvent</code> filter and the native <code>byIndex</code> trigger mechanism. General interop improvements reduce baseline overhead across all test types.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p><code>byIndex = true</code> is still simulated on the JVM side by invoking a dedicated class method rather than the interface <code>@Override</code>. The CLR-side numeric index resolution is fully active; a JVM dispatch difference (class method vs interface method) remains. The <code>byIndex = false</code> rows use the real interface override and are directly comparable between the two versions.</p>
+<p><code>byIndex = true</code> is still simulated on the JVM side by invoking a dedicated class method rather than the interface <code>@Override</code>. The CLR-side numeric index resolution is fully active; a JVM dispatch difference (class method vs interface method) remains. The <code>byIndex = false</code> rows use the real interface override and are directly comparable between versions.</p>
 </div>
 <h3 id="static-method-invocation-1">Static method invocation</h3>
 <table>
@@ -532,7 +533,7 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <p>The <strong>realistic JVM-originated callback baseline</strong> (full processing, <code>byIndex = false</code>) is <strong>5.1 µs (.NET 8 / T17)</strong> and <strong>4.7 µs (.NET 10 / T25)</strong>.</p>
 <hr>
 <h2 id="jcobridge-269">JCOBridge 2.6.9</h2>
-<p>JCOBridge 2.6.9 delivers further reductions across all test types, with the most significant gains on the sustained full-processing callback path (~17–20% over 2.6.7+).</p>
+<p>JCOBridge 2.6.9 delivers further improvements across all test types through interop layer optimizations, lazy initialization of event data (<code>TypedEventData</code>), and a pooled <code>BatchState</code> buffer that eliminates per-event array allocation in the dispose fast-scope path. Results collected on <code>ubuntu-22.04</code> / AMD EPYC 9V45 96-Core.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p><code>byIndex = true</code> is still simulated on the JVM side — see note in the 2.6.7+ section above.</p>
@@ -544,43 +545,43 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <th>Resolution</th>
 <th><code>feedback</code></th>
 <th>.NET 8 / T17</th>
-<th>vs 2.6.7+</th>
+<th>vs 2.6.6</th>
 <th>.NET 10 / T25</th>
-<th>vs 2.6.7+</th>
+<th>vs 2.6.6</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>Invoke</code></td>
 <td><code>false</code></td>
-<td>0.530 µs</td>
-<td>~0%</td>
-<td>0.521 µs</td>
-<td>+9%</td>
+<td>0.313 µs</td>
+<td>−53%</td>
+<td>0.265 µs</td>
+<td>−56%</td>
 </tr>
 <tr>
 <td><code>IWS</code></td>
 <td><code>false</code></td>
-<td>0.337 µs</td>
-<td>−5%</td>
-<td>0.334 µs</td>
-<td>~0%</td>
+<td>0.248 µs</td>
+<td>−50%</td>
+<td>0.250 µs</td>
+<td>−40%</td>
 </tr>
 <tr>
 <td><code>Invoke</code></td>
 <td><code>true</code></td>
-<td>0.555 µs</td>
-<td><strong>−9%</strong></td>
-<td>0.512 µs</td>
-<td><strong>−11%</strong></td>
+<td>0.471 µs</td>
+<td>−48%</td>
+<td>0.482 µs</td>
+<td>−40%</td>
 </tr>
 <tr>
 <td><code>IWS</code></td>
 <td><code>true</code></td>
-<td>0.400 µs</td>
-<td><strong>−8%</strong></td>
-<td>0.390 µs</td>
-<td><strong>−7%</strong></td>
+<td>0.311 µs</td>
+<td>−55%</td>
+<td>0.305 µs</td>
+<td>−42%</td>
 </tr>
 </tbody>
 </table>
@@ -591,43 +592,43 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <th>Resolution</th>
 <th><code>feedback</code></th>
 <th>.NET 8 / T17</th>
-<th>vs 2.6.7+</th>
+<th>vs 2.6.6</th>
 <th>.NET 10 / T25</th>
-<th>vs 2.6.7+</th>
+<th>vs 2.6.6</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>Invoke</code></td>
 <td><code>false</code></td>
-<td>0.332 µs</td>
-<td>−5%</td>
-<td>0.305 µs</td>
-<td>+1%</td>
+<td>0.189 µs</td>
+<td>−67%</td>
+<td>0.176 µs</td>
+<td>−64%</td>
 </tr>
 <tr>
 <td><code>IWS</code></td>
 <td><code>false</code></td>
-<td>0.278 µs</td>
-<td>−6%</td>
-<td>0.272 µs</td>
-<td>~0%</td>
+<td>0.162 µs</td>
+<td>−65%</td>
+<td>0.178 µs</td>
+<td>−53%</td>
 </tr>
 <tr>
 <td><code>Invoke</code></td>
 <td><code>true</code></td>
-<td>0.549 µs</td>
-<td>~0%</td>
-<td>0.477 µs</td>
-<td><strong>−7%</strong></td>
+<td>0.389 µs</td>
+<td>−55%</td>
+<td>0.390 µs</td>
+<td>−49%</td>
 </tr>
 <tr>
 <td><code>IWS</code></td>
 <td><code>true</code></td>
-<td>0.435 µs</td>
-<td>−3%</td>
-<td>0.388 µs</td>
-<td><strong>−14%</strong></td>
+<td>0.287 µs</td>
+<td>−55%</td>
+<td>0.307 µs</td>
+<td>−43%</td>
 </tr>
 </tbody>
 </table>
@@ -639,9 +640,9 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <th><code>continueFirstCheck</code></th>
 <th><code>continueSecondCheck</code></th>
 <th>.NET 8 / T17</th>
-<th>vs 2.6.7+</th>
+<th>vs 2.6.6</th>
 <th>.NET 10 / T25</th>
-<th>vs 2.6.7+</th>
+<th>vs 2.6.6</th>
 </tr>
 </thead>
 <tbody>
@@ -649,55 +650,55 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <td><code>false</code></td>
 <td><code>false</code></td>
 <td><code>false</code></td>
-<td>1.117 µs</td>
-<td>+1%</td>
-<td>1.023 µs</td>
-<td>−2%</td>
+<td>0.709 µs</td>
+<td>−37%</td>
+<td>0.768 µs</td>
+<td>−21%</td>
 </tr>
 <tr>
 <td><code>true</code> ¹</td>
 <td><code>false</code></td>
 <td><code>false</code></td>
-<td>0.461 µs</td>
-<td>+2%</td>
-<td>0.391 µs</td>
-<td>−10%</td>
+<td>0.240 µs</td>
+<td>—</td>
+<td>0.252 µs</td>
+<td>—</td>
 </tr>
 <tr>
 <td><code>false</code></td>
 <td><code>true</code></td>
 <td><code>false</code></td>
-<td>1.141 µs</td>
-<td>+1%</td>
-<td>0.994 µs</td>
-<td>−7%</td>
-</tr>
-<tr>
-<td><code>true</code> ¹</td>
-<td><code>true</code></td>
-<td><code>false</code></td>
-<td>0.495 µs</td>
-<td>−1%</td>
-<td>0.407 µs</td>
-<td>−11%</td>
-</tr>
-<tr>
-<td><code>false</code></td>
-<td><code>true</code></td>
-<td><code>true</code></td>
-<td>4.983 µs</td>
-<td><strong>−14%</strong></td>
-<td>4.573 µs</td>
-<td><strong>−14%</strong></td>
+<td>1.028 µs</td>
+<td>−6%</td>
+<td>0.935 µs</td>
+<td>−4%</td>
 </tr>
 <tr>
 <td><code>true</code> ¹</td>
 <td><code>true</code></td>
+<td><code>false</code></td>
+<td>0.401 µs</td>
+<td>—</td>
+<td>0.451 µs</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>false</code></td>
 <td><code>true</code></td>
-<td>4.197 µs</td>
-<td><strong>−16%</strong></td>
-<td>3.846 µs</td>
-<td><strong>−17%</strong></td>
+<td><code>true</code></td>
+<td>3.157 µs</td>
+<td>−55%</td>
+<td>3.278 µs</td>
+<td>−48%</td>
+</tr>
+<tr>
+<td><code>true</code> ¹</td>
+<td><code>true</code></td>
+<td><code>true</code></td>
+<td>2.607 µs</td>
+<td>—</td>
+<td>2.713 µs</td>
+<td>—</td>
 </tr>
 </tbody>
 </table>
@@ -710,9 +711,9 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <th><code>continueFirstCheck</code></th>
 <th><code>continueSecondCheck</code></th>
 <th>.NET 8 / T17</th>
-<th>vs 2.6.7+</th>
+<th>vs 2.6.6</th>
 <th>.NET 10 / T25</th>
-<th>vs 2.6.7+</th>
+<th>vs 2.6.6</th>
 </tr>
 </thead>
 <tbody>
@@ -720,318 +721,75 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <td><code>false</code></td>
 <td><code>false</code></td>
 <td><code>false</code></td>
-<td>0.553 µs</td>
-<td>−8%</td>
-<td>0.470 µs</td>
-<td>~0%</td>
-</tr>
-<tr>
-<td><code>true</code> ¹</td>
-<td><code>false</code></td>
-<td><code>false</code></td>
-<td><strong>0.051 µs</strong></td>
-<td>+13%</td>
-<td><strong>0.041 µs</strong></td>
-<td>~0%</td>
-</tr>
-<tr>
-<td><code>false</code></td>
-<td><code>true</code></td>
-<td><code>false</code></td>
-<td>0.567 µs</td>
-<td>−9%</td>
-<td>0.488 µs</td>
-<td>−1%</td>
-</tr>
-<tr>
-<td><code>true</code> ¹</td>
-<td><code>true</code></td>
-<td><code>false</code></td>
-<td><strong>0.066 µs</strong></td>
-<td>−11%</td>
-<td><strong>0.057 µs</strong></td>
-<td><strong>−15%</strong></td>
-</tr>
-<tr>
-<td><code>false</code></td>
-<td><code>true</code></td>
-<td><code>true</code></td>
-<td>4.237 µs</td>
-<td><strong>−17%</strong></td>
-<td>3.990 µs</td>
-<td><strong>−16%</strong></td>
-</tr>
-<tr>
-<td><code>true</code> ¹</td>
-<td><code>true</code></td>
-<td><code>true</code></td>
-<td>3.606 µs</td>
-<td><strong>−19%</strong></td>
-<td>3.327 µs</td>
-<td><strong>−20%</strong></td>
-</tr>
-</tbody>
-</table>
-<p>¹ <code>byIndex = true</code> simulated on the JVM side — see note above.</p>
-<hr>
-<h2 id="jcobridge-latest">JCOBridge latest</h2>
-<p>The latest release introduces the index-based delegate variants (<code>ListenerShallManageEventIndex</code>, <code>ListenerShallManageEventIndexWithData</code>) as the primary hot-path API, avoiding any index→name string conversion. General interop improvements deliver consistent ~20–25% reductions across all test types on .NET 8, with the first-gate discard path reaching <strong>35 ns</strong> on both .NET 8 and .NET 10.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p><code>byIndex = true</code> is still simulated on the JVM side — see note in the 2.6.7+ section above. The gate test fires with the raw integer index and returns immediately without name lookup, reflecting the <code>ListenerShallManageEventIndex</code> path.</p>
-</div>
-<h3 id="static-method-invocation-3">Static method invocation</h3>
-<table>
-<thead>
-<tr>
-<th>Resolution</th>
-<th><code>feedback</code></th>
-<th>.NET 8 / T17</th>
-<th>vs 2.6.9</th>
-<th>.NET 10 / T25</th>
-<th>vs 2.6.9</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Invoke</code></td>
-<td><code>false</code></td>
-<td>0.384 µs</td>
-<td><strong>−28%</strong></td>
-<td>0.428 µs</td>
-<td>−18%</td>
-</tr>
-<tr>
-<td><code>IWS</code></td>
-<td><code>false</code></td>
-<td>0.275 µs</td>
-<td><strong>−18%</strong></td>
-<td>0.332 µs</td>
-<td>~0%</td>
-</tr>
-<tr>
-<td><code>Invoke</code></td>
-<td><code>true</code></td>
-<td>0.435 µs</td>
-<td><strong>−22%</strong></td>
-<td>0.514 µs</td>
-<td>~0%</td>
-</tr>
-<tr>
-<td><code>IWS</code></td>
-<td><code>true</code></td>
-<td>0.317 µs</td>
-<td><strong>−21%</strong></td>
-<td>0.413 µs</td>
-<td>+6%</td>
-</tr>
-</tbody>
-</table>
-<h3 id="instance-method-invocation-3">Instance method invocation</h3>
-<table>
-<thead>
-<tr>
-<th>Resolution</th>
-<th><code>feedback</code></th>
-<th>.NET 8 / T17</th>
-<th>vs 2.6.9</th>
-<th>.NET 10 / T25</th>
-<th>vs 2.6.9</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Invoke</code></td>
-<td><code>false</code></td>
-<td>0.260 µs</td>
-<td><strong>−22%</strong></td>
-<td>0.316 µs</td>
-<td>+4%</td>
-</tr>
-<tr>
-<td><code>IWS</code></td>
-<td><code>false</code></td>
-<td>0.215 µs</td>
-<td><strong>−23%</strong></td>
-<td>0.269 µs</td>
-<td>~0%</td>
-</tr>
-<tr>
-<td><code>Invoke</code></td>
-<td><code>true</code></td>
-<td>0.420 µs</td>
-<td><strong>−24%</strong></td>
-<td>0.517 µs</td>
-<td>+8%</td>
-</tr>
-<tr>
-<td><code>IWS</code></td>
-<td><code>true</code></td>
-<td>0.312 µs</td>
-<td><strong>−28%</strong></td>
-<td>0.426 µs</td>
-<td>+10%</td>
-</tr>
-</tbody>
-</table>
-<h3 id="callback-testpredicateroundtrip-2">Callback: <code>TestPredicateRoundTrip</code></h3>
-<table>
-<thead>
-<tr>
-<th><code>byIndex</code></th>
-<th><code>continueFirstCheck</code></th>
-<th><code>continueSecondCheck</code></th>
-<th>.NET 8 / T17</th>
-<th>vs 2.6.9</th>
-<th>.NET 10 / T25</th>
-<th>vs 2.6.9</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>false</code></td>
-<td><code>false</code></td>
-<td><code>false</code></td>
-<td>0.871 µs</td>
-<td><strong>−22%</strong></td>
-<td>1.004 µs</td>
-<td>−2%</td>
-</tr>
-<tr>
-<td><code>true</code> ¹</td>
-<td><code>false</code></td>
-<td><code>false</code></td>
-<td>0.320 µs</td>
-<td><strong>−31%</strong></td>
-<td>0.385 µs</td>
-<td>−1%</td>
-</tr>
-<tr>
-<td><code>false</code></td>
-<td><code>true</code></td>
-<td><code>false</code></td>
-<td>0.844 µs</td>
-<td><strong>−26%</strong></td>
-<td>1.005 µs</td>
-<td>+1%</td>
-</tr>
-<tr>
-<td><code>true</code> ¹</td>
-<td><code>true</code></td>
-<td><code>false</code></td>
-<td>0.365 µs</td>
-<td><strong>−26%</strong></td>
-<td>0.413 µs</td>
-<td>+1%</td>
-</tr>
-<tr>
-<td><code>false</code></td>
-<td><code>true</code></td>
-<td><code>true</code></td>
-<td>3.825 µs</td>
-<td><strong>−23%</strong></td>
-<td>4.716 µs</td>
-<td>+3%</td>
-</tr>
-<tr>
-<td><code>true</code> ¹</td>
-<td><code>true</code></td>
-<td><code>true</code></td>
-<td>3.195 µs</td>
-<td><strong>−24%</strong></td>
-<td>4.092 µs</td>
-<td>+6%</td>
-</tr>
-</tbody>
-</table>
-<p>¹ <code>byIndex = true</code> simulated on the JVM side — see note above.</p>
-<h3 id="callback-testpredicatesustained-2">Callback: <code>TestPredicateSustained</code></h3>
-<table>
-<thead>
-<tr>
-<th><code>byIndex</code></th>
-<th><code>continueFirstCheck</code></th>
-<th><code>continueSecondCheck</code></th>
-<th>.NET 8 / T17</th>
-<th>vs 2.6.9</th>
-<th>.NET 10 / T25</th>
-<th>vs 2.6.9</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>false</code></td>
-<td><code>false</code></td>
-<td><code>false</code></td>
-<td>0.418 µs</td>
-<td><strong>−24%</strong></td>
-<td>0.462 µs</td>
-<td>−2%</td>
+<td>0.379 µs</td>
+<td>−94%</td>
+<td>0.366 µs</td>
+<td>−93%</td>
 </tr>
 <tr>
 <td><code>true</code> ¹</td>
 <td><code>false</code></td>
 <td><code>false</code></td>
 <td><strong>0.035 µs</strong></td>
-<td><strong>−31%</strong></td>
-<td><strong>0.035 µs</strong></td>
-<td><strong>−15%</strong></td>
+<td>—</td>
+<td><strong>0.030 µs</strong></td>
+<td>—</td>
 </tr>
 <tr>
 <td><code>false</code></td>
 <td><code>true</code></td>
 <td><code>false</code></td>
-<td>0.435 µs</td>
-<td><strong>−23%</strong></td>
-<td>0.471 µs</td>
-<td>−3%</td>
-</tr>
-<tr>
-<td><code>true</code> ¹</td>
-<td><code>true</code></td>
-<td><code>false</code></td>
-<td><strong>0.070 µs</strong></td>
-<td>+6%</td>
-<td><strong>0.053 µs</strong></td>
-<td>−7%</td>
-</tr>
-<tr>
-<td><code>false</code></td>
-<td><code>true</code></td>
-<td><code>true</code></td>
-<td>3.299 µs</td>
-<td><strong>−22%</strong></td>
-<td>4.127 µs</td>
-<td>+3%</td>
+<td>0.505 µs</td>
+<td>−92%</td>
+<td>0.522 µs</td>
+<td>−91%</td>
 </tr>
 <tr>
 <td><code>true</code> ¹</td>
 <td><code>true</code></td>
+<td><code>false</code></td>
+<td><strong>0.144 µs</strong></td>
+<td>—</td>
+<td><strong>0.152 µs</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>false</code></td>
 <td><code>true</code></td>
-<td>2.780 µs</td>
-<td><strong>−23%</strong></td>
-<td>3.650 µs</td>
-<td>+10%</td>
+<td><code>true</code></td>
+<td>2.674 µs</td>
+<td>−56%</td>
+<td>2.750 µs</td>
+<td>−50%</td>
+</tr>
+<tr>
+<td><code>true</code> ¹</td>
+<td><code>true</code></td>
+<td><code>true</code></td>
+<td>2.324 µs</td>
+<td>—</td>
+<td>2.278 µs</td>
+<td>—</td>
 </tr>
 </tbody>
 </table>
 <p>¹ <code>byIndex = true</code> simulated on the JVM side — see note above.</p>
-<p>The <strong>realistic JVM-originated callback baseline</strong> (full processing, <code>byIndex = false</code>) improves to <strong>3.3 µs (.NET 8 / T17)</strong> — a <strong>−35%</strong> reduction over 2.6.7+ and <strong>−46%</strong> over 2.6.6. The .NET 10 figures show runner variance in this run; the .NET 8 trend is the reliable signal.</p>
-<p>The three distinct operating points on .NET 8:</p>
+<p>The <strong>realistic JVM-originated callback baseline</strong> (full processing, <code>byIndex = false</code>) reaches <strong>2.7 µs on both .NET 8 and .NET 10</strong> — a <strong>−56%</strong> reduction over 2.6.6.</p>
+<p>The three distinct operating points:</p>
 <p><strong>First gate only (<code>continueFirstCheck = false</code>)</strong> — event discarded before any data is read:</p>
 <ul>
-<li><code>byIndex = false</code>: ~0.42 µs.</li>
-<li><code>byIndex = true</code>: <strong>~35 ns</strong> — <code>ListenerShallManageEventIndex</code> path, pure integer check, no string conversion.</li>
+<li><code>byIndex = false</code>: ~0.38–0.37 µs — string key lookup.</li>
+<li><code>byIndex = true</code>: <strong>~35 ns (.NET 8) / ~30 ns (.NET 10)</strong> — <code>ListenerShallManageEventIndex</code> path, pure integer check, no string conversion. ~28–33 M events/sec.</li>
 </ul>
 <p><strong>Second gate (<code>continueFirstCheck = true, continueSecondCheck = false</code>)</strong> — raw data available for inspection, handler not invoked:</p>
 <ul>
-<li><code>byIndex = false</code>: ~0.44 µs.</li>
-<li><code>byIndex = true</code>: <strong>~70 ns</strong>.</li>
+<li><code>byIndex = false</code>: ~0.51–0.52 µs.</li>
+<li><code>byIndex = true</code>: <strong>~144 ns (.NET 8) / ~152 ns (.NET 10)</strong> — includes raw data retrieval from JVM.</li>
 </ul>
-<p><strong>Full processing (<code>continueFirstCheck = true, continueSecondCheck = true</code>)</strong>: ~3.3 µs (<code>byIndex = false</code>), ~2.8 µs (<code>byIndex = true</code>).</p>
+<p><strong>Full processing (<code>continueFirstCheck = true, continueSecondCheck = true</code>)</strong>: ~2.7 µs (<code>byIndex = false</code>), ~2.3 µs (<code>byIndex = true</code>).</p>
 <hr>
 <h2 id="bulk-data-transfer-at-the-jvmclr-boundary">Bulk data transfer at the JVM↔CLR boundary</h2>
-<p>JCOBridge 2.6.9 introduces <code>JCOBridgeDirectBuffer&lt;T&gt;</code> (wrapping a JVM <code>DirectByteBuffer</code>) and <code>JCOBridgeStream&lt;T&gt;</code> (wrapping a JVM native array), both with <code>T : unmanaged</code>. Both types expose <code>ToStream()</code> (backed by <code>UnmanagedMemoryStream</code>), <code>ReadOnlySpan&lt;T&gt;</code>, and .NET Framework-compatible shims.</p>
+<p>JCOBridge 2.6.9 enhances <code>JCOBridgeDirectBuffer&lt;T&gt;</code> (wrapping a JVM <code>DirectByteBuffer</code>) and introduces <code>JCOBridgeStream&lt;T&gt;</code> (wrapping a JVM native array), both with <code>T : unmanaged</code>. Both types expose <code>ToStream()</code> (backed by <code>UnmanagedMemoryStream</code>), <code>ReadOnlySpan&lt;T&gt;</code>, and .NET Framework-compatible shims.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p><code>ReadOnlySpan</code> and <code>JCOBridgeStream</code> zero-copy access requires the <strong>JCOBridge HPA edition</strong>. Without HPA, these paths perform an internal local copy — faster than the full JVM→CLR array transfer for most sizes, but not truly zero-copy. The benchmarks below use the <strong>standard edition</strong>; HPA results will be added when available.</p>
@@ -1317,9 +1075,7 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <th>.NET 8 / T17</th>
 <th></th>
 <th></th>
-<th></th>
 <th>.NET 10 / T25</th>
-<th></th>
 <th></th>
 <th></th>
 </tr>
@@ -1330,185 +1086,155 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <td>2.6.6</td>
 <td>2.6.7+</td>
 <td>2.6.9</td>
-<td>Latest</td>
 <td>2.6.6</td>
 <td>2.6.7+</td>
 <td>2.6.9</td>
-<td>Latest</td>
 </tr>
 <tr>
 <td>Static <code>Invoke</code> fb=false</td>
 <td>0.661</td>
 <td>0.517 (−22%)</td>
-<td>0.530</td>
-<td>0.384 (−42%)</td>
+<td>0.313 (−53%)</td>
 <td>0.602</td>
 <td>0.480 (−20%)</td>
-<td>0.521</td>
-<td>0.428 (−29%)</td>
+<td>0.265 (−56%)</td>
 </tr>
 <tr>
 <td>Static <code>IWS</code> fb=false</td>
 <td>0.494</td>
 <td>0.356 (−28%)</td>
-<td>0.337</td>
-<td>0.275 (−44%)</td>
+<td>0.248 (−50%)</td>
 <td>0.414</td>
 <td>0.335 (−19%)</td>
-<td>0.334</td>
-<td>0.332 (−20%)</td>
+<td>0.250 (−40%)</td>
 </tr>
 <tr>
 <td>Static <code>Invoke</code> fb=true</td>
 <td>0.901</td>
 <td>0.609 (−32%)</td>
-<td>0.555</td>
-<td>0.435 (−52%)</td>
+<td>0.471 (−48%)</td>
 <td>0.803</td>
 <td>0.575 (−28%)</td>
-<td>0.512</td>
-<td>0.514 (−36%)</td>
+<td>0.482 (−40%)</td>
 </tr>
 <tr>
 <td>Static <code>IWS</code> fb=true</td>
 <td>0.686</td>
 <td>0.435 (−37%)</td>
-<td>0.400</td>
-<td>0.317 (−54%)</td>
+<td>0.311 (−55%)</td>
 <td>0.522</td>
 <td>0.419 (−20%)</td>
-<td>0.390</td>
-<td>0.413 (−21%)</td>
+<td>0.305 (−42%)</td>
 </tr>
 <tr>
 <td>Instance <code>Invoke</code> fb=false</td>
 <td>0.579</td>
 <td>0.349 (−40%)</td>
-<td>0.332</td>
-<td>0.260 (−55%)</td>
+<td>0.189 (−67%)</td>
 <td>0.490</td>
 <td>0.301 (−39%)</td>
-<td>0.305</td>
-<td>0.316 (−36%)</td>
+<td>0.176 (−64%)</td>
 </tr>
 <tr>
 <td>Instance <code>IWS</code> fb=false</td>
 <td>0.468</td>
 <td>0.295 (−37%)</td>
-<td>0.278</td>
-<td>0.215 (−54%)</td>
+<td>0.162 (−65%)</td>
 <td>0.379</td>
 <td>0.274 (−28%)</td>
-<td>0.272</td>
-<td>0.269 (−29%)</td>
+<td>0.178 (−53%)</td>
 </tr>
 <tr>
 <td>Instance <code>Invoke</code> fb=true</td>
 <td>0.856</td>
 <td>0.552 (−36%)</td>
-<td>0.549</td>
-<td>0.420 (−51%)</td>
+<td>0.389 (−55%)</td>
 <td>0.764</td>
 <td>0.511 (−33%)</td>
-<td>0.477</td>
-<td>0.517 (−32%)</td>
+<td>0.390 (−49%)</td>
 </tr>
 <tr>
 <td>Instance <code>IWS</code> fb=true</td>
 <td>0.638</td>
 <td>0.448 (−30%)</td>
-<td>0.435</td>
-<td>0.312 (−51%)</td>
+<td>0.287 (−55%)</td>
 <td>0.535</td>
 <td>0.452 (−15%)</td>
-<td>0.388</td>
-<td>0.426 (−20%)</td>
+<td>0.307 (−43%)</td>
 </tr>
 <tr>
 <td>Sustained: full, <code>byIndex=false</code></td>
 <td>6.116</td>
 <td>5.098 (−17%)</td>
-<td>4.237 (−31%)</td>
-<td>3.299 (−46%)</td>
+<td>2.674 (−56%)</td>
 <td>5.548</td>
 <td>4.725 (−15%)</td>
-<td>3.990 (−28%)</td>
-<td>4.127 (−26%)</td>
+<td>2.750 (−50%)</td>
 </tr>
 <tr>
 <td>Sustained: full, <code>byIndex=true</code> ¹</td>
 <td>—</td>
 <td>4.467</td>
-<td>3.606 (−19%)</td>
-<td>2.780 (−38%)</td>
+<td>2.324</td>
 <td>—</td>
 <td>4.141</td>
-<td>3.327 (−20%)</td>
-<td>3.650 (−12%)</td>
+<td>2.278</td>
 </tr>
 <tr>
 <td>Sustained: 1st gate, <code>byIndex=false</code></td>
 <td>—</td>
 <td>0.601</td>
-<td>0.553</td>
-<td>0.418</td>
+<td>0.379</td>
 <td>—</td>
 <td>0.468</td>
-<td>0.470</td>
-<td>0.462</td>
+<td>0.366</td>
 </tr>
 <tr>
 <td>Sustained: 1st gate, <code>byIndex=true</code> ¹</td>
 <td>—</td>
 <td><strong>0.045</strong></td>
-<td><strong>0.051</strong></td>
 <td><strong>0.035</strong></td>
 <td>—</td>
 <td><strong>0.041</strong></td>
-<td><strong>0.041</strong></td>
-<td><strong>0.035</strong></td>
+<td><strong>0.030</strong></td>
 </tr>
 <tr>
 <td>Sustained: 2nd gate, <code>byIndex=false</code></td>
 <td>—</td>
 <td>0.625</td>
-<td>0.567</td>
-<td>0.435</td>
+<td>0.505</td>
 <td>—</td>
 <td>0.493</td>
-<td>0.488</td>
-<td>0.471</td>
+<td>0.522</td>
 </tr>
 <tr>
 <td>Sustained: 2nd gate, <code>byIndex=true</code> ¹</td>
 <td>—</td>
 <td><strong>0.074</strong></td>
-<td><strong>0.066</strong></td>
-<td><strong>0.070</strong></td>
+<td><strong>0.144</strong></td>
 <td>—</td>
 <td><strong>0.067</strong></td>
-<td><strong>0.057</strong></td>
-<td><strong>0.053</strong></td>
+<td><strong>0.152</strong></td>
 </tr>
 </tbody>
 </table>
 <p>All values in µs. Percentages vs 2.6.6 where available. ¹ <code>byIndex = true</code> simulated on the JVM side.</p>
 <h3 id="comparison-with-raw-jni-overhead">Comparison with raw JNI overhead</h3>
-<p>The <strong>35 ns</strong> figure for <code>byIndex = true</code>, first-gate discard (Sustained, latest) is worth contextualizing against published raw JNI benchmarks on dedicated hardware. Independent JMH benchmarks measure an empty JNI call at ~57 ns via JavaCPP and ~22 ns on a modern laptop for a minimal no-op native method (<a href="https://github.com/zakgof/java-native-benchmark">java-native-benchmark</a>, <a href="https://dkomanov.medium.com/java-native-access-performance-cf4ce0d68ddb">Komanov 2022</a>).</p>
-<p>JNet's first-gate discard path (<code>ListenerShallManageEventIndex</code>) involves a JVM→CLR crossing, a numeric index lookup, and an immediate return — all on shared CI infrastructure. Reaching <strong>35 ns on both .NET 8 and .NET 10</strong> places JNet within the range of raw JNI call overhead measured on dedicated bare-metal hardware, despite the additional CLR interop layer.</p>
+<p>The <strong>30–35 ns</strong> figure for <code>byIndex = true</code>, first-gate discard (Sustained, 2.6.9) is worth contextualizing against published raw JNI benchmarks on dedicated hardware. Independent JMH benchmarks measure an empty JNI call at ~57 ns via JavaCPP and ~22 ns on a modern laptop for a minimal no-op native method (<a href="https://github.com/zakgof/java-native-benchmark">java-native-benchmark</a>, <a href="https://dkomanov.medium.com/java-native-access-performance-cf4ce0d68ddb">Komanov 2022</a>).</p>
+<p>JNet's first-gate discard path (<code>ListenerShallManageEventIndex</code>) involves a JVM→CLR crossing, a numeric index lookup, and an immediate return — all on shared CI infrastructure. Reaching <strong>30–35 ns per event</strong> places JNet within the range of raw JNI call overhead measured on dedicated bare-metal hardware, despite the additional CLR interop layer.</p>
 <hr>
 <h2 id="guidance">Guidance</h2>
 <ul>
-<li><strong>Prefer <code>InvokeWithSignature</code></strong> (<code>IWS</code>) over <code>Invoke</code> in hot paths — it avoids .NET-side type matching on every call and consistently delivers 20–40% lower latency when arguments are involved.</li>
-<li><strong>The realistic JVM-originated callback reference</strong> is <code>Sustained</code>, full processing, <code>byIndex = false</code>: <strong>~3.3 µs (.NET 8 / T17)</strong> in the latest version. With <code>byIndex = true</code> this drops to ~2.8 µs.</li>
+<li><strong>Prefer <code>InvokeWithSignature</code></strong> (<code>IWS</code>) over <code>Invoke</code> in hot paths — it avoids .NET-side type matching on every call and consistently delivers 20–55% lower latency when arguments are involved.</li>
+<li><strong>The realistic JVM-originated callback reference</strong> is <code>Sustained</code>, full processing, <code>byIndex = false</code>: <strong>~2.7 µs</strong> on both .NET 8 / T17 and .NET 10 / T25 in 2.6.9. With <code>byIndex = true</code> this drops to ~2.3 µs.</li>
 <li><strong>Use the two-level <code>ListenerShallManageEvent</code> filter</strong> for high-event-rate sources where only a subset of events require full processing:
 <ul>
-<li>First gate (<code>ListenerShallManageEventIndex</code>) — discard by event index before any data read, no string conversion: <strong>~35 ns</strong> with <code>byIndex = true</code>.</li>
-<li>Second gate (<code>ListenerShallManageEventIndexWithData</code>) — inspect raw data before deciding: <strong>~70 ns</strong> with <code>byIndex = true</code>.</li>
+<li>First gate (<code>ListenerShallManageEventIndex</code>) — discard by event index before any data read, no string conversion: <strong>~30–35 ns</strong> with <code>byIndex = true</code>.</li>
+<li>Second gate (<code>ListenerShallManageEventIndexWithData</code>) — raw data available for inspection before handler dispatch: <strong>~144–152 ns</strong> with <code>byIndex = true</code>.</li>
 <li>Name-based variants (<code>ListenerShallManageEventName</code>, <code>ListenerShallManageEventNameWithData</code>) are available when filtering by event name is more convenient; they add the cost of <code>ConvertListenerEventIndexToEventName</code>.</li>
 </ul>
 </li>
-<li><strong>Newer runtimes help</strong>: .NET 10 / Temurin 25 matches or outperforms .NET 8 / Temurin 17 across most test types; runner variance can obscure this on individual runs.</li>
+<li><strong>Newer runtimes help</strong>: .NET 10 / Temurin 25 matches or outperforms .NET 8 / Temurin 17 across most test types, with the largest gains on instance method invocation and the first-gate discard path.</li>
 <li>The <code>byIndex = true</code> mechanism will deliver its full benefit on the full-processing path once the JVM-side simulation is replaced with real interface dispatch.</li>
 <li>If your application runs callbacks at sustained high frequency, consider the <a href="https://www.jcobridge.com">JCOBridge HPA edition</a> — it addresses GC-boundary instability under sustained JVM↔CLR call pressure, which is the primary reliability concern at high call rates.</li>
 </ul>

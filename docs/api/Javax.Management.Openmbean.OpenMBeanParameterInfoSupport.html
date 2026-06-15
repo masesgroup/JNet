@@ -89,7 +89,7 @@
 
 
   <h1 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport" class="text-break">
-Class OpenMBeanParameterInfoSupport  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L68"><i class="bi bi-code-slash"></i></a>
+Class OpenMBeanParameterInfoSupport  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class OpenMBeanParameterInfoSupport  <a class="header-action link-secondary" tit
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OpenMBeanParameterInfoSupport : MBeanParameterInfo, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class OpenMBeanParameterInfoSupport : MBeanParameterInfo, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBaseInstance&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeBaseInstance, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -126,10 +126,11 @@ Class OpenMBeanParameterInfoSupport  <a class="header-action link-secondary" tit
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
+      <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInstance.html">IJVMBridgeBaseInstance</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
     </dd>
   </dl>
@@ -139,7 +140,19 @@ Class OpenMBeanParameterInfoSupport  <a class="header-action link-secondary" tit
     <dt>Inherited Members</dt>
     <dd>
     <div>
+      <a class="xref" href="Javax.Management.MBeanParameterInfo.html#Javax_Management_MBeanParameterInfo_CreatePoolableInstance_Java_Lang_String_Java_Lang_String_Java_Lang_String_Javax_Management_Descriptor_">MBeanParameterInfo.CreatePoolableInstance(String, String, String, Descriptor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Management.MBeanParameterInfo.html#Javax_Management_MBeanParameterInfo_CreatePoolableInstance_Java_Lang_String_Java_Lang_String_Java_Lang_String_">MBeanParameterInfo.CreatePoolableInstance(String, String, String)</a>
+    </div>
+    <div>
       <a class="xref" href="Javax.Management.MBeanParameterInfo.html#Javax_Management_MBeanParameterInfo_Type">MBeanParameterInfo.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Management.MBeanFeatureInfo.html#Javax_Management_MBeanFeatureInfo_CreatePoolableInstance_Java_Lang_String_Java_Lang_String_Javax_Management_Descriptor_">MBeanFeatureInfo.CreatePoolableInstance(String, String, Descriptor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Management.MBeanFeatureInfo.html#Javax_Management_MBeanFeatureInfo_CreatePoolableInstance_Java_Lang_String_Java_Lang_String_">MBeanFeatureInfo.CreatePoolableInstance(String, String)</a>
     </div>
     <div>
       <a class="xref" href="Javax.Management.MBeanFeatureInfo.html#Javax_Management_MBeanFeatureInfo_Description">MBeanFeatureInfo.Description</a>
@@ -149,363 +162,6 @@ Class OpenMBeanParameterInfoSupport  <a class="header-action link-secondary" tit
     </div>
     <div>
       <a class="xref" href="Javax.Management.MBeanFeatureInfo.html#Javax_Management_MBeanFeatureInfo_Name">MBeanFeatureInfo.Name</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteStream&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SGetField(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SGetFieldStream&lt;TReturn&gt;(IJavaType, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SGetFieldStream&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SSetField(IJavaType, string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SSetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.IsAssignableFrom(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.IsAssignableFrom(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.New(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.NewWithSignature(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.Execute&lt;T&gt;(params T[])</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(IJVMBridgeBase, IJVMBridgeBase)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.MonitorExit()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastToAndDetach&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CastDirectAndDetach&lt;TNewClass&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.CheckDisposed()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Notify()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.NotifyAll()</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.Wait()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteStream&lt;TArrayType&gt;(string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureStream&lt;TArrayType&gt;(string, string, params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldStream&lt;TReturn&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Throw&lt;TException&gt;(params object[])</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.BiThrow&lt;TException&gt;(params object[])</a>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.BridgeInstance</span>
-    </div>
-    <div>
-      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
@@ -550,10 +206,19 @@ Class OpenMBeanParameterInfoSupport  <a class="header-action link-secondary" tit
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
@@ -569,6 +234,9 @@ Class OpenMBeanParameterInfoSupport  <a class="header-action link-secondary" tit
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_DisposeIfDisposable_System_Object_">JNetCoreExtensions.DisposeIfDisposable(object)</a>
+  </div>
   </dd></dl>
 
 
@@ -583,7 +251,7 @@ Class OpenMBeanParameterInfoSupport  <a class="header-action link-secondary" tit
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport__ctor_Java_Lang_String_Java_Lang_String_Javax_Management_Openmbean_OpenType_System_Object_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.#ctor(Java.Lang.String,Java.Lang.String,Javax.Management.Openmbean.OpenType,System.Object)">
   OpenMBeanParameterInfoSupport(String, String, OpenType, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,java.lang.Object)">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,java.lang.Object)</a></p>
@@ -630,7 +298,7 @@ Class OpenMBeanParameterInfoSupport  <a class="header-action link-secondary" tit
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport__ctor_Java_Lang_String_Java_Lang_String_Javax_Management_Openmbean_OpenType_System_Object_Java_Lang_Comparable_Java_Lang_Comparable_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.#ctor(Java.Lang.String,Java.Lang.String,Javax.Management.Openmbean.OpenType,System.Object,Java.Lang.Comparable,Java.Lang.Comparable)">
   OpenMBeanParameterInfoSupport(String, String, OpenType, object, Comparable, Comparable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,java.lang.Object,java.lang.Comparable,java.lang.Comparable)">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,java.lang.Object,java.lang.Comparable,java.lang.Comparable)</a></p>
@@ -683,7 +351,7 @@ Class OpenMBeanParameterInfoSupport  <a class="header-action link-secondary" tit
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport__ctor_Java_Lang_String_Java_Lang_String_Javax_Management_Openmbean_OpenType_System_Object_System_Object___" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.#ctor(Java.Lang.String,Java.Lang.String,Javax.Management.Openmbean.OpenType,System.Object,System.Object[])">
   OpenMBeanParameterInfoSupport(String, String, OpenType, object, object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,java.lang.Object,java.lang.Object[])">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,java.lang.Object,java.lang.Object[])</a></p>
@@ -733,7 +401,7 @@ Class OpenMBeanParameterInfoSupport  <a class="header-action link-secondary" tit
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport__ctor_Java_Lang_String_Java_Lang_String_Javax_Management_Openmbean_OpenType_System_Object__" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.#ctor(Java.Lang.String,Java.Lang.String,Javax.Management.Openmbean.OpenType{System.Object})">
   OpenMBeanParameterInfoSupport(String, String, OpenType&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L150"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType)">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType)</a></p>
@@ -772,7 +440,7 @@ Class OpenMBeanParameterInfoSupport  <a class="header-action link-secondary" tit
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport__ctor_Java_Lang_String_Java_Lang_String_Javax_Management_Openmbean_OpenType_System_Object__Javax_Management_Descriptor_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.#ctor(Java.Lang.String,Java.Lang.String,Javax.Management.Openmbean.OpenType{System.Object},Javax.Management.Descriptor)">
   OpenMBeanParameterInfoSupport(String, String, OpenType&lt;object&gt;, Descriptor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,javax.management.Descriptor)">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,javax.management.Descriptor)</a></p>
@@ -843,38 +511,6 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
 
 
-  <a id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport__ctor_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.#ctor*"></a>
-
-  <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport__ctor_System_Object___" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.#ctor(System.Object[])">
-  OpenMBeanParameterInfoSupport(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L45"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Generic constructor used by JCOBridge when a derived class needs to forward arguments to the base JVMBridgeBase class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OpenMBeanParameterInfoSupport(params object[] args)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -883,7 +519,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_BridgeClassName" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -915,7 +551,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_DefaultValue" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.DefaultValue">
   DefaultValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getDefaultValue--">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getDefaultValue--</a></p>
@@ -947,7 +583,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_IsBridgeAbstract" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -979,7 +615,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_IsBridgeCloseable" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements java.lang.AutoCloseable</p>
@@ -1011,7 +647,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_IsBridgeInterface" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -1043,7 +679,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_IsBridgeStatic" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -1075,7 +711,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_LegalValues" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.LegalValues">
   LegalValues
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getLegalValues--">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getLegalValues--</a></p>
@@ -1107,7 +743,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_MaxValue" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.MaxValue">
   MaxValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getMaxValue--">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getMaxValue--</a></p>
@@ -1139,7 +775,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_MinValue" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.MinValue">
   MinValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getMinValue--">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getMinValue--</a></p>
@@ -1171,7 +807,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_OpenType" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.OpenType">
   OpenType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L212"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getOpenType--">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getOpenType--</a></p>
@@ -1203,11 +839,230 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 </h2>
 
 
+  <a id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_CreatePoolableInstance_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.CreatePoolableInstance*"></a>
+
+  <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_CreatePoolableInstance_Java_Lang_String_Java_Lang_String_Javax_Management_Openmbean_OpenType_System_Object_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.CreatePoolableInstance(Java.Lang.String,Java.Lang.String,Javax.Management.Openmbean.OpenType,System.Object)">
+  CreatePoolableInstance(String, String, OpenType, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OpenMBeanParameterInfoSupport CreatePoolableInstance(String arg0, String arg1, OpenType arg2, object arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Management.Openmbean.OpenType.html">OpenType</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.html">OpenMBeanParameterInfoSupport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_CreatePoolableInstance_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.CreatePoolableInstance*"></a>
+
+  <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_CreatePoolableInstance_Java_Lang_String_Java_Lang_String_Javax_Management_Openmbean_OpenType_System_Object_Java_Lang_Comparable_Java_Lang_Comparable_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.CreatePoolableInstance(Java.Lang.String,Java.Lang.String,Javax.Management.Openmbean.OpenType,System.Object,Java.Lang.Comparable,Java.Lang.Comparable)">
+  CreatePoolableInstance(String, String, OpenType, object, Comparable, Comparable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, Java.Lang.Comparable arg4, Java.Lang.Comparable arg5)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OpenMBeanParameterInfoSupport CreatePoolableInstance(String arg0, String arg1, OpenType arg2, object arg3, Comparable arg4, Comparable arg5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Management.Openmbean.OpenType.html">OpenType</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Lang.Comparable.html">Comparable</a></dt>
+    <dd></dd>
+    <dt><code>arg5</code> <a class="xref" href="Java.Lang.Comparable.html">Comparable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.html">OpenMBeanParameterInfoSupport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_CreatePoolableInstance_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.CreatePoolableInstance*"></a>
+
+  <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_CreatePoolableInstance_Java_Lang_String_Java_Lang_String_Javax_Management_Openmbean_OpenType_System_Object_System_Object___" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.CreatePoolableInstance(Java.Lang.String,Java.Lang.String,Javax.Management.Openmbean.OpenType,System.Object,System.Object[])">
+  CreatePoolableInstance(String, String, OpenType, object, object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, object[] arg4)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OpenMBeanParameterInfoSupport CreatePoolableInstance(String arg0, String arg1, OpenType arg2, object arg3, object[] arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Management.Openmbean.OpenType.html">OpenType</a></dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.html">OpenMBeanParameterInfoSupport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_CreatePoolableInstance_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.CreatePoolableInstance*"></a>
+
+  <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_CreatePoolableInstance_Java_Lang_String_Java_Lang_String_Javax_Management_Openmbean_OpenType_System_Object__" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.CreatePoolableInstance(Java.Lang.String,Java.Lang.String,Javax.Management.Openmbean.OpenType{System.Object})">
+  CreatePoolableInstance(String, String, OpenType&lt;object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType%3Cobject%3E arg2)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OpenMBeanParameterInfoSupport CreatePoolableInstance(String arg0, String arg1, OpenType&lt;object&gt; arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Management.Openmbean.OpenType-1.html">OpenType</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.html">OpenMBeanParameterInfoSupport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_CreatePoolableInstance_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.CreatePoolableInstance*"></a>
+
+  <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_CreatePoolableInstance_Java_Lang_String_Java_Lang_String_Javax_Management_Openmbean_OpenType_System_Object__Javax_Management_Descriptor_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.CreatePoolableInstance(Java.Lang.String,Java.Lang.String,Javax.Management.Openmbean.OpenType{System.Object},Javax.Management.Descriptor)">
+  CreatePoolableInstance(String, String, OpenType&lt;object&gt;, Descriptor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>HPA initializer for OpenMBeanParameterInfoSupport(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Management.Openmbean.OpenType%3Cobject%3E arg2, Javax.Management.Descriptor arg3)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OpenMBeanParameterInfoSupport CreatePoolableInstance(String arg0, String arg1, OpenType&lt;object&gt; arg2, Descriptor arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Management.Openmbean.OpenType-1.html">OpenType</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>arg3</code> <a class="xref" href="Javax.Management.Descriptor.html">Descriptor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.html">OpenMBeanParameterInfoSupport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_HasDefaultValue_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.HasDefaultValue*"></a>
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_HasDefaultValue" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.HasDefaultValue">
   HasDefaultValue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L220"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hasDefaultValue--">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hasDefaultValue--</a></p>
@@ -1240,7 +1095,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_HasLegalValues" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.HasLegalValues">
   HasLegalValues()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L228"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hasLegalValues--">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hasLegalValues--</a></p>
@@ -1273,7 +1128,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_HasMaxValue" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.HasMaxValue">
   HasMaxValue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L236"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hasMaxValue--">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hasMaxValue--</a></p>
@@ -1306,7 +1161,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_HasMinValue" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.HasMinValue">
   HasMinValue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L244"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hasMinValue--">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hasMinValue--</a></p>
@@ -1339,7 +1194,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_IsValue_System_Object_" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.IsValue(System.Object)">
   IsValue(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#isValue-java.lang.Object-">https://docs.oracle.com/javase/8/docs/api/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#isValue-java.lang.Object-</a></p>
@@ -1382,7 +1237,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 
   <h3 id="Javax_Management_Openmbean_OpenMBeanParameterInfoSupport_op_Implicit_Javax_Management_Openmbean_OpenMBeanParameterInfoSupport__Javax_Management_Openmbean_OpenMBeanParameterInfo" data-uid="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.op_Implicit(Javax.Management.Openmbean.OpenMBeanParameterInfoSupport)~Javax.Management.Openmbean.OpenMBeanParameterInfo">
   implicit operator OpenMBeanParameterInfo(OpenMBeanParameterInfoSupport)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Javax.Management.Openmbean.OpenMBeanParameterInfoSupport.html">OpenMBeanParameterInfoSupport</a> to <a class="xref" href="Javax.Management.Openmbean.OpenMBeanParameterInfo.html">OpenMBeanParameterInfo</a></p>
@@ -1419,7 +1274,7 @@ public OpenMBeanParameterInfoSupport(IJVMBridgeBaseInitializer initializer)</cod
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L68" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Openmbean/OpenMBeanParameterInfoSupport.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 

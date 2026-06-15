@@ -8580,6 +8580,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Io.LineNumberInputStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Io.LineNumberInputStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Io.LineNumberInputStream",
+      "Summary": "<p sourcefile=\"api/Java.Io.LineNumberInputStream.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/io/LineNumberInputStream.html\">https://docs.oracle.com/javase/8/docs/api/java/io/LineNumberInputStream.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Io.LineNumberReader.yml",
       "output": {
         ".html": {
@@ -9025,6 +9039,20 @@
       "IsMRef": true,
       "Title": "Java.Io.StreamTokenizer",
       "Summary": "<p sourcefile=\"api/Java.Io.StreamTokenizer.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/io/StreamTokenizer.html\">https://docs.oracle.com/javase/8/docs/api/java/io/StreamTokenizer.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Io.StringBufferInputStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Io.StringBufferInputStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Io.StringBufferInputStream",
+      "Summary": "<p sourcefile=\"api/Java.Io.StringBufferInputStream.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/io/StringBufferInputStream.html\">https://docs.oracle.com/javase/8/docs/api/java/io/StringBufferInputStream.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -17596,6 +17624,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.RMISecurityException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.RMISecurityException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.RMISecurityException",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.RMISecurityException.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/RMISecurityException.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/RMISecurityException.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.RMISecurityManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.RMISecurityManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.RMISecurityManager",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.RMISecurityManager.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/RMISecurityManager.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/RMISecurityManager.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Rmi.Registry.IRegistry.yml",
       "output": {
         ".html": {
@@ -17607,6 +17663,20 @@
       "IsMRef": true,
       "Title": "Java.Rmi.Registry.IRegistry",
       "Summary": "<p sourcefile=\"api/Java.Rmi.Registry.IRegistry.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/registry/Registry.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/registry/Registry.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Registry.IRegistryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Registry.IRegistryHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Registry.IRegistryHandler",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Registry.IRegistryHandler.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/registry/RegistryHandler.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/registry/RegistryHandler.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -17635,6 +17705,20 @@
       "IsMRef": true,
       "Title": "Java.Rmi.Registry.Registry",
       "Summary": "<p sourcefile=\"api/Java.Rmi.Registry.Registry.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/registry/Registry.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/registry/Registry.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Registry.RegistryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Registry.RegistryHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Registry.RegistryHandler",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Registry.RegistryHandler.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/registry/RegistryHandler.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/registry/RegistryHandler.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -17694,6 +17778,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.ILoaderHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.ILoaderHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.ILoaderHandler",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.ILoaderHandler.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LoaderHandler.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LoaderHandler.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Rmi.Server.IRMIClientSocketFactory.yml",
       "output": {
         ".html": {
@@ -17736,6 +17834,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.IRemoteCall.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.IRemoteCall.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.IRemoteCall",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.IRemoteCall.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Rmi.Server.IRemoteRef.yml",
       "output": {
         ".html": {
@@ -17747,6 +17859,34 @@
       "IsMRef": true,
       "Title": "Java.Rmi.Server.IRemoteRef",
       "Summary": "<p sourcefile=\"api/Java.Rmi.Server.IRemoteRef.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteRef.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteRef.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.IServerRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.IServerRef.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.IServerRef",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.IServerRef.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ServerRef.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ServerRef.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.ISkeleton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.ISkeleton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.ISkeleton",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.ISkeleton.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/Skeleton.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/Skeleton.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -17764,6 +17904,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.LoaderHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.LoaderHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.LoaderHandler",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.LoaderHandler.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LoaderHandler.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LoaderHandler.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.LogStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.LogStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.LogStream",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.LogStream.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LogStream.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/LogStream.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Rmi.Server.ObjID.yml",
       "output": {
         ".html": {
@@ -17775,6 +17943,20 @@
       "IsMRef": true,
       "Title": "Java.Rmi.Server.ObjID",
       "Summary": "<p sourcefile=\"api/Java.Rmi.Server.ObjID.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ObjID.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ObjID.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.Operation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.Operation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.Operation",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.Operation.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/Operation.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/Operation.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -17862,6 +18044,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.RemoteCall.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.RemoteCall.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.RemoteCall",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.RemoteCall.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteCall.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Rmi.Server.RemoteObject.yml",
       "output": {
         ".html": {
@@ -17918,6 +18114,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.RemoteStub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.RemoteStub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.RemoteStub",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.RemoteStub.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteStub.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RemoteStub.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Rmi.Server.ServerCloneException.yml",
       "output": {
         ".html": {
@@ -17943,6 +18153,76 @@
       "IsMRef": true,
       "Title": "Java.Rmi.Server.ServerNotActiveException",
       "Summary": "<p sourcefile=\"api/Java.Rmi.Server.ServerNotActiveException.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ServerNotActiveException.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ServerNotActiveException.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.ServerRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.ServerRef.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.ServerRef",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.ServerRef.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ServerRef.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/ServerRef.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.Skeleton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.Skeleton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.Skeleton",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.Skeleton.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/Skeleton.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/Skeleton.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.SkeletonMismatchException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.SkeletonMismatchException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.SkeletonMismatchException",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.SkeletonMismatchException.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/SkeletonMismatchException.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/SkeletonMismatchException.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.SkeletonNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.SkeletonNotFoundException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.SkeletonNotFoundException",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.SkeletonNotFoundException.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/SkeletonNotFoundException.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/SkeletonNotFoundException.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.Server.SocketSecurityException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.Server.SocketSecurityException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.Server.SocketSecurityException",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.Server.SocketSecurityException.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/server/SocketSecurityException.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/server/SocketSecurityException.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -18027,6 +18307,20 @@
       "IsMRef": true,
       "Title": "Java.Rmi.ServerException",
       "Summary": "<p sourcefile=\"api/Java.Rmi.ServerException.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/ServerException.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/ServerException.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Rmi.ServerRuntimeException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Rmi.ServerRuntimeException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Rmi.ServerRuntimeException",
+      "Summary": "<p sourcefile=\"api/Java.Rmi.ServerRuntimeException.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/rmi/ServerRuntimeException.html\">https://docs.oracle.com/javase/8/docs/api/java/rmi/ServerRuntimeException.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -19318,6 +19612,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Security.Certificate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Security.Certificate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Security.Certificate",
+      "Summary": "<p sourcefile=\"api/Java.Security.Certificate.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/security/Certificate.html\">https://docs.oracle.com/javase/8/docs/api/java/security/Certificate.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Security.CodeSigner.yml",
       "output": {
         ".html": {
@@ -19486,6 +19794,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Security.ICertificate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Security.ICertificate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Security.ICertificate",
+      "Summary": "<p sourcefile=\"api/Java.Security.ICertificate.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/javase/8/docs/api/java/security/Certificate.html\">https://docs.oracle.com/javase/8/docs/api/java/security/Certificate.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Security.IDomainCombiner.yml",
       "output": {
         ".html": {
@@ -19595,6 +19917,34 @@
       "IsMRef": true,
       "Title": "Java.Security.IPublicKey",
       "Summary": "<p sourcefile=\"api/Java.Security.IPublicKey.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/javase/8/docs/api/java/security/PublicKey.html\">https://docs.oracle.com/javase/8/docs/api/java/security/PublicKey.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Security.Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Security.Identity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Security.Identity",
+      "Summary": "<p sourcefile=\"api/Java.Security.Identity.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/security/Identity.html\">https://docs.oracle.com/javase/8/docs/api/java/security/Identity.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Security.IdentityScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Security.IdentityScope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Security.IdentityScope",
+      "Summary": "<p sourcefile=\"api/Java.Security.IdentityScope.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/security/IdentityScope.html\">https://docs.oracle.com/javase/8/docs/api/java/security/IdentityScope.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -20785,6 +21135,20 @@
       "IsMRef": true,
       "Title": "Java.Security.SignedObject",
       "Summary": "<p sourcefile=\"api/Java.Security.SignedObject.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/security/SignedObject.html\">https://docs.oracle.com/javase/8/docs/api/java/security/SignedObject.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Security.Signer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Security.Signer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Security.Signer",
+      "Summary": "<p sourcefile=\"api/Java.Security.Signer.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/java/security/Signer.html\">https://docs.oracle.com/javase/8/docs/api/java/security/Signer.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -33290,6 +33654,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Accessibility.AccessibleResourceBundle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Accessibility.AccessibleResourceBundle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Javax.Accessibility.AccessibleResourceBundle",
+      "Summary": "<p sourcefile=\"api/Javax.Accessibility.AccessibleResourceBundle.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/javax/accessibility/AccessibleResourceBundle.html\">https://docs.oracle.com/javase/8/docs/api/javax/accessibility/AccessibleResourceBundle.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Accessibility.AccessibleRole.yml",
       "output": {
         ".html": {
@@ -35642,6 +36020,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Jws.Soap.IInitParam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Jws.Soap.IInitParam.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Javax.Jws.Soap.IInitParam",
+      "Summary": "<p sourcefile=\"api/Javax.Jws.Soap.IInitParam.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/InitParam.html\">https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/InitParam.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Jws.Soap.ISOAPBinding.yml",
       "output": {
         ".html": {
@@ -35653,6 +36045,48 @@
       "IsMRef": true,
       "Title": "Javax.Jws.Soap.ISOAPBinding",
       "Summary": "<p sourcefile=\"api/Javax.Jws.Soap.ISOAPBinding.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/SOAPBinding.html\">https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/SOAPBinding.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Jws.Soap.ISOAPMessageHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Jws.Soap.ISOAPMessageHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Javax.Jws.Soap.ISOAPMessageHandler",
+      "Summary": "<p sourcefile=\"api/Javax.Jws.Soap.ISOAPMessageHandler.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/SOAPMessageHandler.html\">https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/SOAPMessageHandler.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Jws.Soap.ISOAPMessageHandlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Jws.Soap.ISOAPMessageHandlers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Javax.Jws.Soap.ISOAPMessageHandlers",
+      "Summary": "<p sourcefile=\"api/Javax.Jws.Soap.ISOAPMessageHandlers.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/SOAPMessageHandlers.html\">https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/SOAPMessageHandlers.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Jws.Soap.InitParam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Jws.Soap.InitParam.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Javax.Jws.Soap.InitParam",
+      "Summary": "<p sourcefile=\"api/Javax.Jws.Soap.InitParam.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/InitParam.html\">https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/InitParam.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -35709,6 +36143,34 @@
       "IsMRef": true,
       "Title": "Javax.Jws.Soap.SOAPBinding",
       "Summary": "<p sourcefile=\"api/Javax.Jws.Soap.SOAPBinding.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/SOAPBinding.html\">https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/SOAPBinding.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Jws.Soap.SOAPMessageHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Jws.Soap.SOAPMessageHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Javax.Jws.Soap.SOAPMessageHandler",
+      "Summary": "<p sourcefile=\"api/Javax.Jws.Soap.SOAPMessageHandler.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/SOAPMessageHandler.html\">https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/SOAPMessageHandler.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Jws.Soap.SOAPMessageHandlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Jws.Soap.SOAPMessageHandlers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Javax.Jws.Soap.SOAPMessageHandlers",
+      "Summary": "<p sourcefile=\"api/Javax.Jws.Soap.SOAPMessageHandlers.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/SOAPMessageHandlers.html\">https://docs.oracle.com/javase/8/docs/api/javax/jws/soap/SOAPMessageHandlers.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -37798,6 +38260,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Management.DefaultLoaderRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Management.DefaultLoaderRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Javax.Management.DefaultLoaderRepository",
+      "Summary": "<p sourcefile=\"api/Javax.Management.DefaultLoaderRepository.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/javax/management/DefaultLoaderRepository.html\">https://docs.oracle.com/javase/8/docs/api/javax/management/DefaultLoaderRepository.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Management.Descriptor.yml",
       "output": {
         ".html": {
@@ -38257,6 +38733,20 @@
       "IsMRef": true,
       "Title": "Javax.Management.Loading.ClassLoaderRepository",
       "Summary": "<p sourcefile=\"api/Javax.Management.Loading.ClassLoaderRepository.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/javax/management/loading/ClassLoaderRepository.html\">https://docs.oracle.com/javase/8/docs/api/javax/management/loading/ClassLoaderRepository.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Management.Loading.DefaultLoaderRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Management.Loading.DefaultLoaderRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Javax.Management.Loading.DefaultLoaderRepository",
+      "Summary": "<p sourcefile=\"api/Javax.Management.Loading.DefaultLoaderRepository.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/javax/management/loading/DefaultLoaderRepository.html\">https://docs.oracle.com/javase/8/docs/api/javax/management/loading/DefaultLoaderRepository.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -47371,6 +47861,20 @@
       "IsMRef": true,
       "Title": "Javax.Security.Auth.Login",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Security.Auth.Policy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Security.Auth.Policy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Javax.Security.Auth.Policy",
+      "Summary": "<p sourcefile=\"api/Javax.Security.Auth.Policy.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/javax/security/auth/Policy.html\">https://docs.oracle.com/javase/8/docs/api/javax/security/auth/Policy.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -57090,6 +57594,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Plaf.Metal.MetalComboBoxUI.MetalComboPopup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Plaf.Metal.MetalComboBoxUI.MetalComboPopup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Javax.Swing.Plaf.Metal.MetalComboBoxUI.MetalComboPopup",
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Plaf.Metal.MetalComboBoxUI.MetalComboPopup.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboPopup.html\">https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboPopup.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Plaf.Metal.MetalComboBoxUI.yml",
       "output": {
         ".html": {
@@ -60520,6 +61038,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Text.DefaultTextUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Text.DefaultTextUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Javax.Swing.Text.DefaultTextUI",
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Text.DefaultTextUI.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultTextUI.html\">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/DefaultTextUI.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Swing.Text.Document.yml",
       "output": {
         ".html": {
@@ -62379,6 +62911,20 @@
       "IsMRef": true,
       "Title": "Javax.Swing.Text.TabableView",
       "Summary": "<p sourcefile=\"api/Javax.Swing.Text.TabableView.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TabableView.html\">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TabableView.html</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Swing.Text.TableView.TableCell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Swing.Text.TableView.TableCell.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Javax.Swing.Text.TableView.TableCell",
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Text.TableView.TableCell.yml\" sourcestartlinenumber=\"1\"><a href=\"https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html\">https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -72644,6 +73190,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.JNetEventData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.JNetEventData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Specific.JNetEventData",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.Specific.JNetEventData.yml\" sourcestartlinenumber=\"1\">Helper class able to simpify definition of data associated to events</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MASES.JNet.Specific.JNetEventResult.yml",
       "output": {
         ".html": {
@@ -72669,6 +73229,20 @@
       "IsMRef": true,
       "Title": "MASES.JNet.Specific.JNetHelper",
       "Summary": "<p sourcefile=\"api/MASES.JNet.Specific.JNetHelper.yml\" sourcestartlinenumber=\"1\">Helper class of JNet for some specific operations</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.JNetStream-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.JNetStream-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Specific.JNetStream<T>",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.Specific.JNetStream-1.yml\" sourcestartlinenumber=\"1\">Helper class of JNet to use <xref href=\"MASES.JCOBridge.C2JBridge.JCOBridgeStream%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
