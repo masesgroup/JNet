@@ -3,7 +3,6 @@
   "RelativeDestinationJavaListenerPath": "jvm\\jnet\\src\\main\\java",
   "JavaListenerBasePackage": "org.mases.jnet.generated",
   "PreferMethodWithSignature": true,
-  "ReflectDeprecated": true,
   "OnlyPropertiesForGetterSetter": true,
   "JarList": [
     "rt.jar"
