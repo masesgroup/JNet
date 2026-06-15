@@ -131,14 +131,6 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Polygon.html#getBoundingBox--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public Java.Awt.Rectangle BoundingBox
-        {
-            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getBoundingBox", "()Ljava/awt/Rectangle;"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Polygon.html#getBounds--"/> 
         /// </summary>
         public Java.Awt.Rectangle Bounds
@@ -210,17 +202,6 @@ namespace Java.Awt
         public bool Contains(Java.Awt.Point arg0)
         {
             return IExecuteWithSignature<bool>("contains", "(Ljava/awt/Point;)Z", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Polygon.html#inside-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool Inside(int arg0, int arg1)
-        {
-            return IExecuteWithSignature<bool>("inside", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Polygon.html#intersects-double-double-double-double-"/>

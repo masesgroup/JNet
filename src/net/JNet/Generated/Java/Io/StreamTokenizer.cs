@@ -64,22 +64,6 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/StreamTokenizer.html#java.io.StreamTokenizer(java.io.InputStream)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        [global::System.Obsolete()]
-        public StreamTokenizer(Java.Io.InputStream arg0) : base(JVMBridgeBase.InitializerInstance)
-        {
-            InvokeInitializer(arg0);
-        }
-        /// <summary>
-        /// HPA initializer for StreamTokenizer(Java.Io.InputStream arg0)
-        /// </summary>
-        public static StreamTokenizer CreatePoolableInstance(Java.Io.InputStream arg0)
-        {
-            return JVMBridgeBase.New<StreamTokenizer>(arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/StreamTokenizer.html#java.io.StreamTokenizer(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>

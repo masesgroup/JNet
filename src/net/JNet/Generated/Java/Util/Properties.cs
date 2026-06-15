@@ -198,16 +198,6 @@ namespace Java.Util
             IExecuteWithSignature("list", "(Ljava/io/PrintWriter;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#save-java.io.OutputStream-java.lang.String-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [global::System.Obsolete()]
-        public void Save(Java.Io.OutputStream arg0, Java.Lang.String arg1)
-        {
-            IExecuteWithSignature("save", "(Ljava/io/OutputStream;Ljava/lang/String;)V", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#store-java.io.OutputStream-java.lang.String-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>

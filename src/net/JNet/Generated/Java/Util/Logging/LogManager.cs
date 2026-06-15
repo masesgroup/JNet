@@ -132,16 +132,6 @@ namespace Java.Util.Logging
             return IExecuteWithSignature<Java.Util.Logging.Logger>("getLogger", "(Ljava/lang/String;)Ljava/util/logging/Logger;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/LogManager.html#addPropertyChangeListener-java.beans.PropertyChangeListener-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
-        /// <exception cref="Java.Lang.SecurityException"/>
-        [global::System.Obsolete()]
-        public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
-        {
-            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/LogManager.html#checkAccess--"/>
         /// </summary>
         /// <exception cref="Java.Lang.SecurityException"/>
@@ -167,16 +157,6 @@ namespace Java.Util.Logging
         public void ReadConfiguration(Java.Io.InputStream arg0)
         {
             IExecuteWithSignature("readConfiguration", "(Ljava/io/InputStream;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/LogManager.html#removePropertyChangeListener-java.beans.PropertyChangeListener-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
-        /// <exception cref="Java.Lang.SecurityException"/>
-        [global::System.Obsolete()]
-        public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
-        {
-            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/LogManager.html#reset--"/>

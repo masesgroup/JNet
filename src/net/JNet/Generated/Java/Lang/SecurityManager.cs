@@ -94,14 +94,6 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#getInCheck--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public bool InCheck
-        {
-            get { return IExecuteWithSignature<bool>("getInCheck", "()Z"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#getSecurityContext--"/> 
         /// </summary>
         public object SecurityContext
@@ -114,16 +106,6 @@ namespace Java.Lang
         public Java.Lang.ThreadGroup ThreadGroup
         {
             get { return IExecuteWithSignature<Java.Lang.ThreadGroup>("getThreadGroup", "()Ljava/lang/ThreadGroup;"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkTopLevelWindow-java.lang.Object-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool CheckTopLevelWindow(object arg0)
-        {
-            return IExecuteWithSignature<bool>("checkTopLevelWindow", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkAccept-java.lang.String-int-"/>
@@ -149,14 +131,6 @@ namespace Java.Lang
         public void CheckAccess(Java.Lang.ThreadGroup arg0)
         {
             IExecuteWithSignature("checkAccess", "(Ljava/lang/ThreadGroup;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkAwtEventQueueAccess--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void CheckAwtEventQueueAccess()
-        {
-            IExecuteWithSignature("checkAwtEventQueueAccess", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkConnect-java.lang.String-int-java.lang.Object-"/>
@@ -223,26 +197,6 @@ namespace Java.Lang
         public void CheckListen(int arg0)
         {
             IExecuteWithSignature("checkListen", "(I)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkMemberAccess-java.lang.Class-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public void CheckMemberAccess(Java.Lang.Class arg0, int arg1)
-        {
-            IExecuteWithSignature("checkMemberAccess", "(Ljava/lang/Class;I)V", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkMulticast-java.net.InetAddress-byte-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        [global::System.Obsolete()]
-        public void CheckMulticast(Java.Net.InetAddress arg0, byte arg1)
-        {
-            IExecuteWithSignature("checkMulticast", "(Ljava/net/InetAddress;B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkMulticast-java.net.InetAddress-"/>
@@ -346,14 +300,6 @@ namespace Java.Lang
         public void CheckSetFactory()
         {
             IExecuteWithSignature("checkSetFactory", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkSystemClipboardAccess--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void CheckSystemClipboardAccess()
-        {
-            IExecuteWithSignature("checkSystemClipboardAccess", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityManager.html#checkWrite-java.io.FileDescriptor-"/>

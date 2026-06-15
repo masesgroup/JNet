@@ -265,15 +265,6 @@ namespace Java.Lang
             SExecuteWithSignature(LocalBridgeClazz, "runFinalization", "()V");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#runFinalizersOnExit-boolean-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
-        public static void RunFinalizersOnExit(bool arg0)
-        {
-            SExecuteWithSignature(LocalBridgeClazz, "runFinalizersOnExit", "(Z)V", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#setErr-java.io.PrintStream-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>

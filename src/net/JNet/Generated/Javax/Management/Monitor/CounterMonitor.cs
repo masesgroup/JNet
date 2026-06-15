@@ -98,22 +98,6 @@ namespace Javax.Management.Monitor
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitor.html#getDerivedGauge--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public Java.Lang.Number DerivedGauge
-        {
-            get { return IExecuteWithSignature<Java.Lang.Number>("getDerivedGauge", "()Ljava/lang/Number;"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitor.html#getDerivedGaugeTimeStamp--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public long DerivedGaugeTimeStamp
-        {
-            get { return IExecuteWithSignature<long>("getDerivedGaugeTimeStamp", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitor.html#getDifferenceMode--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitor.html#setDifferenceMode-boolean-"/>
         /// </summary>
         public bool DifferenceMode
@@ -147,14 +131,6 @@ namespace Javax.Management.Monitor
         public Java.Lang.Number Offset
         {
             get { return IExecuteWithSignature<Java.Lang.Number>("getOffset", "()Ljava/lang/Number;"); } set { IExecuteWithSignature("setOffset", "(Ljava/lang/Number;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitor.html#getThreshold--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitor.html#setThreshold-java.lang.Number-"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public Java.Lang.Number Threshold
-        {
-            get { return IExecuteWithSignature<Java.Lang.Number>("getThreshold", "()Ljava/lang/Number;"); } set { IExecuteWithSignature("setThreshold", "(Ljava/lang/Number;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/CounterMonitor.html#getDerivedGauge-javax.management.ObjectName-"/>

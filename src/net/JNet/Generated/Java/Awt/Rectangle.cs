@@ -267,17 +267,6 @@ namespace Java.Awt
             return IExecuteWithSignature<bool>("contains", "(Ljava/awt/Rectangle;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#inside-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool Inside(int arg0, int arg1)
-        {
-            return IExecuteWithSignature<bool>("inside", "(II)Z", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#intersects-java.awt.Rectangle-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
@@ -337,38 +326,6 @@ namespace Java.Awt
         public void Grow(int arg0, int arg1)
         {
             IExecuteWithSignature("grow", "(II)V", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#move-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public void Move(int arg0, int arg1)
-        {
-            IExecuteWithSignature("move", "(II)V", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#reshape-int-int-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public void Reshape(int arg0, int arg1, int arg2, int arg3)
-        {
-            IExecuteWithSignature("reshape", "(IIII)V", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#resize-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public void Resize(int arg0, int arg1)
-        {
-            IExecuteWithSignature("resize", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#setBounds-int-int-int-int-"/>

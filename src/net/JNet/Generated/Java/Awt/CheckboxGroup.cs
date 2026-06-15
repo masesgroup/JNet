@@ -94,14 +94,6 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/CheckboxGroup.html#getCurrent--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/CheckboxGroup.html#setCurrent-java.awt.Checkbox-"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public Java.Awt.Checkbox Current
-        {
-            get { return IExecuteWithSignature<Java.Awt.Checkbox>("getCurrent", "()Ljava/awt/Checkbox;"); } set { IExecuteWithSignature("setCurrent", "(Ljava/awt/Checkbox;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/CheckboxGroup.html#getSelectedCheckbox--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/CheckboxGroup.html#setSelectedCheckbox-java.awt.Checkbox-"/>
         /// </summary>
         public Java.Awt.Checkbox SelectedCheckbox

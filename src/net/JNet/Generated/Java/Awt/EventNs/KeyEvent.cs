@@ -104,26 +104,6 @@ namespace Java.Awt.EventNs
         {
             return JVMBridgeBase.New<KeyEvent>(arg0, arg1, arg2, arg3, arg4, arg5);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/KeyEvent.html#java.awt.event.KeyEvent(java.awt.Component,int,long,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="long"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public KeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4) : base(JVMBridgeBase.InitializerInstance)
-        {
-            InvokeInitializer(arg0, arg1, arg2, arg3, arg4);
-        }
-        /// <summary>
-        /// HPA initializer for KeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4)
-        /// </summary>
-        public static KeyEvent CreatePoolableInstance(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4)
-        {
-            return JVMBridgeBase.New<KeyEvent>(arg0, arg1, arg2, arg3, arg4);
-        }
 
         #endregion
 
@@ -1002,15 +982,6 @@ namespace Java.Awt.EventNs
         public bool IsActionKey()
         {
             return IExecuteWithSignature<bool>("isActionKey", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/event/KeyEvent.html#setModifiers-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public void SetModifiers(int arg0)
-        {
-            IExecuteWithSignature("setModifiers", "(I)V", arg0);
         }
 
         #endregion

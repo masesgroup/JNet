@@ -139,15 +139,6 @@ namespace Java.Awt
             get { return IExecuteWithSignatureArray<object>("getSelectedObjects", "()[Ljava/lang/Object;"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Choice.html#countItems--"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
-        public int CountItems()
-        {
-            return IExecuteWithSignature<int>("countItems", "()I");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Choice.html#getItem-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

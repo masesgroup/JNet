@@ -166,15 +166,6 @@ namespace Javax.Swing
             get { return IExecuteWithSignature<Java.Awt.Dimension>("getViewSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setViewSize", "(Ljava/awt/Dimension;)V", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JViewport.html#isBackingStoreEnabled--"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool IsBackingStoreEnabled()
-        {
-            return IExecuteWithSignature<bool>("isBackingStoreEnabled", "()Z");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JViewport.html#toViewCoordinates-java.awt.Dimension-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
@@ -207,15 +198,6 @@ namespace Javax.Swing
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecuteWithSignature("removeChangeListener", "(Ljavax/swing/event/ChangeListener;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JViewport.html#setBackingStoreEnabled-boolean-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
-        public void SetBackingStoreEnabled(bool arg0)
-        {
-            IExecuteWithSignature("setBackingStoreEnabled", "(Z)V", arg0);
         }
 
         #endregion

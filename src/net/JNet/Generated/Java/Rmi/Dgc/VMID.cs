@@ -89,15 +89,6 @@ namespace Java.Rmi.Dgc
         #endregion
 
         #region Static methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/dgc/VMID.html#isUnique--"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public static bool IsUnique()
-        {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isUnique", "()Z");
-        }
 
         #endregion
 

@@ -64,24 +64,6 @@ namespace Java.Sql
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/Date.html#java.sql.Date(int,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public Date(int arg0, int arg1, int arg2) : base(JVMBridgeBase.InitializerInstance)
-        {
-            InvokeInitializer(arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// HPA initializer for Date(int arg0, int arg1, int arg2)
-        /// </summary>
-        public static Date CreatePoolableInstance(int arg0, int arg1, int arg2)
-        {
-            return JVMBridgeBase.New<Date>(arg0, arg1, arg2);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/Date.html#java.sql.Date(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>

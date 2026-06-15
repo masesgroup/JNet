@@ -110,17 +110,6 @@ namespace Java.Rmi.Server
         {
             return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;I)Ljava/rmi/Remote;", arg0, arg1);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/UnicastRemoteObject.html#exportObject-java.rmi.Remote-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
-        /// <returns><see cref="Java.Rmi.Server.RemoteStub"/></returns>
-        /// <exception cref="Java.Rmi.RemoteException"/>
-        [global::System.Obsolete()]
-        public static Java.Rmi.Server.RemoteStub ExportObject(Java.Rmi.Remote arg0)
-        {
-            return SExecuteWithSignature<Java.Rmi.Server.RemoteStub>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;)Ljava/rmi/server/RemoteStub;", arg0);
-        }
 
         #endregion
 

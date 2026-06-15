@@ -431,15 +431,6 @@ namespace Java.Lang
             IExecuteWithSignature("join", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#stop-java.lang.Throwable-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
-        [global::System.Obsolete()]
-        public void Stop(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
-        {
-            IExecuteWithSignature("stop", "(Ljava/lang/Throwable;)V", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#checkAccess--"/>
         /// </summary>
         public void CheckAccess()
@@ -455,14 +446,6 @@ namespace Java.Lang
             IExecuteWithSignature("join", "()V");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#resume--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Resume()
-        {
-            IExecuteWithSignature("resume", "()V");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#setDaemon-boolean-"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -471,44 +454,11 @@ namespace Java.Lang
             IExecuteWithSignature("setDaemon", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#stop--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Stop()
-        {
-            IExecuteWithSignature("stop", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#suspend--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Suspend()
-        {
-            IExecuteWithSignature("suspend", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#countStackFrames--"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
-        public int CountStackFrames()
-        {
-            return IExecuteWithSignature<int>("countStackFrames", "()I");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#start--"/>
         /// </summary>
         public void Start()
         {
             IExecuteWithSignature("start", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#destroy--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Destroy()
-        {
-            IExecuteWithSignature("destroy", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html#interrupt--"/>

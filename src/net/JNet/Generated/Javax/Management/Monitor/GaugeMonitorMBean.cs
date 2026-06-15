@@ -67,16 +67,6 @@ namespace Javax.Management.Monitor
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGauge--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        Java.Lang.Number DerivedGauge { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGaugeTimeStamp--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        long DerivedGaugeTimeStamp { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#getDifferenceMode--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#setDifferenceMode-boolean-"/>
         /// </summary>
         bool DifferenceMode { get; set; }
@@ -146,22 +136,6 @@ namespace Javax.Management.Monitor
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGauge--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public Java.Lang.Number DerivedGauge
-        {
-            get { return IExecuteWithSignature<Java.Lang.Number>("getDerivedGauge", "()Ljava/lang/Number;"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGaugeTimeStamp--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public long DerivedGaugeTimeStamp
-        {
-            get { return IExecuteWithSignature<long>("getDerivedGaugeTimeStamp", "()J"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#getDifferenceMode--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/GaugeMonitorMBean.html#setDifferenceMode-boolean-"/>
         /// </summary>

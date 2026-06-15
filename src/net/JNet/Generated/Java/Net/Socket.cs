@@ -78,25 +78,6 @@ namespace Java.Net
             return JVMBridgeBase.New<Socket>();
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html#java.net.Socket(java.lang.String,int,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        [global::System.Obsolete()]
-        public Socket(Java.Lang.String arg0, int arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
-        {
-            InvokeInitializer(arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// HPA initializer for Socket(Java.Lang.String arg0, int arg1, bool arg2)
-        /// </summary>
-        public static Socket CreatePoolableInstance(Java.Lang.String arg0, int arg1, bool arg2)
-        {
-            return JVMBridgeBase.New<Socket>(arg0, arg1, arg2);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html#java.net.Socket(java.lang.String,int,java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -132,25 +113,6 @@ namespace Java.Net
         public static Socket CreatePoolableInstance(Java.Lang.String arg0, int arg1)
         {
             return JVMBridgeBase.New<Socket>(arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html#java.net.Socket(java.net.InetAddress,int,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        [global::System.Obsolete()]
-        public Socket(Java.Net.InetAddress arg0, int arg1, bool arg2) : base(JVMBridgeBase.InitializerInstance)
-        {
-            InvokeInitializer(arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// HPA initializer for Socket(Java.Net.InetAddress arg0, int arg1, bool arg2)
-        /// </summary>
-        public static Socket CreatePoolableInstance(Java.Net.InetAddress arg0, int arg1, bool arg2)
-        {
-            return JVMBridgeBase.New<Socket>(arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html#java.net.Socket(java.net.InetAddress,int,java.net.InetAddress,int)"/>

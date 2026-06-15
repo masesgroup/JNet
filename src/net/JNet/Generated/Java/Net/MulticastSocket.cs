@@ -156,14 +156,6 @@ namespace Java.Net
             get { return IExecuteWithSignature<int>("getTimeToLive", "()I"); } set { IExecuteWithSignature("setTimeToLive", "(I)V", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/MulticastSocket.html#getTTL--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/net/MulticastSocket.html#setTTL-byte-"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public byte TTL
-        {
-            get { return IExecuteWithSignature<byte>("getTTL", "()B"); } set { IExecuteWithSignature("setTTL", "(B)V", value); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/MulticastSocket.html#joinGroup-java.net.InetAddress-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
@@ -200,17 +192,6 @@ namespace Java.Net
         public void LeaveGroup(Java.Net.SocketAddress arg0, Java.Net.NetworkInterface arg1)
         {
             IExecuteWithSignature("leaveGroup", "(Ljava/net/SocketAddress;Ljava/net/NetworkInterface;)V", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/MulticastSocket.html#send-java.net.DatagramPacket-byte-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.DatagramPacket"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        [global::System.Obsolete()]
-        public void Send(Java.Net.DatagramPacket arg0, byte arg1)
-        {
-            IExecuteWithSignature("send", "(Ljava/net/DatagramPacket;B)V", arg0, arg1);
         }
 
         #endregion

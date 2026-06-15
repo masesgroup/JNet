@@ -71,13 +71,6 @@ namespace Java.Awt
         /// </summary>
         Java.Awt.Font Font { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuContainer.html#postEvent-java.awt.Event-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        bool PostEvent(Java.Awt.Event arg0);
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuContainer.html#remove-java.awt.MenuComponent-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.MenuComponent"/></param>
@@ -119,16 +112,6 @@ namespace Java.Awt
         public Java.Awt.Font Font
         {
             get { return IExecuteWithSignature<Java.Awt.Font>("getFont", "()Ljava/awt/Font;"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuContainer.html#postEvent-java.awt.Event-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool PostEvent(Java.Awt.Event arg0)
-        {
-            return IExecuteWithSignature<bool>("postEvent", "(Ljava/awt/Event;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuContainer.html#remove-java.awt.MenuComponent-"/>

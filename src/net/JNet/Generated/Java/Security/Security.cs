@@ -92,17 +92,6 @@ namespace Java.Security
             return SExecuteWithSignature<int>(LocalBridgeClazz, "addProvider", "(Ljava/security/Provider;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/Security.html#getAlgorithmProperty-java.lang.String-java.lang.String-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        [global::System.Obsolete()]
-        public static Java.Lang.String GetAlgorithmProperty(Java.Lang.String arg0, Java.Lang.String arg1)
-        {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getAlgorithmProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/security/Security.html#getProperty-java.lang.String-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

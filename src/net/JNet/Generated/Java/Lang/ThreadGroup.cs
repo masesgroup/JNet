@@ -132,16 +132,6 @@ namespace Java.Lang
             get { return IExecuteWithSignature<Java.Lang.ThreadGroup>("getParent", "()Ljava/lang/ThreadGroup;"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadGroup.html#allowThreadSuspension-boolean-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool AllowThreadSuspension(bool arg0)
-        {
-            return IExecuteWithSignature<bool>("allowThreadSuspension", "(Z)Z", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadGroup.html#isDaemon--"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -180,36 +170,12 @@ namespace Java.Lang
             IExecuteWithSignature("interrupt", "()V");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadGroup.html#resume--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Resume()
-        {
-            IExecuteWithSignature("resume", "()V");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadGroup.html#setDaemon-boolean-"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetDaemon(bool arg0)
         {
             IExecuteWithSignature("setDaemon", "(Z)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadGroup.html#stop--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Stop()
-        {
-            IExecuteWithSignature("stop", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadGroup.html#suspend--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Suspend()
-        {
-            IExecuteWithSignature("suspend", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadGroup.html#activeCount--"/>

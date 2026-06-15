@@ -124,16 +124,6 @@ namespace Java.Awt
             get { return IExecuteWithSignature<Java.Awt.MenuContainer>("getParent", "()Ljava/awt/MenuContainer;"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuComponent.html#postEvent-java.awt.Event-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool PostEvent(Java.Awt.Event arg0)
-        {
-            return IExecuteWithSignature<bool>("postEvent", "(Ljava/awt/Event;)Z", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuComponent.html#dispatchEvent-java.awt.AWTEvent-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>

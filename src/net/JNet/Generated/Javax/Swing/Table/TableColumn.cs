@@ -259,22 +259,6 @@ namespace Javax.Swing.Table
             IExecuteWithSignature("removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableColumn.html#disableResizedPosting--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void DisableResizedPosting()
-        {
-            IExecuteWithSignature("disableResizedPosting", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableColumn.html#enableResizedPosting--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void EnableResizedPosting()
-        {
-            IExecuteWithSignature("enableResizedPosting", "()V");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/table/TableColumn.html#sizeWidthToFit--"/>
         /// </summary>
         public void SizeWidthToFit()

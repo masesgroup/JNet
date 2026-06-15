@@ -29,7 +29,7 @@ namespace Java.Rmi.Activation
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/activation/ActivationGroup_Stub.html"/>
     /// </summary>
-    public partial class ActivationGroup_Stub : Java.Rmi.Server.RemoteStub
+    public partial class ActivationGroup_Stub : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ActivationGroup_Stub>
     {
         const string _bridgeClassName = "java.rmi.activation.ActivationGroup_Stub";
 

@@ -336,22 +336,6 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Io.InputStream GetBinaryStream(Java.Lang.String arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getUnicodeStream-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
-        Java.Io.InputStream GetUnicodeStream(int arg0);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getUnicodeStream-java.lang.String-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
-        Java.Io.InputStream GetUnicodeStream(Java.Lang.String arg0);
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getCharacterStream-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -438,30 +422,12 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Lang.String GetString(Java.Lang.String arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getBigDecimal-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
-        Java.Math.BigDecimal GetBigDecimal(int arg0, int arg1);
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getBigDecimal-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Math.BigDecimal GetBigDecimal(int arg0);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getBigDecimal-java.lang.String-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
-        Java.Math.BigDecimal GetBigDecimal(Java.Lang.String arg0, int arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getBigDecimal-java.lang.String-"/>
         /// </summary>
@@ -1863,28 +1829,6 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Io.InputStream>("getBinaryStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getUnicodeStream-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
-        public Java.Io.InputStream GetUnicodeStream(int arg0)
-        {
-            return IExecuteWithSignature<Java.Io.InputStream>("getUnicodeStream", "(I)Ljava/io/InputStream;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getUnicodeStream-java.lang.String-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
-        public Java.Io.InputStream GetUnicodeStream(Java.Lang.String arg0)
-        {
-            return IExecuteWithSignature<Java.Io.InputStream>("getUnicodeStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getCharacterStream-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -2007,18 +1951,6 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getBigDecimal-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
-        public Java.Math.BigDecimal GetBigDecimal(int arg0, int arg1)
-        {
-            return IExecuteWithSignature<Java.Math.BigDecimal>("getBigDecimal", "(II)Ljava/math/BigDecimal;", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getBigDecimal-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -2027,18 +1959,6 @@ namespace Java.Sql
         public Java.Math.BigDecimal GetBigDecimal(int arg0)
         {
             return IExecuteWithSignature<Java.Math.BigDecimal>("getBigDecimal", "(I)Ljava/math/BigDecimal;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getBigDecimal-java.lang.String-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
-        public Java.Math.BigDecimal GetBigDecimal(Java.Lang.String arg0, int arg1)
-        {
-            return IExecuteWithSignature<Java.Math.BigDecimal>("getBigDecimal", "(Ljava/lang/String;I)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html#getBigDecimal-java.lang.String-"/>

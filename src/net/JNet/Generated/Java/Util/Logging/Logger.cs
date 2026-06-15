@@ -75,11 +75,6 @@ namespace Java.Util.Logging
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#GLOBAL_LOGGER_NAME"/>
         /// </summary>
         public static Java.Lang.String GLOBAL_LOGGER_NAME { get { return SGetField<Java.Lang.String>(LocalBridgeClazz, "GLOBAL_LOGGER_NAME"); } set { SSetField(LocalBridgeClazz, "GLOBAL_LOGGER_NAME", value); } }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#global"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static Java.Util.Logging.Logger global { get { return SGetField<Java.Util.Logging.Logger>(LocalBridgeClazz, "global"); } set { SSetField(LocalBridgeClazz, "global", value); } }
 
         #endregion
 
@@ -467,61 +462,6 @@ namespace Java.Util.Logging
         public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Util.Function.Supplier<Java.Lang.String> arg3)
         {
             IExecuteWithSignature("logp", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Supplier;)V", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.Object-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        [global::System.Obsolete()]
-        public void Logrb(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, object arg5)
-        {
-            IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4, arg5);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.Object[]-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg5"><see cref="object"/></param>
-        [global::System.Obsolete()]
-        public void Logrb(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, object[] arg5)
-        {
-            IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4, arg5);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.Throwable-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg5"><see cref="Java.Lang.Throwable"/></param>
-        [global::System.Obsolete()]
-        public void Logrb(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, MASES.JCOBridge.C2JBridge.JVMBridgeException arg5)
-        {
-            IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2, arg3, arg4, arg5);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.lang.String-java.lang.String-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        [global::System.Obsolete()]
-        public void Logrb(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
-        {
-            IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#logrb-java.util.logging.Level-java.lang.String-java.lang.String-java.util.ResourceBundle-java.lang.String-java.lang.Object...-"/>

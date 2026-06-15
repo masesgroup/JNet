@@ -396,24 +396,6 @@ namespace Java.Awt
             IExecuteWithSignature("removeWindowStateListener", "(Ljava/awt/event/WindowStateListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Window.html#applyResourceBundle-java.lang.String-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [global::System.Obsolete()]
-        public void ApplyResourceBundle(Java.Lang.String arg0)
-        {
-            IExecuteWithSignature("applyResourceBundle", "(Ljava/lang/String;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Window.html#applyResourceBundle-java.util.ResourceBundle-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.ResourceBundle"/></param>
-        [global::System.Obsolete()]
-        public void ApplyResourceBundle(Java.Util.ResourceBundle arg0)
-        {
-            IExecuteWithSignature("applyResourceBundle", "(Ljava/util/ResourceBundle;)V", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Window.html#createBufferStrategy-int-java.awt.BufferCapabilities-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

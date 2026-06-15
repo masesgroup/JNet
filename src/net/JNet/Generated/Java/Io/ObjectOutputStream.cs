@@ -415,16 +415,6 @@ namespace Java.Io
             {
                 IExecuteWithSignature("put", "(Ljava/lang/String;S)V", arg0, arg1);
             }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/ObjectOutputStream.PutField.html#write-java.io.ObjectOutput-"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
-            /// <exception cref="Java.Io.IOException"/>
-            [global::System.Obsolete()]
-            public void Write(Java.Io.ObjectOutput arg0)
-            {
-                IExecuteWithSignature("write", "(Ljava/io/ObjectOutput;)V", arg0);
-            }
 
             #endregion
 

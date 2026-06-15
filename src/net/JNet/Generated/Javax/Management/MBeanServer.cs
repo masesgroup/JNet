@@ -97,38 +97,6 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         bool IsRegistered(Javax.Management.ObjectName arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServer.html#deserialize-java.lang.String-byte[]-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Io.ObjectInputStream"/></returns>
-        /// <exception cref="Javax.Management.OperationsException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        [global::System.Obsolete()]
-        Java.Io.ObjectInputStream Deserialize(Java.Lang.String arg0, byte[] arg1);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServer.html#deserialize-java.lang.String-javax.management.ObjectName-byte[]-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Io.ObjectInputStream"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.OperationsException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        [global::System.Obsolete()]
-        Java.Io.ObjectInputStream Deserialize(Java.Lang.String arg0, Javax.Management.ObjectName arg1, byte[] arg2);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServer.html#deserialize-javax.management.ObjectName-byte[]-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Io.ObjectInputStream"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.OperationsException"/>
-        [global::System.Obsolete()]
-        Java.Io.ObjectInputStream Deserialize(Javax.Management.ObjectName arg0, byte[] arg1);
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServer.html#getClassLoader-javax.management.ObjectName-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
@@ -469,47 +437,6 @@ namespace Javax.Management
         public bool IsRegistered(Javax.Management.ObjectName arg0)
         {
             return IExecuteWithSignature<bool>("isRegistered", "(Ljavax/management/ObjectName;)Z", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServer.html#deserialize-java.lang.String-byte[]-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Io.ObjectInputStream"/></returns>
-        /// <exception cref="Javax.Management.OperationsException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        [global::System.Obsolete()]
-        public Java.Io.ObjectInputStream Deserialize(Java.Lang.String arg0, byte[] arg1)
-        {
-            return IExecuteWithSignature<Java.Io.ObjectInputStream>("deserialize", "(Ljava/lang/String;[B)Ljava/io/ObjectInputStream;", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServer.html#deserialize-java.lang.String-javax.management.ObjectName-byte[]-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Io.ObjectInputStream"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.OperationsException"/>
-        /// <exception cref="Javax.Management.ReflectionException"/>
-        [global::System.Obsolete()]
-        public Java.Io.ObjectInputStream Deserialize(Java.Lang.String arg0, Javax.Management.ObjectName arg1, byte[] arg2)
-        {
-            return IExecuteWithSignature<Java.Io.ObjectInputStream>("deserialize", "(Ljava/lang/String;Ljavax/management/ObjectName;[B)Ljava/io/ObjectInputStream;", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServer.html#deserialize-javax.management.ObjectName-byte[]-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Io.ObjectInputStream"/></returns>
-        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
-        /// <exception cref="Javax.Management.OperationsException"/>
-        [global::System.Obsolete()]
-        public Java.Io.ObjectInputStream Deserialize(Javax.Management.ObjectName arg0, byte[] arg1)
-        {
-            return IExecuteWithSignature<Java.Io.ObjectInputStream>("deserialize", "(Ljavax/management/ObjectName;[B)Ljava/io/ObjectInputStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServer.html#getClassLoader-javax.management.ObjectName-"/>

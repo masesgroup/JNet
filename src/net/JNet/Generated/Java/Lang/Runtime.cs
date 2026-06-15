@@ -82,15 +82,6 @@ namespace Java.Lang
         {
             get { return SExecuteWithSignature<Java.Lang.Runtime>(LocalBridgeClazz, "getRuntime", "()Ljava/lang/Runtime;"); }
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#runFinalizersOnExit-boolean-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
-        public static void RunFinalizersOnExit(bool arg0)
-        {
-            SExecuteWithSignature(LocalBridgeClazz, "runFinalizersOnExit", "(Z)V", arg0);
-        }
 
         #endregion
 
@@ -103,26 +94,6 @@ namespace Java.Lang
         public bool RemoveShutdownHook(Java.Lang.Thread arg0)
         {
             return IExecuteWithSignature<bool>("removeShutdownHook", "(Ljava/lang/Thread;)Z", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#getLocalizedInputStream-java.io.InputStream-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        [global::System.Obsolete()]
-        public Java.Io.InputStream GetLocalizedInputStream(Java.Io.InputStream arg0)
-        {
-            return IExecuteWithSignature<Java.Io.InputStream>("getLocalizedInputStream", "(Ljava/io/InputStream;)Ljava/io/InputStream;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#getLocalizedOutputStream-java.io.OutputStream-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        [global::System.Obsolete()]
-        public Java.Io.OutputStream GetLocalizedOutputStream(Java.Io.OutputStream arg0)
-        {
-            return IExecuteWithSignature<Java.Io.OutputStream>("getLocalizedOutputStream", "(Ljava/io/OutputStream;)Ljava/io/OutputStream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#exec-java.lang.String-java.lang.String[]-java.io.File-"/>

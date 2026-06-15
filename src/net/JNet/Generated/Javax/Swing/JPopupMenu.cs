@@ -255,16 +255,6 @@ namespace Javax.Swing
             return IExecuteWithSignature<int>("getComponentIndex", "(Ljava/awt/Component;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPopupMenu.html#getComponentAtIndex-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Component GetComponentAtIndex(int arg0)
-        {
-            return IExecuteWithSignature<Java.Awt.Component>("getComponentAtIndex", "(I)Ljava/awt/Component;", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JPopupMenu.html#add-java.lang.String-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

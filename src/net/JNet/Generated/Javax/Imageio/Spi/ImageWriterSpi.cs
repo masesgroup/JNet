@@ -103,11 +103,6 @@ namespace Javax.Imageio.Spi
         #endregion
 
         #region Fields
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/imageio/spi/ImageWriterSpi.html#STANDARD_OUTPUT_TYPE"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static Java.Lang.Class[] STANDARD_OUTPUT_TYPE { get { return SGetFieldArray<Java.Lang.Class>(LocalBridgeClazz, "STANDARD_OUTPUT_TYPE"); } set { SSetField(LocalBridgeClazz, "STANDARD_OUTPUT_TYPE", value); } }
 
         #endregion
 

@@ -285,16 +285,6 @@ namespace Javax.Swing
         #endregion
 
         #region Static methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTable.html#createScrollPaneForTable-javax.swing.JTable-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JTable"/></param>
-        /// <returns><see cref="Javax.Swing.JScrollPane"/></returns>
-        [global::System.Obsolete()]
-        public static Javax.Swing.JScrollPane CreateScrollPaneForTable(Javax.Swing.JTable arg0)
-        {
-            return SExecuteWithSignature<Javax.Swing.JScrollPane>(LocalBridgeClazz, "createScrollPaneForTable", "(Ljavax/swing/JTable;)Ljavax/swing/JScrollPane;", arg0);
-        }
 
         #endregion
 
@@ -1147,15 +1137,6 @@ namespace Javax.Swing
         public void SetValueAt(object arg0, int arg1, int arg2)
         {
             IExecuteWithSignature("setValueAt", "(Ljava/lang/Object;II)V", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTable.html#sizeColumnsToFit-boolean-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
-        public void SizeColumnsToFit(bool arg0)
-        {
-            IExecuteWithSignature("sizeColumnsToFit", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JTable.html#sizeColumnsToFit-int-"/>

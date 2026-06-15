@@ -523,16 +523,6 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Net.URI>("toURI", "()Ljava/net/URI;");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html#toURL--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Net.URL"/></returns>
-        /// <exception cref="Java.Net.MalformedURLException"/>
-        [global::System.Obsolete()]
-        public Java.Net.URL ToURL()
-        {
-            return IExecuteWithSignature<Java.Net.URL>("toURL", "()Ljava/net/URL;");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html#toPath--"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>

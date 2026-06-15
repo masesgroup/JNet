@@ -29,7 +29,7 @@ namespace Javax.Management.Remote.Rmi
     /// <summary>
     /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/rmi/RMIServerImpl_Stub.html"/>
     /// </summary>
-    public partial class RMIServerImpl_Stub : Java.Rmi.Server.RemoteStub
+    public partial class RMIServerImpl_Stub : Javax.Management.Remote.Rmi.RMIServer
     {
         const string _bridgeClassName = "javax.management.remote.rmi.RMIServerImpl_Stub";
 
@@ -82,10 +82,6 @@ namespace Javax.Management.Remote.Rmi
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIServerImpl_Stub"/> to <see cref="Javax.Management.Remote.Rmi.RMIServer"/>
-        /// </summary>
-        public static implicit operator Javax.Management.Remote.Rmi.RMIServer(Javax.Management.Remote.Rmi.RMIServerImpl_Stub t) => t.Cast<Javax.Management.Remote.Rmi.RMIServer>();
 
         #endregion
 

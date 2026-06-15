@@ -100,23 +100,6 @@ namespace Javax.Swing
         {
             get { return SExecuteWithSignature<Javax.Swing.FocusManager>(LocalBridgeClazz, "getCurrentManager", "()Ljavax/swing/FocusManager;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setCurrentManager", "(Ljavax/swing/FocusManager;)V", value); }
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/FocusManager.html#isFocusManagerEnabled--"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public static bool IsFocusManagerEnabled()
-        {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isFocusManagerEnabled", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/FocusManager.html#disableSwingFocusManager--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static void DisableSwingFocusManager()
-        {
-            SExecuteWithSignature(LocalBridgeClazz, "disableSwingFocusManager", "()V");
-        }
 
         #endregion
 

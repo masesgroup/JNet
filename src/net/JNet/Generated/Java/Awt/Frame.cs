@@ -139,26 +139,6 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#CROSSHAIR_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int CROSSHAIR_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "CROSSHAIR_CURSOR"); } set { SSetField(LocalBridgeClazz, "CROSSHAIR_CURSOR", value); } }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#DEFAULT_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int DEFAULT_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "DEFAULT_CURSOR"); } set { SSetField(LocalBridgeClazz, "DEFAULT_CURSOR", value); } }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#E_RESIZE_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int E_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "E_RESIZE_CURSOR"); } set { SSetField(LocalBridgeClazz, "E_RESIZE_CURSOR", value); } }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#HAND_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int HAND_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "HAND_CURSOR"); } set { SSetField(LocalBridgeClazz, "HAND_CURSOR", value); } }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#ICONIFIED"/>
         /// </summary>
         public static int ICONIFIED { get { return SGetField<int>(LocalBridgeClazz, "ICONIFIED"); } set { SSetField(LocalBridgeClazz, "ICONIFIED", value); } }
@@ -175,59 +155,9 @@ namespace Java.Awt
         /// </summary>
         public static int MAXIMIZED_VERT { get { return SGetField<int>(LocalBridgeClazz, "MAXIMIZED_VERT"); } set { SSetField(LocalBridgeClazz, "MAXIMIZED_VERT", value); } }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#MOVE_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int MOVE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "MOVE_CURSOR"); } set { SSetField(LocalBridgeClazz, "MOVE_CURSOR", value); } }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#N_RESIZE_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int N_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "N_RESIZE_CURSOR"); } set { SSetField(LocalBridgeClazz, "N_RESIZE_CURSOR", value); } }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#NE_RESIZE_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int NE_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "NE_RESIZE_CURSOR"); } set { SSetField(LocalBridgeClazz, "NE_RESIZE_CURSOR", value); } }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#NORMAL"/>
         /// </summary>
         public static int NORMAL { get { return SGetField<int>(LocalBridgeClazz, "NORMAL"); } set { SSetField(LocalBridgeClazz, "NORMAL", value); } }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#NW_RESIZE_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int NW_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "NW_RESIZE_CURSOR"); } set { SSetField(LocalBridgeClazz, "NW_RESIZE_CURSOR", value); } }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#S_RESIZE_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int S_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "S_RESIZE_CURSOR"); } set { SSetField(LocalBridgeClazz, "S_RESIZE_CURSOR", value); } }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#SE_RESIZE_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int SE_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "SE_RESIZE_CURSOR"); } set { SSetField(LocalBridgeClazz, "SE_RESIZE_CURSOR", value); } }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#SW_RESIZE_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int SW_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "SW_RESIZE_CURSOR"); } set { SSetField(LocalBridgeClazz, "SW_RESIZE_CURSOR", value); } }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#TEXT_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int TEXT_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "TEXT_CURSOR"); } set { SSetField(LocalBridgeClazz, "TEXT_CURSOR", value); } }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#W_RESIZE_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int W_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "W_RESIZE_CURSOR"); } set { SSetField(LocalBridgeClazz, "W_RESIZE_CURSOR", value); } }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#WAIT_CURSOR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int WAIT_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "WAIT_CURSOR"); } set { SSetField(LocalBridgeClazz, "WAIT_CURSOR", value); } }
 
         #endregion
 
@@ -243,14 +173,6 @@ namespace Java.Awt
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#getCursorType--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public int CursorType
-        {
-            get { return IExecuteWithSignature<int>("getCursorType", "()I"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#getExtendedState--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#setExtendedState-int-"/>
         /// </summary>
@@ -308,15 +230,6 @@ namespace Java.Awt
         public bool IsUndecorated()
         {
             return IExecuteWithSignature<bool>("isUndecorated", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#setCursor-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public void SetCursor(int arg0)
-        {
-            IExecuteWithSignature("setCursor", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Frame.html#setResizable-boolean-"/>

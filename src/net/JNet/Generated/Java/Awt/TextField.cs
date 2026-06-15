@@ -192,26 +192,6 @@ namespace Java.Awt
             return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredSize", "(I)Ljava/awt/Dimension;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextField.html#minimumSize-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Dimension MinimumSize(int arg0)
-        {
-            return IExecuteWithSignature<Java.Awt.Dimension>("minimumSize", "(I)Ljava/awt/Dimension;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextField.html#preferredSize-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Dimension PreferredSize(int arg0)
-        {
-            return IExecuteWithSignature<Java.Awt.Dimension>("preferredSize", "(I)Ljava/awt/Dimension;", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextField.html#addActionListener-java.awt.event.ActionListener-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
@@ -226,15 +206,6 @@ namespace Java.Awt
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecuteWithSignature("removeActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/TextField.html#setEchoCharacter-char-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        [global::System.Obsolete()]
-        public void SetEchoCharacter(char arg0)
-        {
-            IExecuteWithSignature("setEchoCharacter", "(C)V", arg0);
         }
 
         #endregion

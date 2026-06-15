@@ -291,24 +291,6 @@ namespace Java.Util.Jar
             {
                 IExecuteWithSignature("pack", "(Ljava/util/jar/JarInputStream;Ljava/io/OutputStream;)V", arg0, arg1);
             }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Packer.html#addPropertyChangeListener-java.beans.PropertyChangeListener-"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
-            [global::System.Obsolete()]
-            public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
-            {
-                IExecute("addPropertyChangeListener", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Packer.html#removePropertyChangeListener-java.beans.PropertyChangeListener-"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
-            [global::System.Obsolete()]
-            public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
-            {
-                IExecute("removePropertyChangeListener", arg0);
-            }
 
             #endregion
 
@@ -387,24 +369,6 @@ namespace Java.Util.Jar
             public void Unpack(Java.Io.InputStream arg0, Java.Util.Jar.JarOutputStream arg1)
             {
                 IExecuteWithSignature("unpack", "(Ljava/io/InputStream;Ljava/util/jar/JarOutputStream;)V", arg0, arg1);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Unpacker.html#addPropertyChangeListener-java.beans.PropertyChangeListener-"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
-            [global::System.Obsolete()]
-            public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
-            {
-                IExecute("addPropertyChangeListener", arg0);
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Pack200.Unpacker.html#removePropertyChangeListener-java.beans.PropertyChangeListener-"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
-            [global::System.Obsolete()]
-            public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
-            {
-                IExecute("removePropertyChangeListener", arg0);
             }
 
             #endregion

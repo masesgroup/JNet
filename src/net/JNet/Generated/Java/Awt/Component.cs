@@ -174,6 +174,13 @@ namespace Java.Awt
             get { return IExecuteWithSignature<Java.Awt.Color>("getBackground", "()Ljava/awt/Color;"); } set { IExecuteWithSignature("setBackground", "(Ljava/awt/Color;)V", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getBounds--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#setBounds-java.awt.Rectangle-"/>
+        /// </summary>
+        public Java.Awt.Rectangle Bounds
+        {
+            get { return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "()Ljava/awt/Rectangle;"); } set { IExecuteWithSignature("setBounds", "(Ljava/awt/Rectangle;)V", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getColorModel--"/> 
         /// </summary>
         public Java.Awt.ImageNs.ColorModel ColorModel
@@ -328,6 +335,13 @@ namespace Java.Awt
             get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); } set { IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getLocation--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#setLocation-java.awt.Point-"/>
+        /// </summary>
+        public Java.Awt.Point Location
+        {
+            get { return IExecuteWithSignature<Java.Awt.Point>("getLocation", "()Ljava/awt/Point;"); } set { IExecuteWithSignature("setLocation", "(Ljava/awt/Point;)V", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getLocationOnScreen--"/> 
         /// </summary>
         public Java.Awt.Point LocationOnScreen
@@ -340,6 +354,13 @@ namespace Java.Awt
         public Java.Awt.Dimension MaximumSize
         {
             get { return IExecuteWithSignature<Java.Awt.Dimension>("getMaximumSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setMaximumSize", "(Ljava/awt/Dimension;)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getMinimumSize--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#setMinimumSize-java.awt.Dimension-"/>
+        /// </summary>
+        public Java.Awt.Dimension MinimumSize
+        {
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getMinimumSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setMinimumSize", "(Ljava/awt/Dimension;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getMouseListeners--"/> 
@@ -384,11 +405,25 @@ namespace Java.Awt
             get { return IExecuteWithSignature<Java.Awt.Container>("getParent", "()Ljava/awt/Container;"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getPreferredSize--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#setPreferredSize-java.awt.Dimension-"/>
+        /// </summary>
+        public Java.Awt.Dimension PreferredSize
+        {
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setPreferredSize", "(Ljava/awt/Dimension;)V", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getPropertyChangeListeners--"/> 
         /// </summary>
         public Java.Beans.PropertyChangeListener[] PropertyChangeListeners
         {
             get { return IExecuteWithSignatureArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", "()[Ljava/beans/PropertyChangeListener;"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getSize--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#setSize-java.awt.Dimension-"/>
+        /// </summary>
+        public Java.Awt.Dimension Size
+        {
+            get { return IExecuteWithSignature<Java.Awt.Dimension>("getSize", "()Ljava/awt/Dimension;"); } set { IExecuteWithSignature("setSize", "(Ljava/awt/Dimension;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getToolkit--"/> 
@@ -436,17 +471,6 @@ namespace Java.Awt
             return IExecuteArray<T>("getListeners", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#action-java.awt.Event-java.lang.Object-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool Action(Java.Awt.Event arg0, object arg1)
-        {
-            return IExecuteWithSignature<bool>("action", "(Ljava/awt/Event;Ljava/lang/Object;)Z", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#areFocusTraversalKeysSet-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -475,27 +499,6 @@ namespace Java.Awt
             return IExecuteWithSignature<bool>("contains", "(Ljava/awt/Point;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#gotFocus-java.awt.Event-java.lang.Object-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool GotFocus(Java.Awt.Event arg0, object arg1)
-        {
-            return IExecuteWithSignature<bool>("gotFocus", "(Ljava/awt/Event;Ljava/lang/Object;)Z", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#handleEvent-java.awt.Event-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool HandleEvent(Java.Awt.Event arg0)
-        {
-            return IExecuteWithSignature<bool>("handleEvent", "(Ljava/awt/Event;)Z", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#hasFocus--"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -516,17 +519,6 @@ namespace Java.Awt
         public bool ImageUpdate(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
             return IExecuteWithSignature<bool>("imageUpdate", "(Ljava/awt/Image;IIIII)Z", arg0, arg1, arg2, arg3, arg4, arg5);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#inside-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool Inside(int arg0, int arg1)
-        {
-            return IExecuteWithSignature<bool>("inside", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#isBackgroundSet--"/>
@@ -592,15 +584,6 @@ namespace Java.Awt
         public bool IsFocusOwner()
         {
             return IExecuteWithSignature<bool>("isFocusOwner", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#isFocusTraversable--"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool IsFocusTraversable()
-        {
-            return IExecuteWithSignature<bool>("isFocusTraversable", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#isFontSet--"/>
@@ -681,121 +664,6 @@ namespace Java.Awt
         public bool IsVisible()
         {
             return IExecuteWithSignature<bool>("isVisible", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#keyDown-java.awt.Event-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool KeyDown(Java.Awt.Event arg0, int arg1)
-        {
-            return IExecuteWithSignature<bool>("keyDown", "(Ljava/awt/Event;I)Z", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#keyUp-java.awt.Event-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool KeyUp(Java.Awt.Event arg0, int arg1)
-        {
-            return IExecuteWithSignature<bool>("keyUp", "(Ljava/awt/Event;I)Z", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#lostFocus-java.awt.Event-java.lang.Object-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool LostFocus(Java.Awt.Event arg0, object arg1)
-        {
-            return IExecuteWithSignature<bool>("lostFocus", "(Ljava/awt/Event;Ljava/lang/Object;)Z", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#mouseDown-java.awt.Event-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool MouseDown(Java.Awt.Event arg0, int arg1, int arg2)
-        {
-            return IExecuteWithSignature<bool>("mouseDown", "(Ljava/awt/Event;II)Z", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#mouseDrag-java.awt.Event-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool MouseDrag(Java.Awt.Event arg0, int arg1, int arg2)
-        {
-            return IExecuteWithSignature<bool>("mouseDrag", "(Ljava/awt/Event;II)Z", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#mouseEnter-java.awt.Event-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool MouseEnter(Java.Awt.Event arg0, int arg1, int arg2)
-        {
-            return IExecuteWithSignature<bool>("mouseEnter", "(Ljava/awt/Event;II)Z", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#mouseExit-java.awt.Event-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool MouseExit(Java.Awt.Event arg0, int arg1, int arg2)
-        {
-            return IExecuteWithSignature<bool>("mouseExit", "(Ljava/awt/Event;II)Z", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#mouseMove-java.awt.Event-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool MouseMove(Java.Awt.Event arg0, int arg1, int arg2)
-        {
-            return IExecuteWithSignature<bool>("mouseMove", "(Ljava/awt/Event;II)Z", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#mouseUp-java.awt.Event-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool MouseUp(Java.Awt.Event arg0, int arg1, int arg2)
-        {
-            return IExecuteWithSignature<bool>("mouseUp", "(Ljava/awt/Event;II)Z", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#postEvent-java.awt.Event-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool PostEvent(Java.Awt.Event arg0)
-        {
-            return IExecuteWithSignature<bool>("postEvent", "(Ljava/awt/Event;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#prepareImage-java.awt.Image-int-int-java.awt.image.ImageObserver-"/>
@@ -887,41 +755,6 @@ namespace Java.Awt
             return IExecuteWithSignature<Java.Awt.Component>("getComponentAt", "(Ljava/awt/Point;)Ljava/awt/Component;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#locate-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Component Locate(int arg0, int arg1)
-        {
-            return IExecuteWithSignature<Java.Awt.Component>("locate", "(II)Ljava/awt/Component;", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getMinimumSize--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        public Java.Awt.Dimension GetMinimumSize()
-        {
-            return IExecuteWithSignature<Java.Awt.Dimension>("getMinimumSize", "()Ljava/awt/Dimension;");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getPreferredSize--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        public Java.Awt.Dimension GetPreferredSize()
-        {
-            return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredSize", "()Ljava/awt/Dimension;");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getSize--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        public Java.Awt.Dimension GetSize()
-        {
-            return IExecuteWithSignature<Java.Awt.Dimension>("getSize", "()Ljava/awt/Dimension;");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getSize-java.awt.Dimension-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
@@ -929,33 +762,6 @@ namespace Java.Awt
         public Java.Awt.Dimension GetSize(Java.Awt.Dimension arg0)
         {
             return IExecuteWithSignature<Java.Awt.Dimension>("getSize", "(Ljava/awt/Dimension;)Ljava/awt/Dimension;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#minimumSize--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Dimension MinimumSize()
-        {
-            return IExecuteWithSignature<Java.Awt.Dimension>("minimumSize", "()Ljava/awt/Dimension;");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#preferredSize--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Dimension PreferredSize()
-        {
-            return IExecuteWithSignature<Java.Awt.Dimension>("preferredSize", "()Ljava/awt/Dimension;");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#size--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Dimension Size()
-        {
-            return IExecuteWithSignature<Java.Awt.Dimension>("size", "()Ljava/awt/Dimension;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getFontMetrics-java.awt.Font-"/>
@@ -1008,14 +814,6 @@ namespace Java.Awt
             return IExecuteWithSignature<Java.Awt.ImageNs.VolatileImage>("createVolatileImage", "(II)Ljava/awt/image/VolatileImage;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getLocation--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Awt.Point"/></returns>
-        public Java.Awt.Point GetLocation()
-        {
-            return IExecuteWithSignature<Java.Awt.Point>("getLocation", "()Ljava/awt/Point;");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getLocation-java.awt.Point-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
@@ -1023,32 +821,6 @@ namespace Java.Awt
         public Java.Awt.Point GetLocation(Java.Awt.Point arg0)
         {
             return IExecuteWithSignature<Java.Awt.Point>("getLocation", "(Ljava/awt/Point;)Ljava/awt/Point;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#location--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Awt.Point"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Point Location()
-        {
-            return IExecuteWithSignature<Java.Awt.Point>("location", "()Ljava/awt/Point;");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#bounds--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Rectangle Bounds()
-        {
-            return IExecuteWithSignature<Java.Awt.Rectangle>("bounds", "()Ljava/awt/Rectangle;");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getBounds--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
-        public Java.Awt.Rectangle GetBounds()
-        {
-            return IExecuteWithSignature<Java.Awt.Rectangle>("getBounds", "()Ljava/awt/Rectangle;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#getBounds-java.awt.Rectangle-"/>
@@ -1246,45 +1018,11 @@ namespace Java.Awt
             IExecuteWithSignature("applyComponentOrientation", "(Ljava/awt/ComponentOrientation;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#deliverEvent-java.awt.Event-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Event"/></param>
-        [global::System.Obsolete()]
-        public void DeliverEvent(Java.Awt.Event arg0)
-        {
-            IExecuteWithSignature("deliverEvent", "(Ljava/awt/Event;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#disable--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Disable()
-        {
-            IExecuteWithSignature("disable", "()V");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#doLayout--"/>
         /// </summary>
         public void DoLayout()
         {
             IExecuteWithSignature("doLayout", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#enable--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Enable()
-        {
-            IExecuteWithSignature("enable", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#enable-boolean-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
-        public void Enable(bool arg0)
-        {
-            IExecuteWithSignature("enable", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#enableInputMethods-boolean-"/>
@@ -1355,27 +1093,11 @@ namespace Java.Awt
             IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;SS)V", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#hide--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Hide()
-        {
-            IExecuteWithSignature("hide", "()V");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#invalidate--"/>
         /// </summary>
         public void Invalidate()
         {
             IExecuteWithSignature("invalidate", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#layout--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Layout()
-        {
-            IExecuteWithSignature("layout", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#list--"/>
@@ -1417,24 +1139,6 @@ namespace Java.Awt
         public void List(Java.Io.PrintWriter arg0)
         {
             IExecuteWithSignature("list", "(Ljava/io/PrintWriter;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#move-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public void Move(int arg0, int arg1)
-        {
-            IExecuteWithSignature("move", "(II)V", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#nextFocus--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void NextFocus()
-        {
-            IExecuteWithSignature("nextFocus", "()V");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#paint-java.awt.Graphics-"/>
@@ -1562,37 +1266,6 @@ namespace Java.Awt
             IExecuteWithSignature("requestFocus", "()V");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#reshape-int-int-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public void Reshape(int arg0, int arg1, int arg2, int arg3)
-        {
-            IExecuteWithSignature("reshape", "(IIII)V", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#resize-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public void Resize(int arg0, int arg1)
-        {
-            IExecuteWithSignature("resize", "(II)V", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#resize-java.awt.Dimension-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
-        [global::System.Obsolete()]
-        public void Resize(Java.Awt.Dimension arg0)
-        {
-            IExecuteWithSignature("resize", "(Ljava/awt/Dimension;)V", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#revalidate--"/>
         /// </summary>
         public void Revalidate()
@@ -1609,14 +1282,6 @@ namespace Java.Awt
         public void SetBounds(int arg0, int arg1, int arg2, int arg3)
         {
             IExecuteWithSignature("setBounds", "(IIII)V", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#setBounds-java.awt.Rectangle-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        public void SetBounds(Java.Awt.Rectangle arg0)
-        {
-            IExecuteWithSignature("setBounds", "(Ljava/awt/Rectangle;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#setEnabled-boolean-"/>
@@ -1654,30 +1319,6 @@ namespace Java.Awt
             IExecuteWithSignature("setLocation", "(II)V", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#setLocation-java.awt.Point-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
-        public void SetLocation(Java.Awt.Point arg0)
-        {
-            IExecuteWithSignature("setLocation", "(Ljava/awt/Point;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#setMinimumSize-java.awt.Dimension-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
-        public void SetMinimumSize(Java.Awt.Dimension arg0)
-        {
-            IExecuteWithSignature("setMinimumSize", "(Ljava/awt/Dimension;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#setPreferredSize-java.awt.Dimension-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
-        public void SetPreferredSize(Java.Awt.Dimension arg0)
-        {
-            IExecuteWithSignature("setPreferredSize", "(Ljava/awt/Dimension;)V", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#setSize-int-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1687,37 +1328,12 @@ namespace Java.Awt
             IExecuteWithSignature("setSize", "(II)V", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#setSize-java.awt.Dimension-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
-        public void SetSize(Java.Awt.Dimension arg0)
-        {
-            IExecuteWithSignature("setSize", "(Ljava/awt/Dimension;)V", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#setVisible-boolean-"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetVisible(bool arg0)
         {
             IExecuteWithSignature("setVisible", "(Z)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#show--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Show()
-        {
-            IExecuteWithSignature("show", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#show-boolean-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
-        public void Show(bool arg0)
-        {
-            IExecuteWithSignature("show", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#transferFocus--"/>

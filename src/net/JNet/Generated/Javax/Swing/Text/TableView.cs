@@ -55,41 +55,6 @@ namespace Javax.Swing.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region TableCell declaration
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public partial class TableCell : Javax.Swing.Text.BoxView
-        {
-            const string _bridgeClassName = "javax.swing.text.TableView$TableCell";
-
-            /// <summary>
-            /// Initializer used internally by JCOBridge. Do not use directly.
-            /// </summary>
-            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public TableCell(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
-
-            private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
-            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
-            /// <inheritdoc/>
-            public override string BridgeClassName => _bridgeClassName;
-            /// <inheritdoc/>
-            public override bool IsBridgeAbstract => false;
-            /// <inheritdoc/>
-            public override bool IsBridgeCloseable => false;
-            /// <inheritdoc/>
-            public override bool IsBridgeInterface => false;
-            /// <inheritdoc/>
-            public override bool IsBridgeStatic => false;
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
         #region TableRow declaration
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableRow.html"/>
@@ -167,90 +132,6 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region TableCell implementation
-        public partial class TableCell
-        {
-            #region Constructors
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#javax.swing.text.TableView$TableCell(javax.swing.text.TableView,javax.swing.text.Element)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Text.TableView"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.Text.Element"/></param>
-            public TableCell(Javax.Swing.Text.TableView arg0, Javax.Swing.Text.Element arg1) : base(JVMBridgeBase.InitializerInstance)
-            {
-                InvokeInitializer(arg0, arg1);
-            }
-            /// <summary>
-            /// HPA initializer for TableCell(Javax.Swing.Text.TableView arg0, Javax.Swing.Text.Element arg1)
-            /// </summary>
-            public static TableCell CreatePoolableInstance(Javax.Swing.Text.TableView arg0, Javax.Swing.Text.Element arg1)
-            {
-                return JVMBridgeBase.New<TableCell>(arg0, arg1);
-            }
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#getColumnCount--"/> 
-            /// </summary>
-            public int ColumnCount
-            {
-                get { return IExecuteWithSignature<int>("getColumnCount", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#getGridColumn--"/> 
-            /// </summary>
-            public int GridColumn
-            {
-                get { return IExecuteWithSignature<int>("getGridColumn", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#getGridRow--"/> 
-            /// </summary>
-            public int GridRow
-            {
-                get { return IExecuteWithSignature<int>("getGridRow", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#getRowCount--"/> 
-            /// </summary>
-            public int RowCount
-            {
-                get { return IExecuteWithSignature<int>("getRowCount", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/TableView.TableCell.html#setGridLocation-int-int-"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            public void SetGridLocation(int arg0, int arg1)
-            {
-                IExecuteWithSignature("setGridLocation", "(II)V", arg0, arg1);
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region TableRow implementation
         public partial class TableRow
         {

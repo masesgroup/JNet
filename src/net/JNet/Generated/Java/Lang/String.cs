@@ -78,25 +78,6 @@ namespace Java.Lang
             return JVMBridgeBase.New<String>();
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(byte[],int,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public String(byte[] arg0, int arg1, int arg2, int arg3) : base(JVMBridgeBase.InitializerInstance)
-        {
-            InvokeInitializer(arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// HPA initializer for String(byte[] arg0, int arg1, int arg2, int arg3)
-        /// </summary>
-        public static String CreatePoolableInstance(byte[] arg0, int arg1, int arg2, int arg3)
-        {
-            return JVMBridgeBase.New<String>(arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(byte[],int,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -149,23 +130,6 @@ namespace Java.Lang
         public static String CreatePoolableInstance(byte[] arg0, int arg1, int arg2)
         {
             return JVMBridgeBase.New<String>(arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(byte[],int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public String(byte[] arg0, int arg1) : base(JVMBridgeBase.InitializerInstance)
-        {
-            InvokeInitializer(arg0, arg1);
-        }
-        /// <summary>
-        /// HPA initializer for String(byte[] arg0, int arg1)
-        /// </summary>
-        public static String CreatePoolableInstance(byte[] arg0, int arg1)
-        {
-            return JVMBridgeBase.New<String>(arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String(byte[],java.lang.String)"/>
@@ -930,18 +894,6 @@ namespace Java.Lang
         public Java.Lang.String Intern()
         {
             return IExecuteWithSignature<Java.Lang.String>("intern", "()Ljava/lang/String;");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#getBytes-int-int-byte[]-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="byte"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public void GetBytes(int arg0, int arg1, byte[] arg2, int arg3)
-        {
-            IExecuteWithSignature("getBytes", "(II[BI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#getChars-int-int-char[]-int-"/>

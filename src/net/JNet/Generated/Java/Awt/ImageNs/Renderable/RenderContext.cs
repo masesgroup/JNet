@@ -173,30 +173,12 @@ namespace Java.Awt.ImageNs.Renderable
             IExecuteWithSignature("concatenateTransform", "(Ljava/awt/geom/AffineTransform;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/RenderContext.html#concetenateTransform-java.awt.geom.AffineTransform-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        [global::System.Obsolete()]
-        public void ConcetenateTransform(Java.Awt.Geom.AffineTransform arg0)
-        {
-            IExecuteWithSignature("concetenateTransform", "(Ljava/awt/geom/AffineTransform;)V", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/RenderContext.html#preConcatenateTransform-java.awt.geom.AffineTransform-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void PreConcatenateTransform(Java.Awt.Geom.AffineTransform arg0)
         {
             IExecuteWithSignature("preConcatenateTransform", "(Ljava/awt/geom/AffineTransform;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/renderable/RenderContext.html#preConcetenateTransform-java.awt.geom.AffineTransform-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        [global::System.Obsolete()]
-        public void PreConcetenateTransform(Java.Awt.Geom.AffineTransform arg0)
-        {
-            IExecuteWithSignature("preConcetenateTransform", "(Ljava/awt/geom/AffineTransform;)V", arg0);
         }
 
         #endregion

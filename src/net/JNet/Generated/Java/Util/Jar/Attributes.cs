@@ -334,11 +334,6 @@ namespace Java.Util.Jar
             /// </summary>
             public static Java.Util.Jar.Attributes.Name CONTENT_TYPE { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "CONTENT_TYPE"); } set { SSetField(LocalBridgeClazz, "CONTENT_TYPE", value); } }
             /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#EXTENSION_INSTALLATION"/>
-            /// </summary>
-            [global::System.Obsolete()]
-            public static Java.Util.Jar.Attributes.Name EXTENSION_INSTALLATION { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "EXTENSION_INSTALLATION"); } set { SSetField(LocalBridgeClazz, "EXTENSION_INSTALLATION", value); } }
-            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#EXTENSION_LIST"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name EXTENSION_LIST { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "EXTENSION_LIST"); } set { SSetField(LocalBridgeClazz, "EXTENSION_LIST", value); } }
@@ -351,19 +346,9 @@ namespace Java.Util.Jar
             /// </summary>
             public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_TITLE { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "IMPLEMENTATION_TITLE"); } set { SSetField(LocalBridgeClazz, "IMPLEMENTATION_TITLE", value); } }
             /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#IMPLEMENTATION_URL"/>
-            /// </summary>
-            [global::System.Obsolete()]
-            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_URL { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "IMPLEMENTATION_URL"); } set { SSetField(LocalBridgeClazz, "IMPLEMENTATION_URL", value); } }
-            /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VENDOR { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "IMPLEMENTATION_VENDOR"); } set { SSetField(LocalBridgeClazz, "IMPLEMENTATION_VENDOR", value); } }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR_ID"/>
-            /// </summary>
-            [global::System.Obsolete()]
-            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VENDOR_ID { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "IMPLEMENTATION_VENDOR_ID"); } set { SSetField(LocalBridgeClazz, "IMPLEMENTATION_VENDOR_ID", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VERSION"/>
             /// </summary>

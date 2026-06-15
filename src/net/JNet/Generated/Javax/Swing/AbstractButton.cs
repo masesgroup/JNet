@@ -269,14 +269,6 @@ namespace Javax.Swing
             get { return IExecuteWithSignatureArray<Java.Awt.EventNs.ItemListener>("getItemListeners", "()[Ljava/awt/event/ItemListener;"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractButton.html#getLabel--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractButton.html#setLabel-java.lang.String-"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public Java.Lang.String Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLabel", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractButton.html#getMargin--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/AbstractButton.html#setMargin-java.awt.Insets-"/>
         /// </summary>
         public Java.Awt.Insets Margin

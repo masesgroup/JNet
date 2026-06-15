@@ -125,14 +125,6 @@ namespace Java.Awt
             get { return IExecuteWithSignature<Java.Awt.ImageNs.ColorModel>("getColorModel", "()Ljava/awt/image/ColorModel;"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Toolkit.html#getFontList--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public Java.Lang.String[] FontList
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getFontList", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Toolkit.html#getMaximumCursorColors--"/> 
         /// </summary>
         public int MaximumCursorColors
@@ -253,16 +245,6 @@ namespace Java.Awt
         public Java.Awt.Dnd.Peer.DragSourceContextPeer CreateDragSourceContextPeer(Java.Awt.Dnd.DragGestureEvent arg0)
         {
             return IExecuteWithSignature<Java.Awt.Dnd.Peer.DragSourceContextPeer>("createDragSourceContextPeer", "(Ljava/awt/dnd/DragGestureEvent;)Ljava/awt/dnd/peer/DragSourceContextPeer;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Toolkit.html#getFontMetrics-java.awt.Font-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Font"/></param>
-        /// <returns><see cref="Java.Awt.FontMetrics"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.FontMetrics GetFontMetrics(Java.Awt.Font arg0)
-        {
-            return IExecuteWithSignature<Java.Awt.FontMetrics>("getFontMetrics", "(Ljava/awt/Font;)Ljava/awt/FontMetrics;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Toolkit.html#createImage-byte[]-int-int-"/>

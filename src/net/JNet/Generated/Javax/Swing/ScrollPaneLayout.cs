@@ -216,16 +216,6 @@ namespace Javax.Swing
             return IExecuteWithSignature<Java.Awt.Dimension>("preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ScrollPaneLayout.html#getViewportBorderBounds-javax.swing.JScrollPane-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.JScrollPane"/></param>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Rectangle GetViewportBorderBounds(Javax.Swing.JScrollPane arg0)
-        {
-            return IExecuteWithSignature<Java.Awt.Rectangle>("getViewportBorderBounds", "(Ljavax/swing/JScrollPane;)Ljava/awt/Rectangle;", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/ScrollPaneLayout.html#addLayoutComponent-java.lang.String-java.awt.Component-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

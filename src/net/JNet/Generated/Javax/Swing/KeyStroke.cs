@@ -76,17 +76,6 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/KeyStroke.html#getKeyStroke-char-boolean-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
-        [global::System.Obsolete()]
-        public static Javax.Swing.KeyStroke GetKeyStroke(char arg0, bool arg1)
-        {
-            return SExecuteWithSignature<Javax.Swing.KeyStroke>(LocalBridgeClazz, "getKeyStroke", "(CZ)Ljavax/swing/KeyStroke;", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/KeyStroke.html#getKeyStroke-char-"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>

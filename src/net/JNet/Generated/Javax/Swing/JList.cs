@@ -367,14 +367,6 @@ namespace Javax.Swing
             get { return IExecuteWithSignature("getSelectedValue", "()Ljava/lang/Object;"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#getSelectedValues--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public object[] SelectedValues
-        {
-            get { return IExecuteWithSignatureArray<object>("getSelectedValues", "()[Ljava/lang/Object;"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#getSelectedValuesList--"/> 
         /// </summary>
         public Java.Util.List SelectedValuesList
@@ -904,14 +896,6 @@ namespace Javax.Swing
         public E SelectedValue
         {
             get { return IExecuteWithSignature<E>("getSelectedValue", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#getSelectedValues--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public object[] SelectedValues
-        {
-            get { return IExecuteWithSignatureArray<object>("getSelectedValues", "()[Ljava/lang/Object;"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JList.html#getSelectedValuesList--"/> 

@@ -122,6 +122,13 @@ namespace Java.Awt
             get { return IExecuteWithSignature<Java.Awt.FocusTraversalPolicy>("getFocusTraversalPolicy", "()Ljava/awt/FocusTraversalPolicy;"); } set { IExecuteWithSignature("setFocusTraversalPolicy", "(Ljava/awt/FocusTraversalPolicy;)V", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#getInsets--"/> 
+        /// </summary>
+        public Java.Awt.Insets Insets
+        {
+            get { return IExecuteWithSignature<Java.Awt.Insets>("getInsets", "()Ljava/awt/Insets;"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#getLayout--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#setLayout-java.awt.LayoutManager-"/>
         /// </summary>
         public Java.Awt.LayoutManager Layout
@@ -176,15 +183,6 @@ namespace Java.Awt
         public void SetFocusTraversalPolicyProvider(bool arg0)
         {
             IExecuteWithSignature("setFocusTraversalPolicyProvider", "(Z)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#countComponents--"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
-        public int CountComponents()
-        {
-            return IExecuteWithSignature<int>("countComponents", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#getComponentZOrder-java.awt.Component-"/>
@@ -251,23 +249,6 @@ namespace Java.Awt
         public Java.Awt.Component GetComponent(int arg0)
         {
             return IExecuteWithSignature<Java.Awt.Component>("getComponent", "(I)Ljava/awt/Component;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#getInsets--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Awt.Insets"/></returns>
-        public Java.Awt.Insets GetInsets()
-        {
-            return IExecuteWithSignature<Java.Awt.Insets>("getInsets", "()Ljava/awt/Insets;");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#insets--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Awt.Insets"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Insets Insets()
-        {
-            return IExecuteWithSignature<Java.Awt.Insets>("insets", "()Ljava/awt/Insets;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#getMousePosition-boolean-"/>

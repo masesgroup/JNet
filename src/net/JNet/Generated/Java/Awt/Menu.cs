@@ -148,15 +148,6 @@ namespace Java.Awt
             return IExecuteWithSignature<bool>("isTearOff", "()Z");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Menu.html#countItems--"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
-        public int CountItems()
-        {
-            return IExecuteWithSignature<int>("countItems", "()I");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Menu.html#add-java.awt.MenuItem-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.MenuItem"/></param>

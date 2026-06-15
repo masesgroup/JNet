@@ -128,15 +128,6 @@ namespace Javax.Management
         {
             return IExecuteWithSignature<Javax.Management.ValueExp>("apply", "(Ljavax/management/ObjectName;)Ljavax/management/ValueExp;", arg0);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/StringValueExp.html#setMBeanServer-javax.management.MBeanServer-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
-        [global::System.Obsolete()]
-        public void SetMBeanServer(Javax.Management.MBeanServer arg0)
-        {
-            IExecuteWithSignature("setMBeanServer", "(Ljavax/management/MBeanServer;)V", arg0);
-        }
 
         #endregion
 

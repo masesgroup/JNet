@@ -231,14 +231,6 @@ namespace Javax.Swing
             get { return IExecuteWithSignature<Javax.Swing.InputVerifier>("getInputVerifier", "()Ljavax/swing/InputVerifier;"); } set { IExecuteWithSignature("setInputVerifier", "(Ljavax/swing/InputVerifier;)V", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html#getNextFocusableComponent--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html#setNextFocusableComponent-java.awt.Component-"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public Java.Awt.Component NextFocusableComponent
-        {
-            get { return IExecuteWithSignature<Java.Awt.Component>("getNextFocusableComponent", "()Ljava/awt/Component;"); } set { IExecuteWithSignature("setNextFocusableComponent", "(Ljava/awt/Component;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html#getRegisteredKeyStrokes--"/> 
         /// </summary>
         public Javax.Swing.KeyStroke[] RegisteredKeyStrokes
@@ -302,15 +294,6 @@ namespace Javax.Swing
             get { return IExecuteWithSignature<Java.Awt.Rectangle>("getVisibleRect", "()Ljava/awt/Rectangle;"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html#isManagingFocus--"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool IsManagingFocus()
-        {
-            return IExecuteWithSignature<bool>("isManagingFocus", "()Z");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html#isOptimizedDrawingEnabled--"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -333,15 +316,6 @@ namespace Javax.Swing
         public bool IsRequestFocusEnabled()
         {
             return IExecuteWithSignature<bool>("isRequestFocusEnabled", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html#requestDefaultFocus--"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool RequestDefaultFocus()
-        {
-            return IExecuteWithSignature<bool>("requestDefaultFocus", "()Z");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html#requestFocus-boolean-"/>

@@ -192,11 +192,6 @@ namespace Java.Net
         /// </summary>
         public static int HTTP_SEE_OTHER { get { return SGetField<int>(LocalBridgeClazz, "HTTP_SEE_OTHER"); } set { SSetField(LocalBridgeClazz, "HTTP_SEE_OTHER", value); } }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/HttpURLConnection.html#HTTP_SERVER_ERROR"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static int HTTP_SERVER_ERROR { get { return SGetField<int>(LocalBridgeClazz, "HTTP_SERVER_ERROR"); } set { SSetField(LocalBridgeClazz, "HTTP_SERVER_ERROR", value); } }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/HttpURLConnection.html#HTTP_UNAUTHORIZED"/>
         /// </summary>
         public static int HTTP_UNAUTHORIZED { get { return SGetField<int>(LocalBridgeClazz, "HTTP_UNAUTHORIZED"); } set { SSetField(LocalBridgeClazz, "HTTP_UNAUTHORIZED", value); } }

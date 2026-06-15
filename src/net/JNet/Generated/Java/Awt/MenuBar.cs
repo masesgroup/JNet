@@ -118,15 +118,6 @@ namespace Java.Awt
             get { return IExecuteWithSignature<int>("getMenuCount", "()I"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuBar.html#countMenus--"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
-        public int CountMenus()
-        {
-            return IExecuteWithSignature<int>("countMenus", "()I");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuBar.html#add-java.awt.Menu-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Menu"/></param>

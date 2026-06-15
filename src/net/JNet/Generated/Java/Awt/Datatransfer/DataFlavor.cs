@@ -168,11 +168,6 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         public static Java.Awt.Datatransfer.DataFlavor javaFileListFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "javaFileListFlavor"); } set { SSetField(LocalBridgeClazz, "javaFileListFlavor", value); } }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/datatransfer/DataFlavor.html#plainTextFlavor"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static Java.Awt.Datatransfer.DataFlavor plainTextFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "plainTextFlavor"); } set { SSetField(LocalBridgeClazz, "plainTextFlavor", value); } }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/datatransfer/DataFlavor.html#stringFlavor"/>
         /// </summary>
         public static Java.Awt.Datatransfer.DataFlavor stringFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "stringFlavor"); } set { SSetField(LocalBridgeClazz, "stringFlavor", value); } }

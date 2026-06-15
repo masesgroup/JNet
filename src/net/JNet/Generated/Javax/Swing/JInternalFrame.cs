@@ -353,14 +353,6 @@ namespace Javax.Swing
             get { return IExecuteWithSignature<Javax.Swing.JLayeredPane>("getLayeredPane", "()Ljavax/swing/JLayeredPane;"); } set { IExecuteWithSignature("setLayeredPane", "(Ljavax/swing/JLayeredPane;)V", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JInternalFrame.html#getMenuBar--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JInternalFrame.html#setMenuBar-javax.swing.JMenuBar-"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public Javax.Swing.JMenuBar MenuBar
-        {
-            get { return IExecuteWithSignature<Javax.Swing.JMenuBar>("getMenuBar", "()Ljavax/swing/JMenuBar;"); } set { IExecuteWithSignature("setMenuBar", "(Ljavax/swing/JMenuBar;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JInternalFrame.html#getMostRecentFocusOwner--"/> 
         /// </summary>
         public Java.Awt.Component MostRecentFocusOwner

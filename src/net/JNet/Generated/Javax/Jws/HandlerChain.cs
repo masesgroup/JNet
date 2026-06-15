@@ -71,12 +71,6 @@ namespace Javax.Jws
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String File();
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/jws/HandlerChain.html#name--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        [global::System.Obsolete()]
-        Java.Lang.String Name();
 
         #endregion
 
@@ -115,15 +109,6 @@ namespace Javax.Jws
         public Java.Lang.String File()
         {
             return IExecuteWithSignature<Java.Lang.String>("file", "()Ljava/lang/String;");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/jws/HandlerChain.html#name--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        [global::System.Obsolete()]
-        public Java.Lang.String Name()
-        {
-            return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
         }
 
         #endregion

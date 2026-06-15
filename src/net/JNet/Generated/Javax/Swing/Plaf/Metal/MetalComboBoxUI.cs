@@ -89,41 +89,6 @@ namespace Javax.Swing.Plaf.Metal
         }
         #endregion
 
-        #region MetalComboPopup declaration
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboPopup.html"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public partial class MetalComboPopup : Javax.Swing.Plaf.Basic.BasicComboPopup
-        {
-            const string _bridgeClassName = "javax.swing.plaf.metal.MetalComboBoxUI$MetalComboPopup";
-
-            /// <summary>
-            /// Initializer used internally by JCOBridge. Do not use directly.
-            /// </summary>
-            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public MetalComboPopup(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
-
-            private static readonly global::System.Exception _LocalBridgeClazzException = null;
-            private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
-            private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
-            /// <inheritdoc/>
-            public override string BridgeClassName => _bridgeClassName;
-            /// <inheritdoc/>
-            public override bool IsBridgeAbstract => false;
-            /// <inheritdoc/>
-            public override bool IsBridgeCloseable => false;
-            /// <inheritdoc/>
-            public override bool IsBridgeInterface => false;
-            /// <inheritdoc/>
-            public override bool IsBridgeStatic => false;
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
     
     }
     #endregion
@@ -247,61 +212,6 @@ namespace Javax.Swing.Plaf.Metal
             public void SuperLayout(Java.Awt.Container arg0)
             {
                 IExecuteWithSignature("superLayout", "(Ljava/awt/Container;)V", arg0);
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region MetalComboPopup implementation
-        public partial class MetalComboPopup
-        {
-            #region Constructors
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboPopup.html#javax.swing.plaf.metal.MetalComboBoxUI$MetalComboPopup(javax.swing.plaf.metal.MetalComboBoxUI,javax.swing.JComboBox)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Metal.MetalComboBoxUI"/></param>
-            /// <param name="arg1"><see cref="Javax.Swing.JComboBox"/></param>
-            public MetalComboPopup(Javax.Swing.Plaf.Metal.MetalComboBoxUI arg0, Javax.Swing.JComboBox arg1) : base(JVMBridgeBase.InitializerInstance)
-            {
-                InvokeInitializer(arg0, arg1);
-            }
-            /// <summary>
-            /// HPA initializer for MetalComboPopup(Javax.Swing.Plaf.Metal.MetalComboBoxUI arg0, Javax.Swing.JComboBox arg1)
-            /// </summary>
-            public static MetalComboPopup CreatePoolableInstance(Javax.Swing.Plaf.Metal.MetalComboBoxUI arg0, Javax.Swing.JComboBox arg1)
-            {
-                return JVMBridgeBase.New<MetalComboPopup>(arg0, arg1);
-            }
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboPopup.html#delegateFocus-java.awt.event.MouseEvent-"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
-            public void DelegateFocus(Java.Awt.EventNs.MouseEvent arg0)
-            {
-                IExecuteWithSignature("delegateFocus", "(Ljava/awt/event/MouseEvent;)V", arg0);
             }
 
             #endregion

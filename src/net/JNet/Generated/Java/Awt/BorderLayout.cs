@@ -266,16 +266,6 @@ namespace Java.Awt
             IExecuteWithSignature("addLayoutComponent", "(Ljava/awt/Component;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/BorderLayout.html#addLayoutComponent-java.lang.String-java.awt.Component-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
-        [global::System.Obsolete()]
-        public void AddLayoutComponent(Java.Lang.String arg0, Java.Awt.Component arg1)
-        {
-            IExecuteWithSignature("addLayoutComponent", "(Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/BorderLayout.html#invalidateLayout-java.awt.Container-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Container"/></param>

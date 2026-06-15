@@ -181,16 +181,6 @@ namespace Javax.Swing
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getAccessibleIndexInParent", "(Ljava/awt/Component;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SwingUtilities.html#findFocusOwner-java.awt.Component-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <returns><see cref="Java.Awt.Component"/></returns>
-        [global::System.Obsolete()]
-        public static Java.Awt.Component FindFocusOwner(Java.Awt.Component arg0)
-        {
-            return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "findFocusOwner", "(Ljava/awt/Component;)Ljava/awt/Component;", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SwingUtilities.html#getDeepestComponentAt-java.awt.Component-int-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>

@@ -102,14 +102,6 @@ namespace Javax.Management.Monitor
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/Monitor.html#getObservedObject--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public Javax.Management.ObjectName GetObservedObject
-        {
-            get { return IExecuteWithSignature<Javax.Management.ObjectName>("getObservedObject", "()Ljavax/management/ObjectName;"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/Monitor.html#getGranularityPeriod--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/Monitor.html#setGranularityPeriod-long-"/>
         /// </summary>
         public long GranularityPeriod
@@ -188,16 +180,6 @@ namespace Javax.Management.Monitor
         public void RemoveObservedObject(Javax.Management.ObjectName arg0)
         {
             IExecuteWithSignature("removeObservedObject", "(Ljavax/management/ObjectName;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/Monitor.html#setObservedObject-javax.management.ObjectName-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [global::System.Obsolete()]
-        public void SetObservedObject(Javax.Management.ObjectName arg0)
-        {
-            IExecuteWithSignature("setObservedObject", "(Ljavax/management/ObjectName;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/Monitor.html#postDeregister--"/>

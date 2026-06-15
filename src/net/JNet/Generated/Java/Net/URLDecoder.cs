@@ -100,16 +100,6 @@ namespace Java.Net
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "decode", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/net/URLDecoder.html#decode-java.lang.String-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        [global::System.Obsolete()]
-        public static Java.Lang.String Decode(Java.Lang.String arg0)
-        {
-            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "decode", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
-        }
 
         #endregion
 

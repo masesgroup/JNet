@@ -261,15 +261,6 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         Java.Lang.String GetString(Java.Lang.String arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/CallableStatement.html#getBigDecimal-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
-        Java.Math.BigDecimal GetBigDecimal(int arg0, int arg1);
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/CallableStatement.html#getBigDecimal-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1259,18 +1250,6 @@ namespace Java.Sql
         public Java.Lang.String GetString(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/CallableStatement.html#getBigDecimal-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
-        public Java.Math.BigDecimal GetBigDecimal(int arg0, int arg1)
-        {
-            return IExecuteWithSignature<Java.Math.BigDecimal>("getBigDecimal", "(II)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/sql/CallableStatement.html#getBigDecimal-int-"/>

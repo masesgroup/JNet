@@ -108,18 +108,6 @@ namespace Java.Rmi.Server
             return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "loadClass", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Class;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RMIClassLoader.html#loadClass-java.lang.String-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        /// <exception cref="Java.Net.MalformedURLException"/>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        [global::System.Obsolete()]
-        public static Java.Lang.Class LoadClass(Java.Lang.String arg0)
-        {
-            return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RMIClassLoader.html#loadClass-java.net.URL-java.lang.String-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
@@ -154,16 +142,6 @@ namespace Java.Rmi.Server
         public static Java.Lang.ClassLoader GetClassLoader(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.ClassLoader>(LocalBridgeClazz, "getClassLoader", "(Ljava/lang/String;)Ljava/lang/ClassLoader;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RMIClassLoader.html#getSecurityContext-java.lang.ClassLoader-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <returns><see cref="object"/></returns>
-        [global::System.Obsolete()]
-        public static object GetSecurityContext(Java.Lang.ClassLoader arg0)
-        {
-            return SExecuteWithSignature(LocalBridgeClazz, "getSecurityContext", "(Ljava/lang/ClassLoader;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/rmi/server/RMIClassLoader.html#getClassAnnotation-java.lang.Class-"/>

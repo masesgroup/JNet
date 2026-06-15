@@ -1141,18 +1141,6 @@ namespace Javax.Sql.Rowset
             IExecuteWithSignature("setTimestamp", "(Ljava/lang/String;Ljava/sql/Timestamp;)V", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/BaseRowSet.html#setUnicodeStream-int-java.io.InputStream-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        [global::System.Obsolete()]
-        public void SetUnicodeStream(int arg0, Java.Io.InputStream arg1, int arg2)
-        {
-            IExecuteWithSignature("setUnicodeStream", "(ILjava/io/InputStream;I)V", arg0, arg1, arg2);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/sql/rowset/BaseRowSet.html#setURL-int-java.net.URL-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

@@ -479,15 +479,6 @@ namespace Java.Awt
             return IExecuteWithSignature<Java.Awt.Rectangle>("getClipBounds", "(Ljava/awt/Rectangle;)Ljava/awt/Rectangle;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics.html#getClipRect--"/>
-        /// </summary>
-        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Rectangle GetClipRect()
-        {
-            return IExecuteWithSignature<Java.Awt.Rectangle>("getClipRect", "()Ljava/awt/Rectangle;");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics.html#draw3DRect-int-int-int-int-boolean-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

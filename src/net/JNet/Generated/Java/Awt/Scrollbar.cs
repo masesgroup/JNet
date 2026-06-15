@@ -162,14 +162,6 @@ namespace Java.Awt
             get { return IExecuteWithSignature<int>("getBlockIncrement", "()I"); } set { IExecuteWithSignature("setBlockIncrement", "(I)V", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#getLineIncrement--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#setLineIncrement-int-"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public int LineIncrement
-        {
-            get { return IExecuteWithSignature<int>("getLineIncrement", "()I"); } set { IExecuteWithSignature("setLineIncrement", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#getMaximum--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#setMaximum-int-"/>
         /// </summary>
         public int Maximum
@@ -191,14 +183,6 @@ namespace Java.Awt
             get { return IExecuteWithSignature<int>("getOrientation", "()I"); } set { IExecuteWithSignature("setOrientation", "(I)V", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#getPageIncrement--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#setPageIncrement-int-"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public int PageIncrement
-        {
-            get { return IExecuteWithSignature<int>("getPageIncrement", "()I"); } set { IExecuteWithSignature("setPageIncrement", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#getUnitIncrement--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#setUnitIncrement-int-"/>
         /// </summary>
         public int UnitIncrement
@@ -218,14 +202,6 @@ namespace Java.Awt
         public bool ValueIsAdjusting
         {
             get { return IExecuteWithSignature<bool>("getValueIsAdjusting", "()Z"); } set { IExecuteWithSignature("setValueIsAdjusting", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#getVisible--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public int Visible
-        {
-            get { return IExecuteWithSignature<int>("getVisible", "()I"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#getVisibleAmount--"/> <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/Scrollbar.html#setVisibleAmount-int-"/>

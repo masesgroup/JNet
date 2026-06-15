@@ -96,16 +96,6 @@ namespace Java.Awt
         {
             return SExecuteWithSignature<Java.Awt.ComponentOrientation>(LocalBridgeClazz, "getOrientation", "(Ljava/util/Locale;)Ljava/awt/ComponentOrientation;", arg0);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/ComponentOrientation.html#getOrientation-java.util.ResourceBundle-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.ResourceBundle"/></param>
-        /// <returns><see cref="Java.Awt.ComponentOrientation"/></returns>
-        [global::System.Obsolete()]
-        public static Java.Awt.ComponentOrientation GetOrientation(Java.Util.ResourceBundle arg0)
-        {
-            return SExecuteWithSignature<Java.Awt.ComponentOrientation>(LocalBridgeClazz, "getOrientation", "(Ljava/util/ResourceBundle;)Ljava/awt/ComponentOrientation;", arg0);
-        }
 
         #endregion
 

@@ -321,18 +321,6 @@ namespace Javax.Swing.Text
             return IExecuteWithSignature<int>("getViewIndex", "(ILjavax/swing/text/Position$Bias;)I", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/View.html#viewToModel-float-float-java.awt.Shape-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
-        /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
-        public int ViewToModel(float arg0, float arg1, Java.Awt.Shape arg2)
-        {
-            return IExecuteWithSignature<int>("viewToModel", "(FFLjava/awt/Shape;)I", arg0, arg1, arg2);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/View.html#getChildAllocation-int-java.awt.Shape-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -341,18 +329,6 @@ namespace Javax.Swing.Text
         public Java.Awt.Shape GetChildAllocation(int arg0, Java.Awt.Shape arg1)
         {
             return IExecuteWithSignature<Java.Awt.Shape>("getChildAllocation", "(ILjava/awt/Shape;)Ljava/awt/Shape;", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/View.html#modelToView-int-java.awt.Shape-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
-        /// <returns><see cref="Java.Awt.Shape"/></returns>
-        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
-        [global::System.Obsolete()]
-        public Java.Awt.Shape ModelToView(int arg0, Java.Awt.Shape arg1)
-        {
-            return IExecuteWithSignature<Java.Awt.Shape>("modelToView", "(ILjava/awt/Shape;)Ljava/awt/Shape;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/swing/text/View.html#modelToView-int-javax.swing.text.Position.Bias-int-javax.swing.text.Position.Bias-java.awt.Shape-"/>

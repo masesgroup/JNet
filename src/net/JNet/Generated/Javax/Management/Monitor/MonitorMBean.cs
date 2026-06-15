@@ -75,11 +75,6 @@ namespace Javax.Management.Monitor
         /// </summary>
         Java.Lang.String ObservedAttribute { get; set; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getObservedObject--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#setObservedObject-javax.management.ObjectName-"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        Javax.Management.ObjectName ObservedObject { get; set; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getObservedObjects--"/> 
         /// </summary>
         Javax.Management.ObjectName[] ObservedObjects { get; }
@@ -157,14 +152,6 @@ namespace Javax.Management.Monitor
         public Java.Lang.String ObservedAttribute
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getObservedAttribute", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setObservedAttribute", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getObservedObject--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#setObservedObject-javax.management.ObjectName-"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public Javax.Management.ObjectName ObservedObject
-        {
-            get { return IExecuteWithSignature<Javax.Management.ObjectName>("getObservedObject", "()Ljavax/management/ObjectName;"); } set { IExecuteWithSignature("setObservedObject", "(Ljavax/management/ObjectName;)V", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/MonitorMBean.html#getObservedObjects--"/> 

@@ -195,22 +195,6 @@ namespace Java.Awt
             IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuItem.html#disable--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Disable()
-        {
-            IExecuteWithSignature("disable", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuItem.html#enable--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Enable()
-        {
-            IExecuteWithSignature("enable", "()V");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuItem.html#removeActionListener-java.awt.event.ActionListener-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
@@ -239,15 +223,6 @@ namespace Java.Awt
         public void DeleteShortcut()
         {
             IExecuteWithSignature("deleteShortcut", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/MenuItem.html#enable-boolean-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
-        public void Enable(bool arg0)
-        {
-            IExecuteWithSignature("enable", "(Z)V", arg0);
         }
 
         #endregion

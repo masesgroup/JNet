@@ -609,26 +609,6 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isJavaIdentifierStart", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isJavaLetter-char-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public static bool IsJavaLetter(char arg0)
-        {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isJavaLetter", "(C)Z", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isJavaLetterOrDigit-char-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public static bool IsJavaLetterOrDigit(char arg0)
-        {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isJavaLetterOrDigit", "(C)Z", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isLetter-char-"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
@@ -708,16 +688,6 @@ namespace Java.Lang
         public static bool IsMirrored(int arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isMirrored", "(I)Z", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isSpace-char-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public static bool IsSpace(char arg0)
-        {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSpace", "(C)Z", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isSpaceChar-char-"/>
@@ -2071,11 +2041,6 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.UnicodeBlock.html#SUPPLEMENTARY_PRIVATE_USE_AREA_B"/>
             /// </summary>
             public static Java.Lang.Character.UnicodeBlock SUPPLEMENTARY_PRIVATE_USE_AREA_B { get { return SGetField<Java.Lang.Character.UnicodeBlock>(LocalBridgeClazz, "SUPPLEMENTARY_PRIVATE_USE_AREA_B"); } set { SSetField(LocalBridgeClazz, "SUPPLEMENTARY_PRIVATE_USE_AREA_B", value); } }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.UnicodeBlock.html#SURROGATES_AREA"/>
-            /// </summary>
-            [global::System.Obsolete()]
-            public static Java.Lang.Character.UnicodeBlock SURROGATES_AREA { get { return SGetField<Java.Lang.Character.UnicodeBlock>(LocalBridgeClazz, "SURROGATES_AREA"); } set { SSetField(LocalBridgeClazz, "SURROGATES_AREA", value); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.UnicodeBlock.html#SYLOTI_NAGRI"/>
             /// </summary>

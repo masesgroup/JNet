@@ -98,22 +98,6 @@ namespace Javax.Management.Monitor
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/StringMonitor.html#getDerivedGauge--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public Java.Lang.String DerivedGauge
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDerivedGauge", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/StringMonitor.html#getDerivedGaugeTimeStamp--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public long DerivedGaugeTimeStamp
-        {
-            get { return IExecuteWithSignature<long>("getDerivedGaugeTimeStamp", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/StringMonitor.html#getNotifyDiffer--"/> <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/monitor/StringMonitor.html#setNotifyDiffer-boolean-"/>
         /// </summary>
         public bool NotifyDiffer

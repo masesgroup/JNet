@@ -214,15 +214,6 @@ namespace Java.Awt
             get { return IExecuteWithSignature<int>("getVisibleIndex", "()I"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#allowsMultipleSelections--"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool AllowsMultipleSelections()
-        {
-            return IExecuteWithSignature<bool>("allowsMultipleSelections", "()Z");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#isIndexSelected-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -238,25 +229,6 @@ namespace Java.Awt
         public bool IsMultipleMode()
         {
             return IExecuteWithSignature<bool>("isMultipleMode", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#isSelected-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [global::System.Obsolete()]
-        public bool IsSelected(int arg0)
-        {
-            return IExecuteWithSignature<bool>("isSelected", "(I)Z", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#countItems--"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        [global::System.Obsolete()]
-        public int CountItems()
-        {
-            return IExecuteWithSignature<int>("countItems", "()I");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#getMinimumSize-int-"/>
@@ -277,26 +249,6 @@ namespace Java.Awt
             return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredSize", "(I)Ljava/awt/Dimension;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#minimumSize-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Dimension MinimumSize(int arg0)
-        {
-            return IExecuteWithSignature<Java.Awt.Dimension>("minimumSize", "(I)Ljava/awt/Dimension;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#preferredSize-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Awt.Dimension"/></returns>
-        [global::System.Obsolete()]
-        public Java.Awt.Dimension PreferredSize(int arg0)
-        {
-            return IExecuteWithSignature<Java.Awt.Dimension>("preferredSize", "(I)Ljava/awt/Dimension;", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#getItem-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -314,40 +266,12 @@ namespace Java.Awt
             IExecuteWithSignature("addActionListener", "(Ljava/awt/event/ActionListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#addItem-java.lang.String-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public void AddItem(Java.Lang.String arg0, int arg1)
-        {
-            IExecuteWithSignature("addItem", "(Ljava/lang/String;I)V", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#addItemListener-java.awt.event.ItemListener-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
             IExecuteWithSignature("addItemListener", "(Ljava/awt/event/ItemListener;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#clear--"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public void Clear()
-        {
-            IExecuteWithSignature("clear", "()V");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#delItems-int-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public void DelItems(int arg0, int arg1)
-        {
-            IExecuteWithSignature("delItems", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#deselect-int-"/>
@@ -399,15 +323,6 @@ namespace Java.Awt
             IExecuteWithSignature("replaceItem", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#setMultipleSelections-boolean-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
-        public void SetMultipleSelections(bool arg0)
-        {
-            IExecuteWithSignature("setMultipleSelections", "(Z)V", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#add-java.lang.String-int-"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -423,24 +338,6 @@ namespace Java.Awt
         public void Add(Java.Lang.String arg0)
         {
             IExecuteWithSignature("add", "(Ljava/lang/String;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#addItem-java.lang.String-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [global::System.Obsolete()]
-        public void AddItem(Java.Lang.String arg0)
-        {
-            IExecuteWithSignature("addItem", "(Ljava/lang/String;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#delItem-int-"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        [global::System.Obsolete()]
-        public void DelItem(int arg0)
-        {
-            IExecuteWithSignature("delItem", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/List.html#remove-int-"/>

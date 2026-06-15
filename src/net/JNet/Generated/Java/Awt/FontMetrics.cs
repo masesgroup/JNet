@@ -136,14 +136,6 @@ namespace Java.Awt
             get { return IExecuteWithSignature<int>("getMaxAscent", "()I"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/FontMetrics.html#getMaxDecent--"/> 
-        /// </summary>
-        [global::System.Obsolete()]
-        public int MaxDecent
-        {
-            get { return IExecuteWithSignature<int>("getMaxDecent", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/javase/8/docs/api/java/awt/FontMetrics.html#getMaxDescent--"/> 
         /// </summary>
         public int MaxDescent
