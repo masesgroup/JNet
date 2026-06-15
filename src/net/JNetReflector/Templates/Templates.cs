@@ -247,7 +247,7 @@ namespace MASES.JNet.Reflector.Templates
                                                                               + "/// </summary>" + Environment.NewLine
                                                                               + "/// <remarks>Set <see cref=\"OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDERDispose\"/> when the event handler returns a JVM-backed object" + Environment.NewLine
                                                                               + "/// that is no longer needed after the call. The handler receives the return value and is responsible for calling" + Environment.NewLine
-                                                                              + "/// <see cref=\"IDisposable.Dispose\"/> on it, releasing the underlying JVM global reference immediately" + Environment.NewLine
+                                                                              + "/// <see cref=\"global::System.IDisposable.Dispose\"/> on it, releasing the underlying JVM global reference immediately" + Environment.NewLine
                                                                               + "/// instead of waiting for the .NET garbage collector to finalize it." + Environment.NewLine
                                                                               + "/// If not set, the return value is not disposed automatically.</remarks>" + Environment.NewLine
                                                                               + "public global::System.Action<METHOD_STUB_RETURN_TYPE_PLACEHOLDER> OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDERDispose { get; set; } = null;" + Environment.NewLine
