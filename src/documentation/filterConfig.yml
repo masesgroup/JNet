@@ -1,0 +1,8 @@
+apiRules:
+- exclude:
+    uidRegex: ^MASES\.JCOBridge\.
+    type: Member
+- exclude:
+    hasAttribute:
+      uid: System.ObsoleteAttribute
+    type: Member
