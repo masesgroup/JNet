@@ -194,20 +194,20 @@ namespace MASES.JNet.PowerShell
     public static class JNetPSHelper
     {
         /// <summary>
-        /// Return an <see cref="IEnumerable{T}"/> of <see cref="string"> from the single <paramref name="arguments"/>
+        /// Return an <see cref="IEnumerable{T}"/> of <see cref="string"/> from the single <paramref name="arguments"/>
         /// </summary>
         /// <param name="arguments">The string to be splitted</param>
-        /// <returns>An <see cref="IEnumerable{T}"/> of <see cref="string"></returns>
+        /// <returns>An <see cref="IEnumerable{T}"/> of <see <see cref="string"/></returns>
         public static IEnumerable<string> ExtractArguments(string arguments)
         {
             string[] tmp = string.IsNullOrWhiteSpace(arguments) ? Array.Empty<string>() : arguments.Split(' ');
             return tmp.Where((arg) => !string.IsNullOrWhiteSpace(arg)).Select((arg) => arg.Trim());
         }
         /// <summary>
-        /// Convert <see cref="PSObject"/> from the <see cref="IEnumerable{T}"/> of <see cref="object"> in <paramref name="arguments"/>
+        /// Convert <see cref="PSObject"/> from the <see cref="IEnumerable{T}"/> of <see cref="object"/> in <paramref name="arguments"/>
         /// </summary>
-        /// <param name="arguments">The <see cref="IEnumerable{T}"/> of <see cref="object"> to be converted</param>
-        /// <returns>An <see cref="IEnumerable{T}"/> of converted <see cref="object"></returns>
+        /// <param name="arguments">The <see cref="IEnumerable{T}"/> of <see cref="object"/> to be converted</param>
+        /// <returns>An <see cref="IEnumerable{T}"/> of converted <see cref="object"/></returns>
         public static IEnumerable<object> ConvertArguments(IEnumerable<object> arguments)
         {
             if (arguments != null)
@@ -441,7 +441,7 @@ namespace MASES.JNet.PowerShell
             }
         }
         /// <summary>
-        /// Invokes <see cref="JNetCore{TClass}.Launch(Type, string[])"/> to start a Main-Class
+        /// Invokes <see cref="JNetCoreBase{TClass}.Launch(Type, string[])"/> to start a Main-Class
         /// </summary>
         public static void Launch(Type type, params string[] args)
         {
@@ -458,7 +458,7 @@ namespace MASES.JNet.PowerShell
             return typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCoreBase<TClass>.New), className, args);
         }
         /// <summary>
-        /// Adds <paramref name="jvmOptionName"/>, with optional <paramref name="jvmOptionValue"/>, to <see cref="ApplicationJVMExtraOptions"/>
+        /// Adds <paramref name="jvmOptionName"/>, with optional <paramref name="jvmOptionValue"/>, to <see cref="JNetCoreBase{TClass}.ApplicationJVMExtraOptions"/>
         /// </summary>
         /// <param name="jvmOptionName">The JVM option name</param>
         /// <param name="jvmOptionValue">The value of <paramref name="jvmOptionName"/> if it is an option like name=value</param>

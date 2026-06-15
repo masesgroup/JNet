@@ -231,7 +231,7 @@ namespace MASES.JNet.PowerShell.Cmdlet
             OnAfterCreateGlobalInstance();
         }
         /// <summary>
-        /// Adds <paramref name="jvmOptionName"/>, with optional <paramref name="jvmOptionValue"/>, to <see cref="ApplicationJVMExtraOptions"/>
+        /// Adds <paramref name="jvmOptionName"/>, with optional <paramref name="jvmOptionValue"/>, to <see cref="JNetCoreBase{TClass}.ApplicationJVMExtraOptions"/>
         /// </summary>
         /// <param name="jvmOptionName">The JVM option name</param>
         /// <param name="jvmOptionValue">The value of <paramref name="jvmOptionName"/> if it is an option like name=value</param>
