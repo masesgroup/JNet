@@ -975,7 +975,7 @@ namespace MASES.JNet.Reflector
 
                 bool isDeprecated = constructor.IsDeprecated();
                 string modifier = constructor.IsStatic() ? " static" : string.Empty;
-                string constructorName = constructor.Name(JNetReflectorCore.UseCamel);
+                string constructorName = classDefinition.JVMClassName(null, false, false);
                 bool bypass = false;
                 bool hasVarArg = false;
                 List<Parameter> parameters = new List<Parameter>();
