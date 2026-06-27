@@ -489,10 +489,7 @@ jobs:
       - name: Disable CET for pwsh process
         shell: pwsh
         run: |
-          $m = Get-ProcessMitigation -Name "pwsh.exe"
-          if ($m.UserShadowStack.UserShadowStack -eq "ON") {
-            reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\pwsh.exe" /v MitigationOptions /t REG_BINARY /d "0000000000000000000000000000002000" /f
-          }
+          reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\pwsh.exe" /v MitigationOptions /t REG_BINARY /d "0000000000000000000000000000002000" /f
           Get-ProcessMitigation -Name "pwsh.exe"
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
