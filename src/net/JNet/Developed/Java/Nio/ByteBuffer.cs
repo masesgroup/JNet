@@ -21,7 +21,9 @@ using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNet;
 using MASES.JNet.Specific.Extensions;
+#if !DISABLE_RECYCLABLE_MEMORY_STREAM
 using Microsoft.IO;
+#endif
 using System;
 using System.Collections.Concurrent;
 using System.IO;
@@ -31,6 +33,7 @@ namespace Java.Nio
 {
     public partial class ByteBuffer
     {
+#if !DISABLE_RECYCLABLE_MEMORY_STREAM
         #region RecyclableMemoryStream
 
         static readonly ConcurrentDictionary<string, RecyclableMemoryStream> _storer = new();
@@ -178,7 +181,7 @@ namespace Java.Nio
         }
 
         #endregion
-
+#endif
         // can be extended with methods not reflected or not available in Java;
 
         JCOBridgeDirectBuffer<byte> _directBuffer = null;
