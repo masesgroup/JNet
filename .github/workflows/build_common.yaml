@@ -487,8 +487,12 @@ jobs:
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
 
       - name: Disable CET for pwsh process
+        shell: pwsh
         run: |
-          reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\pwsh.exe" /v MitigationOptions /t REG_BINARY /d "0000000000000000000000000000002000" /f
+          $m = Get-ProcessMitigation -Name "pwsh.exe"
+          if ($m.UserShadowStack.UserShadowStack -eq "ON") {
+            reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\pwsh.exe" /v MitigationOptions /t REG_BINARY /d "0000000000000000000000000000002000" /f
+          }
           Get-ProcessMitigation -Name "pwsh.exe"
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
