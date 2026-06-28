@@ -59,9 +59,13 @@ namespace MASES.JNet.Specific
         /// <inheritdoc/>
         protected override bool DoWorkCycle()
         {
-            _sync.WaitOne();
-            _sync.Reset();
-            return !_cancellationToken.IsCancellationRequested;
+            if (_sync != null)
+            {
+                _sync.WaitOne();
+                _sync.Reset();
+                return !_cancellationToken.IsCancellationRequested;
+            }
+            return false;
         }
 
         /// <inheritdoc cref="IAsyncEnumerator{T}.Current"/>
