@@ -60,7 +60,7 @@ jobs:
           Copy-Item ${{ github.workspace }}\tests\scripts\JNetPSTest.ps1 -Destination bin\JNetPSTest.ps1 -Force
 
       - name: Save JNet bin in cache
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         with:
           enableCrossOsArchive: true
           path: ./bin/
@@ -90,7 +90,7 @@ jobs:
     
     steps:     
       - name: Restore JNet bin from cache
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           fail-on-cache-miss: true
           enableCrossOsArchive: true
