@@ -9,43 +9,31 @@ updates:
     directory: "/src/net" # Location of package manifests
     schedule:
       interval: "weekly"
-    assignees:
-      - "masesdevelopers"
 
   - package-ecosystem: "nuget" # See documentation for possible values
     directory: "/src/net" # Location of package manifests
     schedule:
       interval: "weekly"
-    assignees:
-      - "masesdevelopers"
     target-branch: "release/2.5.X"
 
   - package-ecosystem: maven
     directory: "/src/jvm/jnet"
     schedule:
       interval: "weekly"
-    assignees:
-      - "masesdevelopers"
 
   - package-ecosystem: maven
     directory: "/src/jvm/jnet"
     schedule:
       interval: "weekly"
-    assignees:
-      - "masesdevelopers"
     target-branch: "release/2.5.X"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
-    assignees:
-      - "masesdevelopers"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
-    assignees:
-      - "masesdevelopers"
     target-branch: "release/2.5.X"
