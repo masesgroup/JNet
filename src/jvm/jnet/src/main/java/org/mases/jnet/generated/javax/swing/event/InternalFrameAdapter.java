@@ -35,76 +35,160 @@ public final class InternalFrameAdapter extends javax.swing.event.InternalFrameA
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
-    /**
-     * Releases the resources held by this listener and unregisters it from the JCOBridge runtime.
-     */
+   /**
+    * Releases the native resources held by this listener and unregisters it from the
+    * JCOBridge runtime. Invoked by the CLR counterpart when the managed wrapper is disposed.
+    * Errors during release are silently swallowed to avoid masking the original dispose path.
+    */
     public synchronized void release() {
        _internalListener.release();
     }
 
-    /**
-     * Returns the numeric index associated with the given event name.
-     * The index is used by the CLR side for zero-cost index-based event filtering.
-     * @param eventName the name of the event as registered on the CLR side.
-     * @return the numeric index of the event.
-     */
+   /**
+    * Returns the numeric index associated with the given event name.
+    *
+    * <p>The listener handle ({@link #_listenerKey}) is resolved lazily on the first call
+    * and cached for subsequent calls. The returned index can be passed to the index-based
+    * {@code raiseEvent} or {@code raiseEventConcurrent} overloads to avoid name-lookup
+    * overhead in high-frequency event paths.</p>
+    *
+    * @param eventName the name of the event as registered on the CLR side.
+    * @return the numeric index of the event, or {@code 0} if the lookup fails.
+    */
     public synchronized int getEventIndex(String eventName) {
        return _internalListener.getEventIndex(eventName);
     }
 
-    /**
-     * Raises the named event on the CLR side with no associated data.
-     * @param eventName the name of the event to raise.
-     */
+   /**
+    * Raises the named event on the CLR side with no associated data.
+    * All calls on this instance are serialized.
+    *
+    * @param eventName the name of the event to raise.
+    */
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
     }
 
-    /**
-     * Raises the event identified by index on the CLR side with no associated data.
-     * @param eventIndex the numeric index of the event to raise.
-     */
+   /**
+    * Raises the event identified by numeric index on the CLR side with no associated data.
+    * All calls on this instance are serialized.
+    *
+    * @param eventIndex the numeric index of the event to raise, as returned by
+    *                   {@link #getEventIndex(String)}.
+    * @since 2.6.9.0
+    */
     public synchronized void raiseEvent(int eventIndex) {
        _internalListener.raiseEvent(eventIndex);
     }
 
-    /**
-     * Raises the named event on the CLR side, passing a single data object.
-     * @param eventName the name of the event to raise.
-     * @param e the data object associated with the event.
-     */
+   /**
+    * Raises the named event on the CLR side, passing a single data object.
+    * All calls on this instance are serialized.
+    *
+    * @param eventName the name of the event to raise.
+    * @param e         the data object associated with the event; accessible from the CLR
+    *                  handler via {@link #getEventData()}.
+    */
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
 
-    /**
-     * Raises the event identified by index on the CLR side, passing a single data object.
-     * @param eventIndex the numeric index of the event to raise.
-     * @param e the data object associated with the event.
-     */
+   /**
+    * Raises the event identified by numeric index on the CLR side, passing a single data object.
+    * All calls on this instance are serialized.
+    *
+    * @param eventIndex the numeric index of the event to raise.
+    * @param e          the data object associated with the event; accessible from the CLR
+    *                   handler via {@link #getEventData()}.
+    * @since 2.6.9.0
+    */
     public synchronized void raiseEvent(int eventIndex, Object e) {
        _internalListener.raiseEvent(eventIndex, e);
     }
 
-    /**
-     * Raises the named event on the CLR side, passing a primary data object and additional arguments.
-     * @param eventName the name of the event to raise.
-     * @param e the primary data object associated with the event.
-     * @param objects additional arguments forwarded to the CLR handler.
-     */
+   /**
+    * Raises the named event on the CLR side, passing a primary data object and additional arguments.
+    * All calls on this instance are serialized.
+    *
+    * @param eventName the name of the event to raise.
+    * @param e         the primary data object associated with the event.
+    * @param objects   additional arguments forwarded to the CLR handler, accessible via
+    *                  {@link #extraData()}.
+    */
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
     }
 
-    /**
-     * Raises the event identified by index on the CLR side, passing a primary data object and additional arguments.
-     * @param eventIndex the numeric index of the event to raise.
-     * @param e the primary data object associated with the event.
-     * @param objects additional arguments forwarded to the CLR handler.
-     */
+   /**
+    * Raises the event identified by numeric index on the CLR side, passing a primary data object
+    * and additional arguments. All calls on this instance are serialized.
+    *
+    * @param eventIndex the numeric index of the event to raise.
+    * @param e          the primary data object associated with the event.
+    * @param objects    additional arguments forwarded to the CLR handler, accessible via
+    *                   {@link #extraData()}.
+    * @since 2.6.9.0
+    */
     public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
        _internalListener.raiseEvent(eventIndex, e, objects);
     }
+
+   /**
+    * Raises the event identified by numeric index on the CLR side with no associated data.
+    * Different events proceed in parallel. Returns the value set by the CLR handler via
+    * {@link #setReturnData(long, Object)}, or {@code null} for void events.
+    *
+    * <p>If {@link #_forceSynchronized} is {@code true}, falls back to {@link #raiseEvent(int)}
+    * and returns {@link #getReturnData()}.</p>
+    *
+    * @param eventIndex the numeric index of the event to raise, as returned by
+    *                   {@link #getEventIndex(String)}.
+    * @return the return value provided by the CLR handler, or {@code null}.
+    * @since 2.6.10.0
+    */
+   @SuppressWarnings("finally")
+   public Object raiseEventConcurrent(int eventIndex) {
+      _internalListener.raiseEventConcurrent(eventIndex);
+   }
+
+   /**
+    * Raises the event identified by numeric index on the CLR side, passing a single data object.
+    * Different events proceed in parallel. The data object is accessible from the CLR handler
+    * via {@link #getEventData(long)}. Returns the value set by the CLR handler via
+    * {@link #setReturnData(long, Object)}, or {@code null} for void events.
+    *
+    * <p>If {@link #_forceSynchronized} is {@code true}, falls back to
+    * {@link #raiseEvent(int, Object)} and returns {@link #getReturnData()}.</p>
+    *
+    * @param eventIndex the numeric index of the event to raise.
+    * @param e          the data object associated with the event.
+    * @return the return value provided by the CLR handler, or {@code null}.
+    * @since 2.6.10.0
+    */
+   @SuppressWarnings("finally")
+   public Object raiseEventConcurrent(int eventIndex, Object e) {
+      _internalListener.raiseEventConcurrent(eventIndex, e);
+   }
+
+   /**
+    * Raises the event identified by numeric index on the CLR side, passing a primary data object
+    * and additional arguments. Different events proceed in parallel. Returns the value set by
+    * the CLR handler via {@link #setReturnData(long, Object)}, or {@code null} for void events.
+    *
+    * <p>If {@link #_forceSynchronized} is {@code true}, falls back to
+    * {@link #raiseEvent(int, Object, Object...)} and returns {@link #getReturnData()}.</p>
+    *
+    * @param eventIndex the numeric index of the event to raise.
+    * @param e          the primary data object associated with the event.
+    * @param objects    additional arguments forwarded to the CLR handler, accessible via
+    *                   {@link #extraData(long)}.
+    * @return the return value provided by the CLR handler, or {@code null}.
+    * @since 2.6.10.0
+    */
+   @SuppressWarnings("finally")
+   public Object raiseEventConcurrent(int eventIndex, Object e, Object... objects) {
+      _internalListener.raiseEventConcurrent(eventIndex, e, objects);
+   }
 
     /**
      * Returns the data object sent by the CLR side for the current event, if any.
@@ -157,54 +241,127 @@ public final class InternalFrameAdapter extends javax.swing.event.InternalFrameA
        _internalListener.setReturnData(retData);
     }
 
+   /**
+    * Returns the primary data object associated with the given call identifier.
+    * Called by the CLR runtime to retrieve the argument passed to {@code raiseEventConcurrent}.
+    *
+    * @param callId the unique call identifier generated by {@code raiseEventConcurrent}.
+    * @return the event data object, or {@code null} if no data was provided.
+    * @since 2.6.10.0
+    */
+   public Object getEventData(long callId) {
+      return _internalListener.getEventData(callId);
+   }
+
+   /**
+    * Returns {@code true} if the call identified by {@code callId} has additional arguments
+    * beyond the primary data object.
+    * Called by the CLR runtime to decide whether to fetch extra data.
+    *
+    * @param callId the unique call identifier generated by {@code raiseEventConcurrent}.
+    * @since 2.6.10.0
+    * @return {@code true} if extra data is available.
+    */
+   public boolean hasExtraData(long callId) {
+      return _internalListener.hasExtraData(callId);
+   }
+
+   /**
+    * Returns the number of additional arguments associated with the call identified by
+    * {@code callId}.
+    *
+    * @param callId the unique call identifier generated by {@code raiseEventConcurrent}.
+    * @since 2.6.10.0
+    * @return the length of the extra data array, or {@code 0} if none.
+    */
+   public int extraDataLength(long callId) {
+      return _internalListener.extraDataLength(callId);
+   }
+
+   /**
+    * Returns the additional arguments associated with the call identified by {@code callId}.
+    *
+    * @param callId the unique call identifier generated by {@code raiseEventConcurrent}.
+    * @since 2.6.10.0
+    * @return the extra data array, or {@code null} if none was provided.
+    */
+   public Object[] extraData(long callId) {
+      return _internalListener.extraData(callId);
+   }
+
+   /**
+    * Returns the return value set by the CLR handler with the call identified by {@code callId}.
+    * Used from CLR since the value is returned directly by {@code raiseEventConcurrent}.
+    *
+    * @param callId  the unique call identifier generated by {@code raiseEventConcurrent}.
+    * @since 2.6.10.0
+    * @return the return value provided by the CLR handler, or {@code null} if not set.
+    */
+   public Object getReturnData(long callId) {
+      return _internalListener.getReturnData(callId);
+   }
+
+   /**
+    * Sets the return value that the CLR handler provides for the call identified by
+    * {@code callId}. The value is returned directly by {@code raiseEventConcurrent}.
+    *
+    * @param callId  the unique call identifier generated by {@code raiseEventConcurrent}.
+    * @param retData the value to return to the JVM caller.
+    * @since 2.6.10.0
+    */
+   public void setReturnData(long callId, Object retData) {
+      return _internalListener.setReturnData(callId, retData);
+   }
+
+
     int _internalFrameActivatedIndex = 0;
     //@Override
     public void internalFrameActivated(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameActivatedIndex <= 0) _internalFrameActivatedIndex = getEventIndex("internalFrameActivated");
-        raiseEvent(_internalFrameActivatedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameActivated(arg0);
+        raiseEventConcurrent(_internalFrameActivatedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameActivated(arg0);
     }
     int _internalFrameClosedIndex = 0;
     //@Override
     public void internalFrameClosed(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameClosedIndex <= 0) _internalFrameClosedIndex = getEventIndex("internalFrameClosed");
-        raiseEvent(_internalFrameClosedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameClosed(arg0);
+        raiseEventConcurrent(_internalFrameClosedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameClosed(arg0);
     }
     int _internalFrameClosingIndex = 0;
     //@Override
     public void internalFrameClosing(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameClosingIndex <= 0) _internalFrameClosingIndex = getEventIndex("internalFrameClosing");
-        raiseEvent(_internalFrameClosingIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameClosing(arg0);
+        raiseEventConcurrent(_internalFrameClosingIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameClosing(arg0);
     }
     int _internalFrameDeactivatedIndex = 0;
     //@Override
     public void internalFrameDeactivated(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameDeactivatedIndex <= 0) _internalFrameDeactivatedIndex = getEventIndex("internalFrameDeactivated");
-        raiseEvent(_internalFrameDeactivatedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameDeactivated(arg0);
+        raiseEventConcurrent(_internalFrameDeactivatedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameDeactivated(arg0);
     }
     int _internalFrameDeiconifiedIndex = 0;
     //@Override
     public void internalFrameDeiconified(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameDeiconifiedIndex <= 0) _internalFrameDeiconifiedIndex = getEventIndex("internalFrameDeiconified");
-        raiseEvent(_internalFrameDeiconifiedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameDeiconified(arg0);
+        raiseEventConcurrent(_internalFrameDeiconifiedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameDeiconified(arg0);
     }
     int _internalFrameIconifiedIndex = 0;
     //@Override
     public void internalFrameIconified(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameIconifiedIndex <= 0) _internalFrameIconifiedIndex = getEventIndex("internalFrameIconified");
-        raiseEvent(_internalFrameIconifiedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameIconified(arg0);
+        raiseEventConcurrent(_internalFrameIconifiedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameIconified(arg0);
     }
     int _internalFrameOpenedIndex = 0;
     //@Override
     public void internalFrameOpened(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameOpenedIndex <= 0) _internalFrameOpenedIndex = getEventIndex("internalFrameOpened");
-        raiseEvent(_internalFrameOpenedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameOpened(arg0);
+        raiseEventConcurrent(_internalFrameOpenedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameOpened(arg0);
     }
 
 }
