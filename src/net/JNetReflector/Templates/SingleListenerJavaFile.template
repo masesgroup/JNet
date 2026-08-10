@@ -342,7 +342,7 @@ public final class ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER ALLPACKAGE_CL
     * @since 2.6.10.0
     */
    public void setReturnData(long callId, Object retData) {
-      return _internalListener.setReturnData(callId, retData);
+      _internalListener.setReturnData(callId, retData);
    }
 
 
