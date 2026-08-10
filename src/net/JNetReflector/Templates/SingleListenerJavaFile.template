@@ -64,7 +64,7 @@ public final class ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER ALLPACKAGE_CL
     * @since 2.6.10.0
     */
    public long getCollisionCount() {
-      _internalListener.getCollisionCount();
+      return _internalListener.getCollisionCount();
    }
 
    /**
@@ -180,7 +180,7 @@ public final class ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER ALLPACKAGE_CL
     */
    @SuppressWarnings("finally")
    public Object raiseEventConcurrent(int eventIndex) {
-      _internalListener.raiseEventConcurrent(eventIndex);
+      return _internalListener.raiseEventConcurrent(eventIndex);
    }
 
    /**
@@ -199,7 +199,7 @@ public final class ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER ALLPACKAGE_CL
     */
    @SuppressWarnings("finally")
    public Object raiseEventConcurrent(int eventIndex, Object e) {
-      _internalListener.raiseEventConcurrent(eventIndex, e);
+      return _internalListener.raiseEventConcurrent(eventIndex, e);
    }
 
    /**
@@ -219,7 +219,7 @@ public final class ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER ALLPACKAGE_CL
     */
    @SuppressWarnings("finally")
    public Object raiseEventConcurrent(int eventIndex, Object e, Object... objects) {
-      _internalListener.raiseEventConcurrent(eventIndex, e, objects);
+      return _internalListener.raiseEventConcurrent(eventIndex, e, objects);
    }
 
     /**
