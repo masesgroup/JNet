@@ -35,76 +35,208 @@ public final class XMLReaderAdapter extends org.xml.sax.helpers.XMLReaderAdapter
         _internalListener = new org.mases.jcobridge.JCListener(key);
     }
 
-    /**
-     * Releases the resources held by this listener and unregisters it from the JCOBridge runtime.
-     */
+   /**
+    * Forces all {@code raiseEventConcurrent} calls to fall back to the synchronized model.
+    *
+    * @param forceSynchronized {@code true} to force synchronized execution.
+    * @since 2.6.10.0
+    */
+   public synchronized void setSynchronized(boolean forceSynchronized) {
+      _internalListener.setSynchronized(forceSynchronized);
+   }
+
+   /**
+    * Sets whether collision warnings are emitted to stderr when a ring buffer slot collision
+    * is detected. Defaults to {@code true}. Set to {@code false} to suppress warnings in
+    * production environments where collisions are expected and monitored via {@link JCListener#getCollisionCount()}.
+    *
+    * @param emitWarnings {@code true} to enable warnings, {@code false} to suppress them.
+    * @since 2.6.10.0
+    */
+   public void setEmitCollisionWarnings(boolean emitWarnings) {
+      _internalListener.setEmitCollisionWarnings(emitWarnings);
+   }
+
+   /**
+    * Initializes the ring buffer size for this listener instance.
+    * Must be called before any concurrent event is raised and only once.
+    * If the requested size is already the current size, this method is a no-op.
+    * The actual size will be rounded up to the next power of two.
+    * The default size is 64 and can be overridden by the CLR during initialization
+    * to tune the listener for specific concurrency requirements.
+    *
+    * @param ringSize the desired ring buffer size; will be rounded up to the next power of two.
+    * @since 2.6.10.0
+    */
+   public void initRingSize(int ringSize) {
+      _internalListener.initRingSize(ringSize);
+   }
+
+   /**
+    * Returns the number of ring buffer slot collisions detected since the JVM started.
+    * A high value suggests that {@code JCOBRIDGE_ListenerRingSize} should be increased.
+    *
+    * @return the total number of slot collisions across all listeners.
+    * @since 2.6.10.0
+    */
+   public long getCollisionCount() {
+      _internalListener.getCollisionCount();
+   }
+
+   /**
+    * Releases the native resources held by this listener and unregisters it from the
+    * JCOBridge runtime. Invoked by the CLR counterpart when the managed wrapper is disposed.
+    * Errors during release are silently swallowed to avoid masking the original dispose path.
+    */
     public synchronized void release() {
        _internalListener.release();
     }
 
-    /**
-     * Returns the numeric index associated with the given event name.
-     * The index is used by the CLR side for zero-cost index-based event filtering.
-     * @param eventName the name of the event as registered on the CLR side.
-     * @return the numeric index of the event.
-     */
+   /**
+    * Returns the numeric index associated with the given event name.
+    *
+    * <p>The listener handle ({@link #_listenerKey}) is resolved lazily on the first call
+    * and cached for subsequent calls. The returned index can be passed to the index-based
+    * {@code raiseEvent} or {@code raiseEventConcurrent} overloads to avoid name-lookup
+    * overhead in high-frequency event paths.</p>
+    *
+    * @param eventName the name of the event as registered on the CLR side.
+    * @return the numeric index of the event, or {@code 0} if the lookup fails.
+    */
     public synchronized int getEventIndex(String eventName) {
        return _internalListener.getEventIndex(eventName);
     }
 
-    /**
-     * Raises the named event on the CLR side with no associated data.
-     * @param eventName the name of the event to raise.
-     */
+   /**
+    * Raises the named event on the CLR side with no associated data.
+    * All calls on this instance are serialized.
+    *
+    * @param eventName the name of the event to raise.
+    */
     public synchronized void raiseEvent(String eventName) {
        _internalListener.raiseEvent(eventName);
     }
 
-    /**
-     * Raises the event identified by index on the CLR side with no associated data.
-     * @param eventIndex the numeric index of the event to raise.
-     */
+   /**
+    * Raises the event identified by numeric index on the CLR side with no associated data.
+    * All calls on this instance are serialized.
+    *
+    * @param eventIndex the numeric index of the event to raise, as returned by
+    *                   {@link #getEventIndex(String)}.
+    * @since 2.6.9.0
+    */
     public synchronized void raiseEvent(int eventIndex) {
        _internalListener.raiseEvent(eventIndex);
     }
 
-    /**
-     * Raises the named event on the CLR side, passing a single data object.
-     * @param eventName the name of the event to raise.
-     * @param e the data object associated with the event.
-     */
+   /**
+    * Raises the named event on the CLR side, passing a single data object.
+    * All calls on this instance are serialized.
+    *
+    * @param eventName the name of the event to raise.
+    * @param e         the data object associated with the event; accessible from the CLR
+    *                  handler via {@link #getEventData()}.
+    */
     public synchronized void raiseEvent(String eventName, Object e) {
        _internalListener.raiseEvent(eventName, e);
     }
 
-    /**
-     * Raises the event identified by index on the CLR side, passing a single data object.
-     * @param eventIndex the numeric index of the event to raise.
-     * @param e the data object associated with the event.
-     */
+   /**
+    * Raises the event identified by numeric index on the CLR side, passing a single data object.
+    * All calls on this instance are serialized.
+    *
+    * @param eventIndex the numeric index of the event to raise.
+    * @param e          the data object associated with the event; accessible from the CLR
+    *                   handler via {@link #getEventData()}.
+    * @since 2.6.9.0
+    */
     public synchronized void raiseEvent(int eventIndex, Object e) {
        _internalListener.raiseEvent(eventIndex, e);
     }
 
-    /**
-     * Raises the named event on the CLR side, passing a primary data object and additional arguments.
-     * @param eventName the name of the event to raise.
-     * @param e the primary data object associated with the event.
-     * @param objects additional arguments forwarded to the CLR handler.
-     */
+   /**
+    * Raises the named event on the CLR side, passing a primary data object and additional arguments.
+    * All calls on this instance are serialized.
+    *
+    * @param eventName the name of the event to raise.
+    * @param e         the primary data object associated with the event.
+    * @param objects   additional arguments forwarded to the CLR handler, accessible via
+    *                  {@link #extraData()}.
+    */
     public synchronized void raiseEvent(String eventName, Object e, Object... objects) {
        _internalListener.raiseEvent(eventName, e, objects);
     }
 
-    /**
-     * Raises the event identified by index on the CLR side, passing a primary data object and additional arguments.
-     * @param eventIndex the numeric index of the event to raise.
-     * @param e the primary data object associated with the event.
-     * @param objects additional arguments forwarded to the CLR handler.
-     */
+   /**
+    * Raises the event identified by numeric index on the CLR side, passing a primary data object
+    * and additional arguments. All calls on this instance are serialized.
+    *
+    * @param eventIndex the numeric index of the event to raise.
+    * @param e          the primary data object associated with the event.
+    * @param objects    additional arguments forwarded to the CLR handler, accessible via
+    *                   {@link #extraData()}.
+    * @since 2.6.9.0
+    */
     public synchronized void raiseEvent(int eventIndex, Object e, Object... objects) {
        _internalListener.raiseEvent(eventIndex, e, objects);
     }
+
+   /**
+    * Raises the event identified by numeric index on the CLR side with no associated data.
+    * Different events proceed in parallel. Returns the value set by the CLR handler via
+    * {@link #setReturnData(long, Object)}, or {@code null} for void events.
+    *
+    * <p>If {@link #_forceSynchronized} is {@code true}, falls back to {@link #raiseEvent(int)}
+    * and returns {@link #getReturnData()}.</p>
+    *
+    * @param eventIndex the numeric index of the event to raise, as returned by
+    *                   {@link #getEventIndex(String)}.
+    * @return the return value provided by the CLR handler, or {@code null}.
+    * @since 2.6.10.0
+    */
+   @SuppressWarnings("finally")
+   public Object raiseEventConcurrent(int eventIndex) {
+      _internalListener.raiseEventConcurrent(eventIndex);
+   }
+
+   /**
+    * Raises the event identified by numeric index on the CLR side, passing a single data object.
+    * Different events proceed in parallel. The data object is accessible from the CLR handler
+    * via {@link #getEventData(long)}. Returns the value set by the CLR handler via
+    * {@link #setReturnData(long, Object)}, or {@code null} for void events.
+    *
+    * <p>If {@link #_forceSynchronized} is {@code true}, falls back to
+    * {@link #raiseEvent(int, Object)} and returns {@link #getReturnData()}.</p>
+    *
+    * @param eventIndex the numeric index of the event to raise.
+    * @param e          the data object associated with the event.
+    * @return the return value provided by the CLR handler, or {@code null}.
+    * @since 2.6.10.0
+    */
+   @SuppressWarnings("finally")
+   public Object raiseEventConcurrent(int eventIndex, Object e) {
+      _internalListener.raiseEventConcurrent(eventIndex, e);
+   }
+
+   /**
+    * Raises the event identified by numeric index on the CLR side, passing a primary data object
+    * and additional arguments. Different events proceed in parallel. Returns the value set by
+    * the CLR handler via {@link #setReturnData(long, Object)}, or {@code null} for void events.
+    *
+    * <p>If {@link #_forceSynchronized} is {@code true}, falls back to
+    * {@link #raiseEvent(int, Object, Object...)} and returns {@link #getReturnData()}.</p>
+    *
+    * @param eventIndex the numeric index of the event to raise.
+    * @param e          the primary data object associated with the event.
+    * @param objects    additional arguments forwarded to the CLR handler, accessible via
+    *                   {@link #extraData(long)}.
+    * @return the return value provided by the CLR handler, or {@code null}.
+    * @since 2.6.10.0
+    */
+   @SuppressWarnings("finally")
+   public Object raiseEventConcurrent(int eventIndex, Object e, Object... objects) {
+      _internalListener.raiseEventConcurrent(eventIndex, e, objects);
+   }
 
     /**
      * Returns the data object sent by the CLR side for the current event, if any.
@@ -157,131 +289,204 @@ public final class XMLReaderAdapter extends org.xml.sax.helpers.XMLReaderAdapter
        _internalListener.setReturnData(retData);
     }
 
+   /**
+    * Returns the primary data object associated with the given call identifier.
+    * Called by the CLR runtime to retrieve the argument passed to {@code raiseEventConcurrent}.
+    *
+    * @param callId the unique call identifier generated by {@code raiseEventConcurrent}.
+    * @return the event data object, or {@code null} if no data was provided.
+    * @since 2.6.10.0
+    */
+   public Object getEventData(long callId) {
+      return _internalListener.getEventData(callId);
+   }
+
+   /**
+    * Returns {@code true} if the call identified by {@code callId} has additional arguments
+    * beyond the primary data object.
+    * Called by the CLR runtime to decide whether to fetch extra data.
+    *
+    * @param callId the unique call identifier generated by {@code raiseEventConcurrent}.
+    * @since 2.6.10.0
+    * @return {@code true} if extra data is available.
+    */
+   public boolean hasExtraData(long callId) {
+      return _internalListener.hasExtraData(callId);
+   }
+
+   /**
+    * Returns the number of additional arguments associated with the call identified by
+    * {@code callId}.
+    *
+    * @param callId the unique call identifier generated by {@code raiseEventConcurrent}.
+    * @since 2.6.10.0
+    * @return the length of the extra data array, or {@code 0} if none.
+    */
+   public int extraDataLength(long callId) {
+      return _internalListener.extraDataLength(callId);
+   }
+
+   /**
+    * Returns the additional arguments associated with the call identified by {@code callId}.
+    *
+    * @param callId the unique call identifier generated by {@code raiseEventConcurrent}.
+    * @since 2.6.10.0
+    * @return the extra data array, or {@code null} if none was provided.
+    */
+   public Object[] extraData(long callId) {
+      return _internalListener.extraData(callId);
+   }
+
+   /**
+    * Returns the return value set by the CLR handler with the call identified by {@code callId}.
+    * Used from CLR since the value is returned directly by {@code raiseEventConcurrent}.
+    *
+    * @param callId  the unique call identifier generated by {@code raiseEventConcurrent}.
+    * @since 2.6.10.0
+    * @return the return value provided by the CLR handler, or {@code null} if not set.
+    */
+   public Object getReturnData(long callId) {
+      return _internalListener.getReturnData(callId);
+   }
+
+   /**
+    * Sets the return value that the CLR handler provides for the call identified by
+    * {@code callId}. The value is returned directly by {@code raiseEventConcurrent}.
+    *
+    * @param callId  the unique call identifier generated by {@code raiseEventConcurrent}.
+    * @param retData the value to return to the JVM caller.
+    * @since 2.6.10.0
+    */
+   public void setReturnData(long callId, Object retData) {
+      _internalListener.setReturnData(callId, retData);
+   }
+
+
     int _charactersIndex = 0;
     //@Override
     public void characters(char[] arg0, int arg1, int arg2) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_charactersIndex <= 0) _charactersIndex = getEventIndex("characters");
-        raiseEvent(_charactersIndex, eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.characters(arg0, arg1, arg2);
+        raiseEventConcurrent(_charactersIndex, eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.characters(arg0, arg1, arg2);
     }
     int _endDocumentIndex = 0;
     //@Override
     public void endDocument() throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_endDocumentIndex <= 0) _endDocumentIndex = getEventIndex("endDocument");
-        raiseEvent(_endDocumentIndex, eventDataExchange); if (!eventDataExchange.getHasOverride()) super.endDocument();
+        raiseEventConcurrent(_endDocumentIndex, eventDataExchange); if (!eventDataExchange.getHasOverride()) super.endDocument();
     }
     int _endElementIndex = 0;
     //@Override
     public void endElement(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_endElementIndex <= 0) _endElementIndex = getEventIndex("endElement");
-        raiseEvent(_endElementIndex, eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.endElement(arg0, arg1, arg2);
+        raiseEventConcurrent(_endElementIndex, eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.endElement(arg0, arg1, arg2);
     }
     int _endPrefixMappingIndex = 0;
     //@Override
     public void endPrefixMapping(java.lang.String arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_endPrefixMappingIndex <= 0) _endPrefixMappingIndex = getEventIndex("endPrefixMapping");
-        raiseEvent(_endPrefixMappingIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.endPrefixMapping(arg0);
+        raiseEventConcurrent(_endPrefixMappingIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.endPrefixMapping(arg0);
     }
     int _ignorableWhitespaceIndex = 0;
     //@Override
     public void ignorableWhitespace(char[] arg0, int arg1, int arg2) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_ignorableWhitespaceIndex <= 0) _ignorableWhitespaceIndex = getEventIndex("ignorableWhitespace");
-        raiseEvent(_ignorableWhitespaceIndex, eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.ignorableWhitespace(arg0, arg1, arg2);
+        raiseEventConcurrent(_ignorableWhitespaceIndex, eventDataExchange, arg0, arg1, arg2); if (!eventDataExchange.getHasOverride()) super.ignorableWhitespace(arg0, arg1, arg2);
     }
     int _parseIndex = 0;
     //@Override
     public void parse(java.lang.String arg0) throws java.io.IOException, org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_parseIndex <= 0) _parseIndex = getEventIndex("parse");
-        raiseEvent(_parseIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.parse(arg0);
+        raiseEventConcurrent(_parseIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.parse(arg0);
     }
     int _parse1Index = 0;
     //@Override
     public void parse(org.xml.sax.InputSource arg0) throws java.io.IOException, org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_parse1Index <= 0) _parse1Index = getEventIndex("parse1");
-        raiseEvent(_parse1Index, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.parse(arg0);
+        raiseEventConcurrent(_parse1Index, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.parse(arg0);
     }
     int _processingInstructionIndex = 0;
     //@Override
     public void processingInstruction(java.lang.String arg0, java.lang.String arg1) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_processingInstructionIndex <= 0) _processingInstructionIndex = getEventIndex("processingInstruction");
-        raiseEvent(_processingInstructionIndex, eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.processingInstruction(arg0, arg1);
+        raiseEventConcurrent(_processingInstructionIndex, eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.processingInstruction(arg0, arg1);
     }
     int _setDocumentHandlerIndex = 0;
     //@Override
     public void setDocumentHandler(org.xml.sax.DocumentHandler arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_setDocumentHandlerIndex <= 0) _setDocumentHandlerIndex = getEventIndex("setDocumentHandler");
-        raiseEvent(_setDocumentHandlerIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setDocumentHandler(arg0);
+        raiseEventConcurrent(_setDocumentHandlerIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setDocumentHandler(arg0);
     }
     int _setDocumentLocatorIndex = 0;
     //@Override
     public void setDocumentLocator(org.xml.sax.Locator arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_setDocumentLocatorIndex <= 0) _setDocumentLocatorIndex = getEventIndex("setDocumentLocator");
-        raiseEvent(_setDocumentLocatorIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setDocumentLocator(arg0);
+        raiseEventConcurrent(_setDocumentLocatorIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setDocumentLocator(arg0);
     }
     int _setDTDHandlerIndex = 0;
     //@Override
     public void setDTDHandler(org.xml.sax.DTDHandler arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_setDTDHandlerIndex <= 0) _setDTDHandlerIndex = getEventIndex("setDTDHandler");
-        raiseEvent(_setDTDHandlerIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setDTDHandler(arg0);
+        raiseEventConcurrent(_setDTDHandlerIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setDTDHandler(arg0);
     }
     int _setEntityResolverIndex = 0;
     //@Override
     public void setEntityResolver(org.xml.sax.EntityResolver arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_setEntityResolverIndex <= 0) _setEntityResolverIndex = getEventIndex("setEntityResolver");
-        raiseEvent(_setEntityResolverIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setEntityResolver(arg0);
+        raiseEventConcurrent(_setEntityResolverIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setEntityResolver(arg0);
     }
     int _setErrorHandlerIndex = 0;
     //@Override
     public void setErrorHandler(org.xml.sax.ErrorHandler arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_setErrorHandlerIndex <= 0) _setErrorHandlerIndex = getEventIndex("setErrorHandler");
-        raiseEvent(_setErrorHandlerIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setErrorHandler(arg0);
+        raiseEventConcurrent(_setErrorHandlerIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setErrorHandler(arg0);
     }
     int _setLocaleIndex = 0;
     //@Override
     public void setLocale(java.util.Locale arg0) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_setLocaleIndex <= 0) _setLocaleIndex = getEventIndex("setLocale");
-        raiseEvent(_setLocaleIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setLocale(arg0);
+        raiseEventConcurrent(_setLocaleIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.setLocale(arg0);
     }
     int _skippedEntityIndex = 0;
     //@Override
     public void skippedEntity(java.lang.String arg0) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_skippedEntityIndex <= 0) _skippedEntityIndex = getEventIndex("skippedEntity");
-        raiseEvent(_skippedEntityIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.skippedEntity(arg0);
+        raiseEventConcurrent(_skippedEntityIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.skippedEntity(arg0);
     }
     int _startDocumentIndex = 0;
     //@Override
     public void startDocument() throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_startDocumentIndex <= 0) _startDocumentIndex = getEventIndex("startDocument");
-        raiseEvent(_startDocumentIndex, eventDataExchange); if (!eventDataExchange.getHasOverride()) super.startDocument();
+        raiseEventConcurrent(_startDocumentIndex, eventDataExchange); if (!eventDataExchange.getHasOverride()) super.startDocument();
     }
     int _startElementIndex = 0;
     //@Override
     public void startElement(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, org.xml.sax.Attributes arg3) throws org.xml.sax.SAXException {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_startElementIndex <= 0) _startElementIndex = getEventIndex("startElement");
-        raiseEvent(_startElementIndex, eventDataExchange, arg0, arg1, arg2, arg3); if (!eventDataExchange.getHasOverride()) super.startElement(arg0, arg1, arg2, arg3);
+        raiseEventConcurrent(_startElementIndex, eventDataExchange, arg0, arg1, arg2, arg3); if (!eventDataExchange.getHasOverride()) super.startElement(arg0, arg1, arg2, arg3);
     }
     int _startPrefixMappingIndex = 0;
     //@Override
     public void startPrefixMapping(java.lang.String arg0, java.lang.String arg1) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_startPrefixMappingIndex <= 0) _startPrefixMappingIndex = getEventIndex("startPrefixMapping");
-        raiseEvent(_startPrefixMappingIndex, eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.startPrefixMapping(arg0, arg1);
+        raiseEventConcurrent(_startPrefixMappingIndex, eventDataExchange, arg0, arg1); if (!eventDataExchange.getHasOverride()) super.startPrefixMapping(arg0, arg1);
     }
 
 }
