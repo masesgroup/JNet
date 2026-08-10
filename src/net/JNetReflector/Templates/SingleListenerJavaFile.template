@@ -20,6 +20,54 @@ public final class ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER ALLPACKAGE_CL
     }
 
    /**
+    * Forces all {@code raiseEventConcurrent} calls to fall back to the synchronized model.
+    *
+    * @param forceSynchronized {@code true} to force synchronized execution.
+    * @since 2.6.10.0
+    */
+   public synchronized void setSynchronized(boolean forceSynchronized) {
+      _internalListener.setSynchronized(forceSynchronized);
+   }
+
+   /**
+    * Sets whether collision warnings are emitted to stderr when a ring buffer slot collision
+    * is detected. Defaults to {@code true}. Set to {@code false} to suppress warnings in
+    * production environments where collisions are expected and monitored via {@link JCListener#getCollisionCount()}.
+    *
+    * @param emitWarnings {@code true} to enable warnings, {@code false} to suppress them.
+    * @since 2.6.10.0
+    */
+   public void setEmitCollisionWarnings(boolean emitWarnings) {
+      _internalListener.setEmitCollisionWarnings(emitWarnings);
+   }
+
+   /**
+    * Initializes the ring buffer size for this listener instance.
+    * Must be called before any concurrent event is raised and only once.
+    * If the requested size is already the current size, this method is a no-op.
+    * The actual size will be rounded up to the next power of two.
+    * The default size is 64 and can be overridden by the CLR during initialization
+    * to tune the listener for specific concurrency requirements.
+    *
+    * @param ringSize the desired ring buffer size; will be rounded up to the next power of two.
+    * @since 2.6.10.0
+    */
+   public void initRingSize(int ringSize) {
+      _internalListener.initRingSize(ringSize);
+   }
+
+   /**
+    * Returns the number of ring buffer slot collisions detected since the JVM started.
+    * A high value suggests that {@code JCOBRIDGE_ListenerRingSize} should be increased.
+    *
+    * @return the total number of slot collisions across all listeners.
+    * @since 2.6.10.0
+    */
+   public long getCollisionCount() {
+      _internalListener.getCollisionCount();
+   }
+
+   /**
     * Releases the native resources held by this listener and unregisters it from the
     * JCOBridge runtime. Invoked by the CLR counterpart when the managed wrapper is disposed.
     * Errors during release are silently swallowed to avoid masking the original dispose path.
