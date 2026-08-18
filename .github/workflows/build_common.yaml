@@ -82,6 +82,8 @@ on:
         required: true
       SFTP_HOST_KEY:
         required: true
+      SFTP_KNOWN_HOST:
+        required: true        
       FIRST_SPECIAL_SETTINGS_PASSWORD:
         required: true
       SPECIAL_SETTINGS_PASSWORD:
