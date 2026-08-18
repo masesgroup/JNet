@@ -17,6 +17,11 @@ on:
         required: false
         default: false
         type: boolean
+      SpecialSettingsSource:
+        description: 'Name of special settings file: not available in forks'
+        required: false
+        default: 'source.zip'
+        type: string
       ExecuteOnMoreOSes:
         description: 'Test on more OSes'
         required: false
@@ -155,6 +160,7 @@ jobs:
     uses: ./.github/workflows/build_common.yaml
     with:
       UseSpecialSettings: ${{ inputs.UseSpecialSettings || false }}
+      SpecialSettingsSource: ${{ inputs.SpecialSettingsSource || 'source.zip' }}
       ExecuteOnMoreOSes: ${{ inputs.ExecuteOnMoreOSes || github.event_name == 'schedule' }}
       ExecuteOnLargerJDKVendorSet: ${{ inputs.ExecuteOnLargerJDKVendorSet || github.ref_name == 'master' || github.event_name == 'schedule' }}
       ExecuteOnLargerJDKVersionSet: ${{ inputs.ExecuteOnLargerJDKVersionSet || github.ref_name == 'master' || github.event_name == 'schedule' }}
