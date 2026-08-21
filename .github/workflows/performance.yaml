@@ -68,7 +68,6 @@ jobs:
 
       - name: Add special repo
         if: ${{ success() && inputs.UseSpecialSettings == true }}
-        shell: cmd
         run: dotnet nuget add source "${{ github.workspace }}\Deploy" --name localDeployNuGet
 
       - name: Pre compile
