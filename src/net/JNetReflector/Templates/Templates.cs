@@ -302,7 +302,7 @@ namespace MASES.JNet.Reflector.Templates
                                                                                    + "if (_{0}Index <= 0) _{0}Index = getEventIndex(\"{0}\");" + Environment.NewLine
                                                                                    + "raiseEventConcurrent(_{0}Index, eventDataExchange{1});" + Environment.NewLine
                                                                                    + "Object retVal;" + Environment.NewLine
-                                                                                   + "if (!eventDataExchange.getHasOverride())" + Environment.NewLine
+                                                                                   + "if (!eventDataExchange.getHasOverride()) {" + Environment.NewLine
                                                                                    + "    retVal = {3}.super.{4}({5});" + Environment.NewLine
                                                                                    + "} else {" + Environment.NewLine
                                                                                    + "    retVal = eventDataExchange.getReturnData();" + Environment.NewLine
