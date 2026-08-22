@@ -68,7 +68,7 @@ jobs:
 
       - name: Add special repo
         if: ${{ success() && inputs.UseSpecialSettings == true }}
-        run: dotnet nuget add source --name localDeployNuGet "${{ github.workspace }}\Deploy\"
+        run: dotnet nuget add source "${{ github.workspace }}\Deploy" --name localDeployNuGet
 
       - name: Pre compile
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNet\JNet.csproj
