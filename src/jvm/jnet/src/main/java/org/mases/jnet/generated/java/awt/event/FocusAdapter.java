@@ -367,14 +367,16 @@ public final class FocusAdapter extends java.awt.event.FocusAdapter implements o
     public void focusGained(java.awt.event.FocusEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_focusGainedIndex <= 0) _focusGainedIndex = getEventIndex("focusGained");
-        raiseEventConcurrent(_focusGainedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.focusGained(arg0);
+        raiseEventConcurrent(_focusGainedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.focusGained(arg0);
     }
     int _focusLostIndex = 0;
     //@Override
     public void focusLost(java.awt.event.FocusEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_focusLostIndex <= 0) _focusLostIndex = getEventIndex("focusLost");
-        raiseEventConcurrent(_focusLostIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.focusLost(arg0);
+        raiseEventConcurrent(_focusLostIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.focusLost(arg0);
     }
 
 }
