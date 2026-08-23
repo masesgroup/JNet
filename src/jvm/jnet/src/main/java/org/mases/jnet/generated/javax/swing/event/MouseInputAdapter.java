@@ -367,56 +367,64 @@ public final class MouseInputAdapter extends javax.swing.event.MouseInputAdapter
     public void mouseClicked(java.awt.event.MouseEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_mouseClickedIndex <= 0) _mouseClickedIndex = getEventIndex("mouseClicked");
-        raiseEventConcurrent(_mouseClickedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.mouseClicked(arg0);
+        raiseEventConcurrent(_mouseClickedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.mouseClicked(arg0);
     }
     int _mouseDraggedIndex = 0;
     //@Override
     public void mouseDragged(java.awt.event.MouseEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_mouseDraggedIndex <= 0) _mouseDraggedIndex = getEventIndex("mouseDragged");
-        raiseEventConcurrent(_mouseDraggedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.mouseDragged(arg0);
+        raiseEventConcurrent(_mouseDraggedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.mouseDragged(arg0);
     }
     int _mouseEnteredIndex = 0;
     //@Override
     public void mouseEntered(java.awt.event.MouseEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_mouseEnteredIndex <= 0) _mouseEnteredIndex = getEventIndex("mouseEntered");
-        raiseEventConcurrent(_mouseEnteredIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.mouseEntered(arg0);
+        raiseEventConcurrent(_mouseEnteredIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.mouseEntered(arg0);
     }
     int _mouseExitedIndex = 0;
     //@Override
     public void mouseExited(java.awt.event.MouseEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_mouseExitedIndex <= 0) _mouseExitedIndex = getEventIndex("mouseExited");
-        raiseEventConcurrent(_mouseExitedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.mouseExited(arg0);
+        raiseEventConcurrent(_mouseExitedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.mouseExited(arg0);
     }
     int _mouseMovedIndex = 0;
     //@Override
     public void mouseMoved(java.awt.event.MouseEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_mouseMovedIndex <= 0) _mouseMovedIndex = getEventIndex("mouseMoved");
-        raiseEventConcurrent(_mouseMovedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.mouseMoved(arg0);
+        raiseEventConcurrent(_mouseMovedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.mouseMoved(arg0);
     }
     int _mousePressedIndex = 0;
     //@Override
     public void mousePressed(java.awt.event.MouseEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_mousePressedIndex <= 0) _mousePressedIndex = getEventIndex("mousePressed");
-        raiseEventConcurrent(_mousePressedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.mousePressed(arg0);
+        raiseEventConcurrent(_mousePressedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.mousePressed(arg0);
     }
     int _mouseReleasedIndex = 0;
     //@Override
     public void mouseReleased(java.awt.event.MouseEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_mouseReleasedIndex <= 0) _mouseReleasedIndex = getEventIndex("mouseReleased");
-        raiseEventConcurrent(_mouseReleasedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.mouseReleased(arg0);
+        raiseEventConcurrent(_mouseReleasedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.mouseReleased(arg0);
     }
     int _mouseWheelMovedIndex = 0;
     //@Override
     public void mouseWheelMoved(java.awt.event.MouseWheelEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_mouseWheelMovedIndex <= 0) _mouseWheelMovedIndex = getEventIndex("mouseWheelMoved");
-        raiseEventConcurrent(_mouseWheelMovedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.mouseWheelMoved(arg0);
+        raiseEventConcurrent(_mouseWheelMovedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.mouseWheelMoved(arg0);
     }
 
 }

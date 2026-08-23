@@ -367,7 +367,10 @@ public final class DoubleToLongFunction implements org.mases.jcobridge.IJCListen
     public long applyAsLong(double arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_applyAsLongIndex <= 0) _applyAsLongIndex = getEventIndex("applyAsLong");
-        raiseEventConcurrent(_applyAsLongIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (long)retVal;
+        raiseEventConcurrent(_applyAsLongIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        Object retVal = eventDataExchange.getReturnData();
+        return (long)retVal;
     }
 
 }
