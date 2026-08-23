@@ -367,49 +367,56 @@ public final class InternalFrameAdapter extends javax.swing.event.InternalFrameA
     public void internalFrameActivated(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameActivatedIndex <= 0) _internalFrameActivatedIndex = getEventIndex("internalFrameActivated");
-        raiseEventConcurrent(_internalFrameActivatedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameActivated(arg0);
+        raiseEventConcurrent(_internalFrameActivatedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.internalFrameActivated(arg0);
     }
     int _internalFrameClosedIndex = 0;
     //@Override
     public void internalFrameClosed(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameClosedIndex <= 0) _internalFrameClosedIndex = getEventIndex("internalFrameClosed");
-        raiseEventConcurrent(_internalFrameClosedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameClosed(arg0);
+        raiseEventConcurrent(_internalFrameClosedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.internalFrameClosed(arg0);
     }
     int _internalFrameClosingIndex = 0;
     //@Override
     public void internalFrameClosing(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameClosingIndex <= 0) _internalFrameClosingIndex = getEventIndex("internalFrameClosing");
-        raiseEventConcurrent(_internalFrameClosingIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameClosing(arg0);
+        raiseEventConcurrent(_internalFrameClosingIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.internalFrameClosing(arg0);
     }
     int _internalFrameDeactivatedIndex = 0;
     //@Override
     public void internalFrameDeactivated(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameDeactivatedIndex <= 0) _internalFrameDeactivatedIndex = getEventIndex("internalFrameDeactivated");
-        raiseEventConcurrent(_internalFrameDeactivatedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameDeactivated(arg0);
+        raiseEventConcurrent(_internalFrameDeactivatedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.internalFrameDeactivated(arg0);
     }
     int _internalFrameDeiconifiedIndex = 0;
     //@Override
     public void internalFrameDeiconified(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameDeiconifiedIndex <= 0) _internalFrameDeiconifiedIndex = getEventIndex("internalFrameDeiconified");
-        raiseEventConcurrent(_internalFrameDeiconifiedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameDeiconified(arg0);
+        raiseEventConcurrent(_internalFrameDeiconifiedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.internalFrameDeiconified(arg0);
     }
     int _internalFrameIconifiedIndex = 0;
     //@Override
     public void internalFrameIconified(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameIconifiedIndex <= 0) _internalFrameIconifiedIndex = getEventIndex("internalFrameIconified");
-        raiseEventConcurrent(_internalFrameIconifiedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameIconified(arg0);
+        raiseEventConcurrent(_internalFrameIconifiedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.internalFrameIconified(arg0);
     }
     int _internalFrameOpenedIndex = 0;
     //@Override
     public void internalFrameOpened(javax.swing.event.InternalFrameEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_internalFrameOpenedIndex <= 0) _internalFrameOpenedIndex = getEventIndex("internalFrameOpened");
-        raiseEventConcurrent(_internalFrameOpenedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.internalFrameOpened(arg0);
+        raiseEventConcurrent(_internalFrameOpenedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.internalFrameOpened(arg0);
     }
 
 }
