@@ -374,28 +374,32 @@ public final class DropTargetAdapter extends java.awt.dnd.DropTargetAdapter impl
     public void dragEnter(java.awt.dnd.DropTargetDragEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_dragEnterIndex <= 0) _dragEnterIndex = getEventIndex("dragEnter");
-        raiseEventConcurrent(_dragEnterIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragEnter(arg0);
+        raiseEventConcurrent(_dragEnterIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.dragEnter(arg0);
     }
     int _dragExitIndex = 0;
     //@Override
     public void dragExit(java.awt.dnd.DropTargetEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_dragExitIndex <= 0) _dragExitIndex = getEventIndex("dragExit");
-        raiseEventConcurrent(_dragExitIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragExit(arg0);
+        raiseEventConcurrent(_dragExitIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.dragExit(arg0);
     }
     int _dragOverIndex = 0;
     //@Override
     public void dragOver(java.awt.dnd.DropTargetDragEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_dragOverIndex <= 0) _dragOverIndex = getEventIndex("dragOver");
-        raiseEventConcurrent(_dragOverIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dragOver(arg0);
+        raiseEventConcurrent(_dragOverIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.dragOver(arg0);
     }
     int _dropActionChangedIndex = 0;
     //@Override
     public void dropActionChanged(java.awt.dnd.DropTargetDragEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_dropActionChangedIndex <= 0) _dropActionChangedIndex = getEventIndex("dropActionChanged");
-        raiseEventConcurrent(_dropActionChangedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.dropActionChanged(arg0);
+        raiseEventConcurrent(_dropActionChangedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.dropActionChanged(arg0);
     }
 
 }

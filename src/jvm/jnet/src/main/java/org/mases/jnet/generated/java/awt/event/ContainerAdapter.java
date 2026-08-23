@@ -367,14 +367,16 @@ public final class ContainerAdapter extends java.awt.event.ContainerAdapter impl
     public void componentAdded(java.awt.event.ContainerEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_componentAddedIndex <= 0) _componentAddedIndex = getEventIndex("componentAdded");
-        raiseEventConcurrent(_componentAddedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentAdded(arg0);
+        raiseEventConcurrent(_componentAddedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.componentAdded(arg0);
     }
     int _componentRemovedIndex = 0;
     //@Override
     public void componentRemoved(java.awt.event.ContainerEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_componentRemovedIndex <= 0) _componentRemovedIndex = getEventIndex("componentRemoved");
-        raiseEventConcurrent(_componentRemovedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentRemoved(arg0);
+        raiseEventConcurrent(_componentRemovedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.componentRemoved(arg0);
     }
 
 }

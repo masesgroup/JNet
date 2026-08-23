@@ -367,42 +367,48 @@ public final class PrintJobAdapter extends javax.print.event.PrintJobAdapter imp
     public void printDataTransferCompleted(javax.print.event.PrintJobEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_printDataTransferCompletedIndex <= 0) _printDataTransferCompletedIndex = getEventIndex("printDataTransferCompleted");
-        raiseEventConcurrent(_printDataTransferCompletedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.printDataTransferCompleted(arg0);
+        raiseEventConcurrent(_printDataTransferCompletedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.printDataTransferCompleted(arg0);
     }
     int _printJobCanceledIndex = 0;
     //@Override
     public void printJobCanceled(javax.print.event.PrintJobEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_printJobCanceledIndex <= 0) _printJobCanceledIndex = getEventIndex("printJobCanceled");
-        raiseEventConcurrent(_printJobCanceledIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.printJobCanceled(arg0);
+        raiseEventConcurrent(_printJobCanceledIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.printJobCanceled(arg0);
     }
     int _printJobCompletedIndex = 0;
     //@Override
     public void printJobCompleted(javax.print.event.PrintJobEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_printJobCompletedIndex <= 0) _printJobCompletedIndex = getEventIndex("printJobCompleted");
-        raiseEventConcurrent(_printJobCompletedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.printJobCompleted(arg0);
+        raiseEventConcurrent(_printJobCompletedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.printJobCompleted(arg0);
     }
     int _printJobFailedIndex = 0;
     //@Override
     public void printJobFailed(javax.print.event.PrintJobEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_printJobFailedIndex <= 0) _printJobFailedIndex = getEventIndex("printJobFailed");
-        raiseEventConcurrent(_printJobFailedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.printJobFailed(arg0);
+        raiseEventConcurrent(_printJobFailedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.printJobFailed(arg0);
     }
     int _printJobNoMoreEventsIndex = 0;
     //@Override
     public void printJobNoMoreEvents(javax.print.event.PrintJobEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_printJobNoMoreEventsIndex <= 0) _printJobNoMoreEventsIndex = getEventIndex("printJobNoMoreEvents");
-        raiseEventConcurrent(_printJobNoMoreEventsIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.printJobNoMoreEvents(arg0);
+        raiseEventConcurrent(_printJobNoMoreEventsIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.printJobNoMoreEvents(arg0);
     }
     int _printJobRequiresAttentionIndex = 0;
     //@Override
     public void printJobRequiresAttention(javax.print.event.PrintJobEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_printJobRequiresAttentionIndex <= 0) _printJobRequiresAttentionIndex = getEventIndex("printJobRequiresAttention");
-        raiseEventConcurrent(_printJobRequiresAttentionIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.printJobRequiresAttention(arg0);
+        raiseEventConcurrent(_printJobRequiresAttentionIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.printJobRequiresAttention(arg0);
     }
 
 }

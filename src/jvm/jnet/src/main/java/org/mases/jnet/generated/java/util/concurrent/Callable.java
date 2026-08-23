@@ -367,7 +367,10 @@ public final class Callable implements org.mases.jcobridge.IJCListener, java.uti
     public java.lang.Object call() throws java.lang.Exception {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_callIndex <= 0) _callIndex = getEventIndex("call");
-        raiseEventConcurrent(_callIndex, eventDataExchange); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (java.lang.Object)retVal;
+        raiseEventConcurrent(_callIndex, eventDataExchange);
+        if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        Object retVal = eventDataExchange.getReturnData();
+        return (java.lang.Object)retVal;
     }
 
 }

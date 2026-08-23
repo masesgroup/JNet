@@ -367,7 +367,10 @@ public final class DoubleSupplier implements org.mases.jcobridge.IJCListener, ja
     public double getAsDouble() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_getAsDoubleIndex <= 0) _getAsDoubleIndex = getEventIndex("getAsDouble");
-        raiseEventConcurrent(_getAsDoubleIndex, eventDataExchange); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (double)retVal;
+        raiseEventConcurrent(_getAsDoubleIndex, eventDataExchange);
+        if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        Object retVal = eventDataExchange.getReturnData();
+        return (double)retVal;
     }
 
 }
