@@ -374,7 +374,14 @@ public final class IntConsumer implements org.mases.jcobridge.IJCListener, java.
     public java.util.function.IntConsumer andThen(java.util.function.IntConsumer arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_andThenIndex <= 0) _andThenIndex = getEventIndex("andThen");
-        raiseEventConcurrent(_andThenIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.IntConsumer.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.IntConsumer)retVal;
+        raiseEventConcurrent(_andThenIndex, eventDataExchange, arg0);
+        Object retVal;
+        if (!eventDataExchange.getHasOverride()) {
+            retVal = java.util.function.IntConsumer.super.andThen(arg0);
+        } else {
+            retVal = eventDataExchange.getReturnData();
+        }
+        return (java.util.function.IntConsumer)retVal;
     }
 
     //@Override

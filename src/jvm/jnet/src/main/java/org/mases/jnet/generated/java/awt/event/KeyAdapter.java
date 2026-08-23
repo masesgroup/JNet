@@ -367,21 +367,24 @@ public final class KeyAdapter extends java.awt.event.KeyAdapter implements org.m
     public void keyPressed(java.awt.event.KeyEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_keyPressedIndex <= 0) _keyPressedIndex = getEventIndex("keyPressed");
-        raiseEventConcurrent(_keyPressedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.keyPressed(arg0);
+        raiseEventConcurrent(_keyPressedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.keyPressed(arg0);
     }
     int _keyReleasedIndex = 0;
     //@Override
     public void keyReleased(java.awt.event.KeyEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_keyReleasedIndex <= 0) _keyReleasedIndex = getEventIndex("keyReleased");
-        raiseEventConcurrent(_keyReleasedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.keyReleased(arg0);
+        raiseEventConcurrent(_keyReleasedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.keyReleased(arg0);
     }
     int _keyTypedIndex = 0;
     //@Override
     public void keyTyped(java.awt.event.KeyEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_keyTypedIndex <= 0) _keyTypedIndex = getEventIndex("keyTyped");
-        raiseEventConcurrent(_keyTypedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.keyTyped(arg0);
+        raiseEventConcurrent(_keyTypedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.keyTyped(arg0);
     }
 
 }
