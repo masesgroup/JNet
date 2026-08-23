@@ -367,14 +367,16 @@ public final class HierarchyBoundsAdapter extends java.awt.event.HierarchyBounds
     public void ancestorMoved(java.awt.event.HierarchyEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_ancestorMovedIndex <= 0) _ancestorMovedIndex = getEventIndex("ancestorMoved");
-        raiseEventConcurrent(_ancestorMovedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.ancestorMoved(arg0);
+        raiseEventConcurrent(_ancestorMovedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.ancestorMoved(arg0);
     }
     int _ancestorResizedIndex = 0;
     //@Override
     public void ancestorResized(java.awt.event.HierarchyEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_ancestorResizedIndex <= 0) _ancestorResizedIndex = getEventIndex("ancestorResized");
-        raiseEventConcurrent(_ancestorResizedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.ancestorResized(arg0);
+        raiseEventConcurrent(_ancestorResizedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.ancestorResized(arg0);
     }
 
 }
