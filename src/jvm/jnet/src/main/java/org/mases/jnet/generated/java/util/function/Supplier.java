@@ -367,7 +367,10 @@ public final class Supplier implements org.mases.jcobridge.IJCListener, java.uti
     public java.lang.Object get() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_getIndex <= 0) _getIndex = getEventIndex("get");
-        raiseEventConcurrent(_getIndex, eventDataExchange); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (java.lang.Object)retVal;
+        raiseEventConcurrent(_getIndex, eventDataExchange);
+        if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        Object retVal = eventDataExchange.getReturnData();
+        return (java.lang.Object)retVal;
     }
 
 }

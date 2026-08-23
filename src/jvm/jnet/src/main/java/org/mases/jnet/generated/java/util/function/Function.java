@@ -367,14 +367,24 @@ public final class Function implements org.mases.jcobridge.IJCListener, java.uti
     public java.lang.Object apply(java.lang.Object arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_applyIndex <= 0) _applyIndex = getEventIndex("apply");
-        raiseEventConcurrent(_applyIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (java.lang.Object)retVal;
+        raiseEventConcurrent(_applyIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        Object retVal = eventDataExchange.getReturnData();
+        return (java.lang.Object)retVal;
     }
     int _andThenIndex = 0;
     //@Override
     public java.util.function.Function andThen(java.util.function.Function arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_andThenIndex <= 0) _andThenIndex = getEventIndex("andThen");
-        raiseEventConcurrent(_andThenIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Function.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Function)retVal;
+        raiseEventConcurrent(_andThenIndex, eventDataExchange, arg0);
+        Object retVal;
+        if (!eventDataExchange.getHasOverride()) {
+            retVal = java.util.function.Function.super.andThen(arg0);
+        } else {
+            retVal = eventDataExchange.getReturnData();
+        }
+        return (java.util.function.Function)retVal;
     }
 
     //@Override
@@ -386,7 +396,14 @@ public final class Function implements org.mases.jcobridge.IJCListener, java.uti
     public java.util.function.Function compose(java.util.function.Function arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_composeIndex <= 0) _composeIndex = getEventIndex("compose");
-        raiseEventConcurrent(_composeIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Function.super.compose(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Function)retVal;
+        raiseEventConcurrent(_composeIndex, eventDataExchange, arg0);
+        Object retVal;
+        if (!eventDataExchange.getHasOverride()) {
+            retVal = java.util.function.Function.super.compose(arg0);
+        } else {
+            retVal = eventDataExchange.getReturnData();
+        }
+        return (java.util.function.Function)retVal;
     }
 
     //@Override

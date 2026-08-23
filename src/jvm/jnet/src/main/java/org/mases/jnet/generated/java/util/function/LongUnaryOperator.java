@@ -367,14 +367,24 @@ public final class LongUnaryOperator implements org.mases.jcobridge.IJCListener,
     public long applyAsLong(long arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_applyAsLongIndex <= 0) _applyAsLongIndex = getEventIndex("applyAsLong");
-        raiseEventConcurrent(_applyAsLongIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (long)retVal;
+        raiseEventConcurrent(_applyAsLongIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        Object retVal = eventDataExchange.getReturnData();
+        return (long)retVal;
     }
     int _andThenIndex = 0;
     //@Override
     public java.util.function.LongUnaryOperator andThen(java.util.function.LongUnaryOperator arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_andThenIndex <= 0) _andThenIndex = getEventIndex("andThen");
-        raiseEventConcurrent(_andThenIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.LongUnaryOperator.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.LongUnaryOperator)retVal;
+        raiseEventConcurrent(_andThenIndex, eventDataExchange, arg0);
+        Object retVal;
+        if (!eventDataExchange.getHasOverride()) {
+            retVal = java.util.function.LongUnaryOperator.super.andThen(arg0);
+        } else {
+            retVal = eventDataExchange.getReturnData();
+        }
+        return (java.util.function.LongUnaryOperator)retVal;
     }
 
     //@Override
@@ -386,7 +396,14 @@ public final class LongUnaryOperator implements org.mases.jcobridge.IJCListener,
     public java.util.function.LongUnaryOperator compose(java.util.function.LongUnaryOperator arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_composeIndex <= 0) _composeIndex = getEventIndex("compose");
-        raiseEventConcurrent(_composeIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.LongUnaryOperator.super.compose(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.LongUnaryOperator)retVal;
+        raiseEventConcurrent(_composeIndex, eventDataExchange, arg0);
+        Object retVal;
+        if (!eventDataExchange.getHasOverride()) {
+            retVal = java.util.function.LongUnaryOperator.super.compose(arg0);
+        } else {
+            retVal = eventDataExchange.getReturnData();
+        }
+        return (java.util.function.LongUnaryOperator)retVal;
     }
 
     //@Override

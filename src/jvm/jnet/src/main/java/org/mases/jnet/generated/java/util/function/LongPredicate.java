@@ -367,14 +367,24 @@ public final class LongPredicate implements org.mases.jcobridge.IJCListener, jav
     public boolean test(long arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_testIndex <= 0) _testIndex = getEventIndex("test");
-        raiseEventConcurrent(_testIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+        raiseEventConcurrent(_testIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        Object retVal = eventDataExchange.getReturnData();
+        return (boolean)retVal;
     }
     int _andIndex = 0;
     //@Override
     public java.util.function.LongPredicate and(java.util.function.LongPredicate arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_andIndex <= 0) _andIndex = getEventIndex("and");
-        raiseEventConcurrent(_andIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.LongPredicate.super.and(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.LongPredicate)retVal;
+        raiseEventConcurrent(_andIndex, eventDataExchange, arg0);
+        Object retVal;
+        if (!eventDataExchange.getHasOverride()) {
+            retVal = java.util.function.LongPredicate.super.and(arg0);
+        } else {
+            retVal = eventDataExchange.getReturnData();
+        }
+        return (java.util.function.LongPredicate)retVal;
     }
 
     //@Override
@@ -386,7 +396,14 @@ public final class LongPredicate implements org.mases.jcobridge.IJCListener, jav
     public java.util.function.LongPredicate negate() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_negateIndex <= 0) _negateIndex = getEventIndex("negate");
-        raiseEventConcurrent(_negateIndex, eventDataExchange); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.LongPredicate.super.negate(); else retVal = eventDataExchange.getReturnData(); return (java.util.function.LongPredicate)retVal;
+        raiseEventConcurrent(_negateIndex, eventDataExchange);
+        Object retVal;
+        if (!eventDataExchange.getHasOverride()) {
+            retVal = java.util.function.LongPredicate.super.negate();
+        } else {
+            retVal = eventDataExchange.getReturnData();
+        }
+        return (java.util.function.LongPredicate)retVal;
     }
 
     //@Override
@@ -398,7 +415,14 @@ public final class LongPredicate implements org.mases.jcobridge.IJCListener, jav
     public java.util.function.LongPredicate or(java.util.function.LongPredicate arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_orIndex <= 0) _orIndex = getEventIndex("or");
-        raiseEventConcurrent(_orIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.LongPredicate.super.or(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.LongPredicate)retVal;
+        raiseEventConcurrent(_orIndex, eventDataExchange, arg0);
+        Object retVal;
+        if (!eventDataExchange.getHasOverride()) {
+            retVal = java.util.function.LongPredicate.super.or(arg0);
+        } else {
+            retVal = eventDataExchange.getReturnData();
+        }
+        return (java.util.function.LongPredicate)retVal;
     }
 
     //@Override
