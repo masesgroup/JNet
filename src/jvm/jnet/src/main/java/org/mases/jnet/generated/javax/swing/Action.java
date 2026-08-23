@@ -367,14 +367,20 @@ public final class Action implements org.mases.jcobridge.IJCListener, javax.swin
     public boolean isEnabled() {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_isEnabledIndex <= 0) _isEnabledIndex = getEventIndex("isEnabled");
-        raiseEventConcurrent(_isEnabledIndex, eventDataExchange); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+        raiseEventConcurrent(_isEnabledIndex, eventDataExchange);
+        if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        Object retVal = eventDataExchange.getReturnData();
+        return (boolean)retVal;
     }
     int _getValueIndex = 0;
     //@Override
     public java.lang.Object getValue(java.lang.String arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_getValueIndex <= 0) _getValueIndex = getEventIndex("getValue");
-        raiseEventConcurrent(_getValueIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (java.lang.Object)retVal;
+        raiseEventConcurrent(_getValueIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        Object retVal = eventDataExchange.getReturnData();
+        return (java.lang.Object)retVal;
     }
     int _actionPerformedIndex = 0;
     //@Override

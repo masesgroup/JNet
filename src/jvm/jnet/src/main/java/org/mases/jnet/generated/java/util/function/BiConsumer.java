@@ -374,7 +374,14 @@ public final class BiConsumer implements org.mases.jcobridge.IJCListener, java.u
     public java.util.function.BiConsumer andThen(java.util.function.BiConsumer arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_andThenIndex <= 0) _andThenIndex = getEventIndex("andThen");
-        raiseEventConcurrent(_andThenIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiConsumer.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiConsumer)retVal;
+        raiseEventConcurrent(_andThenIndex, eventDataExchange, arg0);
+        Object retVal;
+        if (!eventDataExchange.getHasOverride()) {
+            retVal = java.util.function.BiConsumer.super.andThen(arg0);
+        } else {
+            retVal = eventDataExchange.getReturnData();
+        }
+        return (java.util.function.BiConsumer)retVal;
     }
 
     //@Override
