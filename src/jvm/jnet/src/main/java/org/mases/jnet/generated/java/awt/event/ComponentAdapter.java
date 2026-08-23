@@ -367,28 +367,32 @@ public final class ComponentAdapter extends java.awt.event.ComponentAdapter impl
     public void componentHidden(java.awt.event.ComponentEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_componentHiddenIndex <= 0) _componentHiddenIndex = getEventIndex("componentHidden");
-        raiseEventConcurrent(_componentHiddenIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentHidden(arg0);
+        raiseEventConcurrent(_componentHiddenIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.componentHidden(arg0);
     }
     int _componentMovedIndex = 0;
     //@Override
     public void componentMoved(java.awt.event.ComponentEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_componentMovedIndex <= 0) _componentMovedIndex = getEventIndex("componentMoved");
-        raiseEventConcurrent(_componentMovedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentMoved(arg0);
+        raiseEventConcurrent(_componentMovedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.componentMoved(arg0);
     }
     int _componentResizedIndex = 0;
     //@Override
     public void componentResized(java.awt.event.ComponentEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_componentResizedIndex <= 0) _componentResizedIndex = getEventIndex("componentResized");
-        raiseEventConcurrent(_componentResizedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentResized(arg0);
+        raiseEventConcurrent(_componentResizedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.componentResized(arg0);
     }
     int _componentShownIndex = 0;
     //@Override
     public void componentShown(java.awt.event.ComponentEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_componentShownIndex <= 0) _componentShownIndex = getEventIndex("componentShown");
-        raiseEventConcurrent(_componentShownIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.componentShown(arg0);
+        raiseEventConcurrent(_componentShownIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.componentShown(arg0);
     }
 
 }

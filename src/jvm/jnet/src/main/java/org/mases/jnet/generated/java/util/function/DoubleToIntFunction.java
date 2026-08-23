@@ -367,7 +367,10 @@ public final class DoubleToIntFunction implements org.mases.jcobridge.IJCListene
     public int applyAsInt(double arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_applyAsIntIndex <= 0) _applyAsIntIndex = getEventIndex("applyAsInt");
-        raiseEventConcurrent(_applyAsIntIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (int)retVal;
+        raiseEventConcurrent(_applyAsIntIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        Object retVal = eventDataExchange.getReturnData();
+        return (int)retVal;
     }
 
 }

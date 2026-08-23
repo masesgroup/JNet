@@ -374,7 +374,14 @@ public final class DoubleConsumer implements org.mases.jcobridge.IJCListener, ja
     public java.util.function.DoubleConsumer andThen(java.util.function.DoubleConsumer arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_andThenIndex <= 0) _andThenIndex = getEventIndex("andThen");
-        raiseEventConcurrent(_andThenIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.DoubleConsumer.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.DoubleConsumer)retVal;
+        raiseEventConcurrent(_andThenIndex, eventDataExchange, arg0);
+        Object retVal;
+        if (!eventDataExchange.getHasOverride()) {
+            retVal = java.util.function.DoubleConsumer.super.andThen(arg0);
+        } else {
+            retVal = eventDataExchange.getReturnData();
+        }
+        return (java.util.function.DoubleConsumer)retVal;
     }
 
     //@Override
