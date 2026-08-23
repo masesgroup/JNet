@@ -367,7 +367,10 @@ public final class NotificationFilter implements org.mases.jcobridge.IJCListener
     public boolean isNotificationEnabled(javax.management.Notification arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_isNotificationEnabledIndex <= 0) _isNotificationEnabledIndex = getEventIndex("isNotificationEnabled");
-        raiseEventConcurrent(_isNotificationEnabledIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (boolean)retVal;
+        raiseEventConcurrent(_isNotificationEnabledIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        Object retVal = eventDataExchange.getReturnData();
+        return (boolean)retVal;
     }
 
 }
