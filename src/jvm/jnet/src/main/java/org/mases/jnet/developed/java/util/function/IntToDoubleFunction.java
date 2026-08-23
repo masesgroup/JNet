@@ -31,8 +31,7 @@ public final class IntToDoubleFunction extends JCListener implements java.util.f
 
     @Override
     public double applyAsDouble(int e) {
-        raiseEvent("applyAsDouble", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsDouble", e);
         return (double) retVal;
     }
 }

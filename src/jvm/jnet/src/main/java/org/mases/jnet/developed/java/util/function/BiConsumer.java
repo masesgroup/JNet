@@ -31,6 +31,6 @@ public final class BiConsumer extends JCListener implements java.util.function.B
 
     @Override
     public void accept(Object e1, Object e2) {
-        raiseEvent("accept", e1, e2);
+        raiseEventConcurrent("accept", e1, e2);
     }
 }

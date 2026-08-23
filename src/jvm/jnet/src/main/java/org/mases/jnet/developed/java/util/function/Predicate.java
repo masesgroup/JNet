@@ -31,8 +31,7 @@ public final class Predicate extends JCListener implements java.util.function.Pr
 
     @Override
     public boolean test(Object e) {
-        raiseEvent("test", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("test", e);
         return (boolean) retVal;
     }
 }
