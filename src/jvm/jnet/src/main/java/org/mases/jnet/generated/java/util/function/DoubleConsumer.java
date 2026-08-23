@@ -189,14 +189,47 @@ public final class DoubleConsumer implements org.mases.jcobridge.IJCListener, ja
     * <p>If {@link #_forceSynchronized} is {@code true}, falls back to {@link #raiseEvent(int)}
     * and returns {@link #getReturnData()}.</p>
     *
+    * @param eventName the name of the event to raise.
+    * @return the return value provided by the CLR handler, or {@code null}.
+    * @since 2.6.10.0
+    */
+   public Object raiseEventConcurrent(String eventName) {
+      return _internalListener.raiseEventConcurrent(eventName);
+   }
+
+   /**
+    * Raises the event identified by numeric index on the CLR side with no associated data.
+    * Different events proceed in parallel. Returns the value set by the CLR handler via
+    * {@link #setReturnData(long, Object)}, or {@code null} for void events.
+    *
+    * <p>If {@link #_forceSynchronized} is {@code true}, falls back to {@link #raiseEvent(int)}
+    * and returns {@link #getReturnData()}.</p>
+    *
     * @param eventIndex the numeric index of the event to raise, as returned by
     *                   {@link #getEventIndex(String)}.
     * @return the return value provided by the CLR handler, or {@code null}.
     * @since 2.6.10.0
     */
-   @SuppressWarnings("finally")
    public Object raiseEventConcurrent(int eventIndex) {
       return _internalListener.raiseEventConcurrent(eventIndex);
+   }
+
+   /**
+    * Raises the event identified by numeric index on the CLR side, passing a single data object.
+    * Different events proceed in parallel. The data object is accessible from the CLR handler
+    * via {@link #getEventData(long)}. Returns the value set by the CLR handler via
+    * {@link #setReturnData(long, Object)}, or {@code null} for void events.
+    *
+    * <p>If {@link #_forceSynchronized} is {@code true}, falls back to
+    * {@link #raiseEvent(int, Object)} and returns {@link #getReturnData()}.</p>
+    *
+    * @param eventName the name of the event to raise.
+    * @param e         the data object associated with the event.
+    * @return the return value provided by the CLR handler, or {@code null}.
+    * @since 2.6.10.0
+    */
+   public Object raiseEventConcurrent(String eventName, Object e) {
+      return _internalListener.raiseEventConcurrent(eventName, e);
    }
 
    /**
@@ -213,9 +246,27 @@ public final class DoubleConsumer implements org.mases.jcobridge.IJCListener, ja
     * @return the return value provided by the CLR handler, or {@code null}.
     * @since 2.6.10.0
     */
-   @SuppressWarnings("finally")
    public Object raiseEventConcurrent(int eventIndex, Object e) {
       return _internalListener.raiseEventConcurrent(eventIndex, e);
+   }
+
+   /**
+    * Raises the event identified by numeric index on the CLR side, passing a primary data object
+    * and additional arguments. Different events proceed in parallel. Returns the value set by
+    * the CLR handler via {@link #setReturnData(long, Object)}, or {@code null} for void events.
+    *
+    * <p>If {@link #_forceSynchronized} is {@code true}, falls back to
+    * {@link #raiseEvent(int, Object, Object...)} and returns {@link #getReturnData()}.</p>
+    *
+    * @param eventName the name of the event to raise.
+    * @param e         the primary data object associated with the event.
+    * @param objects   additional arguments forwarded to the CLR handler, accessible via
+    *                  {@link #extraData(long)}.
+    * @return the return value provided by the CLR handler, or {@code null}.
+    * @since 2.6.10.0
+    */
+   public Object raiseEventConcurrent(String eventName, Object e, Object... objects) {
+      return _internalListener.raiseEventConcurrent(eventName, e, objects);
    }
 
    /**
@@ -233,7 +284,6 @@ public final class DoubleConsumer implements org.mases.jcobridge.IJCListener, ja
     * @return the return value provided by the CLR handler, or {@code null}.
     * @since 2.6.10.0
     */
-   @SuppressWarnings("finally")
    public Object raiseEventConcurrent(int eventIndex, Object e, Object... objects) {
       return _internalListener.raiseEventConcurrent(eventIndex, e, objects);
    }
