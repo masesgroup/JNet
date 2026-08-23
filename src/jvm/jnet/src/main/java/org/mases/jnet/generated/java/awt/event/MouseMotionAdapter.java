@@ -367,14 +367,16 @@ public final class MouseMotionAdapter extends java.awt.event.MouseMotionAdapter 
     public void mouseDragged(java.awt.event.MouseEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_mouseDraggedIndex <= 0) _mouseDraggedIndex = getEventIndex("mouseDragged");
-        raiseEventConcurrent(_mouseDraggedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.mouseDragged(arg0);
+        raiseEventConcurrent(_mouseDraggedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.mouseDragged(arg0);
     }
     int _mouseMovedIndex = 0;
     //@Override
     public void mouseMoved(java.awt.event.MouseEvent arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_mouseMovedIndex <= 0) _mouseMovedIndex = getEventIndex("mouseMoved");
-        raiseEventConcurrent(_mouseMovedIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) super.mouseMoved(arg0);
+        raiseEventConcurrent(_mouseMovedIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) super.mouseMoved(arg0);
     }
 
 }

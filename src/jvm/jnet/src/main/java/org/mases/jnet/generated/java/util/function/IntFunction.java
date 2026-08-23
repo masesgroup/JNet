@@ -367,7 +367,10 @@ public final class IntFunction implements org.mases.jcobridge.IJCListener, java.
     public java.lang.Object apply(int arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_applyIndex <= 0) _applyIndex = getEventIndex("apply");
-        raiseEventConcurrent(_applyIndex, eventDataExchange, arg0); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM"); Object retVal = eventDataExchange.getReturnData(); return (java.lang.Object)retVal;
+        raiseEventConcurrent(_applyIndex, eventDataExchange, arg0);
+        if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException("The method shall be implemented in .NET side since does not have a default implementation within the JVM");
+        Object retVal = eventDataExchange.getReturnData();
+        return (java.lang.Object)retVal;
     }
 
 }

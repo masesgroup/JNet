@@ -374,7 +374,14 @@ public final class LongConsumer implements org.mases.jcobridge.IJCListener, java
     public java.util.function.LongConsumer andThen(java.util.function.LongConsumer arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
         if (_andThenIndex <= 0) _andThenIndex = getEventIndex("andThen");
-        raiseEventConcurrent(_andThenIndex, eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.LongConsumer.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.LongConsumer)retVal;
+        raiseEventConcurrent(_andThenIndex, eventDataExchange, arg0);
+        Object retVal;
+        if (!eventDataExchange.getHasOverride()) {
+            retVal = java.util.function.LongConsumer.super.andThen(arg0);
+        } else {
+            retVal = eventDataExchange.getReturnData();
+        }
+        return (java.util.function.LongConsumer)retVal;
     }
 
     //@Override
