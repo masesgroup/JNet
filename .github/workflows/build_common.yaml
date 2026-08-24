@@ -727,6 +727,7 @@ jobs:
         run: |
           set +e
           for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
+            echo "=== Starting $TEST at $(date) ==="
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }} &
             PID=$!
 
@@ -739,7 +740,7 @@ jobs:
                 kill -QUIT $PID
                 sleep 5
                 # also grab a jstack copy to a file, in case stdout capture missed something
-                jstack -l $PID > "${{ github.workspace }}/threaddump_$TEST_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}.txt" 2>&1
+                jstack -l $PID > "${{ github.workspace }}/threaddump_${TEST}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}.txt" 2>&1
                 sleep 2
                 kill -9 $PID 2>/dev/null
                 echo "STUCK=true" >> $GITHUB_ENV
@@ -765,6 +766,7 @@ jobs:
       #  timeout-minutes: 5
       #  run: |
       #    for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
+      #      echo "=== Starting $TEST at $(date) ==="
       #      dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
       #    done
 
