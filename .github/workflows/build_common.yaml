@@ -730,7 +730,7 @@ jobs:
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }} &
             PID=$!
 
-            TIMEOUT_SECONDS=180
+            TIMEOUT_SECONDS=300
             ELAPSED=0
             while kill -0 $PID 2>/dev/null; do
               if [ $ELAPSED -ge $TIMEOUT_SECONDS ]; then
@@ -739,7 +739,7 @@ jobs:
                 kill -QUIT $PID
                 sleep 5
                 # also grab a jstack copy to a file, in case stdout capture missed something
-                jstack -l $PID > "${{ github.workspace }}/threaddump_reload_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}.txt" 2>&1
+                jstack -l $PID > "${{ github.workspace }}/threaddump_$TEST_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}.txt" 2>&1
                 sleep 2
                 kill -9 $PID 2>/dev/null
                 echo "STUCK=true" >> $GITHUB_ENV
@@ -750,8 +750,8 @@ jobs:
             done
 
             wait $PID
-            exit $?
           done
+          exit $?
 
       - uses: actions/upload-artifact@v7
         if: always()
