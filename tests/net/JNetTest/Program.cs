@@ -39,13 +39,13 @@ namespace MASES.JNetTest
 
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Starting JNetTest");
+            TestLogger.LogBasic("Starting JNetTest");
 
 #if DEBUG
             printVerbose = true;
             if (!System.Diagnostics.Debugger.IsAttached)
             {
-                System.Console.WriteLine("Press a button to start");
+                TestLogger.LogBasic("Press a button to start");
                 System.Console.ReadKey();
             }
 #endif
@@ -105,21 +105,21 @@ namespace MASES.JNetTest
                     {
                         if (ae.InnerException is not UnsupportedOperationException)
                         {
-                            System.Console.WriteLine($"Not expected exception: {ae.InnerException.GetType()}");
+                            TestLogger.LogBasic($"Not expected exception: {ae.InnerException.GetType()}");
                             throw;
                         }
                         else
                         {
                             if (ae.InnerException.InnerException is not UnsupportedOperationException)
                             {
-                                System.Console.WriteLine($"Not expected exception: {ae.InnerException.InnerException.GetType()}");
+                                TestLogger.LogBasic($"Not expected exception: {ae.InnerException.InnerException.GetType()}");
                                 throw;
                             }
                             else
                             {
                                 if (ae.InnerException.InnerException.InnerException is not UnsupportedOperationException)
                                 {
-                                    System.Console.WriteLine($"Not expected exception: {ae.InnerException.InnerException.InnerException.GetType()}");
+                                    TestLogger.LogBasic($"Not expected exception: {ae.InnerException.InnerException.InnerException.GetType()}");
                                     throw;
                                 }
                             }
@@ -129,13 +129,13 @@ namespace MASES.JNetTest
             }
             catch (System.Exception e)
             {
-                System.Console.WriteLine(e);
+                TestLogger.LogBasic(e);
                 System.Environment.ExitCode = 1;
             }
             finally
             {
                 stopwatch.Stop();
-                System.Console.WriteLine($"All tests completed in {stopwatch.Elapsed}");
+                TestLogger.LogBasic($"All tests completed in {stopwatch.Elapsed}");
             }
         }
 
@@ -149,11 +149,11 @@ namespace MASES.JNetTest
                 JNetTestCore.CreateGlobalInstance();
                 var appArgs = JNetTestCore.FilteredArgs;
 
-                System.Console.WriteLine("Initialized JNetTestCore" + (appArgs.Length != 0 ? $", remaining arguments are {string.Join(" ", appArgs)}" : string.Empty));
+                TestLogger.LogBasic("Initialized JNetTestCore" + (appArgs.Length != 0 ? $", remaining arguments are {string.Join(" ", appArgs)}" : string.Empty));
             }
             catch (Exception ex)
             {
-                System.Console.WriteLine(ex);
+                TestLogger.LogBasic(ex);
                 throw;
             }
         }
@@ -161,7 +161,7 @@ namespace MASES.JNetTest
         static void TestCreateObjects()
         {
             const string dataToUse = "Long string to be written";
-            System.Console.WriteLine("TestCreateObjects");
+            TestLogger.LogBasic("TestCreateObjects");
 
             Java.Lang.String str = new String();
             str = str.Concat(dataToUse);
@@ -188,7 +188,7 @@ namespace MASES.JNetTest
 
         static void TestVarArg()
         {
-            System.Console.WriteLine("TestVarArg");
+            TestLogger.LogBasic("TestVarArg");
             const string formatToUSe = "This is the %d %s for a %s";
             for (int i = 0; i < 10; i++)
             {
@@ -222,14 +222,14 @@ namespace MASES.JNetTest
                 }
                 else if (fallback || fallback2)
                 {
-                    System.Console.WriteLine($"Test ended in right way with fallback ({fallback}) and fallback2 ({fallback2})");
+                    TestLogger.LogBasic($"Test ended in right way with fallback ({fallback}) and fallback2 ({fallback2})");
                 }
             }
         }
 
         static void TestEnum()
         {
-            System.Console.WriteLine("TestEnum");
+            TestLogger.LogBasic("TestEnum");
 
             ElementType type = ElementType.ANNOTATION_TYPE;
 
@@ -276,13 +276,13 @@ namespace MASES.JNetTest
 
         static void TestListeners(string expectedResult)
         {
-            System.Console.WriteLine($"TestListeners of {expectedResult}");
+            TestLogger.LogBasic($"TestListeners of {expectedResult}");
 
             using var consumer = new Consumer<Java.Lang.String>()
             {
                 OnAccept = (o) =>
                 {
-                    System.Console.WriteLine($"Consumer Accept {o}");
+                    TestLogger.LogBasic($"Consumer Accept {o}");
                 }
             };
 
@@ -303,7 +303,7 @@ namespace MASES.JNetTest
 
         static void TestSingleton()
         {
-            System.Console.WriteLine("TestSingleton");
+            TestLogger.LogBasic("TestSingleton");
 
             try
             {
@@ -312,25 +312,25 @@ namespace MASES.JNetTest
             }
             catch (UnsupportedOperationException)
             {
-                System.Console.WriteLine("Add Operation not supported as expected");
+                TestLogger.LogBasic("Add Operation not supported as expected");
             }
-            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); throw; }
+            catch (System.Exception ex) { TestLogger.LogBasic(ex.Message); throw; }
         }
 
         static void TestEquality()
         {
-            System.Console.WriteLine("TestEquality");
+            TestLogger.LogBasic("TestEquality");
 
             var cls = Java.Lang.Class.Of<Vector<string>>();
             var cls2 = JNetHelper.Class<Vector<string>>();
 
             var res = cls.Equals(cls2);
-            System.Console.WriteLine($"Class are equals: {res}");
+            TestLogger.LogBasic($"Class are equals: {res}");
         }
 
         static void TestMemoryStream()
         {
-            System.Console.WriteLine("TestMemoryStream");
+            TestLogger.LogBasic("TestMemoryStream");
 
             System.IO.MemoryStream ms = new();
             for (int i = 0; i < 100000; i++)
@@ -339,12 +339,12 @@ namespace MASES.JNetTest
             }
 
             ByteBuffer bb = (ByteBuffer)ms;
-            System.Console.WriteLine($"ByteBuffer IsDirect={bb.IsDirect()}");
+            TestLogger.LogBasic($"ByteBuffer IsDirect={bb.IsDirect()}");
         }
 
         static void TestByteBuffers()
         {
-            System.Console.WriteLine("TestByteBuffers");
+            TestLogger.LogBasic("TestByteBuffers");
 
             byte[] bytes = new byte[100000];
             for (int i = 0; i < bytes.Length; i++)
@@ -400,7 +400,7 @@ namespace MASES.JNetTest
 
         static void TestArrays()
         {
-            System.Console.WriteLine("TestArrays");
+            TestLogger.LogBasic("TestArrays");
 
             ArrayList<int[]> arr = JVMBridgeBase.New<ArrayList<int[]>>();
             arr.Add(new int[] { 0, 1 });
@@ -423,7 +423,7 @@ namespace MASES.JNetTest
 
         static void TestOperators()
         {
-            System.Console.WriteLine("TestOperators");
+            TestLogger.LogBasic("TestOperators");
 
             const string StringA = "StringA";
             const string StringB = "StringB";
@@ -465,7 +465,7 @@ namespace MASES.JNetTest
 
         static void TestSimpleOperatorsExtension()
         {
-            System.Console.WriteLine("TestSimpleOperatorsExtension");
+            TestLogger.LogBasic("TestSimpleOperatorsExtension");
 
             TestSimpleOperatorsExtension<Java.Lang.String, string>("a", "b", "c");
         }
@@ -486,7 +486,7 @@ namespace MASES.JNetTest
 
         static async Task TestAsyncIterator()
         {
-            System.Console.WriteLine("TestAsyncIterator");
+            TestLogger.LogBasic("TestAsyncIterator");
 
             const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
@@ -533,7 +533,7 @@ namespace MASES.JNetTest
 
         static async Task TestAsyncOperation(int index, bool withEx)
         {
-            System.Console.WriteLine($"TestAsyncOperation {index} withEx {withEx}");
+            TestLogger.LogBasic($"TestAsyncOperation {index} withEx {withEx}");
 
             var clazz = JVMBridgeBase.ClazzOf<TestFuture>();
 
@@ -553,7 +553,7 @@ namespace MASES.JNetTest
 
         static void TestIterator(bool usePrefetch, bool useThread)
         {
-            System.Console.WriteLine($"TestIterator with useThread {useThread} - usePrefetch {usePrefetch}");
+            TestLogger.LogBasic($"TestIterator with useThread {useThread} - usePrefetch {usePrefetch}");
 
             const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
@@ -582,7 +582,7 @@ namespace MASES.JNetTest
 
         static void TestExtensions()
         {
-            System.Console.WriteLine("TestExtensions");
+            TestLogger.LogBasic("TestExtensions");
 
             System.Collections.Generic.Dictionary<string, bool> dict = new();
             dict.Add("true", true);
@@ -611,7 +611,7 @@ namespace MASES.JNetTest
                 w.Stop();
                 tuple = new System.Tuple<string, long>("ArrayList Raw int Add", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
-                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed ticks: {w.Elapsed.Ticks}");
+                if (printVerbose) TestLogger.LogBasic($"{tuple.Item1} Elapsed ticks: {w.Elapsed.Ticks}");
 
                 w.Restart();
                 Java.Util.ArrayList<Integer> alist = new();
@@ -622,7 +622,7 @@ namespace MASES.JNetTest
                 w.Stop();
                 tuple = new System.Tuple<string, long>("ArrayList Integer Add", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
-                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed ticks: {w.Elapsed.Ticks}");
+                if (printVerbose) TestLogger.LogBasic($"{tuple.Item1} Elapsed ticks: {w.Elapsed.Ticks}");
 
                 w.Restart();
                 System.Collections.Generic.List<int> nlist = new System.Collections.Generic.List<int>();
@@ -634,7 +634,7 @@ namespace MASES.JNetTest
                 tuple = new System.Tuple<string, long>("System.Collections.Generic.List", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
                 var referenceValue = w.Elapsed.Ticks;
-                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {referenceValue}");
+                if (printVerbose) TestLogger.LogBasic($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {referenceValue}");
 
                 var tmpArray = nlist.ToArray();
 
@@ -644,14 +644,14 @@ namespace MASES.JNetTest
                 w.Stop();
                 tuple = new System.Tuple<string, long>("Java.Util.ArrayList from array", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
-                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
+                if (printVerbose) TestLogger.LogBasic($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
                 var intBuffer = IntBuffer.From(tmpArray, false);
                 w.Stop();
                 tuple = new System.Tuple<string, long>("IntBuffer.From from raw array", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
-                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
+                if (printVerbose) TestLogger.LogBasic($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
                 var tmpJList2 = JNetHelper.ListFrom(intBuffer);
@@ -659,7 +659,7 @@ namespace MASES.JNetTest
                 w.Stop();
                 tuple = new System.Tuple<string, long>("Java.Util.ArrayList from array premade buffer", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
-                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
+                if (printVerbose) TestLogger.LogBasic($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
                 var tmpJList3 = JNetHelper.ListFrom(tmpArray, true);
@@ -667,14 +667,14 @@ namespace MASES.JNetTest
                 w.Stop();
                 tuple = new System.Tuple<string, long>("Java.Util.ArrayList from raw array buffered", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
-                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
+                if (printVerbose) TestLogger.LogBasic($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
                 var list = ((List<Integer>)alist).ToList();
                 w.Stop();
                 tuple = new System.Tuple<string, long>("Java.Util.ArrayList ToList", w.Elapsed.Ticks);
                 singleExecutionData.Add(tuple);
-                if (printVerbose) System.Console.WriteLine($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
+                if (printVerbose) TestLogger.LogBasic($"{tuple.Item1} Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 executionData.Add(singleExecutionData);
             }
@@ -694,7 +694,7 @@ namespace MASES.JNetTest
                     var stdDev = items.PopulationStandardDeviation();
                     var ratio = 100 * stdDev / mean;
 
-                    System.Console.WriteLine($"Test {executionData[0][i].Item1} avoiding first {howManyIterationAvoid} iterations - Mean {System.TimeSpan.FromTicks((long)mean)} - StdDev {System.TimeSpan.FromTicks((long)stdDev)} - Ratio {ratio} %");
+                    TestLogger.LogBasic($"Test {executionData[0][i].Item1} avoiding first {howManyIterationAvoid} iterations - Mean {System.TimeSpan.FromTicks((long)mean)} - StdDev {System.TimeSpan.FromTicks((long)stdDev)} - Ratio {ratio} %");
                 }
             }
         }

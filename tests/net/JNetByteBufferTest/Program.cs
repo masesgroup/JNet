@@ -17,7 +17,6 @@
 */
 
 using Java.Nio;
-using Javax.Xml.Crypto;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNetTest.Common;
@@ -35,12 +34,12 @@ namespace MASES.JNetByteBufferTest
         const int iterations = 100;
         static void Main(string[] args)
         {
-            Console.WriteLine("Starting JNetByteBufferTest");
+            TestLogger.LogBasic("Starting JNetByteBufferTest");
 
 #if DEBUG
             if (!System.Diagnostics.Debugger.IsAttached)
             {
-                System.Console.WriteLine("Press a button to start");
+                TestLogger.LogBasic("Press a button to start");
                 System.Console.ReadKey();
             }
 #endif
@@ -51,7 +50,7 @@ namespace MASES.JNetByteBufferTest
 
             ExecuteTests(filteredArgs);
 
-            Console.WriteLine("Enabling Critical methods");
+            TestLogger.LogBasic("Enabling Critical methods");
 
             var management = JNetTestCore.GlobalInstance.Management;
 
@@ -61,7 +60,7 @@ namespace MASES.JNetByteBufferTest
             ExecuteTests(filteredArgs);
 
             stopwatch.Stop();
-            System.Console.WriteLine($"All tests completed in {stopwatch.Elapsed}");
+            TestLogger.LogBasic($"All tests completed in {stopwatch.Elapsed}");
         }
 
         static string[] Initialize()
@@ -74,21 +73,21 @@ namespace MASES.JNetByteBufferTest
                 JNetTestCore.CreateGlobalInstance();
                 var appArgs = JNetTestCore.FilteredArgs;
 
-                System.Console.WriteLine("Initialized JNetTestCore" + (appArgs.Length != 0 ? $", remaining arguments are {string.Join(" ", appArgs)}" : string.Empty));
+                TestLogger.LogBasic("Initialized JNetTestCore" + (appArgs.Length != 0 ? $", remaining arguments are {string.Join(" ", appArgs)}" : string.Empty));
 
                 return appArgs;
             }
             catch (Exception ex)
             {
-                System.Console.WriteLine(ex);
+                TestLogger.LogBasic(ex);
                 throw;
             }
         }
 
         static void ExecuteTests(string[] args)
         {
-            Console.WriteLine("Start get from JVM to CLR");
-            string[] tests = new string[] { "TestGetByteArrayDataUsage", "TestGetByteBuffersDataUsage", "TestGetByteBuffers", "TestInsertByteBuffers", "TestInsertByteBuffersNativeStream", "TestInsertByteBuffersRecyclableMemoryStream" };
+            TestLogger.LogBasic("Start get from JVM to CLR");
+            string[] tests = new string[] { "TestGetByteArrayDataUsage", "TestGetByteArrayDataUsageRaw", "TestGetByteBuffersDataUsage", "TestGetByteBuffers", "TestInsertByteBuffers", "TestInsertByteBuffersNativeStream", "TestInsertByteBuffersRecyclableMemoryStream" };
             if (args.Length == 1) tests = new string[] { args[0] };
 
             foreach (var item in tests)
@@ -98,7 +97,10 @@ namespace MASES.JNetByteBufferTest
                     switch (item)
                     {
                         case "TestGetByteArrayDataUsage":
-                            TestGetByteArrayDataUsage(iterations, i);
+                            TestGetByteArrayDataUsage(iterations, i, false);
+                            break;
+                        case "TestGetByteArrayDataUsageRaw":
+                            TestGetByteArrayDataUsage(iterations, i, true);
                             break;
                         case "TestGetByteBuffersDataUsage":
                             TestGetByteBuffersDataUsage(iterations, i);
@@ -123,7 +125,7 @@ namespace MASES.JNetByteBufferTest
 
         static void TestInsertByteBuffers(int requestedIterations, int length)
         {
-            Console.WriteLine($"TestInsertByteBuffers with {requestedIterations} iterations and {length} length");
+            TestLogger.LogBasic($"TestInsertByteBuffers with {requestedIterations} iterations and {length} length");
             int i = 0;
             try
             {
@@ -139,7 +141,7 @@ namespace MASES.JNetByteBufferTest
                 System.GC.Collect();
                 Java.Lang.System.Gc();
 
-                Console.WriteLine($"Created TestArrayAndByteBuffer");
+                TestLogger.LogAdvanced($"Created TestArrayAndByteBuffer");
 
                 Stopwatch watcher1 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -150,13 +152,13 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertArray at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break insertArray at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End insertArray Elapsed {watcher1.Elapsed}");
+                TestLogger.LogAdvanced($"End insertArray Elapsed {watcher1.Elapsed}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -170,13 +172,13 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBuffer at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break insertByteBuffer at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher2.Stop();
 
-                Console.WriteLine($"End insertByteBuffer Elapsed {watcher2.Elapsed}");
+                TestLogger.LogAdvanced($"End insertByteBuffer Elapsed {watcher2.Elapsed}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -190,13 +192,13 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBufferNoNew at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break insertByteBufferNoNew at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher3.Stop();
 
-                Console.WriteLine($"End insertByteBufferNoNew Elapsed {watcher3.Elapsed}");
+                TestLogger.LogAdvanced($"End insertByteBufferNoNew Elapsed {watcher3.Elapsed}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -210,26 +212,26 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBufferNoGet at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break insertByteBufferNoGet at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher4.Stop();
 
-                Console.WriteLine($"End insertByteBufferNoGet Elapsed {watcher4.Elapsed}");
+                TestLogger.LogAdvanced($"End insertByteBufferNoGet Elapsed {watcher4.Elapsed}");
 
-                Console.WriteLine($"{length,Padding} Mean Time over {requestedIterations} iterations - Array {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ByteBuffer {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher4.Elapsed.Ticks) * 100:0.##}%)");
+                TestLogger.LogBasic($"{length,Padding} Mean Time over {requestedIterations} iterations - Array {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ByteBuffer {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher4.Elapsed.Ticks) * 100:0.##}%)");
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {i}");
+                TestLogger.LogBasic($"Failed at iteration: {i}");
                 throw;
             }
         }
 
         static void TestInsertByteBuffersNativeStream(int requestedIterations, int length)
         {
-            Console.WriteLine($"TestInsertByteBuffersNativeStream with {requestedIterations} iterations and {length} length");
+            TestLogger.LogBasic($"TestInsertByteBuffersNativeStream with {requestedIterations} iterations and {length} length");
             int i = 0;
             try
             {
@@ -248,7 +250,7 @@ namespace MASES.JNetByteBufferTest
                 System.GC.Collect();
                 Java.Lang.System.Gc();
 
-                Console.WriteLine($"Created TestArrayAndByteBuffer");
+                TestLogger.LogAdvanced($"Created TestArrayAndByteBuffer");
 
                 Stopwatch watcher1 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -259,13 +261,13 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertArray at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break insertArray at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End insertArray Elapsed {watcher1.Elapsed}");
+                TestLogger.LogAdvanced($"End insertArray Elapsed {watcher1.Elapsed}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -279,13 +281,13 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBuffer at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break insertByteBuffer at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher2.Stop();
 
-                Console.WriteLine($"End insertByteBuffer Elapsed {watcher2.Elapsed}");
+                TestLogger.LogAdvanced($"End insertByteBuffer Elapsed {watcher2.Elapsed}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -299,13 +301,13 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBufferNoNew at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break insertByteBufferNoNew at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher3.Stop();
 
-                Console.WriteLine($"End insertByteBufferNoNew Elapsed {watcher3.Elapsed}");
+                TestLogger.LogAdvanced($"End insertByteBufferNoNew Elapsed {watcher3.Elapsed}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -319,26 +321,26 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBufferNoGet at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break insertByteBufferNoGet at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher4.Stop();
 
-                Console.WriteLine($"End insertByteBufferNoGet Elapsed {watcher4.Elapsed}");
+                TestLogger.LogAdvanced($"End insertByteBufferNoGet Elapsed {watcher4.Elapsed}");
 
-                Console.WriteLine($"{length,Padding} Mean Time over {requestedIterations} iterations - Array {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ByteBuffer {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher4.Elapsed.Ticks) * 100:0.##}%)");
+                TestLogger.LogBasic($"{length,Padding} Mean Time over {requestedIterations} iterations - Array {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ByteBuffer {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher4.Elapsed.Ticks) * 100:0.##}%)");
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {i}");
+                TestLogger.LogBasic($"Failed at iteration: {i}");
                 throw;
             }
         }
 
         static void TestInsertByteBuffersRecyclableMemoryStream(int requestedIterations, int length)
         {
-            Console.WriteLine($"TestInsertByteBuffersRecyclableMemoryStream with {requestedIterations} iterations and {length} length");
+            TestLogger.LogBasic($"TestInsertByteBuffersRecyclableMemoryStream with {requestedIterations} iterations and {length} length");
             int i = 0;
             try
             {
@@ -360,7 +362,7 @@ namespace MASES.JNetByteBufferTest
                 System.GC.Collect();
                 Java.Lang.System.Gc();
 
-                Console.WriteLine($"Created TestArrayAndByteBuffer");
+                TestLogger.LogAdvanced($"Created TestArrayAndByteBuffer");
 
                 Stopwatch watcher1 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -371,13 +373,13 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertArray at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break insertArray at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End insertArray Elapsed {watcher1.Elapsed}");
+                TestLogger.LogAdvanced($"End insertArray Elapsed {watcher1.Elapsed}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -391,13 +393,13 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBuffer at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break insertByteBuffer at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher2.Stop();
 
-                Console.WriteLine($"End insertByteBuffer Elapsed {watcher2.Elapsed}");
+                TestLogger.LogAdvanced($"End insertByteBuffer Elapsed {watcher2.Elapsed}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -411,13 +413,13 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBufferNoNew at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break insertByteBufferNoNew at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher3.Stop();
 
-                Console.WriteLine($"End insertByteBufferNoNew Elapsed {watcher3.Elapsed}");
+                TestLogger.LogAdvanced($"End insertByteBufferNoNew Elapsed {watcher3.Elapsed}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -431,26 +433,26 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBufferNoGet at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break insertByteBufferNoGet at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher4.Stop();
 
-                Console.WriteLine($"End insertByteBufferNoGet Elapsed {watcher4.Elapsed}");
+                TestLogger.LogAdvanced($"End insertByteBufferNoGet Elapsed {watcher4.Elapsed}");
 
-                Console.WriteLine($"{length,Padding} Mean Time over {requestedIterations} iterations - Array {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ByteBuffer {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher4.Elapsed.Ticks) * 100:0.##}%)");
+                TestLogger.LogBasic($"{length,Padding} Mean Time over {requestedIterations} iterations - Array {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ByteBuffer {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher4.Elapsed.Ticks) * 100:0.##}%)");
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {i}");
+                TestLogger.LogBasic($"Failed at iteration: {i}");
                 throw;
             }
         }
 
         static void TestGetByteBuffers(int requestedIterations, int length)
         {
-            Console.WriteLine($"TestGetByteBuffers with {requestedIterations} iterations and {length} length");
+            TestLogger.LogBasic($"TestGetByteBuffers with {requestedIterations} iterations and {length} length");
             int i = 0;
             try
             {
@@ -460,7 +462,7 @@ namespace MASES.JNetByteBufferTest
                 System.GC.Collect();
                 Java.Lang.System.Gc();
 
-                Console.WriteLine($"Created TestArrayAndByteBuffer");
+                TestLogger.LogAdvanced($"Created TestArrayAndByteBuffer");
 
                 Stopwatch watcher1 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -470,7 +472,7 @@ namespace MASES.JNetByteBufferTest
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End getArray Elapsed {watcher1.Elapsed}");
+                TestLogger.LogAdvanced($"End getArray Elapsed {watcher1.Elapsed}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -484,7 +486,7 @@ namespace MASES.JNetByteBufferTest
                 }
                 watcher2.Stop();
 
-                Console.WriteLine($"End getByteBuffer -> ByteBuffer -> ToArray Elapsed {watcher2.Elapsed}");
+                TestLogger.LogAdvanced($"End getByteBuffer -> ByteBuffer -> ToArray Elapsed {watcher2.Elapsed}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -498,7 +500,7 @@ namespace MASES.JNetByteBufferTest
                 }
                 watcher3.Stop();
 
-                Console.WriteLine($"End getByteBuffer -> ByteBuffer -> ToArray with noResize Elapsed {watcher3.Elapsed}");
+                TestLogger.LogAdvanced($"End getByteBuffer -> ByteBuffer -> ToArray with noResize Elapsed {watcher3.Elapsed}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -517,7 +519,7 @@ namespace MASES.JNetByteBufferTest
                 }
                 finally { handle.Free(); }
 
-                Console.WriteLine($"End getByteBuffer -> ByteBuffer -> ToDirectBuffer -> CopyTo Elapsed {watcher4.Elapsed}");
+                TestLogger.LogAdvanced($"End getByteBuffer -> ByteBuffer -> ToDirectBuffer -> CopyTo Elapsed {watcher4.Elapsed}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -530,13 +532,13 @@ namespace MASES.JNetByteBufferTest
                 }
                 watcher5.Stop();
 
-                Console.WriteLine($"End getByteBuffer -> ByteBuffer -> Remaining Elapsed {watcher5.Elapsed}");
+                TestLogger.LogAdvanced($"End getByteBuffer -> ByteBuffer -> Remaining Elapsed {watcher5.Elapsed}");
 
-                Console.WriteLine($"{length,Padding} Mean Time over {requestedIterations} iterations - Array {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ByteBuffer {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoAlloc {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher4.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher5.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher5.Elapsed.Ticks) * 100:0.##}%)");
+                TestLogger.LogBasic($"{length,Padding} Mean Time over {requestedIterations} iterations - Array {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ByteBuffer {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoAlloc {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher4.Elapsed.Ticks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher5.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher5.Elapsed.Ticks) * 100:0.##}%)");
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {i}");
+                TestLogger.LogBasic($"Failed at iteration: {i}");
                 throw;
             }
         }
@@ -576,9 +578,9 @@ namespace MASES.JNetByteBufferTest
             return ms.ToArray().SequenceEqual(array);
         }
 
-        static void TestGetByteArrayDataUsage(int requestedIterations, int length)
+        static void TestGetByteArrayDataUsage(int requestedIterations, int length, bool forceRawMemory)
         {
-            Console.WriteLine($"TestGetByteArrayDataUsage with {requestedIterations} iterations and {length} length");
+            TestLogger.LogBasic($"TestGetByteArrayDataUsage with {requestedIterations} iterations and {length} length, forceRawMemory is {forceRawMemory}");
             int iteration = 0;
             try
             {
@@ -592,7 +594,7 @@ namespace MASES.JNetByteBufferTest
                 System.GC.Collect();
                 Java.Lang.System.Gc();
 
-                Console.WriteLine($"Created TestArrayAndByteBuffer");
+                TestLogger.LogAdvanced($"Created TestArrayAndByteBuffer");
 
                 Stopwatch watcher1 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
@@ -602,7 +604,7 @@ namespace MASES.JNetByteBufferTest
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End getArray -> Invoke<byte[]> -> SequenceEqual Elapsed {watcher1.Elapsed} - Mean {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / iteration)}");
+                TestLogger.LogAdvanced($"End getArray -> Invoke<byte[]> -> SequenceEqual Elapsed {watcher1.Elapsed} - Mean {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / iteration)}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -611,12 +613,12 @@ namespace MASES.JNetByteBufferTest
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
                     using var res = jClass.Invoke("getArray") as IJavaArray;
-                    using JCOBridgeStream<byte> stream = res.ToStream<byte>();
+                    using JCOBridgeStream<byte> stream = res.ToStream<byte>(forceRawMemory: forceRawMemory);
                     if (!AreEqualChunked(stream, bytes)) { throw new System.Exception(); }
                 }
                 watcher2.Stop();
 
-                Console.WriteLine($"End getArray -> AreEqualChunked Elapsed {watcher2.Elapsed} - Mean {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / iteration)}");
+                TestLogger.LogAdvanced($"End getArray -> AreEqualChunked Elapsed {watcher2.Elapsed} - Mean {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / iteration)}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -625,25 +627,25 @@ namespace MASES.JNetByteBufferTest
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
                     using var res = jClass.Invoke("getArray") as IJavaArray;
-                    using JCOBridgeStream<byte> stream = res.ToStream<byte>();
+                    using JCOBridgeStream<byte> stream = res.ToStream<byte>(forceRawMemory: forceRawMemory);
                     if (!stream.AsSpan().SequenceEqual(bytes)) { throw new System.Exception(); }
                 }
                 watcher3.Stop();
 
-                Console.WriteLine($"End getArray -> AsSpan -> SequenceEqual Elapsed {watcher3.Elapsed} - Mean {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / iteration)}");
+                TestLogger.LogAdvanced($"End getArray -> AsSpan -> SequenceEqual Elapsed {watcher3.Elapsed} - Mean {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / iteration)}");
 
-                Console.WriteLine($"{length,Padding} Mean Time over {requestedIterations} iterations - Invoke<byte[]> {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - AreEqualChunked {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - AsSpan {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%)");
+                TestLogger.LogBasic($"{length,Padding} Mean Time over {requestedIterations} iterations - Invoke<byte[]> {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - AreEqualChunked {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - AsSpan {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%)");
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {iteration}");
+                TestLogger.LogBasic($"Failed at iteration: {iteration}");
                 throw;
             }
         }
 
         static void TestGetByteBuffersDataUsage(int requestedIterations, int length)
         {
-            Console.WriteLine($"TestGetByteBuffersDataUsage with {requestedIterations} iterations and {length} length");
+            TestLogger.LogBasic($"TestGetByteBuffersDataUsage with {requestedIterations} iterations and {length} length");
             int iteration = 0;
             try
             {
@@ -657,7 +659,7 @@ namespace MASES.JNetByteBufferTest
                 System.GC.Collect();
                 Java.Lang.System.Gc();
 
-                Console.WriteLine($"Created TestArrayAndByteBuffer");
+                TestLogger.LogAdvanced($"Created TestArrayAndByteBuffer");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -676,7 +678,7 @@ namespace MASES.JNetByteBufferTest
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End getByteBuffer -> ToArray -> SequenceEqual Elapsed {watcher1.Elapsed} - Mean {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / iteration)}");
+                TestLogger.LogAdvanced($"End getByteBuffer -> ToArray -> SequenceEqual Elapsed {watcher1.Elapsed} - Mean {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / iteration)}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -690,7 +692,7 @@ namespace MASES.JNetByteBufferTest
                 }
                 watcher2.Stop();
 
-                Console.WriteLine($"End getByteBuffer -> ToStream -> AreEqualNaive Elapsed {watcher2.Elapsed} - Mean {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / iteration)}");
+                TestLogger.LogAdvanced($"End getByteBuffer -> ToStream -> AreEqualNaive Elapsed {watcher2.Elapsed} - Mean {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / iteration)}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -704,7 +706,7 @@ namespace MASES.JNetByteBufferTest
                 }
                 watcher3.Stop();
 
-                Console.WriteLine($"End getByteBuffer -> ToStream -> AreEqualChunked Elapsed {watcher3.Elapsed} - Mean {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / iteration)}");
+                TestLogger.LogAdvanced($"End getByteBuffer -> ToStream -> AreEqualChunked Elapsed {watcher3.Elapsed} - Mean {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / iteration)}");
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
@@ -721,13 +723,13 @@ namespace MASES.JNetByteBufferTest
                 }
                 watcher4.Stop();
 
-                Console.WriteLine($"End getByteBuffer -> AsSpan -> SequenceEqual Elapsed {watcher4.Elapsed} - Mean {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / iteration)}");
+                TestLogger.LogAdvanced($"End getByteBuffer -> AsSpan -> SequenceEqual Elapsed {watcher4.Elapsed} - Mean {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / iteration)}");
 
-                Console.WriteLine($"{length,Padding} Mean Time over {requestedIterations} iterations - ToArray {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ToStream AreEqualNaive {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - ToStream AreEqualChunked {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%) - AsSpan {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher4.Elapsed.Ticks) * 100:0.##}%)");
+                TestLogger.LogBasic($"{length,Padding} Mean Time over {requestedIterations} iterations - ToArray {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)} - ToStream AreEqualNaive {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher2.Elapsed.Ticks) * 100:0.##}%) - ToStream AreEqualChunked {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher3.Elapsed.Ticks) * 100:0.##}%) - AsSpan {TimeSpan.FromTicks(watcher4.Elapsed.Ticks / requestedIterations)} ({((double)watcher1.Elapsed.Ticks / watcher4.Elapsed.Ticks) * 100:0.##}%)");
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {iteration}");
+                TestLogger.LogBasic($"Failed at iteration: {iteration}");
                 throw;
             }
         }

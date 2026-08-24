@@ -17,6 +17,11 @@ on:
         required: false
         default: 'source.zip'
         type: string
+      EnableAdvancedTestLogging:
+        description: 'Enable reports of more logging'
+        required: false
+        default: false
+        type: boolean
       ExecuteOnMoreOSes:
         description: 'Test on more OSes'
         required: false
@@ -467,6 +472,7 @@ jobs:
       DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
       DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED }}
+      ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
     
     steps:     
       - name: Solved issue using workaround in https://github.com/actions/partner-runner-images/issues/99#issue-3075011959
@@ -541,7 +547,7 @@ jobs:
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: bash
         run: |
-          for TEST in TestGetByteArrayDataUsage TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
+          for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
           done
 
@@ -559,6 +565,7 @@ jobs:
         run: |
           foreach ($TEST in @(
               'TestGetByteArrayDataUsage',
+              'TestGetByteArrayDataUsageRaw',
               'TestGetByteBuffersDataUsage',
               'TestGetByteBuffers',
               'TestInsertByteBuffers',
@@ -646,6 +653,7 @@ jobs:
       DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
       DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED }}
+      ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
     
     steps:     
       - name: Restore JNet bin from cache
@@ -708,7 +716,7 @@ jobs:
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: |
-          for TEST in TestGetByteArrayDataUsage TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
+          for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
           done
 
@@ -785,6 +793,7 @@ jobs:
       DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
       DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED }}
+      ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
     
     steps:     
       - name: Restore JNet bin from cache
@@ -841,7 +850,7 @@ jobs:
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: |
-          for TEST in TestGetByteArrayDataUsage TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
+          for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
           done
 
