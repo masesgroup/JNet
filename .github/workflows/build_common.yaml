@@ -723,11 +723,50 @@ jobs:
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        timeout-minutes: 5
+        shell: bash
         run: |
+          set +e
           for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
-            dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
+            dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }} &
+            PID=$!
+
+            TIMEOUT_SECONDS=180
+            ELAPSED=0
+            while kill -0 $PID 2>/dev/null; do
+              if [ $ELAPSED -ge $TIMEOUT_SECONDS ]; then
+                echo "::warning::Process $PID still running after ${TIMEOUT_SECONDS}s - dumping JVM thread state before killing"
+                # SIGQUIT makes the embedded JVM print a full thread dump (incl. deadlock detection) to stdout
+                kill -QUIT $PID
+                sleep 5
+                # also grab a jstack copy to a file, in case stdout capture missed something
+                jstack -l $PID > "${{ github.workspace }}/threaddump_reload_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}.txt" 2>&1
+                sleep 2
+                kill -9 $PID 2>/dev/null
+                echo "STUCK=true" >> $GITHUB_ENV
+                break
+              fi
+              sleep 2
+              ELAPSED=$((ELAPSED + 2))
+            done
+
+            wait $PID
+            exit $?
           done
+
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          if-no-files-found: ignore
+          name: threaddump_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: ${{ github.workspace }}/threaddump_*.txt
+          retention-days: 7
+
+      #- continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+      #  timeout-minutes: 5
+      #  run: |
+      #    for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
+      #      dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
+      #    done
 
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
