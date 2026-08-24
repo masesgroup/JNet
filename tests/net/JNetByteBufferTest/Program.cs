@@ -612,7 +612,7 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher2 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
-                    using var res = jClass.Invoke("getArray") as IJavaArray;
+                    using var res = jClass.Invoke("getArray") is IJavaArray array ? array : throw new InvalidOperationException("getArray did not return an IJavaArray.");
                     using JCOBridgeStream<byte> stream = res.ToStream<byte>(forceRawMemory: forceRawMemory);
                     if (!AreEqualChunked(stream, bytes)) { throw new System.Exception(); }
                 }
@@ -626,7 +626,7 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher3 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
-                    using var res = jClass.Invoke("getArray") as IJavaArray;
+                    using var res = jClass.Invoke("getArray") is IJavaArray array ? array : throw new InvalidOperationException("getArray did not return an IJavaArray.");
                     using JCOBridgeStream<byte> stream = res.ToStream<byte>(forceRawMemory: forceRawMemory);
                     if (!stream.AsSpan().SequenceEqual(bytes)) { throw new System.Exception(); }
                 }

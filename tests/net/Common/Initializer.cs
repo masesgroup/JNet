@@ -43,18 +43,15 @@ namespace MASES.JNetTest.Common
 
     static class TestLogger
     {
-        static bool _enabledAdanced = false;
+        static readonly bool _enabledAdanced = false;
 
         static TestLogger()
         {
             var logging = Environment.GetEnvironmentVariable("ENABLE_ADVANCED_TEST_LOGGING");
-            if (logging != null)
+            if (logging != null && !bool.TryParse(logging, out _enabledAdanced))
             {
-                if (!bool.TryParse(logging, out _enabledAdanced))
-                {
-                    Console.WriteLine($"ENABLE_ADVANCED_TEST_LOGGING exist, however its value (\"{logging}\") cannot be parsed as boolean.");
-                    _enabledAdanced = false;
-                }
+                Console.WriteLine($"ENABLE_ADVANCED_TEST_LOGGING exist, however its value (\"{logging}\") cannot be parsed as boolean.");
+                _enabledAdanced = false;
             }
 #if DEBUG
             _enabledAdanced = true;
@@ -73,7 +70,7 @@ namespace MASES.JNetTest.Common
 
         public static void LogAdvanced(string message, params object[] args)
         {
-            Console.WriteLine(message, args);
+            if (_enabledAdanced) Console.WriteLine(message, args);
         }
     }
 }
