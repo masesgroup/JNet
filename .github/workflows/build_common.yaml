@@ -22,6 +22,11 @@ on:
         required: false
         default: false
         type: boolean
+      EnableAdvancedDiagnostic:
+        description: 'Enable advanced diagnostic around test'
+        required: false
+        default: false
+        type: boolean
       ExecuteOnMoreOSes:
         description: 'Test on more OSes'
         required: false
@@ -723,6 +728,7 @@ jobs:
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        if: ${{ inputs.EnableAdvancedDiagnostic == true }}
         shell: bash
         run: |
           set +e
@@ -785,13 +791,14 @@ jobs:
             ${{ github.workspace }}/nativedump_*.txt
           retention-days: 7
 
-      #- continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-      #  timeout-minutes: 5
-      #  run: |
-      #    for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
-      #      echo "=== Starting $TEST at $(date) ==="
-      #      dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
-      #    done
+      - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        if: ${{ inputs.EnableAdvancedDiagnostic != true }}
+        timeout-minutes: 5
+        run: |
+          for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
+            echo "=== Starting $TEST at $(date) ==="
+            dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
+          done
 
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
