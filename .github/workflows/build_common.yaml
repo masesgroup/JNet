@@ -729,7 +729,7 @@ jobs:
 
           DIAG_JVM_ARGS=""
           if [ "${{ inputs.UseSpecialSettings }}" == "true" ]; then
-            DIAG_JVM_ARGS="--JVMOption:-Xlog:gc*,safepoint=debug:stdout:time,uptime,tid --JVMOption:-Xcheck:jni"
+            DIAG_JVM_ARGS="--JVMOption:-Xlog:gc*,safepoint=debug:stdout:time,uptime,tid"
             echo "::notice::Diagnostic JVM flags enabled: $DIAG_JVM_ARGS"
           fi
 
