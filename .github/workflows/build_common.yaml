@@ -727,6 +727,10 @@ jobs:
         run: |
           set +e
 
+          if [ "${{ inputs.UseSpecialSettings }}" == "true" ]; then
+            which gdb || sudo apt-get install -y gdb
+          fi
+
           DIAG_JVM_ARGS=""
           if [ "${{ inputs.UseSpecialSettings }}" == "true" ]; then
             DIAG_JVM_ARGS="--JVMOption:-Xlog:gc*,safepoint=debug:stdout:time,uptime,tid"
@@ -745,8 +749,9 @@ jobs:
 
             while kill -0 $PID 2>/dev/null; do
               if [ "${{ inputs.UseSpecialSettings }}" == "true" ] && [ $ELAPSED -ge $NEXT_DUMP ] && [ $ELAPSED -lt $TIMEOUT_SECONDS ]; then
-                echo "::notice::Periodic thread dump for $TEST at ${ELAPSED}s"
+                echo "::notice::Periodic dump for $TEST at ${ELAPSED}s"
                 jstack -l $PID > "${{ github.workspace }}/threaddump_${TEST}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}_${ELAPSED}s.txt" 2>&1
+                sudo gdb -p $PID -batch -ex "thread apply all bt" > "${{ github.workspace }}/nativedump_${TEST}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}_${ELAPSED}s.txt" 2>&1
                 NEXT_DUMP=$((NEXT_DUMP + DUMP_INTERVAL_SECONDS))
               fi
 
@@ -755,8 +760,8 @@ jobs:
                 # SIGQUIT makes the embedded JVM print a full thread dump (incl. deadlock detection) to stdout
                 kill -QUIT $PID
                 sleep 5
-                # also grab a jstack copy to a file, in case stdout capture missed something
                 jstack -l $PID > "${{ github.workspace }}/threaddump_${TEST}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}_final.txt" 2>&1
+                sudo gdb -p $PID -batch -ex "thread apply all bt" > "${{ github.workspace }}/nativedump_${TEST}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}_final.txt" 2>&1
                 sleep 2
                 kill -9 $PID 2>/dev/null
                 echo "STUCK=true" >> $GITHUB_ENV
