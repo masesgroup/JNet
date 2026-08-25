@@ -780,7 +780,9 @@ jobs:
         with:
           if-no-files-found: ignore
           name: threaddump_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
-          path: ${{ github.workspace }}/threaddump_*.txt
+          path: |
+            ${{ github.workspace }}/threaddump_*.txt
+            ${{ github.workspace }}/nativedump_*.txt
           retention-days: 7
 
       #- continue-on-error: ${{ inputs.ForceContinueOnError == true }}
