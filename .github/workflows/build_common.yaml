@@ -726,21 +726,37 @@ jobs:
         shell: bash
         run: |
           set +e
+
+          DIAG_JVM_ARGS=""
+          if [ "${{ inputs.UseSpecialSettings }}" == "true" ]; then
+            DIAG_JVM_ARGS="--JVMOption:-Xlog:gc*,safepoint=debug:stdout:time,uptime,tid --JVMOption:-Xcheck:jni"
+            echo "::notice::Diagnostic JVM flags enabled: $DIAG_JVM_ARGS"
+          fi
+
           for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
             echo "=== Starting $TEST at $(date) ==="
-            dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }} &
+            dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST $DIAG_JVM_ARGS ${{ env.EXTRA_ARGUMENT }} &
             PID=$!
 
             TIMEOUT_SECONDS=300
+            DUMP_INTERVAL_SECONDS=60
             ELAPSED=0
+            NEXT_DUMP=$DUMP_INTERVAL_SECONDS
+
             while kill -0 $PID 2>/dev/null; do
+              if [ "${{ inputs.UseSpecialSettings }}" == "true" ] && [ $ELAPSED -ge $NEXT_DUMP ] && [ $ELAPSED -lt $TIMEOUT_SECONDS ]; then
+                echo "::notice::Periodic thread dump for $TEST at ${ELAPSED}s"
+                jstack -l $PID > "${{ github.workspace }}/threaddump_${TEST}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}_${ELAPSED}s.txt" 2>&1
+                NEXT_DUMP=$((NEXT_DUMP + DUMP_INTERVAL_SECONDS))
+              fi
+
               if [ $ELAPSED -ge $TIMEOUT_SECONDS ]; then
                 echo "::warning::Process $PID still running after ${TIMEOUT_SECONDS}s - dumping JVM thread state before killing"
                 # SIGQUIT makes the embedded JVM print a full thread dump (incl. deadlock detection) to stdout
                 kill -QUIT $PID
                 sleep 5
                 # also grab a jstack copy to a file, in case stdout capture missed something
-                jstack -l $PID > "${{ github.workspace }}/threaddump_${TEST}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}.txt" 2>&1
+                jstack -l $PID > "${{ github.workspace }}/threaddump_${TEST}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}_final.txt" 2>&1
                 sleep 2
                 kill -9 $PID 2>/dev/null
                 echo "STUCK=true" >> $GITHUB_ENV
