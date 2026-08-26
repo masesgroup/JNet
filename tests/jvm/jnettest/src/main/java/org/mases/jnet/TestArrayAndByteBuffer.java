@@ -50,6 +50,9 @@ public class TestArrayAndByteBuffer {
     }
 
     public ByteBuffer getByteBuffer() {
+        _buffer.position(0);
+        _buffer.put(_array);
+        _buffer.position(0);
         return _buffer;
     }
 }

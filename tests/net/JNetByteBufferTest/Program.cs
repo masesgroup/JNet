@@ -139,7 +139,7 @@ namespace MASES.JNetByteBufferTest
                 using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 TestLogger.LogAdvanced($"Created TestArrayAndByteBuffer");
 
@@ -161,7 +161,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End insertArray Elapsed {watcher1.Elapsed}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher2 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -181,7 +181,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End insertByteBuffer Elapsed {watcher2.Elapsed}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher3 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -201,7 +201,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End insertByteBufferNoNew Elapsed {watcher3.Elapsed}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher4 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -248,7 +248,7 @@ namespace MASES.JNetByteBufferTest
                 using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 TestLogger.LogAdvanced($"Created TestArrayAndByteBuffer");
 
@@ -270,7 +270,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End insertArray Elapsed {watcher1.Elapsed}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher2 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -290,7 +290,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End insertByteBuffer Elapsed {watcher2.Elapsed}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher3 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -310,7 +310,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End insertByteBufferNoNew Elapsed {watcher3.Elapsed}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher4 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -360,7 +360,7 @@ namespace MASES.JNetByteBufferTest
                 }
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 TestLogger.LogAdvanced($"Created TestArrayAndByteBuffer");
 
@@ -382,7 +382,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End insertArray Elapsed {watcher1.Elapsed}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher2 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -402,7 +402,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End insertByteBuffer Elapsed {watcher2.Elapsed}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher3 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -422,7 +422,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End insertByteBufferNoNew Elapsed {watcher3.Elapsed}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher4 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -460,7 +460,7 @@ namespace MASES.JNetByteBufferTest
                 using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 TestLogger.LogAdvanced($"Created TestArrayAndByteBuffer");
 
@@ -475,7 +475,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End getArray Elapsed {watcher1.Elapsed}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher2 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -489,7 +489,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End getByteBuffer -> ByteBuffer -> ToArray Elapsed {watcher2.Elapsed}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher3 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -503,7 +503,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End getByteBuffer -> ByteBuffer -> ToArray with noResize Elapsed {watcher3.Elapsed}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 System.Runtime.InteropServices.GCHandle handle = System.Runtime.InteropServices.GCHandle.Alloc(bytes, System.Runtime.InteropServices.GCHandleType.Pinned);
                 Stopwatch watcher4 = Stopwatch.StartNew();
@@ -522,7 +522,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End getByteBuffer -> ByteBuffer -> ToDirectBuffer -> CopyTo Elapsed {watcher4.Elapsed}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher5 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -592,7 +592,7 @@ namespace MASES.JNetByteBufferTest
                 using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 TestLogger.LogAdvanced($"Created TestArrayAndByteBuffer");
 
@@ -607,7 +607,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End getArray -> Invoke<byte[]> -> SequenceEqual Elapsed {watcher1.Elapsed} - Mean {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / iteration)}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher2 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
@@ -621,7 +621,7 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End getArray -> AreEqualChunked Elapsed {watcher2.Elapsed} - Mean {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / iteration)}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher3 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
@@ -657,18 +657,17 @@ namespace MASES.JNetByteBufferTest
                 using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 TestLogger.LogAdvanced($"Created TestArrayAndByteBuffer");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
-
-                using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher1 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
+                    using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     var array = res.ToArray();
                     if (array.Length != length) { throw new System.Exception(); }
                     if (!array.SequenceEqual(bytes))
@@ -681,11 +680,12 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End getByteBuffer -> ToArray -> SequenceEqual Elapsed {watcher1.Elapsed} - Mean {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / iteration)}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher2 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
+                    using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     using var stream = res.ToStream();
                     if (!AreEqualNaive(stream, bytes))
                     { throw new System.Exception(); }
@@ -695,11 +695,12 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End getByteBuffer -> ToStream -> AreEqualNaive Elapsed {watcher2.Elapsed} - Mean {TimeSpan.FromTicks(watcher2.Elapsed.Ticks / iteration)}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher3 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
+                    using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     using var stream = res.ToStream();
                     if (!AreEqualChunked(stream, bytes))
                     { throw new System.Exception(); }
@@ -709,11 +710,12 @@ namespace MASES.JNetByteBufferTest
                 TestLogger.LogAdvanced($"End getByteBuffer -> ToStream -> AreEqualChunked Elapsed {watcher3.Elapsed} - Mean {TimeSpan.FromTicks(watcher3.Elapsed.Ticks / iteration)}");
 
                 System.GC.Collect();
-                if (!JCOBridge.C2JBridge.JCOBridge.IsHPAEdition) Java.Lang.System.Gc();
+                Java.Lang.System.Gc();
 
                 Stopwatch watcher4 = Stopwatch.StartNew();
                 for (iteration = 0; iteration < requestedIterations; iteration++)
                 {
+                    using var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer(false);
                     var span = db.AsSpan();
                     if (span.Length != length) { throw new System.Exception(); }
