@@ -17,6 +17,7 @@
 */
 
 using MASES.JNet;
+using System;
 using System.Collections.Generic;
 
 namespace MASES.JNetTest.Common
@@ -37,6 +38,39 @@ namespace MASES.JNetTest.Common
                 lst.Add(path);
                 return lst;
             }
+        }
+    }
+
+    static class TestLogger
+    {
+        static readonly bool _enabledAdanced = false;
+
+        static TestLogger()
+        {
+            var logging = Environment.GetEnvironmentVariable("ENABLE_ADVANCED_TEST_LOGGING");
+            if (logging != null && !bool.TryParse(logging, out _enabledAdanced))
+            {
+                Console.WriteLine($"ENABLE_ADVANCED_TEST_LOGGING exist, however its value (\"{logging}\") cannot be parsed as boolean.");
+                _enabledAdanced = false;
+            }
+#if DEBUG
+            _enabledAdanced = true;
+#endif
+        }
+
+        public static void LogBasic(Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+
+        public static void LogBasic(string message, params object[] args)
+        {
+            Console.WriteLine(message, args);
+        }
+
+        public static void LogAdvanced(string message, params object[] args)
+        {
+            if (_enabledAdanced) Console.WriteLine(message, args);
         }
     }
 }

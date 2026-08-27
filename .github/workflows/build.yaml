@@ -22,6 +22,16 @@ on:
         required: false
         default: 'source.zip'
         type: string
+      EnableAdvancedTestLogging:
+        description: 'Enable reports of more logging'
+        required: false
+        default: false
+        type: boolean
+      EnableAdvancedDiagnostic:
+        description: 'Enable advanced diagnostic around test'
+        required: false
+        default: false
+        type: boolean
       ExecuteOnMoreOSes:
         description: 'Test on more OSes'
         required: false
@@ -161,6 +171,8 @@ jobs:
     with:
       UseSpecialSettings: ${{ inputs.UseSpecialSettings || false }}
       SpecialSettingsSource: ${{ inputs.SpecialSettingsSource || 'source.zip' }}
+      EnableAdvancedTestLogging: ${{ inputs.EnableAdvancedTestLogging || false }}
+      EnableAdvancedDiagnostic: ${{ inputs.EnableAdvancedDiagnostic || false }}
       ExecuteOnMoreOSes: ${{ inputs.ExecuteOnMoreOSes || github.event_name == 'schedule' }}
       ExecuteOnLargerJDKVendorSet: ${{ inputs.ExecuteOnLargerJDKVendorSet || github.ref_name == 'master' || github.event_name == 'schedule' }}
       ExecuteOnLargerJDKVersionSet: ${{ inputs.ExecuteOnLargerJDKVersionSet || github.ref_name == 'master' || github.event_name == 'schedule' }}

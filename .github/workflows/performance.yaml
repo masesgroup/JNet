@@ -17,7 +17,12 @@ on:
         required: false
         default: 'source.zip'
         type: string
-        
+      EnableAdvancedTestLogging:
+        description: 'Enable reports of more logging'
+        required: false
+        default: false
+        type: boolean
+
 concurrency:
   group: '${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}'
   cancel-in-progress: true
@@ -125,7 +130,8 @@ jobs:
       DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
       DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
-    
+      ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
+
     steps:     
       - name: Restore JNet bin from cache
         uses: actions/cache/restore@v6
@@ -190,6 +196,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y bc
 
       - name: Run benchmark and machine filter
+        timeout-minutes: 5
         shell: bash
         run: |
           OUTPUT=$(dotnet ./bin/${{ matrix.framework }}/JNetPerformanceTest.dll)
