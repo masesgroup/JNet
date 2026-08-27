@@ -16,8 +16,6 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Nio;
-using Java.Util.Regex;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNetTest.Common;
@@ -99,12 +97,12 @@ namespace MASES.JNetPerformanceTest
         const int iterations = 1_000_000;
         static void Main(string[] args)
         {
-            Console.WriteLine("Starting JNetPerformanceTest");
+            TestLogger.LogBasic("Starting JNetPerformanceTest");
 
 #if DEBUG
             if (!System.Diagnostics.Debugger.IsAttached)
             {
-                System.Console.WriteLine("Press a button to start");
+                TestLogger.LogBasic("Press a button to start");
                 System.Console.ReadKey();
             }
 #endif
@@ -116,7 +114,7 @@ namespace MASES.JNetPerformanceTest
             ExecuteTests();
 
             stopwatch.Stop();
-            System.Console.WriteLine($"All tests completed in {stopwatch.Elapsed}");
+            TestLogger.LogBasic($"All tests completed in {stopwatch.Elapsed}");
         }
 
         static void Initialize()
@@ -129,11 +127,11 @@ namespace MASES.JNetPerformanceTest
                 JNetTestCore.CreateGlobalInstance();
                 var appArgs = JNetTestCore.FilteredArgs;
 
-                System.Console.WriteLine("Initialized JNetTestCore" + (appArgs.Length != 0 ? $", remaining arguments are {string.Join(" ", appArgs)}" : string.Empty));
+                TestLogger.LogBasic("Initialized JNetTestCore" + (appArgs.Length != 0 ? $", remaining arguments are {string.Join(" ", appArgs)}" : string.Empty));
             }
             catch (Exception ex)
             {
-                System.Console.WriteLine(ex);
+                TestLogger.LogBasic(ex);
                 throw;
             }
         }
@@ -168,13 +166,13 @@ namespace MASES.JNetPerformanceTest
         static void TestStaticMethod(int requestedIterations, bool feedback)
         {
             string methodName = feedback ? "executeStaticFeedbackMethod" : "executeStaticEmptyMethod";
-            Console.WriteLine($"Start TestStaticMethod with {requestedIterations} iterations with feedback {feedback} - method={methodName}");
+            TestLogger.LogBasic($"Start TestStaticMethod with {requestedIterations} iterations with feedback {feedback} - method={methodName}");
             int i = 0;
             try
             {
                 var jClass = JNetTestCore.GlobalInstance.JVM.GetClass("org.mases.jnet.TestPerformance");
 
-                Console.WriteLine($"Start Invoke {methodName}");
+                TestLogger.LogBasic($"Start Invoke {methodName}");
 
                 Stopwatch watcher = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -189,15 +187,15 @@ namespace MASES.JNetPerformanceTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break Invoke {methodName} at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break Invoke {methodName} at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher.Stop();
 
-                Console.WriteLine($"End {methodName} Invoke with feedback={feedback} over {i} iterations - Elapsed {watcher.Elapsed} - Mean time {TimeSpan.FromTicks(watcher.Elapsed.Ticks / i)}");
+                TestLogger.LogBasic($"End {methodName} Invoke with feedback={feedback} over {i} iterations - Elapsed {watcher.Elapsed} - Mean time {TimeSpan.FromTicks(watcher.Elapsed.Ticks / i)}");
 
-                Console.WriteLine($"Start InvokeWithSignature {methodName}");
+                TestLogger.LogBasic($"Start InvokeWithSignature {methodName}");
 
                 watcher.Restart();
                 for (i = 0; i < requestedIterations; i++)
@@ -212,17 +210,17 @@ namespace MASES.JNetPerformanceTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break {methodName} at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break {methodName} at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher.Stop();
 
-                Console.WriteLine($"End InvokeWithSignature {methodName} with feedback={feedback} over {i} iterations - Elapsed {watcher.Elapsed} - Mean time {TimeSpan.FromTicks(watcher.Elapsed.Ticks / i)}");
+                TestLogger.LogBasic($"End InvokeWithSignature {methodName} with feedback={feedback} over {i} iterations - Elapsed {watcher.Elapsed} - Mean time {TimeSpan.FromTicks(watcher.Elapsed.Ticks / i)}");
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {i}");
+                TestLogger.LogBasic($"Failed at iteration: {i}");
                 throw;
             }
         }
@@ -230,13 +228,13 @@ namespace MASES.JNetPerformanceTest
         static void TestMethod(int requestedIterations, bool feedback)
         {
             string methodName = feedback ? "executeFeedbackMethod" : "executeEmptyMethod";
-            Console.WriteLine($"Start TestMethod with {requestedIterations} iterations with feedback {feedback} - method={methodName}");
+            TestLogger.LogBasic($"Start TestMethod with {requestedIterations} iterations with feedback {feedback} - method={methodName}");
             int i = 0;
             try
             {
                 var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") as IJavaObject;
 
-                Console.WriteLine($"Start Invoke {methodName}");
+                TestLogger.LogBasic($"Start Invoke {methodName}");
 
                 Stopwatch watcher1 = Stopwatch.StartNew();
                 for (i = 0; i < requestedIterations; i++)
@@ -251,15 +249,15 @@ namespace MASES.JNetPerformanceTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break Invoke {methodName} at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break Invoke {methodName} at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End {methodName} with feedback={feedback} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
+                TestLogger.LogBasic($"End {methodName} with feedback={feedback} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
 
-                Console.WriteLine($"Start InvokeWithSignature {methodName}");
+                TestLogger.LogBasic($"Start InvokeWithSignature {methodName}");
 
                 watcher1.Restart();
                 for (i = 0; i < requestedIterations; i++)
@@ -274,24 +272,24 @@ namespace MASES.JNetPerformanceTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break {methodName} at iteration {i} due to {ex}");
+                        TestLogger.LogBasic($"Break {methodName} at iteration {i} due to {ex}");
                         break;
                     }
                 }
                 watcher1.Stop();
 
-                Console.WriteLine($"End InvokeWithSignature {methodName} with feedback={feedback} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
+                TestLogger.LogBasic($"End InvokeWithSignature {methodName} with feedback={feedback} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {i}");
+                TestLogger.LogBasic($"Failed at iteration: {i}");
                 throw;
             }
         }
 
         static void TestPredicateRoundTrip(int requestedIterations, bool byIndex, bool continueFirstCheck, bool continueSecondCheck)
         {
-            Console.WriteLine($"Start TestPredicateRoundTrip with {requestedIterations} iterations - byIndex={byIndex} continueFirstCheck={continueFirstCheck} continueSecondCheck={continueSecondCheck}");
+            TestLogger.LogBasic($"Start TestPredicateRoundTrip with {requestedIterations} iterations - byIndex={byIndex} continueFirstCheck={continueFirstCheck} continueSecondCheck={continueSecondCheck}");
             int i = 0;
             try
             {
@@ -312,19 +310,19 @@ namespace MASES.JNetPerformanceTest
                         jClass.InvokeWithSignature(method, "()Z");
                     }
                     watcher1.Stop();
-                    Console.WriteLine($"End TestPredicateRoundTrip {method} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
+                    TestLogger.LogBasic($"End TestPredicateRoundTrip {method} over {i} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / i)}");
                 }
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {i}");
+                TestLogger.LogBasic($"Failed at iteration: {i}");
                 throw;
             }
         }
 
         static void TestPredicateSustained(int requestedIterations, bool byIndex, bool continueFirstCheck, bool continueSecondCheck)
         {
-            Console.WriteLine($"Start TestPredicateSustained with {requestedIterations} iterations - byIndex={byIndex} continueFirstCheck={continueFirstCheck} continueSecondCheck={continueSecondCheck}");
+            TestLogger.LogBasic($"Start TestPredicateSustained with {requestedIterations} iterations - byIndex={byIndex} continueFirstCheck={continueFirstCheck} continueSecondCheck={continueSecondCheck}");
             try
             {
                 var method = byIndex ? "executePredicateIndex" : "executePredicate";
@@ -341,7 +339,7 @@ namespace MASES.JNetPerformanceTest
                     Stopwatch watcher1 = Stopwatch.StartNew();
                     jClass.InvokeWithSignature(method, "(I)Z", requestedIterations);
                     watcher1.Stop();
-                    Console.WriteLine($"End TestPredicateSustained {method} over {requestedIterations} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)}");
+                    TestLogger.LogBasic($"End TestPredicateSustained {method} over {requestedIterations} iterations - Elapsed {watcher1.Elapsed} - Mean time {TimeSpan.FromTicks(watcher1.Elapsed.Ticks / requestedIterations)}");
                 }
             }
             catch
