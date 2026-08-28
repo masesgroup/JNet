@@ -31,8 +31,7 @@ public final class DoubleBinaryOperator extends JCListener implements java.util.
 
     @Override
     public double applyAsDouble(double e1, double e2) {
-        raiseEvent("applyAsDouble", e1, e2);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsDouble", e1, e2);
         return (double) retVal;
     }
 }

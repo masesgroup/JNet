@@ -31,8 +31,6 @@ public final class LongFunction extends JCListener implements java.util.function
 
     @Override
     public Object apply(long e) {
-        raiseEvent("apply", e);
-        Object retVal = getReturnData();
-        return retVal;
+        return raiseEventConcurrent("apply", e);
     }
 }
