@@ -1430,6 +1430,7 @@ namespace MASES.JNet.Reflector
 
                 string methodName = prop.Key;
                 string modifier = string.Empty;
+                string streamReturnType = string.Empty;
                 string returnType = string.Empty;
                 Method getMethod = null;
                 Method setMethod = null;
@@ -1478,16 +1479,26 @@ namespace MASES.JNet.Reflector
                 bool isGetDeprecated = false;
                 bool isSetDeprecated = false;
 
+                StringBuilder streamExecutionStub = new StringBuilder();
                 StringBuilder executionStub = new StringBuilder();
                 if (getMethod != null)
                 {
                     string getSignature = getMethod.SignatureFromGenericString();
+                    string streamExecStub = string.Empty;
                     string execStub = getMethod.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTE : AllPackageClasses.ClassStub.MethodStub.INSTANCE_EXECUTE;
                     if (!string.IsNullOrWhiteSpace(getSignature))
                     {
                         execStub += AllPackageClasses.ClassStub.MethodStub.SIGNATURE_EXECUTE_TRAILER;
                     }
-                    if (isArrayReturnType) execStub += "Array";
+                    if (isArrayReturnType)
+                    {
+                        if (returnType.IsJVMNativeRawOrBoxedType())
+                        {
+                            streamReturnType = returnType.JVMNativeRawOrBoxedToNetType();
+                            streamExecStub = execStub + SpecialNames.StreamTypeMethodTrailer;
+                        }
+                        execStub += SpecialNames.ArrayTypeMethodTrailer;
+                    }
                     if (JNetReflectorCore.ReflectDeprecated) isGetDeprecated = getMethod.IsDeprecated();
                     if (getMethod.IsReturnTypeAnException())
                     {
@@ -1501,6 +1512,14 @@ namespace MASES.JNet.Reflector
                                                                getMethod.IsVoid() || getMethod.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : $"<{returnType}>",
                                                                getMethod.Name,
                                                                string.IsNullOrWhiteSpace(getSignature) ? string.Empty : $", \"{getSignature}\"");
+
+                        if (!string.IsNullOrWhiteSpace(streamReturnType))
+                        {
+                            streamExecutionStub.AppendFormat(execFormat, streamExecStub,
+                                                             $"<MASES.JCOBridge.C2JBridge.JCOBridgeStream<{streamReturnType}>>",
+                                                             getMethod.Name,
+                                                             string.IsNullOrWhiteSpace(getSignature) ? string.Empty : $", \"{getSignature}\"");
+                        }
                     }
                 }
 
@@ -1532,7 +1551,35 @@ namespace MASES.JNet.Reflector
                     jPropDecoration.Append(AllPackageClasses.ClassStub.MethodStub.OBSOLETE_DECORATION);
                 }
 
-                string singleProperty;
+                string singleProperty = string.Empty;
+                if (!string.IsNullOrWhiteSpace(streamReturnType))
+                {
+                    if (forInterface)
+                    {
+                        var execInterface = AllPackageClasses.ClassStub.PropertyStub.GET_INTERFACE_FORMAT;
+
+                        var template = Template.GetTemplate(Template.SingleInterfacePropertyTemplate);
+                        singleProperty = template.Replace(AllPackageClasses.ClassStub.PropertyStub.DECORATION, jPropDecoration.ToString())
+                                                 .Replace(AllPackageClasses.ClassStub.PropertyStub.TYPE, $"MASES.JCOBridge.C2JBridge.JCOBridgeStream<{streamReturnType}>")
+                                                 .Replace(AllPackageClasses.ClassStub.PropertyStub.NAME, methodName + SpecialNames.StreamTypeMethodTrailer)
+                                                 .Replace(AllPackageClasses.ClassStub.PropertyStub.EXECUTION, execInterface)
+                                                 .Replace(AllPackageClasses.ClassStub.PropertyStub.GET_HELP, getMethod != null ? getMethod.JavadocHrefUrl(JNetReflectorCore.UseCamel) : string.Empty)
+                                                 .Replace(AllPackageClasses.ClassStub.PropertyStub.SET_HELP, string.Empty);
+                    }
+                    else
+                    {
+                        var template = Template.GetTemplate(Template.SinglePropertyTemplate);
+                        singleProperty = template.Replace(AllPackageClasses.ClassStub.PropertyStub.DECORATION, jPropDecoration.ToString())
+                                                 .Replace(AllPackageClasses.ClassStub.PropertyStub.MODIFIER, modifier)
+                                                 .Replace(AllPackageClasses.ClassStub.PropertyStub.TYPE, $"MASES.JCOBridge.C2JBridge.JCOBridgeStream<{streamReturnType}>")
+                                                 .Replace(AllPackageClasses.ClassStub.PropertyStub.NAME, methodName + SpecialNames.StreamTypeMethodTrailer)
+                                                 .Replace(AllPackageClasses.ClassStub.PropertyStub.EXECUTION, streamExecutionStub.ToString())
+                                                 .Replace(AllPackageClasses.ClassStub.PropertyStub.GET_HELP, getMethod != null ? getMethod.JavadocHrefUrl(JNetReflectorCore.UseCamel) : string.Empty)
+                                                 .Replace(AllPackageClasses.ClassStub.PropertyStub.SET_HELP, string.Empty);
+                    }
+                }
+                if (!string.IsNullOrWhiteSpace(singleProperty)) subClassBlock.AppendLine(singleProperty);
+
                 if (forInterface)
                 {
                     var execInterface = (getMethod != null ? AllPackageClasses.ClassStub.PropertyStub.GET_INTERFACE_FORMAT : string.Empty) + (setMethod != null ? AllPackageClasses.ClassStub.PropertyStub.SET_INTERFACE_FORMAT : string.Empty);
@@ -1807,6 +1854,8 @@ namespace MASES.JNet.Reflector
 
                 bool isArrayReturnType = false;
 
+                string streamReturnType = string.Empty;
+                string streamExecStub = string.Empty;
                 string execStub = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTE : AllPackageClasses.ClassStub.MethodStub.INSTANCE_EXECUTE;
                 if (!string.IsNullOrWhiteSpace(signature))
                 {
@@ -1815,7 +1864,12 @@ namespace MASES.JNet.Reflector
                 if (returnType.EndsWith(SpecialNames.ArrayTypeTrailer))
                 {
                     returnType = returnType.Substring(0, returnType.IndexOf(SpecialNames.ArrayTypeTrailer));
-                    execStub += "Array";
+                    if (returnType.IsJVMNativeRawOrBoxedType())
+                    {
+                        streamReturnType = returnType.JVMNativeRawOrBoxedToNetType();
+                        streamExecStub = execStub + SpecialNames.StreamTypeMethodTrailer;
+                    }
+                    execStub += SpecialNames.ArrayTypeMethodTrailer;
                     isArrayReturnType = true;
                 }
 
@@ -2519,6 +2573,8 @@ namespace MASES.JNet.Reflector
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing field {0}", field.GenericString);
 
                 bool isFinal = false; // disable usage to be compliant with HPA pooling field.IsFinal();
+                string getStreamType;
+                string getStreamFunction;
                 string getFunction;
                 string getFormat;
                 string setFormat;
@@ -2539,7 +2595,12 @@ namespace MASES.JNet.Reflector
                 if (fieldType.EndsWith(SpecialNames.ArrayTypeTrailer))
                 {
                     fieldType = fieldType.Substring(0, fieldType.IndexOf(SpecialNames.ArrayTypeTrailer));
-                    getFunction += "Array";
+                    if (fieldType.IsJVMNativeRawOrBoxedType())
+                    {
+                        getStreamType = fieldType.JVMNativeRawOrBoxedToNetType();
+                        getStreamFunction = getFunction + SpecialNames.StreamTypeMethodTrailer;
+                    }
+                    getFunction += SpecialNames.ArrayTypeMethodTrailer;
                     isArrayReturnType = true;
                 }
 

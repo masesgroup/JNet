@@ -808,7 +808,7 @@ namespace MASES.JNet.Reflector
             }
             else
             {
-                result = ToNetType(bound.TypeName, false, camel);
+                result = ToNetType(bound.TypeName, false, camel, JNetReflectorCore.UseDotNetNullable, JNetReflectorCore.UseDirectDotNetType);
             }
             return result;
         }
@@ -841,7 +841,7 @@ namespace MASES.JNet.Reflector
                 }
                 else
                 {
-                    retVal = ToNetType(entry.TypeName, false, camel);
+                    retVal = ToNetType(entry.TypeName, false, camel, JNetReflectorCore.UseDotNetNullable, JNetReflectorCore.UseDirectDotNetType);
                 }
             }
             return retVal;
@@ -2021,12 +2021,45 @@ namespace MASES.JNet.Reflector
             }
         }
 
+        public static bool IsJVMNativeRawOrBoxedType(this string typeName)
+        {
+            if (typeName == null) throw new ArgumentNullException(nameof(typeName));
+            switch (typeName)
+            {
+                case "boolean":
+                case "byte":
+                case "char":
+                case "short":
+                case "int":
+                case "long":
+                case "float":
+                case "double":
+                case "java.lang.Boolean":
+                case "java.lang.Byte":
+                case "java.lang.Character":
+                case "java.lang.Short":
+                case "java.lang.Integer":
+                case "java.lang.Long":
+                case "java.lang.Float":
+                case "java.lang.Double":
+                    return true;
+                default: return false;
+            }
+        }
+
+        public static string JVMNativeRawOrBoxedToNetType(this string typeName)
+        {
+            if (typeName == null) throw new ArgumentNullException(nameof(typeName));
+            var cName = ToNetType(typeName, false, false, false, true);
+            return cName;
+        }
+
         public static string ToNetType(this Java.Lang.Reflect.Type type, bool camel)
         {
             if (type == null) throw new ArgumentNullException(nameof(type));
             var cName = type.TypeName;
             cName = cName.Contains(SpecialNames.BeginGenericDeclaration) ? cName.Substring(0, cName.IndexOf(SpecialNames.BeginGenericDeclaration)) : cName;
-            cName = ToNetType(cName, false, camel);
+            cName = ToNetType(cName, false, camel, JNetReflectorCore.UseDotNetNullable, JNetReflectorCore.UseDirectDotNetType);
             return cName;
         }
 
@@ -2035,15 +2068,15 @@ namespace MASES.JNet.Reflector
             if (type == null) throw new ArgumentNullException(nameof(type));
             var cName = type.TypeName;
             cName = cName.Contains(SpecialNames.BeginGenericDeclaration) ? cName.Substring(0, cName.IndexOf(SpecialNames.BeginGenericDeclaration)) : cName;
-            cName = ToNetType(cName, false, camel);
+            cName = ToNetType(cName, false, camel, JNetReflectorCore.UseDotNetNullable, JNetReflectorCore.UseDirectDotNetType);
             return cName;
         }
 
-        static string ToNetType(string typeName, bool isFromArray, bool camel)
+        static string ToNetType(string typeName, bool isFromArray, bool camel, bool useNullable, bool useDirectDotNetType)
         {
-            if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) return ToNetType(typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer)), true, camel) + SpecialNames.ArrayTypeTrailer;
+            if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) return ToNetType(typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer)), true, camel, useNullable, useDirectDotNetType) + SpecialNames.ArrayTypeTrailer;
 
-            if (JNetReflectorCore.UseDotNetNullable)
+            if (useNullable)
             {
                 switch (typeName)
                 {
@@ -2053,47 +2086,47 @@ namespace MASES.JNet.Reflector
                     case "boolean":
                         return "bool";
                     case "java.lang.Boolean":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return isFromArray ? "bool" : "bool?";
                     case "byte":
                         return "byte";
                     case "java.lang.Byte":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return isFromArray ? "byte" : "byte?";
                     case "char":
                         return "char";
                     case "java.lang.Character":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return isFromArray ? "char" : "char?";
                     case "short":
                         return "short";
                     case "java.lang.Short":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return isFromArray ? "short" : "short?";
                     case "int":
                         return "int";
                     case "java.lang.Integer":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return isFromArray ? "int" : "int?";
                     case "long":
                         return "long";
                     case "java.lang.Long":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return isFromArray ? "long" : "long?";
                     case "float":
                         return "float";
                     case "java.lang.Float":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return isFromArray ? "float" : "float?";
                     case "double":
                         return "double";
                     case "java.lang.Double":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return isFromArray ? "double" : "double?";
                     case "java.lang.Object":
                         return "object";
                     case "java.lang.String":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return "string";
                     default: break;
                 }
@@ -2110,42 +2143,42 @@ namespace MASES.JNet.Reflector
                     case "boolean":
                         return "bool";
                     case "java.lang.Boolean":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return "bool";
                     case "byte":
                         return "byte";
                     case "java.lang.Byte":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return "byte";
                     case "char":
                         return "char";
                     case "java.lang.Character":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return "char";
                     case "short":
                         return "short";
                     case "java.lang.Short":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return "short";
                     case "int":
                         return "int";
                     case "java.lang.Integer":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return "int";
                     case "long":
                         return "long";
                     case "java.lang.Long":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return "long";
                     case "float":
                         return "float";
                     case "java.lang.Float":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return "float";
                     case "double":
                         return "double";
                     case "java.lang.Double":
-                        if (!JNetReflectorCore.UseDirectDotNetType) break;
+                        if (!useDirectDotNetType) break;
                         return "double";
                     case "java.lang.Object":
                         return "object";
