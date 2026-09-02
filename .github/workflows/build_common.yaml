@@ -62,6 +62,11 @@ on:
         required: false
         default: false
         type: boolean
+      EnableLinuxCoreDump:
+        description: 'Enable Linux process dump'
+        required: false
+        default: false
+        type: boolean
       EnableProcessDump:
         description: 'Enable .NET process dump'
         required: false
@@ -719,6 +724,31 @@ jobs:
         shell: bash
         run: echo "PS_EXTRA_ARGUMENT=${{ env.JAVA_HOME }}" >> $GITHUB_ENV
 
+      - name: Core dump diagnostics
+        if: ${{ inputs.EnableLinuxCoreDump == true }}
+        shell: bash
+        run: |
+          echo "Core limit:"
+          ulimit -c
+      
+          echo "Core pattern:"
+          cat /proc/sys/kernel/core_pattern
+      
+          echo "Core uses pid:"
+          cat /proc/sys/kernel/core_uses_pid
+
+      - name: Enable Linux core dumps
+        if: ${{ inputs.EnableLinuxCoreDump == true }}
+        shell: bash
+        run: |
+          ulimit -c unlimited
+
+          echo "Core pattern:"
+          cat /proc/sys/kernel/core_pattern
+
+          echo "Core size:"
+          ulimit -c
+
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         timeout-minutes: 5
         run: dotnet ./bin/${{ matrix.framework }}/JNetPerformanceTest.dll ${{ env.EXTRA_ARGUMENT }}
@@ -799,6 +829,17 @@ jobs:
             echo "=== Starting $TEST at $(date) ==="
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
           done
+
+      - name: Collect core dumps
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: coredumps_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          if-no-files-found: ignore
+          path: |
+            core*
+            **/core*
+            **/coredump*
 
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
