@@ -834,16 +834,15 @@ jobs:
         if: always()
         shell: bash
         run: |
-          mkdir -p "${{ github.workspace }}/coredumps"
+          if coredumpctl -1 info >/dev/null 2>&1; then
+            mkdir -p "${{ github.workspace }}/coredumps"
       
-          echo "=== coredumpctl list ==="
-          coredumpctl list || true
+            coredumpctl -1 info \
+              > "${{ github.workspace }}/coredumps/latest.info.txt"
       
-          echo "=== exporting latest coredump ==="
-          coredumpctl -1 dump > "${{ github.workspace }}/coredumps/latest.core" || true
-      
-          echo "=== coredump files ==="
-          ls -lah "${{ github.workspace }}/coredumps" || true
+            coredumpctl -1 dump \
+              > "${{ github.workspace }}/coredumps/latest.core"
+          fi
 
       - name: Collect core dumps
         if: always()
