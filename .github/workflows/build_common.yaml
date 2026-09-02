@@ -830,6 +830,21 @@ jobs:
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
           done
 
+      - name: Collect systemd coredumps
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p "${{ github.workspace }}/coredumps"
+      
+          echo "=== coredumpctl list ==="
+          coredumpctl list || true
+      
+          echo "=== exporting latest coredump ==="
+          coredumpctl -1 dump > "${{ github.workspace }}/coredumps/latest.core" || true
+      
+          echo "=== coredump files ==="
+          ls -lah "${{ github.workspace }}/coredumps" || true
+
       - name: Collect core dumps
         if: always()
         uses: actions/upload-artifact@v7
@@ -840,6 +855,7 @@ jobs:
             core*
             **/core*
             **/coredump*
+            ${{ github.workspace }}/coredumps/*
 
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
