@@ -447,6 +447,12 @@ jobs:
             jdk_version: 11
           - os: windows-11-arm
             jdk_version: 17
+          - os: windows-11-arm
+            jdk_version: 25
+          - os: windows-11-arm
+            jdk_vendor: oracle
+          - os: windows-11-arm
+            jdk_vendor: corretto
           - jdk_vendor: microsoft
             jdk_version: 8
           - jdk_vendor: oracle
