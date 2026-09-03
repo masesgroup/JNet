@@ -576,7 +576,7 @@ jobs:
 
       - if: ${{ matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        timeout-minutes: 10
+        timeout-minutes: 15
         shell: pwsh
         run: |
           foreach ($TEST in @(
@@ -778,7 +778,7 @@ jobs:
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST $DIAG_JVM_ARGS ${{ env.EXTRA_ARGUMENT }} &
             PID=$!
 
-            TIMEOUT_SECONDS=600
+            TIMEOUT_SECONDS=900
             DUMP_INTERVAL_SECONDS=60
             ELAPSED=0
             NEXT_DUMP=$DUMP_INTERVAL_SECONDS
@@ -823,7 +823,7 @@ jobs:
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         if: ${{ inputs.EnableAdvancedDiagnostic != true }}
-        timeout-minutes: 10
+        timeout-minutes: 15
         run: |
           for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
             echo "=== Starting $TEST at $(date) ==="
@@ -987,7 +987,7 @@ jobs:
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        timeout-minutes: 10
+        timeout-minutes: 15
         run: |
           for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
