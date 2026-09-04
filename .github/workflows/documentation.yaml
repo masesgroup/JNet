@@ -64,8 +64,12 @@ jobs:
 
       - run: dotnet tool update -g docfx
 
-      - name: Copy documentation files
+      - name: Copy extra documentation files
         run: Copy-Item ${{ github.workspace }}\CommonTools\website\en\* -Destination ${{ github.workspace }}\src\documentation\ -Force -Recurse -Verbose
+        shell: pwsh
+        
+      - name: Copy llms documentation files
+        run: Copy-Item ${{ github.workspace }}\llms.txt -Destination ${{ github.workspace }}\src\documentation\ -Force -Recurse -Verbose
         shell: pwsh
         
       - name: Build documentation
