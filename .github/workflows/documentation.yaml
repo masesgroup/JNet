@@ -67,7 +67,7 @@ jobs:
       - name: Copy documentation files
         run: Copy-Item ${{ github.workspace }}\CommonTools\website\en\* -Destination ${{ github.workspace }}\src\documentation\ -Force -Recurse -Verbose
         shell: pwsh
-        
+
       - name: Build documentation
         run: |
           cd src\documentation
