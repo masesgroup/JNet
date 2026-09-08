@@ -1,0 +1,63 @@
+name: Benchmark doc update
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 1'
+
+jobs:
+  run_benchmarks:
+    strategy:
+      matrix:
+        os: ['ubuntu-22.04', 'ubuntu-22.04-arm' ]
+        framework: [ 'net8.0', 'net10.0' ]
+        jdk_vendor: [ 'temurin' ]
+        jdk_version: [ '17', '25' ]
+
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with: 
+          distribution: temurin
+          java-version: ${{ matrix.jdk_version }} }
+
+      - name: Run benchmarks
+        run: |
+          dotnet run -c Release --project tests/net/JNet.Benchmarks -f ${{ matrix.framework }} -- \
+            --exporters json --artifacts ./BenchmarkDotNet.Artifacts
+
+      - name: Generate markdown output via github-action-benchmark
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          tool: 'benchmarkdotnet'
+          output-file-path: BenchmarkDotNet.Artifacts/results/InvokeBenchmarks-report-full.json
+          auto-push: false
+          save-data-file: false
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: benchmark-md-${{ matrix.framework }}
+          path: benchmark-latest.md
+
+  open_pr:
+    needs: run_benchmarks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
+        with: 
+          path: downloaded
+
+      - name: Place file in docs source
+        run: cp downloaded/benchmark-md-*/benchmark-latest.md src/documentation/articles/benchmark-latest.md
+
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: benchmark-latest-update-${{ github.run_number }}
+          commit-message: 'chore(perf): update benchmark-latest.md'
+          title: 'Update benchmark-latest.md (run #${{ github.run_number }})'
+          body: |
+            Auto-generated benchmark tables from BenchmarkDotNet.
+            This file is fully regenerated on every run; no manual edits expected here.
+          labels: performance
+          delete-branch: true

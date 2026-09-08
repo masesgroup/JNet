@@ -1,0 +1,107 @@
+name: Benchmark PR check
+
+on:
+  pull_request:
+    branches: [master]
+
+concurrency:
+  group: 'benchmark-pr-${{ github.event.pull_request.number || github.ref }}'
+  cancel-in-progress: true
+
+jobs:
+  build_pr:
+    uses: ./.github/workflows/build_common.yaml
+    with:
+      cache-key-suffix: pr
+      UseSpecialSettings: ${{ inputs.UseSpecialSettings || false }}
+      SpecialSettingsSource: ${{ inputs.SpecialSettingsSource || 'source.zip' }}
+    secrets: inherit
+
+  build_baseline:
+    uses: ./.github/workflows/build_common.yaml
+    with:
+      ref: master
+      cache-key-suffix: baseline
+    secrets: inherit
+
+  benchmark:
+    needs: [build_pr, build_baseline]
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ['ubuntu-22.04']
+        framework: ['net8.0']
+        jdk_vendor: ['temurin']
+        jdk_version: ['17']
+    runs-on: ${{ matrix.os }}
+    env:
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
+      ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Restore PR bin
+        uses: actions/cache/restore@v6
+        with:
+          fail-on-cache-miss: true
+          enableCrossOsArchive: true
+          path: ./bin-pr/
+          key: ${{ needs.build_pr.outputs.cache-key }}
+
+      - name: Restore baseline bin
+        uses: actions/cache/restore@v6
+        with:
+          fail-on-cache-miss: true
+          enableCrossOsArchive: true
+          path: ./bin-baseline/
+          key: ${{ needs.build_baseline.outputs.cache-key }}
+
+      - name: Set up JDK distribution
+        if: ${{ matrix.jdk_vendor != 'graalvm' && matrix.jdk_version != '8' }}
+        uses: actions/setup-java@v6
+        with:
+          distribution: ${{ matrix.jdk_vendor }}
+          java-version: ${{ matrix.jdk_version }}
+
+      - name: Set up JDK distribution (JRE 8)
+        if: ${{ matrix.jdk_vendor != 'graalvm' && matrix.jdk_version == '8' }}
+        uses: actions/setup-java@v6
+        with:
+          distribution: ${{ matrix.jdk_vendor }}
+          java-version: ${{ matrix.jdk_version }}
+          java-package: jre
+
+      - name: Set up GraalVM distribution
+        if: ${{ matrix.jdk_vendor == 'graalvm' }}
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '${{ matrix.jdk_version }}'
+          distribution: 'graalvm'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run benchmarks (PR)
+        run: |
+          dotnet ./bin-pr/${{ matrix.framework }}/JNet.Benchmarks.dll -- \
+            --exporters json --artifacts ./results-pr
+
+      - name: Run benchmarks (baseline)
+        run: |
+          dotnet ./bin-baseline/${{ matrix.framework }}/JNet.Benchmarks.dll -- \
+            --exporters json --artifacts ./results-baseline
+
+      - name: Compare PR vs baseline
+        run: |
+          git clone --depth 1 https://github.com/dotnet/performance.git /tmp/performance
+          dotnet run --project /tmp/performance/src/tools/ResultsComparer -- \
+            --base ./results-baseline/results \
+            --diff ./results-pr/results \
+            --threshold 10% \
+            --noise 0.3ms \
+            --top 999 \
+            --xunit
+
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: comparison-${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: '**/*.xml'
