@@ -10,7 +10,7 @@ concurrency:
 
 jobs:
   build_pr:
-    uses: ./.github/workflows/build_common.yaml
+    uses: ./.github/workflows/build_benchmarks.yaml
     with:
       cache-key-suffix: pr
       UseSpecialSettings: ${{ inputs.UseSpecialSettings || false }}
