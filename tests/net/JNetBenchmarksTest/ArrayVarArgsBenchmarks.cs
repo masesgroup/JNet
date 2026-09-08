@@ -58,7 +58,7 @@ public class ArrayVarArgsBenchmarks
     public void InvokeIntParam() => _instance.Invoke("executeIntMethod", 42);
 
     [Benchmark]
-    public void InvokeStringArrayFixed() => _instance.Invoke("executeStringArrayMethod", _stringArray);
+    public void InvokeStringArrayFixed() => _instance.Invoke("executeStringArrayMethod", (object)_stringArray);
 
     [Benchmark]
     public void InvokeIntArrayFixed() => _instance.Invoke("executeIntArrayMethod", _intArray);
