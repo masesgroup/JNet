@@ -18,7 +18,7 @@ jobs:
     secrets: inherit
 
   build_baseline:
-    uses: ./.github/workflows/build_common.yaml
+    uses: ./.github/workflows/build_benchmarks.yaml
     with:
       ref: master
       cache-key-suffix: baseline
