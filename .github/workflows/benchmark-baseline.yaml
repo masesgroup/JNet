@@ -93,7 +93,7 @@ jobs:
       - name: Run benchmarks
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll -- \
-            --exporters json github --artifacts ./results/${{ env.LABEL }}
+            --runtimes ${{ matrix.framework }} --exporters json github --artifacts ./results/${{ env.LABEL }} --filter *
 
       - name: Publish to benchmark-data history
         uses: benchmark-action/github-action-benchmark@v1
