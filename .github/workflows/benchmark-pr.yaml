@@ -45,16 +45,22 @@ jobs:
         with:
           fail-on-cache-miss: true
           enableCrossOsArchive: true
-          path: ./bin-pr/
+          path: ./bin/
           key: ${{ needs.build_pr.outputs.cache-key }}
+
+      - name: Rename PR bin
+        run: mv ${{ github.workspace }}/bin/ ${{ github.workspace }}/bin-pr/
 
       - name: Restore baseline bin
         uses: actions/cache/restore@v6
         with:
           fail-on-cache-miss: true
           enableCrossOsArchive: true
-          path: ./bin-baseline/
+          path: ./bin/
           key: ${{ needs.build_baseline.outputs.cache-key }}
+
+      - name: Rename baseline bin
+        run: mv ${{ github.workspace }}/bin/ ${{ github.workspace }}/bin-baseline/
 
       - name: Set up JDK distribution
         if: ${{ matrix.jdk_vendor != 'graalvm' && matrix.jdk_version != '8' }}
