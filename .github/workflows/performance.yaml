@@ -1,9 +1,5 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Performance workflow
 
-# Controls when the action will run. Triggers the workflow on push
-# events but only for the master branch
 on:
   workflow_dispatch:
     inputs:
@@ -27,99 +23,25 @@ concurrency:
   group: '${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}'
   cancel-in-progress: true
 
-# This workflow contains multiple jobs
-jobs: 
-  # Now run "build"
+jobs:
   build:
-    # The type of runner that the job will run on
-    runs-on: windows-2022
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:   
-      # Runs a set of commands using the runners shell
-      # Support longpaths
-      - name: Support long paths
-        run: git config --system core.longpaths true
-      
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v7
-        with:
-          fetch-depth: '1'
-          submodules: 'true'
-
-      - name: Download pscp directly
-        if: ${{ inputs.UseSpecialSettings == true }}
-        shell: cmd
-        run: |
-          curl -L -o "%RUNNER_TEMP%\pscp.exe" https://the.earth.li/~sgtatham/putty/latest/w64/pscp.exe
-
-      - name: Download ${{ inputs.SpecialSettingsSource }} via SFTP
-        if: ${{ inputs.UseSpecialSettings == true }}
-        shell: cmd
-        run: |
-          %RUNNER_TEMP%\pscp.exe -hostkey "${{ secrets.SFTP_HOST_KEY }}" -pw ${{ secrets.SFTP_PASSWORD }} -batch ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }}:/source-files/${{ inputs.SpecialSettingsSource }} "${{ github.workspace }}\${{ inputs.SpecialSettingsSource }}"
-
-      - name: Prepare other files
-        if: ${{ inputs.UseSpecialSettings == true }}
-        shell: cmd
-        run: |
-          7z e ${{ github.workspace }}\${{ inputs.SpecialSettingsSource }} -o"${{ github.workspace }}\" -p${{ secrets.FIRST_SPECIAL_SETTINGS_PASSWORD }}
-          7z x ${{ github.workspace }}\source.info -o"${{ github.workspace }}\Deploy\" -p${{ secrets.SPECIAL_SETTINGS_PASSWORD }} -y
-
-      - name: List NuGet packages downloaded
-        if: ${{ inputs.UseSpecialSettings == true }}
-        shell: cmd
-        run: dir .\Deploy\*nupkg
-
-      - name: Add special repo
-        if: ${{ success() && inputs.UseSpecialSettings == true }}
-        run: dotnet nuget add source "${{ github.workspace }}\Deploy" --name localDeployNuGet
-
-      - name: Pre compile
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNet\JNet.csproj
-        env:
-          GITHUB_SIMPLIFIED_GENERATION: true
-          
-      - name: Set up Apache Maven Central
-        uses: actions/setup-java@v6
-        with: # running setup-java again overwrites the settings.xml
-          distribution: temurin
-          java-version: 8
-          cache: 'maven'
-
-      - name: Create Jars for JNet
-        run: mvn --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
-
-      - name: Create Jars for tests
-        run: mvn --file ./tests/jvm/jnettest/pom.xml --no-transfer-progress package
-
-      - name: Compile tests and templates
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" tests\net\JNetTest.sln
-        env:
-          GITHUB_TEST_PREPARATION: true
-
-      - name: Prepare execution files
-        run: |
-          Copy-Item ${{ github.workspace }}\tests\scripts\JNetPSTest.ps1 -Destination bin\JNetPSTest.ps1 -Force
-
-      - name: Save JNet bin in cache
-        uses: actions/cache/save@v6
-        with:
-          enableCrossOsArchive: true
-          path: ./bin/
-          key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
+    uses: ./.github/workflows/build_benchmarks.yaml
+    with:
+      cache-key-suffix: perf
+      UseSpecialSettings: ${{ inputs.UseSpecialSettings }}
+      SpecialSettingsSource: ${{ inputs.SpecialSettingsSource }}
+    secrets: inherit
 
   tests_performance:
     needs: build
     strategy:
       fail-fast: false
       matrix:
-        os: ['ubuntu-22.04', 'ubuntu-22.04-arm' ]
-        framework: [ 'net8.0', 'net10.0' ]
-        jdk_vendor: [ 'temurin' ]
-        jdk_version: [ '17', '25' ]
-        run: [ 1, 2, 3, 4, 5 ]
-              
+        os: ['ubuntu-22.04', 'ubuntu-22.04-arm']
+        framework: ['net8.0', 'net10.0']
+        jdk_vendor: ['temurin']
+        jdk_version: ['17', '25']
+        run: [1, 2, 3, 4, 5]
     runs-on: ${{ matrix.os }}
     env:
       DOTNET_DbgEnableMiniDump: ${{ inputs.EnableProcessDump }}
@@ -131,27 +53,26 @@ jobs:
       DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
       ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
-
-    steps:     
+    steps:
       - name: Restore JNet bin from cache
         uses: actions/cache/restore@v6
         with:
           fail-on-cache-miss: true
           enableCrossOsArchive: true
           path: ./bin/
-          key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
+          key: ${{ needs.build.outputs.cache-key }}
 
       - name: Set up JDK distribution
         if: ${{ matrix.jdk_vendor != 'graalvm' && matrix.jdk_version != '8' }}
         uses: actions/setup-java@v6
-        with: # running setup-java again overwrites the settings.xml
+        with:
           distribution: ${{ matrix.jdk_vendor }}
           java-version: ${{ matrix.jdk_version }}
 
       - name: Set up JDK distribution
         if: ${{ matrix.jdk_vendor != 'graalvm' && matrix.jdk_version == '8' }}
         uses: actions/setup-java@v6
-        with: # running setup-java again overwrites the settings.xml
+        with:
           distribution: ${{ matrix.jdk_vendor }}
           java-version: ${{ matrix.jdk_version }}
           java-package: jre
@@ -160,8 +81,8 @@ jobs:
         if: ${{ matrix.jdk_vendor == 'graalvm' }}
         uses: graalvm/setup-graalvm@v1
         with:
-          java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
-          distribution: 'graalvm' # See 'Supported distributions' for available options
+          java-version: '${{ matrix.jdk_version }}'
+          distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
       - name: Full system info (CPU + load)
@@ -202,16 +123,16 @@ jobs:
           OUTPUT=$(dotnet ./bin/${{ matrix.framework }}/JNetPerformanceTest.dll)
           echo "$OUTPUT"
           TOTAL=$(echo "$OUTPUT" | grep "All tests completed in" | awk '{print $5}')
-          SECONDS_TOTAL=$(echo "$TOTAL" | awk -F: '{ 
-            split($3, s, "."); 
-            print ($1 * 3600) + ($2 * 60) + s[1] + ("0." s[2]); 
+          SECONDS_TOTAL=$(echo "$TOTAL" | awk -F: '{
+            split($3, s, ".");
+            print ($1 * 3600) + ($2 * 60) + s[1] + ("0." s[2]);
           }')
           THRESHOLD=20
           CPU_MODEL=$(lscpu | awk -F: '/Model name|Model:/ {print $2}' | sed 's/^ *//' | head -1)
           CPU_CORES=$(nproc)
           LOAD=$(cut -d ' ' -f1 /proc/loadavg)
           if (( $(echo "$SECONDS_TOTAL < $THRESHOLD" | bc -l) )); then
-            echo "🚀 FAST ($SECONDS_TOTAL s) | OS=${{ matrix.os }} | FW=${{ matrix.framework }} | JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }} | RUN=${{ matrix.run }} | CPU=$CPU_MODEL | CORES=$CPU_CORES | LOAD=$LOAD" | tee -a "$GITHUB_STEP_SUMMARY"
+            echo "FAST ($SECONDS_TOTAL s) | OS=${{ matrix.os }} | FW=${{ matrix.framework }} | JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }} | RUN=${{ matrix.run }} | CPU=$CPU_MODEL | CORES=$CPU_CORES | LOAD=$LOAD" | tee -a "$GITHUB_STEP_SUMMARY"
           fi
           echo "$SECONDS_TOTAL|OS=${{ matrix.os }}|FW=${{ matrix.framework }}|JDK=${{ matrix.jdk_vendor }}-${{ matrix.jdk_version }}|RUN=${{ matrix.run }}|CPU=$CPU_MODEL|CORES=$CPU_CORES|LOAD=$LOAD" > result.txt
 
@@ -223,46 +144,36 @@ jobs:
   collect_results:
     needs: tests_performance
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/download-artifact@v8
-
       - name: Sort results with hardware info
         run: |
           echo "=== SORTED RESULTS ==="
-
           cat */result.txt > all.txt
-
           sort -n all.txt | while IFS="|" read time os fw jdk run cpu cores load; do
-            MSG="🚀 $time s | $os | $fw | $jdk | $run | $cpu | cores=$cores | load=$load"
-
+            MSG="$time s | $os | $fw | $jdk | $run | $cpu | cores=$cores | load=$load"
             echo "$MSG"
             echo "$MSG" >> $GITHUB_STEP_SUMMARY
           done
 
-
   final_cleanup:
-    needs: [ collect_results ]
+    needs: [collect_results]
     if: "always()"
     runs-on: ubuntu-latest
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v7
         with:
           fetch-depth: '1'
-
       - name: Clear caches
         run: |
           gh extension install actions/gh-actions-cache
           echo "Fetching list of cache key"
           cacheKeysForPR=$(gh actions-cache list --key JNet_${{ github.run_number }}_${{ github.run_attempt }} | cut -f 1 )
-          ## Setting this to not fail the workflow while deleting cache keys.
           set +e
           echo "Deleting caches..."
           for cacheKey in $cacheKeysForPR
           do
-              gh actions-cache delete $cacheKey --confirm
+            gh actions-cache delete $cacheKey --confirm
           done
           echo "Done"
         env:
