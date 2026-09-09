@@ -3,6 +3,13 @@ name: Benchmark PR check
 on:
   pull_request:
     branches: [master]
+    paths:
+      - 'src/net/**'
+      - 'src/jvm/jnet/**'
+      - 'tests/net/JNetBenchmarksTest/**'
+      - 'tests/jvm/jnettest/**'
+      - '.github/workflows/benchmark-pr.yaml'
+      - '.github/workflows/build_benchmarks.yaml'
 
 concurrency:
   group: 'benchmark-pr-${{ github.event.pull_request.number || github.ref }}'

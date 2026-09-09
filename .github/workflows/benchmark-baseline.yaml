@@ -3,6 +3,13 @@ name: Benchmark baseline and history
 on:
   push:
     branches: [master]
+    paths:
+      - 'src/net/**'
+      - 'src/jvm/jnet/**'
+      - 'tests/net/JNetBenchmarksTest/**'
+      - 'tests/jvm/jnettest/**'
+      - '.github/workflows/benchmark-baseline.yaml'
+      - '.github/workflows/build_benchmarks.yaml'
   schedule:
     - cron: '0 3 * * 1'
   workflow_dispatch:
@@ -28,7 +35,7 @@ jobs:
       UseSpecialSettings: ${{ inputs.UseSpecialSettings || false }}
       SpecialSettingsSource: ${{ inputs.SpecialSettingsSource || 'source.zip' }}
     secrets: inherit
-
+  
   benchmark:
     needs: build
     strategy:
@@ -59,6 +66,8 @@ jobs:
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
       ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
     steps:
+      - uses: actions/checkout@v7
+
       - name: Restore bin from cache
         uses: actions/cache/restore@v6
         with:
@@ -91,15 +100,63 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run benchmarks
+        if: ${{ matrix.framework != 'net462' }}
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --runtimes ${{ matrix.framework }} --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*'
 
-      - name: Publish to benchmark-data history
+      - name: Run benchmarks
+        if: ${{ matrix.framework == 'net462' }}
+        run: |
+          .\bin\${{ matrix.framework }}\JNetBenchmarksTest.exe --runtimes ${{ matrix.framework }} --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*'
+
+      - name: Publish ArrayVarArgsBenchmarks
         uses: benchmark-action/github-action-benchmark@v1
         with:
-          name: 'JNet Invoke Benchmarks (${{ env.LABEL }})'
+          name: 'JNet ArrayVarArgsBenchmarks (${{ env.LABEL }})'
           tool: 'benchmarkdotnet'
-          output-file-path: results/${{ env.LABEL }}/results/InvokeBenchmarks-report-full.json
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.ArrayVarArgsBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: gh-pages
+          benchmark-data-dir-path: jnet/${{ env.LABEL }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
+      - name: Publish InvokeBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet InvokeBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.InvokeBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: gh-pages
+          benchmark-data-dir-path: jnet/${{ env.LABEL }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
+      - name: Publish PredicateRoundTripBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet PredicateRoundTripBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.PredicateRoundTripBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: gh-pages
+          benchmark-data-dir-path: jnet/${{ env.LABEL }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
+      - name: Publish PredicateSustainedBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet PredicateSustainedBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.PredicateSustainedBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
           gh-pages-branch: gh-pages
           benchmark-data-dir-path: jnet/${{ env.LABEL }}
