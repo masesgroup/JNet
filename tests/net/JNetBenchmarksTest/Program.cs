@@ -95,10 +95,7 @@ namespace MASES.JNetBenchmarksTest
     {
         public FastPrJobConfig()
         {
-            AddJob(Job.Default
-                .WithToolchain(InProcessEmitToolchain.Instance)
-                .WithWarmupCount(1)
-                .WithIterationCount(3));
+            AddJob(Job.Default.WithWarmupCount(1).WithIterationCount(3));
             AddDiagnoser(MemoryDiagnoser.Default);
         }
     }
@@ -107,11 +104,8 @@ namespace MASES.JNetBenchmarksTest
     {
         static void Main(string[] args)
         {
-            var config = DefaultConfig.Instance.AddDiagnoser(MemoryDiagnoser.Default)
-                                               .AddJob(Job.Default.WithToolchain(InProcessEmitToolchain.Instance));
-
+            var config = DefaultConfig.Instance.AddDiagnoser(MemoryDiagnoser.Default);
             config = Environment.GetEnvironmentVariable("BDN_FAST") != null ? new FastPrJobConfig() : config;
-
             BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args, config);
         }
     }

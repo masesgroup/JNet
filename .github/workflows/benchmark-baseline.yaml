@@ -99,21 +99,44 @@ jobs:
           distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Isolate BDN artifacts from repo build props
+        shell: bash
+        run: |
+          mkdir -p ./results/${{ env.LABEL }}
+          echo '<Project />' > ./results/${{ env.LABEL }}/Directory.Build.props
+          echo '<Project />' > ./results/${{ env.LABEL }}/Directory.Build.targets
+
       - name: Run benchmarks
         if: ${{ matrix.framework != 'net462' }}
         run: |
-          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --runtimes ${{ matrix.framework }} --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*'
+          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*'
 
       - name: Run benchmarks
         if: ${{ matrix.framework == 'net462' }}
         run: |
-          .\bin\${{ matrix.framework }}\JNetBenchmarksTest.exe --runtimes ${{ matrix.framework }} --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*'
+          .\bin\${{ matrix.framework }}\JNetBenchmarksTest.exe --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*'
 
       - name: Fail fast on benchmark issues
         shell: bash
         run: |
-          if grep -q "Benchmarks with issues" results/${{ env.LABEL }}/results/*.log 2>/dev/null; then
-            echo "::error::One or more benchmarks failed to run cleanly - see log above."
+          FAILED=0
+          for f in results/${{ env.LABEL }}/results/*-report-full*.json; do
+            if python3 -c "
+      import json, sys
+      data = json.load(open('$f'))
+      bad = [b['DisplayInfo'] for b in data['Benchmarks'] if b.get('Statistics') is None]
+      if bad:
+          print('Benchmarks with null Statistics in $f:')
+          for b in bad: print(' -', b)
+          sys.exit(1)
+      "; then
+              :
+            else
+              FAILED=1
+            fi
+          done
+          if [ "$FAILED" -ne 0 ]; then
+            echo "::error::One or more benchmarks produced no results - see above."
             exit 1
           fi
 

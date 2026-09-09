@@ -96,11 +96,11 @@ jobs:
 
       - name: Run benchmarks (PR)
         run: |
-          dotnet ./bin-pr/${{ matrix.framework }}/JNetBenchmarksTest.dll --runtimes ${{ matrix.framework }} --exporters json --artifacts ./results-pr --filter '*'
+          dotnet ./bin-pr/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json --artifacts ./results-pr --filter '*'
 
       - name: Run benchmarks (baseline)
         run: |
-          dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --runtimes ${{ matrix.framework }} --exporters json --artifacts ./results-baseline --filter '*'
+          dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json --artifacts ./results-baseline --filter '*'
 
       - name: Compare PR vs baseline
         env:
