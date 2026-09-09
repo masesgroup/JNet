@@ -112,8 +112,7 @@ jobs:
             --diff ./results-pr/results \
             --threshold 10% \
             --noise 0.3ms \
-            --top 999 \
-            --xunit
+            --top 999
 
       - uses: actions/upload-artifact@v7
         if: always()
