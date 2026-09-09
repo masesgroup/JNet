@@ -41,7 +41,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ['windows-latest', 'ubuntu-latest']
+        os: ['ubuntu-latest'] # 'windows-latest' commented out until found a solution on compilation
         framework: ['net8.0', 'net9.0', 'net10.0']
         jdk_vendor: ['temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm']
         jdk_version: ['11', '17', '21', '25']
@@ -143,6 +143,10 @@ jobs:
           alert-threshold: '150%'
           fail-on-alert: false
 
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
+
       - name: Publish InvokeBenchmarks
         uses: benchmark-action/github-action-benchmark@v1
         with:
@@ -157,6 +161,10 @@ jobs:
           alert-threshold: '150%'
           fail-on-alert: false
 
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
+
       - name: Publish PredicateRoundTripBenchmarks
         uses: benchmark-action/github-action-benchmark@v1
         with:
@@ -170,6 +178,10 @@ jobs:
           auto-push: true
           alert-threshold: '150%'
           fail-on-alert: false
+
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
 
       - name: Publish PredicateSustainedBenchmarks
         uses: benchmark-action/github-action-benchmark@v1
