@@ -44,7 +44,7 @@ jobs:
         os: ['windows-latest', 'ubuntu-latest']
         framework: ['net8.0', 'net9.0', 'net10.0']
         jdk_vendor: ['temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm']
-        jdk_version: ['8', '11', '17', '21', '25']
+        jdk_version: ['11', '17', '21', '25']
         exclude:
           - jdk_vendor: corretto
             jdk_version: 8
@@ -116,7 +116,7 @@ jobs:
         shell: bash
         run: |
           # Search for failed benchmarks in all JSON files inside the folder
-          if grep -q '"Statistics": null' results/${{ env.LABEL }}/*.json; then
+          if grep -q '"Statistics": null' results/${{ env.LABEL }}/results/*.json; then
             echo "::error::Detected failed benchmarks (Statistics: null) in the reports!"
             # Show which files contain the error
             grep -l '"Statistics": null' results/${{ env.LABEL }}/*.json
@@ -128,7 +128,7 @@ jobs:
         with:
           name: 'JNet ArrayVarArgsBenchmarks (${{ env.LABEL }})'
           tool: 'benchmarkdotnet'
-          output-file-path: results/${{ env.LABEL }}/MASES.JNetBenchmarksTest.ArrayVarArgsBenchmarks-report-full-compressed.json
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.ArrayVarArgsBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
           gh-pages-branch: gh-pages
           benchmark-data-dir-path: jnet/${{ env.LABEL }}
@@ -142,7 +142,7 @@ jobs:
         with:
           name: 'JNet InvokeBenchmarks (${{ env.LABEL }})'
           tool: 'benchmarkdotnet'
-          output-file-path: results/${{ env.LABEL }}/MASES.JNetBenchmarksTest.InvokeBenchmarks-report-full-compressed.json
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.InvokeBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
           gh-pages-branch: gh-pages
           benchmark-data-dir-path: jnet/${{ env.LABEL }}
@@ -156,7 +156,7 @@ jobs:
         with:
           name: 'JNet PredicateRoundTripBenchmarks (${{ env.LABEL }})'
           tool: 'benchmarkdotnet'
-          output-file-path: results/${{ env.LABEL }}/MASES.JNetBenchmarksTest.PredicateRoundTripBenchmarks-report-full-compressed.json
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.PredicateRoundTripBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
           gh-pages-branch: gh-pages
           benchmark-data-dir-path: jnet/${{ env.LABEL }}
@@ -170,7 +170,7 @@ jobs:
         with:
           name: 'JNet PredicateSustainedBenchmarks (${{ env.LABEL }})'
           tool: 'benchmarkdotnet'
-          output-file-path: results/${{ env.LABEL }}/MASES.JNetBenchmarksTest.PredicateSustainedBenchmarks-report-full-compressed.json
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.PredicateSustainedBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
           gh-pages-branch: gh-pages
           benchmark-data-dir-path: jnet/${{ env.LABEL }}

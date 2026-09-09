@@ -97,11 +97,15 @@ jobs:
       - name: Run benchmarks (PR)
         run: |
           dotnet ./bin-pr/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-pr --filter '*'
+        env:
+          BDN_FAST: 1
 
       - name: Run benchmarks (baseline)
         run: |
           dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '*'
-
+        env:
+          BDN_FAST: 1
+          
       - name: Show results-pr folder
         shell: bash
         run: ls -lasR ./results-pr/${{ env.LABEL }}
