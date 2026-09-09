@@ -105,6 +105,12 @@ jobs:
           echo '<Project />' > ./results/${{ env.LABEL }}/Directory.Build.targets
 
       - name: Run benchmarks
+        if: ${{ matrix.os == 'windows-latest' }}
+        run: |
+          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*' -- p:LangVersion=latest
+
+      - name: Run benchmarks
+        if: ${{ matrix.os != 'windows-latest' }}
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*'
 
@@ -130,7 +136,7 @@ jobs:
           tool: 'benchmarkdotnet'
           output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.ArrayVarArgsBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
-          gh-pages-branch: gh-pages
+          gh-pages-branch: master
           benchmark-data-dir-path: jnet/${{ env.LABEL }}
           github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
           auto-push: true
@@ -144,7 +150,7 @@ jobs:
           tool: 'benchmarkdotnet'
           output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.InvokeBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
-          gh-pages-branch: gh-pages
+          gh-pages-branch: master
           benchmark-data-dir-path: jnet/${{ env.LABEL }}
           github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
           auto-push: true
@@ -158,7 +164,7 @@ jobs:
           tool: 'benchmarkdotnet'
           output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.PredicateRoundTripBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
-          gh-pages-branch: gh-pages
+          gh-pages-branch: master
           benchmark-data-dir-path: jnet/${{ env.LABEL }}
           github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
           auto-push: true
@@ -172,7 +178,7 @@ jobs:
           tool: 'benchmarkdotnet'
           output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.PredicateSustainedBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
-          gh-pages-branch: gh-pages
+          gh-pages-branch: master
           benchmark-data-dir-path: jnet/${{ env.LABEL }}
           github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
           auto-push: true
