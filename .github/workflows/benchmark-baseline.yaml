@@ -123,26 +123,13 @@ jobs:
       - name: Fail fast on benchmark issues
         shell: bash
         run: |
-          FAILED=0
-          for f in results/${{ env.LABEL }}/*-report-full*.json; do
-            if python3 -c "
-            import json, sys
-            data = json.load(open('$f'))
-            bad = [b['DisplayInfo'] for b in data['Benchmarks'] if b.get('Statistics') is None]
-            if bad:
-                print('Benchmarks with null Statistics in $f:')
-                for b in bad: print(' -', b)
-                sys.exit(1)
-            "; then
-                    :
-                  else
-                    FAILED=1
-                  fi
-                done
-                if [ "$FAILED" -ne 0 ]; then
-                  echo "::error::One or more benchmarks produced no results - see above."
-                  exit 1
-                fi
+          # Search for failed benchmarks in all JSON files inside the folder
+          if grep -q '"Statistics": null' results/${{ env.LABEL }}/*.json; then
+            echo "::error::Detected failed benchmarks (Statistics: null) in the reports!"
+            # Show which files contain the error
+            grep -l '"Statistics": null' results/${{ env.LABEL }}/*.json
+            exit 1
+          fi
 
       - name: Publish ArrayVarArgsBenchmarks
         uses: benchmark-action/github-action-benchmark@v1
