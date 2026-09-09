@@ -29,10 +29,6 @@ namespace MASES.JNetBenchmarksTest;
 [SimpleJob(RuntimeMoniker.Net10_0)]
 public class PredicateRoundTripBenchmarks
 {
-    // Combinazioni escluse nel Program.cs originale ("removed since it hasn't meaning"):
-    // byIndex=false/true con continueFirstCheck=false + continueSecondCheck=true sono
-    // le uniche saltate lì; qui copriamo l'intero prodotto cartesiano per completezza
-    // del confronto — puoi restringerlo se vuoi rispecchiare esattamente l'originale.
     [Params(false, true)]
     public bool ByIndex;
 

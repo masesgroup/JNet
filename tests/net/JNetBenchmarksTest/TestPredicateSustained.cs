@@ -32,8 +32,13 @@ public class PredicateSustainedBenchmarks
     [Params(false, true)]
     public bool ByIndex;
 
-    [Params(1000, 100000)]
-    public int InnerIterations;
+    [Params(false, true)]
+    public bool ContinueFirstCheck;
+
+    [Params(false, true)]
+    public bool ContinueSecondCheck;
+
+    private const int TotalCallbacks = 100000;
 
     Predicate<object> _predicate;
     IJavaObject _jClass;
@@ -49,7 +54,7 @@ public class PredicateSustainedBenchmarks
 
         _method = ByIndex ? "executePredicateIndex" : "executePredicate";
 
-        _predicate = new Predicate<object>(true, true)
+        _predicate = new Predicate<object>(ContinueFirstCheck, ContinueSecondCheck)
         {
             OnTest = (o) => true
         };
@@ -63,9 +68,9 @@ public class PredicateSustainedBenchmarks
         _predicate?.Dispose();
     }
 
-    [Benchmark]
+    [Benchmark(OperationsPerInvoke = TotalCallbacks)]
     public void PredicateSustained()
     {
-        _jClass.InvokeWithSignature(_method, "(I)Z", InnerIterations);
+        _jClass.InvokeWithSignature(_method, "(I)Z", TotalCallbacks);
     }
 }
