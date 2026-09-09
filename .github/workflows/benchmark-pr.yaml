@@ -103,6 +103,8 @@ jobs:
           dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --runtimes ${{ matrix.framework }} --exporters json --artifacts ./results-baseline --filter '*'
 
       - name: Compare PR vs baseline
+        env:
+          DOTNET_ROLL_FORWARD: LatestMajor
         run: |
           git clone --depth 1 https://github.com/dotnet/performance.git /tmp/performance
           dotnet run --project /tmp/performance/src/tools/ResultsComparer -- \

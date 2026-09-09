@@ -109,6 +109,14 @@ jobs:
         run: |
           .\bin\${{ matrix.framework }}\JNetBenchmarksTest.exe --runtimes ${{ matrix.framework }} --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*'
 
+      - name: Fail fast on benchmark issues
+        shell: bash
+        run: |
+          if grep -q "Benchmarks with issues" results/${{ env.LABEL }}/results/*.log 2>/dev/null; then
+            echo "::error::One or more benchmarks failed to run cleanly - see log above."
+            exit 1
+          fi
+
       - name: Publish ArrayVarArgsBenchmarks
         uses: benchmark-action/github-action-benchmark@v1
         with:
