@@ -24,8 +24,6 @@ using MASES.JNetTest.Common;
 namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
-[SimpleJob(RuntimeMoniker.Net80)]
-[SimpleJob(RuntimeMoniker.Net10_0)]
 public class ArrayVarArgsBenchmarks
 {
     [Params(10, 1000)]

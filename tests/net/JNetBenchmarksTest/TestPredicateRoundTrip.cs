@@ -25,8 +25,6 @@ using Org.Mases.JNet;
 namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
-[SimpleJob(RuntimeMoniker.Net80)]
-[SimpleJob(RuntimeMoniker.Net10_0)]
 public class PredicateRoundTripBenchmarks
 {
     [Params(false, true)]
