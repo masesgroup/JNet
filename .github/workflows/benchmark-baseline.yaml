@@ -116,36 +116,40 @@ jobs:
         run: |
           .\bin\${{ matrix.framework }}\JNetBenchmarksTest.exe --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*'
 
+      - name: Show results folder
+        shell: bash
+        run: ls -lasR ./results/${{ env.LABEL }}
+
       - name: Fail fast on benchmark issues
         shell: bash
         run: |
           FAILED=0
-          for f in results/${{ env.LABEL }}/results/*-report-full*.json; do
+          for f in results/${{ env.LABEL }}/*-report-full*.json; do
             if python3 -c "
-      import json, sys
-      data = json.load(open('$f'))
-      bad = [b['DisplayInfo'] for b in data['Benchmarks'] if b.get('Statistics') is None]
-      if bad:
-          print('Benchmarks with null Statistics in $f:')
-          for b in bad: print(' -', b)
-          sys.exit(1)
-      "; then
-              :
-            else
-              FAILED=1
-            fi
-          done
-          if [ "$FAILED" -ne 0 ]; then
-            echo "::error::One or more benchmarks produced no results - see above."
-            exit 1
-          fi
+            import json, sys
+            data = json.load(open('$f'))
+            bad = [b['DisplayInfo'] for b in data['Benchmarks'] if b.get('Statistics') is None]
+            if bad:
+                print('Benchmarks with null Statistics in $f:')
+                for b in bad: print(' -', b)
+                sys.exit(1)
+            "; then
+                    :
+                  else
+                    FAILED=1
+                  fi
+                done
+                if [ "$FAILED" -ne 0 ]; then
+                  echo "::error::One or more benchmarks produced no results - see above."
+                  exit 1
+                fi
 
       - name: Publish ArrayVarArgsBenchmarks
         uses: benchmark-action/github-action-benchmark@v1
         with:
           name: 'JNet ArrayVarArgsBenchmarks (${{ env.LABEL }})'
           tool: 'benchmarkdotnet'
-          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.ArrayVarArgsBenchmarks-report-full-compressed.json
+          output-file-path: results/${{ env.LABEL }}/MASES.JNetBenchmarksTest.ArrayVarArgsBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
           gh-pages-branch: gh-pages
           benchmark-data-dir-path: jnet/${{ env.LABEL }}
@@ -159,7 +163,7 @@ jobs:
         with:
           name: 'JNet InvokeBenchmarks (${{ env.LABEL }})'
           tool: 'benchmarkdotnet'
-          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.InvokeBenchmarks-report-full-compressed.json
+          output-file-path: results/${{ env.LABEL }}/MASES.JNetBenchmarksTest.InvokeBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
           gh-pages-branch: gh-pages
           benchmark-data-dir-path: jnet/${{ env.LABEL }}
@@ -173,7 +177,7 @@ jobs:
         with:
           name: 'JNet PredicateRoundTripBenchmarks (${{ env.LABEL }})'
           tool: 'benchmarkdotnet'
-          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.PredicateRoundTripBenchmarks-report-full-compressed.json
+          output-file-path: results/${{ env.LABEL }}/MASES.JNetBenchmarksTest.PredicateRoundTripBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
           gh-pages-branch: gh-pages
           benchmark-data-dir-path: jnet/${{ env.LABEL }}
@@ -187,7 +191,7 @@ jobs:
         with:
           name: 'JNet PredicateSustainedBenchmarks (${{ env.LABEL }})'
           tool: 'benchmarkdotnet'
-          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.PredicateSustainedBenchmarks-report-full-compressed.json
+          output-file-path: results/${{ env.LABEL }}/MASES.JNetBenchmarksTest.PredicateSustainedBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
           gh-pages-branch: gh-pages
           benchmark-data-dir-path: jnet/${{ env.LABEL }}

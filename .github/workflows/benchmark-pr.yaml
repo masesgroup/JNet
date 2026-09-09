@@ -102,14 +102,22 @@ jobs:
         run: |
           dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json --artifacts ./results-baseline --filter '*'
 
+      - name: Show results-pr folder
+        shell: bash
+        run: ls -lasR ./results-pr/${{ env.LABEL }}
+
+      - name: Show results-baseline folder
+        shell: bash
+        run: ls -lasR ./results-baseline/${{ env.LABEL }}
+
       - name: Compare PR vs baseline
         env:
           DOTNET_ROLL_FORWARD: LatestMajor
         run: |
           git clone --depth 1 https://github.com/dotnet/performance.git /tmp/performance
           dotnet run --project /tmp/performance/src/tools/ResultsComparer -- \
-            --base ./results-baseline/results \
-            --diff ./results-pr/results \
+            --base ./results-baseline \
+            --diff ./results-pr \
             --threshold 10% \
             --noise 0.3ms \
             --top 999
