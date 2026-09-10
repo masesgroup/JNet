@@ -222,6 +222,54 @@ jobs:
           alert-threshold: '150%'
           fail-on-alert: false
 
+  cross_matrix_comparison:
+    needs: benchmark
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    env:
+      ANCHOR: ubuntu-22.04_net8.0_temurin_17
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          path: downloaded
+          pattern: bdn-results-*
+
+      - name: Install roll-forward for ResultsComparer (net6.0 EOL)
+        run: echo "DOTNET_ROLL_FORWARD=LatestMajor" >> "$GITHUB_ENV"
+
+      - name: Clone ResultsComparer
+        run: git clone --depth 1 https://github.com/dotnet/performance.git /tmp/performance
+
+      - name: Compare every cell against the anchor
+        shell: bash
+        run: |
+          mkdir -p cross-comparison-reports
+          anchor_dir="downloaded/bdn-results-${ANCHOR}"
+          if [ ! -d "$anchor_dir" ]; then
+            echo "::error::Anchor cell '${ANCHOR}' not found among published results."
+            exit 1
+          fi
+
+          for dir in downloaded/bdn-results-*/; do
+            label=$(basename "$dir" | sed 's/^bdn-results-//')
+            [ "$label" = "$ANCHOR" ] && continue
+
+            echo "=== $ANCHOR vs $label ==="
+            dotnet run --project /tmp/performance/src/tools/ResultsComparer -- \
+              --base "$anchor_dir" \
+              --diff "$dir" \
+              --threshold 10% \
+              --noise 0.3ms \
+              --top 999 \
+              > "cross-comparison-reports/${ANCHOR}_vs_${label}.txt" 2>&1 || true
+          done
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: cross-matrix-comparison-reports
+          path: cross-comparison-reports/
+          retention-days: 30
+
   update_doc:
     needs: benchmark
     if: github.event_name != 'pull_request'
