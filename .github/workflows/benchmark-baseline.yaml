@@ -53,7 +53,7 @@ jobs:
             "os": ["ubuntu-22.04","ubuntu-22.04-arm","ubuntu-24.04","ubuntu-24.04-arm"],
             "framework": ["net8.0", "net9.0", "net10.0"],
             "jdk_vendor": ["temurin", "zulu", "microsoft", "corretto", "oracle", "graalvm"],
-            "jdk_version": ["8", "11", "17", "21", "25"],
+            "jdk_version": ["11", "17", "21", "25"],
             "exclude": [
               { "jdk_vendor": "corretto", "jdk_version": "8" },
               { "jdk_vendor": "microsoft", "jdk_version": "8" },
