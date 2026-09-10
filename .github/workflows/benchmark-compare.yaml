@@ -1,4 +1,4 @@
-name: Benchmark PR and diff check
+name: Benchmark compare check
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ on:
       - 'src/jvm/jnet/**'
       - 'tests/net/JNetBenchmarksTest/**'
       - 'tests/jvm/jnettest/**'
-      - '.github/workflows/benchmark-pr.yaml'
+      - '.github/workflows/benchmark-compare.yaml'
       - '.github/workflows/build_benchmarks.yaml'
   workflow_dispatch:
     inputs:
@@ -28,20 +28,28 @@ on:
         required: false
         default: 'source.zip'
         type: string
-      EnableAdvancedTestLogging:
+      Threshold:
         required: false
-        default: false
-        type: boolean
+        default: '10%'
+        type: string
+      Noise:
+        required: false
+        default: '0.3ms'
+        type: string
+      Top:
+        required: false
+        default: '999'
+        type: string
 
 concurrency:
-  group: 'benchmark-pr-${{ github.event.pull_request.number || github.ref }}'
+  group: 'benchmark-compare-${{ github.event.pull_request.number || github.ref }}'
   cancel-in-progress: true
 
 jobs:
-  build_pr:
+  build_current:
     uses: ./.github/workflows/build_benchmarks.yaml
     with:
-      cache-key-suffix: pr
+      cache-key-suffix: current
       UseSpecialSettings: ${{ inputs.UseSpecialSettingsCurrent || false }}
       SpecialSettingsSource: ${{ inputs.SpecialSettingsSourceCurrent || 'source.zip' }}
     secrets: inherit
@@ -55,15 +63,50 @@ jobs:
       SpecialSettingsSource: ${{ inputs.SpecialSettingsSourceBaseline || 'source.zip' }}
     secrets: inherit
 
+  prepare_matrix:
+    needs: [build_current, build_baseline]
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix-pull-request.outputs.matrix || steps.set-matrix.outputs.matrix }}
+    steps:
+      - id: set-matrix-pull-request
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          matrix=$(cat <<'EOF'
+          {
+            "os": ["ubuntu-latest"],
+            "framework": ["net8.0"],
+            "jdk_vendor": ["temurin"],
+            "jdk_version": ["17"]
+          }
+          EOF
+          )
+          echo "matrix=$(echo "$matrix" | jq -c .)" >> "$GITHUB_OUTPUT"
+      - id: set-matrix
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          matrix=$(cat <<'EOF'
+          {
+            "os": ["ubuntu-latest"],
+            "framework": ["net8.0", "net10.0"],
+            "jdk_vendor": ["temurin", "graalvm"],
+            "jdk_version": ["11", "17", "21", "25"],
+            "exclude": [
+              { "jdk_vendor": "graalvm", "jdk_version": "8" },
+              { "jdk_vendor": "graalvm", "jdk_version": "11" }
+            ]
+          }
+          EOF
+          )
+          echo "matrix=$(echo "$matrix" | jq -c .)" >> "$GITHUB_OUTPUT"
+
   benchmark:
-    needs: [build_pr, build_baseline]
+    needs: [prepare_matrix]
     strategy:
       fail-fast: false
-      matrix:
-        os: ['ubuntu-22.04']
-        framework: ['net8.0']
-        jdk_vendor: ['temurin']
-        jdk_version: ['17']
+      matrix: ${{ fromJSON(needs.prepare_matrix.outputs.matrix) }}
     runs-on: ${{ matrix.os }}
     env:
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
@@ -72,16 +115,16 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Restore PR bin
+      - name: Restore Current bin
         uses: actions/cache/restore@v6
         with:
           fail-on-cache-miss: true
           enableCrossOsArchive: true
           path: ./bin/
-          key: ${{ needs.build_pr.outputs.cache-key }}
+          key: ${{ needs.build_current.outputs.cache-key }}
 
-      - name: Rename PR bin
-        run: mv ${{ github.workspace }}/bin/ ${{ github.workspace }}/bin-pr/
+      - name: Rename Current bin
+        run: mv ${{ github.workspace }}/bin/ ${{ github.workspace }}/bin-current/
 
       - name: Restore baseline bin
         uses: actions/cache/restore@v6
@@ -117,33 +160,33 @@ jobs:
           distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Run benchmarks (PR)
+      - name: Run benchmarks (current)
         run: |
-          dotnet ./bin-pr/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-pr --filter '*'
+          dotnet ./bin-current/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-current --filter '*'
 
       - name: Run benchmarks (baseline)
         run: |
           dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '*'
 
-      - name: Show results-pr folder
+      - name: Show results-current folder
         shell: bash
-        run: ls -lasR ./results-pr/${{ env.LABEL }}
+        run: ls -lasR ./results-current/${{ env.LABEL }}
 
       - name: Show results-baseline folder
         shell: bash
         run: ls -lasR ./results-baseline/${{ env.LABEL }}
 
-      - name: Compare PR vs baseline
+      - name: Compare current vs baseline
         env:
           DOTNET_ROLL_FORWARD: LatestMajor
         run: |
           git clone --depth 1 https://github.com/dotnet/performance.git /tmp/performance
           dotnet run --project /tmp/performance/src/tools/ResultsComparer -- \
             --base ./results-baseline/results \
-            --diff ./results-pr/results \
-            --threshold 10% \
-            --noise 0.3ms \
-            --top 999
+            --diff ./results-current/results \
+            --threshold ${{ inputs.Threshold || 10% }} \
+            --noise ${{ inputs.Noise || 0.3ms }} \
+            --top ${{ inputs.Top || 999 }}
 
       - uses: actions/upload-artifact@v7
         if: always()
