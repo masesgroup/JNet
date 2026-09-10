@@ -51,7 +51,7 @@ jobs:
           matrix=$(cat <<'EOF'
           {
             "os": ["ubuntu-22.04","ubuntu-22.04-arm","ubuntu-24.04","ubuntu-24.04-arm"],
-            "framework": ["net8.0", "net9.0", "net10.0"],
+            "framework": ["net8.0", "net10.0"],
             "jdk_vendor": ["temurin", "zulu", "microsoft", "corretto", "oracle", "graalvm"],
             "jdk_version": ["11", "17", "21", "25"],
             "exclude": [
@@ -155,7 +155,7 @@ jobs:
           output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.ArrayVarArgsBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
           gh-pages-branch: master
-          benchmark-data-dir-path: jnet/${{ env.LABEL }}
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
           github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
           auto-push: true
           alert-threshold: '150%'
@@ -173,7 +173,7 @@ jobs:
           output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.InvokeBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
           gh-pages-branch: master
-          benchmark-data-dir-path: jnet/${{ env.LABEL }}
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
           github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
           auto-push: true
           alert-threshold: '150%'
@@ -191,7 +191,7 @@ jobs:
           output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.PredicateRoundTripBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
           gh-pages-branch: master
-          benchmark-data-dir-path: jnet/${{ env.LABEL }}
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
           github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
           auto-push: true
           alert-threshold: '150%'
@@ -209,7 +209,7 @@ jobs:
           output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.PredicateSustainedBenchmarks-report-full-compressed.json
           gh-repository: 'github.com/masesgroup/benchmark-data'
           gh-pages-branch: master
-          benchmark-data-dir-path: jnet/${{ env.LABEL }}
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
           github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
           auto-push: true
           alert-threshold: '150%'
