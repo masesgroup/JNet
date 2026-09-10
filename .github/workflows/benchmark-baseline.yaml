@@ -121,7 +121,7 @@ jobs:
 
       - name: Run benchmarks
         run: |
-          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*'
+          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/${{ env.LABEL }} --filter '*'
 
       - name: Fail fast on benchmark issues
         shell: bash
