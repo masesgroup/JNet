@@ -132,6 +132,12 @@ jobs:
           path: results/${{ env.LABEL }}/results/*-report-full*.json
           retention-days: 7
 
+      - uses: actions/upload-artifact@v7
+        with:
+          name: bdn-md-${{ env.LABEL }}
+          path: results/${{ env.LABEL }}/results/*-report-github.md
+          retention-days: 14
+
   publish_history:
     if: ${{ inputs.UseSpecialSettings != true }}
     needs: [benchmark, prepare_matrix]

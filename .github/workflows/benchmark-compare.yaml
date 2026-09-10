@@ -64,7 +64,6 @@ jobs:
     secrets: inherit
 
   prepare_matrix:
-    needs: [build_current, build_baseline]
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.set-matrix-pull-request.outputs.matrix || steps.set-matrix.outputs.matrix }}
@@ -103,7 +102,7 @@ jobs:
           echo "matrix=$(echo "$matrix" | jq -c .)" >> "$GITHUB_OUTPUT"
 
   benchmark:
-    needs: [prepare_matrix]
+    needs: [build_current, build_baseline, prepare_matrix]
     strategy:
       fail-fast: false
       matrix: ${{ fromJSON(needs.prepare_matrix.outputs.matrix) }}
