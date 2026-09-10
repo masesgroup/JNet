@@ -278,6 +278,45 @@ jobs:
           path: cross-comparison-reports/
           retention-days: 30
 
+      - name: Highlight variations in job summary
+        shell: bash
+        run: |
+          {
+            echo "## Cross-matrix comparison — anchor: \`${ANCHOR}\`"
+            echo ""
+            found_any=0
+            for f in cross-comparison-reports/*.txt; do
+              label=$(basename "$f" .txt | sed "s/^${ANCHOR}_vs_//")
+
+              if grep -q "^No differences found" "$f"; then
+                continue
+              fi
+
+              found_any=1
+              echo "### \`$label\`"
+              echo ""
+              # summary block (better/worse count, geomean)
+              grep -A2 '^summary:' "$f" | head -n3
+              echo ""
+              # the Faster/Slower markdown table itself, if present
+              if grep -qE '^\| Faster' "$f"; then
+                echo "**Faster:**"
+                echo ""
+                awk '/^\| Faster/{p=1} p{print} /^$/{if(p)exit}' "$f"
+                echo ""
+              fi
+              if grep -qE '^\| Slower' "$f"; then
+                echo "**Slower:**"
+                echo ""
+                awk '/^\| Slower/{p=1} p{print} /^$/{if(p)exit}' "$f"
+                echo ""
+              fi
+            done
+            if [ "$found_any" -eq 0 ]; then
+              echo "_No cell showed a statistically significant deviation from the anchor._"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
   update_doc:
     needs: benchmark
     if: github.event_name != 'pull_request'
