@@ -184,9 +184,9 @@ jobs:
           dotnet run --project /tmp/performance/src/tools/ResultsComparer -- \
             --base ./results-baseline/results \
             --diff ./results-current/results \
-            --threshold ${{ inputs.Threshold || 10% }} \
-            --noise ${{ inputs.Noise || 0.3ms }} \
-            --top ${{ inputs.Top || 999 }}
+            --threshold ${{ inputs.Threshold || '10%' }} \
+            --noise ${{ inputs.Noise || '0.3ms' }} \
+            --top ${{ inputs.Top || '999' }}
 
       - uses: actions/upload-artifact@v7
         if: always()
