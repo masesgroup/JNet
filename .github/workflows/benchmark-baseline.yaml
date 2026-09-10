@@ -36,28 +36,42 @@ jobs:
       SpecialSettingsSource: ${{ inputs.SpecialSettingsSource || 'source.zip' }}
     secrets: inherit
   
+  prepare_matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - id: set-matrix
+        shell: bash
+        run: |
+          # NOTE: windows-latest and net462 temporarily excluded due to
+          # MSB4066 (xmlns in <LangVersion>) in BenchmarkDotNet's
+          # auto-generated project on Windows - under investigation,
+          # unrelated to the InProcessEmitToolchain issue (already reverted).
+          matrix=$(cat <<'EOF'
+          {
+            "os": ["ubuntu-22.04","ubuntu-22.04-arm","ubuntu-24.04","ubuntu-24.04-arm"],
+            "framework": ["net8.0", "net9.0", "net10.0"],
+            "jdk_vendor": ["temurin", "zulu", "microsoft", "corretto", "oracle", "graalvm"],
+            "jdk_version": ["8", "11", "17", "21", "25"],
+            "exclude": [
+              { "jdk_vendor": "corretto", "jdk_version": "8" },
+              { "jdk_vendor": "microsoft", "jdk_version": "8" },
+              { "jdk_vendor": "oracle", "jdk_version": "8" },
+              { "jdk_vendor": "oracle", "jdk_version": "11" },
+              { "jdk_vendor": "graalvm", "jdk_version": "8" },
+              { "jdk_vendor": "graalvm", "jdk_version": "11" }
+            ]
+          }
+          EOF
+          )
+          echo "matrix=$(echo "$matrix" | jq -c .)" >> "$GITHUB_OUTPUT"
+
   benchmark:
-    needs: build
+    needs: [build, prepare_matrix]
     strategy:
       fail-fast: false
-      matrix:
-        os: ['ubuntu-latest'] # 'windows-latest' commented out until found a solution on compilation
-        framework: ['net8.0', 'net9.0', 'net10.0']
-        jdk_vendor: ['temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm']
-        jdk_version: ['11', '17', '21', '25']
-        exclude:
-          - jdk_vendor: corretto
-            jdk_version: 8
-          - jdk_vendor: microsoft
-            jdk_version: 8
-          - jdk_vendor: oracle
-            jdk_version: 8
-          - jdk_vendor: oracle
-            jdk_version: 11
-          - jdk_vendor: graalvm
-            jdk_version: 8
-          - jdk_vendor: graalvm
-            jdk_version: 11
+      matrix: ${{ fromJSON(needs.prepare_matrix.outputs.matrix) }}
     runs-on: ${{ matrix.os }}
     env:
       LABEL: ${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
@@ -97,26 +111,9 @@ jobs:
           distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Isolate BDN artifacts from repo build props
-        shell: bash
-        run: |
-          mkdir -p ./results/${{ env.LABEL }}
-          echo '<Project />' > ./results/${{ env.LABEL }}/Directory.Build.props
-          echo '<Project />' > ./results/${{ env.LABEL }}/Directory.Build.targets
-
       - name: Run benchmarks
-        if: ${{ matrix.os == 'windows-latest' }}
-        run: |
-          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*' -- p:LangVersion=latest
-
-      - name: Run benchmarks
-        if: ${{ matrix.os != 'windows-latest' }}
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*'
-
-      - name: Show results folder
-        shell: bash
-        run: ls -lasR ./results/${{ env.LABEL }}
 
       - name: Fail fast on benchmark issues
         shell: bash
@@ -128,6 +125,27 @@ jobs:
             grep -l '"Statistics": null' results/${{ env.LABEL }}/*.json
             exit 1
           fi
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: bdn-results-${{ env.LABEL }}
+          path: results/${{ env.LABEL }}/results/*-report-full*.json
+          retention-days: 7
+
+  publish_history:
+    needs: [benchmark, prepare_matrix]
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix: ${{ fromJSON(needs.prepare_matrix.outputs.matrix) }}
+    runs-on: ubuntu-latest
+    env:
+      LABEL: ${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: bdn-results-${{ env.LABEL }}
+          path: results/${{ env.LABEL }}/results
 
       - name: Publish ArrayVarArgsBenchmarks
         uses: benchmark-action/github-action-benchmark@v1
@@ -196,12 +214,6 @@ jobs:
           auto-push: true
           alert-threshold: '150%'
           fail-on-alert: false
-
-      - uses: actions/upload-artifact@v7
-        with:
-          name: bdn-md-${{ env.LABEL }}
-          path: results/${{ env.LABEL }}/results/*-report-github.md
-          retention-days: 14
 
   update_doc:
     needs: benchmark
