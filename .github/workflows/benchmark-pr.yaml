@@ -1,4 +1,4 @@
-name: Benchmark PR check
+name: Benchmark PR and diff check
 
 on:
   pull_request:
@@ -10,6 +10,28 @@ on:
       - 'tests/jvm/jnettest/**'
       - '.github/workflows/benchmark-pr.yaml'
       - '.github/workflows/build_benchmarks.yaml'
+  workflow_dispatch:
+    inputs:
+      UseSpecialSettingsCurrent:
+        required: false
+        default: false
+        type: boolean
+      SpecialSettingsSourceCurrent:
+        required: false
+        default: 'source.zip'
+        type: string
+      UseSpecialSettingsBaseline:
+        required: false
+        default: false
+        type: boolean
+      SpecialSettingsSourceBaseline:
+        required: false
+        default: 'source.zip'
+        type: string
+      EnableAdvancedTestLogging:
+        required: false
+        default: false
+        type: boolean
 
 concurrency:
   group: 'benchmark-pr-${{ github.event.pull_request.number || github.ref }}'
@@ -20,8 +42,8 @@ jobs:
     uses: ./.github/workflows/build_benchmarks.yaml
     with:
       cache-key-suffix: pr
-      UseSpecialSettings: ${{ inputs.UseSpecialSettings || false }}
-      SpecialSettingsSource: ${{ inputs.SpecialSettingsSource || 'source.zip' }}
+      UseSpecialSettings: ${{ inputs.UseSpecialSettingsCurrent || false }}
+      SpecialSettingsSource: ${{ inputs.SpecialSettingsSourceCurrent || 'source.zip' }}
     secrets: inherit
 
   build_baseline:
@@ -29,8 +51,8 @@ jobs:
     with:
       ref: master
       cache-key-suffix: baseline
-      UseSpecialSettings: ${{ inputs.UseSpecialSettings || false }}
-      SpecialSettingsSource: ${{ inputs.SpecialSettingsSource || 'source.zip' }}
+      UseSpecialSettings: ${{ inputs.UseSpecialSettingsBaseline || false }}
+      SpecialSettingsSource: ${{ inputs.SpecialSettingsSourceBaseline || 'source.zip' }}
     secrets: inherit
 
   benchmark:
@@ -46,6 +68,7 @@ jobs:
     env:
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
       ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
+      BDN_FAST: ${{ github.event_name }}
     steps:
       - uses: actions/checkout@v7
 
@@ -97,15 +120,11 @@ jobs:
       - name: Run benchmarks (PR)
         run: |
           dotnet ./bin-pr/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-pr --filter '*'
-        env:
-          BDN_FAST: 1
 
       - name: Run benchmarks (baseline)
         run: |
           dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '*'
-        env:
-          BDN_FAST: 1
-          
+
       - name: Show results-pr folder
         shell: bash
         run: ls -lasR ./results-pr/${{ env.LABEL }}

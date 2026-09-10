@@ -105,7 +105,8 @@ namespace MASES.JNetBenchmarksTest
         static void Main(string[] args)
         {
             var config = DefaultConfig.Instance.AddDiagnoser(MemoryDiagnoser.Default);
-            config = Environment.GetEnvironmentVariable("BDN_FAST") != null ? new FastPrJobConfig() : config;
+            var env = Environment.GetEnvironmentVariable("BDN_FAST");
+            config = (env != null && env == "pull_request") ? new FastPrJobConfig() : config;
             BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args, config);
         }
     }
