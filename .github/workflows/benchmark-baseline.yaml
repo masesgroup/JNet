@@ -133,6 +133,7 @@ jobs:
           retention-days: 7
 
   publish_history:
+    if: ${{ inputs.UseSpecialSettings != true }}
     needs: [benchmark, prepare_matrix]
     strategy:
       fail-fast: false
@@ -248,9 +249,16 @@ jobs:
             done
           } > src/documentation/articles/benchmark-latest.md
 
-      - uses: peter-evans/create-pull-request@v7
+      - uses: actions/upload-artifact@v7
+        if: ${{ inputs.UseSpecialSettings == true }}
         with:
-          token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          name: benchmark-latest
+          path: src/documentation/articles/benchmark-latest.md
+          retention-days: 7
+
+      - uses: peter-evans/create-pull-request@v7
+        if: ${{ inputs.UseSpecialSettings != true }}
+        with:
           branch: benchmark-latest-update-${{ github.run_number }}
           commit-message: 'chore(perf): update benchmark-latest.md'
           title: 'Update benchmark-latest.md (run #${{ github.run_number }})'
