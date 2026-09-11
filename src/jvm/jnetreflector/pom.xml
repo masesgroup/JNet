@@ -209,7 +209,7 @@
 		<dependency>
 			<groupId>org.burningwave</groupId>
 			<artifactId>core</artifactId>
-			<version>12.66.2</version>
+			<version>12.67.0</version>
 		</dependency>
 	</dependencies>
 </project>
