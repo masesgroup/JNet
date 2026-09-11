@@ -22,6 +22,5 @@
 			<IncludeAssets>All</IncludeAssets>
 			<PrivateAssets>All</PrivateAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.401" PrivateAssets="All" />
 	</ItemGroup>
 </Project>
