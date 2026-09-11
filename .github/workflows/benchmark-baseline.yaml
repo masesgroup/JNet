@@ -147,7 +147,7 @@ jobs:
             done
           } > src/documentation/articles/benchmark-latest.md
 
-      - uses: peter-evans/create-pull-request@v7
+      - uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
           branch: benchmark-latest-update-${{ github.run_number }}
