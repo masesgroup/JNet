@@ -29,7 +29,6 @@
 			<IncludeAssets>All</IncludeAssets>
 			<PrivateAssets>None</PrivateAssets>
 		</ProjectReference>
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.301" PrivateAssets="All" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Update="DotnetToolSettings.xml">

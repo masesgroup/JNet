@@ -16,13 +16,34 @@ updates:
       interval: "weekly"
     target-branch: "release/2.5.X"
 
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/tests/net" # Location of package manifests
+    schedule:
+      interval: "weekly"
+
   - package-ecosystem: maven
     directory: "/src/jvm/jnet"
     schedule:
       interval: "weekly"
 
   - package-ecosystem: maven
+    directory: "/src/jvm/jnetreflector"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: maven
     directory: "/src/jvm/jnet"
+    schedule:
+      interval: "weekly"
+    target-branch: "release/2.5.X"
+
+  - package-ecosystem: maven
+    directory: "/tests/jvm/jnettest"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: maven
+    directory: "/tests/jvm/testclass"
     schedule:
       interval: "weekly"
     target-branch: "release/2.5.X"
