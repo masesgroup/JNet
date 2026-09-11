@@ -62,6 +62,11 @@ on:
         required: false
         default: false
         type: boolean
+      EnableLinuxCoreDump:
+        description: 'Enable Linux process dump'
+        required: false
+        default: false
+        type: boolean
       EnableProcessDump:
         description: 'Enable .NET process dump'
         required: false
@@ -180,6 +185,7 @@ jobs:
       EnableWindowsTests: ${{ inputs.EnableWindowsTests || github.ref_name == 'master' || github.event_name == 'schedule' }}
       EnableMacOSTests: ${{ inputs.EnableMacOSTests || github.event_name == 'schedule' }}
       ForceContinueOnError: ${{ inputs.ForceContinueOnError || false }}
+      EnableLinuxCoreDump: ${{ inputs.EnableLinuxCoreDump || false }}
       EnableProcessDump: ${{ inputs.EnableProcessDump || '0' }}
       ProcessDumpType: ${{ inputs.ProcessDumpType || '3' }}
       EnableVerboseDiagnosticProcessDump: ${{ inputs.EnableVerboseDiagnosticProcessDump || '0' }}

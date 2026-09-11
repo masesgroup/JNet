@@ -67,23 +67,44 @@ namespace MASES.JNet
             {
                 var assembly = typeof(JNetCore<>).Assembly;
                 var version = assembly.GetName().Version.ToString();
-                // 1. check first full version
-                var jnetFile = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"jnet-{version}.jar");
-                if (!System.IO.File.Exists(jnetFile) && version.EndsWith(".0"))
+                var assemblyDir = System.IO.Path.GetDirectoryName(assembly.Location);
+
+                var jarNames = new List<string> { $"jnet-{version}.jar" };
+                if (version.EndsWith(".0"))
                 {
-                    // 2. if not exist remove last part of version
-                    version = version.Substring(0, version.LastIndexOf(".0"));
-                    jnetFile = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"jnet-{version}.jar");
+                    var shortVersion = version.Substring(0, version.LastIndexOf(".0"));
+                    jarNames.Add($"jnet-{shortVersion}.jar");
                 }
-                if (!System.IO.File.Exists(jnetFile))
+
+                string jnetFile = null;
+                var currentDir = new System.IO.DirectoryInfo(assemblyDir);
+                while (currentDir != null)
                 {
-                    throw new System.IO.FileNotFoundException("Unable to identify JNet Jar location", jnetFile);
+                    foreach (var jarName in jarNames)
+                    {
+                        var potentialPath = System.IO.Path.Combine(currentDir.FullName, JARsSubFolder, jarName);
+                        if (System.IO.File.Exists(potentialPath))
+                        {
+                            jnetFile = potentialPath;
+                            break;
+                        }
+                    }
+                    if (jnetFile != null) break;
+                    currentDir = currentDir.Parent;
                 }
+
+                if (jnetFile == null || !System.IO.File.Exists(jnetFile))
+                {
+                    var defaultFallback = System.IO.Path.Combine(assemblyDir, JARsSubFolder, jarNames[0]);
+                    throw new System.IO.FileNotFoundException("Unable to identify JNet Jar location", defaultFallback);
+                }
+
                 var lst = base.PathToParse;
                 lst.Add(jnetFile);
                 return lst;
             }
         }
+
         #endregion
     }
 }

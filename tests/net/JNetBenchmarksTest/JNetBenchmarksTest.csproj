@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\Common\Common.props" />
+	<PropertyGroup>
+		<AssemblyName>JNetBenchmarksTest</AssemblyName>
+		<OutputType>Exe</OutputType>
+		<RootNamespace>MASES.JNetBenchmarksTest</RootNamespace>
+		<Title>JNetBenchmarksTest - a test tool for JNet</Title>
+		<Description>JNetBenchmarksTest - a test tool for JNet</Description>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="BenchmarkDotNet" Version="0.15.8" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\Common\Initializer.cs" Link="Initializer.cs" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,122 @@
+name: Build benchmarks (JNet + JVM jars)
+
+on:
+  workflow_call:
+    inputs:
+      ref:
+        description: 'Git ref to build (empty = triggering ref)'
+        required: false
+        default: ''
+        type: string
+      cache-key-suffix:
+        description: 'Suffix to keep cache entries distinct (e.g. pr, baseline) - not present in the real build_common.yaml, needed here because we may build two refs in the same run'
+        required: true
+        type: string
+      UseSpecialSettings:
+        required: false
+        default: false
+        type: boolean
+      SpecialSettingsSource:
+        required: false
+        default: 'source.zip'
+        type: string
+    secrets:
+      SFTP_SERVER:
+        required: false
+      SFTP_USERNAME:
+        required: false
+      SFTP_PASSWORD:
+        required: false
+      SFTP_HOST_KEY:
+        required: false
+      FIRST_SPECIAL_SETTINGS_PASSWORD:
+        required: false
+      SPECIAL_SETTINGS_PASSWORD:
+        required: false
+    outputs:
+      cache-key:
+        description: 'Cache key where ./bin/ was stored'
+        value: ${{ jobs.build.outputs.cache-key }}
+
+jobs:
+  build:
+    runs-on: windows-2022
+    outputs:
+      cache-key: ${{ steps.set-key.outputs.key }}
+    steps:
+      - name: Support long paths
+        run: git config --system core.longpaths true
+
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.ref }}
+          fetch-depth: '1'
+          submodules: 'true'
+
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: |
+            9.x
+            10.x
+
+      - name: Download pscp directly
+        if: ${{ inputs.UseSpecialSettings == true }}
+        shell: cmd
+        run: |
+          curl -L -o "%RUNNER_TEMP%\pscp.exe" https://the.earth.li/~sgtatham/putty/latest/w64/pscp.exe
+
+      - name: Download ${{ inputs.SpecialSettingsSource }} via SFTP
+        if: ${{ inputs.UseSpecialSettings == true }}
+        shell: cmd
+        run: |
+          %RUNNER_TEMP%\pscp.exe -hostkey "${{ secrets.SFTP_HOST_KEY }}" -pw ${{ secrets.SFTP_PASSWORD }} -batch ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }}:/source-files/${{ inputs.SpecialSettingsSource }} "${{ github.workspace }}\${{ inputs.SpecialSettingsSource }}"
+
+      - name: Prepare other files
+        if: ${{ inputs.UseSpecialSettings == true }}
+        shell: cmd
+        run: |
+          7z e ${{ github.workspace }}\${{ inputs.SpecialSettingsSource }} -o"${{ github.workspace }}\" -p${{ secrets.FIRST_SPECIAL_SETTINGS_PASSWORD }}
+          7z x ${{ github.workspace }}\source.info -o"${{ github.workspace }}\Deploy\" -p${{ secrets.SPECIAL_SETTINGS_PASSWORD }} -y
+
+      - name: Add special repo
+        if: ${{ success() && inputs.UseSpecialSettings == true }}
+        run: dotnet nuget add source "${{ github.workspace }}\Deploy\" --name localDeployNuGet
+
+      - name: Pre compile
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" src\net\JNet\JNet.csproj
+        env:
+          GITHUB_SIMPLIFIED_GENERATION: true
+
+      - name: Set up Apache Maven Central
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: 8
+          cache: 'maven'
+
+      - name: Create Jars for JNet
+        run: mvn --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
+
+      - name: Create Jars for tests
+        run: mvn --file ./tests/jvm/jnettest/pom.xml --no-transfer-progress package
+
+      - name: Compile tests, templates and benchmarks
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618%3B0612" tests\net\JNetTest.sln
+        env:
+          GITHUB_TEST_PREPARATION: true
+
+      - name: Prepare execution files
+        run: |
+          Copy-Item ${{ github.workspace }}\tests\scripts\JNetPSTest.ps1 -Destination bin\JNetPSTest.ps1 -Force
+
+      - name: Set cache key
+        id: set-key
+        shell: bash
+        run: echo "key=JNet_${{ github.run_number }}_${{ github.run_attempt }}_${{ inputs.cache-key-suffix }}_bin_${{ github.sha }}" >> "$GITHUB_OUTPUT"
+
+      - name: Save JNet bin in cache
+        uses: actions/cache/save@v6
+        with:
+          enableCrossOsArchive: true
+          path: ./bin/
+          key: ${{ steps.set-key.outputs.key }}

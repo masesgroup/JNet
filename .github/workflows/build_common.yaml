@@ -62,6 +62,11 @@ on:
         required: false
         default: false
         type: boolean
+      EnableLinuxCoreDump:
+        description: 'Enable Linux process dump'
+        required: false
+        default: false
+        type: boolean
       EnableProcessDump:
         description: 'Enable .NET process dump'
         required: false
@@ -389,7 +394,7 @@ jobs:
       matrix_jdk_vendor: ${{ steps.set-jdk-vendor.outputs.matrix_jdk_vendor || steps.set-jdk-vendor-ext.outputs.matrix_jdk_vendor }}
       matrix_jdk_version: ${{ steps.set-jdk-version.outputs.matrix_jdk_version || steps.set-jdk-version-ext.outputs.matrix_jdk_version }}
       matrix_win_os: ${{ steps.set-matrix-win-os.outputs.matrix_win || steps.set-matrix-win-os-ext.outputs.matrix_win }}
-      matrix_linux_os: ${{ steps.set-matrix-linux-os.outputs.matrix_linux || steps.set-matrix-linux-os-ext.outputs.matrix_linux }}
+      matrix_linux_os: ${{ steps.set-matrix-linux-os.outputs.matrix_linux || steps.set-matrix-linux-os-ext.outputs.matrix_linux || steps.set-matrix-linux-os-ext-slim.outputs.matrix_linux }}
       matrix_mac_os: ${{ steps.set-matrix-mac-os.outputs.matrix_mac || steps.set-matrix-mac-os-ext.outputs.matrix_mac }}
     steps:
       - id: set-jdk-vendor
@@ -414,14 +419,17 @@ jobs:
         if: ${{ inputs.ExecuteOnMoreOSes == false }}
         run: echo "matrix_linux=['ubuntu-24.04']" >> $GITHUB_OUTPUT
       - id: set-matrix-linux-os-ext
-        if: ${{ inputs.ExecuteOnMoreOSes == true }}
+        if: ${{ inputs.ExecuteOnMoreOSes == true && inputs.ExecuteOnLargerJDKVendorSet == false }}
+        run: echo "matrix_linux=[ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm', 'ubuntu-26.04', 'ubuntu-26.04-arm' ]" >> $GITHUB_OUTPUT
+      - id: set-matrix-linux-os-ext-slim
+        if: ${{ inputs.ExecuteOnMoreOSes == true && inputs.ExecuteOnLargerJDKVendorSet == true }}
         run: echo "matrix_linux=[ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm' ]" >> $GITHUB_OUTPUT
       - id: set-matrix-mac-os
         if: ${{ inputs.ExecuteOnMoreOSes == false }}
         run: echo "matrix_mac=[ 'macos-15' ]" >> $GITHUB_OUTPUT
       - id: set-matrix-mac-os-ext
         if: ${{ inputs.ExecuteOnMoreOSes == true }}
-        run: echo "matrix_mac=[ 'macos-14', 'macos-15', 'macos-26' ]" >> $GITHUB_OUTPUT
+        run: echo "matrix_mac=[ 'macos-14', 'macos-15', 'macos-26', 'macos-26-intel' ]" >> $GITHUB_OUTPUT
 
   tests_win:
     if: ${{ inputs.EnableWindowsTests == true }}
@@ -442,6 +450,12 @@ jobs:
             jdk_version: 11
           - os: windows-11-arm
             jdk_version: 17
+          - os: windows-11-arm
+            jdk_version: 25
+          - os: windows-11-arm
+            jdk_vendor: oracle
+          - os: windows-11-arm
+            jdk_vendor: corretto
           - jdk_vendor: microsoft
             jdk_version: 8
           - jdk_vendor: oracle
@@ -524,11 +538,19 @@ jobs:
           java-package: jre
 
       - name: Set up GraalVM distribution
-        if: ${{ matrix.jdk_vendor == 'graalvm' }}
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version != '17' }}
         uses: graalvm/setup-graalvm@v1
         with:
-          java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
-          distribution: 'graalvm' # See 'Supported distributions' for available options
+          java-version: '${{ matrix.jdk_version }}'
+          distribution: 'graalvm'
+          github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
+
+      - name: Set up GraalVM distribution
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version == '17' }}
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '17.0.12' # see https://github.com/marketplace/actions/github-action-for-graalvm#notes-on-oracle-graalvm-for-jdk-17
+          distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
       - name: Prepare extra argument
@@ -571,7 +593,7 @@ jobs:
 
       - if: ${{ matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        timeout-minutes: 5
+        timeout-minutes: 15
         shell: pwsh
         run: |
           foreach ($TEST in @(
@@ -697,11 +719,19 @@ jobs:
           java-package: jre
 
       - name: Set up GraalVM distribution
-        if: ${{ matrix.jdk_vendor == 'graalvm' }}
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version != '17' }}
         uses: graalvm/setup-graalvm@v1
         with:
-          java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
-          distribution: 'graalvm' # See 'Supported distributions' for available options
+          java-version: '${{ matrix.jdk_version }}'
+          distribution: 'graalvm'
+          github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
+
+      - name: Set up GraalVM distribution
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version == '17' }}
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '17.0.12' # see https://github.com/marketplace/actions/github-action-for-graalvm#notes-on-oracle-graalvm-for-jdk-17
+          distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
       - name: Prepare extra argument
@@ -718,6 +748,31 @@ jobs:
         if: matrix.jdk_version != '8'
         shell: bash
         run: echo "PS_EXTRA_ARGUMENT=${{ env.JAVA_HOME }}" >> $GITHUB_ENV
+
+      - name: Core dump diagnostics
+        if: ${{ inputs.EnableLinuxCoreDump == true }}
+        shell: bash
+        run: |
+          echo "Core limit:"
+          ulimit -c
+      
+          echo "Core pattern:"
+          cat /proc/sys/kernel/core_pattern
+      
+          echo "Core uses pid:"
+          cat /proc/sys/kernel/core_uses_pid
+
+      - name: Enable Linux core dumps
+        if: ${{ inputs.EnableLinuxCoreDump == true }}
+        shell: bash
+        run: |
+          ulimit -c unlimited
+
+          echo "Core pattern:"
+          cat /proc/sys/kernel/core_pattern
+
+          echo "Core size:"
+          ulimit -c
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         timeout-minutes: 5
@@ -748,7 +803,7 @@ jobs:
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST $DIAG_JVM_ARGS ${{ env.EXTRA_ARGUMENT }} &
             PID=$!
 
-            TIMEOUT_SECONDS=300
+            TIMEOUT_SECONDS=900
             DUMP_INTERVAL_SECONDS=60
             ELAPSED=0
             NEXT_DUMP=$DUMP_INTERVAL_SECONDS
@@ -793,12 +848,38 @@ jobs:
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         if: ${{ inputs.EnableAdvancedDiagnostic != true }}
-        timeout-minutes: 5
+        timeout-minutes: 15
         run: |
           for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
             echo "=== Starting $TEST at $(date) ==="
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}
           done
+
+      - name: Collect systemd coredumps
+        if: always()
+        shell: bash
+        run: |
+          if coredumpctl -1 info >/dev/null 2>&1; then
+            mkdir -p "${{ github.workspace }}/coredumps"
+      
+            coredumpctl -1 info \
+              > "${{ github.workspace }}/coredumps/latest.info.txt"
+      
+            coredumpctl -1 dump \
+              > "${{ github.workspace }}/coredumps/latest.core"
+          fi
+
+      - name: Collect core dumps
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: coredumps_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          if-no-files-found: ignore
+          path: |
+            core*
+            **/core*
+            **/coredump*
+            ${{ github.workspace }}/coredumps/*
 
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
@@ -850,6 +931,9 @@ jobs:
             jdk_vendor: temurin
             jdk_version: 8
           - os: macos-26
+            jdk_vendor: corretto
+            jdk_version: 8
+          - os: macos-26-intel
             jdk_vendor: corretto
             jdk_version: 8
           - jdk_vendor: microsoft
@@ -906,11 +990,19 @@ jobs:
           java-package: jre
 
       - name: Set up GraalVM distribution
-        if: ${{ matrix.jdk_vendor == 'graalvm' }}
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version != '17' }}
         uses: graalvm/setup-graalvm@v1
         with:
-          java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
-          distribution: 'graalvm' # See 'Supported distributions' for available options
+          java-version: '${{ matrix.jdk_version }}'
+          distribution: 'graalvm'
+          github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
+
+      - name: Set up GraalVM distribution
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version == '17' }}
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '17.0.12' # see https://github.com/marketplace/actions/github-action-for-graalvm#notes-on-oracle-graalvm-for-jdk-17
+          distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
       - name: Prepare extra argument
@@ -931,7 +1023,7 @@ jobs:
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll ${{ env.EXTRA_ARGUMENT }}
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        timeout-minutes: 5
+        timeout-minutes: 15
         run: |
           for TEST in TestGetByteArrayDataUsage TestGetByteArrayDataUsageRaw TestGetByteBuffersDataUsage TestGetByteBuffers TestInsertByteBuffers TestInsertByteBuffersNativeStream TestInsertByteBuffersRecyclableMemoryStream; do
             dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll $TEST ${{ env.EXTRA_ARGUMENT }}

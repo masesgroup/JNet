@@ -44,7 +44,7 @@ namespace MASES.JNet.Specific
     /// No JVM interaction of any kind is permitted while this object is alive. Always use a <see langword="using"/> block — leaving disposal to the finalizer may result in a deadlock or JVM crash.
     /// </para>
     /// <para>
-    /// Methods relying on <see cref="ReadOnlySpan{T}"/> (such as <c>AsSpan</c>) are only available on .NET 5 and later,
+    /// Methods relying on <c>ReadOnlySpan&lt;T&gt;</c> (such as <c>AsSpan</c>) are only available on .NET 5 and later,
     /// due to a conflict between the <c>System.Memory</c> dependency introduced transitively by <see cref="Microsoft.IO.RecyclableMemoryStream"/> and the JCOBridge shim on .NET Framework.
     /// </para>
     /// </remarks>

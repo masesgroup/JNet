@@ -37,7 +37,7 @@ namespace MASES.JNetTest.GraphicCommon
 
         public static object CreateAWTContent(Action<ActionEvent> handler)
         {
-            return CreateAWTContentDynamic(handler);
+            //return CreateAWTContentDynamic(handler);
             return CreateAWTContentClasses(handler);
         }
 

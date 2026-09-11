@@ -31,10 +31,30 @@ namespace MASES.JNetTest.Common
         {
             get
             {
+                const string testJarName = "jnettest-1.0.0.0.jar";
                 var lst = base.PathToParse;
                 var assembly = typeof(JNetTestCore).Assembly;
-                var path = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"jnettest-1.0.0.0.jar");
-                if (!System.IO.File.Exists(path)) throw new System.IO.FileNotFoundException("JAR file for test not available, run Maven first", path);
+                var assemblyDir = System.IO.Path.GetDirectoryName(assembly.Location);
+
+                var path = System.IO.Path.Combine(assemblyDir, JARsSubFolder, testJarName);
+                if (!System.IO.File.Exists(path))
+                {
+                    var currentDir = new System.IO.DirectoryInfo(assemblyDir);
+                    while (currentDir != null)
+                    {
+                        var potentialJarPath = System.IO.Path.Combine(currentDir.FullName, JARsSubFolder, testJarName);
+                        if (System.IO.File.Exists(potentialJarPath))
+                        {
+                            path = potentialJarPath;
+                            break;
+                        }
+                        currentDir = currentDir.Parent;
+                    }
+                }
+
+                if (!System.IO.File.Exists(path))
+                    throw new System.IO.FileNotFoundException("JAR file for test not available, run Maven first", path);
+
                 lst.Add(path);
                 return lst;
             }
