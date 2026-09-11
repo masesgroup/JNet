@@ -17,7 +17,10 @@
 */
 
 using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Diagnosers;
+using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
+using BenchmarkDotNet.Toolchains.InProcess.Emit;
 using MASES.JCOBridge.C2JBridge;
 using System;
 
@@ -88,11 +91,22 @@ namespace Org.Mases.JNet
 
 namespace MASES.JNetBenchmarksTest
 {
+    class FastPrJobConfig : ManualConfig
+    {
+        public FastPrJobConfig()
+        {
+            AddJob(Job.Default.WithWarmupCount(1).WithIterationCount(3));
+            AddDiagnoser(MemoryDiagnoser.Default);
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
-            var config = DefaultConfig.Instance.AddDiagnoser(BenchmarkDotNet.Diagnosers.MemoryDiagnoser.Default);
+            var config = DefaultConfig.Instance.AddDiagnoser(MemoryDiagnoser.Default);
+            var env = Environment.GetEnvironmentVariable("BDN_FAST");
+            config = (env != null && env == "pull_request") ? new FastPrJobConfig() : config;
             BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args, config);
         }
     }

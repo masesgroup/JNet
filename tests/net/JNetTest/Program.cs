@@ -359,7 +359,7 @@ namespace MASES.JNetTest
             var jj = jClass.Invoke<IJavaObject>("Create", bytes);
             var backObj = jj.Invoke<long>("getBackingIndex");
             */
-            byte[] newArray;
+            //byte[] newArray;
             //JVMBridgeSharedBuffer.TryGetValue(backObj, out newArray);
 
             var direct = JNetTestCore.GlobalInstance.JVM.NewDirectBuffer(bytes, arrangeCapacity: true, timeToLive: -1);

@@ -1,0 +1,194 @@
+name: Benchmark compare check
+
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - 'src/net/**'
+      - 'src/jvm/jnet/**'
+      - 'tests/net/JNetBenchmarksTest/**'
+      - 'tests/jvm/jnettest/**'
+      - '.github/workflows/benchmark-compare.yaml'
+      - '.github/workflows/build_benchmarks.yaml'
+  workflow_dispatch:
+    inputs:
+      UseSpecialSettingsCurrent:
+        required: false
+        default: false
+        type: boolean
+      SpecialSettingsSourceCurrent:
+        required: false
+        default: 'source.zip'
+        type: string
+      UseSpecialSettingsBaseline:
+        required: false
+        default: false
+        type: boolean
+      SpecialSettingsSourceBaseline:
+        required: false
+        default: 'source.zip'
+        type: string
+      Threshold:
+        required: false
+        default: '10%'
+        type: string
+      Noise:
+        required: false
+        default: '0.3ms'
+        type: string
+      Top:
+        required: false
+        default: '999'
+        type: string
+
+concurrency:
+  group: 'benchmark-compare-${{ github.event.pull_request.number || github.ref }}'
+  cancel-in-progress: true
+
+jobs:
+  build_current:
+    uses: ./.github/workflows/build_benchmarks.yaml
+    with:
+      cache-key-suffix: current
+      UseSpecialSettings: ${{ inputs.UseSpecialSettingsCurrent || false }}
+      SpecialSettingsSource: ${{ inputs.SpecialSettingsSourceCurrent || 'source.zip' }}
+    secrets: inherit
+
+  build_baseline:
+    uses: ./.github/workflows/build_benchmarks.yaml
+    with:
+      ref: master
+      cache-key-suffix: baseline
+      UseSpecialSettings: ${{ inputs.UseSpecialSettingsBaseline || false }}
+      SpecialSettingsSource: ${{ inputs.SpecialSettingsSourceBaseline || 'source.zip' }}
+    secrets: inherit
+
+  prepare_matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix-pull-request.outputs.matrix || steps.set-matrix.outputs.matrix }}
+    steps:
+      - id: set-matrix-pull-request
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          matrix=$(cat <<'EOF'
+          {
+            "os": ["ubuntu-latest"],
+            "framework": ["net8.0"],
+            "jdk_vendor": ["temurin"],
+            "jdk_version": ["17"]
+          }
+          EOF
+          )
+          echo "matrix=$(echo "$matrix" | jq -c .)" >> "$GITHUB_OUTPUT"
+      - id: set-matrix
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          matrix=$(cat <<'EOF'
+          {
+            "os": ["ubuntu-latest"],
+            "framework": ["net8.0", "net10.0"],
+            "jdk_vendor": ["temurin", "graalvm"],
+            "jdk_version": ["11", "17", "21", "25"],
+            "exclude": [
+              { "jdk_vendor": "graalvm", "jdk_version": "8" },
+              { "jdk_vendor": "graalvm", "jdk_version": "11" }
+            ]
+          }
+          EOF
+          )
+          echo "matrix=$(echo "$matrix" | jq -c .)" >> "$GITHUB_OUTPUT"
+
+  benchmark:
+    needs: [build_current, build_baseline, prepare_matrix]
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.prepare_matrix.outputs.matrix) }}
+    runs-on: ${{ matrix.os }}
+    env:
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
+      ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
+      BDN_FAST: ${{ github.event_name }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Restore Current bin
+        uses: actions/cache/restore@v6
+        with:
+          fail-on-cache-miss: true
+          enableCrossOsArchive: true
+          path: ./bin/
+          key: ${{ needs.build_current.outputs.cache-key }}
+
+      - name: Rename Current bin
+        run: mv ${{ github.workspace }}/bin/ ${{ github.workspace }}/bin-current/
+
+      - name: Restore baseline bin
+        uses: actions/cache/restore@v6
+        with:
+          fail-on-cache-miss: true
+          enableCrossOsArchive: true
+          path: ./bin/
+          key: ${{ needs.build_baseline.outputs.cache-key }}
+
+      - name: Rename baseline bin
+        run: mv ${{ github.workspace }}/bin/ ${{ github.workspace }}/bin-baseline/
+
+      - name: Set up JDK distribution
+        if: ${{ matrix.jdk_vendor != 'graalvm' && matrix.jdk_version != '8' }}
+        uses: actions/setup-java@v6
+        with:
+          distribution: ${{ matrix.jdk_vendor }}
+          java-version: ${{ matrix.jdk_version }}
+
+      - name: Set up JDK distribution (JRE 8)
+        if: ${{ matrix.jdk_vendor != 'graalvm' && matrix.jdk_version == '8' }}
+        uses: actions/setup-java@v6
+        with:
+          distribution: ${{ matrix.jdk_vendor }}
+          java-version: ${{ matrix.jdk_version }}
+          java-package: jre
+
+      - name: Set up GraalVM distribution
+        if: ${{ matrix.jdk_vendor == 'graalvm' }}
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '${{ matrix.jdk_version }}'
+          distribution: 'graalvm'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run benchmarks (current)
+        run: |
+          dotnet ./bin-current/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-current --filter '*'
+
+      - name: Run benchmarks (baseline)
+        run: |
+          dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '*'
+
+      - name: Show results-current folder
+        shell: bash
+        run: ls -lasR ./results-current/${{ env.LABEL }}
+
+      - name: Show results-baseline folder
+        shell: bash
+        run: ls -lasR ./results-baseline/${{ env.LABEL }}
+
+      - name: Compare current vs baseline
+        env:
+          DOTNET_ROLL_FORWARD: LatestMajor
+        run: |
+          git clone --depth 1 https://github.com/dotnet/performance.git /tmp/performance
+          dotnet run --project /tmp/performance/src/tools/ResultsComparer -- \
+            --base ./results-baseline/results \
+            --diff ./results-current/results \
+            --threshold ${{ inputs.Threshold || '10%' }} \
+            --noise ${{ inputs.Noise || '0.3ms' }} \
+            --top ${{ inputs.Top || '999' }}
+
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: comparison-${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: '**/*.xml'

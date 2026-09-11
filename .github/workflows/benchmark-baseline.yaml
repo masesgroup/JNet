@@ -3,6 +3,13 @@ name: Benchmark baseline and history
 on:
   push:
     branches: [master]
+    paths:
+      - 'src/net/**'
+      - 'src/jvm/jnet/**'
+      - 'tests/net/JNetBenchmarksTest/**'
+      - 'tests/jvm/jnettest/**'
+      - '.github/workflows/benchmark-baseline.yaml'
+      - '.github/workflows/build_benchmarks.yaml'
   schedule:
     - cron: '0 3 * * 1'
   workflow_dispatch:
@@ -28,37 +35,51 @@ jobs:
       UseSpecialSettings: ${{ inputs.UseSpecialSettings || false }}
       SpecialSettingsSource: ${{ inputs.SpecialSettingsSource || 'source.zip' }}
     secrets: inherit
+  
+  prepare_matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - id: set-matrix
+        shell: bash
+        run: |
+          # NOTE: windows-latest and net462 temporarily excluded due to
+          # MSB4066 (xmlns in <LangVersion>) in BenchmarkDotNet's
+          # auto-generated project on Windows - under investigation,
+          # unrelated to the InProcessEmitToolchain issue (already reverted).
+          matrix=$(cat <<'EOF'
+          {
+            "os": ["ubuntu-22.04","ubuntu-22.04-arm","ubuntu-24.04","ubuntu-24.04-arm"],
+            "framework": ["net8.0", "net10.0"],
+            "jdk_vendor": ["temurin", "zulu", "microsoft", "corretto", "oracle", "graalvm"],
+            "jdk_version": ["11", "17", "21", "25"],
+            "exclude": [
+              { "jdk_vendor": "corretto", "jdk_version": "8" },
+              { "jdk_vendor": "microsoft", "jdk_version": "8" },
+              { "jdk_vendor": "oracle", "jdk_version": "8" },
+              { "jdk_vendor": "oracle", "jdk_version": "11" },
+              { "jdk_vendor": "graalvm", "jdk_version": "8" },
+              { "jdk_vendor": "graalvm", "jdk_version": "11" }
+            ]
+          }
+          EOF
+          )
+          echo "matrix=$(echo "$matrix" | jq -c .)" >> "$GITHUB_OUTPUT"
 
   benchmark:
-    needs: build
+    needs: [build, prepare_matrix]
     strategy:
       fail-fast: false
-      matrix:
-        os: ['windows-latest', 'ubuntu-latest']
-        framework: ['net462', 'net8.0', 'net9.0', 'net10.0']
-        jdk_vendor: ['temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm']
-        jdk_version: ['8', '11', '17', '21', '25']
-        exclude:
-          - os: 'ubuntu-latest'
-            framework: 'net462'
-          - jdk_vendor: corretto
-            jdk_version: 8
-          - jdk_vendor: microsoft
-            jdk_version: 8
-          - jdk_vendor: oracle
-            jdk_version: 8
-          - jdk_vendor: oracle
-            jdk_version: 11
-          - jdk_vendor: graalvm
-            jdk_version: 8
-          - jdk_vendor: graalvm
-            jdk_version: 11
+      matrix: ${{ fromJSON(needs.prepare_matrix.outputs.matrix) }}
     runs-on: ${{ matrix.os }}
     env:
       LABEL: ${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
       ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
     steps:
+      - uses: actions/checkout@v7
+
       - name: Restore bin from cache
         uses: actions/cache/restore@v6
         with:
@@ -83,36 +104,218 @@ jobs:
           java-package: jre
 
       - name: Set up GraalVM distribution
-        if: ${{ matrix.jdk_vendor == 'graalvm' }}
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version != '17' }}
         uses: graalvm/setup-graalvm@v1
         with:
           java-version: '${{ matrix.jdk_version }}'
           distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Set up GraalVM distribution
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version == '17' }}
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '17.0.12' # see https://github.com/marketplace/actions/github-action-for-graalvm#notes-on-oracle-graalvm-for-jdk-17
+          distribution: 'graalvm'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Run benchmarks
         run: |
-          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --runtimes ${{ matrix.framework }} --exporters json github --artifacts ./results/${{ env.LABEL }} --filter '*'
+          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/${{ env.LABEL }} --filter '*'
 
-      - name: Publish to benchmark-data history
-        uses: benchmark-action/github-action-benchmark@v1
+      - name: Fail fast on benchmark issues
+        shell: bash
+        run: |
+          # Search for failed benchmarks in all JSON files inside the folder
+          if grep -q '"Statistics": null' results/${{ env.LABEL }}/results/*.json; then
+            echo "::error::Detected failed benchmarks (Statistics: null) in the reports!"
+            # Show which files contain the error
+            grep -l '"Statistics": null' results/${{ env.LABEL }}/*.json
+            exit 1
+          fi
+
+      - uses: actions/upload-artifact@v7
         with:
-          name: 'JNet Invoke Benchmarks (${{ env.LABEL }})'
-          tool: 'benchmarkdotnet'
-          output-file-path: results/${{ env.LABEL }}/results/InvokeBenchmarks-report-full.json
-          gh-repository: 'github.com/masesgroup/benchmark-data'
-          gh-pages-branch: gh-pages
-          benchmark-data-dir-path: jnet/${{ env.LABEL }}
-          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
-          auto-push: true
-          alert-threshold: '150%'
-          fail-on-alert: false
+          name: bdn-results-${{ env.LABEL }}
+          path: results/${{ env.LABEL }}/results/*-report-full*.json
+          retention-days: 7
 
       - uses: actions/upload-artifact@v7
         with:
           name: bdn-md-${{ env.LABEL }}
           path: results/${{ env.LABEL }}/results/*-report-github.md
           retention-days: 14
+
+  publish_history:
+    if: ${{ inputs.UseSpecialSettings != true }}
+    needs: [benchmark, prepare_matrix]
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix: ${{ fromJSON(needs.prepare_matrix.outputs.matrix) }}
+    runs-on: ubuntu-latest
+    env:
+      LABEL: ${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: bdn-results-${{ env.LABEL }}
+          path: results/${{ env.LABEL }}/results
+
+      - name: Publish ArrayVarArgsBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet ArrayVarArgsBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.ArrayVarArgsBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: master
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
+
+      - name: Publish InvokeBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet InvokeBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.InvokeBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: master
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
+
+      - name: Publish PredicateRoundTripBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet PredicateRoundTripBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.PredicateRoundTripBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: master
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
+
+      - name: Publish PredicateSustainedBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet PredicateSustainedBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.PredicateSustainedBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: master
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
+  cross_matrix_comparison:
+    needs: benchmark
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    env:
+      ANCHOR: ubuntu-22.04_net8.0_temurin_17
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          path: downloaded
+          pattern: bdn-results-*
+
+      - name: Install roll-forward for ResultsComparer (net6.0 EOL)
+        run: echo "DOTNET_ROLL_FORWARD=LatestMajor" >> "$GITHUB_ENV"
+
+      - name: Clone ResultsComparer
+        run: git clone --depth 1 https://github.com/dotnet/performance.git /tmp/performance
+
+      - name: Compare every cell against the anchor
+        shell: bash
+        run: |
+          mkdir -p cross-comparison-reports
+          anchor_dir="downloaded/bdn-results-${ANCHOR}"
+          if [ ! -d "$anchor_dir" ]; then
+            echo "::error::Anchor cell '${ANCHOR}' not found among published results."
+            exit 1
+          fi
+
+          for dir in downloaded/bdn-results-*/; do
+            label=$(basename "$dir" | sed 's/^bdn-results-//')
+            [ "$label" = "$ANCHOR" ] && continue
+
+            echo "=== $ANCHOR vs $label ==="
+            dotnet run --project /tmp/performance/src/tools/ResultsComparer -- \
+              --base "$anchor_dir" \
+              --diff "$dir" \
+              --threshold 10% \
+              --noise 0.3ms \
+              --top 999 \
+              > "cross-comparison-reports/${ANCHOR}_vs_${label}.txt" 2>&1 || true
+          done
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: cross-matrix-comparison-reports
+          path: cross-comparison-reports/
+          retention-days: 30
+
+      - name: Highlight variations in job summary
+        shell: bash
+        run: |
+          {
+            echo "## Cross-matrix comparison — anchor: \`${ANCHOR}\`"
+            echo ""
+            found_any=0
+            for f in cross-comparison-reports/*.txt; do
+              label=$(basename "$f" .txt | sed "s/^${ANCHOR}_vs_//")
+
+              if grep -q "^No differences found" "$f"; then
+                continue
+              fi
+
+              found_any=1
+              echo "### \`$label\`"
+              echo ""
+              # summary block (better/worse count, geomean)
+              grep -A2 '^summary:' "$f" | head -n3
+              echo ""
+              # the Faster/Slower markdown table itself, if present
+              if grep -qE '^\| Faster' "$f"; then
+                echo "**Faster:**"
+                echo ""
+                awk '/^\| Faster/{p=1} p{print} /^$/{if(p)exit}' "$f"
+                echo ""
+              fi
+              if grep -qE '^\| Slower' "$f"; then
+                echo "**Slower:**"
+                echo ""
+                awk '/^\| Slower/{p=1} p{print} /^$/{if(p)exit}' "$f"
+                echo ""
+              fi
+            done
+            if [ "$found_any" -eq 0 ]; then
+              echo "_No cell showed a statistically significant deviation from the anchor._"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
 
   update_doc:
     needs: benchmark
@@ -136,7 +339,7 @@ jobs:
             echo "Auto-generated by [BenchmarkDotNet](https://benchmarkdotnet.org/) on $(date -u +%Y-%m-%d)."
             echo "Do not edit by hand - this file is fully overwritten on every run."
             echo ""
-            echo "Live historical dashboard: https://masesgroup.github.io/benchmark-data/jnet/"
+            echo "Live historical dashboard: https://masesgroup.github.io/benchmark-data/"
             echo ""
             for f in downloaded/bdn-md-*/*-report-github.md; do
               label=$(basename "$(dirname "$f")" | sed 's/^bdn-md-//')
@@ -147,12 +350,20 @@ jobs:
             done
           } > src/documentation/articles/benchmark-latest.md
 
-      - uses: peter-evans/create-pull-request@v8
+      - uses: actions/upload-artifact@v7
+        if: ${{ inputs.UseSpecialSettings == true }}
         with:
-          token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          name: benchmark-latest
+          path: src/documentation/articles/benchmark-latest.md
+          retention-days: 7
+
+      - uses: peter-evans/create-pull-request@v8
+        if: ${{ inputs.UseSpecialSettings != true }}
+        with:
           branch: benchmark-latest-update-${{ github.run_number }}
           commit-message: 'chore(perf): update benchmark-latest.md'
           title: 'Update benchmark-latest.md (run #${{ github.run_number }})'
+          add-paths: src/documentation/articles/benchmark-latest.md
           body: |
             Auto-generated benchmark tables from BenchmarkDotNet.
             No changes to performance.md - separate, fully regenerated file.

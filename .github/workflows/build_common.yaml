@@ -538,11 +538,19 @@ jobs:
           java-package: jre
 
       - name: Set up GraalVM distribution
-        if: ${{ matrix.jdk_vendor == 'graalvm' }}
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version != '17' }}
         uses: graalvm/setup-graalvm@v1
         with:
-          java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
-          distribution: 'graalvm' # See 'Supported distributions' for available options
+          java-version: '${{ matrix.jdk_version }}'
+          distribution: 'graalvm'
+          github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
+
+      - name: Set up GraalVM distribution
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version == '17' }}
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '17.0.12' # see https://github.com/marketplace/actions/github-action-for-graalvm#notes-on-oracle-graalvm-for-jdk-17
+          distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
       - name: Prepare extra argument
@@ -711,11 +719,19 @@ jobs:
           java-package: jre
 
       - name: Set up GraalVM distribution
-        if: ${{ matrix.jdk_vendor == 'graalvm' }}
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version != '17' }}
         uses: graalvm/setup-graalvm@v1
         with:
-          java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
-          distribution: 'graalvm' # See 'Supported distributions' for available options
+          java-version: '${{ matrix.jdk_version }}'
+          distribution: 'graalvm'
+          github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
+
+      - name: Set up GraalVM distribution
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version == '17' }}
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '17.0.12' # see https://github.com/marketplace/actions/github-action-for-graalvm#notes-on-oracle-graalvm-for-jdk-17
+          distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
       - name: Prepare extra argument
@@ -974,11 +990,19 @@ jobs:
           java-package: jre
 
       - name: Set up GraalVM distribution
-        if: ${{ matrix.jdk_vendor == 'graalvm' }}
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version != '17' }}
         uses: graalvm/setup-graalvm@v1
         with:
-          java-version: '${{ matrix.jdk_version }}' # See 'Options' for more details
-          distribution: 'graalvm' # See 'Supported distributions' for available options
+          java-version: '${{ matrix.jdk_version }}'
+          distribution: 'graalvm'
+          github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
+
+      - name: Set up GraalVM distribution
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version == '17' }}
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '17.0.12' # see https://github.com/marketplace/actions/github-action-for-graalvm#notes-on-oracle-graalvm-for-jdk-17
+          distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
       - name: Prepare extra argument
