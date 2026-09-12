@@ -31,6 +31,6 @@ public final class Consumer extends JCListener implements java.util.function.Con
 
     @Override
     public void accept(Object e) {
-        raiseEvent("accept", e);
+        raiseEventConcurrent("accept", e);
     }
 }

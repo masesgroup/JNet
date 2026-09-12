@@ -279,26 +279,45 @@ namespace MASES.JNet.Reflector.Templates
                 public static string LISTENER_INDEX_VARIABLE_NAME_FORMAT = "int _{0}Index = 0;";
                 public static string VOID_LISTENER_EXECUTION_FORMAT = "org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();" + Environment.NewLine
                                                                     + "if (_{0}Index <= 0) _{0}Index = getEventIndex(\"{0}\");" + Environment.NewLine
-                                                                    + "raiseEvent(_{0}Index, eventDataExchange{1}); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException(\"The method shall be implemented in .NET side since does not have a default implementation within the JVM\");";
+                                                                    + "raiseEventConcurrent(_{0}Index, eventDataExchange{1}); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException(\"The method shall be implemented in .NET side since does not have a default implementation within the JVM\");";
                 public const string SUPERINTERFACE_VOID_LISTENER_EXECUTION_FORMAT = "{0}.super.{1}({2});";
                 public const string SUPERINTERFACE_VOID_LISTENER_BASE_EXECUTION_FORMAT = "super.{0}({1});";
                 public static string SUPERINTERFACE_VOID_DEFAULT_EXECUTION_FORMAT = "org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();" + Environment.NewLine
                                                                                   + "if (_{0}Index <= 0) _{0}Index = getEventIndex(\"{0}\");" + Environment.NewLine
-                                                                                  + "raiseEvent(_{0}Index, eventDataExchange{1}); if (!eventDataExchange.getHasOverride()) {2}.super.{3}({4});";
+                                                                                  + "raiseEventConcurrent(_{0}Index, eventDataExchange{1});" + Environment.NewLine
+                                                                                  + "if (!eventDataExchange.getHasOverride()) {2}.super.{3}({4});";
                 public static string SUPERINTERFACE_VOID_ADAPTER_EXECUTION_FORMAT = "org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();" + Environment.NewLine
                                                                                   + "if (_{0}Index <= 0) _{0}Index = getEventIndex(\"{0}\");" + Environment.NewLine
-                                                                                  + "raiseEvent(_{0}Index, eventDataExchange{1}); if (!eventDataExchange.getHasOverride()) super.{2}({3});";
+                                                                                  + "raiseEventConcurrent(_{0}Index, eventDataExchange{1});" + Environment.NewLine
+                                                                                  + "if (!eventDataExchange.getHasOverride()) super.{2}({3});";
                 public static string TYPED_LISTENER_EXECUTION_FORMAT = "org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();" + Environment.NewLine
                                                                      + "if (_{0}Index <= 0) _{0}Index = getEventIndex(\"{0}\");" + Environment.NewLine
-                                                                     + "raiseEvent(_{0}Index, eventDataExchange{1}); if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException(\"The method shall be implemented in .NET side since does not have a default implementation within the JVM\"); Object retVal = eventDataExchange.getReturnData(); return ({2})retVal;";
+                                                                     + "raiseEventConcurrent(_{0}Index, eventDataExchange{1});" + Environment.NewLine
+                                                                     + "if (!eventDataExchange.getHasOverride()) throw new UnsupportedOperationException(\"The method shall be implemented in .NET side since does not have a default implementation within the JVM\");" + Environment.NewLine
+                                                                     + "Object retVal = eventDataExchange.getReturnData();" + Environment.NewLine
+                                                                     + "return ({2})retVal;";
                 public const string SUPERINTERFACE_TYPED_LISTENER_EXECUTION_FORMAT = "return {0}.super.{1}({2});";
                 public const string SUPERINTERFACE_TYPED_LISTENER_BASE_EXECUTION_FORMAT = "return super.{0}({1});";
                 public static string SUPERINTERFACE_TYPED_DEFAULT_EXECUTION_FORMAT = "org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();" + Environment.NewLine
                                                                                    + "if (_{0}Index <= 0) _{0}Index = getEventIndex(\"{0}\");" + Environment.NewLine
-                                                                                   + "raiseEvent(_{0}Index, eventDataExchange{1}); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = {3}.super.{4}({5}); else retVal = eventDataExchange.getReturnData(); return ({2})retVal;";
+                                                                                   + "raiseEventConcurrent(_{0}Index, eventDataExchange{1});" + Environment.NewLine
+                                                                                   + "Object retVal;" + Environment.NewLine
+                                                                                   + "if (!eventDataExchange.getHasOverride()) {{" + Environment.NewLine
+                                                                                   + "    retVal = {3}.super.{4}({5});" + Environment.NewLine
+                                                                                   + "}} else {{" + Environment.NewLine
+                                                                                   + "    retVal = eventDataExchange.getReturnData();" + Environment.NewLine
+                                                                                   + "}}" + Environment.NewLine
+                                                                                   + "return ({2})retVal;";
                 public static string SUPERINTERFACE_TYPED_ADAPTER_EXECUTION_FORMAT = "org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();" + Environment.NewLine
                                                                                    + "if (_{0}Index <= 0) _{0}Index = getEventIndex(\"{0}\");" + Environment.NewLine
-                                                                                   + "raiseEvent(_{0}Index, eventDataExchange{1}); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = super.{3}({4}); else retVal = eventDataExchange.getReturnData(); return ({2})retVal;";
+                                                                                   + "raiseEventConcurrent(_{0}Index, eventDataExchange{1});" + Environment.NewLine
+                                                                                   + "Object retVal;" + Environment.NewLine
+                                                                                   + "if (!eventDataExchange.getHasOverride()) {{" + Environment.NewLine
+                                                                                   + "    retVal = super.{3}({4});" + Environment.NewLine
+                                                                                   + "}} else {{" + Environment.NewLine
+                                                                                   + "    retVal = eventDataExchange.getReturnData();" + Environment.NewLine
+                                                                                   + "}}" + Environment.NewLine
+                                                                                   + "return ({2})retVal;";
             }
 
             public class PropertyStub

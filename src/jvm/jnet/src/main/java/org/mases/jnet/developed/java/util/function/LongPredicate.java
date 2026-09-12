@@ -31,8 +31,7 @@ public final class LongPredicate extends JCListener implements java.util.functio
 
     @Override
     public boolean test(long e) {
-        raiseEvent("test", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("test", e);
         return (boolean) retVal;
     }
 }

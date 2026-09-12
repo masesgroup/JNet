@@ -31,8 +31,7 @@ public final class IntUnaryOperator extends JCListener implements java.util.func
 
     @Override
     public int applyAsInt(int e) {
-        raiseEvent("applyAsInt", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsInt", e);
         return (int) retVal;
     }
 }

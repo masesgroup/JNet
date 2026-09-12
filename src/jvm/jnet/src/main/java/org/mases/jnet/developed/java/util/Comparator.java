@@ -35,15 +35,13 @@ public class Comparator extends JCListener implements java.util.Comparator {
     }
 
     public int compare(Object o1, Object o2) {
-        raiseEvent("compare", o1, o2);
-        Object returnVal = getReturnData();
+        Object returnVal = raiseEventConcurrent("compare", o1, o2);
         return (int) returnVal;
     }
 
     @Override
     public boolean equals(Object obj) {
-        raiseEvent("equals", obj);
-        Object returnVal = getReturnData();
+        Object returnVal = raiseEventConcurrent("equals", obj);
         return (boolean) returnVal;
     }
 }

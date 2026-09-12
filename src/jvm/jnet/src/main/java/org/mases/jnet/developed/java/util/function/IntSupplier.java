@@ -31,8 +31,7 @@ public final class IntSupplier extends JCListener implements java.util.function.
 
     @Override
     public int getAsInt() {
-        raiseEvent("getAsInt", null);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("getAsInt", null);
         return (int) retVal;
     }
 }

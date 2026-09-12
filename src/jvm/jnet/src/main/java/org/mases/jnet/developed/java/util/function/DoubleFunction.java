@@ -31,8 +31,6 @@ public final class DoubleFunction extends JCListener implements java.util.functi
 
     @Override
     public Object apply(double e) {
-        raiseEvent("apply", e);
-        Object retVal = getReturnData();
-        return retVal;
+        return raiseEventConcurrent("apply", e);
     }
 }

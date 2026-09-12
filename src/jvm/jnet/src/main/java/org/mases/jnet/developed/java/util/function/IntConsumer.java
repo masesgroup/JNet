@@ -31,6 +31,6 @@ public final class IntConsumer extends JCListener implements java.util.function.
 
     @Override
     public void accept(int e) {
-        raiseEvent("accept", e);
+        raiseEventConcurrent("accept", e);
     }
 }

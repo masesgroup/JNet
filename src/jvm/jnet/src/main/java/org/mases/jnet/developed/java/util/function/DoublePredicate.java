@@ -31,8 +31,7 @@ public final class DoublePredicate extends JCListener implements java.util.funct
 
     @Override
     public boolean test(double e) {
-        raiseEvent("test", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("test", e);
         return (boolean) retVal;
     }
 }

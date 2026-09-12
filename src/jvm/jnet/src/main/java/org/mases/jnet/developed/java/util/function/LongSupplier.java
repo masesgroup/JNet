@@ -31,8 +31,7 @@ public final class LongSupplier extends JCListener implements java.util.function
 
     @Override
     public long getAsLong() {
-        raiseEvent("getAsLong", null);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("getAsLong", null);
         return (long) retVal;
     }
 }

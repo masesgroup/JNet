@@ -31,8 +31,7 @@ public final class LongToDoubleFunction extends JCListener implements java.util.
 
     @Override
     public double applyAsDouble(long e) {
-        raiseEvent("applyAsDouble", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsDouble", e);
         return (double) retVal;
     }
 }
