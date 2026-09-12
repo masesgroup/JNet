@@ -169,26 +169,81 @@ jobs:
 
       - name: Show results-current folder
         shell: bash
-        run: ls -lasR ./results-current/${{ env.LABEL }}
+        run: ls -lasR ./results-current
 
       - name: Show results-baseline folder
         shell: bash
-        run: ls -lasR ./results-baseline/${{ env.LABEL }}
+        run: ls -lasR ./results-baseline
 
       - name: Compare current vs baseline
         env:
           DOTNET_ROLL_FORWARD: LatestMajor
         run: |
           git clone --depth 1 https://github.com/dotnet/performance.git /tmp/performance
+          mkdir -p comparison-reports
           dotnet run --project /tmp/performance/src/tools/ResultsComparer -- \
             --base ./results-baseline/results \
             --diff ./results-current/results \
             --threshold ${{ inputs.Threshold || '10%' }} \
             --noise ${{ inputs.Noise || '0.3ms' }} \
-            --top ${{ inputs.Top || '999' }}
+            --top ${{ inputs.Top || '999' }} \
+            > comparison-reports/${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}.txt
 
       - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: comparison-${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
-          path: '**/*.xml'
+          path: |
+            comparison-reports/*.txt
+            **/*.xml
+
+  report_summary:
+    needs: [benchmark, prepare_matrix]
+    if: always() && github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          path: downloaded
+          pattern: comparison-*
+
+      - name: Aggregate comparison results
+        shell: bash
+        run: |
+          {
+            echo "## Benchmark compare — current vs baseline (master)"
+            echo ""
+            found_any=0
+            for f in downloaded/comparison-*/comparison-reports/*.txt; do
+              [ -f "$f" ] || continue
+              label=$(basename "$f" .txt)
+
+              if grep -q "^No differences found" "$f"; then
+                echo "- \`$label\`: no significant differences"
+                continue
+              fi
+
+              found_any=1
+              echo ""
+              echo "### \`$label\`"
+              echo ""
+              grep -A2 '^summary:' "$f" | head -n3
+              echo ""
+              if grep -qE '^\| Faster' "$f"; then
+                echo "**Faster:**"
+                echo ""
+                awk '/^\| Faster/{p=1} p{print} /^$/{if(p)exit}' "$f"
+                echo ""
+              fi
+              if grep -qE '^\| Slower' "$f"; then
+                echo "**Slower:**"
+                echo ""
+                awk '/^\| Slower/{p=1} p{print} /^$/{if(p)exit}' "$f"
+                echo ""
+              fi
+            done
+            if [ "$found_any" -eq 0 ]; then
+              echo ""
+              echo "_No cell showed a statistically significant deviation from baseline._"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
