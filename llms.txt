@@ -1,6 +1,6 @@
 # JNet
 
-> JNet is a comprehensive .NET suite that provides direct access to all Java™/JVM™ APIs from C#/VB.NET. Any Java, Scala, or Kotlin class can be managed directly from .NET — with familiar syntax, zero manual marshalling, and full generic support. Java 8 through Java 25, .NET 8/9/10.
+> JNet is a .NET suite for Java™/JVM™: full Java™/JVM™ API access from .NET — any Java, Scala, Kotlin, or other JVM-enabled language class can be managed directly from C#/VB.NET, with familiar syntax, zero manual marshalling, and full generic support. Supports Java 8 through the latest release, and .NET Framework 4.6.2+ through .NET 10.
 
 JNet eliminates the need for REST wrappers, protocol bridges, or JNI boilerplate when integrating .NET with the JVM. It exposes Java APIs in C# style, so developers can write `new ArrayList<string>()` in C# and have it map directly to `java.util.ArrayList`. All implemented Java features are available at no extra cost, with no third-party protocol overhead.
 
