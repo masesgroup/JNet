@@ -19,6 +19,7 @@
 using BenchmarkDotNet.Attributes;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNetTest.Common;
+using System;
 
 namespace MASES.JNetBenchmarksTest;
 
@@ -41,4 +42,18 @@ public class ConstructorBenchmarks
         obj?.Dispose();
     }
 
+    [Benchmark]
+    public void NewWithSignature()
+    {
+        var obj = JNetTestCore.GlobalInstance.JVM.NewWithSignature("org.mases.jnet.TestPerformance", "()V") as IJavaObject;
+        obj?.Dispose();
+    }
+
+    [Benchmark]
+    public void DeclaredNewEmpty()
+    {
+        var internalWrapper = (IJVMWrapperInternal)JNetTestCore.GlobalInstance.JVM;
+        var obj = internalWrapper.DeclaredNew("org.mases.jnet.TestPerformance");
+        (obj as IDisposable)?.Dispose();
+    }
 }
