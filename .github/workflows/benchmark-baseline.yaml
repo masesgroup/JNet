@@ -230,6 +230,60 @@ jobs:
           alert-threshold: '150%'
           fail-on-alert: false
 
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
+
+      - name: Publish ConstructorBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet ConstructorBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.ConstructorBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: master
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
+
+      - name: Publish FieldBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet FieldBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.FieldBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: master
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
+
+      - name: Publish MultiParamInvokeBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet MultiParamInvokeBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.MultiParamInvokeBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: master
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
   cross_matrix_comparison:
     needs: benchmark
     if: github.event_name != 'pull_request'

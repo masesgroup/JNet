@@ -17,7 +17,6 @@
 */
 
 using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Jobs;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNetTest.Common;
 

@@ -19,25 +19,13 @@
 using BenchmarkDotNet.Attributes;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNetTest.Common;
-using Org.Mases.JNet;
 
 namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
-public class PredicateRoundTripBenchmarks
+public class MultiParamInvokeBenchmarks
 {
-    [Params(false, true)]
-    public bool ByIndex;
-
-    [Params(false, true)]
-    public bool ContinueFirstCheck;
-
-    [Params(false, true)]
-    public bool ContinueSecondCheck;
-
-    Predicate<object> _predicate;
-    IJavaObject _jClass;
-    string _method;
+    IJavaObject _instance;
 
     [GlobalSetup]
     public void Setup()
@@ -46,28 +34,9 @@ public class PredicateRoundTripBenchmarks
         JNetTestCore.ApplicationHeapSize = "4G";
         JNetTestCore.ApplicationInitialHeapSize = "256M";
         JNetTestCore.CreateGlobalInstance();
-
-        _method = ByIndex ? "executePredicateIndex" : "executePredicate";
-
-        _predicate = new Predicate<object>(ContinueFirstCheck, ContinueSecondCheck)
-        {
-            OnTest = (o) => true
-        };
-
-        _jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance", _predicate) as IJavaObject;
+        _instance = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") as IJavaObject;
     }
 
-    [GlobalCleanup]
-    public void Cleanup()
-    {
-        _predicate?.Dispose();
-    }
-
-    // Round-trip: una call .NET->Java->.NET per iterazione BDN.
-    // Corrisponde a TestPredicateRoundTrip nel Program.cs originale.
-    [Benchmark]
-    public void PredicateRoundTrip()
-    {
-        _jClass.InvokeWithSignature(_method, "()Z");
-    }
+    [Benchmark(Baseline = true)]
+    public void InvokeMultiParam() => _instance.Invoke("executeMultiParamMethod", 1, true, "hello");
 }

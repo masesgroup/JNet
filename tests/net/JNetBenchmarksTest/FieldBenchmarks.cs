@@ -23,15 +23,10 @@ using MASES.JNetTest.Common;
 namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
-public class ArrayVarArgsBenchmarks
+public class FieldBenchmarks
 {
-    [Params(10, 1000)]
-    public int Length;
-
     IJavaObject _instance;
-    int[] _intArray;
-    string[] _stringArray;
-    object[] _boxedIntElements;
+    IJavaType _staticClass;
 
     [GlobalSetup]
     public void Setup()
@@ -41,28 +36,34 @@ public class ArrayVarArgsBenchmarks
         JNetTestCore.ApplicationInitialHeapSize = "256M";
         JNetTestCore.CreateGlobalInstance();
 
+        _staticClass = JNetTestCore.GlobalInstance.JVM.GetClass("org.mases.jnet.TestPerformance");
         _instance = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") as IJavaObject;
-
-        _intArray = new int[Length];
-        _stringArray = new string[Length];
-        for (int i = 0; i < Length; i++) _stringArray[i] = "s" + i;
-
-        _boxedIntElements = new object[Length];
-        for (int i = 0; i < Length; i++) _boxedIntElements[i] = i;
     }
 
     [Benchmark(Baseline = true)]
-    public void InvokeIntParam() => _instance.Invoke("executeIntMethod", 42);
+    public void GetInstanceIntField() => _instance.GetField("counter");
 
     [Benchmark]
-    public void InvokeStringArrayFixed() => _instance.Invoke("executeStringArrayMethod", (object)_stringArray);
+    public void SetInstanceIntField() => _instance.SetField("counter", 42);
 
     [Benchmark]
-    public void InvokeIntArrayFixed() => _instance.Invoke("executeIntArrayMethod", _intArray);
+    public void GetInstanceStringField() => _instance.GetField("label");
 
     [Benchmark]
-    public void InvokeVarArgsWholeArray() => _instance.Invoke("executeVarArgsMethod", _intArray);
+    public void SetInstanceStringField() => _instance.SetField("label", "hello");
 
     [Benchmark]
-    public void InvokeVarArgsSpreadElements() => _instance.Invoke("executeVarArgsObjectMethod", _boxedIntElements);
+    public void GetStaticIntField() => _staticClass.GetField("staticCounter");
+
+    [Benchmark]
+    public void SetStaticIntField() => _staticClass.SetField("staticCounter", 42);
+
+    [Benchmark]
+    public void GetStaticStringField() => _staticClass.GetField("staticLabel");
+
+    [Benchmark]
+    public void SetStaticStringField() => _staticClass.SetField("staticLabel", "hello");
+
+    [Benchmark]
+    public int GetInstanceIntFieldGeneric() => _instance.GetField<int>("counter");
 }
