@@ -13,18 +13,22 @@ on:
   workflow_dispatch:
     inputs:
       UseSpecialSettingsCurrent:
+        description: 'Use special settings for current: not available in forks'
         required: false
         default: false
         type: boolean
       SpecialSettingsSourceCurrent:
+        description: 'Name of special settings file for current: not available in forks'
         required: false
         default: 'source.zip'
         type: string
       UseSpecialSettingsBaseline:
+        description: 'Use special settings for baseline: not available in forks'
         required: false
         default: false
         type: boolean
       SpecialSettingsSourceBaseline:
+        description: 'Name of special settings file for baseline: not available in forks'
         required: false
         default: 'source.zip'
         type: string
@@ -40,10 +44,15 @@ on:
         required: false
         default: '999'
         type: string
+      CancelInProgress:
+        description: 'Cancel any other in-progress run for this ref when this one starts'
+        required: false
+        default: true
+        type: boolean
 
 concurrency:
   group: 'benchmark-compare-${{ github.event.pull_request.number || github.ref }}'
-  cancel-in-progress: true
+  cancel-in-progress: ${{ (inputs.CancelInProgress == null) && true || inputs.CancelInProgress }}
 
 jobs:
   build_current:
