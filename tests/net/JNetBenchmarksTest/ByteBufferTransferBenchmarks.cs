@@ -28,7 +28,8 @@ namespace MASES.JNetBenchmarksTest;
 [MemoryDiagnoser]
 public class ByteBufferTransferBenchmarks
 {
-    [Params(1_000, 1_000_000)]
+    // Same size steps as the ByteBuffer transfer table in performance.md.
+    [Params(10, 100, 1_024, 10_240, 102_400, 1_048_576, 10_485_760, 104_857_600)]
     public int Length;
 
     [Params(false, true)]

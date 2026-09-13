@@ -27,10 +27,14 @@ namespace MASES.JNetBenchmarksTest;
 [MemoryDiagnoser]
 public class ByteArrayTransferBenchmarks
 {
-    // NOTE: the original tests swept up to 1_000_000_000 (1GB) - too
-    // expensive for a repeated CI run. Extend here if the "large" case
-    // needs coverage in a separate/scheduled-only suite.
-    [Params(1_000, 1_000_000)]
+    // Size steps match the ones already published in performance.md
+    // (AsSpan latency table), so results here are directly comparable
+    // to the existing documentation instead of introducing a new scale.
+    // NOTE: 100 MB is heavy (large Java-side array + shared buffer +
+    // any .NET-side copy); consider restricting the upper end to a
+    // smaller subset for the fast PR-check job and reserving the full
+    // sweep for the scheduled/full-matrix run.
+    [Params(10, 100, 1_024, 10_240, 102_400, 1_048_576, 10_485_760, 104_857_600)]
     public int Length;
 
     [Params(false, true)]
