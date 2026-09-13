@@ -17,21 +17,30 @@
 */
 
 using BenchmarkDotNet.Attributes;
+using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNetTest.Common;
+using System;
 
 namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
-public class ArrayVarArgsBenchmarks
+public class ByteArrayTransferBenchmarks
 {
-    [Params(10, 1000)]
+    // NOTE: the original tests swept up to 1_000_000_000 (1GB) - too
+    // expensive for a repeated CI run. Extend here if the "large" case
+    // needs coverage in a separate/scheduled-only suite.
+    [Params(1_000, 1_000_000)]
     public int Length;
 
-    IJavaObject _instance;
-    int[] _intArray;
-    string[] _stringArray;
-    object[] _boxedIntElements;
+    [Params(false, true)]
+    public bool ForceRawMemory;
+
+    [Params(false, true)]
+    public bool UseCriticalMethods;
+
+    IJavaObject _jClass;
+    byte[] _expected;
 
     [GlobalSetup]
     public void Setup()
@@ -41,28 +50,46 @@ public class ArrayVarArgsBenchmarks
         JNetTestCore.ApplicationInitialHeapSize = "256M";
         JNetTestCore.CreateGlobalInstance();
 
-        _instance = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") as IJavaObject;
+        var management = JNetTestCore.GlobalInstance.Management;
+        management.EnableCriticalMethods = UseCriticalMethods;
+        management.EnableCriticalMethodsOnGetThreshold = UseCriticalMethods ? 0 : management.EnableCriticalMethodsOnGetThreshold;
+        management.EnableCriticalMethodsOnSetThreshold = UseCriticalMethods ? 0 : management.EnableCriticalMethodsOnSetThreshold;
 
-        _intArray = new int[Length];
-        _stringArray = new string[Length];
-        for (int i = 0; i < Length; i++) _stringArray[i] = "s" + i;
+        _expected = new byte[Length];
+        for (int i = 0; i < Length; i++)
+        {
+            _expected[i] = (byte)(i % sbyte.MaxValue); // signed in JVM
+        }
 
-        _boxedIntElements = new object[Length];
-        for (int i = 0; i < Length; i++) _boxedIntElements[i] = i;
+        _jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", Length) as IJavaObject;
+    }
+
+    [GlobalCleanup]
+    public void Cleanup()
+    {
+        _jClass?.Dispose();
     }
 
     [Benchmark(Baseline = true)]
-    public void InvokeIntParam() => _instance.Invoke("executeIntMethod", 42);
+    public void InvokeByteArrayDirect()
+    {
+        var res = _jClass.Invoke<byte[]>("getArray");
+        if (!res.SequenceEqual(_expected)) throw new System.Exception("Mismatch in InvokeByteArrayDirect.");
+    }
 
     [Benchmark]
-    public void InvokeStringArrayFixed() => _instance.Invoke("executeStringArrayMethod", (object)_stringArray);
+    public void GetArrayViaStreamChunked()
+    {
+        using var res = _jClass.Invoke("getArray") is IJavaArray array ? array : throw new System.InvalidOperationException("getArray did not return an IJavaArray.");
+        using JCOBridgeStream<byte> stream = res.ToStream<byte>(forceRawMemory: ForceRawMemory);
+        if (!stream.AreEqualChunked(_expected)) throw new System.Exception("Mismatch in GetArrayViaStreamChunked.");
+    }
 
     [Benchmark]
-    public void InvokeIntArrayFixed() => _instance.Invoke("executeIntArrayMethod", _intArray);
-
-    [Benchmark]
-    public void InvokeVarArgsWholeArray() => _instance.Invoke("executeVarArgsMethod", _intArray);
-
-    [Benchmark]
-    public void InvokeVarArgsSpreadElements() => _instance.Invoke("executeVarArgsObjectMethod", _boxedIntElements);
+    public void GetArrayViaStreamSpan()
+    {
+        using var res = _jClass.Invoke("getArray") is IJavaArray array ? array : throw new System.InvalidOperationException("getArray did not return an IJavaArray.");
+        using JCOBridgeStream<byte> stream = res.ToStream<byte>(forceRawMemory: ForceRawMemory);
+        if (!stream.AsSpan().SequenceEqual(_expected)) throw new System.Exception("Mismatch in GetArrayViaStreamSpan.");
+    }
 }

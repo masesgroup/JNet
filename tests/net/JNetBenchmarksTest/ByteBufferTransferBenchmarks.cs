@@ -65,33 +65,6 @@ public class ByteBufferTransferBenchmarks
         _jClass?.Dispose();
     }
 
-    static bool AreEqualNaive(System.IO.Stream stream, byte[] array)
-    {
-        stream.Position = 0;
-        using var ms = new System.IO.MemoryStream();
-        stream.CopyTo(ms);
-        return ms.ToArray().SequenceEqual(array);
-    }
-
-    static bool AreEqualChunked(System.IO.Stream stream, byte[] array, int bufferSize = 4096)
-    {
-        if (stream.CanSeek && stream.Length != array.Length)
-            return false;
-
-        stream.Position = 0;
-        var buffer = new byte[bufferSize];
-        int offset = 0;
-
-        while (true)
-        {
-            int read = stream.Read(buffer, 0, bufferSize);
-            if (read == 0) return offset == array.Length;
-            if (offset + read > array.Length) return false;
-            if (!buffer.AsSpan(0, read).SequenceEqual(array.AsSpan(offset, read))) return false;
-            offset += read;
-        }
-    }
-
     [Benchmark(Baseline = true)]
     public void GetByteBufferToArray()
     {
@@ -105,7 +78,7 @@ public class ByteBufferTransferBenchmarks
     {
         using var res = _jClass.Invoke<ByteBuffer>("getByteBuffer");
         using var stream = res.ToStream();
-        if (!AreEqualNaive(stream, _expected)) throw new System.Exception("Mismatch in GetByteBufferStreamNaive.");
+        if (!stream.AreEqualNaive(_expected)) throw new System.Exception("Mismatch in GetByteBufferStreamNaive.");
     }
 
     [Benchmark]
@@ -113,7 +86,7 @@ public class ByteBufferTransferBenchmarks
     {
         using var res = _jClass.Invoke<ByteBuffer>("getByteBuffer");
         using var stream = res.ToStream();
-        if (!AreEqualChunked(stream, _expected)) throw new System.Exception("Mismatch in GetByteBufferStreamChunked.");
+        if (!stream.AreEqualChunked(_expected)) throw new System.Exception("Mismatch in GetByteBufferStreamChunked.");
     }
 
     [Benchmark]
