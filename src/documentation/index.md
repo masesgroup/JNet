@@ -86,13 +86,16 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 
 ### Performance
 
-JNet interop overhead is tracked continuously across .NET and JDK versions.
-- [Latest benchmark results](articles/benchmark-latest.md):
+JNet interop overhead is tracked continuously across .NET and JDK versions:
+- [Latest benchmark results](articles/benchmark-latest.md)
+- [Live benchmark dashboard](https://masesgroup.com/benchmark-data/)
+
+Some results:
 <!-- BENCHMARK-SUMMARY-START -->
   * Static no-arg invocation: N/A
-  * Sustained JVM→.NET callback: N/A
+  * Sustained JVM to .NET callback: N/A
 <!-- BENCHMARK-SUMMARY-END -->
-- [Live benchmark dashboard](https://masesgroup.com/benchmark-data/)
+
 
 ### Recent changes
 
