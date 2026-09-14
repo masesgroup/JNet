@@ -19,27 +19,14 @@
 using BenchmarkDotNet.Attributes;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNetTest.Common;
-using Org.Mases.JNet;
+using System;
 
 namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
 [BenchmarkCategory("Core")]
-public class PredicateRoundTripBenchmarks
+public class ConstructorBenchmarks
 {
-    [Params(false, true)]
-    public bool ByIndex;
-
-    [Params(false, true)]
-    public bool ContinueFirstCheck;
-
-    [Params(false, true)]
-    public bool ContinueSecondCheck;
-
-    Predicate<object> _predicate;
-    IJavaObject _jClass;
-    string _method;
-
     [GlobalSetup]
     public void Setup()
     {
@@ -47,28 +34,27 @@ public class PredicateRoundTripBenchmarks
         JNetTestCore.ApplicationHeapSize = "4G";
         JNetTestCore.ApplicationInitialHeapSize = "256M";
         JNetTestCore.CreateGlobalInstance();
-
-        _method = ByIndex ? "executePredicateIndex" : "executePredicate";
-
-        _predicate = new Predicate<object>(ContinueFirstCheck, ContinueSecondCheck)
-        {
-            OnTest = (o) => true
-        };
-
-        _jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance", _predicate) as IJavaObject;
     }
 
-    [GlobalCleanup]
-    public void Cleanup()
+    [Benchmark(Baseline = true)]
+    public void NewEmpty()
     {
-        _predicate?.Dispose();
+        var obj = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") as IJavaObject;
+        obj?.Dispose();
     }
 
-    // Round-trip: una call .NET->Java->.NET per iterazione BDN.
-    // Corrisponde a TestPredicateRoundTrip nel Program.cs originale.
     [Benchmark]
-    public void PredicateRoundTrip()
+    public void NewWithSignature()
     {
-        _jClass.InvokeWithSignature(_method, "()Z");
+        var obj = JNetTestCore.GlobalInstance.JVM.NewWithSignature("org.mases.jnet.TestPerformance", "()V") as IJavaObject;
+        obj?.Dispose();
+    }
+
+    [Benchmark]
+    public void DeclaredNewEmpty()
+    {
+        var internalWrapper = (IJVMWrapperInternal)JNetTestCore.GlobalInstance.JVM;
+        var obj = internalWrapper.DeclaredNew("org.mases.jnet.TestPerformance");
+        (obj as IDisposable)?.Dispose();
     }
 }

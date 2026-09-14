@@ -91,6 +91,36 @@ namespace Org.Mases.JNet
 
 namespace MASES.JNetBenchmarksTest
 {
+    static class Helper
+    {
+        public static bool AreEqualNaive(this System.IO.Stream stream, byte[] array)
+        {
+            stream.Position = 0;
+            using var ms = new System.IO.MemoryStream();
+            stream.CopyTo(ms);
+            return ms.ToArray().SequenceEqual(array);
+        }
+
+        public static bool AreEqualChunked(this System.IO.Stream stream, byte[] array, int bufferSize = 4096)
+        {
+            if (stream.CanSeek && stream.Length != array.Length)
+                return false;
+
+            stream.Position = 0;
+            var buffer = new byte[bufferSize];
+            int offset = 0;
+
+            while (true)
+            {
+                int read = stream.Read(buffer, 0, bufferSize);
+                if (read == 0) return offset == array.Length;
+                if (offset + read > array.Length) return false;
+                if (!buffer.AsSpan(0, read).SequenceEqual(array.AsSpan(offset, read))) return false;
+                offset += read;
+            }
+        }
+    }
+
     class FastPrJobConfig : ManualConfig
     {
         public FastPrJobConfig()

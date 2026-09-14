@@ -26,6 +26,11 @@ on:
         required: false
         default: false
         type: boolean
+      BdnFullSweep:
+        description: 'Run the full BulkTransfer parameter sweep (all Length/ForceRawMemory/UseCriticalMethods combinations) instead of the reduced representative set. Only affects benchmark_bulk.'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   build:
@@ -121,29 +126,87 @@ jobs:
 
       - name: Run benchmarks
         run: |
-          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/${{ env.LABEL }} --filter '*'
+          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/core/${{ env.LABEL }} --anyCategories=Core
 
       - name: Fail fast on benchmark issues
         shell: bash
         run: |
-          # Search for failed benchmarks in all JSON files inside the folder
-          if grep -q '"Statistics": null' results/${{ env.LABEL }}/results/*.json; then
+          if grep -q '"Statistics": null' results/core/${{ env.LABEL }}/results/*.json; then
             echo "::error::Detected failed benchmarks (Statistics: null) in the reports!"
-            # Show which files contain the error
-            grep -l '"Statistics": null' results/${{ env.LABEL }}/*.json
+            grep -l '"Statistics": null' results/core/${{ env.LABEL }}/*.json
             exit 1
           fi
 
       - uses: actions/upload-artifact@v7
         with:
-          name: bdn-results-${{ env.LABEL }}
-          path: results/${{ env.LABEL }}/results/*-report-full*.json
+          name: bdn-results-core-${{ env.LABEL }}
+          path: results/core/${{ env.LABEL }}/results/*-report-full*.json
           retention-days: 7
 
       - uses: actions/upload-artifact@v7
         with:
-          name: bdn-md-${{ env.LABEL }}
-          path: results/${{ env.LABEL }}/results/*-report-github.md
+          name: bdn-md-core-${{ env.LABEL }}
+          path: results/core/${{ env.LABEL }}/results/*-report-github.md
+          retention-days: 14
+
+  benchmark_bulk:
+    needs: build
+    strategy:
+      fail-fast: false
+      matrix:
+        # Reduced matrix: memory-copy throughput depends mostly on
+        # OS/.NET/hardware, much less on JDK vendor/version - the full
+        # JDK sweep isn't worth its cost here.
+        os: ["ubuntu-22.04","ubuntu-22.04-arm","ubuntu-24.04","ubuntu-24.04-arm"]
+        framework: ['net8.0', 'net10.0']
+        jdk_vendor: ['temurin']
+        jdk_version: ['17']
+    runs-on: ${{ matrix.os }}
+    env:
+      LABEL: ${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
+      ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
+      BDN_FULL_SWEEP: ${{ (inputs.BdnFullSweep == true) && '1' || '0' }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Restore bin from cache
+        uses: actions/cache/restore@v6
+        with:
+          fail-on-cache-miss: true
+          enableCrossOsArchive: true
+          path: ./bin/
+          key: ${{ needs.build.outputs.cache-key }}
+
+      - name: Set up JDK distribution
+        uses: actions/setup-java@v6
+        with:
+          distribution: ${{ matrix.jdk_vendor }}
+          java-version: ${{ matrix.jdk_version }}
+
+      - name: Run benchmarks
+        run: |
+          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/bulk/${{ env.LABEL }} --anyCategories=BulkTransfer
+
+      - name: Fail fast on benchmark issues
+        shell: bash
+        run: |
+          if grep -q '"Statistics": null' results/bulk/${{ env.LABEL }}/results/*.json; then
+            echo "::error::Detected failed benchmarks (Statistics: null) in the reports!"
+            grep -l '"Statistics": null' results/bulk/${{ env.LABEL }}/*.json
+            exit 1
+          fi
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: bdn-results-bulk-${{ env.LABEL }}
+          path: results/bulk/${{ env.LABEL }}/results/*-report-full*.json
+          retention-days: 7
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: bdn-md-bulk-${{ env.LABEL }}
+          path: results/bulk/${{ env.LABEL }}/results/*-report-github.md
           retention-days: 14
 
   publish_history:
@@ -159,7 +222,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v8
         with:
-          name: bdn-results-${{ env.LABEL }}
+          name: bdn-results-core-${{ env.LABEL }}
           path: results/${{ env.LABEL }}/results
 
       - name: Publish ArrayVarArgsBenchmarks
@@ -230,6 +293,112 @@ jobs:
           alert-threshold: '150%'
           fail-on-alert: false
 
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
+
+      - name: Publish ConstructorBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet ConstructorBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.ConstructorBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: master
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
+
+      - name: Publish FieldBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet FieldBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.FieldBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: master
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
+
+      - name: Publish MultiParamInvokeBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet MultiParamInvokeBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.MultiParamInvokeBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: master
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
+  publish_history_bulk:
+    if: ${{ inputs.UseSpecialSettings != true }}
+    needs: [benchmark_bulk]
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        os: ["ubuntu-22.04","ubuntu-22.04-arm","ubuntu-24.04","ubuntu-24.04-arm"]
+        framework: ['net8.0', 'net10.0']
+        jdk_vendor: ['temurin']
+        jdk_version: ['17']
+    runs-on: ubuntu-latest
+    env:
+      LABEL: ${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: bdn-results-bulk-${{ env.LABEL }}
+          path: results/${{ env.LABEL }}/results
+
+      - name: Publish ByteArrayTransferBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet ByteArrayTransferBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.ByteArrayTransferBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: master
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
+
+      - name: Publish ByteBufferTransferBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet ByteBufferTransferBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.ByteBufferTransferBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: master
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
   cross_matrix_comparison:
     needs: benchmark
     if: github.event_name != 'pull_request'
@@ -240,7 +409,7 @@ jobs:
       - uses: actions/download-artifact@v8
         with:
           path: downloaded
-          pattern: bdn-results-*
+          pattern: bdn-results-core-*
 
       - name: Install roll-forward for ResultsComparer (net6.0 EOL)
         run: echo "DOTNET_ROLL_FORWARD=LatestMajor" >> "$GITHUB_ENV"
@@ -252,7 +421,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p cross-comparison-reports
-          anchor_dir="downloaded/bdn-results-${ANCHOR}"
+          anchor_dir="downloaded/bdn-results-core-${ANCHOR}"
           if [ ! -d "$anchor_dir" ]; then
             echo "::error::Anchor cell '${ANCHOR}' not found among published results."
             exit 1
@@ -339,7 +508,7 @@ jobs:
             echo "Auto-generated by [BenchmarkDotNet](https://benchmarkdotnet.org/) on $(date -u +%Y-%m-%d)."
             echo "Do not edit by hand - this file is fully overwritten on every run."
             echo ""
-            echo "Live historical dashboard: https://masesgroup.github.io/benchmark-data/"
+            echo "Live historical dashboard: https://masesgroup.com/benchmark-data/"
             echo ""
             for f in downloaded/bdn-md-*/*-report-github.md; do
               label=$(basename "$(dirname "$f")" | sed 's/^bdn-md-//')
@@ -349,6 +518,27 @@ jobs:
               echo ""
             done
           } > src/documentation/articles/benchmark-latest.md
+
+      - name: Update summary values in README.md and index.md
+        shell: bash
+        run: |
+          set +o pipefail
+
+          INVOKE_MEAN=$(grep -m1 -A2 'InvokeStaticEmptyWithSignature' src/documentation/articles/benchmark-latest.md | grep -m1 -oE '[0-9]+\.[0-9]+ ?(ns|us)')
+          SUSTAINED_MEAN=$(grep -m1 -A2 'PredicateSustained' src/documentation/articles/benchmark-latest.md | grep -m1 -oE '[0-9]+\.[0-9]+ ?(ns|us)')
+
+          [ -z "$INVOKE_MEAN" ] && { echo "::warning::Could not extract invoke summary value."; INVOKE_MEAN="N/A"; }
+          [ -z "$SUSTAINED_MEAN" ] && { echo "::warning::Could not extract sustained summary value."; SUSTAINED_MEAN="N/A"; }
+
+          BLOCK=$(printf '  * Static no-arg invocation: %s\n  * Sustained JVM to .NET callback: %s' "$INVOKE_MEAN" "$SUSTAINED_MEAN")
+
+          for f in README.md src/documentation/index.md; do
+            awk -v block="$BLOCK" '
+              /<!-- BENCHMARK-SUMMARY-START -->/ { print; print block; skip=1; next }
+              /<!-- BENCHMARK-SUMMARY-END -->/ { skip=0 }
+              !skip { print }
+            ' "$f" > "$f.tmp" && mv "$f.tmp" "$f"
+          done
 
       - uses: actions/upload-artifact@v7
         if: ${{ inputs.UseSpecialSettings == true }}
@@ -363,9 +553,12 @@ jobs:
           branch: benchmark-latest-update-${{ github.run_number }}
           commit-message: 'chore(perf): update benchmark-latest.md'
           title: 'Update benchmark-latest.md (run #${{ github.run_number }})'
-          add-paths: src/documentation/articles/benchmark-latest.md
+          add-paths: |
+            README.md
+            src/documentation/index.md
+            src/documentation/articles/benchmark-latest.md
           body: |
             Auto-generated benchmark tables from BenchmarkDotNet.
             No changes to performance.md - separate, fully regenerated file.
-            Full historical trend: https://masesgroup.github.io/benchmark-data/jnet/
+            Full historical trend: https://masesgroup.com/benchmark-data/
           delete-branch: true
