@@ -37,6 +37,11 @@ on:
         required: false
         default: '*'
         type: string
+      Categories:
+        description: 'BenchmarkDotNet --anyCategories value(s), comma-separated (e.g. Core,BulkTransfer). Defaults to Core only to avoid multi-hour runs.'
+        required: false
+        default: 'Core'
+        type: string
       Threshold:
         required: false
         default: '10%'
@@ -175,11 +180,11 @@ jobs:
 
       - name: Run benchmarks (current)
         run: |
-          dotnet ./bin-current/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-current --filter '${{ inputs.Filter || '*' }}'
+          dotnet ./bin-current/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-current --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }}
 
       - name: Run benchmarks (baseline)
         run: |
-          dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '${{ inputs.Filter || '*' }}'
+          dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }}
 
       - name: Show results-current folder
         shell: bash

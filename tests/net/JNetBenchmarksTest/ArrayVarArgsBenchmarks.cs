@@ -23,6 +23,7 @@ using MASES.JNetTest.Common;
 namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
+[BenchmarkCategory("Core")]
 public class ArrayVarArgsBenchmarks
 {
     // Standard steps stay small for the routine CI matrix. 100_000 is

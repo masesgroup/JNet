@@ -24,6 +24,7 @@ using Org.Mases.JNet;
 namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
+[BenchmarkCategory("Core")]
 public class PredicateSustainedBenchmarks
 {
     [Params(false, true)]

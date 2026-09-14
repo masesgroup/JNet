@@ -21,10 +21,12 @@ using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNetTest.Common;
 using System;
+using System.Collections.Generic;
 
 namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
+[BenchmarkCategory("BulkTransfer")]
 public class ByteArrayTransferBenchmarks
 {
     // Size steps match the ones already published in performance.md
@@ -34,8 +36,14 @@ public class ByteArrayTransferBenchmarks
     // any .NET-side copy); consider restricting the upper end to a
     // smaller subset for the fast PR-check job and reserving the full
     // sweep for the scheduled/full-matrix run.
-    [Params(10, 100, 1_024, 10_240, 102_400, 1_048_576, 10_485_760, 104_857_600)]
+    [ParamsSource(nameof(LengthValues))]
     public int Length;
+
+    public static IEnumerable<int> LengthValues =>
+        Environment.GetEnvironmentVariable("BDN_FULL_SWEEP") == "1"
+            ? new[] { 10, 100, 1_024, 10_240, 102_400, 1_048_576, 10_485_760, 104_857_600 }
+            : new[] { 1_024, 1_048_576, 104_857_600 }; // representative: small / medium / large
+
 
     [Params(false, true)]
     public bool ForceRawMemory;

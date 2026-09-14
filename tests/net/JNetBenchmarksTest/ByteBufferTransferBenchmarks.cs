@@ -26,6 +26,7 @@ using System;
 namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
+[BenchmarkCategory("BulkTransfer")]
 public class ByteBufferTransferBenchmarks
 {
     // Same size steps as the ByteBuffer transfer table in performance.md.

@@ -23,6 +23,7 @@ using MASES.JNetTest.Common;
 namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
+[BenchmarkCategory("Core")]
 public class MultiParamInvokeBenchmarks
 {
     IJavaObject _instance;

@@ -24,6 +24,7 @@ using System;
 namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
+[BenchmarkCategory("Core")]
 public class ConstructorBenchmarks
 {
     [GlobalSetup]
