@@ -194,11 +194,11 @@ jobs:
 
       - name: Run benchmarks (current)
         run: |
-          dotnet ./bin-current/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-current --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }} --loggers console
+          dotnet ./bin-current/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-current --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }}
 
       - name: Run benchmarks (baseline)
         run: |
-          dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }} --loggers console
+          dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }}
 
       - name: Show results-current folder
         shell: bash
