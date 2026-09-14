@@ -157,7 +157,7 @@ jobs:
         # Reduced matrix: memory-copy throughput depends mostly on
         # OS/.NET/hardware, much less on JDK vendor/version - the full
         # JDK sweep isn't worth its cost here.
-        os: ['ubuntu-latest']
+        os: ["ubuntu-22.04","ubuntu-22.04-arm","ubuntu-24.04","ubuntu-24.04-arm"]
         framework: ['net8.0', 'net10.0']
         jdk_vendor: ['temurin']
         jdk_version: ['17']
