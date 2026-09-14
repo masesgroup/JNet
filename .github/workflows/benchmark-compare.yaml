@@ -32,6 +32,11 @@ on:
         required: false
         default: 'source.zip'
         type: string
+      Filter:
+        description: 'BenchmarkDotNet --filter expression (default: all benchmarks)'
+        required: false
+        default: '*'
+        type: string
       Threshold:
         required: false
         default: '10%'
@@ -170,11 +175,11 @@ jobs:
 
       - name: Run benchmarks (current)
         run: |
-          dotnet ./bin-current/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-current --filter '*'
+          dotnet ./bin-current/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-current --filter '${{ inputs.Filter || '*' }}'
 
       - name: Run benchmarks (baseline)
         run: |
-          dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '*'
+          dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '${{ inputs.Filter || '*' }}'
 
       - name: Show results-current folder
         shell: bash

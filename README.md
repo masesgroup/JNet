@@ -87,6 +87,16 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 * [JNet PowerShell usage](src/documentation/articles/usagePS.md)
 * [JNet Command-line switches](src/documentation/articles/commandlineswitch.md)
 
+### Performance
+
+JNet interop overhead is tracked continuously across .NET and JDK versions.
+- [Latest benchmark results](src/documentation/articles/benchmark-latest.md):
+<!-- BENCHMARK-SUMMARY-START -->
+  * Static no-arg invocation: N/A
+  * Sustained JVM→.NET callback: N/A
+<!-- BENCHMARK-SUMMARY-END -->
+- [Live benchmark dashboard](https://masesgroup.com/benchmark-data/)
+
 ### Recent changes
 
 * V2.6.x: aligns to JCOBridge 2.6.* series

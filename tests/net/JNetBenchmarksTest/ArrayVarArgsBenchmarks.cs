@@ -25,7 +25,12 @@ namespace MASES.JNetBenchmarksTest;
 [MemoryDiagnoser]
 public class ArrayVarArgsBenchmarks
 {
-    [Params(10, 1000)]
+    // Standard steps stay small for the routine CI matrix. 100_000 is
+    // added specifically to make the per-element JNI reference cost
+    // (NewGlobalRef/DeleteGlobalRef vs local-ref-in-frame) dominate over
+    // the fixed call overhead, so the effect becomes visible above the
+    // measurement noise floor seen at Length=10/1000.
+    [Params(10, 1_000, 100_000)]
     public int Length;
 
     IJavaObject _instance;
