@@ -6,6 +6,11 @@ public class TestPerformance {
 
     Predicate _predicate;
 
+    public int counter;
+    public String label;
+    public static int staticCounter;
+    public static String staticLabel;
+
     public TestPerformance() {
     }
 
@@ -65,6 +70,11 @@ public class TestPerformance {
     public int executeVarArgsObjectMethod(Object... values)
     {
         return values.length;
+    }
+
+    public int executeMultiParamMethod(int a, boolean b, String c)
+    {
+        return a + (b ? 1 : 0) + (c == null ? 0 : c.length());
     }
 
     public boolean executePredicateIndex()

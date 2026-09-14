@@ -24,10 +24,10 @@ namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
 [BenchmarkCategory("Core")]
-public class InvokeBenchmarks
+public class FieldBenchmarks
 {
-    IJavaType _staticClass;
     IJavaObject _instance;
+    IJavaType _staticClass;
 
     [GlobalSetup]
     public void Setup()
@@ -41,22 +41,30 @@ public class InvokeBenchmarks
         _instance = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") as IJavaObject;
     }
 
-    // Caso critico: nessun parametro, statico — il più sensibile
-    // all'overhead fisso introdotto da push/pop.
     [Benchmark(Baseline = true)]
-    public void InvokeStaticEmpty() => _staticClass.Invoke("executeStaticEmptyMethod");
+    public void GetInstanceIntField() => _instance.GetField("counter");
 
     [Benchmark]
-    public void InvokeStaticEmptyWithSignature() => _staticClass.InvokeWithSignature("executeStaticEmptyMethod", "()V");
-
-    // Un parametro primitivo (bool) — non dovrebbe generare ref JNI.
-    [Benchmark]
-    public void InvokeStaticWithFeedback() => _staticClass.Invoke("executeStaticFeedbackMethod", true);
-
-    // Stesso confronto lato istanza.
-    [Benchmark]
-    public void InvokeInstanceEmpty() => _instance.Invoke("executeEmptyMethod");
+    public void SetInstanceIntField() => _instance.SetField("counter", 42);
 
     [Benchmark]
-    public void InvokeInstanceWithFeedback() => _instance.Invoke("executeFeedbackMethod", true);
+    public void GetInstanceStringField() => _instance.GetField("label");
+
+    [Benchmark]
+    public void SetInstanceStringField() => _instance.SetField("label", "hello");
+
+    [Benchmark]
+    public void GetStaticIntField() => _staticClass.GetField("staticCounter");
+
+    [Benchmark]
+    public void SetStaticIntField() => _staticClass.SetField("staticCounter", 42);
+
+    [Benchmark]
+    public void GetStaticStringField() => _staticClass.GetField("staticLabel");
+
+    [Benchmark]
+    public void SetStaticStringField() => _staticClass.SetField("staticLabel", "hello");
+
+    [Benchmark]
+    public int GetInstanceIntFieldGeneric() => _instance.GetField<int>("counter");
 }

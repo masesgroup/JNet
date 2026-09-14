@@ -17,7 +17,6 @@
 */
 
 using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Jobs;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNetTest.Common;
 using Org.Mases.JNet;
@@ -25,6 +24,7 @@ using Org.Mases.JNet;
 namespace MASES.JNetBenchmarksTest;
 
 [MemoryDiagnoser]
+[BenchmarkCategory("Core")]
 public class PredicateSustainedBenchmarks
 {
     [Params(false, true)]

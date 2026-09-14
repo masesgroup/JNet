@@ -13,20 +13,39 @@ on:
   workflow_dispatch:
     inputs:
       UseSpecialSettingsCurrent:
+        description: 'Use special settings for current: not available in forks'
         required: false
         default: false
         type: boolean
       SpecialSettingsSourceCurrent:
+        description: 'Name of special settings file for current: not available in forks'
         required: false
         default: 'source.zip'
         type: string
       UseSpecialSettingsBaseline:
+        description: 'Use special settings for baseline: not available in forks'
         required: false
         default: false
         type: boolean
       SpecialSettingsSourceBaseline:
+        description: 'Name of special settings file for baseline: not available in forks'
         required: false
         default: 'source.zip'
+        type: string
+      BdnFullSweep:
+        description: 'Run the full BulkTransfer parameter sweep (all Length/ForceRawMemory/UseCriticalMethods combinations) instead of the reduced representative set. Only affects benchmark_bulk.'
+        required: false
+        default: false
+        type: boolean
+      Filter:
+        description: 'BenchmarkDotNet --filter expression (default: all benchmarks)'
+        required: false
+        default: '*'
+        type: string
+      Categories:
+        description: 'BenchmarkDotNet --anyCategories value(s), comma-separated (e.g. Core,BulkTransfer). Defaults to Core only to avoid multi-hour runs.'
+        required: false
+        default: 'Core'
         type: string
       Threshold:
         required: false
@@ -40,10 +59,15 @@ on:
         required: false
         default: '999'
         type: string
+      CancelInProgress:
+        description: 'Cancel any other in-progress run for this ref when this one starts'
+        required: false
+        default: true
+        type: boolean
 
 concurrency:
   group: 'benchmark-compare-${{ github.event.pull_request.number || github.ref }}'
-  cancel-in-progress: true
+  cancel-in-progress: ${{ (inputs.CancelInProgress == null) && true || inputs.CancelInProgress }}
 
 jobs:
   build_current:
@@ -111,6 +135,7 @@ jobs:
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
       ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
       BDN_FAST: ${{ github.event_name }}
+      BDN_FULL_SWEEP: ${{ (inputs.BdnFullSweep == true) && '1' || '0' }}
     steps:
       - uses: actions/checkout@v7
 
@@ -152,20 +177,28 @@ jobs:
           java-package: jre
 
       - name: Set up GraalVM distribution
-        if: ${{ matrix.jdk_vendor == 'graalvm' }}
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version != '17' }}
         uses: graalvm/setup-graalvm@v1
         with:
           java-version: '${{ matrix.jdk_version }}'
           distribution: 'graalvm'
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
+
+      - name: Set up GraalVM distribution
+        if: ${{ matrix.jdk_vendor == 'graalvm' && matrix.jdk_version == '17' }}
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '17.0.12' # see https://github.com/marketplace/actions/github-action-for-graalvm#notes-on-oracle-graalvm-for-jdk-17
+          distribution: 'graalvm'
+          github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
       - name: Run benchmarks (current)
         run: |
-          dotnet ./bin-current/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-current --filter '*'
+          dotnet ./bin-current/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-current --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }} --loggers console
 
       - name: Run benchmarks (baseline)
         run: |
-          dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '*'
+          dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }} --loggers console
 
       - name: Show results-current folder
         shell: bash
