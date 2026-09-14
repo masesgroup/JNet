@@ -354,7 +354,7 @@ jobs:
       fail-fast: false
       max-parallel: 1
       matrix:
-        os: ['ubuntu-latest']
+        os: ["ubuntu-22.04","ubuntu-22.04-arm","ubuntu-24.04","ubuntu-24.04-arm"]
         framework: ['net8.0', 'net10.0']
         jdk_vendor: ['temurin']
         jdk_version: ['17']
