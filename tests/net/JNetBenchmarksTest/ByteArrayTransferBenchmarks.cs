@@ -44,12 +44,21 @@ public class ByteArrayTransferBenchmarks
             ? new[] { 10, 100, 1_024, 10_240, 102_400, 1_048_576, 10_485_760, 104_857_600 }
             : new[] { 1_024, 1_048_576, 104_857_600 }; // representative: small / medium / large
 
-
-    [Params(false, true)]
+    [ParamsSource(nameof(ForceRawMemoryValues))]
     public bool ForceRawMemory;
 
-    [Params(false, true)]
+    public static IEnumerable<bool> ForceRawMemoryValues =>
+        Environment.GetEnvironmentVariable("BDN_FULL_SWEEP") == "1"
+        ? new[] { false, true }
+        : new[] { true }; // representative: raw memory is the more realistic production path
+
+    [ParamsSource(nameof(UseCriticalMethodsValues))]
     public bool UseCriticalMethods;
+
+    public static IEnumerable<bool> UseCriticalMethodsValues =>
+        Environment.GetEnvironmentVariable("BDN_FULL_SWEEP") == "1"
+        ? new[] { false, true }
+        : new[] { false };
 
     IJavaObject _jClass;
     byte[] _expected;

@@ -26,6 +26,11 @@ on:
         required: false
         default: false
         type: boolean
+      BdnFullSweep:
+        description: 'Run the full BulkTransfer parameter sweep (all Length/ForceRawMemory/UseCriticalMethods combinations) instead of the reduced representative set. Only affects benchmark_bulk.'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   build:
@@ -161,6 +166,7 @@ jobs:
       LABEL: ${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
       ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
+      BDN_FULL_SWEEP: ${{ (inputs.BdnFullSweep == true) && '1' || '0' }}
     steps:
       - uses: actions/checkout@v7
 
