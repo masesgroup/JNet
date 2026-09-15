@@ -524,13 +524,26 @@ jobs:
         run: |
           set +o pipefail
 
-          INVOKE_MEAN=$(grep -m1 -A2 'InvokeStaticEmptyWithSignature' src/documentation/articles/benchmark-latest.md | grep -m1 -oE '[0-9]+\.[0-9]+ ?(ns|us)')
-          SUSTAINED_MEAN=$(grep -m1 -A2 'PredicateSustained' src/documentation/articles/benchmark-latest.md | grep -m1 -oE '[0-9]+\.[0-9]+ ?(ns|us)')
+          extract_stats() {
+            # $1 = pattern to locate the row; prints "Mean StdErr StdDev" (or "N/A" if not found)
+            local row
+            row=$(grep -m1 -A2 "$1" src/documentation/articles/benchmark-latest.md | grep -m1 -E '\|.*\|.*\|')
+            if [ -z "$row" ]; then
+              echo "N/A N/A N/A"
+              return
+            fi
+            echo "$row" | grep -oE '[0-9]+\.[0-9]+ ?(ns|us|μs)' | head -3 | tr '\n' ' '
+          }
 
-          [ -z "$INVOKE_MEAN" ] && { echo "::warning::Could not extract invoke summary value."; INVOKE_MEAN="N/A"; }
-          [ -z "$SUSTAINED_MEAN" ] && { echo "::warning::Could not extract sustained summary value."; SUSTAINED_MEAN="N/A"; }
+          read -r INVOKE_MEAN INVOKE_STDERR INVOKE_STDDEV <<< "$(extract_stats 'InvokeStaticEmptyWithSignature')"
+          read -r SUSTAINED_MEAN SUSTAINED_STDERR SUSTAINED_STDDEV <<< "$(extract_stats 'PredicateSustained')"
 
-          BLOCK=$(printf '  * Static no-arg invocation: %s\n  * Sustained JVM to .NET callback: %s' "$INVOKE_MEAN" "$SUSTAINED_MEAN")
+          [ "$INVOKE_MEAN" = "N/A" ] && echo "::warning::Could not extract invoke summary values."
+          [ "$SUSTAINED_MEAN" = "N/A" ] && echo "::warning::Could not extract sustained summary values."
+
+          BLOCK=$(printf '  * Static no-arg invocation: Mean %s, StdErr %s, StdDev %s\n  * Sustained JVM to .NET callback: Mean %s, StdErr %s, StdDev %s' \
+            "$INVOKE_MEAN" "$INVOKE_STDERR" "$INVOKE_STDDEV" \
+            "$SUSTAINED_MEAN" "$SUSTAINED_STDERR" "$SUSTAINED_STDDEV")
 
           for f in README.md src/documentation/index.md; do
             awk -v block="$BLOCK" '

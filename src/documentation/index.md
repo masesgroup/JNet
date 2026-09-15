@@ -92,8 +92,8 @@ JNet interop overhead is tracked continuously across .NET and JDK versions:
 
 Some results:
 <!-- BENCHMARK-SUMMARY-START -->
-  * Static no-arg invocation: N/A
-  * Sustained JVM to .NET callback: N/A
+  * Static no-arg invocation: Mean 387.7, StdErr ns, StdDev 0.34 ns 0.32 ns
+  * Sustained JVM to .NET callback: Mean 606.35, StdErr ns, StdDev 1.081 ns 0.958 ns
 <!-- BENCHMARK-SUMMARY-END -->
 
 
