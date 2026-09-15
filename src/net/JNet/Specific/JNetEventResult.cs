@@ -99,8 +99,8 @@ namespace MASES.JNet.Specific
     /// </summary>
     public sealed class JNetEventData : CLREventData<MASES.JNet.Specific.JNetEventResult>
     {
-        /// <inheritdoc cref="CLREventData{TObject}.CLREventData(IJavaObject)"/>
-        public JNetEventData(IJavaObject javaObject) : base(javaObject) { }
+        /// <inheritdoc cref="CLREventData{TObject}.CLREventData(IJavaObject, long)"/>
+        public JNetEventData(IJavaObject javaObject, long callId) : base(javaObject, callId) { }
 
         /// <inheritdoc cref="JNetEventResult.HasOverride"/>
         public bool HasOverride { get => TypedEventData.HasOverride; set => TypedEventData.HasOverride = value; }
