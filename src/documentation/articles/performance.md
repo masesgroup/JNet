@@ -14,7 +14,7 @@ Results are reported for three JCOBridge versions â€” 2.6.6, 2.6.7+, and 2.6.9 â
 > Benchmarks are run on shared GitHub-hosted runners. Absolute numbers reflect that environment and should be read comparatively rather than as absolute throughput figures for a dedicated host.
 
 For the full BenchmarkDotNet results across all supported .NET versions, JDK vendors, and platforms see:
-- [Latest benchmark results](articles/benchmark-latest.md)
+- [Latest benchmark results](benchmark-latest.md)
 - [Live benchmark dashboard](https://masesgroup.com/benchmark-data/)
 
 ---
