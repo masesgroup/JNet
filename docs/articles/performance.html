@@ -94,45 +94,65 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <h5>Note</h5>
 <p>Benchmarks are run on shared GitHub-hosted runners. Absolute numbers reflect that environment and should be read comparatively rather than as absolute throughput figures for a dedicated host.</p>
 </div>
+<p>For the full BenchmarkDotNet results across all supported .NET versions, JDK vendors, and platforms see:</p>
+<ul>
+<li><a href="articles/benchmark-latest.md">Latest benchmark results</a></li>
+<li><a href="https://masesgroup.com/benchmark-data/">Live benchmark dashboard</a></li>
+</ul>
 <hr>
-<h2 id="test-environment">Test environment</h2>
+<h2 id="test-environments">Test environments</h2>
+<p>Three environments are used across this page:</p>
 <table>
 <thead>
 <tr>
 <th>Parameter</th>
-<th>Combination A</th>
-<th>Combination B</th>
+<th>x86-64 EPYC (stopwatch)</th>
+<th>x86-64 (BenchmarkDotNet)</th>
+<th>ARM64 (BenchmarkDotNet)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Runner</td>
-<td>GitHub Actions (<code>ubuntu-22.04</code>, AMD EPYC 9V45 96-Core)</td>
-<td>GitHub Actions (<code>ubuntu-22.04</code>, AMD EPYC 9V45 96-Core)</td>
+<td>GitHub Actions <code>ubuntu-22.04</code>, AMD EPYC 9V45 96-Core</td>
+<td>GitHub Actions <code>ubuntu-24.04</code>, AMD EPYC 7763 2-Core</td>
+<td>GitHub Actions <code>ubuntu-24.04</code>, Neoverse-N2 4-Core</td>
 </tr>
 <tr>
-<td>Iterations per test</td>
-<td>1 000 000</td>
-<td>1 000 000</td>
+<td>Measurement</td>
+<td>Stopwatch, 1 000 000 iterations</td>
+<td>BenchmarkDotNet, statistically rigorous</td>
+<td>BenchmarkDotNet, statistically rigorous</td>
 </tr>
 <tr>
-<td>.NET version</td>
-<td>.NET 8</td>
-<td>.NET 10</td>
+<td>.NET versions</td>
+<td>.NET 8 / .NET 10</td>
+<td>.NET 8 / .NET 10</td>
+<td>.NET 8 / .NET 10</td>
 </tr>
 <tr>
-<td>JDK version</td>
-<td>Temurin 17</td>
-<td>Temurin 25</td>
+<td>JDK versions</td>
+<td>Temurin 17 / Temurin 25</td>
+<td>Multiple vendors — see <a href="articles/benchmark-latest.md">benchmark-latest.md</a></td>
+<td>Multiple vendors — see <a href="articles/benchmark-latest.md">benchmark-latest.md</a></td>
 </tr>
 </tbody>
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The 2.6.6 and 2.6.7+ baselines were collected on earlier <code>ubuntu-latest</code> runners and are preserved as historical reference. The 2.6.9 results use <code>ubuntu-22.04</code> with AMD EPYC 9V45 — a more consistent environment. Cross-version percentages should be read as directional trends rather than precise measurements.</p>
+<p>The 2.6.6 and 2.6.7+ baselines were collected on earlier <code>ubuntu-latest</code> runners and are preserved as historical reference. The x86-64 EPYC stopwatch results (2.6.9 section) use the AMD EPYC 9V45 dedicated runner and represent the lowest latency observed on x86-64. The BenchmarkDotNet results use shared <code>ubuntu-24.04</code> runners on both platforms and are statistically rigorous; see the <a href="https://masesgroup.com/benchmark-data/">live dashboard</a> for up-to-date numbers.</p>
 </div>
 <hr>
 <h2 id="what-is-measured">What is measured</h2>
+<h3 id="jvm-object-creation">JVM object creation</h3>
+<p>Measures the cost of creating a JVM object from .NET via three constructor resolution strategies:</p>
+<ul>
+<li><strong><code>NewEmpty</code></strong> — resolves the constructor by argument type matching.</li>
+<li><strong><code>NewWithSignature</code></strong> — resolves the constructor by JNI signature string.</li>
+<li><strong><code>DeclaredNewEmpty</code></strong> — uses a pre-declared constructor reference.</li>
+</ul>
+<h3 id="field-access">Field access</h3>
+<p>Measures the cost of getting and setting JVM instance and static fields from .NET. Primitive fields (e.g. <code>int</code>) are transferred as-is; reference fields (e.g. <code>String</code>) require marshalling between JVM and CLR representations.</p>
 <h3 id="jvm-method-invocation-from-net">JVM method invocation from .NET</h3>
 <p>Measures the round-trip latency of calling a JVM method from .NET through JNet, with two resolution strategies and two method signatures.</p>
 <p><strong>Resolution strategies:</strong></p>
@@ -146,6 +166,17 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <li><strong><code>feedback = true</code></strong> — method takes a <code>boolean</code> argument and returns the same <code>boolean</code>. Measures the additional cost of argument passing and return value marshalling across the JNI boundary.</li>
 </ul>
 <p>Both static and instance method variants are tested.</p>
+<h3 id="array-and-varargs-invocation">Array and varargs invocation</h3>
+<p>Measures the cost of passing arrays or varargs to JVM methods from .NET, across three element types and three sizes (10, 1 000, 100 000 elements):</p>
+<ul>
+<li><strong><code>InvokeIntArrayFixed</code></strong> — fixed-length <code>int[]</code> array.</li>
+<li><strong><code>InvokeVarArgsWholeArray</code></strong> — <code>int[]</code> passed as a varargs array (single JNI call).</li>
+<li><strong><code>InvokeStringArrayFixed</code></strong> — fixed-length <code>String[]</code> array — each element requires individual JVM↔CLR string marshalling.</li>
+<li><strong><code>InvokeVarArgsSpreadElements</code></strong> — each element passed as an individual varargs argument — worst case for element-by-element overhead.</li>
+<li><strong><code>InvokeIntParam</code></strong> — single <code>int</code> parameter, used as baseline.</li>
+</ul>
+<h3 id="multi-parameter-invocation">Multi-parameter invocation</h3>
+<p>Measures the overhead of passing multiple mixed-type arguments in a single JVM method call from .NET.</p>
 <h3 id="callback-testpredicateroundtrip-net--jvm--net">Callback: <code>TestPredicateRoundTrip</code> (.NET → JVM → .NET)</h3>
 <p>A .NET-initiated test: .NET triggers a JVM call which immediately fires a callback back into .NET. Provides a controlled start-time marker and measures the full bidirectional round-trip. In real usage the JVM initiates the event — see <code>TestPredicateSustained</code> for the realistic reference.</p>
 <h3 id="callback-testpredicatesustained-jvm--net-sustained">Callback: <code>TestPredicateSustained</code> (JVM → .NET, sustained)</h3>
@@ -184,7 +215,290 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 </ul>
 <p>The combination <code>continueFirstCheck = false, continueSecondCheck = true</code> is never reached and is not tested. Default for both gates is <code>true</code> (full processing).</p>
 <hr>
-<h2 id="jcobridge-266">JCOBridge 2.6.6</h2>
+<h2 id="jvm-object-creation-benchmarkdotnet-ubuntu-2404-temurin-17--temurin-25">JVM object creation (BenchmarkDotNet, <code>ubuntu-24.04</code>, Temurin 17 / Temurin 25)</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>x86-64 .NET 8 / T17</th>
+<th>x86-64 .NET 10 / T25</th>
+<th>ARM64 .NET 8 / T17</th>
+<th>ARM64 .NET 10 / T25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NewEmpty</code></td>
+<td>1.169 µs</td>
+<td>1.109 µs</td>
+<td>1.046 µs</td>
+<td>1.046 µs</td>
+</tr>
+<tr>
+<td><code>NewWithSignature</code></td>
+<td>1.173 µs</td>
+<td>1.108 µs</td>
+<td>1.033 µs</td>
+<td>1.033 µs</td>
+</tr>
+<tr>
+<td><code>DeclaredNewEmpty</code></td>
+<td>1.158 µs</td>
+<td>1.121 µs</td>
+<td>1.033 µs</td>
+<td>1.033 µs</td>
+</tr>
+</tbody>
+</table>
+<p>All three strategies are equivalent in cost — the JNI boundary crossing dominates over the resolution overhead. No allocation occurs on the .NET side. ARM64 constructors are ~5-10% faster than x86-64 on the same JDK version.</p>
+<hr>
+<h2 id="field-access-benchmarkdotnet-ubuntu-2404-temurin-17--temurin-25">Field access (BenchmarkDotNet, <code>ubuntu-24.04</code>, Temurin 17 / Temurin 25)</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>x86-64 .NET 8 / T17</th>
+<th>x86-64 .NET 10 / T25</th>
+<th>ARM64 .NET 8 / T17</th>
+<th>ARM64 .NET 10 / T25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GetInstanceIntField</code></td>
+<td>100.4 ns</td>
+<td>76.2 ns</td>
+<td>100.4 ns</td>
+<td>100.4 ns</td>
+</tr>
+<tr>
+<td><code>SetInstanceIntField</code></td>
+<td>120.5 ns</td>
+<td>81.4 ns</td>
+<td>121.7 ns</td>
+<td>121.7 ns</td>
+</tr>
+<tr>
+<td><code>GetInstanceStringField</code></td>
+<td>104.5 ns</td>
+<td>73.6 ns</td>
+<td>113.8 ns</td>
+<td>113.8 ns</td>
+</tr>
+<tr>
+<td><code>SetInstanceStringField</code></td>
+<td>631.7 ns</td>
+<td>605.9 ns</td>
+<td>674.2 ns</td>
+<td>674.2 ns</td>
+</tr>
+<tr>
+<td><code>GetStaticIntField</code></td>
+<td>122.7 ns</td>
+<td>78.2 ns</td>
+<td>114.3 ns</td>
+<td>114.3 ns</td>
+</tr>
+<tr>
+<td><code>SetStaticIntField</code></td>
+<td>127.7 ns</td>
+<td>79.8 ns</td>
+<td>110.7 ns</td>
+<td>110.7 ns</td>
+</tr>
+<tr>
+<td><code>GetStaticStringField</code></td>
+<td>101.2 ns</td>
+<td>70.3 ns</td>
+<td>97.7 ns</td>
+<td>97.7 ns</td>
+</tr>
+<tr>
+<td><code>SetStaticStringField</code></td>
+<td>638.3 ns</td>
+<td>625.2 ns</td>
+<td>667.3 ns</td>
+<td>667.3 ns</td>
+</tr>
+<tr>
+<td><code>GetInstanceIntFieldGeneric</code></td>
+<td>137.1 ns</td>
+<td>82.2 ns</td>
+<td>105.9 ns</td>
+<td>105.9 ns</td>
+</tr>
+</tbody>
+</table>
+<p>Primitive field access is symmetric (~75–140 ns get/set across platforms). <strong>String field writes are ~6–8× more expensive</strong> than reads — setting a <code>String</code> field requires converting the .NET <code>string</code> to a JVM <code>String</code> object, an allocation on the JVM heap plus a full string copy. Avoid repeated writes to JVM <code>String</code> fields in hot paths; prefer <code>int</code>/<code>long</code>/<code>boolean</code> fields where performance matters.</p>
+<hr>
+<h2 id="method-invocation-benchmarkdotnet-ubuntu-2404-temurin-17--temurin-25">Method invocation (BenchmarkDotNet, <code>ubuntu-24.04</code>, Temurin 17 / Temurin 25)</h2>
+<p>For full multi-vendor comparison see <a href="articles/benchmark-latest.md">benchmark-latest.md</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>x86-64 .NET 8 / T17</th>
+<th>x86-64 .NET 10 / T25</th>
+<th>ARM64 .NET 8 / T17</th>
+<th>ARM64 .NET 10 / T25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>InvokeStaticEmpty</code></td>
+<td>273.4 ns</td>
+<td>275.7 ns</td>
+<td>296.0 ns</td>
+<td>298.6 ns</td>
+</tr>
+<tr>
+<td><code>InvokeStaticEmptyWithSignature</code></td>
+<td>251.4 ns</td>
+<td>267.7 ns</td>
+<td>291.9 ns</td>
+<td>305.7 ns</td>
+</tr>
+<tr>
+<td><code>InvokeStaticWithFeedback</code></td>
+<td>517.6 ns</td>
+<td>568.0 ns</td>
+<td>549.6 ns</td>
+<td>530.6 ns</td>
+</tr>
+<tr>
+<td><code>InvokeInstanceEmpty</code></td>
+<td>278.8 ns</td>
+<td>283.2 ns</td>
+<td>300.0 ns</td>
+<td>310.0 ns</td>
+</tr>
+<tr>
+<td><code>InvokeInstanceWithFeedback</code></td>
+<td>533.5 ns</td>
+<td>587.4 ns</td>
+<td>534.0 ns</td>
+<td>547.2 ns</td>
+</tr>
+</tbody>
+</table>
+<p>On x86-64 with .NET 8 / T17, <code>InvokeWithSignature</code> is ~8% faster than <code>Invoke</code> for static methods; the gap narrows on .NET 10. On ARM64 both strategies are within 5% of each other. The advantage of <code>InvokeWithSignature</code> is more pronounced under load and with complex argument types — see the <a href="https://masesgroup.com/benchmark-data/">live dashboard</a> for a full multi-vendor breakdown.</p>
+<hr>
+<h2 id="array-and-varargs-invocation-benchmarkdotnet-ubuntu-2404-temurin-17--temurin-25">Array and varargs invocation (BenchmarkDotNet, <code>ubuntu-24.04</code>, Temurin 17 / Temurin 25)</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Elements</th>
+<th>x86-64 .NET 8 / T17</th>
+<th>x86-64 .NET 10 / T25</th>
+<th>ARM64 .NET 8 / T17</th>
+<th>ARM64 .NET 10 / T25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>InvokeIntParam</code> (baseline)</td>
+<td>—</td>
+<td>559 ns</td>
+<td>595 ns</td>
+<td>538 ns</td>
+<td>539 ns</td>
+</tr>
+<tr>
+<td><code>InvokeIntArrayFixed</code></td>
+<td>10</td>
+<td>1,301 ns</td>
+<td>1,188 ns</td>
+<td>1,183 ns</td>
+<td>1,131 ns</td>
+</tr>
+<tr>
+<td><code>InvokeIntArrayFixed</code></td>
+<td>1 000</td>
+<td>1,981 ns</td>
+<td>1,999 ns</td>
+<td>1,900 ns</td>
+<td>1,859 ns</td>
+</tr>
+<tr>
+<td><code>InvokeIntArrayFixed</code></td>
+<td>100 000</td>
+<td>62,896 ns</td>
+<td>67,119 ns</td>
+<td>60,633 ns</td>
+<td>60,633 ns</td>
+</tr>
+<tr>
+<td><code>InvokeVarArgsWholeArray</code></td>
+<td>100 000</td>
+<td>63,741 ns</td>
+<td>67,268 ns</td>
+<td>60,484 ns</td>
+<td>60,483 ns</td>
+</tr>
+<tr>
+<td><code>InvokeStringArrayFixed</code></td>
+<td>10</td>
+<td>6,412 ns</td>
+<td>6,262 ns</td>
+<td>7,204 ns</td>
+<td>7,204 ns</td>
+</tr>
+<tr>
+<td><code>InvokeStringArrayFixed</code></td>
+<td>1 000</td>
+<td>483,498 ns</td>
+<td>462,731 ns</td>
+<td>551,710 ns</td>
+<td>551,710 ns</td>
+</tr>
+<tr>
+<td><code>InvokeStringArrayFixed</code></td>
+<td>100 000</td>
+<td>59,122,284 ns</td>
+<td>53,696,166 ns</td>
+<td>57,603,003 ns</td>
+<td>57,603,003 ns</td>
+</tr>
+<tr>
+<td><code>InvokeVarArgsSpreadElements</code></td>
+<td>100 000</td>
+<td>102,160,469 ns</td>
+<td>95,098,483 ns</td>
+<td>80,829,867 ns</td>
+<td>80,829,867 ns</td>
+</tr>
+</tbody>
+</table>
+<p><code>int[]</code> scales linearly with size at ~0.6–0.7 ns per element after the fixed JNI boundary cost. <code>String[]</code> costs ~0.5–0.75 µs <strong>per element</strong> regardless of size — each element requires an individual JVM→CLR Unicode conversion and allocation. At 100 000 elements that accumulates to ~54–59 ms vs ~60–67 µs for integers.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The scaling difference between <code>int[]</code> and <code>String[]</code> reflects the fundamental cost of string marshalling: each <code>String</code> element requires an individual JVM→CLR Unicode conversion and allocation, while each <code>int</code> element is a direct memory copy. When passing large collections of string data across the boundary, consider encoding them as a single binary payload (<code>byte[]</code> or <code>JCOBridgeStream&lt;byte&gt;</code>) and parsing on the receiving side, or restructuring the API to avoid per-element crossings.</p>
+</div>
+<hr>
+<h2 id="multi-parameter-invocation-benchmarkdotnet-ubuntu-2404-temurin-17--temurin-25">Multi-parameter invocation (BenchmarkDotNet, <code>ubuntu-24.04</code>, Temurin 17 / Temurin 25)</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>x86-64 .NET 8 / T17</th>
+<th>x86-64 .NET 10 / T25</th>
+<th>ARM64 .NET 8 / T17</th>
+<th>ARM64 .NET 10 / T25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>InvokeMultiParam</code></td>
+<td>1.403 µs</td>
+<td>1.390 µs</td>
+<td>1.330 µs</td>
+<td>1.330 µs</td>
+</tr>
+</tbody>
+</table>
+<p>Multi-parameter invocation costs roughly 4–5× a no-argument call, reflecting the overhead of boxing and passing each additional argument across the JNI boundary. Keep argument lists short for frequently called methods.</p>
+<hr>
 <p>In 2.6.6, the <code>ListenerShallManageEvent</code> filter and the native <code>byIndex</code> trigger mechanism are not yet available.</p>
 <h3 id="static-method-invocation">Static method invocation</h3>
 <table>
@@ -775,6 +1089,79 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 </table>
 <p>¹ <code>byIndex = true</code> simulated on the JVM side — see note above.</p>
 <p>The <strong>realistic JVM-originated callback baseline</strong> (full processing, <code>byIndex = false</code>) reaches <strong>2.7 µs on both .NET 8 and .NET 10</strong> — a <strong>−56%</strong> reduction over 2.6.6.</p>
+<h3 id="callback-benchmarkdotnet-comparison-ubuntu-2404-temurin-17--temurin-25">Callback: BenchmarkDotNet comparison (<code>ubuntu-24.04</code>, Temurin 17 / Temurin 25)</h3>
+<p><code>TestPredicateSustained</code> results. For full multi-vendor breakdown see <a href="articles/benchmark-latest.md">benchmark-latest.md</a>.</p>
+<table>
+<thead>
+<tr>
+<th><code>byIndex</code></th>
+<th><code>continueFirstCheck</code></th>
+<th><code>continueSecondCheck</code></th>
+<th>x86-64 .NET 8 / T17</th>
+<th>x86-64 .NET 10 / T25</th>
+<th>ARM64 .NET 8 / T17</th>
+<th>ARM64 .NET 10 / T25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>false</code></td>
+<td><code>false</code></td>
+<td><code>false</code></td>
+<td>511.5 ns</td>
+<td>497.2 ns</td>
+<td>574.8 ns</td>
+<td>584.7 ns</td>
+</tr>
+<tr>
+<td><code>true</code> ¹</td>
+<td><code>false</code></td>
+<td><code>false</code></td>
+<td><strong>40.0 ns</strong></td>
+<td><strong>30.5 ns</strong></td>
+<td><strong>44.2 ns</strong></td>
+<td><strong>42.6 ns</strong></td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td><code>true</code></td>
+<td><code>false</code></td>
+<td>689.2 ns</td>
+<td>692.8 ns</td>
+<td>781.4 ns</td>
+<td>800.4 ns</td>
+</tr>
+<tr>
+<td><code>true</code> ¹</td>
+<td><code>true</code></td>
+<td><code>false</code></td>
+<td><strong>185.6 ns</strong></td>
+<td><strong>204.4 ns</strong></td>
+<td><strong>262.9 ns</strong></td>
+<td><strong>255.7 ns</strong></td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td><code>true</code></td>
+<td><code>true</code></td>
+<td>3,917.6 ns</td>
+<td>4,081.8 ns</td>
+<td>4,059.6 ns</td>
+<td>4,514.7 ns</td>
+</tr>
+<tr>
+<td><code>true</code> ¹</td>
+<td><code>true</code></td>
+<td><code>true</code></td>
+<td>3,263.7 ns</td>
+<td>3,133.3 ns</td>
+<td>3,611.1 ns</td>
+<td>3,627.0 ns</td>
+</tr>
+</tbody>
+</table>
+<p>¹ <code>byIndex = true</code> simulated on the JVM side — see note in the 2.6.7+ section.</p>
+<p>The <strong>x86-64 first-gate</strong> (<code>byIndex = true, F,F</code>) reaches <strong>30.5 ns</strong> on .NET 10 / T25 — identical to the x86-64 EPYC stopwatch result (~30–35 ns) and confirming the measurement across two independent methodologies. ARM64 first-gate is <strong>42–44 ns</strong>. Full processing on both platforms converges at ~3.1–4.5 µs (BenchmarkDotNet shared runner), with the EPYC stopwatch showing lower numbers (~2.3–2.7 µs) reflecting dedicated hardware advantage.</p>
 <p>The three distinct operating points:</p>
 <p><strong>First gate only (<code>continueFirstCheck = false</code>)</strong> — event discarded before any data is read:</p>
 <ul>
@@ -1200,18 +1587,23 @@ All benchmarks run on <a href="https://github.com/masesgroup/JNet/actions">GitHu
 <hr>
 <h2 id="guidance">Guidance</h2>
 <ul>
-<li><strong>Prefer <code>InvokeWithSignature</code></strong> (<code>IWS</code>) over <code>Invoke</code> in hot paths — it avoids .NET-side type matching on every call and consistently delivers 20–55% lower latency when arguments are involved.</li>
-<li><strong>The realistic JVM-originated callback reference</strong> is <code>Sustained</code>, full processing, <code>byIndex = false</code>: <strong>~2.7 µs</strong> on both .NET 8 / T17 and .NET 10 / T25 in 2.6.9. With <code>byIndex = true</code> this drops to ~2.3 µs.</li>
-<li><strong>Use the two-level <code>ListenerShallManageEvent</code> filter</strong> for high-event-rate sources where only a subset of events require full processing:
+<li><strong>Prefer <code>InvokeWithSignature</code></strong> (<code>IWS</code>) over <code>Invoke</code> in hot paths on x86 — it avoids .NET-side type matching and consistently delivers 20–55% lower latency with arguments involved. On ARM64 the two strategies are nearly equivalent for no-argument methods; the advantage of <code>IWS</code> varies by JDK vendor (see <a href="https://masesgroup.com/benchmark-data/">dashboard</a>).</li>
+<li><strong>Constructor resolution strategy does not matter</strong> — all three approaches (<code>NewEmpty</code>, <code>NewWithSignature</code>, <code>DeclaredNewEmpty</code>) cost ~1 µs. Choose whichever is most readable.</li>
+<li><strong>Primitive field access is cheap</strong> (~100–120 ns); <strong>string field writes are expensive</strong> (~670 ns, ~6–7× the getter cost). Avoid repeated JVM <code>String</code> field writes in hot paths — prefer <code>int</code>/<code>long</code>/<code>boolean</code> fields or aggregate string data into a single call.</li>
+<li><strong>Never pass large <code>String[]</code> arrays in hot paths</strong> — at 100 000 elements a <code>String[]</code> costs ~57 ms vs ~60 µs for an equivalent <code>int[]</code> (1000× difference). Prefer primitive arrays, or use <code>JCOBridgeStream&lt;T&gt;</code> for binary bulk transfer.</li>
+<li><strong>Varargs with spread elements</strong> are the worst case for per-element overhead — each argument is individually boxed. Pass arrays as arrays, not as spread varargs, when the element count is large.</li>
+<li><strong>Multi-parameter invocation</strong> costs ~1.3 µs — roughly 4× a no-argument call. Keep argument lists short for frequently called methods.</li>
+<li><strong>The realistic JVM-originated callback reference</strong> is <code>Sustained</code>, full processing, <code>byIndex = false</code>: <strong>~2.7 µs</strong> on x86 EPYC (2.6.9), <strong>~4.1–4.5 µs</strong> on ARM64 Neoverse-N2.</li>
+<li><strong>Use the two-level <code>ListenerShallManageEvent</code> filter</strong> for high-event-rate sources:
 <ul>
-<li>First gate (<code>ListenerShallManageEventIndex</code>) — discard by event index before any data read, no string conversion: <strong>~30–35 ns</strong> with <code>byIndex = true</code>.</li>
-<li>Second gate (<code>ListenerShallManageEventIndexWithData</code>) — raw data available for inspection before handler dispatch: <strong>~144–152 ns</strong> with <code>byIndex = true</code>.</li>
-<li>Name-based variants (<code>ListenerShallManageEventName</code>, <code>ListenerShallManageEventNameWithData</code>) are available when filtering by event name is more convenient; they add the cost of <code>ConvertListenerEventIndexToEventName</code>.</li>
+<li>First gate (<code>ListenerShallManageEventIndex</code>) — discard before any data read: <strong>~30–35 ns</strong> (x86), <strong>~42–44 ns</strong> (ARM64).</li>
+<li>Second gate (<code>ListenerShallManageEventIndexWithData</code>) — inspect raw data before handler: <strong>~144–152 ns</strong> (x86), <strong>~256–263 ns</strong> (ARM64).</li>
 </ul>
 </li>
-<li><strong>Newer runtimes help</strong>: .NET 10 / Temurin 25 matches or outperforms .NET 8 / Temurin 17 across most test types, with the largest gains on instance method invocation and the first-gate discard path.</li>
+<li><strong>For bulk data from JVM arrays</strong>, prefer <code>JCOBridgeStream&lt;T&gt;</code> with HPA <code>forceRawMemory=true</code> for large payloads — up to 83% faster than standard at 100 MB. For small arrays (≤10 KB), the optimized transfer path reduces per-call overhead to ~1–2 µs.</li>
+<li><strong>For <code>DirectByteBuffer</code> access</strong>, use <code>AsSpan</code> — zero-copy from native memory in all editions, ~16 GB/s at 100 MB. Avoid <code>ToStream → Naive</code> above a few KB.</li>
 <li>The <code>byIndex = true</code> mechanism will deliver its full benefit on the full-processing path once the JVM-side simulation is replaced with real interface dispatch.</li>
-<li>If your application runs callbacks at sustained high frequency, consider the <a href="https://www.jcobridge.com">JCOBridge HPA edition</a> — it addresses GC-boundary instability under sustained JVM↔CLR call pressure, which is the primary reliability concern at high call rates.</li>
+<li>If your application runs callbacks at sustained high frequency, consider the <a href="https://www.jcobridge.com">JCOBridge HPA edition</a> — it addresses GC-boundary instability under sustained JVM↔CLR call pressure and enables true zero-copy bulk array access.</li>
 </ul>
 
 </article>
