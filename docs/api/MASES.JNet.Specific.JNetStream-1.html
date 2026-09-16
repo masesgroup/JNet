@@ -168,7 +168,7 @@ Under HPA license with <code>forceRawMemory = true</code>, the JVM garbage colle
 No JVM interaction of any kind is permitted while this object is alive. Always use a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/using">using</a> block — leaving disposal to the finalizer may result in a deadlock or JVM crash.
 </p>
 <p>
-Methods relying on <a class="xref" href="https://jcobridge-api.masesgroup.com/api/System.ReadOnlySpan-1.html">ReadOnlySpan&lt;T&gt;</a> (such as <code>AsSpan</code>) are only available on .NET 5 and later,
+Methods relying on <code>ReadOnlySpan&lt;T&gt;</code> (such as <code>AsSpan</code>) are only available on .NET 5 and later,
 due to a conflict between the <code>System.Memory</code> dependency introduced transitively by <span class="xref">Microsoft.IO.RecyclableMemoryStream</span> and the JCOBridge shim on .NET Framework.
 </p>
 </div>
