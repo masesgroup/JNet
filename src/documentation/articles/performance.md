@@ -28,7 +28,7 @@ Three environments are used across this page:
 | Runner | GitHub Actions `ubuntu-22.04`, AMD EPYC 9V45 96-Core | GitHub Actions `ubuntu-24.04`, AMD EPYC 7763 2-Core | GitHub Actions `ubuntu-24.04`, Neoverse-N2 4-Core |
 | Measurement | Stopwatch, 1 000 000 iterations | BenchmarkDotNet, statistically rigorous | BenchmarkDotNet, statistically rigorous |
 | .NET versions | .NET 8 / .NET 10 | .NET 8 / .NET 10 | .NET 8 / .NET 10 |
-| JDK versions | Temurin 17 / Temurin 25 | Multiple vendors — see [benchmark-latest.md](articles/benchmark-latest.md) | Multiple vendors — see [benchmark-latest.md](articles/benchmark-latest.md) |
+| JDK versions | Temurin 17 / Temurin 25 | Multiple vendors — see [Latest benchmark results](benchmark-latest.md) | Multiple vendors — see [Latest benchmark results](benchmark-latest.md) |
 
 > [!NOTE]
 > The 2.6.6 and 2.6.7+ baselines were collected on earlier `ubuntu-latest` runners and are preserved as historical reference. The x86-64 EPYC stopwatch results (2.6.9 section) use the AMD EPYC 9V45 dedicated runner and represent the lowest latency observed on x86-64. The BenchmarkDotNet results use shared `ubuntu-24.04` runners on both platforms and are statistically rigorous; see the [live dashboard](https://masesgroup.com/benchmark-data/) for up-to-date numbers.
@@ -151,7 +151,7 @@ Primitive field access is symmetric (~75–140 ns get/set across platforms). **S
 
 ## Method invocation (BenchmarkDotNet, `ubuntu-24.04`, Temurin 17 / Temurin 25)
 
-For full multi-vendor comparison see [benchmark-latest.md](articles/benchmark-latest.md).
+For full multi-vendor comparison see [Latest benchmark results](benchmark-latest.md).
 
 | Method | x86-64 .NET 8 / T17 | x86-64 .NET 10 / T25 | ARM64 .NET 8 / T17 | ARM64 .NET 10 / T25 |
 |---|---|---|---|---|
@@ -341,7 +341,7 @@ The **realistic JVM-originated callback baseline** (full processing, `byIndex = 
 
 ### Callback: BenchmarkDotNet comparison (`ubuntu-24.04`, Temurin 17 / Temurin 25)
 
-`TestPredicateSustained` results. For full multi-vendor breakdown see [benchmark-latest.md](articles/benchmark-latest.md).
+`TestPredicateSustained` results. For full multi-vendor breakdown see [Latest benchmark results](benchmark-latest.md).
 
 | `byIndex` | `continueFirstCheck` | `continueSecondCheck` | x86-64 .NET 8 / T17 | x86-64 .NET 10 / T25 | ARM64 .NET 8 / T17 | ARM64 .NET 10 / T25 |
 |---|---|---|---|---|---|---|
