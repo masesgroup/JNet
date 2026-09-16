@@ -347,6 +347,24 @@ jobs:
           alert-threshold: '150%'
           fail-on-alert: false
 
+      - name: Clean benchmark repository directory
+        shell: bash
+        run: rm -rf ./benchmark-data-repository
+
+      - name: Publish PreallocatedJavaObjectBenchmarks
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: 'JNet PreallocatedJavaObjectBenchmarks (${{ env.LABEL }})'
+          tool: 'benchmarkdotnet'
+          output-file-path: results/${{ env.LABEL }}/results/MASES.JNetBenchmarksTest.PreallocatedJavaObjectBenchmarks-report-full-compressed.json
+          gh-repository: 'github.com/masesgroup/benchmark-data'
+          gh-pages-branch: master
+          benchmark-data-dir-path: jnet/${{ matrix.os }}/${{ matrix.framework }}/${{ matrix.jdk_vendor }}/${{ matrix.jdk_version }}
+          github-token: ${{ secrets.WORKFLOW_PERMISSION_PAT }}
+          auto-push: true
+          alert-threshold: '150%'
+          fail-on-alert: false
+
   publish_history_bulk:
     if: ${{ inputs.UseSpecialSettings != true }}
     needs: [benchmark_bulk]
