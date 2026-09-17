@@ -208,8 +208,8 @@ Comparison at 100 000 elements (x86-64 .NET 10 / T25):
 Key observations:
 
 - **Single preallocated object** — ~300-590 ns, essentially the same cost as a no-argument method invocation. No marshalling occurs: only the native JVM object pointer is passed through the boundary.
-- **Preallocated array** — eliminates string marshalling (~8-10× faster than passing `.NET string[]` at 100 000 elements) but still pays the per-element JNI boundary crossing cost for each reference in the array (~52-92 ns per element). The remaining per-element cost is the overhead of passing each JVM object reference through the JNI boundary — unavoidable without a dedicated bulk-reference API.
-- **vs `int[]`** — even with preallocated objects, passing 100 000 object references costs ~80-140× more than passing 100 000 integers, because integers are transferred as a contiguous memory block while object references require individual JNI handling.
+- **Preallocated array** — eliminates string marshalling (~8-10× faster than passing `.NET string[]` at 100 000 elements) but still pays a per-element cost for the type analysis layer: for each array element the engine runs a type dispatch chain to identify the object kind (`IJVMBridgeBaseInstance`), extracts the native JVM pointer, and builds the corresponding factory. No marshalling occurs, but the per-element .NET-side dispatch is not free (~52-92 ns per element depending on platform and runtime).
+- **vs `int[]`** — even with preallocated objects, passing 100 000 object references costs ~80-140× more than passing 100 000 integers, because integers are transferred as a contiguous memory block while each object element must go through the type dispatch chain.
 - **Conclusion** — preallocating JNet wrapper objects is the right approach when the same JVM objects are used repeatedly across many calls (e.g. a fixed set of configuration objects, enum constants, or frequently reused strings). For truly bulk data transfer, prefer `JCOBridgeStream<T>` with primitive types.
 
 ---
