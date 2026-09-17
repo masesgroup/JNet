@@ -62,7 +62,7 @@ public class PreallocatedJavaObjectBenchmarks
     }
 
     [Benchmark(Baseline = true)]
-    public void InvokeStringArrayPreallocated() => _instance.Invoke("executeStringArrayMethod", _preallocatedStringArray);
+    public void InvokeStringArrayPreallocated() => _instance.Invoke("executeStringArrayMethod", (object)_preallocatedStringArray);
 
     [Benchmark]
     public void InvokeSingleStringPreallocated() => _instance.Invoke("executeStringMethod", _preallocatedSingleString);
