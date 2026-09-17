@@ -26,7 +26,7 @@ namespace MASES.JNetBenchmarksTest;
 [BenchmarkCategory("Core")]
 public class PreallocatedJavaObjectBenchmarks
 {
-    [Params(10, 1_000)]
+    [Params(10, 1_000, 100_000)]
     public int Length;
 
     IJavaObject _instance;
@@ -62,7 +62,7 @@ public class PreallocatedJavaObjectBenchmarks
     }
 
     [Benchmark(Baseline = true)]
-    public void InvokeStringArrayPreallocated() => _instance.Invoke("executeStringArrayMethod", _preallocatedStringArray);
+    public void InvokeStringArrayPreallocated() => _instance.Invoke("executeStringArrayMethod", (object)_preallocatedStringArray);
 
     [Benchmark]
     public void InvokeSingleStringPreallocated() => _instance.Invoke("executeStringMethod", _preallocatedSingleString);

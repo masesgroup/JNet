@@ -159,6 +159,19 @@ using familiar syntax without any manual marshalling or conversion.</p>
 <li><a href="articles/usagePS.html">JNet PowerShell usage</a></li>
 <li><a href="articles/commandlineswitch.html">JNet Command-line switches</a></li>
 </ul>
+<h3 id="performance">Performance</h3>
+<p>JNet interop overhead is tracked continuously across .NET and JDK versions:</p>
+<ul>
+<li><a href="articles/benchmark-latest.html">Latest benchmark results</a></li>
+<li><a href="https://masesgroup.com/benchmark-data/">Live benchmark dashboard</a></li>
+</ul>
+<p>Some results:</p>
+<!-- BENCHMARK-SUMMARY-START -->
+<ul>
+<li>Static no-arg invocation: Mean 390.1, StdErr ns, StdDev 0.16 ns 0.13 ns</li>
+<li>Sustained JVM to .NET callback: Mean 609.68, StdErr ns, StdDev 4.722 ns 4.417 ns</li>
+</ul>
+<!-- BENCHMARK-SUMMARY-END -->
 <h3 id="recent-changes">Recent changes</h3>
 <ul>
 <li>V2.6.x: aligns to JCOBridge 2.6.* series
