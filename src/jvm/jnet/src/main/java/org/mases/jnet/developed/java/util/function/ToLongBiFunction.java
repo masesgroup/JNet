@@ -31,8 +31,7 @@ public final class ToLongBiFunction extends JCListener implements java.util.func
 
     @Override
     public long applyAsLong(Object e1, Object e2) {
-        raiseEvent("applyAsLong", e1, e2);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsLong", e1, e2);
         return (long) retVal;
     }
 }

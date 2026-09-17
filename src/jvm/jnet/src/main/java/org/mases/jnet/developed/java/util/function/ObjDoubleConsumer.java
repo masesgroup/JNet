@@ -31,6 +31,6 @@ public final class ObjDoubleConsumer extends JCListener implements java.util.fun
 
     @Override
     public void accept(Object e1, double e2) {
-        raiseEvent("accept", e1, e2);
+        raiseEventConcurrent("accept", e1, e2);
     }
 }

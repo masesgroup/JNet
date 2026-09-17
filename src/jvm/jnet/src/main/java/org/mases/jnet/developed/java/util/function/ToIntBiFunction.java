@@ -31,8 +31,7 @@ public final class ToIntBiFunction extends JCListener implements java.util.funct
 
     @Override
     public int applyAsInt(Object e1, Object e2) {
-        raiseEvent("applyAsInt", e1, e2);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsInt", e1, e2);
         return (int) retVal;
     }
 }
