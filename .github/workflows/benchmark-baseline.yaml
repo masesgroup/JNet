@@ -550,27 +550,27 @@ jobs:
             row=$(grep -m1 -E "$pattern" src/documentation/articles/benchmark-latest.md | grep -E '\|.*\|')
   
             if [ -z "$row" ]; then
-              echo "N/A N/A N/A"
+              echo "N/A,N/A,N/A,"
               return
             fi
   
-            # Get the first 3 time values (with optional **) and remove the ** text
-            echo "$row" | grep -oE '(\*\*)?[0-9]+\.[0-9]+ ?(ns|us|μs|ms)(\*\*)?' | head -3 | sed 's/\*\*//g' | tr '\n' ' '
+            # Get the first 3 time values, remove **, and join them with commas
+            echo "$row" | grep -oE '(\*\*)?[0-9]+\.[0-9]+ ?(ns|us|μs|ms)(\*\*)?' | head -3 | sed 's/\*\*//g' | tr '\n' ','
           }
 
           # 1.  Static invocation — InvokeWithSignature no-arg
-          read -r INVOKE_MEAN INVOKE_STDERR INVOKE_STDDEV <<< "$(extract_stats 'InvokeStaticEmptyWithSignature')"
+          IFS=, read -r INVOKE_MEAN INVOKE_STDERR INVOKE_STDDEV <<< "$(extract_stats 'InvokeStaticEmptyWithSignature')"
 
           # 2.  Static invocation — Invoke with one argument
-          read -r FEEDBACK_MEAN FEEDBACK_STDERR FEEDBACK_STDDEV <<< "$(extract_stats 'InvokeStaticWithFeedback')"
+          IFS=, read -r FEEDBACK_MEAN FEEDBACK_STDERR FEEDBACK_STDDEV <<< "$(extract_stats 'InvokeStaticWithFeedback')"
 
           # 3. First gate discard — byIndex=True, ContinueFirstCheck=False
           # CLR checks delegates/overloads and returns immediately to JVM, no data processed
-          read -r FIRSTGATE_MEAN FIRSTGATE_STDERR FIRSTGATE_STDDEV <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)')"
+          IFS=, read -r FIRSTGATE_MEAN FIRSTGATE_STDERR FIRSTGATE_STDDEV <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)')"
 
           # 4. Full processing — byIndex=True, ContinueFirstCheck=True, ContinueSecondCheck=True
           # CLR converts event data to typed CLR object and invokes the handler
-          read -r FULLPATH_MEAN FULLPATH_STDERR FULLPATH_STDDEV <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)')"
+          IFS=, read -r FULLPATH_MEAN FULLPATH_STDERR FULLPATH_STDDEV <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)')"
 
           [ "$INVOKE_MEAN" = "N/A" ]    && echo "::warning::Could not extract invoke summary values."
           [ "$FEEDBACK_MEAN" = "N/A" ]  && echo "::warning::Could not extract feedback summary values."
