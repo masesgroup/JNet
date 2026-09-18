@@ -545,31 +545,41 @@ jobs:
           extract_stats() {
             local pattern="$1"
             local row
-            row=$(grep -m1 "$pattern" src/documentation/articles/benchmark-latest.md | grep -E '\|.*\|.*\|')
+  
+            # Find the line and check if it is a Markdown table row
+            row=$(grep -m1 -E "$pattern" src/documentation/articles/benchmark-latest.md | grep -E '\|.*\|')
+  
             if [ -z "$row" ]; then
               echo "N/A N/A N/A"
               return
             fi
-            echo "$row" | grep -oE '[0-9]+\.[0-9]+ ?(ns|us|μs|ms)' | head -3 | tr '\n' ' '
+  
+            # Get the first 3 time values (with optional **) and remove the ** text
+            echo "$row" | grep -oE '(\*\*)?[0-9]+\.[0-9]+ ?(ns|us|μs|ms)(\*\*)?' | head -3 | sed 's/\*\*//g' | tr '\n' ' '
           }
 
-          # Static invocation — InvokeWithSignature no-arg
+          # 1.  Static invocation — InvokeWithSignature no-arg
           read -r INVOKE_MEAN INVOKE_STDERR INVOKE_STDDEV <<< "$(extract_stats 'InvokeStaticEmptyWithSignature')"
 
-          # First gate discard — byIndex=True, ContinueFirstCheck=False
-          # CLR checks delegates/overloads and returns immediately to JVM, no data processed
-          read -r FIRSTGATE_MEAN FIRSTGATE_STDERR FIRSTGATE_STDDEV <<< "$(extract_stats 'PredicateSustained.*| True *| False *| False')"
+          # 2.  Static invocation — Invoke with one argument
+          read -r FEEDBACK_MEAN FEEDBACK_STDERR FEEDBACK_STDDEV <<< "$(extract_stats 'InvokeStaticWithFeedback')"
 
-          # Full processing — byIndex=True, ContinueFirstCheck=True, ContinueSecondCheck=True
+          # 3. First gate discard — byIndex=True, ContinueFirstCheck=False
+          # CLR checks delegates/overloads and returns immediately to JVM, no data processed
+          read -r FIRSTGATE_MEAN FIRSTGATE_STDERR FIRSTGATE_STDDEV <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)')"
+
+          # 4. Full processing — byIndex=True, ContinueFirstCheck=True, ContinueSecondCheck=True
           # CLR converts event data to typed CLR object and invokes the handler
-          read -r FULLPATH_MEAN FULLPATH_STDERR FULLPATH_STDDEV <<< "$(extract_stats 'PredicateSustained.*| True *| True *| True')"
+          read -r FULLPATH_MEAN FULLPATH_STDERR FULLPATH_STDDEV <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)')"
 
           [ "$INVOKE_MEAN" = "N/A" ]    && echo "::warning::Could not extract invoke summary values."
+          [ "$FEEDBACK_MEAN" = "N/A" ]  && echo "::warning::Could not extract feedback summary values."
           [ "$FIRSTGATE_MEAN" = "N/A" ] && echo "::warning::Could not extract first-gate summary values."
           [ "$FULLPATH_MEAN" = "N/A" ]  && echo "::warning::Could not extract full-path summary values."
 
-          BLOCK=$(printf '  * Static no-arg invocation: Mean %s, StdErr %s, StdDev %s\n  * Sustained JVM→.NET callback (first gate discard): Mean %s, StdErr %s, StdDev %s\n  * Sustained JVM→.NET callback (full processing): Mean %s, StdErr %s, StdDev %s' \
+          BLOCK=$(printf '  * Static no-arg invocation: Mean %s, StdErr %s, StdDev %s\n  * Static invocation with feedback: Mean %s, StdErr %s, StdDev %s\n  * Sustained JVM→.NET callback (first gate discard): Mean %s, StdErr %s, StdDev %s\n  * Sustained JVM→.NET callback (full processing): Mean %s, StdErr %s, StdDev %s' \
             "$INVOKE_MEAN"    "$INVOKE_STDERR"    "$INVOKE_STDDEV" \
+            "$FEEDBACK_MEAN"  "$FEEDBACK_STDERR"  "$FEEDBACK_STDDEV" \
             "$FIRSTGATE_MEAN" "$FIRSTGATE_STDERR" "$FIRSTGATE_STDDEV" \
             "$FULLPATH_MEAN"  "$FULLPATH_STDERR"  "$FULLPATH_STDDEV")
 
