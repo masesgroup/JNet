@@ -5,7 +5,7 @@
 JNet eliminates the need for REST wrappers, protocol bridges, or JNI boilerplate when integrating .NET with the JVM. It exposes Java APIs in C# style, so developers can write `new ArrayList<string>()` in C# and have it map directly to `java.util.ArrayList`. All implemented Java features are available at no extra cost, with no third-party protocol overhead.
 
 JNet is a reflection-generated layer on top of the JCOBridge engine: most classes (like `Java.Util.ArrayList<T>`) are produced automatically by JNetReflector from the JVM class library, with a small number of classes written by hand — mainly to expose JCOBridge engine capabilities (such as prefetch iteration) through a clean, idiomatic .NET API. The interop mechanics themselves — method invocation, callback dispatch, bulk data transfer, reference lifecycle — live in JCOBridge, not in JNet.
- 
+
 ## Documentation
 - [Getting Started](https://jnet.masesgroup.com/articles/intro.html): Introduction, installation, first project setup
 - [JNet Usage](https://jnet.masesgroup.com/articles/usage.html): Comprehensive walkthrough of using Java classes from C#
