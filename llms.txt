@@ -1,4 +1,4 @@
-# JNet
+# JNet 
 
 > JNet is a .NET suite for Java™/JVM™: full Java™/JVM™ API access from .NET — any Java, Scala, Kotlin, or other JVM-enabled language class can be managed directly from C#/VB.NET, with familiar syntax, zero manual marshalling, and full generic support. Supports Java 8 through the latest release, and .NET Framework 4.6.2+ through .NET 10.
 
