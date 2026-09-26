@@ -85,6 +85,8 @@ namespace MASES.JNet.Specific
             if (_disposeSource) _javaArray?.Dispose();
             if (_disposeSource) _javaObject?.Dispose();
         }
+        /// <inheritdoc cref="JCOBridgeStream{T}.IsCopy"/>
+        public bool IsCopy => _stream.IsCopy;
         /// <inheritdoc cref="JCOBridgeStream{T}.this[int]"/>
         public T this[int index] { get => _stream[index]; set { _stream[index] = value; } }
         /// <inheritdoc cref="JCOBridgeStream{T}.Count"/>

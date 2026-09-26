@@ -31,8 +31,7 @@ public final class DoubleUnaryOperator extends JCListener implements java.util.f
 
     @Override
     public double applyAsDouble(double e) {
-        raiseEvent("applyAsDouble", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsDouble", e);
         return (double) retVal;
     }
 }

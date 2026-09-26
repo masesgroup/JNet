@@ -31,8 +31,7 @@ public final class IntPredicate extends JCListener implements java.util.function
 
     @Override
     public boolean test(int e) {
-        raiseEvent("test", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("test", e);
         return (boolean) retVal;
     }
 }
