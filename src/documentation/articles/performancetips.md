@@ -482,7 +482,7 @@ From BenchmarkDotNet on `ubuntu-24.04` x86-64 (.NET 10 / Temurin 25):
 | Preallocated `Java.Lang.String[]` | 5,218 µs | ~52 ns |
 | `.NET string[]` (marshalled each call) | 53,696 µs | ~537 ns |
 
-Preallocated JNet objects are **~10× faster** than marshalling `.NET string[]` at every call. The remaining per-element cost (~52 ns) reflects individual JVM object reference handling at the JNI boundary — unavoidable without a dedicated bulk-reference API.
+Preallocated JNet objects are **~10× faster** than marshalling `.NET string[]` at every call. The remaining per-element cost (~52 ns on x86-64 .NET 10) reflects the .NET-side type dispatch layer: for each array element the engine runs a type check chain to identify the object as an `IJVMBridgeBaseInstance`, extracts the native JVM pointer, and constructs the factory — no marshalling, but not free.
 
 > [!TIP]
 > Use preallocated JNet objects when the same JVM object is passed to many calls (fixed configuration, enum constants, reused keys). For truly bulk data transfer of primitive types, prefer `JCOBridgeStream<T>` — it transfers data as a contiguous memory block with no per-element overhead.
@@ -497,7 +497,7 @@ The cost of crossing the JVM↔CLR boundary varies dramatically by argument type
 | Array type | 100 000 elements (x86-64 .NET 10) | Per-element cost |
 |---|---|---|
 | `int[]` | ~67 µs | ~0.6 ns — contiguous memory copy |
-| Preallocated `Java.Lang.String[]` | ~5.2 ms | ~52 ns — per-reference JNI handling |
+| Preallocated `Java.Lang.String[]` | ~5.2 ms | ~52 ns — per-element .NET type dispatch, no marshalling |
 | `.NET string[]` (marshalled) | ~54 ms | ~537 ns — per-element Unicode conversion + JVM allocation |
 
 When designing JVM APIs consumed from .NET (or configuring which Java APIs to use), prefer:

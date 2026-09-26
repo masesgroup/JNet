@@ -548,7 +548,7 @@ finally
 </tr>
 </tbody>
 </table>
-<p>Preallocated JNet objects are <strong>~10× faster</strong> than marshalling <code>.NET string[]</code> at every call. The remaining per-element cost (~52 ns) reflects individual JVM object reference handling at the JNI boundary — unavoidable without a dedicated bulk-reference API.</p>
+<p>Preallocated JNet objects are <strong>~10× faster</strong> than marshalling <code>.NET string[]</code> at every call. The remaining per-element cost (~52 ns on x86-64 .NET 10) reflects the .NET-side type dispatch layer: for each array element the engine runs a type check chain to identify the object as an <code>IJVMBridgeBaseInstance</code>, extracts the native JVM pointer, and constructs the factory — no marshalling, but not free.</p>
 <div class="TIP">
 <h5>Tip</h5>
 <p>Use preallocated JNet objects when the same JVM object is passed to many calls (fixed configuration, enum constants, reused keys). For truly bulk data transfer of primitive types, prefer <code>JCOBridgeStream&lt;T&gt;</code> — it transfers data as a contiguous memory block with no per-element overhead.</p>
@@ -576,7 +576,7 @@ finally
 <tr>
 <td>Preallocated <code>Java.Lang.String[]</code></td>
 <td>~5.2 ms</td>
-<td>~52 ns — per-reference JNI handling</td>
+<td>~52 ns — per-element .NET type dispatch, no marshalling</td>
 </tr>
 <tr>
 <td><code>.NET string[]</code> (marshalled)</td>

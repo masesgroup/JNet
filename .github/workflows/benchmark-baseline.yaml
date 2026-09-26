@@ -32,6 +32,10 @@ on:
         default: false
         type: boolean
 
+concurrency:
+  group: '${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}'
+  cancel-in-progress: true
+
 jobs:
   build:
     uses: ./.github/workflows/build_benchmarks.yaml
@@ -543,25 +547,45 @@ jobs:
           set +o pipefail
 
           extract_stats() {
-            # $1 = pattern to locate the row; prints "Mean StdErr StdDev" (or "N/A" if not found)
+            local pattern="$1"
             local row
-            row=$(grep -m1 -A2 "$1" src/documentation/articles/benchmark-latest.md | grep -m1 -E '\|.*\|.*\|')
+  
+            # Find the line and check if it is a Markdown table row
+            row=$(grep -m1 -E "$pattern" src/documentation/articles/benchmark-latest.md | grep -E '\|.*\|')
+  
             if [ -z "$row" ]; then
-              echo "N/A N/A N/A"
+              echo "N/A,N/A,N/A,"
               return
             fi
-            echo "$row" | grep -oE '[0-9]+\.[0-9]+ ?(ns|us|μs)' | head -3 | tr '\n' ' '
+  
+            # Get the first 3 time values, remove **, and join them with commas
+            echo "$row" | grep -oE '(\*\*)?[0-9]+\.[0-9]+ ?(ns|us|μs|ms)(\*\*)?' | head -3 | sed 's/\*\*//g' | tr '\n' ','
           }
 
-          read -r INVOKE_MEAN INVOKE_STDERR INVOKE_STDDEV <<< "$(extract_stats 'InvokeStaticEmptyWithSignature')"
-          read -r SUSTAINED_MEAN SUSTAINED_STDERR SUSTAINED_STDDEV <<< "$(extract_stats 'PredicateSustained')"
+          # 1.  Static invocation — InvokeWithSignature no-arg
+          IFS=, read -r INVOKE_MEAN INVOKE_STDERR INVOKE_STDDEV <<< "$(extract_stats 'InvokeStaticEmptyWithSignature')"
 
-          [ "$INVOKE_MEAN" = "N/A" ] && echo "::warning::Could not extract invoke summary values."
-          [ "$SUSTAINED_MEAN" = "N/A" ] && echo "::warning::Could not extract sustained summary values."
+          # 2.  Static invocation — Invoke with one argument
+          IFS=, read -r FEEDBACK_MEAN FEEDBACK_STDERR FEEDBACK_STDDEV <<< "$(extract_stats 'InvokeStaticWithFeedback')"
 
-          BLOCK=$(printf '  * Static no-arg invocation: Mean %s, StdErr %s, StdDev %s\n  * Sustained JVM to .NET callback: Mean %s, StdErr %s, StdDev %s' \
-            "$INVOKE_MEAN" "$INVOKE_STDERR" "$INVOKE_STDDEV" \
-            "$SUSTAINED_MEAN" "$SUSTAINED_STDERR" "$SUSTAINED_STDDEV")
+          # 3. First gate discard — byIndex=True, ContinueFirstCheck=False
+          # CLR checks delegates/overloads and returns immediately to JVM, no data processed
+          IFS=, read -r FIRSTGATE_MEAN FIRSTGATE_STDERR FIRSTGATE_STDDEV <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)')"
+
+          # 4. Full processing — byIndex=True, ContinueFirstCheck=True, ContinueSecondCheck=True
+          # CLR converts event data to typed CLR object and invokes the handler
+          IFS=, read -r FULLPATH_MEAN FULLPATH_STDERR FULLPATH_STDDEV <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)')"
+
+          [ "$INVOKE_MEAN" = "N/A" ]    && echo "::warning::Could not extract invoke summary values."
+          [ "$FEEDBACK_MEAN" = "N/A" ]  && echo "::warning::Could not extract feedback summary values."
+          [ "$FIRSTGATE_MEAN" = "N/A" ] && echo "::warning::Could not extract first-gate summary values."
+          [ "$FULLPATH_MEAN" = "N/A" ]  && echo "::warning::Could not extract full-path summary values."
+
+          BLOCK=$(printf '  * Static no-arg invocation: Mean %s, StdErr %s, StdDev %s\n  * Static invocation with feedback: Mean %s, StdErr %s, StdDev %s\n  * Sustained JVM→.NET callback (first gate discard): Mean %s, StdErr %s, StdDev %s\n  * Sustained JVM→.NET callback (full processing): Mean %s, StdErr %s, StdDev %s' \
+            "$INVOKE_MEAN"    "$INVOKE_STDERR"    "$INVOKE_STDDEV" \
+            "$FEEDBACK_MEAN"  "$FEEDBACK_STDERR"  "$FEEDBACK_STDDEV" \
+            "$FIRSTGATE_MEAN" "$FIRSTGATE_STDERR" "$FIRSTGATE_STDDEV" \
+            "$FULLPATH_MEAN"  "$FULLPATH_STDERR"  "$FULLPATH_STDDEV")
 
           for f in README.md src/documentation/index.md; do
             awk -v block="$BLOCK" '
