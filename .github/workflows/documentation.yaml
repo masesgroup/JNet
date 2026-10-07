@@ -83,7 +83,7 @@ jobs:
         if: ${{ github.repository_owner == 'masesgroup' && inputs.GeneratePR == true }} #do not push any changes outside main repo or GeneratePR is false
         uses: peter-evans/create-pull-request@v8
         with:
-          branch-suffix: short-commit-hash
+          branch: docs-latest-update-${{ github.run_number }}
           add-paths: docs/*.*
           commit-message: Update documentation after commit ${{ env.GITHUB_COMMIT_MESSAGE }}
           title: Update documentation after commit ${{ env.GITHUB_COMMIT_MESSAGE }}
@@ -91,3 +91,4 @@ jobs:
           reviewers: masesdevelopers
           assignees: masesdevelopers
           labels: documentation, enhancement 
+          delete-branch: true
