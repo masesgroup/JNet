@@ -140,7 +140,7 @@ jobs:
         if: ${{ inputs.GeneratePR == true }}
         uses: peter-evans/create-pull-request@v8
         with:
-          branch-suffix: short-commit-hash
+          branch: generated-classes-latest-update-${{ github.run_number }}
           add-paths: src/*.*
           commit-message: Update generated classes after commit ${{ env.GITHUB_COMMIT_MESSAGE }}
           title: Update generated classes after commit ${{ env.GITHUB_COMMIT_MESSAGE }}
@@ -149,3 +149,5 @@ jobs:
           reviewers: masesdevelopers
           assignees: masesdevelopers
           labels: java, .NET, enhancement 
+          delete-branch: true
+          
