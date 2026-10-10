@@ -31,8 +31,7 @@ public final class LongBinaryOperator extends JCListener implements java.util.fu
 
     @Override
     public long applyAsLong(long e1, long e2) {
-        raiseEvent("applyAsLong", e1, e2);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsLong", e1, e2);
         return (long) retVal;
     }
 }

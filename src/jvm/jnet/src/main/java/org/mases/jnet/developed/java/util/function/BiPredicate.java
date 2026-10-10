@@ -31,8 +31,7 @@ public final class BiPredicate extends JCListener implements java.util.function.
 
     @Override
     public boolean test(Object e1, Object e2) {
-        raiseEvent("test", e1, e2);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("test", e1, e2);
         return (boolean) retVal;
     }
 }

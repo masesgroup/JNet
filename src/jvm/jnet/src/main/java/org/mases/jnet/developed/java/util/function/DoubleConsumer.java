@@ -31,6 +31,6 @@ public final class DoubleConsumer extends JCListener implements java.util.functi
 
     @Override
     public void accept(double e) {
-        raiseEvent("accept", e);
+        raiseEventConcurrent("accept", e);
     }
 }

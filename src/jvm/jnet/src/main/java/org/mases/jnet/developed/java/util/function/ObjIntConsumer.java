@@ -31,6 +31,6 @@ public final class ObjIntConsumer extends JCListener implements java.util.functi
 
     @Override
     public void accept(Object e1, int e2) {
-        raiseEvent("accept", e1, e2);
+        raiseEventConcurrent("accept", e1, e2);
     }
 }

@@ -31,8 +31,7 @@ public final class ToDoubleBiFunction extends JCListener implements java.util.fu
 
     @Override
     public double applyAsDouble(Object e1, Object e2) {
-        raiseEvent("applyAsDouble", e1, e2);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsDouble", e1, e2);
         return (double) retVal;
     }
 }

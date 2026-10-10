@@ -31,6 +31,6 @@ public final class ObjLongConsumer extends JCListener implements java.util.funct
 
     @Override
     public void accept(Object e1, long e2) {
-        raiseEvent("accept", e1, e2);
+        raiseEventConcurrent("accept", e1, e2);
     }
 }

@@ -31,8 +31,6 @@ public final class Supplier extends JCListener implements java.util.function.Sup
 
     @Override
     public Object get() {
-        raiseEvent("get", null);
-        Object retVal = getReturnData();
-        return retVal;
+        return raiseEventConcurrent("get", null);
     }
 }

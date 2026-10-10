@@ -31,8 +31,7 @@ public final class ToIntFunction extends JCListener implements java.util.functio
 
     @Override
     public int applyAsInt(Object e) {
-        raiseEvent("applyAsInt", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsInt", e);
         return (int) retVal;
     }
 }

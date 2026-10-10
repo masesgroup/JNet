@@ -31,8 +31,7 @@ public final class LongUnaryOperator extends JCListener implements java.util.fun
 
     @Override
     public long applyAsLong(long e) {
-        raiseEvent("applyAsLong", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsLong", e);
         return (long) retVal;
     }
 }

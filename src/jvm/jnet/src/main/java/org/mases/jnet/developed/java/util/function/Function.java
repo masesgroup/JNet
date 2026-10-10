@@ -31,8 +31,6 @@ public final class Function extends JCListener implements java.util.function.Fun
 
     @Override
     public Object apply(Object e) {
-        raiseEvent("apply", e);
-        Object retVal = getReturnData();
-        return retVal;
+        return raiseEventConcurrent("apply", e);
     }
 }

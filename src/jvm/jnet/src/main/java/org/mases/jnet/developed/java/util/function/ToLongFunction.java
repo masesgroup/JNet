@@ -31,8 +31,7 @@ public final class ToLongFunction extends JCListener implements java.util.functi
 
     @Override
     public long applyAsLong(Object e) {
-        raiseEvent("applyAsLong", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsLong", e);
         return (long) retVal;
     }
 }
