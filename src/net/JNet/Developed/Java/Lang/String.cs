@@ -121,23 +121,25 @@ namespace Java.Lang
         /// <inheritdoc/>
         public bool Equals(string other) => StringBridgeInstance.Equals(other);
         /// <inheritdoc/>
-        public bool Equals(Java.Lang.String other) => StringBridgeInstance.Equals(other?.BridgeInstance as IStringJavaObject);
+        public bool Equals(IStringJavaObject other) => StringBridgeInstance.Equals(other);
         /// <inheritdoc/>
         public int CompareTo(string other) => StringBridgeInstance.CompareTo(other);
         /// <inheritdoc/>
-        public bool CompareTo(Java.Lang.String other) => StringBridgeInstance.CompareTo(other?.BridgeInstance as IStringJavaObject);
+        public bool CompareTo(IStringJavaObject other) => StringBridgeInstance.CompareTo(other);
         /// <inheritdoc/>
         public bool StartsWith(string prefix) => StringBridgeInstance.StartsWith(prefix);
         /// <inheritdoc/>
-        public bool StartsWith(Java.Lang.String other) => StringBridgeInstance.StartsWith(other?.BridgeInstance as IStringJavaObject);
+        public bool StartsWith(IStringJavaObject other) => StringBridgeInstance.StartsWith(other);
         /// <inheritdoc/>
         public bool EndsWith(string suffix) => StringBridgeInstance.EndsWith(suffix);
         /// <inheritdoc/>
-        public bool EndsWith(Java.Lang.String other) => StringBridgeInstance.EndsWith(other?.BridgeInstance as IStringJavaObject);
+        public bool EndsWith(IStringJavaObject other) => StringBridgeInstance.EndsWith(other);
         /// <inheritdoc/>
         public int IndexOf(char value) => StringBridgeInstance.IndexOf(value);
         /// <inheritdoc/>
         public int IndexOf(string value) => StringBridgeInstance.IndexOf(value);
+        /// <inheritdoc/>
+        public int IndexOf(IStringJavaObject value) => StringBridgeInstance.IndexOf(value);
         /// <inheritdoc/>
         public int IndexOfAny(char[] values) => StringBridgeInstance.IndexOfAny(values);
         /// <inheritdoc/>
@@ -145,7 +147,7 @@ namespace Java.Lang
         /// <inheritdoc/>
         public int LastIndexOf(string value) => StringBridgeInstance.LastIndexOf(value);
         /// <inheritdoc/>
-        public bool LastIndexOf(Java.Lang.String other) => StringBridgeInstance.LastIndexOf(other?.BridgeInstance as IStringJavaObject);
+        public bool LastIndexOf(IStringJavaObject other) => StringBridgeInstance.LastIndexOf(other);
         /// <inheritdoc/>
         public int LastIndexOfAny(char[] values) => StringBridgeInstance.LastIndexOfAny(values);
         /// <inheritdoc/>
@@ -153,7 +155,7 @@ namespace Java.Lang
         /// <inheritdoc/>
         public bool Contains(string value) => StringBridgeInstance.Contains(value);
         /// <inheritdoc/>
-        public bool Contains(Java.Lang.String other) => StringBridgeInstance.Contains(other?.BridgeInstance as IStringJavaObject);
+        public bool Contains(IStringJavaObject other) => StringBridgeInstance.Contains(other);
         /// <inheritdoc/>
         public bool IsNullOrEmpty => StringBridgeInstance.IsNullOrEmpty;
         /// <inheritdoc/>
