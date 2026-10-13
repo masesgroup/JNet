@@ -125,7 +125,7 @@ namespace Java.Lang
         /// <inheritdoc/>
         public int CompareTo(string other) => StringBridgeInstance.CompareTo(other);
         /// <inheritdoc/>
-        public bool CompareTo(IStringJavaObject other) => StringBridgeInstance.CompareTo(other);
+        public int CompareTo(IStringJavaObject other) => StringBridgeInstance.CompareTo(other);
         /// <inheritdoc/>
         public bool StartsWith(string prefix) => StringBridgeInstance.StartsWith(prefix);
         /// <inheritdoc/>
@@ -147,7 +147,7 @@ namespace Java.Lang
         /// <inheritdoc/>
         public int LastIndexOf(string value) => StringBridgeInstance.LastIndexOf(value);
         /// <inheritdoc/>
-        public bool LastIndexOf(IStringJavaObject other) => StringBridgeInstance.LastIndexOf(other);
+        public int LastIndexOf(IStringJavaObject other) => StringBridgeInstance.LastIndexOf(other);
         /// <inheritdoc/>
         public int LastIndexOfAny(char[] values) => StringBridgeInstance.LastIndexOfAny(values);
         /// <inheritdoc/>
