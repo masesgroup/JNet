@@ -157,9 +157,8 @@ jobs:
 
       - uses: actions/setup-dotnet@v6
         with:
-          dotnet-version: |
-            9.x
-            10.x
+          dotnet-version: '11.0.x'
+          dotnet-quality: 'preview'
 
       - name: Install sshpass
         if: ${{ inputs.UseSpecialSettings == true }}
@@ -270,9 +269,8 @@ jobs:
 
       - uses: actions/setup-dotnet@v6
         with:
-          dotnet-version: |
-            9.x
-            10.x
+          dotnet-version: '11.0.x'
+          dotnet-quality: 'preview'
 
       - name: Download pscp directly
         if: ${{ inputs.UseSpecialSettings == true }}
@@ -438,7 +436,7 @@ jobs:
       fail-fast: false
       matrix:
         os: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_win_os) }} # [ 'windows-2022', 'windows-2025', 'windows-11-arm' ]
-        framework: [ 'net462', 'net8.0', 'net9.0', 'net10.0' ]
+        framework: [ 'net462', 'net8.0', 'net9.0', 'net10.0', 'net11.0' ]
         jdk_vendor: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_vendor) }}
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
         exclude:
@@ -508,8 +506,8 @@ jobs:
 
       - uses: actions/setup-dotnet@v6
         with:
-          dotnet-version: |
-            10.x
+          dotnet-version: '11.0.x'
+          dotnet-quality: 'preview'
 
       - name: Download Procdump and prepare
         if: ${{ inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
@@ -659,7 +657,7 @@ jobs:
       fail-fast: false
       matrix:
         os: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_linux_os) }} # [ 'ubuntu-22.04', 'ubuntu-22.04-arm', 'ubuntu-24.04', 'ubuntu-24.04-arm' ]
-        framework: [ 'net8.0', 'net9.0', 'net10.0' ]
+        framework: [ 'net8.0', 'net9.0', 'net10.0', 'net11.0' ]
         jdk_vendor: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_vendor) }}
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
         exclude:
@@ -699,9 +697,8 @@ jobs:
 
       - uses: actions/setup-dotnet@v6
         with:
-          dotnet-version: |
-            9.x
-            10.x
+          dotnet-version: '11.0.x'
+          dotnet-quality: 'preview'
 
       - name: Set up JDK distribution
         if: ${{ matrix.jdk_vendor != 'graalvm' && matrix.jdk_version != '8' }}
@@ -911,7 +908,7 @@ jobs:
       fail-fast: false
       matrix:
         os: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_mac_os) }} # [ 'macos-13', 'macos-14', 'macos-15' ]
-        framework: [ 'net8.0', 'net9.0', 'net10.0' ]
+        framework: [ 'net8.0', 'net9.0', 'net10.0', 'net11.0' ]
         jdk_vendor: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_vendor) }}
         jdk_version: ${{ fromJSON(needs.prepare_matrix_data.outputs.matrix_jdk_version) }} # only LTS versions
         exclude:
@@ -970,9 +967,8 @@ jobs:
 
       - uses: actions/setup-dotnet@v6
         with:
-          dotnet-version: |
-            9.x
-            10.x
+          dotnet-version: '11.0.x'
+          dotnet-quality: 'preview'
 
       - name: Set up JDK distribution
         if: ${{ matrix.jdk_vendor != 'graalvm' && matrix.jdk_version != '8' }}
