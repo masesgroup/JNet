@@ -44,7 +44,7 @@
 		<None Include="..\Common\JNet.snk" Link="JNet.snk" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
-		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="10.0.12"/>
+		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="10.0.13"/>
 		<Reference Include="Microsoft.CSharp" />
 	</ItemGroup>
 	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
