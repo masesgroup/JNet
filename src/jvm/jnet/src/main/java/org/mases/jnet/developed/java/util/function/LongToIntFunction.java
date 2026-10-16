@@ -31,8 +31,7 @@ public final class LongToIntFunction extends JCListener implements java.util.fun
 
     @Override
     public int applyAsInt(long e) {
-        raiseEvent("applyAsInt", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsInt", e);
         return (int) retVal;
     }
 }

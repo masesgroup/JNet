@@ -31,8 +31,7 @@ public final class BooleanSupplier extends JCListener implements java.util.funct
 
     @Override
     public boolean getAsBoolean() {
-        raiseEvent("getAsBoolean", null);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("getAsBoolean", null);
         return (boolean) retVal;
     }
 }

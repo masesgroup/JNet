@@ -31,8 +31,6 @@ public final class BinaryOperator extends JCListener implements java.util.functi
 
     @Override
     public Object apply(Object e1, Object e2) {
-        raiseEvent("apply", e1, e2);
-        Object retVal = getReturnData();
-        return retVal;
+        return raiseEventConcurrent("apply", e1, e2);
     }
 }

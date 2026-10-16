@@ -121,15 +121,25 @@ namespace Java.Lang
         /// <inheritdoc/>
         public bool Equals(string other) => StringBridgeInstance.Equals(other);
         /// <inheritdoc/>
+        public bool Equals(IStringJavaObject other) => StringBridgeInstance.Equals(other);
+        /// <inheritdoc/>
         public int CompareTo(string other) => StringBridgeInstance.CompareTo(other);
+        /// <inheritdoc/>
+        public int CompareTo(IStringJavaObject other) => StringBridgeInstance.CompareTo(other);
         /// <inheritdoc/>
         public bool StartsWith(string prefix) => StringBridgeInstance.StartsWith(prefix);
         /// <inheritdoc/>
+        public bool StartsWith(IStringJavaObject other) => StringBridgeInstance.StartsWith(other);
+        /// <inheritdoc/>
         public bool EndsWith(string suffix) => StringBridgeInstance.EndsWith(suffix);
+        /// <inheritdoc/>
+        public bool EndsWith(IStringJavaObject other) => StringBridgeInstance.EndsWith(other);
         /// <inheritdoc/>
         public int IndexOf(char value) => StringBridgeInstance.IndexOf(value);
         /// <inheritdoc/>
         public int IndexOf(string value) => StringBridgeInstance.IndexOf(value);
+        /// <inheritdoc/>
+        public int IndexOf(IStringJavaObject value) => StringBridgeInstance.IndexOf(value);
         /// <inheritdoc/>
         public int IndexOfAny(char[] values) => StringBridgeInstance.IndexOfAny(values);
         /// <inheritdoc/>
@@ -137,11 +147,15 @@ namespace Java.Lang
         /// <inheritdoc/>
         public int LastIndexOf(string value) => StringBridgeInstance.LastIndexOf(value);
         /// <inheritdoc/>
+        public int LastIndexOf(IStringJavaObject other) => StringBridgeInstance.LastIndexOf(other);
+        /// <inheritdoc/>
         public int LastIndexOfAny(char[] values) => StringBridgeInstance.LastIndexOfAny(values);
         /// <inheritdoc/>
         public bool Contains(char value) => StringBridgeInstance.Contains(value);
         /// <inheritdoc/>
         public bool Contains(string value) => StringBridgeInstance.Contains(value);
+        /// <inheritdoc/>
+        public bool Contains(IStringJavaObject other) => StringBridgeInstance.Contains(other);
         /// <inheritdoc/>
         public bool IsNullOrEmpty => StringBridgeInstance.IsNullOrEmpty;
         /// <inheritdoc/>

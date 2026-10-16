@@ -31,6 +31,6 @@ public final class LongConsumer extends JCListener implements java.util.function
 
     @Override
     public void accept(long e) {
-        raiseEvent("accept", e);
+        raiseEventConcurrent("accept", e);
     }
 }
