@@ -62,6 +62,11 @@ jobs:
           fetch-depth: '1'
           submodules: 'true'
 
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '11.0.x'
+          dotnet-quality: 'preview'
+
       - name: Prebuild
         run: dotnet build --no-incremental --configuration Release src\net\JNetReflector\JNetReflector.csproj
 
