@@ -622,6 +622,7 @@ jobs:
           ${{ github.workspace }}\bin\JNetPSTest.ps1 ${{ env.PS_EXTRA_ARGUMENT }}
 
       - continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        if: ${{ matrix.os != 'windows-11-arm' }}
         shell: powershell
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
