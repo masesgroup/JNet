@@ -10,7 +10,7 @@
 ModuleToProcess = 'MASES.JNetPS.dll'
 
 # Version number of this module.
-ModuleVersion = '2.6.9'
+ModuleVersion = '2.6.10'
 
 # ID used to uniquely identify this module
 GUID = '85834DBD-838A-4B04-8303-DB4CF8FA44A7'
@@ -132,7 +132,7 @@ PrivateData = @{
 
     PSData = @{
 
-        Prerelease = ''
+        Prerelease = 'preview-1'
 
         Tags = @('JNetPS', 'JNet', 'PSEdition_Core', 'Windows', 'Linux', 'JVM', 'Java', 'Scala', 'Kotlin', 'bridge', 'gateway')
 
