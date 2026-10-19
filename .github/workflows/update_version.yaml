@@ -59,8 +59,8 @@ jobs:
               Write-Error "$label '$tag' must not contain '.' or '+'."
               exit 1
             }
-            if ($tag -notmatch '^[0-9A-Za-z-]+$') {
-              Write-Error "$label '$tag' contains invalid characters. Only ASCII alphanumerics and a leading hyphen are allowed."
+            if ($tag -notmatch '^[0-9A-Za-z][0-9A-Za-z]*$') {
+              Write-Error "$label '$tag' contains invalid characters. Only ASCII alphanumerics are allowed (no hyphens inside the string)."
               exit 1
             }
             if ($tag -match '^-') {
