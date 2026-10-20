@@ -24,7 +24,7 @@ using SystemNet = System;
 
 namespace Java.Lang
 {
-    public partial class String : JVMBridgeBase<String>, INativeConvertible<String, string>, SystemNet.IComparable<String>, SystemNet.IEquatable<String>, IStringJavaObject
+    public partial class String : JVMBridgeBase<String>, INativeConvertible<String, string>, SystemNet.IComparable<String>, SystemNet.IEquatable<String>
     {
         #region Constructors
         /// <summary>
@@ -116,50 +116,12 @@ namespace Java.Lang
 
         #region IStringJavaObject
 
-        IStringJavaObject StringBridgeInstance { get { if (BridgeInstance is IStringJavaObject stringJavaObject) return stringJavaObject; else throw new InvalidOperationException($"Current instance is not an {nameof(IStringJavaObject)}"); } }
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.String"/> to <see cref="IStringJavaObject"/>
+        /// </summary>
+        public static implicit operator IStringJavaObject(Java.Lang.String b) => b?.StringBridgeInstance;
 
-        /// <inheritdoc/>
-        public bool Equals(string other) => StringBridgeInstance.Equals(other);
-        /// <inheritdoc/>
-        public bool Equals(IStringJavaObject other) => StringBridgeInstance.Equals(other);
-        /// <inheritdoc/>
-        public int CompareTo(string other) => StringBridgeInstance.CompareTo(other);
-        /// <inheritdoc/>
-        public int CompareTo(IStringJavaObject other) => StringBridgeInstance.CompareTo(other);
-        /// <inheritdoc/>
-        public bool StartsWith(string prefix) => StringBridgeInstance.StartsWith(prefix);
-        /// <inheritdoc/>
-        public bool StartsWith(IStringJavaObject other) => StringBridgeInstance.StartsWith(other);
-        /// <inheritdoc/>
-        public bool EndsWith(string suffix) => StringBridgeInstance.EndsWith(suffix);
-        /// <inheritdoc/>
-        public bool EndsWith(IStringJavaObject other) => StringBridgeInstance.EndsWith(other);
-        /// <inheritdoc/>
-        public int IndexOf(char value) => StringBridgeInstance.IndexOf(value);
-        /// <inheritdoc/>
-        public int IndexOf(string value) => StringBridgeInstance.IndexOf(value);
-        /// <inheritdoc/>
-        public int IndexOf(IStringJavaObject value) => StringBridgeInstance.IndexOf(value);
-        /// <inheritdoc/>
-        public int IndexOfAny(char[] values) => StringBridgeInstance.IndexOfAny(values);
-        /// <inheritdoc/>
-        public int LastIndexOf(char value) => StringBridgeInstance.LastIndexOf(value);
-        /// <inheritdoc/>
-        public int LastIndexOf(string value) => StringBridgeInstance.LastIndexOf(value);
-        /// <inheritdoc/>
-        public int LastIndexOf(IStringJavaObject other) => StringBridgeInstance.LastIndexOf(other);
-        /// <inheritdoc/>
-        public int LastIndexOfAny(char[] values) => StringBridgeInstance.LastIndexOfAny(values);
-        /// <inheritdoc/>
-        public bool Contains(char value) => StringBridgeInstance.Contains(value);
-        /// <inheritdoc/>
-        public bool Contains(string value) => StringBridgeInstance.Contains(value);
-        /// <inheritdoc/>
-        public bool Contains(IStringJavaObject other) => StringBridgeInstance.Contains(other);
-        /// <inheritdoc/>
-        public bool IsNullOrEmpty => StringBridgeInstance.IsNullOrEmpty;
-        /// <inheritdoc/>
-        public bool IsNullOrWhiteSpace => StringBridgeInstance.IsNullOrWhiteSpace;
+        IStringJavaObject StringBridgeInstance { get { if (BridgeInstance is IStringJavaObject stringJavaObject) return stringJavaObject; else throw new InvalidOperationException($"Current instance is not an {nameof(IStringJavaObject)}"); } }
 
         #endregion
 
