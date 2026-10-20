@@ -24,7 +24,7 @@ using SystemNet = System;
 
 namespace Java.Lang
 {
-    public partial class String : JVMBridgeBase<String>, INativeConvertible<String, string>, SystemNet.IComparable<String>, SystemNet.IEquatable<String>
+    public partial class String : JVMBridgeBase<String>, INativeConvertible<String, string>, SystemNet.IComparable<String>, SystemNet.IEquatable<String>, IStringJavaObject
     {
         #region Constructors
         /// <summary>
@@ -116,12 +116,195 @@ namespace Java.Lang
 
         #region IStringJavaObject
 
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.String"/> to <see cref="IStringJavaObject"/>
-        /// </summary>
-        public static implicit operator IStringJavaObject(Java.Lang.String b) => b?.StringBridgeInstance;
-
         IStringJavaObject StringBridgeInstance { get { if (BridgeInstance is IStringJavaObject stringJavaObject) return stringJavaObject; else throw new InvalidOperationException($"Current instance is not an {nameof(IStringJavaObject)}"); } }
+
+        /// <inheritdoc/>
+        bool IStringJavaObject.Equals(string other) => StringBridgeInstance.Equals(other);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.Equals(string)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.Equals(string)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.Equals(string)"/></returns>
+        public static bool Equals(Java.Lang.String reference, string parameter) => reference.StringBridgeInstance.Equals(parameter);
+        /// <inheritdoc/>
+        bool IStringJavaObject.Equals(IStringJavaObject other) => StringBridgeInstance.Equals(other);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.Equals(IStringJavaObject)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.Equals(IStringJavaObject)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.Equals(IStringJavaObject)"/></returns>
+        public static bool Equals(Java.Lang.String reference, Java.Lang.String parameter) => reference.StringBridgeInstance.Equals(parameter.StringBridgeInstance);
+        /// <inheritdoc/>
+        int IStringJavaObject.CompareTo(string other) => StringBridgeInstance.CompareTo(other);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.CompareTo(string)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.CompareTo(string)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.CompareTo(string)"/></returns>
+        public static int CompareTo(Java.Lang.String reference, string parameter) => reference.StringBridgeInstance.CompareTo(parameter);
+        /// <inheritdoc/>
+        int IStringJavaObject.CompareTo(IStringJavaObject other) => StringBridgeInstance.CompareTo(other);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.CompareTo(IStringJavaObject)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.CompareTo(IStringJavaObject)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.CompareTo(IStringJavaObject)"/></returns>
+        public static int CompareTo(Java.Lang.String reference, Java.Lang.String parameter) => reference.StringBridgeInstance.CompareTo(parameter.StringBridgeInstance);
+        /// <inheritdoc/>
+        bool IStringJavaObject.StartsWith(string prefix) => StringBridgeInstance.StartsWith(prefix);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.StartsWith(string)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.StartsWith(string)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.StartsWith(string)"/></returns>
+        public static bool StartsWith(Java.Lang.String reference, string parameter) => reference.StringBridgeInstance.StartsWith(parameter);
+        /// <inheritdoc/>
+        bool IStringJavaObject.StartsWith(IStringJavaObject other) => StringBridgeInstance.StartsWith(other);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.StartsWith(IStringJavaObject)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.StartsWith(IStringJavaObject)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.StartsWith(IStringJavaObject)"/></returns>
+        public static bool StartsWith(Java.Lang.String reference, Java.Lang.String parameter) => reference.StringBridgeInstance.StartsWith(parameter.StringBridgeInstance);
+        /// <inheritdoc/>
+        bool IStringJavaObject.EndsWith(string suffix) => StringBridgeInstance.EndsWith(suffix);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.EndsWith(string)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.EndsWith(string)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.EndsWith(string)"/></returns>
+        public static bool EndsWith(Java.Lang.String reference, string parameter) => reference.StringBridgeInstance.EndsWith(parameter);
+        /// <inheritdoc/>
+        bool IStringJavaObject.EndsWith(IStringJavaObject other) => StringBridgeInstance.EndsWith(other);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.EndsWith(IStringJavaObject)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.EndsWith(IStringJavaObject)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.EndsWith(IStringJavaObject)"/></returns>
+        public static bool EndsWith(Java.Lang.String reference, Java.Lang.String parameter) => reference.StringBridgeInstance.EndsWith(parameter.StringBridgeInstance);
+        /// <inheritdoc/>
+        int IStringJavaObject.IndexOf(char value) => StringBridgeInstance.IndexOf(value);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.IndexOf(char)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.IndexOf(char)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.IndexOf(char)"/></returns>
+        public static int IndexOf(Java.Lang.String reference, char parameter) => reference.StringBridgeInstance.IndexOf(parameter);
+        /// <inheritdoc/>
+        int IStringJavaObject.IndexOf(string value) => StringBridgeInstance.IndexOf(value);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.IndexOf(string)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.IndexOf(string)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.IndexOf(string)"/></returns>
+        public static int IndexOf(Java.Lang.String reference, string parameter) => reference.StringBridgeInstance.IndexOf(parameter);
+        /// <inheritdoc/>
+        int IStringJavaObject.IndexOf(IStringJavaObject value) => StringBridgeInstance.IndexOf(value);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.IndexOf(IStringJavaObject)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.IndexOf(IStringJavaObject)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.IndexOf(IStringJavaObject)"/></returns>
+        public static int IndexOf(Java.Lang.String reference, Java.Lang.String parameter) => reference.StringBridgeInstance.IndexOf(parameter.StringBridgeInstance);
+        /// <inheritdoc/>
+        int IStringJavaObject.IndexOfAny(char[] values) => StringBridgeInstance.IndexOfAny(values);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.IndexOfAny(char[])"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.IndexOfAny(char[])"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.IndexOfAny(char[])"/></returns>
+        public static int IndexOfAny(Java.Lang.String reference, char[] parameter) => reference.StringBridgeInstance.IndexOfAny(parameter);
+        /// <inheritdoc/>
+        int IStringJavaObject.LastIndexOf(char value) => StringBridgeInstance.LastIndexOf(value);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.LastIndexOf(char)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.LastIndexOf(char)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.LastIndexOf(char)"/></returns>
+        public static int LastIndexOf(Java.Lang.String reference, char parameter) => reference.StringBridgeInstance.LastIndexOf(parameter);
+        /// <inheritdoc/>
+        int IStringJavaObject.LastIndexOf(string value) => StringBridgeInstance.LastIndexOf(value);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.LastIndexOf(string)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.LastIndexOf(string)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.LastIndexOf(string)"/></returns>
+        public static int LastIndexOf(Java.Lang.String reference, string parameter) => reference.StringBridgeInstance.LastIndexOf(parameter);
+        /// <inheritdoc/>
+        int IStringJavaObject.LastIndexOf(IStringJavaObject other) => StringBridgeInstance.LastIndexOf(other);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.LastIndexOf(IStringJavaObject)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.LastIndexOf(IStringJavaObject)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.LastIndexOf(IStringJavaObject)"/></returns>
+        public static int LastIndexOf(Java.Lang.String reference, Java.Lang.String parameter) => reference.StringBridgeInstance.LastIndexOf(parameter.StringBridgeInstance);
+        /// <inheritdoc/>
+        int IStringJavaObject.LastIndexOfAny(char[] values) => StringBridgeInstance.LastIndexOfAny(values);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.LastIndexOfAny(char[])"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.LastIndexOfAny(char[])"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.LastIndexOfAny(char[])"/></returns>
+        public static int LastIndexOfAny(Java.Lang.String reference, char[] parameter) => reference.StringBridgeInstance.LastIndexOfAny(parameter);
+        /// <inheritdoc/>
+        bool IStringJavaObject.Contains(char value) => StringBridgeInstance.Contains(value);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.Contains(char)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.Contains(char)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.Contains(char)"/></returns>
+        public static bool Contains(Java.Lang.String reference, char parameter) => reference.StringBridgeInstance.Contains(parameter);
+        /// <inheritdoc/>
+        bool IStringJavaObject.Contains(string value) => StringBridgeInstance.Contains(value);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.Contains(string)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.Contains(string)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.Contains(string)"/></returns>
+        public static bool Contains(Java.Lang.String reference, string parameter) => reference.StringBridgeInstance.Contains(parameter);
+        /// <inheritdoc/>
+        bool IStringJavaObject.Contains(IStringJavaObject other) => StringBridgeInstance.Contains(other);
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.Contains(IStringJavaObject)"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <param name="parameter">The parameter of <see cref="IStringJavaObject.Contains(IStringJavaObject)"/></param>
+        /// <returns>The result of <see cref="IStringJavaObject.Contains(IStringJavaObject)"/></returns>
+        public static bool Contains(Java.Lang.String reference, Java.Lang.String parameter) => reference.StringBridgeInstance.Contains(parameter.StringBridgeInstance);
+        /// <inheritdoc/>
+        bool IStringJavaObject.IsNullOrEmpty => StringBridgeInstance.IsNullOrEmpty;
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.IsNullOrEmpty"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <returns>The result of <see cref="IStringJavaObject.IsNullOrEmpty"/></returns>
+        public static bool IsNullOrEmpty(Java.Lang.String reference) => reference.StringBridgeInstance.IsNullOrEmpty;
+        /// <inheritdoc/>
+        bool IStringJavaObject.IsNullOrWhiteSpace => StringBridgeInstance.IsNullOrWhiteSpace;
+        /// <summary>
+        /// Access <see cref="IStringJavaObject.IsNullOrWhiteSpace"/>
+        /// </summary>
+        /// <param name="reference">The <see cref="Java.Lang.String"/> reference to use</param>
+        /// <returns>The result of <see cref="IStringJavaObject.IsNullOrWhiteSpace"/></returns>
+        public static bool IsNullOrWhiteSpace(Java.Lang.String reference) => reference.StringBridgeInstance.IsNullOrWhiteSpace;
 
         #endregion
 
