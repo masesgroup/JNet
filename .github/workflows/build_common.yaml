@@ -505,6 +505,7 @@ jobs:
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
 
       - uses: actions/setup-dotnet@v6
+        if: ${{ matrix.framework == 'net11.0' }}
         with:
           dotnet-version: '11.0.x'
           dotnet-quality: 'preview'
@@ -697,6 +698,7 @@ jobs:
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
 
       - uses: actions/setup-dotnet@v6
+        if: ${{ matrix.framework == 'net11.0' }}
         with:
           dotnet-version: '11.0.x'
           dotnet-quality: 'preview'
@@ -967,6 +969,7 @@ jobs:
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
 
       - uses: actions/setup-dotnet@v6
+        if: ${{ matrix.framework == 'net11.0' }}
         with:
           dotnet-version: '11.0.x'
           dotnet-quality: 'preview'
