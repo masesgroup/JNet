@@ -60,7 +60,7 @@ jobs:
           matrix=$(cat <<'EOF'
           {
             "os": ["ubuntu-22.04","ubuntu-22.04-arm","ubuntu-24.04","ubuntu-24.04-arm"],
-            "framework": ["net8.0", "net10.0"],
+            "framework": ["net8.0", "net10.0", "net11.0"],
             "jdk_vendor": ["temurin", "zulu", "microsoft", "corretto", "oracle", "graalvm"],
             "jdk_version": ["11", "17", "21", "25"],
             "exclude": [
@@ -162,7 +162,7 @@ jobs:
         # OS/.NET/hardware, much less on JDK vendor/version - the full
         # JDK sweep isn't worth its cost here.
         os: ["ubuntu-22.04","ubuntu-22.04-arm","ubuntu-24.04","ubuntu-24.04-arm"]
-        framework: ['net8.0', 'net10.0']
+        framework: ['net8.0', 'net10.0', 'net11.0']
         jdk_vendor: ['temurin']
         jdk_version: ['17']
     runs-on: ${{ matrix.os }}
@@ -377,7 +377,7 @@ jobs:
       max-parallel: 1
       matrix:
         os: ["ubuntu-22.04","ubuntu-22.04-arm","ubuntu-24.04","ubuntu-24.04-arm"]
-        framework: ['net8.0', 'net10.0']
+        framework: ['net8.0', 'net10.0', 'net11.0']
         jdk_vendor: ['temurin']
         jdk_version: ['17']
     runs-on: ubuntu-latest

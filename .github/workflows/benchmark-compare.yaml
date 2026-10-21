@@ -113,7 +113,7 @@ jobs:
           matrix=$(cat <<'EOF'
           {
             "os": ["ubuntu-latest"],
-            "framework": ["net8.0", "net10.0"],
+            "framework": ["net8.0", "net10.0", "net11.0"],
             "jdk_vendor": ["temurin", "graalvm"],
             "jdk_version": ["11", "17", "21", "25"],
             "exclude": [
