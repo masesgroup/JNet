@@ -31,8 +31,7 @@ public final class DoubleToLongFunction extends JCListener implements java.util.
 
     @Override
     public long applyAsLong(double e) {
-        raiseEvent("applyAsLong", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsLong", e);
         return (long) retVal;
     }
 }

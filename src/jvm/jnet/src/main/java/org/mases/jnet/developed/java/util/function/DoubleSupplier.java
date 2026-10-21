@@ -31,8 +31,7 @@ public final class DoubleSupplier extends JCListener implements java.util.functi
 
     @Override
     public double getAsDouble() {
-        raiseEvent("getAsDouble", null);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("getAsDouble", null);
         return (double) retVal;
     }
 }

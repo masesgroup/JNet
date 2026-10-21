@@ -31,8 +31,7 @@ public final class IntBinaryOperator extends JCListener implements java.util.fun
 
     @Override
     public int applyAsInt(int e1, int e2) {
-        raiseEvent("applyAsInt", e1, e2);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsInt", e1, e2);
         return (int) retVal;
     }
 }

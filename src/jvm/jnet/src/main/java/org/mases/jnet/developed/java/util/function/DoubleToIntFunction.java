@@ -31,8 +31,7 @@ public final class DoubleToIntFunction extends JCListener implements java.util.f
 
     @Override
     public int applyAsInt(double e) {
-        raiseEvent("applyAsInt", e);
-        Object retVal = getReturnData();
+        Object retVal = raiseEventConcurrent("applyAsInt", e);
         return (int) retVal;
     }
 }

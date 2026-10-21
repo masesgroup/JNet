@@ -31,8 +31,6 @@ public final class IntFunction extends JCListener implements java.util.function.
 
     @Override
     public Object apply(int e) {
-        raiseEvent("apply", e);
-        Object retVal = getReturnData();
-        return retVal;
+        return raiseEventConcurrent("apply", e);
     }
 }

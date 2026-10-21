@@ -113,7 +113,7 @@ jobs:
           matrix=$(cat <<'EOF'
           {
             "os": ["ubuntu-latest"],
-            "framework": ["net8.0", "net10.0"],
+            "framework": ["net8.0", "net10.0", "net11.0"],
             "jdk_vendor": ["temurin", "graalvm"],
             "jdk_version": ["11", "17", "21", "25"],
             "exclude": [
@@ -132,7 +132,7 @@ jobs:
       matrix: ${{ fromJSON(needs.prepare_matrix.outputs.matrix) }}
     runs-on: ${{ matrix.os }}
     env:
-      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_9 }}
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_10 }}
       ENABLE_ADVANCED_TEST_LOGGING: ${{ inputs.EnableAdvancedTestLogging }}
       BDN_FAST: ${{ github.event_name }}
       BDN_FULL_SWEEP: ${{ (inputs.BdnFullSweep == true) && '1' || '0' }}
