@@ -139,6 +139,12 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      - uses: actions/setup-dotnet@v6
+        if: ${{ matrix.framework == 'net11.0' }}
+        with:
+          dotnet-version: '11.0.x'
+          dotnet-quality: 'preview'
+
       - name: Restore Current bin
         uses: actions/cache/restore@v6
         with:
