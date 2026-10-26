@@ -119,6 +119,12 @@ namespace Java.Lang
 
         IStringJavaObject StringBridgeInstance { get { if (BridgeInstance is IStringJavaObject stringJavaObject) return stringJavaObject; else throw new InvalidOperationException($"Current instance is not an {nameof(IStringJavaObject)}"); } }
 
+        /// <summary>
+        /// Returns the <see cref="IStringJavaObject"/> reference associated to this <see cref="Java.Lang.String"/> instance
+        /// </summary>
+        /// <returns>The <see cref="IStringJavaObject"/> reference</returns>
+        public IStringJavaObject ToIStringJavaObject() => StringBridgeInstance;
+
         /// <inheritdoc/>
         bool IStringJavaObject.Equals(string other) => StringBridgeInstance.Equals(other);
         /// <summary>
