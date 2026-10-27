@@ -52,9 +52,9 @@ namespace MASES.JNet.Specific
     {
         [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
         static JNetStream<T> Allocate() => new JNetStream<T>();
-        static JCOBridgeObjectPool<JNetStream<T>> _pool = new JCOBridgeObjectPool<JNetStream<T>>(Allocate);
+        static readonly JCOBridgeObjectPool<JNetStream<T>> _pool = new JCOBridgeObjectPool<JNetStream<T>>(Allocate);
 
-        struct JNetStreamState
+        readonly struct JNetStreamState
         {
             public JNetStreamState(object source, FileAccess mode, bool forceRawMemory, bool disposeSource)
             {
@@ -73,10 +73,10 @@ namespace MASES.JNet.Specific
 
                 DisposeSource = disposeSource;
             }
-            public bool DisposeSource;
-            public IJavaObject JavaObject;
-            public IJavaArray JavaArray;
-            public JCOBridgeStream<T> Stream;
+            public readonly bool DisposeSource;
+            public readonly IJavaObject JavaObject;
+            public readonly IJavaArray JavaArray;
+            public readonly JCOBridgeStream<T> Stream;
 
             public void Dispose()
             {
