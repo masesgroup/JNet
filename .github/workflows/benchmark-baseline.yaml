@@ -128,6 +128,12 @@ jobs:
           distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
+      - uses: actions/setup-dotnet@v6
+        if: ${{ matrix.framework == 'net11.0' }}
+        with:
+          dotnet-version: '11.0.x'
+          dotnet-quality: 'preview'
+
       - name: Run benchmarks
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/core/${{ env.LABEL }} --anyCategories=Core
@@ -187,6 +193,12 @@ jobs:
         with:
           distribution: ${{ matrix.jdk_vendor }}
           java-version: ${{ matrix.jdk_version }}
+
+      - uses: actions/setup-dotnet@v6
+        if: ${{ matrix.framework == 'net11.0' }}
+        with:
+          dotnet-version: '11.0.x'
+          dotnet-quality: 'preview'
 
       - name: Run benchmarks
         run: |
