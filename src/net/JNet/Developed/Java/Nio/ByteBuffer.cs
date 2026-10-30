@@ -118,7 +118,10 @@ namespace Java.Nio
         /// Reports the current <see cref="RecyclableMemoryStreamManager.Options"/> in use, <see langword="null"/> if not enable
         /// </summary>
         public static RecyclableMemoryStreamManager.Options CurrentSettings => _options;
-
+        /// <summary>
+        /// Reports if <see cref="GetMemoryStream"/> will use <see cref="RecyclableMemoryStreamManager"/> or generate a fresh <see cref="MemoryStream"/>
+        /// </summary>
+        public static bool IsEnable => _enable;
         /// <summary>
         /// <see langword="true"/> to report double-disposed (<see cref="RecyclableMemoryStreamManager.StreamDoubleDisposed"/>) conditions using <see cref="JNetCoreBase{T}.EventOrExceptionEvent"/> or, on command-line, setting to true <see cref="JNetCoreBase{T}.WriteEventOrExceptionOnCmdLine"/>
         /// </summary>
@@ -156,9 +159,9 @@ namespace Java.Nio
         }
 
         /// <summary>
-        /// Returns a new <see cref="MemoryStream"/> or a preallocated <see cref="MemoryStream"/> which is an implementation  of <see cref="RecyclableMemoryStream"/>
+        /// Retrieve a new <see cref="MemoryStream"/> or a preallocated <see cref="MemoryStream"/> which is an implementation of <see cref="RecyclableMemoryStream"/>
         /// can be used from <see cref="ByteBuffer.From(MemoryStream, EventHandler{MemoryStream}, int)"/>. When underlying sub-system ends the usage of <see cref="MemoryStream"/>
-        /// the <see cref="IDisposable.Dispose"/> method is automatically invoked and <see cref="MemoryStream"/> id disposed or <see cref="RecyclableMemoryStream"/> is returned back
+        /// the <see cref="IDisposable.Dispose"/> method is automatically invoked and <see cref="MemoryStream"/> is disposed or <see cref="RecyclableMemoryStream"/> is returned back
         /// to the pool.
         /// </summary>
         /// <returns>The requested <see cref="MemoryStream"/></returns>
@@ -179,8 +182,95 @@ namespace Java.Nio
             _storer.TryAdd(tag, stream);
             return stream;
         }
+        /// <summary>
+        /// Retrieve a new <see cref="MemoryStream"/>, or a preallocated <see cref="MemoryStream"/> which is an implementation of <see cref="RecyclableMemoryStream"/>,
+        /// with at least the given capacity, possibly using a single contiguous underlying buffer.
+        /// Can be used from <see cref="ByteBuffer.From(MemoryStream, EventHandler{MemoryStream}, int)"/>. When underlying sub-system ends the usage of <see cref="MemoryStream"/>
+        /// the <see cref="IDisposable.Dispose"/> method is automatically invoked and <see cref="MemoryStream"/> is disposed or <see cref="RecyclableMemoryStream"/> is returned back
+        /// to the pool.
+        /// </summary>
+        /// <remarks>Retrieving a <see cref="RecyclableMemoryStream"/> which provides a single contiguous buffer can be useful in situations
+        /// where the initial size is known and it is desirable to avoid copying data between the smaller underlying
+        /// buffers to a single large one. This is most helpful when you know that you will always call <see cref="RecyclableMemoryStream.GetBuffer"/>
+        /// on the underlying stream.</remarks>
+        /// <param name="requiredSize">The minimum desired capacity for the stream.</param>
+        /// <param name="asContiguousBuffer">Whether to attempt to use a single contiguous buffer.</param>
+        /// <returns>The requested <see cref="MemoryStream"/></returns>
+        public MemoryStream GetMemoryStream(long requiredSize, bool asContiguousBuffer)
+        {
+            if (!_enable) return new MemoryStream((int)requiredSize);
 
-        #endregion
+            var tag = Interlocked.Increment(ref _streamId).ToString();
+            var stream = _manager.GetStream(tag, requiredSize, asContiguousBuffer);
+            _storer.TryAdd(tag, stream);
+            return stream;
+        }
+        /// <summary>
+        /// Retrieve a new <see cref="MemoryStream"/>, or a preallocated <see cref="MemoryStream"/> which is an implementation of <see cref="RecyclableMemoryStream"/>,
+        /// with contents copied from the provided buffer. The provided buffer is not wrapped or used after construction.
+        /// Can be used from <see cref="ByteBuffer.From(MemoryStream, EventHandler{MemoryStream}, int)"/>. When underlying sub-system ends the usage of <see cref="MemoryStream"/>
+        /// the <see cref="IDisposable.Dispose"/> method is automatically invoked and <see cref="MemoryStream"/> is disposed or <see cref="RecyclableMemoryStream"/> is returned back
+        /// to the pool.
+        /// </summary>
+        /// <remarks>The new stream's position is set to the beginning of the stream when returned.</remarks>
+        /// <param name="buffer">The byte buffer to copy data from.</param>
+        /// <param name="offset">The offset from the start of the buffer to copy from.</param>
+        /// <param name="count">The number of bytes to copy from the buffer.</param>
+        /// <returns>The requested <see cref="MemoryStream"/></returns>
+        public MemoryStream GetMemoryStream(byte[] buffer, int offset, int count)
+        {
+            if (!_enable) return new MemoryStream(buffer, offset, count);
+
+            var tag = Interlocked.Increment(ref _streamId).ToString();
+            var stream = _manager.GetStream(tag, buffer, offset, count);
+            _storer.TryAdd(tag, stream);
+            return stream;
+        }
+        /// <summary>
+        /// Retrieve a new <see cref="MemoryStream"/>, or a preallocated <see cref="MemoryStream"/> which is an implementation of <see cref="RecyclableMemoryStream"/>,
+        /// with the contents copied from the provided buffer. The provided buffer is not wrapped or used after construction.
+        /// Can be used from <see cref="ByteBuffer.From(MemoryStream, EventHandler{MemoryStream}, int)"/>. When underlying sub-system ends the usage of <see cref="MemoryStream"/>
+        /// the <see cref="IDisposable.Dispose"/> method is automatically invoked and <see cref="MemoryStream"/> is disposed or <see cref="RecyclableMemoryStream"/> is returned back
+        /// to the pool.
+        /// </summary>
+        /// <remarks>The new stream's position is set to the beginning of the stream when returned.</remarks>
+        /// <param name="buffer">The byte buffer to copy data from.</param>
+        /// <returns>The requested <see cref="MemoryStream"/></returns>
+        public MemoryStream GetMemoryStream(byte[] buffer)
+        {
+            if (!_enable) { var ms = new MemoryStream(buffer); ms.Position = 0; return ms; }
+
+            var tag = Interlocked.Increment(ref _streamId).ToString();
+            var stream = _manager.GetStream(tag, buffer);
+            _storer.TryAdd(tag, stream);
+            return stream;
+        }
+#if NET5_0_OR_GREATER
+        /// <summary>
+        /// Retrieve a new <see cref="MemoryStream"/>, or a preallocated <see cref="MemoryStream"/> which is an implementation of <see cref="RecyclableMemoryStream"/>,
+        /// with contents copied from the provided buffer. The provided buffer is not wrapped or used after construction.
+        /// Can be used from <see cref="ByteBuffer.From(MemoryStream, EventHandler{MemoryStream}, int)"/>. When underlying sub-system ends the usage of <see cref="MemoryStream"/>
+        /// the <see cref="IDisposable.Dispose"/> method is automatically invoked and <see cref="MemoryStream"/> is disposed or <see cref="RecyclableMemoryStream"/> is returned back
+        /// to the pool.
+        /// </summary>
+        /// <summary>
+        /// Retrieve a new <see cref="RecyclableMemoryStream"/> object with the given tag and with contents copied from the provided
+        /// buffer. The provided buffer is not wrapped or used after construction.
+        /// </summary>
+        /// <remarks>The new stream's position is set to the beginning of the stream when returned.</remarks>
+        /// <param name="buffer">The byte buffer to copy data from.</param>
+        /// <returns>The requested <see cref="MemoryStream"/></returns>
+        public MemoryStream GetMemoryStream(ReadOnlySpan<byte> buffer)
+        {
+            if (!_enable) { var ms = new MemoryStream(buffer.ToArray()); ms.Position = 0; return ms; }
+
+            var tag = Interlocked.Increment(ref _streamId).ToString();
+            var stream = _manager.GetStream(tag, buffer);
+            _storer.TryAdd(tag, stream);
+            return stream;
+        }
+#endif
+#endregion
 #endif
         // can be extended with methods not reflected or not available in Java;
 
