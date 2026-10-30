@@ -119,7 +119,7 @@ namespace Java.Nio
         /// </summary>
         public static RecyclableMemoryStreamManager.Options CurrentSettings => _options;
         /// <summary>
-        /// Reports if <see cref="GetMemoryStream"/> will use <see cref="RecyclableMemoryStreamManager"/> or generate a fresh <see cref="MemoryStream"/>
+        /// Returns <see langword="true"/> if enabled and <c>GetMemoryStream</c> methods will use <see cref="RecyclableMemoryStreamManager"/>, if <see langword="false"/> <c>GetMemoryStream</c> methods generate a fresh <see cref="MemoryStream"/>
         /// </summary>
         public static bool IsEnable => _enable;
         /// <summary>
@@ -196,7 +196,7 @@ namespace Java.Nio
         /// <param name="requiredSize">The minimum desired capacity for the stream.</param>
         /// <param name="asContiguousBuffer">Whether to attempt to use a single contiguous buffer.</param>
         /// <returns>The requested <see cref="MemoryStream"/></returns>
-        public MemoryStream GetMemoryStream(long requiredSize, bool asContiguousBuffer)
+        public static MemoryStream GetMemoryStream(long requiredSize, bool asContiguousBuffer)
         {
             if (!_enable) return new MemoryStream((int)requiredSize);
 
@@ -217,7 +217,7 @@ namespace Java.Nio
         /// <param name="offset">The offset from the start of the buffer to copy from.</param>
         /// <param name="count">The number of bytes to copy from the buffer.</param>
         /// <returns>The requested <see cref="MemoryStream"/></returns>
-        public MemoryStream GetMemoryStream(byte[] buffer, int offset, int count)
+        public static MemoryStream GetMemoryStream(byte[] buffer, int offset, int count)
         {
             if (!_enable) return new MemoryStream(buffer, offset, count);
 
@@ -236,7 +236,7 @@ namespace Java.Nio
         /// <remarks>The new stream's position is set to the beginning of the stream when returned.</remarks>
         /// <param name="buffer">The byte buffer to copy data from.</param>
         /// <returns>The requested <see cref="MemoryStream"/></returns>
-        public MemoryStream GetMemoryStream(byte[] buffer)
+        public static MemoryStream GetMemoryStream(byte[] buffer)
         {
             if (!_enable) { var ms = new MemoryStream(buffer); ms.Position = 0; return ms; }
 
@@ -260,7 +260,7 @@ namespace Java.Nio
         /// <remarks>The new stream's position is set to the beginning of the stream when returned.</remarks>
         /// <param name="buffer">The byte buffer to copy data from.</param>
         /// <returns>The requested <see cref="MemoryStream"/></returns>
-        public MemoryStream GetMemoryStream(ReadOnlySpan<byte> buffer)
+        public static MemoryStream GetMemoryStream(ReadOnlySpan<byte> buffer)
         {
             if (!_enable) { var ms = new MemoryStream(buffer.ToArray()); ms.Position = 0; return ms; }
 
