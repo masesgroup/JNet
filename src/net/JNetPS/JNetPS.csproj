@@ -8,12 +8,12 @@
 		<Description>JNetPS - JNet (.NET suite for Java™/JVM™) PowerShell command line interface</Description>
 		<Product>JNetPS</Product>
 		<OutputPath>..\..\..\MASES.JNetPS\</OutputPath>
-		<TargetFrameworks>net462;net8.0</TargetFrameworks>
+		<TargetFrameworks>net462;net10.0</TargetFrameworks>
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net10.0'">
 		<OutputType>Exe</OutputType>
 	</PropertyGroup>
 
@@ -38,7 +38,7 @@
 		<None Update="MASES.JNetPSFramework.psd1" Condition="'$(TargetFramework)' == 'net462'">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
-		<None Update="MASES.JNetPSCore.psd1" Condition="'$(TargetFramework)' == 'net8.0'">
+		<None Update="MASES.JNetPSCore.psd1" Condition="'$(TargetFramework)' == 'net10.0'">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>

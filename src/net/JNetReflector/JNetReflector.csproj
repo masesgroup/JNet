@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<Import Project="..\Common\Common.props" />
 	<PropertyGroup>
-		<TargetFrameworks>net8.0</TargetFrameworks>
+		<TargetFrameworks>net10.0</TargetFrameworks>
 		<PackageType>DotnetTool</PackageType>
 		<OutputType>Exe</OutputType>
 		<AssemblyName>MASES.JNetReflector</AssemblyName>
@@ -11,7 +11,7 @@
 		<Product>JNetReflector</Product>
 		<OutputPath>..\..\..\binReflector\</OutputPath>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-		<PackageTags>jnet cli reflection utility dotnet clr netcore dotnet8 net8 dotnet8 net9 java jvm</PackageTags>
+		<PackageTags>jnet cli reflection utility dotnet clr netcore dotnet10 net10 dotnet11 net11 java jvm</PackageTags>
 		<PackageId>MASES.JNetReflector</PackageId>
 		<DefineConstants>$(DefineConstants)TRACE;JNETREFLECTOR</DefineConstants>
 		<PackageReadmeFile>usageReflector.md</PackageReadmeFile>
@@ -117,7 +117,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="MASES.CLIParser" Version="3.2.1" />
-		<PackageReference Include="MASES.JCOBridge" Version="2.6.10-preview.8">
+		<PackageReference Include="MASES.JCOBridge" Version="2.6.10-preview.9">
 			<IncludeAssets>All</IncludeAssets>
 			<PrivateAssets>None</PrivateAssets>
 		</PackageReference>

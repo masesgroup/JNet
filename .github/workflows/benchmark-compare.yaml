@@ -99,7 +99,7 @@ jobs:
           matrix=$(cat <<'EOF'
           {
             "os": ["ubuntu-latest"],
-            "framework": ["net8.0"],
+            "framework": ["net10.0"],
             "jdk_vendor": ["temurin"],
             "jdk_version": ["17"]
           }
@@ -113,7 +113,7 @@ jobs:
           matrix=$(cat <<'EOF'
           {
             "os": ["ubuntu-latest"],
-            "framework": ["net8.0", "net10.0", "net11.0"],
+            "framework": ["net10.0", "net11.0"],
             "jdk_vendor": ["temurin", "graalvm"],
             "jdk_version": ["11", "17", "21", "25"],
             "exclude": [
@@ -142,8 +142,7 @@ jobs:
       - uses: actions/setup-dotnet@v6
         if: ${{ matrix.framework == 'net11.0' }}
         with:
-          dotnet-version: '11.0.x'
-          dotnet-quality: 'preview'
+          dotnet-version: '11.x'
 
       - name: Restore Current bin
         uses: actions/cache/restore@v6
