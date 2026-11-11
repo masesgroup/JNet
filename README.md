@@ -29,7 +29,7 @@ JNet is a comprehensive suite of libraries and tools to use Java™/JVM™ APIs 
 | **JNetPS** | [![JNetPS PowerShell Gallery](https://img.shields.io/powershellgallery/v/MASES.JNetPS.svg?label=PowerShell%20Gallery)](https://www.powershellgallery.com/packages/MASES.JNetPS/) | [![JNetPS downloads](https://img.shields.io/powershellgallery/dt/MASES.JNetPS.svg)](https://www.powershellgallery.com/packages/MASES.JNetPS/) |
 
 > [!NOTE]
-> This project follows the target framework support of **JCOBridge**, which in turn follows the Microsoft .NET support lifecycle. When Microsoft ends support for a .NET version, that target is removed from the public packages starting with the next JCOBridge release.
+> This project follows the target framework support of **JCOBridge**, which in turn follows the Microsoft .NET support lifecycle. The public releases do not take on the maintenance of runtimes that Microsoft no longer supports: when Microsoft ends support for a .NET version, that target is dropped starting with the next JCOBridge release.
 >
 > Need a build for a legacy or out-of-support target, or expert help with .NET and JVM™ integration? See [Professional Support Options](src/documentation/articles/support.md).
 
