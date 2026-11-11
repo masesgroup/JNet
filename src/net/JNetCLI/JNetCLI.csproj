@@ -10,7 +10,7 @@
 		<Product>JNetCLI</Product>
 		<OutputPath>..\..\..\binCLI\</OutputPath>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-		<PackageTags>jnet cli dotnet clr netcore net8</PackageTags>
+		<PackageTags>jnet cli dotnet clr netcore net10</PackageTags>
 		<PackageId>MASES.JNetCLI</PackageId>
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>

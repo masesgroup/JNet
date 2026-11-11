@@ -44,7 +44,7 @@
 		<classpathfile>${basedir}/classpathfile.classpath</classpathfile>
 		<jnetversion>2.6.10.0</jnetversion>
 		<binFolderName>bin</binFolderName>
-		<runtimeFolderName>net8.0</runtimeFolderName>
+		<runtimeFolderName>net10.0</runtimeFolderName>
 		<rootDir>${basedir}/../../../</rootDir>
 		<jcobridgepath>${rootDir}/${binFolderName}/${runtimeFolderName}/JCOBridge.jar</jcobridgepath>
 		<jarsDestination>${rootDir}/jars/</jarsDestination>
