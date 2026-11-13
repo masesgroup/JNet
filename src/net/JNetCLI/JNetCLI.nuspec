@@ -14,7 +14,7 @@
 		<copyright>Copyright (c) 2022-2026 MASES s.r.l.</copyright>
 		<license type="file">LICENSE</license>
 		<icon>JCOB128x128.png</icon>
-		<tags>jnet cli dotnet clr netcore net8</tags>
+		<tags>jnet cli dotnet clr netcore net10</tags>
 		<packageTypes>
 			<packageType name="DotnetTool" />
 		</packageTypes>
