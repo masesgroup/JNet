@@ -93,7 +93,7 @@ Class JNetEventData  <a class="header-action link-secondary" title="View source"
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="MASES.html">MASES</a>.<a class="xref" href="MASES.JNet.html">JNet</a>.<a class="xref" href="MASES.JNet.Specific.html">Specific</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><span class="xref">MASES</span>.<a class="xref" href="MASES.JNet.html">JNet</a>.<a class="xref" href="MASES.JNet.Specific.html">Specific</a></dd></dl>
   <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
   </div>
 
@@ -145,8 +145,8 @@ Class JNetEventData  <a class="header-action link-secondary" title="View source"
 
   <a id="MASES_JNet_Specific_JNetEventData__ctor_" data-uid="MASES.JNet.Specific.JNetEventData.#ctor*"></a>
 
-  <h3 id="MASES_JNet_Specific_JNetEventData__ctor_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_" data-uid="MASES.JNet.Specific.JNetEventData.#ctor(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)">
-  JNetEventData(IJavaObject)
+  <h3 id="MASES_JNet_Specific_JNetEventData__ctor_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_System_Int64_" data-uid="MASES.JNet.Specific.JNetEventData.#ctor(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject,System.Int64)">
+  JNetEventData(IJavaObject, long)
   <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/JNetEventResult.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -155,13 +155,16 @@ Class JNetEventData  <a class="header-action link-secondary" title="View source"
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public JNetEventData(IJavaObject javaObject)</code></pre>
+    <pre><code class="lang-csharp hljs">public JNetEventData(IJavaObject javaObject, long callId)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>javaObject</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject.html">IJavaObject</a></dt>
     <dd></dd>
+    <dt><code>callId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>the unique call identifier generated</p>
+</dd>
   </dl>
 
 

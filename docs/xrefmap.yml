@@ -178757,6 +178757,21 @@ references:
   commentId: M:Java.Lang.String.CompareTo(Java.Lang.String)
   fullName: Java.Lang.String.CompareTo(Java.Lang.String)
   nameWithType: String.CompareTo(String)
+- uid: Java.Lang.String.CompareTo(Java.Lang.String,Java.Lang.String)
+  name: CompareTo(String, String)
+  href: api/Java.Lang.String.html#Java_Lang_String_CompareTo_Java_Lang_String_Java_Lang_String_
+  commentId: M:Java.Lang.String.CompareTo(Java.Lang.String,Java.Lang.String)
+  fullName: Java.Lang.String.CompareTo(Java.Lang.String, Java.Lang.String)
+  nameWithType: String.CompareTo(String, String)
+- uid: Java.Lang.String.CompareTo(Java.Lang.String,System.String)
+  name: CompareTo(String, string)
+  href: api/Java.Lang.String.html#Java_Lang_String_CompareTo_Java_Lang_String_System_String_
+  commentId: M:Java.Lang.String.CompareTo(Java.Lang.String,System.String)
+  name.vb: CompareTo(String, String)
+  fullName: Java.Lang.String.CompareTo(Java.Lang.String, string)
+  fullName.vb: Java.Lang.String.CompareTo(Java.Lang.String, String)
+  nameWithType: String.CompareTo(String, string)
+  nameWithType.vb: String.CompareTo(String, String)
 - uid: Java.Lang.String.CompareTo(System.Object)
   name: CompareTo(object)
   href: api/Java.Lang.String.html#Java_Lang_String_CompareTo_System_Object_
@@ -178766,15 +178781,6 @@ references:
   fullName.vb: Java.Lang.String.CompareTo(Object)
   nameWithType: String.CompareTo(object)
   nameWithType.vb: String.CompareTo(Object)
-- uid: Java.Lang.String.CompareTo(System.String)
-  name: CompareTo(string)
-  href: api/Java.Lang.String.html#Java_Lang_String_CompareTo_System_String_
-  commentId: M:Java.Lang.String.CompareTo(System.String)
-  name.vb: CompareTo(String)
-  fullName: Java.Lang.String.CompareTo(string)
-  fullName.vb: Java.Lang.String.CompareTo(String)
-  nameWithType: String.CompareTo(string)
-  nameWithType.vb: String.CompareTo(String)
 - uid: Java.Lang.String.CompareTo*
   name: CompareTo
   href: api/Java.Lang.String.html#Java_Lang_String_CompareTo_
@@ -178814,24 +178820,30 @@ references:
   commentId: M:Java.Lang.String.Contains(Java.Lang.CharSequence)
   fullName: Java.Lang.String.Contains(Java.Lang.CharSequence)
   nameWithType: String.Contains(CharSequence)
-- uid: Java.Lang.String.Contains(System.Char)
-  name: Contains(char)
-  href: api/Java.Lang.String.html#Java_Lang_String_Contains_System_Char_
-  commentId: M:Java.Lang.String.Contains(System.Char)
-  name.vb: Contains(Char)
-  fullName: Java.Lang.String.Contains(char)
-  fullName.vb: Java.Lang.String.Contains(Char)
-  nameWithType: String.Contains(char)
-  nameWithType.vb: String.Contains(Char)
-- uid: Java.Lang.String.Contains(System.String)
-  name: Contains(string)
-  href: api/Java.Lang.String.html#Java_Lang_String_Contains_System_String_
-  commentId: M:Java.Lang.String.Contains(System.String)
-  name.vb: Contains(String)
-  fullName: Java.Lang.String.Contains(string)
-  fullName.vb: Java.Lang.String.Contains(String)
-  nameWithType: String.Contains(string)
-  nameWithType.vb: String.Contains(String)
+- uid: Java.Lang.String.Contains(Java.Lang.String,Java.Lang.String)
+  name: Contains(String, String)
+  href: api/Java.Lang.String.html#Java_Lang_String_Contains_Java_Lang_String_Java_Lang_String_
+  commentId: M:Java.Lang.String.Contains(Java.Lang.String,Java.Lang.String)
+  fullName: Java.Lang.String.Contains(Java.Lang.String, Java.Lang.String)
+  nameWithType: String.Contains(String, String)
+- uid: Java.Lang.String.Contains(Java.Lang.String,System.Char)
+  name: Contains(String, char)
+  href: api/Java.Lang.String.html#Java_Lang_String_Contains_Java_Lang_String_System_Char_
+  commentId: M:Java.Lang.String.Contains(Java.Lang.String,System.Char)
+  name.vb: Contains(String, Char)
+  fullName: Java.Lang.String.Contains(Java.Lang.String, char)
+  fullName.vb: Java.Lang.String.Contains(Java.Lang.String, Char)
+  nameWithType: String.Contains(String, char)
+  nameWithType.vb: String.Contains(String, Char)
+- uid: Java.Lang.String.Contains(Java.Lang.String,System.String)
+  name: Contains(String, string)
+  href: api/Java.Lang.String.html#Java_Lang_String_Contains_Java_Lang_String_System_String_
+  commentId: M:Java.Lang.String.Contains(Java.Lang.String,System.String)
+  name.vb: Contains(String, String)
+  fullName: Java.Lang.String.Contains(Java.Lang.String, string)
+  fullName.vb: Java.Lang.String.Contains(Java.Lang.String, String)
+  nameWithType: String.Contains(String, string)
+  nameWithType.vb: String.Contains(String, String)
 - uid: Java.Lang.String.Contains*
   name: Contains
   href: api/Java.Lang.String.html#Java_Lang_String_Contains_
@@ -179019,15 +179031,21 @@ references:
   commentId: M:Java.Lang.String.EndsWith(Java.Lang.String)
   fullName: Java.Lang.String.EndsWith(Java.Lang.String)
   nameWithType: String.EndsWith(String)
-- uid: Java.Lang.String.EndsWith(System.String)
-  name: EndsWith(string)
-  href: api/Java.Lang.String.html#Java_Lang_String_EndsWith_System_String_
-  commentId: M:Java.Lang.String.EndsWith(System.String)
-  name.vb: EndsWith(String)
-  fullName: Java.Lang.String.EndsWith(string)
-  fullName.vb: Java.Lang.String.EndsWith(String)
-  nameWithType: String.EndsWith(string)
-  nameWithType.vb: String.EndsWith(String)
+- uid: Java.Lang.String.EndsWith(Java.Lang.String,Java.Lang.String)
+  name: EndsWith(String, String)
+  href: api/Java.Lang.String.html#Java_Lang_String_EndsWith_Java_Lang_String_Java_Lang_String_
+  commentId: M:Java.Lang.String.EndsWith(Java.Lang.String,Java.Lang.String)
+  fullName: Java.Lang.String.EndsWith(Java.Lang.String, Java.Lang.String)
+  nameWithType: String.EndsWith(String, String)
+- uid: Java.Lang.String.EndsWith(Java.Lang.String,System.String)
+  name: EndsWith(String, string)
+  href: api/Java.Lang.String.html#Java_Lang_String_EndsWith_Java_Lang_String_System_String_
+  commentId: M:Java.Lang.String.EndsWith(Java.Lang.String,System.String)
+  name.vb: EndsWith(String, String)
+  fullName: Java.Lang.String.EndsWith(Java.Lang.String, string)
+  fullName.vb: Java.Lang.String.EndsWith(Java.Lang.String, String)
+  nameWithType: String.EndsWith(String, string)
+  nameWithType.vb: String.EndsWith(String, String)
 - uid: Java.Lang.String.EndsWith*
   name: EndsWith
   href: api/Java.Lang.String.html#Java_Lang_String_EndsWith_
@@ -179035,6 +179053,21 @@ references:
   isSpec: "True"
   fullName: Java.Lang.String.EndsWith
   nameWithType: String.EndsWith
+- uid: Java.Lang.String.Equals(Java.Lang.String,Java.Lang.String)
+  name: Equals(String, String)
+  href: api/Java.Lang.String.html#Java_Lang_String_Equals_Java_Lang_String_Java_Lang_String_
+  commentId: M:Java.Lang.String.Equals(Java.Lang.String,Java.Lang.String)
+  fullName: Java.Lang.String.Equals(Java.Lang.String, Java.Lang.String)
+  nameWithType: String.Equals(String, String)
+- uid: Java.Lang.String.Equals(Java.Lang.String,System.String)
+  name: Equals(String, string)
+  href: api/Java.Lang.String.html#Java_Lang_String_Equals_Java_Lang_String_System_String_
+  commentId: M:Java.Lang.String.Equals(Java.Lang.String,System.String)
+  name.vb: Equals(String, String)
+  fullName: Java.Lang.String.Equals(Java.Lang.String, string)
+  fullName.vb: Java.Lang.String.Equals(Java.Lang.String, String)
+  nameWithType: String.Equals(String, string)
+  nameWithType.vb: String.Equals(String, String)
 - uid: Java.Lang.String.Equals(System.Object)
   name: Equals(object)
   href: api/Java.Lang.String.html#Java_Lang_String_Equals_System_Object_
@@ -179044,15 +179077,6 @@ references:
   fullName.vb: Java.Lang.String.Equals(Object)
   nameWithType: String.Equals(object)
   nameWithType.vb: String.Equals(Object)
-- uid: Java.Lang.String.Equals(System.String)
-  name: Equals(string)
-  href: api/Java.Lang.String.html#Java_Lang_String_Equals_System_String_
-  commentId: M:Java.Lang.String.Equals(System.String)
-  name.vb: Equals(String)
-  fullName: Java.Lang.String.Equals(string)
-  fullName.vb: Java.Lang.String.Equals(String)
-  nameWithType: String.Equals(string)
-  nameWithType.vb: String.Equals(String)
 - uid: Java.Lang.String.Equals*
   name: Equals
   href: api/Java.Lang.String.html#Java_Lang_String_Equals_
@@ -179161,6 +179185,21 @@ references:
   commentId: M:Java.Lang.String.IndexOf(Java.Lang.String)
   fullName: Java.Lang.String.IndexOf(Java.Lang.String)
   nameWithType: String.IndexOf(String)
+- uid: Java.Lang.String.IndexOf(Java.Lang.String,Java.Lang.String)
+  name: IndexOf(String, String)
+  href: api/Java.Lang.String.html#Java_Lang_String_IndexOf_Java_Lang_String_Java_Lang_String_
+  commentId: M:Java.Lang.String.IndexOf(Java.Lang.String,Java.Lang.String)
+  fullName: Java.Lang.String.IndexOf(Java.Lang.String, Java.Lang.String)
+  nameWithType: String.IndexOf(String, String)
+- uid: Java.Lang.String.IndexOf(Java.Lang.String,System.Char)
+  name: IndexOf(String, char)
+  href: api/Java.Lang.String.html#Java_Lang_String_IndexOf_Java_Lang_String_System_Char_
+  commentId: M:Java.Lang.String.IndexOf(Java.Lang.String,System.Char)
+  name.vb: IndexOf(String, Char)
+  fullName: Java.Lang.String.IndexOf(Java.Lang.String, char)
+  fullName.vb: Java.Lang.String.IndexOf(Java.Lang.String, Char)
+  nameWithType: String.IndexOf(String, char)
+  nameWithType.vb: String.IndexOf(String, Char)
 - uid: Java.Lang.String.IndexOf(Java.Lang.String,System.Int32)
   name: IndexOf(String, int)
   href: api/Java.Lang.String.html#Java_Lang_String_IndexOf_Java_Lang_String_System_Int32_
@@ -179170,15 +179209,15 @@ references:
   fullName.vb: Java.Lang.String.IndexOf(Java.Lang.String, Integer)
   nameWithType: String.IndexOf(String, int)
   nameWithType.vb: String.IndexOf(String, Integer)
-- uid: Java.Lang.String.IndexOf(System.Char)
-  name: IndexOf(char)
-  href: api/Java.Lang.String.html#Java_Lang_String_IndexOf_System_Char_
-  commentId: M:Java.Lang.String.IndexOf(System.Char)
-  name.vb: IndexOf(Char)
-  fullName: Java.Lang.String.IndexOf(char)
-  fullName.vb: Java.Lang.String.IndexOf(Char)
-  nameWithType: String.IndexOf(char)
-  nameWithType.vb: String.IndexOf(Char)
+- uid: Java.Lang.String.IndexOf(Java.Lang.String,System.String)
+  name: IndexOf(String, string)
+  href: api/Java.Lang.String.html#Java_Lang_String_IndexOf_Java_Lang_String_System_String_
+  commentId: M:Java.Lang.String.IndexOf(Java.Lang.String,System.String)
+  name.vb: IndexOf(String, String)
+  fullName: Java.Lang.String.IndexOf(Java.Lang.String, string)
+  fullName.vb: Java.Lang.String.IndexOf(Java.Lang.String, String)
+  nameWithType: String.IndexOf(String, string)
+  nameWithType.vb: String.IndexOf(String, String)
 - uid: Java.Lang.String.IndexOf(System.Int32)
   name: IndexOf(int)
   href: api/Java.Lang.String.html#Java_Lang_String_IndexOf_System_Int32_
@@ -179197,15 +179236,6 @@ references:
   fullName.vb: Java.Lang.String.IndexOf(Integer, Integer)
   nameWithType: String.IndexOf(int, int)
   nameWithType.vb: String.IndexOf(Integer, Integer)
-- uid: Java.Lang.String.IndexOf(System.String)
-  name: IndexOf(string)
-  href: api/Java.Lang.String.html#Java_Lang_String_IndexOf_System_String_
-  commentId: M:Java.Lang.String.IndexOf(System.String)
-  name.vb: IndexOf(String)
-  fullName: Java.Lang.String.IndexOf(string)
-  fullName.vb: Java.Lang.String.IndexOf(String)
-  nameWithType: String.IndexOf(string)
-  nameWithType.vb: String.IndexOf(String)
 - uid: Java.Lang.String.IndexOf*
   name: IndexOf
   href: api/Java.Lang.String.html#Java_Lang_String_IndexOf_
@@ -179213,15 +179243,15 @@ references:
   isSpec: "True"
   fullName: Java.Lang.String.IndexOf
   nameWithType: String.IndexOf
-- uid: Java.Lang.String.IndexOfAny(System.Char[])
-  name: IndexOfAny(char[])
-  href: api/Java.Lang.String.html#Java_Lang_String_IndexOfAny_System_Char___
-  commentId: M:Java.Lang.String.IndexOfAny(System.Char[])
-  name.vb: IndexOfAny(Char())
-  fullName: Java.Lang.String.IndexOfAny(char[])
-  fullName.vb: Java.Lang.String.IndexOfAny(Char())
-  nameWithType: String.IndexOfAny(char[])
-  nameWithType.vb: String.IndexOfAny(Char())
+- uid: Java.Lang.String.IndexOfAny(Java.Lang.String,System.Char[])
+  name: IndexOfAny(String, char[])
+  href: api/Java.Lang.String.html#Java_Lang_String_IndexOfAny_Java_Lang_String_System_Char___
+  commentId: M:Java.Lang.String.IndexOfAny(Java.Lang.String,System.Char[])
+  name.vb: IndexOfAny(String, Char())
+  fullName: Java.Lang.String.IndexOfAny(Java.Lang.String, char[])
+  fullName.vb: Java.Lang.String.IndexOfAny(Java.Lang.String, Char())
+  nameWithType: String.IndexOfAny(String, char[])
+  nameWithType.vb: String.IndexOfAny(String, Char())
 - uid: Java.Lang.String.IndexOfAny*
   name: IndexOfAny
   href: api/Java.Lang.String.html#Java_Lang_String_IndexOfAny_
@@ -179307,12 +179337,12 @@ references:
   isSpec: "True"
   fullName: Java.Lang.String.IsEmpty
   nameWithType: String.IsEmpty
-- uid: Java.Lang.String.IsNullOrEmpty
-  name: IsNullOrEmpty
-  href: api/Java.Lang.String.html#Java_Lang_String_IsNullOrEmpty
-  commentId: P:Java.Lang.String.IsNullOrEmpty
-  fullName: Java.Lang.String.IsNullOrEmpty
-  nameWithType: String.IsNullOrEmpty
+- uid: Java.Lang.String.IsNullOrEmpty(Java.Lang.String)
+  name: IsNullOrEmpty(String)
+  href: api/Java.Lang.String.html#Java_Lang_String_IsNullOrEmpty_Java_Lang_String_
+  commentId: M:Java.Lang.String.IsNullOrEmpty(Java.Lang.String)
+  fullName: Java.Lang.String.IsNullOrEmpty(Java.Lang.String)
+  nameWithType: String.IsNullOrEmpty(String)
 - uid: Java.Lang.String.IsNullOrEmpty*
   name: IsNullOrEmpty
   href: api/Java.Lang.String.html#Java_Lang_String_IsNullOrEmpty_
@@ -179320,12 +179350,12 @@ references:
   isSpec: "True"
   fullName: Java.Lang.String.IsNullOrEmpty
   nameWithType: String.IsNullOrEmpty
-- uid: Java.Lang.String.IsNullOrWhiteSpace
-  name: IsNullOrWhiteSpace
-  href: api/Java.Lang.String.html#Java_Lang_String_IsNullOrWhiteSpace
-  commentId: P:Java.Lang.String.IsNullOrWhiteSpace
-  fullName: Java.Lang.String.IsNullOrWhiteSpace
-  nameWithType: String.IsNullOrWhiteSpace
+- uid: Java.Lang.String.IsNullOrWhiteSpace(Java.Lang.String)
+  name: IsNullOrWhiteSpace(String)
+  href: api/Java.Lang.String.html#Java_Lang_String_IsNullOrWhiteSpace_Java_Lang_String_
+  commentId: M:Java.Lang.String.IsNullOrWhiteSpace(Java.Lang.String)
+  fullName: Java.Lang.String.IsNullOrWhiteSpace(Java.Lang.String)
+  nameWithType: String.IsNullOrWhiteSpace(String)
 - uid: Java.Lang.String.IsNullOrWhiteSpace*
   name: IsNullOrWhiteSpace
   href: api/Java.Lang.String.html#Java_Lang_String_IsNullOrWhiteSpace_
@@ -179383,6 +179413,21 @@ references:
   commentId: M:Java.Lang.String.LastIndexOf(Java.Lang.String)
   fullName: Java.Lang.String.LastIndexOf(Java.Lang.String)
   nameWithType: String.LastIndexOf(String)
+- uid: Java.Lang.String.LastIndexOf(Java.Lang.String,Java.Lang.String)
+  name: LastIndexOf(String, String)
+  href: api/Java.Lang.String.html#Java_Lang_String_LastIndexOf_Java_Lang_String_Java_Lang_String_
+  commentId: M:Java.Lang.String.LastIndexOf(Java.Lang.String,Java.Lang.String)
+  fullName: Java.Lang.String.LastIndexOf(Java.Lang.String, Java.Lang.String)
+  nameWithType: String.LastIndexOf(String, String)
+- uid: Java.Lang.String.LastIndexOf(Java.Lang.String,System.Char)
+  name: LastIndexOf(String, char)
+  href: api/Java.Lang.String.html#Java_Lang_String_LastIndexOf_Java_Lang_String_System_Char_
+  commentId: M:Java.Lang.String.LastIndexOf(Java.Lang.String,System.Char)
+  name.vb: LastIndexOf(String, Char)
+  fullName: Java.Lang.String.LastIndexOf(Java.Lang.String, char)
+  fullName.vb: Java.Lang.String.LastIndexOf(Java.Lang.String, Char)
+  nameWithType: String.LastIndexOf(String, char)
+  nameWithType.vb: String.LastIndexOf(String, Char)
 - uid: Java.Lang.String.LastIndexOf(Java.Lang.String,System.Int32)
   name: LastIndexOf(String, int)
   href: api/Java.Lang.String.html#Java_Lang_String_LastIndexOf_Java_Lang_String_System_Int32_
@@ -179392,15 +179437,15 @@ references:
   fullName.vb: Java.Lang.String.LastIndexOf(Java.Lang.String, Integer)
   nameWithType: String.LastIndexOf(String, int)
   nameWithType.vb: String.LastIndexOf(String, Integer)
-- uid: Java.Lang.String.LastIndexOf(System.Char)
-  name: LastIndexOf(char)
-  href: api/Java.Lang.String.html#Java_Lang_String_LastIndexOf_System_Char_
-  commentId: M:Java.Lang.String.LastIndexOf(System.Char)
-  name.vb: LastIndexOf(Char)
-  fullName: Java.Lang.String.LastIndexOf(char)
-  fullName.vb: Java.Lang.String.LastIndexOf(Char)
-  nameWithType: String.LastIndexOf(char)
-  nameWithType.vb: String.LastIndexOf(Char)
+- uid: Java.Lang.String.LastIndexOf(Java.Lang.String,System.String)
+  name: LastIndexOf(String, string)
+  href: api/Java.Lang.String.html#Java_Lang_String_LastIndexOf_Java_Lang_String_System_String_
+  commentId: M:Java.Lang.String.LastIndexOf(Java.Lang.String,System.String)
+  name.vb: LastIndexOf(String, String)
+  fullName: Java.Lang.String.LastIndexOf(Java.Lang.String, string)
+  fullName.vb: Java.Lang.String.LastIndexOf(Java.Lang.String, String)
+  nameWithType: String.LastIndexOf(String, string)
+  nameWithType.vb: String.LastIndexOf(String, String)
 - uid: Java.Lang.String.LastIndexOf(System.Int32)
   name: LastIndexOf(int)
   href: api/Java.Lang.String.html#Java_Lang_String_LastIndexOf_System_Int32_
@@ -179419,15 +179464,6 @@ references:
   fullName.vb: Java.Lang.String.LastIndexOf(Integer, Integer)
   nameWithType: String.LastIndexOf(int, int)
   nameWithType.vb: String.LastIndexOf(Integer, Integer)
-- uid: Java.Lang.String.LastIndexOf(System.String)
-  name: LastIndexOf(string)
-  href: api/Java.Lang.String.html#Java_Lang_String_LastIndexOf_System_String_
-  commentId: M:Java.Lang.String.LastIndexOf(System.String)
-  name.vb: LastIndexOf(String)
-  fullName: Java.Lang.String.LastIndexOf(string)
-  fullName.vb: Java.Lang.String.LastIndexOf(String)
-  nameWithType: String.LastIndexOf(string)
-  nameWithType.vb: String.LastIndexOf(String)
 - uid: Java.Lang.String.LastIndexOf*
   name: LastIndexOf
   href: api/Java.Lang.String.html#Java_Lang_String_LastIndexOf_
@@ -179435,15 +179471,15 @@ references:
   isSpec: "True"
   fullName: Java.Lang.String.LastIndexOf
   nameWithType: String.LastIndexOf
-- uid: Java.Lang.String.LastIndexOfAny(System.Char[])
-  name: LastIndexOfAny(char[])
-  href: api/Java.Lang.String.html#Java_Lang_String_LastIndexOfAny_System_Char___
-  commentId: M:Java.Lang.String.LastIndexOfAny(System.Char[])
-  name.vb: LastIndexOfAny(Char())
-  fullName: Java.Lang.String.LastIndexOfAny(char[])
-  fullName.vb: Java.Lang.String.LastIndexOfAny(Char())
-  nameWithType: String.LastIndexOfAny(char[])
-  nameWithType.vb: String.LastIndexOfAny(Char())
+- uid: Java.Lang.String.LastIndexOfAny(Java.Lang.String,System.Char[])
+  name: LastIndexOfAny(String, char[])
+  href: api/Java.Lang.String.html#Java_Lang_String_LastIndexOfAny_Java_Lang_String_System_Char___
+  commentId: M:Java.Lang.String.LastIndexOfAny(Java.Lang.String,System.Char[])
+  name.vb: LastIndexOfAny(String, Char())
+  fullName: Java.Lang.String.LastIndexOfAny(Java.Lang.String, char[])
+  fullName.vb: Java.Lang.String.LastIndexOfAny(Java.Lang.String, Char())
+  nameWithType: String.LastIndexOfAny(String, char[])
+  nameWithType.vb: String.LastIndexOfAny(String, Char())
 - uid: Java.Lang.String.LastIndexOfAny*
   name: LastIndexOfAny
   href: api/Java.Lang.String.html#Java_Lang_String_LastIndexOfAny_
@@ -179594,6 +179630,12 @@ references:
   commentId: M:Java.Lang.String.StartsWith(Java.Lang.String)
   fullName: Java.Lang.String.StartsWith(Java.Lang.String)
   nameWithType: String.StartsWith(String)
+- uid: Java.Lang.String.StartsWith(Java.Lang.String,Java.Lang.String)
+  name: StartsWith(String, String)
+  href: api/Java.Lang.String.html#Java_Lang_String_StartsWith_Java_Lang_String_Java_Lang_String_
+  commentId: M:Java.Lang.String.StartsWith(Java.Lang.String,Java.Lang.String)
+  fullName: Java.Lang.String.StartsWith(Java.Lang.String, Java.Lang.String)
+  nameWithType: String.StartsWith(String, String)
 - uid: Java.Lang.String.StartsWith(Java.Lang.String,System.Int32)
   name: StartsWith(String, int)
   href: api/Java.Lang.String.html#Java_Lang_String_StartsWith_Java_Lang_String_System_Int32_
@@ -179603,15 +179645,15 @@ references:
   fullName.vb: Java.Lang.String.StartsWith(Java.Lang.String, Integer)
   nameWithType: String.StartsWith(String, int)
   nameWithType.vb: String.StartsWith(String, Integer)
-- uid: Java.Lang.String.StartsWith(System.String)
-  name: StartsWith(string)
-  href: api/Java.Lang.String.html#Java_Lang_String_StartsWith_System_String_
-  commentId: M:Java.Lang.String.StartsWith(System.String)
-  name.vb: StartsWith(String)
-  fullName: Java.Lang.String.StartsWith(string)
-  fullName.vb: Java.Lang.String.StartsWith(String)
-  nameWithType: String.StartsWith(string)
-  nameWithType.vb: String.StartsWith(String)
+- uid: Java.Lang.String.StartsWith(Java.Lang.String,System.String)
+  name: StartsWith(String, string)
+  href: api/Java.Lang.String.html#Java_Lang_String_StartsWith_Java_Lang_String_System_String_
+  commentId: M:Java.Lang.String.StartsWith(Java.Lang.String,System.String)
+  name.vb: StartsWith(String, String)
+  fullName: Java.Lang.String.StartsWith(Java.Lang.String, string)
+  fullName.vb: Java.Lang.String.StartsWith(Java.Lang.String, String)
+  nameWithType: String.StartsWith(String, string)
+  nameWithType.vb: String.StartsWith(String, String)
 - uid: Java.Lang.String.StartsWith*
   name: StartsWith
   href: api/Java.Lang.String.html#Java_Lang_String_StartsWith_
@@ -179673,6 +179715,19 @@ references:
   isSpec: "True"
   fullName: Java.Lang.String.ToCharArray
   nameWithType: String.ToCharArray
+- uid: Java.Lang.String.ToIStringJavaObject
+  name: ToIStringJavaObject()
+  href: api/Java.Lang.String.html#Java_Lang_String_ToIStringJavaObject
+  commentId: M:Java.Lang.String.ToIStringJavaObject
+  fullName: Java.Lang.String.ToIStringJavaObject()
+  nameWithType: String.ToIStringJavaObject()
+- uid: Java.Lang.String.ToIStringJavaObject*
+  name: ToIStringJavaObject
+  href: api/Java.Lang.String.html#Java_Lang_String_ToIStringJavaObject_
+  commentId: Overload:Java.Lang.String.ToIStringJavaObject
+  isSpec: "True"
+  fullName: Java.Lang.String.ToIStringJavaObject
+  nameWithType: String.ToIStringJavaObject
 - uid: Java.Lang.String.ToJVM(System.String)
   name: ToJVM(string)
   href: api/Java.Lang.String.html#Java_Lang_String_ToJVM_System_String_
@@ -199302,6 +199357,33 @@ references:
   commentId: M:Java.Nio.ByteBuffer.GetMemoryStream
   fullName: Java.Nio.ByteBuffer.GetMemoryStream()
   nameWithType: ByteBuffer.GetMemoryStream()
+- uid: Java.Nio.ByteBuffer.GetMemoryStream(System.Byte[])
+  name: GetMemoryStream(byte[])
+  href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_GetMemoryStream_System_Byte___
+  commentId: M:Java.Nio.ByteBuffer.GetMemoryStream(System.Byte[])
+  name.vb: GetMemoryStream(Byte())
+  fullName: Java.Nio.ByteBuffer.GetMemoryStream(byte[])
+  fullName.vb: Java.Nio.ByteBuffer.GetMemoryStream(Byte())
+  nameWithType: ByteBuffer.GetMemoryStream(byte[])
+  nameWithType.vb: ByteBuffer.GetMemoryStream(Byte())
+- uid: Java.Nio.ByteBuffer.GetMemoryStream(System.Byte[],System.Int32,System.Int32)
+  name: GetMemoryStream(byte[], int, int)
+  href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_GetMemoryStream_System_Byte___System_Int32_System_Int32_
+  commentId: M:Java.Nio.ByteBuffer.GetMemoryStream(System.Byte[],System.Int32,System.Int32)
+  name.vb: GetMemoryStream(Byte(), Integer, Integer)
+  fullName: Java.Nio.ByteBuffer.GetMemoryStream(byte[], int, int)
+  fullName.vb: Java.Nio.ByteBuffer.GetMemoryStream(Byte(), Integer, Integer)
+  nameWithType: ByteBuffer.GetMemoryStream(byte[], int, int)
+  nameWithType.vb: ByteBuffer.GetMemoryStream(Byte(), Integer, Integer)
+- uid: Java.Nio.ByteBuffer.GetMemoryStream(System.Int64,System.Boolean)
+  name: GetMemoryStream(long, bool)
+  href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_GetMemoryStream_System_Int64_System_Boolean_
+  commentId: M:Java.Nio.ByteBuffer.GetMemoryStream(System.Int64,System.Boolean)
+  name.vb: GetMemoryStream(Long, Boolean)
+  fullName: Java.Nio.ByteBuffer.GetMemoryStream(long, bool)
+  fullName.vb: Java.Nio.ByteBuffer.GetMemoryStream(Long, Boolean)
+  nameWithType: ByteBuffer.GetMemoryStream(long, bool)
+  nameWithType.vb: ByteBuffer.GetMemoryStream(Long, Boolean)
 - uid: Java.Nio.ByteBuffer.GetMemoryStream*
   name: GetMemoryStream
   href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_GetMemoryStream_
@@ -199390,6 +199472,19 @@ references:
   isSpec: "True"
   fullName: Java.Nio.ByteBuffer.IsBridgeStatic
   nameWithType: ByteBuffer.IsBridgeStatic
+- uid: Java.Nio.ByteBuffer.IsEnable
+  name: IsEnable
+  href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_IsEnable
+  commentId: P:Java.Nio.ByteBuffer.IsEnable
+  fullName: Java.Nio.ByteBuffer.IsEnable
+  nameWithType: ByteBuffer.IsEnable
+- uid: Java.Nio.ByteBuffer.IsEnable*
+  name: IsEnable
+  href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_IsEnable_
+  commentId: Overload:Java.Nio.ByteBuffer.IsEnable
+  isSpec: "True"
+  fullName: Java.Nio.ByteBuffer.IsEnable
+  nameWithType: ByteBuffer.IsEnable
 - uid: Java.Nio.ByteBuffer.LargeBufferCreated
   name: LargeBufferCreated
   href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_LargeBufferCreated
@@ -897340,15 +897435,15 @@ references:
   commentId: T:MASES.JNet.Specific.JNetEventData
   fullName: MASES.JNet.Specific.JNetEventData
   nameWithType: JNetEventData
-- uid: MASES.JNet.Specific.JNetEventData.#ctor(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)
-  name: JNetEventData(IJavaObject)
-  href: api/MASES.JNet.Specific.JNetEventData.html#MASES_JNet_Specific_JNetEventData__ctor_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_
-  commentId: M:MASES.JNet.Specific.JNetEventData.#ctor(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)
-  name.vb: New(IJavaObject)
-  fullName: MASES.JNet.Specific.JNetEventData.JNetEventData(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)
-  fullName.vb: MASES.JNet.Specific.JNetEventData.New(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)
-  nameWithType: JNetEventData.JNetEventData(IJavaObject)
-  nameWithType.vb: JNetEventData.New(IJavaObject)
+- uid: MASES.JNet.Specific.JNetEventData.#ctor(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject,System.Int64)
+  name: JNetEventData(IJavaObject, long)
+  href: api/MASES.JNet.Specific.JNetEventData.html#MASES_JNet_Specific_JNetEventData__ctor_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_System_Int64_
+  commentId: M:MASES.JNet.Specific.JNetEventData.#ctor(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject,System.Int64)
+  name.vb: New(IJavaObject, Long)
+  fullName: MASES.JNet.Specific.JNetEventData.JNetEventData(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, long)
+  fullName.vb: MASES.JNet.Specific.JNetEventData.New(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, Long)
+  nameWithType: JNetEventData.JNetEventData(IJavaObject, long)
+  nameWithType.vb: JNetEventData.New(IJavaObject, Long)
 - uid: MASES.JNet.Specific.JNetEventData.#ctor*
   name: JNetEventData
   href: api/MASES.JNet.Specific.JNetEventData.html#MASES_JNet_Specific_JNetEventData__ctor_
@@ -897740,25 +897835,23 @@ references:
   fullName.vb: MASES.JNet.Specific.JNetStream(Of T)
   nameWithType: JNetStream<T>
   nameWithType.vb: JNetStream(Of T)
-- uid: MASES.JNet.Specific.JNetStream`1.#ctor(System.Object,System.IO.FileAccess,System.Boolean,System.Boolean)
-  name: JNetStream(object, FileAccess, bool, bool)
-  href: api/MASES.JNet.Specific.JNetStream-1.html#MASES_JNet_Specific_JNetStream_1__ctor_System_Object_System_IO_FileAccess_System_Boolean_System_Boolean_
-  commentId: M:MASES.JNet.Specific.JNetStream`1.#ctor(System.Object,System.IO.FileAccess,System.Boolean,System.Boolean)
-  name.vb: New(Object, FileAccess, Boolean, Boolean)
-  fullName: MASES.JNet.Specific.JNetStream<T>.JNetStream(object, System.IO.FileAccess, bool, bool)
-  fullName.vb: MASES.JNet.Specific.JNetStream(Of T).New(Object, System.IO.FileAccess, Boolean, Boolean)
-  nameWithType: JNetStream<T>.JNetStream(object, FileAccess, bool, bool)
-  nameWithType.vb: JNetStream(Of T).New(Object, FileAccess, Boolean, Boolean)
-- uid: MASES.JNet.Specific.JNetStream`1.#ctor*
-  name: JNetStream
-  href: api/MASES.JNet.Specific.JNetStream-1.html#MASES_JNet_Specific_JNetStream_1__ctor_
-  commentId: Overload:MASES.JNet.Specific.JNetStream`1.#ctor
+- uid: MASES.JNet.Specific.JNetStream`1.BaseStream
+  name: BaseStream
+  href: api/MASES.JNet.Specific.JNetStream-1.html#MASES_JNet_Specific_JNetStream_1_BaseStream
+  commentId: P:MASES.JNet.Specific.JNetStream`1.BaseStream
+  fullName: MASES.JNet.Specific.JNetStream<T>.BaseStream
+  fullName.vb: MASES.JNet.Specific.JNetStream(Of T).BaseStream
+  nameWithType: JNetStream<T>.BaseStream
+  nameWithType.vb: JNetStream(Of T).BaseStream
+- uid: MASES.JNet.Specific.JNetStream`1.BaseStream*
+  name: BaseStream
+  href: api/MASES.JNet.Specific.JNetStream-1.html#MASES_JNet_Specific_JNetStream_1_BaseStream_
+  commentId: Overload:MASES.JNet.Specific.JNetStream`1.BaseStream
   isSpec: "True"
-  name.vb: New
-  fullName: MASES.JNet.Specific.JNetStream<T>.JNetStream
-  fullName.vb: MASES.JNet.Specific.JNetStream(Of T).New
-  nameWithType: JNetStream<T>.JNetStream
-  nameWithType.vb: JNetStream(Of T).New
+  fullName: MASES.JNet.Specific.JNetStream<T>.BaseStream
+  fullName.vb: MASES.JNet.Specific.JNetStream(Of T).BaseStream
+  nameWithType: JNetStream<T>.BaseStream
+  nameWithType.vb: JNetStream(Of T).BaseStream
 - uid: MASES.JNet.Specific.JNetStream`1.CopyTo(`0[],System.Int32)
   name: CopyTo(T[], int)
   href: api/MASES.JNet.Specific.JNetStream-1.html#MASES_JNet_Specific_JNetStream_1_CopyTo__0___System_Int32_
@@ -897794,6 +897887,24 @@ references:
   fullName.vb: MASES.JNet.Specific.JNetStream(Of T).Count
   nameWithType: JNetStream<T>.Count
   nameWithType.vb: JNetStream(Of T).Count
+- uid: MASES.JNet.Specific.JNetStream`1.Create(System.Object,System.IO.FileAccess,System.Boolean,System.Boolean)
+  name: Create(object, FileAccess, bool, bool)
+  href: api/MASES.JNet.Specific.JNetStream-1.html#MASES_JNet_Specific_JNetStream_1_Create_System_Object_System_IO_FileAccess_System_Boolean_System_Boolean_
+  commentId: M:MASES.JNet.Specific.JNetStream`1.Create(System.Object,System.IO.FileAccess,System.Boolean,System.Boolean)
+  name.vb: Create(Object, FileAccess, Boolean, Boolean)
+  fullName: MASES.JNet.Specific.JNetStream<T>.Create(object, System.IO.FileAccess, bool, bool)
+  fullName.vb: MASES.JNet.Specific.JNetStream(Of T).Create(Object, System.IO.FileAccess, Boolean, Boolean)
+  nameWithType: JNetStream<T>.Create(object, FileAccess, bool, bool)
+  nameWithType.vb: JNetStream(Of T).Create(Object, FileAccess, Boolean, Boolean)
+- uid: MASES.JNet.Specific.JNetStream`1.Create*
+  name: Create
+  href: api/MASES.JNet.Specific.JNetStream-1.html#MASES_JNet_Specific_JNetStream_1_Create_
+  commentId: Overload:MASES.JNet.Specific.JNetStream`1.Create
+  isSpec: "True"
+  fullName: MASES.JNet.Specific.JNetStream<T>.Create
+  fullName.vb: MASES.JNet.Specific.JNetStream(Of T).Create
+  nameWithType: JNetStream<T>.Create
+  nameWithType.vb: JNetStream(Of T).Create
 - uid: MASES.JNet.Specific.JNetStream`1.Dispose
   name: Dispose()
   href: api/MASES.JNet.Specific.JNetStream-1.html#MASES_JNet_Specific_JNetStream_1_Dispose
@@ -897845,6 +897956,23 @@ references:
   fullName.vb: MASES.JNet.Specific.JNetStream(Of T).GetEnumerator
   nameWithType: JNetStream<T>.GetEnumerator
   nameWithType.vb: JNetStream(Of T).GetEnumerator
+- uid: MASES.JNet.Specific.JNetStream`1.IsCopy
+  name: IsCopy
+  href: api/MASES.JNet.Specific.JNetStream-1.html#MASES_JNet_Specific_JNetStream_1_IsCopy
+  commentId: P:MASES.JNet.Specific.JNetStream`1.IsCopy
+  fullName: MASES.JNet.Specific.JNetStream<T>.IsCopy
+  fullName.vb: MASES.JNet.Specific.JNetStream(Of T).IsCopy
+  nameWithType: JNetStream<T>.IsCopy
+  nameWithType.vb: JNetStream(Of T).IsCopy
+- uid: MASES.JNet.Specific.JNetStream`1.IsCopy*
+  name: IsCopy
+  href: api/MASES.JNet.Specific.JNetStream-1.html#MASES_JNet_Specific_JNetStream_1_IsCopy_
+  commentId: Overload:MASES.JNet.Specific.JNetStream`1.IsCopy
+  isSpec: "True"
+  fullName: MASES.JNet.Specific.JNetStream<T>.IsCopy
+  fullName.vb: MASES.JNet.Specific.JNetStream(Of T).IsCopy
+  nameWithType: JNetStream<T>.IsCopy
+  nameWithType.vb: JNetStream(Of T).IsCopy
 - uid: MASES.JNet.Specific.JNetStream`1.Item(System.Int32)
   name: this[int]
   href: api/MASES.JNet.Specific.JNetStream-1.html#MASES_JNet_Specific_JNetStream_1_Item_System_Int32_
