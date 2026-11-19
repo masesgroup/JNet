@@ -90,20 +90,20 @@ public class ByteArrayTransferBenchmarks
     [GlobalCleanup]
     public void Cleanup()
     {
-        _jClass?.Dispose();
+        _instance?.Dispose();
     }
 
     [Benchmark(Baseline = true)]
     public void InvokeByteArrayDirect()
     {
-        var res = _jClass.Invoke<byte[]>("getArray");
+        var res = _instance.Invoke<byte[]>("getArray");
         if (!res.SequenceEqual(_expected)) throw new System.Exception("Mismatch in InvokeByteArrayDirect.");
     }
 
     [Benchmark]
     public void GetArrayViaStreamChunked()
     {
-        using var res = _jClass.Invoke("getArray") is IJavaArray array ? array : throw new System.InvalidOperationException("getArray did not return an IJavaArray.");
+        using var res = _instance.Invoke("getArray") is IJavaArray array ? array : throw new System.InvalidOperationException("getArray did not return an IJavaArray.");
         using JCOBridgeStream<byte> stream = res.ToStream<byte>(forceRawMemory: ForceRawMemory);
         if (!stream.AreEqualChunked(_expected)) throw new System.Exception("Mismatch in GetArrayViaStreamChunked.");
     }
@@ -111,7 +111,7 @@ public class ByteArrayTransferBenchmarks
     [Benchmark]
     public void GetArrayViaStreamSpan()
     {
-        using var res = _jClass.Invoke("getArray") is IJavaArray array ? array : throw new System.InvalidOperationException("getArray did not return an IJavaArray.");
+        using var res = _instance.Invoke("getArray") is IJavaArray array ? array : throw new System.InvalidOperationException("getArray did not return an IJavaArray.");
         using JCOBridgeStream<byte> stream = res.ToStream<byte>(forceRawMemory: ForceRawMemory);
         if (!stream.AsSpan().SequenceEqual(_expected)) throw new System.Exception("Mismatch in GetArrayViaStreamSpan.");
     }

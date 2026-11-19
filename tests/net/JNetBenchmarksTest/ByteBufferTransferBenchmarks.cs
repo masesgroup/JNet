@@ -66,13 +66,13 @@ public class ByteBufferTransferBenchmarks
     [GlobalCleanup]
     public void Cleanup()
     {
-        _jClass?.Dispose();
+        _instance?.Dispose();
     }
 
     [Benchmark(Baseline = true)]
     public void GetByteBufferToArray()
     {
-        using var res = _jClass.Invoke<ByteBuffer>("getByteBuffer");
+        using var res = _instance.Invoke<ByteBuffer>("getByteBuffer");
         var array = res.ToArray();
         if (array.Length != Length || !array.SequenceEqual(_expected)) throw new System.Exception("Mismatch in GetByteBufferToArray.");
     }
@@ -80,7 +80,7 @@ public class ByteBufferTransferBenchmarks
     [Benchmark]
     public void GetByteBufferStreamNaive()
     {
-        using var res = _jClass.Invoke<ByteBuffer>("getByteBuffer");
+        using var res = _instance.Invoke<ByteBuffer>("getByteBuffer");
         using var stream = res.ToStream();
         if (!stream.AreEqualNaive(_expected)) throw new System.Exception("Mismatch in GetByteBufferStreamNaive.");
     }
@@ -88,7 +88,7 @@ public class ByteBufferTransferBenchmarks
     [Benchmark]
     public void GetByteBufferStreamChunked()
     {
-        using var res = _jClass.Invoke<ByteBuffer>("getByteBuffer");
+        using var res = _instance.Invoke<ByteBuffer>("getByteBuffer");
         using var stream = res.ToStream();
         if (!stream.AreEqualChunked(_expected)) throw new System.Exception("Mismatch in GetByteBufferStreamChunked.");
     }
@@ -96,7 +96,7 @@ public class ByteBufferTransferBenchmarks
     [Benchmark]
     public void GetByteBufferDirectSpan()
     {
-        using var res = _jClass.Invoke<ByteBuffer>("getByteBuffer");
+        using var res = _instance.Invoke<ByteBuffer>("getByteBuffer");
         JCOBridgeDirectBuffer<byte> db = res.ToDirectBuffer(false);
         var span = db.AsSpan();
         if (span.Length != Length || !span.SequenceEqual(_expected)) throw new System.Exception("Mismatch in GetByteBufferDirectSpan.");

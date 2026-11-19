@@ -71,6 +71,6 @@ public class PredicateSustainedBenchmarks
     [Benchmark(OperationsPerInvoke = TotalCallbacks)]
     public void PredicateSustained()
     {
-        _jClass.InvokeWithSignature(_method, "(I)Z", TotalCallbacks);
+        _instance.InvokeWithSignature(_method, "(I)Z", TotalCallbacks);
     }
 }

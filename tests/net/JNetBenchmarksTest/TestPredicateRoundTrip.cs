@@ -71,6 +71,6 @@ public class PredicateRoundTripBenchmarks
     [Benchmark]
     public void PredicateRoundTrip()
     {
-        _jClass.InvokeWithSignature(_method, "()Z");
+        _instance.InvokeWithSignature(_method, "()Z");
     }
 }
