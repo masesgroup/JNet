@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 	<Import Project="..\Common\Common.props" />
 	<PropertyGroup>
 		<LangVersion>preview</LangVersion>
@@ -9,7 +9,7 @@
 		<Description>JNetBenchmarksTest - a test tool for JNet</Description>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="BenchmarkDotNet" Version="0.15.8" />
+		<PackageReference Include="BenchmarkDotNet" Version="0.16.0-preview.2" />
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="..\Common\Initializer.cs" Link="Initializer.cs" />
