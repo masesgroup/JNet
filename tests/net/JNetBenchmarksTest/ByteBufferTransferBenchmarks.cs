@@ -36,7 +36,7 @@ public class ByteBufferTransferBenchmarks
     [Params(false, true)]
     public bool UseCriticalMethods;
 
-    IJavaObject _jClass;
+    IJavaObject _instance;
     byte[] _expected;
 
     [GlobalSetup]
@@ -58,7 +58,9 @@ public class ByteBufferTransferBenchmarks
             _expected[i] = (byte)(i % sbyte.MaxValue);
         }
 
-        _jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", Length) as IJavaObject;
+        if (JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", Length) is not IJavaObject instance)
+            throw new System.InvalidOperationException("Unable to create JVM instance of 'org.mases.jnet.TestPerformance'.");
+        _instance = instance;
     }
 
     [GlobalCleanup]

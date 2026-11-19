@@ -39,7 +39,7 @@ public class PredicateSustainedBenchmarks
     private const int TotalCallbacks = 100000;
 
     Predicate<object> _predicate;
-    IJavaObject _jClass;
+    IJavaObject _instance;
     string _method;
 
     [GlobalSetup]
@@ -57,7 +57,9 @@ public class PredicateSustainedBenchmarks
             OnTest = (o) => true
         };
 
-        _jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance", _predicate) as IJavaObject;
+        if (JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance", _predicate) is not IJavaObject instance)
+            throw new System.InvalidOperationException("Unable to create JVM instance of 'org.mases.jnet.TestPerformance'.");
+        _instance = instance;
     }
 
     [GlobalCleanup]
