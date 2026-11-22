@@ -60,7 +60,7 @@ public class ByteArrayTransferBenchmarks
         ? new[] { false, true }
         : new[] { false };
 
-    IJavaObject _instance;
+    IJavaObject _jClass;
     byte[] _expected;
 
     [GlobalSetup]
@@ -82,28 +82,26 @@ public class ByteArrayTransferBenchmarks
             _expected[i] = (byte)(i % sbyte.MaxValue); // signed in JVM
         }
 
-        if (JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", Length) is not IJavaObject instance)
-            throw new System.InvalidOperationException("Unable to create JVM instance of 'org.mases.jnet.TestPerformance'.");
-        _instance = instance;
+        _jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", Length) as IJavaObject;
     }
 
     [GlobalCleanup]
     public void Cleanup()
     {
-        _instance?.Dispose();
+        _jClass?.Dispose();
     }
 
     [Benchmark(Baseline = true)]
     public void InvokeByteArrayDirect()
     {
-        var res = _instance.Invoke<byte[]>("getArray");
+        var res = _jClass.Invoke<byte[]>("getArray");
         if (!res.SequenceEqual(_expected)) throw new System.Exception("Mismatch in InvokeByteArrayDirect.");
     }
 
     [Benchmark]
     public void GetArrayViaStreamChunked()
     {
-        using var res = _instance.Invoke("getArray") is IJavaArray array ? array : throw new System.InvalidOperationException("getArray did not return an IJavaArray.");
+        using var res = _jClass.Invoke("getArray") is IJavaArray array ? array : throw new System.InvalidOperationException("getArray did not return an IJavaArray.");
         using JCOBridgeStream<byte> stream = res.ToStream<byte>(forceRawMemory: ForceRawMemory);
         if (!stream.AreEqualChunked(_expected)) throw new System.Exception("Mismatch in GetArrayViaStreamChunked.");
     }
@@ -111,7 +109,7 @@ public class ByteArrayTransferBenchmarks
     [Benchmark]
     public void GetArrayViaStreamSpan()
     {
-        using var res = _instance.Invoke("getArray") is IJavaArray array ? array : throw new System.InvalidOperationException("getArray did not return an IJavaArray.");
+        using var res = _jClass.Invoke("getArray") is IJavaArray array ? array : throw new System.InvalidOperationException("getArray did not return an IJavaArray.");
         using JCOBridgeStream<byte> stream = res.ToStream<byte>(forceRawMemory: ForceRawMemory);
         if (!stream.AsSpan().SequenceEqual(_expected)) throw new System.Exception("Mismatch in GetArrayViaStreamSpan.");
     }

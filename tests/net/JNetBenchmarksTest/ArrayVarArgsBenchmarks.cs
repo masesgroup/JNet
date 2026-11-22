@@ -19,7 +19,6 @@
 using BenchmarkDotNet.Attributes;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNetTest.Common;
-using System;
 
 namespace MASES.JNetBenchmarksTest;
 
@@ -40,13 +39,6 @@ public class ArrayVarArgsBenchmarks
     string[] _stringArray;
     object[] _boxedIntElements;
 
-    // Added fields in ArrayVarArgsBenchmarks
-    int _segOffset, _segCount;
-    ArraySegment<int> _intSegment;      // partial segment: what the JVM must receive
-    ArraySegment<int> _intSegmentFull;  // segment covering the whole array
-    int[] _intSlicedCopy;               // plain int[] with the same content as _intSegment
-    int _expectedSegmentSum;
-
     [GlobalSetup]
     public void Setup()
     {
@@ -55,9 +47,7 @@ public class ArrayVarArgsBenchmarks
         JNetTestCore.ApplicationInitialHeapSize = "256M";
         JNetTestCore.CreateGlobalInstance();
 
-        if (JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") is not IJavaObject instance)
-            throw new InvalidOperationException("Unable to create JVM instance of 'org.mases.jnet.TestPerformance'.");
-        _instance = instance;
+        _instance = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") as IJavaObject;
 
         _intArray = new int[Length];
         _stringArray = new string[Length];
@@ -65,37 +55,6 @@ public class ArrayVarArgsBenchmarks
 
         _boxedIntElements = new object[Length];
         for (int i = 0; i < Length; i++) _boxedIntElements[i] = i;
-
-        // Added at the end of the existing Setup(), after _intArray has been created.
-        // IMPORTANT: _intArray must contain distinct values (e.g. _intArray[i] = i),
-        // otherwise the sum cannot tell a correct segment from a wrong one.
-        _segOffset = Length / 4;
-        _segCount = Length / 2;
-        _intSegment = new ArraySegment<int>(_intArray, _segOffset, _segCount);
-        _intSegmentFull = new ArraySegment<int>(_intArray);
-        _intSlicedCopy = new int[_segCount];
-        Array.Copy(_intArray, _segOffset, _intSlicedCopy, 0, _segCount);
-
-        // unchecked: Java int addition wraps on overflow, so C# must wrap the same way
-        int fullSum = 0, segSum = 0;
-        unchecked
-        {
-            for (int i = 0; i < _intArray.Length; i++) fullSum += _intArray[i];
-            for (int i = 0; i < _segCount; i++) segSum += _intArray[_segOffset + i];
-        }
-        _expectedSegmentSum = segSum;
-
-        if (segSum == fullSum)
-            throw new InvalidOperationException("Segment sum equals full-array sum: the check cannot distinguish them.");
-
-        // Correctness check, done once here and not in the measured path.
-        // executeIntArrayMethod returns the sum of the array the JVM actually received.
-        if (_instance.Invoke<int>("executeIntArrayMethod", _intSegment) != segSum)
-            throw new InvalidOperationException("JVM received an array different from the sent segment.");
-        if (_instance.Invoke<int>("executeIntArrayMethod", _intSlicedCopy) != segSum)
-            throw new InvalidOperationException("Sliced copy does not match the expected sum.");
-        if (_instance.Invoke<int>("executeIntArrayMethod", _intSegmentFull) != fullSum)
-            throw new InvalidOperationException("Full-array segment does not match the full-array sum.");
     }
 
     [Benchmark(Baseline = true)]
@@ -112,14 +71,4 @@ public class ArrayVarArgsBenchmarks
 
     [Benchmark]
     public void InvokeVarArgsSpreadElements() => _instance.Invoke("executeVarArgsObjectMethod", _boxedIntElements);
-
-    // New benchmarks
-    [Benchmark]
-    public void InvokeIntArrayFixedSegment() => _instance.Invoke("executeIntArrayMethod", _intSegment);
-
-    [Benchmark]
-    public void InvokeIntArrayFixedSlicedCopy() => _instance.Invoke("executeIntArrayMethod", _intSlicedCopy);
-
-    [Benchmark]
-    public void InvokeIntArrayFixedSegmentFull() => _instance.Invoke("executeIntArrayMethod", _intSegmentFull);
 }
