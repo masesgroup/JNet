@@ -15,11 +15,14 @@
     </ItemGroup>
 
     <!-- Workaround for BenchmarkDotNet 0.16+ isolated build/execution directories (.bdn/1/b) -->
-    <Target Name="SyncBenchmarkOutputForBdn" AfterTargets="Build" Condition="$(MSBuildProjectName.EndsWith('-gen'))">
+    <Target Name="SyncBenchmarkOutputForBdn" AfterTargets="Build" Condition="'$(MSBuildProjectName)' == 'gen' or $(AssemblyName.EndsWith('-gen'))">
         <PropertyGroup>
             <!-- Resolve the shared repository output directory (with or without TargetFramework subfolder) -->
             <OriginalOutDir Condition="Exists('$(MSBuildThisFileDirectory)bin\$(TargetFramework)\')">$(MSBuildThisFileDirectory)bin\$(TargetFramework)\</OriginalOutDir>
             <OriginalOutDir Condition="'$(OriginalOutDir)' == ''">$(MSBuildThisFileDirectory)bin\</OriginalOutDir>
+            <!-- BDN 0.16 passes ArtifactsPath=.../.bdn/1/a and executes in .../.bdn/1/b -->
+            <BdnExecDir Condition="'$(ArtifactsPath)' != ''">$([System.IO.Path]::GetFullPath('$(ArtifactsPath)\..\b'))\</BdnExecDir>
+            <BdnExecDir Condition="'$(BdnExecDir)' == ''">$(OutputPath)</BdnExecDir>
         </PropertyGroup>
         <ItemGroup>
             <!-- Include all runtime assets (JARs, native libraries, configs) while excluding the host entry-point files -->
@@ -27,7 +30,7 @@
                               Exclude="$(OriginalOutDir)JNetBenchmarksTest.exe;$(OriginalOutDir)JNetBenchmarksTest.dll;$(OriginalOutDir)JNetBenchmarksTest.pdb;$(OriginalOutDir)JNetBenchmarksTest.deps.json;$(OriginalOutDir)JNetBenchmarksTest.runtimeconfig.json" />
         </ItemGroup>
         <Copy SourceFiles="@(AllOriginalFiles)"
-              DestinationFiles="@(AllOriginalFiles->'$(OutputPath)%(RecursiveDir)%(Filename)%(Extension)')"
+              DestinationFiles="@(AllOriginalFiles->'$(BdnExecDir)%(RecursiveDir)%(Filename)%(Extension)')"
               SkipUnchangedFiles="true" />
     </Target>
 </Project>
