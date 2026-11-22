@@ -35,9 +35,7 @@ public class MultiParamInvokeBenchmarks
         JNetTestCore.ApplicationHeapSize = "4G";
         JNetTestCore.ApplicationInitialHeapSize = "256M";
         JNetTestCore.CreateGlobalInstance();
-        if (JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") is not IJavaObject instance)
-            throw new System.InvalidOperationException("Unable to create JVM instance of 'org.mases.jnet.TestPerformance'.");
-        _instance = instance;
+        _instance = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") as IJavaObject;
     }
 
     [Benchmark(Baseline = true)]

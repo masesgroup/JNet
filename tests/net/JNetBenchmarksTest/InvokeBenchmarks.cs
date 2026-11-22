@@ -37,10 +37,8 @@ public class InvokeBenchmarks
         JNetTestCore.ApplicationInitialHeapSize = "256M";
         JNetTestCore.CreateGlobalInstance();
 
-        _staticClass = JNetTestCore.GlobalInstance.JVM.GetClass("org.mases.jnet.TestPerformance") ?? throw new System.InvalidOperationException("Unable to identify JVM class of 'org.mases.jnet.TestPerformance'.");
-        if (JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") is not IJavaObject instance)
-            throw new System.InvalidOperationException("Unable to create JVM instance of 'org.mases.jnet.TestPerformance'.");
-        _instance = instance;
+        _staticClass = JNetTestCore.GlobalInstance.JVM.GetClass("org.mases.jnet.TestPerformance");
+        _instance = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") as IJavaObject;
     }
 
     // Caso critico: nessun parametro, statico — il più sensibile

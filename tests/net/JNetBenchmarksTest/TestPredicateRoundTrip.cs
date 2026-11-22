@@ -37,7 +37,7 @@ public class PredicateRoundTripBenchmarks
     public bool ContinueSecondCheck;
 
     Predicate<object> _predicate;
-    IJavaObject _instance;
+    IJavaObject _jClass;
     string _method;
 
     [GlobalSetup]
@@ -55,9 +55,7 @@ public class PredicateRoundTripBenchmarks
             OnTest = (o) => true
         };
 
-        if (JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance", _predicate) is not IJavaObject instance)
-            throw new System.InvalidOperationException("Unable to create JVM instance of 'org.mases.jnet.TestPerformance'.");
-        _instance = instance;
+        _jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance", _predicate) as IJavaObject;
     }
 
     [GlobalCleanup]
@@ -71,6 +69,6 @@ public class PredicateRoundTripBenchmarks
     [Benchmark]
     public void PredicateRoundTrip()
     {
-        _instance.InvokeWithSignature(_method, "()Z");
+        _jClass.InvokeWithSignature(_method, "()Z");
     }
 }

@@ -39,7 +39,7 @@ public class PredicateSustainedBenchmarks
     private const int TotalCallbacks = 100000;
 
     Predicate<object> _predicate;
-    IJavaObject _instance;
+    IJavaObject _jClass;
     string _method;
 
     [GlobalSetup]
@@ -57,9 +57,7 @@ public class PredicateSustainedBenchmarks
             OnTest = (o) => true
         };
 
-        if (JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance", _predicate) is not IJavaObject instance)
-            throw new System.InvalidOperationException("Unable to create JVM instance of 'org.mases.jnet.TestPerformance'.");
-        _instance = instance;
+        _jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance", _predicate) as IJavaObject;
     }
 
     [GlobalCleanup]
@@ -71,6 +69,6 @@ public class PredicateSustainedBenchmarks
     [Benchmark(OperationsPerInvoke = TotalCallbacks)]
     public void PredicateSustained()
     {
-        _instance.InvokeWithSignature(_method, "(I)Z", TotalCallbacks);
+        _jClass.InvokeWithSignature(_method, "(I)Z", TotalCallbacks);
     }
 }
