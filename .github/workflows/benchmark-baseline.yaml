@@ -142,14 +142,7 @@ jobs:
 
       - name: Run benchmarks
         run: |
-          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/core/${{ env.LABEL }} --anyCategories=Core --keepFiles
-
-      - name: Debug .bdn b
-        if: always()
-        shell: bash
-        run: |
-          ls -la tests/net/JNetBenchmarksTest/.bdn/1/b
-          ls -la tests/net/JNetBenchmarksTest/.bdn/1/b/jars || echo "NO jars in b"
+          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/core/${{ env.LABEL }} --anyCategories=Core
 
       - name: Fail fast on benchmark issues
         shell: bash

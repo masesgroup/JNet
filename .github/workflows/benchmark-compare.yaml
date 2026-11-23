@@ -205,6 +205,12 @@ jobs:
         run: |
           dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }}
 
+      - name: Check failed benchmarks
+        shell: bash
+        run: |
+          grep -l '"Statistics": null' results-current/results/*.json results-baseline/results/*.json || echo "no failures"
+          grep -m3 -E "Exception|Unable|not available" results-baseline/BenchmarkRun-*.log
+
       - name: Show results-current folder
         shell: bash
         run: ls -lasR ./results-current
