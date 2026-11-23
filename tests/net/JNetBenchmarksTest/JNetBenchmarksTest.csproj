@@ -15,8 +15,8 @@
 		<Compile Include="..\Common\Initializer.cs" Link="Initializer.cs" />
 	</ItemGroup>
 	<ItemGroup>
-		<None Include="..\..\..\jars\jnet-*"
-			  Link="jars\%(Filename)%(Extension)"
+		<None Include="..\..\..\jars\**\*"
+			  Link="jars\%(RecursiveDir)%(Filename)%(Extension)"
 			  CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
 </Project>

@@ -101,7 +101,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p jars
-          cp bin/${{ matrix.framework }}/jars/jnet-* jars/
+          cp -r bin/${{ matrix.framework }}/jars/. jars/
           ls -la jars/
 
       - name: Set up JDK distribution
@@ -205,7 +205,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p jars
-          cp bin/${{ matrix.framework }}/jars/jnet-* jars/
+          cp -r bin/${{ matrix.framework }}/jars/. jars/
           ls -la jars/
 
       - name: Set up JDK distribution
