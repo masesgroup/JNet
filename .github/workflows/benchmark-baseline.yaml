@@ -604,66 +604,83 @@ jobs:
 
           LATEST=src/documentation/articles/benchmark-latest.md
 
-          # Prefix every table row with the label of the matrix cell it belongs to
-          # (the "## label" heading in benchmark-latest.md), separated by a tab.
-          TAGGED=$(awk '/^## /{label=substr($0,4); next} /\|.*\|/{print label "\t" $0}' "$LATEST")
+          # Normalize every table row to TSV:
+          # label, method, params, mean, error, stddev, allocated
+          # Columns are located through each table's header row, so thousands
+          # separators ("3,002.58 ns"), bold markers and extra columns are harmless.
+          ROWS=$(awk -F'|' '
+            function trim(s) { gsub(/^[ \t*]+|[ \t*]+$/, "", s); return s }
+            function get(name) { return (name in col) ? trim($(col[name])) : "" }
+            /^## / { label = trim(substr($0, 4)); next }
+            /^\|/ {
+              if ($0 ~ /^[|: -]+$/) next                      # separator row
+              if ($0 ~ /\| *Method *\|/) {                    # header row
+                delete col
+                for (i = 2; i < NF; i++) col[trim($i)] = i
+                next
+              }
+              if (!("Mean" in col) || !("Method" in col)) next
+              params = ""
+              for (i = col["Method"] + 1; i < col["Mean"]; i++)
+                params = params (params == "" ? "" : ",") trim($i)
+              alloc = get("Allocated"); if (alloc == "-") alloc = "0 B"
+              printf "%s\t%s\t%s\t%s\t%s\t%s\t%s\n", label, get("Method"), params, get("Mean"), get("Error"), get("StdDev"), alloc
+            }
+          ' "$LATEST")
 
-          # Print "mean,stderr,stddev,cell" for the best (lowest Mean) row matching
-          # the pattern across all matrix cells. Mean, StdErr and StdDev always
-          # come from the same row, so they are consistent with each other.
-          extract_stats() {
-            local pattern="$1" best label row
-
-            best=$(grep -E "$pattern" <<< "$TAGGED" | while IFS= read -r line; do
-              row="${line#*$'\t'}"
-
-              # First time value in the row is the Mean
-              first=$(echo "$row" | grep -oE '[0-9]+\.[0-9]+ ?(ns|us|μs|ms)' | head -1)
-              [ -z "$first" ] && continue
-
-              # Normalize to nanoseconds so rows with different units compare correctly
-              ns=$(echo "$first" | awk '{v=$1; u=$2; if(u=="us"||u=="μs")v*=1e3; else if(u=="ms")v*=1e6; printf "%.3f\n", v}')
-              printf '%s\t%s\n' "$ns" "$line"
-            done | sort -g -k1,1 | head -1 | cut -f2-)
-
-            if [ -z "$best" ]; then
-              echo "N/A,N/A,N/A,N/A"
-              return
-            fi
-
-            label="${best%%$'\t'*}"
-            row="${best#*$'\t'}"
-
-            # Mean, StdErr, StdDev (bold markers removed), followed by the cell label
-            stats=$(echo "$row" | grep -oE '(\*\*)?[0-9]+\.[0-9]+ ?(ns|us|μs|ms)(\*\*)?' | head -3 | sed 's/\*\*//g' | tr '\n' ',')
-            echo "${stats}${label}"
+          # pick METHOD [PARAMS_REGEX]
+          # Median row (by Mean, normalized to ns) across all matrix cells.
+          # Mean, Error, StdDev and Allocated come from the same median row.
+          # Prints "mean|error|stddev|allocated|min|max|runs".
+          pick() {
+            local out
+            out=$(awk -F'\t' -v m="$1" -v p="${2:-.*}" '
+              function ns(s,  a, v, u) {
+                split(s, a, " "); v = a[1]; gsub(",", "", v); u = a[2]
+                if (u == "ns") return v
+                if (u == "ms") return v * 1e6
+                if (u == "s")  return v * 1e9
+                return v * 1e3                                 # us / μs / µs
+              }
+              $2 == m && $3 ~ p && $4 ~ /^[0-9]/ { k++; v[k] = ns($4); row[k] = $0 }
+              END {
+                if (!k) exit
+                for (i = 1; i <= k; i++) idx[i] = i
+                for (i = 2; i <= k; i++) {                     # insertion sort by Mean in ns
+                  t = idx[i]; j = i - 1
+                  while (j > 0 && v[idx[j]] > v[t]) { idx[j+1] = idx[j]; j-- }
+                  idx[j+1] = t
+                }
+                split(row[idx[int((k + 1) / 2)]], f, "\t")
+                split(row[idx[1]], lo, "\t"); split(row[idx[k]], hi, "\t")
+                print f[4] "|" f[5] "|" f[6] "|" f[7] "|" lo[4] "|" hi[4] "|" k
+              }
+            ' <<< "$ROWS")
+            echo "${out:-N/A|N/A|N/A|N/A|N/A|N/A|0}"
           }
 
-          # 1. Static invocation - InvokeWithSignature no-arg
-          IFS=, read -r INVOKE_MEAN INVOKE_STDERR INVOKE_STDDEV INVOKE_CELL <<< "$(extract_stats 'InvokeStaticEmptyWithSignature')"
+          # bullet "Description" METHOD [PARAMS_REGEX]
+          bullet() {
+            local mean err dev alloc min max runs
+            IFS='|' read -r mean err dev alloc min max runs <<< "$(pick "$2" "${3:-.*}")"
+            [ "$mean" = "N/A" ] && echo "::warning::Could not extract summary values for $2 ${3:-}." >&2
+            printf '  * %s: Median Mean %s (min %s, max %s, %s runs), Error %s, StdDev %s, Allocated %s' \
+              "$1" "$mean" "$min" "$max" "$runs" "$err" "$dev" "$alloc"
+          }
 
-          # 2. Static invocation - Invoke with one argument
-          IFS=, read -r FEEDBACK_MEAN FEEDBACK_STDERR FEEDBACK_STDDEV FEEDBACK_CELL <<< "$(extract_stats 'InvokeStaticWithFeedback')"
-
-          # 3. First gate discard - byIndex=True, ContinueFirstCheck=False
-          # CLR checks delegates/overloads and returns immediately to JVM, no data processed
-          IFS=, read -r FIRSTGATE_MEAN FIRSTGATE_STDERR FIRSTGATE_STDDEV FIRSTGATE_CELL <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)')"
-
-          # 4. Full processing - byIndex=True, ContinueFirstCheck=True, ContinueSecondCheck=True
-          # CLR converts event data to typed CLR object and invokes the handler
-          IFS=, read -r FULLPATH_MEAN FULLPATH_STDERR FULLPATH_STDDEV FULLPATH_CELL <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)')"
-
-          [ "$INVOKE_MEAN" = "N/A" ]    && echo "::warning::Could not extract invoke summary values."
-          [ "$FEEDBACK_MEAN" = "N/A" ]  && echo "::warning::Could not extract feedback summary values."
-          [ "$FIRSTGATE_MEAN" = "N/A" ] && echo "::warning::Could not extract first-gate summary values."
-          [ "$FULLPATH_MEAN" = "N/A" ]  && echo "::warning::Could not extract full-path summary values."
-
-          # Best case across the CI matrix, with the cell that produced each value
-          BLOCK=$(printf '  * Static no-arg invocation: Mean %s, StdErr %s, StdDev %s (%s)\n  * Static invocation with feedback: Mean %s, StdErr %s, StdDev %s (%s)\n  * Sustained JVM→.NET callback (first gate discard): Mean %s, StdErr %s, StdDev %s (%s)\n  * Sustained JVM→.NET callback (full processing): Mean %s, StdErr %s, StdDev %s (%s)' \
-            "$INVOKE_MEAN"    "$INVOKE_STDERR"    "$INVOKE_STDDEV"    "$INVOKE_CELL" \
-            "$FEEDBACK_MEAN"  "$FEEDBACK_STDERR"  "$FEEDBACK_STDDEV"  "$FEEDBACK_CELL" \
-            "$FIRSTGATE_MEAN" "$FIRSTGATE_STDERR" "$FIRSTGATE_STDDEV" "$FIRSTGATE_CELL" \
-            "$FULLPATH_MEAN"  "$FULLPATH_STDERR"  "$FULLPATH_STDDEV"  "$FULLPATH_CELL")
+          # Median across the whole CI matrix, with min/max and number of runs
+          BLOCK=$(
+            bullet "Static no-arg invocation"                         InvokeStaticEmptyWithSignature; echo
+            bullet "Static invocation with feedback"                  InvokeStaticWithFeedback; echo
+            bullet "Sustained JVM→.NET callback (first gate discard)" PredicateSustained '^True,False,False$'; echo
+            bullet "Sustained JVM→.NET callback (full processing)"    PredicateSustained '^True,True,True$'; echo
+            bullet "Object creation"                                  NewEmpty; echo
+            bullet "Invoke with int[] (10000 elements)"               InvokeIntArrayFixed '^10000$'; echo
+            bullet "Get instance int field"                           GetInstanceIntField; echo
+            bullet "Set instance int field"                           SetInstanceIntField; echo
+            bullet "Get instance string field"                        GetInstanceStringField; echo
+            bullet "Set instance string field"                        SetInstanceStringField
+          )
 
           # Replace everything between the markers, keeping the markers themselves
           for f in README.md src/documentation/index.md; do
