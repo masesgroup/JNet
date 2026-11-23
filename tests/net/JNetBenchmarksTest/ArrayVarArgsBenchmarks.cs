@@ -27,12 +27,12 @@ namespace MASES.JNetBenchmarksTest;
 [BenchmarkCategory("Core")]
 public class ArrayVarArgsBenchmarks
 {
-    // Standard steps stay small for the routine CI matrix. 100_000 is
+    // Standard steps stay small for the routine CI matrix. 10_000 is
     // added specifically to make the per-element JNI reference cost
     // (NewGlobalRef/DeleteGlobalRef vs local-ref-in-frame) dominate over
     // the fixed call overhead, so the effect becomes visible above the
     // measurement noise floor seen at Length=10/1000.
-    [Params(10, 1_000, 100_000)]
+    [Params(10, 1_000, 10_000)]
     public int Length;
 
     IJavaObject _instance;
@@ -60,6 +60,7 @@ public class ArrayVarArgsBenchmarks
         _instance = instance;
 
         _intArray = new int[Length];
+        for (int i = 0; i < Length; i++) _intArray[i] = i;
         _stringArray = new string[Length];
         for (int i = 0; i < Length; i++) _stringArray[i] = "s" + i;
 
