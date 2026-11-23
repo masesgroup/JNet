@@ -211,16 +211,15 @@ jobs:
         run: |
           dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }}
 
-      - name: Show baseline failure reasons
-        if: always()
-        shell: bash
-        run: grep -h -E "Exception|Unable|not available" results-baseline/BenchmarkRun-*.log | grep -v "Error :" | sort | uniq -c | sort -rn | head -10
-
       - name: Fail fast on benchmark issues
         shell: bash
         run: |
           if grep -l '"Statistics": null' results-current/results/*.json results-baseline/results/*.json; then
             echo "::error::Failed benchmarks detected"
+            exit 1
+          fi
+          if grep -lE "No Workload Results were obtained|exited with code [1-9]" results-current/BenchmarkRun-*.log results-baseline/BenchmarkRun-*.log; then
+            echo "::error::Benchmark process failed (see log)"
             exit 1
           fi
 
