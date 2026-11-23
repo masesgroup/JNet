@@ -14,4 +14,9 @@
 	<ItemGroup>
 		<Compile Include="..\Common\Initializer.cs" Link="Initializer.cs" />
 	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\..\jars\jnet-*"
+			  Link="jars\%(Filename)%(Extension)"
+			  CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
 </Project>
