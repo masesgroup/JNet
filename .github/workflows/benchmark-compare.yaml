@@ -197,19 +197,27 @@ jobs:
           distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
+      - name: Restore jars (current)
+        run: mkdir -p jars && cp -r bin-current/${{ matrix.framework }}/jars/. jars/
+
       - name: Run benchmarks (current)
         run: |
           dotnet ./bin-current/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-current --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }}
+
+      - name: Restore jars (baseline)
+        run: rm -rf jars && mkdir -p jars && cp -r bin-baseline/${{ matrix.framework }}/jars/. jars/
 
       - name: Run benchmarks (baseline)
         run: |
           dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }}
 
-      - name: Check failed benchmarks
+      - name: Fail fast on benchmark issues
         shell: bash
         run: |
-          grep -l '"Statistics": null' results-current/results/*.json results-baseline/results/*.json || echo "no failures"
-          grep -m3 -E "Exception|Unable|not available" results-baseline/BenchmarkRun-*.log
+          if grep -l '"Statistics": null' results-current/results/*.json results-baseline/results/*.json; then
+            echo "::error::Failed benchmarks detected"
+            exit 1
+          fi
 
       - name: Show results-current folder
         shell: bash
