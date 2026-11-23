@@ -135,14 +135,19 @@ jobs:
 
       - name: Run benchmarks
         run: |
-          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/core/${{ env.LABEL }} --anyCategories=Core
+          dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/core/${{ env.LABEL }} --anyCategories=Core --keepFiles
+
+      - name: Debug .bdn content
+        if: always()
+        shell: bash
+        run: ls -R tests/net/JNetBenchmarksTest/.bdn/1/b | head -50
 
       - name: Fail fast on benchmark issues
         shell: bash
         run: |
           if grep -q '"Statistics": null' results/core/${{ env.LABEL }}/results/*.json; then
             echo "::error::Detected failed benchmarks (Statistics: null) in the reports!"
-            grep -l '"Statistics": null' results/core/${{ env.LABEL }}/*.json
+            grep -l '"Statistics": null' results/core/${{ env.LABEL }}/results/*.json
             exit 1
           fi
 
@@ -202,12 +207,17 @@ jobs:
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/bulk/${{ env.LABEL }} --anyCategories=BulkTransfer
 
+      - name: Debug .bdn content
+        if: always()
+        shell: bash
+        run: ls -R tests/net/JNetBenchmarksTest/.bdn/1/b | head -50
+
       - name: Fail fast on benchmark issues
         shell: bash
         run: |
           if grep -q '"Statistics": null' results/bulk/${{ env.LABEL }}/results/*.json; then
             echo "::error::Detected failed benchmarks (Statistics: null) in the reports!"
-            grep -l '"Statistics": null' results/bulk/${{ env.LABEL }}/*.json
+            grep -l '"Statistics": null' results/core/${{ env.LABEL }}/results/*.json
             exit 1
           fi
 
