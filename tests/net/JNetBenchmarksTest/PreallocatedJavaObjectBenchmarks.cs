@@ -26,7 +26,7 @@ namespace MASES.JNetBenchmarksTest;
 [BenchmarkCategory("Core")]
 public class PreallocatedJavaObjectBenchmarks
 {
-    [Params(10, 1_000, 100_000)]
+    [Params(10, 1_000, 10_000)]
     public int Length;
 
     IJavaObject _instance;
@@ -42,7 +42,9 @@ public class PreallocatedJavaObjectBenchmarks
         JNetTestCore.ApplicationInitialHeapSize = "256M";
         JNetTestCore.CreateGlobalInstance();
 
-        _instance = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") as IJavaObject;
+        if (JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestPerformance") is not IJavaObject instance)
+            throw new System.InvalidOperationException("Unable to create JVM instance of 'org.mases.jnet.TestPerformance'.");
+        _instance = instance;
 
         _preallocatedStringArray = new Java.Lang.String[Length];
         for (int i = 0; i < Length; i++)

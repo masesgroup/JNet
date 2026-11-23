@@ -197,13 +197,53 @@ jobs:
           distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN_INHERITED }}
 
+      - name: Restore jars (current)
+        run: mkdir -p jars && cp -r bin-current/${{ matrix.framework }}/jars/. jars/
+
       - name: Run benchmarks (current)
         run: |
           dotnet ./bin-current/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-current --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }}
 
+      - name: Restore jars (baseline)
+        run: rm -rf jars && mkdir -p jars && cp -r bin-baseline/${{ matrix.framework }}/jars/. jars/
+
       - name: Run benchmarks (baseline)
         run: |
           dotnet ./bin-baseline/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters fulljson --artifacts ./results-baseline --filter '${{ inputs.Filter || '*' }}' --anyCategories=${{ inputs.Categories || 'Core' }}
+
+      - name: Baseline log head and tail
+        if: always()
+        shell: bash
+        run: |
+          f=$(ls results-baseline/BenchmarkRun-*.log)
+          grep -n -m10 -iE "error|fail|validation" "$f" | cut -c1-300
+          echo "-----"
+          tail -n 15 "$f" | cut -c1-300
+
+      - name: Check benchmark results
+        shell: bash
+        run: |
+          failed=0
+
+          c=$(ls results-current/results/*-report-full.json 2>/dev/null | wc -l)
+          b=$(ls results-baseline/results/*-report-full.json 2>/dev/null | wc -l)
+          if [ "$c" -eq 0 ] || [ "$c" -ne "$b" ]; then
+            echo "::error::Report count mismatch (current=$c, baseline=$b)"
+            failed=1
+          fi
+
+          if grep -l '"Statistics": null' results-current/results/*.json results-baseline/results/*.json 2>/dev/null; then
+            echo "::error::Failed benchmarks detected (Statistics: null)"
+            failed=1
+          fi
+
+          if grep -lE "No Workload Results were obtained|exited with code [1-9]" results-current/BenchmarkRun-*.log results-baseline/BenchmarkRun-*.log 2>/dev/null; then
+            echo "::error::Benchmark process failed, reasons below"
+            grep -hE "Exception|Unable|not available" results-current/BenchmarkRun-*.log results-baseline/BenchmarkRun-*.log | grep -v "Error :" | sort | uniq -c | sort -rn | head -20
+            failed=1
+          fi
+
+          exit $failed
 
       - name: Show results-current folder
         shell: bash

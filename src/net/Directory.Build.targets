@@ -6,7 +6,7 @@
     <ItemGroup>
         <EmbeddedFiles Include="$(GeneratedAssemblyInfoFile)" />
     </ItemGroup>
-	<!-- Fix end -->
+    <!-- Fix end -->
     <ItemGroup>
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="11.0.100">
           <PrivateAssets>all</PrivateAssets>
