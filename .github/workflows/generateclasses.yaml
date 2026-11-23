@@ -76,38 +76,33 @@ jobs:
         with:
           dotnet-version: '11.x'
 
-      - name: Install sshpass
+      - name: Download pscp directly
         if: ${{ inputs.UseSpecialSettings == true }}
-        shell: bash
-        timeout-minutes: 3
+        shell: cmd
         run: |
-          export DEBIAN_FRONTEND=noninteractive
-          which sshpass || sudo apt-get install -y sshpass
+          curl -L -o "%RUNNER_TEMP%\pscp.exe" https://the.earth.li/~sgtatham/putty/latest/w64/pscp.exe
 
       - name: Download ${{ inputs.SpecialSettingsSource }} via SFTP
         if: ${{ inputs.UseSpecialSettings == true }}
-        shell: bash
+        shell: cmd
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SFTP_KNOWN_HOST }}" >> ~/.ssh/known_hosts
-          sshpass -p "${{ secrets.SFTP_PASSWORD }}" sftp -oStrictHostKeyChecking=yes ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }}:/source-files/${{ inputs.SpecialSettingsSource }} "${{ github.workspace }}/${{ inputs.SpecialSettingsSource }}"
+          %RUNNER_TEMP%\pscp.exe -hostkey "${{ secrets.SFTP_HOST_KEY }}" -pw ${{ secrets.SFTP_PASSWORD }} -batch ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }}:/source-files/${{ inputs.SpecialSettingsSource }} "${{ github.workspace }}\${{ inputs.SpecialSettingsSource }}"
 
       - name: Prepare other files
         if: ${{ inputs.UseSpecialSettings == true }}
-        shell: bash
+        shell: cmd
         run: |
-          7z e "${{ github.workspace }}/${{ inputs.SpecialSettingsSource }}" -o"${{ github.workspace }}/" -p${{ secrets.FIRST_SPECIAL_SETTINGS_PASSWORD }}
-          7z x "${{ github.workspace }}/source.info" -o"${{ github.workspace }}/Deploy/" -p${{ secrets.SPECIAL_SETTINGS_PASSWORD }} -y
+          7z e ${{ github.workspace }}\${{ inputs.SpecialSettingsSource }} -o"${{ github.workspace }}\" -p${{ secrets.FIRST_SPECIAL_SETTINGS_PASSWORD }}
+          7z x ${{ github.workspace }}\source.info -o"${{ github.workspace }}\Deploy\" -p${{ secrets.SPECIAL_SETTINGS_PASSWORD }} -y
 
       - name: List NuGet packages downloaded
         if: ${{ inputs.UseSpecialSettings == true }}
-        shell: bash
-        run: ls -la ./Deploy/*.nupkg
+        shell: cmd
+        run: dir .\Deploy\*nupkg
 
       - name: Add special repo
         if: ${{ success() && inputs.UseSpecialSettings == true }}
-        shell: bash
-        run: dotnet nuget add source "${{ github.workspace }}/Deploy/" --name localDeployNuGet
+        run: dotnet nuget add source "${{ github.workspace }}\Deploy\" --name localDeployNuGet
 
       - name: Prebuild
         run: dotnet build --no-incremental --configuration Release src\net\JNetReflector\JNetReflector.csproj
