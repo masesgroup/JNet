@@ -137,13 +137,12 @@ jobs:
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/core/${{ env.LABEL }} --anyCategories=Core --keepFiles
 
-      - name: Debug .bdn content
+      - name: Debug .bdn b
         if: always()
         shell: bash
         run: |
-          find . -type d -name ".bdn" 2>/dev/null
-          find . -type d -name "jars" 2>/dev/null | head
-          ls -R tests/net/JNetBenchmarksTest/.bdn | head -60
+          ls -la tests/net/JNetBenchmarksTest/.bdn/1/b
+          ls -la tests/net/JNetBenchmarksTest/.bdn/1/b/jars || echo "NO jars in b"
 
       - name: Fail fast on benchmark issues
         shell: bash
