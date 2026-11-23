@@ -140,7 +140,9 @@ jobs:
       - name: Debug .bdn content
         if: always()
         shell: bash
-        run: ls -R tests/net/JNetBenchmarksTest/.bdn/1/b | head -50
+        run: |
+          find . -type d -name ".bdn" 2>/dev/null
+          find . -type d -name "jars" 2>/dev/null | head
 
       - name: Fail fast on benchmark issues
         shell: bash
@@ -206,11 +208,6 @@ jobs:
       - name: Run benchmarks
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/bulk/${{ env.LABEL }} --anyCategories=BulkTransfer
-
-      - name: Debug .bdn content
-        if: always()
-        shell: bash
-        run: ls -R tests/net/JNetBenchmarksTest/.bdn/1/b | head -50
 
       - name: Fail fast on benchmark issues
         shell: bash
