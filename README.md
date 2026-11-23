@@ -106,10 +106,16 @@ JNet interop overhead is tracked continuously across .NET and JDK versions:
 
 Some best cases across the CI matrix:
 <!-- BENCHMARK-SUMMARY-START -->
-  * Static no-arg invocation: Mean 208.1 ns, StdErr 0.11 ns, StdDev 0.10 ns
-  * Static invocation with feedback: Mean 509.1 ns, StdErr 0.74 ns, StdDev 0.62 ns
-  * Sustained JVM→.NET callback (first gate discard): Mean 53.02 ns, StdErr 1.020 ns, StdDev 1.134 ns
-  * Sustained JVM→.NET callback (full processing): Mean 796.48 ns, StdErr 16.354 ns, StdDev 15.297 ns
+  * Static no-arg invocation: Median Mean 146.3 ns (min 60.94 ns, max 219.3 ns, 176 runs), Error 2.18 ns, StdDev 2.04 ns, Allocated 0 B
+  * Static invocation with feedback: Median Mean 505.2 ns (min 208.71 ns, max 599.9 ns, 176 runs), Error 0.18 ns, StdDev 0.15 ns, Allocated 248 B
+  * Sustained JVM→.NET callback (first gate discard): Median Mean 43.60 ns (min 26.89 ns, max 54.86 ns, 176 runs), Error 0.036 ns, StdDev 0.033 ns, Allocated 0 B
+  * Sustained JVM→.NET callback (full processing): Median Mean 2,571.00 ns (min 1,293.18 ns, max 3,820.85 ns, 176 runs), Error 18.804 ns, StdDev 17.589 ns, Allocated 592 B
+  * Object creation: Median Mean 789.7 ns (min 404.0 ns, max 998.2 ns, 176 runs), Error 2.15 ns, StdDev 2.01 ns, Allocated 368 B
+  * Invoke with int[] (10000 elements): Median Mean 6,215.1 ns (min 2,481.8 ns, max 9,267.8 ns, 176 runs), Error 50.55 ns, StdDev 47.28 ns, Allocated 344 B
+  * Get instance int field: Median Mean 64.42 ns (min 26.62 ns, max 85.99 ns, 176 runs), Error 0.024 ns, StdDev 0.021 ns, Allocated 24 B
+  * Set instance int field: Median Mean 86.51 ns (min 34.89 ns, max 104.34 ns, 176 runs), Error 1.456 ns, StdDev 1.362 ns, Allocated 24 B
+  * Get instance string field: Median Mean 76.62 ns (min 30.70 ns, max 92.70 ns, 176 runs), Error 1.494 ns, StdDev 1.467 ns, Allocated 0 B
+  * Set instance string field: Median Mean 526.80 ns (min 246.78 ns, max 666.33 ns, 176 runs), Error 1.373 ns, StdDev 1.217 ns, Allocated 248 B
 <!-- BENCHMARK-SUMMARY-END -->
 
 ### Recent changes
