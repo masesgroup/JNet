@@ -104,7 +104,7 @@ JNet interop overhead is tracked continuously across .NET and JDK versions:
 - [Latest benchmark results](src/documentation/articles/benchmark-latest.md)
 - [Live benchmark dashboard](https://masesgroup.com/benchmark-data/)
 
-Some results:
+Some best cases across the CI matrix:
 <!-- BENCHMARK-SUMMARY-START -->
   * Static no-arg invocation: Mean 208.1 ns, StdErr 0.11 ns, StdDev 0.10 ns
   * Static invocation with feedback: Mean 509.1 ns, StdErr 0.74 ns, StdDev 0.62 ns

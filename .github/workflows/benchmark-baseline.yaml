@@ -150,12 +150,18 @@ jobs:
           dir=results/core/${{ env.LABEL }}
           failed=0
 
-          if grep -l '"Statistics": null' $dir/results/*.json; then
-            echo "::error::Detected failed benchmarks (Statistics: null) in the reports!"
+          n=$(ls $dir/results/*-report-full.json 2>/dev/null | wc -l)
+          if [ "$n" -eq 0 ]; then
+            echo "::error::No benchmark reports produced"
             failed=1
           fi
 
-          if grep -qE "No Workload Results were obtained|exited with code [1-9]" $dir/BenchmarkRun-*.log; then
+          if grep -l '"Statistics": null' $dir/results/*.json 2>/dev/null; then
+            echo "::error::Failed benchmarks detected (Statistics: null)"
+            failed=1
+          fi
+
+          if grep -qE "No Workload Results were obtained|exited with code [1-9]" $dir/BenchmarkRun-*.log 2>/dev/null; then
             echo "::error::Benchmark process failed, reasons below"
             grep -hE "Exception|Unable|not available" $dir/BenchmarkRun-*.log | grep -v "Error :" | sort | uniq -c | sort -rn | head -20
             failed=1
@@ -232,12 +238,18 @@ jobs:
           dir=results/bulk/${{ env.LABEL }}
           failed=0
 
-          if grep -l '"Statistics": null' $dir/results/*.json; then
-            echo "::error::Detected failed benchmarks (Statistics: null) in the reports!"
+          n=$(ls $dir/results/*-report-full.json 2>/dev/null | wc -l)
+          if [ "$n" -eq 0 ]; then
+            echo "::error::No benchmark reports produced"
             failed=1
           fi
 
-          if grep -qE "No Workload Results were obtained|exited with code [1-9]" $dir/BenchmarkRun-*.log; then
+          if grep -l '"Statistics": null' $dir/results/*.json 2>/dev/null; then
+            echo "::error::Failed benchmarks detected (Statistics: null)"
+            failed=1
+          fi
+
+          if grep -qE "No Workload Results were obtained|exited with code [1-9]" $dir/BenchmarkRun-*.log 2>/dev/null; then
             echo "::error::Benchmark process failed, reasons below"
             grep -hE "Exception|Unable|not available" $dir/BenchmarkRun-*.log | grep -v "Error :" | sort | uniq -c | sort -rn | head -20
             failed=1
@@ -590,47 +602,70 @@ jobs:
         run: |
           set +o pipefail
 
+          LATEST=src/documentation/articles/benchmark-latest.md
+
+          # Prefix every table row with the label of the matrix cell it belongs to
+          # (the "## label" heading in benchmark-latest.md), separated by a tab.
+          TAGGED=$(awk '/^## /{label=substr($0,4); next} /\|.*\|/{print label "\t" $0}' "$LATEST")
+
+          # Print "mean,stderr,stddev,cell" for the best (lowest Mean) row matching
+          # the pattern across all matrix cells. Mean, StdErr and StdDev always
+          # come from the same row, so they are consistent with each other.
           extract_stats() {
-            local pattern="$1"
-            local row
-  
-            # Find the line and check if it is a Markdown table row
-            row=$(grep -m1 -E "$pattern" src/documentation/articles/benchmark-latest.md | grep -E '\|.*\|')
-  
-            if [ -z "$row" ]; then
-              echo "N/A,N/A,N/A,"
+            local pattern="$1" best label row
+
+            best=$(grep -E "$pattern" <<< "$TAGGED" | while IFS= read -r line; do
+              row="${line#*$'\t'}"
+
+              # First time value in the row is the Mean
+              first=$(echo "$row" | grep -oE '[0-9]+\.[0-9]+ ?(ns|us|μs|ms)' | head -1)
+              [ -z "$first" ] && continue
+
+              # Normalize to nanoseconds so rows with different units compare correctly
+              ns=$(echo "$first" | awk '{v=$1; u=$2; if(u=="us"||u=="μs")v*=1e3; else if(u=="ms")v*=1e6; printf "%.3f\n", v}')
+              printf '%s\t%s\n' "$ns" "$line"
+            done | sort -g -k1,1 | head -1 | cut -f2-)
+
+            if [ -z "$best" ]; then
+              echo "N/A,N/A,N/A,N/A"
               return
             fi
-  
-            # Get the first 3 time values, remove **, and join them with commas
-            echo "$row" | grep -oE '(\*\*)?[0-9]+\.[0-9]+ ?(ns|us|μs|ms)(\*\*)?' | head -3 | sed 's/\*\*//g' | tr '\n' ','
+
+            label="${best%%$'\t'*}"
+            row="${best#*$'\t'}"
+
+            # Mean, StdErr, StdDev (bold markers removed), followed by the cell label
+            stats=$(echo "$row" | grep -oE '(\*\*)?[0-9]+\.[0-9]+ ?(ns|us|μs|ms)(\*\*)?' | head -3 | sed 's/\*\*//g' | tr '\n' ',')
+            echo "${stats}${label}"
           }
 
-          # 1.  Static invocation — InvokeWithSignature no-arg
-          IFS=, read -r INVOKE_MEAN INVOKE_STDERR INVOKE_STDDEV <<< "$(extract_stats 'InvokeStaticEmptyWithSignature')"
+          # 1. Static invocation - InvokeWithSignature no-arg
+          IFS=, read -r INVOKE_MEAN INVOKE_STDERR INVOKE_STDDEV INVOKE_CELL <<< "$(extract_stats 'InvokeStaticEmptyWithSignature')"
 
-          # 2.  Static invocation — Invoke with one argument
-          IFS=, read -r FEEDBACK_MEAN FEEDBACK_STDERR FEEDBACK_STDDEV <<< "$(extract_stats 'InvokeStaticWithFeedback')"
+          # 2. Static invocation - Invoke with one argument
+          IFS=, read -r FEEDBACK_MEAN FEEDBACK_STDERR FEEDBACK_STDDEV FEEDBACK_CELL <<< "$(extract_stats 'InvokeStaticWithFeedback')"
 
-          # 3. First gate discard — byIndex=True, ContinueFirstCheck=False
+          # 3. First gate discard - byIndex=True, ContinueFirstCheck=False
           # CLR checks delegates/overloads and returns immediately to JVM, no data processed
-          IFS=, read -r FIRSTGATE_MEAN FIRSTGATE_STDERR FIRSTGATE_STDDEV <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)')"
+          IFS=, read -r FIRSTGATE_MEAN FIRSTGATE_STDERR FIRSTGATE_STDDEV FIRSTGATE_CELL <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)False(\*\*|)')"
 
-          # 4. Full processing — byIndex=True, ContinueFirstCheck=True, ContinueSecondCheck=True
+          # 4. Full processing - byIndex=True, ContinueFirstCheck=True, ContinueSecondCheck=True
           # CLR converts event data to typed CLR object and invokes the handler
-          IFS=, read -r FULLPATH_MEAN FULLPATH_STDERR FULLPATH_STDDEV <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)')"
+          IFS=, read -r FULLPATH_MEAN FULLPATH_STDERR FULLPATH_STDDEV FULLPATH_CELL <<< "$(extract_stats 'PredicateSustained.*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)[[:space:]]*\|[[:space:]]*(\*\*|)True(\*\*|)')"
 
           [ "$INVOKE_MEAN" = "N/A" ]    && echo "::warning::Could not extract invoke summary values."
           [ "$FEEDBACK_MEAN" = "N/A" ]  && echo "::warning::Could not extract feedback summary values."
           [ "$FIRSTGATE_MEAN" = "N/A" ] && echo "::warning::Could not extract first-gate summary values."
           [ "$FULLPATH_MEAN" = "N/A" ]  && echo "::warning::Could not extract full-path summary values."
 
-          BLOCK=$(printf '  * Static no-arg invocation: Mean %s, StdErr %s, StdDev %s\n  * Static invocation with feedback: Mean %s, StdErr %s, StdDev %s\n  * Sustained JVM→.NET callback (first gate discard): Mean %s, StdErr %s, StdDev %s\n  * Sustained JVM→.NET callback (full processing): Mean %s, StdErr %s, StdDev %s' \
-            "$INVOKE_MEAN"    "$INVOKE_STDERR"    "$INVOKE_STDDEV" \
-            "$FEEDBACK_MEAN"  "$FEEDBACK_STDERR"  "$FEEDBACK_STDDEV" \
-            "$FIRSTGATE_MEAN" "$FIRSTGATE_STDERR" "$FIRSTGATE_STDDEV" \
-            "$FULLPATH_MEAN"  "$FULLPATH_STDERR"  "$FULLPATH_STDDEV")
+          # Best case across the CI matrix, with the cell that produced each value
+          BLOCK=$(printf '  * Static no-arg invocation: Mean %s, StdErr %s, StdDev %s (%s)\n  * Static invocation with feedback: Mean %s, StdErr %s, StdDev %s (%s)\n  * Sustained JVM→.NET callback (first gate discard): Mean %s, StdErr %s, StdDev %s (%s)\n  * Sustained JVM→.NET callback (full processing): Mean %s, StdErr %s, StdDev %s (%s)' \
+            "$INVOKE_MEAN"    "$INVOKE_STDERR"    "$INVOKE_STDDEV"    "$INVOKE_CELL" \
+            "$FEEDBACK_MEAN"  "$FEEDBACK_STDERR"  "$FEEDBACK_STDDEV"  "$FEEDBACK_CELL" \
+            "$FIRSTGATE_MEAN" "$FIRSTGATE_STDERR" "$FIRSTGATE_STDDEV" "$FIRSTGATE_CELL" \
+            "$FULLPATH_MEAN"  "$FULLPATH_STDERR"  "$FULLPATH_STDDEV"  "$FULLPATH_CELL")
 
+          # Replace everything between the markers, keeping the markers themselves
           for f in README.md src/documentation/index.md; do
             awk -v block="$BLOCK" '
               /<!-- BENCHMARK-SUMMARY-START -->/ { print; print block; skip=1; next }
