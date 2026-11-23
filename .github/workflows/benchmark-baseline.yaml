@@ -144,6 +144,12 @@ jobs:
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/core/${{ env.LABEL }} --anyCategories=Core
 
+      - name: Show failure reasons
+        if: always()
+        shell: bash
+        run: |
+          grep -h -m5 -E "Exception|Error|Unable|not available" results/core/${{ env.LABEL }}/BenchmarkRun-*.log | sort | uniq -c | head -20
+
       - name: Fail fast on benchmark issues
         shell: bash
         run: |
@@ -215,6 +221,12 @@ jobs:
       - name: Run benchmarks
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetBenchmarksTest.dll --exporters json fulljson github --artifacts ./results/bulk/${{ env.LABEL }} --anyCategories=BulkTransfer
+
+      - name: Show failure reasons
+        if: always()
+        shell: bash
+        run: |
+          grep -h -m5 -E "Exception|Error|Unable|not available" results/core/${{ env.LABEL }}/BenchmarkRun-*.log | sort | uniq -c | head -20
 
       - name: Fail fast on benchmark issues
         shell: bash
