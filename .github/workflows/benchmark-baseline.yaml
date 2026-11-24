@@ -597,7 +597,7 @@ jobs:
             done
           } > src/documentation/articles/benchmark-latest.md
 
-      - name: Update summary values in README.md and index.md
+      - name: Update summary values in README.md, performance.md and index.md
         shell: bash
         run: |
           set +o pipefail
@@ -737,7 +737,8 @@ jobs:
 
           # Replace everything between the markers, keeping the markers themselves
           # (blank lines around the block so every renderer parses it correctly)
-          for f in README.md src/documentation/index.md; do
+          for f in README.md src/documentation/index.md src/documentation/articles/performance.md; do
+            grep -q 'BENCHMARK-SUMMARY-START' "$f" || { echo "::warning::Summary markers not found in $f." >&2; continue; }
             awk -v block="$BLOCK" '
               /<!-- BENCHMARK-SUMMARY-START -->/ { print; print ""; print block; print ""; skip=1; next }
               /<!-- BENCHMARK-SUMMARY-END -->/ { skip=0 }
@@ -853,6 +854,7 @@ jobs:
             src/documentation/index.md
             src/documentation/articles/benchmark-by-cpu.md
             src/documentation/articles/benchmark-latest.md
+            src/documentation/articles/performance.md
           body: |
             Auto-generated benchmark tables from BenchmarkDotNet.
             No changes to performance.md - separate, fully regenerated file.

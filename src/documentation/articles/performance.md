@@ -8,16 +8,35 @@ _description: Benchmark results for JNet — JVM method invocation and callback 
 This page reports benchmark results for the core JNet interop primitives: JVM method invocation from .NET and JVM→.NET callback latency.
 All benchmarks run on [GitHub Actions](https://github.com/masesgroup/JNet/actions) runners and are repeated automatically on each release across supported .NET and JDK versions.
 
-Results are reported for three JCOBridge versions — 2.6.6, 2.6.7+, and 2.6.9 — across two runtime combinations. See [JCOBridge release notes](https://www.jcobridge.com/release-notes/) for details.
-
 > [!NOTE]
 > Benchmarks are run on shared GitHub-hosted runners. Absolute numbers reflect that environment and should be read comparatively rather than as absolute throughput figures for a dedicated host.
+
+## Current results
+
+Median across the CI matrix for each CPU class; below each median, the interquartile range (IQR) and the best run observed. The spread reflects differences between OS, .NET, JDK and runner hardware, not measurement noise. The x64 columns group runners by the instruction set the runtime detected, so CPU models within a column still vary. Results per CPU model, with allocations, are in [Benchmark results by CPU model](benchmark-by-cpu.md).
+
+<!-- BENCHMARK-SUMMARY-START -->
+<!-- BENCHMARK-SUMMARY-END -->
+
+Terms used in the tables:
+
+- **`Invoke` / `IWS`** (`InvokeWithSignature`): the method is resolved by .NET-side type matching, or by name and JNI signature.
+- **`feedback`**: `false` is a no-argument `void` method; `true` takes and returns a `boolean`.
+- **`byIndex`**: the callback event is identified by a numeric index (`true`) or by a string key (`false`).
+- **First / second gate**: the two-level `ListenerShallManageEvent` filter; the first gate discards an event before any data is read, the second after the raw data is available.
+- **`Sustained`**: the JVM fires 1,000,000 callbacks toward .NET without returning control.
 
 For the full BenchmarkDotNet results across all supported .NET versions, JDK vendors, and platforms see:
 - [Latest benchmark results](benchmark-latest.md)
 - [Live benchmark dashboard](https://masesgroup.com/benchmark-data/)
 
 ---
+
+## Historical analysis
+
+The sections below are a historical analysis across JCOBridge 2.6.6, 2.6.7+ and 2.6.9. 
+The data were collected at different times, on different runners and hardware, so do not read them as absolute figures and do not compare them with the current results above. 
+Read them as guidance on how to use the tool: which strategies cost more, how costs scale and what to avoid in hot paths.
 
 ## Test environments
 
@@ -35,237 +54,14 @@ Three environments are used across this page:
 
 ---
 
-## What is measured
-
-### JVM object creation
-
-Measures the cost of creating a JVM object from .NET via three constructor resolution strategies:
-
-- **`NewEmpty`** — resolves the constructor by argument type matching.
-- **`NewWithSignature`** — resolves the constructor by JNI signature string.
-- **`DeclaredNewEmpty`** — uses a pre-declared constructor reference.
-
-### Field access
-
-Measures the cost of getting and setting JVM instance and static fields from .NET. Primitive fields (e.g. `int`) are transferred as-is; reference fields (e.g. `String`) require marshalling between JVM and CLR representations.
-
-### JVM method invocation from .NET
-
-Measures the round-trip latency of calling a JVM method from .NET through JNet, with two resolution strategies and two method signatures.
-
-**Resolution strategies:**
-- **Invoke** — the method is identified by .NET-side type matching against input arguments on every call. The JVM descriptor is cached after first resolution, but argument type validation is re-evaluated on the .NET side at each invocation.
-- **InvokeWithSignature** (`IWS`) — the method is identified by name and JNI signature string. Argument validation is delegated to the JVM, eliminating the .NET-side type matching cost.
-
-**Method signatures (`feedback`):**
-- **`feedback = false`** — method takes no arguments and returns `void`. Measures pure invocation overhead.
-- **`feedback = true`** — method takes a `boolean` argument and returns the same `boolean`. Measures the additional cost of argument passing and return value marshalling across the JNI boundary.
-
-Both static and instance method variants are tested.
-
-### Array and varargs invocation
-
-Measures the cost of passing arrays or varargs to JVM methods from .NET, across three element types and three sizes (10, 1 000, 100 000 elements):
-
-- **`InvokeIntArrayFixed`** — fixed-length `int[]` array.
-- **`InvokeVarArgsWholeArray`** — `int[]` passed as a varargs array (single JNI call).
-- **`InvokeStringArrayFixed`** — fixed-length `String[]` array — each element requires individual JVM↔CLR string marshalling.
-- **`InvokeVarArgsSpreadElements`** — each element passed as an individual varargs argument — worst case for element-by-element overhead.
-- **`InvokeIntParam`** — single `int` parameter, used as baseline.
-
-### Multi-parameter invocation
-
-Measures the overhead of passing multiple mixed-type arguments in a single JVM method call from .NET.
-
-### Callback: `TestPredicateRoundTrip` (.NET → JVM → .NET)
-
-A .NET-initiated test: .NET triggers a JVM call which immediately fires a callback back into .NET. Provides a controlled start-time marker and measures the full bidirectional round-trip. In real usage the JVM initiates the event — see `TestPredicateSustained` for the realistic reference.
-
-### Callback: `TestPredicateSustained` (JVM → .NET, sustained)
-
-A JVM-initiated test: .NET sends a single start command to JVM, which then fires 1 000 000 callback events toward the CLR autonomously without returning control to .NET. After all events are fired, the JVM returns and .NET measures the total elapsed time. Aside from the single startup call, this measures the pure cost of receiving a sustained stream of JVM-originated events — the scenario matching real-world usage (e.g. Kafka Streams functional interfaces, AWT event listeners).
-
-Both callback tests share two configuration axes (2.6.7+ only):
-
-**`byIndex` — event trigger identification:**
-- **`byIndex = false`** — the event is identified on the CLR side by a string key lookup.
-- **`byIndex = true`** — the event is identified on the CLR side by a numeric index. In both cases, JVM object arguments are retrieved as JVM objects after the trigger is received.
-
-**Two-level early-discard filter (`ListenerShallManageEvent`, 2.6.7+):**
-
-JCOBridge 2.6.7+ introduces two overloads of `ListenerShallManageEvent` on the JNet callback base class, forming a two-gate filter applied before full event handling. Both gates receive the event as a numeric index — no string conversion is performed unless explicitly requested via the name-based delegate variants.
-
-**First gate — `bool ListenerShallManageEvent(int eventIndex)`:** called before any argument data is read from the JVM. The return value:
-- **`false`** (`continueFirstCheck = false`) — discard immediately: no data is read, the handler is not invoked.
-- **`true`** (`continueFirstCheck = true`) — proceed to the second gate.
-
-The first gate is driven by one of the following, evaluated in order:
-- `ListenerShallManageEventIndex` (`Func<int, bool>`) — fastest: receives the raw event index, no string conversion.
-- `ListenerShallManageEventName` (`Func<string, bool>`) — receives the event name, resolved via `ConvertListenerEventIndexToEventName`.
-- Override of `ListenerShallManageEvent(int)` — virtual, for subclass-based filtering.
-- Default: returns `true` (all events proceed).
-
-**Second gate — `bool ListenerShallManageEvent(int eventIndex, object data)`:** called after raw argument data is available but before full event processing and handler dispatch. Allows lightweight inspection of the raw payload without paying the cost of full conversion. The return value:
-- **`false`** (`continueSecondCheck = false`) — discard after raw-data inspection: the registered handler is not invoked.
-- **`true`** (`continueSecondCheck = true`) — proceed normally: full argument conversion and handler invocation.
-
-The second gate is driven by one of the following, evaluated in order:
-- `ListenerShallManageEventIndexWithData` (`Func<int, object, bool>`) — receives the raw event index and raw data.
-- `ListenerShallManageEventNameWithData` (`Func<string, object, bool>`) — receives the event name and raw data.
-- Override of `ListenerShallManageEvent(int, object)` — virtual.
-- Default: returns `true`.
-
-The combination `continueFirstCheck = false, continueSecondCheck = true` is never reached and is not tested. Default for both gates is `true` (full processing).
-
----
-
-## JVM object creation (BenchmarkDotNet, `ubuntu-24.04`, Temurin 17 / Temurin 25)
-
-| Method | x86-64 .NET 8 / T17 | x86-64 .NET 10 / T25 | ARM64 .NET 8 / T17 | ARM64 .NET 10 / T25 |
-|---|---|---|---|---|
-| `NewEmpty` | 1.169 µs | 1.109 µs | 1.046 µs | 1.046 µs |
-| `NewWithSignature` | 1.173 µs | 1.108 µs | 1.033 µs | 1.033 µs |
-| `DeclaredNewEmpty` | 1.158 µs | 1.121 µs | 1.033 µs | 1.033 µs |
-
-All three strategies are equivalent in cost — the JNI boundary crossing dominates over the resolution overhead. No allocation occurs on the .NET side. ARM64 constructors are ~5-10% faster than x86-64 on the same JDK version.
-
----
-
-## Field access (BenchmarkDotNet, `ubuntu-24.04`, Temurin 17 / Temurin 25)
-
-| Method | x86-64 .NET 8 / T17 | x86-64 .NET 10 / T25 | ARM64 .NET 8 / T17 | ARM64 .NET 10 / T25 |
-|---|---|---|---|---|
-| `GetInstanceIntField` | 100.4 ns | 76.2 ns | 100.4 ns | 100.4 ns |
-| `SetInstanceIntField` | 120.5 ns | 81.4 ns | 121.7 ns | 121.7 ns |
-| `GetInstanceStringField` | 104.5 ns | 73.6 ns | 113.8 ns | 113.8 ns |
-| `SetInstanceStringField` | 631.7 ns | 605.9 ns | 674.2 ns | 674.2 ns |
-| `GetStaticIntField` | 122.7 ns | 78.2 ns | 114.3 ns | 114.3 ns |
-| `SetStaticIntField` | 127.7 ns | 79.8 ns | 110.7 ns | 110.7 ns |
-| `GetStaticStringField` | 101.2 ns | 70.3 ns | 97.7 ns | 97.7 ns |
-| `SetStaticStringField` | 638.3 ns | 625.2 ns | 667.3 ns | 667.3 ns |
-| `GetInstanceIntFieldGeneric` | 137.1 ns | 82.2 ns | 105.9 ns | 105.9 ns |
-
-Primitive field access is symmetric (~75–140 ns get/set across platforms). **String field writes are ~6–8× more expensive** than reads — setting a `String` field requires converting the .NET `string` to a JVM `String` object, an allocation on the JVM heap plus a full string copy. Avoid repeated writes to JVM `String` fields in hot paths; prefer `int`/`long`/`boolean` fields where performance matters.
-
----
-
-## Method invocation (BenchmarkDotNet, `ubuntu-24.04`, Temurin 17 / Temurin 25)
-
-For full multi-vendor comparison see [Latest benchmark results](benchmark-latest.md).
-
-| Method | x86-64 .NET 8 / T17 | x86-64 .NET 10 / T25 | ARM64 .NET 8 / T17 | ARM64 .NET 10 / T25 |
-|---|---|---|---|---|
-| `InvokeStaticEmpty` | 273.4 ns | 275.7 ns | 296.0 ns | 298.6 ns |
-| `InvokeStaticEmptyWithSignature` | 251.4 ns | 267.7 ns | 291.9 ns | 305.7 ns |
-| `InvokeStaticWithFeedback` | 517.6 ns | 568.0 ns | 549.6 ns | 530.6 ns |
-| `InvokeInstanceEmpty` | 278.8 ns | 283.2 ns | 300.0 ns | 310.0 ns |
-| `InvokeInstanceWithFeedback` | 533.5 ns | 587.4 ns | 534.0 ns | 547.2 ns |
-
-On x86-64 with .NET 8 / T17, `InvokeWithSignature` is ~8% faster than `Invoke` for static methods; the gap narrows on .NET 10. On ARM64 both strategies are within 5% of each other. The advantage of `InvokeWithSignature` is more pronounced under load and with complex argument types — see the [live dashboard](https://masesgroup.com/benchmark-data/) for a full multi-vendor breakdown.
-
----
-
-## Array and varargs invocation (BenchmarkDotNet, `ubuntu-24.04`, Temurin 17 / Temurin 25)
-
-| Method | Elements | x86-64 .NET 8 / T17 | x86-64 .NET 10 / T25 | ARM64 .NET 8 / T17 | ARM64 .NET 10 / T25 |
-|---|---|---|---|---|---|
-| `InvokeIntParam` (baseline) | — | 559 ns | 595 ns | 538 ns | 539 ns |
-| `InvokeIntArrayFixed` | 10 | 1,301 ns | 1,188 ns | 1,183 ns | 1,131 ns |
-| `InvokeIntArrayFixed` | 1 000 | 1,981 ns | 1,999 ns | 1,900 ns | 1,859 ns |
-| `InvokeIntArrayFixed` | 100 000 | 62,896 ns | 67,119 ns | 60,633 ns | 60,633 ns |
-| `InvokeVarArgsWholeArray` | 100 000 | 63,741 ns | 67,268 ns | 60,484 ns | 60,483 ns |
-| `InvokeStringArrayFixed` | 10 | 6,412 ns | 6,262 ns | 7,204 ns | 7,204 ns |
-| `InvokeStringArrayFixed` | 1 000 | 483,498 ns | 462,731 ns | 551,710 ns | 551,710 ns |
-| `InvokeStringArrayFixed` | 100 000 | 59,122,284 ns | 53,696,166 ns | 57,603,003 ns | 57,603,003 ns |
-| `InvokeVarArgsSpreadElements` | 100 000 | 102,160,469 ns | 95,098,483 ns | 80,829,867 ns | 80,829,867 ns |
-
-`int[]` scales linearly with size at ~0.6–0.7 ns per element after the fixed JNI boundary cost. `String[]` costs ~0.5–0.75 µs **per element** regardless of size — each element requires an individual JVM→CLR Unicode conversion and allocation. At 100 000 elements that accumulates to ~54–59 ms vs ~60–67 µs for integers.
-
-> [!NOTE]
-> The scaling difference between `int[]` and `String[]` reflects the fundamental cost of string marshalling: each `String` element requires an individual JVM→CLR Unicode conversion and allocation, while each `int` element is a direct memory copy. When passing large collections of string data across the boundary, consider encoding them as a single binary payload (`byte[]` or `JCOBridgeStream<byte>`) and parsing on the receiving side, or restructuring the API to avoid per-element crossings.
-
----
-
-## Preallocated JVM object invocation (BenchmarkDotNet, `ubuntu-24.04`, Temurin 17 / Temurin 25)
-
-When JNet wrapper objects (`Java.Lang.String`, or any class generated by JNetReflector) are created in advance and reused across calls, passing them to a JVM method requires only transferring the native object reference — no marshalling, no allocation at call time. These benchmarks measure that path.
-
-| Method | Elements | x86-64 .NET 8 / T17 | x86-64 .NET 10 / T25 | ARM64 .NET 8 / T17 | ARM64 .NET 10 / T25 |
-|---|---|---|---|---|---|
-| `InvokeSingleStringPreallocated` | 1 | 577 ns | **303 ns** | 589 ns | 583 ns |
-| `InvokeStringArrayPreallocated` | 10 | 2,011 ns | 1,167 ns | 1,949 ns | 1,958 ns |
-| `InvokeStringArrayPreallocated` | 1 000 | 60,540 ns | 31,922 ns | 59,528 ns | 61,262 ns |
-| `InvokeStringArrayPreallocated` | 100 000 | 7,454,725 ns | 5,217,584 ns | 9,241,561 ns | 7,947,215 ns |
-
-Comparison at 100 000 elements (x86-64 .NET 10 / T25):
-
-| Approach | 100 000 elements | Per-element cost |
-|---|---|---|
-| `InvokeIntArrayFixed` | 67,119 ns | ~0.6 ns |
-| `InvokeStringArrayPreallocated` (preallocated JNet objects) | 5,217,584 ns | ~52 ns |
-| `InvokeStringArrayFixed` (.NET `string`, marshalled) | 53,696,166 ns | ~537 ns |
-
-Key observations:
-
-- **Single preallocated object** — ~300-590 ns, essentially the same cost as a no-argument method invocation. No marshalling occurs: only the native JVM object pointer is passed through the boundary.
-- **Preallocated array** — eliminates string marshalling (~8-10× faster than passing `.NET string[]` at 100 000 elements) but still pays a per-element cost for the type analysis layer: for each array element the engine runs a type dispatch chain to identify the object kind (`IJVMBridgeBaseInstance`), extracts the native JVM pointer, and builds the corresponding factory. No marshalling occurs, but the per-element .NET-side dispatch is not free (~52-92 ns per element depending on platform and runtime).
-- **vs `int[]`** — even with preallocated objects, passing 100 000 object references costs ~80-140× more than passing 100 000 integers, because integers are transferred as a contiguous memory block while each object element must go through the type dispatch chain.
-- **Conclusion** — preallocating JNet wrapper objects is the right approach when the same JVM objects are used repeatedly across many calls (e.g. a fixed set of configuration objects, enum constants, or frequently reused strings). For truly bulk data transfer, prefer `JCOBridgeStream<T>` with primitive types.
-
----
-
-
-| Method | x86-64 .NET 8 / T17 | x86-64 .NET 10 / T25 | ARM64 .NET 8 / T17 | ARM64 .NET 10 / T25 |
-|---|---|---|---|---|
-| `InvokeMultiParam` | 1.403 µs | 1.390 µs | 1.330 µs | 1.330 µs |
-
-Multi-parameter invocation costs roughly 4–5× a no-argument call, reflecting the overhead of boxing and passing each additional argument across the JNI boundary. Keep argument lists short for frequently called methods.
-
----
-
-
-
-In 2.6.6, the `ListenerShallManageEvent` filter and the native `byIndex` trigger mechanism are not yet available.
-
-### Static method invocation
-
-| Resolution | `feedback` | .NET 8 / T17 | .NET 10 / T25 |
-|---|---|---|---|
-| `Invoke` | `false` | 0.661 µs | 0.602 µs |
-| `IWS` | `false` | 0.494 µs | 0.414 µs |
-| `Invoke` | `true` | 0.901 µs | 0.803 µs |
-| `IWS` | `true` | 0.686 µs | 0.522 µs |
-
-### Instance method invocation
-
-| Resolution | `feedback` | .NET 8 / T17 | .NET 10 / T25 |
-|---|---|---|---|
-| `Invoke` | `false` | 0.579 µs | 0.490 µs |
-| `IWS` | `false` | 0.468 µs | 0.379 µs |
-| `Invoke` | `true` | 0.856 µs | 0.764 µs |
-| `IWS` | `true` | 0.638 µs | 0.535 µs |
-
-Adding a `boolean` argument and return value (`feedback = true`) adds ~45–55% overhead with `Invoke` and ~35–40% with `IWS`, reflecting JNI argument marshalling cost.
-
-### Callback
-
-| Test | `byIndex` | .NET 8 / T17 | .NET 10 / T25 |
-|---|---|---|---|
-| `RoundTrip` | `false` | 6.945 µs | 6.338 µs |
-| `Sustained` | `false` | 6.116 µs | 5.548 µs |
-
-`Sustained` is the realistic reference for JVM-originated callback cost: **~6.1 µs (.NET 8 / T17) and ~5.5 µs (.NET 10 / T25).**
-
----
-
-## JCOBridge 2.6.7+
+### JCOBridge 2.6.7+
 
 JCOBridge 2.6.7+ introduces the two-level `ListenerShallManageEvent` filter and the native `byIndex` trigger mechanism. General interop improvements reduce baseline overhead across all test types.
 
 > [!NOTE]
 > `byIndex = true` is still simulated on the JVM side by invoking a dedicated class method rather than the interface `@Override`. The CLR-side numeric index resolution is fully active; a JVM dispatch difference (class method vs interface method) remains. The `byIndex = false` rows use the real interface override and are directly comparable between versions.
 
-### Static method invocation
+#### Static method invocation
 
 | Resolution | `feedback` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
 |---|---|---|---|---|---|
@@ -274,7 +70,7 @@ JCOBridge 2.6.7+ introduces the two-level `ListenerShallManageEvent` filter and 
 | `Invoke` | `true` | 0.609 µs | −32% | 0.575 µs | −28% |
 | `IWS` | `true` | 0.435 µs | −37% | 0.419 µs | −20% |
 
-### Instance method invocation
+#### Instance method invocation
 
 | Resolution | `feedback` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
 |---|---|---|---|---|---|
@@ -283,7 +79,7 @@ JCOBridge 2.6.7+ introduces the two-level `ListenerShallManageEvent` filter and 
 | `Invoke` | `true` | 0.552 µs | −36% | 0.511 µs | −33% |
 | `IWS` | `true` | 0.448 µs | −30% | 0.452 µs | −15% |
 
-### Callback: `TestPredicateRoundTrip`
+#### Callback: `TestPredicateRoundTrip`
 
 | `byIndex` | `continueFirstCheck` | `continueSecondCheck` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
 |---|---|---|---|---|---|---|
@@ -296,7 +92,7 @@ JCOBridge 2.6.7+ introduces the two-level `ListenerShallManageEvent` filter and 
 
 ¹ `byIndex = true` simulated on the JVM side — see note above.
 
-### Callback: `TestPredicateSustained`
+#### Callback: `TestPredicateSustained`
 
 | `byIndex` | `continueFirstCheck` | `continueSecondCheck` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
 |---|---|---|---|---|---|---|
@@ -313,14 +109,14 @@ The **realistic JVM-originated callback baseline** (full processing, `byIndex = 
 
 ---
 
-## JCOBridge 2.6.9
+### JCOBridge 2.6.9
 
 JCOBridge 2.6.9 delivers further improvements across all test types through interop layer optimizations, lazy initialization of event data (`TypedEventData`), and a pooled `BatchState` buffer that eliminates per-event array allocation in the dispose fast-scope path. Results collected on `ubuntu-22.04` / AMD EPYC 9V45 96-Core.
 
 > [!NOTE]
 > `byIndex = true` is still simulated on the JVM side — see note in the 2.6.7+ section above.
 
-### Static method invocation
+#### Static method invocation
 
 | Resolution | `feedback` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
 |---|---|---|---|---|---|
@@ -329,7 +125,7 @@ JCOBridge 2.6.9 delivers further improvements across all test types through inte
 | `Invoke` | `true` | 0.471 µs | −48% | 0.482 µs | −40% |
 | `IWS` | `true` | 0.311 µs | −55% | 0.305 µs | −42% |
 
-### Instance method invocation
+#### Instance method invocation
 
 | Resolution | `feedback` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
 |---|---|---|---|---|---|
@@ -338,7 +134,7 @@ JCOBridge 2.6.9 delivers further improvements across all test types through inte
 | `Invoke` | `true` | 0.389 µs | −55% | 0.390 µs | −49% |
 | `IWS` | `true` | 0.287 µs | −55% | 0.307 µs | −43% |
 
-### Callback: `TestPredicateRoundTrip`
+#### Callback: `TestPredicateRoundTrip`
 
 | `byIndex` | `continueFirstCheck` | `continueSecondCheck` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
 |---|---|---|---|---|---|---|
@@ -351,7 +147,7 @@ JCOBridge 2.6.9 delivers further improvements across all test types through inte
 
 ¹ `byIndex = true` simulated on the JVM side — see note above.
 
-### Callback: `TestPredicateSustained`
+#### Callback: `TestPredicateSustained`
 
 | `byIndex` | `continueFirstCheck` | `continueSecondCheck` | .NET 8 / T17 | vs 2.6.6 | .NET 10 / T25 | vs 2.6.6 |
 |---|---|---|---|---|---|---|
@@ -366,7 +162,7 @@ JCOBridge 2.6.9 delivers further improvements across all test types through inte
 
 The **realistic JVM-originated callback baseline** (full processing, `byIndex = false`) reaches **2.7 µs on both .NET 8 and .NET 10** — a **−56%** reduction over 2.6.6.
 
-### Callback: BenchmarkDotNet comparison (`ubuntu-24.04`, Temurin 17 / Temurin 25)
+#### Callback: BenchmarkDotNet comparison (`ubuntu-24.04`, Temurin 17 / Temurin 25)
 
 `TestPredicateSustained` results. For full multi-vendor breakdown see [Latest benchmark results](benchmark-latest.md).
 
@@ -397,7 +193,7 @@ The three distinct operating points:
 
 ---
 
-## Bulk data transfer at the JVM↔CLR boundary
+### Bulk data transfer at the JVM↔CLR boundary
 
 JCOBridge 2.6.9 introduces `JCOBridgeDirectBuffer<T>` (wrapping a JVM `DirectByteBuffer`) and `JCOBridgeStream<T>` (wrapping a JVM native array), both with `T : unmanaged`. Both types expose `ToStream()` (backed by `UnmanagedMemoryStream`), `ReadOnlySpan<T>`, and .NET Framework-compatible shims.
 
@@ -406,7 +202,7 @@ JCOBridge 2.6.9 introduces `JCOBridgeDirectBuffer<T>` (wrapping a JVM `DirectByt
 
 ---
 
-### Array transfer — `JCOBridgeStream<T>`
+#### Array transfer — `JCOBridgeStream<T>`
 
 A JVM `byte[]` of the given size is pre-allocated once per size step. Each iteration retrieves the data via three APIs:
 
@@ -417,7 +213,7 @@ A JVM `byte[]` of the given size is pre-allocated once per size step. Each itera
   - **HPA, `forceRawMemory=false`**: accesses JVM array memory directly — **no copy**
   - **HPA, `forceRawMemory=true`**: accesses JVM array memory with GC pinned for the duration — **no copy, lowest latency for large arrays**; use with care (no JVM allocations or blocking operations during the pinned window)
 
-#### Standard edition — `AsSpan` latency (µs, 100 iterations, default path / optimized path)
+##### Standard edition — `AsSpan` latency (µs, 100 iterations, default path / optimized path)
 
 The optimized transfer path reduces per-call overhead for **small arrays** dramatically. For large arrays (≥1 MB) the bottleneck shifts to memory bandwidth and the optimized path offers no advantage.
 
@@ -433,7 +229,7 @@ The optimized transfer path reduces per-call overhead for **small arrays** drama
 
 The optimized path is beneficial only for small arrays (≤100 KB). For large arrays it can be slower due to GC interaction — use the default path at scale.
 
-#### HPA edition — `AsSpan` latency (µs, 100 iterations, before optimized path)
+##### HPA edition — `AsSpan` latency (µs, 100 iterations, before optimized path)
 
 | Size | Standard | HPA `forceRaw=false` | HPA `forceRaw=true` | vs Standard |
 |---|---|---|---|---|
@@ -455,7 +251,7 @@ Key observations:
 
 ---
 
-### ByteBuffer transfer — `JCOBridgeDirectBuffer<T>`
+#### ByteBuffer transfer — `JCOBridgeDirectBuffer<T>`
 
 The benchmark reflects real-world usage: each iteration calls `getByteBuffer()` on the JVM side, which copies the pre-allocated array into a `DirectByteBuffer` before returning it to .NET. This includes both the JVM-side copy cost (heap → native memory) and the .NET-side read cost.
 
@@ -483,7 +279,7 @@ The benchmark reflects real-world usage: each iteration calls `getByteBuffer()` 
 ---
 
 
-## Summary
+### Summary
 
 | Test | .NET 8 / T17 | | | .NET 10 / T25 | | |
 |---|---|---|---|---|---|---|
@@ -505,7 +301,7 @@ The benchmark reflects real-world usage: each iteration calls `getByteBuffer()` 
 
 All values in µs. Percentages vs 2.6.6 where available. ¹ `byIndex = true` simulated on the JVM side.
 
-### Comparison with raw JNI overhead
+#### Comparison with raw JNI overhead
 
 The **30–35 ns** figure for `byIndex = true`, first-gate discard (Sustained, 2.6.9) is worth contextualizing against published raw JNI benchmarks on dedicated hardware. Independent JMH benchmarks measure an empty JNI call at ~57 ns via JavaCPP and ~22 ns on a modern laptop for a minimal no-op native method ([java-native-benchmark](https://github.com/zakgof/java-native-benchmark), [Komanov 2022](https://dkomanov.medium.com/java-native-access-performance-cf4ce0d68ddb)).
 
@@ -513,7 +309,7 @@ JNet's first-gate discard path (`ListenerShallManageEventIndex`) involves a JVM�
 
 ---
 
-## Guidance
+### Guidance
 
 - **Prefer `InvokeWithSignature`** (`IWS`) over `Invoke` in hot paths on x86 — it avoids .NET-side type matching and consistently delivers 20–55% lower latency with arguments involved. On ARM64 the two strategies are nearly equivalent for no-argument methods; the advantage of `IWS` varies by JDK vendor (see [dashboard](https://masesgroup.com/benchmark-data/)).
 - **Constructor resolution strategy does not matter** — all three approaches (`NewEmpty`, `NewWithSignature`, `DeclaredNewEmpty`) cost ~1 µs. Choose whichever is most readable.
