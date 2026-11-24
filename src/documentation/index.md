@@ -101,12 +101,18 @@ JNet interop overhead is tracked continuously across .NET and JDK versions:
 - [Latest benchmark results](articles/benchmark-latest.md)
 - [Live benchmark dashboard](https://masesgroup.com/benchmark-data/)
 
-Some best cases across the CI matrix:
+Median across the CI matrix. The spread (IQR) reflects differences between OS, architecture, .NET and JDK combinations, not measurement noise; "Best" is the lowest run observed and the cell that produced it.
 <!-- BENCHMARK-SUMMARY-START -->
-  * Static no-arg invocation: Mean 208.1 ns, StdErr 0.11 ns, StdDev 0.10 ns
-  * Static invocation with feedback: Mean 509.1 ns, StdErr 0.74 ns, StdDev 0.62 ns
-  * Sustained JVM→.NET callback (first gate discard): Mean 53.02 ns, StdErr 1.020 ns, StdDev 1.134 ns
-  * Sustained JVM→.NET callback (full processing): Mean 796.48 ns, StdErr 16.354 ns, StdDev 15.297 ns
+  * Static no-arg invocation: Median Mean 146.2 ns (min 63.29 ns, max 222.0 ns, 176 runs), Error 0.05 ns, StdDev 0.05 ns, Allocated 0 B
+  * Static invocation with feedback: Median Mean 506.4 ns (min 216.02 ns, max 658.2 ns, 176 runs), Error 0.72 ns, StdDev 0.60 ns, Allocated 248 B
+  * Sustained JVM→.NET callback (first gate discard): Median Mean 43.47 ns (min 23.83 ns, max 53.60 ns, 176 runs), Error 0.829 ns, StdDev 0.954 ns, Allocated 0 B
+  * Sustained JVM→.NET callback (full processing): Median Mean 2,582.74 ns (min 1,289.67 ns, max 3,253.81 ns, 176 runs), Error 8.452 ns, StdDev 7.906 ns, Allocated 592 B
+  * Object creation: Median Mean 790.9 ns (min 404.4 ns, max 1.068 μs, 176 runs), Error 0.90 ns, StdDev 0.70 ns, Allocated 368 B
+  * Invoke with int[] (10000 elements): Median Mean 6,210.9 ns (min 10,489.2 ns, max 9,059.4 ns, 176 runs), Error 72.04 ns, StdDev 67.39 ns, Allocated 344 B
+  * Get instance int field: Median Mean 64.39 ns (min 26.08 ns, max 93.49 ns, 176 runs), Error 0.027 ns, StdDev 0.026 ns, Allocated 24 B
+  * Set instance int field: Median Mean 87.48 ns (min 32.44 ns, max 101.50 ns, 176 runs), Error 0.026 ns, StdDev 0.023 ns, Allocated 24 B
+  * Get instance string field: Median Mean 76.97 ns (min 29.69 ns, max 90.60 ns, 176 runs), Error 0.932 ns, StdDev 0.779 ns, Allocated 0 B
+  * Set instance string field: Median Mean 530.13 ns (min 238.54 ns, max 688.59 ns, 176 runs), Error 1.049 ns, StdDev 0.876 ns, Allocated 248 B
 <!-- BENCHMARK-SUMMARY-END -->
 
 ### Recent changes
