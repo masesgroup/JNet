@@ -7,10 +7,20 @@ name: CI_GENERATECLASSES
 on:
   workflow_dispatch:
     inputs:
+      UseSpecialSettings:
+        description: 'Use special settings: not available in forks'
+        required: false
+        default: false
+        type: boolean
+      SpecialSettingsSource:
+        description: 'Name of special settings file: not available in forks'
+        required: false
+        default: 'source.zip'
+        type: string
       GeneratePR:
         description: 'Generate the PR at the end'
         required: true
-        default: false
+        default: true
         type: boolean
       AvoidParallelBuild:
         description: 'Avoid parallel build'
@@ -65,6 +75,34 @@ jobs:
       - uses: actions/setup-dotnet@v6
         with:
           dotnet-version: '11.x'
+
+      - name: Download pscp directly
+        if: ${{ inputs.UseSpecialSettings == true }}
+        shell: cmd
+        run: |
+          curl -L -o "%RUNNER_TEMP%\pscp.exe" https://the.earth.li/~sgtatham/putty/latest/w64/pscp.exe
+
+      - name: Download ${{ inputs.SpecialSettingsSource }} via SFTP
+        if: ${{ inputs.UseSpecialSettings == true }}
+        shell: cmd
+        run: |
+          %RUNNER_TEMP%\pscp.exe -hostkey "${{ secrets.SFTP_HOST_KEY }}" -pw ${{ secrets.SFTP_PASSWORD }} -batch ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }}:/source-files/${{ inputs.SpecialSettingsSource }} "${{ github.workspace }}\${{ inputs.SpecialSettingsSource }}"
+
+      - name: Prepare other files
+        if: ${{ inputs.UseSpecialSettings == true }}
+        shell: cmd
+        run: |
+          7z e ${{ github.workspace }}\${{ inputs.SpecialSettingsSource }} -o"${{ github.workspace }}\" -p${{ secrets.FIRST_SPECIAL_SETTINGS_PASSWORD }}
+          7z x ${{ github.workspace }}\source.info -o"${{ github.workspace }}\Deploy\" -p${{ secrets.SPECIAL_SETTINGS_PASSWORD }} -y
+
+      - name: List NuGet packages downloaded
+        if: ${{ inputs.UseSpecialSettings == true }}
+        shell: cmd
+        run: dir .\Deploy\*nupkg
+
+      - name: Add special repo
+        if: ${{ success() && inputs.UseSpecialSettings == true }}
+        run: dotnet nuget add source "${{ github.workspace }}\Deploy\" --name localDeployNuGet
 
       - name: Prebuild
         run: dotnet build --no-incremental --configuration Release src\net\JNetReflector\JNetReflector.csproj
