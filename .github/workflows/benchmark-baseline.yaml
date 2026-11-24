@@ -605,13 +605,27 @@ jobs:
           LATEST=src/documentation/articles/benchmark-latest.md
 
           # Normalize every table row to TSV:
-          # label, method, params, mean, error, stddev, allocated
+          # label, method, params, mean, error, stddev, allocated, group, cpu
           # Columns are located through each table's header row, so thousands
           # separators ("3,002.58 ns"), bold markers and extra columns are harmless.
+          # Group (arm64 | x86-64-v3 | x86-64-v4) and CPU come from the BenchmarkDotNet
+          # environment block that follows each "## label" heading.
           ROWS=$(awk -F'|' '
             function trim(s) { gsub(/^[ \t*]+|[ \t*]+$/, "", s); return s }
             function get(name) { return (name in col) ? trim($(col[name])) : "" }
-            /^## / { label = trim(substr($0, 4)); next }
+            /^## / { label = trim(substr($0, 4)); arch = ""; isa = ""; cpu = ""; delete col; next }
+            /^[^|].*Arm64 RyuJIT/ { arch = "arm64"; next }
+            /^[^|].*X64 RyuJIT/ {
+              arch = "x64"
+              if (match($0, /x86-64-v[0-9]+/)) isa = substr($0, RSTART, RLENGTH)
+              next
+            }
+            /^[^|].*physical core/ {
+              cpu = $0; sub(/,.*/, "", cpu)                   # drop ", 4 logical and 2 physical cores"
+              sub(/ CPU /, " ", cpu); sub(/ *\(Max:[^)]*\)/, "", cpu)
+              cpu = trim(cpu); if (cpu ~ /^Unknown processor/) cpu = "unknown"
+              next
+            }
             /^\|/ {
               if ($0 ~ /^[|: -]+$/) next                      # separator row
               if ($0 ~ /\| *Method *\|/) {                    # header row
@@ -624,27 +638,30 @@ jobs:
               for (i = col["Method"] + 1; i < col["Mean"]; i++)
                 params = params (params == "" ? "" : ",") trim($i)
               alloc = get("Allocated"); if (alloc == "-") alloc = "0 B"
-              printf "%s\t%s\t%s\t%s\t%s\t%s\t%s\n", label, get("Method"), params, get("Mean"), get("Error"), get("StdDev"), alloc
+              g = arch; if (g == "") g = (label ~ /-arm/) ? "arm64" : "x64"
+              if (g == "x64" && isa != "") g = isa
+              c = cpu; if (c == "") c = "n/a"
+              printf "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n", label, get("Method"), params, get("Mean"), get("Error"), get("StdDev"), alloc, g, c
             }
           ' "$LATEST")
 
-          # pick METHOD [PARAMS_REGEX]
+          # pick METHOD [PARAMS_REGEX]   (uses the global GROUP)
           # Median and interquartile range (25th-75th percentile, nearest-rank) of the
-          # per-run Mean across all matrix cells, sorted on values normalized to ns,
-          # plus the best observed run and the cell that produced it.
+          # per-run Mean across all matrix cells of the given group, sorted on values
+          # normalized to ns, plus the best observed run, its cell and its CPU.
           # Values are printed as they appear in the table; Allocated comes from the
-          # median row. Prints "median|q1|q3|min|mincell|allocated|runs".
+          # median row. Prints "median|q1|q3|min|mincell|mincpu|allocated|runs".
           pick() {
             local out
-            out=$(awk -F'\t' -v m="$1" -v p="${2:-.*}" '
+            out=$(awk -F'\t' -v m="$1" -v p="${2:-.*}" -v grp="$GROUP" '
               function ns(s,  a, v, u) {
-                split(s, a, " "); v = a[1]; gsub(",", "", v); u = a[2]
+                split(s, a, " "); v = a[1]; gsub(",", "", v); v = v + 0; u = a[2]
                 if (u == "ns") return v
                 if (u == "ms") return v * 1e6
                 if (u == "s")  return v * 1e9
                 return v * 1e3                                 # us / μs / µs
               }
-              $2 == m && $3 ~ p && $4 ~ /^[0-9]/ { k++; v[k] = ns($4); row[k] = $0 }
+              $2 == m && $3 ~ p && $8 == grp && $4 ~ /^[0-9]/ { k++; v[k] = ns($4); row[k] = $0 }
               END {
                 if (!k) exit
                 for (i = 1; i <= k; i++) idx[i] = i
@@ -657,25 +674,26 @@ jobs:
                 split(row[idx[int((k + 3) / 4)]], q1, "\t")
                 split(row[idx[int((3 * k + 3) / 4)]], q3, "\t")
                 split(row[idx[1]], lo, "\t")
-                print f[4] "|" q1[4] "|" q3[4] "|" lo[4] "|" lo[1] "|" f[7] "|" k
+                print f[4] "|" q1[4] "|" q3[4] "|" lo[4] "|" lo[1] "|" lo[9] "|" f[7] "|" k
               }
             ' <<< "$ROWS")
-            echo "${out:-N/A|N/A|N/A|N/A|N/A|N/A|0}"
+            echo "${out:-N/A|N/A|N/A|N/A|N/A|N/A|N/A|0}"
           }
 
           # row "Description" METHOD [PARAMS_REGEX]  -> one markdown table row
           row() {
-            local med q1 q3 min cell alloc runs
-            IFS='|' read -r med q1 q3 min cell alloc runs <<< "$(pick "$2" "${3:-.*}")"
-            [ "$med" = "N/A" ] && echo "::warning::Could not extract summary values for $2 ${3:-}." >&2
-            printf '| %s | %s | %s – %s | %s | `%s` | %s | %s |\n' \
-              "$1" "$med" "$q1" "$q3" "$min" "$cell" "$alloc" "$runs"
+            local med q1 q3 min cell cpu alloc runs
+            IFS='|' read -r med q1 q3 min cell cpu alloc runs <<< "$(pick "$2" "${3:-.*}")"
+            [ "$med" = "N/A" ] && echo "::warning::Could not extract summary values for $2 ${3:-} ($GROUP)." >&2
+            printf '| %s | %s | %s – %s | %s | `%s` | %s | %s | %s |\n' \
+              "$1" "$med" "$q1" "$q3" "$min" "$cell" "$cpu" "$alloc" "$runs"
           }
 
-          # Median across the whole CI matrix, with interquartile range, best run and number of runs
-          BLOCK=$(
-            echo '| Benchmark | Median | IQR (25th–75th) | Best | Best cell | Allocated | Runs |'
-            echo '|---|---:|---:|---:|---|---:|---:|'
+          # One table for the group in $1
+          summary_table() {
+            GROUP="$1"
+            echo '| Benchmark | Median | IQR (25th–75th) | Best | Best cell | Best CPU | Allocated | Runs |'
+            echo '|---|---:|---:|---:|---|---|---:|---:|'
             row "Static no-arg invocation"                         InvokeStaticEmptyWithSignature
             row "Static invocation with feedback"                  InvokeStaticWithFeedback
             row "Sustained JVM→.NET callback (first gate discard)" PredicateSustained '^True,False,False$'
@@ -686,10 +704,19 @@ jobs:
             row "Set instance int field"                           SetInstanceIntField
             row "Get instance string field"                        GetInstanceStringField
             row "Set instance string field"                        SetInstanceStringField
+          }
+
+          BLOCK=$(
+            echo '**arm64**'; echo
+            summary_table arm64; echo
+            echo '**x64 – x86-64-v3 (AVX2)**'; echo
+            summary_table x86-64-v3; echo
+            echo '**x64 – x86-64-v4 (AVX-512)**'; echo
+            summary_table x86-64-v4
           )
 
           # Replace everything between the markers, keeping the markers themselves
-          # (blank lines around the table so every renderer parses it as a table)
+          # (blank lines around the block so every renderer parses it correctly)
           for f in README.md src/documentation/index.md; do
             awk -v block="$BLOCK" '
               /<!-- BENCHMARK-SUMMARY-START -->/ { print; print ""; print block; print ""; skip=1; next }

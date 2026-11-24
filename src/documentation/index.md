@@ -101,18 +101,22 @@ JNet interop overhead is tracked continuously across .NET and JDK versions:
 - [Latest benchmark results](articles/benchmark-latest.md)
 - [Live benchmark dashboard](https://masesgroup.com/benchmark-data/)
 
-Median across the CI matrix. The spread (IQR) reflects differences between OS, architecture, .NET and JDK combinations, not measurement noise; "Best" is the lowest run observed and the cell that produced it.
+Median across the CI matrix, split by CPU class (arm64, x86-64-v3, x86-64-v4). The spread (IQR) reflects differences between OS, .NET, JDK and runner CPU/clock combinations, not measurement noise; "Best" is the lowest run observed, with the matrix cell and CPU that produced it.
 <!-- BENCHMARK-SUMMARY-START -->
-  * Static no-arg invocation: Median Mean 146.2 ns (min 63.29 ns, max 222.0 ns, 176 runs), Error 0.05 ns, StdDev 0.05 ns, Allocated 0 B
-  * Static invocation with feedback: Median Mean 506.4 ns (min 216.02 ns, max 658.2 ns, 176 runs), Error 0.72 ns, StdDev 0.60 ns, Allocated 248 B
-  * Sustained JVM→.NET callback (first gate discard): Median Mean 43.47 ns (min 23.83 ns, max 53.60 ns, 176 runs), Error 0.829 ns, StdDev 0.954 ns, Allocated 0 B
-  * Sustained JVM→.NET callback (full processing): Median Mean 2,582.74 ns (min 1,289.67 ns, max 3,253.81 ns, 176 runs), Error 8.452 ns, StdDev 7.906 ns, Allocated 592 B
-  * Object creation: Median Mean 790.9 ns (min 404.4 ns, max 1.068 μs, 176 runs), Error 0.90 ns, StdDev 0.70 ns, Allocated 368 B
-  * Invoke with int[] (10000 elements): Median Mean 6,210.9 ns (min 10,489.2 ns, max 9,059.4 ns, 176 runs), Error 72.04 ns, StdDev 67.39 ns, Allocated 344 B
-  * Get instance int field: Median Mean 64.39 ns (min 26.08 ns, max 93.49 ns, 176 runs), Error 0.027 ns, StdDev 0.026 ns, Allocated 24 B
-  * Set instance int field: Median Mean 87.48 ns (min 32.44 ns, max 101.50 ns, 176 runs), Error 0.026 ns, StdDev 0.023 ns, Allocated 24 B
-  * Get instance string field: Median Mean 76.97 ns (min 29.69 ns, max 90.60 ns, 176 runs), Error 0.932 ns, StdDev 0.779 ns, Allocated 0 B
-  * Set instance string field: Median Mean 530.13 ns (min 238.54 ns, max 688.59 ns, 176 runs), Error 1.049 ns, StdDev 0.876 ns, Allocated 248 B
+
+| Benchmark | Median | IQR (25th–75th) | Best | Best cell | Allocated | Runs |
+|---|---:|---:|---:|---|---:|---:|
+| Static no-arg invocation | 145.8 ns | 118.1 ns – 152.5 ns | 68.85 ns | `core-ubuntu-24.04_net11.0_zulu_25` | 0 B | 176 |
+| Static invocation with feedback | 508.3 ns | 412.2 ns – 523.1 ns | 217.59 ns | `core-ubuntu-24.04_net11.0_oracle_21` | 248 B | 176 |
+| Sustained JVM→.NET callback (first gate discard) | 43.56 ns | 35.02 ns – 46.21 ns | 24.10 ns | `core-ubuntu-24.04_net10.0_corretto_21` | 0 B | 176 |
+| Sustained JVM→.NET callback (full processing) | 2,575.38 ns | 2,376.92 ns – 2,708.49 ns | 1,290.06 ns | `core-ubuntu-24.04_net11.0_oracle_21` | 592 B | 176 |
+| Object creation | 792.0 ns | 703.5 ns – 813.7 ns | 1,011.6 ns | `core-ubuntu-22.04_net10.0_corretto_11` | 368 B | 176 |
+| Invoke with int[] (10000 elements) | 6,221.8 ns | 6,104.1 ns – 7,710.4 ns | 4,425.6 ns | `core-ubuntu-22.04_net10.0_temurin_17` | 344 B | 176 |
+| Get instance int field | 64.91 ns | 51.67 ns – 68.88 ns | 28.22 ns | `core-ubuntu-24.04_net11.0_oracle_21` | 24 B | 176 |
+| Set instance int field | 87.99 ns | 61.25 ns – 94.52 ns | 34.30 ns | `core-ubuntu-24.04_net11.0_oracle_21` | 24 B | 176 |
+| Get instance string field | 77.46 ns | 53.17 ns – 84.43 ns | 30.59 ns | `core-ubuntu-24.04_net11.0_oracle_21` | 0 B | 176 |
+| Set instance string field | 530.25 ns | 429.28 ns – 545.05 ns | 255.06 ns | `core-ubuntu-24.04_net11.0_oracle_21` | 248 B | 176 |
+
 <!-- BENCHMARK-SUMMARY-END -->
 
 ### Recent changes
