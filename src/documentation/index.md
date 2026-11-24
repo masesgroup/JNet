@@ -104,18 +104,50 @@ JNet interop overhead is tracked continuously across .NET and JDK versions:
 Median across the CI matrix, split by CPU class (arm64, x86-64-v3, x86-64-v4). The spread (IQR) reflects differences between OS, .NET, JDK and runner CPU/clock combinations, not measurement noise; "Best" is the lowest run observed, with the matrix cell and CPU that produced it.
 <!-- BENCHMARK-SUMMARY-START -->
 
-| Benchmark | Median | IQR (25th–75th) | Best | Best cell | Allocated | Runs |
-|---|---:|---:|---:|---|---:|---:|
-| Static no-arg invocation | 145.8 ns | 118.1 ns – 152.5 ns | 68.85 ns | `core-ubuntu-24.04_net11.0_zulu_25` | 0 B | 176 |
-| Static invocation with feedback | 508.3 ns | 412.2 ns – 523.1 ns | 217.59 ns | `core-ubuntu-24.04_net11.0_oracle_21` | 248 B | 176 |
-| Sustained JVM→.NET callback (first gate discard) | 43.56 ns | 35.02 ns – 46.21 ns | 24.10 ns | `core-ubuntu-24.04_net10.0_corretto_21` | 0 B | 176 |
-| Sustained JVM→.NET callback (full processing) | 2,575.38 ns | 2,376.92 ns – 2,708.49 ns | 1,290.06 ns | `core-ubuntu-24.04_net11.0_oracle_21` | 592 B | 176 |
-| Object creation | 792.0 ns | 703.5 ns – 813.7 ns | 1,011.6 ns | `core-ubuntu-22.04_net10.0_corretto_11` | 368 B | 176 |
-| Invoke with int[] (10000 elements) | 6,221.8 ns | 6,104.1 ns – 7,710.4 ns | 4,425.6 ns | `core-ubuntu-22.04_net10.0_temurin_17` | 344 B | 176 |
-| Get instance int field | 64.91 ns | 51.67 ns – 68.88 ns | 28.22 ns | `core-ubuntu-24.04_net11.0_oracle_21` | 24 B | 176 |
-| Set instance int field | 87.99 ns | 61.25 ns – 94.52 ns | 34.30 ns | `core-ubuntu-24.04_net11.0_oracle_21` | 24 B | 176 |
-| Get instance string field | 77.46 ns | 53.17 ns – 84.43 ns | 30.59 ns | `core-ubuntu-24.04_net11.0_oracle_21` | 0 B | 176 |
-| Set instance string field | 530.25 ns | 429.28 ns – 545.05 ns | 255.06 ns | `core-ubuntu-24.04_net11.0_oracle_21` | 248 B | 176 |
+**arm64**
+
+| Benchmark | Median | IQR (25th–75th) | Best | Best cell | Best CPU | Allocated | Runs |
+|---|---:|---:|---:|---|---|---:|---:|
+| Static no-arg invocation | 150.3 ns | 146.7 ns – 155.8 ns | 132.1 ns | `core-ubuntu-22.04-arm_net10.0_temurin_17` | unknown | 0 B | 88 |
+| Static invocation with feedback | 513.1 ns | 508.1 ns – 520.1 ns | 494.0 ns | `core-ubuntu-22.04-arm_net10.0_graalvm_25` | unknown | 248 B | 88 |
+| Sustained JVM→.NET callback (first gate discard) | 44.85 ns | 44.04 ns – 46.63 ns | 42.49 ns | `core-ubuntu-24.04-arm_net11.0_zulu_25` | Neoverse-N2 | 0 B | 88 |
+| Sustained JVM→.NET callback (full processing) | 2,590.79 ns | 2,534.48 ns – 2,676.63 ns | 2,444.55 ns | `core-ubuntu-22.04-arm_net11.0_temurin_25` | unknown | 592 B | 88 |
+| Object creation | 796.1 ns | 786.2 ns – 807.5 ns | 768.9 ns | `core-ubuntu-22.04-arm_net11.0_temurin_21` | unknown | 368 B | 88 |
+| Invoke with int[] (10000 elements) | 6,169.5 ns | 6,101.8 ns – 6,225.9 ns | 4,471.9 ns | `core-ubuntu-22.04-arm_net11.0_graalvm_17` | unknown | 344 B | 88 |
+| Get instance int field | 66.22 ns | 64.23 ns – 68.59 ns | 61.20 ns | `core-ubuntu-22.04-arm_net10.0_corretto_11` | unknown | 24 B | 88 |
+| Set instance int field | 94.76 ns | 91.53 ns – 97.26 ns | 81.93 ns | `core-ubuntu-22.04-arm_net10.0_microsoft_17` | unknown | 24 B | 88 |
+| Get instance string field | 83.91 ns | 81.28 ns – 87.42 ns | 74.60 ns | `core-ubuntu-22.04-arm_net10.0_temurin_17` | unknown | 0 B | 88 |
+| Set instance string field | 535.92 ns | 527.20 ns – 543.08 ns | 508.76 ns | `core-ubuntu-22.04-arm_net11.0_oracle_17` | unknown | 248 B | 88 |
+
+**x64 – x86-64-v3 (AVX2)**
+
+| Benchmark | Median | IQR (25th–75th) | Best | Best cell | Best CPU | Allocated | Runs |
+|---|---:|---:|---:|---|---|---:|---:|
+| Static no-arg invocation | 145.8 ns | 135.9 ns – 154.6 ns | 119.8 ns | `core-ubuntu-24.04_net10.0_zulu_21` | AMD EPYC 7763 2.45GHz | 0 B | 28 |
+| Static invocation with feedback | 540.0 ns | 450.9 ns – 555.6 ns | 406.3 ns | `core-ubuntu-24.04_net11.0_microsoft_21` | AMD EPYC 9V74 2.87GHz | 248 B | 28 |
+| Sustained JVM→.NET callback (first gate discard) | 34.18 ns | 30.09 ns – 34.42 ns | 28.98 ns | `core-ubuntu-24.04_net10.0_zulu_21` | AMD EPYC 7763 2.45GHz | 0 B | 28 |
+| Sustained JVM→.NET callback (full processing) | 3,037.45 ns | 2,658.95 ns – 3,113.80 ns | 2,110.77 ns | `core-ubuntu-24.04_net11.0_microsoft_21` | AMD EPYC 9V74 2.87GHz | 592 B | 28 |
+| Object creation | 876.7 ns | 756.9 ns – 920.7 ns | 688.9 ns | `core-ubuntu-24.04_net10.0_zulu_21` | AMD EPYC 7763 2.45GHz | 368 B | 28 |
+| Invoke with int[] (10000 elements) | 7,903.5 ns | 7,147.0 ns – 7,999.5 ns | 5,071.9 ns | `core-ubuntu-24.04_net10.0_graalvm_25` | AMD EPYC 7763 3.24GHz | 344 B | 28 |
+| Get instance int field | 74.09 ns | 56.33 ns – 75.79 ns | 49.15 ns | `core-ubuntu-24.04_net10.0_zulu_21` | AMD EPYC 7763 2.45GHz | 24 B | 28 |
+| Set instance int field | 81.15 ns | 62.50 ns – 84.81 ns | 55.74 ns | `core-ubuntu-24.04_net10.0_temurin_25` | AMD EPYC 7763 3.20GHz | 24 B | 28 |
+| Get instance string field | 72.35 ns | 58.99 ns – 74.74 ns | 51.78 ns | `core-ubuntu-24.04_net11.0_microsoft_21` | AMD EPYC 9V74 2.87GHz | 0 B | 28 |
+| Set instance string field | 561.15 ns | 489.83 ns – 591.99 ns | 413.96 ns | `core-ubuntu-24.04_net11.0_microsoft_21` | AMD EPYC 9V74 2.87GHz | 248 B | 28 |
+
+**x64 – x86-64-v4 (AVX-512)**
+
+| Benchmark | Median | IQR (25th–75th) | Best | Best cell | Best CPU | Allocated | Runs |
+|---|---:|---:|---:|---|---|---:|---:|
+| Static no-arg invocation | 78.41 ns | 72.21 ns – 108.5 ns | 65.47 ns | `core-ubuntu-24.04_net11.0_corretto_25` | AMD EPYC 9V45 4.50GHz | 0 B | 60 |
+| Static invocation with feedback | 277.81 ns | 259.78 ns – 360.49 ns | 224.17 ns | `core-ubuntu-24.04_net11.0_corretto_25` | AMD EPYC 9V45 4.50GHz | 248 B | 60 |
+| Sustained JVM→.NET callback (first gate discard) | 36.42 ns | 31.88 ns – 37.58 ns | 23.95 ns | `core-ubuntu-24.04_net10.0_temurin_17` | AMD EPYC 9V74 3.67GHz | 0 B | 60 |
+| Sustained JVM→.NET callback (full processing) | 1,780.81 ns | 1,729.60 ns – 2,074.61 ns | 1,369.69 ns | `core-ubuntu-24.04_net11.0_corretto_25` | AMD EPYC 9V45 4.50GHz | 592 B | 60 |
+| Object creation | 528.2 ns | 511.0 ns – 651.4 ns | 430.0 ns | `core-ubuntu-24.04_net11.0_corretto_25` | AMD EPYC 9V45 4.50GHz | 368 B | 60 |
+| Invoke with int[] (10000 elements) | 7,530.5 ns | 5,839.2 ns – 7,748.2 ns | 4,348.8 ns | `core-ubuntu-24.04_net11.0_corretto_25` | AMD EPYC 9V45 4.50GHz | 344 B | 60 |
+| Get instance int field | 37.84 ns | 32.92 ns – 50.33 ns | 24.50 ns | `core-ubuntu-24.04_net11.0_corretto_25` | AMD EPYC 9V45 4.50GHz | 24 B | 60 |
+| Set instance int field | 45.49 ns | 40.25 ns – 61.22 ns | 32.94 ns | `core-ubuntu-24.04_net11.0_corretto_25` | AMD EPYC 9V45 4.50GHz | 24 B | 60 |
+| Get instance string field | 39.92 ns | 35.60 ns – 52.64 ns | 31.97 ns | `core-ubuntu-24.04_net11.0_corretto_25` | AMD EPYC 9V45 4.50GHz | 0 B | 60 |
+| Set instance string field | 315.10 ns | 299.64 ns – 391.94 ns | 232.19 ns | `core-ubuntu-24.04_net11.0_corretto_25` | AMD EPYC 9V45 4.50GHz | 248 B | 60 |
 
 <!-- BENCHMARK-SUMMARY-END -->
 
