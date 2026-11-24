@@ -16,6 +16,20 @@ All benchmarks run on [GitHub Actions](https://github.com/masesgroup/JNet/action
 Median across the CI matrix for each CPU class; below each median, the interquartile range (IQR) and the best run observed. The spread reflects differences between OS, .NET, JDK and runner hardware, not measurement noise. The x64 columns group runners by the instruction set the runtime detected, so CPU models within a column still vary. Results per CPU model, with allocations, are in [Benchmark results by CPU model](benchmark-by-cpu.md).
 
 <!-- BENCHMARK-SUMMARY-START -->
+
+| Benchmark | arm64, 92 runs | x64 AVX2 (v3), 31 runs | x64 AVX-512 (v4), 61 runs |
+|---|---:|---:|---:|
+| Sustained JVM→.NET callback (first gate discard) | **45.02 ns**<br><sub>IQR 44.21 – 46.92 ns · best 42.29 ns</sub> | **34.05 ns**<br><sub>IQR 31.55 – 35.08 ns · best 28.69 ns</sub> | **35.52 ns**<br><sub>IQR 28.18 – 37.29 ns · best 23.61 ns</sub> |
+| Sustained JVM→.NET callback (full processing) | **2,591.82 ns**<br><sub>IQR 2,527.83 – 2,665.69 ns · best 2,062.38 ns</sub> | **3,018.86 ns**<br><sub>IQR 2,577.13 – 3,082.92 ns · best 2,249.11 ns</sub> | **1,790.07 ns**<br><sub>IQR 1,743.20 – 2,073.11 ns · best 1,556.32 ns</sub> |
+| Static no-arg invocation | **150.5 ns**<br><sub>IQR 145.6 – 155.1 ns · best 111.6 ns</sub> | **143.1 ns**<br><sub>IQR 137.4 – 153.1 ns · best 122.0 ns</sub> | **84.07 ns**<br><sub>IQR 72.55 – 115.1 ns · best 69.80 ns</sub> |
+| Static invocation with feedback | **514.4 ns**<br><sub>IQR 504.7 – 520.7 ns · best 389.8 ns</sub> | **539.8 ns**<br><sub>IQR 427.7 – 559.5 ns · best 402.3 ns</sub> | **287.84 ns**<br><sub>IQR 263.53 – 379.3 ns · best 250.03 ns</sub> |
+| Object creation | **796.0 ns**<br><sub>IQR 785.4 – 808.6 ns · best 696.4 ns</sub> | **860.6 ns**<br><sub>IQR 725.7 – 915.2 ns · best 683.2 ns</sub> | **538.3 ns**<br><sub>IQR 515.4 – 663.5 ns · best 485.3 ns</sub> |
+| Invoke with int[] (10000 elements) | **6,186.2 ns**<br><sub>IQR 6,142.3 – 6,239.9 ns · best 3,580.4 ns</sub> | **7,900.0 ns**<br><sub>IQR 7,644.6 – 8,043.9 ns · best 5,324.5 ns</sub> | **6,027.9 ns**<br><sub>IQR 5,628.1 – 7,706.3 ns · best 2,474.6 ns</sub> |
+| Get instance int field | **65.66 ns**<br><sub>IQR 63.69 – 68.75 ns · best 57.29 ns</sub> | **73.65 ns**<br><sub>IQR 55.10 – 75.48 ns · best 48.36 ns</sub> | **39.31 ns**<br><sub>IQR 33.48 – 53.26 ns · best 30.42 ns</sub> |
+| Set instance int field | **94.78 ns**<br><sub>IQR 90.19 – 97.98 ns · best 79.16 ns</sub> | **80.24 ns**<br><sub>IQR 64.42 – 83.02 ns · best 55.56 ns</sub> | **48.24 ns**<br><sub>IQR 41.15 – 61.38 ns · best 37.95 ns</sub> |
+| Get instance string field | **84.15 ns**<br><sub>IQR 81.02 – 87.30 ns · best 70.90 ns</sub> | **71.89 ns**<br><sub>IQR 55.63 – 74.18 ns · best 50.78 ns</sub> | **44.96 ns**<br><sub>IQR 36.08 – 52.60 ns · best 33.47 ns</sub> |
+| Set instance string field | **537.41 ns**<br><sub>IQR 529.24 – 543.01 ns · best 452.90 ns</sub> | **542.34 ns**<br><sub>IQR 446.10 – 587.19 ns · best 388.73 ns</sub> | **345.75 ns**<br><sub>IQR 303.22 – 399.62 ns · best 285.32 ns</sub> |
+
 <!-- BENCHMARK-SUMMARY-END -->
 
 Terms used in the tables:
