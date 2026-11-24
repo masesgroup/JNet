@@ -104,7 +104,7 @@ JNet interop overhead is tracked continuously across .NET and JDK versions:
 - [Latest benchmark results](src/documentation/articles/benchmark-latest.md)
 - [Live benchmark dashboard](https://masesgroup.com/benchmark-data/)
 
-Median across the CI matrix. The spread (IQR) reflects differences between OS, architecture, .NET and JDK combinations, not measurement noise; "Best" is the lowest run observed and the cell that produced it.
+Median across the CI matrix, split by CPU class (arm64, x86-64-v3, x86-64-v4). The spread (IQR) reflects differences between OS, .NET, JDK and runner CPU/clock combinations, not measurement noise; "Best" is the lowest run observed, with the matrix cell and CPU that produced it.
 <!-- BENCHMARK-SUMMARY-START -->
 
 | Benchmark | Median | IQR (25th–75th) | Best | Best cell | Allocated | Runs |
