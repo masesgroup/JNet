@@ -17,18 +17,18 @@ Median across the CI matrix for each CPU class; below each median, the interquar
 
 <!-- BENCHMARK-SUMMARY-START -->
 
-| Benchmark | arm64, 92 runs | x64 AVX2 (v3), 31 runs | x64 AVX-512 (v4), 61 runs |
+| Benchmark | arm64, 88 runs | x64 AVX2 (v3), 33 runs | x64 AVX-512 (v4), 55 runs |
 |---|---:|---:|---:|
-| Sustained JVM→.NET callback (first gate discard) | **45.02 ns**<br><sub>IQR 44.21 – 46.92 ns · best 42.29 ns</sub> | **34.05 ns**<br><sub>IQR 31.55 – 35.08 ns · best 28.69 ns</sub> | **35.52 ns**<br><sub>IQR 28.18 – 37.29 ns · best 23.61 ns</sub> |
-| Sustained JVM→.NET callback (full processing) | **2,591.82 ns**<br><sub>IQR 2,527.83 – 2,665.69 ns · best 2,062.38 ns</sub> | **3,018.86 ns**<br><sub>IQR 2,577.13 – 3,082.92 ns · best 2,249.11 ns</sub> | **1,790.07 ns**<br><sub>IQR 1,743.20 – 2,073.11 ns · best 1,556.32 ns</sub> |
-| Static no-arg invocation | **150.5 ns**<br><sub>IQR 145.6 – 155.1 ns · best 111.6 ns</sub> | **143.1 ns**<br><sub>IQR 137.4 – 153.1 ns · best 122.0 ns</sub> | **84.07 ns**<br><sub>IQR 72.55 – 115.1 ns · best 69.80 ns</sub> |
-| Static invocation with feedback | **514.4 ns**<br><sub>IQR 504.7 – 520.7 ns · best 389.8 ns</sub> | **539.8 ns**<br><sub>IQR 427.7 – 559.5 ns · best 402.3 ns</sub> | **287.84 ns**<br><sub>IQR 263.53 – 379.3 ns · best 250.03 ns</sub> |
-| Object creation | **796.0 ns**<br><sub>IQR 785.4 – 808.6 ns · best 696.4 ns</sub> | **860.6 ns**<br><sub>IQR 725.7 – 915.2 ns · best 683.2 ns</sub> | **538.3 ns**<br><sub>IQR 515.4 – 663.5 ns · best 485.3 ns</sub> |
-| Invoke with int[] (10000 elements) | **6,186.2 ns**<br><sub>IQR 6,142.3 – 6,239.9 ns · best 3,580.4 ns</sub> | **7,900.0 ns**<br><sub>IQR 7,644.6 – 8,043.9 ns · best 5,324.5 ns</sub> | **6,027.9 ns**<br><sub>IQR 5,628.1 – 7,706.3 ns · best 2,474.6 ns</sub> |
-| Get instance int field | **65.66 ns**<br><sub>IQR 63.69 – 68.75 ns · best 57.29 ns</sub> | **73.65 ns**<br><sub>IQR 55.10 – 75.48 ns · best 48.36 ns</sub> | **39.31 ns**<br><sub>IQR 33.48 – 53.26 ns · best 30.42 ns</sub> |
-| Set instance int field | **94.78 ns**<br><sub>IQR 90.19 – 97.98 ns · best 79.16 ns</sub> | **80.24 ns**<br><sub>IQR 64.42 – 83.02 ns · best 55.56 ns</sub> | **48.24 ns**<br><sub>IQR 41.15 – 61.38 ns · best 37.95 ns</sub> |
-| Get instance string field | **84.15 ns**<br><sub>IQR 81.02 – 87.30 ns · best 70.90 ns</sub> | **71.89 ns**<br><sub>IQR 55.63 – 74.18 ns · best 50.78 ns</sub> | **44.96 ns**<br><sub>IQR 36.08 – 52.60 ns · best 33.47 ns</sub> |
-| Set instance string field | **537.41 ns**<br><sub>IQR 529.24 – 543.01 ns · best 452.90 ns</sub> | **542.34 ns**<br><sub>IQR 446.10 – 587.19 ns · best 388.73 ns</sub> | **345.75 ns**<br><sub>IQR 303.22 – 399.62 ns · best 285.32 ns</sub> |
+| Sustained JVM→.NET callback (first gate discard) | **45.24 ns**<br><sub>IQR 43.79 – 47.40 ns · lowest 42.18 ns (Neoverse-N2)</sub> | **34.15 ns**<br><sub>IQR 30.33 – 35.23 ns · lowest 28.67 ns (AMD EPYC 7763 2.45GHz)</sub> | **35.20 ns**<br><sub>IQR 28.61 – 38.28 ns · lowest 23.61 ns (AMD EPYC 9V74 3.66GHz)</sub> |
+| Sustained JVM→.NET callback (full processing) | **2,602.75 ns**<br><sub>IQR 2,515.40 – 2,673.88 ns · lowest 2,190.45 ns (Neoverse-V3)</sub> | **3,027.72 ns**<br><sub>IQR 2,660.82 – 3,125.41 ns · lowest 2,461.00 ns (AMD EPYC 7763 2.59GHz)</sub> | **1,776.83 ns**<br><sub>IQR 1,709.30 – 2,103.91 ns · lowest 1,375.08 ns (AMD EPYC 9V45 4.25GHz)</sub> |
+| Static no-arg invocation | **150.2 ns**<br><sub>IQR 146.9 – 155.1 ns · lowest 115.3 ns (Neoverse-V3)</sub> | **142.6 ns**<br><sub>IQR 131.6 – 150.9 ns · lowest 118.3 ns (AMD EPYC 7763 2.59GHz)</sub> | **104.22 ns**<br><sub>IQR 75.32 – 115.2 ns · lowest 68.44 ns (AMD EPYC 9V45 4.34GHz)</sub> |
+| Static invocation with feedback | **512.7 ns**<br><sub>IQR 506.4 – 519.8 ns · lowest 397.1 ns (Neoverse-V3)</sub> | **546.2 ns**<br><sub>IQR 458.5 – 560.5 ns · lowest 413.3 ns (AMD EPYC 7763 3.24GHz)</sub> | **294.04 ns**<br><sub>IQR 268.50 – 378.2 ns · lowest 223.50 ns (AMD EPYC 9V45 4.25GHz)</sub> |
+| Object creation | **793.9 ns**<br><sub>IQR 787.4 – 805.8 ns · lowest 731.6 ns (Neoverse-V3)</sub> | **881.4 ns**<br><sub>IQR 746.1 – 934.4 ns · lowest 690.7 ns (AMD EPYC 7763 3.24GHz)</sub> | **551.0 ns**<br><sub>IQR 514.8 – 662.1 ns · lowest 438.1 ns (AMD EPYC 9V45 4.25GHz)</sub> |
+| Invoke with int[] (10000 elements) | **6,171.6 ns**<br><sub>IQR 6,121.9 – 6,234.7 ns · lowest 4,548.1 ns (Neoverse-N2)</sub> | **7,912.5 ns**<br><sub>IQR 7,645.9 – 8,001.2 ns · lowest 5,068.5 ns (AMD EPYC 7763 2.78GHz)</sub> | **6,292.0 ns**<br><sub>IQR 5,819.7 – 7,792.2 ns · lowest 2,490.9 ns (AMD EPYC 9V45 4.30GHz)</sub> |
+| Get instance int field | **66.09 ns**<br><sub>IQR 64.28 – 68.87 ns · lowest 56.72 ns (Neoverse-V3)</sub> | **73.99 ns**<br><sub>IQR 53.59 – 75.66 ns · lowest 47.05 ns (AMD EPYC 7763 3.24GHz)</sub> | **39.80 ns**<br><sub>IQR 33.53 – 53.40 ns · lowest 27.67 ns (AMD EPYC 9V45 4.34GHz)</sub> |
+| Set instance int field | **93.82 ns**<br><sub>IQR 90.43 – 97.58 ns · lowest 78.74 ns (Neoverse-V3)</sub> | **80.74 ns**<br><sub>IQR 62.49 – 83.33 ns · lowest 55.06 ns (AMD EPYC 7763 2.60GHz)</sub> | **48.63 ns**<br><sub>IQR 41.97 – 60.29 ns · lowest 35.57 ns (AMD EPYC 9V45 4.25GHz)</sub> |
+| Get instance string field | **84.80 ns**<br><sub>IQR 81.30 – 86.87 ns · lowest 71.47 ns (Neoverse-V3)</sub> | **71.93 ns**<br><sub>IQR 58.37 – 74.16 ns · lowest 51.05 ns (AMD EPYC 7763 2.60GHz)</sub> | **46.25 ns**<br><sub>IQR 38.13 – 52.59 ns · lowest 31.67 ns (AMD EPYC 9V45 4.34GHz)</sub> |
+| Set instance string field | **535.46 ns**<br><sub>IQR 525.77 – 543.70 ns · lowest 464.46 ns (Neoverse-V3)</sub> | **559.15 ns**<br><sub>IQR 463.09 – 607.32 ns · lowest 413.07 ns (AMD EPYC 7763 3.24GHz)</sub> | **329.33 ns**<br><sub>IQR 301.71 – 402.29 ns · lowest 258.80 ns (AMD EPYC 9V45 4.34GHz)</sub> |
 
 <!-- BENCHMARK-SUMMARY-END -->
 
