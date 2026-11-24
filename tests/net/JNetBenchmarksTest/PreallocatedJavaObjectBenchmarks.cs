@@ -26,7 +26,7 @@ namespace MASES.JNetBenchmarksTest;
 [BenchmarkCategory("Core")]
 public class PreallocatedJavaObjectBenchmarks
 {
-    [Params(10, 1_000, 10_000)]
+    [Params(1, 1_023, 1_024, 1_025, 100_000)]
     public int Length;
 
     IJavaObject _instance;

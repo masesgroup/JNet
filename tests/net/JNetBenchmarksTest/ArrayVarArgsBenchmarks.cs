@@ -32,7 +32,7 @@ public class ArrayVarArgsBenchmarks
     // (NewGlobalRef/DeleteGlobalRef vs local-ref-in-frame) dominate over
     // the fixed call overhead, so the effect becomes visible above the
     // measurement noise floor seen at Length=10/1000.
-    [Params(10, 1_000, 10_000)]
+    [Params(1, 1_023, 1_024, 1_025, 100_000)]
     public int Length;
 
     IJavaObject _instance;
