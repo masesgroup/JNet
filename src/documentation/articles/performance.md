@@ -16,17 +16,35 @@ All benchmarks run on [GitHub Actions](https://github.com/masesgroup/JNet/action
 Median across the CI matrix for each CPU class; below each median, the interquartile range (IQR) and the best run observed. The spread reflects differences between OS, .NET, JDK and runner hardware, not measurement noise. The x64 columns group runners by the instruction set the runtime detected, so CPU models within a column still vary. Results per CPU model, with allocations, are in [Benchmark results by CPU model](benchmark-by-cpu.md).
 
 <!-- BENCHMARK-SUMMARY-START -->
+
+| Benchmark | arm64, 92 runs | x64 AVX2 (v3), 31 runs | x64 AVX-512 (v4), 61 runs |
+|---|---:|---:|---:|
+| Sustained JVM→.NET callback (first gate discard) | **45.02 ns**<br><sub>IQR 44.21 – 46.92 ns · best 42.29 ns</sub> | **34.05 ns**<br><sub>IQR 31.55 – 35.08 ns · best 28.69 ns</sub> | **35.52 ns**<br><sub>IQR 28.18 – 37.29 ns · best 23.61 ns</sub> |
+| Sustained JVM→.NET callback (full processing) | **2,591.82 ns**<br><sub>IQR 2,527.83 – 2,665.69 ns · best 2,062.38 ns</sub> | **3,018.86 ns**<br><sub>IQR 2,577.13 – 3,082.92 ns · best 2,249.11 ns</sub> | **1,790.07 ns**<br><sub>IQR 1,743.20 – 2,073.11 ns · best 1,556.32 ns</sub> |
+| Static no-arg invocation | **150.5 ns**<br><sub>IQR 145.6 – 155.1 ns · best 111.6 ns</sub> | **143.1 ns**<br><sub>IQR 137.4 – 153.1 ns · best 122.0 ns</sub> | **84.07 ns**<br><sub>IQR 72.55 – 115.1 ns · best 69.80 ns</sub> |
+| Static invocation with feedback | **514.4 ns**<br><sub>IQR 504.7 – 520.7 ns · best 389.8 ns</sub> | **539.8 ns**<br><sub>IQR 427.7 – 559.5 ns · best 402.3 ns</sub> | **287.84 ns**<br><sub>IQR 263.53 – 379.3 ns · best 250.03 ns</sub> |
+| Object creation | **796.0 ns**<br><sub>IQR 785.4 – 808.6 ns · best 696.4 ns</sub> | **860.6 ns**<br><sub>IQR 725.7 – 915.2 ns · best 683.2 ns</sub> | **538.3 ns**<br><sub>IQR 515.4 – 663.5 ns · best 485.3 ns</sub> |
+| Invoke with int[] (10000 elements) | **6,186.2 ns**<br><sub>IQR 6,142.3 – 6,239.9 ns · best 3,580.4 ns</sub> | **7,900.0 ns**<br><sub>IQR 7,644.6 – 8,043.9 ns · best 5,324.5 ns</sub> | **6,027.9 ns**<br><sub>IQR 5,628.1 – 7,706.3 ns · best 2,474.6 ns</sub> |
+| Get instance int field | **65.66 ns**<br><sub>IQR 63.69 – 68.75 ns · best 57.29 ns</sub> | **73.65 ns**<br><sub>IQR 55.10 – 75.48 ns · best 48.36 ns</sub> | **39.31 ns**<br><sub>IQR 33.48 – 53.26 ns · best 30.42 ns</sub> |
+| Set instance int field | **94.78 ns**<br><sub>IQR 90.19 – 97.98 ns · best 79.16 ns</sub> | **80.24 ns**<br><sub>IQR 64.42 – 83.02 ns · best 55.56 ns</sub> | **48.24 ns**<br><sub>IQR 41.15 – 61.38 ns · best 37.95 ns</sub> |
+| Get instance string field | **84.15 ns**<br><sub>IQR 81.02 – 87.30 ns · best 70.90 ns</sub> | **71.89 ns**<br><sub>IQR 55.63 – 74.18 ns · best 50.78 ns</sub> | **44.96 ns**<br><sub>IQR 36.08 – 52.60 ns · best 33.47 ns</sub> |
+| Set instance string field | **537.41 ns**<br><sub>IQR 529.24 – 543.01 ns · best 452.90 ns</sub> | **542.34 ns**<br><sub>IQR 446.10 – 587.19 ns · best 388.73 ns</sub> | **345.75 ns**<br><sub>IQR 303.22 – 399.62 ns · best 285.32 ns</sub> |
+
 <!-- BENCHMARK-SUMMARY-END -->
 
 Terms used in the tables:
 
 - **`Invoke` / `IWS`** (`InvokeWithSignature`): the method is resolved by .NET-side type matching, or by name and JNI signature.
 - **`feedback`**: `false` is a no-argument `void` method; `true` takes and returns a `boolean`.
-- **`byIndex`**: the callback event is identified by a numeric index (`true`) or by a string key (`false`).
+- **`byIndex`**: the callback event is identified by a numeric index (`true`) or by a string key (`false`). Since JCOBridge 2.6.10 the two are practically equivalent: the index is resolved once and used as the key of a hashmap.
 - **First / second gate**: the two-level `ListenerShallManageEvent` filter; the first gate discards an event before any data is read, the second after the raw data is available.
 - **`Sustained`**: the JVM fires 1,000,000 callbacks toward .NET without returning control.
+- **`T17` / `T25`**: Temurin 17 / Temurin 25. **`fb`**: `feedback`.
+- **`continueFirstCheck` / `continueSecondCheck`**: whether the event passes the first / second gate (`false` = discarded there).
+- **`TestPredicateRoundTrip`**: .NET triggers a JVM call that immediately fires a callback back into .NET. In real usage the JVM initiates the event, so `Sustained` is the realistic reference.
 
 For the full BenchmarkDotNet results across all supported .NET versions, JDK vendors, and platforms see:
+
 - [Latest benchmark results](benchmark-latest.md)
 - [Live benchmark dashboard](https://masesgroup.com/benchmark-data/)
 
@@ -38,7 +56,7 @@ The sections below are a historical analysis across JCOBridge 2.6.6, 2.6.7+ and 
 The data were collected at different times, on different runners and hardware, so do not read them as absolute figures and do not compare them with the current results above. 
 Read them as guidance on how to use the tool: which strategies cost more, how costs scale and what to avoid in hot paths.
 
-## Test environments
+### Test environments
 
 Three environments are used across this page:
 
@@ -312,16 +330,18 @@ JNet's first-gate discard path (`ListenerShallManageEventIndex`) involves a JVM�
 ### Guidance
 
 - **Prefer `InvokeWithSignature`** (`IWS`) over `Invoke` in hot paths on x86 — it avoids .NET-side type matching and consistently delivers 20–55% lower latency with arguments involved. On ARM64 the two strategies are nearly equivalent for no-argument methods; the advantage of `IWS` varies by JDK vendor (see [dashboard](https://masesgroup.com/benchmark-data/)).
-- **Constructor resolution strategy does not matter** — all three approaches (`NewEmpty`, `NewWithSignature`, `DeclaredNewEmpty`) cost ~1 µs. Choose whichever is most readable.
-- **Primitive field access is cheap** (~100–120 ns); **string field writes are expensive** (~670 ns, ~6–7× the getter cost). Avoid repeated JVM `String` field writes in hot paths — prefer `int`/`long`/`boolean` fields or aggregate string data into a single call.
-- **Never pass large `String[]` arrays in hot paths** — at 100 000 elements a `String[]` costs ~57 ms vs ~60 µs for an equivalent `int[]` (1000× difference). Prefer primitive arrays, or use `JCOBridgeStream<T>` for binary bulk transfer.
-- **Varargs with spread elements** are the worst case for per-element overhead — each argument is individually boxed. Pass arrays as arrays, not as spread varargs, when the element count is large.
-- **Multi-parameter invocation** costs ~1.3 µs — roughly 4× a no-argument call. Keep argument lists short for frequently called methods.
+- **Constructor resolution strategy does not matter**: `NewEmpty`, `NewWithSignature` and `DeclaredNewEmpty` are within a few percent of each other. Choose whichever is most readable.
+- **Primitive field access is cheap; string field writes are not**: setting a JVM `String` field costs roughly 7× the corresponding read and allocates on the .NET side. Avoid repeated `String` field writes in hot paths; prefer `int`/`long`/`boolean` fields or aggregate string data into a single call.
+- **Never pass large `String[]` arrays in hot paths**: every element is marshalled individually, so the cost is hundreds of times that of an equivalent `int[]`. Prefer primitive arrays, or use `JCOBridgeStream<T>` for binary bulk transfer.
+- **Varargs with spread elements** are the worst case for per-element overhead, because each argument is individually boxed. Pass arrays as arrays when the element count is large.
+- **Multi-parameter invocation** costs several times a no-argument call. Keep argument lists short for frequently called methods.
 - **The realistic JVM-originated callback reference** is `Sustained`, full processing, `byIndex = false`: **~2.7 µs** on x86 EPYC (2.6.9), **~4.1–4.5 µs** on ARM64 Neoverse-N2.
 - **Use the two-level `ListenerShallManageEvent` filter** for high-event-rate sources:
   - First gate (`ListenerShallManageEventIndex`) — discard before any data read: **~30–35 ns** (x86), **~42–44 ns** (ARM64).
   - Second gate (`ListenerShallManageEventIndexWithData`) — inspect raw data before handler: **~144–152 ns** (x86), **~256–263 ns** (ARM64).
 - **For bulk data from JVM arrays**, prefer `JCOBridgeStream<T>` with HPA `forceRawMemory=true` for large payloads — up to 83% faster than standard at 100 MB. For small arrays (≤10 KB), the optimized transfer path reduces per-call overhead to ~1–2 µs.
 - **For `DirectByteBuffer` access**, use `AsSpan` — zero-copy from native memory in all editions, ~16 GB/s at 100 MB. Avoid `ToStream → Naive` above a few KB.
-- The `byIndex = true` mechanism will deliver its full benefit on the full-processing path once the JVM-side simulation is replaced with real interface dispatch.
+- From JCOBridge 2.6.10 `byIndex = true` and `byIndex = false` are practically equivalent (the index is resolved once and looked up in a key-value hashmap), so the gap between them in the historical tables above no longer applies.
 - If your application runs callbacks at sustained high frequency, consider the [JCOBridge HPA edition](https://www.jcobridge.com) — it addresses GC-boundary instability under sustained JVM↔CLR call pressure and enables true zero-copy bulk array access.
+
+Current numbers for all of these are in [Benchmark results by CPU model](benchmark-by-cpu.md).
