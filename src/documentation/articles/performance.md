@@ -36,11 +36,15 @@ Terms used in the tables:
 
 - **`Invoke` / `IWS`** (`InvokeWithSignature`): the method is resolved by .NET-side type matching, or by name and JNI signature.
 - **`feedback`**: `false` is a no-argument `void` method; `true` takes and returns a `boolean`.
-- **`byIndex`**: the callback event is identified by a numeric index (`true`) or by a string key (`false`).
+- **`byIndex`**: the callback event is identified by a numeric index (`true`) or by a string key (`false`). Since JCOBridge 2.6.10 the two are practically equivalent: the index is resolved once and used as the key of a hashmap.
 - **First / second gate**: the two-level `ListenerShallManageEvent` filter; the first gate discards an event before any data is read, the second after the raw data is available.
 - **`Sustained`**: the JVM fires 1,000,000 callbacks toward .NET without returning control.
+- **`T17` / `T25`**: Temurin 17 / Temurin 25. **`fb`**: `feedback`.
+- **`continueFirstCheck` / `continueSecondCheck`**: whether the event passes the first / second gate (`false` = discarded there).
+- **`TestPredicateRoundTrip`**: .NET triggers a JVM call that immediately fires a callback back into .NET. In real usage the JVM initiates the event, so `Sustained` is the realistic reference.
 
 For the full BenchmarkDotNet results across all supported .NET versions, JDK vendors, and platforms see:
+
 - [Latest benchmark results](benchmark-latest.md)
 - [Live benchmark dashboard](https://masesgroup.com/benchmark-data/)
 
@@ -52,7 +56,7 @@ The sections below are a historical analysis across JCOBridge 2.6.6, 2.6.7+ and 
 The data were collected at different times, on different runners and hardware, so do not read them as absolute figures and do not compare them with the current results above. 
 Read them as guidance on how to use the tool: which strategies cost more, how costs scale and what to avoid in hot paths.
 
-## Test environments
+### Test environments
 
 Three environments are used across this page:
 
@@ -326,16 +330,18 @@ JNet's first-gate discard path (`ListenerShallManageEventIndex`) involves a JVM�
 ### Guidance
 
 - **Prefer `InvokeWithSignature`** (`IWS`) over `Invoke` in hot paths on x86 — it avoids .NET-side type matching and consistently delivers 20–55% lower latency with arguments involved. On ARM64 the two strategies are nearly equivalent for no-argument methods; the advantage of `IWS` varies by JDK vendor (see [dashboard](https://masesgroup.com/benchmark-data/)).
-- **Constructor resolution strategy does not matter** — all three approaches (`NewEmpty`, `NewWithSignature`, `DeclaredNewEmpty`) cost ~1 µs. Choose whichever is most readable.
-- **Primitive field access is cheap** (~100–120 ns); **string field writes are expensive** (~670 ns, ~6–7× the getter cost). Avoid repeated JVM `String` field writes in hot paths — prefer `int`/`long`/`boolean` fields or aggregate string data into a single call.
-- **Never pass large `String[]` arrays in hot paths** — at 100 000 elements a `String[]` costs ~57 ms vs ~60 µs for an equivalent `int[]` (1000× difference). Prefer primitive arrays, or use `JCOBridgeStream<T>` for binary bulk transfer.
-- **Varargs with spread elements** are the worst case for per-element overhead — each argument is individually boxed. Pass arrays as arrays, not as spread varargs, when the element count is large.
-- **Multi-parameter invocation** costs ~1.3 µs — roughly 4× a no-argument call. Keep argument lists short for frequently called methods.
+- **Constructor resolution strategy does not matter**: `NewEmpty`, `NewWithSignature` and `DeclaredNewEmpty` are within a few percent of each other. Choose whichever is most readable.
+- **Primitive field access is cheap; string field writes are not**: setting a JVM `String` field costs roughly 7× the corresponding read and allocates on the .NET side. Avoid repeated `String` field writes in hot paths; prefer `int`/`long`/`boolean` fields or aggregate string data into a single call.
+- **Never pass large `String[]` arrays in hot paths**: every element is marshalled individually, so the cost is hundreds of times that of an equivalent `int[]`. Prefer primitive arrays, or use `JCOBridgeStream<T>` for binary bulk transfer.
+- **Varargs with spread elements** are the worst case for per-element overhead, because each argument is individually boxed. Pass arrays as arrays when the element count is large.
+- **Multi-parameter invocation** costs several times a no-argument call. Keep argument lists short for frequently called methods.
 - **The realistic JVM-originated callback reference** is `Sustained`, full processing, `byIndex = false`: **~2.7 µs** on x86 EPYC (2.6.9), **~4.1–4.5 µs** on ARM64 Neoverse-N2.
 - **Use the two-level `ListenerShallManageEvent` filter** for high-event-rate sources:
   - First gate (`ListenerShallManageEventIndex`) — discard before any data read: **~30–35 ns** (x86), **~42–44 ns** (ARM64).
   - Second gate (`ListenerShallManageEventIndexWithData`) — inspect raw data before handler: **~144–152 ns** (x86), **~256–263 ns** (ARM64).
 - **For bulk data from JVM arrays**, prefer `JCOBridgeStream<T>` with HPA `forceRawMemory=true` for large payloads — up to 83% faster than standard at 100 MB. For small arrays (≤10 KB), the optimized transfer path reduces per-call overhead to ~1–2 µs.
 - **For `DirectByteBuffer` access**, use `AsSpan` — zero-copy from native memory in all editions, ~16 GB/s at 100 MB. Avoid `ToStream → Naive` above a few KB.
-- The `byIndex = true` mechanism will deliver its full benefit on the full-processing path once the JVM-side simulation is replaced with real interface dispatch.
+- From JCOBridge 2.6.10 `byIndex = true` and `byIndex = false` are practically equivalent (the index is resolved once and looked up in a key-value hashmap), so the gap between them in the historical tables above no longer applies.
 - If your application runs callbacks at sustained high frequency, consider the [JCOBridge HPA edition](https://www.jcobridge.com) — it addresses GC-boundary instability under sustained JVM↔CLR call pressure and enables true zero-copy bulk array access.
+
+Current numbers for all of these are in [Benchmark results by CPU model](benchmark-by-cpu.md).

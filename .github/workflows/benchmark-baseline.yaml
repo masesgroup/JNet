@@ -650,7 +650,7 @@ jobs:
           # pick METHOD [PARAMS_REGEX]   (uses the globals FIELD = 8 class | 10 model, and GROUP)
           # Median and interquartile range (25th-75th percentile, nearest-rank) of the
           # per-run Mean across all matrix cells of the group, sorted on values normalized
-          # to ns, plus the best observed run, its cell and its CPU.
+          # to ns, plus the lowest observed run, its cell and its CPU.
           # Values are printed as they appear in the table; Allocated comes from the
           # median row. Prints "median|q1|q3|min|mincell|mincpu|allocated|runs".
           pick() {
@@ -684,7 +684,7 @@ jobs:
 
           # cells FIELD GROUP -> number of distinct matrix cells (runs) in the group
           cells() {
-            cut -f"1,$1" <<< "$ROWS" | sort -u | awk -F'\t' -v g="$2" '$2 == g' | wc -l | tr -d ' '
+            awk -F'\t' -v f="$1" -v g="$2" '$1 ~ /^core-/ && $(f + 0) == g { print $1 }' <<< "$ROWS" | sort -u | wc -l | tr -d ' '
           }
 
           # ---------------------------------------------------------------
@@ -693,7 +693,7 @@ jobs:
           CLASSES=(arm64 x86-64-v3 x86-64-v4)
 
           # row "Description" METHOD [PARAMS_REGEX]  -> one markdown table row,
-          # one column per CPU class: median, then IQR and best on a second line
+          # one column per CPU class: median, then IQR and lowest on a second line
           row() {
             local line="| $1" method="$2" params="${3:-.*}" g med q1 q3 min cell cpu al runs
             for g in "${CLASSES[@]}"; do
@@ -704,7 +704,8 @@ jobs:
                 line+=" | n/a"; continue
               fi
               [ "${q1##* }" = "${q3##* }" ] && q1="${q1% *}"   # drop duplicated unit in the IQR
-              line+=" | **$med**<br><sub>IQR $q1 – $q3 · best $min</sub>"
+              [ "$cpu" = "unknown" ] && cpu="Neoverse-N2"      # arm64 runners that report no model
+              line+=" | **$med**<br><sub>IQR $q1 – $q3 · lowest $min ($cpu)</sub>"
             done
             echo "$line |"
           }
