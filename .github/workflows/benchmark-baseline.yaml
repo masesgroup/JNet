@@ -603,13 +603,12 @@ jobs:
           set +o pipefail
 
           LATEST=src/documentation/articles/benchmark-latest.md
+          OUT=src/documentation/articles/benchmark-by-cpu.md
+          MIN_CELLS=5     # CPU models with fewer matrix cells are left out of the by-CPU page
 
           # Normalize every table row to TSV:
-          # label, method, params, mean, error, stddev, allocated, group, cpu
-          # Columns are located through each table's header row, so thousands
-          # separators ("3,002.58 ns"), bold markers and extra columns are harmless.
-          # Group (arm64 | x86-64-v3 | x86-64-v4) and CPU come from the BenchmarkDotNet
-          # environment block that follows each "## label" heading.
+          # 1 label, 2 method, 3 params, 4 mean, 5 error, 6 stddev, 7 allocated,
+          # 8 class (arm64|x86-64-v3|x86-64-v4), 9 cpu, 10 model (cpu without clock)
           ROWS=$(awk -F'|' '
             function trim(s) { gsub(/^[ \t*]+|[ \t*]+$/, "", s); return s }
             function get(name) { return (name in col) ? trim($(col[name])) : "" }
@@ -623,6 +622,7 @@ jobs:
             /^[^|].*physical core/ {
               cpu = $0; sub(/,.*/, "", cpu)                   # drop ", 4 logical and 2 physical cores"
               sub(/ CPU /, " ", cpu); sub(/ *\(Max:[^)]*\)/, "", cpu)
+              sub(/^INTEL XEON PLATINUM/, "Intel Xeon Platinum", cpu)
               cpu = trim(cpu); if (cpu ~ /^Unknown processor/) cpu = "unknown"
               next
             }
@@ -641,19 +641,21 @@ jobs:
               g = arch; if (g == "") g = (label ~ /-arm/) ? "arm64" : "x64"
               if (g == "x64" && isa != "") g = isa
               c = cpu; if (c == "") c = "n/a"
-              printf "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n", label, get("Method"), params, get("Mean"), get("Error"), get("StdDev"), alloc, g, c
+              mdl = c; sub(/ +[0-9.]+GHz.*$/, "", mdl)
+              if (g == "arm64") mdl = "arm64"
+              printf "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n", label, get("Method"), params, get("Mean"), get("Error"), get("StdDev"), alloc, g, c, mdl
             }
           ' "$LATEST")
 
-          # pick METHOD [PARAMS_REGEX]   (uses the global GROUP)
+          # pick METHOD [PARAMS_REGEX]   (uses the globals FIELD = 8 class | 10 model, and GROUP)
           # Median and interquartile range (25th-75th percentile, nearest-rank) of the
-          # per-run Mean across all matrix cells of the given group, sorted on values
-          # normalized to ns, plus the best observed run, its cell and its CPU.
+          # per-run Mean across all matrix cells of the group, sorted on values normalized
+          # to ns, plus the best observed run, its cell and its CPU.
           # Values are printed as they appear in the table; Allocated comes from the
           # median row. Prints "median|q1|q3|min|mincell|mincpu|allocated|runs".
           pick() {
             local out
-            out=$(awk -F'\t' -v m="$1" -v p="${2:-.*}" -v grp="$GROUP" '
+            out=$(awk -F'\t' -v m="$1" -v p="${2:-.*}" -v grp="$GROUP" -v fld="$FIELD" '
               function ns(s,  a, v, u) {
                 split(s, a, " "); v = a[1]; gsub(",", "", v); v = v + 0; u = a[2]
                 if (u == "ns") return v
@@ -661,7 +663,7 @@ jobs:
                 if (u == "s")  return v * 1e9
                 return v * 1e3                                 # us / μs / µs
               }
-              $2 == m && $3 ~ p && $8 == grp && $4 ~ /^[0-9]/ { k++; v[k] = ns($4); row[k] = $0 }
+              $2 == m && $3 ~ p && $(fld + 0) == grp && $4 ~ /^[0-9]/ { k++; v[k] = ns($4); row[k] = $0 }
               END {
                 if (!k) exit
                 for (i = 1; i <= k; i++) idx[i] = i
@@ -680,39 +682,57 @@ jobs:
             echo "${out:-N/A|N/A|N/A|N/A|N/A|N/A|N/A|0}"
           }
 
-          # row "Description" METHOD [PARAMS_REGEX]  -> one markdown table row
-          row() {
-            local med q1 q3 min cell cpu alloc runs
-            IFS='|' read -r med q1 q3 min cell cpu alloc runs <<< "$(pick "$2" "${3:-.*}")"
-            [ "$med" = "N/A" ] && echo "::warning::Could not extract summary values for $2 ${3:-} ($GROUP)." >&2
-            printf '| %s | %s | %s – %s | %s | `%s` | %s | %s | %s |\n' \
-              "$1" "$med" "$q1" "$q3" "$min" "$cell" "$cpu" "$alloc" "$runs"
+          # cells FIELD GROUP -> number of distinct matrix cells (runs) in the group
+          cells() {
+            cut -f"1,$1" <<< "$ROWS" | sort -u | awk -F'\t' -v g="$2" '$2 == g' | wc -l | tr -d ' '
           }
 
-          # One table for the group in $1
-          summary_table() {
-            GROUP="$1"
-            echo '| Benchmark | Median | IQR (25th–75th) | Best | Best cell | Best CPU | Allocated | Runs |'
-            echo '|---|---:|---:|---:|---|---|---:|---:|'
-            row "Static no-arg invocation"                         InvokeStaticEmptyWithSignature
-            row "Static invocation with feedback"                  InvokeStaticWithFeedback
+          # ---------------------------------------------------------------
+          # 1. Summary table for README.md / index.md (CPU classes as columns)
+          # ---------------------------------------------------------------
+          CLASSES=(arm64 x86-64-v3 x86-64-v4)
+
+          # row "Description" METHOD [PARAMS_REGEX]  -> one markdown table row,
+          # one column per CPU class: median, then IQR and best on a second line
+          row() {
+            local line="| $1" method="$2" params="${3:-.*}" g med q1 q3 min cell cpu al runs
+            for g in "${CLASSES[@]}"; do
+              GROUP="$g"
+              IFS='|' read -r med q1 q3 min cell cpu al runs <<< "$(pick "$method" "$params")"
+              if [ "$med" = "N/A" ]; then
+                echo "::warning::Could not extract summary values for $method $params ($g)." >&2
+                line+=" | n/a"; continue
+              fi
+              [ "${q1##* }" = "${q3##* }" ] && q1="${q1% *}"   # drop duplicated unit in the IQR
+              line+=" | **$med**<br><sub>IQR $q1 – $q3 · best $min</sub>"
+            done
+            echo "$line |"
+          }
+
+          BLOCK=$(
+            FIELD=8
+            hdr='| Benchmark'; sep='|---'
+            for g in "${CLASSES[@]}"; do
+              case "$g" in
+                arm64)     t="arm64" ;;
+                x86-64-v3) t="x64 AVX2 (v3)" ;;
+                x86-64-v4) t="x64 AVX-512 (v4)" ;;
+                *)         t="$g" ;;
+              esac
+              hdr+=" | $t, $(cells 8 "$g") runs"; sep+='|---:'
+            done
+            echo "$hdr |"
+            echo "${sep}|"
             row "Sustained JVM→.NET callback (first gate discard)" PredicateSustained '^True,False,False$'
             row "Sustained JVM→.NET callback (full processing)"    PredicateSustained '^True,True,True$'
+            row "Static no-arg invocation"                         InvokeStaticEmptyWithSignature
+            row "Static invocation with feedback"                  InvokeStaticWithFeedback
             row "Object creation"                                  NewEmpty
             row "Invoke with int[] (10000 elements)"               InvokeIntArrayFixed '^10000$'
             row "Get instance int field"                           GetInstanceIntField
             row "Set instance int field"                           SetInstanceIntField
             row "Get instance string field"                        GetInstanceStringField
             row "Set instance string field"                        SetInstanceStringField
-          }
-
-          BLOCK=$(
-            echo '**arm64**'; echo
-            summary_table arm64; echo
-            echo '**x64 – x86-64-v3 (AVX2)**'; echo
-            summary_table x86-64-v3; echo
-            echo '**x64 – x86-64-v4 (AVX-512)**'; echo
-            summary_table x86-64-v4
           )
 
           # Replace everything between the markers, keeping the markers themselves
@@ -723,6 +743,96 @@ jobs:
               /<!-- BENCHMARK-SUMMARY-END -->/ { skip=0 }
               !skip { print }
             ' "$f" > "$f.tmp" && mv "$f.tmp" "$f"
+          done
+
+          # ---------------------------------------------------------------
+          # 2. Detail page: one column per CPU model (clock ignored)
+          # ---------------------------------------------------------------
+          FIELD=10
+          mapfile -t MODELS < <(
+            cut -f1,10 <<< "$ROWS" | sort -u | cut -f2 | sort | uniq -c | sort -rn |
+              awk -v min="$MIN_CELLS" '$1 >= min { sub(/^ *[0-9]+ +/, ""); print }'
+          )
+
+          DETAIL_HDR='| Benchmark'; DETAIL_SEP='|---'
+          for m in "${MODELS[@]}"; do
+            t="$m"; [ "$m" = "arm64" ] && t="arm64 (Neoverse-N2)"
+            DETAIL_HDR+=" | $t<br><sub>$(cells 10 "$m") runs</sub>"; DETAIL_SEP+='|---:'
+          done
+          DETAIL_HDR+=' | Allocated |'; DETAIL_SEP+='|---:|'
+
+          USED=" "
+
+          # params_of METHOD -> distinct params values found in the data (version-sorted)
+          params_of() { awk -F'\t' -v m="$1" '$2 == m { print $3 }' <<< "$ROWS" | sort -uV; }
+
+          # detail_row METHOD PARAMS [TITLE] -> one row, one median per CPU model
+          detail_row() {
+            local method="$1" params="$2" name="${3:-}" line m med q1 q3 min cell cpu al runs alloc=""
+            if [ -z "$name" ]; then
+              name="\`$method\`"; [ -n "$params" ] && name+=" ($params)"
+            fi
+            line="| $name"
+            for m in "${MODELS[@]}"; do
+              FIELD=10; GROUP="$m"
+              IFS='|' read -r med q1 q3 min cell cpu al runs <<< "$(pick "$method" "^${params}\$")"
+              if [ "$med" = "N/A" ]; then
+                line+=" | –"
+              else
+                line+=" | $med"; [ -z "$alloc" ] && alloc="$al"
+              fi
+            done
+            echo "$line | ${alloc:--} |"
+          }
+
+          # detail_section "Title" METHOD...
+          detail_section() {
+            local title="$1" m p found; shift
+            echo "## $title"; echo
+            echo "$DETAIL_HDR"; echo "$DETAIL_SEP"
+            for m in "$@"; do
+              USED+="$m "; found=0
+              while IFS= read -r p; do
+                found=1; detail_row "$m" "$p"
+              done < <(params_of "$m")
+              [ "$found" = 0 ] && echo "::warning::Method $m not found in $LATEST." >&2
+            done
+            echo
+          }
+
+          {
+            echo "# JNet: benchmark results by CPU model"
+            echo
+            echo "<!-- Generated by the benchmark workflow from benchmark-latest.md. Do not edit manually. -->"
+            echo
+            echo "Median of the per-run BenchmarkDotNet Mean across all CI matrix cells (OS, .NET and JDK combinations) that ran on the same CPU model; the clock frequency reported by BenchmarkDotNet is ignored. The number of runs is in each column header. CPU models seen in fewer than $MIN_CELLS cells are omitted. Allocated is the same on every run. Runners reporting an unknown arm64 processor are grouped with arm64."
+            echo
+            detail_section "JVM object creation"  NewEmpty NewWithSignature DeclaredNewEmpty
+            detail_section "Field access"         GetInstanceIntField SetInstanceIntField GetInstanceStringField SetInstanceStringField GetStaticIntField SetStaticIntField GetStaticStringField SetStaticStringField GetInstanceIntFieldGeneric
+            detail_section "Method invocation"    InvokeStaticEmpty InvokeStaticEmptyWithSignature InvokeStaticWithFeedback InvokeInstanceEmpty InvokeInstanceWithFeedback
+            detail_section "Array and varargs invocation" InvokeIntParam InvokeIntArrayFixed InvokeVarArgsWholeArray InvokeStringArrayFixed InvokeVarArgsSpreadElements InvokeIntArrayFixedSegment InvokeIntArrayFixedSlicedCopy InvokeIntArrayFixedSegmentFull
+            detail_section "Preallocated JVM objects" InvokeSingleStringPreallocated InvokeStringArrayPreallocated
+            detail_section "Multi-parameter invocation" InvokeMultiParam
+
+            echo "## JVM→.NET callback (sustained)"; echo
+            echo "$DETAIL_HDR"; echo "$DETAIL_SEP"
+            USED+="PredicateSustained "
+            detail_row PredicateSustained "True,False,False"  "by index, first gate discard ¹"
+            detail_row PredicateSustained "True,True,False"   "by index, second gate discard ¹"
+            detail_row PredicateSustained "True,True,True"    "by index, full processing ¹"
+            detail_row PredicateSustained "False,False,False" "by name, first gate discard"
+            detail_row PredicateSustained "False,True,False"  "by name, second gate discard"
+            detail_row PredicateSustained "False,True,True"   "by name, full processing"
+            echo
+            echo "¹ \`byIndex = true\` is still simulated on the JVM side."
+          } > "$OUT"
+
+          # Methods present in the data but not listed in any section above
+          for m in $(cut -f2 <<< "$ROWS" | sort -u); do
+            case "$USED" in
+              *" $m "*) ;;
+              *) echo "::warning::Method $m is in the benchmark data but not in $OUT." >&2 ;;
+            esac
           done
 
       - uses: actions/upload-artifact@v7
@@ -741,6 +851,7 @@ jobs:
           add-paths: |
             README.md
             src/documentation/index.md
+            src/documentation/articles/benchmark-by-cpu.md
             src/documentation/articles/benchmark-latest.md
           body: |
             Auto-generated benchmark tables from BenchmarkDotNet.
