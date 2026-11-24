@@ -629,9 +629,11 @@ jobs:
           ' "$LATEST")
 
           # pick METHOD [PARAMS_REGEX]
-          # Median row (by Mean, normalized to ns) across all matrix cells.
-          # Mean, Error, StdDev and Allocated come from the same median row.
-          # Prints "mean|error|stddev|allocated|min|max|runs".
+          # Median and interquartile range (25th-75th percentile, nearest-rank) of the
+          # per-run Mean across all matrix cells, sorted on values normalized to ns,
+          # plus the best observed run and the cell that produced it.
+          # Values are printed as they appear in the table; Allocated comes from the
+          # median row. Prints "median|q1|q3|min|mincell|allocated|runs".
           pick() {
             local out
             out=$(awk -F'\t' -v m="$1" -v p="${2:-.*}" '
@@ -651,41 +653,46 @@ jobs:
                   while (j > 0 && v[idx[j]] > v[t]) { idx[j+1] = idx[j]; j-- }
                   idx[j+1] = t
                 }
-                split(row[idx[int((k + 1) / 2)]], f, "\t")
-                split(row[idx[1]], lo, "\t"); split(row[idx[k]], hi, "\t")
-                print f[4] "|" f[5] "|" f[6] "|" f[7] "|" lo[4] "|" hi[4] "|" k
+                split(row[idx[int((k + 1) / 2)]], f,  "\t")
+                split(row[idx[int((k + 3) / 4)]], q1, "\t")
+                split(row[idx[int((3 * k + 3) / 4)]], q3, "\t")
+                split(row[idx[1]], lo, "\t")
+                print f[4] "|" q1[4] "|" q3[4] "|" lo[4] "|" lo[1] "|" f[7] "|" k
               }
             ' <<< "$ROWS")
             echo "${out:-N/A|N/A|N/A|N/A|N/A|N/A|0}"
           }
 
-          # bullet "Description" METHOD [PARAMS_REGEX]
-          bullet() {
-            local mean err dev alloc min max runs
-            IFS='|' read -r mean err dev alloc min max runs <<< "$(pick "$2" "${3:-.*}")"
-            [ "$mean" = "N/A" ] && echo "::warning::Could not extract summary values for $2 ${3:-}." >&2
-            printf '  * %s: Median Mean %s (min %s, max %s, %s runs), Error %s, StdDev %s, Allocated %s' \
-              "$1" "$mean" "$min" "$max" "$runs" "$err" "$dev" "$alloc"
+          # row "Description" METHOD [PARAMS_REGEX]  -> one markdown table row
+          row() {
+            local med q1 q3 min cell alloc runs
+            IFS='|' read -r med q1 q3 min cell alloc runs <<< "$(pick "$2" "${3:-.*}")"
+            [ "$med" = "N/A" ] && echo "::warning::Could not extract summary values for $2 ${3:-}." >&2
+            printf '| %s | %s | %s – %s | %s | `%s` | %s | %s |\n' \
+              "$1" "$med" "$q1" "$q3" "$min" "$cell" "$alloc" "$runs"
           }
 
-          # Median across the whole CI matrix, with min/max and number of runs
+          # Median across the whole CI matrix, with interquartile range, best run and number of runs
           BLOCK=$(
-            bullet "Static no-arg invocation"                         InvokeStaticEmptyWithSignature; echo
-            bullet "Static invocation with feedback"                  InvokeStaticWithFeedback; echo
-            bullet "Sustained JVM→.NET callback (first gate discard)" PredicateSustained '^True,False,False$'; echo
-            bullet "Sustained JVM→.NET callback (full processing)"    PredicateSustained '^True,True,True$'; echo
-            bullet "Object creation"                                  NewEmpty; echo
-            bullet "Invoke with int[] (10000 elements)"               InvokeIntArrayFixed '^10000$'; echo
-            bullet "Get instance int field"                           GetInstanceIntField; echo
-            bullet "Set instance int field"                           SetInstanceIntField; echo
-            bullet "Get instance string field"                        GetInstanceStringField; echo
-            bullet "Set instance string field"                        SetInstanceStringField
+            echo '| Benchmark | Median | IQR (25th–75th) | Best | Best cell | Allocated | Runs |'
+            echo '|---|---:|---:|---:|---|---:|---:|'
+            row "Static no-arg invocation"                         InvokeStaticEmptyWithSignature
+            row "Static invocation with feedback"                  InvokeStaticWithFeedback
+            row "Sustained JVM→.NET callback (first gate discard)" PredicateSustained '^True,False,False$'
+            row "Sustained JVM→.NET callback (full processing)"    PredicateSustained '^True,True,True$'
+            row "Object creation"                                  NewEmpty
+            row "Invoke with int[] (10000 elements)"               InvokeIntArrayFixed '^10000$'
+            row "Get instance int field"                           GetInstanceIntField
+            row "Set instance int field"                           SetInstanceIntField
+            row "Get instance string field"                        GetInstanceStringField
+            row "Set instance string field"                        SetInstanceStringField
           )
 
           # Replace everything between the markers, keeping the markers themselves
+          # (blank lines around the table so every renderer parses it as a table)
           for f in README.md src/documentation/index.md; do
             awk -v block="$BLOCK" '
-              /<!-- BENCHMARK-SUMMARY-START -->/ { print; print block; skip=1; next }
+              /<!-- BENCHMARK-SUMMARY-START -->/ { print; print ""; print block; print ""; skip=1; next }
               /<!-- BENCHMARK-SUMMARY-END -->/ { skip=0 }
               !skip { print }
             ' "$f" > "$f.tmp" && mv "$f.tmp" "$f"

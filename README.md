@@ -104,7 +104,7 @@ JNet interop overhead is tracked continuously across .NET and JDK versions:
 - [Latest benchmark results](src/documentation/articles/benchmark-latest.md)
 - [Live benchmark dashboard](https://masesgroup.com/benchmark-data/)
 
-Some best cases across the CI matrix:
+Median across the CI matrix. The spread (IQR) reflects differences between OS, architecture, .NET and JDK combinations, not measurement noise; "Best" is the lowest run observed and the cell that produced it.
 <!-- BENCHMARK-SUMMARY-START -->
   * Static no-arg invocation: Median Mean 146.2 ns (min 63.29 ns, max 222.0 ns, 176 runs), Error 0.05 ns, StdDev 0.05 ns, Allocated 0 B
   * Static invocation with feedback: Median Mean 506.4 ns (min 216.02 ns, max 658.2 ns, 176 runs), Error 0.72 ns, StdDev 0.60 ns, Allocated 248 B
