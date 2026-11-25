@@ -6,91 +6,91 @@ Median of the per-run BenchmarkDotNet Mean across all CI matrix cells (OS, .NET 
 
 ## JVM object creation
 
-| Benchmark | arm64 (Neoverse-N2)<br><sub>92 runs</sub> | AMD EPYC 7763<br><sub>28 runs</sub> | Intel Xeon 6975P-C<br><sub>23 runs</sub> | AMD EPYC 9V74<br><sub>19 runs</sub> | AMD EPYC 9V45<br><sub>9 runs</sub> | Intel Xeon Platinum 8573C<br><sub>7 runs</sub> | Allocated |
+| Benchmark | arm64 (Neoverse-N2)<br><sub>88 runs</sub> | AMD EPYC 7763<br><sub>32 runs</sub> | Intel Xeon 6975P-C<br><sub>19 runs</sub> | AMD EPYC 9V74<br><sub>16 runs</sub> | Intel Xeon Platinum 8573C<br><sub>9 runs</sub> | AMD EPYC 9V45<br><sub>10 runs</sub> | Allocated |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| `NewEmpty` | 796.0 ns | 889.0 ns | 515.4 ns | 672.4 ns | 524.9 ns | 731.8 ns | 368 B |
-| `NewWithSignature` | 796.0 ns | 900.3 ns | 517.3 ns | 659.7 ns | 534.5 ns | 725.6 ns | 368 B |
-| `DeclaredNewEmpty` | 798.4 ns | 881.8 ns | 517.2 ns | 654.6 ns | 525.4 ns | 728.7 ns | 368 B |
+| `NewEmpty` | 793.9 ns | 881.4 ns | 523.9 ns | 553.6 ns | 796.4 ns | 512.6 ns | 368 B |
+| `NewWithSignature` | 795.8 ns | 889.7 ns | 521.8 ns | 567.7 ns | 799.1 ns | 516.9 ns | 368 B |
+| `DeclaredNewEmpty` | 794.6 ns | 892.6 ns | 522.0 ns | 565.1 ns | 800.9 ns | 516.5 ns | 368 B |
 
 ## Field access
 
-| Benchmark | arm64 (Neoverse-N2)<br><sub>92 runs</sub> | AMD EPYC 7763<br><sub>28 runs</sub> | Intel Xeon 6975P-C<br><sub>23 runs</sub> | AMD EPYC 9V74<br><sub>19 runs</sub> | AMD EPYC 9V45<br><sub>9 runs</sub> | Intel Xeon Platinum 8573C<br><sub>7 runs</sub> | Allocated |
+| Benchmark | arm64 (Neoverse-N2)<br><sub>88 runs</sub> | AMD EPYC 7763<br><sub>32 runs</sub> | Intel Xeon 6975P-C<br><sub>19 runs</sub> | AMD EPYC 9V74<br><sub>16 runs</sub> | Intel Xeon Platinum 8573C<br><sub>9 runs</sub> | AMD EPYC 9V45<br><sub>10 runs</sub> | Allocated |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| `GetInstanceIntField` | 65.66 ns | 73.86 ns | 33.17 ns | 53.41 ns | 39.31 ns | 44.37 ns | 24 B |
-| `SetInstanceIntField` | 94.78 ns | 81.04 ns | 40.11 ns | 62.77 ns | 45.83 ns | 60.48 ns | 24 B |
-| `GetInstanceStringField` | 84.15 ns | 72.75 ns | 35.42 ns | 54.67 ns | 39.98 ns | 50.45 ns | 0 B |
-| `SetInstanceStringField` | 537.41 ns | 558.70 ns | 302.29 ns | 399.62 ns | 346.14 ns | 430.85 ns | 248 B |
-| `GetStaticIntField` | 93.53 ns | 81.23 ns | 37.65 ns | 59.71 ns | 51.61 ns | 51.61 ns | 24 B |
-| `SetStaticIntField` | 95.81 ns | 79.88 ns | 40.74 ns | 60.53 ns | 45.72 ns | 60.28 ns | 24 B |
-| `GetStaticStringField` | 82.56 ns | 68.94 ns | 33.63 ns | 52.04 ns | 38.72 ns | 49.10 ns | 0 B |
-| `SetStaticStringField` | 534.48 ns | 571.99 ns | 300.29 ns | 393.76 ns | 333.02 ns | 434.87 ns | 248 B |
-| `GetInstanceIntFieldGeneric` | 77.46 ns | 71.74 ns | 32.31 ns | 52.14 ns | 39.69 ns | 47.01 ns | 0 B |
+| `GetInstanceIntField` | 66.09 ns | 73.99 ns | 33.20 ns | 44.81 ns | 64.13 ns | 38.09 ns | 24 B |
+| `SetInstanceIntField` | 93.82 ns | 80.74 ns | 41.68 ns | 48.60 ns | 76.01 ns | 45.28 ns | 24 B |
+| `GetInstanceStringField` | 84.80 ns | 71.30 ns | 36.90 ns | 42.41 ns | 62.93 ns | 38.87 ns | 0 B |
+| `SetInstanceStringField` | 535.46 ns | 559.15 ns | 305.90 ns | 329.33 ns | 509.09 ns | 306.13 ns | 248 B |
+| `GetStaticIntField` | 93.80 ns | 79.59 ns | 40.88 ns | 54.23 ns | 71.92 ns | 42.91 ns | 24 B |
+| `SetStaticIntField` | 95.83 ns | 79.96 ns | 41.23 ns | 50.08 ns | 77.71 ns | 44.72 ns | 24 B |
+| `GetStaticStringField` | 83.16 ns | 70.19 ns | 35.22 ns | 44.94 ns | 61.45 ns | 36.73 ns | 0 B |
+| `SetStaticStringField` | 534.49 ns | 552.62 ns | 306.30 ns | 336.71 ns | 502.67 ns | 305.55 ns | 248 B |
+| `GetInstanceIntFieldGeneric` | 77.14 ns | 72.91 ns | 34.34 ns | 48.18 ns | 61.59 ns | 36.61 ns | 0 B |
 
 ## Method invocation
 
-| Benchmark | arm64 (Neoverse-N2)<br><sub>92 runs</sub> | AMD EPYC 7763<br><sub>28 runs</sub> | Intel Xeon 6975P-C<br><sub>23 runs</sub> | AMD EPYC 9V74<br><sub>19 runs</sub> | AMD EPYC 9V45<br><sub>9 runs</sub> | Intel Xeon Platinum 8573C<br><sub>7 runs</sub> | Allocated |
+| Benchmark | arm64 (Neoverse-N2)<br><sub>88 runs</sub> | AMD EPYC 7763<br><sub>32 runs</sub> | Intel Xeon 6975P-C<br><sub>19 runs</sub> | AMD EPYC 9V74<br><sub>16 runs</sub> | Intel Xeon Platinum 8573C<br><sub>9 runs</sub> | AMD EPYC 9V45<br><sub>10 runs</sub> | Allocated |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| `InvokeStaticEmpty` | 147.2 ns | 135.9 ns | 71.06 ns | 109.4 ns | 76.13 ns | 99.62 ns | 0 B |
-| `InvokeStaticEmptyWithSignature` | 150.5 ns | 143.1 ns | 71.81 ns | 117.8 ns | 80.15 ns | 98.33 ns | 0 B |
-| `InvokeStaticWithFeedback` | 514.4 ns | 544.3 ns | 261.07 ns | 390.3 ns | 276.8 ns | 375.0 ns | 248 B |
-| `InvokeInstanceEmpty` | 153.6 ns | 142.1 ns | 73.32 ns | 114.2 ns | 91.33 ns | 101.62 ns | 0 B |
-| `InvokeInstanceWithFeedback` | 517.2 ns | 550.2 ns | 264.39 ns | 399.0 ns | 282.14 ns | 387.5 ns | 248 B |
+| `InvokeStaticEmpty` | 147.2 ns | 136.4 ns | 73.06 ns | 96.63 ns | 111.8 ns | 74.38 ns | 0 B |
+| `InvokeStaticEmptyWithSignature` | 150.2 ns | 141.9 ns | 73.29 ns | 106.27 ns | 119.1 ns | 77.59 ns | 0 B |
+| `InvokeStaticWithFeedback` | 512.7 ns | 546.2 ns | 270.22 ns | 311.37 ns | 465.6 ns | 262.5 ns | 248 B |
+| `InvokeInstanceEmpty` | 153.1 ns | 139.0 ns | 76.78 ns | 108.8 ns | 118.1 ns | 74.37 ns | 0 B |
+| `InvokeInstanceWithFeedback` | 518.4 ns | 556.1 ns | 273.38 ns | 333.49 ns | 469.9 ns | 270.48 ns | 248 B |
 
 ## Array and varargs invocation
 
-| Benchmark | arm64 (Neoverse-N2)<br><sub>92 runs</sub> | AMD EPYC 7763<br><sub>28 runs</sub> | Intel Xeon 6975P-C<br><sub>23 runs</sub> | AMD EPYC 9V74<br><sub>19 runs</sub> | AMD EPYC 9V45<br><sub>9 runs</sub> | Intel Xeon Platinum 8573C<br><sub>7 runs</sub> | Allocated |
+| Benchmark | arm64 (Neoverse-N2)<br><sub>88 runs</sub> | AMD EPYC 7763<br><sub>32 runs</sub> | Intel Xeon 6975P-C<br><sub>19 runs</sub> | AMD EPYC 9V74<br><sub>16 runs</sub> | Intel Xeon Platinum 8573C<br><sub>9 runs</sub> | AMD EPYC 9V45<br><sub>10 runs</sub> | Allocated |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| `InvokeIntParam` (10) | 503.1 ns | 539.5 ns | 265.4 ns | 384.1 ns | 282.0 ns | 374.0 ns | 248 B |
-| `InvokeIntParam` (1000) | 502.1 ns | 542.6 ns | 260.7 ns | 382.8 ns | 286.3 ns | 374.7 ns | 248 B |
-| `InvokeIntParam` (10000) | 502.5 ns | 537.2 ns | 259.3 ns | 382.5 ns | 281.0 ns | 370.6 ns | 248 B |
-| `InvokeIntArrayFixed` (10) | 813.5 ns | 983.6 ns | 461.1 ns | 728.9 ns | 544.4 ns | 668.3 ns | 344 B |
-| `InvokeIntArrayFixed` (1000) | 1,517.7 ns | 1,704.2 ns | 1,082.3 ns | 1,448.9 ns | 1,022.4 ns | 1,487.9 ns | 344 B |
-| `InvokeIntArrayFixed` (10000) | 6,186.2 ns | 7,927.5 ns | 7,613.6 ns | 5,997.9 ns | 4,551.5 ns | 9,015.8 ns | 344 B |
-| `InvokeVarArgsWholeArray` (10) | 815.2 ns | 989.4 ns | 464.0 ns | 719.6 ns | 549.9 ns | 664.3 ns | 344 B |
-| `InvokeVarArgsWholeArray` (1000) | 1,516.2 ns | 1,718.8 ns | 1,092.3 ns | 1,454.6 ns | 1,018.9 ns | 1,489.8 ns | 344 B |
-| `InvokeVarArgsWholeArray` (10000) | 6,194.2 ns | 7,942.5 ns | 7,624.0 ns | 6,001.1 ns | 4,606.5 ns | 9,012.9 ns | 344 B |
-| `InvokeStringArrayFixed` (10) | 4,104.9 ns | 4,205.7 ns | 2,613.1 ns | 3,044.8 ns | 2,706.9 ns | 3,497.6 ns | 1968 B |
-| `InvokeStringArrayFixed` (1000) | 296,191.8 ns | 284,044.9 ns | 182,155.3 ns | 194,819.4 ns | 191,997.3 ns | 254,421.1 ns | 160368 B |
-| `InvokeStringArrayFixed` (10000) | 3,291,736.6 ns | 3,514,580.0 ns | 2,005,690.8 ns | 2,481,368.9 ns | 2,128,109.4 ns | 3,000,857.7 ns | 1600436 B |
-| `InvokeVarArgsSpreadElements` (10) | 5,435.6 ns | 6,751.3 ns | 4,795.9 ns | 4,090.2 ns | 3,409.3 ns | 6,432.9 ns | 2584 B |
-| `InvokeVarArgsSpreadElements` (1000) | 455,356.9 ns | 564,267.1 ns | 423,986.1 ns | 325,784.2 ns | 263,625.4 ns | 589,577.5 ns | 232264 B |
-| `InvokeVarArgsSpreadElements` (10000) | 4,967,969.0 ns | 6,589,526.1 ns | 4,536,016.2 ns | 3,878,151.3 ns | 3,007,667.3 ns | 6,197,216.2 ns | 2320332 B |
-| `InvokeIntArrayFixedSegment` (10) | 804.6 ns | 986.3 ns | 457.6 ns | 717.2 ns | 547.9 ns | 658.6 ns | 344 B |
-| `InvokeIntArrayFixedSegment` (1000) | 1,184.7 ns | 1,319.1 ns | 693.6 ns | 1,081.8 ns | 802.2 ns | 1,096.5 ns | 344 B |
-| `InvokeIntArrayFixedSegment` (10000) | 3,507.8 ns | 4,424.1 ns | 3,834.3 ns | 3,435.4 ns | 2,597.6 ns | 4,588.9 ns | 344 B |
-| `InvokeIntArrayFixedSlicedCopy` (10) | 813.6 ns | 995.3 ns | 462.2 ns | 717.2 ns | 563.7 ns | 667.7 ns | 344 B |
-| `InvokeIntArrayFixedSlicedCopy` (1000) | 1,187.8 ns | 1,305.5 ns | 703.7 ns | 1,083.9 ns | 811.4 ns | 1,105.7 ns | 344 B |
-| `InvokeIntArrayFixedSlicedCopy` (10000) | 3,514.6 ns | 4,430.6 ns | 3,859.5 ns | 3,439.8 ns | 2,603.3 ns | 4,625.4 ns | 344 B |
-| `InvokeIntArrayFixedSegmentFull` (10) | 807.9 ns | 986.4 ns | 459.9 ns | 702.2 ns | 552.2 ns | 659.8 ns | 344 B |
-| `InvokeIntArrayFixedSegmentFull` (1000) | 1,515.9 ns | 1,699.0 ns | 1,083.1 ns | 1,446.9 ns | 1,005.7 ns | 1,472.9 ns | 344 B |
-| `InvokeIntArrayFixedSegmentFull` (10000) | 6,168.3 ns | 7,884.0 ns | 7,570.1 ns | 5,988.3 ns | 4,522.7 ns | 9,019.5 ns | 344 B |
+| `InvokeIntParam` (10) | 501.9 ns | 538.9 ns | 268.6 ns | 352.0 ns | 461.0 ns | 267.8 ns | 248 B |
+| `InvokeIntParam` (1000) | 503.0 ns | 542.4 ns | 266.6 ns | 324.0 ns | 466.6 ns | 263.6 ns | 248 B |
+| `InvokeIntParam` (10000) | 503.6 ns | 541.0 ns | 267.7 ns | 332.2 ns | 460.9 ns | 257.8 ns | 248 B |
+| `InvokeIntArrayFixed` (10) | 813.0 ns | 993.1 ns | 464.0 ns | 595.6 ns | 773.0 ns | 532.1 ns | 344 B |
+| `InvokeIntArrayFixed` (1000) | 1,510.3 ns | 1,714.1 ns | 1,109.5 ns | 1,402.9 ns | 1,566.0 ns | 971.7 ns | 344 B |
+| `InvokeIntArrayFixed` (10000) | 6,171.6 ns | 7,912.5 ns | 7,722.4 ns | 5,890.9 ns | 8,990.2 ns | 4,554.4 ns | 344 B |
+| `InvokeVarArgsWholeArray` (10) | 815.5 ns | 993.9 ns | 467.7 ns | 622.3 ns | 776.2 ns | 538.6 ns | 344 B |
+| `InvokeVarArgsWholeArray` (1000) | 1,513.7 ns | 1,730.4 ns | 1,112.1 ns | 1,359.4 ns | 1,579.6 ns | 963.5 ns | 344 B |
+| `InvokeVarArgsWholeArray` (10000) | 6,160.4 ns | 7,892.1 ns | 7,699.5 ns | 5,902.6 ns | 9,006.9 ns | 4,535.9 ns | 344 B |
+| `InvokeStringArrayFixed` (10) | 4,105.2 ns | 4,268.7 ns | 2,612.4 ns | 2,757.0 ns | 3,942.6 ns | 2,499.6 ns | 1968 B |
+| `InvokeStringArrayFixed` (1000) | 296,350.1 ns | 280,777.8 ns | 184,243.7 ns | 175,667.5 ns | 272,473.8 ns | 168,715.6 ns | 160368 B |
+| `InvokeStringArrayFixed` (10000) | 3,264,246.5 ns | 3,510,633.0 ns | 2,083,493.9 ns | 2,469,660.8 ns | 3,104,430.6 ns | 2,027,516.8 ns | 1600436 B |
+| `InvokeVarArgsSpreadElements` (10) | 5,384.3 ns | 6,730.5 ns | 4,816.1 ns | 3,781.8 ns | 6,790.6 ns | 3,165.5 ns | 2584 B |
+| `InvokeVarArgsSpreadElements` (1000) | 455,502.2 ns | 558,876.5 ns | 419,935.7 ns | 313,396.4 ns | 591,962.2 ns | 252,153.7 ns | 232264 B |
+| `InvokeVarArgsSpreadElements` (10000) | 4,933,977.2 ns | 6,473,547.9 ns | 4,579,308.0 ns | 3,761,774.0 ns | 6,448,842.1 ns | 2,880,918.0 ns | 2320332 B |
+| `InvokeIntArrayFixedSegment` (10) | 804.9 ns | 991.7 ns | 462.1 ns | 598.7 ns | 773.1 ns | 530.5 ns | 344 B |
+| `InvokeIntArrayFixedSegment` (1000) | 1,178.0 ns | 1,302.0 ns | 717.2 ns | 983.8 ns | 1,165.8 ns | 777.6 ns | 344 B |
+| `InvokeIntArrayFixedSegment` (10000) | 3,495.3 ns | 4,404.7 ns | 3,865.8 ns | 3,364.1 ns | 4,717.8 ns | 2,579.2 ns | 344 B |
+| `InvokeIntArrayFixedSlicedCopy` (10) | 812.1 ns | 987.8 ns | 462.0 ns | 590.0 ns | 783.8 ns | 541.6 ns | 344 B |
+| `InvokeIntArrayFixedSlicedCopy` (1000) | 1,182.1 ns | 1,317.9 ns | 724.8 ns | 998.1 ns | 1,164.1 ns | 761.8 ns | 344 B |
+| `InvokeIntArrayFixedSlicedCopy` (10000) | 3,499.9 ns | 4,401.9 ns | 3,876.2 ns | 3,405.7 ns | 4,674.2 ns | 2,614.7 ns | 344 B |
+| `InvokeIntArrayFixedSegmentFull` (10) | 807.7 ns | 989.4 ns | 467.2 ns | 602.0 ns | 782.7 ns | 524.7 ns | 344 B |
+| `InvokeIntArrayFixedSegmentFull` (1000) | 1,507.7 ns | 1,719.0 ns | 1,106.9 ns | 1,410.9 ns | 1,589.4 ns | 968.5 ns | 344 B |
+| `InvokeIntArrayFixedSegmentFull` (10000) | 6,138.7 ns | 7,880.2 ns | 7,696.0 ns | 5,934.4 ns | 8,948.1 ns | 4,562.7 ns | 344 B |
 
 ## Preallocated JVM objects
 
-| Benchmark | arm64 (Neoverse-N2)<br><sub>92 runs</sub> | AMD EPYC 7763<br><sub>28 runs</sub> | Intel Xeon 6975P-C<br><sub>23 runs</sub> | AMD EPYC 9V74<br><sub>19 runs</sub> | AMD EPYC 9V45<br><sub>9 runs</sub> | Intel Xeon Platinum 8573C<br><sub>7 runs</sub> | Allocated |
+| Benchmark | arm64 (Neoverse-N2)<br><sub>88 runs</sub> | AMD EPYC 7763<br><sub>32 runs</sub> | Intel Xeon 6975P-C<br><sub>19 runs</sub> | AMD EPYC 9V74<br><sub>16 runs</sub> | Intel Xeon Platinum 8573C<br><sub>9 runs</sub> | AMD EPYC 9V45<br><sub>10 runs</sub> | Allocated |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| `InvokeSingleStringPreallocated` (10) | 539.1 ns | 572.2 ns | 284.4 ns | 418.7 ns | 296.3 ns | 398.0 ns | 224 B |
-| `InvokeSingleStringPreallocated` (1000) | 539.0 ns | 575.9 ns | 278.6 ns | 414.6 ns | 298.1 ns | 399.3 ns | 224 B |
-| `InvokeSingleStringPreallocated` (10000) | 551.4 ns | 593.9 ns | 289.6 ns | 434.2 ns | 319.6 ns | 410.5 ns | 224 B |
-| `InvokeStringArrayPreallocated` (10) | 1,738.1 ns | 1,847.3 ns | 990.5 ns | 1,376.3 ns | 1,117.6 ns | 1,481.0 ns | 688 B |
-| `InvokeStringArrayPreallocated` (1000) | 61,685.3 ns | 42,397.6 ns | 33,692.1 ns | 33,225.1 ns | 35,470.3 ns | 45,755.2 ns | 32368 B |
-| `InvokeStringArrayPreallocated` (10000) | 834,456.2 ns | 686,950.6 ns | 530,136.9 ns | 524,275.6 ns | 429,872.5 ns | 727,550.4 ns | 320436 B |
+| `InvokeSingleStringPreallocated` (10) | 536.9 ns | 578.5 ns | 290.8 ns | 365.1 ns | 492.6 ns | 283.8 ns | 224 B |
+| `InvokeSingleStringPreallocated` (1000) | 540.2 ns | 579.1 ns | 290.9 ns | 368.7 ns | 474.0 ns | 291.8 ns | 224 B |
+| `InvokeSingleStringPreallocated` (10000) | 550.3 ns | 603.1 ns | 305.5 ns | 381.1 ns | 504.6 ns | 305.4 ns | 224 B |
+| `InvokeStringArrayPreallocated` (10) | 1,735.2 ns | 1,826.5 ns | 1,023.6 ns | 1,233.1 ns | 1,546.1 ns | 1,087.3 ns | 688 B |
+| `InvokeStringArrayPreallocated` (1000) | 61,712.5 ns | 42,500.6 ns | 34,122.0 ns | 30,219.0 ns | 46,633.5 ns | 29,079.9 ns | 32368 B |
+| `InvokeStringArrayPreallocated` (10000) | 833,202.4 ns | 667,054.3 ns | 543,318.8 ns | 526,110.3 ns | 716,197.3 ns | 455,981.9 ns | 320436 B |
 
 ## Multi-parameter invocation
 
-| Benchmark | arm64 (Neoverse-N2)<br><sub>92 runs</sub> | AMD EPYC 7763<br><sub>28 runs</sub> | Intel Xeon 6975P-C<br><sub>23 runs</sub> | AMD EPYC 9V74<br><sub>19 runs</sub> | AMD EPYC 9V45<br><sub>9 runs</sub> | Intel Xeon Platinum 8573C<br><sub>7 runs</sub> | Allocated |
+| Benchmark | arm64 (Neoverse-N2)<br><sub>88 runs</sub> | AMD EPYC 7763<br><sub>32 runs</sub> | Intel Xeon 6975P-C<br><sub>19 runs</sub> | AMD EPYC 9V74<br><sub>16 runs</sub> | Intel Xeon Platinum 8573C<br><sub>9 runs</sub> | AMD EPYC 9V45<br><sub>10 runs</sub> | Allocated |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| `InvokeMultiParam` | 934.7 ns | 1.183 μs | 579.2 ns | 846.0 ns | 652.4 ns | 810.9 ns | 608 B |
+| `InvokeMultiParam` | 931.9 ns | 1.165 μs | 574.2 ns | 704.8 ns | 947.8 ns | 668.6 ns | 608 B |
 
 ## JVM→.NET callback (sustained)
 
-| Benchmark | arm64 (Neoverse-N2)<br><sub>92 runs</sub> | AMD EPYC 7763<br><sub>28 runs</sub> | Intel Xeon 6975P-C<br><sub>23 runs</sub> | AMD EPYC 9V74<br><sub>19 runs</sub> | AMD EPYC 9V45<br><sub>9 runs</sub> | Intel Xeon Platinum 8573C<br><sub>7 runs</sub> | Allocated |
+| Benchmark | arm64 (Neoverse-N2)<br><sub>88 runs</sub> | AMD EPYC 7763<br><sub>32 runs</sub> | Intel Xeon 6975P-C<br><sub>19 runs</sub> | AMD EPYC 9V74<br><sub>16 runs</sub> | Intel Xeon Platinum 8573C<br><sub>9 runs</sub> | AMD EPYC 9V45<br><sub>10 runs</sub> | Allocated |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| by index, first gate discard ¹ | 45.02 ns | 34.13 ns | 36.96 ns | 27.50 ns | 33.12 ns | 50.49 ns | 0 B |
-| by index, second gate discard ¹ | 238.97 ns | 240.52 ns | 137.02 ns | 180.59 ns | 143.47 ns | 189.87 ns | 112 B |
-| by index, full processing ¹ | 2,591.82 ns | 3,035.93 ns | 1,759.22 ns | 2,073.11 ns | 1,657.24 ns | 2,433.16 ns | 592 B |
-| by name, first gate discard | 54.50 ns | 38.28 ns | 38.80 ns | 31.76 ns | 34.21 ns | 56.00 ns | 0 B |
-| by name, second gate discard | 250.22 ns | 248.43 ns | 142.64 ns | 184.65 ns | 145.60 ns | 196.96 ns | 112 B |
-| by name, full processing | 2,602.61 ns | 3,048.15 ns | 1,760.85 ns | 2,099.33 ns | 1,640.90 ns | 2,504.95 ns | 592 B |
+| by index, first gate discard ¹ | 45.24 ns | 34.09 ns | 37.09 ns | 25.27 ns | 51.26 ns | 32.31 ns | 0 B |
+| by index, second gate discard ¹ | 239.65 ns | 237.72 ns | 137.25 ns | 139.10 ns | 230.39 ns | 139.18 ns | 112 B |
+| by index, full processing ¹ | 2,602.75 ns | 3,027.72 ns | 1,776.83 ns | 1,755.35 ns | 2,681.97 ns | 1,626.04 ns | 592 B |
+| by name, first gate discard | 54.56 ns | 38.58 ns | 39.07 ns | 28.13 ns | 54.24 ns | 33.82 ns | 0 B |
+| by name, second gate discard | 248.76 ns | 244.12 ns | 142.96 ns | 150.77 ns | 226.52 ns | 138.30 ns | 112 B |
+| by name, full processing | 2,611.27 ns | 3,030.33 ns | 1,774.80 ns | 1,765.04 ns | 2,697.80 ns | 1,586.53 ns | 592 B |
 
 ¹ `byIndex = true` is still simulated on the JVM side.
