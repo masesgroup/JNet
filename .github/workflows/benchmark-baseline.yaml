@@ -608,7 +608,12 @@ jobs:
 
           # Normalize every table row to TSV:
           # 1 label, 2 method, 3 params, 4 mean, 5 error, 6 stddev, 7 allocated,
-          # 8 class (arm64|x86-64-v3|x86-64-v4), 9 cpu, 10 model (cpu without clock)
+          # 8 class (arm64|x86-64-v3|x86-64-v4), 9 cpu (as reported),
+          # 10 model (grouping key for the by-CPU page), 11 cpu without clock (for display)
+          # Columns are located through each table's header row, so thousands
+          # separators ("3,002.58 ns"), bold markers and extra columns are harmless.
+          # Class and CPU come from the BenchmarkDotNet environment block that
+          # precedes each table.
           ROWS=$(awk -F'|' '
             function trim(s) { gsub(/^[ \t*]+|[ \t*]+$/, "", s); return s }
             function get(name) { return (name in col) ? trim($(col[name])) : "" }
@@ -641,16 +646,17 @@ jobs:
               g = arch; if (g == "") g = (label ~ /-arm/) ? "arm64" : "x64"
               if (g == "x64" && isa != "") g = isa
               c = cpu; if (c == "") c = "n/a"
-              mdl = c; sub(/ +[0-9.]+GHz.*$/, "", mdl)
-              if (g == "arm64") mdl = "arm64"
-              printf "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n", label, get("Method"), params, get("Mean"), get("Error"), get("StdDev"), alloc, g, c, mdl
+              mdl = c; sub(/ +[0-9.]+GHz.*$/, "", mdl)         # model without clock
+              d = mdl; if (d == "unknown") d = "arm64, model not reported"
+              if (g == "arm64" && (mdl == "unknown" || mdl == "Neoverse-N2")) mdl = "arm64"
+              printf "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n", label, get("Method"), params, get("Mean"), get("Error"), get("StdDev"), alloc, g, c, mdl, d
             }
           ' "$LATEST")
 
           # pick METHOD [PARAMS_REGEX]   (uses the globals FIELD = 8 class | 10 model, and GROUP)
           # Median and interquartile range (25th-75th percentile, nearest-rank) of the
           # per-run Mean across all matrix cells of the group, sorted on values normalized
-          # to ns, plus the lowest observed run, its cell and its CPU.
+          # to ns, plus the lowest observed run, its cell and its CPU (without clock).
           # Values are printed as they appear in the table; Allocated comes from the
           # median row. Prints "median|q1|q3|min|mincell|mincpu|allocated|runs".
           pick() {
@@ -676,24 +682,25 @@ jobs:
                 split(row[idx[int((k + 3) / 4)]], q1, "\t")
                 split(row[idx[int((3 * k + 3) / 4)]], q3, "\t")
                 split(row[idx[1]], lo, "\t")
-                print f[4] "|" q1[4] "|" q3[4] "|" lo[4] "|" lo[1] "|" lo[9] "|" f[7] "|" k
+                print f[4] "|" q1[4] "|" q3[4] "|" lo[4] "|" lo[1] "|" lo[11] "|" f[7] "|" k
               }
             ' <<< "$ROWS")
             echo "${out:-N/A|N/A|N/A|N/A|N/A|N/A|N/A|0}"
           }
 
-          # cells FIELD GROUP -> number of distinct matrix cells (runs) in the group
+          # cells FIELD GROUP -> number of distinct "core-" matrix cells (runs) in the group
           cells() {
             awk -F'\t' -v f="$1" -v g="$2" '$1 ~ /^core-/ && $(f + 0) == g { print $1 }' <<< "$ROWS" | sort -u | wc -l | tr -d ' '
           }
 
           # ---------------------------------------------------------------
-          # 1. Summary table for README.md / index.md (CPU classes as columns)
+          # 1. Summary table for README.md / index.md / performance.md
+          #    (CPU classes as columns)
           # ---------------------------------------------------------------
           CLASSES=(arm64 x86-64-v3 x86-64-v4)
 
           # row "Description" METHOD [PARAMS_REGEX]  -> one markdown table row,
-          # one column per CPU class: median, then IQR and lowest on a second line
+          # one column per CPU class: median, then IQR and lowest run (with its CPU)
           row() {
             local line="| $1" method="$2" params="${3:-.*}" g med q1 q3 min cell cpu al runs
             for g in "${CLASSES[@]}"; do
@@ -704,7 +711,6 @@ jobs:
                 line+=" | n/a"; continue
               fi
               [ "${q1##* }" = "${q3##* }" ] && q1="${q1% *}"   # drop duplicated unit in the IQR
-              [ "$cpu" = "unknown" ] && cpu="Neoverse-N2"      # arm64 runners that report no model
               line+=" | **$med**<br><sub>IQR $q1 – $q3 · lowest $min ($cpu)</sub>"
             done
             echo "$line |"
@@ -758,7 +764,11 @@ jobs:
 
           DETAIL_HDR='| Benchmark'; DETAIL_SEP='|---'
           for m in "${MODELS[@]}"; do
-            t="$m"; [ "$m" = "arm64" ] && t="arm64 (Neoverse-N2)"
+            case "$m" in
+              arm64)      t="arm64 (Neoverse-N2, or model not reported)" ;;
+              Neoverse-*) t="arm64 $m" ;;
+              *)          t="$m" ;;
+            esac
             DETAIL_HDR+=" | $t<br><sub>$(cells 10 "$m") runs</sub>"; DETAIL_SEP+='|---:'
           done
           DETAIL_HDR+=' | Allocated |'; DETAIL_SEP+='|---:|'
@@ -807,7 +817,7 @@ jobs:
             echo
             echo "<!-- Generated by the benchmark workflow from benchmark-latest.md. Do not edit manually. -->"
             echo
-            echo "Median of the per-run BenchmarkDotNet Mean across all CI matrix cells (OS, .NET and JDK combinations) that ran on the same CPU model; the clock frequency reported by BenchmarkDotNet is ignored. The number of runs is in each column header. CPU models seen in fewer than $MIN_CELLS cells are omitted. Allocated is the same on every run. Runners reporting an unknown arm64 processor are grouped with arm64."
+            echo "Median of the per-run BenchmarkDotNet Mean across all CI matrix cells (OS, .NET and JDK combinations) that ran on the same CPU model; the clock frequency reported by BenchmarkDotNet is ignored. The number of runs is in each column header. CPU models seen in fewer than $MIN_CELLS cells are omitted. Allocated is the same on every run. Runners that report no arm64 processor model are grouped with Neoverse-N2."
             echo
             detail_section "JVM object creation"  NewEmpty NewWithSignature DeclaredNewEmpty
             detail_section "Field access"         GetInstanceIntField SetInstanceIntField GetInstanceStringField SetInstanceStringField GetStaticIntField SetStaticIntField GetStaticStringField SetStaticStringField GetInstanceIntFieldGeneric
@@ -819,14 +829,14 @@ jobs:
             echo "## JVM→.NET callback (sustained)"; echo
             echo "$DETAIL_HDR"; echo "$DETAIL_SEP"
             USED+="PredicateSustained "
-            detail_row PredicateSustained "True,False,False"  "by index, first gate discard ¹"
-            detail_row PredicateSustained "True,True,False"   "by index, second gate discard ¹"
-            detail_row PredicateSustained "True,True,True"    "by index, full processing ¹"
+            detail_row PredicateSustained "True,False,False"  "by index, first gate discard"
+            detail_row PredicateSustained "True,True,False"   "by index, second gate discard"
+            detail_row PredicateSustained "True,True,True"    "by index, full processing"
             detail_row PredicateSustained "False,False,False" "by name, first gate discard"
             detail_row PredicateSustained "False,True,False"  "by name, second gate discard"
             detail_row PredicateSustained "False,True,True"   "by name, full processing"
             echo
-            echo "¹ \`byIndex = true\` is still simulated on the JVM side."
+            echo "From JCOBridge 2.6.10 \`byIndex = true\` and \`byIndex = false\` are practically equivalent: the index is resolved once and used as the key of a hashmap."
           } > "$OUT"
 
           # Methods present in the data but not listed in any section above
