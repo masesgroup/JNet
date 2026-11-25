@@ -78470,6 +78470,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/benchmark-by-cpu.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/benchmark-by-cpu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/benchmark-latest.md",
       "output": {
         ".html": {
